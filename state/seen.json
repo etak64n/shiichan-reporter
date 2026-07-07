@@ -2688,6 +2688,21 @@
     "https://www.anthropic.com/news/visible-extended-thinking",
     "https://www.anthropic.com/news/where-stand-department-war",
     "https://www.anthropic.com/news/widening-conversation-ai",
-    "https://www.anthropic.com/news/zoom-partnership-and-investment"
+    "https://www.anthropic.com/news/zoom-partnership-and-investment",
+    "https://aws.amazon.com/about-aws/whats-new/2026/06/aws-security-hub-supports-monitoring-microsoft-azure",
+    "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-ec2-c8ine-aws-frankfurt",
+    "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-ecs-managed-instances-gpu-price",
+    "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-eks-auto-mode-gpu-price",
+    "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-rds-oracle-database-26ai",
+    "https://aws.amazon.com/about-aws/whats-new/2026/07/amazon-redshift-rg-instances-aws-govcloud",
+    "https://aws.amazon.com/about-aws/whats-new/2026/07/vpc-encryption-controls-declarative-controls",
+    "https://developers.cloudflare.com/changelog/post/2026-07-07-browser-run-accessibility-tree-endpoint",
+    "https://developers.cloudflare.com/changelog/post/2026-07-07-warp-windows-ga",
+    "https://openai.com/deployco/news/building-realtime-voice-experiences-at-scale",
+    "https://openai.com/deployco/news/conversational-design-five-patterns-to-shape-customer-facing-ai-experiences",
+    "https://openai.com/deployco/news/deploying-business-critical-ai-confidence-accountability-go-live",
+    "https://openai.com/deployco/news/designing-organisations-that-can-keep-up-with-ai",
+    "https://openai.com/deployco/news/evals-your-bridge-from-ai-experimentation-to-confident-production-deployments",
+    "https://openai.com/deployco/news/meta-harness-enterprise-self-improvement-long-horizon-ai-workflows"
   ]
 }
