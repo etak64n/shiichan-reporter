@@ -34,6 +34,12 @@ def main() -> int:
         try:
             with open(path) as f:
                 article = json.load(f)
+            # Stale leftover from an earlier partially-failed run: the same
+            # source_url was already published (possibly under another slug)
+            if normalize_url(article["source_url"]) in seen:
+                print(f"skip (already published): {name}")
+                os.remove(path)
+                continue
             post_article(token, article)
         except Exception as e:
             failures += 1

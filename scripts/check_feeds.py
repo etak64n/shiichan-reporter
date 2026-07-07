@@ -15,7 +15,9 @@ failed post is retried on the next run.
 
 import json
 import os
+import re
 import sys
+import urllib.parse
 from datetime import datetime, timezone
 
 from feeds import PARSERS, fetch, load_sources
@@ -30,6 +32,18 @@ def write_output(key: str, value: str) -> None:
     if out:
         with open(out, "a") as f:
             f.write(f"{key}={value}\n")
+
+
+def derive_slug(source: str, url: str) -> str:
+    """Deterministic blog slug from source name + article URL, so regenerating
+    the same article always upserts the same slug (no duplicates)."""
+
+    def slugify(s: str) -> str:
+        return re.sub(r"-{2,}", "-", re.sub(r"[^a-z0-9]+", "-", s.lower())).strip("-")
+
+    segment = urllib.parse.urlparse(url).path.rstrip("/").rsplit("/", 1)[-1]
+    segment = re.sub(r"\.[a-z0-9]+$", "", segment)  # drop .html etc.
+    return f"{slugify(source)}-{slugify(segment)}"[:120].rstrip("-")
 
 
 def collect_new_items(sources: list[dict], state: dict) -> tuple[list[dict], list[dict]]:
@@ -78,6 +92,8 @@ def collect_new_items(sources: list[dict], state: dict) -> tuple[list[dict], lis
                 }
             )
         else:
+            for i in unseen:
+                i["slug"] = derive_slug(src["name"], i["url"])
             new_items.extend(unseen)
 
     if not fetched_any:
