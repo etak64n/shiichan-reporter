@@ -21,7 +21,7 @@ from xml.etree import ElementTree
 
 from paths import SOURCES_PATH
 
-UA = "sheechan-reporter/1.0 (+https://blog.sheechan.etak64n.dev)"
+UA = "sheechan-reporter/1.0 (+https://blog.shiichan.etak64n.dev)"
 SITEMAP_NS = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
 ATOM_NS = {"a": "http://www.w3.org/2005/Atom"}
 

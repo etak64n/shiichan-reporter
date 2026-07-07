@@ -71,7 +71,7 @@ jobs:
       - name: Post to blog
         if: steps.diff.outputs.has_new == 'true'
         env:
-          BLOG_API_URL: https://blog.sheechan.etak64n.dev
+          BLOG_API_URL: https://blog.shiichan.etak64n.dev
         run: python3 scripts/post_articles.py
 
       # ④ 既読状態とアーカイブをコミット(投稿が部分的に失敗しても成功分は永続化する)

@@ -3,7 +3,7 @@
 Bot that watches the tech blogs defined in `sources.json` (initially AWS /
 Anthropic / OpenAI / Cloudflare), writes Japanese introduction articles for new
 posts with Claude Code (subscription quota, no API billing), and publishes them
-fully automatically to [blog.sheechan.etak64n.dev](https://blog.sheechan.etak64n.dev).
+fully automatically to [blog.shiichan.etak64n.dev](https://blog.shiichan.etak64n.dev).
 
 ## How it works
 
