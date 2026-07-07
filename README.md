@@ -1,59 +1,67 @@
 # sheechan-reporter
 
-`sources.json` に定義したテックブログ(初期: AWS / Anthropic / OpenAI / Cloudflare)を監視し、
-新着記事の紹介記事を Claude Code(サブスク枠)で生成して
-[blog.sheechan.etak64n.dev](https://blog.sheechan.etak64n.dev) に全自動入稿する bot。
+Bot that watches the tech blogs defined in `sources.json` (initially AWS /
+Anthropic / OpenAI / Cloudflare), writes Japanese introduction articles for new
+posts with Claude Code (subscription quota, no API billing), and publishes them
+fully automatically to [blog.sheechan.etak64n.dev](https://blog.sheechan.etak64n.dev).
 
-## 仕組み
+## How it works
 
 ```
-GitHub Actions (cron 6時間おき)
-  ├─ scripts/check_feeds.py   … RSS×3 + Anthropic sitemap を state/seen.json と差分(LLM不使用)
-  ├─ claude-code-action       … prompts/generate.md に従い outbox/*.json を生成(setup-token / サブスク枠)
-  ├─ scripts/post_articles.py … OIDC トークンで POST → 成功分を seen に追加し articles/ へアーカイブ
-  └─ git commit               … state と記事アーカイブを永続化
+GitHub Actions (daily at 10:07 JST)
+  ├─ scripts/check_feeds.py   … diff RSS/atom/sitemap sources against state/seen.json (no LLM)
+  ├─ claude-code-action       … generate outbox/*.json per prompts/generate.md (setup-token / subscription)
+  ├─ scripts/post_articles.py … POST with an OIDC token → mark seen → archive to articles/
+  └─ git commit               … persist state and the article archive
 ```
 
-- 新着ゼロの回は Claude を起動しないので、サブスク利用枠を消費しない
-- 投稿に失敗した記事は既読にならず、次回の実行で自動リトライされる
-- `articles/` が全入稿記事のアーカイブ = ブログ D1 のバックアップ(全件再 POST で復元可能)
+- Runs with no new articles never start Claude, so they consume no subscription quota
+- A failed post is not marked seen and is retried automatically on the next run
+- `articles/` is an archive of every published article — a backup of the blog's D1
+  (the whole blog can be restored by re-POSTing them)
+- At most 10 articles are generated per run; the overflow carries over to the next day
+- Manual trigger: Actions tab → watch → Run workflow
 
-## セットアップ
+## Setup
 
-1. このリポジトリを `etak64n/sheechan-reporter` として GitHub に push(ブログ側の
-   `ALLOWED_OIDC_SUB` が `repo:etak64n/sheechan-reporter:ref:refs/heads/main` 固定のため、
-   リポジトリ名を変える場合はブログ側 wrangler.jsonc も変更する)
-2. 手元で `claude setup-token` を実行し、出力されたトークンをリポジトリ Secret
-   `CLAUDE_CODE_OAUTH_TOKEN` に登録(Pro/Max サブスクで有効。期限 1 年)
-3. 初回の既読状態はコミット済み(`state/seen.json`)。以降の新着だけが投稿される
-4. 手動実行: Actions タブ → watch → Run workflow
+1. Push this repository as `etak64n/sheechan-reporter`. The blog pins
+   `ALLOWED_OIDC_SUB` to `repo:etak64n/sheechan-reporter:ref:refs/heads/main`,
+   so renaming the repo requires updating the blog's wrangler.jsonc too
+2. Run `claude setup-token` locally (Pro/Max subscription, valid for 1 year) and
+   store the token as the repository secret `CLAUDE_CODE_OAUTH_TOKEN`
+3. The initial seen state is committed (`state/seen.json`); only articles
+   published after that are picked up
 
-## 監視サイトの追加
+## Adding a monitored site
 
-1. `sources.json` にエントリを1つ足す:
+1. Add one entry to `sources.json`:
 
    ```json
    { "name": "GitHub", "type": "atom", "url": "https://github.blog/feed/" }
    ```
 
-   - `type` は `rss` / `atom` / `sitemap` の3種。`sitemap` の場合は記事URLの共通パスを
-     `include_path` に指定する(例: Anthropic の `"/news/"`)
-   - `name` はブログにそのまま表示されるソース名
-2. ブログ側 `wrangler.jsonc` の `ALLOWED_SOURCE_HOSTS` に新サイトのドメインを足して deploy
-3. push するだけ。**追加直後の実行でそのサイトの過去記事が一斉投稿されることはない**
-   (未ブートストラップのソースは現時点の記事を既読化し、次の新着から拾う)
+   - `type` is `rss` / `atom` / `sitemap`. For `sitemap`, set `include_path`
+     to the path fragment shared by article URLs (e.g. Anthropic's `"/news/"`)
+   - `name` is shown on the blog as the article's source
+2. Add the new site's domain to `ALLOWED_SOURCE_HOSTS` in the blog's
+   wrangler.jsonc and deploy
+3. Just push. **A newly added site never floods the blog with its backlog**:
+   an unbootstrapped source has its current articles marked seen and is picked
+   up from its next new article onward
 
-ソースの削除は sources.json から消すだけ。`state/seen.json` に残る履歴は無害。
+To remove a source, delete its entry from sources.json; leftover history in
+`state/seen.json` is harmless.
 
-## 記事の取り消し
+## Removing a published article
 
-ブログ側 README を参照(`DELETE /api/articles/:slug`)。取り消した記事を再投稿させたくない場合は
-`state/seen.json` に URL が残っていることを確認する(残っていれば再生成されない)。
+See the blog's README (`DELETE /api/articles/:slug`). To keep a removed
+article from being re-posted, make sure its URL is still present in
+`state/seen.json` (if it is, it will not be regenerated).
 
-## ローカルでの動作確認
+## Local testing
 
 ```sh
-python3 scripts/check_feeds.py            # work/new_articles.json を確認
+python3 scripts/check_feeds.py            # inspect work/new_articles.json
 BLOG_DEV_TOKEN=xxx BLOG_API_URL=http://localhost:8787 python3 scripts/post_articles.py
-# ブログ側は .dev.vars に DEV_BEARER_TOKEN=xxx を置いて wrangler dev
+# on the blog side, put DEV_BEARER_TOKEN=xxx in .dev.vars and run wrangler dev
 ```
