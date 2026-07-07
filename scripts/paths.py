@@ -4,7 +4,8 @@ import os
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-SOURCES_PATH = os.path.join(ROOT, "sources.json")
+# One JSON file per site, each an array of source entries
+SOURCES_DIR = os.path.join(ROOT, "sources")
 STATE_PATH = os.path.join(ROOT, "state", "seen.json")
 WORK_DIR = os.path.join(ROOT, "work")
 NEW_ARTICLES_PATH = os.path.join(WORK_DIR, "new_articles.json")

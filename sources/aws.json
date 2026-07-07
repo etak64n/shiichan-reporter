@@ -1,0 +1,8 @@
+[
+  { "name": "AWS", "type": "rss", "url": "https://aws.amazon.com/blogs/aws/feed/" },
+  {
+    "name": "AWS What's New",
+    "type": "rss",
+    "url": "https://aws.amazon.com/about-aws/whats-new/recent/feed/"
+  }
+]

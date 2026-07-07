@@ -1,17 +1,19 @@
 """Feed fetching and parsing for all supported source types.
 
-Each parser takes (xml_bytes, src) where src is an entry from sources.json,
+Each parser takes (xml_bytes, src) where src is an entry from sources/*.json,
 and returns a list of items shaped as:
   {"source": str, "title": str, "url": str, "published_at": str | None}
 
-sources.json entry:
+Source entry (sources/<site>.json is an array of these):
   name         source name (becomes the article's source_name, shown on the blog)
   type         rss | atom | sitemap
   url          feed / sitemap URL
   include_path (sitemap only) treat only URLs containing this substring as articles
 """
 
+import glob
 import json
+import os
 import re
 import urllib.parse
 import urllib.request
@@ -19,7 +21,7 @@ from datetime import timezone
 from email.utils import parsedate_to_datetime
 from xml.etree import ElementTree
 
-from paths import SOURCES_PATH
+from paths import SOURCES_DIR
 
 UA = "shiichan-reporter/1.0 (+https://blog.shiichan.etak64n.dev)"
 SITEMAP_NS = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
@@ -178,8 +180,22 @@ PARSERS = {
 
 
 def load_sources() -> list[dict]:
-    with open(SOURCES_PATH) as f:
-        sources = json.load(f)
+    """Load every source from sources/*.json (one file per site, each an array).
+
+    Files are read in sorted filename order so processing is deterministic.
+    """
+    files = sorted(glob.glob(os.path.join(SOURCES_DIR, "*.json")))
+    if not files:
+        raise ValueError(f"no source files found in {SOURCES_DIR}")
+    sources: list[dict] = []
+    for path in files:
+        with open(path) as f:
+            entries = json.load(f)
+        if isinstance(entries, dict):  # allow a single object per file too
+            entries = [entries]
+        if not isinstance(entries, list):
+            raise ValueError(f"{path}: expected a JSON array of source entries")
+        sources.extend(entries)
     for src in sources:
         if src.get("type") not in PARSERS:
             raise ValueError(
@@ -193,5 +209,5 @@ def load_sources() -> list[dict]:
             raise ValueError(f"{src['name']}: digest mode requires page_url")
     names = [s["name"] for s in sources]
     if len(names) != len(set(names)):
-        raise ValueError("duplicate name in sources.json")
+        raise ValueError("duplicate source name across sources/*.json")
     return sources

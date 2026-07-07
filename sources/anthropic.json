@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Anthropic News",
+    "type": "sitemap",
+    "url": "https://www.anthropic.com/sitemap.xml",
+    "include_path": "/news/"
+  },
+  {
+    "name": "Anthropic Engineering",
+    "type": "sitemap",
+    "url": "https://www.anthropic.com/sitemap.xml",
+    "include_path": "/engineering/"
+  }
+]

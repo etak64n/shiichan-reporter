@@ -1,0 +1,8 @@
+[
+  {
+    "name": "Claude Blog",
+    "type": "sitemap",
+    "url": "https://claude.com/sitemap.xml",
+    "include_path": "claude.com/blog/"
+  }
+]

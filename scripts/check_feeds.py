@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""Detect new articles across the sources defined in sources.json.
+"""Detect new articles across the sources defined in sources/*.json.
 
 Standard library only; no LLM involved. When there are new articles, writes
 work/new_articles.json and sets has_new=true in GITHUB_OUTPUT.
 
 A source that has not been bootstrapped yet (first run, or just added to
-sources.json) has all of its current articles marked as seen without being
+sources/*.json) has all of its current articles marked as seen without being
 published, so a newly added site never floods the blog with its backlog; it
 is picked up from its next new article onward.
 

@@ -1,0 +1,8 @@
+[
+  { "name": "Cloudflare", "type": "rss", "url": "https://blog.cloudflare.com/rss/" },
+  {
+    "name": "Cloudflare Changelog",
+    "type": "rss",
+    "url": "https://developers.cloudflare.com/changelog/rss.xml"
+  }
+]

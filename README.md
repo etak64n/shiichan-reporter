@@ -1,6 +1,6 @@
 # shiichan-reporter
 
-Bot that watches the tech blogs defined in `sources.json` (initially AWS /
+Bot that watches the tech blogs defined in `sources/*.json` (one file per site) (initially AWS /
 Anthropic / OpenAI / Cloudflare), writes Japanese introduction articles for new
 posts with Claude Code (subscription quota, no API billing), and publishes them
 fully automatically to [blog.shiichan.etak64n.dev](https://blog.shiichan.etak64n.dev).
@@ -34,7 +34,7 @@ GitHub Actions (daily at 10:07 JST)
 
 ## Adding a monitored site
 
-1. Add one entry to `sources.json`:
+1. Add an entry to the site's file under `sources/` (or create a new `sources/<site>.json`; each file is a JSON array):
 
    ```json
    { "name": "GitHub", "type": "atom", "url": "https://github.blog/feed/" }
@@ -55,7 +55,7 @@ GitHub Actions (daily at 10:07 JST)
    an unbootstrapped source has its current articles marked seen and is picked
    up from its next new article onward
 
-To remove a source, delete its entry from sources.json; leftover history in
+To remove a source, delete its entry from the relevant `sources/<site>.json` (or the file); leftover history in
 `state/seen.json` is harmless.
 
 ## Removing a published article

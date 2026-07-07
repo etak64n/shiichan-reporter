@@ -1,0 +1,9 @@
+[
+  { "name": "OpenAI", "type": "rss", "url": "https://openai.com/news/rss.xml" },
+  {
+    "name": "OpenAI Developers",
+    "type": "html",
+    "url": "https://developers.openai.com/blog",
+    "link_pattern": "href=\"(/blog/(?!topic/)[a-z0-9-]+)\""
+  }
+]
