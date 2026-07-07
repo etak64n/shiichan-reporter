@@ -59,6 +59,8 @@
   ただし HTML/XML/JSX のサンプルはコードブロック内でも禁止(入稿 API が拒否する)
 - Markdown のみ。**生の HTML タグは書かない**(入稿 API が `<` + 英字を含む本文を拒否する。
   コードブロック内でも HTML/XML/JSX のサンプルは書かないこと)
+- リンクは必ず `https://`(または `http://`)の URL にする。`javascript:` `data:`
+  `vbscript:` など他のスキームは書かない(入稿 API が拒否する。安全対策)
 - 本文(body_md)は 1500〜3500 字程度(Dive Deep に厚みを持たせる)
 
 ## JSON スキーマ
