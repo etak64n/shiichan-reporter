@@ -1,11 +1,22 @@
 [
   { "name": "AWS", "type": "rss", "url": "https://aws.amazon.com/blogs/aws/feed/" },
   { "name": "Cloudflare", "type": "rss", "url": "https://blog.cloudflare.com/rss/" },
+  {
+    "name": "Cloudflare Changelog",
+    "type": "rss",
+    "url": "https://developers.cloudflare.com/changelog/rss.xml"
+  },
   { "name": "OpenAI", "type": "rss", "url": "https://openai.com/news/rss.xml" },
   {
     "name": "Anthropic",
     "type": "sitemap",
     "url": "https://www.anthropic.com/sitemap.xml",
     "include_path": "/news/"
+  },
+  {
+    "name": "Anthropic Engineering",
+    "type": "sitemap",
+    "url": "https://www.anthropic.com/sitemap.xml",
+    "include_path": "/engineering/"
   }
 ]
