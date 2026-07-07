@@ -21,7 +21,7 @@ from feeds import PARSERS, fetch, load_sources
 from paths import NEW_ARTICLES_PATH, WORK_DIR
 from state import load_state, normalize_url, save_state
 
-MAX_NEW_PER_RUN = 6  # articles per run; the overflow is picked up next run
+MAX_NEW_PER_RUN = 10  # articles per run; the overflow is picked up next run
 
 
 def write_output(key: str, value: str) -> None:

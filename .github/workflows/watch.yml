@@ -2,7 +2,9 @@ name: watch
 
 on:
   schedule:
-    - cron: "0 */6 * * *" # 6時間おき
+    # Daily at 09:07 JST (00:07 UTC; a few minutes off the hour to avoid
+    # GitHub's top-of-the-hour scheduling congestion)
+    - cron: "7 0 * * *"
   workflow_dispatch: {}
 
 permissions:
