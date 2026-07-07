@@ -1,0 +1,10 @@
+{
+  "slug": "openai-eu-ai-workforce-mapping",
+  "title": "OpenAI、欧州のAI雇用シフトを分析した報告書「Mapping Europe's AI Workforce Opportunity」を発表",
+  "summary": "OpenAIは、AIが欧州の雇用市場をどう変えうるかを分析した新しい報告書を公開し、自動化リスクが高い職種・成長が見込める職種などを職種別にマッピングした。",
+  "body_md": "## 何が発表されたか\n\nOpenAIは2026年6月29日、AIが欧州連合(EU)の労働市場にどのような影響を与えうるかを分析した報告書「Mapping Europe's AI Workforce Opportunity」を公開した。これは2026年4月に米国向けに策定した「AI Jobs Transition Framework(AI雇用移行フレームワーク)」を、欧州の労働市場向けに拡張したものである。\n\n報告書では、欧州の公式職業分類である「ESCO(European Skills, Competences, Qualifications and Occupations)」タクソノミーと、Eurostatの雇用統計データを組み合わせることで、AIの能力が近い将来の職種別変化にどう結びつくかを、EU加盟国横断で分析している。\n\n## 技術的なポイント\n\n- 職種を「AIとともに成長する職種」「自動化リスクが高い職種」「業務が再編される職種」「当面大きな変化が少ない職種」の4つの移行類型(トランジション・アーキタイプ)に分類\n- 分析の結果、EUの職業の18%が自動化リスクが相対的に高く、24%が業務再編の対象になり、12%がAIとともに成長し、46%は当面大きな変化が少ないと推計\n- ESCOタクソノミーとEurostat雇用データを組み合わせることで、国・産業レベルでの粒度の高い分析を実現\n- 各国・地域の政策担当者や企業向けに、労働市場の変化を継続的にモニタリングする仕組みや、国レベルでの「readiness plan(準備計画)」策定を推奨\n\n## 所感・どう使えるか\n\n自動化・成長・再編・不変という4類型で職種を捉える枠組みは、単純な「奪われる仕事/奪われない仕事」の二分法よりも実務的で、政策立案や企業の人材戦略に落とし込みやすい。一方で、こうした推計はモデルの前提や職務内容の分解粒度に強く依存するため、数値そのものを絶対視せず、各国・各業界の実情と照らし合わせて解釈する必要があるだろう。欧州各国が今後どのような「readiness plan」を打ち出すか、報告書の影響を注視したい。\n\n出典: [Mapping Europe's AI Workforce Opportunity](https://openai.com/index/mapping-ai-jobs-transition-eu)",
+  "source_url": "https://openai.com/index/mapping-ai-jobs-transition-eu",
+  "source_name": "OpenAI",
+  "tags": ["openai", "ai-policy", "labor-market", "eu", "workforce", "automation"],
+  "published_at": "2026-06-29T07:00:00+00:00"
+}
