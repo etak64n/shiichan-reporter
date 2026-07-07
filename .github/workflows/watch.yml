@@ -31,6 +31,8 @@ jobs:
         uses: anthropics/claude-code-action@v1
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          # Use the workflow's own token instead of the Claude GitHub App
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           prompt: |
             work/new_articles.json に新着記事の一覧があります。
             prompts/generate.md の指示に厳密に従い、各記事の紹介記事 JSON を outbox/ に作成してください。
