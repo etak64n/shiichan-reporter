@@ -1,5 +1,5 @@
 [
-  { "name": "OpenAI", "type": "rss", "url": "https://openai.com/news/rss.xml" },
+  { "name": "OpenAI News", "type": "rss", "url": "https://openai.com/news/rss.xml" },
   {
     "name": "OpenAI Developers",
     "type": "html",
