@@ -1,0 +1,10 @@
+{
+  "slug": "anthropic-fable-5-cyber-safeguards-jailbreak-framework",
+  "title": "Anthropic、Fable 5のサイバー防御策と脱獄重大度フレームワークの詳細を公開",
+  "summary": "Anthropicは、Claude Fable 5のサイバーセキュリティ安全分類器と、AIの脱獄手法の深刻度を評価する新しい枠組み「脱獄重大度フレームワーク」の詳細を公開した。",
+  "body_md": "## 何が発表されたか\n\nAnthropicは2026年7月2日、再展開したClaude Fable 5の安全機構について、2つの領域に関する詳細情報を公開した。ひとつは危険なサイバーセキュリティ用途を検出・遮断するための安全分類器についてであり、もうひとつはAIの「脱獄(jailbreak)」の深刻度を一貫した基準で評価するための新しい枠組みについてである。\n\n分類器に関しては、防ごうとしている内容と、意図的に対象外としている内容の両方を具体的なリストとして公開している。これにより、モデルがどのような基準で入力を判断しているのかについて外部からの検証がしやすくなることを狙っている。\n\nもうひとつの柱である「脱獄重大度フレームワーク」は、様々な脱獄手法のリスクレベルを比較・評価できるようにするための尺度であり、Anthropicはこれを提案している。\n\n## 技術的なポイント\n\n- 安全分類器は4段階のモデルで構成され、「禁止用途(完全ブロック)」「高リスクな二次利用(ブロック対象)」「低リスクな二次利用(監視・場合によりブロック)」「無害な利用(許可)」に分類される\n- 脱獄重大度スケールは0〜4の5段階で構成され、能力獲得・汎用性・実装の容易さ・発見されやすさという複数の軸で評価される\n- スコアは指数関数的に設計されており、レベルが1つ上がるごとに深刻度は数倍になるとされている\n- 外部からのフィードバックを受け付ける専用アドレス(cyber-safeguards@anthropic.com)を設置\n- HackerOneのプログラムを通じて脱獄手法の報告も受け付けている\n\n## 所感・どう使えるか\n\n脱獄手法をブロックする・しないの二値ではなく、深刻度という連続的な尺度で捉えようとする発想は、実運用上「軽微な迂回」と「実害につながる悪用」を同列に扱わないための工夫として理にかなっている。分類器の判断基準を具体的に開示している点も、外部の研究者による検証を促す姿勢として評価できる。一方で、この枠組みがどこまで他社や第三者機関に採用され、業界標準になり得るかは今後の展開次第だろう。\n\n出典: [More details on Fable 5's cyber safeguards and our jailbreak framework](https://www.anthropic.com/news/fable-safeguards-jailbreak-framework)",
+  "source_url": "https://www.anthropic.com/news/fable-safeguards-jailbreak-framework",
+  "source_name": "Anthropic",
+  "tags": ["anthropic", "claude", "ai-safety", "jailbreak", "cybersecurity", "fable-5"],
+  "published_at": "2026-07-03T10:14:45.000Z"
+}

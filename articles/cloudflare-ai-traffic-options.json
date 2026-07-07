@@ -1,0 +1,10 @@
+{
+  "slug": "cloudflare-ai-traffic-options",
+  "title": "Cloudflare、AIトラフィックをSearch/Agent/Trainingで細かく制御できる新オプションを発表",
+  "summary": "Cloudflareは「第2回Content Independence Day」に合わせ、AIトラフィックをSearch・Agent・Trainingの3分類で個別に許可・拒否できる新オプションを全顧客向けに提供開始した。",
+  "body_md": "## 何が発表されたか\n\nCloudflareは2026年7月1日、「第2回Content Independence Day」に合わせて、Webサイト運営者がAIトラフィックをより細かく制御できる新しいオプションを全顧客向けに提供開始したと発表した。従来の「AIボットを一括ブロックする」という単純な選択肢に代わり、用途別に許可・拒否を設定できる仕組みへと転換している。\n\n新たな分類では、AIのアクセス目的を「Search(検索結果に表示するためのインデックス化)」「Agent(人間に代わってリアルタイムに行動するエージェント)」「Training(モデルの学習・ファインチューニングのためのデータ収集)」の3種類に分けている。サイト運営者はこの3分類ごとに、アクセスを許可するかどうかを個別に設定できるようになる。\n\nあわせて、robots.txtを拡張してコンテンツの利用方法を指定する「content-use」シグナルの追加や、Enterprise顧客向けのボット追跡機能「BotBase」も発表された。\n\n## 技術的なポイント\n\n- AIトラフィックを「Search」「Agent」「Training」の3分類に整理し、サイト運営者が分類ごとに許可・拒否を設定可能に\n- 2026年9月15日から、広告収益で運営されているページではデフォルトで「Training」と「Agent」をブロックし、「Search」は引き続き許可する新デフォルト設定を導入予定\n- robots.txtに4つ目のフィールドとして「content-use」シグナルを追加し、use=immediate(保存なし)、use=reference(デフォルト)、use=full(完全再現可)の3種類から選択可能\n- Enterprise顧客向けにボットの挙動を追跡するデータベース機能「BotBase」を新たに導入\n\n## 所感・どう使えるか\n\nAIクローラーへの対応を「ブロックか許可か」の二択ではなく、検索・エージェント・学習という用途ごとに切り分けられる点は、パブリッシャー側の選択肢を大きく広げるものだ。特に広告収益ページでの新デフォルト設定は、多くのサイト運営者にとって明示的な設定変更なしにAI学習データとしての収集を制限できる点で影響が大きいだろう。一方でrobots.txtの拡張仕様がAI事業者側にどこまで遵守されるかは業界全体の合意形成にかかっており、今後の運用実態を注視する必要がある。\n\n出典: [Your site, your rules: new AI traffic options for all customers](https://blog.cloudflare.com/content-independence-day-ai-options/)",
+  "source_url": "https://blog.cloudflare.com/content-independence-day-ai-options/",
+  "source_name": "Cloudflare",
+  "tags": ["cloudflare", "ai-crawlers", "robots-txt", "bot-management", "content-independence-day"],
+  "published_at": "2026-07-01T13:00:00+00:00"
+}
