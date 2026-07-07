@@ -2,9 +2,10 @@ name: watch
 
 on:
   schedule:
-    # Daily at 10:07 JST (01:07 UTC; a few minutes off the hour to avoid
-    # GitHub's top-of-the-hour scheduling congestion)
-    - cron: "7 1 * * *"
+    # Every 6 hours at 10:07 / 16:07 / 22:07 / 04:07 JST (a few minutes off
+    # the hour to avoid GitHub's top-of-the-hour scheduling congestion).
+    # No-news runs skip the LLM steps, so extra runs only cost the feed check
+    - cron: "7 1,7,13,19 * * *"
   workflow_dispatch: {}
 
 permissions:
