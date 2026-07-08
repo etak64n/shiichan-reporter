@@ -1,0 +1,19 @@
+{
+  "slug": "cloudflare-changelog-2026-06-15-waf-release",
+  "title": "Cloudflare WAF が Ghost CMS の SQL インジェクションを自動ブロック！",
+  "summary": "Cloudflare の 2026-06-15 WAF リリースが、Ghost CMS の SQL インジェクション脆弱性 CVE-2026-26980 に対応する新マネージドルールなどを追加したよ。",
+  "body_md": "やっほー、しぃちゃんだよ！今日はみんなのサイトをこっそり守ってくれる、ちょっと地味だけど大事なアップデートの話だよ。\n\n## なにが発表されたの？\nCloudflare の Changelog に、2026 年 6 月 15 日の [WAF](https://developers.cloudflare.com/waf/) リリースが載ったの。今回の目玉は 2 本の新しいマネージドルールで、ひとつは Ghost CMS に見つかった重大な SQL インジェクション脆弱性 CVE-2026-26980 をふさぐもの、もうひとつは、こねくり回したブール論理で検知をすり抜けようとする SQLi の汎用ルールだよ。\n\n> These rules protect affected installations from unauthorized data exfiltration at the network edge.\n\nとあるとおり、ネットワークのふち（エッジ）でデータの持ち出しを止めてくれるんだって。\n\n## 今までどうだったの？\nCloudflare の WAF はこうやって定期的にマネージドルールセットを更新していて、新しく見つかった脆弱性に合わせてルールを足したり、動きを変えたりしているの。今回もその定例リリースの 1 本だよ。\n\n## これで何が変わるの？\nCloudflare Managed Ruleset を使っているサイトは、特別な設定をしなくても新しい検知が効くようになるの。とくに Ghost CMS を動かしている人は、CVE-2026-26980 を狙った攻撃をブロックできるから、ちょっと安心だね。\n\n## 深く潜ってみよう\n今回変わるルールはこの 2 本だよ。\n\n- Ghost CMS - SQLi - CVE:CVE-2026-26980（新しい検知）… アクションが Log から Block に。「記録するだけ」から「実際に止める」へ格上げされたよ。\n- SQLi - Obfuscated Boolean - URI（新しい検知）… アクションが Log から Disabled に。こちらはいったん無効の状態でのお披露目みたい。\n\nどちらも Cloudflare Managed Ruleset に入っている新ルールで、レガシー Rule ID は付いていないよ。\n\n## まとめ\n- Cloudflare の 2026-06-15 WAF リリースは Ghost CMS の SQLi 脆弱性 CVE-2026-26980 に対応\n- 新ルールは Log から Block に格上げ、もう 1 本の汎用 SQLi ルールは Log から Disabled で登場\n- Cloudflare Managed Ruleset の利用者は追加設定なしで守られる\n\nGhost CMS を運用している人や、WAF に自動防御を任せたい人にうれしい定例アップデートだよ！",
+  "title_en": "Cloudflare WAF now auto-blocks a Ghost CMS SQL injection flaw!",
+  "summary_en": "Cloudflare's June 15, 2026 WAF release adds new managed rules, including one that addresses the Ghost CMS SQL injection flaw CVE-2026-26980.",
+  "body_md_en": "Hey there, it's Shii-chan! Today I've got a quiet-but-important update that keeps your sites safe.\n\n## What was announced?\nCloudflare's Changelog posted its [WAF](https://developers.cloudflare.com/waf/) release for June 15, 2026. The headline is two new managed rules: one closes a critical SQL injection flaw found in Ghost CMS (CVE-2026-26980), and the other is a generic rule that catches SQLi bypass attempts hiding behind obfuscated boolean logic.\n\n> These rules protect affected installations from unauthorized data exfiltration at the network edge.\n\nThat means the bad traffic gets stopped right at the network edge.\n\n## The story so far\nCloudflare's WAF ships regular updates to its managed rulesets, adding rules or changing their behavior as new vulnerabilities show up. This is one of those routine releases.\n\n## What changes\nIf you use the Cloudflare Managed Ruleset, the new detections kick in without any extra setup. And if you run Ghost CMS, the new rule blocks attacks targeting CVE-2026-26980, so you can breathe a little easier.\n\n## Dive Deep\nHere are the two rules that change:\n\n- Ghost CMS - SQLi - CVE:CVE-2026-26980 (new detection) - action moved from Log to Block, going from \"just record it\" to \"actually stop it\".\n- SQLi - Obfuscated Boolean - URI (new detection) - action set from Log to Disabled, shipping in an off-by-default state for now.\n\nBoth are new rules in the Cloudflare Managed Ruleset, with no legacy Rule ID attached.\n\n## Wrap-up\n- Cloudflare's 2026-06-15 WAF release addresses the Ghost CMS SQLi flaw CVE-2026-26980\n- The new rule is promoted from Log to Block; a second generic SQLi rule arrives as Log to Disabled\n- Cloudflare Managed Ruleset users are protected with no extra configuration\n\nThis routine update is a treat for anyone running Ghost CMS or leaning on the WAF for automatic defense!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-06-15-waf-release/",
+  "source_name": "Cloudflare Changelog",
+  "tags": [
+    "cloudflare",
+    "security",
+    "web"
+  ],
+  "published_at": "2026-06-15T00:00:00+00:00"
+}
