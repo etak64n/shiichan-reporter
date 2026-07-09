@@ -1,0 +1,19 @@
+{
+  "slug": "cloudflare-changelog-2026-04-15-dex-consistent-last-seen-timestamps",
+  "title": "Cloudflare One Client の last seen タイムスタンプ、ダッシュボードでそろったよ！",
+  "summary": "Cloudflare の Changelog より。Cloudflare One Client デバイスの last seen タイムスタンプが、ダッシュボード全体でより一貫して表示されるようになったよ。",
+  "body_md": "やっほー、しぃちゃんだよ！ 今日はちょっと地味だけど、毎日の運用でじわっと効くアップデートを見つけてきたよ。\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、[Cloudflare One Client](https://developers.cloudflare.com/cloudflare-one/team-and-resources/devices/cloudflare-one-client/) デバイスの「last seen（最終確認）タイムスタンプ」が、ダッシュボード全体でより一貫して表示されるようになったって告知があったよ。これは [Digital Experience Monitoring](https://developers.cloudflare.com/cloudflare-one/insights/dex/)（DEX）まわりの改善なの。\n\n## 今までどうだったの？\n\nlast seen タイムスタンプは、デバイスと Cloudflare のネットワークの間で「いちばん最近やり取りがあったのはいつか」を教えてくれる情報だよ。でも、これまではダッシュボードの見る場所によって、この値の表示にちょっとしたズレが出ることがあったみたい。\n\n## これで何が変わるの？\n\nこれからは、デバイスと Cloudflare のネットワークの間の直近のクライアントイベントについて、IT チームがより一貫した情報を見られるようになるよ。原文でもこう言ってるの。\n\n> IT teams will see more consistent information about the most recent client event between a device and Cloudflare's network.\n\n「あのデバイス、最後に見えたのいつだっけ？」を確認するとき、どの画面でも同じ答えが返ってくるだけで、安心感がぜんぜん違うよね。\n\n## まとめ\n\n- [Cloudflare One Client](https://developers.cloudflare.com/cloudflare-one/team-and-resources/devices/cloudflare-one-client/) デバイスの last seen タイムスタンプが、ダッシュボード全体でより一貫するようになったよ\n- [DEX](https://developers.cloudflare.com/cloudflare-one/insights/dex/)（Digital Experience Monitoring）まわりの改善で、直近のクライアントイベントの情報が見やすくなるの\n- デバイスの稼働状況を追う IT / 運用チームにうれしい、小さいけど確かな一歩だよ",
+  "title_en": "Cloudflare One Client's last seen timestamp is now consistent across the dashboard!",
+  "summary_en": "From Cloudflare's Changelog: the last seen timestamp for Cloudflare One Client devices is now more consistent across the dashboard.",
+  "body_md_en": "Hey everyone, it's Shiichan! Today's update is a quiet one, but it's the kind of thing that quietly makes day-to-day operations nicer.\n\n## What was announced?\n\nCloudflare's Changelog shared that the \"last seen\" timestamp for [Cloudflare One Client](https://developers.cloudflare.com/cloudflare-one/team-and-resources/devices/cloudflare-one-client/) devices is now more consistent across the dashboard. It's an improvement around [Digital Experience Monitoring](https://developers.cloudflare.com/cloudflare-one/insights/dex/) (DEX).\n\n## The story so far\n\nThe last seen timestamp tells you when the most recent activity happened between a device and Cloudflare's network. But until now, the value could show up a little differently depending on where you looked in the dashboard.\n\n## What changes\n\nFrom here on, IT teams will see more consistent information about the most recent client event between a device and Cloudflare's network. The post puts it this way:\n\n> IT teams will see more consistent information about the most recent client event between a device and Cloudflare's network.\n\nWhen you want to check \"wait, when was that device last seen?\", getting the same answer on every screen makes a real difference in peace of mind.\n\n## Wrap-up\n\n- The last seen timestamp for [Cloudflare One Client](https://developers.cloudflare.com/cloudflare-one/team-and-resources/devices/cloudflare-one-client/) devices is now more consistent across the dashboard\n- This [DEX](https://developers.cloudflare.com/cloudflare-one/insights/dex/) (Digital Experience Monitoring) improvement makes info about recent client events easier to read\n- A small but solid win for the IT and ops teams who track device activity",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-04-15-dex-consistent-last-seen-timestamps/",
+  "source_name": "Cloudflare Changelog",
+  "tags": [
+    "cloudflare",
+    "security",
+    "devops"
+  ],
+  "published_at": "2026-04-15T00:00:00+00:00"
+}
