@@ -1,0 +1,18 @@
+{
+  "slug": "cloudflare-changelog-2026-04-28-detection-entries-outside-profiles",
+  "title": "Cloudflare DLP の検出エントリがプロファイルの外に飛び出したよ！",
+  "summary": "Cloudflare の DLP で検出エントリをプロファイルの外側で作成・管理できるようになったよ。「Detection entries」セクションから直接扱えて、カスタム DLP プロファイルで使い回せるの。",
+  "body_md": "やっほー、しぃちゃんだよ！今日は Cloudflare の DLP まわりで、地味だけど運用が楽になりそうなアップデートを見つけたから紹介するね。\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、[Data Loss Prevention](https://developers.cloudflare.com/cloudflare-one/data-loss-prevention/)（DLP）の検出エントリを、プロファイルの外側で作成・閲覧・管理できるようになったって発表があったの。これまで検出エントリはプロファイルの中に隠れていたけど、これからは独立したパーツとして扱えるようになるんだよ。\n\n## 今までどうだったの？\n\nこれまで検出エントリは、個々のプロファイルの中に埋め込まれた存在だったの。だから同じような検出ルールを複数のプロファイルで使いたいときも、プロファイルごとに面倒を見なきゃいけなかったんだね。\n\n## これで何が変わるの？\n\nこれからは管理者が「Detection entries」セクションから検出エントリを直接管理できるようになるよ。しかも作った検出エントリは、カスタム DLP プロファイルの中で使い回せるの。エントリを一箇所で整えて、複数のプロファイルに配れるイメージだね。\n\n## 深く潜ってみよう\n\n設定手順や具体的な使い方は、公式の [検出エントリの設定](https://developers.cloudflare.com/cloudflare-one/data-loss-prevention/detection-entries/configure-detection-entries/) ガイドにまとまっているよ。DLP のルールを組むときはここを見ておくと安心だね。\n\n## まとめ\n\n- Cloudflare の DLP で、検出エントリをプロファイルの外で作成・管理できるようになったよ\n- 「Detection entries」セクションから直接扱えて、カスタム DLP プロファイルで使い回せる\n- DLP でデータ保護ルールを組んでいる管理者に、地味に効いてくるアップデートだね",
+  "title_en": "Cloudflare DLP Lets You Manage Detection Entries Outside Profiles!",
+  "summary_en": "Cloudflare's DLP now lets you create and manage detection entries outside of profiles, handling them directly from the Detection entries section and reusing them across custom DLP profiles.",
+  "body_md_en": "Hello, it's Shii-chan! Today I found a small but handy update over in Cloudflare's DLP world, so let me walk you through it.\n\n## What was announced?\n\nOn Cloudflare's Changelog, they announced that you can now create, view, and manage [Data Loss Prevention](https://developers.cloudflare.com/cloudflare-one/data-loss-prevention/) (DLP) detection entries outside of profiles. Until now, detection entries lived hidden inside profiles, but from here on you can treat them as standalone pieces.\n\n## The story so far\n\nDetection entries used to be embedded inside individual profiles. So even when you wanted to reuse the same kind of detection rule across several profiles, you had to tend to each profile one by one.\n\n## What changes\n\nNow administrators can manage detection entries directly from the \"Detection entries\" section. On top of that, the entries you create can be reused inside your custom DLP profiles. Think of it as tidying up an entry in one place and handing it out to multiple profiles.\n\n## Dive Deep\n\nFor the setup steps and details, the official [Configure detection entries](https://developers.cloudflare.com/cloudflare-one/data-loss-prevention/detection-entries/configure-detection-entries/) guide has you covered. It's a good page to keep open while you're building DLP rules.\n\n## Wrap-up\n\n- Cloudflare's DLP now lets you create and manage detection entries outside of profiles\n- You can handle them directly from the \"Detection entries\" section and reuse them in custom DLP profiles\n- A quietly useful update for admins who build data-protection rules with DLP",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-04-28-detection-entries-outside-profiles/",
+  "source_name": "Cloudflare Changelog",
+  "tags": [
+    "cloudflare",
+    "security"
+  ],
+  "published_at": "2026-04-28T00:00:00+00:00"
+}
