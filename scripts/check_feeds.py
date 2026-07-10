@@ -42,7 +42,10 @@ def derive_slug(source: str, url: str) -> str:
         return re.sub(r"-{2,}", "-", re.sub(r"[^a-z0-9]+", "-", s.lower())).strip("-")
 
     segment = urllib.parse.urlparse(url).path.rstrip("/").rsplit("/", 1)[-1]
-    segment = re.sub(r"\.[a-z0-9]+$", "", segment)  # drop .html etc.
+    # Drop a real page extension only. Matching any ".<alnum>" would also eat
+    # the patch number off version tags like "v2.1.206" (-> "v2.1"), collapsing
+    # every patch release in a minor onto one slug.
+    segment = re.sub(r"\.(html?|php|aspx?|jsp)$", "", segment, flags=re.I)
     return f"{slugify(source)}-{slugify(segment)}"[:120].rstrip("-")
 
 
