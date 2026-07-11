@@ -18,6 +18,7 @@
     "OpenAI News"
   ],
   "seen_urls": [
+    "https://aws.amazon.com/about-aws/whats-new/2025/06/ami-configuration-continuous-slurm",
     "https://aws.amazon.com/about-aws/whats-new/2026/02/amazon-ec2-x8i-instances-ICN-KUL-NRT-region",
     "https://aws.amazon.com/about-aws/whats-new/2026/02/g7e-new-launch-sagemaker-studio-notebooks",
     "https://aws.amazon.com/about-aws/whats-new/2026/03/g6e-new-launch-sagemaker-notebook-instances",
@@ -1545,6 +1546,7 @@
     "https://github.com/anthropics/claude-code/releases/tag/v2.1.204",
     "https://github.com/anthropics/claude-code/releases/tag/v2.1.205",
     "https://github.com/anthropics/claude-code/releases/tag/v2.1.206",
+    "https://github.com/anthropics/claude-code/releases/tag/v2.1.207",
     "https://jpwinsup.github.io/blog/2026/04/13/Deployment/Sysprep/sysprep-masterimage",
     "https://jpwinsup.github.io/blog/2026/04/16/ActiveDirectory/UserProfile/windows-folder-structure",
     "https://jpwinsup.github.io/blog/2026/04/16/Shell/Explorer/installed-applications-dont-appear-in-new-StartMenu",
