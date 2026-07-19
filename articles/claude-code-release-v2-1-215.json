@@ -1,0 +1,16 @@
+{
+  "slug": "claude-code-release-v2-1-215",
+  "title": "Claude Code、/verify と /code-review の自動実行にサヨナラ！",
+  "summary": "Claude Code v2.1.215 がリリースされて、Claude が /verify と /code-review のスキルを自分の判断で自動実行しなくなったよ。使いたいときは /verify や /code-review と明示的に呼び出す必要があるの。",
+  "body_md": "やっほー、しぃちゃんだよ！Claude Code の新しいリリースをチェックしてきたから、さっそく紹介するね！\n\n## なにが発表されたの？\n\nClaude Code Release から、CLI ツール「Claude Code」の最新バージョン v2.1.215 が公開されたよ。今回の変更は 1 点だけで、Claude が `/verify` と `/code-review` の 2 つのスキルを自分の判断で勝手に実行しなくなった、というものなの。使いたいときは `/verify` や `/code-review` を自分で呼び出す必要があるよ。\n\n## 今までどうだったの？\n\nこれまでの Claude Code は、作業の区切りなどのタイミングで `/verify` や `/code-review` のスキルを Claude 自身の判断で自動的に走らせることがあったの。狙った通りに動いてくれるときは便利だけど、頼んでいないのに検証やレビューが始まっちゃうと、その分の時間やトークンを予想外に使っちゃうこともあったんだよね。\n\n## これで何が変わるの？\n\nv2.1.215 からは、この 2 つのスキルを Claude が自発的に起動することはなくなって、ユーザーが `/verify` または `/code-review` と明示的に呼んだときだけ動くようになったよ。いつ検証やレビューが走るかを自分でコントロールできるようになったから、「気づいたら余計な処理が走ってた」というモヤモヤが減りそうだね。\n\n## まとめ\n\n- Claude が `/verify` と `/code-review` のスキルを自分の判断で自動実行する挙動が廃止されたよ\n- 使いたいときは `/verify` や `/code-review` を自分で呼び出せば OK\n- Claude Code を日常的に使ってて、いつ検証・レビューが走るかを自分で把握しておきたいエンジニアさんに嬉しいアップデートだよ！",
+  "title_en": "Claude Code Says Goodbye to Auto-Running /verify and /code-review!",
+  "summary_en": "Claude Code v2.1.215 is out, and Claude no longer runs the /verify and /code-review skills on its own — you now have to invoke /verify or /code-review explicitly when you want them.",
+  "body_md_en": "Hey everyone, it's me! I've been checking out the latest Claude Code release, so let's dive in!\n\n## What was announced?\n\nClaude Code Release published the latest version of the Claude Code CLI, v2.1.215. This release has just one change: Claude no longer runs the `/verify` and `/code-review` skills on its own. If you want them, you now need to invoke `/verify` or `/code-review` yourself.\n\n## The story so far\n\nUntil now, Claude Code would sometimes decide on its own to run the `/verify` or `/code-review` skills at certain points in a task. That could be handy when it did the right thing, but it also meant verification or review could kick off without being asked, eating into your time and tokens unexpectedly.\n\n## What changes\n\nAs of v2.1.215, Claude no longer starts either skill on its own — they only run when you explicitly type `/verify` or `/code-review`. You now have full control over when verification or review actually happens, which should cut down on the \"wait, why did that just run\" moments.\n\n## Wrap-up\n\n- Claude no longer auto-runs the `/verify` and `/code-review` skills on its own initiative\n- Invoke `/verify` or `/code-review` yourself whenever you want them\n- A welcome change for anyone using Claude Code daily who wants to know exactly when verification or review kicks in!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.215",
+  "source_name": "Claude Code Release",
+  "og_title": "v2.1.215",
+  "tags": ["anthropic", "ai", "devops"],
+  "published_at": "2026-07-19T02:56:01Z"
+}
