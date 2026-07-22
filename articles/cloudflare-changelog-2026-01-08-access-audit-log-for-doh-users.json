@@ -1,0 +1,16 @@
+{
+  "slug": "cloudflare-changelog-2026-01-08-access-audit-log-for-doh-users",
+  "title": "DoHユーザーの作成、Cloudflareの監査ログでちゃんと追えるようになったよ！",
+  "summary": "Cloudflare の管理者アクティビティログに、DNS over HTTP(DoH)ユーザーが作成されたときのイベントが記録されるようになったよ。ダッシュボード・API・Logpush のどこからでも確認できるの。",
+  "body_md": "おつかれさま、しぃちゃんだよ！今日は Cloudflare One を使っているみんなに向けた、小さいけど嬉しい監査ログのアップデートだよ！\n\n## なにが発表されたの？\n\nCloudflare の Changelog によると、Cloudflare の管理者アクティビティログが、DNS over HTTP(DoH)ユーザーが作成されるたびにそのイベントを記録するようになったよ。ソースは Cloudflare の Changelog なの。\n\n## 今までどうだったの？\n\n管理者アクティビティログはこれまでも Cloudflare One のさまざまな管理操作を記録してきたけど、DoH ユーザーの作成イベントはその対象に含まれていなかったみたい。今回のアップデートで、そこも記録の範囲に加わった形だね。\n\n## これで何が変わるの？\n\n記録された DoH ユーザーの作成ログは、次の3つの方法で確認できるよ。\n\n- Cloudflare One ダッシュボードから閲覧する\n- Cloudflare API 経由で取得する\n- Logpush でエクスポートする\n\n「誰が・いつ DoH ユーザーを作成したか」を後から追えるようになるので、DNS まわりのアクセス管理を監査する必要があるセキュリティ担当さんや、コンプライアンス対応でログの網羅性を求められているチームにとって、地味だけど押さえておきたいポイントだよ。\n\n## まとめ\n\n- 管理者アクティビティログが DoH ユーザーの作成イベントを記録するようになったよ\n- ダッシュボード・API・Logpush のいずれからでも確認可能\n- DNS アクセス管理の監査やコンプライアンス対応をしているチームに嬉しいアップデート\n\nCloudflare One で DoH を使っているチームは、監査ログの網羅性が上がったこのタイミングでログの確認フローを見直してみてもいいかもね！",
+  "title_en": "You can now track DoH user creation right in Cloudflare's audit logs!",
+  "summary_en": "Cloudflare's admin activity logs now capture the event when a DNS over HTTP (DoH) user is created, viewable from the dashboard, the API, or exported via Logpush.",
+  "body_md_en": "Hey there, it's me! Today's a small but nice audit logging update for anyone running Cloudflare One!\n\n## What was announced?\n\nAccording to the Cloudflare Changelog, Cloudflare's admin activity logs now capture an event every time a DNS over HTTP (DoH) user is created.\n\n## The story so far\n\nAdmin activity logs already tracked a range of administrative actions across Cloudflare One, but DoH user creation wasn't part of that coverage until now. This update adds it to the list.\n\n## What changes\n\nYou can check these DoH user creation logs in three ways:\n\n- From the Cloudflare One dashboard\n- Via the Cloudflare API\n- Exported through Logpush\n\nBeing able to trace who created a DoH user and when is a small but useful addition if you're a security team auditing DNS access management, or if you need comprehensive logging for compliance purposes.\n\n## Wrap-up\n\n- Admin activity logs now capture DoH user creation events\n- Viewable from the dashboard, the API, or Logpush\n- Useful for teams auditing DNS access management or handling compliance requirements\n\nIf your team uses DoH in Cloudflare One, this is a good moment to double-check your log review workflow now that coverage has improved!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-01-08-Access-audit-log-for-DoH-users/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Access - Cloudflare admin activity logs capture creation of DNS over HTTP (DoH) users",
+  "tags": ["cloudflare", "security"],
+  "published_at": "2026-01-08T00:00:00+00:00"
+}
