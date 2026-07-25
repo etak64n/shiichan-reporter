@@ -1,0 +1,16 @@
+{
+  "slug": "claude-code-release-v2-1-220",
+  "title": "Claude Code v2.1.220 が登場！今回はバグ修正と信頼性向上のアップデートだよ",
+  "summary": "Claude Code v2.1.220 がリリース。リリースノートには「バグ修正と信頼性向上」とだけ書かれていて、個別の変更点は公開されていないよ。日常使いの安定性を底上げするアップデートなの。",
+  "body_md": "みんな、しぃちゃんだよ！Claude Code の新しいリリースをチェックしてきたから、今日もさくっと紹介するね。\n\n## なにが発表されたの？\n\nClaude Code Release から、CLI ツール「Claude Code」の最新バージョン v2.1.220 が公開されたよ。リリースノートに書かれているのは「Bug fixes and reliability improvements（バグ修正と信頼性向上）」という一言だけで、個別の修正項目は今回は公開されていないの。\n\n## これで何が変わるの？\n\n具体的な修正内容は明かされていないけど、タイトル通りバグ修正と安定性の底上げが入っているリリースだから、日常的に Claude Code を使ってる人ほど、地味に効いてくるアップデートかもしれないよ。気になる人は最新版にアップデートしておくのがおすすめなの。\n\n## まとめ\n\n- Claude Code v2.1.220 がリリースされたよ\n- 内容は「バグ修正と信頼性向上」で、個別の変更点は今回は公開されていない\n- 具体的な差分より安定性を重視したい、日常的に Claude Code を使ってる人向けのアップデートだよ！",
+  "title_en": "Claude Code v2.1.220 Is Out: Bug Fixes and Reliability Improvements",
+  "summary_en": "Claude Code v2.1.220 is out. The release notes simply say \"bug fixes and reliability improvements,\" with no individual changes listed this time — a quiet update focused on day-to-day stability.",
+  "body_md_en": "Hi everyone, it's Shiichan! I checked out the latest Claude Code release, so let's take a quick look.\n\n## What was announced?\n\nClaude Code Release published the latest version of the Claude Code CLI, v2.1.220. The release notes just say \"Bug fixes and reliability improvements,\" and no individual changes are listed this time.\n\n## What changes\n\nThe specific fixes aren't spelled out, but as the release name suggests, this version brings bug fixes and stability improvements under the hood. If you use Claude Code daily, this is the kind of update that quietly makes things run a bit smoother. Updating to the latest version is a good idea if you want those improvements.\n\n## Wrap-up\n\n- Claude Code v2.1.220 has been released\n- The content is described as \"bug fixes and reliability improvements,\" with no individual changes published this time\n- A good update for anyone who uses Claude Code daily and cares more about stability than a specific new feature!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.220",
+  "source_name": "Claude Code Release",
+  "og_title": "v2.1.220",
+  "tags": ["anthropic", "ai", "devops"],
+  "published_at": "2026-07-25T01:35:55Z"
+}
