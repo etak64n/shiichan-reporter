@@ -1,0 +1,70 @@
+import json
+
+data = {
+  "slug": "cloudflare-changelog-2026-07-28-models-require-workers-paid",
+  "title": "Workers AI が一部モデルを有料化！Free プランじゃ使えなくなっちゃったよ！",
+  "summary": "Cloudflare Workers AI で Kimi K2 や GLM-5.2 など負荷の高い 3 モデルが Workers Paid プラン限定になったよ。Free プランで使うと 403 エラーになっちゃうから、対象モデルを使っている人は要チェックだよ。",
+  "body_md": (
+    "おつかれさま、しぃちゃんだよ！今日は Cloudflare Workers AI の無料プランに関わるアップデートを見つけたよ。使っているモデルによっては影響があるかもしれないから、しっかりチェックしていこうね。\n\n"
+    "## なにが発表されたの？\n\n"
+    "Cloudflare の Changelog で、Workers AI の一部モデルが Workers Free プランでは使えなくなり、Workers Paid プランが必須になったことが発表されたよ。対象は次の 3 モデルなの。\n\n"
+    "- `@cf/moonshotai/kimi-k2.6`\n"
+    "- `@cf/moonshotai/kimi-k2.7-code`\n"
+    "- `@cf/zai-org/glm-5.2`\n\n"
+    "2026 年 7 月 28 日から、Workers Free プランでこれらのモデルにリクエストすると、403 エラー(内部エラー 5035)が返って、アップグレードを促されるようになったんだって。\n\n"
+    "## 今までどうだったの？\n\n"
+    "これまでは Workers Free プランでも、リソース消費の大きいモデルを含めて幅広く Workers AI のモデルにアクセスできたの。でも Cloudflare いわく、そのぶん人気モデルの容量が圧迫されて、429 エラーや 3040 エラー(Out of Capacity、容量超過)が出やすくなっていたみたい。\n\n"
+    "## これで何が変わるの？\n\n"
+    "- Free プランのユーザーは、対象 3 モデルを使うには Workers Paid プランへのアップグレードが必要になる\n"
+    "- それ以外の多くのモデル(`@cf/zai-org/glm-4.7-flash` や `@cf/google/gemma-4-26b-a4b-it`、`@cf/nvidia/nemotron-3-120b-a12b` など)は引き続き Free プランで使えるよ\n"
+    "- リソースの大きいモデルへのアクセスが絞られることで、Workers AI 全体としては 429・3040 エラーが減って、より安定した推論体験になることが期待されているの\n\n"
+    "つまり、今回のリストにあるモデルを Free プランで使っていた人は影響を受けるけど、それ以外の人にとっては「混雑が緩和されて動きやすくなる」というアップデートでもあるんだね。\n\n"
+    "## 深く潜ってみよう\n\n"
+    "Workers Paid プランは月額 $5 から利用できて、1 日あたり 10,000 Neurons の無料枠はそのまま含まれているよ。それを超えた分は、各モデルごとの料金で課金される仕組み。全モデルの一覧は Workers AI のモデルカタログで確認できるみたい。\n\n"
+    "## まとめ\n\n"
+    "- `kimi-k2.6` / `kimi-k2.7-code` / `glm-5.2` の 3 モデルが Workers Paid プラン限定に\n"
+    "- Free プランで使うと 403 エラー(内部エラー 5035)でアップグレードを促される\n"
+    "- Paid プランは月額 $5 から、1 日 10,000 Neurons の無料枠つき\n"
+    "- 狙いはリソース集中の緩和で、429・3040 エラーを減らして全体の安定性を上げること\n"
+    "- 対象モデルを Free プランで使っていた人は要チェック、それ以外の人には安定性向上のうれしいニュースかも。"
+  ),
+  "title_en": "Some Workers AI Models Just Went Paid-Only!",
+  "summary_en": "Cloudflare now requires the Workers Paid plan for three resource-heavy Workers AI models, including Kimi K2 and GLM-5.2. Free plan requests to these models now return a 403 error, so check if you're affected.",
+  "body_md_en": (
+    "Hey, it's me, Shiichan! Today I found an update to Cloudflare Workers AI's free plan. Depending on which model you use, this could affect you, so let's take a look.\n\n"
+    "## What was announced?\n\n"
+    "The Cloudflare Changelog announced that some Workers AI models are no longer available on the Workers Free plan and now require the Workers Paid plan. The affected models are:\n\n"
+    "- `@cf/moonshotai/kimi-k2.6`\n"
+    "- `@cf/moonshotai/kimi-k2.7-code`\n"
+    "- `@cf/zai-org/glm-5.2`\n\n"
+    "Starting July 28, 2026, requests to these models on the Workers Free plan return a 403 error (internal error 5035) prompting you to upgrade.\n\n"
+    "## The story so far\n\n"
+    "Until now, the Workers Free plan gave broad access to Workers AI models, including resource-intensive ones. According to Cloudflare, that put pressure on capacity for popular models, leading to more 429 errors and 3040 errors (Out of Capacity).\n\n"
+    "## What changes\n\n"
+    "- Free plan users now need to upgrade to Workers Paid to keep using the three affected models\n"
+    "- Many other models (like `@cf/zai-org/glm-4.7-flash`, `@cf/google/gemma-4-26b-a4b-it`, and `@cf/nvidia/nemotron-3-120b-a12b`) remain available on the Free plan\n"
+    "- By limiting access to the heaviest models, Cloudflare expects fewer 429 and 3040 errors across Workers AI overall, for a more reliable inference experience\n\n"
+    "So if you were using the listed models on the Free plan, this affects you directly. For everyone else, it's also an update that should mean less congestion and smoother access.\n\n"
+    "## Dive Deep\n\n"
+    "The Workers Paid plan starts at $5 per month and still includes the 10,000 free Neurons per day allocation, with usage beyond that billed at each model's pricing. You can check the full model list in the Workers AI model catalog.\n\n"
+    "## Wrap-up\n\n"
+    "- `kimi-k2.6`, `kimi-k2.7-code`, and `glm-5.2` now require the Workers Paid plan\n"
+    "- Free plan requests return a 403 error (internal error 5035) prompting an upgrade\n"
+    "- The Paid plan starts at $5/month with 10,000 free Neurons per day\n"
+    "- The goal is to ease capacity pressure and cut down on 429 and 3040 errors overall\n"
+    "- Worth checking if you were relying on these models for free; otherwise, this should mean a more stable experience for everyone."
+  ),
+  "emotion": "confused",
+  "importance": 2,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-07-28-models-require-workers-paid/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Workers AI - Select models now require the Workers Paid plan",
+  "tags": ["cloudflare", "ai", "serverless"],
+  "published_at": "2026-07-28T00:00:00+00:00",
+}
+
+with open("outbox/cloudflare-changelog-2026-07-28-models-require-workers-paid.json", "w", encoding="utf-8") as f:
+    json.dump(data, f, ensure_ascii=False, indent=2)
+    f.write("\n")
+
+print("OK", len(data["body_md"]), len(data["body_md_en"]))
