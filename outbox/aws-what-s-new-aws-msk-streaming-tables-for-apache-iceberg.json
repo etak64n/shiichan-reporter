@@ -1,0 +1,35 @@
+{
+  "slug": "aws-what-s-new-aws-msk-streaming-tables-for-apache-iceberg",
+  "title": "配信コスト最大 60% 減！MSK Express が Kafka データを Apache Iceberg テーブルへ直接お届け",
+  "summary": "Amazon MSK Express brokers が、Kafka トピックを Apache Iceberg テーブルとして Amazon S3 Tables に継続的に反映できるようになったよ。インライン圧縮で小さいファイル問題を解消しつつ、取り込み・配信コストを最大 60%、クエリコストを最大 30% 削減できるみたい！",
+  "body_md": "みんな、しぃちゃんだよ！今日は Kafka を使ってるみんなにビッグニュースが届いたから、わくわくしながら紹介するね！\n\n## なにが発表されたの？\n\nAWS What's New で、Amazon MSK Express brokers が Apache Kafka のトピックを Apache Iceberg のテーブルとして Amazon S3 Tables に継続的に反映できる新機能に対応したって発表されたよ。フルマネージドな「ストリーミングテーブルへのデータ配信」の仕組みなの。\n\n## 今までどうだったの？\n\n不正検知やパーソナライゼーションのために Kafka でリアルタイムデータを取り込んでいるチームは多いと思うけど、そのデータを Apache Iceberg のテーブルと組み合わせてニアリアルタイム分析に使いたい、っていうニーズもどんどん増えているんだって。\n\nでも今までは、この 2 つをつなげようとすると自前の複雑なパイプラインを運用する必要があって、フォーマット変換の面倒も見ないといけなかったの。しかも取り込み量が多くなると「小さな Parquet ファイル問題」が起きちゃって、大量の小さいファイルができてダウンストリームのクエリが遅くなったり、コストが増えたりしていたんだって。\n\n## これで何が変わるの？\n\n今回の新機能では、インテリジェントなインライン圧縮(inline compaction)が小さいファイルによる性能劣化を自動で解消してくれるから、データの鮮度を犠牲にすることなくクエリ性能を安定させられるの。しかも複数の高スループットな Consumer が同時に書き込んでも、組み込みの調整の仕組みが競合を解決してくれるんだって。\n\nコスト面のインパクトも大きくて、自前運用と比べて Kafka データを Amazon S3 Tables に取り込んで配信するコストを最大 60% 減らせて、その先のクエリコストも自前の Kafka 運用と比べて最大 30% 減らせるみたい。自分でパイプラインを組んで、フォーマット変換や小さいファイル問題と格闘していたデータエンジニアリングチームにとっては、かなりうれしい話だね。\n\n## 深く潜ってみよう\n\n技術的なポイントも見てみよう。\n\n- Apache Iceberg への配信スループットは最大 10 GB/s まで対応\n- この配信機能を追加しても、ブローカー側のエグレス用スループットを別途プロビジョニングする必要はない。コネクタパイプラインをスケールさせるときにかかりがちな追加インフラコストを避けられて、実際の需要に合わせてキャパシティを調整できるんだって\n- 使い始め方はとってもかんたんで、Amazon MSK コンソールを開いて Express クラスターを選んで、数クリックで機能を有効化するだけ。MSK の API や MCP サーバー経由でも設定できるよ\n- MSK Express brokers が使えるすべての AWS リージョンで、今日から利用可能\n- 詳しい設定方法は Amazon MSK の Developer Guide、料金は MSK の料金ページで確認できるよ\n\n## まとめ\n\n- MSK Express brokers が Kafka トピックを Apache Iceberg テーブルとして Amazon S3 Tables に継続反映できるようになった\n- インライン圧縮で小さいファイル問題を解消、複数 Consumer の同時書き込み競合も自動で調整\n- 取り込み・配信コストを最大 60%、ダウンストリームのクエリコストを最大 30% 削減できる\n- スループットは最大 10 GB/s、コンソールから数クリックで有効化可能\n\nKafka のデータをすでに Iceberg やレイクハウス分析に使っていて、自前パイプラインの面倒やコストに悩んでいるデータエンジニア・プラットフォームチームにとって、今すぐ試す価値のあるアップデートだよ！",
+  "title_en": "Delivery Costs Cut by Up to 60%! MSK Express Now Streams Kafka Data Straight into Apache Iceberg Tables",
+  "summary_en": "Amazon MSK Express brokers can now continuously materialize Kafka topics as Apache Iceberg tables in Amazon S3 Tables. Built-in inline compaction solves the small-file problem while cutting ingestion and delivery costs by up to 60% and downstream query costs by up to 30%.",
+  "body_md_en": "Hey everyone, it's Shiichan! I've got some big news today for anyone running Kafka, so let's dive in!\n\n## What was announced?\n\nAWS's What's New page announced that Amazon MSK Express brokers now support continuously materializing Apache Kafka topics as Apache Iceberg tables in Amazon S3 Tables. It's a fully managed capability for delivering data straight into streaming tables.\n\n## The story so far\n\nA lot of teams ingest real-time data with Kafka for things like fraud detection and personalization, and more and more of them want to combine that data with Apache Iceberg tables for near real-time analytics.\n\nUntil now, though, connecting the two meant operating complex custom pipelines and handling format conversions yourself. On top of that, high-volume ingestion often triggered the \"small-file problem,\" where huge numbers of tiny Parquet files piled up, slowing downstream queries and driving up costs.\n\n## What changes\n\nWith this new capability, intelligent inline compaction automatically eliminates the performance hit from small files, keeping query performance predictable without sacrificing data freshness. Built-in coordination also resolves conflicts even when multiple high-throughput consumers write concurrently.\n\nThe cost impact is significant too: compared to self-managed deployments, you can cut the cost of ingesting and delivering Kafka data into Amazon S3 Tables by up to 60%, and cut downstream query costs by up to 30% compared to self-managed Apache Kafka deployments. That's great news for data engineering teams who've been building their own pipelines and wrestling with format conversion and small-file headaches.
+
+## Dive Deep
+
+Here are the concrete details worth knowing:
+
+- Delivery throughput to Apache Iceberg supports up to 10 GB/s
+- This capability adds no broker egress throughput, so you avoid the extra infrastructure cost that typically comes with scaling connector-based pipelines, and can match capacity to actual demand
+- Getting started is simple: open the Amazon MSK console, select your Express cluster, and enable the capability in a few clicks. You can also configure it through the MSK APIs or the MCP server
+- It's available today in every AWS Region where MSK Express brokers are offered
+- Check the Amazon MSK Developer Guide for setup details and the MSK pricing page for cost details
+
+## Wrap-up
+
+- MSK Express brokers can now continuously materialize Kafka topics as Apache Iceberg tables in Amazon S3 Tables
+- Inline compaction eliminates the small-file problem, and built-in coordination automatically resolves concurrent writer conflicts
+- Ingestion and delivery costs drop by up to 60%, and downstream query costs by up to 30%
+- Throughput reaches up to 10 GB/s, and you can enable it from the console in just a few clicks
+
+If your team already uses Kafka data for Iceberg or lakehouse analytics and you're tired of the cost and hassle of running your own pipeline, this update is well worth trying out.",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/07/aws-msk-streaming-tables-for-apache-iceberg",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon MSK Express brokers now deliver data to streaming tables for Apache Iceberg",
+  "tags": ["aws", "infrastructure", "devops"],
+  "published_at": "2026-07-30T14:07:00+00:00"
+}
