@@ -63,7 +63,17 @@ def purge_cache(published: int) -> None:
 
 
 def main() -> int:
-    files = sorted(glob.glob(os.path.join(OUTBOX_DIR, "*.json")))
+    # Underscore-prefixed files are scratch the generator left behind, never
+    # articles: the blog's slug schema is ^[a-z0-9]+(?:-[a-z0-9]+)*$, so a real
+    # article file can never start with one. Skipping them keeps a stray probe
+    # out of the retry loop -- a `{"test": true}` leftover once raised KeyError
+    # on every run for two days, since a failed file stays in the outbox to be
+    # retried and failed again.
+    files = [
+        p
+        for p in sorted(glob.glob(os.path.join(OUTBOX_DIR, "*.json")))
+        if not os.path.basename(p).startswith("_")
+    ]
     if not files:
         print("outbox is empty; nothing to post")
         return 0

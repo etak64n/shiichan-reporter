@@ -1,2 +1,7 @@
 work/
 __pycache__/
+# Scratch the generator writes next to its output (fetched HTML, one-off
+# validation scripts). Persist state does `git add outbox`, which committed
+# 75 such files before this rule. Real articles are outbox/<slug>.json and
+# slugs cannot start with an underscore.
+outbox/_*
