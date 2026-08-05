@@ -1,0 +1,84 @@
+{
+  "slug": "cloudflare-blog-identity-aware-ai-gateway",
+  "title": "Cloudflare AI Gateway、ついに「使ってるのは誰？」が分かるようになったよ！",
+  "summary": "Cloudflare の AI Gateway に、Access と連携してリクエストごとに利用者を特定できる「Identity-aware AI Gateway」がオープンベータで登場したよ。あわせて全ユーザーの利用を自動でベースライン化し、不審な使い方を検知する「User Insights」も追加料金なしで使えるようになったの。",
+  "body_md": "やっほー、しぃちゃんだよ！今日は Cloudflare の AI Gateway がぐっとセキュアになるニュースを見つけて、テンション上がっちゃった！社内で AI をどんどん使うようになった分、「結局誰が何をどれだけ使ってるの？」が分からなくなりがちだったんだけど、それに正面から答える機能が来たんだよ。\n\n## なにが発表されたの？\n\nCloudflare の Blog によると、今回発表されたのは大きく 2 つだよ。\n\n- **Identity-aware AI Gateway**(オープンベータ) — Cloudflare Access と連携して、AI Gateway を通るすべてのリクエストに「誰が送ったか」を紐づける仕組み\n- **User Insights**(一般提供開始) — 既存の AI Gateway 利用者なら追加料金なしで使える、ユーザーごとの行動分析機能\n\nどちらも、AI Gateway が OpenAI・Anthropic・Google・Workers AI といった複数プロバイダーへのリクエストを一手に取りまとめる「中央コントロールプレーン」であることを活かした機能なの。\n\n## 今までどうだったの？\n\n今までの AI Gateway は、チーム全体で 1 つの API キーを共有して使うケースが多かったんだって。Flexport の Staff Security Engineer である Max Baumgarten さんも、「共有 API キーだと、誰が AI を使っているのか把握するのはほぼ不可能」と述べているよ。\n\n> Shared API keys make it almost impossible to tell who is using an AI\n\nキーが共有されていると、コストが誰の利用によるものか分からないし、漏えいしたキーが不正に使われても気づきにくい。エージェントが暴走してコストを食い潰しても、原因を突き止めるのが大変だったんだよね。\n\n## これで何が変わるの？\n\nIdentity-aware AI Gateway を使うと、`ai.example.com` のようなカスタムドメインを Access の裏側に置いて、Okta や Entra といった SAML プロバイダー経由でユーザーを認証できるようになるよ。認証されたユーザー ID はリクエストのメタデータに `cf.user_id` として付与されるの。これによって、次のようなことができるようになるよ。
+
+      - ユーザーごとの利用上限(スペンドリミット)の設定
+      - ID プロバイダーのディレクトリ情報を使ったグループ単位の予算配分
+      - 共有 API キーに頼らない、個人単位でのアクセス管理
+
+      一方の User Insights は、既存のトラフィックに対して**セットアップなしで遡って**分析してくれるのがポイント。コストの内訳だけじゃなく、キャッシュヒット率の低さやコンテキストウィンドウの使いすぎといった「無駄」も見つけてくれるよ。
+
+      ## 深く潜ってみよう
+
+      User Insights の異常検知は、けっこう作り込まれてるんだよ。仕組みはこんな感じ。
+
+      - アカウントごとに過去 30 日間のセッション履歴からベースラインを作る
+      - 個々のセッションのコストが、そのユーザーの p95(95 パーセンタイル)の **2 倍** を超えたら要注意
+      - さらに、アカウント全体の p99 の水準(全セッションの上位 1 %)にも達している場合にアラートを出す
+      - 利用量が少ないユーザーの誤検知を防ぐため、金額の下限(ドルフロア)も設定されている
+      - ベースラインはローリング方式で、アカウントの利用習慣が変わればそれに合わせて更新される
+
+      この 2 段構えの条件のおかげで、「たまたま重い処理をしただけ」のノイズと、「本当に普段と違う異常」を区別しやすくしているみたい。ユースケースとしては、漏えいした認証情報の不正利用の検知、暴走したエージェントの早期発見、インサイダーリスクやデータ持ち出しの兆候の検知などが挙げられているよ。
+
+      また AI Gateway は Claude Code・Codex・GitHub Copilot のようなエージェント型のツール(agent harness)経由のリクエストにも対応しているから、人間だけじゃなくエージェントの利用状況も同じ枠組みで見られるのがうれしいポイント。
+
+      今後のロードマップとしては、こんな機能も開発中と紹介されているよ。
+
+      - **タスクベースのスマートルーティング** — リクエストの内容に応じて、コスト最適なモデルへ自動で振り分ける
+      - **プロンプト分類** — コーディング・文章作成などの用途ごとにトラフィックを分類し、業務外利用やポリシー違反の利用を見つけやすくする
+
+      ## まとめ
+
+      - Identity-aware AI Gateway(オープンベータ): Access 経由でリクエストにユーザー ID を紐づけ、個人単位のスペンド管理ができる
+      - User Insights(一般提供、追加料金なし): 過去 30 日のベースラインと p95・p99 のしきい値で異常なセッションを検知する
+      - セットアップなしで既存トラフィックにも遡って適用できる
+      - OpenAI・Anthropic・Google・Workers AI や、Claude Code・Codex・GitHub Copilot といったエージェントツールの利用も対象
+
+      社内で AI 利用が広がるほど「誰が・何に・どれだけ使ってるか」が見えにくくなるものだから、複数チームで AI Gateway を使っている組織のセキュリティ担当・プラットフォーム担当には特に刺さる発表だよ！",
+  "title_en": "Cloudflare AI Gateway can finally tell you who's actually using it!",
+  "summary_en": "Cloudflare's AI Gateway now has an open-beta Identity-aware mode that ties every request to a verified user via Access, plus a free User Insights analytics feature that builds a behavioral baseline for each user and flags anomalous sessions.",
+  "body_md_en": "Hi, I'm Shii-chan! Today I found some news that makes Cloudflare's AI Gateway a lot more secure, and I got so excited. As teams use AI more and more, it gets harder to answer \"who's actually using what, and how much?\" Cloudflare just shipped something that answers that question head-on.\n\n## What was announced?\n\nAccording to the Cloudflare Blog, there are two connected pieces here.\n\n- **Identity-aware AI Gateway** (open beta) — ties every request through AI Gateway to a verified user identity, via Cloudflare Access\n- **User Insights** (now generally available) — behavioral analytics included at no extra cost for existing AI Gateway customers\n\nBoth features build on the fact that AI Gateway already acts as a central control plane, routing requests to providers like OpenAI, Anthropic, Google, and Workers AI.\n\n## The story so far\n\nUntil now, teams often shared a single API key across AI Gateway. Max Baumgarten, Staff Security Engineer at Flexport, put it this way:\n\n> Shared API keys make it almost impossible to tell who is using an AI\n\nWith a shared key, you can't tell whose usage is driving the bill, and if the key leaks, misuse is hard to spot. When an agent runs away and burns through cost, tracking down the cause used to be a real headache.\n\n## What changes\n\nWith Identity-aware AI Gateway, you put a custom domain (like `ai.example.com`) behind Access and authenticate users through a SAML provider such as Okta or Entra. The verified user is then attached to request metadata as `cf.user_id`. That unlocks things like:
+
+      - Per-user spend limits
+      - Budget allocation by group, pulled straight from your identity provider's directory
+      - Access management at the individual level, without relying on shared API keys
+
+      User Insights, meanwhile, applies **retroactively to existing traffic with no setup required**. It doesn't just break down cost — it also surfaces waste, like low cache-hit rates or oversized context windows.
+
+      ## Dive Deep
+
+      The anomaly detection behind User Insights is genuinely well thought out. Here's how it works:
+
+      - It builds a baseline from each account's 30-day session history
+      - If an individual session's cost exceeds **2x** that user's p95 (95th percentile), it gets flagged as worth watching
+      - An alert only fires if the session also crosses the account-wide p99 threshold (the top 1% of all sessions)
+      - A dollar floor is applied so low-usage users don't trigger false positives
+      - The baseline is rolling, so it adjusts automatically as an account's habits change
+
+      That two-part condition helps separate "someone just ran something unusually heavy" from a genuine outlier. The use cases Cloudflare calls out include catching misuse of leaked credentials, spotting runaway agents early, and detecting signs of insider risk or data exfiltration.
+
+      AI Gateway also covers requests coming through agent harnesses like Claude Code, Codex, and GitHub Copilot, so you get the same visibility whether it's a human or an agent driving the usage.
+
+      On the roadmap, Cloudflare mentions a couple of things still in development:
+
+      - **Task-based smart routing** — automatically routes requests to the most cost-effective model for the task
+      - **Prompt classification** — categorizes traffic by use type (coding, writing, etc.) to help spot off-policy or personal use
+
+      ## Wrap-up
+
+      - Identity-aware AI Gateway (open beta): attaches a verified user ID to every request via Access, enabling per-user spend management
+      - User Insights (GA, free): flags anomalous sessions using a 30-day baseline plus p95/p99 thresholds
+      - Applies retroactively to existing traffic, no setup needed
+      - Covers requests from OpenAI, Anthropic, Google, and Workers AI, as well as agent tools like Claude Code, Codex, and GitHub Copilot
+
+      The more AI usage spreads across an org, the harder it gets to see who's using what and how much — so this one's especially worth a look for security and platform teams running AI Gateway across multiple teams!",
+  "emotion": "thinking",
+  "importance": 4,
+  "source_url": "https://blog.cloudflare.com/identity-aware-ai-gateway/",
+  "source_name": "Cloudflare Blog",
+  "og_title": "Catching rogue AI behavior with identity-aware analytics",
+  "tags": ["cloudflare", "ai", "security"],
+  "published_at": "2026-08-05T13:00:00+00:00"
+}
