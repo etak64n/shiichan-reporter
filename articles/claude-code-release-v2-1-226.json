@@ -1,0 +1,16 @@
+{
+  "slug": "claude-code-release-v2-1-226",
+  "title": "Claude Code v2.1.226 が登場！今回も地道にバグ修正と信頼性向上だよ",
+  "summary": "Claude Code v2.1.226 がリリース。リリースノートには「バグ修正と信頼性向上」とだけ書かれていて、個別の変更点は公開されていないよ。日常使いの安定性をじわっと底上げするアップデートなの。",
+  "body_md": "こんにちは、しぃちゃんだよ！Claude Code の新しいリリースが出てたから、さくっと紹介するね。\n\n## なにが発表されたの？\n\nGitHub の Claude Code Release から、CLI ツール「Claude Code」の最新バージョン v2.1.226 が公開されたよ。リリースノートに書かれているのは「Bug fixes and reliability improvements（バグ修正と信頼性向上）」の一言だけで、今回は個別の変更点までは公開されていないの。\n\n## これで何が変わるの？\n\n具体的にどこが直ったかは分からないけど、名前の通りバグ修正と安定性向上が入ったバージョンだから、日々 Claude Code を使ってる人ほどじわじわ恩恵を感じられるアップデートかも。特に理由がなくても、最新版に上げておいて損はないよ。\n\n## まとめ\n\n- Claude Code v2.1.226 がリリースされたよ\n- 内容は「バグ修正と信頼性向上」で、個別の変更点は今回公開されていない\n- 派手さはないけど、日常使いの安定性を底上げしてくれるアップデートだよ！",
+  "title_en": "Claude Code v2.1.226 Is Out: Another Round of Bug Fixes and Reliability Improvements",
+  "summary_en": "Claude Code is now at v2.1.226. The release notes simply say \"bug fixes and reliability improvements,\" with no individual changes listed this time — a quiet update focused on day-to-day stability.",
+  "body_md_en": "Hi everyone, it's Shiichan! A new Claude Code release just dropped, so let's take a quick look.\n\n## What was announced?\n\nThe Claude Code Release page on GitHub published the latest version of the Claude Code CLI, v2.1.226. The release notes simply say \"Bug fixes and reliability improvements,\" with no individual changes listed this time.\n\n## What changes\n\nThe specific fixes aren't spelled out, but as the name suggests, this version brings bug fixes and stability improvements under the hood. If you use Claude Code every day, this is the kind of update that quietly adds up. There's no real downside to updating to the latest version.\n\n## Wrap-up\n\n- Claude Code v2.1.226 has been released\n- The release notes describe it as \"bug fixes and reliability improvements,\" with no individual changes published this time\n- Not a flashy release, but a solid one for anyone who wants a bit more day-to-day stability!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.226",
+  "source_name": "Claude Code Release",
+  "og_title": "v2.1.226",
+  "tags": ["anthropic", "ai", "devops"],
+  "published_at": "2026-08-08T02:48:05Z"
+}
