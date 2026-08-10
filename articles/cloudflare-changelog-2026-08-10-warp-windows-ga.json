@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-08-10-warp-windows-ga",
+  "title": "Cloudflare One Client（Windows 版）、スリープ復帰後の再接続トラブルを解消！",
+  "summary": "Cloudflare One Client の Windows 版がバージョン 2026.6.905.0 に更新され、スリープから復帰したあとにまれに再接続できなくなる問題が修正されたよ。地味だけど、Windows で Cloudflare One を使っている人には嬉しいアップデートだね。",
+  "body_md": "みんな、しぃちゃんだよ！今日は Cloudflare One Client の地味だけど確実に嬉しいアップデートを見つけたよ。派手さはないけど、困っていた人にはきっと刺さる話だよ。\n\n## なにが発表されたの？\n\nCloudflare の Changelog から、Windows 版 Cloudflare One Client の新しい GA リリース（バージョン 2026.6.905.0）が公開されたよ。安定版のダウンロードページからすぐに入手できるの。\n\n今回はホットフィックス寄りのリリースで、Windows デバイスがスリープから復帰したあとに、まれに再接続できなくなる問題を修正したのが今回のポイントだよ。\n\n## 今までどうだったの？\n\nこれまでの Windows 版クライアントには、頻繁ではないものの、デバイスをスリープさせてから起こしたときに、Cloudflare One のトンネルにうまく再接続できないことがあったの。たまにしか起きない分、原因の特定も大変だったはずだよ。いざ発生すると、社内ネットワークや Zero Trust 経由のリソースへのアクセスが切れたまま気づかない、なんてことも起こり得たんだよね。\n\n## これで何が変わるの？\n\n今回のアップデートを入れれば、この「スリープ復帰後に繋がらない」問題が解消されるよ。ノート PC を閉じて持ち歩いて、また開いたときにすぐネットワークへ繋がってほしい……そんな Windows ユーザーには地味に嬉しい修正だね。特に Cloudflare One 経由で社内リソースにアクセスしている人にとっては、見えないところで安心感が増すアップデートだよ。\n\n## まとめ\n\n- Cloudflare One Client for Windows がバージョン 2026.6.905.0 に更新されたよ。\n- スリープから復帰したあとに、まれに再接続できなくなる問題を修正。\n- 安定版ダウンロードページから最新版を入手できるよ。\n- Windows で Cloudflare One を使っている人向けの、地味だけど嬉しいメンテナンスアップデートだよ。",
+  "title_en": "Cloudflare One Client for Windows Fixes a Sleep/Reconnect Bug",
+  "summary_en": "Cloudflare One Client for Windows has been updated to version 2026.6.905.0, fixing a rare issue where devices couldn't reconnect after waking from sleep. It's a small but welcome fix for anyone relying on Cloudflare One on Windows.",
+  "body_md_en": "Hey everyone, it's me, Shiichan! Today I found a small but genuinely nice update to the Cloudflare One Client. It's not flashy, but it should land well with anyone who's run into this.\n\n## What was announced?\n\nFrom Cloudflare's Changelog: a new GA release of the Cloudflare One Client for Windows (version 2026.6.905.0) is now available on the stable releases downloads page.\n\nThis is more of a hotfix-style release. The main point is that it addresses an uncommon and intermittent case where Windows devices were unable to reconnect after waking from sleep.\n\n## The story so far\n\nUntil now, the Windows client occasionally had trouble reconnecting to the Cloudflare One tunnel after a device woke up from sleep. It wasn't a frequent issue, which probably made it tricky to pin down in the first place. When it did happen, you could end up disconnected from internal network or Zero Trust resources without immediately noticing.\n\n## What changes\n\nWith this update installed, that \"can't reconnect after sleep\" problem goes away. If you close your laptop, carry it somewhere, and expect it to reconnect the moment you open it again, this is a quiet but welcome fix. It especially helps anyone accessing internal resources through Cloudflare One, giving a bit more peace of mind behind the scenes.\n\n## Wrap-up\n\n- Cloudflare One Client for Windows has been updated to version 2026.6.905.0.\n- Fixes a rare issue where devices couldn't reconnect after waking from sleep.\n- The latest build is available on the stable releases downloads page.\n- A quiet but welcome maintenance update for anyone using Cloudflare One on Windows.",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-08-10-warp-windows-ga/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Cloudflare One Client - Cloudflare One Client for Windows (version 2026.6.905.0)",
+  "tags": [
+    "cloudflare",
+    "infrastructure",
+    "security"
+  ],
+  "published_at": "2026-08-10T20:28:46+00:00"
+}
