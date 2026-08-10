@@ -89,7 +89,13 @@ def main() -> int:
         name = os.path.basename(path)
         try:
             with open(path) as f:
-                article = json.load(f)
+                # strict=False tolerates raw newlines inside string values. The
+                # generator writes them unescaped often enough that a strict
+                # parse jams the whole pipeline: the bad file stays in the
+                # outbox, and the generator skips entries that already have an
+                # outbox file, so it is never regenerated either. post_article
+                # re-serializes with json.dumps, so the wire format stays valid.
+                article = json.loads(f.read(), strict=False)
             # Stale leftover from an earlier partially-failed run: the same
             # source_url was already published (possibly under another slug)
             if normalize_url(article["source_url"]) in seen:
