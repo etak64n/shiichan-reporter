@@ -71,8 +71,10 @@ jobs:
           claude_args: "--allowedTools WebFetch,WebSearch,Bash(curl:*),Read,Write,Glob,Grep --max-turns 100"
 
       # ③ ブログ入稿 API へ POST(OIDC トークンはこのステップ内で発行)
+      # 新着ゼロの回もあえて実行する。前回失敗して outbox に残った記事は、
+      # has_new で絞ると「次に新着が出るまで」再送されない。outbox が空の回は
+      # OIDC トークンを取る前に即 return するので、実質ノーコスト
       - name: Post to blog
-        if: steps.diff.outputs.has_new == 'true'
         env:
           BLOG_API_URL: https://blog.shiichan.etak64n.dev
           # Purge the edge cache after publishing so list pages update instantly.
