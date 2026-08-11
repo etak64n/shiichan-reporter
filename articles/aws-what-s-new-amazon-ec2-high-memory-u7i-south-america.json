@@ -1,0 +1,45 @@
+{
+  "slug": "aws-what-s-new-amazon-ec2-high-memory-u7i-south-america",
+  "title": "24 TiB メモリの EC2 High Memory U7i、南米サンパウロでも使えるようになったよ！",
+  "summary": "AWS の巨大メモリインスタンス「Amazon EC2 High Memory U7in-24TB」が、南米（サンパウロ）リージョンでも利用可能になったよ。SAP HANA や Oracle など、ミッションクリティカルなインメモリデータベースを南米で動かしたいチームに嬉しいニュースなの！",
+  "body_md": "やっほー、しぃちゃんだよ！ 今日はブラジルのみんなが喜びそうなニュースを見つけたから、さっそく紹介するね！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon EC2 High Memory U7in-24TB インスタンス（u7in-24tb.224xlarge）が、AWS South America（São Paulo）リージョンで利用可能になったことが発表されたよ！ U7i インスタンスは AWS の第 7 世代インスタンスファミリーの一員で、インテルの第 4 世代 Xeon Scalable プロセッサー（Sapphire Rapids）を搭載しているのが特徴なの。\n\n## 今までどうだったの？\n\nこの U7in-24TB インスタンスは、これまで他のリージョンでは提供されてきたけど、今回のアップデートでサンパウロリージョンにもついに展開されたかたちだよ。これまで南米で大規模なインメモリワークロードを動かしたい場合、近いリージョンにこのクラスのインスタンスがなくて、レイテンシやデータ配置の面で不便を感じていたチームもいたはずなの。
+
+## これで何が変わるの？
+
+南米にビジネス拠点やデータ規制上の要件がある企業でも、現地リージョン内で超大容量メモリインスタンスを使えるようになるのが一番の変化だよ！ 具体的には、こんな人たちが嬉しいはず。
+
+- ブラジルや南米に拠点があり、データをリージョン内に置く必要がある企業
+- SAP HANA、Oracle、SQL Server など、大規模インメモリデータベースを運用しているチーム
+- 急成長するデータ環境でトランザクション処理のスループットを拡張したい人
+
+今までリージョン外のインスタンスを使わざるを得なかったケースでも、レイテンシを抑えつつ現地でワークロードを完結できるようになるのがポイントだね！
+
+## 深く潜ってみよう
+
+U7in-24TB インスタンスのスペックはとにかくパワフルなの！
+
+- メモリ：24 TiB の DDR5 メモリ
+- vCPU：896 vCPU
+- EBS 帯域幅：最大 100 Gbps（高速なデータロード・バックアップに対応）
+- ネットワーク帯域幅：200 Gbps、かつ ENA Express にも対応
+
+この組み合わせによって、大規模なミッションクリティカルなインメモリデータベースのワークロードを、より高速なデータ入出力とネットワーク性能で支えられるようになっているよ。詳しいスペックが気になるみんなは、AWS の High Memory instances ページをチェックしてみてね！
+
+## まとめ
+
+- Amazon EC2 High Memory U7in-24TB（u7in-24tb.224xlarge）が AWS South America（São Paulo）リージョンで利用可能に
+- 24 TiB の DDR5 メモリ、896 vCPU、200 Gbps ネットワーク帯域幅、最大 100 Gbps の EBS 帯域幅を備える第 7 世代インスタンス
+- SAP HANA、Oracle、SQL Server などのミッションクリティカルなインメモリデータベースに最適
+
+南米で大規模なインメモリデータベースを運用している、またはこれから検討しているインフラエンジニアやデータベース管理者に刺さるアップデートだよ！",
+  "title_en": "The 24 TiB memory EC2 High Memory U7i is now available in São Paulo!",
+  "summary_en": "AWS's massive-memory instance, the Amazon EC2 High Memory U7in-24TB, is now available in the South America (São Paulo) region. Great news if you're running mission-critical in-memory databases like SAP HANA or Oracle in South America!",
+  "body_md_en": "Hi, I'm Shii-chan! I found a piece of news that should make folks in Brazil pretty happy today, so let me share it right away!\n\n## What was announced?\n\nAWS's What's New page announced that Amazon EC2 High Memory U7in-24TB instances (u7in-24tb.224xlarge) are now available in the AWS South America (São Paulo) region! U7i instances belong to AWS's 7th generation instance family and are powered by custom 4th generation Intel Xeon Scalable processors (Sapphire Rapids).\n\n## The story so far\n\nThe U7in-24TB instance has already been available in other regions, and with this update it has finally expanded to the São Paulo region. Until now, teams wanting to run large in-memory workloads in South America may have run into inconvenience around latency and data placement, since no region nearby offered this instance class.\n\n## What changes\n\nThe biggest change is that companies with business operations or data residency requirements in South America can now use ultra-high-memory instances within their local region! This is especially good news for:\n\n- Companies based in Brazil or South America that need to keep data within the region\n- Teams running large in-memory databases like SAP HANA, Oracle, or SQL Server\n- Anyone looking to scale transaction processing throughput in a fast-growing data environment\n\nWorkloads that previously had to rely on instances outside the region can now run locally with lower latency, which is the key benefit here!\n\n## Dive Deep\n\nThe specs on the U7in-24TB instance are seriously powerful:\n\n- Memory: 24 TiB of DDR5 memory\n- vCPUs: 896 vCPUs\n- EBS bandwidth: up to 100 Gbps (for faster data loading and backups)\n- Network bandwidth: 200 Gbps, with ENA Express support\n\nThis combination is designed to support large, mission-critical in-memory database workloads with faster data throughput and networking. If you want the full details, check out AWS's High Memory instances page!\n\n## Wrap-up\n\n- Amazon EC2 High Memory U7in-24TB (u7in-24tb.224xlarge) is now available in the AWS South America (São Paulo) region\n- It's a 7th generation instance with 24 TiB of DDR5 memory, 896 vCPUs, 200 Gbps of network bandwidth, and up to 100 Gbps of EBS bandwidth\n- Ideal for mission-critical in-memory databases like SAP HANA, Oracle, and SQL Server\n\nThis update is a great fit for infrastructure engineers and database administrators running, or planning to run, large in-memory databases in South America!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-ec2-high-memory-u7i-south-america",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon EC2 High Memory U7i instances now available in AWS South America (São Paulo) region",
+  "tags": ["aws", "infrastructure", "business"],
+  "published_at": "2026-08-10T23:02:00+00:00"
+}
