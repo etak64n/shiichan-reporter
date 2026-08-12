@@ -1,0 +1,16 @@
+{
+  "slug": "aws-what-s-new-amazon-connect-agent-callbacks",
+  "title": "Amazon Connect、エージェントが折り返し電話を自分で選べるようになったよ！",
+  "summary": "Amazon Connect Customer で、キューに入ったエージェント起点の折り返し電話（コールバック）を、エージェント自身が確認して自分に割り当てられるようになったよ。メール・タスク・チャットと同じ画面から選べるの。",
+  "body_md": "こんにちは、しぃちゃんだよ！コンタクトセンターで働く人にうれしいアップデートを見つけたよ！\n\n## なにが発表されたの？\n\nAWS What's New で、Amazon Connect Customer にキューに入ったエージェント起点のコールバック（折り返し電話）を、エージェントが自分で確認して自分に割り当てられる機能が追加されたって発表されたよ。メール・タスク・チャットと並んで、同じ画面からコールバックも扱えるようになったの。\n\n## 今までどうだったの？\n\n折り返し電話の担当を選ぶ仕組みが今までどうだったのかは、原文には詳しく書かれてなかったよ。ただ今回の発表で、コールバックをエージェント自身が能動的に選べる形になったのは、はっきり書かれてる新しいポイントなの。\n\n## これで何が変わるの？\n\nお客さんの状況をすでに把握しているエージェントが、自分でそのコールバックを引き受けられるようになるから、別の人への引き継ぎが 1 回減るの。担当が変わることで起きがちな説明のロスがなくなって、問題解決までのスピードも上がるんだって。すぐにフォローが必要な案件や、自分がすでに背景を知ってる案件を優先して拾えるようになるのがポイントだよ。\n\nこの機能は、Amazon Connect Customer が利用できるすべての AWS リージョンで使えるよ。\n\n## まとめ\n\n- Amazon Connect Customer で、キューに入ったエージェント起点のコールバックをエージェントが自分で確認・割り当てできるように\n- メール・タスク・チャットと同じ画面から扱えるので、担当の引き継ぎ回数が減って解決も早くなる\n- 全リージョンで利用可能\n\nコンタクトセンターの現場でフォロー漏れや引き継ぎのロスを減らしたい運用担当さんにぴったりのアップデートだよ！",
+  "title_en": "Amazon Connect lets agents pick their own callbacks now!",
+  "summary_en": "Amazon Connect Customer now lets agents view and self-assign queued agent-first callbacks, right alongside emails, tasks, and chats.",
+  "body_md_en": "Hi everyone, it's Shiichan! Here's an update that should make life easier for contact center teams.\n\n## What was announced?\n\nOn AWS What's New, it was announced that Amazon Connect Customer now lets agents view and self-assign queued agent-first callbacks. Callbacks now show up alongside emails, tasks, and chats in the same worklist.\n\n## The story so far\n\nThe original announcement doesn't go into detail about how callback assignment worked before. What's clearly new here is that agents can now actively pick up a callback themselves instead of just waiting for one to be assigned.\n\n## What changes\n\nAn agent who's already familiar with a customer's issue can now assign that callback to themselves, cutting out an extra handoff. That avoids the context loss that often comes with a handoff and helps resolve the issue faster. Agents can prioritize callbacks that need immediate follow-up, or ones where they already have relevant context.\n\nThis is available in all AWS Regions where Amazon Connect Customer is available.\n\n## Wrap-up\n\n- Amazon Connect Customer now lets agents view and self-assign queued agent-first callbacks\n- They show up alongside emails, tasks, and chats, cutting handoffs and speeding up resolution\n- Available in all AWS Regions where Amazon Connect Customer is available\n\nThis one's for contact center ops teams looking to cut down on dropped follow-ups and handoff friction!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-connect-agent-callbacks/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Connect Customer supports manual assignment of queued agent-first callbacks",
+  "tags": ["aws", "business"],
+  "published_at": "2026-08-12T17:15:00+00:00"
+}

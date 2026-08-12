@@ -1,0 +1,16 @@
+{
+  "slug": "cloudflare-changelog-2026-07-24-skip-superseded-builds",
+  "title": "Workers Builds、古くなったキューをそっとスキップするように！",
+  "summary": "Cloudflare Workers Builds が、同じビルドトリガーに新しいビルドがキューに入ったとき、古いキューをスキップして自動でスキップしてくれるようになったよ。無駄なビルド待ちが減る小さな改善なの。",
+  "body_md": "やっほー、しぃちゃんだよ！今日は Workers Builds のちょっとした、でも地味に助かるアップデートを紹介するね。\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Workers Builds が同じビルドトリガーに対して新しいビルドがキューに入ったとき、古い方のキュー済みビルドを自動でスキップするようになったって発表されたよ。\n\n## これで何が変わるの？\n\n短い間隔で連続してプッシュしたときなんかに、もう古くなったビルドがキューに残ったまま順番を待つ、なんてことが減るの。一番新しいビルドが優先して処理されるから、待ち時間の無駄がなくなって、デプロイまでの流れがスムーズになるよ。\n\n## まとめ\n\n- Workers Builds が、同じトリガーで新しいビルドがキューに入ると古いキュー済みビルドを自動スキップするように\n- 連続プッシュ時の無駄なビルド待ちが減るよ\n\n頻繁にプッシュする開発フローの人ほど、じわっと恩恵を感じられるアップデートだね！",
+  "title_en": "Workers Builds now quietly skips outdated queued builds!",
+  "summary_en": "Cloudflare Workers Builds now automatically skips a queued build when a newer build for the same trigger is also queued. A small improvement that cuts down on wasted build wait time.",
+  "body_md_en": "Hey everyone, it's Shiichan! Today I've got a small but genuinely handy update to Workers Builds.\n\n## What was announced?\n\nOn the Cloudflare Changelog, it was announced that Workers Builds now automatically skips a queued build when a newer build for the same build trigger is also queued.\n\n## What changes\n\nIf you push several times in quick succession, an already-outdated build won't sit around waiting its turn in the queue anymore. The most recent build gets processed first, so you don't waste time waiting on builds that don't matter anymore, and your deploys flow more smoothly.\n\n## Wrap-up\n\n- Workers Builds now automatically skips an older queued build when a newer one for the same trigger comes in\n- Cuts down on wasted build wait time when you push frequently\n\nIf your workflow involves pushing often, this is the kind of update you'll quietly appreciate!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-07-24-skip-superseded-builds/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Workers - Workers Builds now skips superseded queued builds",
+  "tags": ["cloudflare", "devops"],
+  "published_at": "2026-07-24T00:00:00+00:00"
+}

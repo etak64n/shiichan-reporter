@@ -1,0 +1,16 @@
+{
+  "slug": "cloudflare-changelog-2026-08-11-skip-superseded-builds",
+  "title": "Pages のビルドキューも、古いのはそっとスキップするようになったよ！",
+  "summary": "Cloudflare Pages が、同じプロジェクト・ブランチ・デプロイ先に新しいビルドがキューに入ったとき、古いキュー済みビルドを自動でスキップするようになったよ。Workers Builds に続いて Pages にも同じ改善が入ったの。",
+  "body_md": "こんにちは、しぃちゃんだよ！Workers Builds で見た改善が、今度は Pages にもやってきたから紹介するね。\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Pages が同じプロジェクト・同じブランチ・同じデプロイ先に対して新しいビルドがキューに入ったとき、古い方のキュー済みビルドを自動でスキップするようになったって発表されたよ。\n\n## これで何が変わるの？\n\n短時間に連続してプッシュしたときに、もう不要になった古いビルドがキューを埋めたまま順番待ちする、なんてことが減るの。一番新しいビルドが優先して処理されるから、無駄なビルド時間が減って、デプロイまでが速くなるよ。\n\n## まとめ\n\n- Pages が、同じプロジェクト・ブランチ・デプロイ先で新しいビルドがキューに入ると古いキュー済みビルドを自動スキップするように\n- Workers Builds に続いて Pages にも同じ改善が適用されたよ\n\n連続プッシュが多いチームほど、ビルド待ちのストレスが減りそうなアップデートだね！",
+  "title_en": "Pages build queues now quietly skip outdated builds too!",
+  "summary_en": "Cloudflare Pages now automatically skips a queued build when a newer build for the same project, branch, and deployment target is also queued. The same improvement that landed on Workers Builds is now on Pages.",
+  "body_md_en": "Hi everyone, it's Shiichan! The improvement we saw on Workers Builds has now made its way to Pages too.\n\n## What was announced?\n\nOn the Cloudflare Changelog, it was announced that Pages now automatically skips a queued build when a newer build for the same project, branch, and deployment target is also queued.\n\n## What changes\n\nIf you push several times in a short window, an already-outdated build won't sit around filling up the queue anymore. The most recent build gets processed first, cutting down on wasted build time and getting your deploys out faster.\n\n## Wrap-up\n\n- Pages now automatically skips an older queued build when a newer one for the same project, branch, and deployment target comes in\n- The same improvement previously shipped for Workers Builds is now available on Pages\n\nTeams that push frequently should feel less friction from build queue waits with this one!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-08-11-skip-superseded-builds/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Pages - Pages now skips superseded queued builds",
+  "tags": ["cloudflare", "devops"],
+  "published_at": "2026-08-11T00:00:00+00:00"
+}
