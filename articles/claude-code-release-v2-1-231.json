@@ -1,0 +1,16 @@
+{
+  "slug": "claude-code-release-v2-1-231",
+  "title": "Claude Code v2.1.231、Slack など MCP OAuth のサインイン失敗を解消！",
+  "summary": "Claude Code v2.1.231 がリリース。Slack のように事前登録された OAuth クライアントを使う MCP サーバーで、サインインがリダイレクト URI 不一致で失敗する不具合が修正されたよ。",
+  "body_md": "やっほー、しぃちゃんだよ！Claude Code の新しいリリースが出てたから、さくっと紹介するね。\n\n## なにが発表されたの？\n\nGitHub の Claude Code Release によると、Claude Code の **v2.1.231** がリリースされたよ。今回のリリースノートに書かれている変更点は 1 件だけ。Slack のように事前登録された OAuth クライアントを使う MCP サーバーに対して、MCP OAuth のサインインがリダイレクト URI の不一致で失敗していた不具合の修正だよ。\n\n## 今までどうだったの？\n\nMCP サーバーの中には、Slack のようにあらかじめ OAuth クライアントが登録済みで、コールバック先のリダイレクト URI も固定されているタイプのものがあるの。こういうサーバーに Claude Code から OAuth 連携しようとすると、Claude Code 側が使うリダイレクト URI とサーバー側に登録済みの URI が一致せず、サインインの途中で失敗してしまうケースがあったよ。\n\n## これで何が変わるの？\n\n今回の修正で、事前登録された OAuth クライアントを使う MCP サーバーとも、リダイレクト URI の不一致なくサインインできるようになったよ。Slack など、この種の MCP サーバーを Claude Code に接続しようとして認証エラーにぶつかってたチームは、アップデートすればつまずかずに連携できるようになるはずなの。\n\n## まとめ\n\n- Claude Code v2.1.231 がリリースされたよ\n- 事前登録された OAuth クライアントを使う MCP サーバー(Slack など)で、サインインがリダイレクト URI 不一致で失敗する不具合を修正\n- 該当する MCP サーバーを使ってるチームは、アップデートしておくと安心だよ！",
+  "title_en": "Claude Code v2.1.231 Fixes MCP OAuth Sign-in Failures for Servers Like Slack",
+  "summary_en": "Claude Code v2.1.231 is out, fixing a bug where MCP OAuth sign-in failed with a redirect URI mismatch for servers that use a pre-registered OAuth client, such as Slack.",
+  "body_md_en": "Hey everyone, it's Shiichan! There's a new Claude Code release out, so let's take a quick look.\n\n## What was announced?\n\nAccording to the Claude Code Release notes on GitHub, **v2.1.231** just shipped. This release lists just one change: a fix for MCP OAuth sign-in failing with a redirect URI mismatch on servers that use a pre-registered OAuth client, such as Slack.\n\n## The story so far\n\nSome MCP servers, like Slack, use an OAuth client that's registered ahead of time, with a fixed callback redirect URI on the server side. When Claude Code tried to complete OAuth sign-in against a server like that, the redirect URI it used could mismatch the one already registered on the server, causing sign-in to fail partway through.\n\n## What changes\n\nWith this fix, sign-in now completes successfully against MCP servers that use a pre-registered OAuth client, without the redirect URI mismatch. If your team was hitting auth errors connecting Claude Code to a server like Slack, updating should clear that up.\n\n## Wrap-up\n\n- Claude Code v2.1.231 has been released\n- Fixed MCP OAuth sign-in failing with a redirect URI mismatch for servers with a pre-registered OAuth client (like Slack)\n- If you connect to one of these MCP servers, it's worth updating!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.231",
+  "source_name": "Claude Code Release",
+  "og_title": "v2.1.231",
+  "tags": ["anthropic", "devops", "security"],
+  "published_at": "2026-08-13T08:38:50Z"
+}
