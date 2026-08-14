@@ -1,0 +1,20 @@
+{
+ "slug": "aws-what-s-new-amazon-rds-oracle-apex-26-1",
+ "title": "RDS for Oracle に Oracle APEX 26.1 が仲間入り！",
+ "summary": "Amazon RDS for Oracle が Oracle Application Express（APEX）バージョン 26.1 に対応したよ。RDS for Oracle が使えるすべてのリージョンで、マネージドのまま最新の APEX を使えるようになったの。",
+ "body_md": "みんな、しぃちゃんだよ！今日は Oracle 系のデータベースを使ってるエンジニアさんに届けたいニュースがあるよ。\n\n## なにが発表されたの？\n\nAWS の What's New で発表されたのは、**Amazon RDS for Oracle が Oracle Application Express（APEX）バージョン 26.1 に対応した**というお知らせだよ。\n\nAmazon RDS for Oracle は、クラウド上での Oracle Database の構築・運用・スケーリングをかんたんにしてくれるマネージドサービス。そこで使える Oracle APEX が最新の 26.1 になったの。APEX は、モダンな UI を備えたエンタープライズ向けアプリケーションを、ローコードでサクッと作れる開発プラットフォームだよ。\n\n## 今までどうだったの？\n\nRDS for Oracle は以前から Oracle APEX をサポートしてきたけど、これまで選べる対応バージョンには今回の 26.1 は含まれていなかったよ。今回のアップデートで、対応バージョンのラインナップに最新の 26.1 が加わった形だね。\n\n## これで何が変わるの？\n\nRDS for Oracle を使っているデータベース管理者・開発者は、マネージドサービスの手軽さはそのままに、最新版の Oracle APEX でアプリを作れるようになるよ。自前で APEX のバージョンを用意したり入れ替えたりする手間をかけずに、新しいバージョンに乗り換えられるのがうれしいポイントだね。\n\n## 深く潜ってみよう\n\nAPEX 26.1 自体にどんな新機能があるかは、Oracle 公式の APEX 26.1 リリースドキュメントに詳しくまとまっているよ。RDS for Oracle 側で対応バージョンを追加・変更する手順は、Amazon RDS for Oracle APEX のドキュメントを見てね。\n\n対応リージョンは、**Amazon RDS for Oracle が利用可能なすべての AWS リージョン**。料金や各リージョンでの対応状況は、Amazon RDS for Oracle の料金ページで確認できるよ。\n\n## まとめ\n\n- Amazon RDS for Oracle が Oracle APEX バージョン 26.1 に対応\n- 対応リージョンは RDS for Oracle が使える全リージョン\n- APEX 26.1 の新機能は Oracle 公式ドキュメント、対応バージョンの追加・変更方法は RDS for Oracle の APEX ドキュメントを参照\n- 料金・リージョン対応状況は RDS for Oracle の料金ページで確認可能\n\nRDS for Oracle の上で Oracle APEX を使ってエンタープライズアプリを作っている開発者・DBA さんにうれしいアップデートだよ！",
+ "title_en": "RDS for Oracle Welcomes Oracle APEX 26.1!",
+ "summary_en": "Amazon RDS for Oracle now supports Oracle Application Express (APEX) version 26.1. You can use the latest APEX as a fully managed service in every region where RDS for Oracle is available.",
+ "body_md_en": "Hey everyone, it's me! Today I've got news for anyone running Oracle databases.\n\n## What was announced?\n\nOver on AWS What's New, AWS announced that **Amazon RDS for Oracle now supports Oracle Application Express (APEX) version 26.1**.\n\nAmazon RDS for Oracle is a managed service that makes it simple to set up, operate, and scale Oracle Database in the cloud. The APEX version available on it is now the latest, 26.1. Oracle APEX is a low-code development platform for building enterprise applications with modern user interfaces.\n\n## The story so far\n\nRDS for Oracle has supported Oracle APEX for a while, but version 26.1 wasn't part of the supported lineup until now. This update adds the latest 26.1 to the list of versions you can choose.\n\n## What changes\n\nIf you're a database admin or developer running RDS for Oracle, you can now build with the latest version of Oracle APEX while keeping all the convenience of a managed service. You don't need to set up or swap in the new APEX version yourself; you can just move to it.\n\n## Dive Deep\n\nFor what's new in APEX 26.1 itself, Oracle's official APEX 26.1 release documentation has the details. For how to add or change the supported APEX version on RDS for Oracle, check the Amazon RDS for Oracle APEX documentation.\n\nThis is available in **every AWS region where Amazon RDS for Oracle is available**. You can check pricing and regional availability on the Amazon RDS for Oracle pricing page.\n\n## Wrap-up\n\n- Amazon RDS for Oracle now supports Oracle APEX version 26.1\n- Available in every region where RDS for Oracle is available\n- See Oracle's official docs for what's new in APEX 26.1, and the RDS for Oracle APEX docs for how to add or change versions\n- Check the RDS for Oracle pricing page for pricing and regional availability\n\nThis one's a nice update for developers and DBAs building enterprise apps with Oracle APEX on top of RDS for Oracle!",
+ "emotion": "happy",
+ "importance": 3,
+ "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-rds-oracle-apex-26-1/",
+ "source_name": "AWS What's New",
+ "og_title": "Amazon RDS for Oracle now supports Oracle Application Express (APEX) version 26.1",
+ "tags": [
+  "aws",
+  "infrastructure",
+  "devops"
+ ],
+ "published_at": "2026-08-14T15:00:00+00:00"
+}
