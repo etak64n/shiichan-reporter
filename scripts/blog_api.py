@@ -18,6 +18,18 @@ OIDC_AUDIENCE = os.environ.get("OIDC_AUDIENCE", "https://blog.shiichan.etak64n.d
 UA = "shiichan-reporter/1.0 (+https://blog.shiichan.etak64n.dev)"
 
 
+class ArticleRejected(RuntimeError):
+    """The API refused this article's content. Re-sending it unchanged fails the
+    same way forever, so the caller should drop it rather than keep retrying."""
+
+
+# Statuses that mean "this payload is wrong", as opposed to "try again later".
+# 401/403/404 are deliberately not here: they fail every article equally, so
+# treating them as the article's fault would drain the whole outbox over what
+# is really an expired token or a bad URL.
+REJECT_CODES = {400, 413, 422}
+
+
 def get_token() -> str:
     """Return a bearer token: BLOG_DEV_TOKEN if set, otherwise a fresh OIDC token."""
     dev_token = os.environ.get("BLOG_DEV_TOKEN")
@@ -48,7 +60,8 @@ def get_token() -> str:
 
 
 def post_article(token: str, article: dict) -> None:
-    """Raises RuntimeError with the API's error detail on a non-2xx response."""
+    """Raises on a non-2xx response, with the API's error detail: ArticleRejected
+    if the article itself was refused, RuntimeError if the attempt can be retried."""
     body = json.dumps(article, ensure_ascii=False).encode()
     req = urllib.request.Request(
         f"{BLOG_API_URL}/api/articles",
@@ -65,4 +78,5 @@ def post_article(token: str, article: dict) -> None:
             res.read()
     except urllib.error.HTTPError as e:
         detail = e.read().decode(errors="replace")[:500]
-        raise RuntimeError(f"HTTP {e.code}: {detail}") from e
+        cls = ArticleRejected if e.code in REJECT_CODES else RuntimeError
+        raise cls(f"HTTP {e.code}: {detail}") from e

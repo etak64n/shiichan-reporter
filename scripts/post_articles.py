@@ -5,21 +5,20 @@ On success: adds source_url to state/seen.json and moves the file to
 articles/ (archive). On failure: the file stays in outbox/ and the URL is not
 marked seen, so the article is regenerated and retried on the next run.
 
-A file that cannot be parsed at all would never survive that retry -- and
-because the generator only writes entries that have no outbox file yet, its
-presence also blocks the regeneration that would fix it. Those are renamed to
-_broken-<name> instead, which drops them out of both loops (see main).
+A file that could never survive that retry -- one the parser rejects outright,
+or one the API refuses on its content -- is quarantined instead: retrying it is
+futile, and because the generator only writes entries that have no outbox file
+yet, its presence also blocks the regeneration that would fix it.
 """
 
 import glob
 import json
 import os
-import shutil
 import sys
 import urllib.request
 from datetime import datetime, timezone
 
-from blog_api import get_token, post_article
+from blog_api import ArticleRejected, get_token, post_article
 from paths import ARCHIVE_DIR, OUTBOX_DIR
 from state import load_state, normalize_url, save_state
 
@@ -99,6 +98,32 @@ def read_article(path: str) -> dict:
     return article
 
 
+def quarantine(path: str, reason: str) -> None:
+    """Take a file that can never be posted as it stands out of the retry loop.
+
+    Underscore-prefixed names are skipped by the publish loop and gitignored, so
+    the file leaves the pipeline with this run's workspace and the generator
+    recreates the article next run instead of the outbox jamming on it forever.
+    """
+    name = os.path.basename(path)
+    os.rename(path, os.path.join(OUTBOX_DIR, f"_broken-{name}"))
+    print(f"error: {name} {reason}; quarantined", file=sys.stderr)
+
+
+def archive(article: dict, name: str, path: str) -> None:
+    """Archive what was actually sent, then drop the outbox copy.
+
+    Not a plain move: the generator's file may hold raw newlines inside strings
+    (readable only with strict=False) and nulls that were stripped before the
+    POST. articles/ is the archive of record, so keep it strictly parseable and
+    equal to the payload the blog received.
+    """
+    with open(os.path.join(ARCHIVE_DIR, name), "w") as f:
+        json.dump(article, f, ensure_ascii=False, indent=2)
+        f.write("\n")
+    os.remove(path)
+
+
 def main() -> int:
     # Underscore-prefixed files are scratch the generator left behind, never
     # articles: the blog's slug schema is ^[a-z0-9]+(?:-[a-z0-9]+)*$, so a real
@@ -132,8 +157,7 @@ def main() -> int:
             article = read_article(path)
         except Exception as e:
             quarantined += 1
-            os.rename(path, os.path.join(OUTBOX_DIR, f"_broken-{name}"))
-            print(f"error: {name} is malformed ({e}); quarantined", file=sys.stderr)
+            quarantine(path, f"is malformed ({e})")
             continue
 
         try:
@@ -145,6 +169,13 @@ def main() -> int:
                 continue
             stamp_ingest_time(article)
             post_article(token, article)
+        except ArticleRejected as e:
+            # The content is wrong, so the next attempt fails identically --
+            # `"og_image": null` once cost 19 consecutive runs. Drop it and let
+            # the generator try again from the source article.
+            quarantined += 1
+            quarantine(path, f"was rejected ({e})")
+            continue
         except Exception as e:
             failures += 1
             print(f"error: failed to post {name}: {e}", file=sys.stderr)
@@ -154,7 +185,7 @@ def main() -> int:
         # Digest articles cover many upstream items; mark them all as seen
         for url in article.get("covered_urls", []):
             seen.add(normalize_url(url))
-        shutil.move(path, os.path.join(ARCHIVE_DIR, name))
+        archive(article, name, path)
         published += 1
         print(f"published: {article['slug']} ({article['source_name']})")
 
@@ -167,7 +198,7 @@ def main() -> int:
         print(f"{failures}/{len(files)} failed (left in outbox, retried next run)", file=sys.stderr)
     if quarantined:
         print(
-            f"{quarantined}/{len(files)} malformed (quarantined, regenerated next run)",
+            f"{quarantined}/{len(files)} quarantined (unpostable as written, regenerated next run)",
             file=sys.stderr,
         )
     return 1 if failures or quarantined else 0
