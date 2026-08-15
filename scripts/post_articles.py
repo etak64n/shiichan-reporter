@@ -80,11 +80,19 @@ def read_article(path: str) -> dict:
     matter, and post_article re-serializes with json.dumps, so the wire format
     stays valid either way. Anything the tolerant parse still rejects (a
     generation cut short mid-string, say) is broken beyond repair here.
+
+    Null-valued keys are dropped. The ingest API validates its optional fields
+    as "a string if the key is present", so an explicit null is a 400 while
+    omitting the key is accepted -- and the generator sometimes emits one for a
+    field it invented (og_image, which is not in the prompt's schema at all,
+    jammed three articles for a day). Absent and null mean the same thing to
+    the API, so send absent.
     """
     with open(path) as f:
         article = json.loads(f.read(), strict=False)
     if not isinstance(article, dict):
         raise TypeError(f"expected an object, got {type(article).__name__}")
+    article = {k: v for k, v in article.items() if v is not None}
     missing = [k for k in REQUIRED_FIELDS if not article.get(k)]
     if missing:
         raise KeyError(f"missing {', '.join(missing)}")
