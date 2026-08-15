@@ -1,0 +1,87 @@
+name: watch-failure
+
+# watch が失敗したときだけ走り、ログを読んで原因を Issue に残す。
+#
+# Issue 起点(on: issues)ではなく workflow_run で直接繋いでいる。GITHUB_TOKEN で
+# 作った Issue は再帰防止のため他のワークフローを起動しないので、「起票 → Issue を
+# 見て起動」の連鎖は PAT を用意しない限り、Issue は立つのに何も動かない形で黙って
+# 死ぬ。workflow_run なら GITHUB_TOKEN の実行に対しても発火する。
+on:
+  workflow_run:
+    workflows: [watch]
+    types: [completed]
+  # 過去の失敗を指定して手動でも回せる(動作確認と、後から「これ調べて」と投げる用)
+  workflow_dispatch:
+    inputs:
+      run_id:
+        description: 調査する watch の実行 ID
+        required: true
+
+# 調査と記録だけ。contents が read なので、このワークフローはリポジトリを書き換え
+# られない — 権限そのものが安全境界になっている。articles/ や state/ を「修正」
+# されると取り返しがつかないので、書けないことを設定で保証しておく
+permissions:
+  contents: read
+  actions: read # 失敗した実行のログを読む
+  issues: write # 起票と追記
+
+concurrency:
+  group: watch-failure
+  cancel-in-progress: false
+
+jobs:
+  diagnose:
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'failure' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      RUN_ID: ${{ inputs.run_id || github.event.workflow_run.id }}
+    steps:
+      - uses: actions/checkout@v4
+
+      # gh issue create --label は存在しないラベルを指定すると失敗する。冪等に用意する
+      - name: Ensure label
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh label create watch-failure --color b60205 \
+            --description "watch ワークフローの失敗" 2>/dev/null || true
+
+      - name: Diagnose and file an issue
+        uses: anthropics/claude-code-action@v1
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Bash から gh を使うため
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          prompt: |
+            watch ワークフローの実行 ${{ env.RUN_ID }} が失敗した。
+            ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ env.RUN_ID }}
+
+            ログを読んで原因を特定し、Issue に記録する。コードは読んでよい
+            (scripts/, prompts/, .github/)。
+
+            手順:
+            1. `gh run view ${{ env.RUN_ID }} --log-failed` でどのステップが落ちたか、
+               エラーの実文を特定する。足りなければ `--log` も見る
+            2. 原因を切り分ける。次のどちらなのかを必ず明示する:
+               - 次回以降のスケジュール実行で自動回復する見込みがある
+                 (上流サイトの一時障害、5xx での投稿失敗と再送、隔離による記事の
+                 再生成、push の競合など)
+               - 人の対応が必要
+                 (CLAUDE_CODE_OAUTH_TOKEN の失効、サブスク枠切れ、ブログ入稿 API の
+                 スキーマ変更、生成プロンプトや scripts/ の修正が要る場合など)
+            3. `gh run list --workflow=watch.yml --limit 5` を見て、この失敗より後に
+               成功した実行があるか(= 既に解消しているか)を確認する
+            4. `gh issue list --label watch-failure --state open` を見る
+               - 同じ症状の Issue が既に開いていれば、その Issue にコメントを追記する。
+                 実行へのリンクと前回との差分だけを書き、同じ説明を繰り返さない
+               - 無ければ `gh issue create --label watch-failure` で新規に立てる
+            5. 本文は日本語。次を含める:
+               症状 / ログ抜粋(実文をそのまま) / 推定原因 / 自動回復の見込み / 対処案
+
+            制約:
+            - 調査と Issue の記録だけを行う。ファイルは一切変更しない
+            - ログから読み取れないことは「不明」と書く。推測を断定として書かない
+            - 同じ症状で Issue を量産しない
+          claude_args: "--allowedTools Bash(gh:*),Read,Glob,Grep --max-turns 30"
