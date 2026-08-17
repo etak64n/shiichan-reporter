@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-ecr-increased-replication-rules-limit",
+  "title": "Amazon ECR のレプリケーションルール上限、10 個から 25 個に引き上げ！",
+  "summary": "Amazon ECR のレプリケーションルール上限が 1 レジストリあたり 10 個から 25 個に引き上げられたよ。マルチリージョン・マルチアカウント構成をしているチームに嬉しいアップデートなの！",
+  "body_md": "みんな、しぃちゃんだよ！今日は AWS What's New から届いた、コンテナ好きさんにはうれしいアップデートを紹介するよ！\n\n## なにが発表されたの？\n\nAWS What's New によると、Amazon ECR（Elastic Container Registry）で設定できるレプリケーションルールの上限が、1 レジストリあたり 10 個から 25 個に引き上げられたよ！Amazon ECR がサポートされている全ての AWS リージョンで利用できる変更なんだって。\n\n## 今までどうだったの？\n\n今までは 1 レジストリにつき最大 10 個までしかレプリケーションルールを設定できなかったの。マルチリージョンやマルチアカウントで複雑な構成を組んでいるユーザーさんは、この制約のせいでレプリケーション設定をひとつにまとめざるを得なかったんだって。\n\n## これで何が変わるの？\n\n今回のアップデートで、1 レジストリあたり最大 25 個までレプリケーションルールを定義できるようになったよ！これによって、より精密なレプリケーション戦略を組めるようになるの。たとえば下記のようなケースで嬉しいよ。\n\n- 多数のリージョンにコンテナイメージを配布して、低レイテンシーでのプルを実現する\n- 複数の本番環境アカウントやステージング環境アカウントへ同時にレプリケーションする\n\nマルチリージョン・マルチアカウント構成を持つチームほど恩恵が大きい変更だね！\n\n## 深く潜ってみよう\n\n今回の変更はシンプルで、レプリケーションルールの上限数が 10 個から 25 個へと引き上げられただけなの。新しい API や機能が追加されたわけではなく、既存のレプリケーション設定の枠が広がった形だよ。この上限緩和は、Amazon ECR がサポートされている全ての AWS リージョンで利用できるとのことなの。詳しくは Amazon ECR のプロダクトページや Amazon ECR ユーザーガイドを見てみてね。\n\n## まとめ\n\n- Amazon ECR のレプリケーションルール上限が、1 レジストリあたり 10 個から 25 個に引き上げられたよ\n- マルチリージョン・マルチアカウントの複雑な構成でも、無理に設定をまとめる必要がなくなったの\n- 低レイテンシー配信や複数環境への同時レプリケーションをしたいチームに特にうれしいアップデートだよ",
+  "title_en": "Amazon ECR Replication Rules Limit Increased from 10 to 25!",
+  "summary_en": "Amazon ECR's replication rules limit has been raised from 10 to 25 per registry, a nice win for teams running multi-region or multi-account setups.",
+  "body_md_en": "Hi everyone, it's shiichan! Today I'm bringing you a happy little update from AWS What's New for anyone who loves containers!\n\n## What was announced?\n\nAccording to AWS What's New, Amazon ECR (Elastic Container Registry) has increased the maximum number of replication rules per registry from 10 to 25! This change is available in all AWS Regions where Amazon ECR is supported.\n\n## The story so far\n\nUntil now, you could only set up to 10 replication rules per registry. For customers running complex multi-region or multi-account architectures, this constraint meant they had to consolidate their replication configurations to fit within that limit.\n\n## What changes\n\nWith this update, you can now define up to 25 replication rules per registry! That means you can build much more precise replication strategies. Here are some cases where this really helps:\n\n- Distributing container images across many regions for low-latency pulls\n- Replicating to multiple production and staging accounts at the same time\n\nTeams running multi-region or multi-account setups will get the most out of this change!\n\n## Dive Deep\n\nThis update is refreshingly simple: the replication rules limit was raised from 10 to 25, full stop. There's no new API or feature involved, just more room within your existing replication configuration. The higher limit is available in every AWS Region where Amazon ECR is supported. For more details, check out the Amazon ECR product page and the Amazon ECR User Guide.\n\n## Wrap-up\n\n- Amazon ECR's replication rules limit went from 10 to 25 per registry\n- Complex multi-region and multi-account setups no longer need to be squeezed into fewer rules\n- A welcome update for teams that want low-latency image distribution or replication across multiple environments",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-ecr-increased-replication-rules-limit",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon ECR now supports 25 replication rules per registry",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "devops"
+  ],
+  "published_at": "2026-08-17T19:01:00+00:00"
+}
