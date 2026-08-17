@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-quick-custom-no-data-message",
+  "title": "Amazon Quick、データ無し画面をカスタムメッセージに変えられるようになったよ！",
+  "summary": "AWS が Amazon Quick のビジュアルで、データが無いときの「No data to display」表示を自由なタイトル・サブタイトル・リンクにカスタマイズできるようにしたよ。パラメータでフィルター状況を反映した案内文も出せるようになったの。",
+  "body_md": "やっほー、しぃちゃんだよ！今日は BI ツールの地味だけどうれしいアップデートを見つけたから紹介するね。ダッシュボードを作ってる人にはきっと刺さるはずだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で発表されたのは、Amazon Quick が「データが無いときのメッセージ」をカスタマイズできるようになったというお知らせだよ。今までビジュアル（グラフやテーブル）にデータが無いときは、決まりきった「No data to display」という表示だったんだけど、これを作成者が自由な文言に変えられるようになったの。\n\n## 今までどうだったの？\n\nこれまでは、フィルターを絞り込みすぎたときなどにビジュアルにデータが表示されないと、読者に見えるのは無機質な「No data to display」の一文だけだった。なぜデータが無いのか、次に何をすればいいのかが伝わらず、読者が戸惑ってしまうことも多かったんだよね。\n\n## これで何が変わるの？\n\nこれからは、データが無いときの画面に次の項目を自由に設定できるようになったよ。\n\n- カスタムタイトル\n- サブタイトル\n- ハイパーリンク（http://・https://・mailto: に対応）\n\nタイトルとサブタイトルはそれぞれ独立してオン・オフを切り替えられるから、必要な情報だけをすっきり見せられるの。\n\nさらにテキストフィールドはパラメータに対応していて、読者が選んでいるフィルターの内容をメッセージの中に動的に反映できる。「〇〇の条件では該当データがありません」みたいな、状況に合わせた案内文を出せるってわけ。\n\n## 深く潜ってみよう\n\n- 設定は Amazon Quick の Analysis Settings から行うよ\n- ハイパーリンクは http://、https://、mailto: の 3 スキーマに対応\n- 対応リージョンは、Amazon Quick が提供されているすべての AWS リージョン\n\n## まとめ\n\n- Amazon Quick のビジュアルで、データが無いときの表示をカスタムできるようになったよ\n- タイトル・サブタイトル・ハイパーリンクを自由に設定でき、それぞれオン・オフも選べる\n- パラメータでフィルター状況に応じたメッセージを動的に出せる\n- ダッシュボードを作る人・読者にわかりやすい画面を届けたい人にぴったりのアップデート！",
+  "title_en": "Amazon Quick lets you customize the “no data” message!",
+  "summary_en": "AWS now lets you customize the default “No data to display” message in Amazon Quick visuals with your own title, subtitle, and link. You can even use parameters to reflect the reader's current filter selections.",
+  "body_md_en": "Hey there, it's me! Today I found a small but genuinely nice update for BI dashboards, so let me share it. If you build dashboards, this one's for you!\n\n## What was announced?\n\nAWS announced on What's New that Amazon Quick now lets you customize the message shown when a visual has no data. Until now, when a chart or table returned nothing, viewers just saw the generic \"No data to display\" message — now authors can replace it with their own wording.\n\n## The story so far\n\nBefore this update, whenever a visual returned no data (say, because of an overly narrow filter), readers only saw that plain \"No data to display\" line. It didn't explain why there was no data or what to do next, which often left readers confused.\n\n## What changes\n\nNow you can configure, for the no-data state:\n\n- A custom title\n- A subtitle\n- A hyperlink (supporting http://, https://, and mailto:)\n\nTitle and subtitle can each be toggled on or off independently, so you can show exactly the information you want.\n\nOn top of that, these text fields support parameters, so the message can dynamically reflect the reader's current filter selections — for example, telling them exactly which condition returned no results.\n\n## Dive Deep\n\n- You configure this from Analysis Settings in Amazon Quick\n- Hyperlinks support three schemes: http://, https://, and mailto:\n- Available in all AWS regions where Amazon Quick is offered\n\n## Wrap-up\n\n- Amazon Quick visuals can now show a custom message when there's no data\n- You can set a title, subtitle, and hyperlink, and toggle each independently\n- Parameters let the message reflect the reader's current filter state dynamically\n- A great update for anyone building dashboards who wants to guide confused readers instead of leaving them with a blank message!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2025/08/amazon-quick-custom-no-data-message/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Quick now supports customizable no data messages for visuals",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-08-14T15:00:00+00:00"
+}

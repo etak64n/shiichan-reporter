@@ -19,6 +19,7 @@
   ],
   "seen_urls": [
     "https://aws.amazon.com/about-aws/whats-new/2025/06/ami-configuration-continuous-slurm",
+    "https://aws.amazon.com/about-aws/whats-new/2025/08/amazon-quick-custom-no-data-message",
     "https://aws.amazon.com/about-aws/whats-new/2025/11/amazon-keyspaces-apache-cassandra-canada-west",
     "https://aws.amazon.com/about-aws/whats-new/2026/01/flux.2-small-decoder-gemma-4-12B-it-on-sagemaker-jumpstart",
     "https://aws.amazon.com/about-aws/whats-new/2026/01/glm-5.2-fp8-nemotron-nano-12b-v2-glm-ocr-on-sagemaker-jumpstart",
@@ -351,6 +352,7 @@
     "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-connect-customer-interval-capacity-plan",
     "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-connect-drill-down-metrics",
     "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-connect-export-cases",
+    "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-connect-routing-steps",
     "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-dynamodb-vector-search",
     "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-ec2-application-status-checks",
     "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-ec2-auto-scaling-batch-termination",
@@ -423,6 +425,7 @@
     "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-marketplace-net-payment-terms-for-private-offers",
     "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-microsoft-ad-edition-upgrade",
     "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-network-firewall-forward-proxy-preview",
+    "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-network-firewall-stateful-rule-hit-counts",
     "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-organizations",
     "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-pcs-august",
     "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-resilience-hub",

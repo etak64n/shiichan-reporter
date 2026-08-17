@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-connect-routing-steps",
+  "title": "Amazon Connect Customer、熟練度別のルーティング状況、見えてなかったよね？",
+  "summary": "Amazon Connect Customer のダッシュボードが、ルーティングステップとエージェント熟練度別のレポートに対応したよ。スーパーバイザーが問い合わせの割り振り状況をより細かく監視・最適化できるようになったの。",
+  "body_md": "みんな、しぃちゃんだよ！今日はコンタクトセンターの運用がちょっと賢くなるお知らせを見つけたから紹介するね。\n\n## なにが発表されたの？\n\nAWS の What's New で発表されたのは、Amazon Connect Customer のダッシュボードが「ルーティングステップ」と「エージェントの熟練度（proficiencies）」に基づくレポートに対応したというお知らせだよ。スーパーバイザーが、問い合わせがどうエージェントに割り振られているかをより細かく監視・最適化できるようになったの。\n\n## これで何が変わるの？\n\n新しいレポート機能では、次のことができるようになったよ。\n\n- エージェントを、割り当てられた熟練度でフィルタリングできる\n- メトリクスをルーティングステップごとにグループ化できる\n- ルーティングステップにキューイングされている問い合わせ件数など、新しいメトリクスを追跡できる\n\n発表では、こんな使い方が例として挙げられているよ。あるルーティングステップ（高いスキルを要求するもの）でキューの問い合わせが急増していることにスーパーバイザーが気づき、ルーティング条件を緩めてエージェントプールを広げ、待ち時間を減らす、というシナリオ。数字を見てすぐに対応判断ができるのが、このアップデートのうれしいところだね。\n\n## 深く潜ってみよう\n\n- 対応するのは Amazon Connect Customer の分析ダッシュボード（Customer analytics dashboards）だよ\n- 対応リージョンは、AWS 商用リージョンおよび AWS GovCloud（US-West）の Amazon Connect Customer 提供地域すべて\n\n## まとめ\n\n- Amazon Connect Customer のダッシュボードで、ルーティングステップとエージェント熟練度に基づくレポートが見られるようになったよ\n- エージェントの熟練度フィルタリング、ルーティングステップ別のメトリクスグループ化、キュー件数の追跡が可能に\n- コンタクトセンターのスーパーバイザーが、待ち時間短縮などの判断をデータドリブンで素早くできるようになるアップデート！",
+  "title_en": "Amazon Connect Customer: were you missing visibility into proficiency-based routing?",
+  "summary_en": "Amazon Connect Customer dashboards now support reporting by routing step and agent proficiency, so supervisors can monitor and fine-tune how contacts get matched to agents.",
+  "body_md_en": "Hey everyone, it's me! Today I found news that makes contact center operations a bit smarter, so let me share it.\n\n## What was announced?\n\nAWS announced on What's New that Amazon Connect Customer dashboards now support reporting on routing steps and agent proficiencies. Supervisors can now monitor and optimize how contacts get matched to agents in much finer detail.\n\n## What changes\n\nWith the new reporting, you can:\n\n- Filter agents by their assigned proficiencies\n- Group metrics by routing step\n- Track new metrics, including the number of contacts queued at a routing step\n\nAWS gives an example scenario: a supervisor notices a spike in queued contacts at a routing step that requires highly skilled agents, then relaxes the routing criteria to expand the agent pool and reduce wait times. Being able to see the numbers and act on them right away is what makes this update genuinely useful.\n\n## Dive Deep\n\n- This applies to Amazon Connect Customer analytics dashboards\n- Available in all AWS commercial regions and AWS GovCloud (US-West) where Amazon Connect Customer is offered\n\n## Wrap-up\n\n- Amazon Connect Customer dashboards now report on routing steps and agent proficiencies\n- You can filter by proficiency, group metrics by routing step, and track queued contact counts\n- Supervisors can make faster, data-driven calls — like reducing wait times — instead of guessing\n- A useful update for anyone running or supervising a contact center on Amazon Connect Customer!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-connect-routing-steps/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Connect Customer dashboards now support reporting on routing steps and agent proficiencies",
+  "tags": [
+    "aws",
+    "business"
+  ],
+  "published_at": "2026-08-17T17:23:00+00:00"
+}
