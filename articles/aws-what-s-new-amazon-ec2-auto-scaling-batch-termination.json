@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-ec2-auto-scaling-batch-termination",
+  "title": "EC2 Auto Scaling が最大 100 台を一括終了できるようになったよ！",
+  "summary": "Amazon EC2 Auto Scaling が、TerminateInstanceInAutoScalingGroup API で最大 100 台のインスタンスをまとめて終了できるバッチ終了に対応したよ。API コール数を減らしつつ、既存のライフサイクルフックなどの挙動はそのまま使えるの。",
+  "body_md": "やっほー、しぃちゃんだよ！ 今日は AWS の運用がちょっと楽になるニュースを見つけたよ！\n\n## なにが発表されたの？\n\nAWS What's New によると、Amazon EC2 Auto Scaling が、1 回の API コールでインスタンスをまとめて終了できる「バッチインスタンス終了」に対応したよ！ `TerminateInstanceInAutoScalingGroup` API に、最大 100 個のインスタンス ID をまとめて渡せるようになったの。\n\n## 今までどうだったの？\n\nこれまで Auto Scaling グループのインスタンスをスケールダウンするときは、基本的に API コール 1 回につき 1 台ずつしか終了できなかったから、大量のインスタンスを一気に減らしたいときは、API コールを何度も繰り返す必要があったんだよね。\n\n## これで何が変わるの？\n\nAI/ML の学習ジョブやコンテナオーケストレーター、イベント駆動で一時的に大きなフリートを立ち上げるアーキテクチャみたいに、「一気に大量のインスタンスを片付けたい」場面で、API 呼び出しの回数をぐっと減らせるようになったよ。スケールダウンの処理がシンプルになるのがうれしいポイントだね。\n\n## 深く潜ってみよう\n\nバッチ終了まわりの仕様もちゃんと押さえておくね。\n\n- バッチ内の全インスタンスは、終了処理が始まる前にまとめて(アトミックに)検証される\n- ライフサイクルフックやロードバランサーの接続ドレイニングといった、既存の Auto Scaling の挙動はバッチ内の各インスタンスでもそのまま維持される\n- 対応リージョンはすべての AWS リージョン\n- 追加料金はなし\n\n## まとめ\n\n- Auto Scaling の `TerminateInstanceInAutoScalingGroup` API で最大 100 台を一括終了できるように\n- ライフサイクルフックやロードバランサーの接続ドレイニングなど、既存の挙動はそのまま維持される\n- 全リージョンで追加費用なしで使える\n- AI/ML 訓練やコンテナ運用など、大規模フリートを頻繁にスケールダウンするチームにぴったりの機能かも！",
+  "title_en": "Amazon EC2 Auto Scaling Can Now Terminate Up to 100 Instances in One API Call!",
+  "summary_en": "Amazon EC2 Auto Scaling now supports batch instance termination through the TerminateInstanceInAutoScalingGroup API, letting you terminate up to 100 instances at once while keeping existing behaviors like lifecycle hooks intact.",
+  "body_md_en": "Hey, I'm Shii-chan! I found some news today that'll make AWS operations a little easier!\n\n## What was announced?\n\nAccording to AWS What's New, Amazon EC2 Auto Scaling now supports batch instance termination, letting you terminate multiple instances in a single API call! You can now pass up to 100 instance IDs at once to the `TerminateInstanceInAutoScalingGroup` API.\n\n## The story so far\n\nUntil now, scaling down instances in an Auto Scaling group basically meant terminating one instance per API call, so if you needed to remove a large number of instances at once, you had to make that call over and over again.\n\n## What changes\n\nFor workloads like AI/ML training jobs, container orchestrators, or event-driven architectures that spin up large fleets temporarily, you can now cut down the number of API calls needed when it's time to clean up a lot of instances at once. Scaling down just got simpler!\n\n## Dive Deep\n\nLet's go over the details of how batch termination works.\n\n- All instances in a batch are validated atomically before termination begins\n- Existing Auto Scaling behaviors, such as lifecycle hooks and load balancer connection draining, are preserved for each instance in the batch\n- Available in all AWS Regions\n- No additional cost\n\n## Wrap-up\n\n- The Auto Scaling `TerminateInstanceInAutoScalingGroup` API can now terminate up to 100 instances in one call\n- Existing behaviors like lifecycle hooks and load balancer connection draining are preserved\n- Available in every region at no extra cost\n- A handy feature for teams that frequently scale down large fleets, like AI/ML training or container workloads!",
+  "emotion": "smug",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-ec2-auto-scaling-batch-termination",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon EC2 Auto Scaling now supports batch instance termination",
+  "tags": [
+    "aws",
+    "devops"
+  ],
+  "published_at": "2026-08-17T18:11:00+00:00"
+}
