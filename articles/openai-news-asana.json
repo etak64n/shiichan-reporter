@@ -1,0 +1,20 @@
+{
+  "slug": "openai-news-asana",
+  "title": "5 年かかる予定の開発が 2 週間で完了！Asana が Codex で見せた驚きの成果",
+  "summary": "Asana が老朽化したテストシステムの刷新に OpenAI の Codex を使ったところ、5 年かかる想定だった作業をエンジニアリング工数 1.5 週間で終わらせちゃったよ。費用も 600 万ドル予定が 1 万 2000 ドルまで抑えられたんだって。",
+  "body_md": "こんにちは、しぃちゃんだよ！今日は AI エージェントの実力がよく分かる事例を見つけたから、はりきって紹介するね！\n\n## なにが発表されたの？\nOpenAI の News によると、プロジェクト管理ツールを提供する Asana が、老朽化したテストシステム「Enzyme」を Codex で刷新したんだって。Enzyme は保守が止まっていて、フロントエンドのスタックを最新化する上での足かせになっていたみたい。\n\n## なぜ重要なの？\nこういう長年放置されてきた技術的負債って、着手すればするほど工数が膨らんで、なかなか手を付けられないことが多いよね。Asana の場合も、当初の見積もりでは丸ごと 5 年かかる大仕事だったんだ。それを AI エージェントでどこまで圧縮できるかっていう、リアルな事例として注目度が高いニュースだよ。\n\n## これで何が変わるの？\nCodex を使った結果、Asana は当初 5 年・約 600 万ドル相当と見積もっていた作業を、エンジニアリング工数にして 1.5 週間(カレンダー日数では 2 週間ほど)で終わらせて、実際にかかった費用も 1 万 2000 ドルまで抑えられたんだって。金額ベースで見ると 98 % ほどのコスト削減になるね。\n\n## 深く潜ってみよう\nやり方としては、5 文程度のシンプルなプロンプトから、最大 4 つのコーディングエージェントを並行して走らせたそう。各エージェントはそれぞれ独立したコードベースのコピー上で作業して、エンジニアは 1 日 2 回進捗を確認しながら、提案された変更をすべてレビューしたみたい。\n\n面白いのは、複雑な設定を詰め込むよりも、シンプルな指示のほうがうまくいったという振り返り。Asana の CTO である Amritansh Raghav さんは、すべての長年のプロジェクトが数週間に縮むわけではないけれど、エージェントはエンジニアに工夫の余地をもたらしてくれると話しているよ。\n\n## まとめ\n- Asana が老朽化したテストシステム「Enzyme」の刷新に Codex を活用した\n- 当初の見積もりは 5 年・約 600 万ドルだったが、実際は 1.5 週間・1 万 2000 ドルで完了\n- 5 文程度のプロンプトから最大 4 エージェントを並行稼働、進捗は 1 日 2 回人がレビュー\n- 長年の技術的負債に悩むチームにとって、AI エージェント活用のリアルな参考事例になりそうだよ！",
+  "title_en": "A Five-Year Project Done in Two Weeks: Asana's Surprising Results With Codex",
+  "summary_en": "Asana used OpenAI's Codex to modernize an aging test system, finishing work that was expected to take five years in just 1.5 weeks of engineering effort, for about $12,000 instead of an estimated $6 million.",
+  "body_md_en": "Hi everyone, it's me! I found an amazing example of what AI agents can really do, so let me share it with you.\n\n## What was announced?\nAccording to OpenAI News, Asana, the project management tool company, used Codex to modernize an aging test system called Enzyme. Enzyme had gone unmaintained and was holding back efforts to modernize Asana's frontend stack.\n\n## Why it matters\nLong-neglected technical debt like this tends to get harder to tackle the longer it sits, which is often why it never gets addressed. In Asana's case, the original estimate for this work was a full five years. This story is getting attention as a real-world example of how much an AI agent can compress that kind of timeline.\n\n## What changes\nUsing Codex, Asana finished work that was originally estimated at five years and roughly $6 million in just 1.5 weeks of engineering effort (about two calendar weeks), for an actual cost of about $12,000, roughly a 98% cost reduction.\n\n## Dive Deep\nThe approach: starting from a prompt of about five sentences, they ran up to four coding agents in parallel. Each agent worked on its own independent copy of the codebase, and engineers checked in on progress twice a day, reviewing every proposed change.\n\nOne interesting takeaway is that simple instructions worked better than complex configurations. Asana's CTO, Amritansh Raghav, said that not every long-running project will shrink to a few weeks, but agents can give engineers room to be resourceful.\n\n## Wrap-up\n- Asana used Codex to modernize its aging \"Enzyme\" test system\n- Originally estimated at five years and about $6 million, it was actually completed in 1.5 weeks for about $12,000\n- Up to four agents ran in parallel from a roughly five-sentence prompt, with humans reviewing progress twice a day\n- A great real-world reference for teams wrestling with long-standing technical debt who are considering AI agents",
+  "emotion": "thinking",
+  "importance": 3,
+  "source_url": "https://openai.com/index/asana",
+  "source_name": "OpenAI News",
+  "og_title": "Asana cleared 5 years of engineering work in 2 weeks with Codex",
+  "tags": [
+    "openai",
+    "ai",
+    "business"
+  ],
+  "published_at": "2026-08-18T07:00:00+00:00"
+}
