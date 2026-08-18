@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-console-to-code-adds-26-services",
+  "title": "AWS Console-to-Code、対応サービスが一気に6→32個に！リージョンまたぎの記録も統合されたよ",
+  "summary": "AWS What's New の発表だよ。コンソール操作を IaC に変換してくれる Console-to-Code が新たに 26 サービスに対応して、対応数が 6 から 32 に拡大したの。リージョンやブラウザタブをまたいだ操作も 1 つの記録リストにまとめられるようになったよ。",
+  "body_md": "やっほー、しぃちゃんだよ！今日は AWS からうれしいアップデートのお知らせだよ。\n\n## なにが発表されたの？\n\nAWS What's New に、Console-to-Code のアップデートが載っていたよ。Console-to-Code は、AWS マネジメントコンソール上での操作を記録して、そのままインフラストラクチャ・アズ・コード(IaC)に変換してくれる機能なの。今回のアップデートで新たに 26 サービスに対応して、対応サービス数が 6 個から 32 個に増えたんだって。開発者や DevOps エンジニア、クラウドアーキテクトが、手作業のコンソール操作をもっと簡単に、繰り返し使える本番向けの IaC に変換できるようにするための強化だよ。\n\n## 今までどうだったの？\n\n今までは、コンソールで作業しているときにリージョンを切り替えたり、複数のブラウザタブをまたいで操作したりすると、記録していたアクションのリストがリセットされたり、バラバラに分かれてしまったりしていたの。ひとつづきの操作として記録できないから、複数リージョンにまたがるような複雑な作業を、そのままコードに落とし込むのが難しかったんだって。\n\n## これで何が変わるの？\n\n今回のアップデートで、Console-to-Code はリージョンをまたいだ記録・ブラウザタブをまたいだ記録に対応したよ。リージョンやタブを切り替えても、アクションは 1 つに統合されたリストとしてまとめて記録されるようになったの。これで、複数リージョンにまたがるインフラのデプロイ作業も、コンテキストを失うことなくそのままキャプチャして自動化できるようになったんだって。\n\n今日から、すべての商用 AWS リージョンのお客さんが、対応 32 サービスすべてとこの新しいクロスリージョン記録機能を使えるようになっているよ。\n\n## まとめ\n\n- Console-to-Code の対応サービス数が 26 個追加されて、6 個から 32 個になったよ。\n- リージョンやブラウザタブをまたいだ操作も、1 つの記録リストに統合されるようになったの。\n- 複数リージョンにまたがる複雑なインフラ作業も、コンテキストを保ったままキャプチャ・自動化できるようになったよ。\n- 今日からすべての商用 AWS リージョンで利用できるよ。\n- 手作業のコンソール操作を IaC 化したい開発者・DevOps エンジニア・クラウドアーキテクトに刺さるアップデートだね！",
+  "title_en": "AWS Console-to-Code Now Covers 32 Services (Up From 6)!",
+  "summary_en": "From AWS What's New: Console-to-Code, which turns your console actions into infrastructure as code, now supports 26 more services for a total of 32 (up from 6) — and recordings now stay unified even when you switch regions or browser tabs.",
+  "body_md_en": "Hi, it's me, Shiichan! I've got a nice AWS update for you today.\n\n## What was announced?\n\nAWS What's New shared an update to Console-to-Code, the feature that records what you do in the AWS Management Console and turns it straight into infrastructure as code (IaC). With this update, Console-to-Code now supports 26 additional services, bringing total coverage from 6 to 32 services. It's aimed at helping developers, DevOps engineers, and cloud architects turn manual console workflows into repeatable, production-ready IaC more easily.\n\n## The story so far\n\nUntil now, switching regions or working across multiple browser tabs while using Console-to-Code would reset or fragment your recorded action list. Since your actions couldn't be captured as one continuous flow, it was hard to turn complex, multi-region work into code.\n\n## What changes\n\nConsole-to-Code now supports cross-region and cross-browser-tab action recording. Even if you switch regions or tabs, your actions are consolidated into a single, unified list. That means you can capture and automate complex, multi-region infrastructure deployments without losing context.\n\nStarting today, customers in all commercial AWS Regions can use Console-to-Code with all 32 supported services and the new cross-region recording capability.\n\n## Wrap-up\n\n- Console-to-Code added 26 services, bringing total coverage from 6 to 32.\n- Actions recorded across different regions or browser tabs are now consolidated into a single list.\n- You can capture and automate complex, multi-region infrastructure work without losing context.\n- It's available today in all commercial AWS Regions.\n- A solid update for developers, DevOps engineers, and cloud architects who want to turn manual console work into IaC.",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/08/console-to-code-adds-26-services",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Console-to-Code adds 26 services and cross-region recording​",
+  "tags": [
+    "aws",
+    "devops",
+    "infrastructure"
+  ],
+  "published_at": "2026-08-17T15:00:00+00:00"
+}
