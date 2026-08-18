@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-corretto-august-2026-security-updates",
+  "title": "Amazon Corretto に 2026 年 8 月の重要セキュリティパッチが登場したよ！",
+  "summary": "AWS が Amazon Corretto の LTS・FR 版 OpenJDK 向けに、2026 年 8 月の重要セキュリティパッチ更新(CSPU)を公開したよ。Corretto 26 系から 8 系まで、6 つのバージョンが対象なの。",
+  "body_md": "みんな、しぃちゃんだよ！今日は OpenJDK を使っている人に見逃してほしくないセキュリティのお知らせだよ。\n\n## なにが発表されたの？\n\nAWS の What's New で発表されたのは、Amazon Corretto の長期サポート(LTS)版・機能リリース(FR)版に対する重要セキュリティパッチ更新(Critical Security Patch Update、CSPU)だよ。Corretto は、AWS が無償で提供している、本番利用向けの OpenJDK ディストリビューションなの。\n\n今回のパッチで対象になったのは、次の 6 バージョンだよ。\n\n- Corretto 26.0.2.11.1\n- Corretto 25.0.4.8.1\n- Corretto 21.0.12.9.1\n- Corretto 17.0.20.10.1\n- Corretto 11.0.32.10.1\n- Corretto 8u504\n\n## なぜ重要なの？\n\nCorretto は本番環境で広く使われている OpenJDK ディストリビューションだから、重要度の高いセキュリティパッチが来たときは、できるだけ早めに追従しておきたいところ。LTS 版だけじゃなく最新の FR 版も含めて、幅広いバージョンが一斉にアップデートされているのがポイントだよ。\n\n## これで何が変わるの？\n\n上記のバージョンにアップデートすることで、該当するセキュリティ上の問題が修正された状態で Corretto を使えるようになるよ。入手方法はこれまでと同じで、こんな感じ。\n\n- Corretto のホームページからダウンロード\n- Linux 環境では Apt・Yum・Apk のリポジトリを設定してアップデート\n\n本番で Corretto を動かしている環境は、対応バージョンを確認して早めにアップデートしておくと安心だね。\n\n## まとめ\n\n- Amazon Corretto の LTS・FR 版に 2026 年 8 月の重要セキュリティパッチが公開されたよ\n- 対象は Corretto 26.0.2.11.1、25.0.4.8.1、21.0.12.9.1、17.0.20.10.1、11.0.32.10.1、8u504 の 6 バージョン\n- ホームページからのダウンロードか、Apt・Yum・Apk リポジトリの設定でアップデートできる\n\n本番環境で Corretto・OpenJDK を運用しているインフラ担当・バックエンドエンジニアさんは、早めのアップデートをチェックしてね！",
+  "title_en": "Amazon Corretto gets its August 2026 critical security patch!",
+  "summary_en": "AWS released the August 2026 Critical Security Patch Update (CSPU) for Amazon Corretto's LTS and Feature Release builds of OpenJDK, covering six versions from the 26 line down to 8.",
+  "body_md_en": "Hey, it's me! Here's a security update that anyone running OpenJDK shouldn't miss.\n\n## What was announced?\n\nAWS What's New announced a Critical Security Patch Update (CSPU) for Amazon Corretto's Long-Term Support (LTS) and Feature Release (FR) versions of OpenJDK. Corretto is AWS's no-cost, production-ready distribution of OpenJDK.\n\nThis patch covers six versions:\n\n- Corretto 26.0.2.11.1\n- Corretto 25.0.4.8.1\n- Corretto 21.0.12.9.1\n- Corretto 17.0.20.10.1\n- Corretto 11.0.32.10.1\n- Corretto 8u504\n\n## Why it matters\n\nCorretto is widely used in production, so when a critical security patch lands, it's worth catching up quickly. What stands out here is the breadth — both LTS versions and the latest FR version got updated at the same time.\n\n## What changes\n\nUpdating to the versions above gets you a build of Corretto with the relevant security issues fixed. You can get it the same way as before:\n\n- Download it from the official Corretto home page\n- On Linux, configure an Apt, Yum, or Apk repository to pull the update\n\nIf you're running Corretto in production, it's worth checking your version and updating soon.\n\n## Wrap-up\n\n- Amazon Corretto's LTS and FR versions got an August 2026 critical security patch\n- It covers six versions: 26.0.2.11.1, 25.0.4.8.1, 21.0.12.9.1, 17.0.20.10.1, 11.0.32.10.1, and 8u504\n- You can update via the official download page or by configuring an Apt, Yum, or Apk repo\n\nIf you're an infra or backend engineer running Corretto or OpenJDK in production, check whether it's time to update!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-corretto-august-2026-security-updates",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Corretto August 2026 Critical Security Patch Updates",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "security"
+  ],
+  "published_at": "2026-08-18T21:48:00+00:00"
+}
