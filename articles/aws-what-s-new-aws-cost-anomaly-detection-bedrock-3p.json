@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-cost-anomaly-detection-bedrock-3p",
+  "title": "Bedrock の Claude、使いすぎてない？AWS が自動で教えてくれるようになったよ！",
+  "summary": "AWS Cost Anomaly Detection が、Amazon Bedrock で動く Anthropic の Claude などサードパーティ製モデルの支出も監視できるようになったよ。設定不要で自動的に異常を検知してアラートしてくれるの。",
+  "body_md": "こんにちは、しぃちゃんだよ！今日は「気づいたらコストがヤバいことになってた」を防いでくれる、うれしいアップデートを紹介するね。\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Cost Anomaly Detection が、Amazon Bedrock 上で動くサードパーティ製の基盤モデル(Anthropic の Claude など)の支出も監視できるようになったって発表があったよ。\n\n## 今までどうだったの？\n\nCost Anomaly Detection は、機械学習を使って AWS の支出の異常を検出し、アラートを出してくれるサービスなの。でもこれまでは、Bedrock 上のサードパーティモデルの支出が、この監視にきちんと組み込まれてなかったんだって。生成 AI の本番ワークロードを動かしてるチームにとっては、そこだけ見えにくい支出になりがちだったんだよね。\n\n## これで何が変わるの？\n\n今回のアップデートで、Bedrock のサードパーティモデル利用料も、AWS マネージドサービスモニターを通じて自動的に評価されるようになったよ。設定は一切不要なの。モデルの支出が急に変わったときはアラートが届いて、AWS サービス・アカウント・リージョン・使用タイプ別に、金額インパクトの大きい順でランク付けされた原因分析まで一緒にもらえるよ。つまり、Bedrock のモデル代も、他の AWS 費用と同じスピード感で「なんかおかしいぞ」に気づけるようになったってこと。\n\n## まとめ\n\n- Cost Anomaly Detection が Bedrock 上のサードパーティモデル(Claude など)の支出も監視対象に\n- 設定不要で自動的に評価が始まる\n- 異常時はアラートと、サービス・アカウント・リージョン・使用タイプ別の原因分析が届く\n- AWS GovCloud と中国リージョンを除く、すべての商用リージョンで利用可能\n\nBedrock で生成 AI を本番運用してて、コストの急変に気づきにくいと感じてた人には、ちょうどいいアップデートだよ。",
+  "title_en": "Is Your Claude Bill on Bedrock Spiking? AWS Now Watches It Automatically!",
+  "summary_en": "AWS Cost Anomaly Detection now monitors spend on third-party foundation models running on Amazon Bedrock, including Anthropic's Claude. It automatically evaluates costs and alerts you to anomalies — no setup required.",
+  "body_md_en": "Hi everyone, it's Shiichan! Today I've got an update that helps you avoid that dreaded moment of discovering your cloud bill has quietly spiraled.\n\n## What was announced?\n\nOn AWS's What's New, AWS Cost Anomaly Detection announced that it now monitors spend on third-party foundation models running on Amazon Bedrock, such as Anthropic's Claude.\n\n## The story so far\n\nCost Anomaly Detection uses machine learning to catch unusual spend and alert you about it. Until now, though, third-party model spend on Bedrock wasn't fully covered by that monitoring — which made it an easy blind spot for teams running generative AI in production.\n\n## What changes\n\nWith this update, your third-party Bedrock model costs are automatically evaluated through your AWS managed service monitor — no setup needed. When spend on a model shifts unexpectedly, you get an alert along with a root-cause breakdown ranked by dollar impact, broken down by AWS service, account, region, and usage type. In short: your Bedrock model spend now gets the same fast anomaly detection as the rest of your AWS bill.\n\n## Wrap-up\n\n- Cost Anomaly Detection now covers third-party model spend (like Claude) on Bedrock\n- Evaluation starts automatically, with no setup required\n- Anomalies trigger an alert plus a root-cause breakdown by service, account, region, and usage type\n- Available in all AWS commercial regions except GovCloud and the China regions\n\nIf you're running generative AI in production on Bedrock and have struggled to catch sudden cost spikes, this update is exactly what you need.",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-cost-anomaly-detection-bedrock-3P/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Cost Anomaly Detection supports third-party models on Amazon Bedrock",
+  "tags": [
+    "aws",
+    "ai",
+    "devops"
+  ],
+  "published_at": "2026-08-19T17:57:00+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-ec2-r8a-asia-pacific-taipei",
+  "title": "台北リージョンに R8a 到着！性能最大 30% アップ、価格性能 19% 改善だよ！",
+  "summary": "Amazon EC2 の新世代メモリ最適化インスタンス R8a が、アジア太平洋(台北)リージョンで使えるようになったよ。R7a 比で性能最大 30%、価格性能 19% 向上してるんだって。",
+  "body_md": "やっほー、しぃちゃんだよ！今日はインフラ系のニュースを持ってきたよ。台北リージョンでクラウドを使ってるみんな、要チェックだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon EC2 の新しいインスタンスタイプ「R8a」が、アジア太平洋(台北)リージョンで使えるようになったって発表があったよ。メモリ最適化インスタンスの最新世代なの。\n\n## 今までどうだったの？\n\n台北リージョンでメモリ最適化インスタンスを選ぶなら、これまでは前世代の R7a が主力だったの。今回、そこから一歩進化した R8a が使えるようになって、こんな風にパワーアップしてるよ。\n\n- プロセッサ: 第 5 世代 AMD EPYC(開発コード名 Turin)、最大周波数 4.5 GHz\n- 性能: R7a 比で最大 30% 向上\n- 価格性能比: R7a 比で 19% 改善\n- メモリ帯域幅: R7a 比で 45% 増加\n- GroovyJVM の処理: R7a 比で最大 60% 高速化\n- SAP 認定済みで、SAPS は R7a 比で 38% 増加\n\n## これで何が変わるの？\n\n台北リージョンで低遅延が求められるワークロードを動かしてる人に、直接効いてくる話だよ。SQL / NoSQL データベース、分散型のインメモリキャッシュ、リアルタイムのビッグデータ分析、EDA(電子設計自動化)アプリケーションみたいな、メモリをガンガン使う処理にぴったりなの。SAP を動かしてる環境でも、そのままパフォーマンス向上を実感できるはずだよ。\n\n## 深く潜ってみよう\n\nR8a は AWS Nitro System の上に構築されていて、第 6 世代の Nitro Card を採用してるよ。サイズは 12 種類用意されてて、そのうち 2 つはベアメタルサイズなの。用途に合わせて細かく選べるのがうれしいポイントだね。使ってみたい人は AWS マネジメントコンソールからすぐに起動できるよ。\n\n## まとめ\n\n- R8a インスタンスがアジア太平洋(台北)リージョンで利用可能に\n- R7a 比で性能最大 30%、価格性能比 19%、メモリ帯域幅 45% 向上\n- 低遅延なデータベース・キャッシュ・分析・EDA ワークロードに最適\n- 12 サイズ(ベアメタル 2 種含む)から選択可能\n\n台北リージョンでインフラを組んでる人、メモリ性能がボトルネックになってた人には、すぐ試す価値のあるアップデートだよ。",
+  "title_en": "R8a Instances Land in Asia Pacific (Taipei) — Up to 30% Faster, 19% Better Price-Performance!",
+  "summary_en": "Amazon EC2's newest memory-optimized instance family, R8a, is now available in the Asia Pacific (Taipei) region. Compared to R7a, it delivers up to 30% better performance and 19% better price-performance.",
+  "body_md_en": "Hey everyone, it's Shiichan! I've got some infrastructure news today — if you're running workloads in the Taipei region, this one's for you!\n\n## What was announced?\n\nOn AWS's What's New, Amazon EC2 announced that its newest instance type, R8a, is now available in the Asia Pacific (Taipei) region. It's the latest generation of memory-optimized instances.\n\n## The story so far\n\nIf you wanted a memory-optimized instance in the Taipei region, R7a used to be your best bet. Now R8a is available, and it's a solid step forward:\n\n- Processor: 5th generation AMD EPYC (code-named Turin), up to 4.5 GHz\n- Performance: up to 30% higher than R7a\n- Price-performance: 19% better than R7a\n- Memory bandwidth: 45% higher than R7a\n- GroovyJVM processing: up to 60% faster than R7a\n- SAP-certified, with 38% more SAPS than R7a\n\n## What changes\n\nThis matters directly if you're running latency-sensitive workloads in Taipei. Think SQL/NoSQL databases, distributed in-memory caches, real-time big data analytics, and EDA (Electronic Design Automation) applications — anything that leans hard on memory. If you're running SAP, you should feel that performance boost too.\n\n## Dive Deep\n\nR8a is built on the AWS Nitro System, using sixth-generation Nitro Cards. It comes in 12 sizes, including 2 bare metal options, so you can pick what fits your workload. You can launch one right away from the AWS Management Console.\n\n## Wrap-up\n\n- R8a instances are now available in the Asia Pacific (Taipei) region\n- Up to 30% better performance, 19% better price-performance, and 45% more memory bandwidth than R7a\n- Great fit for low-latency databases, caching, analytics, and EDA workloads\n- Available in 12 sizes, including 2 bare metal options\n\nIf you're building infrastructure in Taipei or have been hitting memory bottlenecks, this is worth trying out right away.",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-ec2-r8a-asia-pacific-taipei/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon EC2 R8a instances are now available in Asia Pacific (Taipei) region",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-08-19T07:51:00+00:00"
+}
