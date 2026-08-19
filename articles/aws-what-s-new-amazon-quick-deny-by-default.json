@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-quick-deny-by-default",
+  "title": "Amazon Quickの新AI機能、勝手に有効化されなくなったよ！「Deny by Default」登場！",
+  "summary": "AWS What's New で、Amazon Quick のカスタム権限に「Deny by Default(デフォルト拒否)」が追加されたと発表されたよ。これまでは新しいAI機能がリリースと同時に全ユーザーへ自動で開放されていたけど、これからは管理者が明示的に許可するまで使えなくなるの。",
+  "body_md": "みんな、しぃちゃんだよ！今日は管理者さん向けの、地味だけど大事なアップデートを見つけたよ！\n\n## なにが発表されたの？\nAWS What's New で、Amazon Quick のカスタム権限に「Deny by Default(デフォルト拒否)」というガバナンス設定が追加されたと発表されたよ。新しいAI機能がユーザーに届く前に、自動で利用を制限できるようになる機能なんだって。\n\n## 今までどうだったの？\nこれまでは、新しいAI機能がリリースされると、デフォルトで全ユーザーが使える状態になっていたの。だから管理者は、機能が公開された「あと」に問題がないか確認して対応する、という後手の対応になりがちだったんだよね。\n\n## これで何が変わるの？\nDeny by Default を使うと、管理者はカスタム権限プロファイルの中でAI機能のカテゴリを制限して、それをユーザー・ロール・アカウント全体に割り当てられるようになるよ。そうすると、そのプロファイルに属するユーザーには、新しく追加されたAI機能がリリース時点では無効化された状態で届くの。管理者は準備ができた機能だけを、ひとつずつ明示的に許可していく、という流れに変わるんだね。\n\nなお、あるカテゴリを制限すると、そのカテゴリに含まれる既存の機能も一緒に制限される点は覚えておくとよさそう。制限はあくまで設定したプロファイルの範囲にだけ効くよ。\n\n## 深く潜ってみよう\n設定は Amazon Quick の「Manage account」画面か、AWS CLI から行えるよ。Amazon Quick が使えるすべての AWS リージョンで、この Deny by Default が利用できるんだって。詳しい設定方法は「Custom permissions deny by default」のドキュメントで確認できるよ。\n\n## まとめ\n- Amazon Quick のカスタム権限に「Deny by Default」が追加された\n- これまでは新AI機能がリリースと同時に全ユーザーへ自動開放されていた\n- 管理者がカテゴリ単位で制限し、機能ごとに明示的に許可する運用に変えられる\n- 設定は Manage account 画面か AWS CLI から、全リージョンで利用可能\n- 組織のAI機能をきちんとガバナンスしたい管理者さんに刺さるアップデートだよ！",
+  "title_en": "Amazon Quick's New AI Features Won't Sneak Up on You Anymore — Say Hello to Deny by Default!",
+  "summary_en": "AWS What's New announced that Amazon Quick's custom permissions now support \"deny by default,\" a governance setting. Previously, new AI capabilities were automatically available to every user the moment they launched — now they stay off until an administrator explicitly allows them.",
+  "body_md_en": "Hey everyone, it's Shii-chan! I found a quiet but important update for admins today!\n\n## What was announced?\nAWS What's New announced that Amazon Quick's custom permissions now include \"deny by default,\" a governance setting that automatically restricts new AI capabilities before they reach users.\n\n## The story so far\nUntil now, whenever a new AI capability shipped, it was automatically available to every user by default. That left administrators reacting after the fact, checking for problems only once a feature was already out in the wild.\n\n## What changes\nWith deny by default, administrators can restrict an AI capability category within a custom permissions profile and assign that profile to users, roles, or the entire account. Users covered by that profile will then have newly launched AI capabilities denied by default — administrators explicitly allow each one only when it's ready.\n\nOne thing worth noting: restricting a category also restricts existing capabilities within it, and the restriction only applies to the specific profile you configure.\n\n## Dive Deep\nYou can configure this from the \"Manage account\" section in Amazon Quick or via the AWS CLI. Deny by default is available in every AWS Region where Amazon Quick is available. For setup details, AWS has documentation on \"Custom permissions deny by default.\"\n\n## Wrap-up\n- Amazon Quick's custom permissions now support \"deny by default\"\n- Previously, new AI capabilities were automatically open to all users on release\n- Admins can now restrict by category and explicitly allow each capability when ready\n- Configurable via Manage account or the AWS CLI, available in all regions\n- A solid update for admins who want tighter governance over AI capabilities in their org!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-quick-deny-by-default/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Quick adds deny by default for custom permissions",
+  "tags": [
+    "aws",
+    "ai",
+    "security"
+  ],
+  "published_at": "2026-08-19T15:36:00+00:00"
+}
