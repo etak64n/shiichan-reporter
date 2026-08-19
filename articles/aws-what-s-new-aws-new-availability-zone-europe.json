@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-new-availability-zone-europe",
+  "title": "ヨーロッパ(ロンドン)リージョンに4つ目のAZが誕生！",
+  "summary": "AWSがヨーロッパ(ロンドン)リージョン(eu-west-2)に4つ目のアベイラビリティゾーン「eu-west-2d」を追加したよ。Trn3やP6みたいな最新の高性能インスタンスも使えるようになって、AI・MLワークロードの容量と高可用性アーキテクチャの選択肢がアップするの。",
+  "body_md": "やっほー、しぃちゃんだよ！今日はAWSのリージョン拡張のニュースだよ、はりきって紹介するね！\n\n## なにが発表されたの？\n\nAWSの What's New によると、ヨーロッパ(ロンドン)リージョン(eu-west-2)に、4つ目のアベイラビリティゾーン「eu-west-2d」が追加されたよ。急増するクラウドコンピュート需要に応えるためのインフラ拡張で、次世代のAI・ML向け容量を届けるのが目的なんだって。\n\n## なぜ重要なの？\n\nアベイラビリティゾーン(AZ)が増えると、アプリケーションをより多くのAZに分散できるようになって、障害分離や高可用性アーキテクチャを組みやすくなるの。特に今回は、AIやMLのトレーニング・推論に使う最新の高性能インスタンスの容量が追加される点が注目ポイントだよ。ロンドンリージョン単体でAIワークロードを完結させたいチームにとっては、うれしい拡張だと思う。\n\n## これで何が変わるの？\n\n新しいAZ「eu-west-2d」が加わったことで、eu-west-2のユーザーは4つのAZにアプリケーションを分散できるようになるよ。これによって耐障害性が上がるだけじゃなく、AI・MLチームはロンドンリージョン内で最新の加速インスタンスを使ったトレーニング・推論をそのまま実行できるようになるの。\n\n## 深く潜ってみよう\n\n新しいAZで使えるインスタンスタイプは、原文でこう紹介されてたよ。\n\n- Amazon EC2 Trn3インスタンス\n- P6加速インスタンス\n- 汎用コンピューティングインスタンス\n\n利用方法もシンプルで、AWS Management Console・API・既存のワークフローからそのままアクセスできて、ツール側の変更は不要とのこと。料金もEurope (London) リージョンの標準料金がそのまま適用されるよ。\n\n## まとめ\n\n- ヨーロッパ(ロンドン)リージョン(eu-west-2)に4つ目のAZ「eu-west-2d」が誕生\n- Trn3・P6を含む最新の加速インスタンスの容量が追加\n- 既存ツール・標準料金のまま利用可能\n\nロンドンリージョンでAI・MLワークロードを動かしてるインフラ担当者や、高可用性構成を組みたい人には見逃せないアップデートだよ！",
+  "title_en": "A 4th Availability Zone is born in the Europe (London) Region!",
+  "summary_en": "AWS has added a fourth Availability Zone, eu-west-2d, to the Europe (London) Region (eu-west-2). It brings capacity for the latest high-performance instances like Trn3 and P6, boosting both AI/ML workload capacity and your options for building highly available architectures.",
+  "body_md_en": "Hey everyone, it's Shii! Today's AWS news is about a region expansion, let's get into it!\n\n## What was announced?\n\nAccording to AWS's What's New, a fourth Availability Zone called \"eu-west-2d\" has been added to the Europe (London) Region (eu-west-2). It's an infrastructure expansion meant to meet growing demand for cloud compute, and it's aimed at delivering next-generation AI and ML capacity.\n\n## Why it matters\n\nMore Availability Zones (AZs) means you can spread your applications across more of them, making it easier to build fault-isolated, highly available architectures. What stands out this time is that the new capacity includes the latest high-performance instances used for AI and ML training and inference. For teams that want to keep their AI workloads entirely within the London Region, this is a welcome expansion.\n\n## What changes\n\nWith the new \"eu-west-2d\" AZ, users in eu-west-2 can now spread applications across four AZs. Beyond improving fault tolerance, AI and ML teams can now run training and inference on the latest accelerated instance types entirely within the London Region.\n\n## Dive Deep\n\nHere are the instance types the original article specifically called out as available in the new AZ:\n\n- Amazon EC2 Trn3 instances\n- P6 accelerated instances\n- General-purpose compute instances\n\nUsing it is straightforward — you can access it through the AWS Management Console, APIs, and your existing workflows, with no tooling changes needed. Standard Europe (London) Region pricing applies.\n\n## Wrap-up\n\n- A 4th AZ, \"eu-west-2d,\" has been added to the Europe (London) Region (eu-west-2)\n- New capacity for the latest accelerated instances, including Trn3 and P6\n- Works with your existing tools at standard pricing\n\nIf you're running AI/ML workloads in the London Region, or you want to build a highly available architecture, this is an update worth noting!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-new-availability-zone-europe/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS announces a new Availability Zone in the Europe (London) Region",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "ai"
+  ],
+  "published_at": "2026-08-19T17:00:00+00:00"
+}
