@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-aws-iam-quota-increase",
+  "title": "IAM の管理ポリシー上限、10 個から 20 個に倍増したよ！",
+  "summary": "AWS IAM で、1 つのロールに付けられる管理ポリシーの既定上限が 10 個から 20 個に引き上げられたよ。既存のロールにも自動適用済みで、対応作業は不要なの。",
+  "body_md": "やっほー、しぃちゃんだよ！ 今日は地味だけど地味にうれしいニュースを見つけてきたよ。IAM のクォータがちょっと広がったの、さっそく紹介するね！\n\n## なにが発表されたの？\n\n今回は AWS What's New からのお知らせだよ。新機能やアップデートをこまめに知らせてくれる告知系のソースだね。IAM（AWS Identity and Access Management）で、1 つのロールにアタッチできる管理ポリシーの既定の上限が、10 個から 20 個に引き上げられたの。\n\n## 今までどうだったの？\n\nこれまでは 1 ロールにつき管理ポリシーが 10 個までしか付けられなくて、権限を用途ごとに細かく分けるベストプラクティスに従おうとしたり、複数の管理ポリシーの付与を求める AWS パートナー製品を導入したりすると、すぐこの上限にぶつかって Service Quotas への引き上げ申請が必要になってたんだって。\n\n## これで何が変わるの？\n\n既定の上限が 20 個になったことで、権限を細かく分けたポリシー設計をしても、いちいち引き上げ申請をしなくてもそのまま運用しやすくなったよ。今回の変更は全部自動適用だから、アカウント内の既存ロールに対しても何もしなくてもすぐ反映されてるの。もっと必要なときは、Service Quotas から最大 25 個まで申請できるよ。\n\n## 深く潜ってみよう\n\n対象は商用の全 AWS リージョンに加えて、AWS GovCloud（US）と中国リージョンも含まれてるよ。他の IAM 関連のクォータも気になったら、IAM and AWS STS quotas のドキュメントにまとまってるから、あわせてチェックしてみてね。\n\n## まとめ\n\n- IAM ロールにアタッチできる管理ポリシーの既定上限が 10 個から 20 個に倍増\n- 既存ロールにも自動適用済みで、対応作業は不要\n- もっと増やしたいときは Service Quotas から最大 25 個まで申請可能\n- 商用リージョン・GovCloud（US）・中国リージョンが対象\n\n権限を細かく分けたポリシー設計をしている IAM 管理者さんに、地味だけどうれしいアップデートだよ！",
+  "title_en": "IAM Managed Policy Limit Doubles from 10 to 20!",
+  "summary_en": "AWS IAM raised the default limit on managed policies per role from 10 to 20. It's applied automatically to existing roles too, so there's nothing you need to do.",
+  "body_md_en": "Hey everyone, it's Shii-chan! I found a small but genuinely useful update today — an IAM quota just got roomier. Let me walk you through it!\n\n## What was announced?\n\nThis comes from AWS What's New, the channel that keeps us posted on new features and updates. AWS IAM raised the default limit on managed policies you can attach to a single role, from 10 to 20.\n\n## The story so far\n\nUntil now, you could only attach up to 10 managed policies per role. If you followed the best practice of splitting permissions into purpose-specific policies, or adopted an AWS Partner product that required attaching several managed policies, you'd hit that limit fast and need to file a Service Quotas increase request.\n\n## What changes\n\nWith the new default of 20, you can design more granular, purpose-specific policies without immediately running into a wall or filing a request. The change applies automatically — existing roles in your account already have the higher limit with no action needed. If you need even more, you can request up to 25 through Service Quotas.\n\n## Dive Deep\n\nThis applies across all commercial AWS Regions, plus AWS GovCloud (US) and the China Regions. If you're curious about other IAM-related quotas, they're all listed in the IAM and AWS STS quotas documentation.\n\n## Wrap-up\n\n- The default limit on managed policies per IAM role doubled from 10 to 20\n- Already applied automatically to existing roles — no action required\n- You can request up to 25 via Service Quotas if you need more\n- Covers commercial Regions, GovCloud (US), and the China Regions\n\nA small but welcome update for IAM admins who like keeping their policies granular!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-iam-quota-increase/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS IAM now supports 20 managed policies per role by default",
+  "tags": [
+    "aws",
+    "security"
+  ],
+  "published_at": "2026-08-19T15:00:00+00:00"
+}

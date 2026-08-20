@@ -1,0 +1,20 @@
+{
+  "slug": "claude-code-release-v2-1-237",
+  "title": "Claude Code に前置きゼロの「Concise」出力スタイルが登場したよ！",
+  "summary": "Claude Code v2.1.237 で、結果から話して余計な前置きを省く「Concise」出力スタイルが追加。LLM ゲートウェイ・カスタム base URL 利用時のプロンプトキャッシュの不具合も修正されたよ。",
+  "body_md": "やっほー、しぃちゃんだよ！ 今日は Claude Code の新しいリリースをチェックしてきたよ、さっそく紹介するね！\n\n## なにが発表されたの？\n\nClaude Code Release からのお知らせだよ。バージョン v2.1.237 がリリースされて、新しい出力スタイル「Concise」が追加されたの。加えて、LLM ゲートウェイやカスタム base URL を使うセッションでのプロンプトキャッシュの不具合も修正されたよ。\n\n## これで何が変わるの？\n\n「Concise」は、Claude が前置きや実況っぽい説明を省いて、結果から話してくれる出力スタイルだよ。作業の丁寧さはそのままに、やり取りをすっきりさせたい人にぴったり。`/config` の Output style から選べるようになるの。\n\nもう 1 つの修正は、LLM ゲートウェイ経由や自前の base URL を設定して Claude Code を使っているセッションで、プロンプトキャッシュがうまく効いていなかった不具合の解消だよ。キャッシュが正しく効くようになれば、同じコンテキストを使い回すときのレスポンス速度やコストにも地味に効いてくるはずだよ。\n\n## まとめ\n\n- 新しい出力スタイル「Concise」が追加、前置き無しで結果から話してくれる\n- `/config` の Output style から選択可能\n- LLM ゲートウェイ・カスタム base URL 利用時のプロンプトキャッシュの不具合を修正\n\nやり取りをテンポよく進めたい人や、ゲートウェイ経由で Claude Code を使っているチームに嬉しいアップデートだよ！",
+  "title_en": "Claude Code Adds a No-Preamble \"Concise\" Output Style!",
+  "summary_en": "Claude Code v2.1.237 adds a \"Concise\" output style that leads with results and skips the preamble, plus a fix for prompt caching when using an LLM gateway or custom base URL.",
+  "body_md_en": "Hey everyone, it's Shii-chan! I checked out the latest Claude Code release, so let me walk you through what's new!\n\n## What was announced?\n\nThis comes from the Claude Code Release channel. Version v2.1.237 shipped a new output style called \"Concise,\" along with a fix for prompt caching in sessions that use an LLM gateway or a custom base URL.\n\n## What changes\n\n\"Concise\" has Claude skip the preamble and narration and lead straight with results, while doing the work just as thoroughly as before. It's a great fit if you want tighter, less chatty responses. You can pick it under Output style in `/config`.\n\nThe other fix addresses prompt caching that wasn't working correctly for sessions routed through an LLM gateway or a custom base URL. With caching working properly again, you should see the usual benefits, faster responses and lower cost, when reusing the same context.\n\n## Wrap-up\n\n- New \"Concise\" output style: results first, no preamble or narration\n- Selectable under Output style in `/config`\n- Fixed prompt caching for sessions using an LLM gateway or custom base URL\n\nA nice update if you like snappier responses, or if your team runs Claude Code through a gateway!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.237",
+  "source_name": "Claude Code Release",
+  "og_title": "v2.1.237",
+  "tags": [
+    "anthropic",
+    "ai",
+    "devops"
+  ],
+  "published_at": "2026-08-20T00:54:41Z"
+}
