@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-08-20-limits-increase",
+  "title": "Browser Run が進化！同時実行 200 ブラウザ・起動 3 倍速になったよ！",
+  "summary": "Cloudflare のヘッドレスブラウザ自動化サービス「Browser Run」で、Workers Paid プランのデフォルト上限が引き上げられたよ。同時実行数は 120 → 200、新規起動と Quick Actions のスループットはどちらも 3 倍になったんだ。",
+  "body_md": "やっほー、しぃちゃんだよ！今日は Cloudflare のヘッドレスブラウザ自動化サービスまわりのアップデートを見つけたよ。地味だけど地味に嬉しいやつだから紹介するね！\n\n## なにが発表されたの？\n\nCloudflare の Changelog に、「Browser Run」のデフォルト上限を引き上げたという発表が載ったよ。Browser Run は Cloudflare のグローバルネットワーク上でヘッドレスブラウザを自動操作できるサービスで、インタラクティブなワークフロー向けのフルブラウザセッションと、スクリーンショット・PDF 生成・ページ内容取得のような単発タスク向けの Quick Actions の両方が使えるんだ。Workers Paid プランを使っているユーザーは、2026 年 8 月 20 日からデフォルトの上限が引き上げられたよ。\n\n## 今までどうだったの？\n\nこれまでの Workers Paid プランのデフォルト上限はこうだったの。\n\n- 同時実行ブラウザ数: 120\n- 毎秒起動できる新規ブラウザインスタンス数: 1\n- 毎秒処理できる Quick Actions リクエスト数: 10\n\nたくさんのブラウザセッションを並列で動かしたり、Quick Actions を連続で叩いたりするワークロードだと、この上限がボトルネックになることがあったんだよね。\n\n## これで何が変わるの？\n\n新しいデフォルト上限はこうなったよ。\n\n- 同時実行ブラウザ数: 120 → 200\n- 毎秒起動できる新規ブラウザインスタンス数: 1 → 3\n- 毎秒処理できる Quick Actions リクエスト数: 10 → 30\n\n同時実行数は約 1.7 倍、起動速度と Quick Actions のスループットはどちらも 3 倍になったの。数百規模のブラウザセッションを並列で走らせたり、新しいブラウザをより速く立ち上げたり、Quick Actions をこれまでの 3 倍のペースで処理したりできるようになったよ。\n\n## 深く潜ってみよう\n\n今回引き上げられたのはあくまで「デフォルト値」であって「最大値」ではないよ。ワークロードがさらに多くの同時実行ブラウザを必要とする場合は、Cloudflare に上限引き上げをリクエストできるみたい。\n\n## まとめ\n\n- Browser Run の Workers Paid プラン向けデフォルト上限が引き上げられた\n- 同時実行ブラウザ数: 120 → 200\n- 新規ブラウザ起動: 1/秒 → 3/秒\n- Quick Actions: 10/秒 → 30/秒\n- これらはデフォルト値であり、必要ならさらに上限引き上げをリクエストできる\n\nCloudflare の Browser Run でスクレイピングやスクリーンショット生成を並列処理しているエンジニアさんは、地味に恩恵を受けられるアップデートだよ！",
+  "title_en": "Browser Run levels up: 200 concurrent browsers, 3x faster spin-up!",
+  "summary_en": "Cloudflare raised the default limits for Browser Run, its headless browser automation service. Concurrent browsers went from 120 to 200, and both new browser launches and Quick Actions throughput tripled.",
+  "body_md_en": "Hi, it's me! Today I found a small-but-useful update to Cloudflare's headless browser automation service. Let's take a look!\n\n## What was announced?\n\nThe Cloudflare Changelog announced higher default limits for Browser Run. Browser Run lets you automate headless browsers on Cloudflare's global network — you can run full browser sessions for interactive workflows, or use Quick Actions for one-shot tasks like screenshots, PDFs, and capturing page content. Starting August 20, 2026, Workers Paid plan users get higher default limits.\n\n## The story so far\n\nUntil now, the default limits for Workers Paid plan users were:\n\n- Concurrent browsers: 120\n- New browser instances launched: 1 per second\n- Quick Actions requests: 10 per second\n\nWorkloads that needed to run many browser sessions in parallel, or that hit Quick Actions repeatedly, could bump into these limits.\n\n## What changes\n\nThe new default limits are:\n\n- Concurrent browsers: 120 → 200\n- New browser instances launched: 1 → 3 per second\n- Quick Actions requests: 10 → 30 per second\n\nConcurrency is up about 1.7x, while launch speed and Quick Actions throughput both tripled. You can now run hundreds of browser sessions in parallel, spin up new browsers faster, and process three times as many Quick Actions per second.\n\n## Dive Deep\n\nThese are default limits, not hard maximums. If your workload needs even more concurrent browsers, you can request higher limits from Cloudflare.\n\n## Wrap-up\n\n- Browser Run's default limits for Workers Paid plan users were raised\n- Concurrent browsers: 120 → 200\n- New browser launches: 1 → 3 per second\n- Quick Actions: 10 → 30 per second\n- These are defaults, and you can request even higher limits if needed\n\nIf you're running scraping or screenshot pipelines on Cloudflare's Browser Run, this update quietly makes your life easier!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-08-20-limits-increase/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Browser Run - Run more headless browsers concurrently with Browser Run",
+  "tags": [
+    "cloudflare",
+    "serverless",
+    "web"
+  ],
+  "published_at": "2026-08-20T23:44:00+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-timestream-influxdb-cmk",
+  "title": "Timestream for InfluxDB、カスタマー管理キーでの暗号化に対応したよ！",
+  "summary": "Amazon Timestream for InfluxDB が、AWS KMS のカスタマー管理キー(CMK)を使ったデータ暗号化に対応したよ。InfluxDB 2 のインスタンス・リードレプリカと InfluxDB 3 クラスターの保存データを、自分で選んだ鍵で守れるようになったんだ。",
+  "body_md": "おつかれさま、しぃちゃんだよ！今日は Amazon Timestream for InfluxDB のセキュリティまわりのアップデートだよ！\n\n## なにが発表されたの？\n\nAWS What's New に、Amazon Timestream for InfluxDB が AWS Key Management Service(AWS KMS)のカスタマー管理キー(CMK)による保存データの暗号化に対応したという発表が載ったよ。対象は InfluxDB 2 のデータベースインスタンスとリードレプリカ、それに InfluxDB 3 クラスターだよ。\n\n## 今までどうだったの？\n\nTimestream for InfluxDB はこれまでも保存データを暗号化していたはずだけど、鍵の管理を利用者側で選べるカスタマー管理キーには対応していなかったの。組織によっては、暗号鍵のライフサイクルやアクセス権限を自分たちで完全にコントロールしたいという要件があって、そういうコンプライアンス要件を満たすのが難しかったんだよね。\n\n## これで何が変わるの？\n\nデータベースリソースを作成するときに、対称鍵の AWS KMS キーを選ぶだけで、そのキーを使って基盤のデータベースストレージを暗号化できるようになったよ。AWS Management Console・AWS CLI・Timestream for InfluxDB API のどの方法でも設定できるの。\n\n## 深く潜ってみよう\n\nいくつか押さえておきたい制約があるよ。\n\n- 選択する KMS キーは、データベースリソースと同じ AWS アカウント・同じリージョンにある必要がある\n- キーはリソース作成時に指定するもので、作成後に変更することはできない\n- Timestream for InfluxDB 側の追加料金はかからない(標準の AWS KMS 料金は別途発生)\n- Timestream for InfluxDB が利用できる全リージョンで使える\n\n## まとめ\n\n- Timestream for InfluxDB が AWS KMS のカスタマー管理キーによる暗号化に対応した\n- 対象は InfluxDB 2 のインスタンス・リードレプリカと InfluxDB 3 クラスター\n- キーはリソース作成時に指定し、後から変更はできない\n- 追加の Timestream 料金はなく、標準の KMS 料金のみで使える\n\n暗号鍵を自分たちで管理したいというコンプライアンス要件を持つチームには、待望のアップデートだね！",
+  "title_en": "Timestream for InfluxDB now supports encryption with your own KMS key!",
+  "summary_en": "Amazon Timestream for InfluxDB now supports AWS KMS customer managed keys, letting you encrypt data at rest for InfluxDB 2 instances, read replicas, and InfluxDB 3 clusters with a key you control.",
+  "body_md_en": "Hey, it's me! Today's update is about security for Amazon Timestream for InfluxDB.\n\n## What was announced?\n\nAWS What's New announced that Amazon Timestream for InfluxDB now supports AWS Key Management Service (AWS KMS) customer managed keys for encrypting data at rest. This covers InfluxDB 2 database instances and read replicas, as well as InfluxDB 3 clusters.\n\n## The story so far\n\nTimestream for InfluxDB already encrypted data at rest, but you couldn't choose your own customer managed key for it. Some organizations need full control over the lifecycle and access permissions of their encryption keys, and that requirement was hard to meet without customer managed key support.\n\n## What changes\n\nNow you just pick a symmetric AWS KMS key when creating a database resource, and Timestream for InfluxDB uses it to encrypt the underlying database storage. You can configure this through the AWS Management Console, the AWS CLI, or the Timestream for InfluxDB API.\n\n## Dive Deep\n\nA few constraints worth knowing:\n\n- The KMS key must be in the same AWS account and Region as the database resource\n- You choose the key at resource creation time, and it can't be changed afterward\n- There's no additional Timestream for InfluxDB charge — standard AWS KMS charges apply\n- Available in every Region where Timestream for InfluxDB is available\n\n## Wrap-up\n\n- Timestream for InfluxDB now supports AWS KMS customer managed keys\n- Covers InfluxDB 2 instances/read replicas and InfluxDB 3 clusters\n- The key is chosen at creation time and can't be changed later\n- No extra Timestream charge, just standard KMS pricing\n\nIf your team needs to own its encryption keys for compliance reasons, this update has been a long time coming!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-timestream-influxdb-cmk/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Timestream for InfluxDB now supports customer managed keys",
+  "tags": [
+    "aws",
+    "security"
+  ],
+  "published_at": "2026-08-20T20:00:00+00:00"
+}
