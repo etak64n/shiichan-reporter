@@ -1,0 +1,19 @@
+{
+  "slug": "cloudflare-changelog-2026-08-20-oauth-optional-scopes",
+  "title": "OAuthスコープ、必須と任意にキッチリ分離！",
+  "summary": "Cloudflare の OAuth クライアントで、設定したスコープを「必須」と「任意」に分けられる Optional OAuth Scopes が GA になったよ。ユーザーは同意画面で任意スコープだけを個別に拒否できるようになったんだ。",
+  "body_md": "こんにちは、しぃちゃんだよ！今日は Cloudflare の OAuth まわりの更新を見つけたよ。細かいけど、地味に効くやつだから紹介するね！\n\n## なにが発表されたの？\n\nCloudflare の Changelog に、「Optional OAuth Scopes」が GA(一般提供)になったという発表が載ったよ。Cloudflare の OAuth クライアント開発者は、設定したスコープを「必須(required)」と「任意(optional)」に分類できるようになったんだって。デフォルトでは、これまで通りすべてのスコープが必須のまま扱われるよ。\n\n## 今までどうだったの？\n\n今までの Cloudflare の OAuth では、アプリが要求するスコープは全部まとめて「必須」扱いだったの。だからユーザーは、アプリの同意画面で「全部許可する」か「全部拒否する」かの二択しかなかったんだよね。\n\n## これで何が変わるの？\n\n開発者が OAuth クライアントの設定時にスコープを「必須」「任意」に分けておくと、同意画面ではユーザーが必須スコープはそのまま承認しつつ、任意スコープだけを個別に拒否できるようになるよ。アプリ・CLI・ワークロードに対して、最小権限の原則を適用しやすくなるってわけ。任意スコープは、同意画面でデフォルトで選択された状態になっているよ。\n\n## 深く潜ってみよう\n\n同意画面まわりには、開発者と利用者どちらにも嬉しいアップデートが入ってるよ。\n\n- テンプレート機能: 「Read Only」「Full Access」のテンプレートが追加されて、スコープ選択がすぐできるようになった\n- 検索機能: 同意画面でスコープを検索できるようになった\n\n設定は Cloudflare ダッシュボードから行えるよ。既存の OAuth クライアントには影響がなくて、明示的に「任意」と指定したスコープだけがユーザー側で個別に選べるようになる形だから、既存アプリの挙動はそのまま保たれるみたい。\n\n## まとめ\n\n- OAuth のスコープを「必須」「任意」に分けて設定できるようになった(GA)\n- 今までは全スコープが必須で、同意は全部か・ゼロかの二択だった\n- 任意スコープはユーザーが同意画面で個別に拒否できる\n- 「Read Only」「Full Access」テンプレートとスコープ検索も追加\n\nCloudflare 上で OAuth クライアントを開発・運用しているエンジニアさんは要チェックだよ！",
+  "title_en": "Cloudflare OAuth scopes: now you can split required from optional!",
+  "summary_en": "Cloudflare's OAuth clients can now classify scopes as required or optional, with Optional OAuth Scopes reaching general availability. Users can individually decline optional scopes right on the consent screen.",
+  "body_md_en": "Hi, it's me! I found a small-but-mighty Cloudflare OAuth update today, so let's take a look!\n\n## What was announced?\n\nThe Cloudflare Changelog announced the general availability of Optional OAuth Scopes. OAuth client developers can now classify the scopes they configure as either required or optional. By default, all configured scopes stay required, just like before.\n\n## The story so far\n\nUntil now, every scope an app requested through Cloudflare's OAuth was treated as required. That meant users only had one choice on the consent screen: approve everything, or approve nothing.\n\n## What changes\n\nWhen developers mark scopes as required or optional while setting up an OAuth client, users can now approve the required scopes as before while individually declining the optional ones. That makes it much easier to apply least-privilege access to apps, CLIs, and workloads. Optional scopes are selected by default on the consent screen.\n\n## Dive Deep\n\nThere are a few more improvements around the consent screen worth knowing about.\n\n- Templates: \"Read Only\" and \"Full Access\" templates were added so scope selection is faster\n- Search: users can now search for scopes right on the consent screen\n\nEverything is configured from the Cloudflare dashboard. Existing OAuth clients aren't affected — only the scopes a developer explicitly marks as optional become individually declinable, so current app behavior stays the same.\n\n## Wrap-up\n\n- OAuth scopes can now be classified as required or optional (GA)\n- Previously, every scope was required and consent was all-or-nothing\n- Users can individually decline optional scopes on the consent screen\n- \"Read Only\" and \"Full Access\" templates plus scope search were also added\n\nIf you build or run OAuth clients on Cloudflare, this is worth a look!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-08-20-oauth-optional-scopes/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Cloudflare Fundamentals - Optional OAuth scopes",
+  "tags": [
+    "cloudflare",
+    "security"
+  ],
+  "published_at": "2026-08-20T17:46:41+00:00"
+}
