@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-08-07-hyperdrive-restart-configuration-dashboard",
+  "title": "Hyperdrive の設定、ダッシュボードから再起動できるようになったよ！",
+  "summary": "Cloudflare Changelog の発表だよ。Hyperdrive の設定をダッシュボードから直接再起動できるようになったの。接続プールを強制的にドレインして、オリジンデータベースへの接続を新しく確立し直せるよ。",
+  "body_md": "やっほー、しぃちゃんだよ！今日は Cloudflare の地味だけど地味に嬉しいアップデートを見つけたから紹介するね。\n\n## なにが発表されたの？\n\nCloudflare の Changelog に、Hyperdrive の設定をダッシュボードから直接再起動できるようになったという発表が載ったよ。再起動すると、接続プールがドレインされて、オリジンデータベースへの新しい接続が確立されるの。\n\n## 今までどうだったの？\n\nHyperdrive はもともと、データベースのフェイルオーバーのほとんどを自動で検知して復旧してくれる仕組みになっているの。だから普段は手動での介入は必要ないんだけど、いざという時に「プールを今すぐ強制的にドレインしたい」というケースには、これまでダッシュボードから手軽に対応する手段がなかったんだよ。\n\n## これで何が変わるの？\n\nこれからは、Cloudflare ダッシュボードで対象の Hyperdrive 設定を開いて、Settings タブの Danger zone にある Restart を選ぶだけで再起動できるようになったよ。再起動したあとは、最後に手動再起動した日時が Settings タブに表示されるから、いつ操作したか後から確認できるの。\n\n- 実行には Hyperdrive Admin ロールが必要だよ\n- 再起動は break-glass action(緊急時の最終手段)という位置づけで、普段使いの操作ではないの\n- プール内のアクティブな接続はすべてドロップされて再確立されるから、実行中のクエリが一時的にエラーになることがあるよ\n\n## まとめ\n\n- Hyperdrive の設定をダッシュボードから直接再起動できるようになったよ\n- 再起動は接続プールを強制的にドレインして、オリジンへの接続を作り直す操作なの\n- 実行には Hyperdrive Admin ロールが必要で、break-glass action として使う想定だよ\n- データベースの接続まわりで「今すぐプールをリセットしたい」場面が出てくる、Hyperdrive を運用しているエンジニアに嬉しいアップデートだね！",
+  "title_en": "Hyperdrive Configurations Can Now Be Restarted Right from the Dashboard!",
+  "summary_en": "A Cloudflare Changelog update: you can now restart a Hyperdrive configuration directly from the dashboard, forcing the connection pool to drain and re-establish fresh connections to your origin database.",
+  "body_md_en": "Hi, it's me, Shiichan! Today I found a small but genuinely handy Cloudflare update, so let me share it.\n\n## What was announced?\n\nCloudflare's Changelog announced that you can now restart a Hyperdrive configuration directly from the dashboard. Restarting drains the connection pool and forces Hyperdrive to establish fresh connections to your origin database.\n\n## The story so far\n\nHyperdrive already detects and recovers from most database failovers automatically, so manual intervention usually isn't needed. But until now, there wasn't an easy way from the dashboard to force an immediate pool drain when you really needed one.\n\n## What changes\n\nNow you can select your Hyperdrive configuration in the Cloudflare dashboard, go to the Settings tab, and choose Restart under Danger zone. After a restart, the Settings tab shows when the configuration was last manually restarted, so you can check the timing later.\n\n- Restarting requires the Hyperdrive Admin role\n- It's positioned as a break-glass action — not something for everyday use\n- All active connections in the pool are dropped and re-established, so in-flight queries may see brief errors while the pool rebuilds\n\n## Wrap-up\n\n- You can now restart a Hyperdrive configuration straight from the dashboard.\n- Restarting forcibly drains the connection pool and re-establishes fresh connections to the origin.\n- It requires the Hyperdrive Admin role and is meant as a break-glass action.\n- A handy update for anyone running Hyperdrive who needs to reset the pool right away!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-08-07-hyperdrive-restart-configuration-dashboard/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Hyperdrive - Restart a Hyperdrive configuration from the dashboard",
+  "tags": [
+    "cloudflare",
+    "infrastructure",
+    "serverless"
+  ],
+  "published_at": "2026-08-07T00:00:00+00:00"
+}

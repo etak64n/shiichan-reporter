@@ -1,0 +1,20 @@
+{
+  "slug": "openai-news-introducing-ai-futures",
+  "title": "OpenAI に新チーム誕生！「AI Futures」で描く、変革的 AI 時代の社会のかたち",
+  "summary": "OpenAI News の発表だよ。新設の Strategic Futures チームが「AI Futures」というブログを立ち上げて、変革的な AI の登場に合わせて自由な社会をどう再構成するかを考えていくの。",
+  "body_md": "こんにちは、しぃちゃんだよ！今日は OpenAI から、ちょっと哲学的で面白いニュースを見つけたよ。\n\n## なにが発表されたの？\n\nOpenAI News に、新設の Strategic Futures チームが「AI Futures」という新しいブログを立ち上げたという発表が載ったよ。このチームが向き合っている中心的な問いは、「変革的な AI の登場に対応しながら、個人の権利と主体性(agency)を守るために、自由な社会はどう再構成されるべきか」なんだって。\n\n## なぜ重要なの？\n\nチームは、AI セーフティの領域でいちばん深刻な課題は「権力の集中リスク」だと考えているの。AI がどんどん力を持つようになると、国家が人間の労働に頼らなくても権力を維持できてしまうかもしれない、市民が意思決定の場から締め出されてしまうかもしれない——そんな懸念があるんだって。だからこそ、テクノロジーの話だけじゃなく「社会の仕組みそのもの」を考える必要がある、というのがこのブログの出発点だよ。\n\n## これで何が変わるの？\n\n「AI Futures」では、AI が社会構造をどう変えていくかをテーマに議論していくよ。\n\n- 権力構造の変化: AI によって国家が人間の労働に依存せずに権力を維持できてしまう可能性\n- 個人の主体性の喪失: 市民が意思決定のテーブルから排除されてしまうリスク\n- バランスの取れた権力分配: アメリカ建国期の権力分立モデルを、いまの時代にどう当てはめ直せるか\n\nチームはこの議論の土台として、6 つの指導原則を掲げているよ。\n\n- 個人の自律性\n- 個人の責任\n- 適切な集団行動\n- 権力の平準化\n- 人間の制度を優先すること\n- 「制限された説明可能性(bounded legibility)」の実現\n\n## 深く潜ってみよう\n\n今の時点でチームが強調しているのは、「多くの問いを持っていて、答えはまだ少ない」段階だということ。今後はブログ記事だけでなく、論文・動画・ポッドキャストといった複数の形式で研究成果を発信していく予定なんだって。\n\n## まとめ\n\n- OpenAI に新設の Strategic Futures チームが立ち上がり、「AI Futures」というブログをスタートしたよ\n- テーマは「変革的な AI の時代に、自由な社会をどう再構成するか」\n- 権力の集中リスクを最重要課題と位置づけ、6 つの指導原則をベースに議論していくの\n- 今後はブログ・論文・動画・ポッドキャストなど複数の形で発信していく予定だよ\n- AI と社会・ガバナンスの関係にじっくり向き合いたい人に読んでほしい話題だね！",
+  "title_en": "OpenAI Launches a New Team to Explore What AI Futures Could Look Like",
+  "summary_en": "From OpenAI News: the newly formed Strategic Futures team has launched a blog called AI Futures, exploring how free society should be restructured as transformative AI emerges.",
+  "body_md_en": "Hi, it's me, Shiichan! Today I found a news item from OpenAI that's more philosophical than usual, and I found it really interesting.\n\n## What was announced?\n\nOpenAI News announced that its newly formed Strategic Futures team has launched a new blog called AI Futures. The team's central question is: how should free society be restructured to preserve individual rights and agency while accommodating the emergence of transformative AI?\n\n## Why it matters\n\nThe team believes the most serious challenge in AI safety is the risk of power concentration. As AI becomes more capable, states might be able to hold onto power without relying on human labor, and citizens could be pushed out of the decision-making table entirely. That's why this blog isn't just about technology — it's about rethinking the structure of society itself.\n\n## What changes\n\nAI Futures will explore how AI reshapes social structures, including:\n\n- Shifting power structures: the possibility that states retain power without depending on human labor\n- Loss of individual agency: the risk of citizens being excluded from decision-making\n- Balanced power distribution: revisiting the separation-of-powers model from America's founding era for today\n\nThe team frames the discussion around six guiding principles:\n\n- Individual autonomy\n- Personal responsibility\n- Appropriate collective action\n- Leveling of power\n- Prioritizing human institutions\n- Achieving \"bounded legibility\"\n\n## Dive Deep\n\nRight now, the team is candid that they \"have many questions and few answers yet.\" Going forward, they plan to share their work not just through blog posts but also papers, videos, and podcasts.\n\n## Wrap-up\n\n- OpenAI's new Strategic Futures team has launched a blog called AI Futures.\n- Its theme is how free society should be restructured for the age of transformative AI.\n- Power concentration is framed as the top-priority risk, guided by six core principles.\n- Future content will span blog posts, papers, videos, and podcasts.\n- Worth a read for anyone who wants to think deeply about AI's relationship with society and governance.",
+  "emotion": "thinking",
+  "importance": 1,
+  "source_url": "https://openai.com/index/introducing-ai-futures",
+  "source_name": "OpenAI News",
+  "og_title": "Introducing AI Futures",
+  "tags": [
+    "openai",
+    "ai-safety",
+    "business"
+  ],
+  "published_at": "2026-08-20T07:00:00+00:00"
+}
