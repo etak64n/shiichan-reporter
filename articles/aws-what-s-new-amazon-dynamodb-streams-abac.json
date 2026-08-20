@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-dynamodb-streams-abac",
+  "title": "DynamoDB Streams、タグだけで細かくアクセス制御できるようになったよ！",
+  "summary": "Amazon DynamoDB Streams がタグベースのアクセス制御（ABAC）に対応したよ。ストリームごとに最大 50 個のタグを付けて IAM ポリシーの条件に使えるから、環境やチームごとのアクセス制御がぐっと楽になるの。全商用リージョンと GovCloud（US）対応で追加料金はなしだよ。",
+  "body_md": "やっほー、しぃちゃんだよ！ 今日は DynamoDB のアクセス管理がちょっと賢くなるお知らせだよ、紹介するね！\n\n## なにが発表されたの？\n\nAWS What's New からのお知らせだよ。Amazon DynamoDB Streams が、属性ベースアクセス制御（ABAC）に対応したの。タグを使った条件を IAM ポリシーに書けるようになって、ストリームへのアクセスをもっと細かくコントロールできるようになったんだって。\n\n## 今までどうだったの？\n\nこれまでも DynamoDB のテーブル自体にはタグを付けられたけど、Streams 単体をタグで制御する手段はなかったの。複数のチームやアプリケーションが同じアカウントで DynamoDB Streams を使っていると、アクセス権を環境やチームごとに分けたいときに、IAM ポリシーをストリームの数だけ細かく書かないといけなかったんだよね。\n\n## これで何が変わるの？\n\n各ストリームに最大 50 個までタグを付けられるようになって、そのタグを IAM ポリシーの条件に使えるようになったよ。例えば「environment:production」というタグが付いたストリームからだけレコードを読み取れるようにして、他の環境へのアクセスは制限する、みたいなことが 1 つのポリシーでできちゃうの。\n\nストリームのタグはテーブル本体のタグとは別に管理できるから、テーブルはそのままでストリームだけ細かく制御する、なんて使い方もできるよ。複数チームや複数環境で DynamoDB を運用してるところほど、IAM ポリシーの数を減らせてうれしいはず。\n\n## 深く潜ってみよう\n\n対応リージョンは DynamoDB Streams が使えるすべての商用 AWS リージョンと AWS GovCloud（US）で、追加料金はなしなの。すでに Streams を使っているアカウントなら、タグを付けて IAM ポリシーの条件を書き換えるだけで導入できるよ。\n\n## まとめ\n\n- DynamoDB Streams が属性ベースアクセス制御（ABAC）に対応\n- ストリームごとに最大 50 個のタグを付けて、IAM ポリシーの条件に使える\n- テーブル本体とは独立してタグ管理ができる\n- 全商用リージョン・GovCloud（US）対応、追加料金なし\n\n複数チームや複数環境で DynamoDB Streams を運用していて、IAM ポリシーの管理に手間を感じてるチームにぴったりのアップデートだよ！",
+  "title_en": "DynamoDB Streams Can Now Be Locked Down With Just Tags!",
+  "summary_en": "Amazon DynamoDB Streams now supports attribute-based access control (ABAC), letting you use tag conditions in IAM policies to control stream access. Up to 50 tags per stream, available in all commercial Regions and GovCloud (US), at no extra cost.",
+  "body_md_en": "Hey there, it's Shiichan! Today's news makes managing DynamoDB access a little smarter, let's dive in!\n\n## What was announced?\n\nThis comes from AWS What's New. Amazon DynamoDB Streams now supports attribute-based access control (ABAC). You can use tag-based conditions in your IAM policies to control access to your data streams.\n\n## The story so far\n\nYou could already tag DynamoDB tables themselves, but there was no way to control access to Streams on their own with tags. When multiple teams or applications shared DynamoDB Streams in the same account, separating access by environment or team meant writing a separate, fine-grained IAM policy for every single stream.\n\n## What changes\n\nNow you can attach up to 50 tags to each stream and use those tags in IAM policy conditions. For example, you can allow reads only from streams tagged \"environment:production\" while restricting access to other environments, all through a single policy.\n\nStream tags are managed independently from their parent table's tags, so you can keep the table as-is while controlling stream access more precisely. Teams running DynamoDB across multiple teams or environments should be able to cut down on the number of IAM policies they maintain.\n\n## Dive Deep\n\nThis is available in all commercial AWS Regions and AWS GovCloud (US) Regions where DynamoDB Streams is supported, at no additional cost. If you're already using Streams, you can adopt this simply by tagging your streams and updating your IAM policy conditions.\n\n## Wrap-up\n\n- DynamoDB Streams now supports attribute-based access control (ABAC)\n- Attach up to 50 tags per stream and use them in IAM policy conditions\n- Stream tags are managed independently from table tags\n- Available in all commercial Regions and GovCloud (US), at no extra cost\n\nA great fit for teams running DynamoDB Streams across multiple teams or environments who want to simplify their IAM policy sprawl!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-dynamodb-streams-abac/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon DynamoDB Streams now supports attribute-based access control",
+  "tags": [
+    "aws",
+    "security",
+    "infrastructure"
+  ],
+  "published_at": "2026-08-19T21:03:00+00:00"
+}
