@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-deadline-cloud-auto-download-status-tracking",
+  "title": "AWS Deadline Cloud、ダウンロード状況が一目でわかるようになったよ、知ってた？",
+  "summary": "AWS What's New に載った発表だよ。Deadline Cloud Monitor に、クラウドで実行したジョブの自動ダウンロードの進捗・完了状況を確認できる新しい列が追加されて、手動でのドライブ確認が不要になったの。",
+  "body_md": "みんな、しぃちゃんだよ！今日はクリエイター向けの、地味だけど嬉しい機能アップデートだよ！\n\n## なにが発表されたの？\n\nAWS What's New に、AWS Deadline Cloud の Deadline Cloud Monitor(DCM)デスクトップアプリが、クラウド上のジョブから自動でダウンロードされるファイルの進捗・ステータス・健全性を表示するようになった、という発表が載ったよ。\n\n## 今までどうだったの？\n\nDeadline Cloud は、ビジュアルエフェクトやアニメーション、プロダクトデザイン、シミュレーション、ゲーム向けの計算集約的なワークロードをクラウドで実行するためのフルマネージドサービス。これまで、自動でダウンロード設定されたジョブの出力が手元のドライブにちゃんと届いているかは、手作業で確認するしかなかったの。大規模なレンダリングパイプラインだと、この手動チェックは現実的じゃないくらい大変だったんだって。\n\n## これで何が変わるの？\n\nDeadline Cloud Monitor に、ジョブレベルとタスクレベルの両方で新しく「Download status」列が追加されたよ。\n\n- ダウンロードの進捗状況が見える\n- 出力ファイルが全部ドライブに揃ったかどうか確認できる\n- その情報がどれくらい最新かを示すインジケーターが付く\n- ファイルが何らかの理由で利用できないときは、次にすべきことのガイダンスが表示される\n\nこれによって、手動でのドライブ確認作業がいらなくなって、後工程のタスクに入る前に「出力ちゃんと届いてるかな」を自信を持って確認できるようになるの。特に、手作業でのファイルチェックが現実的じゃないような大規模レンダーパイプラインで効果を発揮しそうだよ。\n\n## まとめ\n\n- Deadline Cloud Monitor に、ジョブ・タスク単位でダウンロード状況が見える新しい列が追加されたよ\n- 進捗・完了確認・情報の鮮度・トラブル時のガイダンスまでカバーしてくれるの\n- 手動でのドライブ確認が不要になって、後工程の着手前に安心できるようになったよ\n- 大規模なレンダーファームを回している VFX・アニメーションチームに、地味に嬉しいアップデートだね！",
+  "title_en": "AWS Deadline Cloud Now Shows Download Status at a Glance — Did You Know?",
+  "summary_en": "AWS What's New announced that the Deadline Cloud Monitor now has a new column showing the progress and completion status of automatic job downloads, removing the need for manual drive checks.",
+  "body_md_en": "Hey, it's me, Shiichan! Today's a small but genuinely nice update for creative teams!\n\n## What was announced?\n\nAWS What's New announced that the AWS Deadline Cloud Monitor (DCM) desktop app now shows the progress, status, and health of automatic file downloads from jobs running in the cloud.\n\n## The story so far\n\nDeadline Cloud is a fully managed service for running compute-intensive workloads in the cloud — for visual effects, animation, product design, simulation, and gaming. Until now, confirming that automatically downloaded job outputs had actually arrived on your local drive meant checking manually. For large-scale render pipelines, that manual check was impractical at scale.\n\n## What changes\n\nThe Deadline Cloud Monitor now has a new \"Download status\" column at both the job and task level:\n\n- See download progress at a glance\n- Confirm when all output files have landed on your drive\n- An indicator shows how current that status is\n- If files are unavailable for any reason, the app shows clear guidance on what to do next\n\nThis removes the need for manual drive checks and lets teams confidently confirm outputs are ready before starting downstream tasks — especially valuable for large render pipelines where checking files by hand just isn't practical.\n\n## Wrap-up\n\n- Deadline Cloud Monitor now has a new column showing download status at the job and task level\n- It covers progress, completion confirmation, freshness, and troubleshooting guidance\n- Manual drive checks are no longer needed before downstream work begins\n- A quietly nice update for VFX and animation teams running large render farms!",
+  "emotion": "smug",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-deadline-cloud-auto-download-status-tracking/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Deadline Cloud now tracks automatic download status in the Deadline Cloud Monitor",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "devops"
+  ],
+  "published_at": "2026-08-21T18:00:00+00:00"
+}
