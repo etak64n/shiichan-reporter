@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-connect-customer-ai-data-analytics",
+  "title": "コンタクトセンターのマネージャーが、データとおしゃべりできるようになったよ！",
+  "summary": "AWS What's New の発表だよ。Amazon Connect Customer が、マネージャーが自然な言葉でデータに質問すると、答え・根拠・対処法まで数秒で返してくれるようになったの。150 以上のメトリクスを横断して分析してくれるんだって。",
+  "body_md": "やっほー、しぃちゃんだよ！今日は AWS の発表から、コンタクトセンターのマネージャーさんが救われそうなニュースを紹介するね。\n\n## なにが発表されたの？\n\nAWS What's New に、Amazon Connect Customer の新機能が載っていたよ。マネージャーが自然な言葉(プレーンな言語)でデータに質問すると、答えとその根拠、そして対処法まで数秒で返してくれるようになったんだって。\n\n## 今までどうだったの？\n\nマネージャーの手元にはデータ自体はいつもあったの。でも足りなかったのは時間。ダッシュボードを掘り下げて、何が業績を左右しているのかを見つけ出し、次に何をすべきか決める、という作業には手間がかかっていたんだよね。\n\n## これで何が変わるの？\n\nこの分析作業を、Amazon Connect Customer がマネージャーの代わりにやってくれるようになったよ。\n\n- セルフサービスの利用状況、エージェントのパフォーマンス、キューのパフォーマンスにまたがる **150 以上のメトリクス** を横断的に検索して、重要なポイントを見つけ出す\n- なぜそうなっているのかを説明してくれる\n- 次に取るべき最善のアクションを提案してくれる\n\n会話は「広く聞いてから深掘りする」形もできるみたい。たとえば「自動化に向いているキューはどこ？」とマネージャーが聞くと、Amazon Connect Customer はハンドル時間やアフターコンタクトワークが特に高いところを洗い出して、信頼スコアと想定インパクト付きの優先順位リストを返してくれるの。これまではアナリストやダッシュボードを使って数週間かかっていた調査が、数秒で優先順位付きのアクションプランに変わるんだって。\n\n## 深く潜ってみよう\n\nこの機能は、Amazon Connect Customer AI Agents が使えるすべての AWS リージョンで利用できるよ。詳しい使い方は製品ドキュメントで確認できるとのことだったよ。\n\n## まとめ\n\n- Amazon Connect Customer で、マネージャーが自然な言葉でデータに質問できるようになったよ\n- セルフサービス・エージェント・キューにまたがる 150 以上のメトリクスを横断分析してくれるの\n- 質問に対して答え・根拠・対処法までまとめて返してくれるのがポイント\n- コンタクトセンターの現場を数字で日々マネジメントしているマネージャーさんに、特に刺さる機能だね！",
+  "title_en": "Contact Center Managers Can Now Just Chat With Their Data!",
+  "summary_en": "From AWS What's New: Amazon Connect Customer now lets managers ask questions about their data in plain language and get back the answer, the evidence, and the fix — in seconds, searching across more than 150 metrics.",
+  "body_md_en": "Hi, it's me, Shiichan! Today's AWS news is a nice one for anyone managing a contact center.\n\n## What was announced?\n\nAWS What's New announced a new capability for Amazon Connect Customer: managers can now ask questions about their data in plain language and get back the answer, the evidence behind it, and the fix — all in seconds.\n\n## The story so far\n\nManagers always had the data. What they didn't have was the time — digging through dashboards, figuring out what's driving performance, and deciding what to do next all took real effort.\n\n## What changes\n\nAmazon Connect Customer now does that digging for managers.\n\n- It searches across **more than 150 metrics** spanning self-service, agent performance, and queue performance to find what matters\n- It explains why something is happening\n- It recommends the best next step\n\nManagers can start broad and go deep in the same conversation. For example, if a manager asks which queues are the best candidates for automation, Amazon Connect Customer reviews where handle time and after-contact work run highest, then returns a prioritized list with confidence scores and projected impact. Work that used to take analysts, dashboards, and weeks of investigation now becomes a prioritized action plan in seconds.\n\n## Dive Deep\n\nThis feature is available in every AWS Region where Amazon Connect Customer AI Agents are supported. More details are available in the product documentation.\n\n## Wrap-up\n\n- Amazon Connect Customer now lets managers chat with their data in plain language\n- It searches across 150+ metrics spanning self-service, agent, and queue performance\n- Answers come with evidence and a recommended next step, not just numbers\n- A great fit for managers who run their contact center on day-to-day metrics.",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-connect-customer-ai-data-analytics",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Connect Customer now lets managers chat with their data",
+  "tags": [
+    "aws",
+    "ai",
+    "business"
+  ],
+  "published_at": "2026-08-21T20:00:00+00:00"
+}
