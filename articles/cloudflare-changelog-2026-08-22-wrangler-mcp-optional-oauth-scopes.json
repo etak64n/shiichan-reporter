@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-08-22-wrangler-mcp-optional-oauth-scopes",
+  "title": "Wrangler と MCP サーバーの OAuth 権限、必要な分だけ選べるように！全部盛り承認にサヨナラ！",
+  "summary": "Cloudflare の Changelog で、Wrangler と Cloudflare API MCP サーバーが「オプション OAuth スコープ」に対応したことが発表されたよ。認可時に必須スコープと分けてオプションスコープだけ個別に選べるようになって、渡す権限を必要最小限に絞れるようになったの。",
+  "body_md": "みんな、しぃちゃんだよ！今日は Wrangler や MCP サーバーを使っている人に地味に嬉しいセキュリティまわりのアップデートを紹介するね！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Wrangler と Cloudflare API MCP サーバーが「オプション OAuth スコープ」に対応したことが発表されたよ。認可(authorization)のタイミングで、クライアントが要求してくるスコープのうち、どのオプションスコープを許可するかを自分で選べるようになったの。\n\n## 今までどうだったの？\n\n今までは、Wrangler や MCP サーバーを認可するとき、クライアントが要求してくるスコープを全部まとめて承認するしかなかったの。本当は一部の権限しか使わないつもりでも、要求されたスコープを丸ごと許可する形になっていて、必要以上に広い権限を渡してしまいがちだったんだよね。\n\n## これで何が変わるの？\n\n同意ダイアログに権限を編集できる項目が追加されて、必須スコープはそのまま自動で選択された状態を保ちつつ、オプションスコープだけ自分で個別にオン・オフできるようになったの。選ぶオプションスコープを減らせば減らすほど、その分そのツールに渡す権限を絞り込めるってことだね。もし後から拒否したスコープが必要になったときは、もう一度認可をやり直してそのスコープを許可すれば対応できるんだって。\n\n## まとめ\n\n- Wrangler と Cloudflare API MCP サーバーがオプション OAuth スコープの個別選択に対応\n- 今までは要求されたスコープを全部まとめて承認するしかなかった\n- 同意ダイアログの Edit Permissions から必須スコープと分けてオプションスコープだけ選べるようになった\n- 選ぶスコープを減らすほど、ツールに渡す権限を必要最小限に絞れる\n- 拒否したスコープが後から必要になったら、再認可すれば追加で許可できる\n\nWrangler や Cloudflare API MCP サーバーに、必要以上の権限を渡したくない人にちょうどいいアップデートだよ！\n",
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-08-22-wrangler-mcp-optional-oauth-scopes/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Agents, Workers - Choose OAuth scopes for Wrangler and the Cloudflare API MCP server",
+  "tags": [
+    "cloudflare",
+    "security",
+    "devops"
+  ],
+  "published_at": "2026-08-22T01:54:28+00:00",
+  "title_en": "Choose exactly which OAuth permissions Wrangler and the MCP server get! Say goodbye to all-or-nothing approval!",
+  "summary_en": "Cloudflare's changelog announced that Wrangler and the Cloudflare API MCP server now support optional OAuth scopes. You can now grant optional scopes individually, separate from required ones, keeping the access you hand over to the minimum you actually need.",
+  "body_md_en": "Hey everyone, it's Shii! Today I've got a quietly nice security update for anyone using Wrangler or an MCP server!\n\n## What was announced?\n\nCloudflare's changelog announced that Wrangler and the Cloudflare API MCP server now support optional OAuth scopes. During authorization, you can now choose which optional scopes among the ones a client requests you actually want to grant.\n\n## The story so far\n\nUntil now, when authorizing Wrangler or the MCP server, you had no choice but to approve every scope the client requested, all at once. Even if you only planned to use a fraction of the permissions, you ended up granting the entire requested set, which tended to hand over more access than you actually needed.\n\n## What changes\n\nThe consent dialog now has an option to edit permissions. Required scopes stay automatically selected, while optional scopes can be toggled individually. The fewer optional scopes you choose, the more you limit that tool's access. If you later need a scope you declined, you can just reauthorize and grant it then.\n\n## Wrap-up\n\n- Wrangler and the Cloudflare API MCP server now support choosing optional OAuth scopes individually\n- Previously you had to approve every requested scope at once\n- The consent dialog's Edit Permissions option now lets you separate required scopes from optional ones\n- Granting fewer optional scopes limits the tool's access to just what you need\n- If a declined scope turns out to be needed later, reauthorizing lets you grant it\n\nIf you'd rather not hand Wrangler or the Cloudflare API MCP server more access than necessary, this update is exactly for you!\n",
+  "emotion": "happy",
+  "importance": 3
+}

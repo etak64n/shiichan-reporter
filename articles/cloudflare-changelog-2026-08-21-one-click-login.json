@@ -1,0 +1,19 @@
+{
+  "slug": "cloudflare-changelog-2026-08-21-one-click-login",
+  "title": "Cloudflare ダッシュボードのログインがワンクリックに！保存プロフィールで爆速サインインだよ！",
+  "summary": "Cloudflare Dashboard に、次回から一発でサインインできる「ログインプロフィールの保存」機能が追加されたよ。保存されるのはメールアドレス・ログイン方法・最終利用プロフィールで、デバイスあたり最大5つまで保存できるんだって。",
+  "body_md": "やっほー、しぃちゃんだよ！今日は Cloudflare の Changelog でちっちゃいけど地味に嬉しいニュースを見つけたから紹介するね！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Cloudflare Dashboard に「ログインプロフィールの保存」機能が追加されたことが発表されたよ。サインインに成功したあと、そのデバイスにログインプロフィールを保存できるようになったの。保存されるのはメールアドレス・ログイン方法・最後に使ったプロフィールの情報で、ブラウザのローカルに残る仕組みなんだって。\n\n## 今までどうだったの？\n\n今までは Cloudflare Dashboard にログインするたびに、メールアドレスを入力してパスワードなり SSO なりのログイン方法を選び直す必要があったの。複数アカウントを行き来したり、同じデバイスで何度もサインインし直したりする人にとっては、この毎回の入力がちょっとした手間になっていたんだよね。\n\n## これで何が変わるの？\n\nプロフィールを保存しておけば、次回からはログインページに保存済みプロフィールがそのまま表示されるようになるの。パスワードログインならメールフィールドが自動で埋まるし、SSO やソーシャルログインならそのフローがそのまま再開できるんだって。毎回タイプする手間が減って、サインインがぐっと速くなるよ。\n\n## 深く潜ってみよう\n\n保存できるプロフィールはデバイスあたり最大5つまでで、いらなくなったプロフィールはいつでも一覧から削除できるんだって。保存される情報はあくまでメールアドレス・ログイン方法・最終利用プロフィールで、ブラウザのローカルに保持される形。複数のチームやアカウントを Cloudflare で使い分けている人には地味に嬉しいポイントだね。\n\n## まとめ\n\n- Cloudflare Dashboard にログインプロフィールの保存機能が追加された\n- 保存されるのはメールアドレス・ログイン方法・最終利用プロフィール(ブラウザのローカル保存)\n- デバイスあたり最大5つまで保存でき、いつでも削除できる\n- パスワードログインは自動入力、SSO・ソーシャルログインはフローを再開できる\n\n複数のアカウントを Cloudflare で使い分けている人や、同じデバイスで何度もサインインし直す機会が多い人に地味に刺さるアップデートだよ！\n",
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-08-21-one-click-login/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Cloudflare Fundamentals - Saved login profiles for returning users",
+  "tags": [
+    "cloudflare",
+    "security"
+  ],
+  "published_at": "2026-08-21T00:00:00+00:00",
+  "title_en": "Cloudflare Dashboard logins go one-click! Save a profile for lightning-fast sign-in!",
+  "summary_en": "The Cloudflare Dashboard now lets you save a login profile for one-click sign-in next time. It stores your email, login method, and last-used profile, with up to 5 profiles saved per device.",
+  "body_md_en": "Hey, it's Shii! Today I found a small but quietly nice bit of news on the Cloudflare changelog, so let's take a look!\n\n## What was announced?\n\nCloudflare's changelog announced a new \"saved login profiles\" feature for the Cloudflare Dashboard. After a successful sign-in, you can now save a login profile on that device. What gets saved is your email address, login method, and last-used profile, kept locally in your browser.\n\n## The story so far\n\nUntil now, every time you logged into the Cloudflare Dashboard, you had to type your email address and pick a login method like a password or SSO all over again. If you were switching between multiple accounts or signing in repeatedly on the same device, that repeated typing added up to some friction.\n\n## What changes\n\nOnce you save a profile, it shows up right on the login page the next time around. For password logins, the email field gets prefilled, and for SSO or social logins, it resumes that flow directly. Less typing every time means signing in gets noticeably faster.\n\n## Dive Deep\n\nYou can save up to 5 profiles per device, and you can remove any profile you no longer need from the list at any time. What's stored is just your email address, login method, and last-used profile, kept locally in your browser. It's a small but genuinely nice touch if you juggle multiple teams or accounts on Cloudflare.\n\n## Wrap-up\n\n- Cloudflare Dashboard now supports saving login profiles\n- What's saved is your email, login method, and last-used profile (stored locally in your browser)\n- Up to 5 profiles per device, removable anytime\n- Password logins get prefilled, SSO/social logins resume directly\n\nIf you juggle multiple Cloudflare accounts or sign in repeatedly on the same device, this is a quietly nice update for you!\n",
+  "emotion": "happy",
+  "importance": 2
+}
