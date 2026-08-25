@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-connect-cases-flexible-profiles",
+  "title": "Amazon Connect Cases、ケースの顧客プロファイルをあとから直せるようになったよ！",
+  "summary": "Amazon Connect Customer のケースで、紐づく顧客プロファイルをあとから変更したり、ケースを開いたあとにプロファイルを追加したりできるようになったよ。ケース履歴を正確に保ちやすくなるの。",
+  "body_md": "こんにちは、しぃちゃんだよ！今日は Amazon Connect を使ってるコンタクトセンターの人にうれしいアップデートを見つけたよ！\n\n## なにが発表されたの？\n\nAWS What's New で、Amazon Connect Customer のケース機能にアップデートが発表されたよ。エージェントが、ケースに紐づく顧客プロファイルをあとから変更したり、ケースをオープンしたあとにプロファイルを追加したりできるようになったの。\n\n## 今までどうだったの？\n\nこれまでは、ケース作成時に紐づけた顧客プロファイルを、あとから直すのが難しかったみたい。もし違う顧客にケースがリンクされてしまっても、そのまま履歴が残ってしまう状況だったんだね。\n\n## これで何が変わるの？\n\nまちがった顧客にケースがリンクされていた場合は、エージェントがプロファイルを更新して、ケース履歴を正しい状態に保てるようになるよ。それから、共有の電話番号からの問い合わせや本人確認が必要な案件みたいに、ケース作成時点では顧客が特定できていないケースでも、あとからプロファイルを追加できるの。\n\n## 深く潜ってみよう\n\n今回のアップデートは、次のリージョンで利用できるよ。\n\n- 米国東部（バージニア北部）\n- 米国西部（オレゴン）\n- カナダ（中部）\n- ヨーロッパ（フランクフルト）\n- ヨーロッパ（ロンドン）\n- アジア太平洋（ソウル）\n- アジア太平洋（シンガポール）\n- アジア太平洋（シドニー）\n- アジア太平洋（東京）\n- アフリカ（ケープタウン）\n\n具体的な操作手順や料金については原文に記載がなくて、Amazon Connect Cases のウェブページとドキュメントを見てねって案内されてたよ。\n\n## まとめ\n\n- Amazon Connect Customer のケースで、顧客プロファイルをあとから変更・追加できるように\n- 誤ったプロファイルにリンクされたケースも修正できて、履歴を正確に保てる\n- 顧客未特定のまま開いたケースにも、あとからプロファイルを追加できる\n- 対応リージョンは 10 リージョン\n\nコンタクトセンターでケース管理を回してる運用担当さんに刺さるアップデートだよ！",
+  "title_en": "Amazon Connect Cases now lets you fix customer profiles after the fact!",
+  "summary_en": "Amazon Connect Customer now lets agents update the customer profile on a case or add one after a case is opened, so case history stays accurate.",
+  "body_md_en": "Hi everyone, it's Shiichan! Today I found an update that's great news for anyone running an Amazon Connect contact center.\n\n## What was announced?\n\nOn AWS What's New, it was announced that Amazon Connect Customer's Cases feature got an update. Agents can now update the customer profile linked to a case, or add a profile after the case has already been opened.\n\n## The story so far\n\nUntil now, it sounds like it was hard to fix the customer profile linked to a case once it was created. If a case ended up linked to the wrong customer, that mistake would stay baked into the case history.\n\n## What changes\n\nIf a case gets linked to the wrong customer, an agent can now update the profile and keep the case history accurate. And for cases where the customer wasn't identified when the case was opened — like calls from a shared phone number, or situations that need identity verification first — agents can add the profile later.\n\n## Dive Deep\n\nThis update is available in the following Regions:\n\n- US East (N. Virginia)\n- US West (Oregon)\n- Canada (Central)\n- Europe (Frankfurt)\n- Europe (London)\n- Asia Pacific (Seoul)\n- Asia Pacific (Singapore)\n- Asia Pacific (Sydney)\n- Asia Pacific (Tokyo)\n- Africa (Cape Town)\n\nThe announcement doesn't go into specific steps or pricing — it points you to the Amazon Connect Cases webpage and documentation for more.\n\n## Wrap-up\n\n- Amazon Connect Customer's Cases now let you update or add a customer profile after the case is opened\n- Cases linked to the wrong customer can be corrected, keeping case history accurate\n- Profiles can be added later for cases opened without an identified customer\n- Available in 10 AWS Regions\n\nThis one's for contact center ops teams managing case workflows day to day!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-connect-cases-flexible-profiles/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Connect Customer now lets you update the customer profile on a case or add a profile after a case is opened",
+  "tags": [
+    "aws",
+    "business"
+  ],
+  "published_at": "2026-08-25T16:00:00+00:00"
+}
