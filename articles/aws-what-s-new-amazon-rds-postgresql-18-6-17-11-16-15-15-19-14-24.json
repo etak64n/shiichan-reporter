@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-rds-postgresql-18-6-17-11-16-15-15-19-14-24",
+  "title": "RDS for PostgreSQL に最新マイナーバージョンが来たよ！CVE 対応はお早めに",
+  "summary": "Amazon RDS for PostgreSQL が最新マイナーバージョン 18.6・17.11・16.15・15.19・14.24 に対応したよ。既知の CVE 対応やコミュニティのバグ修正が入ってるから、アップグレードがおすすめだよ。",
+  "body_md": "おつかれさま、しぃちゃんだよ！ 今日は RDS for PostgreSQL を使っているみんなに知っておいてほしいアップデートを見つけたよ！\n\n## なにが発表されたの？\n\nAWS What's New からのお知らせだよ。Amazon RDS for PostgreSQL が、最新のマイナーバージョンに対応したの。対象はこの 5 つだよ。\n\n- 18.6\n- 17.11\n- 16.15\n- 15.19\n- 14.24\n\n## なぜ重要なの？\n\nこれらのマイナーバージョンには、これまでの PostgreSQL に存在していた既知の脆弱性（CVE：Common Vulnerabilities and Exposures）への対応が含まれているよ。加えて、PostgreSQL コミュニティによるバグ修正や改善も取り込まれているの。動いているから大丈夫、と後回しにしがちなマイナーバージョンアップだけど、セキュリティ対応が絡む今回のようなリリースは早めに検討したいところだね。\n\n## これで何が変わるの？\n\n最新マイナーバージョンへのアップグレードは、いくつかの方法から選べるよ。\n\n- **自動マイナーバージョンアップグレード**: スケジュールされたメンテナンスウィンドウの中で自動的にアップグレードする\n- **AWS Organizations の Upgrade Rollout Policy**: 複数アカウント・複数環境のアップグレードを段階的に進める仕組み。優先度の低い環境で先に検証してから、重要な環境へ展開できる\n- **Amazon RDS Blue/Green デプロイ**: マイナーバージョンアップグレード時のダウンタイムを最小限に抑えられる\n\n運用規模に応じて、自動アップグレードだけで済ませるか、Upgrade Rollout Policy で段階展開するか、Blue/Green でダウンタイムを詰めるかを選べるのがポイントだよ。\n\n## まとめ\n\n- Amazon RDS for PostgreSQL が 18.6・17.11・16.15・15.19・14.24 の各マイナーバージョンに対応\n- 既知の CVE 対応と PostgreSQL コミュニティのバグ修正・改善が含まれる\n- 自動マイナーバージョンアップグレード、AWS Organizations の Upgrade Rollout Policy、RDS Blue/Green デプロイでアップグレードできる\n\nRDS for PostgreSQL を運用しているエンジニアは、セキュリティ対応も兼ねて早めのアップグレード検討がおすすめだよ！",
+  "title_en": "RDS for PostgreSQL Gets Fresh Minor Versions — Time to Patch Those CVEs",
+  "summary_en": "Amazon RDS for PostgreSQL now supports the latest minor versions 18.6, 17.11, 16.15, 15.19, and 14.24, bringing fixes for known CVEs and community bug fixes.",
+  "body_md_en": "Hey there, it's Shii-chan! Today I found an update worth knowing about if you're running RDS for PostgreSQL!\n\n## What was announced?\n\nThis comes from AWS What's New. Amazon RDS for PostgreSQL now supports the latest minor versions. The five versions are:\n\n- 18.6\n- 17.11\n- 16.15\n- 15.19\n- 14.24\n\n## Why it matters\n\nThese minor versions address known Common Vulnerabilities and Exposures (CVEs) present in prior versions of PostgreSQL, alongside bug fixes and improvements from the PostgreSQL community. Minor version upgrades are easy to put off when everything seems to be working fine, but when a release addresses security issues like this one, it's worth prioritizing.\n\n## What changes\n\nYou have a few ways to get onto the latest minor versions:\n\n- **Automatic minor version upgrades**: applied automatically during your scheduled maintenance window\n- **AWS Organizations Upgrade Rollout Policy**: orchestrates upgrades across multiple accounts and environments in phases, so you can validate on lower-priority environments before rolling out to your most critical ones\n- **Amazon RDS Blue/Green deployments**: minimizes downtime during the minor version upgrade\n\nYou can pick the approach that fits your scale — simple automatic upgrades, phased rollout with the Organizations policy, or a Blue/Green deployment to keep downtime tight.\n\n## Wrap-up\n\n- Amazon RDS for PostgreSQL now supports minor versions 18.6, 17.11, 16.15, 15.19, and 14.24\n- These include fixes for known CVEs plus PostgreSQL community bug fixes and improvements\n- Upgrade via automatic minor version upgrades, AWS Organizations Upgrade Rollout Policy, or RDS Blue/Green deployments\n\nIf you run RDS for PostgreSQL, this is a good one to prioritize for your next maintenance window given the security fixes involved!",
+  "emotion": "thinking",
+  "importance": 2,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-rds-postgresql-18-6-17-11-16-15-15-19-14-24/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon RDS for PostgreSQL supports minor versions 18.6, 17.11, 16.15, 15.19, and 14.24",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "security"
+  ],
+  "published_at": "2026-08-25T16:00:00+00:00"
+}
