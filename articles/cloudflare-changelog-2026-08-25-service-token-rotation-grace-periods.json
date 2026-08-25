@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-08-25-service-token-rotation-grace-periods",
+  "title": "Cloudflare Access のサービストークン更新、認証を止めずにできるようになったよ！",
+  "summary": "Cloudflare の Changelog に載った話だよ。Access のサービストークンのシークレットを更新するとき、新旧どちらのシークレットも有効なままにできる「グレース期間」を設定できるようになったの。ダッシュボードなら 1 時間から 30 日まで選べて、API では RFC 3339 形式で期限を細かく指定できるよ。",
+  "body_md": "こんにちは、しぃちゃんだよ！今日は Cloudflare の Changelog から、地味だけどうれしいアップデートを紹介するね。\n\n## なにが発表されたの？\n\nCloudflare の Changelog に、Access のサービストークンのシークレットを回転(ローテーション)するときの新機能が載っていたよ。管理者がシークレットを更新するときに「グレース期間」を選べるようになったの。\n\n## 今までどうだったの？\n\nサービストークンのシークレットを更新すると、それを使っているサービス側の設定も合わせて更新しないと、認証が途切れてしまうリスクがあったの。今回の機能は、新旧両方のシークレットが同時に有効な期間を用意することで、管理者がサービス側を更新する時間を確保できるようにする、という狙いなんだって。\n\n## これで何が変わるの？\n\nグレース期間中は、新旧どちらのシークレットでも認証が通るようになるよ。設定できる範囲はこんな感じ:\n\n- ダッシュボードから 1 時間〜30 日の範囲でグレース期間を選べる\n- 前のシークレットをすぐに無効化したい場合は、即時の失効も選べる\n- API を使えば、RFC 3339 形式の有効期限を指定して、独自のローテーションスケジュールを組める\n\nこれで、サービスを止めずに落ち着いてシークレットを切り替えられるようになったよ。\n\n## まとめ\n\n- Cloudflare Access のサービストークン、シークレット更新時に新旧を共存させる「グレース期間」が使えるようになったよ\n- ダッシュボードなら 1 時間〜30 日、API なら RFC 3339 形式で自由に期限を指定できるの\n- 前のシークレットをすぐ無効化することもできるよ\n- サービストークンを使った認証を運用している Cloudflare Access 管理者に嬉しいアップデートだね！",
+  "title_en": "Cloudflare Access Service Token Rotation No Longer Breaks Auth!",
+  "summary_en": "From the Cloudflare Changelog: Access admins can now set a grace period when rotating a service token secret, keeping both the old and new secret valid at once — from 1 hour to 30 days in the dashboard, or a custom RFC 3339 expiration via the API.",
+  "body_md_en": "Hi, it's me, Shiichan! Today's pick from the Cloudflare Changelog is a small but genuinely nice improvement.\n\n## What was announced?\n\nThe Cloudflare Changelog announced a new option for rotating Access service token secrets: administrators can now choose a grace period when they rotate a secret.\n\n## The story so far\n\nRotating a service token secret used to carry a real risk: if every service using that token wasn't updated in sync with the rotation, authentication could break. This feature is meant to fix that by keeping both secrets valid for a while, giving administrators time to update their services.\n\n## What changes\n\nDuring the grace period, both the old and new secret authenticate successfully. Here's what you can configure:\n\n- Choose a grace period from 1 hour to 30 days in the dashboard\n- Revoke the previous secret immediately instead, if you'd rather cut over right away\n- Use the API to set a custom RFC 3339 expiration time for your own rotation schedule\n\nThat means you can rotate secrets calmly, without worrying about breaking authentication mid-rollout.\n\n## Wrap-up\n\n- Cloudflare Access service tokens now support a grace period that keeps the old and new secret valid together during rotation.\n- Set it from 1 hour to 30 days in the dashboard, or specify a custom RFC 3339 expiration through the API.\n- You can still revoke the previous secret immediately if you want an instant cutover.\n- A welcome update for anyone running Cloudflare Access with service token authentication.",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-08-25-service-token-rotation-grace-periods/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Access - Grace periods for service token rotation",
+  "tags": [
+    "cloudflare",
+    "security",
+    "devops"
+  ],
+  "published_at": "2026-08-25T19:51:27+00:00"
+}

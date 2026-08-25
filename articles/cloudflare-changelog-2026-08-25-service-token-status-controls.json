@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-08-25-service-token-status-controls",
+  "title": "サービストークンに一時停止ボタン誕生！Cloudflare Access の新機能",
+  "summary": "Cloudflare の Changelog に載った話だよ。Access のサービストークンを削除せずに一時的に無効化できるようになったの。設定は保持されたまま認証だけ止められるから、資格情報の漏えい対応や自動化サービスの一時停止に使えるよ。",
+  "body_md": "みんな、しぃちゃんだよ！さっき紹介したグレース期間の話とセットで、もう 1 つ Cloudflare Access のアップデートを紹介するね。\n\n## なにが発表されたの？\n\nCloudflare の Changelog に、Access のサービストークンを一時的にオフにできる機能が載っていたよ。管理者がトークンを削除せずに、認証だけを止められるようになったの。\n\n## 今までどうだったの？\n\nこれまでサービストークンを止めたいときは、削除する以外の手段がなかったみたい。でも削除してしまうと設定情報ごと消えてしまうから、あとで同じ設定のトークンをまた使いたいときに、一から作り直す必要があったの。\n\n## これで何が変わるの？\n\n新しいオン・オフの切り替えを使うと、トークンを無効化しても設定はそのまま残るから、必要になったらいつでも再度有効化できるよ。オフにしたトークンは認証に使えなくなるほか、ちょうどローテーションのグレース期間中だった前のシークレットがあれば、それも一緒に停止されるんだって。\n\n## 深く潜ってみよう\n\nこの機能は、こんな場面で役に立つよ:\n\n- 資格情報の漏えいが疑われるときに、被害を広げないよう素早くトークンを止める\n- 自動化されたサービスを一時的に停止したいときに、設定を残したまま止める\n\nどちらも「あとで元に戻すかもしれない」ケースだから、削除せずに止められるのは地味に助かるポイントだね。\n\n## まとめ\n\n- Cloudflare Access のサービストークンを、削除せずに一時的にオフにできるようになったよ\n- 設定は保持されたままなので、あとで簡単にオンへ戻せるの\n- オフにすると、ローテーション中だった前のシークレットも一緒に停止されるよ\n- 資格情報の漏えい対応や、自動化サービスの一時停止をしたい Cloudflare Access 管理者に便利な機能だね！",
+  "title_en": "A Pause Button for Service Tokens! Cloudflare Access's New Feature",
+  "summary_en": "From the Cloudflare Changelog: Access service tokens can now be temporarily disabled instead of deleted, keeping their configuration intact — handy for containing a suspected credential leak or pausing an automated service.",
+  "body_md_en": "Hey, it's me, Shiichan! Here's a second Cloudflare Access update to go along with the grace-period one I just told you about.\n\n## What was announced?\n\nThe Cloudflare Changelog announced that Access administrators can now temporarily turn off a service token. You no longer have to delete a token just to stop it from authenticating.\n\n## The story so far\n\nBefore this, deleting was the only way to stop a service token. But deleting it wiped out its configuration too, so if you ever wanted to reuse the same setup, you had to rebuild it from scratch.\n\n## What changes\n\nWith the new on/off toggle, disabling a token keeps its configuration intact, so you can turn it back on whenever you need it. A disabled token simply can't authenticate anymore, and if it had a previous secret sitting in an active rotation grace period, that gets stopped too.\n\n## Dive Deep\n\nThis is useful in a couple of situations:\n\n- Quickly containing a suspected credential exposure without losing the token's setup\n- Pausing an automated service temporarily while keeping its configuration ready to go\n\nBoth are cases where you might want to flip things back on later, so being able to pause instead of delete is a small but genuinely useful addition.\n\n## Wrap-up\n\n- Cloudflare Access service tokens can now be temporarily disabled instead of deleted.\n- Configuration stays intact, so re-enabling later is simple.\n- Turning a token off also stops any previous secret sitting in an active rotation grace period.\n- A handy tool for Access admins responding to a suspected credential leak or pausing an automated service.",
+  "emotion": "smug",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-08-25-service-token-status-controls/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Access - Temporarily turn off Access service tokens",
+  "tags": [
+    "cloudflare",
+    "security",
+    "devops"
+  ],
+  "published_at": "2026-08-25T19:51:27+00:00"
+}
