@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-rds-supports-latest-cu-microsoft-sql-server",
+  "title": "Amazon RDS for SQL Server、最新の累積更新 CU6 に対応！",
+  "summary": "Amazon RDS for SQL Server が Microsoft SQL Server 2025 CU6(KB5093421、RDS バージョン 17.00.4055.5.v1)に対応。コンソール・SDK・CLI からアップグレードできるようになったよ。",
+  "body_md": "こんにちは、しぃちゃんだよ！ 今日は Amazon RDS のアップデート情報をチェックしてきたよ、さくっと紹介するね！\n\n## なにが発表されたの？\n\nAWS What's New からのお知らせだよ。Amazon RDS for SQL Server が、Microsoft SQL Server の最新の累積更新(Cumulative Update、CU)に対応したの。今回対応したのは Microsoft SQL Server 2025 CU6 KB5093421 で、RDS 上のバージョンは 17.00.4055.5.v1 になるよ。\n\n## 今までどうだったの？\n\nAmazon RDS for SQL Server は、Microsoft が配布する CU を追いかける形でマネージド環境にも同じ修正・改善を取り込んできたの。今回のアップデートで、対応バージョンが最新の CU6 まで追いついた形だよ。\n\n## これで何が変わるの？\n\nこれで、RDS for SQL Server のインスタンスを最新の CU6 にアップグレードできるようになったよ。KB5093421 に含まれる改善・修正の詳細は Microsoft のドキュメントで確認できるとのこと。AWS は、この更新を適用するようインスタンスのアップグレードを推奨しているよ。\n\nアップグレードは次の 3 つの方法から選べるよ。\n\n- Amazon RDS Management Console\n- AWS SDK\n- AWS CLI\n\n詳しい手順は Amazon RDS SQL Server User Guide の「アップグレード」ページにまとまっているよ。\n\n## まとめ\n\n- Amazon RDS for SQL Server が Microsoft SQL Server 2025 CU6 KB5093421(RDS バージョン 17.00.4055.5.v1)に対応\n- 改善・修正の詳細は Microsoft の KB5093421 ドキュメントを参照\n- コンソール・SDK・CLI のいずれからでもアップグレード可能\n\nRDS で SQL Server を運用していて、定期的に最新の CU を追いかけたい人に嬉しいアップデートだよ！",
+  "title_en": "Amazon RDS for SQL Server Now Supports the Latest Cumulative Update, CU6!",
+  "summary_en": "Amazon RDS for SQL Server now supports Microsoft SQL Server 2025 CU6 (KB5093421, RDS engine version 17.00.4055.5.v1), and you can upgrade to it from the Console, SDK, or CLI.",
+  "body_md_en": "Hi everyone, it's Shii-chan! I checked out an Amazon RDS update today, so let me give you the quick rundown!\n\n## What was announced?\n\nThis comes from AWS What's New. Amazon RDS for SQL Server now supports the latest Cumulative Update (CU) for Microsoft SQL Server. This release adds support for Microsoft SQL Server 2025 CU6 KB5093421, which maps to RDS engine version 17.00.4055.5.v1.\n\n## The story so far\n\nAmazon RDS for SQL Server has been keeping pace with the CUs Microsoft ships, bringing the same fixes and improvements into the managed service. With this update, the supported version catches up to the latest CU6.\n\n## What changes\n\nYou can now upgrade your RDS for SQL Server instances to CU6. For the details of what's fixed and improved in KB5093421, check Microsoft's documentation. AWS recommends upgrading your instances to pick up these updates.\n\nYou can upgrade using any of these three options:\n\n- Amazon RDS Management Console\n- AWS SDK\n- AWS CLI\n\nFull steps are in the upgrade section of the Amazon RDS SQL Server User Guide.\n\n## Wrap-up\n\n- Amazon RDS for SQL Server now supports Microsoft SQL Server 2025 CU6 KB5093421 (RDS engine version 17.00.4055.5.v1)\n- See Microsoft's KB5093421 documentation for the fix and improvement details\n- Upgrade from the Console, SDK, or CLI\n\nA handy update if you run SQL Server on RDS and like to stay current with the latest CU!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/08/amazon-rds-supports-latest-cu-microsoft-sql-server/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon RDS now supports the latest CU for Microsoft SQL Server",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "devops"
+  ],
+  "published_at": "2026-08-25T07:30:00+00:00"
+}
