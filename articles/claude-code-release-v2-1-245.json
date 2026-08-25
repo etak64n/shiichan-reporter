@@ -1,0 +1,20 @@
+{
+  "slug": "claude-code-release-v2-1-245",
+  "title": "Claude Code、glibc 2.44 環境の起動クラッシュにサヨナラ！",
+  "summary": "Claude Code v2.1.245 が公開されたよ。glibc 2.44 を採用する Arch Linux・CachyOS・Fedora Rawhide などで起きていた起動時クラッシュが修正されたの。",
+  "body_md": "やっほー、しぃちゃんだよ！今日は Claude Code の小さいけど大事なアップデート情報を持ってきたよ。\n\n## なにが発表されたの？\n\nClaude Code Release から、最新版 v2.1.245 が公開されたよ。今回はたったひとつのバグ修正だけの、ピンポイントなリリースなの。\n\n## 今までどうだったの？\n\n実は一部の Linux ディストリビューションで、Claude Code が起動時にクラッシュしてしまう不具合があったんだって。具体的には glibc 2.44 を採用しているディストリビューションが対象で、原文では次のディストリビューション名が挙げられているよ。\n\n- Arch Linux\n- CachyOS\n- Fedora Rawhide\n\nいずれも最新のパッケージをいち早く取り込むローリングリリース系・開発版のディストリビューションで、glibc の最新バージョンをいち早く採用していたことが原因みたい。\n\n## これで何が変わるの？\n\nv2.1.245 にアップデートすれば、この起動クラッシュが解消されるよ。該当する環境で Claude Code を使っている人は、アップデートするだけで問題なく起動できるようになるはず。\n\n## まとめ\n\n- Claude Code v2.1.245 がリリースされたよ\n- glibc 2.44 を採用する Arch Linux・CachyOS・Fedora Rawhide などで発生していた起動時クラッシュが修正されたよ\n- 最新のローリングリリース系ディストリビューションで Claude Code を使っている人は、アップデートしておくと安心だよ！",
+  "title_en": "Claude Code Fixes a Startup Crash on glibc 2.44!",
+  "summary_en": "Claude Code v2.1.245 is out, fixing a startup crash on Linux distributions running glibc 2.44, such as Arch Linux, CachyOS, and Fedora Rawhide.",
+  "body_md_en": "Hey there, it's Shiichan! Today I've got a small but important Claude Code update to share.\n\n## What was announced?\n\nThe Claude Code Release page published the latest version, v2.1.245. This time it's a pinpoint release with just a single bug fix.\n\n## The story so far\n\nIt turns out Claude Code was crashing on startup on some Linux distributions. Specifically, the issue affected distributions shipping glibc 2.44, and the release notes call out:\n\n- Arch Linux\n- CachyOS\n- Fedora Rawhide\n\nThese are all rolling-release or development distributions that pick up the newest packages early, which is how they ended up with the new glibc version before most others.\n\n## What changes\n\nUpdating to v2.1.245 fixes this startup crash. If you're running Claude Code on one of these environments, updating should get you back to a working install.\n\n## Wrap-up\n\n- Claude Code v2.1.245 has been released\n- It fixes a startup crash affecting glibc 2.44 environments like Arch Linux, CachyOS, and Fedora Rawhide\n- If you're on a bleeding-edge rolling-release distro, updating is worth doing right away!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.245",
+  "source_name": "Claude Code Release",
+  "og_title": "v2.1.245",
+  "tags": [
+    "anthropic",
+    "ai",
+    "devops"
+  ],
+  "published_at": "2026-08-25T05:13:24Z"
+}
