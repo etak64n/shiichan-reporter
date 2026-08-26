@@ -1,0 +1,19 @@
+{
+  "slug": "cloudflare-changelog-2026-08-25-larger-custom-metadata-values",
+  "title": "AI Search のメタデータ、もっとたっぷり保存できるようになったよ！",
+  "summary": "Cloudflare の AI Search で、ベクターごとに割り当てられる 10 KiB のメタデータ枠の中であれば、カスタムメタデータの値をより大きく保存できるようになったよ。ただしフィルタリングに使えるのは各文字列の先頭 64 バイトまでなの。",
+  "body_md": "こんにちは、しぃちゃんだよ！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、AI Search のカスタムメタデータまわりのアップデートが発表されたの。ベクターに付けられるカスタムメタデータの値を、これまでよりも大きく保存できるようになったんだって。\n\n## 今までどうだったの？\n\nAI Search では、ベクター検索の結果を絞り込んだり分類したりするために、各ベクターにカスタムメタデータを付けられるの。ただ保存できる値の大きさには制限があって、あまり大きな情報を 1 つの値に詰め込みにくかったみたい。今回のアップデートで、その値自体をより大きくできるようになったよ。\n\n## これで何が変わるの？\n\nこれからは、1 つのカスタムメタデータの値により多くの情報を詰め込めるようになるの。ただし無制限に増やせるわけじゃなくて、ベクターごとに合計 10 KiB という共有のメタデータ枠(エンベロープ)の中に収める必要があるよ。\n\n## 深く潜ってみよう\n\nこの 10 KiB のエンベロープには、ユーザーが指定したカスタムメタデータだけじゃなくて、AI Search 自身が使うシステムメタデータや JSON 形式にするときのオーバーヘッドも含まれるの。つまり「1 フィールドあたり 10 KiB」じゃなくて、「そのベクターに紐づくメタデータ全部で 10 KiB」っていう総量規制なのがポイントだよ。\n\nもう 1 つ大事なのが、フィルタリングに使える範囲。インデックスされた各文字列は、先頭の 64 UTF-8 バイトまでがフィルタリングの対象になるの。だから検索条件として絞り込みたい情報は、この 64 バイト以内に収まるように設計しておくのがよさそうだね。それより後ろの部分は保存はできるけど、フィルタリングには使えないってことになるよ。\n\n## まとめ\n\n- AI Search のカスタムメタデータの値が、より大きなサイズで保存できるようになったよ\n- ただしベクターごとに合計 10 KiB の共有エンベロープの中に収める必要があるよ(システムメタデータ・JSON オーバーヘッド込み)\n- フィルタリングに使えるのは各文字列の先頭 64 UTF-8 バイトまで\n- AI Search でリッチなメタデータを付けて検索を組み立てたいエンジニアに嬉しいアップデートだよ！",
+  "title_en": "AI Search now lets you store bigger custom metadata values!",
+  "summary_en": "Cloudflare's AI Search now supports larger custom metadata values, as long as they fit inside the shared 10 KiB metadata envelope per vector. Only the first 64 bytes of each indexed string stay filterable.",
+  "body_md_en": "Hi, it's Shii-chan!\n\n## What was announced?\n\nCloudflare's Changelog announced an update to custom metadata in AI Search. You can now store larger values for the custom metadata attached to each vector.\n\n## The story so far\n\nIn AI Search, you can attach custom metadata to each vector to filter and organize your search results. Until now, there was a size limit on how large a single metadata value could be, which made it hard to pack in a lot of information. This update raises that per-value size.\n\n## What changes\n\nYou can now fit more information into a single custom metadata value. That said, it's not unlimited — everything still has to fit inside a shared 10 KiB metadata envelope for each vector.\n\n## Dive Deep\n\nThat 10 KiB envelope isn't just for your custom metadata — it also includes AI Search's own system metadata and JSON overhead. So this isn't a \"10 KiB per field\" limit; it's a total budget for everything attached to that vector.\n\nThere's another detail worth knowing: only the first 64 UTF-8 bytes of each indexed string remain filterable. So if you want to filter on a piece of information, it's worth designing your metadata so that value fits within those first 64 bytes. Anything beyond that gets stored, but you won't be able to filter on it.\n\n## Wrap-up\n\n- AI Search custom metadata values can now be larger\n- Everything still has to fit inside a shared 10 KiB envelope per vector (including system metadata and JSON overhead)\n- Only the first 64 UTF-8 bytes of each indexed string stay filterable\n- Good news if you're building rich, filterable metadata into your AI Search setup!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-08-25-larger-custom-metadata-values/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "AI Search - Store larger custom metadata values in AI Search",
+  "tags": [
+    "cloudflare",
+    "ai"
+  ],
+  "published_at": "2026-08-25T00:00:00+00:00"
+}
