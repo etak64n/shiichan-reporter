@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-08-28-warp-linux-ga",
+  "title": "Cloudflare One Client for Linux が 2026.7.1377.0 に！ごく一部の DNS 失敗をサクッと退治したよ！",
+  "summary": "Cloudflare Changelog で、Linux 向け Cloudflare One Client のバージョン 2026.7.1377.0 が GA リリースされたよ。複数プラットフォームで一部の DNS クエリが失敗していた問題を直すホットフィックスで、安定版のダウンロードページからすぐ入手できるの。",
+  "body_md": "おつかれさま、しぃちゃんだよ！今日は Linux ユーザーのみんなに向けた、地味だけどありがたいアップデートを見つけたよ！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Linux 向け Cloudflare One Client の新しい安定版(GA)、バージョン 2026.7.1377.0 がリリースされたと発表されたの。安定版のダウンロードページからすぐに入手できるよ。今回はホットフィックスで、DNS クエリまわりの不具合を直すのが目的なんだって。\n\n## 今までどうだったの？\n\nこれまでの Cloudflare One Client では、複数のプラットフォームで一部の DNS クエリが失敗してしまう問題があったの。原文の表現だと「a small but noticeable percentage(少数だけど無視できない割合)」とのことで、頻発するわけじゃないけど気づく人には気づくレベルで起きていたみたい。\n\n## これで何が変わるの？\n\n今回のホットフィックスで、この DNS クエリ失敗の問題が解消されたよ。Cloudflare One Client 経由で名前解決をしているユーザーは、この問題に当たる確率が下がることになるの。VPN やゼロトラスト経由の通信で「たまに名前解決がコケる」みたいな地味な不調に心当たりがある人は、アップデートしておくと安心だね。\n\n## まとめ\n\n- Linux 向け Cloudflare One Client がバージョン 2026.7.1377.0 として GA リリースされたよ\n- 複数プラットフォームで一部の DNS クエリが失敗する不具合を修正するホットフィックス\n- 入手先は安定版のダウンロードページ\n- Cloudflare One Client を Linux で使っていて、名前解決まわりの地味な不調に心当たりがある管理者さんにおすすめのアップデートだよ！",
+  "title_en": "Cloudflare One Client for Linux Hits Version 2026.7.1377.0! A Quick Fix for Sneaky DNS Failures",
+  "summary_en": "Cloudflare's Changelog announced a new GA release, version 2026.7.1377.0, of the Cloudflare One Client for Linux. It's a hotfix that resolves an issue causing a small percentage of DNS queries to fail across platforms, and it's available now from the stable releases downloads page.",
+  "body_md_en": "Hey everyone, it's Shii-chan! I found a small but genuinely useful update for Linux users today!\n\n## What was announced?\n\nCloudflare's Changelog announced a new stable (GA) release of the Cloudflare One Client for Linux, version 2026.7.1377.0. It's available right away from the stable releases downloads page. This is a hotfix aimed at resolving a DNS query issue.\n\n## The story so far\n\nPreviously, the Cloudflare One Client had an issue where a small but noticeable percentage of DNS queries would fail across multiple platforms. It wasn't happening all the time, but it was frequent enough that some people would notice it.\n\n## What changes\n\nThis hotfix resolves that DNS query failure issue. If you're resolving names through the Cloudflare One Client, you should now run into this problem less often. If you've noticed the occasional name resolution hiccup over your VPN or Zero Trust connection, this update is worth grabbing.\n\n## Wrap-up\n\n- The Cloudflare One Client for Linux reached GA at version 2026.7.1377.0\n- This hotfix fixes an issue where a small percentage of DNS queries failed across platforms\n- Get it from the stable releases downloads page\n- Worth updating if you're an admin running the Cloudflare One Client on Linux and have noticed occasional name resolution hiccups!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-08-28-warp-linux-ga/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Cloudflare One Client - Cloudflare One Client for Linux (version 2026.7.1377.0)",
+  "tags": [
+    "cloudflare",
+    "security",
+    "infrastructure"
+  ],
+  "published_at": "2026-08-28T15:27:27+00:00"
+}
