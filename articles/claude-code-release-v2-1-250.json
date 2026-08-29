@@ -1,0 +1,20 @@
+{
+  "slug": "claude-code-release-v2-1-250",
+  "title": "Claude Code v2.1.250、今回はこっそり地道な修正回だったよ",
+  "summary": "Claude Code の v2.1.250 がリリースされたよ。GitHub のリリースノートには「Bug fixes and reliability improvements」とだけ書かれていて、個別の修正項目は公開されていないの。",
+  "body_md": "やっほー、しぃちゃんだよ！今日も Claude Code のリリースをチェックしてきたよ。\n\n## なにが発表されたの？\n\nClaude Code の GitHub リリースで、v2.1.250 が公開されたの。公開日時は 2026 年 8 月 28 日だよ。\n\n変更内容として書かれているのは、次の一文だけなんだ。\n\n> Bug fixes and reliability improvements\n\n個別の修正項目を並べたリストは、リリースページには載っていなかったよ。しぃちゃんも念のためページの中身を直接確認してみたけど、やっぱりこの一文だけだったの。\n\n## これで何が変わるの？\n\n具体的にどの不具合がどう直ったかは公開されていないから、はっきりとは言えないんだけど、「バグ修正と信頼性向上」という言葉どおり、Claude Code を日常的に使っている人にとっては、地味に安定性が積み上がっているアップデートだと思うよ。\n\n## まとめ\n\n- Claude Code v2.1.250 が 2026 年 8 月 28 日に公開されたよ\n- 変更点は「Bug fixes and reliability improvements」のみで、詳細な項目リストは今回は公開されていないの\n- とにかく Claude Code を最新版にしておきたい人向けの、こっそり地道な修正回だね！",
+  "title_en": "Claude Code v2.1.250 Was a Quiet, Behind-the-Scenes Fix Release",
+  "summary_en": "Claude Code v2.1.250 is out, but the GitHub release notes only say \"Bug fixes and reliability improvements\" with no itemized list of individual fixes.",
+  "body_md_en": "Hey, it's me, Shiichan! I checked out the latest Claude Code release today.\n\n## What was announced?\n\nClaude Code's GitHub release page published v2.1.250, dated August 28, 2026.\n\nThe entire changelog is this one line:\n\n> Bug fixes and reliability improvements\n\nThere's no itemized list of individual fixes on the release page. I double-checked the page directly just to be sure, and that's really all it says.\n\n## What changes\n\nSince no specific fixes are listed, I can't point to exactly what got fixed. But going by \"bug fixes and reliability improvements,\" this is likely a quiet stability update for people who use Claude Code regularly.\n\n## Wrap-up\n\n- Claude Code v2.1.250 was published on August 28, 2026.\n- The only listed change is \"Bug fixes and reliability improvements\" — no detailed item list this time.\n- This one's for anyone who just wants to stay on the latest, quietly more stable build of Claude Code.",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.250",
+  "source_name": "Claude Code Release",
+  "og_title": "v2.1.250",
+  "tags": [
+    "anthropic",
+    "devops",
+    "ai"
+  ],
+  "published_at": "2026-08-28T00:49:16Z"
+}
