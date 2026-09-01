@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-connect-dashboards-compact-mode",
+  "title": "Amazon Connect Customer のダッシュボードにコンパクトモード、知ってた？",
+  "summary": "Amazon Connect Customer の分析ダッシュボードに、情報密度を上げる「コンパクトモード」が追加されたよ。ウィジェットやフォントを小さくすることで、13 インチノートパソコンでもチーム全員のエージェント状況をスクロールなしで確認できるようになるんだって。",
+  "body_md": "やっほー、しぃちゃんだよ！今日は Amazon Connect Customer のダッシュボードがちょっと便利になったよっていうニュースを見つけて、地味だけど地味に嬉しい話だなって思ったから紹介するね！\n\n## なにが発表されたの？\n\nAWS の What's New によると、Amazon Connect Customer の分析ダッシュボードに「コンパクトモード」が追加されたんだって。ウィジェットのサイズやフォントを小さくして、フィルター表示も最小限にすることで、画面の情報密度を上げてくれる機能なの。スクロールしなくても、もっとたくさんのデータを一度に見られるようになるんだって。\n\n## 今までどうだったの？\n\nこれまでのダッシュボードは、ウィジェットやフォントが標準サイズのままだったから、画面が小さいノートパソコンだと表示しきれる情報量に限りがあったみたい。特にチーム全員のエージェント状況をひと目で確認したいスーパーバイザーにとっては、スクロールが必要になっちゃう場面もあったんだって。\n\n## これで何が変わるの？\n\nコンパクトモードを ON にすると、行の高さ（row height）が小さくなって、13 インチのノートパソコンでもチーム全員のエージェントをスクロールなしで一覧できるようになるんだって。これによって、対応が遅れているエージェント（non-adherent agents）をより早く見つけられるようになるみたい。スーパーバイザーがオペレーション状況をぱっと把握したいときに、地味だけどしっかり効いてくれそうな機能だね。\n\n## 深く潜ってみよう\n\n原文によると、コンパクトモードはウィジェットサイズ・フォント・フィルター表示を最小化することで画面スペースを最大化する仕組みなんだって。提供範囲は、Amazon Connect Customer が利用できる全ての AWS リージョンとのこと。詳しい設定方法は Amazon Connect Customer 管理者ガイドで確認できるよ。\n\n## まとめ\n\n- Amazon Connect Customer の分析ダッシュボードに「コンパクトモード」が追加された\n- ウィジェットサイズ・フォント・フィルターを最小化して情報密度を UP\n- 13 インチノートパソコンでもチーム全員をスクロールなしで一覧できるようになる\n- 対応が遅れているエージェントを見つけやすくなる\n- 全 AWS リージョンの Amazon Connect Customer で利用可能なんだって\n\nコンタクトセンターの運用を日々見ているスーパーバイザーさんに刺さりそうな、地味だけど嬉しいアップデートなんだって！",
+  "title_en": "Did You Know Amazon Connect Customer Dashboards Now Have a Compact Mode?",
+  "summary_en": "Amazon Connect Customer's analytics dashboards just got a new compact mode that boosts data density. By shrinking widgets and fonts, supervisors can now see their whole team's agent status without scrolling, even on a 13-inch laptop.",
+  "body_md_en": "Hi, I'm Shii-chan! Today I found a small but genuinely handy update for Amazon Connect Customer dashboards, so let me walk you through it!\n\n## What was announced?\n\nAccording to AWS's What's New, Amazon Connect Customer's analytics dashboards now support a \"compact mode.\" It shrinks widget size and font, and minimizes filters, to increase the amount of data you can see on screen without scrolling.\n\n## The story so far\n\nUntil now, dashboard widgets and fonts stayed at their standard size, so on smaller screens like a 13-inch laptop, supervisors couldn't always see everything at once. If you wanted a full view of your whole team's agent status, you sometimes had to scroll.\n\n## What changes\n\nTurning on compact mode reduces row height, so a supervisor on a 13-inch laptop can now see all their team's agents in one view without scrolling. That makes it faster to spot non-adherent agents, which is a real win for anyone keeping an eye on day-to-day operations.\n\n## Dive Deep\n\nPer AWS, compact mode works by minimizing widget size, font, and filters to maximize screen space. It's available in every AWS region where Amazon Connect Customer is offered. You can find setup details in the Amazon Connect Customer Administrator Guide.\n\n## Wrap-up\n\n- Amazon Connect Customer's analytics dashboards now offer a \"compact mode\"\n- It shrinks widget size, font, and filters to boost data density\n- Even on a 13-inch laptop, you can see your whole team without scrolling\n- It helps you spot non-adherent agents faster\n- Available in all AWS regions where Amazon Connect Customer is offered\n\nIt's a small update, but I bet it'll make a real difference for supervisors watching contact center operations every day!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/connect-dashboards-compact-mode/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Connect Customer dashboards now support compact mode",
+  "tags": [
+    "aws",
+    "business",
+    "web"
+  ],
+  "published_at": "2026-09-01T17:00:00+00:00"
+}
