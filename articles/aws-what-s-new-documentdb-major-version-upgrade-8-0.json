@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-documentdb-major-version-upgrade-8-0",
+  "title": "中間アップグレードにサヨナラ！DocumentDB が 3.6/4.0 から 8.0 へ一直線！",
+  "summary": "Amazon DocumentDB が、エンジンバージョン 3.6 と 4.0 から最新の 8.0 へ、中間バージョンを経由せずに直接メジャーバージョンアップグレードできるようになったよ。既存のデータや設定を保持したまま、最新のセキュリティパッチやパフォーマンス改善に一気に手が届くようになったの！",
+  "body_md": "やっほー、しぃちゃんだよ！ 今日はデータベースまわりのうれしいアップデート情報だよ。Amazon DocumentDB を運用しているみんなに関係あるお知らせだから、早速チェックしていこう！\n\n## なにが発表されたの？\n\nAWS の What's New からのお知らせだよ。Amazon DocumentDB（MongoDB 互換）が、エンジンバージョン 3.6 と 4.0 から、最新のバージョン 8.0 へ直接メジャーバージョンアップグレード（MVU）できるようになったの。しかも既存のデータ・構成・クラスタ設定はそのまま保持されるんだって！\n\n## 今までどうだったの？\n\nこれまでは、古いバージョンから 8.0 のような最新バージョンに上げたいときも、間のバージョンを一段ずつ経由してアップグレードしていく必要があったの。段階を踏むたびに検証やダウンタイムの調整が発生するから、運用チームにとっては地味に手間がかかる作業だったんだよね。\n\n## これで何が変わるの？\n\n今回のアップデートで、3.6 や 4.0 のクラスタを一気に 8.0 へ引き上げられるようになったよ。中間バージョンを経由しなくていいから、アップグレード計画がシンプルになるの。しかもアップグレード後は、最新のセキュリティパッチや、パフォーマンスの改善、新しい開発者向け機能にもすぐアクセスできるようになるよ。\n\n## 深く潜ってみよう\n\n- 対応する移行元バージョンは 3.6 と 4.0、移行先は 8.0\n- 3.6 や 4.0 が現在サポートされている全ての AWS リージョンで利用可能\n- アップグレード手順やバージョン差分の詳細は、Amazon DocumentDB MVU のドキュメントにまとまっているよ\n- バージョンのサポート期限や、8.0 で追加された新機能の一覧ページも公開されているから、移行を検討している人はあわせてチェックしてみてね\n\n## まとめ\n\n- Amazon DocumentDB が、バージョン 3.6・4.0 から 8.0 への直接メジャーバージョンアップグレードに対応\n- 中間バージョンを経由する必要がなくなった\n- 既存のデータ・構成・クラスタ設定を保持したままアップグレードできる\n- 対応は 3.6・4.0 がサポートされている全リージョン\n- 古いバージョンの DocumentDB クラスタを塩漬けにしている人にこそ、試してほしいアップデートだよ！",
+  "title_en": "Say Goodbye to Stepwise Upgrades — DocumentDB Jumps Straight from 3.6/4.0 to 8.0!",
+  "summary_en": "Amazon DocumentDB now lets you upgrade straight from engine version 3.6 or 4.0 to 8.0, skipping the intermediate versions entirely. Your existing data and configuration stay intact, so you get to the latest security patches and performance improvements in one hop.",
+  "body_md_en": "Hey everyone, it's Shii-chan! I've got a nice update for anyone running Amazon DocumentDB, so let's dive right in!\n\n## What was announced?\n\nThis comes from AWS What's New. Amazon DocumentDB (with MongoDB compatibility) now supports direct major version upgrades (MVU) from engine versions 3.6 and 4.0 straight to version 8.0. Your existing data, configuration, and cluster settings are preserved through the upgrade!\n\n## The story so far\n\nPreviously, moving from an older version up to a version as recent as 8.0 meant stepping through the intermediate versions one at a time. Each hop meant extra validation and downtime planning, which made the whole process a real chore for ops teams.\n\n## What changes\n\nWith this update, you can take a 3.6 or 4.0 cluster straight to 8.0 in one move. No more intermediate stops, which makes upgrade planning a lot simpler. And once you're on 8.0, you immediately get access to the latest security patches, performance improvements, and new developer capabilities.\n\n## Dive Deep\n\n- Supported source versions are 3.6 and 4.0, with 8.0 as the destination\n- Available in every AWS Region where 3.6 or 4.0 is currently supported\n- Detailed upgrade steps and version differences are covered in the Amazon DocumentDB MVU documentation\n- AWS has also published version support end dates and a full list of new 8.0 capabilities, worth a look if you're planning a move\n\n## Wrap-up\n\n- Amazon DocumentDB now supports direct major version upgrades from 3.6/4.0 to 8.0\n- No more need to pass through intermediate versions\n- Existing data, configuration, and cluster settings are preserved during the upgrade\n- Available in every region where 3.6/4.0 is currently supported\n- A great update if you've been putting off upgrading an old DocumentDB cluster!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/08/documentdb-major-version-upgrade-8-0/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon DocumentDB now supports direct major version upgrades to version 8.0",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "devops"
+  ],
+  "published_at": "2026-08-31T22:30:00+00:00"
+}
