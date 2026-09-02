@@ -1,0 +1,19 @@
+{
+  "slug": "claude-code-release-v2-1-258",
+  "title": "たった2件の修正で救われる人がいる！Claude Code v2.1.258 のバグ退治レポート",
+  "summary": "Claude Code v2.1.258 では、macOS 12 (Monterey) での起動失敗とリモート・スケジュールセッションのエラーという2つの不具合が修正されたよ。小さいけど困っていた人には大きい修正なの！",
+  "body_md": "こんにちは、しぃちゃんだよ！今日は Claude Code の新しいパッチリリースを見つけたから、さくっと紹介するね！\n\n## なにが発表されたの？\n\nAnthropic が公開した Claude Code の リリースノートによると、v2.1.258 では次の2つの不具合が修正されたよ。\n\n- macOS 12 (Monterey) で Claude Code が起動に失敗する問題の修正\n- リモート・スケジュール実行セッションで「user messages must have non-empty content」エラーが出て失敗する問題の修正\n\n新機能の追加ではなくて、不具合修正だけの小規模なパッチリリースなの。\n\n## 背景：今までどうだったの？\n\n1つ目の macOS 12 の起動失敗は、v2.1.255 で入ったリグレッション（改善のつもりが逆に不具合を生んでしまうこと）が原因だったんだって。つまり v2.1.255 より前は問題なかったのに、そのアップデートのせいで Monterey ユーザーだけ起動できなくなっちゃってたみたい。\n\n2つ目は、リモートセッションやスケジュール実行のセッションで、再送信されたパーミッション承認がうまく適用できないケースがあって、それが原因で「user messages must have non-empty content」というエラーが発生してセッションが失敗していたとのことだよ。\n\n## これで何が変わるの？\n\nこの2つの修正によって、macOS 12 を使っていて起動できなかった人はちゃんと Claude Code を起動できるようになるし、リモートやスケジュール実行を使っていて権限承認まわりでエラーになっていた人もセッションが失敗しなくなるはずだよ。困っていた人にとってはうれしいアップデートだね！\n\n## まとめ\n\n- macOS 12 (Monterey) での起動失敗を修正（v2.1.255 で発生したリグレッション）\n- リモート・スケジュールセッションでの権限承認再送エラーを修正\n\n小粒だけど、Monterey ユーザーやリモート/スケジュール実行を使っている人にはしっかり刺さるアップデートだよ！",
+  "title_en": "Two fixes, real relief: Claude Code v2.1.258 patches Monterey launch failures",
+  "summary_en": "Claude Code v2.1.258 fixes two bugs: a launch failure on macOS 12 (Monterey) and an error affecting remote/scheduled sessions. It's small, but it matters a lot to the people it affects.",
+  "body_md_en": "Hi, I'm Shii-chan! Today I found a new patch release for Claude Code, so let me give you a quick rundown!\n\n## What was announced?\n\nAccording to Anthropic's Claude Code release notes, v2.1.258 fixes two bugs.\n\n- Claude Code failing to launch on macOS 12 (Monterey)\n- Remote and scheduled sessions failing with a \"user messages must have non-empty content\" error\n\nThis isn't a new feature release, just a small bug-fix patch.\n\n## The story so far\n\nThe macOS 12 launch failure turned out to be a regression introduced in v2.1.255. That means it wasn't a problem before that update, but Monterey users started hitting launch failures after it shipped.\n\nThe second issue happened when a re-sent permission approval couldn't be applied in remote or scheduled sessions, which triggered the \"user messages must have non-empty content\" error and caused the session to fail.\n\n## What changes\n\nWith these two fixes, people on macOS 12 who couldn't launch Claude Code should now be able to, and people using remote or scheduled sessions who were hitting permission-approval errors should no longer see their sessions fail. If you were affected, this is a welcome fix!\n\n## Wrap-up\n\n- Fixed the launch failure on macOS 12 (Monterey), a regression from v2.1.255\n- Fixed the permission-approval re-send error in remote and scheduled sessions\n\nIt's a small release, but if you're on Monterey or rely on remote/scheduled sessions, this one's for you!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.258",
+  "source_name": "Claude Code Release",
+  "og_title": "v2.1.258",
+  "tags": [
+    "anthropic",
+    "devops"
+  ],
+  "published_at": "2026-09-01T22:33:20Z"
+}
