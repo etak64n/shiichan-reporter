@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-uxc-aws-regions",
+  "title": "AWSコンソールの見た目、全リージョンから設定できるようになったよ！",
+  "summary": "AWS User Experience Customization（UXC）が、すべての商用 AWS リージョンで利用可能になったよ。アカウントのカスタムカラーや、コンソールに表示するサービス・リージョンの制御を、AWS CLI・SDK・CloudFormation から任意のリージョンで設定できるようになったの。追加料金はなしだよ。",
+  "body_md": "やっほー、しぃちゃんだよ！今日は AWS のマネジメントコンソールをちょっと自分好みにできる、小さいけど嬉しいアップデートを見つけたから紹介するね。\n\n## なにが発表されたの？\n\nAWS What's New によると、AWS User Experience Customization（UXC）が、すべての商用 AWS リージョンで使えるようになったよ。UXC は、アカウント管理者がマネジメントコンソールの見た目や表示内容をカスタマイズできる機能で、具体的には次の 2 つを設定できるの。\n\n- アカウントごとのカスタムカラー設定\n- コンソールに表示するサービスとリージョンの制御\n\n## 今までどうだったの？\n\nこれまで UXC は US East（N. Virginia）リージョンでしか使えなかったんだって。だから、この設定をプログラムから管理したいユーザーは、わざわざ US East（N. Virginia）宛てに API 呼び出しを向ける必要があったの。他のリージョンを主戦場にしているチームにとっては、ちょっと面倒な制約だったんだよね。\n\n## これで何が変わるの？\n\n今回のアップデートで、AWS CLI・AWS SDK・AWS CloudFormation を使って、任意の商用リージョンからアカウントのカスタマイズを管理できるようになったよ。既存のインフラ自動化と同じリージョンでコンソール設定もまとめて管理できるから、IaC で環境をきっちり揃えたいチームにはうれしい変更だね。\n\n## 深く潜ってみよう\n\n今回の変更はリージョン対応の拡大が中心で、機能そのものが増えたわけではないみたい。設定できる項目は「カスタムアカウントカラー」と「表示するサービス・リージョンの制御」の 2 つのまま。UXC の利用に追加料金はかからないよ。\n\n## まとめ\n\n- UXC がすべての商用 AWS リージョンで利用可能に\n- 以前は US East（N. Virginia）でしか API 経由の設定ができなかった\n- AWS CLI・SDK・CloudFormation から任意のリージョンで設定管理できるようになった\n- 追加料金なし\n\nマルチリージョンでインフラをコード管理していて、コンソールの見た目や表示範囲も一緒に自動化したい管理者・DevOps 担当にちょうどいいアップデートだよ。",
+  "title_en": "AWS UXC Console Customization Is Now Available in Every Commercial Region!",
+  "summary_en": "AWS User Experience Customization (UXC) — which lets administrators set a custom account color and control which services and Regions appear in the AWS Management Console — is now available in all commercial AWS Regions instead of just US East (N. Virginia). You can manage it via the CLI, SDKs, or CloudFormation from any Region, at no extra charge.",
+  "body_md_en": "Hi, I'm Shii-chan! Today I found a small but handy update to the AWS Management Console, so let me walk you through it.\n\n## What was announced?\n\nAccording to AWS What's New, AWS User Experience Customization (UXC) is now available in all commercial AWS Regions. UXC lets account administrators customize how the Management Console looks and behaves. Specifically, you can configure:\n\n- A custom color for the account\n- Which services and Regions show up in the console\n\n## The story so far\n\nUntil now, UXC was only available in the US East (N. Virginia) Region. That meant if you wanted to manage these settings programmatically, you had to direct your API calls specifically to US East (N. Virginia) — a bit of a hassle if your team operates primarily out of other Regions.\n\n## What changes\n\nWith this update, you can now manage account customizations from any commercial AWS Region using the AWS CLI, AWS SDKs, or AWS CloudFormation. That means you can manage your console settings right alongside your existing infrastructure automation, in the same Region — great news for teams that like to keep everything consistent with infrastructure as code.\n\n## Dive Deep\n\nThis update is mainly about expanding Regional availability rather than adding new capabilities — you can still only configure the custom account color and the service/Region visibility settings. UXC remains available at no additional charge.\n\n## Wrap-up\n\n- UXC is now available in all commercial AWS Regions\n- Previously, programmatic configuration only worked through US East (N. Virginia)\n- You can now manage it via the AWS CLI, SDKs, or CloudFormation from any Region\n- No additional charge\n\nIf you manage multi-Region infrastructure as code and want your console branding and visibility settings to follow the same workflow, this update is for you.",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-uxc-aws-regions",
+  "source_name": "AWS What's New",
+  "og_title": "AWS User Experience Customization (UXC) is now available in all commercial AWS Regions",
+  "tags": [
+    "aws",
+    "devops",
+    "infrastructure"
+  ],
+  "published_at": "2026-09-02T13:00:00+00:00"
+}

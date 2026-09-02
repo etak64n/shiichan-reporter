@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-aws-marketplace-fee-professional-services",
+  "title": "AWS Marketplace、複数製品ソリューションの専門サービス手数料が0%に！",
+  "summary": "AWS Marketplace で、複数製品ソリューションに組み込まれた専門サービス（professional services）のリスティング手数料が0%になったよ。直近の0.5%への引き下げに続く、さらなるコスト削減なの。",
+  "body_md": "みんな、しぃちゃんだよ！今日は AWS のパートナーさんに嬉しい料金改定のニュースを持ってきたよ。\n\n## なにが発表されたの？\n\nAWS What's New によると、AWS Marketplace で複数製品ソリューション（multi-product solution）に含まれる専門サービス（professional services）のリスティング手数料が0%になったよ。これは、専門サービスの手数料を0.5%に引き下げた直近の改定に続く施策なの。\n\n## 今までどうだったの？\n\nつい最近、専門サービスのリスティング手数料は0.5%まで引き下げられたばかりだったんだけど、今回はさらに踏み込んで、複数製品ソリューションの中で提供される専門サービスに限っては手数料が0%になったよ。\n\n## これで何が変わるの？\n\nAWS Marketplace 経由でサービスを取引しているパートナーにとって、コストがさらに下がるよ。しかも、Marketplace 経由で取引することで得られる請求まわりのメリットはそのまま維持されるの。\n\n0%の手数料が適用されるのは、専門サービスが少なくとも1つの他の有効な有料サブスクリプションと組み合わされて、複数製品ソリューションとして提供される場合だよ。この手数料は新規のサブスクリプションに適用され、既存のサブスクリプションはこれまでの条件のまま続くの。\n\n## 深く潜ってみよう\n\nこの施策は、Agent Mode の AI を使ったパートナー探索や、ソフトウェアとサービスを1回の取引でまとめて購入できる複数製品ソリューション、タイム・アンド・マテリアルのような従量課金型の支払いモデルといった、AWS Marketplace の新しい仕組みを土台にしているよ。\n\n対象範囲は、AWS Marketplace が展開しているすべての商用 AWS リージョンだよ。\n\n## まとめ\n\n- 複数製品ソリューション内の専門サービスのリスティング手数料が0%に\n- 直近の0.5%への引き下げに続く、さらなるコスト削減\n- 適用条件は「専門サービス＋他の有効な有料サブスクリプション1つ以上」の組み合わせ\n- 新規サブスクリプションが対象。既存サブスクリプションは従来条件を継続\n- 全ての商用 AWS リージョンで対象\n\nAWS Marketplace でサービスを提供しているパートナーや、複数製品ソリューションを検討している調達担当者に嬉しいニュースだよ！",
+  "title_en": "AWS Marketplace Drops Professional Services Fees to 0% for Multi-Product Solutions!",
+  "summary_en": "AWS Marketplace now charges a 0% listing fee for professional services bundled into a qualifying multi-product solution, building on the earlier cut to 0.5%.",
+  "body_md_en": "Hey everyone, it's me! Today I've got a fee-reduction announcement that AWS partners will love.\n\n## What was announced?\n\nAccording to AWS What's New, AWS Marketplace now applies a 0% listing fee to professional services that are part of a qualifying multi-product solution. This builds on the recent reduction of the professional services listing fee to 0.5%.\n\n## The story so far\n\nJust recently, the professional services listing fee was cut to 0.5%. Now AWS is going a step further: professional services bundled into a multi-product solution can qualify for a 0% fee.\n\n## What changes\n\nPartners transacting services through AWS Marketplace get an even lower cost, while keeping the billing benefits that come with transacting through Marketplace.\n\nA multi-product solution qualifies for the 0% fee when its professional services are combined with at least one other valid, paid subscription. The fee applies to new subscriptions, while existing subscriptions continue under their original terms.\n\n## Dive Deep\n\nThis move builds on newer AWS Marketplace capabilities: AI-powered partner discovery in Agent Mode, the ability to combine software and services into a single multi-product transaction, and variable payment models like time-and-materials.\n\nIt's available across all commercial AWS Regions where AWS Marketplace operates.\n\n## Wrap-up\n\n- Professional services bundled into multi-product solutions now get a 0% listing fee\n- This follows the recent cut to 0.5% for professional services generally\n- Qualification requires pairing professional services with at least one other valid, paid subscription\n- Only new subscriptions get the new fee; existing ones keep their original terms\n- Available in all commercial AWS Regions\n\nGreat news for partners selling services on AWS Marketplace, and for procurement folks evaluating multi-product solutions!",
+  "emotion": "smug",
+  "importance": 2,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/aws-marketplace-fee-professional-services/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Marketplace reduces listing fee for professional services in multi-product solutions",
+  "tags": [
+    "aws",
+    "business"
+  ],
+  "published_at": "2026-09-01T18:00:00+00:00"
+}
