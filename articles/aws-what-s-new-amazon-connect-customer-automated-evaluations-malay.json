@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-connect-customer-automated-evaluations-malay",
+  "title": "Amazon Connectの自動評価、ついにマレー語にも対応！",
+  "summary": "Amazon Connect Customerの生成AIによる自動パフォーマンス評価が、マレー語での会話にも対応したよ。マレー語の会話を英語で評価するクロス言語評価にも対応し、8つのAWSリージョンで利用できるの。",
+  "body_md": "おつかれさま、しぃちゃんだよ！今日は AWS What's New から、コンタクトセンター向けの機能アップデートを見つけたので紹介するね。\n\n## なにが発表されたの？\n\nAWS の公式アップデート情報「AWS What's New」によると、Amazon Connect Customer の自動パフォーマンス評価機能が、新しくマレー語での会話に対応したよ。生成 AI を使って、人間のオペレーターと AI エージェントの両方の対応を自動評価できる機能なの。\n\n## 今までどうだったの？\n\nAmazon Connect Customer にはもともと、マネージャーが自然言語で独自の評価基準を定義すると、AI が根拠つきの評価結果を返してくれる仕組みがあったよ。ただ対応している言語には限りがあって、マレー語での会話はこの自動評価の対象になっていなかったみたい。\n\n## これで何が変わるの？\n\n- マレー語の会話も自動パフォーマンス評価の対象になった\n- 「クロス言語評価」に対応していて、会話がマレー語でも、評価そのものは英語で行うことができる\n- 多言語対応のコンタクトセンターが、言語をまたいで同じ評価基準・フレームワークを使えるようになる\n\n## 深く潜ってみよう\n\n今回の対応は、US East (バージニア北部)・US West (オレゴン)・欧州 (フランクフルト)・欧州 (ロンドン)・カナダ (中部)・アジアパシフィック (シドニー)・アジアパシフィック (東京)・アジアパシフィック (シンガポール) の 8 つの AWS リージョンで利用できるよ。料金や詳しい設定手順は Amazon Connect のドキュメントで確認できるみたい。\n\n## まとめ\n\n- Amazon Connect Customer の自動パフォーマンス評価がマレー語に対応\n- マレー語の会話を英語で評価するクロス言語評価も利用可能\n- 対応リージョンは 8 つ\n\n多言語対応のコンタクトセンターを運用してる人には嬉しいニュースだね！",
+  "title_en": "Amazon Connect's automated evaluations now support Malay!",
+  "summary_en": "Amazon Connect Customer's generative-AI-powered automated performance evaluations now support Malay conversations, including cross-language evaluation where a Malay conversation is graded in English, across 8 AWS Regions.",
+  "body_md_en": "Hi, I'm Shii-chan! Today I found a contact-center feature update from AWS What's New, so let me walk you through it.\n\n## What was announced?\n\nAccording to AWS's official AWS What's New update, Amazon Connect Customer's automated performance evaluation feature now supports conversations in Malay. It uses generative AI to automatically evaluate both human agents and AI agents.\n\n## The story so far\n\nAmazon Connect Customer already let managers define custom evaluation criteria in natural language and get back AI-generated evaluations with justifications. But language support was limited, and Malay conversations weren't covered by this automated evaluation until now.\n\n## What changes\n\n- Malay-language conversations are now covered by automated performance evaluations\n- Cross-language evaluation is supported, so a conversation held in Malay can be evaluated in English\n- Multilingual contact centers can now apply the same evaluation criteria and framework across languages\n\n## Dive Deep\n\nThis support is available in 8 AWS Regions: US East (N. Virginia), US West (Oregon), Europe (Frankfurt), Europe (London), Canada (Central), Asia Pacific (Sydney), Asia Pacific (Tokyo), and Asia Pacific (Singapore). Pricing and detailed setup steps are available in the Amazon Connect documentation.\n\n## Wrap-up\n\n- Amazon Connect Customer's automated performance evaluations now support Malay\n- Cross-language evaluation lets you grade Malay conversations in English\n- Available in 8 AWS Regions\n\nGreat news if you're running a multilingual contact center!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-connect-customer-automated-evaluations-malay/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Connect Customer expands automated performance evaluations to Malay",
+  "tags": [
+    "aws",
+    "ai",
+    "business"
+  ],
+  "published_at": "2026-09-02T17:00:00+00:00"
+}
