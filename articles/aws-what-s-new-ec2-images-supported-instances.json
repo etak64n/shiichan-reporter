@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-ec2-images-supported-instances",
+  "title": "まさかの起動ミス防止！EC2 AMI に「使えるインスタンス」を指定できるように！",
+  "summary": "Amazon EC2 の AMI オーナーが、自分の AMI と互換性のあるインスタンスタイプをサポート対象・非サポート対象として明示できるようになったよ。非対応の組み合わせでの起動は自動的にブロックされて、起動失敗を未然に防げるの。",
+  "body_md": "やっほー、しぃちゃんだよ！AMI まわりで「それ地味に欲しかった！」ってなる機能が来たよ！\n\n## なにが発表されたの？\n\nAWS What's New によると、Amazon EC2 で AMI のオーナーが「このインスタンスタイプでだけ起動できる」という互換性を定義できるようになったよ。指定方法は 3 通りあって、サポートするインスタンスタイプを指定する・サポートしないインスタンスタイプを指定する・その両方を組み合わせる、から選べるの。\n\n## 今までどうだったの？\n\nこれまでは AMI とインスタンスタイプの組み合わせに互換性の縛りがなくて、実際にはそのインスタンスタイプに対応していない AMI を選んでしまい、起動が失敗するということが起こり得たよ。組み合わせが正しいかどうかは、実際に起動してみるまで分かりにくかったんだよね。\n\n## これで何が変わるの？\n\nAMI オーナーが互換性のあるインスタンスタイプを明示しておけば、対応していないインスタンスタイプでの起動は自動的にブロックされるようになるよ。事前に「使える/使えない」がはっきりするから、非対応の組み合わせによる起動失敗を未然に防げるの。\n\nデフォルトでは、これまで通りどの AMI もすべてのインスタンスタイプで起動できる状態のままだから、明示的に制限を設定しない限り既存のワークフローには影響がないよ。\n\n## 深く潜ってみよう\n\nこの機能は全 AWS リージョンで、追加料金なしに使えるよ。詳しい設定方法は AWS のドキュメントを見てね、と案内されているの。\n\n## まとめ\n\n- EC2 の AMI オーナーが、互換性のあるインスタンスタイプを指定できるように\n- サポート対象・非サポート対象・その組み合わせの 3 通りで設定可能\n- 非対応の組み合わせでの起動は自動的にブロックされる\n- デフォルト動作は変わらず、既存ワークフローへの影響なし。全リージョンで追加料金なし\n\n独自 AMI を配布・運用していて、インスタンスタイプの組み合わせミスによる起動失敗に悩んだことがある人には、すぐ設定したくなる機能だよ！",
+  "title_en": "No more launch mishaps! EC2 AMIs can now say which instances they support!",
+  "summary_en": "Amazon EC2 AMI owners can now explicitly declare which instance types are supported or unsupported, so launches with incompatible instance types are automatically blocked before they can fail.",
+  "body_md_en": "Hey everyone, it's me! Here's an AMI feature that fixes a \"wish we had this sooner\" kind of problem!\n\n## What was announced?\n\nAccording to AWS What's New, Amazon EC2 now lets AMI owners define which instance types are compatible with their AMI. You can specify supported instance types, unsupported instance types, or a mix of both.\n\n## The story so far\n\nUntil now, there was no built-in way to enforce compatibility between an AMI and an instance type — it was possible to pick an instance type the AMI wasn't actually built for and have the launch fail. Whether a combination would actually work often wasn't clear until you tried launching it.\n\n## What changes\n\nOnce an AMI owner explicitly defines compatible instance types, launches on non-permitted instance types are automatically blocked. Knowing ahead of time what will and won't work prevents failed launches caused by mismatched AMI-instance pairings.\n\nBy default, existing behavior is unchanged — any AMI can still launch on any instance type unless restrictions are explicitly configured, so existing workflows aren't affected.\n\n## Dive Deep\n\nThis feature is available in all AWS Regions at no additional cost. AWS points to its documentation for setup details.\n\n## Wrap-up\n\n- EC2 AMI owners can now specify which instance types their AMI supports\n- Configure supported types, unsupported types, or both\n- Launches on non-permitted instance types are blocked automatically\n- Default behavior is unchanged, and it's free across all regions\n\nIf you publish or manage custom AMIs and have run into launch failures from mismatched instance types, this is worth setting up right away!",
+  "emotion": "smug",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/ec2-images-supported-instances",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon EC2 now supports specifying compatible instance types on AMIs",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-09-04T19:26:00+00:00"
+}

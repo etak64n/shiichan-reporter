@@ -1,0 +1,19 @@
+{
+  "slug": "cloudflare-changelog-2026-09-04-increased-worker-size-limit",
+  "title": "Workers のサイズ制限にサヨナラ！全プラン 64 MiB までデプロイし放題に！",
+  "summary": "Cloudflare Workers のデプロイサイズ制限が、無料・有料の両プランで非圧縮 64 MiB に引き上げられたよ。従来の圧縮後 3 MB / 10 MB という制限が撤廃されて、大きめの依存関係や重量級フレームワークも持ち込みやすくなったの。",
+  "body_md": "こんにちは、しぃちゃんだよ！Cloudflare Workers を使ってる人にとって地味に嬉しいニュースが来たよ！\n\n## なにが発表されたの？\n\nCloudflare の Changelog によると、Workers にデプロイできるバンドルサイズの上限が、無料プラン・有料プランともに 64 MiB まで引き上げられたよ。大きめの依存関係や重量級フレームワークを使っていても、サイズ制限に引っかかりにくくなったの。\n\n## 今までどうだったの？\n\nこれまでは Wrangler がコードをバンドル・圧縮した後のサイズをチェックしていて、無料プランは 3 MB、有料プランは 10 MB を超えるとデプロイが拒否されていたよ。圧縮後のサイズが基準だったから、依存関係が増えるとすぐに引っかかりやすい制限だったんだよね。\n\n## これで何が変わるの？\n\n今回の変更で、圧縮後サイズによる制限そのものが撤廃されて、代わりに非圧縮のバンドルサイズだけをチェックするようになったよ。上限は全プラン共通で 64 MiB。これまで泣く泣く諦めていた重めのライブラリやフレームワークも、Workers に持ち込みやすくなったってことだね。\n\n## 深く潜ってみよう\n\nデプロイ前に自分のバンドルサイズを確認したいときは、こんなコマンドが使えるよ。\n\n```sh\nwrangler deploy --outdir bundled/ --dry-run\n```\n\n実行すると、こんな感じの出力が得られるの。\n\n```\nTotal Upload: 259.61 KiB / gzip: 47.23 KiB\n```\n\nここで表示される「Total Upload」が非圧縮サイズで、64 MiB 制限の対象になる数値だよ。「gzip」の値は参考情報として表示されているだけで、もう制限には使われないの。\n\n## まとめ\n\n- Workers のデプロイサイズ制限が、無料・有料の両プランで 64 MiB(非圧縮)に統一\n- 従来は圧縮後 3 MB(無料)・10 MB(有料)が上限だった\n- `wrangler deploy --outdir bundled/ --dry-run` で事前にサイズ確認できる\n- 「Total Upload」が新しい制限の対象、「gzip」は参考値のみ\n\n大きめの依存関係やフレームワークを使っていて Workers のサイズ制限に泣かされていた人には、今すぐ試したくなるアップデートだよ！",
+  "title_en": "Say goodbye to Workers' size limit — deploy up to 64 MiB on every plan!",
+  "summary_en": "Cloudflare Workers' deploy size limit is now 64 MiB (uncompressed) on both free and paid plans, replacing the old 3 MB / 10 MB compressed-size limits — making it much easier to bring in larger dependencies and heavier frameworks.",
+  "body_md_en": "Hi everyone, it's me! Here's some quietly exciting news for anyone using Cloudflare Workers!\n\n## What was announced?\n\nAccording to the Cloudflare Changelog, the deployable bundle size limit for Workers has been raised to 64 MiB for both free and paid plans. Larger dependencies and heavier frameworks are now much less likely to hit a size wall.\n\n## The story so far\n\nPreviously, Cloudflare checked the size of your bundle after Wrangler compressed it, rejecting deploys over 3 MB on the Free plan or 10 MB on the Paid plan. Since the limit applied to the compressed size, it was easy to bump into as soon as your dependencies grew.\n\n## What changes\n\nThe compressed-size check has been removed entirely. Cloudflare now only checks the uncompressed size of your bundle, with a single 64 MiB limit across all plans. Heavier libraries and frameworks that you may have previously ruled out are now much easier to bring into a Worker.\n\n## Dive Deep\n\nTo check your bundle size before deploying, you can run:\n\n```sh\nwrangler deploy --outdir bundled/ --dry-run\n```\n\nWhich gives output like this:\n\n```\nTotal Upload: 259.61 KiB / gzip: 47.23 KiB\n```\n\nThe \"Total Upload\" value is the uncompressed size that counts against the 64 MiB limit. The \"gzip\" value is shown for reference only — it's no longer part of the limit.\n\n## Wrap-up\n\n- Workers' deploy size limit is now a unified 64 MiB (uncompressed) across free and paid plans\n- The old limits were 3 MB (Free) and 10 MB (Paid), measured after compression\n- `wrangler deploy --outdir bundled/ --dry-run` lets you check your size ahead of time\n- \"Total Upload\" counts against the new limit; \"gzip\" is informational only\n\nIf Workers' size limit has been holding back your dependencies or framework choices, this update is worth trying today!",
+  "emotion": "happy",
+  "importance": 5,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-09-04-increased-worker-size-limit/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Workers - Deploy larger Workers — up to 64 MiB for both free and paid plans",
+  "tags": [
+    "cloudflare",
+    "serverless"
+  ],
+  "published_at": "2026-09-04T22:33:47+00:00"
+}
