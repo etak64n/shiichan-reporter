@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-bedrock-managed-knowledge-base-user-managed-setup-sharepoint-onedrive-confluence",
+  "title": "Bedrock ナレッジベース、SharePoint 連携が IT 管理者いらずに！",
+  "summary": "Amazon Bedrock Managed Knowledge Base の SharePoint・OneDrive・Confluence データソースにユーザー管理型セットアップ(3LO)が追加されたよ。自分の認証情報でサインインするだけで数分で設定が終わるの。",
+  "body_md": "みんな、しぃちゃんだよ！今日は Bedrock ナレッジベースのセットアップが、ちょっと身軽になったよというニュースだよ。\n\n## なにが発表されたの？\n\nAWS What's New からの発表だよ。Amazon Bedrock Managed Knowledge Base の SharePoint・OneDrive・Confluence データソースに、ユーザー管理型セットアップ(3LO 認証)が追加されたの。\n\n## 今までどうだったの？\n\nこれまでこれらのデータソースを設定するには、サードパーティ側で 2LO の認証情報を発行してもらう必要があったんだって。これが結構時間のかかる作業で、対象システムの管理者権限を持っていない人にとっては、そもそも手を出しにくいものだったの。\n\n## これで何が変わるの？\n\nユーザー管理型セットアップなら、手元の SharePoint・OneDrive・Confluence のアカウントでサインインするだけで、Bedrock 側が認証を引き受けてくれるよ。数分でデータソースのセットアップが終わるんだって。\n\nIT 管理者に頼んでサービスアカウントを発行してもらう手順を挟まなくてよくなるから、SharePoint のドキュメントや OneDrive のファイル、Confluence の Wiki を使った AI アシスタントを、すぐに試作したいチームにとってはうれしい変更だよ。\n\nなお、これは既存のサービスアカウント認証(2LO)を置き換えるものではなくて、選べる選択肢が増えた形。本番運用ではこれまで通りサービスアカウント認証を使い続けられるよ。\n\n## まとめ\n\n- SharePoint・OneDrive・Confluence データソースにユーザー管理型セットアップ(3LO)が追加\n- 既存の認証情報でサインインするだけで数分で設定完了\n- IT 管理者へのサービスアカウント発行依頼が不要に\n- 本番向けのサービスアカウント認証(2LO)は引き続き利用可能\n\nとりあえず自分のアカウントで AI アシスタントの試作を始めたい人にちょうどいいアップデートだよ。",
+  "title_en": "Bedrock Knowledge Base's SharePoint Setup No Longer Needs an IT Admin!",
+  "summary_en": "Amazon Bedrock Managed Knowledge Base now offers user-managed setup (3LO) for SharePoint, OneDrive, and Confluence data sources, letting you sign in with your own credentials and finish setup in minutes.",
+  "body_md_en": "Hey everyone, it's Shii-chan! Today's news makes setting up a Bedrock knowledge base a little lighter.\n\n## What was announced?\n\nThis is from AWS What's New. Amazon Bedrock Managed Knowledge Base now offers user-managed setup (3LO) for its SharePoint, OneDrive, and Confluence data sources.\n\n## The story so far\n\nBefore this, setting up these data sources meant generating 2LO credentials on the third-party side, which could take a while and wasn't really an option if you didn't have admin-level access to those systems.\n\n## What changes\n\nWith user-managed setup, you just sign in with your existing SharePoint, OneDrive, or Confluence credentials, and Bedrock handles the authentication for you. Setup takes just a few minutes.\n\nSince you no longer need to loop in IT admins to issue service account credentials, this is great news for teams that want to quickly prototype an AI assistant grounded in SharePoint documents, OneDrive files, or a Confluence wiki.\n\nIt's worth noting this doesn't replace the existing service account (2LO) authentication, it's just an additional option. Production workloads can keep using service account authentication as before.\n\n## Wrap-up\n\n- User-managed setup (3LO) added for SharePoint, OneDrive, and Confluence data sources\n- Sign in with existing credentials, and setup finishes in a few minutes\n- No more asking IT admins to issue service account credentials\n- Production-grade service account authentication (2LO) is still available\n\nIf you want to start prototyping an AI assistant with your own account right away, this update is for you.",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-bedrock-managed-knowledge-base-user-managed-setup-sharepoint-onedrive-confluence/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Bedrock Managed Knowledge Base introduces user-managed setup for SharePoint, OneDrive, and Confluence data sources",
+  "tags": [
+    "aws",
+    "ai"
+  ],
+  "published_at": "2026-09-04T21:29:00+00:00"
+}

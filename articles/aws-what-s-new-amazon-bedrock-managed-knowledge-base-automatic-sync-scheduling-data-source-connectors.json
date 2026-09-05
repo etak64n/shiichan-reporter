@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-bedrock-managed-knowledge-base-automatic-sync-scheduling-data-source-connectors",
+  "title": "Bedrock ナレッジベースが自動更新に対応、同期忘れにサヨナラ！",
+  "summary": "Amazon Bedrock Managed Knowledge Base のデータソースコネクタが自動同期スケジューリングに対応したよ。日次・週次・月次から選べるようになって、手動同期の手間や更新漏れの心配が減るよ。",
+  "body_md": "おつかれさま、しぃちゃんだよ！今日は Amazon Bedrock のナレッジベース機能に届いた、地味だけどありがたいアップデートを紹介するよ。\n\n## なにが発表されたの？\n\nAWS What's New からのお知らせだよ。Amazon Bedrock Managed Knowledge Base(ベクター DB やデータパイプラインの管理不要で RAG を構築できるフルマネージドサービス)に、データソースコネクタの自動同期スケジューリング機能が追加されたの。\n\n## 今までどうだったの？\n\nこれまでは、ナレッジベースを最新の状態に保つには、元データが変わるたびに手動で同期をトリガーするか、自分でスケジューリングの仕組みを作る必要があったんだって。地味に面倒だったんだよね。\n\n## これで何が変わるの？\n\nこれからは、対応するすべてのネイティブデータソースコネクタに対して、日次・週次・月次の同期スケジュールを設定できるようになるよ。ソースの更新頻度に合わせて同期間隔を選べるから、無駄な同期も更新漏れも防げるの。\n\n- 頻繁に更新される Confluence の顧客サポートナレッジベースには日次同期\n- 定期的に変わる SharePoint のポリシードキュメントには週次同期\n- あまり変わらない Amazon S3 のリファレンス資料には月次同期\n\nこんな風に使い分けられるよ。カスタムのスケジューリング機構を自作・保守する必要がなくなるから、運用の手間が減って、RAG アプリケーションが常に新しいデータを参照できるようになるんだって。\n\n## まとめ\n\n- Bedrock Managed Knowledge Base のデータソースコネクタに自動同期スケジューリングが追加\n- 日次・週次・月次からソースの更新頻度に合わせて選べる\n- カスタムのスケジューリング実装が不要になり、運用オーバーヘッドが軽減\n\nナレッジベースの同期を手動でポチポチしていた人、更新忘れにヒヤヒヤしていた人にうれしいアップデートだよ。",
+  "title_en": "Bedrock Knowledge Base Now Auto-Syncs, Say Goodbye to Manual Refreshes!",
+  "summary_en": "Amazon Bedrock Managed Knowledge Base's data source connectors now support automatic sync scheduling, with daily, weekly, or monthly options that cut down on manual syncing and stale data.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today I've got a small but genuinely helpful update to Amazon Bedrock's knowledge base feature.\n\n## What was announced?\n\nThis is from AWS What's New. Amazon Bedrock Managed Knowledge Base, the fully managed RAG service that handles data ingestion and storage without you managing vector databases or pipelines, now supports automatic sync scheduling for its data source connectors.\n\n## The story so far\n\nBefore this, keeping a knowledge base current meant manually triggering a sync every time the source data changed, or building your own custom scheduling solution. Kind of a hassle, honestly.\n\n## What changes\n\nNow you can set daily, weekly, or monthly sync schedules for all native data source connectors, matching the sync frequency to how often your source content actually changes. That avoids both wasted syncs and stale data.\n\n- A daily sync for a fast-changing Confluence customer support knowledge base\n- A weekly sync for SharePoint policy documents that update periodically\n- A monthly sync for reference material stored in Amazon S3\n\nYou get to pick per source. No more building and maintaining custom scheduling workarounds, so operational overhead drops and your RAG application stays grounded in fresh enterprise data.\n\n## Wrap-up\n\n- Bedrock Managed Knowledge Base's data source connectors now support automatic sync scheduling\n- Choose daily, weekly, or monthly based on how often your source updates\n- No custom scheduling code needed, less operational overhead\n\nIf you've been manually triggering syncs or worrying about stale data, this update is for you.",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-bedrock-managed-knowledge-base-automatic-sync-scheduling-data-source-connectors/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Bedrock Managed Knowledge Base now supports automatic sync scheduling for data source connectors",
+  "tags": [
+    "aws",
+    "ai",
+    "devops"
+  ],
+  "published_at": "2026-09-04T21:01:00+00:00"
+}

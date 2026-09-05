@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-bedrock-managed-knowledge-base-servicenow-native-data-source-connector",
+  "title": "ServiceNow の知識、そのまま Bedrock に吸い上げられるようになったよ！",
+  "summary": "Amazon Bedrock Managed Knowledge Base が ServiceNow のネイティブデータソースコネクタに対応したよ。認証情報を渡すだけでナレッジ記事やサービスカタログを自動で取り込めるようになったの。",
+  "body_md": "こんにちは、しぃちゃんだよ！今日は Amazon Bedrock のナレッジベースが、また新しいデータソースに対応したよというお話だよ。\n\n## なにが発表されたの？\n\nAWS What's New からの発表だよ。Amazon Bedrock Managed Knowledge Base に、ServiceNow のネイティブデータソースコネクタが追加されたの。ServiceNow インスタンスに直接つないで、ナレッジ記事やサービスカタログのアイテムをそのまま取り込めるようになったんだって。\n\n## 今までどうだったの？\n\nこれまで ServiceNow のコンテンツを Bedrock Knowledge Bases に持ってくるには、自分でカスタムの取り込みパイプラインを構築・保守する必要があったの。地味に手間がかかる作業だったんだよね。\n\n## これで何が変わるの？\n\nServiceNow のインスタンス認証情報を渡すだけで、データのクローリング・メタデータ抽出・増分同期をコネクタが自動でやってくれるようになるよ。ServiceNow に元々ある社内ナレッジを、そのまま AI エージェントに使わせられるようになるの。\n\nコネクタが取り込む対象はこんな感じ。\n\n- ナレッジ記事\n- サービスカタログのアイテム(ファイル添付を含む)\n\nしかも sys ID の包含リストを使えば、特定のナレッジベース・記事カテゴリー・サービスカタログだけに絞ってクロールできるから、関係ない情報まで取り込んじゃう心配もないよ。\n\n## 深く潜ってみよう\n\nこの仕組みがあれば、社員向けの IT サポートアシスタントや HR ヘルプデスク、カスタマーサポートエージェントを、ServiceNow に溜まっている最新の社内情報に基づいて作りやすくなるよ。\n\n## まとめ\n\n- Bedrock Managed Knowledge Base が ServiceNow ネイティブコネクタに対応\n- 認証情報を渡すだけでクローリング・メタデータ抽出・増分同期を自動化\n- sys ID 包含リストで対象範囲を絞り込み可能\n- IT・HR・カスタマーサポート向け AI エージェントの構築が楽になる\n\n社内に ServiceNow のナレッジが溜まっている会社で、AI アシスタントを作りたい人にぴったりのアップデートだよ。",
+  "title_en": "ServiceNow Knowledge Can Now Flow Straight into Bedrock!",
+  "summary_en": "Amazon Bedrock Managed Knowledge Base now has a native ServiceNow data source connector, automatically pulling in knowledge articles and service catalog items once you provide credentials.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today's update is about Amazon Bedrock's knowledge base picking up a new data source.\n\n## What was announced?\n\nThis comes from AWS What's New. Amazon Bedrock Managed Knowledge Base now has a native data source connector for ServiceNow, so you can connect directly to a ServiceNow instance and pull in knowledge articles and service catalog items.\n\n## The story so far\n\nBefore this, bringing ServiceNow content into Bedrock Knowledge Bases meant building and maintaining your own custom ingestion pipeline. Not exactly a fun side project.\n\n## What changes\n\nNow you just provide your ServiceNow instance credentials, and the connector handles data crawling, metadata extraction, and incremental sync automatically. That means the institutional knowledge already sitting in ServiceNow becomes usable by your AI agents right away.\n\nThe connector crawls:\n\n- Knowledge articles\n- Service catalog items (including file attachments)\n\nYou can also scope the crawl using sys ID inclusion lists, limiting it to specific knowledge bases, article categories, or service catalogs, so you don't end up ingesting content you don't need.\n\n## Dive Deep\n\nWith this in place, it's easier to build employee-facing IT assistants, HR helpdesks, or customer support agents grounded in the up-to-date knowledge already living in ServiceNow.\n\n## Wrap-up\n\n- Bedrock Managed Knowledge Base now supports a native ServiceNow connector\n- Just provide credentials, and crawling, metadata extraction, and incremental sync happen automatically\n- Sys ID inclusion lists let you scope what gets crawled\n- Makes it easier to build AI agents for IT, HR, and customer support\n\nIf your organization has knowledge piling up in ServiceNow and you want to build an AI assistant on top of it, this update is for you.",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-bedrock-managed-knowledge-base-servicenow-native-data-source-connector/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Bedrock Managed Knowledge Base now supports ServiceNow as a native data source connector",
+  "tags": [
+    "aws",
+    "ai"
+  ],
+  "published_at": "2026-09-04T21:14:00+00:00"
+}
