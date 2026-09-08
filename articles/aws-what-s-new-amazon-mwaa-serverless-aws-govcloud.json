@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-mwaa-serverless-aws-govcloud",
+  "title": "MWAA Serverless、ついに AWS GovCloud (US) でも使えるようになったよ！",
+  "summary": "Amazon MWAA Serverless が AWS GovCloud (US-East) と AWS GovCloud (US-West) で利用可能になったよ。Airflow のインフラ管理から解放される MWAA Serverless の使い勝手を、政府系ワークロードでも活かせるようになったの。",
+  "body_md": "みんな、しぃちゃんだよ！今日はちょっと地味だけど、対象の人にはうれしいリージョン対応のニュースだよ。\n\n## なにが発表されたの？\n\nAWS What's New に、Amazon Managed Workflows for Apache Airflow(MWAA)Serverless が AWS GovCloud (US-East) と AWS GovCloud (US-West) で使えるようになったという発表が載ったよ。\n\n## なぜ重要なの？\n\nMWAA Serverless は、Apache Airflow のインフラを自分で構築・運用する手間をなくして、必要なときに自動でコンピュートリソースをプロビジョニング・スケーリングしてくれるサービスだよ。課金もワークフローの実行時間に応じた従量課金だから、常時サーバーを立てておく必要もないの。今回の対応で、これまで通常リージョンでしか使えなかったこの使い勝手を、AWS GovCloud (US) を利用する政府機関や規制の厳しい業界のワークロードでも活かせるようになったんだよ。\n\n## これで何が変わるの？\n\nGovCloud 環境でワークフローオーケストレーションを組みたいチームは、Airflow クラスターの面倒な運用を抱え込まずに、MWAA Serverless の自動スケーリングと使った分だけの課金をそのまま享受できるようになったよ。対応地域の全リストは、Amazon MWAA Serverless のリージョンページで確認できるの。\n\n## まとめ\n\n- Amazon MWAA Serverless が AWS GovCloud (US-East) / AWS GovCloud (US-West) に対応したよ\n- インフラの自動プロビジョニング・自動スケーリングと、実行時間ベースの従量課金はそのまま\n- GovCloud でデータパイプラインのオーケストレーションを組みたい人に嬉しいアップデートだね",
+  "title_en": "MWAA Serverless Has Finally Landed in AWS GovCloud (US)!",
+  "summary_en": "Amazon MWAA Serverless is now available in AWS GovCloud (US-East) and AWS GovCloud (US-West), bringing its hands-off Airflow experience to government and regulated workloads.",
+  "body_md_en": "Hey everyone, it's me, Shiichan! Today's news is a bit understated, but it's great if you're in the target audience.\n\n## What was announced?\n\nAWS What's New announced that Amazon Managed Workflows for Apache Airflow (MWAA) Serverless is now available in AWS GovCloud (US-East) and AWS GovCloud (US-West).\n\n## Why it matters\n\nMWAA Serverless removes the operational overhead of managing Apache Airflow infrastructure yourself, automatically provisioning and scaling compute resources on demand. You only pay for actual workflow run time, so there's no need to keep servers running around the clock. Until now, that convenience was limited to standard Regions — this update brings it to government agencies and regulated-industry workloads running in AWS GovCloud (US).\n\n## What changes\n\nTeams that need workflow orchestration inside GovCloud can now get MWAA Serverless's automatic scaling and pay-per-use pricing without having to operate an Airflow cluster themselves. You can check the full list of supported Regions on the Amazon MWAA Serverless Regions page.\n\n## Wrap-up\n\n- Amazon MWAA Serverless now supports AWS GovCloud (US-East) and AWS GovCloud (US-West)\n- Automatic infrastructure provisioning, automatic scaling, and pay-per-run-time pricing carry over as-is\n- Good news for anyone who needs to orchestrate data pipelines inside GovCloud",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-mwaa-serverless-aws-govcloud/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon MWAA Serverless is now available in AWS GovCloud (US)",
+  "tags": [
+    "aws",
+    "serverless",
+    "devops"
+  ],
+  "published_at": "2026-09-04T22:00:00+00:00"
+}

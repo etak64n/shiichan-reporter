@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-rds-mariadb-community-versions",
+  "title": "RDS for MariaDB が最新マイナーバージョンに対応、耐量子TLSも使えるようになったよ！",
+  "summary": "Amazon RDS for MariaDB が、コミュニティ版 MariaDB の最新マイナーバージョン 5 種に対応したよ。CVE 修正に加えて、耐量子暗号の TLS 鍵交換(PQ-TLS)も使えるようになったの。",
+  "body_md": "やっほー、しぃちゃんだよ！今日は RDS for MariaDB を使っている人向けのアップデート情報だよ。\n\n## なにが発表されたの？\n\nAWS What's New に、Amazon RDS for MariaDB が、コミュニティ MariaDB の最新マイナーバージョンである 10.6.28・10.11.19・11.4.13・11.8.9・12.3.3 に対応したという発表が載ったよ。\n\n## 今までどうだったの？\n\nこれまでのマイナーバージョンには、修正済みの CVE(既知の脆弱性)が残っていたり、コミュニティ側で行われたバグ修正やパフォーマンス改善が取り込まれていなかったりしたの。それに、通信を量子コンピューターの解読から守る耐量子暗号の TLS 鍵交換にも対応していなかったんだって。\n\n## これで何が変わるの？\n\n今回のマイナーバージョンから、耐量子 TLS(PQ-TLS)鍵交換に対応したよ。これによって、転送中データの暗号化に耐量子暗号の選択肢が加わったの。あわせて、これまでのバージョンに存在していた CVE の修正や、MariaDB コミュニティによるバグ修正・パフォーマンス改善・新機能もまとめて取り込まれているよ。\n\n## 深く潜ってみよう\n\nアップグレードの方法は次の 3 つから選べるよ。\n\n- Amazon RDS Blue/Green Deployments を使ったアップグレード\n- インプレースアップグレード\n- スナップショットからのリストア\n\n運用を効率化したいなら、自動マイナーバージョンアップグレードを有効にしたうえで、AWS Organizations の Upgrade Rollout Policy を使えば、複数のクラスターへのアップグレードを段階的に進められるの。外部の MariaDB 環境から移行したい場合は、AWS Database Migration Service を使う方法も用意されているよ。\n\n## まとめ\n\n- Amazon RDS for MariaDB が、コミュニティ版の最新マイナーバージョン 5 種(10.6.28 / 10.11.19 / 11.4.13 / 11.8.9 / 12.3.3)に対応したよ\n- 耐量子暗号の TLS 鍵交換(PQ-TLS)が使えるようになったのが今回の目玉だね\n- 既知の CVE 修正やコミュニティ側のバグ修正・性能改善もまとめて取り込まれているよ\n- Blue/Green デプロイ・インプレース・スナップショットリストアの 3 通りでアップグレードできるから、RDS for MariaDB を運用している人はスケジュールを組んで早めに更新しておくと安心だね",
+  "title_en": "RDS for MariaDB Now Supports the Latest Minor Versions, Including Post-Quantum TLS!",
+  "summary_en": "Amazon RDS for MariaDB now supports five new community MariaDB minor versions, adding post-quantum TLS key exchange on top of the usual CVE and bug fixes.",
+  "body_md_en": "Hi, it's me, Shiichan! Today's update is for anyone running RDS for MariaDB.\n\n## What was announced?\n\nAWS What's New announced that Amazon RDS for MariaDB now supports the latest community MariaDB minor versions: 10.6.28, 10.11.19, 11.4.13, 11.8.9, and 12.3.3.\n\n## The story so far\n\nPrevious minor versions still carried known CVEs that have since been fixed, and hadn't picked up the community's latest bug fixes and performance improvements. They also didn't support post-quantum TLS key exchange, which protects data in transit against decryption by future quantum computers.\n\n## What changes\n\nStarting with these minor versions, RDS for MariaDB supports post-quantum TLS (PQ-TLS) key exchange, giving you a post-quantum option for encrypting data in transit. These versions also bundle in fixes for known CVEs along with the community's bug fixes, performance improvements, and new functionality.\n\n## Dive Deep\n\nYou can upgrade using one of three methods:\n\n- Amazon RDS Blue/Green Deployments\n- An in-place upgrade\n- Restoring from a snapshot\n\nIf you want to streamline operations, enabling automatic minor version upgrades together with the AWS Organizations Upgrade Rollout Policy lets you roll upgrades out across your clusters in phases. If you're migrating from an external MariaDB environment, AWS Database Migration Service is available for that too.\n\n## Wrap-up\n\n- Amazon RDS for MariaDB now supports five new community minor versions: 10.6.28, 10.11.19, 11.4.13, 11.8.9, and 12.3.3\n- The headline addition is post-quantum TLS (PQ-TLS) key exchange support\n- Known CVE fixes and the community's bug and performance fixes are bundled in too\n- You can upgrade via Blue/Green deployment, in-place, or snapshot restore — worth scheduling an update soon if you run RDS for MariaDB",
+  "emotion": "thinking",
+  "importance": 2,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-rds-mariadb-community-versions/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon RDS for MariaDB now supports community MariaDB minor versions 10.6.28, 10.11.19, 11.4.13, 11.8.9, and 12.3.3",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "security"
+  ],
+  "published_at": "2026-09-08T16:00:00+00:00"
+}

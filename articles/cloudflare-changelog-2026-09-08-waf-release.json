@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-09-08-waf-release",
+  "title": "Next.jsのRCE脆弱性、CloudflareのWAFが自動でブロックしてくれるようになったよ！",
+  "summary": "Cloudflare の Managed Ruleset で、Next.js のリモートコード実行(RCE)脆弱性を狙うベータ版ルールが正式ルールに統合され、アクションが「ログ記録のみ」から「ブロック」に強化されたよ。",
+  "body_md": "おつかれさま、しぃちゃんだよ！今日は Cloudflare の WAF まわりのアップデートだよ。Next.js を使っているサイトの人は要チェックだよ。\n\n## なにが発表されたの？\n\nCloudflare の Changelog に、2026 年 9 月 8 日付けの WAF リリースが載ったよ。Next.js のリモートコード実行(RCE)脆弱性を狙う既存ルールの検出ロジックを強化するもので、これまでベータ版として動いていたルールを本体のシグネチャに統合したの。対象は Cloudflare Managed Ruleset に含まれる、次の 2 つのルールだよ。\n\n- 細工した AVIF 画像経由での Next.js Image Optimizer の RCE を検知するルール\n- CVE-2026-75604 に対応する Next.js の RCE を検知するルール\n\n## 今までどうだったの？\n\nこの 2 つは、それぞれ対応するベータ版ルール(「- Beta」が付いたルール)が別枠で動いていて、アクションは「Log」、つまり検知はしてもリクエストを通してログに残すだけの設定だったんだって。ベータ期間中は誤検知の様子を見るためにこうなっていたんだね。\n\n## これで何が変わるの？\n\n今回のリリースで、ベータ版ルールは元の本体ルールにマージされて、アクションが「Log」から「Block」に変わったよ。つまり、これまでログに記録されるだけだった攻撃らしきリクエストが、これからは実際にブロックされるようになったってこと。Cloudflare Managed Ruleset を有効にしていれば、特に設定を変えなくてもこの強化が自動的に反映されるよ。\n\n## まとめ\n\n- Next.js の AVIF 経由 RCE と CVE-2026-75604 の RCE を狙うベータ版ルールが、本体ルールに統合されたよ\n- アクションが「Log(記録のみ)」から「Block(ブロック)」に強化されたの\n- Cloudflare Managed Ruleset を使っていれば自動で適用される変更だよ\n- Next.js アプリを Cloudflare の裏で運用している人は、念のため WAF のイベントログで挙動を確認しておくと安心だね",
+  "title_en": "Cloudflare's WAF Now Auto-Blocks Next.js RCE Vulnerabilities!",
+  "summary_en": "Cloudflare's Managed Ruleset merged its beta rules targeting Next.js remote code execution vulnerabilities into the baseline rules, upgrading the action from log-only to block.",
+  "body_md_en": "Hi, it's me, Shiichan! Today's update is about Cloudflare's WAF — worth a look if you run a Next.js site behind it.\n\n## What was announced?\n\nCloudflare's Changelog posted a WAF release dated September 8, 2026. It strengthens the detection logic for existing rules targeting Next.js remote code execution (RCE) vulnerabilities by consolidating rules that had been running in beta into the baseline signatures. Two rules in the Cloudflare Managed Ruleset are affected:\n\n- A rule detecting RCE in the Next.js Image Optimizer via a crafted AVIF image\n- A rule detecting the Next.js RCE tracked as CVE-2026-75604\n\n## The story so far\n\nEach of these had a separate beta counterpart (rules with a \"- Beta\" suffix), and both were set to the \"Log\" action — meaning they'd flag a suspicious request and record it, but let it through. That's a normal way to watch for false positives while a rule is in beta.\n\n## What changes\n\nWith this release, the beta rules were merged into their original counterparts, and the action changed from \"Log\" to \"Block.\" Requests that previously would only have been logged as suspicious will now actually be blocked. If you have the Cloudflare Managed Ruleset enabled, this stronger protection applies automatically — no configuration change needed.\n\n## Wrap-up\n\n- The beta rules for Next.js AVIF-based RCE and CVE-2026-75604 RCE have been merged into their baseline rules\n- The action was upgraded from \"Log\" (record only) to \"Block\"\n- This change applies automatically if you're using the Cloudflare Managed Ruleset\n- If you run a Next.js app behind Cloudflare, it's worth checking your WAF event logs to confirm the new behavior",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-09-08-waf-release/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "WAF - WAF Release - 2026-09-08",
+  "tags": [
+    "cloudflare",
+    "security",
+    "web"
+  ],
+  "published_at": "2026-09-08T18:47:32+00:00"
+}

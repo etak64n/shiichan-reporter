@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-aws-builder-id-recovery-mfa-third-party",
+  "title": "AWS Builder ID にリカバリーメールとMFAが追加、アカウントロックアウトにサヨナラ！",
+  "summary": "AWS Builder ID にリカバリーメールの登録と、サードパーティログインを含む全サインイン方法向けの MFA が追加されたよ。ロックアウトしてもサポートに連絡せずセルフサービスで復旧しやすくなったの。",
+  "body_md": "やっほー、しぃちゃんだよ！今日は AWS Builder ID を使っている人みんなに関係あるお知らせだよ。\n\n## なにが発表されたの？\n\nAWS What's New に、AWS Builder ID のセキュリティとリカバリー機能が強化されたという発表が載ったよ。AWS Builder ID は、AWS Builder Center・AWS Training and Certification・Amazon Quick・Kiro などにアクセスするための個人プロフィールだね。\n\n## 今までどうだったの？\n\nこれまでは、パスワードを忘れたり MFA デバイスを紛失したりしてサインインできなくなると、セルフサービスで復旧できる範囲が限られていて、状況によっては AWS サポートへの問い合わせが必要になることもあったの。また、Google・Apple・GitHub・Amazon といったサードパーティアカウントでサインインしている場合、MFA デバイスを直接 Builder ID に登録することもできなかったんだって。\n\n## これで何が変わるの？\n\n今回のアップデートで、次のことができるようになったよ。\n\n- リカバリー用のメールアドレスを登録できる(主メールアドレスに加えた第 2 の確認手段)\n- パスワードを忘れたときは、主メールまたはリカバリーメールに届くリンクでリセットできる\n- MFA デバイスを紛失した場合も、主メールとリカバリーメールの両方を確認すればアクセスを復旧できる\n- Google・Apple・GitHub・Amazon でサインインしている人も、Builder ID 上で直接 MFA デバイスを登録できる\n- サードパーティアカウントにアクセスできなくなった場合は、メールアドレスとパスワードでのサインインに恒久的に切り替えられる\n\n## これで嬉しいこと\n\nリカバリーメールを登録しておけば、AWS サポートに連絡しなくてもセルフサービスで復旧できる場面が増えるよ。サードパーティログインを使っている人も、メール・パスワード派の人と同じレベルのアカウント保護を受けられるようになったのがポイントだね。\n\n## まとめ\n\n- AWS Builder ID にリカバリーメールの登録機能が追加されたよ\n- どのサインイン方法でも MFA デバイスを登録できるようになったの(Google / Apple / GitHub / Amazon 含む)\n- ロックアウトしてもセルフサービスで復旧できる場面が増えたよ\n- Kiro や AWS Builder Center などを使っていて、まだリカバリーメールや MFA を設定していない人は、これを機に設定しておくと安心だね",
+  "title_en": "AWS Builder ID Adds Recovery Email and MFA — Say Goodbye to Lockouts!",
+  "summary_en": "AWS Builder ID now supports a recovery email and MFA for every sign-in method, including third-party logins — so you can self-recover access without contacting AWS Support.",
+  "body_md_en": "Hi, it's me, Shiichan! Today's news is relevant to everyone using AWS Builder ID.\n\n## What was announced?\n\nAWS What's New announced stronger security and recovery options for AWS Builder ID, your personal profile for accessing AWS Builder Center, AWS Training and Certification, Amazon Quick, Kiro, and more.\n\n## The story so far\n\nUntil now, if you forgot your password or lost your MFA device, self-service recovery options were limited, and some situations required contacting AWS Support. Also, if you signed in through a third-party account like Google, Apple, GitHub, or Amazon, you couldn't register an MFA device directly on Builder ID.\n\n## What changes\n\nWith this update, you can now:\n\n- Add a recovery email as a second verification factor alongside your primary email\n- Reset a forgotten password using a link sent to either your primary or recovery email\n- Regain access after losing your MFA device by verifying both your primary and recovery emails\n- Register MFA devices directly in Builder ID even if you sign in with Google, Apple, GitHub, or Amazon\n- Permanently switch to email-and-password sign-in if you lose access to your third-party account\n\n## Why it's good news\n\nWith a recovery email on file, more lockout scenarios can be resolved through self-service instead of contacting AWS Support. Third-party login users also now get the same strong account protection that email-and-password users already had.\n\n## Wrap-up\n\n- AWS Builder ID now supports registering a recovery email\n- MFA devices can be registered for any sign-in method, including Google, Apple, GitHub, and Amazon\n- More lockout scenarios can now be resolved through self-service\n- If you use Kiro, AWS Builder Center, or similar and haven't set up a recovery email or MFA yet, now's a good time",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/aws-builder-id-recovery-mfa-third-party/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Builder ID adds recovery options and multi-factor authentication for third-party logins",
+  "tags": [
+    "aws",
+    "security"
+  ],
+  "published_at": "2026-09-08T08:00:00+00:00"
+}
