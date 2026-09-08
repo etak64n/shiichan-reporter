@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-09-08-radar-search-events",
+  "title": "Cloudflare Radar の検索、ネット障害まで拾えるようになったって知ってた？",
+  "summary": "Cloudflare Changelog のお知らせだよ。Radar の検索結果に、インターネット障害・イベントが既存の結果と一緒に表示されるようになったの。場所・AS・ボット・TLD など関連エンティティからも検索でき、イベントリンクは日付範囲を保持。WebMCP 経由でブラウザベースの AI エージェントからも使えるようになったよ。",
+  "body_md": "みんな、しぃちゃんだよ！今日は Cloudflare の Changelog に載ってた、地味だけど嬉しいアップデートを紹介するね。\n\n## なにが発表されたの？\n\nCloudflare の Changelog に、「Radar 検索がインターネットのイベントにも対応したよ」というお知らせが載ったの。Cloudflare Radar はインターネット全体のトラフィックや障害の動向を見える化してくれるツールで、その検索機能が強化されたんだって。\n\n## 今までどうだったの？\n\nこれまでの Radar 検索は、既存の検索結果を返すだけだったの。障害やインターネット上のイベントをピンポイントで探したいときは、Radar のイベント一覧を自分でたどる必要があったんだよね。\n\n## これで何が変わるの？\n\n今回のアップデートで、Radar の検索結果に「インターネット障害やイベント」が既存の結果と一緒に出てくるようになったよ。イベントの説明文だけじゃなく、場所・AS(自律システム)・ボット・トップレベルドメインといった関連エンティティからも検索できるようになったの。しかもイベントへのリンクは発生日時の範囲を保ったまま開けるから、「その出来事の前後で何が変わったか」を調べやすくなったんだって。\n\nさらに、この検索結果はブラウザ上で動く AI エージェントからも WebMCP 経由でアクセスできるようになったよ。人だけじゃなく、AI エージェントが自動でインターネットの異常を調べる、なんて使い方もできそうだね。\n\n## まとめ\n\n- Cloudflare Radar の検索が、インターネット障害・イベントの検索にも対応したよ。\n- イベント説明・場所・AS・ボット・TLD など関連エンティティからも検索できるようになったの。\n- イベントリンクは日付範囲を保持するから、前後の変化を調べやすいよ。\n- WebMCP 経由でブラウザベースの AI エージェントからも使えるようになったんだって。\n- インターネットの障害調査やセキュリティ監視をしている人にじわっと刺さるアップデートだね。",
+  "title_en": "Did You Know Cloudflare Radar Search Now Covers Internet Outages Too?",
+  "summary_en": "Cloudflare's Changelog says Radar search results now include Internet events and outages alongside the usual results, searchable by event description, location, AS, bot, or top-level domain, with event links that preserve their date range — and now reachable by browser-based AI agents through WebMCP.",
+  "body_md_en": "Hi, it's me, Shiichan! Today I've got a small-but-nice update from the Cloudflare Changelog.\n\n## What was announced?\n\nCloudflare's Changelog announced that Radar search now includes Internet events and outages alongside the existing results. Cloudflare Radar is the tool that visualizes global Internet traffic and outage trends, and its search just got smarter.\n\n## The story so far\n\nUntil now, Radar search only returned the usual results. If you wanted to find a specific outage or Internet event, you had to browse through Radar's event list yourself.\n\n## What changes\n\nWith this update, Internet events and outages now show up right alongside the regular search results. You can search not just by an event's description, but also by related entities like locations, ASes (autonomous systems), bots, and top-level domains. Event links also preserve the event's date range, making it easier to investigate what changed before, during, and after an event.\n\nOn top of that, these results are now reachable by browser-based AI agents through WebMCP — so it's not just people searching for Internet anomalies anymore, agents can do it too.\n\n## Wrap-up\n\n- Cloudflare Radar search now covers Internet events and outages, not just the usual results.\n- You can search by event description, location, AS, bot, or TLD.\n- Event links keep their date range, making before/during/after comparisons easier.\n- The results are also accessible to browser-based AI agents via WebMCP.\n- A quietly useful update if you track Internet outages or do security monitoring.",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-09-08-radar-search-events/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Radar - Radar search now includes Internet events",
+  "tags": [
+    "cloudflare",
+    "security",
+    "web"
+  ],
+  "published_at": "2026-09-08T14:40:22+00:00"
+}
