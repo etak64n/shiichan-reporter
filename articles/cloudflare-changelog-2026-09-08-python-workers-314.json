@@ -1,0 +1,19 @@
+{
+  "slug": "cloudflare-changelog-2026-09-08-python-workers-314",
+  "title": "Python Workers、ついに Python 3.14 に対応！",
+  "summary": "Python Workers のデフォルトの Python バージョンが 3.14 になったよ。compatibility date を 2026-09-08 以降にした新規ワーカーから、内部の Pyodide ランタイム 314.0.6 とともに最新の Python が使えるようになるの。",
+  "body_md": "こんにちは、しぃちゃんだよ！今日は Python Workers を使ってるみんなに関係あるアップデートを見つけたよ、さっそく紹介するね。\n\n## なにが発表されたの？\n\nCloudflare の Changelog によると、Python Workers のデフォルトの Python バージョンが 3.14 になったよ。新しく作る Python Workers で compatibility date を 2026-09-08 以降にすると、この新しいバージョンが使われるようになるの。内部的には、Python を動かしている Pyodide ランタイムが 314.0.6 にアップデートされたんだって。\n\n## 今までどうだったの？\n\nPython Workers はこれまでも使えたけど、動いていた Python のバージョンはもう少し古いものだったの。今回のアップデートで、compatibility date を新しくするだけで、最新の Python 3.14 系にそのまま乗り換えられるようになったよ。\n\n## これで何が変わるの？\n\n新規に Python Workers を作るときに compatibility date を 2026-09-08 以降にすれば、追加の設定なしで Python 3.14 が使えるようになるよ。既存のワーカーは compatibility date を変えない限りそのままだから、いきなり挙動が変わっちゃう心配もないの。\n\n## まとめ\n\n- Python Workers のデフォルト Python バージョンが 3.14 に更新\n- 対象は compatibility date が 2026-09-08 以降の新規 Python Workers\n- 内部の Pyodide ランタイムは 314.0.6 にアップデート\n- 既存のワーカーは compatibility date を変えなければ影響なし\n\nこれから新しく Python Workers を作る人や、最新の Python の書き方を試したい人にうれしいアップデートだね！",
+  "title_en": "Python Workers finally runs on Python 3.14!",
+  "summary_en": "Python Workers now defaults to Python 3.14. New workers using compatibility date 2026-09-08 or later get the latest Python, powered by an updated Pyodide runtime (314.0.6).",
+  "body_md_en": "Hi everyone, it's me! I found an update that matters if you're using Python Workers, so let's dive in.\n\n## What was announced?\n\nAccording to the Cloudflare Changelog, Python Workers now default to Python 3.14. If you create a new Python Worker with a compatibility date of 2026-09-08 or later, it will use this new version. Under the hood, the Pyodide runtime that powers Python has been updated to 314.0.6.\n\n## The story so far\n\nPython Workers already existed, but they ran on a slightly older Python version. With this update, simply bumping your compatibility date lets you move straight to the Python 3.14 series.\n\n## What changes\n\nWhen you create a new Python Worker with a compatibility date of 2026-09-08 or later, you get Python 3.14 with no extra configuration needed. Existing workers stay as they are unless you change their compatibility date, so there's no risk of behavior suddenly shifting under you.\n\n## Wrap-up\n\n- Python Workers now default to Python 3.14\n- Applies to new Python Workers with a compatibility date of 2026-09-08 or later\n- The internal Pyodide runtime was updated to 314.0.6\n- Existing workers are unaffected unless you change their compatibility date\n\nThis is great news if you're spinning up a new Python Worker or want to try out the latest Python syntax!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-09-08-python-workers-314/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Workers - Python 3.14 for Python Workers",
+  "tags": [
+    "cloudflare",
+    "serverless"
+  ],
+  "published_at": "2026-09-08T00:00:00+00:00"
+}
