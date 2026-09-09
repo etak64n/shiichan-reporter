@@ -1,0 +1,20 @@
+{
+  "slug": "claude-code-release-v2-1-266",
+  "title": "Claude Code v2.1.266、LLM ゲートウェイ設定を壊していたリグレッションを修正したよ！",
+  "summary": "Claude Code Release の v2.1.266 は、直前の v2.1.265 で発生していたリグレッションの修正版だよ。CLAUDE_CODE_USE_GATEWAY を使う LLM ゲートウェイ・プロキシ構成が全リクエスト失敗していた不具合が直ったの。",
+  "body_md": "おつかれさま、しぃちゃんだよ！今日は Claude Code のちいさいけど大事な修正のお知らせだよ。\n\n## なにが発表されたの？\n\nClaude Code Release に、バージョン v2.1.266 がリリースされたと発表されたよ。今回は新機能ではなく、直前のバージョン v2.1.265 で発生していたリグレッション(不具合の再発)を修正するアップデートなの。\n\n## 今までどうだったの？\n\nv2.1.265 では、ドキュメント化されていない環境変数 CLAUDE_CODE_USE_GATEWAY の挙動が変わってしまっていたんだって。この変数、もともとは ANTHROPIC_BASE_URL と ANTHROPIC_AUTH_TOKEN の両方が設定されていない限り無視されるはずだったんだけど、v2.1.265 では単独でも Cloud gateway へのサインインを強制するようになってしまったの。その結果、この変数を API キーや apiKeyHelper、カスタム認証ヘッダーと一緒に設定していた LLM ゲートウェイ・プロキシ構成では、リクエストが全部「Not signed in to the Cloud gateway」というエラーで失敗するようになっていたんだって。\n\n## これで何が変わるの？\n\nv2.1.266 で、CLAUDE_CODE_USE_GATEWAY 単独では以前のように無視される挙動に戻されたよ。設定側で何か変更する必要はなくて、アップデートするだけで直る不具合なの。\n\n## まとめ\n\n- Claude Code v2.1.266 は、v2.1.265 で発生していたリグレッションの修正版だよ\n- CLAUDE_CODE_USE_GATEWAY を API キーなどと併用していた LLM ゲートウェイ・プロキシ構成が、全リクエスト失敗する不具合が起きていた\n- v2.1.266 で元の(単独では無視される)挙動に戻ったよ\n- 設定変更は不要、アップデートするだけで直る\n- 自前の LLM ゲートウェイやプロキシ経由で Claude Code を使っているエンジニアは、アップデートしておくと安心だね！",
+  "title_en": "Claude Code v2.1.266 Fixes a Regression That Broke LLM Gateway Setups",
+  "summary_en": "The Claude Code v2.1.266 release fixes a v2.1.265 regression where the undocumented CLAUDE_CODE_USE_GATEWAY variable started forcing Cloud gateway sign-in on its own, breaking requests for anyone combining it with an API key or custom auth.",
+  "body_md_en": "Hey, it's me, Shiichan! Today's a small but important fix from Claude Code.\n\n## What was announced?\n\nClaude Code Release announced version v2.1.266. This isn't a new feature — it's a fix for a regression that shipped in the previous version, v2.1.265.\n\n## The story so far\n\nIn v2.1.265, the undocumented CLAUDE_CODE_USE_GATEWAY environment variable started behaving differently. It used to be ignored unless both ANTHROPIC_BASE_URL and ANTHROPIC_AUTH_TOKEN were set, but in v2.1.265 it began forcing Cloud gateway sign-in on its own. That broke every request with a \"Not signed in to the Cloud gateway\" error for anyone running LLM-gateway or proxy setups that set this variable alongside an API key, an apiKeyHelper, or custom auth headers.\n\n## What changes\n\nIn v2.1.266, CLAUDE_CODE_USE_GATEWAY on its own goes back to being ignored, just like before. No configuration changes are needed — updating is enough to fix it.\n\n## Wrap-up\n\n- Claude Code v2.1.266 fixes a regression introduced in v2.1.265\n- The bug broke every request for LLM-gateway/proxy setups combining CLAUDE_CODE_USE_GATEWAY with an API key or custom auth\n- v2.1.266 restores the original behavior — the variable alone is ignored again\n- No configuration changes needed, just update\n- Worth updating if you run Claude Code through your own LLM gateway or proxy",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.266",
+  "source_name": "Claude Code Release",
+  "og_title": "v2.1.266",
+  "tags": [
+    "anthropic",
+    "ai",
+    "devops"
+  ],
+  "published_at": "2026-09-08T23:55:14Z"
+}

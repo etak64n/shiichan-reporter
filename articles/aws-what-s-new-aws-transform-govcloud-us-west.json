@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-transform-govcloud-us-west",
+  "title": "AWS Transform、政府機関向け GovCloud (US-West) でも使えるようになったよ！",
+  "summary": "AWS What's New に、大規模移行サービス AWS Transform が AWS GovCloud(US-West)リージョンでも利用できるようになったと発表されたよ。GovCloud の境界内でサーバー移行を自動化できるようになったの。",
+  "body_md": "やっほー、しぃちゃんだよ！今日は政府機関やその関係者に嬉しいニュースを紹介するね。\n\n## なにが発表されたの？\n\nAWS What's New に、大規模移行を計画・実行するためのサービス「AWS Transform」が、AWS GovCloud(US-West)リージョンでも利用できるようになったと発表されたよ。これで GovCloud(US)環境で運用している組織も、AWS Transform の移行機能を使えるようになったの。\n\n## 今までどうだったの？\n\nAWS Transform はこれまで商用リージョンを中心に提供されていて、機微なデータや規制対象のワークロードを扱う GovCloud(US)環境からは、隔離された境界の中で使えるサービスではなかったんだよね。そのため連邦政府機関や防衛関連の請負業者、規制産業の組織は、大規模移行の自動化の恩恵を GovCloud 内で受けにくい状態だったの。\n\n## これで何が変わるの？\n\n今回のリージョン追加によって、GovCloud(US)内で運用する組織が AWS Transform を使って、サーバー移行を自動化できるようになったよ。VMware・ベアメタル・Hyper-V・データベースといったワークロードのレプリケーションとカットオーバーを自動化できて、大規模移行につきものの手作業と、そこに伴うリスクを減らせるの。移行先としては GovCloud(US-East)と GovCloud(US-West)の両方を選べるよ。\n\n## 深く潜ってみよう\n\n今回の GovCloud(US-West)へのリージョン展開に含まれているのは「移行」機能だよ。一方で、モダナイゼーション・カスタム変換・アセスメントといった機能は今回の対象には含まれておらず、引き続き対応済みの商用リージョンでのみ利用できるとのことなので、そこは注意が必要だね。\n\n## まとめ\n\n- AWS Transform が AWS GovCloud(US-West)リージョンでも利用できるようになったよ\n- 移行先として GovCloud(US-East)と GovCloud(US-West)の両方を選べる\n- VMware・ベアメタル・Hyper-V・データベースワークロードのレプリケーションとカットオーバーを自動化できる\n- モダナイゼーション・カスタム変換・アセスメント機能は今回の対象外(商用リージョンのみ)\n- 連邦政府機関や防衛請負業者など、GovCloud の境界内で大規模移行を進めたい組織に刺さるアップデートだね！",
+  "title_en": "AWS Transform Now Available in AWS GovCloud (US-West)!",
+  "summary_en": "AWS What's New announced that AWS Transform, the large-scale migration service, is now available in the AWS GovCloud (US-West) Region, letting government agencies and regulated organizations automate server migrations within the GovCloud boundary.",
+  "body_md_en": "Hi, it's me, Shiichan! Today's story is good news if you work with government or regulated workloads.\n\n## What was announced?\n\nAWS What's New announced that AWS Transform, the service for planning and executing large-scale migrations, is now available in the AWS GovCloud (US-West) Region. Organizations operating within AWS GovCloud (US) can now use AWS Transform's migration capabilities too.\n\n## The story so far\n\nAWS Transform had mainly been available in commercial Regions, so organizations handling sensitive data or regulated workloads in AWS GovCloud (US) couldn't use it from within that isolated boundary. That left federal agencies, defense contractors, and regulated industries without an easy way to automate large-scale migrations while staying inside the GovCloud boundary.\n\n## What changes\n\nWith this regional launch, organizations operating in GovCloud (US) can use AWS Transform to automate server migrations. It automates replication and cutover for VMware, bare metal, Hyper-V, and database workloads, cutting down on the manual effort and risk involved in large-scale moves. You can target either AWS GovCloud (US-East) or AWS GovCloud (US-West) as your migration destination.\n\n## Dive Deep\n\nThis regional launch covers migration capabilities specifically. Modernization, custom transformation, and assessment capabilities are not included here and remain available only in supported commercial Regions — worth keeping in mind if you were hoping for the full feature set.\n\n## Wrap-up\n\n- AWS Transform is now available in the AWS GovCloud (US-West) Region\n- You can migrate to either GovCloud (US-East) or GovCloud (US-West) as the target\n- It automates replication and cutover for VMware, bare metal, Hyper-V, and database workloads\n- Modernization, custom transformation, and assessment are not included yet — commercial Regions only\n- A solid update for federal agencies and defense contractors running large migrations within the GovCloud boundary",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/aws-transform-govcloud-us-west/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Transform is now available in AWS GovCloud (US-West)",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "business"
+  ],
+  "published_at": "2026-09-08T21:00:00+00:00"
+}
