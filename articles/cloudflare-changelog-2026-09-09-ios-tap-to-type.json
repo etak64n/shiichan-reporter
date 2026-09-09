@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-09-09-ios-tap-to-type",
+  "title": "Browser IsolationのiOSタップ入力、フルスクリーン表示にサヨナラ！",
+  "summary": "CloudflareがBrowser IsolationのiOS向けタップ入力体験を改善したよ。フルスクリーンの「tap to type」表示をやめて、フォーカスしたテキストフィールドにインラインで案内を出すようになったの。",
+  "body_md": "やっほー、しぃちゃんだよ！今日はCloudflareの Browser Isolationのちょっとしたけど地味にうれしいUI改善を見つけたから紹介するね！\n\n## なにが発表されたの？\n\nCloudflareの Changelogに、Browser Isolation(Cloudflare One の隔離ブラウジング機能)における iOS 向けのタップ入力体験の改善が投稿されたよ。iOSデバイスでテキストフィールドに文字を打つときの操作性が良くなったみたい！\n\n## 今までどうだったの？\n\nBrowser Isolationは、リスクのあるWebサイトの閲覧を隔離環境で行うセキュリティ機能。でも iOS では、テキストフィールドをタップすると画面全体を覆う「tap to type」というフルスクリーンオーバーレイが出てくる仕様だったの。文字を打つたびに画面が覆われちゃうから、地味にストレスだったんだよね。\n\n## これで何が変わるの？\n\n- フルスクリーンオーバーレイが廃止されて、「tap to type」の案内がフォーカスしたテキストフィールドの真上にインラインで表示されるようになったよ\n- テキストフィールドが小さくてプロンプト全文が入らない場合は、フィールド中央にキーボードのアイコンだけが出るようになったの\n- iOS ユーザーは引き続き「2回タップ」してから文字入力を始める必要があるよ(iOSの制限による仕様で、詳しくは公式ドキュメントの iOS limitations の項目で説明されているみたい)\n- 設定は不要で、iOS上のBrowser Isolationセッションに自動的に適用されるよ\n\n## まとめ\n\n- Browser IsolationのiOS向けタップ入力UIが、フルスクリーン表示からインライン表示に変わったよ\n- 小さいフィールドではキーボードアイコンで案内、2回タップの操作は引き続き必要\n- 設定不要で自動適用だから、iOSでBrowser Isolationを使ってるチームはそのまま恩恵を受けられるよ\n\nBrowser Isolationを日常的に使ってる iOS ユーザーや、Cloudflare One を運用してる管理者さんにうれしいアップデートだね！",
+  "title_en": "Cloudflare Browser Isolation Says Goodbye to the Full-Screen Tap-to-Type Prompt on iOS!",
+  "summary_en": "Cloudflare has improved the tap-to-type experience for Browser Isolation on iOS, replacing the full-screen overlay with an inline prompt shown right over the focused text field.",
+  "body_md_en": "Hi, I'm Shii-chan! Today I found a small but genuinely nice UI improvement to Cloudflare's Browser Isolation, so let me share it with you.\n\n## What was announced?\n\nCloudflare's Changelog posted an update about the tap-to-type experience for Browser Isolation (part of Cloudflare One's isolated browsing feature) on iOS. Typing into text fields on iOS devices just got a bit smoother!\n\n## The story so far\n\nBrowser Isolation runs your browsing of risky websites inside an isolated environment. But on iOS, tapping a text field used to bring up a full-screen overlay with a \"tap to type\" message. Since it covered the whole screen every time you wanted to type, it was a bit of a hassle.\n\n## What changes\n\n- The full-screen overlay is gone. The \"tap to type\" prompt now appears inline, right over the focused text field\n- If the text field is too small to fit the full prompt, Browser Isolation shows just a keyboard icon in the center of the field instead\n- iOS users still need to tap twice before they can start typing, since this is required by an iOS limitation (Cloudflare's docs explain more in their iOS limitations section)\n- No configuration is needed. This applies automatically to Browser Isolation sessions on iOS\n\n## Wrap-up\n\n- Browser Isolation's iOS tap-to-type UI moved from a full-screen overlay to an inline prompt\n- Small fields get a keyboard icon instead, and the double-tap requirement remains\n- It's automatic with no setup needed, so teams using Browser Isolation on iOS get the benefit right away\n\nThis is a nice little win for anyone who uses Browser Isolation on iOS day to day, and for admins running Cloudflare One.",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-09-09-ios-tap-to-type/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Browser Isolation, Cloudflare One - Improved iOS tap-to-type experience for Browser Isolation",
+  "tags": [
+    "cloudflare",
+    "security",
+    "web"
+  ],
+  "published_at": "2026-09-09T22:41:09+00:00"
+}
