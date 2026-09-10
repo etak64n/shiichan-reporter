@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-ebs-volume-clones-cross-account-copy",
+  "title": "まさかの本番データ移し替え！EBS ボリュームがアカウントをまたいでコピーできるようになったよ！",
+  "summary": "Amazon EBS Volume Clones が AWS アカウントをまたいだボリュームコピーに対応したよ。コピー先アカウントの AWS KMS キーで再暗号化しながら、本番データを別アカウントの開発環境などに安全に複製できるようになったの。",
+  "body_md": "みんな、しぃちゃんだよ！今日は Amazon EBS のうれしいアップデートを見つけたよ。\n\n## なにが発表されたの？\n\nAWS What's New に、Amazon EBS Volume Clones が AWS アカウントをまたいだボリュームコピーに対応したという発表があったよ。コピー先のアカウントにある AWS KMS キーで再暗号化しながら、EBS ボリュームを任意の AWS アカウントにコピーできるようになったの。\n\n## 今までどうだったの？\n\n本番環境と開発環境を別々の AWS アカウントに分けている組織って多いよね。でも今までは、アカウントの境界をまたいでデータをコピーするのがそもそも簡単ではなかったの。特に本番用と非本番用で KMS キーを分けて運用しているチームにとっては、鍵の分離を保ったままデータを渡す手段が限られていたんだって。\n\n## これで何が変わるの？\n\nクロスアカウントコピーを使うと、本番データベースのボリュームを隔離された開発アカウントにクローンして、開発者が安全に本番相当のデータで試せるようになるよ。\n\n- 対応するボリュームタイプ: 暗号化なしのボリューム・カスタマー管理キーで暗号化されたボリュームを含む全ボリュームタイプ\n- コピー手順: まず AWS Resource Access Manager(RAM)でボリュームをターゲットアカウントと共有し、次にターゲットアカウントが同じアベイラビリティゾーン内でコピーを作成する\n- アクセス手段: AWS マネジメントコンソール・AWS CLI・AWS SDK\n- 対応リージョン: Amazon EBS Volume Clones が使える全リージョン(全商用リージョン・AWS GovCloud (US)・AWS 中国リージョン・対応する Local Zones を含む)\n\n## まとめ\n\n- Amazon EBS Volume Clones が、AWS アカウントをまたいだボリュームコピー+再暗号化に対応したよ。\n- 本番と開発でアカウントや KMS キーを分けている組織でも、AWS RAM 経由の共有 → ターゲットアカウントでのコピーという流れでデータを渡せるようになったの。\n- 全ボリュームタイプに対応していて、コンソール・CLI・SDK から使えるよ。\n- 複数アカウント構成で開発環境に本番相当データを用意したいチームに刺さるアップデートだね！",
+  "title_en": "EBS Volumes Can Now Be Copied Straight Across AWS Accounts!",
+  "summary_en": "Amazon EBS Volume Clones now supports copying volumes across AWS accounts with re-encryption using a KMS key in the target account, making it easy to clone production data into a separate account safely.",
+  "body_md_en": "Hi, it's me, Shiichan! I found a nice Amazon EBS update today.\n\n## What was announced?\n\nAWS What's New announced that Amazon EBS Volume Clones now supports copying EBS volumes across AWS accounts, re-encrypting with an AWS KMS key in the target account.\n\n## The story so far\n\nPlenty of organizations split production and development workloads across separate AWS accounts. But until now, copying data across that account boundary wasn't straightforward — especially for teams that keep separate KMS keys for production and non-production environments, since there weren't many ways to move data while preserving that key separation.\n\n## What changes\n\nWith cross-account copy, you can clone a production database volume into an isolated development account, giving developers a safe way to experiment with production-like data.\n\n- Supported volume types: all volume types, including unencrypted volumes and volumes encrypted with customer managed keys\n- How it works: first share the volume with the target account using AWS Resource Access Manager (RAM), then the target account creates a copy in the same Availability Zone\n- Access methods: AWS Management Console, AWS CLI, and AWS SDKs\n- Region coverage: everywhere Amazon EBS Volume Clones is supported, including all Commercial Regions, AWS GovCloud (US), AWS China Regions, and supported Local Zones\n\n## Wrap-up\n\n- Amazon EBS Volume Clones now supports cross-account volume copying with re-encryption.\n- Organizations that separate accounts and KMS keys between production and development can move data via AWS RAM sharing followed by a copy in the target account.\n- Works for every volume type, from the Console, CLI, or SDKs.\n- A great fit for teams running multi-account setups who want production-like data in their development environments!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/ebs-volume-clones-cross-account-copy/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon EBS Volume Clones now supports copying volumes across accounts",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "devops"
+  ],
+  "published_at": "2026-09-09T10:00:00+00:00"
+}
