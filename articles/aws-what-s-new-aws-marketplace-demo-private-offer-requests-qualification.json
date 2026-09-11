@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-aws-marketplace-demo-private-offer-requests-qualification",
+  "title": "AWS Marketplace、デモ&プライベートオファーの依頼が数分で届くようになったよ！",
+  "summary": "AWS What's New の発表だよ。AWS Marketplace の出品者は、顧客からの「デモ依頼」や「プライベートオファー依頼」を、エージェント型ワークフローによる自動評価で数分以内に受け取れるようになったの。今までは AWS 担当者による人力の適格性チェックで数日かかっていたんだって。",
+  "body_md": "こんにちは、しぃちゃんだよ！今日は AWS Marketplace の出品者さんにとってうれしいニュースを紹介するね。\n\n## なにが発表されたの？\n\nAWS の What's New に、AWS Marketplace で「デモを依頼する」「プライベートオファーを依頼する」ボタンを有効にしている出品者が、顧客からのリクエストに数分以内で対応できるようになった、という発表が載ったよ。顧客がまだ製品を検討している最中に、すぐアクションできるのがポイントなの。\n\n## 今までどうだったの？\n\n今までは、顧客がリクエストを送信すると、まず AWS の担当者がその内容を人力で確認して、適格性をチェックしたうえで出品者に共有する仕組みだったんだって。この確認作業のせいで、出品者にリクエストが届くまで数日かかることもあったみたい。\n\n## これで何が変わるの？\n\n新しい仕組みでは、顧客がリクエスト送信時にユースケースの詳細を入力すると、エージェント型ワークフローがその内容を自動で評価して、AWS Partner Central 上に「機会(opportunity)」として即座に作成してくれるよ。\n\n- 機会には顧客の連絡先とユースケースが一緒に届くので、出品者はすぐ直接連絡できる\n- 顧客が連絡先しか入力しなかった場合でも、リードとして受け取れて、AWS のリード開拓ワークフローで後から情報を充実させられる\n- 出品者側の設定変更やワークフローの手直しは不要\n\nまだデモ依頼・プライベートオファー依頼のボタンを有効化していない出品者は、AWS Marketplace Seller Guide の手順に沿って設定すれば使えるようになるよ。\n\n## まとめ\n\n- AWS Marketplace の出品者が、顧客からのデモ・プライベートオファー依頼に数分以内で対応できるようになったよ。\n- 従来は AWS 担当者による人力チェックで数日かかっていたのが、エージェント型ワークフローの自動評価に置き換わったの。\n- 連絡先だけのリクエストでもリードとして受け取れるから、取りこぼしが減りそう。\n- AWS Marketplace で製品を売っている出品者・パートナー担当者に嬉しいアップデートだね！",
+  "title_en": "AWS Marketplace Demo and Private Offer Requests Now Arrive in Minutes!",
+  "summary_en": "From AWS What's New: sellers on AWS Marketplace who have the request-a-demo or request-a-private-offer buttons enabled now get an agentic workflow that automatically evaluates and routes customer requests as qualified opportunities within minutes, instead of the multi-day manual qualification that used to happen first.",
+  "body_md_en": "Hi, it's me, Shiichan! Today I've got good news for anyone selling on AWS Marketplace.\n\n## What was announced?\n\nAWS What's New reports that sellers who have turned on the \"request a demo\" or \"request a private offer\" buttons on their AWS Marketplace listings can now act on customer requests within minutes of submission — while the customer is still actively evaluating the product.\n\n## The story so far\n\nPreviously, every request first went through manual qualification by an AWS representative before it was shared with the seller. That review step could add days of delay before a seller ever saw the request.\n\n## What changes\n\nNow, when a customer submits a request with details about their use case, an agentic workflow automatically evaluates that information and creates an \"opportunity\" in AWS Partner Central right away.\n\n- Each opportunity arrives with the customer's contact details and use case, so sellers can reach out directly\n- Even if a customer only provides contact info, the seller still gets it as a lead they can enrich through AWS's lead prospecting workflows\n- No changes are required to existing listings or workflows to benefit from this\n\nSellers who haven't enabled the request-a-demo or request-a-private-offer buttons yet can turn them on by following the steps in the AWS Marketplace Seller Guide.\n\n## Wrap-up\n\n- AWS Marketplace sellers can now act on demo and private offer requests within minutes.\n- The previous multi-day manual qualification step by AWS staff has been replaced by an automatic, agentic evaluation.\n- Even contact-only requests still come through as leads instead of being dropped.\n- A nice win for anyone selling through AWS Marketplace or managing partner relationships there.",
+  "emotion": "happy",
+  "importance": 1,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/aws-marketplace-demo-private-offer-requests-qualification",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Marketplace sellers now receive qualified demo and private offer requests in minutes",
+  "tags": [
+    "aws",
+    "business"
+  ],
+  "published_at": "2026-09-09T21:04:00+00:00"
+}
