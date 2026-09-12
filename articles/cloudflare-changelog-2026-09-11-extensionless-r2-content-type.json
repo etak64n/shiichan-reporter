@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-09-11-extensionless-r2-content-type",
+  "title": "AI Search が拡張子なし R2 オブジェクトにも対応してくれたよ！",
+  "summary": "Cloudflare の AI Search が、ファイル拡張子を持たない R2 オブジェクトでも Content-Type メタデータさえあればインデックス可能に。ファイルタイプ検証を保ったまま、拡張子なしのオブジェクトキーにも対応できるようになったよ。",
+  "body_md": "こんにちは、しぃちゃんだよ！ 今日は Cloudflare の Changelog から、AI Search の細かいけど地味に嬉しいアップデートを紹介するよ。\n\n## なにが発表されたの？\n\nCloudflare の Changelog によると、AI Search が拡張子のない R2 オブジェクトをインデックスできるようになったの。条件は、そのオブジェクトに対応する Content-Type メタデータが設定されていること。これによって、ファイル名に拡張子が付いていないオブジェクトキーでも、ファイルタイプの検証を保ったままインデックス対象にできるようになったんだって。\n\n対応しているファイルタイプや Content-Type の詳しい要件については、R2 data sources のドキュメントを見てね、とのことだよ。\n\n## 今までどうだったの？\n\nこれまで AI Search で R2 のオブジェクトをインデックスする際は、ファイル名の拡張子を頼りにファイルタイプを判定していたと考えられるよ。だから拡張子を持たないキー(たとえばハッシュ値だけのオブジェクト名や、拡張子を付けない運用のストレージ)は、そのままではインデックス対象にしづらかったはずなの。\n\n## これで何が変わるの？\n\n- 拡張子を付けない命名規則で R2 にオブジェクトを保存しているユーザーも、Content-Type メタデータさえ正しく設定しておけば AI Search のインデックス対象にできるよ\n- ファイルタイプの検証自体はそのまま維持されるから、変な形式のファイルが誤ってインデックスされる心配は引き続き防げるの\n- ストレージ側の命名の自由度が上がることで、既存のデータレイクや外部システムからのデータ移行がしやすくなりそう\n\n## まとめ\n\n- AI Search が拡張子なしの R2 オブジェクトのインデックスに対応\n- 条件は Content-Type メタデータが設定されていること\n- ファイルタイプ検証の仕組みはそのまま維持\n- 対応ファイルタイプの詳細は R2 data sources のドキュメント参照\n\n拡張子を付けない運用で R2 にデータを溜め込んでいて、AI Search でインデックスしたいと思っていた人にちょうど刺さる話だよ！",
+  "title_en": "AI Search Now Handles Extensionless R2 Objects Too!",
+  "summary_en": "Cloudflare's AI Search can now index R2 objects that lack a file extension, as long as they carry Content-Type metadata, keeping file-type validation intact for keys without extensions.",
+  "body_md_en": "Hi everyone, I'm Shii-chan! Today I've got a small but genuinely handy update from the Cloudflare Changelog about AI Search.\n\n## What was announced?\n\nAccording to the Cloudflare Changelog, AI Search can now index R2 objects that don't have a file extension, as long as the object carries the appropriate Content-Type metadata. This means object keys without file extensions can still be indexed while file-type validation is preserved.\n\nFor the full list of supported file types and the Content-Type requirements, Cloudflare points you to the R2 data sources documentation.\n\n## The story so far\n\nUp until now, it seems AI Search relied on the filename extension to determine an R2 object's file type when indexing. That meant object keys without extensions — like hash-based names or storage setups that skip extensions entirely — were hard to bring into the index as-is.\n\n## What changes\n\n- If you store R2 objects without extensions in your naming convention, you can now get them indexed by AI Search as long as the Content-Type metadata is set correctly\n- File-type validation still applies, so there's no risk of oddly formatted files slipping into the index by mistake\n- More flexibility in object naming should make it easier to migrate data from existing data lakes or external systems\n\n## Wrap-up\n\n- AI Search now supports indexing extensionless R2 objects\n- The requirement is having Content-Type metadata set\n- File-type validation is still preserved\n- Check the R2 data sources documentation for supported file types and details\n\nThis is a nice fit if you've been storing data in R2 without extensions and wanted to bring it into AI Search!",
+  "emotion": "smug",
+  "importance": 3,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-09-11-extensionless-r2-content-type/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "AI Search - AI Search supports extensionless R2 objects with Content-Type metadata",
+  "tags": [
+    "cloudflare",
+    "ai",
+    "infrastructure"
+  ],
+  "published_at": "2026-09-11T00:00:00+00:00"
+}
