@@ -1,0 +1,20 @@
+{
+  "slug": "claude-code-release-v2-1-270",
+  "title": "Claude Code v2.1.270 で、git コマンドが勝手に権限を聞いてくる不具合が直ったよ！",
+  "summary": "Claude Code v2.1.270 は、長時間セッションで読み取り専用の git コマンドが急に権限確認を求めてくる不具合(v2.1.269 のリグレッション)を直すためだけの小さなリリースだよ。",
+  "body_md": "やっほー、しぃちゃんだよ！今日は小さいけど地味に助かるニュースを見つけたから、さくっと紹介するね。\n\n## なにが発表されたの？\n\nClaude Code Release から、CLI ツール「Claude Code」の新バージョン v2.1.270 が公開されたよ。今回の内容はとってもシンプルで、Bash ツールで実行する読み取り専用の git コマンド(git status や git log など)が、セッションをしばらく動かしていると急に権限確認を求めてくるようになってしまう不具合の修正、それだけなの。\n\n## 今までどうだったの？\n\n直前のバージョン v2.1.269 で、この挙動にリグレッション(改悪)が入っちゃっていたみたい。本来 Claude Code は、読み取り専用で安全な git コマンドについては一度許可すれば黙って実行し続けてくれるはずなんだけど、v2.1.269 ではセッションが長時間動いた後だと、そのはずの読み取り専用コマンドまで急に「実行していいですか？」って聞いてくるようになっていたよ。作業に集中してるときに限って割り込みが増えるから、地味にストレスだったんじゃないかな。\n\n## これで何が変わるの？\n\nv2.1.270 にアップデートすれば、この誤動作が直って、長時間セッションでも読み取り専用の git コマンドが余計な確認なしでスムーズに実行されるようになるよ。特に Claude Code を動かしっぱなしにして長く作業するタイプの人ほど、この修正の恩恵を感じやすいはず。\n\n## まとめ\n\n- Claude Code v2.1.270 は、git の読み取り専用コマンドが不要に権限確認を求める不具合(v2.1.269 のリグレッション)を直すリリース\n- 長時間セッションで発生していた誤動作が解消されて、確認への割り込みが減るよ\n- Claude Code を Bash 経由で git コマンドを使いながら長時間セッションで動かしている人に、特にうれしい修正だよ！",
+  "title_en": "Claude Code v2.1.270 Fixes Git Commands Asking for Permission Again in Long Sessions",
+  "summary_en": "Claude Code v2.1.270 is a small release that fixes a regression from v2.1.269 where read-only git commands would unexpectedly start asking for permission again after a session had been running for a while.",
+  "body_md_en": "Hi, I'm Shii-chan! Today's news is small but genuinely helpful, so let's dive right in.\n\n## What was announced?\n\nClaude Code Release announced version v2.1.270 of the Claude Code CLI. The whole release is a single fix: read-only git commands run through the Bash tool (things like git status or git log) were unexpectedly asking for permission again after a session had been running for a while.\n\n## The story so far\n\nThe previous release, v2.1.269, introduced a regression in this behavior. Normally, once you approve a safe, read-only git command, Claude Code should keep running commands like it without asking again. But after v2.1.269, once a session had been active for a while, those same read-only commands started prompting for permission again, interrupting people right when they were deep in a long working session.\n\n## What changes\n\nWith v2.1.270, that misbehavior is fixed: read-only git commands keep running smoothly in long sessions without extra permission prompts. If you tend to leave Claude Code running for extended sessions while working with git, you'll likely notice the difference right away.\n\n## Wrap-up\n\n- Claude Code v2.1.270 fixes a regression (from v2.1.269) that made read-only git commands ask for permission again\n- The unwanted prompts during long-running sessions are gone\n- Especially useful if you run Claude Code through Bash with git commands over long working sessions!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.270",
+  "source_name": "Claude Code Release",
+  "og_title": "v2.1.270",
+  "tags": [
+    "anthropic",
+    "ai",
+    "devops"
+  ],
+  "published_at": "2026-09-12T19:45:44Z"
+}
