@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-aws-end-user-messaging-improves-deliverability",
+  "title": "SMSの配信トラブルを自動で回避！AWS End User Messaging に自動フェイルオーバーが登場！",
+  "summary": "AWS End User Messaging の phone pool に、配信状況を監視して自動的に最適な番号へ切り替える自動フェイルオーバー機能が追加されたよ。設定変更は不要で、認証コードやリマインダーなど大事な SMS が届きやすくなるの。",
+  "body_md": "こんにちは、しぃちゃんだよ！ 今日は SMS がちゃんと届くようになる、地味だけど嬉しいアップデートを紹介するね。\n\n## なにが発表されたの？\n\nAWS の What's New によると、AWS End User Messaging の phone pool 機能に自動フェイルオーバーが追加されたよ。SMS の配信がダウンストリーム側の障害で影響を受けたとき、プール内でいちばん調子のいい番号に自動的に切り替えて送るようになったの。\n\n## 今までどうだったの？\n\n今まで phone pool を使って SMS を送るときは、配信経路に問題があっても自動で切り替えてくれる仕組みはなかったの。SMS は AWS からメッセージングプロバイダー、そして各携帯キャリアへとルーティングされて届くから、その途中で遅延したり失敗したりすることがあったんだよね。しかもそれが起きやすいのは、配信通知・ワンタイムパスコード・リマインダーみたいな、時間との勝負なメッセージだったりしたの。\n\n## これで何が変わるの？\n\nAWS End User Messaging が配信遅延やメッセージの失敗、コンバージョン率の低下を常に監視していて、状況が悪化したら自動でより最適な配信経路にトラフィックを振り替えてくれるようになったよ。phone pool を使っているなら、こちら側で何か設定を変える必要はなくて、自動的にこの恩恵を受けられるんだって。まだ phone pool を使っていない人は、新しく作成すれば同じ仕組みの対象になるよ。\n\n## まとめ\n\n- phone pool の SMS 配信で、障害時にプール内の最適な番号へ自動的に切り替わる仕組みが追加されたよ\n- 配信遅延・メッセージ失敗・コンバージョン低下を監視して、自動でより良い配信経路に切り替えてくれる\n- 既存の phone pool ユーザーは設定変更なしで自動的に適用される\n- AWS End User Messaging が使えるすべての AWS リージョンで利用可能\n\n認証コードやリマインダーなど、届かないと困る SMS を大量に送っているサービス運営者さんに嬉しいアップデートだよ！",
+  "title_en": "AWS End User Messaging Adds Automatic Failover to Dodge SMS Delivery Trouble!",
+  "summary_en": "AWS End User Messaging's phone pools now automatically fail over to the best-performing number when SMS delivery is impacted, with no configuration changes needed, helping critical texts like one-time codes and reminders get through.",
+  "body_md_en": "Hi there, it's Shii-chan! Today I have a quiet but genuinely useful update about SMS actually getting delivered.\n\n## What was announced?\n\nAccording to AWS What's New, AWS End User Messaging's phone pools now support automatic failover. When SMS delivery is affected by a disruption further downstream, traffic automatically switches to the next best-performing number in the pool.\n\n## The story so far\n\nUntil now, sending SMS through a phone pool had no built-in way to automatically reroute around a delivery problem. Messages travel from AWS through messaging providers and then on to mobile carriers, so delays or failures could happen along the way. That's especially painful for time-sensitive messages like delivery notifications, one-time passcodes, and reminders.\n\n## What changes\n\nAWS End User Messaging now continuously watches for delivery delays, message failures, and drops in conversion, and automatically reroutes traffic to a more optimized delivery path when things go wrong. If you're already sending through phone pools, you don't need to change anything — you get this benefit automatically. If you're not using phone pools yet, creating one puts you on the same path.\n\n## Wrap-up\n\n- Phone pools now automatically switch to the best-performing number when SMS delivery hits trouble\n- AWS End User Messaging monitors delivery delays, failures, and conversion drops and reroutes traffic on its own\n- Existing phone pool users get this automatically, with no configuration changes\n- Available in every AWS Region where AWS End User Messaging is available\n\nThis is great news if you're sending high volumes of SMS, like verification codes or reminders, that absolutely need to get through!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/aws-end-user-messaging-improves-deliverability",
+  "source_name": "AWS What's New",
+  "og_title": "AWS End User Messaging strengthens SMS deliverability with automatic failover",
+  "tags": [
+    "aws",
+    "business"
+  ],
+  "published_at": "2026-09-14T07:00:00+00:00"
+}
