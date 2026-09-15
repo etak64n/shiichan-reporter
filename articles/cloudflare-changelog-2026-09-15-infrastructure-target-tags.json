@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-09-15-infrastructure-target-tags",
+  "title": "Cloudflare Access for Infrastructure、タグでアクセス制御できるようになったよ！",
+  "summary": "Cloudflare One の Access for Infrastructure が Resource Tagging と統合されて、インフラのターゲットにタグを付けてアクセスポリシーに使えるようになったよ。include・require・exclude の 3 演算子でホスト名とタグを組み合わせた細かい絞り込みもできるの。",
+  "body_md": "こんにちは、しぃちゃんだよ！今日は Cloudflare One のアクセス制御がもっと柔軟になるニュースだよ、紹介するね！\n\n## なにが発表されたの？\n\nCloudflare の Changelog からのお知らせだよ。Access for Infrastructure が Resource Tagging と統合されて、インフラのターゲットにキーバリューのタグを付けられるようになって、そのタグをアクセスポリシーの中で使えるようになったの。\n\n## 今までどうだったの？\n\nこれまで Access for Infrastructure でターゲットを絞り込む主な手がかりはホスト名だったの。タグを使った柔軟な分類や、タグに基づくアクセス制御はできなかったんだって。\n\n## これで何が変わるの？\n\nタグの管理方法は 2 通り用意されているよ。\n\n- ターゲットを作成・編集するときにインラインで管理する\n- 中央集約された Resource Tagging API で管理する\n\nどちらの方法でタグを変更しても、Cloudflare が自動的に同期してくれるの。\n\nさらに、インフラストラクチャアプリケーションには include・require・exclude の 3 つの演算子を使う target criteria モデルが導入されたよ。それぞれの演算子は、ホスト名・タグ・その両方の組み合わせでターゲットを指定できるの。\n\n- include — 指定した値のいずれかを持つターゲットにマッチ\n- require — 指定した値をすべて持つターゲットにマッチ\n- exclude — 指定した値のいずれかを持つターゲットを除外\n\nたとえば「本番環境タグが付いていて、かつ SSH ポートを持つホスト」のような組み合わせ条件も、この 3 演算子を組み合わせれば表現できるようになるよ。\n\n## まとめ\n\n- Access for Infrastructure が Resource Tagging と統合され、ターゲットにタグを付与可能に\n- タグはターゲット編集時のインライン管理と、中央の Resource Tagging API の両方で管理でき、自動で同期される\n- include・require・exclude の 3 演算子で、ホスト名とタグを組み合わせた細かいアクセス制御ができるように\n\nインフラ向け Access のポリシーを、環境やチームごとのタグで整理したいインフラ・セキュリティ担当さんにうれしいアップデートだよ！",
+  "title_en": "Cloudflare Access for Infrastructure Can Now Control Access by Tag!",
+  "summary_en": "Access for Infrastructure now integrates with Resource Tagging, so you can tag infrastructure targets and use them in access policies, with include/require/exclude operators for combining hostname and tag matching.",
+  "body_md_en": "Hello, I'm Shii-chan! Today's news makes access control in Cloudflare One more flexible. Let's check it out!\n\n## What was announced?\n\nThis comes from the Cloudflare Changelog. Access for Infrastructure now integrates with Resource Tagging, so you can attach key-value tags to infrastructure targets and use those tags in access policies.\n\n## The story so far\n\nUntil now, hostnames were pretty much the only way to scope targets in Access for Infrastructure. There was no way to classify targets with tags or build access policies around them.\n\n## What changes\n\nYou can manage tags in two ways.\n\n- Inline, when you create or edit a target\n- Through the centralized Resource Tagging API\n\nWhichever method you use, Cloudflare keeps tags in sync automatically.\n\nInfrastructure applications also gain a target criteria model with three operators. Each one can match targets by hostname, tag, or both.\n\n- include — matches targets that have any of the specified values\n- require — matches targets that have all of the specified values\n- exclude — rejects targets that have any of the specified values\n\nCombine these operators and you can express conditions like \"hosts tagged production that also expose SSH.\"\n\n## Wrap-up\n\n- Access for Infrastructure now integrates with Resource Tagging, so you can tag infrastructure targets\n- Tags can be managed inline or via the central Resource Tagging API, and stay in sync either way\n- The new include/require/exclude operators let you combine hostname and tag matching for finer-grained access control\n\nA nice upgrade if you want to organize infrastructure access policies by environment or team using tags!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-09-15-infrastructure-target-tags/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Cloudflare One, Access - Access for Infrastructure now supports tagged targets and tag-based target criteria",
+  "tags": [
+    "cloudflare",
+    "security",
+    "infrastructure"
+  ],
+  "published_at": "2026-09-15T18:30:44+00:00"
+}

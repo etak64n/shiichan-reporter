@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-connect-customer-shift-bidding",
+  "title": "Amazon Connect Customer、エージェントが自分でシフトに入札できるようになったよ！",
+  "summary": "Amazon Connect Customer に、コンタクトセンターのエージェントが希望シフトに入札できる機能が追加されたよ。ランキングと予測需要をもとに Connect Customer がシフト案を出して、入札締め切り後に自動で割り当ててくれるの。",
+  "body_md": "こんにちは、しぃちゃんだよ！今日はコンタクトセンター運営がちょっと楽になるニュースだよ、紹介するね！\n\n## なにが発表されたの？\n\nAWS What's New からのお知らせだよ。Amazon Connect Customer に、エージェント(オペレーター)が希望のシフトに入札できる新機能が追加されたの。エージェントが自分の勤務スケジュールにもっと関われるようにする機能だよ。\n\n## なぜ重要なの？\n\nコンタクトセンターのシフト調整って、スケジューラーが手作業で組むと時間がかかるうえに、エージェントの希望を反映しづらいこともあるんだよね。この機能は、エージェントの希望をあらかじめ仕組みに組み込んでおくことで、双方の負担を減らそうとするものなの。\n\n## これで何が変わるの？\n\n仕組みはこんな流れだよ。\n\n- スケジューラーが、CSV ファイルのアップロードかランダム生成で、エージェントのランキングを決める\n- Connect Customer が予測需要とシフトプロフィールをもとに、利用可能なシフト案を自動生成してエージェントに提示する\n- エージェントがそのシフト案にランクを付けて入札する\n- 入札期間が終了すると、Connect Customer が各エージェントを本人の最上位希望かつ空きのあるシフトに自動で割り当てる。希望が競合した場合は、エージェントランキングがタイブレーカーとして使われる\n\nたとえば月曜〜金曜 6AM〜10PM のシフトプロフィール(1 シフト 9 時間)なら、6AM〜3PM に 500 人、9AM〜6PM に 800 人、1PM〜10PM に 600 人、といった必要人数に応じたシフトが自動生成されるの。\n\n## まとめ\n\n- Amazon Connect Customer に、エージェントがシフトに入札できる機能が追加\n- スケジューラーはランキングを設定するだけで、シフト案の生成から割り当てまで自動化される\n- 入札締め切り後は最上位希望のシフトに自動割り当て、競合時はランキングがタイブレーカーに\n- Connect Customer のエージェントスケジューリングが使える全 AWS リージョンで利用可能\n\nコンタクトセンターのシフト調整に時間を取られているスケジューラーさんや、勤務の希望をもっと反映したいエージェントさんにうれしい機能だよ！",
+  "title_en": "Amazon Connect Customer Now Lets Agents Bid on Their Own Shifts!",
+  "summary_en": "Amazon Connect Customer added shift bidding, letting contact center agents rank preferred shifts generated from forecasted demand, with automatic assignment based on ranking once bidding closes.",
+  "body_md_en": "Hello, I'm Shii-chan! Today's news makes running a contact center a bit easier. Let's check it out!\n\n## What was announced?\n\nThis comes from AWS What's New. Amazon Connect Customer now lets agents bid on their preferred shifts, giving them more say over their own schedules.\n\n## Why it matters\n\nBuilding shift schedules by hand takes schedulers a lot of time, and it's not always easy to factor in what agents actually want. This feature bakes agent preferences into the process itself, cutting the burden on both sides.\n\n## What changes\n\nHere's how it works.\n\n- Schedulers establish agent ranking, either by uploading a CSV file or generating a randomized ranking\n- Connect Customer uses forecasted demand and shift profiles to automatically generate available shifts and present them to agents\n- Agents rank the available shifts to place their bids\n- Once the bidding window closes, Connect Customer automatically assigns each agent to their highest-ranked available shift, using agent ranking as a tiebreaker when preferences conflict\n\nFor example, a Monday-Friday 6AM-10PM shift profile with 9-hour shifts might generate shifts sized to demand: 6AM-3PM needing 500 agents, 9AM-6PM needing 800, and 1PM-10PM needing 600.\n\n## Wrap-up\n\n- Amazon Connect Customer now lets agents bid on preferred shifts\n- Schedulers just set up the ranking; shift generation and assignment are automated from there\n- After bidding closes, agents are auto-assigned to their top available choice, with ranking as the tiebreaker\n- Available in every AWS Region where Connect Customer agent scheduling is supported\n\nA welcome feature for schedulers tired of manual shift juggling, and for agents who want more say in their schedule!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-connect-customer-shift-bidding/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Connect Customer now enables agents to bid on preferred shifts",
+  "tags": [
+    "aws",
+    "business"
+  ],
+  "published_at": "2026-09-15T16:00:00+00:00"
+}

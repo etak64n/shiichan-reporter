@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-root-user-regional-resiliency",
+  "title": "まさかの us-east-1 依存脱却！AWS ルートユーザーのサインインが 3 リージョン体制に！",
+  "summary": "AWS のルートユーザーサインインが US East (N. Virginia) に加えて US East (Ohio)、US West (Oregon) でも処理されるようになったよ。3 リージョンに自動で振り分けられて、障害時の耐障害性が上がるの。CloudTrail の記録先リージョンも変わるから、監視設定の見直しが必要だよ。",
+  "body_md": "やっほー、しぃちゃんだよ！今日は AWS のちょっと地味だけど大事な耐障害性アップデートを見つけたよ、紹介するね！\n\n## なにが発表されたの？\n\nAWS What's New からのお知らせだよ。AWS のルートユーザーのサインインが、これまでの US East (N. Virginia) に加えて、US East (Ohio) と US West (Oregon) の 3 リージョンに分散して処理されるようになったの。\n\n## 今までどうだったの？\n\nこれまでルートユーザーのサインインは US East (N. Virginia) 1 リージョンに依存していたんだって。もしこのリージョンで障害が起きると、ルートユーザーのサインインそのものに影響が出るリスクがあったの。\n\n## これで何が変わるの？\n\nサインイントラフィックが US East (N. Virginia)、US East (Ohio)、US West (Oregon) の 3 リージョンに自動で振り分けられるようになるよ。特定リージョンへの依存が減って、サービス障害が起きたときの耐障害性が上がるの。ユーザー側でリージョンを選んだりサインイン方法を変えたりする必要はなくて、AWS が自動で適切なリージョンにルーティングしてくれるよ。この改善はすべての AWS アカウントで今日から使えるの。\n\n## 深く潜ってみよう\n\n注意したいのは AWS CloudTrail の挙動だよ。ルートユーザーサインインの ConsoleLogin イベントは、実際にサインインリクエストを処理したリージョンで記録されるようになるの。だから、ルートユーザーのサインインアクティビティを漏れなく監視したいなら、監視・アラート設定を US East (N. Virginia)・US East (Ohio)・US West (Oregon) の 3 リージョンぶんカバーするようアップデートしておく必要があるよ。\n\n## まとめ\n\n- ルートユーザーのサインインが US East (N. Virginia)・US East (Ohio)・US West (Oregon) の 3 リージョンに分散処理されるように\n- 特定リージョンへの依存が減り、障害時の耐障害性が向上\n- ユーザー側の操作は不要。AWS が自動でルーティング\n- CloudTrail の ConsoleLogin イベントは処理リージョンで記録されるため、監視設定の見直しが必要\n\nセキュリティ・監査担当さんは、CloudTrail の監視範囲を 3 リージョンに広げておくのを忘れずに！",
+  "title_en": "AWS Root User Sign-In Now Runs Across Three Regions!",
+  "summary_en": "AWS root user sign-in traffic is now distributed across US East (N. Virginia), US East (Ohio), and US West (Oregon), improving resiliency during regional disruptions. CloudTrail now logs ConsoleLogin events in whichever Region processed the sign-in, so update your monitoring to cover all three.",
+  "body_md_en": "Hi, I'm Shii-chan! Today's news is a bit low-key but important — an AWS resiliency improvement. Let's dive in!\n\n## What was announced?\n\nThis comes from AWS What's New. AWS root user sign-in traffic is now distributed across three Regions: US East (N. Virginia), which it always ran in, plus US East (Ohio) and US West (Oregon).\n\n## The story so far\n\nUntil now, root user sign-in relied entirely on US East (N. Virginia). If that Region ran into trouble, it could affect your ability to sign in as the root user at all.\n\n## What changes\n\nSign-in traffic is now automatically distributed across US East (N. Virginia), US East (Ohio), and US West (Oregon), reducing reliance on a single Region and improving resiliency during service disruptions. You don't need to pick a Region or change how you sign in — AWS routes you automatically. This is live today for every AWS account.\n\n## Dive Deep\n\nOne thing to watch: AWS CloudTrail ConsoleLogin events for root user sign-ins are now recorded in whichever Region actually processed the request. If you want full visibility into root sign-in activity, update your monitoring and alerting to cover all three Regions — US East (N. Virginia), US East (Ohio), and US West (Oregon).\n\n## Wrap-up\n\n- Root user sign-in traffic is now distributed across US East (N. Virginia), US East (Ohio), and US West (Oregon)\n- Less reliance on a single Region means better resiliency during disruptions\n- No action needed on your end — AWS routes automatically\n- CloudTrail ConsoleLogin events are logged in the processing Region, so update your monitoring to cover all three\n\nIf you're on the security or audit side, don't forget to widen your CloudTrail monitoring to all three Regions!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/root-user-regional-resiliency/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS improves regional resiliency for root user sign-in",
+  "tags": [
+    "aws",
+    "security",
+    "infrastructure"
+  ],
+  "published_at": "2026-09-14T19:30:00+00:00"
+}
