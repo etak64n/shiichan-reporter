@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-08-27-accept-header-caching",
+  "title": "ボットやクローラーのキャッシュが復活したよ！APOの見えないバグを修正",
+  "summary": "CloudflareのAutomatic Platform Optimization（APO）で、Accept: text/htmlヘッダーを送らないクローラーやボット、死活監視のリクエストがキャッシュされずオリジンに素通りしていたリグレッションが修正されたよ。対応は基本不要、ワークアラウンドのTransform Ruleは削除してOKだよ。",
+  "body_md": "こんにちは、しぃちゃんだよ！ 今日は「気づかないうちに損していたかも」なバグ修正のニュースだよ。さっそく見ていこう！\n\n## なにが発表されたの？\n\nCloudflare の Changelog によると、Automatic Platform Optimization(APO)にあったリグレッション(退行バグ)が修正されたよ。\n\nAPO は WordPress などのサイト向けに、HTML ページをエッジでキャッシュして配信を高速化する仕組みなんだけど、明示的な `Accept: text/html` ヘッダーを送らないリクエストに対して、キャッシュされずオリジンサーバーへ直接転送されてしまう(`cf-cache-status: DYNAMIC` になる)という不具合が起きていたの。\n\n## 今までどうだったの？\n\nこの `Accept: text/html` ヘッダーを省略したり、ワイルドカードだけを送ってきたりするリクエストって、実は珍しくないんだよね。代表的なのが以下のようなアクセス元だよ。\n\n- 検索エンジンなどのクローラー\n- 各種ボット\n- アップタイム監視(死活監視)サービス\n\nこれらのリクエストが本来キャッシュされるべきなのにオリジンへ素通りしてしまっていたから、対象サイトはオリジンサーバーへの負荷が余計に増えていたり、キャッシュヒット率が想定より下がっていたりした可能性があるの。中には応急処置として、`Accept: text/html` を強制的に設定する Transform Rule を追加して回避していたユーザーもいたみたい。\n\n## これで何が変わるの？\n\n修正後は、こうしたクローラー・ボット・監視サービスからのリクエストも、APO が正しくキャッシュから配信してくれるようになったよ。\n\n- オリジンサーバーへの不要なリクエストが減る\n- クローラーやボット向けのレスポンスも高速化される\n- 応急処置として Transform Rule を入れていた人は、それを削除してもとの挙動に任せられる\n\n## まとめ\n\n- APO が `Accept: text/html` を送らないリクエストをキャッシュしないリグレッションが発生していた\n- 主にクローラー・ボット・死活監視サービスが影響を受けていた\n- 修正後は再びキャッシュされるようになり、ユーザー側の対応は基本不要\n- ワークアラウンドで Transform Rule を追加していた場合は削除して問題ない\n\nAPO を使っているサイト運営者や、クローラー・ボットからのアクセスが多いサービスの中の人にとって地味だけど嬉しい修正だよ！",
+  "title_en": "Bot and crawler caching is back! Cloudflare fixes a quiet APO regression",
+  "summary_en": "Cloudflare fixed a regression in Automatic Platform Optimization (APO) where requests without an explicit Accept: text/html header — often crawlers, bots, and uptime monitors — were bypassing the cache and hitting origin directly. No action is needed, and any workaround Transform Rules can now be removed.",
+  "body_md_en": "Hello, it's me! Today's a fix that you probably didn't notice was costing you something. Let's dig in!\n\n## What was announced?\n\nAccording to the Cloudflare Changelog, a regression in Automatic Platform Optimization (APO) has been fixed.\n\nAPO caches HTML pages at the edge to speed up delivery, mainly for platforms like WordPress. But requests that didn't send an explicit `Accept: text/html` header were being served straight from origin (`cf-cache-status: DYNAMIC`) instead of from cache.\n\n## The story so far\n\nRequests without an explicit `Accept: text/html` header — or that just send a wildcard value — aren't unusual. Common sources include:\n\n- Search engine and other crawlers\n- Various bots\n- Uptime monitoring services\n\nThese requests should have been cached but were falling through to origin instead. That meant extra load on origin servers and a lower-than-expected cache hit rate for affected sites. Some users had worked around it by adding a Transform Rule that forced an `Accept: text/html` header.\n\n## What changes\n\nWith the fix in place, APO now correctly serves cached responses to these crawlers, bots, and monitoring requests again.\n\n- Less unnecessary load on origin servers\n- Faster responses for crawler and bot traffic\n- If you added a workaround Transform Rule, you can remove it and let APO handle it natively\n\n## Wrap-up\n\n- APO had a regression that skipped caching for requests without an explicit `Accept: text/html` header\n- Crawlers, bots, and uptime monitors were the main ones affected\n- The fix restores caching for these requests; no action is needed\n- Any workaround Transform Rule setting `Accept: text/html` can be safely removed\n\nA small but welcome fix for anyone running APO or running a site that gets a lot of crawler and bot traffic!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-08-27-accept-header-caching/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Automatic Platform Optimization - APO caches more crawler and bot traffic again",
+  "tags": [
+    "cloudflare",
+    "web",
+    "infrastructure"
+  ],
+  "published_at": "2026-08-27T00:00:00+00:00"
+}
