@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-glue-zero-etl-archived-salesforce",
+  "title": "AWS Glue の zero-ETL、Salesforce のアーカイブ済みレコードも逃さず同期できるようになったよ！",
+  "summary": "AWS Glue の Salesforce 向け zero-ETL 統合が、アーカイブ済みレコードも isArchived フィールド付きでターゲットテーブルに反映できるようになったよ。設定変更なしで自動対応なの。",
+  "body_md": "やっほー、しぃちゃんだよ！ 今日は AWS Glue と Salesforce の連携がちょっと賢くなったニュースを見つけたから、さっそく紹介するね！\n\n## なにが発表されたの？\n\nAWS What's New からのお知らせだよ。AWS Glue の Salesforce 向け zero-ETL 統合が、アーカイブ済みのレコードもキャプチャして、分析用のターゲットテーブルに反映できるようになったの。アーカイブ状態は `isArchived` フィールドで正確に識別されるから、分析用データが Salesforce の元データときちんと同期した状態を保てるようになるんだって。\n\n## 今までどうだったの？\n\nzero-ETL 統合を使えば Salesforce のデータを分析用データストアに自動で連携できたけど、Salesforce 側で自動的にアーカイブされてしまう Events・Tasks・Activities のような大量データのエンティティについては、アーカイブされた後の状態が分析用データにきちんと反映されているかが見えにくかったみたい。\n\n## これで何が変わるの？\n\n新規に作る zero-ETL 統合は、作成した瞬間からアーカイブ済みレコードを自動でキャプチャするようになるよ。すでに使っている統合についても、再同期やスキーマ変更、再設定は一切不要で、AWS Glue 側が自動でアーカイブ状態をバックフィルしてくれるの。既存のパイプラインを止めずに、裏側で `isArchived` フィールドが埋まっていく感じだね。\n\nこれで、Salesforce 側で大量に自動アーカイブされる Events・Tasks・Activities のようなデータも含めて、分析用データストアで完全な可視性が得られるようになるよ。\n\n## まとめ\n\n- Salesforce 向け zero-ETL 統合が、アーカイブ済みレコードを `isArchived` フィールド付きで自動キャプチャ\n- 新規統合は作成直後から対応、既存統合は再設定なしで自動バックフィル\n- Events・Tasks・Activities など、自動アーカイブされやすい大量データの可視性が向上\n- AWS の商用リージョンと GovCloud (US) の全リージョンで、zero-ETL 統合が使える場所なら利用可能\n\nSalesforce データを分析基盤で使っている人、特にアーカイブされたレコードの扱いに悩んでいたデータエンジニアにうれしいアップデートだよ！",
+  "title_en": "AWS Glue's Zero-ETL Now Keeps Archived Salesforce Records in Sync!",
+  "summary_en": "AWS Glue's zero-ETL integration for Salesforce now captures archived records too, reflecting them in target tables via an isArchived field — with no configuration changes needed.",
+  "body_md_en": "Hey everyone, it's Shii-chan! Today I found a nice little upgrade to how AWS Glue talks to Salesforce, so let's dive in!\n\n## What was announced?\n\nThis comes from AWS What's New. AWS Glue's zero-ETL integration for Salesforce can now capture archived records too, reflecting them in your analytics target tables. Archive status is tracked accurately through a new `isArchived` field, so your analytical data stays fully in sync with the Salesforce source.\n\n## The story so far\n\nZero-ETL integrations already let you replicate Salesforce data into your analytics stores automatically, but for high-volume entities that Salesforce archives on its own — like Events, Tasks, and Activities — it wasn't clear whether that archived state was actually reflected on the analytics side.\n\n## What changes\n\nNew zero-ETL integrations now capture archived records automatically from the moment they're created. Existing integrations get this too — AWS Glue automatically backfills archive status with no re-sync, no reconfiguration, and no schema change required. Your pipelines keep running uninterrupted while the `isArchived` field fills in behind the scenes.\n\nThat means full visibility into commonly auto-archived, high-volume Salesforce data like Events, Tasks, and Activities, right in your analytics store.\n\n## Wrap-up\n\n- Zero-ETL integration for Salesforce now auto-captures archived records via a new `isArchived` field\n- New integrations get this from day one; existing integrations are backfilled automatically, no reconfiguration needed\n- Improves visibility into high-volume, auto-archived data like Events, Tasks, and Activities\n- Available wherever AWS Glue zero-ETL integrations for Salesforce are supported, across AWS Commercial and AWS GovCloud (US) Regions\n\nA welcome update for anyone running Salesforce data through an analytics pipeline — especially data engineers who've had to wrestle with archived records!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/glue-zero-etl-archived-salesforce/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Glue zero-ETL now captures archived Salesforce records",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "business"
+  ],
+  "published_at": "2026-09-15T08:00:00+00:00"
+}
