@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-client-vpn-macos-golden-gate",
+  "title": "AWS Client VPN が macOS 27 Golden Gate に対応できるようになったよ！",
+  "summary": "AWS What's New の発表だよ。AWS Client VPN のデスクトップクライアントが、クライアントバージョン 6.0 以降で macOS の最新版 macOS 27 Golden Gate に対応。既存の macOS 13.0〜26.0、Windows、Ubuntu Linux に加えて対応 OS がさらに広がったよ。",
+  "body_md": "やっほー、しぃちゃんだよ！今日は AWS の小さいけど地味に嬉しいアップデートを見つけたから紹介するね。\n\n## なにが発表されたの？\n\nAWS What's New に載った発表だよ。AWS Client VPN のデスクトップクライアントが、macOS の最新バージョンである macOS 27 Golden Gate に対応したの。対応にはクライアントバージョン 6.0 以降が必要だよ。\n\n## 今までどうだったの？\n\nこれまで AWS Client VPN が対応していたのは、macOS だと 13.0、14.0、15.0、26.0 までだったの。Windows は 10 (x64) と 11 (Arm64、x64)、Linux は Ubuntu 22.04 LTS と 24.04 LTS に対応していたよ。macOS の新しいバージョンである Golden Gate (27.0) には、まだ対応していなかったんだよね。\n\n## これで何が変わるの？\n\nクライアントを 6.0 以降にアップデートすれば、macOS 27 Golden Gate を使っている人でも AWS Client VPN を使い続けられるようになるよ。リモートワークで AWS の環境やオンプレミスのネットワークに安全に接続している Mac ユーザーは、OS をアップデートしても VPN 接続で困らずに済むね。\n\n## 深く潜ってみよう\n\n対応プラットフォームを整理するとこんな感じだよ。\n\n- macOS: 13.0 / 14.0 / 15.0 / 26.0 / 27.0 (Golden Gate、クライアント 6.0 以降が必要)\n- Windows: 10 (x64) / 11 (Arm64、x64)\n- Linux: Ubuntu 22.04 LTS / 24.04 LTS\n\nAWS Client VPN のデスクトップクライアント自体は無料でダウンロードできるよ。管理型サービスとして、リモートワーカーを AWS やオンプレミスのネットワークに安全に接続する役割を担っているの。\n\n## まとめ\n\n- AWS Client VPN が macOS 27 Golden Gate に対応したよ\n- 対応にはクライアントバージョン 6.0 以降が必要\n- macOS 13.0〜26.0、Windows、Ubuntu Linux は引き続き対応\n- クライアントは無料でダウンロード可能\n- 最新の Mac を使っているリモートワーカーや、社内の VPN 環境を管理している IT 担当者に嬉しいアップデートだね！",
+  "title_en": "AWS Client VPN Now Supports macOS 27 Golden Gate!",
+  "summary_en": "An AWS What's New announcement: the AWS Client VPN desktop client now supports the latest macOS 27 Golden Gate with client version 6.0 and above, adding to existing support for macOS 13.0-26.0, Windows, and Ubuntu Linux.",
+  "body_md_en": "Hi, it's me, Shiichan! Today I found a small but quietly satisfying AWS update to share.\n\n## What was announced?\n\nThis comes from AWS What's New. The AWS Client VPN desktop client now supports the latest macOS version, macOS 27 Golden Gate. You'll need client version 6.0 or later to use it.\n\n## The story so far\n\nUntil now, AWS Client VPN supported macOS 13.0, 14.0, 15.0, and 26.0, along with Windows 10 (x64), Windows 11 (Arm64 and x64), and Ubuntu Linux 22.04 LTS and 24.04 LTS. The newest macOS version, Golden Gate (27.0), wasn't supported yet.\n\n## What changes\n\nIf you update your client to version 6.0 or later, you can keep using AWS Client VPN even after upgrading to macOS 27 Golden Gate. Remote workers who rely on Client VPN to securely reach AWS and on-premises networks from a Mac no longer have to worry about their VPN connection breaking after an OS upgrade.\n\n## Dive Deep\n\nHere's the full list of supported platforms:\n\n- macOS: 13.0 / 14.0 / 15.0 / 26.0 / 27.0 (Golden Gate, requires client 6.0+)\n- Windows: 10 (x64) / 11 (Arm64, x64)\n- Linux: Ubuntu 22.04 LTS / 24.04 LTS\n\nThe AWS Client VPN desktop client itself is free to download. As a managed service, it's designed to securely connect remote workers to AWS and on-premises networks.\n\n## Wrap-up\n\n- AWS Client VPN now supports macOS 27 Golden Gate.\n- You need client version 6.0 or later to use it.\n- macOS 13.0-26.0, Windows, and Ubuntu Linux remain supported.\n- The client is free to download.\n- A nice update for remote workers on the latest Mac and for the IT teams managing corporate VPN access!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/aws-client-vpn-macos-golden-gate/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Client VPN is now supporting MacOS 27 Golden Gate",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "security"
+  ],
+  "published_at": "2026-09-16T17:56:00+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-ecs-daemon-deployment-console",
+  "title": "まさかの ECS Managed Daemons、デプロイの中身が丸見えになってる！",
+  "summary": "AWS What's New の発表だよ。Amazon ECS Managed Daemons のデプロイ状況を、AWS Management Console でまとめて確認できる新しい可観測性機能が追加。ライフサイクルタイムラインや進捗バー、モニタリングパネル、失敗理由まで 1 画面でチェックできるようになったよ。コンソール専用機能で、全 AWS コマーシャルリージョンで追加費用なしに使えるの。",
+  "body_md": "みんな、しぃちゃんだよ！今日は AWS のコンソールがぐっと使いやすくなったニュースを紹介するよ。\n\n## なにが発表されたの？\n\nAWS What's New に載った発表だよ。Amazon ECS が、ECS Managed Daemons のデプロイ状況を確認できる新しい可観測性機能を AWS Management Console に追加したの。\n\n## 今までどうだったの？\n\nこれまでは ECS Managed Daemons のデプロイの進み具合や状態を、コンソール上でひとまとめに確認する手段が用意されていなかったみたい。今回の発表は、そうした情報を 1 つの画面に統合した「consolidated deployment view」を提供する、という内容だよ。\n\n## これで何が変わるの？\n\nコンソールを開くだけで、デプロイの中身がぐっと見えやすくなるよ。\n\n- ライフサイクルタイムライン: 各ステップのタイムスタンプと総所要時間、ロールバックが発生した場合はその経路まで表示\n- キャパシティプロバイダーごとの進捗バー: 完了・進行中・残りのインスタンス数、ドレイン中や置き換え済みの状況もひと目で分かる\n- モニタリングパネル: デプロイサーキットブレーカー、デプロイアラーム、コンテナのヘルスチェック状態を、CloudWatch アラームの詳細付きでリアルタイム表示\n- 失敗時の停止理由: タスクやログ、トラブルシューティングガイドへのリンクも一緒に表示\n- ターゲット/ソースのリビジョンやインスタンス数、ドレイン率、ベイクタイムも確認可能\n\n## 深く潜ってみよう\n\nこの機能はコンソール専用で、追加費用はかからないよ。全ての AWS コマーシャルリージョンで利用できるから、リージョンを気にせず使い始められるのも嬉しいポイントだね。\n\n## まとめ\n\n- Amazon ECS Managed Daemons のデプロイ状況を、コンソール上でまとめて確認できる新機能が追加されたよ\n- タイムライン・進捗バー・モニタリングパネル・失敗理由まで、1 画面でチェックできるようになったの\n- コンソール専用機能で、全 AWS コマーシャルリージョンで追加費用なしに使えるよ\n- ECS Managed Daemons を運用しているインフラ担当者や SRE には、地味だけどかなり嬉しいアップデートだね！",
+  "title_en": "Amazon ECS Managed Daemons Deployments Are Now Fully Visible in the Console!",
+  "summary_en": "An AWS What's New announcement: Amazon ECS Managed Daemons deployments now get a new observability view in the AWS Management Console, showing a lifecycle timeline, progress bars, a monitoring panel, and failure reasons all in one screen. It's console-only, works in every AWS Commercial Region, and comes at no additional cost.",
+  "body_md_en": "Hi everyone, it's me, Shiichan! Today I've got news that makes the AWS console noticeably nicer to use.\n\n## What was announced?\n\nThis comes from AWS What's New. Amazon ECS added a new deployment observability feature for ECS Managed Daemons in the AWS Management Console.\n\n## The story so far\n\nUntil now, there doesn't seem to have been a single place in the console to see how an ECS Managed Daemons deployment was progressing. This announcement introduces a consolidated deployment view that brings that information together.\n\n## What changes\n\nJust opening the console now gives you a much clearer picture of what's happening in a deployment:\n\n- Lifecycle timeline: timestamps for each step and the total duration, including the rollback path if one occurred\n- Per-capacity-provider progress bars: completed, in-progress, and remaining instance counts, plus draining and replaced instances at a glance\n- Monitoring panel: real-time status for the deployment circuit breaker, deployment alarm, and container health check state, with live CloudWatch alarm details\n- Failure stop reasons: shown alongside links to the relevant task, logs, and troubleshooting guide\n- Target and source revisions, instance counts, drain percentage, and bake time\n\n## Dive Deep\n\nThis feature is console-only and comes at no additional cost. It's available in every AWS Commercial Region, so you can start using it right away regardless of where you run your workloads.\n\n## Wrap-up\n\n- Amazon ECS Managed Daemons deployments now have a consolidated observability view in the console.\n- Timeline, progress bars, a monitoring panel, and failure reasons are all visible in one screen.\n- It's console-only, available in every AWS Commercial Region, and free.\n- A small but genuinely useful update for anyone running ECS Managed Daemons in production!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-ecs-daemon-deployment-console/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon ECS deployment observability for Amazon ECS Managed Daemons in AWS Management Console",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "devops"
+  ],
+  "published_at": "2026-09-16T22:01:00+00:00"
+}
