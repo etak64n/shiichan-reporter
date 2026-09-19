@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-connect-customer-custom-metrics-tag",
+  "title": "Amazon Connect Customerのカスタムメトリクス、タグでアクセスを仕分けできるように！",
+  "summary": "Amazon Connect Customer のカスタムメトリクスが、タグベースのアクセス制御に対応したよ。チームごとに「フルコントロール」「閲覧のみ」「非表示」を使い分けられるようになったの。",
+  "body_md": "おつかれさま、しぃちゃんだよ！ 今日は Amazon Connect Customer のガバナンス周りの、地味だけど重要なアップデートを見つけたよ。カスタムメトリクスのアクセス管理がぐっと柔軟になったの。紹介するね！\n\n## なにが発表されたの？\n\nAWS What's New によると、Amazon Connect Customer のカスタムメトリクスが、タグベースのアクセス制御に対応したよ。メトリクスを閲覧できる人、作成・編集できる人を、タグを使ってコントロールできるようになったの。\n\n## 今までどうだったの？\n\n複数のチームが同じカスタムメトリクスのライブラリを共有していると、1 人がメトリクスを変更しただけで、それに依存している他チームの数値まで影響を受けてしまうことがあったんだって。よくある対処法は、カスタムメトリクスを扱える権限を少人数だけに絞ることだったけど、それだと使いたい他のチームまでシャットアウトしちゃう問題があったの。\n\n## これで何が変わるの？\n\n新しいタグベースのアクセス制御を使うと、メトリクスごとにタグを付けて、そのタグ単位でアクセス権を設定できるようになるよ。たとえば、こんな使い分けができるの。\n\n- 自分のチームのメトリクス: フルコントロール\n- 他チームのメトリクス: 閲覧のみ\n- 見せたくないメトリクス: そもそも見えないようにする\n\nさらに、検索もこのアクセス権のルールに従うから、ユーザーには自分が閲覧・管理できるメトリクスしか検索結果に出てこないよ。権限が絞られている人にとっては、そもそも存在を意識しなくていいってことだね。\n\n## まとめ\n\n- Amazon Connect Customer のカスタムメトリクスがタグベースのアクセス制御に対応\n- タグ単位で「フルコントロール」「閲覧のみ」「非表示」を使い分けられる\n- 検索結果もアクセス権に連動するから、見えないメトリクスは検索にも出てこない\n\n複数チームでカスタムメトリクスを育ててきたコンタクトセンター運用チームには、ガバナンスを強化しつつ利用者を広げられる嬉しいアップデートだよ！",
+  "title_en": "Amazon Connect Customer's Custom Metrics Now Support Tag-Based Access Control!",
+  "summary_en": "Amazon Connect Customer's custom metrics now support tag-based access control, so teams can mix full control, view-only, and hidden access per metric.",
+  "body_md_en": "Hey, Shii-chan here! Today I found a quieter but important governance update for Amazon Connect Customer — access control for custom metrics just got a lot more flexible. Let's take a look!\n\n## What was announced?\n\nAccording to AWS What's New, Amazon Connect Customer's custom metrics now support tag-based access control, letting you govern who can view, create, or modify each metric using tags.\n\n## The story so far\n\nWhen multiple teams share the same custom metrics library, one person's change to a metric can end up affecting every other team that depends on it. The usual fix was to limit custom metrics permissions to just a handful of people — but that locked out every other team that wanted to start using them too.\n\n## What changes\n\nWith tag-based access control, you tag each metric and set access rules based on those tags. That lets you mix and match access levels, such as:\n\n- Full control over your own team's metrics\n- View-only access to another team's metrics\n- No visibility at all into metrics you want to restrict\n\nSearch follows the same access rules too, so people only ever see metrics they're allowed to view or manage — metrics outside their access just don't show up.\n\n## Wrap-up\n\n- Amazon Connect Customer's custom metrics now support tag-based access control\n- You can mix full control, view-only, and hidden access per metric using tags\n- Search results respect the same access rules, so restricted metrics stay out of sight\n\nFor contact center teams that have grown a shared custom metrics library across multiple teams, this is a nice way to tighten governance without locking anyone out.",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/connect-customer-custom-metrics-tag/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Connect Customer custom metrics now supports tag-based access control",
+  "tags": [
+    "aws",
+    "security",
+    "business"
+  ],
+  "published_at": "2026-09-16T17:00:00+00:00"
+}

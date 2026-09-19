@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-connect-customer-import-evaluation-form-pdf",
+  "title": "PDFをアップロードするだけ！Amazon Connect Customerの評価フォーム作成がAIでラクになったよ",
+  "summary": "Amazon Connect Customer に、他社ツールの評価フォーム PDF をアップロードすると AI が自動で Connect 上に再現してくれる機能が登場したよ。採点方式の選択や自然言語での調整指示もできるの。",
+  "body_md": "みんな、しぃちゃんだよ！ コンタクトセンターの品質管理をしてる人に朗報だよ。Amazon Connect Customer に、評価フォームをぐっと楽に作れる新機能が追加されたの。さっそく紹介するね！\n\n## なにが発表されたの？\n\nAWS What's New によると、Amazon Connect Customer で、他社の品質管理アプリケーションから評価フォームの PDF をインポートして、AI が自動で Connect 上に再現してくれる機能が使えるようになったよ。既存の品質プログラムを Connect に移行しやすくするための機能なんだって。\n\n## 今までどうだったの？\n\nこれまでは、既存の評価フォームを Connect に持ってこようとすると、質問を 1 つずつ手作業で作り直す必要があったの。項目数が多いフォームだと、それだけでかなりの手間だよね。\n\n## これで何が変わるの？\n\n新機能では、PDF をアップロードして採点方式(パーセンテージ or ポイントベース)を選ぶだけで、Connect Customer が自動でこんなところを抽出してくれるよ。\n\n- フォームのセクション\n- 質問項目\n- 回答の選択肢\n- スコアリングの設定\n\nさらに、自然言語での指示も使えるの。たとえば「幅広い質問をもっと単純な質問に分割して」といった指示を出して、インポートの精度を上げたり、できあがったフォームを調整したりできるから、フォームを有効化する前の手直しがかなり減らせそうだよ。\n\n## 深く潜ってみよう\n\nこの機能は、現時点で次の 7 つの AWS リージョンで利用できるよ。\n\n- US East (N. Virginia)\n- US West (Oregon)\n- Canada (Central)\n- Asia Pacific (Singapore)\n- Asia Pacific (Sydney)\n- Asia Pacific (Tokyo)\n- Europe (Frankfurt)\n\n## まとめ\n\n- Amazon Connect Customer が、評価フォーム PDF の AI インポートに対応\n- セクション・質問・選択肢・スコアリングを自動抽出し、自然言語指示で調整もできる\n- US・カナダ・APAC・欧州の計 7 リージョンで利用可能\n\n他社ツールで運用してきた評価フォームを Connect に移行したいチームには、地味だけどかなり時短になる機能だね！",
+  "title_en": "Just Upload a PDF: Amazon Connect Customer Now Builds Evaluation Forms with AI",
+  "summary_en": "Amazon Connect Customer can now import a PDF of an evaluation form from a third-party tool and have AI automatically recreate it in Connect, with support for choosing a scoring method and steering the result with natural language instructions.",
+  "body_md_en": "Hey everyone, Shii-chan here! Good news if you handle quality management for a contact center. Amazon Connect Customer just picked up a feature that makes building evaluation forms way easier. Let's dive in!\n\n## What was announced?\n\nAccording to AWS What's New, Amazon Connect Customer now lets you import a PDF of an evaluation form from a third-party quality management app, and AI automatically recreates it inside Connect. It's designed to make migrating an existing quality program into Connect much simpler.\n\n## The story so far\n\nBefore this, bringing an existing evaluation form into Connect meant rebuilding it question by question by hand — a real time sink if the form had a lot of items.\n\n## What changes\n\nNow you just upload the PDF and pick a scoring method (percentage or points-based), and Connect Customer automatically extracts:\n\n- Form sections\n- Questions\n- Answer options\n- Scoring settings\n\nYou can also give natural language instructions — like asking it to split a broad question into simpler ones — to improve import accuracy or adjust the form as it's created, which should cut down a lot of the manual cleanup you'd normally do before activating the form.\n\n## Dive Deep\n\nThis feature is currently available in seven AWS Regions:\n\n- US East (N. Virginia)\n- US West (Oregon)\n- Canada (Central)\n- Asia Pacific (Singapore)\n- Asia Pacific (Sydney)\n- Asia Pacific (Tokyo)\n- Europe (Frankfurt)\n\n## Wrap-up\n\n- Amazon Connect Customer now supports AI-powered PDF import for evaluation forms\n- It auto-extracts sections, questions, answer options, and scoring, and you can steer it with natural language instructions\n- Available across seven regions spanning the US, Canada, APAC, and Europe\n\nIf your team has been running evaluation forms in a third-party tool and wants to move them into Connect, this is a small feature that could save a lot of tedious setup time!",
+  "emotion": "smug",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-connect-customer-import-evaluation-form-PDF/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Connect Customer can now import evaluation form PDFs using AI",
+  "tags": [
+    "aws",
+    "ai",
+    "business"
+  ],
+  "published_at": "2026-09-16T17:00:00+00:00"
+}
