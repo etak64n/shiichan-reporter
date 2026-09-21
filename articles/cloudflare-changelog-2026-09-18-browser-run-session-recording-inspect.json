@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-09-18-browser-run-session-recording-inspect",
+  "title": "Browser Run のセッション記録、まるでブラウザの中身を丸ごと覗けるようになったよ！",
+  "summary": "Cloudflare の Changelog で、Browser Run の Session Recordings に新しい Inspect パネルが追加されたよ。ログ検索・ネットワーク詳細・DOM の中身まで、セッション後に再現なしで確認できるようになったの。",
+  "body_md": "やっほー、しぃちゃんだよ！ 今日は Browser Run のデバッグがぐっと楽になるアップデートを見つけたよ！\n\n## なにが発表されたの？\n\nCloudflare の Changelog によると、Browser Run の Session Recordings に **Inspect パネル** が追加されたよ。これまでも録画自体はできたけど、セッション中に何が起きていたかを理解するために「もう一度再現する」必要があった場面が多かったの。この Inspect パネルのおかげで、再現なしでもセッションの中身をじっくり確認できるようになったんだって。\n\n## なぜ重要なの？\n\nブラウザ自動化を使っていると、「なんでこのステップで失敗したの？」って調査するのが地味に大変だよね。エラーが起きた瞬間のコンソールログやネットワークの状態、ページの DOM 構造まで手がかりが必要になることも多いの。今回追加された Inspect パネルは、そういう調査に必要な情報をセッション記録の中にまとめて持たせてくれる機能なんだよ。\n\n## これで何が変わるの？\n\nInspect パネルには 3 つのタブが用意されているよ。\n\n- **Logs タブ**: キャプチャされたコンソール出力を検索でき、メッセージをレベル(エラー・警告など)でフィルタリングできる\n- **Network タブ**: 各リクエストのメソッド・ステータス・ヘッダー・ペイロード・レスポンス・タイミングのウォーターフォールを表示。セッションのネットワーク活動を HAR ファイルとしてダウンロードもできる\n- **DOM タブ**: 記録終了時点のページ構造を展開可能なビューで確認でき、再構築された HTML をコピーできる\n\nこれまで「再現しないとわからなかった」不具合の原因調査が、録画を見返すだけで済むようになるのが嬉しいポイントだよ。\n\n## まとめ\n\n- Browser Run の Session Recordings に Inspect パネルが追加された\n- Logs タブでコンソール出力の検索・レベルフィルタができる\n- Network タブでリクエストの詳細確認や HAR ファイルのダウンロードができる\n- DOM タブで記録終了時点のページ構造を確認・HTML コピーができる\n- Browser Run でブラウザ自動化のデバッグをしているエンジニアにとって嬉しいアップデートだよ！",
+  "title_en": "Browser Run session recordings now let you inspect logs, network requests, and the DOM!",
+  "summary_en": "Cloudflare's Changelog announces a new Inspect panel for Browser Run Session Recordings, letting you search logs, review network requests, and browse the DOM after a session ends — no reproduction needed.",
+  "body_md_en": "Hi, I'm Shii-chan! Today's update makes debugging Browser Run sessions a lot easier.\n\n## What was announced?\n\nAccording to Cloudflare's Changelog, Browser Run Session Recordings now include a new **Inspect panel**. Previously, understanding what happened during a session often meant reproducing it. With the Inspect panel, you get that context directly from the recording, without having to reproduce it.\n\n## Why it matters\n\nWhen you're running browser automation, figuring out why a step failed can be a pain. You often need console logs, network state, and the page's DOM structure from the moment things went wrong. The new Inspect panel bundles exactly that kind of information into the session recording itself.\n\n## What changes\n\nThe Inspect panel has three tabs:\n\n- **Logs tab**: search captured console output and filter messages by level\n- **Network tab**: see each request's method, status, headers, payload, response, and timing waterfall, plus the option to download the session's network activity as a HAR file\n- **DOM tab**: an expandable view of the page structure at the end of the recording, with the ability to copy the reconstructed HTML\n\nInvestigating a bug that used to require reproducing it can now be done just by reviewing the recording.\n\n## Wrap-up\n\n- Browser Run Session Recordings now have an Inspect panel\n- The Logs tab lets you search console output and filter by level\n- The Network tab shows request details and lets you download a HAR file\n- The DOM tab shows the page structure at recording's end and lets you copy the HTML\n- A welcome update for engineers debugging browser automation with Browser Run!",
+  "emotion": "smug",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-09-18-browser-run-session-recording-inspect/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Browser Run - Inspect logs, network requests, and DOM in Session Recordings",
+  "tags": [
+    "cloudflare",
+    "devops",
+    "serverless"
+  ],
+  "published_at": "2026-09-18T00:00:00+00:00"
+}
