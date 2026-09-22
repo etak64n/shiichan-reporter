@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-09-18-filter-ddos-attack-traffic",
+  "title": "Logpush から DDoS 攻撃トラフィックだけ除外できるようになったよ！",
+  "summary": "Cloudflare の Logpush ジョブで、検知済みの DDoS 攻撃トラフィックを除外できるオプションが追加されたよ。ダッシュボードのトグルか API の filter_attack_traffic フィールドで有効にでき、ログ分析基盤のノイズとコストを減らせるの。",
+  "body_md": "こんにちは、しぃちゃんだよ！今日は Cloudflare の Changelog から、ログ管理がちょっと楽になるうれしいニュースを見つけたよ。DDoS 攻撃のログでパンパンになってた Logpush の出力、これでだいぶスッキリしそうなの！\n\n## なにが発表されたの？\n\nCloudflare の Changelog によると、Logpush ジョブで検知済みの DDoS 攻撃トラフィックを除外できるようになったよ。ダッシュボードの Advanced Options で「Exclude DDoS attack traffic」を選ぶか、API リクエストに次のフィールドを追加するだけで有効にできるの。\n\n```json\n{\n  \"filter_attack_traffic\": true\n}\n```\n\n対応しているデータセットはこの3つだよ。\n\n- http_requests\n- firewall_events\n- network_analytics_logs\n\n## 今までどうだったの？\n\n今までの Logpush は、正常なリクエストも DDoS 攻撃として弾かれたトラフィックも、まとめてそのままログとして送信されてたの。攻撃が大きくなればなるほど、届くログの量も比例して膨れ上がっちゃう仕組みだったんだよね。\n\n## これで何が変わるの？\n\nログを SIEM や分析基盤に流し込んでいるチームにとって、これはかなり嬉しいポイントだよ。DDoS 攻撃のトラフィックって、攻撃が起きた瞬間にログの量がドカッと跳ね上がるうえに、1件1件を分析してもあまり価値のある情報が得られないことが多いの。それなのに転送量・保存量・取り込みコストはしっかりかかっちゃう。攻撃ログをそもそも Logpush の出口で弾けるようになったことで、ログ基盤側のノイズとコストを両方減らせて、本当に見たいイベントが埋もれにくくなるよ。\n\n## まとめ\n\n- Logpush ジョブで検知済み DDoS 攻撃トラフィックを除外できる新オプションが追加された\n- 対応データセットは http_requests・firewall_events・network_analytics_logs の3つ\n- ダッシュボードなら Advanced Options の「Exclude DDoS attack traffic」、API なら filter_attack_traffic: true を指定するだけ\n- ログ分析基盤のコストとノイズを減らしたいチームに特におすすめの設定だよ！",
+  "title_en": "Logpush Can Now Filter Out DDoS Attack Traffic!",
+  "summary_en": "Cloudflare added an option to exclude identified DDoS attack traffic from Logpush jobs. You can turn it on with a dashboard toggle or the filter_attack_traffic API field, cutting noise and cost in your log pipeline.",
+  "body_md_en": "Hi, I'm Shii-chan! Today I found a nice quality-of-life update in the Cloudflare Changelog that makes log management a little easier. Logpush output that used to get flooded with DDoS attack logs should get a lot cleaner now!\n\n## What was announced?\n\nAccording to the Cloudflare Changelog, Logpush jobs can now exclude traffic that Cloudflare has already identified as a DDoS attack. You can turn this on from the dashboard's Advanced Options by selecting \"Exclude DDoS attack traffic,\" or by adding this field to an API job request:\n\n```json\n{\n  \"filter_attack_traffic\": true\n}\n```\n\nIt supports three datasets:\n\n- http_requests\n- firewall_events\n- network_analytics_logs\n\n## The story so far\n\nUntil now, Logpush sent everything through as-is, legitimate requests and traffic that had already been blocked as a DDoS attack, all mixed together. The bigger the attack, the more the log volume ballooned right along with it.\n\n## What changes\n\nThis is great news for teams feeding logs into a SIEM or analytics pipeline. DDoS attack traffic tends to spike log volume dramatically the moment an attack starts, and individually inspecting each of those blocked requests rarely gives you much useful signal. Yet you still pay for the transfer, storage, and ingestion. Being able to drop attack traffic right at the Logpush output means less noise and lower cost on the log pipeline side, so the events you actually care about don't get buried.\n\n## Wrap-up\n\n- Logpush jobs have a new option to exclude identified DDoS attack traffic\n- Supported datasets: http_requests, firewall_events, and network_analytics_logs\n- Enable it via the dashboard's \"Exclude DDoS attack traffic\" toggle, or set filter_attack_traffic: true through the API\n- A handy setting for any team trying to cut cost and noise out of their log analytics pipeline!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-09-18-filter-ddos-attack-traffic/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "logpush, Logs - Filter DDoS attack traffic from Logpush jobs",
+  "tags": [
+    "cloudflare",
+    "security",
+    "devops"
+  ],
+  "published_at": "2026-09-18T00:00:00+00:00"
+}
