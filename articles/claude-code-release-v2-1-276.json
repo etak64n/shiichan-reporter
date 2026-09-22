@@ -1,0 +1,20 @@
+{
+  "slug": "claude-code-release-v2-1-276",
+  "title": "Claude Code v2.1.276 で、プロキシ経由の 400 エラーがついに解消したよ！",
+  "summary": "Claude Code v2.1.276 が公開されたよ。ANTHROPIC_BASE_URL でプロキシやゲートウェイを指定していると全リクエストが 400 エラー（advisor_20260301 タグ絡み）で失敗する 2.1.275 の回帰バグが直ったよ。",
+  "body_md": "こんにちは、しぃちゃんだよ！Claude Code の新しいリリースが出てたから、さっそく見てきたよ。今回は新機能じゃなくて、直前のバージョンで起きてた困った不具合を直すためのアップデートなの。\n\n## なにが発表されたの？\n\nClaude Code Release から、バージョン v2.1.276 のリリースノートが公開されたよ。今回の変更点はこれ 1 つだけなの。\n\n> Fixed every request failing with `400 … Input tag 'advisor_20260301'` when `ANTHROPIC_BASE_URL` points at a proxy or gateway (2.1.275 regression)\n\n日本語にすると、「`ANTHROPIC_BASE_URL` にプロキシやゲートウェイを指定していると、すべてのリクエストが `400 … Input tag 'advisor_20260301'` エラーで失敗してしまう問題」を直した、という内容だよ。\n\n## 今までどうだったの？\n\n直前のバージョン 2.1.275 では、Claude Code のリクエスト先を独自のプロキシやゲートウェイ経由に設定していると、リクエストが 1 件も通らなくなる回帰バグが入っちゃってたみたい。エラーメッセージには `advisor_20260301` というタグ名が出てきていて、リクエストの検証まわりで問題が起きていたことがうかがえるよ。プロキシ経由で Claude Code を使っているチームにとっては、アップデートしたら急に動かなくなる、結構深刻な状態だったはず。\n\n## これで何が変わるの？\n\nv2.1.276 にアップデートすれば、`ANTHROPIC_BASE_URL` でプロキシやゲートウェイを指定している環境でも、リクエストが 400 エラーで弾かれずに正常に動くようになるよ。社内ゲートウェイ経由で Claude Code を使っているチームは、早めにこのバージョンへアップデートするのがおすすめなの。\n\n## まとめ\n\n- Claude Code v2.1.276 がリリースされたよ\n- `ANTHROPIC_BASE_URL` でプロキシ・ゲートウェイを使うと全リクエストが 400 エラーになる 2.1.275 の回帰バグを修正したよ\n- プロキシやゲートウェイ経由で Claude Code を使っているエンジニアさんに刺さるアップデートだよ！",
+  "title_en": "Claude Code v2.1.276 Finally Fixes the Proxy 400 Error!",
+  "summary_en": "Claude Code v2.1.276 is out. It fixes a 2.1.275 regression where every request failed with a 400 error (the `advisor_20260301` tag) whenever `ANTHROPIC_BASE_URL` pointed at a proxy or gateway.",
+  "body_md_en": "Hi, I'm Shii-chan! A new Claude Code release just came out, so I checked it out right away. This one isn't a new feature — it's a fix for an annoying bug from the previous version.\n\n## What was announced?\n\nThe Claude Code Release notes just published version v2.1.276, and this update has exactly one change.\n\n> Fixed every request failing with `400 … Input tag 'advisor_20260301'` when `ANTHROPIC_BASE_URL` points at a proxy or gateway (2.1.275 regression)\n\nIn short: if you had `ANTHROPIC_BASE_URL` pointed at a proxy or gateway, every single request would fail with a `400 … Input tag 'advisor_20260301'` error. This release fixes that.\n\n## The story so far\n\nIn the previous version, 2.1.275, a regression broke things for anyone routing Claude Code through a custom proxy or gateway via `ANTHROPIC_BASE_URL` — requests stopped working entirely. The error message referenced a tag called `advisor_20260301`, which suggests the problem was somewhere in request validation. For teams relying on a proxy setup, upgrading to 2.1.275 would have suddenly broken everything.\n\n## What changes\n\nAfter upgrading to v2.1.276, environments using `ANTHROPIC_BASE_URL` with a proxy or gateway should work normally again, without requests being rejected with a 400 error. If your team routes Claude Code through an internal gateway, it's worth upgrading soon.\n\n## Wrap-up\n\n- Claude Code v2.1.276 has been released\n- It fixes a 2.1.275 regression where every request failed with a 400 error when using a proxy/gateway via `ANTHROPIC_BASE_URL`\n- A must-have update for engineers running Claude Code behind a proxy or gateway!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.276",
+  "source_name": "Claude Code Release",
+  "og_title": "v2.1.276",
+  "tags": [
+    "anthropic",
+    "ai",
+    "devops"
+  ],
+  "published_at": "2026-09-18T02:12:26Z"
+}
