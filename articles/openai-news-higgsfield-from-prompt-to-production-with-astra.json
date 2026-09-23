@@ -11,6 +11,10 @@
   "source_url": "https://openai.com/index/higgsfield-from-prompt-to-production-with-astra",
   "source_name": "OpenAI News",
   "og_title": "Higgsfield AI ships new video features in a day with GPT-6 Astra",
-  "tags": ["openai", "ai", "business"],
+  "tags": [
+    "openai",
+    "ai",
+    "business"
+  ],
   "published_at": "2026-09-21T12:00:00+00:00"
 }

@@ -11,6 +11,10 @@
   "source_url": "https://developers.cloudflare.com/changelog/post/2026-09-21-invite-members-to-workers/",
   "source_name": "Cloudflare Changelog",
   "og_title": "Workers - Give teammates access to specific Workers directly from the dashboard",
-  "tags": ["cloudflare", "devops", "security"],
+  "tags": [
+    "cloudflare",
+    "devops",
+    "security"
+  ],
   "published_at": "2026-09-21T00:00:00+00:00"
 }

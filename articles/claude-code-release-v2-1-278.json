@@ -11,6 +11,10 @@
   "source_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.278",
   "source_name": "Claude Code Release",
   "og_title": "v2.1.278",
-  "tags": ["anthropic", "ai", "devops"],
+  "tags": [
+    "anthropic",
+    "ai",
+    "devops"
+  ],
   "published_at": "2026-09-19T03:10:40Z"
 }

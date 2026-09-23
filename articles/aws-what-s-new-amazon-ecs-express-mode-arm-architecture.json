@@ -11,6 +11,11 @@
   "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-ecs-express-mode-arm-architecture/",
   "source_name": "AWS What's New",
   "og_title": "Amazon ECS Express Mode now supports AWS Graviton (ARM64) workloads",
-  "tags": ["aws", "infrastructure", "devops", "serverless"],
+  "tags": [
+    "aws",
+    "infrastructure",
+    "devops",
+    "serverless"
+  ],
   "published_at": "2026-09-18T17:27:00+00:00"
 }

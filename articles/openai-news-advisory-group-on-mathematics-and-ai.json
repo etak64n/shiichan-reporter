@@ -11,6 +11,10 @@
   "source_url": "https://openai.com/index/advisory-group-on-mathematics-and-ai",
   "source_name": "OpenAI News",
   "og_title": "Advisory Group on Mathematics and Artificial Intelligence",
-  "tags": ["openai", "ai", "science"],
+  "tags": [
+    "openai",
+    "ai",
+    "science"
+  ],
   "published_at": "2026-09-21T12:00:00+00:00"
 }

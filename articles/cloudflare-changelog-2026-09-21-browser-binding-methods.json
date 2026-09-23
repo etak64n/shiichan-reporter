@@ -11,6 +11,11 @@
   "source_url": "https://developers.cloudflare.com/changelog/post/2026-09-21-browser-binding-methods/",
   "source_name": "Cloudflare Changelog",
   "og_title": "Browser Run - Browser Run adds session and DevTools methods to browser bindings",
-  "tags": ["cloudflare", "devops", "infrastructure", "web"],
+  "tags": [
+    "cloudflare",
+    "devops",
+    "infrastructure",
+    "web"
+  ],
   "published_at": "2026-09-21T00:00:00+00:00"
 }

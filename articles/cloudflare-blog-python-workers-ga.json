@@ -11,6 +11,11 @@
   "source_url": "https://blog.cloudflare.com/python-workers-ga/",
   "source_name": "Cloudflare Blog",
   "og_title": "Python Workers are now generally available",
-  "tags": ["cloudflare", "serverless", "ai", "web"],
+  "tags": [
+    "cloudflare",
+    "serverless",
+    "ai",
+    "web"
+  ],
   "published_at": "2026-09-21T13:00:00+00:00"
 }
