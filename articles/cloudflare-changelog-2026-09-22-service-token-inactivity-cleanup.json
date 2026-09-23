@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-09-22-service-token-inactivity-cleanup",
+  "title": "使ってない Service Token、そのままにしてない？Cloudflare Access が自動でお片付け！",
+  "summary": "Cloudflare Access の管理者が、非アクティブな Service Token を自動で無効化・削除できるようになったよ！30 日から 365 日の範囲で非アクティブ期間を設定でき、条件を満たしたトークンだけがバックグラウンドで段階的に片付けられるの。",
+  "body_md": "こんにちは、しぃちゃんだよ！今日は Cloudflare Access を使ってるみんなに聞きたいことがあるの。使われなくなった Service Token、そのままにしてない？\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Access 管理者が非アクティブな Service Token を自動で無効化・削除できるようになったことが発表されたよ！非アクティブな期間を 30 日から 365 日の範囲で設定できて、期限に達したときにトークンをどう扱うか(無効化 or 削除)も選べるの。\n\n## 今までどうだったの？\n\n今までは Service Token が使われなくなっても、手動で気づいて整理しない限りそのまま残り続けちゃってたの。誰も使ってない古いトークンがずっと有効なままだと、それだけでセキュリティ的なリスクが積み上がっちゃうんだよね。\n\n## これで何が変わるの？\n\nこれからは非アクティブな Service Token を、Cloudflare が自動で片付けてくれるようになるよ！管理者はポリシーを設定するだけで、あとは仕組みが定期的にチェックしてくれるから、「使われてないトークンの棚卸し」を手作業でやらなくて済むようになるの。地味だけど、セキュリティ衛生を保つのにすごく助かる機能だと思う！\n\n## 深く潜ってみよう\n\nクリーンアップの対象になるには、トークンが次の条件を全部満たす必要があるよ。\n\n- 設定した非アクティブ期間よりも古いこと\n- その期間中に一度も認証に成功していないこと\n- Access ポリシールールから直接参照されていないこと\n\nクリーンアップはバックグラウンドで段階的に実行される仕組みになっていて、条件を満たしたトークンがすぐに無効化・削除されるとは限らないんだって。急に消えて困る、みたいな挙動にならないよう配慮されてるみたい。\n\n## まとめ\n\n- Cloudflare Access で、非アクティブな Service Token を自動で無効化・削除できるようになった\n- 非アクティブ期間は 30 日〜365 日の範囲で管理者が設定可能\n- 対象になるのは、期間より古く・認証実績がなく・ポリシーから直接参照されていないトークンだけ\n- クリーンアップはバックグラウンドで段階的に実行される\n\nたくさんの Service Token を運用してる Access 管理者さんに、地味だけど嬉しい一言だよ！",
+  "title_en": "Got Service Tokens you forgot about? Cloudflare Access now tidies them up automatically!",
+  "summary_en": "Cloudflare Access administrators can now set an inactivity window and have unused service tokens automatically disabled or deleted, cutting down the security risk of forgotten credentials sitting around.",
+  "body_md_en": "Hi everyone, it's Shiichan! I have a question for anyone running Cloudflare Access today: do you have any service tokens sitting around that nobody's using anymore?\n\n## What was announced?\n\nCloudflare's Changelog announced that Access administrators can now automatically disable or delete inactive service tokens. You can set an inactivity period anywhere from 30 to 365 days, and choose what happens once a token hits that limit: disabling it or deleting it.\n\n## The story so far\n\nUntil now, if a service token stopped being used, it just kept sitting there until someone manually noticed and cleaned it up. Old tokens that nobody uses but are still valid are exactly the kind of thing that quietly adds security risk over time.\n\n## What changes\n\nNow Cloudflare can clean up inactive service tokens for you automatically. Admins just set a policy, and the system periodically checks and handles it, so you don't have to manually audit for stale tokens anymore. It's a quiet feature, but it really helps keep your security hygiene in good shape!\n\n## Dive Deep\n\nTo be eligible for cleanup, a token has to meet all of these conditions:\n\n- It's older than the configured inactivity period\n- It hasn't successfully authenticated during that period\n- It isn't directly referenced by an Access policy rule\n\nCleanup runs gradually in the background, so eligible tokens might not be disabled or deleted immediately. That seems designed to avoid any surprise \"it just vanished\" moment.\n\n## Wrap-up\n\n- Cloudflare Access can now automatically disable or delete inactive service tokens\n- Admins choose an inactivity period from 30 to 365 days\n- Only tokens that are old enough, unused, and not directly referenced by a policy are eligible\n- Cleanup happens gradually in the background\n\nIf you're managing a lot of service tokens in Access, this quiet little feature will make your life easier!",
+  "emotion": "smug",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-09-22-service-token-inactivity-cleanup/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Access - Automatically manage inactive Access service tokens",
+  "tags": [
+    "cloudflare",
+    "security",
+    "devops"
+  ],
+  "published_at": "2026-09-22T00:00:00+00:00"
+}
