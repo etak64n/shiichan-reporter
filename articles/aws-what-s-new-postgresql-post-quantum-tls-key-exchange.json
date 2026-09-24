@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-postgresql-post-quantum-tls-key-exchange",
+  "title": "量子コンピュータ時代のTLS、RDS for PostgreSQL がもう対応してるって知ってた？",
+  "summary": "Amazon RDS for PostgreSQL が post-quantum TLS(PQ-TLS)の鍵交換に対応したよ。PostgreSQL 18 以降で `ssl_groups` パラメータを変更するだけで、耐量子の暗号グループを選べるようになったの。",
+  "body_md": "みんな、しぃちゃんだよ！ 今日はちょっと未来を感じる暗号まわりのニュースを紹介するね。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon RDS for PostgreSQL が post-quantum TLS(PQ-TLS)の鍵交換に対応したと発表されたよ。通信の暗号化に、量子コンピュータでも解読されにくいとされる暗号方式のオプションが使えるようになったの。\n\n対応しているのは PostgreSQL 18 以降で、`ssl_groups` パラメータを変更することで、RDS for PostgreSQL の許可リストにある暗号グループから、自分の組織のセキュリティ基準に合ったものを選べるようになっているよ。\n\n## 今までどうだったの？\n\nこれまでの TLS の鍵交換は、量子コンピュータが実用化された将来には解読されてしまう可能性がある古典的な暗号方式が基本だったの。今すぐ解読されるわけではなくても、「今のうちに暗号化通信を記録しておいて、将来量子コンピュータで解読する」という、いわゆる Harvest Now, Decrypt Later のリスクが指摘され続けてきたんだよね。\n\n## これで何が変わるの？\n\nPostgreSQL 18 以降を使っているなら、`ssl_groups` パラメータを設定するだけで、耐量子性を持つ暗号グループへ切り替えられるようになったよ。データベースの作成・更新は、Amazon RDS Management Console か AWS CLI から行えるの。長期的な機密性が求められるデータを扱っているチームにとっては、今のうちから対策を始められる選択肢が増えたってことだね。\n\n## まとめ\n\n- RDS for PostgreSQL が post-quantum TLS 鍵交換に対応したよ\n- PostgreSQL 18 以降で `ssl_groups` パラメータから耐量子の暗号グループを選べるの\n- 設定は RDS Management Console か AWS CLI から行えるよ\n- 従来の TLS 鍵交換は将来の量子コンピュータに解読されるリスクが指摘されていた\n- 長期的なデータの機密性を気にするチームは、対応バージョンで試してみる価値がありそう！",
+  "title_en": "Did you know RDS for PostgreSQL already supports post-quantum TLS?",
+  "summary_en": "Amazon RDS for PostgreSQL now supports post-quantum TLS (PQ-TLS) key exchange. On PostgreSQL 18 and higher, you can just change the ssl_groups parameter to pick a quantum-resistant cryptographic group.",
+  "body_md_en": "Hey everyone, it's me, Shii-chan! Today's news feels a little futuristic: it's about cryptography.\n\n## What was announced?\n\nOn the AWS What's New page, AWS announced that Amazon RDS for PostgreSQL now supports post-quantum TLS (PQ-TLS) key exchange. This gives you cryptography options for in-transit encryption that are designed to resist decryption by future quantum computers.\n\nIt's available on PostgreSQL 18 and higher, where you can change the `ssl_groups` parameter to select cryptographic groups from RDS for PostgreSQL's allow list that match your organization's security standards.\n\n## The story so far\n\nClassical TLS key exchange algorithms aren't breakable by today's computers, but they could become vulnerable once practical quantum computers exist. That's fueled ongoing concern about \"harvest now, decrypt later\" attacks, where encrypted traffic is recorded today with the intent of decrypting it once quantum computing catches up.\n\n## What changes\n\nIf you're running PostgreSQL 18 or later, you can now switch to a post-quantum-resistant cryptographic group just by setting the `ssl_groups` parameter. You can create or update your database through the Amazon RDS Management Console or the AWS CLI. For teams handling data that needs long-term confidentiality, this is a new option to start hardening against future threats now.\n\n## Wrap-up\n\n- RDS for PostgreSQL now supports post-quantum TLS key exchange\n- Available on PostgreSQL 18+ via the `ssl_groups` parameter, with a choice of quantum-resistant cryptographic groups\n- Configure it through the RDS Management Console or the AWS CLI\n- Classical TLS key exchange has long faced \"harvest now, decrypt later\" concerns\n- Worth trying if your team cares about the long-term confidentiality of your data",
+  "emotion": "thinking",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/postgresql-post-quantum-tls-key-exchange/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon RDS for PostgreSQL now supports post-quantum TLS key exchange",
+  "tags": [
+    "aws",
+    "security"
+  ],
+  "published_at": "2026-09-24T16:00:00+00:00"
+}

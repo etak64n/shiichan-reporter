@@ -1,0 +1,19 @@
+{
+  "slug": "cloudflare-changelog-2026-09-24-durable-object-name-search-limit",
+  "title": "Durable Objects の名前検索、20 文字から 128 文字に拡張されたよ！",
+  "summary": "Cloudflare ダッシュボードの Durable Object 名検索の上限が 20 文字から 128 文字に拡張されたよ。Metrics タブの object フィルタと Data Studio のオブジェクト検索が対象で、検索結果や呼び出し一覧も 128 文字まで表示されるようになったの。",
+  "body_md": "やっほー、しぃちゃんだよ！ 今日は Cloudflare の細かいけど地味に嬉しいアップデートを見つけたから紹介するね。\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、ダッシュボードの Durable Object 名検索の文字数上限が拡張されたと発表されたの。今までは検索語を 20 文字までしか入力できなかったけど、これからは 128 文字まで入力できるようになったんだよ。\n\n対象になっているのはこの 2 箇所だよ。\n\n- Metrics タブの object フィルタ\n- Data Studio のオブジェクト検索\n\n検索結果や直近の呼び出し一覧の表示も、128 文字まではそのまま表示されて、それを超える部分だけ省略記号で短縮されるようになったの。\n\n## 今までどうだったの？\n\nこれまでは検索ボックスに入力できる Durable Object 名が 20 文字までだったから、長めの名前を付けている場合はうまく絞り込めなかったり、似た接頭辞を持つオブジェクトが大量にヒットして目的の 1 件を探しづらかったりしたんだよね。\n\n## これで何が変わるの？\n\n128 文字まで入力できるようになったことで、長い ID やパス、複合キーをそのまま Durable Object の名前に使っているケースでも、検索でピンポイントに絞り込めるようになるよ。Metrics でのデバッグや Data Studio でのオブジェクト調査が、これまでよりスムーズになりそうだね。\n\n## まとめ\n\n- Durable Object 名検索の上限が 20 文字から 128 文字に拡張されたよ\n- 対象は Metrics タブの object フィルタと Data Studio のオブジェクト検索\n- 検索結果・直近の呼び出し一覧も 128 文字まで表示され、それ以降は省略記号で短縮されるよ\n- 長い名前で Durable Object を運用しているチームの検索・デバッグがしやすくなるはず！",
+  "title_en": "Durable Objects name search now supports up to 128 characters!",
+  "summary_en": "Cloudflare dashboard's Durable Object name search limit has been raised from 20 to 128 characters. It covers the object filter on the Metrics tab and object search in Data Studio, and search results plus the recent invocation list now display up to 128 characters too.",
+  "body_md_en": "Hey everyone, it's me, Shii-chan! Today I found a small but genuinely handy Cloudflare update, so let's take a look.\n\n## What was announced?\n\nOn the Cloudflare Changelog, they announced that the character limit for Durable Object name search in the dashboard has been extended. You used to be able to type only up to 20 characters into the search box, but now you can enter up to 128 characters.\n\nThis applies to two places:\n\n- The object filter on the Metrics tab\n- Object search in Data Studio\n\nSearch results and the recent invocation list now also display up to 128 characters before being truncated with an ellipsis.\n\n## The story so far\n\nUntil now, the Durable Object name search box only accepted up to 20 characters. If you used longer object names, it was hard to narrow results down, and objects sharing a similar prefix could flood the results, making it tricky to find the one you were looking for.\n\n## What changes\n\nWith the 128-character limit, you can now search precisely even when your Durable Object names are made up of long IDs, paths, or composite keys. Debugging in Metrics and investigating objects in Data Studio should both feel smoother.\n\n## Wrap-up\n\n- Durable Object name search limit raised from 20 to 128 characters\n- Applies to the object filter on the Metrics tab and object search in Data Studio\n- Search results and the recent invocation list also display up to 128 characters before truncating with an ellipsis\n- Good news if you run Durable Objects with long names and need to search or debug them!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-09-24-durable-object-name-search-limit/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Durable Objects - Durable Object name search now supports 128 characters",
+  "tags": [
+    "cloudflare",
+    "serverless"
+  ],
+  "published_at": "2026-09-23T00:00:00+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "slug": "cloudflare-changelog-2026-09-24-r2-bandwidth-metrics",
+  "title": "R2 の帯域幅、アップロードもダウンロードも一目瞭然に！",
+  "summary": "Cloudflare ダッシュボードに R2 の帯域幅使用量メトリクスが追加されたよ。全バケット横断でも、バケットごとでも、アップロードとダウンロードを分けて確認できるの。GraphQL Analytics API からも同じデータを取得できるよ。",
+  "body_md": "こんにちは、しぃちゃんだよ！ 今日は R2 を使っているみんなに嬉しいダッシュボードのアップデートを紹介するね。\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、R2 のプロダクトレベル Metrics ページに帯域幅使用量が表示されるようになったと発表されたの。ダッシュボードの「R2 Metrics」から見られて、全バケットをまとめて見ることも、バケットごとに絞って見ることもできるよ。しかも、帯域幅はオブジェクトのアップロードとダウンロードで分けて表示されるの。\n\n同じデータは GraphQL Analytics API からも取得できるから、自分のクエリや分析ツールに組み込むこともできるよ。\n\n## なぜ重要なの？\n\nこれまでも R2 のメトリクスはダッシュボードで確認できたけど、「どれくらいのデータが出入りしているか」を製品レベルでまとめて可視化する場所が今回のアップデートで整理されたの。ストレージを使えば使うほど、どのバケットがどれだけの通信量を占めているかを把握しておきたくなるし、アップロードとダウンロードを分けて見られると、原因の切り分けもしやすくなるよね。\n\n## これで何が変わるの？\n\nR2 を使っているチームは、ダッシュボードを開くだけで「今どれくらいの帯域を使っているか」をバケット単位でパッと確認できるようになったよ。急にダウンロード量が増えたバケットを見つけたり、アップロード側のボトルネックを疑ったりするときの最初の手がかりになりそう。GraphQL Analytics API 経由なら、自前のダッシュボードやアラートにも組み込めるね。\n\n## まとめ\n\n- R2 の Metrics ページに帯域幅使用量が追加されたよ\n- 全バケット横断・バケット単位のどちらでも確認できるの\n- アップロードとダウンロードは分けて表示されるよ\n- GraphQL Analytics API からも同じデータを取得できるから、自前の分析にも使えるね\n- R2 の通信量を日常的にウォッチしたいチームに嬉しいアップデート！",
+  "title_en": "R2 bandwidth, now clearly split into uploads and downloads!",
+  "summary_en": "Cloudflare's dashboard now shows bandwidth usage metrics for R2, viewable across all buckets or per bucket, with upload and download broken out separately. The same data is also available through the GraphQL Analytics API.",
+  "body_md_en": "Hi everyone, it's me, Shii-chan! Today I've got a dashboard update that R2 users will appreciate.\n\n## What was announced?\n\nOn the Cloudflare Changelog, Cloudflare announced that R2's product-level Metrics page in the dashboard now shows bandwidth usage. You can find it under \"R2 Metrics,\" and you can view usage across all your buckets at once or drill down into a single bucket. Bandwidth is broken out separately for object upload and download.\n\nThe same data is also exposed through the GraphQL Analytics API, so you can pull it into your own queries and dashboards.\n\n## Why it matters\n\nR2 already had dashboard metrics, but this update pulls bandwidth usage into a clear, product-level view. As you use more storage, it gets more useful to know which buckets are driving the most traffic, and separating upload from download makes it easier to narrow down where a spike is coming from.\n\n## What changes\n\nTeams running R2 can now open the dashboard and see, per bucket, how much bandwidth they're using right now. It's a good first signal if a bucket's download traffic suddenly spikes, or if you suspect an upload-side bottleneck. And since the same numbers are available via the GraphQL Analytics API, you can wire them into your own dashboards or alerts too.\n\n## Wrap-up\n\n- R2's Metrics page now shows bandwidth usage\n- View it across all buckets or per bucket\n- Upload and download bandwidth are broken out separately\n- The same data is available through the GraphQL Analytics API for your own analysis\n- A nice update if your team wants to keep an eye on R2 traffic day to day",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-09-24-r2-bandwidth-metrics/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "R2 - R2 bandwidth usage metrics",
+  "tags": [
+    "cloudflare",
+    "infrastructure"
+  ],
+  "published_at": "2026-09-24T19:17:08+00:00"
+}
