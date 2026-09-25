@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-gamelift-servers-region-expansion-2026",
+  "title": "GameLift Servers、新たに5リージョン・8ローカルゾーンに拡大！",
+  "summary": "Amazon GameLift Servers が il-central-1(テルアビブ)や mx-central-1(メキシコ)など 5 つの新リージョンと、アトランタ・シカゴなど 8 つの新ローカルゾーンに対応したよ。ラテンアメリカ・東南アジア・欧州・中東・南アジアのプレイヤーに近い場所でゲームサーバーを立てられるようになったの。",
+  "body_md": "こんにちは、しぃちゃんだよ！マルチプレイヤーゲームを作っているみんなに届けたい、リージョン拡大のニュースだよ！\n\n## なにが発表されたの？\n\nAWS What's New からのお知らせ。専用ゲームサーバーをデプロイ・運用・スケーリングするフルマネージドサービス「Amazon GameLift Servers」が、5 つの新しい AWS リージョンと 8 つの新しい AWS ローカルゾーンに対応したよ。\n\n## なぜ重要なの？\n\nマルチプレイヤーゲーム開発では、プレイヤーとサーバーの地理的な距離によって生まれる高レイテンシが、いちばんよくある課題のひとつなんだって。サーバーがプレイヤーから遠いほど、操作のもたつきや遅延が目立ってしまうもんね。今回の拡大は、まさにこの課題に応えるためのものなの。\n\n## これで何が変わるの？\n\n新しく対応した場所はこれだよ。\n\n- 新リージョン(5 つ): il-central-1(テルアビブ)、mx-central-1(メキシコ・ケレタロ)、eu-south-2(スペイン・サラゴサ)、ap-south-2(ハイデラバード)、ap-southeast-3(ジャカルタ)\n- 新ローカルゾーン(8 つ): us-east-1-atl-2(アトランタ)、us-east-1-chi-2(シカゴ)、us-east-1-iah-2(ヒューストン)、us-east-1-mia-2(マイアミ)、us-west-2-phx-2(フェニックス)、sa-east-1-bue-1(ブエノスアイレス)、us-east-1-nyc-2(ニューヨーク)、sa-east-1-lim-1(リマ)\n\nこれによって、ラテンアメリカ・東南アジア・ヨーロッパ・中東・南アジアといった地域で、プレイヤーにより近い場所へゲームサーバーフリートをデプロイできるようになったよ。距離が縮まれば、レイテンシが下がってゲームのレスポンスも良くなるはず。\n\n## まとめ\n\n- Amazon GameLift Servers が 5 つの新リージョンと 8 つの新ローカルゾーンに対応\n- 対象はラテンアメリカ・東南アジア・欧州・中東・南アジアなど幅広いエリア\n- 狙いはプレイヤーとサーバーの距離を縮めて、レイテンシを減らすこと\n- グローバル展開しているマルチプレイヤーゲームの開発チームに嬉しいアップデートだよ！",
+  "title_en": "Amazon GameLift Servers Expands to 5 New Regions and 8 Local Zones!",
+  "summary_en": "Amazon GameLift Servers is now available in 5 new AWS Regions, including Tel Aviv and Mexico, and 8 new Local Zones. It lets you deploy game server fleets closer to players across Latin America, Southeast Asia, Europe, the Middle East, and South Asia.",
+  "body_md_en": "Hi, it's me, Shiichan! Here's a region-expansion update for everyone building multiplayer games!\n\n## What was announced?\n\nThis is from AWS What's New. Amazon GameLift Servers, the fully managed service for deploying, operating, and scaling dedicated game servers for multiplayer games, is now available in 5 new AWS Regions and 8 new AWS Local Zones.\n\n## Why it matters\n\nHigh latency caused by the geographic distance between players and servers is one of the most common challenges in multiplayer game development. The farther a server is from its players, the more that input lag and delay stand out. This expansion is aimed squarely at that problem.\n\n## What changes\n\nHere's where GameLift Servers is now available.\n\n- New Regions (5): il-central-1 (Tel Aviv), mx-central-1 (Mexico/Queretaro), eu-south-2 (Spain/Zaragoza), ap-south-2 (Hyderabad), and ap-southeast-3 (Jakarta)\n- New Local Zones (8): us-east-1-atl-2 (Atlanta), us-east-1-chi-2 (Chicago), us-east-1-iah-2 (Houston), us-east-1-mia-2 (Miami), us-west-2-phx-2 (Phoenix), sa-east-1-bue-1 (Buenos Aires), us-east-1-nyc-2 (New York), and sa-east-1-lim-1 (Lima)\n\nWith this expansion, you can deploy game server fleets closer to players across Latin America, Southeast Asia, Europe, the Middle East, and South Asia. Closing that distance gap should mean lower latency and a more responsive game.\n\n## Wrap-up\n\n- Amazon GameLift Servers is now available in 5 new Regions and 8 new Local Zones\n- The new locations span Latin America, Southeast Asia, Europe, the Middle East, and South Asia\n- The goal is to shrink the distance between players and servers to reduce latency\n- Good news for teams running multiplayer games with a global player base!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-gamelift-servers-region-expansion-2026",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon GameLift Servers now available in 5 new regions and 8 Local Zones",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "devops"
+  ],
+  "published_at": "2026-09-24T08:00:00+00:00"
+}

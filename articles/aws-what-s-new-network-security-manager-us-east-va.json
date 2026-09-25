@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-network-security-manager-us-east-va",
+  "title": "AWS Network Security Manager、ついに一般提供開始！",
+  "summary": "AWS Network Security Manager が US East (N. Virginia) で GA になったよ。WAF と Shield Advanced の設定をアカウント横断で自動デプロイ・一元管理でき、設定ドリフトの検知と修復もできるようになったの。Network Firewall 対応も近日予定だよ。",
+  "body_md": "みんな、しぃちゃんだよ！セキュリティチームのみんなが待っていそうな新サービスのニュースだよ！\n\n## なにが発表されたの？\n\nAWS What's New からのお知らせだよ。組織全体でセキュリティポリシーの展開・実施を簡単にする新サービス「AWS Network Security Manager」が、US East (N. Virginia) リージョンで一般提供開始になったの。対応しているのは今のところ AWS WAF と AWS Shield Advanced で、AWS Network Firewall のサポートも近日予定だよ。\n\n## 今までどうだったの？\n\nAWS アカウントがたくさんある組織では、Application Load Balancer や CloudFront みたいなインターネット向けのリソースひとつひとつに、WAF ルールや Shield Advanced の保護を手動で設定・確認していく必要があったの。そのぶん、アカウントごとに設定のばらつきが出たり、変更漏れに気づきにくかったりと、運用の手間が積み重なりがちだったんだよね。\n\n## これで何が変わるの？\n\n- 常時稼働の自動デプロイ機能で、Application Load Balancer や CloudFront といったインターネット向けアセットに WAF・Shield Advanced の保護を自動適用できる\n- セキュリティポリシーを中央で一元管理できる\n- 対象アカウント・リソース全体の設定ドリフトを自動検知して、修復まで行える\n- 手動でのセキュリティ管理にかかっていた運用負荷を減らしつつ、一貫した保護レベルを保てる\n\n## まとめ\n\n- AWS Network Security Manager が US East (N. Virginia) で GA に\n- 対応は AWS WAF・AWS Shield Advanced から。AWS Network Firewall は近日対応予定\n- 自動デプロイ・一元管理・ドリフト検知と修復で、大規模組織のセキュリティ運用を効率化\n- 複数アカウントで WAF や Shield の設定管理に悩んでいるセキュリティチームに刺さるアップデートだよ！",
+  "title_en": "AWS Network Security Manager Is Now Generally Available!",
+  "summary_en": "AWS Network Security Manager is now generally available in US East (N. Virginia), automating WAF and Shield Advanced deployment across your organization with centralized management and drift detection.",
+  "body_md_en": "Hey everyone, it's me, Shiichan! Here's some news security teams have probably been waiting for!\n\n## What was announced?\n\nThis is from AWS What's New. AWS Network Security Manager, a new service designed to simplify security policy deployment and enforcement at scale, is now generally available in the US East (N. Virginia) Region. It currently supports AWS WAF and AWS Shield Advanced, with AWS Network Firewall support coming soon.\n\n## The story so far\n\nIn organizations with many AWS accounts, teams had to manually configure and check WAF rules and Shield Advanced protection for every internet-facing resource, like Application Load Balancers and CloudFront distributions, one by one. That made it easy for configurations to drift between accounts and for changes to slip through unnoticed, piling up operational overhead over time.\n\n## What changes\n\n- Always-on deployment automation applies WAF and Shield Advanced protection automatically to internet-facing assets like Application Load Balancer and CloudFront\n- Security policies can be managed centrally, from one place\n- Configuration drift across targeted accounts and resources is automatically detected, with remediation applied\n- Cuts down the operational load of manual security management while keeping protection consistent\n\n## Wrap-up\n\n- AWS Network Security Manager is now GA in US East (N. Virginia)\n- Supports AWS WAF and AWS Shield Advanced today, with AWS Network Firewall coming soon\n- Automated deployment, central management, and drift detection/remediation streamline security operations at scale\n- Worth checking out if your team has been wrestling with WAF or Shield config management across multiple accounts!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/network-security-manager-us-east-va/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Network Security Manager is now generally available in US East (N. Virginia) Region",
+  "tags": [
+    "aws",
+    "security",
+    "devops"
+  ],
+  "published_at": "2026-09-24T15:00:00+00:00"
+}
