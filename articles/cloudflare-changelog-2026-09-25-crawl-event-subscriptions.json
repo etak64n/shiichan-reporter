@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-09-25-crawl-event-subscriptions",
+  "title": "Browser Run のクロールイベントを Queues で購読できるようになったよ！",
+  "summary": "Cloudflare の Changelog で、Browser Run のクロールジョブが Cloudflare Queues にライフサイクルイベントを発行できるようになったと発表されたよ。ポーリング不要でクロールの進捗を追跡したり、後続処理をトリガーしたりできるようになったの！",
+  "body_md": "やっほー、しぃちゃんだよ！ Cloudflare からクロール系の地味だけど地味に嬉しいアップデートが来たから、さっそく紹介していくよ！\n\n## なにが発表されたの？\n\nCloudflare の Changelog によると、Browser Run のクロールジョブが、実行中に発生するライフサイクルイベントを Cloudflare Queues に発行できるようになったよ。`crawl.started`・`crawl.updated`・`crawl.finished` の3種類のイベントを購読すれば、クロールの進捗をリアルタイムで受け取れるようになったんだって。\n\n## 今までどうだったの？\n\nこれまでクロールジョブの進捗を追いかけるには、定期的にステータスをポーリングして確認するしかなかったみたい。ジョブの数が増えると、このポーリングがだんだん面倒になってくるよね。\n\n## これで何が変わるの？\n\nイベント駆動型の仕組みに変わったことで、ポーリングをやめて `crawl.started`・`crawl.updated`・`crawl.finished` を購読するだけで進捗を追跡できるようになったよ。イベントをきっかけにダウンストリームの処理をそのままトリガーすることもできるから、クロール結果を受け取ってすぐ次の処理に繋げる、みたいな使い方がしやすくなったの！\n\n## 深く潜ってみよう\n\nアカウントレベルの購読は、Wrangler CLI で以下のコマンドを実行するだけで作れるよ。\n\n```\nnpx wrangler queues subscription create <QUEUE_NAME> \\\n  --source browserRun \\\n  --events crawl.started,crawl.updated,crawl.finished\n```\n\nnpm・Yarn・pnpm のどのパッケージマネージャーでも使えるみたい。イベントのペイロードやスキーマの詳細は、Browser Run のイベントスキーマのドキュメントに載っているそうだよ。\n\n## まとめ\n\n- Browser Run のクロールジョブが Cloudflare Queues にイベントを発行できるようになった\n- 購読できるイベントは `crawl.started`・`crawl.updated`・`crawl.finished` の3種類\n- Wrangler CLI のコマンド1つでアカウントレベルの購読を作成できる\n- ポーリングをやめてイベント駆動で進捗管理・後続処理を組みたい人にオススメ！",
+  "title_en": "You can now subscribe to Browser Run crawl events via Queues!",
+  "summary_en": "Cloudflare's Changelog announced that Browser Run crawl jobs can now publish lifecycle events to Cloudflare Queues, letting you track crawl progress and trigger downstream processing without polling.",
+  "body_md_en": "Hey, it's me! Cloudflare just shipped a small but genuinely handy update for anyone running crawl jobs, so let's dig in!\n\n## What was announced?\n\nAccording to Cloudflare's Changelog, Browser Run crawl jobs can now publish lifecycle events to Cloudflare Queues. You can subscribe to three event types — `crawl.started`, `crawl.updated`, and `crawl.finished` — to receive real-time updates on a crawl's progress.\n\n## The story so far\n\nUntil now, tracking a crawl job's progress meant polling its status periodically. As the number of jobs grew, that polling became increasingly tedious.\n\n## What changes\n\nWith this event-driven approach, you can drop the polling and just subscribe to `crawl.started`, `crawl.updated`, and `crawl.finished` to track progress. You can also trigger downstream processing directly off these events, making it easier to act on crawl results as soon as they're ready.\n\n## Dive Deep\n\nCreating an account-level subscription is as simple as running this Wrangler CLI command:\n\n```\nnpx wrangler queues subscription create <QUEUE_NAME> \\\n  --source browserRun \\\n  --events crawl.started,crawl.updated,crawl.finished\n```\n\nIt works with npm, Yarn, or pnpm. Details on the event payloads and schema are available in the Browser Run event schema documentation.\n\n## Wrap-up\n\n- Browser Run crawl jobs can now publish events to Cloudflare Queues\n- Three subscribable events: `crawl.started`, `crawl.updated`, `crawl.finished`\n- A single Wrangler CLI command creates an account-level subscription\n- Great for anyone who wants event-driven progress tracking and downstream automation instead of polling!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-09-25-crawl-event-subscriptions/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Browser Run, Queues - Subscribe to Browser Run crawl events",
+  "tags": [
+    "cloudflare",
+    "serverless",
+    "devops"
+  ],
+  "published_at": "2026-09-25T18:42:59+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-datasync-monitoring-dashboard",
+  "title": "個別チェックにサヨナラ！AWS DataSync に転送監視ダッシュボードが誕生！",
+  "summary": "AWS DataSync のコンソールに、アカウント全体のデータ転送を一元的に見られるモニタリングダッシュボードが追加されたと発表されたよ。",
+  "body_md": "やっほー、しぃちゃんだよ！ 大量のデータ転送を管理してる人にすごく嬉しいニュースだよ！\n\n## なにが発表されたの？\n\nAWS の What's New によると、AWS DataSync のコンソールに、アカウント全体のデータ転送を一括で見渡せるモニタリングダッシュボードが追加されたよ。各タスク実行のステータス・転送速度・実行時間・転送済みのデータ量とファイル数を、まとめて確認できるようになったの。\n\n## 今までどうだったの？\n\nこれまで複数の転送を監視するには、実行結果を1件ずつ確認するか、自前で Amazon CloudWatch のダッシュボードを作る必要があったんだって。転送タスクが増えるほど、この確認作業が大変になっていたみたい。\n\n## これで何が変わるの？\n\n新しいダッシュボードでは、ステータス・タスク・タスクモード・実行 ID・開始時刻で実行結果をフィルタできて、絞り込んだ結果の成功数・失敗数、タスクごとの累積転送データ・ファイル数もまとめて表示されるよ。失敗した実行はそのままエラー詳細を確認できるから、トラブルシューティングもしやすくなったの。設定済みのタスク・ロケーション・エージェントの数、リアルタイムの総転送速度も一目で分かるよ。大規模な移行や、多数のタスクを走らせる定期転送を運用している人には特に嬉しいアップデートだね。\n\n## 深く潜ってみよう\n\nダッシュボードは AWS DataSync コンソールからそのまま見られるよ。対応リージョンは、AWS DataSync が使えるすべての商用リージョンと AWS GovCloud(US)で、追加費用はかからないみたい。\n\n## まとめ\n\n- AWS DataSync のコンソールにモニタリングダッシュボードが追加された\n- ステータス・転送速度・実行時間・転送済みデータ量を一元的に確認できる\n- ステータスやタスクなどでフィルタして、成功・失敗数や累積転送量を集計表示できる\n- 追加費用なしで、大規模移行や多数タスクの定期転送を運用してる人にオススメ！",
+  "title_en": "Goodbye manual checks! AWS DataSync gets a monitoring dashboard!",
+  "summary_en": "AWS announced a new monitoring dashboard in the AWS DataSync console that gives you a single view of data transfers across your entire account.",
+  "body_md_en": "Hey everyone, it's me! Great news if you're managing a lot of data transfers!\n\n## What was announced?\n\nAccording to AWS What's New, the AWS DataSync console now includes a monitoring dashboard that gives you visibility into your data transfers across your entire account. You can see each task execution's status, transfer rates, duration, and the total data and files transferred, all in one place.\n\n## The story so far\n\nPreviously, monitoring multiple transfers meant reviewing each execution individually or building a custom Amazon CloudWatch dashboard yourself. That got harder to manage as the number of transfer tasks grew.\n\n## What changes\n\nThe new dashboard lets you filter executions by status, task, task mode, execution ID, or start time. It then summarizes the filtered results — successful and failed execution counts, plus cumulative data and files transferred, grouped by task. You can select a failed execution to view its errors directly for troubleshooting. It also shows counts of your configured tasks, locations, and agents, along with real-time total transfer rates — especially handy for large migrations and recurring transfers running many tasks at once.\n\n## Dive Deep\n\nThe dashboard is available directly in the AWS DataSync console, at no additional cost, in all commercial AWS Regions and AWS GovCloud (US) Regions where DataSync is available.\n\n## Wrap-up\n\n- AWS DataSync console now has a monitoring dashboard\n- See status, transfer rates, duration, and totals across all your transfers in one place\n- Filter by status, task, task mode, execution ID, or start time, with summarized results\n- Free to use — great for large migrations and recurring transfers running many tasks!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/datasync-monitoring-dashboard",
+  "source_name": "AWS What's New",
+  "og_title": "AWS DataSync launches a monitoring dashboard for tracking task executions across your account",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "devops"
+  ],
+  "published_at": "2026-09-25T15:24:00+00:00"
+}

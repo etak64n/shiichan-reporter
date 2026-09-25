@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-09-25-release-flows-workers-metrics",
+  "title": "まさかここまで見える！Workers Metrics にリリースの軌跡が浮かび上がったよ！",
+  "summary": "Cloudflare の Changelog で、Workers Metrics のチャートに、選択した期間内の全リリースと段階的デプロイメントの進行が表示されるようになったと発表されたよ。",
+  "body_md": "おつかれさま、しぃちゃんだよ！ Workers を運用してる人にはかなり嬉しいアップデートが来たよ！\n\n## なにが発表されたの？\n\nCloudflare の Changelog によると、Workers Metrics のチャートに、選択した時間範囲内の全リリースが、段階的デプロイメント(Gradual Deployments)の進行も含めて表示されるようになったよ。メモリ・CPU 時間・エラー・レイテンシーの変化と、そのとき動いていたコードを重ねて見られるようになったの。\n\n## 今までどうだったの？\n\nこれまでは、メトリクスのグラフとリリースのタイミングを結びつけて確認するのが難しくて、「あの変化、どのデプロイが原因だったんだっけ？」を追うのに一手間かかっていたみたい。\n\n## これで何が変わるの？\n\n段階的デプロイメントは、チャート上でトラフィックが新バージョンに移るほど陰影が濃くなる、ひと続きのロールアウトとして表示されるようになったよ。ロールアウトにホバーすると、前バージョンと新バージョン・ロールアウト期間・各ステップで設定されていたトラフィック割合が見られるの。100% トラフィックを送る直接デプロイメントは個別マーカーとして表示され、近くにある直接デプロイメントはまとめて表示することで見やすくしてあるよ。これで、次のようなことがやりやすくなったの。\n\n- 回帰の発生タイミングを特定する — エラー・レイテンシー・CPU 時間・ウォールタイムが変化したときのトラフィック割合を確認できる\n- ロールアウトの段階を比較する — トラフィックが移るにつれてメトリクスがどう変化したかを確認できる\n- ロールバックを確認する — ロールバックは別のリリースイベントとして表示されるので、ロールバック後にメトリクスが回復したか確認できる\n\n## 深く潜ってみよう\n\nアップロードのみ、またはトラフィック 0% のまま設定されているバージョンは、メトリクスチャートには表示されないよ。リリースのアノテーションは、各 Worker の Metrics タブから確認できるみたい。\n\n## まとめ\n\n- Workers Metrics のチャートに全リリースと段階的デプロイメントの進行が表示されるようになった\n- ホバーで前後バージョン・ロールアウト期間・トラフィック割合を確認できる\n- 回帰の特定・ロールアウト比較・ロールバック確認がやりやすくなった\n- 段階的デプロイメントを使って Workers を運用している人には地味だけどかなり刺さるアップデート！",
+  "title_en": "Surprise! Workers Metrics now reveals the full trail of every release!",
+  "summary_en": "Cloudflare's Changelog announced that Workers Metrics charts now show every release in the selected time range, including the full progression of gradual deployments.",
+  "body_md_en": "Hey, it's me! There's a really nice update for anyone running Workers.\n\n## What was announced?\n\nAccording to Cloudflare's Changelog, Workers Metrics charts now show every release within the selected time range, including the full progression of gradual deployments. You can now line up changes in memory, CPU time, errors, or latency with the exact code that was serving traffic at the time.\n\n## The story so far\n\nPreviously, it was hard to connect a change on the metrics graph with the release that caused it — figuring out \"which deployment caused that spike?\" took extra digging.\n\n## What changes\n\nA gradual deployment now shows up as a single rollout on the chart, with shading that deepens as more traffic shifts to the new version. Hovering over a rollout shows the previous and new versions, the rollout duration, and the traffic percentage configured at each step. Direct deployments that send 100% of traffic to one version still show up as individual markers, and nearby direct deployments are grouped to cut down on visual clutter. This makes it easier to:\n\n- Find when a regression started — see what traffic percentage was configured when errors, latency, CPU time, or wall time changed\n- Compare rollout stages — check whether a metric changed as more traffic moved to the new version\n- Confirm rollbacks — rollbacks appear as separate release events, so you can check whether metrics recovered afterward\n\n## Dive Deep\n\nVersions that are only uploaded, or only configured at 0% traffic, don't appear on the metrics charts. You can view these release annotations from the Metrics tab for your Worker.\n\n## Wrap-up\n\n- Workers Metrics charts now show every release, including gradual deployment progress\n- Hover to see previous/new versions, rollout duration, and traffic percentage\n- Makes it easier to spot regressions, compare rollout stages, and confirm rollbacks\n- A quietly great update if you run gradual deployments on Workers!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-09-25-release-flows-workers-metrics/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Workers - See every release and gradual deployment on Workers Metrics charts",
+  "tags": [
+    "cloudflare",
+    "serverless",
+    "devops"
+  ],
+  "published_at": "2026-09-25T18:42:59+00:00"
+}

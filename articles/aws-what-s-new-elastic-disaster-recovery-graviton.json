@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-elastic-disaster-recovery-graviton",
+  "title": "AWS Elastic Disaster Recovery が Graviton ワークロードも守れるようになったよ！",
+  "summary": "AWS Elastic Disaster Recovery が、AWS Graviton ベース(arm64)のソースサーバーに対応して、x86 と同じ使い勝手でディザスタリカバリーができるようになったと発表されたよ。",
+  "body_md": "こんにちは、しぃちゃんだよ！ Graviton を使ってる人に朗報なニュースが来たよ！\n\n## なにが発表されたの？\n\nAWS の What's New によると、AWS Elastic Disaster Recovery(AWS DRS)が、AWS Graviton ベース(arm64)のソースサーバーのディザスタリカバリーに対応したよ。これまで x86 ワークロードで使っていたのと同じ、シンプルで信頼できる DRS の体験のまま、Graviton ワークロードも保護・復旧できるようになったの。\n\n## なぜ重要なの？\n\nGraviton は価格性能比の良さから採用がどんどん進んでいるプロセッサーだけど、環境の他の部分と同じレベルのディザスタリカバリー対応が求められるようになってきていたんだって。今回の対応で、その課題に応えた形だね。\n\n## これで何が変わるの？\n\nDRS が arm64 のソースサーバーを自動で検出して、Graviton インスタンスへの復旧を実行してくれるようになったよ。復旧の流れは他のサーバーとまったく同じで、追加の設定は不要。ワークロードのアーキテクチャ(arm64)がエンドツーエンドでそのまま保持されるのもポイントだよ。\n\n## 深く潜ってみよう\n\n対応リージョンは、AWS DRS が提供されているすべての AWS リージョンで、追加コストはかからないよ。詳しくは AWS Elastic Disaster Recovery のユーザーガイドを見てみてね。\n\n## まとめ\n\n- AWS DRS が Graviton ベース(arm64)のソースサーバーに対応した\n- arm64 サーバーを自動検出して、Graviton インスタンスへ復旧してくれる\n- 追加設定なし・追加コストなしで、x86 と同じ体験のまま使える\n- Graviton にワークロードを移行済み、または移行を検討している人にオススメ！",
+  "title_en": "AWS Elastic Disaster Recovery can now protect your Graviton workloads too!",
+  "summary_en": "AWS Elastic Disaster Recovery now supports AWS Graviton-based (arm64) source servers, giving Graviton workloads the same disaster recovery experience as x86 workloads.",
+  "body_md_en": "Hi there, it's me! Great news if you're running workloads on Graviton!\n\n## What was announced?\n\nAccording to AWS What's New, AWS Elastic Disaster Recovery (AWS DRS) now supports disaster recovery for AWS Graviton-based (arm64) source servers. You can now protect and recover your Graviton workloads with the same simple, reliable DRS experience you already use for x86 workloads.\n\n## Why it matters\n\nMore workloads are moving to Graviton for its price-performance benefits, and those workloads need the same disaster recovery coverage as the rest of your environment. This update closes that gap.\n\n## What changes\n\nDRS now automatically detects arm64 source servers and recovers them onto Graviton instances. Recovery works exactly the same way it does for your other servers, with nothing extra to configure, and your workload's architecture is preserved end to end.\n\n## Dive Deep\n\nThis capability is available in all AWS Regions where AWS DRS is offered, at no additional cost. Check the AWS Elastic Disaster Recovery User Guide for more details.\n\n## Wrap-up\n\n- AWS DRS now supports Graviton-based (arm64) source servers\n- It auto-detects arm64 servers and recovers them onto Graviton instances\n- No extra configuration and no additional cost — same experience as x86\n- Great if you've already moved workloads to Graviton or are planning to!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/elastic-disaster-recovery-graviton/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Elastic Disaster Recovery now supports AWS Graviton-based source servers",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-09-25T08:00:00+00:00"
+}
