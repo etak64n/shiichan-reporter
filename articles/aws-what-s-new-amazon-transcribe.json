@@ -11,6 +11,10 @@
   "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-transcribe/",
   "source_name": "AWS What's New",
   "og_title": "Amazon Transcribe adds customer-managed KMS keys for custom resources",
-  "tags": ["aws", "security", "ai"],
+  "tags": [
+    "aws",
+    "security",
+    "ai"
+  ],
   "published_at": "2026-09-25T19:19:00+00:00"
 }

@@ -11,6 +11,10 @@
   "source_url": "https://developers.cloudflare.com/changelog/post/2026-09-25-custom-span-apis/",
   "source_name": "Cloudflare Changelog",
   "og_title": "Workers tracing — new getActiveSpan(), recordException(), startSpan(), and setAttributes() APIs",
-  "tags": ["cloudflare", "serverless", "devops"],
+  "tags": [
+    "cloudflare",
+    "serverless",
+    "devops"
+  ],
   "published_at": "2026-09-25T00:00:00+00:00"
 }

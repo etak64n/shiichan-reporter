@@ -11,6 +11,10 @@
   "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/aws-sts-vpc-oidc/",
   "source_name": "AWS What's New",
   "og_title": "AWS IAM outbound identity federation now supports interface VPC endpoints for OIDC discovery",
-  "tags": ["aws", "security", "infrastructure"],
+  "tags": [
+    "aws",
+    "security",
+    "infrastructure"
+  ],
   "published_at": "2026-09-25T17:54:00+00:00"
 }

@@ -11,6 +11,10 @@
   "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/aws-end-user-messaging-voice-calling-whatsapp",
   "source_name": "AWS What's New",
   "og_title": "AWS End User Messaging now supports voice calling on WhatsApp",
-  "tags": ["aws", "business", "infrastructure"],
+  "tags": [
+    "aws",
+    "business",
+    "infrastructure"
+  ],
   "published_at": "2026-09-25T07:00:00+00:00"
 }

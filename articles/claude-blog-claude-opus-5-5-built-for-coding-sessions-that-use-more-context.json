@@ -11,6 +11,10 @@
   "source_url": "https://claude.com/blog/claude-opus-5-5-built-for-coding-sessions-that-use-more-context",
   "source_name": "Claude Blog",
   "og_title": "Coding sessions are longer and use more context. Claude Opus 5.5 is built with that in mind.",
-  "tags": ["anthropic", "ai", "devops"],
+  "tags": [
+    "anthropic",
+    "ai",
+    "devops"
+  ],
   "published_at": "2026-09-25T16:36:39.698Z"
 }

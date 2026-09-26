@@ -11,6 +11,11 @@
   "source_url": "https://claude.com/blog/claude-tag-now-supports-personal-connectors-in-channels",
   "source_name": "Claude Blog",
   "og_title": "Claude Tag now supports personal connectors in channels",
-  "tags": ["anthropic", "ai", "business", "security"],
+  "tags": [
+    "anthropic",
+    "ai",
+    "business",
+    "security"
+  ],
   "published_at": "2026-09-25T16:36:39.698Z"
 }

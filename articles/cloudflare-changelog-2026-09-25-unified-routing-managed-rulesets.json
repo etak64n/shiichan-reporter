@@ -11,6 +11,10 @@
   "source_url": "https://developers.cloudflare.com/changelog/post/2026-09-25-unified-routing-managed-rulesets/",
   "source_name": "Cloudflare Changelog",
   "og_title": "Cloudflare Network Firewall, Magic Transit, Cloudflare WAN - Managed Rulesets supported in Unified Routing",
-  "tags": ["cloudflare", "security", "infrastructure"],
+  "tags": [
+    "cloudflare",
+    "security",
+    "infrastructure"
+  ],
   "published_at": "2026-09-25T00:00:00+00:00"
 }
