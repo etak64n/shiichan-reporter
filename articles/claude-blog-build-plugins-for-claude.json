@@ -1,0 +1,20 @@
+{
+  "slug": "claude-blog-build-plugins-for-claude",
+  "title": "Claude のプラグイン、ディレクトリ申請ポータルがオープン！MCP と Skills を届けよう",
+  "summary": "Anthropic が、有料プランの開発者が Claude のディレクトリにプラグインを公開できる申請ポータルを開いたよ。MCP コネクターだけでも、MCP と Skills を組み合わせたバンドルでも申請できるみたい。",
+  "body_md": "やっほー、しぃちゃんだよ！今日は Claude を拡張したい開発者向けのお知らせだよ。\n\n## なにが発表されたの？\n\nAnthropic の Claude Blog で、「Build plugins for Claude」という記事が出たよ。Claude の有料プランの開発者が、プラグインを公開するための、新しいディレクトリ申請ポータルが開いたという内容なの。\n\n## なぜ重要なの？\n\nこの取り組みは、Claude の拡張の仕組みをまとめて、プラグインを第三者向けの主な拡張方法として位置づけるものだよ。\n\n## これで何が変わるの？\n\n申請できるものは 2 種類あるよ。\n\n- 1 つのリモートサーバーを指す、MCP コネクター\n- GitHub でホストされた、MCP サーバーと Skills を組み合わせたプラグインバンドル\n\nすでにディレクトリにある Skills やコネクターは、変更しなくてよく、あとからプラグインに変えられるよ。\n\n## 深く潜ってみよう\n\n申請から公開までの流れと、公開後の機能はこれだよ。\n\n- 申請すると、自動で検証と安全性のスキャンが走る\n- ステータスとフィードバックを、リアルタイムで確認できる\n- 承認されたあとの公開タイミングは、開発者が決められる\n- 公開後は、バージョンや利用面ごとのインストール数、掲載ページの閲覧数、流入につながった検索クエリなどを見られる\n\n技術面では、MCP 2.0 の仕様に対応していて、2 つの拡張が使えるよ。\n\n- MCP Apps: チャットの中でインタラクティブな UI を出せる\n- Enterprise Managed Auth: 企業向けに、ゼロタッチの OAuth を実現する\n\n始めるには、「how to build a plugin」のドキュメントを読んで、申請ポータルから出してね。\n\n## まとめ\n\n- 有料プランの開発者向けに、プラグインのディレクトリ申請ポータルがオープン\n- MCP コネクター単体か、MCP と Skills のバンドルを申請できる\n- 自動の検証と安全性スキャン、公開後の分析つき\n- MCP 2.0 と、MCP Apps・Enterprise Managed Auth に対応\n\nClaude 向けのツールや連携を作っている開発者に、刺さる内容だよ！",
+  "title_en": "Build plugins for Claude: the directory submission portal is now open",
+  "summary_en": "Anthropic opened a directory submission portal where developers on paid Claude plans can publish plugins, either a single MCP connector or a bundle of MCP servers and skills.",
+  "body_md_en": "Hi everyone, Shii-chan here! Today's news is for developers who want to extend Claude.\n\n## What was announced?\n\nThe Claude Blog published \"Build plugins for Claude.\" It announces a new directory submission portal where developers on paid Claude plans can publish plugins.\n\n## Why it matters\n\nThis effort consolidates Claude's extension ecosystem and positions plugins as the primary way for third parties to extend Claude.\n\n## What changes\n\nThere are two kinds of submissions:\n\n- A single MCP connector that points to a remote server\n- A plugin bundle that combines MCP servers and skills, hosted on GitHub\n\nSkills and connectors already in the directory don't need any changes, and can be converted to plugins later.\n\n## Dive Deep\n\nHere is the flow from submission to publishing, and what you get afterward:\n\n- Submissions are automatically validated and scanned for safety\n- You can track status and feedback in real time\n- After approval, you decide when to publish\n- After launch, you can see installs by product surface and version, listing views, and the search queries driving traffic to your plugin\n\nOn the technical side, it supports the MCP 2.0 specification with two extensions:\n\n- MCP Apps: interactive UI inside chat\n- Enterprise Managed Auth: zero-touch OAuth for enterprise deployments\n\nTo get started, read the documentation on how to build a plugin and submit through the portal.\n\n## Wrap-up\n\n- A plugin directory submission portal is open for developers on paid plans\n- Submit a single MCP connector or a bundle of MCP servers and skills\n- Includes automatic validation, safety scanning, and post-launch analytics\n- Supports MCP 2.0, MCP Apps, and Enterprise Managed Auth\n\nThis is for developers building tools and integrations for Claude!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://claude.com/blog/build-plugins-for-claude",
+  "source_name": "Claude Blog",
+  "og_title": "Build plugins for Claude",
+  "tags": [
+    "anthropic",
+    "ai",
+    "devops"
+  ],
+  "published_at": "2026-09-28T17:59:37.748Z"
+}

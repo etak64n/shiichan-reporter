@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-09-28-webmcp-api",
+  "title": "Browser Run の WebMCP が Kitesurf でも使えるように！API は document.modelContext に統一",
+  "summary": "Cloudflare の Browser Run で、WebMCP が Lab セッションに加えて Kitesurf セッションでも動くようになったよ。どちらも WebMCP Community Group ドラフトの document.modelContext API を使う形にそろったみたい。",
+  "body_md": "やっほー、しぃちゃんだよ！今日は AI エージェントとブラウザの話で、ちょっとわくわくしてるの。\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Browser Run の WebMCP 対応が更新されたよ！\n\nWebMCP は、ページ側が「このページでできる操作」をツールとしてエージェントに見せるための仕組みなんだ。今回は、これまで Lab セッションで使えていた WebMCP が、Kitesurf セッションでも使えるようになったよ。\n\n## 今までどうだったの？\n\n今までは Lab セッションだけが WebMCP に対応していて、しかも `navigator.modelContextTesting` という試験用の API を使っていたの。今回の更新で、その API は Lab セッションから外れたよ。\n\n## これで何が変わるの？\n\n- Kitesurf でも Lab でも、同じ `document.modelContext` API でページのツールを扱える\n- 使う API が WebMCP Community Group のドラフトに沿った形にそろう\n\n注意したいのは、Lab セッションで `navigator.modelContextTesting` を使っていたコードは、もう動かないということ。`document.modelContext` に切り替える必要があるよ。\n\n## 深く潜ってみよう\n\nページのツールを一覧表示して実行する方法は、使う人ごとに 3 通りあるよ。\n\n- Chrome DevTools: Lab セッションのライブビュー、または Kitesurf のプレイグラウンドで、Application > WebMCP パネルを使う\n- AI エージェント: Chrome DevTools MCP を `--category-experimental-webmcp` フラグ付きで起動すると、`list_webmcp_tools` と `execute_webmcp_tool` のツールが追加される\n- CDP クライアント: `WebMCP` CDP ドメインを使う\n\nエージェント用のフラグはこれだよ。\n\n```\n--category-experimental-webmcp\n```\n\n## まとめ\n\n- WebMCP が Lab に加えて Kitesurf セッションでも使える\n- 両方とも `document.modelContext` API に統一された\n- Lab の `navigator.modelContextTesting` は廃止されたので移行が必要\n- DevTools・エージェント・CDP の 3 通りでツールを操作できる\n\nブラウザ操作エージェントを Cloudflare 上で作っている人に、ぴったりの更新だよ！",
+  "title_en": "WebMCP now works in Kitesurf on Browser Run, unified on document.modelContext",
+  "summary_en": "Cloudflare's Browser Run now supports WebMCP in Kitesurf sessions as well as Lab sessions. Both use the document.modelContext API from the WebMCP Community Group draft.",
+  "body_md_en": "Hi everyone, Shii-chan here! Today's news is about AI agents and browsers, and I'm pretty excited.\n\n## What was announced?\n\nIn the Cloudflare Changelog, Browser Run's WebMCP support got an update!\n\nWebMCP lets a page expose the actions it supports as tools that agents can use. Until now it worked in Lab sessions only. Now it works in Kitesurf sessions too.\n\n## The story so far\n\nOnly Lab sessions supported WebMCP, and they used an experimental API called `navigator.modelContextTesting`. With this update, that API is no longer exposed in Lab sessions.\n\n## What changes\n\n- Kitesurf and Lab both use the same `document.modelContext` API for page tools\n- The API follows the WebMCP Community Group draft\n\nOne thing to watch: code that relied on `navigator.modelContextTesting` in Lab sessions will stop working, so you'll need to switch to `document.modelContext`.\n\n## Dive Deep\n\nThere are three ways to list and run page tools, depending on who you are:\n\n- Chrome DevTools: use the Application > WebMCP panel in the live view of a Lab session, or in the Kitesurf playground\n- AI agents: start Chrome DevTools MCP with the `--category-experimental-webmcp` flag to add the `list_webmcp_tools` and `execute_webmcp_tool` tools\n- CDP clients: use the `WebMCP` CDP domain\n\nHere is the flag for agents:\n\n```\n--category-experimental-webmcp\n```\n\n## Wrap-up\n\n- WebMCP works in Kitesurf sessions as well as Lab sessions\n- Both are unified on the `document.modelContext` API\n- `navigator.modelContextTesting` is gone from Lab, so migrate\n- You can work with tools via DevTools, agents, or CDP\n\nThis is a great fit for anyone building browser-driving agents on Cloudflare!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-09-28-webmcp-api/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Browser Run - Browser Run adds WebMCP to Kitesurf and moves to document.modelContext",
+  "tags": [
+    "cloudflare",
+    "ai",
+    "web"
+  ],
+  "published_at": "2026-09-28T22:02:23+00:00"
+}

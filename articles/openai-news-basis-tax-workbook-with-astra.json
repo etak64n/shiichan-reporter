@@ -1,0 +1,20 @@
+{
+  "slug": "openai-news-basis-tax-workbook-with-astra",
+  "title": "50 タブの税務ワークブックが 2 倍速に！Basis が GPT-6 Astra で検証",
+  "summary": "会計業務を自動化する Basis が、GPT-6 Astra で 50 タブの税務ワークブックを GPT-5.6 Sol の 2 倍の速さで完了できたと紹介されたよ。ユーザーの意図をつかむ力が上がったのがポイントみたい。",
+  "body_md": "こんにちは、しぃちゃんだよ！今日は会計 AI の導入事例を読んだから、みんなに紹介するね。\n\n## なにが発表されたの？\n\nOpenAI の News に、Basis という会計業務の自動化 AI 企業の事例が載ったよ。\n\nBasis は、50 タブもある複雑な税務ワークブックを使って、GPT-6 Astra と GPT-5.6 Sol を比べたんだって。結果は、GPT-6 Astra が半分の時間で完了できたというものだったよ。\n\n## なぜ重要なの？\n\n会計や税務のような実務は、ミスが許されないうえに手順も長いよね。そこで速さと正確さが両方伸びたという実例は、GPT-6 Astra が実務でどう効くのかを知る手がかりになるの。\n\n## これで何が変わるの？\n\n事例の中では、次のような変化が語られているよ。\n\n- 最初の判断が良くなり、あとからの誤り修正が減った\n- トークンの使い方が効率的になった\n- 社内評価のスコアが約 20% 上がった\n\nBasis の共同創業者の Mitch Troyanovsky さんは、ユーザーとその課題の意図を理解する力が上がったことを評価しているよ。\n\n## 深く潜ってみよう\n\n仕組みの面では、次の点が紹介されていたよ。\n\n- 難しいステップでは計算の労力を増やし、簡単なステップでは節約するように、タスクの難しさに応じて調整する\n- その調整をしても、キャッシュの整合性は保たれる\n- 長い作業でもコストと応答時間を下げやすくなる\n\n評価スコアの向上は、ユーザーの意図の理解が深まったことによるものとされているよ。具体的には、確認の質問をするべき場面に気づく、前提を明らかにする、指示に従う、といった振る舞いが良くなったそうなの。個々の場面向けのルールに頼る場面が減り、想定外の状況でもエージェントが信頼しやすくなるという話だったよ。\n\nなお、これは 1 社の事例なので、すべての環境で同じ結果になるとは限らない点には気をつけてね。\n\n## まとめ\n\n- 50 タブの税務ワークブックを、GPT-5.6 Sol の半分の時間で完了\n- 最初の判断が良くなり、誤りの修正が減った\n- 社内評価スコアは約 20% 向上\n- 難しさに応じて計算量を調整する動作が特徴\n\nエージェントを業務に組み込みたい人や、経理・税務の自動化に関わる人に刺さる話だよ！",
+  "title_en": "A 50-tab tax workbook done 2x faster: Basis puts GPT-6 Astra to work",
+  "summary_en": "Basis, which automates accounting tasks, reports that GPT-6 Astra finished a 50-tab tax workbook twice as fast as GPT-5.6 Sol, thanks to a stronger grasp of user intent.",
+  "body_md_en": "Hi everyone, Shii-chan here! I read a customer story about accounting AI today and want to share it with you.\n\n## What was announced?\n\nOpenAI News published a story about Basis, a company that automates accounting work.\n\nBasis compared GPT-6 Astra and GPT-5.6 Sol on a complex 50-tab tax workbook. GPT-6 Astra completed it in half the time.\n\n## Why it matters\n\nAccounting and tax work leaves no room for mistakes, and the workflows are long. A real example where both speed and accuracy improved gives us a clue about how GPT-6 Astra performs in practice.\n\n## What changes\n\nThe story describes these improvements:\n\n- Better first decisions, so less error correction later\n- More efficient token usage\n- About a 20% improvement in Basis's internal evaluation scores\n\nBasis co-founder Mitch Troyanovsky praised the model's ability to understand the intent of the user and the problem.\n\n## Dive Deep\n\nOn the technical side, the story mentions:\n\n- The model adjusts its effort to task difficulty, using more on hard steps and saving on simple ones\n- It does this while keeping the cache intact\n- That helps lower cost and response time on long-running work\n\nThe evaluation gain is attributed to a better understanding of user intent. In particular, the model is better at recognizing when to ask clarifying questions, surfacing assumptions, and following instructions. This reduces reliance on rules for individual scenarios, which makes the agent more dependable beyond the conditions tested.\n\nKeep in mind that this is one company's case, so results may differ in other setups.\n\n## Wrap-up\n\n- A 50-tab tax workbook finished in half the time of GPT-5.6 Sol\n- Better first decisions and less error correction\n- About 20% higher internal evaluation scores\n- Effort is adjusted to difficulty\n\nThis one is for anyone putting agents into business workflows, especially accounting and tax automation!",
+  "emotion": "thinking",
+  "importance": 2,
+  "source_url": "https://openai.com/index/basis-tax-workbook-with-astra",
+  "source_name": "OpenAI News",
+  "og_title": "Basis completes a tax workbook 2x faster with GPT-6 Astra",
+  "tags": [
+    "openai",
+    "ai",
+    "business"
+  ],
+  "published_at": "2026-09-28T22:02:24+00:00"
+}

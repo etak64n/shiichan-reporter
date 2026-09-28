@@ -1,0 +1,20 @@
+{
+  "slug": "openai-news-lenfest-ai-collaborative-expansion",
+  "title": "OpenAI が Lenfest AI Collaborative に 500 万ドルの追加支援！報道現場に AI エンジニアを",
+  "summary": "OpenAI が Lenfest AI Collaborative and Fellowship Program の拡大に向けて、500 万ドルの資金と、最大 500 万ドル分のソフトウェアクレジット・エンジニアリング支援を出すと発表したよ。",
+  "body_md": "おつかれさま、しぃちゃんだよ！今日は技術というより、AI と報道の取り組みのニュースだよ。\n\n## なにが発表されたの？\n\nOpenAI の News で、Lenfest Institute for Journalism が AI Collaborative and Fellowship Program を拡大すると発表されたよ。\n\nOpenAI の支援は次の内容だよ。\n\n- 500 万ドルの新しい助成金\n- 最大 500 万ドル分のソフトウェアクレジットとエンジニアリング支援\n\nこのプログラムは、フルタイムの AI エンジニアをニュース組織に送り込んで、イノベーションと持続可能なビジネスを後押しするもので、米国の報道分野で最大規模の AI フェローシップだそうだよ。\n\n## なぜ重要なの？\n\nプログラムは 2024 年に、米国の主要ニュース組織 11 社で始まった 2 年間のパイロットだったの。それが成功と見なされて、さらに多くのニュース組織へ広げることになったよ。OpenAI は今回、支援額を倍にしたとされているよ。\n\n## これで何が変わるの？\n\n今後は、フェローの配置先を増やしつつ、再利用できるツール・フレームワーク・導入ガイドを作っていく予定だよ。直接参加していない数百のニュース組織にも役立てることが狙いみたい。\n\n## 深く潜ってみよう\n\nこれまでに参加組織が作った実用的なものは、こんなものがあるよ。\n\n- Philadelphia Inquirer: 過去の報道を検索する「Dewey」と、地域の記事のネタを監視する「Scrape」\n- Chicago Public Media: AI を使ったスペイン語翻訳と、音声の文字起こしのワークフロー\n- ほかの組織: 広告、寄付者のモデリング、読者とのエンゲージメント、運用ツールなど\n\n得られた教訓として、Lenfest の CEO の Jim Friedlich さんは、責任ある AI 導入は技術よりも信頼の問題だと語っているよ。うまくいったプロジェクトは、技術を当てる前に組織の課題を見つけていたこと、ニュースルーム間の知見共有が革新を早めたことも挙げられているの。\n\n## まとめ\n\n- OpenAI が 500 万ドルの助成金と、最大 500 万ドル分のクレジット・エンジニアリング支援を提供\n- 2024 年開始の 11 社でのパイロットが、さらに広がる\n- 参加組織は検索・翻訳・文字起こしなどのツールを開発\n- 再利用できるツールやガイドを整備していく\n\n報道や AI の社会実装に関心がある人に届いてほしい話だよ！",
+  "title_en": "OpenAI adds $5M to the Lenfest AI Collaborative, putting AI engineers in newsrooms",
+  "summary_en": "OpenAI is expanding the Lenfest AI Collaborative and Fellowship Program with $5 million in funding and up to $5 million in software credits and engineering support.",
+  "body_md_en": "Hi everyone, Shii-chan here! Today's news is less about technology and more about AI and journalism.\n\n## What was announced?\n\nOpenAI News reports that the Lenfest Institute for Journalism is expanding its AI Collaborative and Fellowship Program.\n\nOpenAI's support includes:\n\n- A new $5 million grant\n- Up to $5 million in software credits and engineering support\n\nThe program embeds full-time AI engineers in news organizations to drive innovation and sustainable business practices, and it's described as the largest AI fellowship initiative in American journalism.\n\n## Why it matters\n\nThe program started in 2024 as a two-year pilot with 11 major U.S. news organizations. It went well enough to justify expanding to more of them, and OpenAI is described as doubling its commitment.\n\n## What changes\n\nThe program will add fellowship placements and build reusable tools, frameworks, and implementation guides. The goal is to help hundreds of news organizations beyond the direct participants.\n\n## Dive Deep\n\nHere is some of what participating organizations have built:\n\n- Philadelphia Inquirer: \"Dewey\" for searching archived reporting, and \"Scrape\" for monitoring regional story leads\n- Chicago Public Media: AI-assisted Spanish-language translation and audio transcription workflows\n- Others: tools for advertising, donor modeling, audience engagement, and operations\n\nAmong the lessons, Lenfest CEO Jim Friedlich said that responsible AI adoption is less about the technology and more about trust. Successful projects identified organizational problems before applying technology, and sharing knowledge across newsrooms sped up innovation.\n\n## Wrap-up\n\n- OpenAI provides a $5 million grant plus up to $5 million in credits and engineering support\n- The pilot that began in 2024 with 11 organizations is expanding\n- Participants built tools for search, translation, transcription, and more\n- Reusable tools and guides are on the way\n\nThis one is for anyone interested in journalism and real-world AI adoption!",
+  "emotion": "happy",
+  "importance": 1,
+  "source_url": "https://openai.com/index/lenfest-ai-collaborative-expansion",
+  "source_name": "OpenAI News",
+  "og_title": "The Lenfest Institute grows landmark program with expanded OpenAI support",
+  "tags": [
+    "openai",
+    "ai",
+    "business"
+  ],
+  "published_at": "2026-09-28T07:00:00+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-corretto-sept-2026-updates",
+  "title": "Amazon Corretto 2026 年 9 月パッチ公開！25・21・17・11 が更新、tzdata 2026d 入り",
+  "summary": "AWS が Amazon Corretto の 2026 年 9 月のパッチアップデートを公開したよ。Corretto 25、21、17、11 が更新されて、最新の tzdata 2026d が含まれているみたい。",
+  "body_md": "こんにちは、しぃちゃんだよ！今日は Java を使っている人向けの、定期パッチのお知らせだよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Corretto の 2026 年 9 月のパッチアップデートが紹介されたよ。2026 年 9 月 25 日に発表されたもので、Corretto は OpenJDK の、無料でマルチプラットフォームの、本番向けディストリビューションなんだって。\n\n## これで何が変わるの？\n\n更新されたのは、LTS とフィーチャーリリースの次のバージョンだよ。\n\n- Corretto 25.0.4.10.1\n- Corretto 21.0.12.11.1\n- Corretto 17.0.20.12.1\n- Corretto 11.0.32.12.1\n\nこのパッチには、最新の tzdata 2026d の更新が含まれているよ。\n\n## 深く潜ってみよう\n\n入手方法は 2 つあるよ。\n\n- Corretto のホームページからダウンロードする。Corretto 27、25、21、17、11、8 が用意されている\n- Linux では、Corretto の Apt、Yum、Apk のリポジトリを設定して更新を受け取る\n\n原文に書かれていたのはここまでで、個々のバージョンの修正内容の詳細は載っていなかったよ。詳しい変更点が気になる人は、リリースノートを確認してね。\n\n## まとめ\n\n- 2026 年 9 月のパッチで Corretto 25、21、17、11 が更新\n- tzdata 2026d を含む\n- ダウンロードと、Apt・Yum・Apk のリポジトリの両方で入手できる\n\nJava の本番環境を運用している人は、更新のタイミングをチェックしておいてね！",
+  "title_en": "Amazon Corretto September 2026 patch updates: 25, 21, 17, and 11 with tzdata 2026d",
+  "summary_en": "AWS released the September 2026 patch updates for Amazon Corretto. Corretto 25, 21, 17, and 11 are updated and include the latest tzdata 2026d.",
+  "body_md_en": "Hi everyone, Shii-chan here! Today's news is a regular patch update for people who use Java.\n\n## What was announced?\n\nAWS What's New covers the September 2026 patch updates for Amazon Corretto, announced on September 25, 2026. Corretto is a no-cost, multi-platform, production-ready distribution of OpenJDK.\n\n## What changes\n\nThese LTS and Feature Release versions are updated:\n\n- Corretto 25.0.4.10.1\n- Corretto 21.0.12.11.1\n- Corretto 17.0.20.12.1\n- Corretto 11.0.32.12.1\n\nThe patch includes the latest tzdata 2026d updates.\n\n## Dive Deep\n\nThere are two ways to get the updates:\n\n- Download from the Corretto home page, where Corretto 27, 25, 21, 17, 11, and 8 are available\n- On Linux, configure a Corretto Apt, Yum, or Apk repository to receive updates\n\nThat's all the announcement says. It doesn't list the fixes in each version, so check the release notes if you want the details.\n\n## Wrap-up\n\n- The September 2026 patch updates Corretto 25, 21, 17, and 11\n- It includes tzdata 2026d\n- You can get it by download or through Apt, Yum, and Apk repositories\n\nIf you run Java in production, keep an eye on when to update!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-corretto-sept-2026-updates/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Corretto September 2026 Patch Updates",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "devops"
+  ],
+  "published_at": "2026-09-28T14:00:00+00:00"
+}

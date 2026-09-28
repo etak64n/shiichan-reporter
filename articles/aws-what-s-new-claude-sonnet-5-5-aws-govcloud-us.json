@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-claude-sonnet-5-5-aws-govcloud-us",
+  "title": "GovCloud (US) でも Claude Sonnet 5.5 が使えるように！政府系ワークロードにも",
+  "summary": "AWS GovCloud (US) で Claude Sonnet 5.5 が利用できるようになったよ。コーディングとナレッジワークが強化された Sonnet で、Amazon Bedrock 経由で使えるみたい。",
+  "body_md": "みんな、しぃちゃんだよ！今日は前のニュースの続きで、GovCloud のお知らせだよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS GovCloud (US) が Claude Sonnet 5.5 に対応したと発表されたよ。Sonnet 5 から一段上がった、より賢く効率の良い Sonnet で、すでに Sonnet で開発しているチームが自然に乗り換えられるモデルだと紹介されているの。\n\n## なぜ重要なの？\n\nGovCloud (US) は、政府系などの規制の厳しい環境向けのリージョンだよね。そこでも最新の Sonnet が使えるようになったのが、今回のポイントなの。\n\n## これで何が変わるの？\n\n強くなったのは、この 2 つの分野だよ。\n\n- コーディング: 大きなコーディング戦略の一部として、範囲の決まったタスクをこなすのが得意。同じセッションで機能を作って直したり、出力を要件と照らして検証したりする\n- ナレッジワーク: 1 枚のまとめ資料、図、要約スライド、ドキュメントの編集、スプレッドシートの整理など、そのまま共有できる成果物を作る\n\n多くの作業でタスクあたりのコストが低く、速度も速いとされているよ。\n\n## 深く潜ってみよう\n\nGovCloud (US) では、Amazon Bedrock から使うよ。Bedrock は、データを AWS のインフラ内に保ちつつ、リージョンごとのデータ所在地を保てて、Guardrails や Knowledge Bases のような AWS マネージドの機能と、統合されたサービスから使えるの。\n\nなお、通常のリージョン向けの発表にあった Claude Platform on AWS は、こちらの発表には書かれていなかったよ。詳しくは、Amazon Bedrock のドキュメントのリージョン別提供状況を見てね。\n\n## まとめ\n\n- GovCloud (US) で Claude Sonnet 5.5 が利用可能に\n- コーディングとナレッジワークが強化され、コストと速度も改善\n- Amazon Bedrock 経由で、Guardrails や Knowledge Bases と一緒に使える\n\n規制の厳しい環境で Claude を使いたい人に、うれしいお知らせだよ！",
+  "title_en": "Claude Sonnet 5.5 is now available on AWS GovCloud (US)",
+  "summary_en": "AWS GovCloud (US) now offers Claude Sonnet 5.5, a smarter and more efficient Sonnet with stronger coding and knowledge work, available through Amazon Bedrock.",
+  "body_md_en": "Hi everyone, Shii-chan here! This is a follow-up to the last news, and it's about GovCloud.\n\n## What was announced?\n\nAWS What's New announced that AWS GovCloud (US) now offers Claude Sonnet 5.5. It's described as a smarter, more efficient Sonnet and a step up from Sonnet 5, a natural upgrade for teams already building on Sonnet.\n\n## Why it matters\n\nGovCloud (US) is for government and other highly regulated environments. The point of this news is that the latest Sonnet is now available there too.\n\n## What changes\n\nIt's stronger in two areas:\n\n- Coding: completing well-scoped tasks as part of a larger coding strategy, such as building and fixing features in the same session or verifying output against requirements\n- Knowledge work: producing ready-to-share output, from 1-pagers, diagrams, and summary slides to document edits and spreadsheet cleanup\n\nIt's described as costing less per task for most work at faster speed.\n\n## Dive Deep\n\nIn GovCloud (US), you use it through Amazon Bedrock. Bedrock keeps your data within AWS infrastructure with regional data residency and offers access through a unified service with AWS-managed features like Guardrails and Knowledge Bases.\n\nNote that Claude Platform on AWS, mentioned in the announcement for standard regions, isn't mentioned in this one. Check the regional availability in the Amazon Bedrock documentation for details.\n\n## Wrap-up\n\n- Claude Sonnet 5.5 is available in GovCloud (US)\n- Stronger coding and knowledge work, with better cost and speed\n- Use it through Amazon Bedrock with Guardrails and Knowledge Bases\n\nGood news for anyone who wants to use Claude in regulated environments!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/claude-sonnet-5-5-aws-govcloud-us/",
+  "source_name": "AWS What's New",
+  "og_title": "Claude Sonnet 5.5 now available on AWS GovCloud (US)",
+  "tags": [
+    "aws",
+    "ai",
+    "security"
+  ],
+  "published_at": "2026-09-28T15:00:00+00:00"
+}
