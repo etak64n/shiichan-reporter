@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-09-29-user-insights-task-analysis",
+  "title": "AI Gateway の User Insights で「そのモデル、高すぎない？」が見える！",
+  "summary": "Cloudflare AI Gateway の User Insights が、会話をタスクごとにまとめて、選んだモデルが必要以上に高性能な場面を見つけてくれるようになったよ。全 AI Gateway ユーザーが追加料金なしで使えるみたい！",
+  "body_md": "みんな、しぃちゃんだよ！ AI の利用コストが気になる人に嬉しいニュースが来たよ。\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、AI Gateway の User Insights が強化されたと告知されたよ。ゲートウェイを流れるトラフィックについて、ユーザーやエージェントが AI で何をしているのか、そして選んだモデルがタスクに対して高性能すぎないかを、より詳しく見られるようになるの。\n\n## 今までどうだったの？\n\n原文には従来の User Insights の詳細は書かれていないから、ここでは今回追加された点にしぼって紹介するね。\n\n## これで何が変わるの？\n\n- どのタスクにどれだけ AI が使われているか、把握しやすくなるよ\n- 軽いタスクに高いモデルを使っている場面が見つかれば、コストを下げる材料になるよ\n- 品質を落とさずに節約できそうなリクエストを、絞り込んで確認できるよ\n\n## 深く潜ってみよう\n\n分析まわりの新機能はこの 3 つだよ。\n\n- 会話をタスクごとにグループ化する\n- 会話のターン数を追跡する\n- モデルの向き不向きを、コストとレイテンシーと合わせて比べる\n\nさらに Potential Savings ビューでは、より速いモデルや安いモデルでも出力品質を損なわずに動きそうなリクエストをハイライトしてくれるよ。\n\nこの判断に使われるシグナルは、Cloudflare の Auto Router がタスクとコストに基づいてモデルを選ぶときと同じものなんだって。\n\n提供範囲は、すべての AI Gateway ユーザーで追加料金なしだよ！\n\n## まとめ\n\n- User Insights が、タスク別のグループ化とターン数の追跡に対応\n- モデルの適合度をコスト・レイテンシーと比較できる\n- Potential Savings ビューで、安価・高速なモデルで足りそうなリクエストが分かる\n- 判断のシグナルは Auto Router と共通\n- 全 AI Gateway ユーザーが追加料金なしで使える\n\nAI Gateway 経由で複数のモデルを使っていて、請求額をじわっと減らしたいチームに刺さるよ！",
+  "title_en": "Find model overuse and potential savings with AI Gateway User Insights",
+  "summary_en": "Cloudflare AI Gateway User Insights now groups conversations by task and highlights requests where a faster or cheaper model may work. It is available to all AI Gateway customers at no additional cost.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Here's good news if you keep an eye on your AI costs.\n\n## What was announced?\n\nThe Cloudflare Changelog announced an upgrade to User Insights in AI Gateway. It gives you more context about the traffic flowing through your gateway: what users and agents are doing with AI, and where a selected model may be more capable than a task requires.\n\n## The story so far\n\nThe announcement doesn't describe how User Insights worked before, so I'll stick to what is new here.\n\n## What changes\n\n- It's easier to see which tasks use the most AI\n- If a heavy model is doing a light task, you now have a lead for cutting costs\n- You can narrow down requests that may save money without hurting quality\n\n## Dive Deep\n\nThe new analysis features are:\n\n- Grouping conversations by task\n- Tracking conversation turns\n- Comparing model fit with cost and latency\n\nThe Potential Savings view highlights requests that may work with faster or less expensive models without compromising output quality.\n\nThese are the same signals that Cloudflare's Auto Router uses to select a model based on task and cost.\n\nIt's available to all AI Gateway customers at no additional cost!\n\n## Wrap-up\n\n- User Insights now groups conversations by task and tracks turns\n- You can compare model fit with cost and latency\n- The Potential Savings view shows requests that a cheaper or faster model may handle\n- The signals are the same as those behind Auto Router\n- Free for all AI Gateway customers\n\nThis is for teams running several models through AI Gateway who want to trim the bill!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-09-29-user-insights-task-analysis/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "AI Gateway - Identify model overuse and potential savings with User Insights",
+  "tags": [
+    "cloudflare",
+    "ai",
+    "devops"
+  ],
+  "published_at": "2026-09-29T20:49:07+00:00"
+}

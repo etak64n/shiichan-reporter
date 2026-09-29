@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-connect-manage-data-tables",
+  "title": "Amazon Connect のデータテーブルが 1 テーブル 2 万件に！Excel や DynamoDB からの読み込みも",
+  "summary": "Amazon Connect Customer のデータテーブルが、1 テーブルあたり最大 20,000 件の値を持てるようになったよ。エクスポート、一括編集、インスタンス間の移動、Excel や DynamoDB からの読み込みにも対応したみたい！",
+  "body_md": "やっほー、しぃちゃんだよ！ コンタクトセンターの設定を、現場の人が自分で更新できるようになるニュースだよ。\n\n## なにが発表されたの？\n\nAWS の What's New によると、Amazon Connect Customer で、コンタクトフローを動かす参照データをより多く保存できるようになったよ。\n\n## 今までどうだったの？\n\n原文には従来の上限や制限は書かれていないよ。ここでは、今回できるようになったことに絞って紹介するね。\n\n## これで何が変わるの？\n\n営業時間、エスカレーションルール、AI エージェントのプロンプト、キューの割り当てといった設定値を、ビジネス側のチームが自分たちで最新に保てるよ。状況が変わったときに、技術チームの手を借りずに、コンタクトセンターの設定をすぐ調整できるの！\n\n## 深く潜ってみよう\n\n今回の更新で管理者ができることはこれだよ。\n\n- 1 テーブルあたり最大 20,000 件の値を保存する\n- テーブルをエクスポートする\n- 数百件のレコードをまとめて編集する\n- Connect Customer のインスタンス間でテーブルを移動する\n- Excel や DynamoDB などのツール・ソースから参照データを読み込む\n\n保存した値は、営業時間、エスカレーションルール、AI エージェントのプロンプト、キューの割り当てなど、コンタクトフローを動かす設定に使えるよ。\n\n提供範囲は、Amazon Connect Customer が使えるすべての AWS 商用リージョンと AWS GovCloud(US-West)だよ。設定方法は、Amazon Connect 管理者ガイドの「Create and configure data tables」に載っているみたい。\n\n## まとめ\n\n- データテーブルは 1 テーブルあたり最大 20,000 件の値を保存できる\n- エクスポート、数百件の一括編集、インスタンス間の移動ができる\n- Excel や DynamoDB などから参照データを読み込める\n- ビジネスチームが自分で設定を更新できる\n- 全 AWS 商用リージョンと GovCloud(US-West)で利用可能\n\nコンタクトセンターの運用担当の人や、設定変更のたびに開発チームへ依頼していたチームに刺さるよ！",
+  "title_en": "Amazon Connect data tables now hold up to 20,000 values, with Excel and DynamoDB import",
+  "summary_en": "Amazon Connect Customer data tables can now hold up to 20,000 values per table, and admins can export tables, edit hundreds of records, move tables between instances, and load data from sources such as Excel and DynamoDB.",
+  "body_md_en": "Hi, it's Shii-chan! This news lets the people on the business side keep contact center settings up to date themselves.\n\n## What was announced?\n\nAccording to AWS What's New, Amazon Connect Customer now lets administrators store more of the reference data that drives their contact center configurations.\n\n## The story so far\n\nThe announcement doesn't describe the previous limits, so I'll focus on what is new.\n\n## What changes\n\nBusiness teams can keep things like operating hours, escalation rules, AI agent prompts, and queue assignments current themselves. When conditions change, they can adjust contact center configurations without depending on technical resources!\n\n## Dive Deep\n\nAdministrators can now:\n\n- Store up to 20,000 values per data table\n- Export tables\n- Edit hundreds of records at once\n- Move tables between Connect Customer instances\n- Load reference data from external systems using tools and sources such as Excel and DynamoDB\n\nThe stored values can define configurations that drive contact flows, such as operating hours, escalation rules, AI agent prompts, or queue assignments.\n\nIt's available in all AWS commercial regions and AWS GovCloud (US-West) where Amazon Connect Customer is offered. See \"Create and configure data tables\" in the Amazon Connect Administrator Guide to learn more.\n\n## Wrap-up\n\n- Data tables hold up to 20,000 values per table\n- You can export, bulk-edit hundreds of records, and move tables between instances\n- Reference data can be loaded from Excel, DynamoDB, and more\n- Business teams can update configurations themselves\n- Available in all AWS commercial Regions and GovCloud (US-West)\n\nThis is for contact center operators and teams tired of filing a dev request for every config change!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-connect-manage-data-tables/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Connect Customer now lets business users manage more reference data to adjust contact center configurations in real time",
+  "tags": [
+    "aws",
+    "business"
+  ],
+  "published_at": "2026-09-29T17:00:00+00:00"
+}

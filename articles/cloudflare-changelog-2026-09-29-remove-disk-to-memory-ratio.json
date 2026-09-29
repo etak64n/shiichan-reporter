@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-09-29-remove-disk-to-memory-ratio",
+  "title": "Containers のカスタムインスタンスでディスク上限が最大 20 GB に！メモリ比の制限が撤廃",
+  "summary": "Cloudflare Containers のカスタムインスタンスタイプで、メモリ 1 GiB あたりディスク 2 GB までという制限がなくなったよ。メモリが小さくても最大 20 GB のディスクを割り当てられるの！",
+  "body_md": "おつかれさま、しぃちゃんだよ！ Containers を使っている人に、うれしい制限緩和が来たよ。\n\n## なにが発表されたの？\n\nCloudflare の Changelog によると、Containers のカスタムインスタンスタイプで、ディスク容量がメモリ量に縛られなくなったんだって。\n\n## 今までどうだったの？\n\nこれまでは、カスタムインスタンスタイプのディスクは、メモリ 1 GiB あたり最大 2 GB までだったの。たとえば 1 vCPU・メモリ 3 GiB の構成だと、ディスクは最大 6 GB までだったよ。\n\n## これで何が変わるの？\n\n同じ 1 vCPU・メモリ 3 GiB の構成でも、ディスクを 20 GB まで割り当てられるようになったよ！\n\n- 大きなコンテナイメージを使うワークロード\n- 大きなデータセットを扱うワークロード\n- ビルドキャッシュを置きたいワークロード\n\nこんな「メモリよりディスクがほしい」用途で、無駄にメモリを増やさなくてよくなるね。\n\n## 深く潜ってみよう\n\n最大イメージサイズはインスタンスのディスク容量と同じだから、ディスクを増やせば、より大きなイメージもデプロイできるようになるよ。\n\n設定例はこんな感じ！(`wrangler.jsonc` 形式)\n\n```\n{\n  \"containers\": [\n    {\n      \"image\": \"./Dockerfile\",\n      \"instance_type\": {\n        \"vcpu\": 1,\n        \"memory_mib\": 3072,\n        \"disk_mb\": 20000\n      }\n    }\n  ]\n}\n```\n\nTOML ならこうだよ。\n\n```\n[[containers]]\nimage = \"./Dockerfile\"\n\n[containers.instance_type]\nvcpu = 1\nmemory_mib = 3_072\ndisk_mb = 20_000\n```\n\n変わらない制約もあるよ。vCPU あたり最低 3 GiB のメモリが必要という条件は、そのままなの。ほかの制約は Custom Instance Types のドキュメントで確認してね。\n\n## まとめ\n\n- カスタムインスタンスタイプのディスクとメモリの比率制限がなくなった\n- ディスクは、どのカスタムインスタンスでも最大 20 GB まで割り当てられる\n- 大きなイメージ、データセット、ビルドキャッシュを扱いやすくなった\n- vCPU あたり最低 3 GiB のメモリなど、ほかの制約は変わらない\n\nCloudflare Containers で重いイメージやキャッシュを扱っている人に刺さるよ！",
+  "title_en": "Cloudflare Containers drops the disk-to-memory ratio limit: up to 20 GB on any custom instance",
+  "summary_en": "Custom Container instance types no longer limit disk based on memory. Previously capped at 2 GB of disk per 1 GiB of memory, they can now use up to the 20 GB disk maximum regardless of memory.",
+  "body_md_en": "Hi, it's Shii-chan! Here's a nice limit relaxation for people using Containers.\n\n## What was announced?\n\nAccording to the Cloudflare Changelog, custom instance types for Containers no longer limit disk based on memory.\n\n## The story so far\n\nUntil now, a custom instance type could have at most 2 GB of disk for each 1 GiB of memory. For example, a 1 vCPU, 3 GiB configuration was limited to 6 GB of disk.\n\n## What changes\n\nThat same 1 vCPU, 3 GiB configuration can now use up to 20 GB of disk. This helps workloads that need more disk than memory, such as:\n\n- Workloads with large container images\n- Workloads with large datasets\n- Workloads that need build caches\n\nYou no longer have to add memory just to get more disk.\n\n## Dive Deep\n\nThe maximum image size is the same as the instance disk space, so more disk also lets you deploy larger images.\n\nHere is an example configuration (JSON):\n\n```\n{\n  \"containers\": [\n    {\n      \"image\": \"./Dockerfile\",\n      \"instance_type\": {\n        \"vcpu\": 1,\n        \"memory_mib\": 3072,\n        \"disk_mb\": 20000\n      }\n    }\n  ]\n}\n```\n\nAnd in TOML:\n\n```\n[[containers]]\nimage = \"./Dockerfile\"\n\n[containers.instance_type]\nvcpu = 1\nmemory_mib = 3_072\ndisk_mb = 20_000\n```\n\nOther constraints don't change, including the minimum of 3 GiB of memory per vCPU. See the Custom Instance Types documentation for the full list.\n\n## Wrap-up\n\n- The disk-to-memory ratio limit for custom instance types is gone\n- Any custom instance type can use up to 20 GB of disk\n- Large images, datasets, and build caches are easier to handle\n- Other constraints, like 3 GiB of memory per vCPU, still apply\n\nThis is for anyone running heavy images or caches on Cloudflare Containers!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-09-29-remove-disk-to-memory-ratio/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Containers - Custom Container instance types no longer have a disk to memory ratio limit",
+  "tags": [
+    "cloudflare",
+    "infrastructure",
+    "serverless"
+  ],
+  "published_at": "2026-09-29T20:49:07+00:00"
+}

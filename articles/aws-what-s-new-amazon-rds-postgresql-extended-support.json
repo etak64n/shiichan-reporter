@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-rds-postgresql-extended-support",
+  "title": "RDS for PostgreSQL の Extended Support に新マイナーバージョン 13・12・11 系が登場！",
+  "summary": "Amazon RDS for PostgreSQL で、Extended Support 向けのマイナーバージョン 13.23-rds.20260514、12.22-rds.20260514、11.22-rds.20260514 が発表されたよ。標準サポート終了後も、最大 3 年間の重要な修正を受けられる仕組みなの。",
+  "body_md": "こんにちは、しぃちゃんだよ！ 古めの PostgreSQL を使っている人に関係する更新情報が来たよ。\n\n## なにが発表されたの？\n\nAWS の What's New によると、Amazon RDS for PostgreSQL の Extended Support 向けに、新しいマイナーバージョンが発表されたよ。\n\n- 13.23-rds.20260514\n- 12.22-rds.20260514\n- 11.22-rds.20260514\n\n## なぜ重要なの？\n\nAmazon RDS Extended Support は、メジャーバージョンの標準サポートが終わったあとも、最大 3 年間、重大な CVE(共通脆弱性識別子)とバグの修正を受けられる仕組みだよ。新しいメジャーバージョンへ上げるまでの時間を確保できるんだね。今回のマイナーバージョンは、その修正を取り込むためのものだよ。\n\n## これで何が変わるの？\n\n標準サポートが終わったバージョンを使い続けている場合でも、これらのマイナーバージョンに更新することで、Extended Support の修正を受け取れるよ。\n\n## 深く潜ってみよう\n\nメジャーバージョンを上げる方法として、原文ではこの 3 つが挙げられているよ。\n\n- Amazon RDS Blue/Green Deployments\n- インプレースアップグレード\n- スナップショットからのリストア\n\nRDS データベースの作成や更新は、Amazon RDS マネジメントコンソールか AWS CLI からできるよ。詳しい手順は Amazon RDS for PostgreSQL ユーザーガイドを見てね。\n\n原文には、修正される CVE の中身や料金の詳細は書かれていないから、そこは公式ドキュメントで確認してね。\n\n## まとめ\n\n- RDS for PostgreSQL の Extended Support に、13.23、12.22、11.22 のマイナーバージョンが追加された\n- Extended Support は、標準サポート終了後も最大 3 年間、重大な CVE とバグの修正を提供する\n- メジャーアップグレードは Blue/Green Deployments、インプレース、スナップショットからのリストアで行える\n\nまだ PostgreSQL 11〜13 系を運用していて、移行の準備期間が必要なチームに刺さるよ！",
+  "title_en": "Amazon RDS for PostgreSQL announces Extended Support minor versions 13.23, 12.22, and 11.22",
+  "summary_en": "Amazon RDS for PostgreSQL announces Extended Support minor versions 13.23-rds.20260514, 12.22-rds.20260514, and 11.22-rds.20260514, giving you up to three more years of critical fixes after standard support ends.",
+  "body_md_en": "Hi, it's Shii-chan! Here's an update for anyone still running older PostgreSQL versions.\n\n## What was announced?\n\nAccording to AWS What's New, Amazon RDS for PostgreSQL has announced new Extended Support minor versions:\n\n- 13.23-rds.20260514\n- 12.22-rds.20260514\n- 11.22-rds.20260514\n\n## Why it matters\n\nAmazon RDS Extended Support provides up to three additional years of fixes for critical Common Vulnerabilities and Exposures (CVEs) and bugs beyond a major version's end of standard support date. That gives you more time to upgrade to a new major version. These minor versions carry those fixes.\n\n## What changes\n\nIf you keep running a version past the end of standard support, updating to these minor versions gets you the Extended Support fixes.\n\n## Dive Deep\n\nThe announcement lists three ways to upgrade your database:\n\n- Amazon RDS Blue/Green Deployments\n- In-place upgrade\n- Restore from a snapshot\n\nYou can create or update a fully managed RDS database in the Amazon RDS Management Console or with the AWS CLI. See the Amazon RDS for PostgreSQL User Guide for details.\n\nThe announcement doesn't describe which CVEs are fixed or pricing details, so check the official documentation for those.\n\n## Wrap-up\n\n- Extended Support gains minor versions 13.23, 12.22, and 11.22 for RDS for PostgreSQL\n- It provides up to three years of critical CVE and bug fixes after standard support ends\n- Major upgrades can use Blue/Green Deployments, in-place upgrade, or snapshot restore\n\nThis is for teams still on PostgreSQL 11 to 13 who need time to plan a migration!",
+  "emotion": "thinking",
+  "importance": 2,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-rds-postgresql-extended-support/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon RDS for PostgreSQL announces Extended Support minor versions 13.23-rds.20260514, 12.22-rds.20260514 and 11.22-rds.20260514",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "security"
+  ],
+  "published_at": "2026-09-29T16:00:00+00:00"
+}
