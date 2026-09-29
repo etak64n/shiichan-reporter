@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-bedrock-grok-4-7",
+  "title": "まさか！Amazon Bedrock に Grok 4.7 が登場したよ！",
+  "summary": "SpaceXAI の Grok 4.7 が Amazon Bedrock で使えるようになったよ！コーディングやエージェント作業、ナレッジワーク向けで、US Geo と Global のクロスリージョン推論に対応しているみたい。",
+  "body_md": "みんな、しぃちゃんだよ！Bedrock に新しいモデルが仲間入りしたって聞いて、わくわくが止まらないの！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Bedrock が SpaceXAI の Grok 4.7 に対応したことが発表されたよ。\n\nGrok 4.7 は、コーディング、エージェント的なタスク、ナレッジワークに向けたフロンティアモデルなんだって。US Geo と Global のクロスリージョン推論に対応しているよ！\n\n## なぜ重要なの？\n\nBedrock は複数のモデルを同じ API で使えるのが強みだよね。そこに Grok 4.7 が加わったから、すでに Bedrock を使っている人は、モデルの選択肢がまた一つ増えたことになるよ。\n\n## これで何が変わるの？\n\nGrok 4.7 は Grok 4.6 をベースにしていて、原文では次の点が良くなったと紹介されているよ。\n\n- 複数の種類が混ざったドキュメントの扱いが上手になった\n- リポジトリ規模のコーディングで、計画とエラーからの復旧を伴う動きがより安定した\n- ブラウザ操作エージェントが強化され、フォーム入力やポータルの操作が得意になった\n\n大きなコードベースの作業や、Web の画面操作を自動化したいエージェント開発をしている人に嬉しいアップデートだね！\n\n## 深く潜ってみよう\n\n使い始め方は 2 通りだよ。\n\n- Amazon Bedrock コンソールから使う\n- 対応している Amazon Bedrock API からプログラムで使う\n\n対応 Region、エンドポイント、API、機能、推論プロファイル、料金は、Amazon Bedrock のドキュメントにまとまっているよ。原文には具体的な数値やベンチマークは書かれていないから、性能の詳細は launch blog post とドキュメントで確認してね。\n\n## まとめ\n\n- SpaceXAI の Grok 4.7 が Amazon Bedrock で使える\n- コーディング、エージェント、ナレッジワーク向けのフロンティアモデル\n- US Geo と Global のクロスリージョン推論に対応\n- Grok 4.6 から、混在ドキュメント処理、リポジトリ規模のコーディング、ブラウザ操作エージェントが強化された\n\nBedrock でコーディングエージェントを組んでいるみんなに刺さる発表だよ！",
+  "title_en": "Surprise! Grok 4.7 Has Arrived on Amazon Bedrock!",
+  "summary_en": "SpaceXAI Grok 4.7 is now available on Amazon Bedrock! It targets coding, agentic tasks, and knowledge work, with US Geo and Global cross-Region inference.",
+  "body_md_en": "Hi everyone, it's Shii-chan! I heard a new model joined Bedrock, and I can't stop being excited!\n\n## What was announced?\n\nIn AWS What's New, Amazon Bedrock announced support for SpaceXAI Grok 4.7.\n\nGrok 4.7 is a frontier model built for coding, agentic tasks, and knowledge work. It supports US Geo and Global cross-Region inference!\n\n## Why it matters\n\nA big strength of Bedrock is that you can use many models through the same API. With Grok 4.7 added, anyone already on Bedrock has one more model to choose from.\n\n## What changes\n\nGrok 4.7 builds on Grok 4.6, and the announcement highlights these improvements:\n\n- Better handling of mixed documents\n- More dependable repo-scale coding, with planning and error recovery\n- Enhanced browser-use agents for form fills and portal navigation\n\nThis is good news if you work on large codebases or build agents that automate web interfaces!\n\n## Dive Deep\n\nThere are two ways to get started:\n\n- Use it from the Amazon Bedrock console\n- Use it programmatically through supported Amazon Bedrock APIs\n\nSupported AWS Regions, endpoints, APIs, features, inference profiles, and pricing are listed in the Amazon Bedrock documentation. The announcement does not include specific numbers or benchmarks, so check the launch blog post and the documentation for performance details.\n\n## Wrap-up\n\n- SpaceXAI Grok 4.7 is available on Amazon Bedrock\n- A frontier model for coding, agentic tasks, and knowledge work\n- Supports US Geo and Global cross-Region inference\n- Improves on Grok 4.6 in mixed-document handling, repo-scale coding, and browser-use agents\n\nThis one is for everyone building coding agents on Bedrock!",
+  "emotion": "energetic",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-bedrock-grok-4-7/",
+  "source_name": "AWS What's New",
+  "og_title": "Grok 4.7 is now available on Amazon Bedrock",
+  "tags": [
+    "aws",
+    "ai"
+  ],
+  "published_at": "2026-09-28T18:29:00+00:00"
+}

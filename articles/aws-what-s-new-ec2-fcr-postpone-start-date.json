@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-ec2-fcr-postpone-start-date",
+  "title": "EC2 の Future-dated Capacity Reservations、開始日を後ろにずらせるようになったよ！",
+  "summary": "Amazon EC2 の Future-dated Capacity Reservations で、開始日の延期ができるようになったよ！見積もりを確認して承認すると、新しい開始日に更新されるみたい。",
+  "body_md": "こんにちは、しぃちゃんだよ！予定って変わることあるよね。そんなときに助かる EC2 のアップデートを紹介するよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon EC2 の Future-dated Capacity Reservations が開始日の延期に対応したことが発表されたよ。\n\n## 今までどうだったの？\n\nFuture-dated Capacity Reservations は、必要なキャパシティ、開始日、コミット期間を指定して、最大 120 日先の分のキャパシティを確保できる仕組みだよ。\n\nただ、確保したあとに計画が変わったとき、開始日を新しいタイムラインに合わせる手段は、今回の発表で加わったものなんだ。\n\n## これで何が変わるの？\n\n納品前にプロジェクトのスケジュールが後ろにずれても、新しいタイムラインに合わせて開始日を延期できるようになったよ！大規模なイベントやリリースに向けてキャパシティを先に押さえている人に嬉しいね。\n\n## 深く潜ってみよう\n\n延期の流れはこうだよ。\n\n- 開始日の延期を申請する\n- EC2 が、新しい開始日と必要なコミット期間を示す見積もりを提示する\n- 内容を確認して見積もりを承認する\n- EC2 が予約を新しい開始日に更新する\n\n注意したいのは、コミット期間が延びることがある点だよ。延びるかどうかは、開始日をいつに延期するかで変わるみたい。承認する前に、見積もりのコミット期間をしっかり確認してね。\n\nこの機能は Future-dated Capacity Reservation のすべての利用者が使えるよ。Region ごとの提供状況は AWS Capabilities by Region のサイトで確認できて、詳細は Capacity Reservation のユーザーガイドにあるよ。\n\n## まとめ\n\n- Future-dated Capacity Reservations の開始日を延期できるようになった\n- 延期時は、新しい開始日と必要なコミット期間の見積もりが提示される\n- 延期する時期によっては、コミット期間が増えることがある\n- 見積もりを承認すると、予約が新しい開始日に更新される\n- すべての Future-dated Capacity Reservation の利用者が対象\n\nキャパシティを先取りしていて、スケジュールの変動が心配なインフラ担当のみんなに刺さるよ！",
+  "title_en": "EC2 Future-dated Capacity Reservations Can Now Be Postponed!",
+  "summary_en": "Amazon EC2 Future-dated Capacity Reservations now support postponing the start date! Review the quote, accept it, and your reservation is updated with the new date.",
+  "body_md_en": "Hello, it's Shii-chan! Plans change sometimes, right? Here's an EC2 update that helps when they do!\n\n## What was announced?\n\nIn AWS What's New, Amazon EC2 announced that Future-dated Capacity Reservations now support postponing the start date.\n\n## The story so far\n\nFuture-dated Capacity Reservations let you secure capacity up to 120 days in advance by specifying the capacity you need, the start date, and a commitment duration.\n\nBeing able to move the start date to match a new timeline after your plans change is what this announcement adds.\n\n## What changes\n\nIf your project schedule slips before delivery, you can postpone the start date to match your new timeline! It's good news if you reserved capacity ahead of a big event or release.\n\n## Dive Deep\n\nHere is how postponing works:\n\n- Request to postpone the start date\n- EC2 presents a quote showing the new start date and the required commitment duration\n- Review and accept the quote\n- EC2 updates your reservation with the new start date\n\nOne thing to watch: the commitment duration can increase, depending on when you postpone the start date. Check the commitment duration in the quote before you accept it.\n\nThe feature is available to all Future-dated Capacity Reservation customers. Regional availability is on the AWS Capabilities by Region website, and details are in the Capacity Reservation user guide.\n\n## Wrap-up\n\n- You can now postpone the start date of a Future-dated Capacity Reservation\n- EC2 presents a quote with the new start date and required commitment duration\n- The commitment duration may increase depending on the new date\n- Accepting the quote updates your reservation\n- Available to all Future-dated Capacity Reservation customers\n\nThis one is for infrastructure folks who reserve capacity early and worry about schedule changes!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/ec2-fcr-postpone-start-date/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon EC2 Future-dated Capacity Reservations Now Supports Postponing Start Dates",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-09-28T21:17:00+00:00"
+}
