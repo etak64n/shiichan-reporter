@@ -1,0 +1,21 @@
+{
+  "slug": "aws-what-s-new-claude-region-expansion-in-sk",
+  "title": "Bedrock の Claude がインド・韓国・シンガポールに拡大！国内で推論が完結するよ",
+  "summary": "Amazon Bedrock で Claude Opus 5 / Sonnet 5 / Haiku 4.5 の提供がインド・韓国・シンガポールに広がったよ。データを国内で処理したい金融・医療・公共のみんなも使いやすくなったみたい！",
+  "body_md": "みんな、しぃちゃんだよ！Claude をアジアのリージョンで使いたかったみんなに、うれしいお知らせが届いたよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Bedrock 上の Anthropic Claude モデルの提供がインド・韓国・シンガポールに拡大したことが発表されたよ。\n\n国ごとの対応モデルはこうなっているの。\n\n- インド: Claude Opus 5、Claude Sonnet 5、Claude Haiku 4.5\n- 韓国: Claude Opus 5、Claude Sonnet 5\n- シンガポール: Claude Sonnet 5\n\n## なぜ重要なの？\n\n金融・医療・公共分野など、データを特定の地域内で処理する必要があるお客さんは多いよね。今回の拡大で、そうした要件があっても、これらのモデルを大規模に使いながら推論を国内に留められるようになったんだよ！\n\n## これで何が変わるの？\n\nデータレジデンシー(データを置く場所・処理する場所の要件)のせいで Claude の採用を見送っていたチームも、国内完結の構成で検討できるようになるよ。\n\n原文には、Amazon Bedrock は呼び出したリージョン内で推論リクエストとデータを処理し、そのリージョンの外には出ないと書かれているの。\n\n## 深く潜ってみよう\n\n地域ごとに提供のされ方が少し違うから、整理するね。\n\n- インド: geographic cross-Region inference で、ムンバイとハイデラバードの 2 リージョンにまたがって処理される。インド国内のリージョンで処理しつつ、これまで対応済みのグローバル cross-Region inference も引き続き使える\n- 韓国: ソウル (ap-northeast-2) リージョンの bedrock-runtime エンドポイントでリージョン内推論\n- シンガポール: ap-southeast-1 の bedrock-runtime エンドポイントでリージョン内推論\n\n最新のモデル提供状況は、Amazon Bedrock User Guide の「Regional availability by models」で確認してね、とのことだよ。\n\n## まとめ\n\n- インドは Opus 5・Sonnet 5・Haiku 4.5、韓国は Opus 5・Sonnet 5、シンガポールは Sonnet 5 が利用可能に\n- インドはムンバイ・ハイデラバードをまたぐ geographic cross-Region inference\n- 韓国とシンガポールは各リージョンの bedrock-runtime エンドポイントでリージョン内推論\n- 推論とデータは呼び出したリージョンから出ない\n\nデータを国内に留めたい金融・医療・公共のみんなに刺さるアップデートだよ！",
+  "title_en": "Claude on Bedrock Expands to India, South Korea, and Singapore with In-Country Inference!",
+  "summary_en": "Claude Opus 5, Sonnet 5, and Haiku 4.5 are now offered on Amazon Bedrock across India, South Korea, and Singapore. Teams in finance, healthcare, and the public sector can keep inference in-country!",
+  "body_md_en": "Hi everyone, it's Shii-chan! There's good news for anyone who wanted to use Claude in Asian Regions!\n\n## What was announced?\n\nAWS What's New announced that Anthropic's Claude models on Amazon Bedrock are expanding to India, South Korea, and Singapore.\n\nHere's what's available in each country:\n\n- India: Claude Opus 5, Claude Sonnet 5, and Claude Haiku 4.5\n- South Korea: Claude Opus 5 and Claude Sonnet 5\n- Singapore: Claude Sonnet 5\n\n## Why it matters\n\nMany customers, including those in financial services, healthcare, and the public sector, need to process data within a specific geography. With this expansion, they can use these models at scale while keeping inference in-country!\n\n## What changes\n\nTeams that put off adopting Claude because of data residency requirements can now consider an in-country setup.\n\nThe announcement says Amazon Bedrock processes inference requests and data within the Region you call, and processing never leaves that Region.\n\n## Dive Deep\n\nDelivery differs a bit by location, so here's the breakdown:\n\n- India: geographic cross-Region inference across the Mumbai and Hyderabad Regions. You can process data in India Regions, and the already supported global cross-Region inference is still available\n- South Korea: in-region inference on the bedrock-runtime endpoint in the Seoul (ap-northeast-2) Region\n- Singapore: in-region inference on the bedrock-runtime endpoint in ap-southeast-1\n\nFor the latest availability, see \"Regional availability by models\" in the Amazon Bedrock User Guide.\n\n## Wrap-up\n\n- India gets Opus 5, Sonnet 5, and Haiku 4.5; South Korea gets Opus 5 and Sonnet 5; Singapore gets Sonnet 5\n- India uses geographic cross-Region inference across Mumbai and Hyderabad\n- South Korea and Singapore use in-region inference on their bedrock-runtime endpoints\n- Inference and data stay in the Region you call\n\nThis is great news if you work in finance, healthcare, or the public sector and need data to stay in-country!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/claude-region-expansion-in-sk/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Bedrock expands Claude model availability to India, South Korea, and Singapore",
+  "tags": [
+    "aws",
+    "anthropic",
+    "ai",
+    "infrastructure"
+  ],
+  "published_at": "2026-09-29T15:41:00+00:00"
+}
