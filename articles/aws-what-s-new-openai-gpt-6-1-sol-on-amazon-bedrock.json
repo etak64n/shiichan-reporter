@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-openai-gpt-6-1-sol-on-amazon-bedrock",
+  "title": "OpenAI の GPT-6.1 Sol が Amazon Bedrock で一般提供！コストは GPT-6 Astra の約 5 分の 1",
+  "summary": "OpenAI の GPT-6.1 Sol が Amazon Bedrock で一般提供になったよ！OpenAI によると、GPT-6 Astra に迫る性能を約 5 分の 1 のコストで出せて、明示的なプロンプトキャッシュにも対応しているの。",
+  "body_md": "こんにちは、しぃちゃんだよ！Bedrock に新しいモデルが来たよ。エージェントを作っているみんな、注目だよ！\n\n## なにが発表されたの？\n\nAWS の What's New によると、OpenAI の GPT-6.1 Sol が Amazon Bedrock で一般提供(GA)になったよ。GPT-6 Sol のアップグレード版で、エージェント的なコーディング、コンピュータ操作、専門的な業務で非常に高い性能を発揮するんだって。\n\n## なぜ重要なの？\n\nOpenAI によると、GPT-6.1 Sol は負荷の高い評価で GPT-6 Astra に迫る性能を、およそ 5 分の 1 のコストで出せるそうだよ。これはあくまで OpenAI の主張だけど、有能なエージェントを大規模に作って動かす余裕が増えるのは嬉しいよね！\n\n## これで何が変わるの？\n\n使いどころとして挙げられているのは、こんなことだよ。\n\n- 機能の実装\n- 問題のデバッグと、解決策の反復\n- 複数ステップにわたるワークフローの実行\n- 複雑なコードベースの調査\n\n## 深く潜ってみよう\n\n- 明示的なプロンプトキャッシュに対応していて、リクエストのたびに同じコンテキストを使い回すエージェント処理で実用的\n- Amazon Bedrock の推論エンジンが、本番運用に必要な性能・セキュリティ・信頼性を提供\n- AWS の既存のコントロールで、ワークロードの保護、アクセスの統制、モデル呼び出しの監査ができる\n- Bedrock コンソール、またはサポートされている Bedrock API から使い始められる\n- 対応リージョン、エンドポイント、API、機能、推論プロファイル、料金は Bedrock のドキュメントで確認できる\n\n## まとめ\n\n- GPT-6.1 Sol が Amazon Bedrock で GA\n- エージェント的なコーディング、コンピュータ操作、業務用途に強い\n- OpenAI によると、GPT-6 Astra に迫る性能を約 5 分の 1 のコストで実現\n- 明示的なプロンプトキャッシュに対応\n\nBedrock 上でコーディングエージェントや業務自動化を作っている開発者に刺さる更新だよ！",
+  "title_en": "OpenAI GPT-6.1 Sol is now generally available on Amazon Bedrock, at about one-fifth the cost of GPT-6 Astra!",
+  "summary_en": "OpenAI's GPT-6.1 Sol is now generally available on Amazon Bedrock. According to OpenAI, it approaches GPT-6 Astra at roughly one-fifth of the cost, and it supports explicit prompt caching.",
+  "body_md_en": "Hi, it's Shii-chan! A new model has arrived on Bedrock, so if you build agents, take a look!\n\n## What was announced?\n\nAccording to AWS What's New, OpenAI's GPT-6.1 Sol is now generally available on Amazon Bedrock. It's an upgrade to GPT-6 Sol and delivers very strong performance on agentic coding, computer use, and professional work.\n\n## Why it matters\n\nAccording to OpenAI, GPT-6.1 Sol approaches GPT-6 Astra across demanding evaluations at roughly one-fifth of the cost. That is OpenAI's claim, but more room to build and run capable agents at scale is good news!\n\n## What changes\n\nThe announcement lists these uses:\n\n- Building features\n- Debugging issues and iterating on solutions\n- Carrying out multistep workflows\n- Investigating complex codebases\n\n## Dive Deep\n\n- It supports explicit prompt caching, which makes it practical for agentic workloads that reuse context across repeated requests\n- The Amazon Bedrock inference engine provides the performance, security, and reliability needed for production workloads\n- Established AWS controls help you secure workloads, govern access, and audit model invocation activity\n- Get started in the Amazon Bedrock console or through supported Bedrock APIs\n- For supported Regions, endpoints, APIs, features, inference profiles, and pricing, see the Amazon Bedrock documentation\n\n## Wrap-up\n\n- GPT-6.1 Sol is generally available on Amazon Bedrock\n- Strong at agentic coding, computer use, and professional work\n- According to OpenAI, it approaches GPT-6 Astra at about one-fifth of the cost\n- Supports explicit prompt caching\n\nThis is for developers building coding agents and workflow automation on Bedrock!",
+  "emotion": "energetic",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/openai-gpt-6-1-sol-on-amazon-bedrock/",
+  "source_name": "AWS What's New",
+  "og_title": "OpenAI GPT-6.1 Sol is now generally available on Amazon Bedrock",
+  "tags": [
+    "aws",
+    "openai",
+    "ai"
+  ],
+  "published_at": "2026-09-29T20:17:00+00:00"
+}

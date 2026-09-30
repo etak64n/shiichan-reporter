@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-rds-full-snapshot-size-available",
+  "title": "RDS スナップショットの「フルサイズ」が見えるように！FullSnapshotSizeInBytes が追加",
+  "summary": "Amazon RDS のコンソールと DescribeDBSnapshots API で、スナップショットの完全なサイズを確認できるようになったよ！増分サイズとは別の値なの。",
+  "body_md": "やっほー、しぃちゃんだよ！スナップショットの容量って、ちょっと分かりにくかったよね。そこが見えるようになったよ！\n\n## なにが発表されたの？\n\nAWS の What's New によると、Amazon RDS がスナップショットのフルサイズ(full snapshot size)を表示するようになったよ。\n\n- API: DescribeDBSnapshots の新しいフィールド `FullSnapshotSizeInBytes`\n- コンソール: 「Full Snapshot Size」列\n\n## 今までどうだったの？\n\nRDS のスナップショットは増分方式だよ。何度かスナップショットを取ると、各スナップショットには新しく変更されたブロックだけが保存されて、変更のないブロックは以前のスナップショットへの参照で持つの。だから、スナップショット 1 つ分の全体の大きさは、見ただけでは分かりにくかったんだ。\n\n## これで何が変わるの？\n\n`FullSnapshotSizeInBytes` は、そのスナップショットを構成するすべてのブロックの合計サイズを示すよ。自分に直接保存されたブロックと、以前のスナップショットから参照されているブロックの両方を含むの。プログラムから取得できるので、容量の把握や管理に使いやすくなるね！\n\n## 深く潜ってみよう\n\n原文の例はこうだよ。100 GB のデータベースボリュームに 50 GB のデータがあるなら、最初のスナップショットでも 2 回目以降でも、フルスナップショットサイズは 50 GB と表示されるの。\n\nこれは増分スナップショットサイズ(そのスナップショットに保存された、新しく変更されたブロックだけのサイズ)とは別の値だから、混同しないようにしてね。\n\n提供範囲は、すべての商用 AWS リージョンのすべての Amazon RDS データベースインスタンスで、コンソール、AWS CLI、AWS SDK から使えるよ。\n\n## まとめ\n\n- DescribeDBSnapshots に `FullSnapshotSizeInBytes` が追加\n- コンソールに Full Snapshot Size 列が追加\n- 参照ブロックを含む、スナップショット全体のサイズが分かる\n- 増分サイズとは別の値\n\nスナップショットの容量を把握したいデータベース管理者や、自動化スクリプトを書くみんなに刺さる更新だよ！",
+  "title_en": "RDS now shows full snapshot size with the new FullSnapshotSizeInBytes field!",
+  "summary_en": "Amazon RDS now shows the full snapshot size in the console and through the DescribeDBSnapshots API. It is a different value from the incremental snapshot size.",
+  "body_md_en": "Hi, it's Shii-chan! Snapshot size has always been a bit hard to read, right? Now you can see it!\n\n## What was announced?\n\nAccording to AWS What's New, Amazon RDS now displays the full snapshot size for RDS snapshots.\n\n- API: a new `FullSnapshotSizeInBytes` field in DescribeDBSnapshots\n- Console: a \"Full Snapshot Size\" column\n\n## The story so far\n\nRDS snapshots are incremental. When you take multiple snapshots over time, each one stores only the new or modified blocks and keeps references to unchanged blocks from previous snapshots. So it was hard to tell how large one snapshot really was as a whole.\n\n## What changes\n\n`FullSnapshotSizeInBytes` shows the total size of all blocks that make up a snapshot, including the blocks stored directly in that snapshot and all blocks referenced from previous snapshots. Because you can get it programmatically, tracking and managing capacity gets easier!\n\n## Dive Deep\n\nHere is the example from the announcement: if you have a 100 GB database volume with 50 GB of data, the full snapshot size shows 50 GB whether it's the first snapshot or a later one.\n\nThis is different from the incremental snapshot size, which is only the size of newly changed blocks stored in that specific snapshot, so don't mix them up.\n\nIt is available for all Amazon RDS database instances in all commercial AWS Regions, through the console, the AWS CLI, or the AWS SDKs.\n\n## Wrap-up\n\n- `FullSnapshotSizeInBytes` is added to DescribeDBSnapshots\n- A Full Snapshot Size column is added to the console\n- Shows the whole snapshot size, including referenced blocks\n- Separate from the incremental size\n\nThis is for database admins who want to understand snapshot capacity, and anyone writing automation scripts!",
+  "emotion": "smug",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-rds-full-snapshot-size-available/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon RDS now adds full snapshot size information to the Console and API",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "devops"
+  ],
+  "published_at": "2026-09-29T21:00:23+00:00"
+}

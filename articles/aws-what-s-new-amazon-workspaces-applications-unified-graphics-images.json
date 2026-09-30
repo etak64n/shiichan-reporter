@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-workspaces-applications-unified-graphics-images",
+  "title": "WorkSpaces Applications の統合グラフィックスイメージ！G4dn から G7 まで 1 枚でOK",
+  "summary": "Amazon WorkSpaces Applications に、G4dn・G5・G6・G7 のすべてのグラフィックスインスタンスファミリーで使える統合グラフィックスイメージが登場したよ！ファミリーをまたいだインスタンスタイプ変更もできるの。",
+  "body_md": "やっほー、しぃちゃんだよ！GPU の世代が変わるたびにイメージを作り直すの、大変だよね。それがなくなるニュースだよ！\n\n## なにが発表されたの？\n\nAWS の What's New によると、Amazon WorkSpaces Applications に統合グラフィックスイメージ(unified graphics images)が登場したよ。G4dn、G5、G6、G7 を含む、対応するすべてのグラフィックスインスタンスファミリーで使える単一のイメージタイプなの！\n\n## 今までどうだったの？\n\nこれまでは、グラフィックスの世代ごとに専用のイメージが必要だったんだ。\n\n## これで何が変わるの？\n\n- 1 つのイメージで、対応する任意のインスタンスファミリーのフリートを作成・管理できる\n- イメージ管理がシンプルになり、新しい GPU 世代も採用しやすくなる\n- フリート作成時に、互換性のあるインスタンスタイプがコンソールにすべて表示されるので、価格と性能のバランスで選べる\n- 統合グラフィックスイメージのフリートは、コンソールか UpdateFleet API で、対応ファミリーをまたいでインスタンスタイプを変更できる(以前は単一ファミリー内のサイズ変更のみ)\n\n## 深く潜ってみよう\n\n- 始めるには、Managed Image Update で既存のグラフィックスイメージをアップグレードするか、統合ベースイメージからイメージビルダーを起動する\n- 提供は、WorkSpaces Applications のグラフィックスインスタンスが使えるすべての AWS 商用リージョンと AWS GovCloud (US) リージョン\n\n## まとめ\n\n- G4dn、G5、G6、G7 で共通の 1 つのイメージが使える\n- 世代ごとのイメージ管理が不要に\n- ファミリーをまたいだインスタンスタイプ変更が可能に\n- Managed Image Update か統合ベースイメージから始められる\n\nGPU 付きの仮想アプリ環境を運用している管理者さんに刺さる更新だよ！",
+  "title_en": "WorkSpaces Applications unified graphics images: one image for G4dn through G7!",
+  "summary_en": "Amazon WorkSpaces Applications now offers unified graphics images, a single image type that works across G4dn, G5, G6, and G7 instance families. Fleets can also change instance types across families.",
+  "body_md_en": "Hi, it's Shii-chan! Rebuilding images every time a GPU generation changes is a pain, right? Today's news removes that!\n\n## What was announced?\n\nAccording to AWS What's New, Amazon WorkSpaces Applications now has unified graphics images, a single image type that works across all supported graphics instance families, including G4dn, G5, G6, and G7.\n\n## The story so far\n\nPreviously, each graphics generation required its own dedicated image.\n\n## What changes\n\n- One image can create and manage fleets on any supported graphics instance family\n- Image management is simpler, and newer GPU generations are easier to adopt\n- When creating a fleet, the console shows all compatible instance types so you can pick the right price and performance\n- Fleets on a unified graphics image can change instance types across supported families using the console or the UpdateFleet API (before, this was limited to sizes within a single family)\n\n## Dive Deep\n\n- To get started, upgrade an existing graphics image through Managed Image Update, or launch an image builder from a unified base image\n- Available in all AWS commercial and AWS GovCloud (US) Regions where WorkSpaces Applications graphics instances are supported\n\n## Wrap-up\n\n- One image works across G4dn, G5, G6, and G7\n- No more per-generation image management\n- Instance types can change across families\n- Start with Managed Image Update or a unified base image\n\nThis is for admins running GPU-backed application streaming fleets!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-workspaces-applications-unified-graphics-images/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon WorkSpaces Applications introduces unified graphics images",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-09-29T17:00:00+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-09-16-jsd-api-results",
+  "title": "Bot Management の JavaScript Detections API の結果、使うかどうか選べるようになったよ！",
+  "summary": "Cloudflare Bot Management の Enterprise 向けに、JavaScript Detections API の結果をボットスコアや検出に使うかどうかを切り替える設定が追加されたよ！ダッシュボードと API の両方から操作できるの。",
+  "body_md": "やっほー、しぃちゃんだよ！今日は Cloudflare のボット対策まわりに、ちょっと便利なスイッチが増えたニュースを見つけたよ！\n\n## なにが発表されたの？\n\nCloudflare の Changelog によると、Enterprise の Bot Management を使っているお客さんは、JavaScript Detections API で得られた結果を、ボットスコアリングや検出に使うかどうかをコントロールできるようになったみたい！\n\n設定の方法は 2 通りあるよ。\n\n- ダッシュボードの Security > Settings で、API トラフィック向けの JavaScript Detections をオン・オフする\n- Bot Management API でゾーンに対して `jsd_api_results_enabled` を設定する\n\n## なぜ重要なの？\n\nJavaScript Detections は、ブラウザ側で走る小さなスクリプトの結果を使ってボットかどうかを判定する仕組みだよ。API 経由のトラフィックにもこの結果を使うかどうかを、お客さん側で決められるようになったのがポイントなの！\n\n## これで何が変わるの？\n\nAPI トラフィックの扱いを自分たちの運用に合わせて調整したい Enterprise のみんなにとって、判定への影響をオン・オフで切り分けられるのは嬉しいよね。\n\n## 深く潜ってみよう\n\nAPI から設定するときの値はこんな形だよ。\n\n```json\n{ \"jsd_api_results_enabled\": true }\n```\n\n気をつけたいのは、この設定がゾーン全体のスクリプト注入(script injection)とは **別のもの** だということ！\n\n- 設定がオフでも、API のスクリプト自体は実行されて、コールバックには成功が返る\n- ただし Cloudflare はその結果を使わない\n\nつまり「スクリプトが動いている」ことと「結果が判定に使われている」ことは別なんだね。挙動を確認するときは、ここを混同しないようにしたいところだよ。\n\n## まとめ\n\n- Enterprise Bot Management 向けの設定だよ\n- Security > Settings か Bot Management API で切り替えられる\n- オフでもスクリプトは動くけど、結果はスコアや検出に使われない\n- ゾーン全体の script injection とは独立した設定\n\nAPI トラフィックを含めてボット対策をきめ細かく調整したい、Enterprise のセキュリティ担当のみんなに刺さる更新だよ！",
+  "title_en": "You can now choose whether Bot Management uses JavaScript Detections API results!",
+  "summary_en": "Enterprise Bot Management customers on Cloudflare can now control whether results from the JavaScript Detections API are used for bot scoring and detections. It works from both the dashboard and the API.",
+  "body_md_en": "Hi, it's Shii-chan! I found a handy new switch for Cloudflare's bot protection today.\n\n## What was announced?\n\nAccording to the Cloudflare Changelog, Enterprise Bot Management customers can now control whether Cloudflare uses results from the JavaScript Detections API for bot scoring and detections.\n\nThere are two ways to set it:\n\n- In the dashboard, turn JavaScript Detections for API traffic on or off under Security > Settings\n- Set `jsd_api_results_enabled` on the zone through the Bot Management API\n\n## Why it matters\n\nJavaScript Detections uses the result of a small script running in the browser to help decide whether traffic is a bot. Now you can decide whether those results are used for API traffic too.\n\n## What changes\n\nIf you want to tune how API traffic is handled to fit your own operations, being able to switch its influence on detections on or off is a nice option.\n\n## Dive Deep\n\nThis is the value shape when you set it through the API:\n\n```json\n{ \"jsd_api_results_enabled\": true }\n```\n\nThe key point is that this setting is **separate** from zone-wide script injection.\n\n- When it is off, the API script can still execute and return success to the callback\n- Cloudflare just does not consume the result\n\nSo \"the script is running\" and \"the result is being used\" are two different things. Keep that in mind when you verify behavior.\n\n## Wrap-up\n\n- A setting for Enterprise Bot Management customers\n- Toggle it in Security > Settings or through the Bot Management API\n- When off, the script still runs but the result is not used for scoring or detections\n- Independent from zone-wide script injection\n\nThis is for Enterprise security teams who want finer control over bot protection, API traffic included!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-09-16-jsd-api-results/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Bots - Control JavaScript Detections API results",
+  "tags": [
+    "cloudflare",
+    "security",
+    "web"
+  ],
+  "published_at": "2026-09-16T00:00:00+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-aurora-postgresql-18-6-17-11-16-15-15-19-14-24",
+  "title": "Aurora PostgreSQL に新マイナーバージョン 5 本が到着！CVE 対応もあるよ",
+  "summary": "Amazon Aurora PostgreSQL-Compatible Edition が PostgreSQL 18.6、17.11、16.15、15.19、14.24 に対応したよ！バグ修正と CVE 対応が入っていて、最新マイナーへの更新が推奨されているの。",
+  "body_md": "おつかれさま、しぃちゃんだよ！データベースの定期メンテナンスに関わる大事なお知らせが来たよ！\n\n## なにが発表されたの？\n\nAWS の What's New によると、Amazon Aurora PostgreSQL-Compatible Edition が、次の PostgreSQL バージョンに対応したよ。\n\n- 18.6\n- 17.11\n- 16.15\n- 15.19\n- 14.24\n\nPostgreSQL コミュニティのバグ修正と、Aurora 独自の機能強化が含まれているんだって。\n\n## なぜ重要なの？\n\nAWS は、これらの改善を受け取り、CVE(共通脆弱性識別子)に対処するために、最新のマイナーバージョンへ更新することを推奨しているよ。詳細はリリースノートで確認できるの。\n\n## これで何が変わるの？\n\nメジャーバージョンごとに最新のマイナーが用意されたから、どの世代を使っていても更新先がはっきりしたね！\n\n## 深く潜ってみよう\n\n更新の進め方も紹介されているよ。\n\n- スケジュールされたメンテナンスウィンドウ中に、自動マイナーバージョンアップグレードでアップグレードできる\n- 大規模に運用するなら、自動マイナーバージョンアップグレードを有効にしたうえで、AWS Organizations の Upgrade Rollout Policy を使って段階的に更新する\n- 優先度の低い環境で先に検証してから、いちばん重要な環境をアップグレードする流れ\n\n## まとめ\n\n- Aurora PostgreSQL が 18.6、17.11、16.15、15.19、14.24 に対応\n- バグ修正、Aurora 独自の強化、CVE 対応を含む\n- 最新マイナーへの更新が推奨されている\n- 自動マイナーアップグレードと Upgrade Rollout Policy で段階的に更新できる\n\nAurora PostgreSQL を運用しているみんなは、まず自分のバージョンのリリースノートを見てみてね！",
+  "title_en": "Five new Aurora PostgreSQL minor versions are here, with CVE fixes!",
+  "summary_en": "Amazon Aurora PostgreSQL-Compatible Edition now supports PostgreSQL 18.6, 17.11, 16.15, 15.19, and 14.24. They include bug fixes and CVE fixes, and upgrading to the latest minor version is recommended.",
+  "body_md_en": "Hi, it's Shii-chan! Here's an important note for your database maintenance.\n\n## What was announced?\n\nAccording to AWS What's New, Amazon Aurora PostgreSQL-Compatible Edition now supports these PostgreSQL versions:\n\n- 18.6\n- 17.11\n- 16.15\n- 15.19\n- 14.24\n\nThey include bug fixes from the PostgreSQL community and Aurora-specific enhancements.\n\n## Why it matters\n\nAWS recommends upgrading to the latest minor versions to benefit from these improvements and to address Common Vulnerabilities and Exposures (CVEs). The details are in the release notes.\n\n## What changes\n\nEach major version now has a current minor release, so whichever generation you run, your upgrade target is clear.\n\n## Dive Deep\n\nThe announcement also covers how to upgrade:\n\n- Upgrade during scheduled maintenance windows using automatic minor version upgrades\n- At scale, enable automatic minor version upgrades and use the AWS Organizations Upgrade Rollout Policy to orchestrate upgrades in phases\n- Validate on lower-priority environments before upgrading your most critical ones\n\n## Wrap-up\n\n- Aurora PostgreSQL supports 18.6, 17.11, 16.15, 15.19, and 14.24\n- Includes bug fixes, Aurora-specific enhancements, and CVE fixes\n- Upgrading to the latest minor version is recommended\n- Automatic minor upgrades and the Upgrade Rollout Policy help you roll out in phases\n\nIf you run Aurora PostgreSQL, check the release notes for your version first!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-aurora-postgresql-18-6-17-11-16-15-15-19-14-24/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Aurora now supports PostgreSQL 18.6, 17.11, 16.15, 15.19, 14.24",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "security"
+  ],
+  "published_at": "2026-09-29T16:00:00+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-aws-datasync-shared-vpcs",
+  "title": "DataSync が共有 VPC に対応！エンドポイントはアカウントごとに作らなくて OK",
+  "summary": "AWS DataSync が AWS RAM で共有された VPC のサブネットに対応したよ！中央アカウントの 1 つの VPC エンドポイントで、共有先の全アカウントが使えるようになったの。",
+  "body_md": "こんにちは、しぃちゃんだよ！ネットワークを中央のアカウントにまとめている人には嬉しい、DataSync のアップデートだよ！\n\n## なにが発表されたの？\n\nAWS の What's New によると、AWS DataSync が共有 VPC に対応したよ。AWS Resource Access Manager (RAM) でアカウント間に共有したサブネットを使って、DataSync のエージェント作成と転送タスクの実行ができるの！\n\n## 今までどうだったの？\n\nネットワークを集中管理しているお客さんは、AWS PrivateLink でプライベート接続するために、アカウントごとに DataSync 用の VPC エンドポイントを作る必要があったんだ。エンドポイントは IP アドレスを消費するし、アカウントをまたいで維持する運用の手間もかかっていたよ。\n\n## これで何が変わるの？\n\n- VPC を持つアカウントの 1 つのエンドポイントで、サブネットを共有した全アカウントをまかなえる\n- IP アドレス空間を節約できて、アカウントごとのエンドポイントが不要になる\n- 単一アカウントでも、1 つの VPC エンドポイントを複数のサブネットで使える(以前は各サブネットに対応するエンドポイントが必要だった)\n\n## 深く潜ってみよう\n\n- 共有 VPC は Enhanced モードと Basic モードの、どちらのエージェントベースのタスクにも対応\n- 始めるには、コンソールか CreateAgent API でエージェントを作り、RAM で自分のアカウントに共有されたサブネットを指定する\n- AWS Secret Regions を除く、DataSync が提供されているすべてのリージョンで利用可能\n\n## まとめ\n\n- DataSync が RAM 経由の共有 VPC に対応\n- 中央アカウントの 1 エンドポイントを共有先の全アカウントで使える\n- 単一アカウントでも複数サブネットで 1 エンドポイントを使い回せる\n- Enhanced / Basic 両モードのエージェントベースタスクが対象\n\nマルチアカウント構成でネットワークを集約している、基盤チームのみんなに刺さる更新だよ！",
+  "title_en": "AWS DataSync now supports shared VPCs, no per-account endpoints needed!",
+  "summary_en": "AWS DataSync now works with VPC subnets shared through AWS RAM. One VPC endpoint in the central account can serve every account the subnet is shared with.",
+  "body_md_en": "Hi, it's Shii-chan! Here's a DataSync update that's great if you centralize your networking.\n\n## What was announced?\n\nAccording to AWS What's New, AWS DataSync now supports shared VPCs. You can create DataSync agents and run transfer tasks using subnets shared across AWS accounts with AWS Resource Access Manager (RAM).\n\n## The story so far\n\nCustomers who centralize their networking had to create a separate DataSync VPC endpoint in every account that connected privately through AWS PrivateLink. Each endpoint consumed IP addresses and added operational overhead across accounts.\n\n## What changes\n\n- A single endpoint in the account that owns the VPC serves every account the subnet is shared with\n- You save IP address space and no longer need a per-account endpoint\n- Even in a single account, one VPC endpoint can now serve multiple subnets (before, each subnet needed a matching endpoint)\n\n## Dive Deep\n\n- Shared VPC is supported for both Enhanced mode and Basic mode agent-based tasks\n- To get started, create an agent in the console or with the CreateAgent API, and specify a subnet shared with your account through AWS RAM\n- Available in all AWS Regions where DataSync is offered, except AWS Secret Regions\n\n## Wrap-up\n\n- DataSync supports shared VPCs through RAM\n- One endpoint in the central account serves all accounts the subnet is shared with\n- One endpoint can also serve multiple subnets in a single account\n- Covers agent-based tasks in both Enhanced and Basic modes\n\nThis is for platform teams running multi-account setups with centralized networking!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/aws-datasync-shared-vpcs/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS DataSync now supports shared VPCs",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-09-29T08:00:00+00:00"
+}

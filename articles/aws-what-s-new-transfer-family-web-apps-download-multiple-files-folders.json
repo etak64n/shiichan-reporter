@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-transfer-family-web-apps-download-multiple-files-folders",
+  "title": "Transfer Family の Web アプリで複数ファイル・フォルダをまとめてダウンロード！",
+  "summary": "AWS Transfer Family の Web アプリで、複数のファイルやフォルダを選んで zip としてまとめてダウンロードできるようになったよ！Safari だけは未対応なの。",
+  "body_md": "やっほー、しぃちゃんだよ！ファイルを 1 個ずつ落とすのって地味に大変だよね。そこが改善されたニュースだよ！\n\n## なにが発表されたの？\n\nAWS の What's New によると、AWS Transfer Family の Web アプリで、ユーザーが複数のファイルとフォルダを一度にダウンロードできるようになったよ。ファイルとフォルダを好きな組み合わせで選んで、1 回の操作でまとめて落とせるの！\n\n## 今までどうだったの？\n\nこれまでは、ダウンロードできるのは 1 ファイルずつで、フォルダはそもそもダウンロードできなかったんだ。\n\n## これで何が変わるの？\n\n- ファイルとフォルダを選んで、アクションメニューの Download を選ぶだけ\n- ダウンロードは zip アーカイブで届き、展開すると元のフォルダ構造が保たれる\n- ダウンロード対象の一覧と、各ファイルの進捗・成功/失敗の状態がリアルタイムで表示される\n\n## 深く潜ってみよう\n\n対応ブラウザには制限があるよ。\n\n- 対応: Google Chrome、Mozilla Firefox、Microsoft Edge などの Chromium 系ブラウザ\n- 未対応: Safari(Safari では従来どおり 1 ファイルずつのダウンロードは可能)\n\n提供リージョンは、Transfer Family Web Apps が使えるすべての AWS リージョンだよ。\n\n## まとめ\n\n- 複数のファイルとフォルダを 1 回の操作でダウンロード\n- zip で届き、フォルダ構造も保持される\n- 進捗と成否が 1 ファイルずつ見える\n- Safari は未対応で、1 ファイルずつなら可能\n\nWeb アプリでパートナーや社内のみんなにファイルを配っている管理者さんに刺さる更新だよ！",
+  "title_en": "Transfer Family web apps now let you download multiple files and folders at once!",
+  "summary_en": "AWS Transfer Family web apps now let end users select multiple files and folders and download them together as a zip archive. Safari is not supported yet.",
+  "body_md_en": "Hi, it's Shii-chan! Downloading files one by one is a bit of a chore, right? That just got better!\n\n## What was announced?\n\nAccording to AWS What's New, AWS Transfer Family web app users can now download multiple files and folders at once. You can select any combination of files and folders and download them together in a single action.\n\n## The story so far\n\nPreviously, end users could download only one file at a time, and folders could not be downloaded at all.\n\n## What changes\n\n- Select files and folders, then choose Download from the action menu\n- The download arrives as a zip archive that preserves the original folder structure when unzipped\n- The web app shows the files to be downloaded and real-time progress with a success or failed status for each one\n\n## Dive Deep\n\nThere are browser limits:\n\n- Supported: Google Chrome, Mozilla Firefox, and Chromium-based browsers such as Microsoft Edge\n- Not supported: Safari (end users can still download files one at a time there)\n\nIt is available in all AWS Regions where Transfer Family Web Apps is offered.\n\n## Wrap-up\n\n- Download multiple files and folders in one action\n- Delivered as a zip with the folder structure preserved\n- Per-file progress and status are visible\n- Safari is not supported, but single-file download still works\n\nThis is for admins who share files with partners or teammates through web apps!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/transfer-family-web-apps-download-multiple-files-folders",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Transfer Family now supports downloading multiple files and folders in web apps",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-09-29T08:00:00+00:00"
+}
