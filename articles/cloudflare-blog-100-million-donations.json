@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-blog-100-million-donations",
+  "title": "Cloudflare Impact の寄付サービスが 1 億ドルを突破！Project Galileo などで守られる組織がたくさん",
+  "summary": "Cloudflare の Impact プログラムによる寄付サービスが 1 億ドルに到達するよ。ジャーナリストや市民団体、選挙管理機関、公立学校など、数千の組織がサイバー攻撃から守られているんだ！",
+  "body_md": "こんにちは、しぃちゃんだよ！今日はあったかいニュースだよ！\n\n## なにが発表されたの？\n\nCloudflare の Blog で、Impact プログラムによる寄付サービスが今週 1 億ドルに到達することが発表されたよ。ジャーナリスト、市民団体、州・地方政府、選挙管理機関、公立学校など、数千の組織がサイバー攻撃から守られているんだって。\n\n## なぜ重要なの？\n\n守る力が足りない公共性の高い組織にとって、サイバー攻撃対策は大きな負担だよね。それを寄付サービスで支えてきた積み重ねが、今回の節目だよ。\n\n## これで何が変わるの？\n\n主なプログラムはこれだよ。\n\n- Project Galileo（2014 年）: ジャーナリスト、人権活動家、市民団体を保護。120 以上の国で 3,500 以上のドメインが対象で、2025 年には参加者に対する 385 億件のサイバー攻撃をブロック\n- The Athenian Project（2017 年）: 民主的な選挙インフラを支援。米国 33 州の 440 以上の選挙サイトを保護し、カナダやジョージアを含む 8 か国に拡大\n- Cloudflare for Campaigns（2020 年）: Defending Digital Campaigns と連携し、米国の 530 以上の候補者サイトを支援\n\n## 深く潜ってみよう\n\n最近の拡大についても紹介されているよ。\n\n- ジャーナリスト向けの AI ツール: 750 以上の報道機関が、Bot Management と AI Crawl Control を利用できる\n- スタートアップ向けプログラム: 非営利団体に 25 万ドル以上のクレジットを提供（30 団体が採択）\n- 人権分野の自動化: 抑圧の追跡、政策づくり、企業のデューデリジェンスのための、開発者製のツール\n\n対象は、州・地方政府、選挙管理機関、公立学校、ジャーナリスト、市民団体、人権活動家、コミュニティネットワークなどだよ。\n\n## まとめ\n\n- Impact プログラムの寄付サービスが 1 億ドルに到達\n- Galileo、Athenian、Campaigns の 3 つが柱\n- ジャーナリスト向け AI ツールや非営利向けクレジットも拡大\n\n技術の力で公共性の高い組織を守る取り組みが気になる人に刺さるよ！\n",
+  "title_en": "Cloudflare Impact Hits $100 Million in Donated Services",
+  "summary_en": "Cloudflare's Impact programs reach $100 million in donated services this week, protecting thousands of journalists, civil society groups, governments, election bodies, and public schools from cyberattacks.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today's news is a warm one.\n\n## What was announced?\n\nThe Cloudflare Blog says Cloudflare's Impact programs reach $100 million in donated services this week. Thousands of entities, including journalists, civil society, state and local governments, election management bodies, and public schools, are protected from cyberattacks.\n\n## Why it matters\n\nCyber defense is a heavy burden for public-interest organizations with limited resources. This milestone is the result of supporting them through donated services.\n\n## What changes\n\nThe main programs:\n\n- Project Galileo (2014): protects journalists, human rights defenders, and civil society groups, covering 3,500+ domains across 120+ countries and blocking 38.5 billion cyberattacks against participants in 2025\n- The Athenian Project (2017): supports democratic election infrastructure, protecting 440+ election websites in 33 U.S. states and expanding to eight countries including Canada and Georgia\n- Cloudflare for Campaigns (2020): partners with Defending Digital Campaigns and serves 530+ candidate websites across the U.S.\n\n## Dive Deep\n\nRecent expansions:\n\n- AI tools for journalists: 750+ news organizations can use Bot Management and AI Crawl Control\n- Startup program: $250,000+ in credits for nonprofit organizations (30 organizations accepted)\n- Human rights automation: developer-built tools for tracking repression, policy development, and corporate due diligence\n\nRecipients include state and local governments, election bodies, public schools, journalists, civil society organizations, human rights defenders, and community networks.\n\n## Wrap-up\n\n- Impact donated services reach $100 million\n- Galileo, Athenian, and Campaigns are the three pillars\n- AI tools for journalists and nonprofit credits are expanding\n\nThis is for anyone interested in using tech to protect public-interest organizations!\n",
+  "emotion": "happy",
+  "importance": 1,
+  "source_url": "https://blog.cloudflare.com/100-million-donations/",
+  "source_name": "Cloudflare Blog",
+  "og_title": "Cloudflare Impact reaches $100 million in donations",
+  "tags": [
+    "cloudflare",
+    "security",
+    "business"
+  ],
+  "published_at": "2026-09-30T13:01:55+00:00"
+}

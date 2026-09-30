@@ -1,0 +1,21 @@
+{
+  "slug": "cloudflare-blog-pay-per-use",
+  "title": "AI がコンテンツを使ったら報酬が届く！Pay Per Use がベータ開始",
+  "summary": "Pay Per Use は、AI 企業がパブリッシャーのコンテンツを使った分を報告し、Cloudflare が請求・支払い・レポートを担う仕組みだよ。クロールではなく実際の利用に対して支払われるんだって！",
+  "body_md": "みんな、しぃちゃんだよ！コンテンツを作っている人に嬉しいニュースだよ！\n\n## なにが発表されたの？\n\nCloudflare の Blog で、Pay Per Use のベータが発表されたよ。AI 企業がパブリッシャーのコンテンツを使ったことを報告して、Cloudflare が課金・支払い・レポートを担うから、パブリッシャーは利用に応じて報酬を受け取れるの。Cloudflare が選んだ AI 企業とパブリッシャーと一緒に進めているみたい。\n\n## 今までどうだったの？\n\nこれまでの Pay Per Crawl は、コンテンツが最終的に使われたかどうかに関係なく、アクセスに対して課金するモデルだったよ。Pay Per Use は、実際に使われた分に対して課金するところが違うんだ。\n\n## これで何が変わるの？\n\nパブリッシャーは、同じコンテンツでも用途ごとに異なる支払いオファーを受け入れるかどうかを選べるよ。収益と利用状況はダッシュボードで追えるんだって。\n\n## 深く潜ってみよう\n\n流れは 4 ステップだよ。\n\n- AI 企業が条件を決める: 自社のクローラーを特定し、支払いが発生する利用の条件と価格を設定して、決済アカウントをつなぐ\n- パブリッシャーが判断する: ダッシュボードでオファーを確認し、参加するプログラムを選ぶ\n- バイヤーが利用を報告する: API で JSON として、タイムスタンプ、URL、イベント ID を送る\n- 精算: Cloudflare が利用を集計し、バイヤーに請求して、パブリッシャーに毎月支払う\n\n利用の報告はバイヤーの自己申告だけど、参加しているパブリッシャーと照合して検証されるよ。関連ツールの Monetization Gateway（こちらもベータ）は、x402 プロトコルでリクエスト単位に課金するものだよ。参加企業名や人数は今回は公開されていないみたい。\n\n## まとめ\n\n- AI の利用分に対して、Cloudflare が請求・支払い・レポートを担う\n- クロールではなく実際の利用に課金するのが Pay Per Crawl との違い\n- 利用は API で報告され、毎月精算される\n\nコンテンツを作るパブリッシャーと、AI 企業のライセンス担当者に刺さる話だよ！\n",
+  "title_en": "Get Paid When AI Uses Your Work: Pay Per Use Enters Beta",
+  "summary_en": "With Pay Per Use, AI companies report when they use publishers' content, and Cloudflare handles billing, payouts, and reporting. Payment is tied to actual use, not crawling.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Here's good news for people who create content.\n\n## What was announced?\n\nThe Cloudflare Blog announced the Pay Per Use beta. AI companies report when they use publishers' content, and Cloudflare handles billing, payouts, and reporting, so publishers are paid according to use. Cloudflare is working directly with select AI companies and publishers.\n\n## The story so far\n\nCloudflare's earlier Pay Per Crawl charges for access regardless of whether the content is ultimately used. Pay Per Use charges for actual use instead.\n\n## What changes\n\nPublishers can accept different payment offers for different uses of the same content, and track earnings and usage in the dashboard.\n\n## Dive Deep\n\nThe flow has four steps:\n\n- AI companies define terms: each buyer identifies its crawler, specifies what usage triggers payment, sets pricing, and connects a payment account\n- Publishers decide: they review offers in the dashboard and choose which programs to join\n- Buyers report usage: via API as JSON with a timestamp, URL, and event ID\n- Settlement: Cloudflare aggregates usage, charges buyers, and pays publishers monthly\n\nUsage is self-reported by buyers but verified against enrolled publishers. The related Monetization Gateway (also in beta) charges per request via the x402 protocol. Participant names and numbers were not disclosed.\n\n## Wrap-up\n\n- Cloudflare handles billing, payouts, and reporting for AI use of content\n- It charges for actual use, unlike Pay Per Crawl\n- Usage is reported via API and settled monthly\n\nThis is for publishers and AI companies' licensing teams!\n",
+  "emotion": "thinking",
+  "importance": 2,
+  "source_url": "https://blog.cloudflare.com/pay-per-use/",
+  "source_name": "Cloudflare Blog",
+  "og_title": "Pay Per Use: when AI uses your work, you should get paid",
+  "tags": [
+    "cloudflare",
+    "ai",
+    "web",
+    "business"
+  ],
+  "published_at": "2026-09-30T13:00:00+00:00"
+}

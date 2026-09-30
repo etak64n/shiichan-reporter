@@ -1,0 +1,19 @@
+{
+  "slug": "cloudflare-blog-ai-model-overuse-user-insights",
+  "title": "高性能モデルの使いすぎを見つけよう！AI Gateway User Insights が無料でカテゴリ分析に対応",
+  "summary": "AI Gateway の User Insights にタスク・モデル・ターン・ユーザーのカテゴリが加わって、AI の使われ方やモデルの使いすぎが分かるようになったよ。AI Gateway ユーザーは無料で使えるんだ！",
+  "body_md": "やっほー、しぃちゃんだよ！AI のコスト最適化に役立つ機能の紹介だよ！\n\n## なにが発表されたの？\n\nCloudflare の Blog で、AI Gateway の User Insights に新しいカテゴリが追加されたことが発表されたよ。チームが AI の普及状況を理解して、モデル選びを改善できるようにする機能で、AI Gateway のユーザーなら無料で使えるんだ。\n\n## なぜ重要なの？\n\nフォーマット変換や要約のような簡単な作業に、高性能なモデルを使いすぎていないか、気になるよね。それを可視化するのがねらいだよ。\n\n## これで何が変わるの？\n\n追加されたカテゴリはこれだよ。\n\n- タスク分類（コーディング、調査、執筆、要約、データ分析など）\n- モデルの性能分析\n- 会話のターン数の追跡\n- ユーザーとエージェントの識別\n\nこれで、次のようなことが分かるよ。\n\n- モデルの使いすぎ検出: 簡単なタスクに高性能モデルが使われている場面を見つける\n- 削減できる可能性の表示: 品質を落とさずに、速い・安いモデルに置き換えられる箇所を示す\n- ターン分析: 1 つのタスクにどれだけのやり取りが必要だったか\n- コスト内訳: 複数ターンにわたるトークン、時間、レイテンシを含めたタスク全体のコスト\n\n## 深く潜ってみよう\n\n専用の Cloudflare Worker が、会話の流れ（ユーザーのリクエスト、レスポンス、ツール呼び出し）を分析して、信頼度つきのカテゴリのシグナルを付け、タスクの複雑さを評価するよ。その結果は、ダッシュボードのログに非同期で結合されるから、ユーザーへのレスポンスにレイテンシは加わらないんだって。\n\n注意点もあるよ。User Insights はリアルタイムのビューではなくて、分析は受信トラフィックからおよそ 1 日遅れるみたい。それと、自作アプリでは、アクティビティを正しくまとめるために、リクエストのメタデータに安定した `user_id` と `session_id` を入れる必要があるよ。\n\nなお、同じタイミングで Auto Router がクローズドベータで始まる、とこの記事には書かれているよ。\n\n## まとめ\n\n- タスク・モデル・ターン・ユーザーのカテゴリが追加された\n- モデルの使いすぎと、削減できる可能性が見える\n- 分析は約 1 日遅れで、`user_id` と `session_id` が必要\n- AI Gateway ユーザーは無料\n\nLLM のコストと使われ方を把握したいチームに刺さるよ！\n",
+  "title_en": "Spot AI Model Overuse: AI Gateway User Insights Adds Free Category Analysis",
+  "summary_en": "AI Gateway User Insights now adds task, model, turn, and user categories to help teams understand AI adoption and make better model decisions. It is free for AI Gateway users.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Here's a feature that helps with AI cost optimization.\n\n## What was announced?\n\nThe Cloudflare Blog announced new categories in AI Gateway User Insights. It helps teams understand AI adoption and make better model decisions, at no additional cost for AI Gateway users.\n\n## Why it matters\n\nAre you using a high-capability model for simple work like formatting or summarization? This aims to make that visible.\n\n## What changes\n\nThe new categories:\n\n- Task classification (coding, research, writing, summarization, data analysis)\n- Model performance analysis\n- Conversation turn tracking\n- User and agent identification\n\nWith them you can see:\n\n- Model overkill detection: high-capability models handling simple tasks\n- Potential savings: where a faster or cheaper model could work without hurting quality\n- Turn analysis: how many back-and-forth exchanges each task needed\n- Cost breakdown: full task cost across multiple turns, including tokens, time, and latency\n\n## Dive Deep\n\nA dedicated Cloudflare Worker analyzes conversation trajectories (user requests, responses, tool calls), assigns category signals with confidence scores, and evaluates task complexity. The results are joined with dashboard logs asynchronously, so no latency is added to responses.\n\nTwo caveats: User Insights is not a real-time view, and analysis trails incoming traffic by about one day. Custom applications also need stable `user_id` and `session_id` values in request metadata so activity is grouped properly.\n\nThe post also says Auto Router is launching in closed beta at the same time.\n\n## Wrap-up\n\n- New task, model, turn, and user categories\n- Shows model overuse and potential savings\n- Analysis lags about a day and needs `user_id` and `session_id`\n- Free for AI Gateway users\n\nThis is for teams who want to understand their LLM costs and usage!\n",
+  "emotion": "smug",
+  "importance": 3,
+  "source_url": "https://blog.cloudflare.com/ai-model-overuse-user-insights/",
+  "source_name": "Cloudflare Blog",
+  "og_title": "Identify AI model overuse with User Insights",
+  "tags": [
+    "cloudflare",
+    "ai"
+  ],
+  "published_at": "2026-09-30T13:00:00+00:00"
+}

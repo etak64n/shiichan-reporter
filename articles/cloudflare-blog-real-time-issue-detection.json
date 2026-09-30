@@ -1,0 +1,21 @@
+{
+  "slug": "cloudflare-blog-real-time-issue-detection",
+  "title": "Workers の本番エラーがそのままコーディングエージェントへ！Issues がオープンベータ",
+  "summary": "Cloudflare Workers の組み込みエラー監視 Issues が、本番の失敗をグループ化して、スタックトレースやログを Claude Code などのエージェントに送れるようになったよ。設定は 1 行で、オープンベータなんだ！",
+  "body_md": "やっほー、しぃちゃんだよ！本番障害の調査が楽になりそうな発表だよ！\n\n## なにが発表されたの？\n\nCloudflare の Blog で、Workers の組み込みエラー監視 Issues がオープンベータで登場したよ。本番の失敗を自動で検出してグループ化し、調査用の情報をコーディングエージェントに送って、調査から pull request 作成まで進められるようにするんだって。\n\n## なぜ重要なの？\n\nエラーの検出、ログ集め、原因調査は手間がかかるよね。Issues は Workers のランタイムレベルでエラーを捕まえるから、追加の計装なしで始められるよ。\n\n## これで何が変わるの？\n\n関連する例外、5xx レスポンス、エラーログが 1 つの issue にまとまって、そのままエージェントに渡せるよ。Cloudflare の Workflows チームは、自分たちの本番で Issues を使って 1 日で 2 つのバグを見つけたそうだよ。\n\n## 深く潜ってみよう\n\n検出の対象はこれだよ。\n\n- 未捕捉の例外と失敗した呼び出し\n- HTTP 5xx レスポンス\n- `console.log` / `console.error` の出力とスタックトレース\n- 暴走したアラームや、ループ内の過剰なログ出力\n\nエージェントに送る情報は、失敗の要約と、例外・エラー、ソースマップ済みのスタックトレース、前後のログとトレース、Worker のバージョンだよ。ユーザー ID・アカウント ID・セッション ID などは、OpenTelemetry API で追加パッケージなしにアプリ固有のコンテキストとして付けられるの。\n\n送り先は Claude Code、Cursor、Devin、汎用 Webhook、インシデント管理・チャットツールで、設定したしきい値に応じて振り分けるよ。設定は次の 1 行だけ。\n\n```\nobservability.issues.enabled: true\n```\n\n新しい `cf` CLI からも、issue の確認や自動化の作成ができるみたい。料金は発表では触れられていないよ。\n\n## まとめ\n\n- Workers 向けの組み込みエラー監視 Issues がオープンベータ\n- 例外・5xx・ログを 1 つにまとめ、ソースマップ済みスタックトレースなどをエージェントへ\n- 設定は 1 行、`cf` CLI にも対応\n\nWorkers を本番運用していて、障害調査をエージェントに任せてみたい人に刺さるよ！\n",
+  "title_en": "Production Errors Straight to Your Coding Agent: Workers Issues Enters Open Beta",
+  "summary_en": "Issues, built-in error monitoring for Cloudflare Workers, groups production failures and sends stack traces, logs, and context to agents like Claude Code. Setup is one line, and it is in open beta.",
+  "body_md_en": "Hi everyone, it's Shii-chan! This one should make debugging production a lot easier.\n\n## What was announced?\n\nThe Cloudflare Blog introduced Issues, built-in error monitoring for Workers, in open beta. It detects production failures, groups them, and sends diagnostic context to a coding agent so it can investigate and open a pull request.\n\n## Why it matters\n\nDetecting errors, collecting logs, and finding causes takes effort. Issues captures errors at the Workers runtime level, so no extra instrumentation is needed.\n\n## What changes\n\nRelated exceptions, 5xx responses, and error logs are grouped into a single issue that can go straight to an agent. Cloudflare's Workflows team found two production bugs within a day using Issues on their own systems.\n\n## Dive Deep\n\nWhat it detects:\n\n- Uncaught exceptions and failed invocations\n- HTTP 5xx responses\n- `console.log` / `console.error` output and stack traces\n- Runaway alarms and excessive logging in loops\n\nWhat the agent receives: the failure summary, the exception or error, a source-mapped stack trace, leading and trailing logs and traces, and the Worker version. You can attach identifiers such as user, account, and session IDs through the OpenTelemetry API without extra packages.\n\nIssues can be routed to Claude Code, Cursor, Devin, generic webhooks, or incident management and chat platforms, based on thresholds you configure. Setup is one line:\n\n```\nobservability.issues.enabled: true\n```\n\nThe new `cf` CLI can also inspect issues and create automations. Pricing was not specified in the announcement.\n\n## Wrap-up\n\n- Built-in Workers error monitoring is in open beta\n- Exceptions, 5xx, and logs are grouped, with source-mapped stack traces and more sent to agents\n- One-line setup, plus `cf` CLI support\n\nThis is for anyone running Workers in production who wants to hand incident investigation to an agent!\n",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://blog.cloudflare.com/real-time-issue-detection/",
+  "source_name": "Cloudflare Blog",
+  "og_title": "Detect and send production issues straight to your agent",
+  "tags": [
+    "cloudflare",
+    "serverless",
+    "devops",
+    "ai"
+  ],
+  "published_at": "2026-09-30T13:00:00+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-blog-simplifying-domains",
+  "title": "Cloudflare Registrar のドメイン検索が刷新！420 以上の拡張子を一気に検索、cf CLI でエージェントも購入",
+  "summary": "Cloudflare Registrar の新しい検索は 420 以上の拡張子を入力しながら見つけられて、透明な価格表示だよ。拡張された API と cf CLI で、エージェントもドメインの検索・登録・移管ができるんだって！",
+  "body_md": "みんな、しぃちゃんだよ！ドメイン探しが楽しくなりそうな発表だよ！\n\n## なにが発表されたの？\n\nCloudflare の Blog で、Cloudflare Registrar のドメイン検索が作り直されたことが紹介されたよ。\n\n- 420 以上の拡張子の結果を、入力しながらリアルタイムで表示\n- 並べ替えとフィルターに対応し、取得済みのドメインも表示して文脈を見せる（購入可能なものだけの表示切り替えもあり）\n- 初年度の登録料と更新料を並べて表示する、透明な価格表示\n\nBirthday Week では `.io`、`.dev`、`.app`、`.tech` などで初年度割引もあったそうだよ。\n\n## これで何が変わるの？\n\n人はもちろん、エージェントもドメイン操作を自動化できるようになるよ。拡張された Registrar API にはこれが入っているの。\n\n- ドメインの検索と空き確認\n- 登録と移管（transfer-in）\n- テスト用のサンドボックス環境\n- 420 以上のレジストリを説明する拡張子エンドポイント\n\n新しい `cf` CLI でも同じ操作がターミナルからできるから、エージェントのワークフローに組み込みやすいよ。\n\n## 深く潜ってみよう\n\n検索基盤は Cloudflare の開発者プラットフォームでできているよ。\n\n- Workers: 公開の検索エンドポイントと空き確認サービス\n- Durable Objects: 検索セッションごとの調整\n- Workers KV: 準備済みの空き状況データセットのキャッシュ\n- WebSockets: ブラウザとバックエンドの双方向通信（独自のアプリケーションプロトコル）\n\n結果は、準備済みデータセット、DNS レコード、レジストリへのライブ照会という複数の根拠を順に当たって出すよ。速さとデータの新しさのバランスを取る設計なんだって。\n\n## まとめ\n\n- 420 以上の拡張子をリアルタイム検索、初年度と更新料を明示\n- Registrar API に検索・登録・移管とサンドボックスが追加\n- `cf` CLI でエージェントもドメイン操作ができる\n\n新しいプロジェクトのドメインをさくっと取りたい人や、エージェントに任せたい人に刺さるよ！\n",
+  "title_en": "Domain Search Reimagined: 420+ Extensions and a cf CLI for Agents on Cloudflare Registrar",
+  "summary_en": "Cloudflare Registrar's new search returns fast, transparent results across 420+ extensions using Workers, Durable Objects, and WebSockets. An expanded API and the cf CLI let agents search, register, and transfer domains too.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Finding a domain is about to get more fun.\n\n## What was announced?\n\nThe Cloudflare Blog introduced a rebuilt domain search for Cloudflare Registrar:\n\n- Results across 420+ extensions appear in real time as you type\n- Sorting and filtering are supported, and registered domains are shown for context (with a toggle to show only purchasable ones)\n- Transparent pricing shows the initial registration fee next to the renewal cost\n\nDuring Birthday Week there were also first-year discounts on extensions such as `.io`, `.dev`, `.app`, and `.tech`.\n\n## What changes\n\nAgents can automate domain work as well as people. The expanded Registrar API includes:\n\n- Domain search and availability checking\n- Registration and transfer-in\n- A sandbox environment for testing\n- An extensions endpoint documenting 420+ registries\n\nThe new `cf` CLI offers the same operations from the terminal, which makes it easy to plug into agent workflows.\n\n## Dive Deep\n\nThe search backend is built on Cloudflare's own developer platform:\n\n- Workers: public search endpoints and availability-checking services\n- Durable Objects: coordinate each search session\n- Workers KV: caches prepared availability datasets\n- WebSockets: bidirectional browser-to-backend communication with a custom application protocol\n\nResults come from progressively querying several evidence sources: prepared datasets, DNS records, and live registry lookups, balancing speed against freshness.\n\n## Wrap-up\n\n- Real-time search across 420+ extensions, with initial and renewal prices shown\n- Registrar API adds search, registration, transfer, and a sandbox\n- The `cf` CLI lets agents handle domains\n\nThis is for anyone who wants to grab a domain quickly, or hand it off to an agent!\n",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://blog.cloudflare.com/simplifying-domains/",
+  "source_name": "Cloudflare Blog",
+  "og_title": "Simplifying domains for people and agents",
+  "tags": [
+    "cloudflare",
+    "serverless",
+    "ai"
+  ],
+  "published_at": "2026-09-30T13:00:00+00:00"
+}

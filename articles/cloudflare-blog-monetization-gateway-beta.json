@@ -1,0 +1,21 @@
+{
+  "slug": "cloudflare-blog-monetization-gateway-beta",
+  "title": "AI エージェントに HTTP 402 で課金！Monetization Gateway がクローズドベータ開始",
+  "summary": "Monetization Gateway は、Web サイト・API・MCP ツールなどへのアクセスに対して、AI エージェントから HTTP 402 で従量課金できる仕組みだよ。米国のセラー向けクローズドベータの申請が始まったんだ！",
+  "body_md": "こんにちは、しぃちゃんだよ！エージェントにお金を払ってもらう仕組みの話だよ。\n\n## なにが発表されたの？\n\nCloudflare の Blog で、Monetization Gateway のベータが発表されたよ。ドメインの持ち主が、Web サイト、API、MCP ツール、データセットへのアクセスに対して、AI エージェントから利用料を取れる仕組みなんだ。すでに Cloudflare の AI Gateway、Ceramic.ai、Stocktwits、API2PDF が使っているよ。\n\n## なぜ重要なの？\n\nエージェントは人のようにアカウントを作ってクレジットカードを登録するのが苦手だよね。API2PDF では、事前のカード登録を求めると 50% 超が離脱していたそうだよ。この仕組みは、そのハードルを下げる狙いなの。\n\n## これで何が変わるの？\n\n売り手は、URL、ヘッダー、クエリパラメータなどに合わせて価格ルールを作って、リクエスト単位・検索クエリ単位・トークン単位で課金できるよ。支払いの検証、決済、失敗、リトライ、分析は Gateway が扱ってくれるんだって。\n\n## 深く潜ってみよう\n\nHTTP 402 の流れはこうだよ。\n\n- エージェントが支払い情報なしでリクエストする\n- サーバーが HTTP 402（Payment Required）を返し、`payment-required` ヘッダーに支払い手順を載せる\n- エージェントが承認に署名して支払いを送る\n- 決済の確認後、サーバーが要求されたリソースを返す\n\nチェックアウトへのリダイレクトや別の決済 API は要らないのがポイントだよ。決済は Base ブロックチェーン上の USDC で、Coinbase の x402 Facilitator が処理するみたい。例として、Ceramic.ai は検索結果を約 50 ミリ秒で返すそうで、Stocktwits は 1,000 万人以上のユーザーを抱えているよ。\n\nステータスはクローズドベータで、今のところ米国のセラーとバイヤーが対象（他の地域も準備中）。Cloudflare ダッシュボードから申請できて、質問は x402@cloudflare.com に送るんだって。\n\n## まとめ\n\n- エージェントから HTTP 402 でリクエスト・クエリ・トークン単位に課金できる\n- 決済は Base 上の USDC、Coinbase の x402 Facilitator\n- クローズドベータで、当面は米国のセラー・バイヤー向け\n\nAPI や MCP ツールを収益化したい開発者に刺さる発表だよ！\n",
+  "title_en": "Charge AI Agents with HTTP 402: Monetization Gateway Opens Closed Beta",
+  "summary_en": "Monetization Gateway lets you charge AI agents per use for websites, APIs, and MCP tools using HTTP 402. U.S.-based sellers can now apply for the closed beta.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today is about getting AI agents to pay.\n\n## What was announced?\n\nThe Cloudflare Blog announced the Monetization Gateway beta. Domain owners can charge AI agents per use for websites, APIs, MCP tools, or datasets. Cloudflare's AI Gateway, Ceramic.ai, Stocktwits, and API2PDF already use it.\n\n## Why it matters\n\nAgents are not great at creating accounts and registering credit cards. API2PDF reports more than a 50% drop-off when requiring a card up front. This aims to lower that barrier.\n\n## What changes\n\nSellers define pricing rules matching URL, headers, or query parameters and charge per request, per search query, or per token. The gateway handles payment verification, settlement, failures, retries, and analytics.\n\n## Dive Deep\n\nThe HTTP 402 flow:\n\n- The agent makes a request without payment credentials\n- The server responds with HTTP 402 (Payment Required), with payment instructions in the `payment-required` header\n- The agent signs an authorization and submits payment\n- After settlement is confirmed, the server delivers the resource\n\nNo redirect to checkout or separate payment API is needed. Settlement uses USDC on the Base blockchain, processed by Coinbase's x402 Facilitator. As examples, Ceramic.ai returns search results in about 50 milliseconds, and Stocktwits serves 10+ million users.\n\nIt is a closed beta, currently for U.S.-based sellers and buyers, with more geographies on the way. Apply in the Cloudflare Dashboard, and email x402@cloudflare.com with questions.\n\n## Wrap-up\n\n- Charge agents per request, query, or token with HTTP 402\n- Settlement in USDC on Base via Coinbase's x402 Facilitator\n- Closed beta, U.S. sellers and buyers for now\n\nThis is for developers who want to monetize APIs or MCP tools!\n",
+  "emotion": "thinking",
+  "importance": 3,
+  "source_url": "https://blog.cloudflare.com/monetization-gateway-beta/",
+  "source_name": "Cloudflare Blog",
+  "og_title": "Monetization Gateway beta: charge AI agents for consumption with HTTP 402",
+  "tags": [
+    "cloudflare",
+    "ai",
+    "web",
+    "business"
+  ],
+  "published_at": "2026-09-30T13:00:00+00:00"
+}
