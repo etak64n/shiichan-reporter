@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-marketplace-ai-agent-metering",
+  "title": "AWS Marketplace の従量課金連携を AI エージェントが手伝ってくれる！メータリング Skill が GA",
+  "summary": "AWS Marketplace のメータリング エージェントスキルが一般提供されたよ！AI コーディングアシスタントの中で、従量課金の SaaS メータリング連携の構築・デプロイ・検証まで案内してくれるみたい。",
+  "body_md": "みんな、しぃちゃんだよ！\n\nMarketplace で SaaS を売っているみんなに、うれしい発表があるよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Marketplace のメータリング エージェントスキルが一般提供(GA)になったと発表されたよ。\n\nセラーが、使っている AI コーディングアシスタントの中から、従量課金(pay-as-you-go)の SaaS メータリング連携を構築・デプロイ・検証できる、AI ガイド付きの体験だよ。\n\n## 今までどうだったの？\n\nメータリングの連携では、ドキュメントやワークショップを読み、試行錯誤で API を呼ぶ流れだったみたい。ディメンション名の不一致や無効なタイムスタンプのようなよくあるミスが、請求の抜けとして数日後に見つかることもあったよ。\n\n## これで何が変わるの？\n\nスキルは、連携の流れ全体を案内してくれるよ。\n\n- プロダクトタイプ、料金モデル、使用量ディメンションを聞き取る\n- 正しいメータリング API を推奨する\n- 構成に合わせた連携コードと、カスタマイズした AWS CloudFormation スタックを生成する\n- 本番コードを出す前に、AWS Marketplace に対してエンドツーエンドのテストを実行する\n\n## 深く潜ってみよう\n\n- ディメンションを、セラーの実際のプロダクト設定と照合して検証する\n- 組み込みのガードレールを適用する\n- ResolveCustomer API、BatchMeterUsage API、サブスクリプションイベント用の Amazon EventBridge を使う、サーバーレスのメータリングパイプラインをデプロイする\n- ライブテストで連携を検証する\n- Concurrent Agreements にも対応している\n- 既存のセラーが、メータリングの記録を確認・デバッグ・分析するのにも使える\n\nAWS MCP Server 経由で、MCP に対応した任意の AI コーディングアシスタントで使えるよ。Amazon Q Developer や Kiro なども含まれていて、プラグインのインストールは不要だよ。\n\n## まとめ\n\n- メータリング エージェントスキルが GA\n- 要件の確認からコード生成、デプロイ、ライブテストまで案内してくれる\n- 請求の抜けにつながるミスを、本番前に防げる\n- AWS MCP Server 経由で、MCP 対応のアシスタントから使える\n\nMarketplace で従量課金の SaaS を出品したいセラーのみんなに刺さるよ！",
+  "title_en": "An AI Agent Skill for AWS Marketplace Metering Integration Is Now GA!",
+  "summary_en": "The AWS Marketplace metering agent skill is generally available. It guides sellers through building, deploying, and validating a usage-based SaaS metering integration from inside their AI coding assistant.",
+  "body_md_en": "Hi everyone, it's Shii-chan!\n\nHere's some nice news for anyone selling SaaS on Marketplace!\n\n## What was announced?\n\nAccording to AWS What's New, the AWS Marketplace metering agent skill is now generally available.\n\nIt's an AI-guided experience that helps sellers build, deploy, and validate a usage-based (pay-as-you-go) SaaS metering integration from within their AI coding assistant.\n\n## The story so far\n\nSellers integrating metering navigated documentation, workshops, and trial-and-error API calls. Common mistakes such as mismatched dimension names or invalid timestamps could create billing gaps that were discovered days later.\n\n## What changes\n\nThe skill guides you through the whole integration journey.\n\n- Gathers your product type, pricing model, and usage dimensions\n- Recommends the correct metering API\n- Generates integration code and a customized AWS CloudFormation stack for your configuration\n- Runs an end-to-end test against AWS Marketplace before any production code ships\n\n## Dive Deep\n\n- Cross-validates dimensions against the seller's actual product configuration\n- Applies built-in guardrails\n- Deploys a serverless metering pipeline using the ResolveCustomer API, the BatchMeterUsage API, and Amazon EventBridge for subscription events\n- Verifies the integration with a live test\n- Supports Concurrent Agreements\n- Helps existing sellers inspect, debug, and analyze their metering records\n\nIt's available through the AWS MCP Server in any AI coding assistant that supports MCP, including Amazon Q Developer, Kiro, and other MCP-compatible clients, with no plugin installation required.\n\n## Wrap-up\n\n- The metering agent skill is GA\n- Guides you from requirements to code, deployment, and a live test\n- Catches mistakes that cause billing gaps before production\n- Works through the AWS MCP Server in MCP-compatible assistants\n\nThis is for sellers who want to list usage-based SaaS on Marketplace!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/marketplace-ai-agent-metering/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Marketplace launches an AI agent skill for usage-based metering integration",
+  "tags": [
+    "aws",
+    "ai",
+    "devops"
+  ],
+  "published_at": "2026-09-30T05:00:00+00:00"
+}

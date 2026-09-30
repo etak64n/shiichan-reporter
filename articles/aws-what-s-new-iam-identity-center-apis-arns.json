@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-iam-identity-center-apis-arns",
+  "title": "Identity Store API が ARN をそのまま受け取れる！ID への変換はもう不要",
+  "summary": "IAM Identity Center の Identity Store API が、リソース ID が使えた場所で ARN も受け付けるようになったよ！既存の連携はそのまま動くみたい。",
+  "body_md": "こんにちは、しぃちゃんだよ！\n\nコードが少しすっきりする、開発者向けの発表だよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS IAM Identity Center の Identity Store API が、ユーザー・グループ・グループメンバーシップ・アイデンティティストアの ARN を、これまでリソース ID を受け付けていた場所で受け付けるようになったと発表されたよ。\n\nARN への対応は追加のもので、既存の連携は変更なしで動き続けるよ。\n\n## 今までどうだったの？\n\nIAM ポリシーの評価、CloudTrail イベント、サービス間の連携などで、すでに ARN を持っていることがあるよね。今までは、ARN をリソース ID に切り出してから API を呼ぶ必要があったの。\n\n## これで何が変わるの？\n\n- ARN でも ID でも、そのまま渡せる\n- アプリケーションのコードが単純になる\n- ARN のパース間違いが起きにくくなる\n\n## 深く潜ってみよう\n\n- 変更は、Identity Store API のリクエストの識別子フィールド全てに適用される\n- レスポンスは、これまでどおりリソース ID を返す\n- 形式が不正な ARN や、リソースタイプが違う ARN は ValidationException になる\n- IAM Identity Center が提供されている全ての AWS リージョンで、追加料金なしで使える\n\n詳細は Identity Store API Reference を見てね。\n\n## まとめ\n\n- Identity Store API が ARN を受け付けるようになった\n- 既存の ID での呼び出しもそのまま動く\n- レスポンスは ID のまま、不正な ARN は ValidationException\n\nIdentity Store API を使って連携を作っている開発者に刺さるよ！",
+  "title_en": "Identity Store APIs Now Accept ARNs Directly, No More Stripping to IDs!",
+  "summary_en": "AWS IAM Identity Center's Identity Store APIs now accept resource ARNs anywhere they previously accepted resource IDs. Existing integrations keep working unchanged.",
+  "body_md_en": "Hi, it's Shii-chan!\n\nThis one makes your code a little simpler!\n\n## What was announced?\n\nAccording to AWS What's New, AWS IAM Identity Center's Identity Store APIs now accept the Amazon Resource Name (ARN) for a user, group, group membership, or identity store anywhere the APIs previously accepted the resource ID.\n\nARN support is additive, and existing integrations continue to work unchanged.\n\n## The story so far\n\nYou may already hold resource ARNs, for example from IAM policy evaluation, CloudTrail events, or cross-service integrations. Before, you had to strip the ARN down to the resource ID before calling Identity Store APIs.\n\n## What changes\n\n- You can pass either an ARN or an ID directly\n- Application code gets simpler\n- Fewer chances for parsing errors\n\n## Dive Deep\n\n- The change applies to every request identifier field across the Identity Store API surface\n- Responses continue to return resource IDs as before\n- Malformed or wrong-resource-type ARNs return a ValidationException\n- Available in all AWS Regions where IAM Identity Center is offered, at no additional cost\n\nSee the Identity Store API Reference for details.\n\n## Wrap-up\n\n- Identity Store APIs accept ARNs\n- Existing calls with IDs keep working\n- Responses still return IDs, and invalid ARNs return a ValidationException\n\nThis is for developers building integrations on the Identity Store APIs!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/iam-identity-center-apis-arns/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS IAM Identity Center Identity Store APIs now accept resource ARNs in addition to resource IDs",
+  "tags": [
+    "aws",
+    "security",
+    "devops"
+  ],
+  "published_at": "2026-09-30T08:00:00+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-aws-accounts-phone-number-verification",
+  "title": "AWS アカウントの電話番号を SMS で検証できるようになったよ！API も追加",
+  "summary": "AWS アカウントのプライマリ連絡先の電話番号を、SMS のワンタイムパスコードで検証できるようになったよ！コンソールと新しい API の両方で使えるみたい。",
+  "body_md": "やっほー、しぃちゃんだよ！\n\nアカウント管理まわりのセキュリティに関する発表だよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS アカウントがプライマリ連絡先の電話番号の検証に対応したと発表されたよ。\n\nSMS のワンタイムパスコード(OTP)で、電話番号を検証できるようになったの。\n\n## 今までどうだったの？\n\nアカウントの連絡先情報の電話番号は、形式のチェックはされていたけれど、別経路での検証はされていなかったよ。\n\n## これで何が変わるの？\n\n- 連絡先の電話番号が、実際に使えるものかを検証できる\n- GetContactInformation API で、どの電話番号が検証済みかを確認できる\n- AWS Organizations では、管理アカウントの検証済みステータスをメンバーアカウントが引き継げる\n\n## 深く潜ってみよう\n\n検証の流れはこうだよ。\n\n- AWS マネジメントコンソール、またはプログラムから新しい SendPhoneNumberVerification API で検証を開始する。6 桁の OTP が送られる\n- コードを入力すると、VerifyPhoneNumber API が検証して、検証済みステータスを保存する\n- PutContactInformation API で電話番号を変更すると、もう一度検証を求められる\n\nAWS Organizations の場合は、こうなるよ。\n\n- 管理アカウントから検証済みの電話番号をメンバーアカウントに適用したとき、番号が管理アカウントと一致すれば、メンバーアカウントも検証済みステータスを引き継ぐ\n- 何千ものアカウントで同じ番号を検証し直す必要がない\n- メンバーアカウントが自分で電話番号を変えた場合は、別途検証が必要\n\nAWS の全ての商用リージョンで利用できるよ。\n\n## まとめ\n\n- 電話番号を SMS の OTP で検証できる\n- SendPhoneNumberVerification と VerifyPhoneNumber の API が追加され、GetContactInformation で状態も確認できる\n- Organizations では管理アカウントの検証済みステータスを継承できる\n\n多数のアカウントを管理している、アカウント管理の担当者に刺さるよ！",
+  "title_en": "AWS Accounts Can Now Verify Phone Numbers via SMS, With New APIs!",
+  "summary_en": "AWS Accounts now support phone number verification for primary contact phone numbers using an SMS one-time passcode, through the console and new APIs.",
+  "body_md_en": "Hi, it's Shii-chan!\n\nThis one is about account management security!\n\n## What was announced?\n\nAccording to AWS What's New, AWS Accounts now support phone number verification for primary contact phone numbers.\n\nYou can verify a phone number via an SMS one-time passcode (OTP).\n\n## The story so far\n\nPhone numbers in AWS account contact information were validated for format, but never verified through an out-of-band mechanism.\n\n## What changes\n\n- You can verify that a contact phone number actually works\n- The GetContactInformation API shows which phone numbers have been verified\n- With AWS Organizations, member accounts can inherit verified status from the management account\n\n## Dive Deep\n\nHere's the flow.\n\n- Start verification in the AWS Management Console or programmatically with the new SendPhoneNumberVerification API, which sends a 6-digit OTP\n- After you enter the code, the VerifyPhoneNumber API validates it and persists the verified status\n- If you change the number through the PutContactInformation API, you're prompted to complete verification again\n\nFor AWS Organizations:\n\n- When a verified phone number is applied to member accounts from the management account, they inherit the verified status if the number matches the management account's\n- You don't need to verify the same number across thousands of accounts\n- Member accounts that independently change their own phone numbers need to complete verification separately\n\nIt's available in all AWS commercial regions.\n\n## Wrap-up\n\n- Verify phone numbers with an SMS OTP\n- New SendPhoneNumberVerification and VerifyPhoneNumber APIs, plus status in GetContactInformation\n- Organizations can inherit verified status from the management account\n\nThis is for people managing many AWS accounts!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/aws-accounts-phone-number-verification/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS accounts now support phone number verification",
+  "tags": [
+    "aws",
+    "security"
+  ],
+  "published_at": "2026-09-30T08:00:00+00:00"
+}

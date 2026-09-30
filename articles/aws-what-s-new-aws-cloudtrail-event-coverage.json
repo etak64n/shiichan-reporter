@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-cloudtrail-event-coverage",
+  "title": "CloudTrail Event Coverage でデータイベントの抜け漏れが一目で分かる！",
+  "summary": "AWS CloudTrail に Event Coverage という新しいコンソール体験が登場したよ！アカウントと組織レベルで、データイベントのログが有効なサービスとリソースタイプ、そうでないものが分かるみたい。",
+  "body_md": "こんにちは、しぃちゃんだよ！\n\nセキュリティ監視の死角を見つけやすくなる発表だよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS CloudTrail に Event Coverage という新しいコンソール体験が追加されたと発表されたよ。\n\nアカウントと組織のレベルで、データプレーン操作のカバレッジが見えるようになるの。\n\n## なぜ重要なの？\n\nデータイベントは、AWS サービスのデータプレーン操作を追跡するためのものだよ。たとえば Amazon S3 の `GetObject` や `PutObject` のようなオブジェクトレベルの操作を記録すれば、不正アクセスやデータの持ち出しの試みを検出できるよね。\n\nでも、データイベントが十分に有効になっていないと、そうした操作に気づけなくて、セキュリティ監視に死角が生まれるの。\n\n## これで何が変わるの？\n\n- どの AWS サービスとリソースタイプでデータイベントのログが有効か、どれが無効かが分かる\n- 組織内のアカウントを手動で 1 つずつ調べなくても、ログの抜けを素早く見つけられる\n- 対応する全てのデータイベントソースのカバレッジを、1 か所で確認できる\n\n## 深く潜ってみよう\n\n- ダッシュボードから、データイベントを直接サブスクライブできる。複数アカウントの組織でも、数クリックでギャップを埋めやすくなる\n- Event Coverage は AWS CloudTrail コンソールからアクセスする\n- CloudTrail が提供されている全ての AWS 商用リージョンで利用可能\n\nデータイベントのログの詳細は CloudTrail のドキュメントを見てね。\n\n## まとめ\n\n- CloudTrail に Event Coverage が追加\n- アカウント・組織レベルで、データイベントの有効・無効が見える\n- ダッシュボードから直接サブスクライブして、ギャップを埋められる\n\n複数アカウントのログ設定を管理しているセキュリティ担当に刺さるよ！",
+  "title_en": "CloudTrail Event Coverage Shows Your Data Event Logging Gaps at a Glance!",
+  "summary_en": "AWS CloudTrail introduces Event Coverage, a console experience that shows which services and resource types have data event logging enabled at the account and organization level.",
+  "body_md_en": "Hi, it's Shii-chan!\n\nThis makes blind spots in security monitoring easier to find!\n\n## What was announced?\n\nAccording to AWS What's New, AWS CloudTrail introduces Event Coverage, a new console experience.\n\nIt gives you visibility into your data plane operations coverage at the account and organization level.\n\n## Why it matters\n\nData events track data plane operations in AWS services. For example, logging Amazon S3 object-level operations like `GetObject` and `PutObject` helps detect unauthorized data access or exfiltration attempts.\n\nWithout comprehensive data events coverage, these activities can go unnoticed, leaving blind spots in your security monitoring.\n\n## What changes\n\n- You can see which AWS services and resource types have data event logging enabled and which don't\n- You can quickly identify gaps in your logging posture without manually scanning accounts in your organization\n- You can view coverage across all supported data event sources in one place\n\n## Dive Deep\n\n- You can subscribe to data events directly from the dashboard, which makes it easier to close coverage gaps in a few clicks, especially across multiple accounts\n- You access Event Coverage from the AWS CloudTrail console\n- Available in all commercial AWS Regions where CloudTrail is supported\n\nSee the CloudTrail documentation for more on logging data events.\n\n## Wrap-up\n\n- CloudTrail adds Event Coverage\n- See data event logging coverage at the account and organization level\n- Subscribe directly from the dashboard to close gaps\n\nThis is for security teams managing logging settings across many accounts!",
+  "emotion": "smug",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/aws-cloudtrail-event-coverage/",
+  "source_name": "AWS What's New",
+  "og_title": "Uncover blind spots in AWS data plane operations with CloudTrail Event Coverage",
+  "tags": [
+    "aws",
+    "security",
+    "devops"
+  ],
+  "published_at": "2026-09-30T16:00:00+00:00"
+}

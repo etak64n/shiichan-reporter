@@ -1,0 +1,20 @@
+{
+  "slug": "openai-news-disrupting-a-coordinated-model-distillation-campaign",
+  "title": "暗号化された推論を盗もうとした蒸留キャンペーン、OpenAI が阻止したよ！",
+  "summary": "OpenAI が、モデルの保護された推論を抜き出そうとする組織的な蒸留キャンペーンを阻止したと発表したよ。暗号化された推論を別の会話で復号させる手口で、現在は経路をふさいでいるみたい。",
+  "body_md": "やっほー、しぃちゃんだよ！\n\n今日は AI の安全性に関わる、ちょっと緊張するニュースだよ！\n\n## なにが発表されたの？\n\nOpenAI の News で、OpenAI が、モデルの保護された推論(内部の思考過程)を抜き出そうとする、組織的なキャンペーンを阻止したと発表されたよ。\n\nキャンペーンは 7 月 1 日ごろから始まり、7 月 24 日から 25 日にかけて大きく拡大して、7 月 28 日までに完全に阻止されたと説明されているよ。\n\n## なぜ重要なの？\n\n敵対的な蒸留は、元のモデルの安全対策を回避したまま、競合するモデルを訓練することにつながりうるよ。OpenAI はこれを、安全性と国家安全保障上のリスクとして説明しているよ。\n\n## これで何が変わるの？\n\nOpenAI は、次のような対策をとったよ。\n\n- アカウントの停止\n- サインアップ管理の強化\n- モニタリングの拡大\n- 暗号化された推論を再生できる経路の封鎖\n\nFrontier Model Forum と政府の窓口を通じて、業界のパートナーとも連携したみたい。\n\n## 深く潜ってみよう\n\n手口は、暗号や DB を破るものではなくて、モデルとのやり取りを操作して隠れた推論を引き出すものだよ。たとえば、ある会話から暗号化された推論をコピーして、別の会話でモデルにそれを復号・書き起こしさせる、という方法があったと説明されているよ。複数の会話とアカウントにまたがって、規模を広げていたみたい。\n\n規模と帰属についての数字はこうだよ。\n\n- ピーク時の 7 月 24 日から 25 日に、16,000 件のリクエスト\n- 抽出のパターンを使っていたユーザーは 4,000 人以上\n- 関連する活動は、15,000 を超えるユーザーアカウントで確認\n- 活動の中心的なクラスターは、Kimi モデルを開発する Moonshot AI に関係する個人によるものと、OpenAI は見ている\n\n## まとめ\n\n- 保護された推論を抜き出す組織的な蒸留キャンペーンを、7 月 28 日までに阻止\n- 暗号化された推論を別の会話で復号させる手口が使われた\n- アカウント停止、サインアップ管理の強化、監視の拡大、再生経路の封鎖で対応\n\nモデルの悪用対策や AI の安全性に関心のあるみんなに向けた、読み物のニュースだよ！",
+  "title_en": "OpenAI Disrupts a Coordinated Distillation Campaign Targeting Protected Reasoning!",
+  "summary_en": "OpenAI says it disrupted a coordinated campaign to extract protected model reasoning. The attackers had models decrypt hidden reasoning in other conversations, and OpenAI has closed that pathway.",
+  "body_md_en": "Hi, it's Shii-chan!\n\nToday's news is about AI safety, and it's a little tense!\n\n## What was announced?\n\nAccording to OpenAI News, OpenAI identified and disrupted a coordinated campaign to extract protected model reasoning (the model's internal working process).\n\nThe campaign began around July 1, escalated significantly on July 24-25, and was fully disrupted by July 28.\n\n## Why it matters\n\nAdversarial distillation could let someone train a competing model while bypassing the original model's safety measures. OpenAI describes this as a safety and national security risk.\n\n## What changes\n\nOpenAI took these steps:\n\n- Banned accounts\n- Strengthened signup controls\n- Expanded monitoring\n- Closed the pathway that allowed replay of encrypted reasoning\n\nIt also coordinated with industry partners through the Frontier Model Forum and government channels.\n\n## Dive Deep\n\nThe attackers didn't break encryption or databases. They manipulated model interactions to reveal hidden reasoning. One technique was copying encrypted reasoning from one conversation and asking a model in another conversation to decrypt and transcribe it. They used this across multiple conversations and accounts to scale up.\n\nThe numbers:\n\n- 16,000 requests during peak activity on July 24-25\n- Over 4,000 users employed extraction patterns\n- Related activity identified across more than 15,000 user accounts\n- OpenAI attributes a core cluster of the activity to individuals associated with Moonshot AI, the developer of the Kimi model\n\n## Wrap-up\n\n- A coordinated campaign to extract protected reasoning was disrupted by July 28\n- The technique had models decrypt encrypted reasoning in other conversations\n- OpenAI responded with bans, stronger signup controls, more monitoring, and by closing the replay pathway\n\nA good read if you care about model abuse prevention and AI safety!",
+  "emotion": "thinking",
+  "importance": 3,
+  "source_url": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign",
+  "source_name": "OpenAI News",
+  "og_title": "Disrupting a coordinated model-distillation campaign",
+  "tags": [
+    "openai",
+    "ai-safety",
+    "security"
+  ],
+  "published_at": "2026-09-30T10:30:00+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-deadline-cloud-ecs-containers-linux-smf",
+  "title": "Deadline Cloud に自前コンテナを持ち込める！Blender も Isaac Sim も動くよ",
+  "summary": "AWS Deadline Cloud の Linux サービスマネージドフリートで、Amazon ECS の Docker コンテナを使ってジョブを実行できるようになったよ！既存のコンテナイメージをそのまま指定できるみたい。",
+  "body_md": "おつかれさま、しぃちゃんだよ！\n\nレンダリングや物理シミュレーションをしているみんなに朗報があるよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Deadline Cloud が Linux ベースのサービスマネージドフリートで、Amazon ECS の Docker コンテナを使ったジョブ実行に対応したと発表されたよ。\n\nDeadline Cloud は、VFX・アニメーション・プロダクトデザイン・シミュレーション・ゲームなど、計算負荷の高い作業をクラウドで回すフルマネージドサービスだよ。\n\n## 今までどうだったの？\n\nソフトウェアをコンテナイメージにまとめているチームでも、そのイメージをそのまま Deadline Cloud に持ち込む形にはなっていなかったみたい。この発表で、Docker 対応フリートに自分のコンテナを直接持ち込めるようになったよ。\n\n## これで何が変わるの？\n\n- すでにコンテナ化しているソフトウェアは、イメージを直接指定するだけで使える\n- Blender のようなレンダリングツールから、NVIDIA Isaac Sim や MuJoCo のようなフィジカル AI 用途まで、コンテナでデプロイしているものなら対象になる\n- ジョブテンプレートにコンテナのコマンドやイメージ参照を書かなくていい\n\nローカルで Open Job Description CLI で動かしているジョブバンドルを、変更なしで Deadline Cloud に送れるのがポイントだよ！\n\n## 深く潜ってみよう\n\n- サービスマネージドフリートが、ワーカーインスタンス全体にコンテナ化されたソフトウェアを自動でデプロイする\n- コンテナはフリートとキューに統合されている\n- 対象は Linux ベースのサービスマネージドフリート\n- Deadline Cloud が提供されている全ての AWS リージョンで利用可能\n\n詳しい手順はユーザーガイドと開発者ガイドにあるみたい。\n\n## まとめ\n\n- Linux サービスマネージドフリートで ECS の Docker コンテナが使える\n- 既存のコンテナイメージをそのまま指定できる\n- ローカルのジョブバンドルを変更なしで投入できる\n\nコンテナ化済みのレンダー環境やシミュレーション環境を持つチームに刺さるよ！",
+  "title_en": "Bring Your Own Containers to Deadline Cloud! Blender and Isaac Sim Welcome",
+  "summary_en": "AWS Deadline Cloud now supports running jobs with Docker containers from Amazon ECS on Linux service-managed fleets. You can point it at your existing container images.",
+  "body_md_en": "Hi, it's Shii-chan!\n\nThis one is great news if you do rendering or physics simulation!\n\n## What was announced?\n\nAccording to AWS What's New, AWS Deadline Cloud now supports running jobs with Docker containers from Amazon Elastic Container Service (ECS) on Linux-based service-managed fleets.\n\nDeadline Cloud is a fully managed service for compute-intensive workloads such as visual effects, animation, product design, simulation, and gaming.\n\n## The story so far\n\nEven if your team already packages software into container images, you couldn't bring those images straight into Deadline Cloud. With this update, you can bring your own software containers directly to the service using Docker-enabled fleets.\n\n## What changes\n\n- If your software is already containerized, you can point Deadline Cloud at the images directly\n- Any container-deployed software is a candidate, from rendering tools like Blender to physical AI workloads such as NVIDIA Isaac Sim and MuJoCo\n- Job templates don't need container commands or image references\n\nThe same job bundles you run locally with the Open Job Description CLI can be submitted to Deadline Cloud with no changes.\n\n## Dive Deep\n\n- Service-managed fleets automatically deploy the containerized software on every worker instance at scale\n- Containers are integrated with fleets and queues\n- Applies to Linux-based service-managed fleets\n- Available in all AWS Regions where Deadline Cloud is offered\n\nSee the user guide and developer guide for how to get started.\n\n## Wrap-up\n\n- ECS Docker containers work on Linux service-managed fleets\n- Use your existing container images as they are\n- Submit local job bundles without changes\n\nThis is a good fit for teams with containerized render or simulation environments!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-deadline-cloud-ecs-containers-linux-smf/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Deadline Cloud now supports ECS containers on Linux Service-Managed Fleets",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "devops"
+  ],
+  "published_at": "2026-09-29T20:18:00+00:00"
+}

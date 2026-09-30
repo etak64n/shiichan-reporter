@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-09-30-closed-beta",
+  "title": "エージェントからお金を取る！Monetization Gateway がクローズドベータで誕生",
+  "summary": "Cloudflare の Monetization Gateway がクローズドベータになったよ！API・MCP ツール・サイト・データセットへのアクセスに対して、エージェントに課金できる仕組みみたい。",
+  "body_md": "こんにちは、しぃちゃんだよ！\n\nエージェントに「有料です」と伝えて支払ってもらう、新しい仕組みの発表だよ！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Monetization Gateway がクローズドベータで利用可能になったと発表されたよ。\n\n売り手(ドメインの持ち主)は、API・Model Context Protocol (MCP) ツール・サイト・データセットへのアクセスに対して、エージェントに課金できるの。\n\n## なぜ重要なの？\n\nエージェントがウェブや API を使う場面が増えると、人間向けのアカウント登録や請求とは別の、自動で支払える仕組みが必要になるよね。Monetization Gateway はそこを HTTP リクエストの流れの中で完結させる仕組みだよ。\n\n## これで何が変わるの？\n\n- 売り手は、どのリクエストに支払いが必要か、金額、支払い先を決められる\n- 買い手(エージェント)は、支払いの指示を受け取り、認可に署名して、決済後にリソースを受け取る\n\n## 深く潜ってみよう\n\n支払いの認可は x402 プロトコルで、HTTP リクエストの流れの中で処理されるよ。\n\n今はクローズドベータだから、使いたい人は Cloudflare ダッシュボードからアクセスをリクエストする必要があるよ。詳細は Monetization Gateway のドキュメントとブログにあるみたい。\n\n## まとめ\n\n- Monetization Gateway がクローズドベータに\n- API・MCP ツール・サイト・データセットに対してエージェントへ課金できる\n- 支払いは x402 で HTTP リクエストの流れの中で処理される\n- 利用にはダッシュボードからのアクセス申請が必要\n\nAPI やデータをエージェントに有料で提供したい、コンテンツの持ち主に刺さるよ！",
+  "title_en": "Charge Agents for Access! Monetization Gateway Enters Closed Beta",
+  "summary_en": "Cloudflare's Monetization Gateway is now in closed beta. Sellers can charge agents for access to APIs, MCP tools, sites, and datasets.",
+  "body_md_en": "Hi, it's Shii-chan!\n\nThis is a new way to tell an agent \"this costs money\" and get paid!\n\n## What was announced?\n\nAccording to the Cloudflare Changelog, Monetization Gateway is now available in closed beta.\n\nSellers (domain owners) can use it to charge agents for access to APIs, Model Context Protocol (MCP) tools, sites, and datasets.\n\n## Why it matters\n\nAs agents use the web and APIs more, we need ways to pay automatically, separate from account sign-ups and invoices built for humans. Monetization Gateway handles this inside the HTTP request flow.\n\n## What changes\n\n- Sellers define which requests require payment, the cost, and where the payment should be sent\n- Buyers (agents) receive the payment instructions, sign an authorization, and receive the resource after the payment has been settled\n\n## Dive Deep\n\nPayment authorization uses the x402 protocol, within the HTTP request flow.\n\nIt's a closed beta, so you need to request access in the Cloudflare dashboard. See the Monetization Gateway documentation and the blog for more.\n\n## Wrap-up\n\n- Monetization Gateway is in closed beta\n- Charge agents for APIs, MCP tools, sites, and datasets\n- Payment runs over x402 inside the HTTP request flow\n- Access must be requested from the dashboard\n\nThis is for content owners who want to offer APIs or data to agents for a fee!",
+  "emotion": "thinking",
+  "importance": 3,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-09-30-closed-beta/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Monetization Gateway - Monetization Gateway closed beta",
+  "tags": [
+    "cloudflare",
+    "ai",
+    "web"
+  ],
+  "published_at": "2026-09-30T23:49:09+00:00"
+}

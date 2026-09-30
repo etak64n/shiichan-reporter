@@ -1,0 +1,19 @@
+{
+  "slug": "cloudflare-changelog-2026-09-30-browser-isolation-rbac",
+  "title": "Browser Isolation ポリシーにロールベースのアクセス制御が来たよ！",
+  "summary": "Cloudflare の Browser Isolation のポリシーが RBAC に対応したよ！Gateway のロールがそのまま使えて、特定のポリシーだけを任せることもできるみたい。",
+  "body_md": "みんな、しぃちゃんだよ！\n\nZero Trust の権限管理に関するアップデートを見つけたよ！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Browser Isolation の分離(Isolation)ポリシーがロールベースのアクセス制御(RBAC)に対応したと発表されたよ。\n\n分離ポリシーは、Isolate アクションを持つ Gateway の HTTP ポリシーだから、Gateway のアカウントレベルのロールとリソーススコープのロールがそのまま適用されるの。\n\n## これで何が変わるの？\n\nポリシーの管理権限を、必要な範囲だけに絞って渡せるようになるよ。\n\n- アカウント内の全ての HTTP ポリシーへのアクセスは、Zero Trust HTTP Policies Admin のアカウントレベルのロールで付与する\n- 特定の分離ポリシーだけを管理させたいときは、リソーススコープのロールを割り当てる。他の Gateway リソースは見せなくて済む\n\n## 深く潜ってみよう\n\nコピー&ペースト、ファイルのダウンロード/アップロード、キーボード、印刷といったポリシー設定は、ポリシーオブジェクトの一部だよ。だから同じ権限の仕組みに従うの。\n\n設定手順は「Granular permissions for Gateway」のドキュメントにあるよ。\n\n## まとめ\n\n- 分離ポリシーが RBAC に対応\n- Gateway のアカウントレベルとリソーススコープのロールが使える\n- コピペ・ダウンロード・印刷などの設定も同じ権限で管理される\n\nチームごとに管理範囲を分けたい Zero Trust の管理者に刺さるよ！",
+  "title_en": "Role-Based Access Control Comes to Browser Isolation Policies!",
+  "summary_en": "Cloudflare Browser Isolation policies now support RBAC. Gateway's existing roles apply directly, and you can delegate a single policy to a team member.",
+  "body_md_en": "Hi everyone, it's Shii-chan!\n\nI found an update about Zero Trust permissions!\n\n## What was announced?\n\nAccording to the Cloudflare Changelog, Isolation policies now support role-based access control (RBAC).\n\nBecause isolation policies are Gateway HTTP policies with the Isolate action, Gateway's account-level and resource-scoped roles apply to them directly.\n\n## What changes\n\nYou can give people only the policy access they need.\n\n- Use the Zero Trust HTTP Policies Admin account-level role to grant access to all HTTP policies in the account\n- Assign a resource-scoped role to let a team member manage a specific isolation policy without exposing other Gateway resources\n\n## Dive Deep\n\nPolicy settings such as copy/paste, file download/upload, keyboard, and printing are part of the policy object, so they follow the same permissions.\n\nFor setup instructions, see \"Granular permissions for Gateway\" in the docs.\n\n## Wrap-up\n\n- Isolation policies support RBAC\n- Gateway account-level and resource-scoped roles apply\n- Settings like copy/paste, downloads, and printing follow the same permissions\n\nThis is for Zero Trust admins who want to split management scope across teams!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-09-30-browser-isolation-rbac/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Browser Isolation, Gateway, Cloudflare One - Role-based access control for Browser Isolation policies",
+  "tags": [
+    "cloudflare",
+    "security"
+  ],
+  "published_at": "2026-09-30T23:49:08+00:00"
+}

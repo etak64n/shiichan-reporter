@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-partner-revenue-measurement-multi-partner-resource-tagging",
+  "title": "1 つのリソースに複数パートナーの収益帰属！Partner Revenue Measurement のマルチパートナータグ",
+  "summary": "Partner Revenue Measurement のリソースタグが複数パートナーに対応したよ！同じ AWS リソースに対して、複数の AWS パートナーが収益の帰属を受けられるようになったみたい。",
+  "body_md": "やっほー、しぃちゃんだよ！\n\nAWS パートナーのみんなに関係する、タグの発表だよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Partner Revenue Measurement (PRM) のリソースタグ付けが、マルチパートナーに対応したと発表されたよ。\n\nPRM は、パートナーのソリューションによって生まれた AWS の利用を計測する仕組みだよ。今回の更新で、同じ AWS リソースに対して、複数の AWS パートナーが収益の帰属を受けられるようになったの。\n\n## 今までどうだったの？\n\nリソースに付けられるパートナータグは `aws-apn-id` の 1 つだけだったよ。同じワークロードに複数のパートナーが関わっていても、収益の帰属を受けられるのは 1 社だけだったの。\n\n## これで何が変わるの？\n\n各パートナーが、自分が関わったリソースに、新しい形式のキーでタグを付けるよ。\n\n```\naws-apn-id-{partner-central-aws-account-id}\n```\n\n同じリソースに複数のパートナーがタグを付けると、タグを付けた各パートナーが収益の帰属を受けられるよ。たとえば、コンサルティングパートナーが、ソフトウェアパートナーの製品をあるアカウントにデプロイして運用する、という共同提供のケースが想定されているよ。\n\n## 深く潜ってみよう\n\n- 既存の `aws-apn-id` キーは引き続き使えて、それでタグ付けしたリソースは追加の変更が不要\n- 既存のキーと新しいキーの両方で帰属した収益は、Attributed Revenue Dashboard の「Resource Tagging」メソッドの下に表示される。ダッシュボード自体の変更はなし\n- AWS の全ての商用リージョンで、今日から利用可能\n\n詳しくは PRM のプロダクトページと、Resource Tagging のオンボーディングガイドを見てね。\n\n## まとめ\n\n- リソースタグがマルチパートナーに対応\n- 新しいキー形式で、同じリソースに複数のパートナーが帰属を受けられる\n- 既存の `aws-apn-id` はそのまま使える\n\n共同でソリューションを提供している AWS パートナーに刺さる発表だよ！",
+  "title_en": "Multiple Partners, One Resource! Partner Revenue Measurement Adds Multi-Partner Resource Tagging",
+  "summary_en": "Partner Revenue Measurement now supports multiple AWS Partners on the same resource through Resource Tagging, so each tagged Partner receives revenue attribution.",
+  "body_md_en": "Hi, it's Shii-chan!\n\nThis is a tagging update for AWS Partners!\n\n## What was announced?\n\nAccording to AWS What's New, Partner Revenue Measurement (PRM) now adds multi-Partner support to Resource Tagging.\n\nPRM measures AWS consumption driven by Partner solutions. With this update, multiple AWS Partners can receive revenue attribution for the same AWS resource.\n\n## The story so far\n\nA resource carried only one Partner tag, `aws-apn-id`. When multiple Partners contributed to the same workload, only one Partner received attribution.\n\n## What changes\n\nEach Partner tags the resources they contribute to using a new key format.\n\n```\naws-apn-id-{partner-central-aws-account-id}\n```\n\nWhen more than one Partner tags the same resource, each tagged Partner receives revenue attribution. This benefits Partners that co-deliver solutions, such as a consulting Partner that deploys and operates a software Partner's product in an AWS account.\n\n## Dive Deep\n\n- The existing `aws-apn-id` key continues to work, and resources tagged with it need no changes\n- Revenue attributed through the existing key and the new key both appear under the \"Resource Tagging\" method in the Attributed Revenue Dashboard, with no changes to the dashboard\n- Available today in all commercial AWS regions\n\nSee the Partner Revenue Measurement product page and the Resource Tagging onboarding guide.\n\n## Wrap-up\n\n- Resource Tagging supports multiple Partners\n- A new key format lets several Partners get attribution on one resource\n- The existing `aws-apn-id` key keeps working\n\nThis is for AWS Partners who co-deliver solutions!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/partner-revenue-measurement-multi-partner-resource-tagging",
+  "source_name": "AWS What's New",
+  "og_title": "Partner Revenue Measurement adds Multi-Partner support to Resource Tagging",
+  "tags": [
+    "aws",
+    "business"
+  ],
+  "published_at": "2026-09-30T12:00:00+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-aurora-rds-amd-r8a",
+  "title": "Aurora と RDS に AMD の R8a インスタンスが登場！最大 75 Gbps のネットワーク帯域",
+  "summary": "Amazon Aurora と Amazon RDS が、第 5 世代 AMD EPYC プロセッサを搭載した R8a インスタンスに対応したよ！最大 75 Gbps のネットワーク帯域と 60 Gbps の EBS 帯域みたい。",
+  "body_md": "やっほー、しぃちゃんだよ！\n\nデータベースの新しいインスタンスの発表だよ、スペックを見ていこうね！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Aurora と Amazon RDS が、第 5 世代 AMD EPYC プロセッサを搭載した R8a データベースインスタンスに対応したと発表されたよ。データベースワークロードの選択肢が広がるね！\n\n## これで何が変わるの？\n\nR8a データベースインスタンスでは、各 vCPU が物理 CPU コア 1 つに対応しているよ。だから、コアあたりの性能が安定するの。\n\nI/O の要件が高いワークロードには、こんな帯域が用意されているよ。\n\n- 最大 75 Gbps のネットワーク帯域\n- 最大 60 Gbps の Amazon EBS 帯域\n\nR8a は全て、第 6 世代の Nitro Card を使った AWS Nitro System の上に作られているよ。\n\n## 深く潜ってみよう\n\n対応しているエンジンはこれだよ。\n\n- Amazon Aurora PostgreSQL 互換エディション\n- Amazon Aurora MySQL 互換エディション\n- RDS for PostgreSQL\n- RDS for MySQL\n- RDS for MariaDB\n\n利用できるリージョンはこれだよ。\n\n- 米国東部(バージニア北部、オハイオ)\n- 米国西部(オレゴン)\n- カナダ(中部)\n- アジアパシフィック(東京、台北)\n- 欧州(アイルランド、フランクフルト、スペイン)\n\nRDS マネジメントコンソールか AWS CLI で使い始められるよ。対応するエンジンバージョンは Aurora と RDS のドキュメントで、料金は Aurora と RDS の料金ページで確認してね。\n\n## まとめ\n\n- Aurora と RDS が AMD EPYC 第 5 世代搭載の R8a に対応\n- 1 vCPU が 1 物理コアで、ネットワーク最大 75 Gbps、EBS 最大 60 Gbps\n- Aurora の 2 エンジンと RDS の 3 エンジンで利用可能、提供リージョンは 9 つ\n\nデータベースの I/O 性能やインスタンスの選択肢を見直したい運用担当に刺さるよ！",
+  "title_en": "AMD-Based R8a Instances Arrive for Aurora and RDS, With Up to 75 Gbps Networking!",
+  "summary_en": "Amazon Aurora and Amazon RDS now support R8a database instances powered by 5th generation AMD EPYC processors, with up to 75 Gbps of network bandwidth and 60 Gbps of EBS bandwidth.",
+  "body_md_en": "Hi, it's Shii-chan!\n\nThere's a new database instance type. Let's look at the specs!\n\n## What was announced?\n\nAccording to AWS What's New, Amazon Aurora and Amazon RDS now support R8a database instances powered by 5th generation AMD EPYC processors. That expands the choices available for your database workloads!\n\n## What changes\n\nIn R8a database instances, each vCPU corresponds to a physical CPU core, which delivers consistent per-core performance.\n\nFor workloads with high I/O requirements, the bandwidth is:\n\n- Up to 75 Gbps of network bandwidth\n- Up to 60 Gbps of Amazon EBS bandwidth\n\nAll R8a instances are built on the AWS Nitro System using sixth-generation Nitro Cards.\n\n## Dive Deep\n\nSupported engines:\n\n- Amazon Aurora PostgreSQL-Compatible Edition\n- Amazon Aurora MySQL-Compatible Edition\n- RDS for PostgreSQL\n- RDS for MySQL\n- RDS for MariaDB\n\nAvailable Regions:\n\n- US East (N. Virginia, Ohio)\n- US West (Oregon)\n- Canada (Central)\n- Asia Pacific (Tokyo, Taipei)\n- Europe (Ireland, Frankfurt, Spain)\n\nYou can get started through the Amazon RDS Management Console or the AWS CLI. For the engine versions that support these instance classes, see the Aurora and RDS documentation, and see the pricing pages for costs.\n\n## Wrap-up\n\n- Aurora and RDS support R8a with 5th generation AMD EPYC\n- One vCPU per physical core, with up to 75 Gbps networking and 60 Gbps EBS\n- Available for two Aurora engines and three RDS engines, in nine Regions\n\nThis is for ops folks who want to revisit database I/O performance and instance choices!",
+  "emotion": "energetic",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/aurora-rds-amd-r8a/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Aurora and RDS now support AMD-based R8a instances",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-09-30T17:00:00+00:00"
+}

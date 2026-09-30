@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-cloudwatch-logs-auto-indexes-fields",
+  "title": "CloudWatch Logs がよく使うフィールドを勝手にインデックス化！手動設定はもういらないよ",
+  "summary": "Amazon CloudWatch Logs が、クエリで頻繁に使われるフィールドを自動でインデックス化するようになったよ！Logs Insights のクエリが速くなって、スキャン量も減るみたい。追加料金はなし！",
+  "body_md": "やっほー、しぃちゃんだよ！\n\n今日は CloudWatch Logs のうれしいアップデートを見つけたから、さっそく紹介するね！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon CloudWatch Logs がよく使うフィールドを自動でインデックス化する機能が発表されたよ！\n\nCloudWatch Logs Insights のクエリで、`=` と `IN` でフィルタしているフィールドを CloudWatch Logs が見つけて、自動でインデックスを作ってくれるの。これでクエリが速く動いて、スキャンするデータも少なくなるんだって！\n\n## 今までどうだったの？\n\n今までは、クエリのパターンや使い方を考えながら、インデックスするフィールドを自分で選ぶ必要があったよ。\n\nクエリの傾向が時間とともに変わるチームだと、そのたびに見直す手間がかかっていたみたい。\n\n## これで何が変わるの？\n\n設定なしで、普段のクエリに合わせてインデックスが付くようになるよ！\n\n- 手動でフィールドを選ぶ作業がいらなくなる\n- クエリパターンが変わっても、自動インデックスの一覧が更新されていく\n- 追加コストなしで使える\n\nログ調査を頻繁にする運用チームには、何もしなくても速くなるのが嬉しいね！\n\n## 深く潜ってみよう\n\n原文に書かれている仕様を整理するね。\n\n- 自動でインデックスされるフィールドは、ロググループごとの 20 フィールドの上限にカウントされない\n- 自動インデックスは 30 日間保持される\n- 対象になるのは `=` と `IN` でフィルタに使っているフィールド\n- ずっとインデックスしておきたいフィールドは、コンソールか API でフィールドインデックスポリシーに昇格できる\n- CloudWatch Logs のフィールドインデックスに対応している全ての AWS リージョンで使える\n- 追加料金はなし\n\n## まとめ\n\n- よく使うフィールドが自動でインデックス化される\n- Logs Insights のクエリが速くなり、スキャン量も減る\n- 手動のインデックス対象は 20 フィールドの上限に影響しない\n- 残したいフィールドはポリシーに昇格できる\n\nログ検索の設定メンテに疲れていた運用担当のみんなに刺さる発表だよ！",
+  "title_en": "CloudWatch Logs Now Auto-Indexes Your Most-Queried Fields, No Setup Needed!",
+  "summary_en": "Amazon CloudWatch Logs now automatically indexes fields you query often, so Logs Insights queries run faster and scan less data. There is no additional cost!",
+  "body_md_en": "Hi, it's Shii-chan!\n\nI found a nice CloudWatch Logs update today, so let me share it with you!\n\n## What was announced?\n\nAccording to AWS What's New, Amazon CloudWatch Logs now automatically indexes the fields you query frequently.\n\nCloudWatch Logs looks at the fields you filter on with the `=` and `IN` operations in Logs Insights queries and indexes them for you. Queries run faster and scan less data.\n\n## The story so far\n\nBefore, you had to choose which fields to index yourself, based on your query patterns and usage.\n\nThat meant extra work for teams whose query patterns change over time.\n\n## What changes\n\nIndexes now follow your everyday queries without any setup!\n\n- No more picking fields by hand\n- The list of automatically indexed fields updates as your query patterns change\n- It comes at no additional cost\n\nIf you search logs a lot, things get faster without you doing anything.\n\n## Dive Deep\n\nHere are the details from the announcement.\n\n- Automatically indexed fields don't count toward the 20-field-per-log-group limit\n- Automatic indexes are retained for 30 days\n- Fields used for filtering with `=` and `IN` are eligible\n- To keep a field indexed permanently, promote it to a field index policy in the console or API\n- Available in all AWS Regions where CloudWatch Logs field indexing is supported\n- No additional cost\n\n## Wrap-up\n\n- Frequently queried fields are indexed automatically\n- Logs Insights queries run faster and scan less data\n- Automatic indexes don't use up the 20-field limit\n- You can promote fields you want to keep to a policy\n\nThis is great for ops teams tired of maintaining log search settings!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/cloudwatch-logs-auto-indexes-fields/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon CloudWatch Logs now automatically indexes frequently queried fields",
+  "tags": [
+    "aws",
+    "devops",
+    "infrastructure"
+  ],
+  "published_at": "2026-09-29T08:00:00+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-cloudwatch-logs-estimate-bytes-scanned",
+  "title": "Logs Insights、実行前にスキャン量が分かるようになったよ！",
+  "summary": "CloudWatch Logs Insights で、クエリを実行する前にスキャンされるログ量(バイト)を見積もれるようになったよ！見積もりだけならクエリ料金はかからないみたい。",
+  "body_md": "みんな、しぃちゃんだよ！\n\nクエリを打つ前にスキャン量が分かったら安心できるよね。そんな CloudWatch Logs Insights のアップデートだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、CloudWatch Logs Insights がスキャンされるログ量を実行前に見積もれるようになったと発表されたよ。\n\n選んだロググループと時間範囲に対して、クエリが何バイトのログをスキャンするかを、クエリを走らせずに確認できるの。\n\n## なぜ重要なの？\n\nログ調査では、ロググループや時間範囲を広く取りすぎて、思ったよりたくさんスキャンしてしまうことがあるよね。\n\n実行前に量が分かれば、ロググループの選び方・時間範囲・フィルタを先に見直せるようになるよ！\n\n## これで何が変わるの？\n\n- 実行前にスキャン量を見て、条件を絞り込める\n- 見積もりだけならクエリ料金が発生しない\n\n「とりあえず実行してみる」をやめて、先に見積もる流れが作れるね。\n\n## 深く潜ってみよう\n\n使い方は環境で少し違うよ。\n\n- コンソール: ロググループの選択・時間範囲・クエリ文を変えると、クエリエディタに見積もりが自動で表示される\n- AWS CLI / API: クエリの末尾に estimate コマンドを付けて、明示的に見積もりをリクエストする\n\nestimate コマンドを使ったクエリには Logs Insights のクエリ料金がかからないよ。使えるのは全ての AWS 商用リージョン！\n\n## まとめ\n\n- 実行前にスキャンされるログ量をバイトで見積もれる\n- コンソールでは自動表示、CLI / API では estimate コマンドで取得\n- 見積もりにはクエリ料金がかからない\n\nログの調査コストが気になるエンジニアのみんなにぴったりだよ！",
+  "title_en": "Logs Insights Can Now Estimate Bytes Scanned Before You Run a Query!",
+  "summary_en": "CloudWatch Logs Insights can now estimate how many bytes a query will scan before you run it. Estimates don't incur query charges.",
+  "body_md_en": "Hi everyone, it's Shii-chan!\n\nIt's reassuring to know how much a query will scan before you run it. That's what this CloudWatch Logs Insights update gives you!\n\n## What was announced?\n\nAccording to AWS What's New, CloudWatch Logs Insights now lets you estimate the volume of log data, in bytes, that a query would scan.\n\nThe estimate covers your selected log groups and time range, and you get it without running the query.\n\n## Why it matters\n\nWhen investigating logs, it's easy to pick too many log groups or too wide a time range and scan more than you meant to.\n\nWith an estimate up front, you can adjust your log group selection, time range, and filters first.\n\n## What changes\n\n- You can check the scan size and narrow things down before running\n- Estimates incur no query charges\n\nInstead of running a query and hoping for the best, you can estimate first.\n\n## Dive Deep\n\nHow it works depends on where you use it.\n\n- Console: the estimate appears automatically in the query editor when you change the log group selection, time range, or query text\n- AWS CLI / API: append the estimate command to your query to request it explicitly\n\nQueries that use the estimate command incur no Logs Insights query charges. It's available in all AWS commercial regions.\n\n## Wrap-up\n\n- Estimate the bytes a query will scan before running it\n- Automatic in the console, via the estimate command in the CLI / API\n- No query charges for estimates\n\nA good fit for engineers who care about the cost of log investigations!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/cloudwatch-logs-estimate-bytes-scanned/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon CloudWatch Logs Insights now lets you estimate bytes scanned before running a query",
+  "tags": [
+    "aws",
+    "devops",
+    "infrastructure"
+  ],
+  "published_at": "2026-09-29T08:00:00+00:00"
+}

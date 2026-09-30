@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-s3-tables-iceberg-v3-data-types",
+  "title": "S3 Tables が Iceberg V3 のデータ型を全部サポート！位置情報もナノ秒もそのまま保存",
+  "summary": "Amazon S3 Tables が、geometry・geography・unknown・ナノ秒タイムスタンプとカラムのデフォルト値に対応したよ！Iceberg V3 で導入された全てのデータ型が使えるようになったみたい。",
+  "body_md": "おつかれさま、しぃちゃんだよ！\n\nデータレイクまわりで、型の対応がそろった発表だよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon S3 Tables が Apache Iceberg Version 3 (V3) 仕様で定義されているデータ型に対応したと発表されたよ。\n\n追加されたのはこれだよ！\n\n- geometry\n- geography\n- unknown\n- ナノ秒タイムスタンプ\n- カラムのデフォルト値\n\nこれで、V3 で導入された全てのデータ型をサポートしたことになるよ。Variant 型・削除ベクトル・行リネージには、すでに対応していたみたい。\n\n## 今までどうだったの？\n\n位置情報やナノ秒精度の時刻は、文字列や整数にエンコードして保存する必要があったよ。今回の対応で、ネイティブに保存できるようになったの。\n\n## これで何が変わるの？\n\n- geometry / geography カラムは、点・線・ポリゴンをネイティブに保存する。車両追跡や資産マッピングのワークロードで、クエリ時に位置でフィルタできる\n- ナノ秒タイムスタンプで、テレメトリや金融のワークロードがソースの精度のままイベント時刻を記録できる\n- カラムのデフォルト値は、新しく追加したカラムを既存の行に自動で埋めるので、バックフィルが不要\n\nデータ設計がシンプルになって、ストレージ効率とパフォーマンスも上がる、と説明されているよ。\n\n## 深く潜ってみよう\n\n- S3 Tables は Apache Iceberg テーブルの自動メンテナンスとコンパクションを提供するので、V3 のデータ型を使うテーブルも、データが増えてもパフォーマンスとコスト効率を保てる\n- S3 Tables が使える全ての AWS リージョンで利用可能\n\n詳しくは S3 Tables、Apache Iceberg V3 on AWS、Iceberg V3 の AWS Prescriptive Guidance を見てね。\n\n## まとめ\n\n- S3 Tables が Iceberg V3 の全データ型に対応\n- geometry・geography・unknown・ナノ秒タイムスタンプ・デフォルト値が追加\n- 位置情報や高精度な時刻を、文字列や整数に変換せず保存できる\n\n位置情報データやテレメトリを Iceberg で扱うデータエンジニアに刺さるよ！",
+  "title_en": "S3 Tables Now Supports All Iceberg V3 Data Types, Including Geospatial and Nanosecond Timestamps!",
+  "summary_en": "Amazon S3 Tables now supports geometry, geography, unknown, nanosecond timestamps, and column default values from the Apache Iceberg V3 spec, covering all V3 data types.",
+  "body_md_en": "Hi, it's Shii-chan!\n\nThis one rounds out type support for data lakes!\n\n## What was announced?\n\nAccording to AWS What's New, Amazon S3 Tables now supports data types defined in the Apache Iceberg Version 3 (V3) specification.\n\nHere's what was added!\n\n- geometry\n- geography\n- unknown\n- nanosecond timestamps\n- column default values\n\nWith this, S3 Tables support all data types introduced in V3. They already supported the Variant data type, deletion vectors, and row lineage.\n\n## The story so far\n\nYou had to encode geospatial coordinates and nanosecond-precision event times in strings or integers. Now you can store them natively.\n\n## What changes\n\n- Geometry and geography columns store points, lines, and polygons natively, so fleet tracking and asset mapping workloads can filter on location at query time\n- Nanosecond timestamps let telemetry and financial workloads record event times at source precision\n- Column default values populate a newly added column for existing rows, with no backfill required\n\nAWS says this simplifies data architecture while improving storage efficiency and performance.\n\n## Dive Deep\n\n- S3 Tables provide automatic table maintenance and compaction for Apache Iceberg tables, so tables using V3 data types stay performant and cost effective as data scales\n- Available in all AWS Regions where S3 Tables are available\n\nSee Amazon S3 Tables, Apache Iceberg V3 on AWS, and the AWS Prescriptive Guidance for Iceberg V3 to learn more.\n\n## Wrap-up\n\n- S3 Tables supports all Iceberg V3 data types\n- geometry, geography, unknown, nanosecond timestamps, and default values are new\n- Store locations and high-precision times without converting them to strings or integers\n\nThis is for data engineers who handle geospatial data or telemetry in Iceberg!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-s3-tables-iceberg-v3-data-types",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon S3 Tables now support all Apache Iceberg V3 data types",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-09-30T04:00:00+00:00"
+}

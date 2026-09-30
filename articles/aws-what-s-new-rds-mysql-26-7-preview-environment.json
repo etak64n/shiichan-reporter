@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-rds-mysql-26-7-preview-environment",
+  "title": "RDS for MySQL 26.7 がプレビュー環境に！年月バージョニング初の Innovation リリース",
+  "summary": "Amazon RDS for MySQL 26.7 が、RDS Database Preview Environment で評価できるようになったよ！YY.M の新しいバージョン方式を採用した最初の Innovation リリースみたい。",
+  "body_md": "おつかれさま、しぃちゃんだよ！\n\nMySQL の新しいバージョンを、先に試せるよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon RDS for MySQL 26.7 が Amazon RDS Database Preview Environment で使えるようになったと発表されたよ。MySQL 26.7 のプレリリースを、RDS for MySQL 上で評価できるの。\n\n## なぜ重要なの？\n\nMySQL 26.7 は、新しい YY.M (年.月) のカレンダーバージョニングを採用した、最初の Innovation リリースだよ。バージョンの付け方が変わる節目のリリースなの。\n\n## これで何が変わるの？\n\n本番に入れる前に、新しいリリースをプレビュー環境で評価できるよ。バグ修正、セキュリティパッチ、新機能が含まれていて、新機能の例が Change Stream Applier だよ。これは、モジュール式のレプリケーション適用の仕組みで、テストのワークロードでは適用スループットとバックログからの復旧が改善したと説明されているよ。\n\n## 深く潜ってみよう\n\nプレビュー環境には、こんな制約があるよ。\n\n- データベースインスタンスは最大 60 日間保持されて、保持期間が過ぎると自動で削除される\n- プレビュー環境で作ったスナップショットは、プレビュー環境の中でしか使えない\n- 料金は、米国東部(オハイオ)リージョンの料金に従う\n\nリリースノートは MySQL 26.7 のリリースノートを見てね。\n\n## まとめ\n\n- RDS for MySQL 26.7 がプレビュー環境で評価できる\n- YY.M バージョニングを採用した最初の Innovation リリース\n- インスタンスは最大 60 日で自動削除、スナップショットはプレビュー内のみ\n\nMySQL の新しいリリースを、早めに検証したいエンジニアに刺さるよ！",
+  "title_en": "RDS for MySQL 26.7 Lands in the Preview Environment, the First Innovation Release With YY.M Versioning!",
+  "summary_en": "Amazon RDS for MySQL 26.7 is now available in the RDS Database Preview Environment. It's the first Innovation release to adopt the new YY.M calendar versioning model.",
+  "body_md_en": "Hi, it's Shii-chan!\n\nYou can try a new MySQL version early!\n\n## What was announced?\n\nAccording to AWS What's New, Amazon RDS for MySQL 26.7 is now available in the Amazon RDS Database Preview Environment. You can evaluate the pre-release of MySQL 26.7 on Amazon RDS for MySQL.\n\n## Why it matters\n\nMySQL 26.7 is the first Innovation release to adopt the new YY.M (Year.Month) calendar versioning model. It marks a change in how versions are numbered.\n\n## What changes\n\nYou can evaluate the new release in the preview environment before bringing it into production. It includes bug fixes, security patches, and new features such as Change Stream Applier, a modular replication applier that improves apply throughput and backlog recovery in test workloads.\n\n## Dive Deep\n\nThe preview environment has these constraints:\n\n- Database instances are retained for a maximum of 60 days and are automatically deleted after the retention period\n- Snapshots created in the Preview Environment can only be used within the Preview Environment\n- Instances are priced according to pricing in the US East (Ohio) Region\n\nSee the MySQL 26.7 release notes for details.\n\n## Wrap-up\n\n- RDS for MySQL 26.7 can be evaluated in the preview environment\n- First Innovation release with YY.M versioning\n- Instances are deleted after at most 60 days, and snapshots stay within the preview environment\n\nThis is for engineers who want to validate new MySQL releases early!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/rds-mysql-26-7-preview-environment/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon RDS for MySQL supports MySQL 26.7 in Amazon RDS Database Preview Environment",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-09-30T16:00:00+00:00"
+}

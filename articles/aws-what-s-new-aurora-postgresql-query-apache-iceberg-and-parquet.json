@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-aurora-postgresql-query-apache-iceberg-and-parquet",
+  "title": "Aurora PostgreSQL から Iceberg と Parquet を直接クエリ！ETL なしで DuckDB が動くよ",
+  "summary": "Aurora PostgreSQL が、S3 などにある Apache Iceberg と Parquet のデータを、外部テーブル経由で直接クエリできるようになったよ！内部では DuckDB のエンジンが使われるみたい。",
+  "body_md": "みんな、しぃちゃんだよ！\n\nデータレイクのデータを、いつもの PostgreSQL から直接読める発表だよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Aurora PostgreSQL が Apache Iceberg と Parquet 形式のデータレイクのデータを、運用データと一緒に直接クエリできるようになったと発表されたよ。\n\n既存の PostgreSQL アプリケーションやツールのまま、ETL パイプラインもデータの複製もいらないの！\n\n## 今までどうだったの？\n\nデータレイクのデータを使うには、Aurora にデータをコピーするパイプラインが必要になりがちだったよ。コストやエンジニアリングの手間が増えて、スキーマが変わるたびに大変だったみたい。\n\n## これで何が変わるの？\n\n- Amazon S3、Amazon S3 Tables、AWS Glue Data Catalog の Iceberg / Parquet データを指す PostgreSQL の外部テーブルを作れる\n- 既存のアプリや BI ツールは、同じ PostgreSQL インターフェースのまま使える\n- AWS Glue Data Catalog 経由でフェデレーションした、Iceberg REST Catalog (IRC) 互換の外部カタログのテーブルも、データを移さずにクエリできる\n\n## 深く潜ってみよう\n\n- 外部テーブルをクエリすると、PostgreSQL に組み込まれた DuckDB の高性能なクエリエンジンが、裏の Iceberg / Parquet データに対してクエリを実行する\n- レイテンシに敏感なワークロードでは、標準の SQL 文で Iceberg / Parquet のデータを、ETL パイプラインなしで Aurora PostgreSQL のネイティブテーブルにマテリアライズできる\n- 一般提供(GA)で、Aurora PostgreSQL の 17.11、18.6 以降が対象\n- AWS の商用リージョンと GovCloud (US) リージョンで利用可能\n\n## まとめ\n\n- Aurora PostgreSQL が Iceberg と Parquet を外部テーブルで直接クエリできる\n- S3、S3 Tables、Glue Data Catalog のデータが対象\n- 実行には DuckDB のエンジンを使い、必要ならネイティブテーブルへマテリアライズもできる\n\nPostgreSQL でデータレイクも一緒に分析したい、アプリ開発者やデータ担当に刺さるよ！",
+  "title_en": "Query Iceberg and Parquet Straight From Aurora PostgreSQL, No ETL, Powered by DuckDB!",
+  "summary_en": "Aurora PostgreSQL can now query Apache Iceberg and Parquet data in your data lake directly through foreign tables. Queries run on an embedded DuckDB engine.",
+  "body_md_en": "Hi everyone, it's Shii-chan!\n\nNow you can read data lake data straight from your usual PostgreSQL!\n\n## What was announced?\n\nAccording to AWS What's New, you can now directly query operational data together with data lake data in Apache Iceberg and Parquet formats from Aurora PostgreSQL.\n\nYou keep using your existing PostgreSQL applications and tools, with no ETL pipelines or data duplication!\n\n## The story so far\n\nAccessing data lake data has typically required pipelines that copy it into Aurora. That drove up costs and engineering work as schemas evolved.\n\n## What changes\n\n- Create PostgreSQL foreign tables that reference Iceberg or Parquet data in Amazon S3, Amazon S3 Tables, or AWS Glue Data Catalog\n- Existing applications and BI tools keep using the same PostgreSQL interface\n- Query tables from external Iceberg REST Catalog (IRC)-compatible catalogs federated through AWS Glue Data Catalog, without moving or duplicating data\n\n## Dive Deep\n\n- When you query these foreign tables, Aurora uses DuckDB's high-performance query engine, embedded in PostgreSQL, to run the query against the underlying Iceberg and Parquet data\n- For latency-sensitive workloads, you can materialize Iceberg or Parquet data into native Aurora PostgreSQL tables using standard SQL statements, without an ETL pipeline\n- Generally available on Aurora PostgreSQL 17.11, 18.6 and higher\n- Available in AWS commercial and GovCloud (US) Regions\n\n## Wrap-up\n\n- Aurora PostgreSQL queries Iceberg and Parquet directly through foreign tables\n- Works with data in S3, S3 Tables, and Glue Data Catalog\n- Runs on DuckDB, and you can materialize into native tables when needed\n\nThis is for app developers and data folks who want to analyze data lake data alongside PostgreSQL!",
+  "emotion": "energetic",
+  "importance": 5,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/aurora-postgresql-query-apache-iceberg-and-parquet/",
+  "source_name": "AWS What's New",
+  "og_title": "Aurora PostgreSQL now supports querying of Apache Iceberg and Parquet data",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-09-30T16:00:00+00:00"
+}

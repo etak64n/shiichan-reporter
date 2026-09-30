@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-deadline-cloud-expressions-job-templates",
+  "title": "ジョブテンプレートに Python 風の式が書けるように！Deadline Cloud の EXPR 拡張",
+  "summary": "AWS Deadline Cloud のジョブテンプレートで、算術・条件分岐・リスト内包表記などの式と、boolean・list・frame-range の新しいパラメータ型が使えるようになったよ！",
+  "body_md": "こんにちは、しぃちゃんだよ！\n\nジョブテンプレートがぐっと表現力豊かになる発表だよ、見ていこうね！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Deadline Cloud のジョブテンプレートが、柔軟な式とリッチなパラメータ型に対応したと発表されたよ。\n\nパイプラインのロジックを、テンプレートの中に直接書けるようになったの！\n\n## 今までどうだったの？\n\n原文には従来の具体的な不便さまでは書かれていないけど、今回の狙いは、既存のプロダクションパイプラインにサービスをよりきれいに合わせることだよ。\n\n## これで何が変わるの？\n\n使える式はこんな感じだよ！\n\n- 算術\n- 条件分岐\n- 文字列操作とパス操作\n- リスト内包表記\n\n書き方は Python に似た、なじみやすい構文だよ。具体的には、こんなことがテンプレート内でできるの。\n\n- フレーム範囲をタスクごとのフレームに分割する\n- シーン名から出力パスを導き出す\n- オプションのフラグを切り替える\n\n## 深く潜ってみよう\n\n新しいパラメータ型は 3 つあるよ。\n\n- boolean\n- list\n- frame-range\n\n例えば、チェックボックスをオンにすると `--gpu` フラグと対応するホスト要件が追加されたり、カメラのリストがステップのタスク範囲になったりするみたい。\n\n式は投入時に型チェックされて、評価は決定的だから、ジョブの実行は毎回予測どおりに動くよ。\n\nこれらは Open Job Description(Deadline Cloud がジョブテンプレートに使うオープンな仕様)の新しい EXPR 拡張によるもので、Deadline Cloud が使える全ての AWS リージョンで利用できるよ。\n\n## まとめ\n\n- Python 風の式(算術・条件・文字列とパス操作・リスト内包表記)が使える\n- boolean・list・frame-range のパラメータ型が追加\n- 型チェックと決定的な評価で実行が予測しやすい\n- Open Job Description の EXPR 拡張が元になっている\n\n独自のパイプラインに Deadline Cloud を合わせたい、テクニカルアーティストやパイプライン担当のみんなに刺さるよ！",
+  "title_en": "Python-Style Expressions Arrive in Deadline Cloud Job Templates!",
+  "summary_en": "AWS Deadline Cloud job templates now support expressions such as arithmetic, conditionals, and list comprehensions, plus new boolean, list, and frame-range parameter types.",
+  "body_md_en": "Hi, it's Shii-chan!\n\nJob templates just got a lot more expressive. Let's take a look!\n\n## What was announced?\n\nAccording to AWS What's New, AWS Deadline Cloud now supports flexible expressions and rich parameter types in job templates.\n\nYou can now express pipeline logic directly in the template.\n\n## The story so far\n\nThe announcement doesn't spell out the old pain points in detail, but the goal is a cleaner, more powerful way to fit the service to existing production pipelines.\n\n## What changes\n\nHere are the kinds of expressions you can use!\n\n- Arithmetic\n- Conditionals\n- String and path operations\n- List comprehensions\n\nThe syntax is Python-style and familiar. Inside a template you can do things like:\n\n- Split a frame range into per-task frames\n- Derive an output path from the scene name\n- Toggle an optional flag\n\n## Dive Deep\n\nThere are three new parameter types.\n\n- boolean\n- list\n- frame-range\n\nFor example, a checkbox can add a `--gpu` flag and its matching host requirement when set, and a list of cameras can become a step's task range.\n\nExpressions are type-checked at submission, and their evaluation is deterministic, so job execution behaves predictably every time.\n\nThese capabilities come from the new EXPR extension to Open Job Description, the open specification Deadline Cloud uses for job templates. They're available in all AWS Regions where Deadline Cloud is supported.\n\n## Wrap-up\n\n- Python-style expressions (arithmetic, conditionals, string and path operations, list comprehensions)\n- New boolean, list, and frame-range parameter types\n- Type checking and deterministic evaluation keep runs predictable\n- Built on the EXPR extension to Open Job Description\n\nThis is for technical artists and pipeline engineers who want Deadline Cloud to fit their own pipelines!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/08/aws-deadline-cloud-expressions-job-templates/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Deadline Cloud now supports expressions in job templates",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "devops"
+  ],
+  "published_at": "2026-09-29T21:55:00+00:00"
+}
