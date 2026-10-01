@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-security-hub-remediation-plans",
+  "title": "1 か所直せば複数の脆弱性が解決！Security Hub に修復プランが登場",
+  "summary": "AWS Security Hub が、根本原因が同じ exposure finding をまとめた修復プランに対応。優先度つきで、CLI や Terraform の手順例まで付いて追加料金なしだよ！",
+  "body_md": "みんな、しぃちゃんだよ！セキュリティの指摘が多すぎて困ってる…そんなみんなに朗報だよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Security Hub に修復プラン（remediation plans）が登場したと発表されたよ。根本原因が同じ、関連する exposure finding をグループ化してくれる機能なの。\n\n## これで何が変わるの？\n\nexposure をひとつずつ対処する代わりに、誤った設定や緩すぎるポリシーのような、根本にあるリソースをひとつ直すだけで、複数の exposure をまとめて解決したり、深刻度を下げたりできるよ。\n\n## 深く潜ってみよう\n\n各修復プランにはこんな情報が入っているよ。\n\n- 優先度のガイダンス（Critical・High・Medium・Low）\n- 影響の評価\n- ステップごとの詳しい手順（AWS CLI・Terraform・CloudFormation・Python・CDK など複数の形式の例つき）\n\nSecurity Hub は、リスクを最も減らせるプランが先頭に来るよう、自動で優先順位をつけてくれるよ。\n\nAI エージェントが API 経由で修復プランをプログラムから使って、環境全体のセキュリティ修正を自動化することもできるんだって。\n\n提供範囲は、Security Hub が使えるすべての AWS リージョンで、AWS Security Hub Essentials プランなら追加料金なしだよ。\n\n## まとめ\n\n- 根本原因が同じ exposure finding をグループ化した修復プランが登場\n- ひとつの原因を直せば、複数の exposure をまとめて解消・軽減できる\n- 優先度・影響評価・複数形式の手順例つきで、リスク削減の大きい順に並ぶ\n- API 経由で AI エージェントによる自動修正にも使える\n\nセキュリティの指摘の山に埋もれがちな、運用チームのみんなに刺さる機能だよ！",
+  "title_en": "Fix one thing, resolve many: remediation plans arrive in AWS Security Hub",
+  "summary_en": "AWS Security Hub now offers remediation plans that group exposure findings sharing a root cause, with prioritization, step-by-step instructions, and no additional cost under Essentials.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Good news if you're drowning in security findings!\n\n## What was announced?\n\nAWS What's New announced that AWS Security Hub now offers remediation plans. They group related exposure findings that share a root cause.\n\n## What changes\n\nInstead of addressing each exposure individually, you can fix a single underlying resource, such as a misconfigured setting or an overly permissive policy, and resolve or reduce the severity of multiple exposures at once.\n\n## Dive Deep\n\nEach remediation plan includes:\n\n- Prioritization guidance (Critical, High, Medium, or Low)\n- Impact assessment\n- Detailed step-by-step instructions with examples in multiple formats, including AWS CLI, Terraform, CloudFormation, Python, and CDK\n\nSecurity Hub automatically prioritizes plans so those reducing the most risk appear first.\n\nAI agents can also programmatically consume remediation plans through the API to automate security fixes across your environment.\n\nIt's available in every AWS Region where Security Hub is available, at no additional cost under the AWS Security Hub Essentials plan.\n\n## Wrap-up\n\n- Remediation plans group exposure findings that share a root cause\n- Fixing one cause can resolve or reduce multiple exposures\n- Priority, impact assessment, and multi-format instructions, ordered by risk reduction\n- Available via API, so AI agents can automate fixes\n\nThis is for ops teams buried under a pile of security findings!",
+  "emotion": "energetic",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-security-hub-remediation-plans/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Security Hub introduces remediation plans to prioritize and fix security exposures",
+  "tags": [
+    "aws",
+    "security",
+    "devops"
+  ],
+  "published_at": "2026-10-01T10:00:00+00:00"
+}

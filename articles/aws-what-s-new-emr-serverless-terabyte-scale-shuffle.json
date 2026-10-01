@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-emr-serverless-terabyte-scale-shuffle",
+  "title": "シャッフル上限が 200 GB から 1 TB に！EMR Serverless がテラバイト級に対応",
+  "summary": "Amazon EMR Serverless のサーバーレスストレージが最大 1 TB のシャッフルに対応。従来のジョブあたり 200 GB の上限から大きく拡大して、スピル対応も入ったよ！",
+  "body_md": "こんにちは、しぃちゃんだよ！Spark のシャッフルが、ついにテラバイト級になったよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon EMR Serverless のサーバーレスストレージが強化されて、最大 1 TB のシャッフル操作に対応したと発表されたよ。\n\n## 今までどうだったの？\n\nジョブあたりの上限は 200 GB だったよ。結合・集計・ソートのようなシャッフルの多い処理では、この上限が足かせになる場面があったんだね。\n\n## これで何が変わるの？\n\n複雑な操作で大量のシャッフルデータが出る、本番規模の Apache Spark ワークロードを動かせるようになるよ。テラバイト級のデータを扱う本番ワークロードを、ストレージの制約を気にせず移行できるの。\n\n特に効果が大きいのは、この 2 つだよ。\n\n- マルチテラバイト級のデータセットにまたがる、大きなテーブルの結合\n- カーディナリティの高いデータに対する、複雑な集計\n\n## 深く潜ってみよう\n\n- スピルに対応していて、メモリを多く使う処理でも、必要に応じてディスクにオフロードして処理を続けられる。ジョブの信頼性と成功率が上がる\n- 利用できるのは Amazon emr-7.14 と emr-spark-8.1 以降\n- 18 の AWS リージョンで利用可能（リージョン一覧と各制限は EMR のドキュメントを参照）\n\n## まとめ\n\n- EMR Serverless のシャッフル上限が、ジョブあたり 200 GB から 1 TB に\n- 大きな結合や高カーディナリティの集計が主な恩恵\n- スピル対応で、メモリ負荷の高い処理も安定\n- emr-7.14 と emr-spark-8.1 以降、18 リージョンで利用可能\n\nテラバイト級の Spark ジョブを EMR Serverless に載せたかったデータエンジニアのみんなに、待望の更新だよ！",
+  "title_en": "Shuffle limit goes from 200 GB to 1 TB: EMR Serverless supports terabyte-scale shuffle",
+  "summary_en": "Amazon EMR Serverless serverless storage now supports up to 1 TB of shuffle, up from the previous 200 GB per-job limit, with spill support for memory-intensive operations.",
+  "body_md_en": "Hello, it's Shii-chan! Spark shuffle just got to terabyte scale!\n\n## What was announced?\n\nAWS What's New announced that Amazon EMR Serverless now offers enhanced serverless storage with support for up to 1 TB of shuffle operations.\n\n## The story so far\n\nThe per-job limit was 200 GB. For shuffle-heavy work like joins, aggregations, and sorting, that limit could get in the way.\n\n## What changes\n\nYou can run production-scale Apache Spark workloads that process large volumes of shuffle data during complex operations. Teams can migrate production workloads that routinely process terabyte-scale datasets without worrying about storage constraints.\n\nIt's especially valuable for:\n\n- Large table joins across multi-terabyte datasets\n- Complex aggregations on high-cardinality data\n\n## Dive Deep\n\n- Spill support lets jobs handle memory-intensive operations by offloading data to disk when necessary, improving reliability and success rates\n- It's available with Amazon emr-7.14 and emr-spark-8.1 and later\n- Available in 18 AWS Regions (see the EMR documentation for the full list and applicable limits)\n\n## Wrap-up\n\n- The EMR Serverless shuffle limit goes from 200 GB to 1 TB per job\n- Big joins and high-cardinality aggregations benefit most\n- Spill support keeps memory-heavy work reliable\n- Available with emr-7.14 and emr-spark-8.1 and later, in 18 Regions\n\nA long-awaited update for data engineers who wanted terabyte-scale Spark jobs on EMR Serverless!",
+  "emotion": "energetic",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/emr-serverless-terabyte-scale-shuffle/",
+  "source_name": "AWS What's New",
+  "og_title": "Serverless Storage on Amazon EMR Serverless now supports terabyte-scale shuffle",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "serverless"
+  ],
+  "published_at": "2026-10-01T08:00:00+00:00"
+}

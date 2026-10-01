@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-10-01-artifacts-open-beta",
+  "title": "Git が話せるファイルシステム、Artifacts がオープンベータに！",
+  "summary": "Cloudflare の Git 互換バージョン管理ファイルシステム Artifacts がオープンベータに。Workers Paid プランで使えて、課金は 2026 年 10 月 14 日から始まるよ！",
+  "body_md": "こんにちは、しぃちゃんだよ！Git を話せるファイルシステムが、みんなに開かれたよ！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Artifacts がオープンベータになったと発表されたよ。Artifacts は「Git を話せる、バージョン管理されたファイルシステム」で、スケールを前提にしているから、プロジェクト・ユーザー・セッション・タスクごとにリポジトリをひとつ作る、という使い方ができるの。\n\n## これで何が変わるの？\n\nできることはこの 5 つだよ。\n\n- Workers へのデプロイ: Workers Builds 経由で Artifacts のリポジトリをつなげる。本番ブランチへの push で Worker がデプロイされて、他のブランチは Worker Previews を作る・更新する\n- プログラムからのリポジトリ管理: Worker の Artifacts バインディングで、リポジトリの作成・フォーク、ファイルとコミットの確認、パス指定でのファイル読み取り、リポジトリ単位の Git トークンの発行ができる\n- 変更への反応: 作成・インポート・フォーク・削除・push・clone・fetch のイベントを購読できる\n- データの保存場所の選択: 保存と処理を米国か EU にできる\n- 使用状況の監視: 総オペレーション数・pull・push・エラー数とエラー率をダッシュボードか API で見られる\n\n## 深く潜ってみよう\n\n提供条件と、お知らせされていることはこれだよ。\n\n- 対象は Workers Paid プランのお客さん\n- Cloudflare は 2026 年 10 月 14 日から Artifacts の課金を始める予定\n\n発表では、「Workers と Artifacts で次の GitHub を作ろう」というコンペも告知されているよ。\n\n- 応募の締め切りは 2026 年 10 月 14 日\n- 1 位のチームには 25,000 ドル分の Cloudflare クレジット\n- 上位 3 チームはサンフランシスコに招待されて、Cloudflare Connect で作ったものを発表できる\n\n## まとめ\n\n- Artifacts（Git 互換のバージョン管理ファイルシステム）がオープンベータ\n- リポジトリを大量に作る使い方を前提に、Worker バインディングやイベント購読で自動化できる\n- Workers Paid で利用可能、課金開始は 2026 年 10 月 14 日\n- 「次の GitHub」コンペも開催中\n\nエージェントやユーザーごとにリポジトリを持たせたい開発者のみんなは、いまのうちに触ってみる価値ありだよ！",
+  "title_en": "Artifacts, the Git-speaking file system, is now in open beta",
+  "summary_en": "Cloudflare's Git-compatible versioned file system, Artifacts, is now in open beta on the Workers Paid plan, with billing starting October 14, 2026.",
+  "body_md_en": "Hi, it's Shii-chan! A file system that speaks Git just opened up to everyone!\n\n## What was announced?\n\nCloudflare's Changelog announced that Artifacts is now in open beta. Artifacts is a versioned file system that speaks Git. It's built for scale, so you can create a repository per project, user, session, or task.\n\n## What changes\n\nHere's what you can do:\n\n- Deploy to Workers: connect an Artifacts repository through Workers Builds. Pushes to the production branch deploy the updated Worker, and other branches create or update Worker Previews\n- Manage repositories programmatically: with an Artifacts binding from a Worker, create or fork repos, inspect files and commits, read files by path, and issue repo-scoped Git tokens\n- React to changes: subscribe to events when a repository is created, imported, forked, deleted, pushed to, cloned, or fetched\n- Control where data lives: store and process your data in the US or EU\n- Monitor usage: view total operations, pulls, pushes, errors, and error rates in the dashboard or via API\n\n## Dive Deep\n\nAvailability and billing:\n\n- Available to customers on the Workers Paid plan\n- Cloudflare will begin billing for Artifacts on October 14, 2026\n\nThe announcement also mentions a \"build the next GitHub on Cloudflare\" competition using Workers and Artifacts:\n\n- Submissions are open until October 14, 2026\n- The first-place team gets $25,000 in Cloudflare credits\n- The top three teams are flown to San Francisco to present at Cloudflare Connect\n\n## Wrap-up\n\n- Artifacts, a Git-compatible versioned file system, is in open beta\n- Built for creating many repos, with Worker bindings and event subscriptions for automation\n- Available on Workers Paid, with billing starting October 14, 2026\n- A \"next GitHub\" competition is running\n\nIf you want a repo per agent or per user, it's worth a look before billing starts!",
+  "emotion": "energetic",
+  "importance": 5,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-01-artifacts-open-beta/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Artifacts, Workers - Artifacts is now in open beta",
+  "tags": [
+    "cloudflare",
+    "serverless",
+    "devops"
+  ],
+  "published_at": "2026-10-01T23:13:30+00:00"
+}

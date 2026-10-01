@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-kinesis-video-streams-vpc-privatelink",
+  "title": "Kinesis Video Streams がインターネットなしで使える！PrivateLink 対応だよ",
+  "summary": "Amazon Kinesis Video Streams が AWS PrivateLink のインターフェイス VPC エンドポイントに対応。NAT やパブリック IP なしで動画の取り込みから再生までできるよ！",
+  "body_md": "おつかれさま、しぃちゃんだよ！今日はカメラ映像を閉じたネットワークで扱いたいみんなに嬉しいニュースだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Kinesis Video Streams が AWS PrivateLink を使ったインターフェイス VPC エンドポイントに対応したと発表されたよ。\n\n## これで何が変わるの？\n\nVPC と Kinesis Video Streams の間の通信が AWS のネットワーク内にとどまって、パブリックインターネットには出なくなるの。対象はコントロールプレーンと、動画の取り込み・再生のデータプレーンの両方だよ。\n\nだから、厳しいセキュリティ・コンプライアンス・ネットワーク分離の要件がある環境でも、次のものなしで動画の取り込み・保存・再生ができるよ。\n\n- インターネットゲートウェイ\n- NAT デバイス\n- パブリック IP アドレス\n\nたとえば、プライベートサブネットにあるカメラや IoT の動画ワークロードが、映像を Kinesis Video Streams に送って、再生や分析のために取り出すところまで、全部プライベート接続で完結するんだって！\n\n## 深く潜ってみよう\n\n- エンドポイントは Amazon VPC コンソール、AWS CLI、AWS SDK から作れる\n- VPC エンドポイントポリシーを付けて、アクセスを制御できる\n- Kinesis Video Streams が使えるすべてのリージョンで利用可能\n- AWS GovCloud (US) リージョンと、Sinnet が運営する中国（北京）リージョンも含む\n\n## まとめ\n\n- Kinesis Video Streams が PrivateLink の VPC エンドポイントに対応\n- コントロールプレーンもデータプレーンも AWS ネットワーク内で完結\n- IGW・NAT・パブリック IP なしで動画の取り込み・保存・再生ができる\n- GovCloud と中国（北京）を含む全提供リージョンで使える\n\n閉域網でカメラ映像や IoT 動画を扱うセキュリティ重視のチームにぴったりだよ！",
+  "title_en": "Kinesis Video Streams without the internet: PrivateLink VPC endpoints are here",
+  "summary_en": "Amazon Kinesis Video Streams now supports interface VPC endpoints powered by AWS PrivateLink, so you can ingest, store, and play back video without NAT devices or public IPs.",
+  "body_md_en": "Hi, it's Shii-chan! Today's news is for everyone who wants to handle camera video on a closed network!\n\n## What was announced?\n\nAWS What's New announced that Amazon Kinesis Video Streams now supports interface VPC endpoints powered by AWS PrivateLink.\n\n## What changes\n\nTraffic between your VPC and Kinesis Video Streams stays on the AWS network and is not exposed to the public internet. This covers the control plane and the video ingestion and playback data planes.\n\nSo even with strict security, compliance, or network-isolation requirements, you can ingest, store, and play back video without:\n\n- Internet gateways\n- NAT devices\n- Public IP addresses\n\nFor example, connected-camera or IoT video workloads in a private subnet can send media to Kinesis Video Streams and retrieve it for playback and analytics entirely over private connectivity!\n\n## Dive Deep\n\n- You create the endpoint from the Amazon VPC console, AWS CLI, or AWS SDKs\n- You can attach a VPC endpoint policy to control access\n- It's available in all AWS Regions where Kinesis Video Streams is available\n- That includes the AWS GovCloud (US) Regions and the China (Beijing) Region operated by Sinnet\n\n## Wrap-up\n\n- Kinesis Video Streams supports PrivateLink VPC endpoints\n- Control plane and data planes both stay on the AWS network\n- Ingest, store, and play back video without IGW, NAT, or public IPs\n- Available in every supported Region, including GovCloud and China (Beijing)\n\nThis is a great fit for security-minded teams handling camera or IoT video in isolated networks!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/kinesis-video-streams-vpc-privatelink/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Kinesis Video Streams now supports VPC endpoints with AWS PrivateLink",
+  "tags": [
+    "aws",
+    "security",
+    "infrastructure"
+  ],
+  "published_at": "2026-09-30T08:00:00+00:00"
+}

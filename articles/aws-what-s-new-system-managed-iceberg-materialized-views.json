@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-system-managed-iceberg-materialized-views",
+  "title": "書き換え不可の Iceberg マテリアライズドビューが誕生！Glue だけが書けるよ",
+  "summary": "Apache Iceberg のマテリアライズドビューに system-managed 版が登場。AWS Glue だけがデータと定義を書き込めるので、結果が計算したままの状態で守られるよ！",
+  "body_md": "みんな、しぃちゃんだよ！今日はデータレイクの「共有しても安心」を強くする発表だよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Apache Iceberg 向けの system-managed マテリアライズドビューが発表されたよ。\n\n## 今までどうだったの？\n\nマテリアライズドビューは、重いクエリの結果を一度だけ計算して、複数のエンジンで使い回せる仕組みだよ。\n\nでも結果はオープンな Iceberg テーブルなので、書き込み権限があれば誰でも変更できちゃったの。カタログ経由でも、Amazon S3 上のファイルを直接書いても変えられるから、「計算した結果のまま」とは限らなかったんだね。\n\n## これで何が変わるの？\n\nsystem-managed 版では、ビューのデータと定義を書き込めるのが AWS Glue だけになるよ。テーブルやその裏の S3 ファイルに書き込み権限がある人がいても、結果は計算されたままで保たれるの。\n\n## 深く潜ってみよう\n\n使い始めるまでの流れはこんな感じだよ。\n\n- ビューを定義する SQL を書く\n- 必要なら更新スケジュールも指定する\n- AWS Glue が結果を計算して、Amazon S3 Tables バケットに標準の Iceberg テーブルとして保存する\n- スケジュールに沿って最新の状態に保つ\n\n結果は AWS Glue Data Catalog の普通の Iceberg テーブルだから、Iceberg 互換のエンジンならどれでも直接読めるよ。他の書き手が変更できないことはサービスが保証してくれるんだって。\n\nリフレッシュ、スケジュール変更、ビューの削除は、これまでどおりいつでもできるよ。\n\n提供範囲は、Apache Iceberg マテリアライズドビューが使えるすべてのリージョンだよ。\n\n## まとめ\n\n- Iceberg マテリアライズドビューに、Glue だけが書ける system-managed 版が登場\n- 結果は S3 Tables バケットの標準 Iceberg テーブルで、どの互換エンジンからも読める\n- リフレッシュ・再スケジュール・削除は引き続き可能\n\nデータを他チームや他エンジンに共有する、データ基盤担当のみんなにぴったりの機能だよ！",
+  "title_en": "Write-protected Iceberg materialized views are here: only Glue can write",
+  "summary_en": "Apache Iceberg materialized views now have a system-managed option where only AWS Glue can write data and definitions, so results stay exactly as computed.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today's news makes sharing from your data lake feel a lot safer!\n\n## What was announced?\n\nAWS What's New announced system-managed materialized views for Apache Iceberg.\n\n## The story so far\n\nMaterialized views let you precompute an expensive query once and reuse the result across engines.\n\nBut the result is an open Iceberg table, so anyone with write access could change it, either through the catalog or by writing to the files in Amazon S3. That meant the result wasn't always what was originally computed.\n\n## What changes\n\nWith system-managed views, only AWS Glue can write the view's data and definition. The result stays exactly as computed, no matter who has write access to the table or the underlying S3 files.\n\n## Dive Deep\n\nHere's how you get started:\n\n- Write the SQL that defines the materialized view\n- Optionally set a refresh schedule\n- AWS Glue computes the results and stores them as a standard Iceberg table in your Amazon S3 Tables bucket\n- It keeps them current on your schedule\n\nThe result is an ordinary Iceberg table in the AWS Glue Data Catalog, so any Iceberg-compatible engine can read it directly, while the service guarantees no other writer can alter it.\n\nYou can still refresh, reschedule, or drop the view whenever you need to.\n\nIt's available in all Regions where Apache Iceberg materialized views are supported.\n\n## Wrap-up\n\n- A system-managed Iceberg materialized view that only Glue can write\n- Results are standard Iceberg tables in S3 Tables buckets, readable by any compatible engine\n- Refresh, reschedule, and drop still work\n\nThis is great for data platform folks sharing datasets across teams and engines!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/system-managed-iceberg-materialized-views",
+  "source_name": "AWS What's New",
+  "og_title": "Apache Iceberg materialized views now support system-managed write protection",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "security"
+  ],
+  "published_at": "2026-09-30T21:19:00+00:00"
+}

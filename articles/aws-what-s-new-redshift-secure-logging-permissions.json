@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-redshift-secure-logging-permissions",
+  "title": "Redshift の伏せ字ログ、DEBUG 権限で見られるようになったよ！",
+  "summary": "Amazon Redshift の federated permissions に DEBUG 権限が登場。secure logging を止めずに、許可した ID だけがマスクなしのログを見られるようになったよ！",
+  "body_md": "みんな、しぃちゃんだよ！今日は Redshift のログの見え方がちょっと賢くなったお話だよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Redshift に新しい DEBUG 権限が追加されたって発表があったよ。きめ細かなアクセス制御（FGAC）で守られたデータに対するクエリを、トラブルシュートしたり監査したりしやすくなる機能なの。\n\n## 今までどうだったの？\n\nRedshift の federated permissions では、データの権限を一度定義すれば、AWS アカウント内のすべての Redshift ウェアハウスで自動的に適用されるよ。\n\nFGAC で保護されたデータにクエリが触れると、secure logging がシステムテーブルのレコードにある機微な値を伏せ字にするの。\n\n- 書き換えられたクエリテキスト\n- エラーメッセージ\n- オブジェクト名\n\nこれはプロデューサー側のデータをコンシューマーから守るための仕組みだよ。でも、監査担当や管理者はトラブルシュートやコンプライアンスのためにそのレコードを見たいよね。そこが悩みどころだったの。\n\n## これで何が変わるの？\n\nsecure logging をオフにしなくても、スーパーユーザーかデータベースオーナーが「どの ID にはマスクなしで見せるか」を選べるようになったよ。\n\n## 深く潜ってみよう\n\n- DEBUG は標準の GRANT コマンドで付与する\n- 付与先は主に IAM ユーザー、IAM ロール、IAM Identity Center のユーザーかグループ\n- 付与された ID は、自分のクエリについてマスクなしのレコードを見られる\n- コンシューマーアカウントの管理者にも付与できて、トラブルシュートや監査のときに全体のログを見られる\n- アカウント管理者に許可されたレコードは、システムテーブルのデータを Amazon S3 Tables にエクスポートしたときもマスクされないまま\n\n提供範囲は、Redshift が使えるすべての AWS リージョンだよ。\n\n## まとめ\n\n- FGAC 保護データのログは secure logging で伏せ字になる\n- 新しい DEBUG 権限で、許可した ID だけマスクなしで見られる\n- 付与は GRANT コマンドで、IAM ユーザー・ロール・Identity Center が対象\n- S3 Tables へのエクスポートでも、管理者向けレコードはマスクなし\n\nデータ共有環境で監査やデバッグを担当しているみんなに刺さる更新だよ！",
+  "title_en": "Redshift's redacted logs can now be unmasked with the DEBUG permission",
+  "summary_en": "Amazon Redshift federated permissions gets a new DEBUG permission. Keep secure logging on, and let only the identities you choose see unredacted log records.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today's news is about Redshift logs getting a little smarter!\n\n## What was announced?\n\nAWS What's New announced a new DEBUG permission for Amazon Redshift. It makes it easier to troubleshoot and audit queries on data protected by fine-grained access control (FGAC).\n\n## The story so far\n\nWith Redshift federated permissions, you define data permissions once, and Redshift enforces them automatically across every Redshift warehouse in your AWS account.\n\nWhen a query touches FGAC-protected data, secure logging redacts sensitive values in system table records:\n\n- Rewritten query text\n- Error messages\n- Object names\n\nThis protects the producer's data from consumers. But auditors and administrators need to see those records for troubleshooting and compliance, and that was the tension.\n\n## What changes\n\nYou don't have to turn off secure logging anymore. A superuser or database owner can choose which identities see the records unredacted.\n\n## Dive Deep\n\n- You grant DEBUG with the standard GRANT command\n- Typical grantees are IAM users, IAM roles, and IAM Identity Center users or groups\n- A granted identity can see unredacted records for its own queries\n- You can also grant it to the administrators of a consumer account for full log visibility during troubleshooting and audit\n- Records authorized for account administrators stay unredacted when you export system table data to Amazon S3 Tables\n\nIt's available in all AWS Regions where Redshift is available.\n\n## Wrap-up\n\n- Logs for FGAC-protected data are redacted by secure logging\n- The new DEBUG permission lets chosen identities see them unredacted\n- You grant it with GRANT, to IAM users, roles, or Identity Center identities\n- Administrator-authorized records stay unredacted in S3 Tables exports\n\nThis one is for anyone handling audit and debugging in shared-data environments!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/redshift-secure-logging-permissions/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Redshift simplifies access to secure logging with federated permissions",
+  "tags": [
+    "aws",
+    "security",
+    "infrastructure"
+  ],
+  "published_at": "2026-09-30T08:00:00+00:00"
+}

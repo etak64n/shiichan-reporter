@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-aws-budgets",
+  "title": "AWS Budgets の通知先にメール認証が入ったよ！新規アドレスは確認が必要",
+  "summary": "AWS Budgets が、新しく追加した通知先メールアドレスを検証してから通知を送るようになったよ。2026 年 9 月 30 日以降に追加したアドレスが対象で、既存の購読は影響なし！",
+  "body_md": "おつかれさま、しぃちゃんだよ！今日は予算アラートの宛先まわりの変更だよ。運用している人は要チェックだね！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Budgets が通知の購読者のメールアドレスを検証するようになったと発表されたよ。AWS Budgets は、コストや使用量のしきい値を決めて、超えたらメールで知らせてくれるサービスだね。\n\n## これで何が変わるの？\n\n予算の通知にメールアドレスを追加すると、そのアドレスに確認メールが届くよ。受信者が確認すると、そのアドレスが通知を受け取り始めるの。\n\n## 深く潜ってみよう\n\n- 検証の対象は、2026 年 9 月 30 日以降に追加されたメールアドレス\n- 既存の予算にすでに購読されているアドレスは影響なしで、対応も不要\n- 受信者は、確認メール内のリンクをたどって承認する（リンクは AWS マネジメントコンソールが開く）\n- AWS Budgets コンソールで、全購読者の検証ステータスを確認できる。まだ保留中のアドレスには再送オプションがある\n- 通知は AWS User Notifications 経由で配信され、受信者はいつでもオプトアウトできる\n- 提供範囲は、AWS GovCloud (US) リージョンと中国リージョンを除くすべてのリージョン\n\n## まとめ\n\n- 新規に追加した通知先メールは、確認してから通知が届くようになる\n- 2026 年 9 月 30 日以降に追加したアドレスが対象で、既存は影響なし\n- コンソールで検証ステータスを見られて、再送もできる\n\n予算アラートの宛先を追加・管理しているみんなは、確認メールを忘れずにね！",
+  "title_en": "AWS Budgets now verifies email subscribers for notifications",
+  "summary_en": "AWS Budgets now verifies new email subscribers before sending budget alerts. It applies to addresses added from 9/30/26 onward; existing subscriptions are unaffected.",
+  "body_md_en": "Hi, it's Shii-chan! Today's change is about who receives budget alerts, so if you manage them, take a look!\n\n## What was announced?\n\nAWS What's New announced that AWS Budgets now verifies email subscribers for notifications. AWS Budgets lets you set custom cost and usage thresholds and alerts you by email when spending crosses them.\n\n## What changes\n\nWhen you add an email address to a budget notification, AWS Budgets sends a verification email to that address. The address begins receiving notifications once the recipient confirms it.\n\n## Dive Deep\n\n- Verification applies to email addresses added from 9/30/26 onward\n- Addresses already subscribed on existing budgets are unaffected and need no action\n- The recipient confirms by following the link in the verification email, which opens the AWS Management Console\n- The AWS Budgets console shows the verification status of every subscriber, with a resend option for addresses still pending\n- Notifications are delivered through AWS User Notifications, and recipients can opt out at any time\n- Available in all AWS Regions except the AWS GovCloud (US) Regions and the China Regions\n\n## Wrap-up\n\n- New notification emails are verified before alerts are sent\n- Applies to addresses added from 9/30/26; existing ones are unaffected\n- You can see verification status and resend in the console\n\nIf you add or manage budget alert recipients, remember the verification email!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-budgets/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Budgets now supports email verification for notification subscribers",
+  "tags": [
+    "aws",
+    "security"
+  ],
+  "published_at": "2026-10-01T08:00:00+00:00"
+}

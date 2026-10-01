@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-10-01-account-api-token-provisioning",
+  "title": "Super Admin 待ちにサヨナラ！Account API トークンをメンバーが自分で作れるよ",
+  "summary": "Cloudflare で、API Token Provisioning ロールを持つメンバーが Account API トークンを作れるようになったよ。権限は作成者の範囲内に限られるの！",
+  "body_md": "みんな、しぃちゃんだよ！今日はトークン発行のために管理者を待つ時間が減る更新だよ！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Account API トークンの作成が Super Administrator だけのものではなくなったと告知されたよ。\n\n## 今までどうだったの？\n\nAccount API トークンを作れるのは Super Administrator に限られていたよ。開発者やプラットフォームチームは、認証情報をひとつ用意するだけでも Super Administrator に頼る必要があったの。\n\n## これで何が変わるの？\n\nAPI Token Provisioning ロールを持つメンバーが、ダッシュボード・API・Terraform・CF CLI から Account API トークンを作れるようになったよ。\n\n## 深く潜ってみよう\n\n変更点を整理するね。\n\n- 作成の委任: API Token Provisioning ロールを持つメンバーは、ダッシュボードから作成できる。管理者は、このロールをダッシュボード・API・Terraform で付与できる\n- OAuth での作成に対応: `account_api_tokens:create` スコープを要求する OAuth クライアント（まずは Cloudflare CLI）が作成できる\n- 権限は作成者の範囲内: メンバーは、自分がすでに持っている権限でしかトークンを作れない。OAuth で作ったトークンは、認可時に許可されたスコープにも制限される\n- 作成者情報と見える範囲: Account API トークンに作成者のメタデータが付く。Super Administrator と Administrator はアカウント内のすべてのトークンを見られて、API Token Provisioning ロールのメンバーは自分が作ったものだけ見られる\n\n## まとめ\n\n- Account API トークンの作成が、API Token Provisioning ロールのメンバーにも開放された\n- ダッシュボード・API・Terraform・CF CLI から作成できる\n- 権限は作成者の持つ範囲までで、勝手に権限を広げられない\n- 作成者のメタデータで、誰が作ったかを追える\n\n権限の最小化を守りつつ、開発チームの自走を支えたいプラットフォーム担当のみんなに刺さるよ！",
+  "title_en": "No more waiting on Super Admins: members can self-serve Account API tokens",
+  "summary_en": "On Cloudflare, members with the API Token Provisioning role can now create Account API tokens, limited to the permissions the creator already has.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today's update means less time waiting on an admin to issue tokens!\n\n## What was announced?\n\nCloudflare's Changelog announced that Account API token creation is no longer limited to Super Administrators.\n\n## The story so far\n\nOnly Super Administrators could create Account API tokens. Developers and platform teams had to depend on a Super Administrator even to provision a single credential.\n\n## What changes\n\nMembers with the API Token Provisioning role can now create Account API tokens through the dashboard, API, Terraform, or CF CLI.\n\n## Dive Deep\n\nHere's what changed:\n\n- Delegated creation: members with the API Token Provisioning role can create tokens from the dashboard. Administrators can grant the role through the dashboard, API, or Terraform\n- OAuth support: OAuth clients that request the `account_api_tokens:create` scope, starting with Cloudflare CLI, can create Account API tokens\n- Permissions limited to the creator: members can only create a token with permissions they already have. For OAuth-created tokens, permissions are also limited to the scopes granted during authorization\n- Creator attribution and visibility: tokens now include creator metadata. Super Administrators and Administrators can view all Account API tokens in an account, while members with the role see only tokens they created\n\n## Wrap-up\n\n- Account API token creation is open to members with the API Token Provisioning role\n- Create from the dashboard, API, Terraform, or CF CLI\n- Permissions stay within the creator's own, so they can't be widened\n- Creator metadata lets you trace who made each token\n\nThis suits platform teams who want self-serve developers while keeping least privilege!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-01-account-api-token-provisioning/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Cloudflare Fundamentals - Account members can self-serve create Account API tokens",
+  "tags": [
+    "cloudflare",
+    "security",
+    "devops"
+  ],
+  "published_at": "2026-10-01T23:13:30+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-aws-continuum-penetration",
+  "title": "AWS Continuum for Penetration Testing が 6 つの新リージョンに拡大！",
+  "summary": "AWS Continuum for Penetration Testing（AWS Security Agent）が、ソウル・モントリオール・ロンドン・オハイオ・パリ・ストックホルムの 6 リージョンで使えるようになったよ！",
+  "body_md": "やっほー、しぃちゃんだよ！今日はペネトレーションテストのマネージドサービスが、使えるリージョンを広げたよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Continuum for Penetration Testing（AWS Security Agent）が 6 つの追加リージョンで利用可能になったと発表されたよ。Web アプリケーションと API に対してペネトレーションテストを行えるマネージドセキュリティサービスなの。\n\n## 今までどうだったの？\n\n今までは提供される地理的な範囲が限られていたよ。データレジデンシー要件のある組織は、地域に合ったセキュリティテストを組みにくかったんだね。\n\n## これで何が変わるの？\n\n本番環境に近いリージョンでペネトレーションテストのワークロードを動かせるようになるよ。複数の地域で事業をしている組織が、データレジデンシー要件を満たしながらセキュリティテストを続けやすくなるの。\n\n## 深く潜ってみよう\n\n追加されたリージョンはこの 6 つだよ。\n\n- アジアパシフィック（ソウル）\n- カナダ（モントリオール）\n- 欧州（ロンドン）\n- 米国東部（オハイオ。発表の本文には Columbus とも書かれている）\n- 欧州（パリ）\n- 欧州（ストックホルム）\n\n想定されている用途は次のとおりだよ。\n\n- 脆弱性アセスメント\n- PCI DSS や ISO 27001 などのフレームワークに対するコンプライアンス検証\n- 継続的なセキュリティ態勢の評価\n\n既存のリージョンはこれまでどおり利用できるよ。\n\n## まとめ\n\n- AWS Continuum for Penetration Testing が 6 リージョンで追加提供\n- Web アプリと API が対象のマネージドなペネトレーションテスト\n- データレジデンシー要件に合わせて、本番に近い場所でテストできる\n\nセキュリティ・コンプライアンス担当で、リージョンの制約が気になっていたみんなに刺さる更新だよ！",
+  "title_en": "AWS Continuum for Penetration Testing expands to 6 more Regions",
+  "summary_en": "AWS Continuum for Penetration Testing (AWS Security Agent) is now available in Seoul, Montreal, London, Ohio, Paris, and Stockholm.",
+  "body_md_en": "Hi, it's Shii-chan! Today a managed penetration testing service is spreading to more Regions!\n\n## What was announced?\n\nAWS What's New announced that AWS Continuum for Penetration Testing (AWS Security Agent) is now available in six additional Regions. It's a managed security service for running penetration tests against your web applications and APIs.\n\n## The story so far\n\nUntil now, its geographic reach was limited. Organizations with data residency requirements had a harder time building localized security testing.\n\n## What changes\n\nYou can run penetration testing workloads closer to your production environments. Organizations operating across several geographies can keep up their security testing while meeting data residency requirements.\n\n## Dive Deep\n\nThe newly supported Regions are:\n\n- Asia Pacific (Seoul)\n- Canada (Montreal)\n- Europe (London)\n- US East (Ohio; the announcement text also says Columbus)\n- Europe (Paris)\n- Europe (Stockholm)\n\nThe use cases called out are:\n\n- Vulnerability assessments\n- Compliance validation against frameworks such as PCI DSS and ISO 27001\n- Continuous security posture evaluations\n\nExisting supported Regions remain fully operational.\n\n## Wrap-up\n\n- Six more Regions for AWS Continuum for Penetration Testing\n- Managed penetration testing for web apps and APIs\n- Test near production while meeting data residency needs\n\nThis is for security and compliance folks who were held back by Region limits!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/aws-continuum-penetration/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Continuum for Penetration Testing now available in 6 additional Regions",
+  "tags": [
+    "aws",
+    "security"
+  ],
+  "published_at": "2026-09-30T16:13:00+00:00"
+}

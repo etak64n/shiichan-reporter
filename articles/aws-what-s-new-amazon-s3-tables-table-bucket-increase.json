@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-s3-tables-table-bucket-increase",
+  "title": "S3 Tables のテーブルバケットが 10 個から 100 個に！上限 10 倍だよ",
+  "summary": "Amazon S3 Tables の、リージョンごと・アカウントごとのテーブルバケット数の上限が 10 から 100 に。追加料金なしで、全アカウントにデフォルトで適用されるよ！",
+  "body_md": "こんにちは、しぃちゃんだよ！S3 Tables の上限がドーンと広がったよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon S3 Tables のテーブルバケット数の上限が、AWS アカウントのリージョンごとに 100 個になったと発表されたよ。\n\n## 今までどうだったの？\n\n上限は 10 個だったよ。データセットやチームが増えると、ひとつのテーブルバケットにまとめざるを得ない場面があったんだね。\n\n## これで何が変わるの？\n\n1 リージョン・1 アカウントあたり、最大 100 万テーブルまで作れるようになるよ。\n\nテーブルバケットを、データセット・ワークロード・チームごとに分けられるようになるの。テーブルバケット単位の設定を、それぞれに適用できるよ。\n\n- 暗号化\n- アクセスポリシー\n- レプリケーション\n\n## 深く潜ってみよう\n\n- 新しい上限は、追加料金なしですべてのアカウントにデフォルトで適用される\n- S3 Tables が使えるすべてのリージョンで利用可能\n- 上限を超える必要があるときは、AWS Support に引き上げをリクエストできる\n\nS3 Tables は、Apache Iceberg を組み込みでサポートした初のクラウドオブジェクトストアとして紹介されていて、継続的なテーブルメンテナンスで、クエリ効率とストレージコストを自動で最適化してくれるよ。\n\n## まとめ\n\n- テーブルバケットの上限が、リージョン・アカウントあたり 10 個から 100 個に\n- 1 リージョン・1 アカウントあたり最大 100 万テーブル\n- データセット・チームごとに、暗号化・アクセスポリシー・レプリケーションを分けて設定できる\n- 追加料金なし、デフォルトで適用\n\nデータレイクをチームやワークロードごとにきっちり分けたいみんなに嬉しい更新だよ！",
+  "title_en": "S3 Tables now allows 100 table buckets per Region, up from 10",
+  "summary_en": "Amazon S3 Tables raises the table bucket quota from 10 to 100 per Region per account, by default and at no additional cost.",
+  "body_md_en": "Hello, it's Shii-chan! The S3 Tables quota just got a big boost!\n\n## What was announced?\n\nAWS What's New announced that Amazon S3 Tables now supports up to 100 table buckets per AWS Region in an AWS account.\n\n## The story so far\n\nThe limit was 10. As datasets and teams grew, you sometimes had to pack things into one table bucket.\n\n## What changes\n\nYou can now create up to 1 million tables per Region in an account.\n\nYou can give each dataset, workload, or team its own table bucket and apply table bucket-level settings to each:\n\n- Encryption\n- Access policies\n- Replication\n\n## Dive Deep\n\n- The higher quota applies by default to all accounts at no additional cost\n- It's available in all AWS Regions where S3 Tables are available\n- If you need more, you can request an increase through AWS Support\n\nS3 Tables is described as the first cloud object store with built-in Apache Iceberg support, and it performs continual table maintenance to automatically optimize query efficiency and storage cost.\n\n## Wrap-up\n\n- Table bucket quota goes from 10 to 100 per Region per account\n- Up to 1 million tables per Region per account\n- Set encryption, access policies, and replication separately per dataset or team\n- No additional cost, applied by default\n\nNice news if you want to keep your data lake neatly separated by team or workload!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-s3-tables-table-bucket-increase",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon S3 Tables now support up to 100 table buckets per AWS Region in an AWS account",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-01T04:00:00+00:00"
+}

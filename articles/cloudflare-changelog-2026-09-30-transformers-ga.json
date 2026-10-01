@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-09-30-transformers-ga",
+  "title": "Logpush のログを SQL で加工してから配信！Transformers が GA になったよ",
+  "summary": "Cloudflare Logpush の Transformers が Free から Enterprise まで全プランで GA。配信前に SQL でフィルタ・整形・マスキングができて、毎月 1 GB の入力まで無料だよ！",
+  "body_md": "やっほー、しぃちゃんだよ！今日は Logpush のログを配信前に SQL で加工できる機能が GA したってニュースを持ってきたよ！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Logpush の「Transformers」が一般提供（GA）になったことが告知されたよ。\n\n対象は、対応している Logpush データセットで、Free・Pro・Business・Enterprise のすべてのプランだよ。\n\n## なぜ重要なの？\n\nログを外部に送るとき、「全部の項目はいらない」「個人情報は消してから送りたい」ってよくあるよね。Transformers があると、Logpush が各バッチを配信する前に、SQL でその場で加工できるの。\n\n## これで何が変わるの？\n\nSQL でできることは次のとおりだよ。\n\n- レコードのフィルタリング\n- フィールドの整形（reshape）\n- 機密値のマスキング（redact）\n- 新しいフィールドの計算\n- メタデータの追加\n\n送信先の側で後処理しなくても、必要なログだけを必要な形で届けられるようになるよ。セキュリティやコンプライアンスでログの扱いに気をつかっているチームに嬉しいね！\n\n## 深く潜ってみよう\n\n使い方まわりの具体的な情報をまとめるね。\n\n- Transformer の作成とプレビューは Transformer Studio か Cloudflare API でできる\n- 付けられるのは、アカウントスコープまたはゾーンスコープの Logpush ジョブのうち、出力が NDJSON のもの\n- 保存するとき、Cloudflare がクエリをデータセットのスキーマに照らして検証してくれる\n\n料金はこうなっているよ。\n\n- 各アカウントに、毎月 1 GB ぶんの変換入力が含まれる\n- 超えた分は 1 GB あたり $0.04\n\n対応する SQL の範囲や制限、例は、Cloudflare のドキュメントの Transformers のページにまとまっているみたい！\n\n## まとめ\n\n- Logpush の Transformers が全プランで GA\n- SQL でフィルタ・整形・マスキング・計算フィールド追加・メタデータ追加ができる\n- Transformer Studio か API で作成・プレビューして、NDJSON 出力のジョブに付ける\n- 毎月 1 GB の入力は無料で、追加は 1 GB あたり $0.04\n\nログ基盤の運用担当や、ログから機密値を外して送りたいセキュリティ担当のみんなにぴったりの機能だよ！",
+  "title_en": "Transform Logpush logs with SQL before delivery: Transformers is now GA",
+  "summary_en": "Logpush Transformers is now generally available on every plan from Free to Enterprise. Filter, reshape, and redact logs with SQL before delivery, with 1 GB of input included each month.",
+  "body_md_en": "Hi, it's Shii-chan! Today I have news about running SQL on your Logpush logs before they are delivered, and it just went GA!\n\n## What was announced?\n\nCloudflare's Changelog announced that Logpush Transformers is now generally available.\n\nIt works on supported Logpush datasets across the Free, Pro, Business, and Enterprise plans.\n\n## Why it matters\n\nWhen you ship logs elsewhere, you often don't want every field, or you want to remove sensitive data first. With Transformers, you can process each batch with SQL right before Logpush delivers it.\n\n## What changes\n\nWith SQL you can:\n\n- Filter records\n- Reshape fields\n- Redact sensitive values\n- Compute new fields\n- Add metadata\n\nYou no longer have to post-process on the destination side. You can deliver just the logs you need, in the shape you need. That's great for teams who care about how logs are handled for security and compliance!\n\n## Dive Deep\n\nHere are the practical details.\n\n- You create and preview Transformers in Transformer Studio or through the Cloudflare API\n- You can attach them to account-scoped or zone-scoped Logpush jobs that use NDJSON output\n- When you save, Cloudflare validates the query against the dataset schema\n\nPricing works like this:\n\n- Each account includes 1 GB of transformation input per month\n- Additional input costs $0.04 per GB\n\nSupported SQL, limits, and examples are covered in the Transformers page of the Cloudflare docs.\n\n## Wrap-up\n\n- Logpush Transformers is GA on all plans\n- Use SQL to filter, reshape, redact, compute fields, and add metadata\n- Create and preview in Transformer Studio or the API, then attach to NDJSON jobs\n- 1 GB of input per month is included, then $0.04 per GB\n\nThis is a good fit for log pipeline owners and security folks who want to strip sensitive values before logs leave Cloudflare!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-09-30-transformers-ga/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "logpush, Logs - Transformers are now generally available",
+  "tags": [
+    "cloudflare",
+    "security",
+    "devops"
+  ],
+  "published_at": "2026-09-30T00:00:00+00:00"
+}

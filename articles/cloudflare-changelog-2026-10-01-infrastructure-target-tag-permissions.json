@@ -1,0 +1,19 @@
+{
+  "slug": "cloudflare-changelog-2026-10-01-infrastructure-target-tag-permissions",
+  "title": "ターゲットのタグ付けは Zero Trust Write だけで OK に！Access for Infrastructure",
+  "summary": "Access for Infrastructure のターゲットへのインラインのタグ付けが、API トークンの Zero Trust Write 権限だけでできるようになったよ！",
+  "body_md": "おつかれさま、しぃちゃんだよ！今日は権限がすっきりする小さな、でも嬉しい更新だよ！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Access for Infrastructure のターゲットに、Zero Trust Write の API トークン権限だけでタグを付けられるようになったと告知されたよ。\n\n## 今までどうだったの？\n\nAPI でターゲットにタグを付けるには、API トークンに Zero Trust Write と Tag Write の両方の権限が必要だったよ。\n\n## これで何が変わるの？\n\nInfrastructure Access Targets API を使ったインラインのターゲットタグ付けは、Zero Trust Write だけで済むよ。トークンに付ける権限が減るので、必要最小限の権限でトークンを作りたい人に嬉しいね！\n\n## 深く潜ってみよう\n\n注意点がひとつあるよ。\n\n- 変更が適用されるのは、Infrastructure Access Targets API を使ったインラインのターゲットタグ付けだけ\n- 汎用の Resource Tagging API でリソースにタグを付ける場合は、これまでどおり Tag Admin、Tag Write、またはそれと同等のロールが必要\n\n## まとめ\n\n- ターゲットのインラインタグ付けは Zero Trust Write のみで可能に\n- 以前は Zero Trust Write と Tag Write の両方が必要だった\n- Resource Tagging API の権限要件は変わらない\n\nAccess for Infrastructure を API や自動化で運用しているみんなに、地味に効く更新だよ！",
+  "title_en": "Tagging targets in Access for Infrastructure now needs only Zero Trust Write",
+  "summary_en": "Inline target tagging in Access for Infrastructure now works with just the Zero Trust Write API token permission.",
+  "body_md_en": "Hi, it's Shii-chan! Today's update is small, but it makes permissions tidier!\n\n## What was announced?\n\nCloudflare's Changelog announced that you can now tag Access for Infrastructure targets using only the Zero Trust Write API token permission.\n\n## The story so far\n\nTagging targets through the API used to require both Zero Trust Write and Tag Write permissions on the API token.\n\n## What changes\n\nInline target tagging through the Infrastructure Access Targets API now needs only Zero Trust Write. Fewer permissions on the token is nice if you like to keep tokens least-privilege!\n\n## Dive Deep\n\nOne thing to note:\n\n- The change applies only to inline target tagging through the Infrastructure Access Targets API\n- Tagging resources through the general Resource Tagging API still requires the Tag Admin, Tag Write, or an equivalent role\n\n## Wrap-up\n\n- Inline target tagging works with Zero Trust Write alone\n- Previously both Zero Trust Write and Tag Write were required\n- The Resource Tagging API's permission requirements are unchanged\n\nA quietly useful update for anyone running Access for Infrastructure through the API or automation!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-01-infrastructure-target-tag-permissions/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Cloudflare One, Access - Simplified permissions for tagging targets with Access for Infrastructure",
+  "tags": [
+    "cloudflare",
+    "security"
+  ],
+  "published_at": "2026-10-01T23:13:30+00:00"
+}

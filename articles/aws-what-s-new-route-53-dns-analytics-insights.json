@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-route-53-dns-analytics-insights",
+  "title": "DNS のブロック状況が丸見えに！Route 53 Global Resolver と DNS Firewall の分析機能",
+  "summary": "Route 53 Global Resolver と DNS Firewall が CloudWatch と連携した DNS 分析・インサイトに対応。メトリクスフィルタとアラームで異常を素早く検知できるよ！",
+  "body_md": "やっほー、しぃちゃんだよ！DNS の動きを、CloudWatch でしっかり見られるようになったよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Route 53 Global Resolver と DNS Firewall が、Amazon CloudWatch とのネイティブ連携による DNS 分析とインサイトに対応したと発表されたよ。\n\n## これで何が変わるの？\n\nネットワーク管理者やセキュリティチームが、次のことをできるようになるよ。\n\n- DNS クエリのパターンを丸ごと可視化\n- DNS Firewall ルールの効果を監視\n- 異常なアクティビティの検知\n- DNS インフラの性能の最適化\n\n## 深く潜ってみよう\n\nCloudWatch Metrics と Contributor Insights を使って、次のことができるよ。\n\n- DNS クエリログの検索と分析\n- ブロックされたクエリや DNS レスポンスコードなどのパターンへの、メトリクスフィルタの作成\n- 自動アラームの設定\n\nGlobal Resolver と DNS Firewall の両方のコンソールに、新しい Analytics タブが追加されて、分析をひとつの場所で見られるよ。\n\n例として、VPC ごとのブロックされた DNS クエリのメトリクスフィルタを作って、1 時間に 10 件を超えてブロックされたらアラームを鳴らす、という使い方が紹介されているよ。素早い対応につながるね。\n\n料金は、オプトインしたメトリクスに標準の Amazon CloudWatch 料金が適用されるよ。提供範囲は、CloudWatch・Route 53 Global Resolver・DNS Firewall がすべて使えるリージョンだよ。\n\n## まとめ\n\n- Global Resolver と DNS Firewall が CloudWatch 連携の分析・インサイトに対応\n- Metrics と Contributor Insights で、ログ検索・メトリクスフィルタ・アラームが使える\n- 両コンソールに Analytics タブが追加\n- 料金は、オプトインしたメトリクスに標準の CloudWatch 料金\n\nDNS のセキュリティ監視を担当しているみんなにぴったりの更新だよ！",
+  "title_en": "See your DNS blocks clearly: analytics for Route 53 Global Resolver and DNS Firewall",
+  "summary_en": "Route 53 Global Resolver and DNS Firewall now provide DNS analytics and insights through native CloudWatch integration, with metric filters and alarms to spot anomalies fast.",
+  "body_md_en": "Hi, it's Shii-chan! You can now watch what your DNS is doing right in CloudWatch!\n\n## What was announced?\n\nAWS What's New announced that Route 53 Global Resolver and DNS Firewall now provide DNS analytics and insights through native Amazon CloudWatch integration.\n\n## What changes\n\nNetwork administrators and security teams can:\n\n- Gain full observability into DNS query patterns\n- Monitor DNS Firewall rule effectiveness\n- Detect anomalous activity\n- Optimize DNS infrastructure performance\n\n## Dive Deep\n\nWith CloudWatch Metrics and Contributor Insights, you can:\n\n- Search and analyze DNS query logs\n- Create metric filters for specific patterns such as blocked queries and DNS response codes\n- Set automated alarms\n\nA new Analytics tab in both the Global Resolver and DNS Firewall consoles gives you all analytics in one place.\n\nOne example: create a metric filter for blocked DNS queries by VPC and set an alarm to trigger when more than 10 queries are blocked within an hour, for rapid response to potential threats.\n\nStandard Amazon CloudWatch pricing applies to the metrics you opt in to. It's available in all Regions where CloudWatch, Route 53 Global Resolver, and DNS Firewall are available.\n\n## Wrap-up\n\n- Global Resolver and DNS Firewall get CloudWatch-based analytics and insights\n- Metrics and Contributor Insights give you log search, metric filters, and alarms\n- A new Analytics tab appears in both consoles\n- Pricing is standard CloudWatch pricing for metrics you opt in to\n\nA great fit for anyone doing DNS security monitoring!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/route-53-dns-analytics-insights/",
+  "source_name": "AWS What's New",
+  "og_title": "Announcing DNS analytics and insights for Route 53 Global Resolver and DNS Firewall",
+  "tags": [
+    "aws",
+    "security",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-01T08:00:00+00:00"
+}

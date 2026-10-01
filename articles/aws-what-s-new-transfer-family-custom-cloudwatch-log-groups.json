@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-transfer-family-custom-cloudwatch-log-groups",
+  "title": "ワークフローごとにログの行き先を選べるよ！Transfer Family のカスタム CloudWatch ログ グループ",
+  "summary": "AWS Transfer Family の managed workflow で、実行ログの送り先として、サーバーとは別のワークフロー単位の CloudWatch ロググループを選べるようになったよ！",
+  "body_md": "こんにちは、しぃちゃんだよ！ワークフローのログがサーバーのログに混ざってた問題が解決するよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Transfer Family の managed workflow の実行ログに、Amazon CloudWatch Logs のカスタムロググループを選べるようになったと発表されたよ。\n\n## 今までどうだったの？\n\nTransfer Family のサーバーにつないだすべてのワークフローが、そのサーバーの CloudWatch ロググループに実行ログを送っていたよ。だから、ワークフローごとに別々のログの送り先を決められなかったの。\n\n## これで何が変わるの？\n\nワークフローを Transfer Family のコンソールか API で作るときに、サーバーのロググループとは別の、ワークフロー単位のロググループを選べるよ。\n\nログの整理の仕方は 2 通りあるよ。\n\n- 個々のワークフローを、別々に監視する\n- 関連するワークフローのログを、ひとつにまとめる\n\n複数のワークフローのログを共有のロググループに送れば、まとめたメトリクスやダッシュボードを作って、実行状況を追うこともできるよ。\n\n## 深く潜ってみよう\n\n- 選んだロググループにだけワークフローログが配信されるので、サーバーのログ用ロールは不要\n- ログは従来どおりの構造化 JSON 形式で、CloudWatch Logs Insights でクエリできる\n- 構造化ログの送り先を選ばない場合は、これまでどおり、設定されていればサーバーのロールベースのログ設定が使われる\n- 既存のワークフローは、今のログ設定のまま\n- Transfer Family の managed workflow が使えるすべてのリージョンで利用可能\n\n## まとめ\n\n- managed workflow の実行ログに、ワークフロー単位のカスタムロググループを選べる\n- 個別監視も、複数ワークフローの集約もできる\n- 選んだロググループにだけ配信されるので、サーバーのログ用ロールは不要\n- 既存のワークフローは影響なし\n\nファイル転送のワークフローを複数運用している、運用担当のみんなに嬉しい更新だよ！",
+  "title_en": "Pick a log destination per workflow: Transfer Family adds custom CloudWatch log groups",
+  "summary_en": "AWS Transfer Family lets you choose a workflow-level CloudWatch log group for managed workflow execution logs, separate from the server's log group.",
+  "body_md_en": "Hi, it's Shii-chan! No more workflow logs mixed into the server's logs!\n\n## What was announced?\n\nAWS What's New announced that AWS Transfer Family now lets you choose a custom log group in Amazon CloudWatch Logs for managed workflow execution logs.\n\n## The story so far\n\nEvery workflow attached to a Transfer Family server sent its execution logs to that server's CloudWatch log group. So you couldn't set a separate log destination for each workflow.\n\n## What changes\n\nWhen you create a workflow in the Transfer Family console or API, you can select a workflow-level log group separate from the server's log group.\n\nYou can organize logs in two ways:\n\n- Monitor individual workflows separately\n- Bring logs from related workflows together\n\nSending logs from multiple workflows to a shared log group also lets you create consolidated metrics and dashboards for tracking workflow execution.\n\n## Dive Deep\n\n- Transfer Family delivers workflow logs only to the selected group, so no server logging role is required\n- Logs keep their existing structured JSON format and stay queryable with CloudWatch Logs Insights\n- If you don't select a structured log destination, workflow logs continue using the server's role-based logging configuration when configured\n- Existing workflows keep their current logging configuration\n- Available in all Regions where Transfer Family managed workflows are offered\n\n## Wrap-up\n\n- Choose a workflow-level custom log group for managed workflow execution logs\n- Monitor workflows individually or consolidate them\n- Logs go only to the chosen group, so no server logging role is needed\n- Existing workflows are unaffected\n\nA nice update for ops folks running multiple file transfer workflows!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/transfer-family-custom-cloudwatch-log-groups/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Transfer Family now supports custom CloudWatch log groups for managed workflows",
+  "tags": [
+    "aws",
+    "devops",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-01T10:00:00+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-aws-glue-iceberg-v3-optimization",
+  "title": "Iceberg V3 テーブルも自動メンテ！Glue Data Catalog が最適化・統計・クローラーに対応",
+  "summary": "AWS Glue Data Catalog が Apache Iceberg V3 テーブルのテーブル最適化・統計・クローラーに対応。variant や geospatial などの V3 データ型も最適化の対象だよ！",
+  "body_md": "みんな、しぃちゃんだよ！Iceberg V3 のテーブルを、Glue がちゃんとお世話してくれるようになったよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Glue Data Catalog が Apache Iceberg Version 3（V3）テーブルの、テーブル最適化・統計・クローラーに対応したと発表されたよ。\n\n## これで何が変わるの？\n\nV3 テーブルを自動でメンテナンスして、クエリ性能のために最適化して、Amazon S3 上で見つけられるようになるよ。\n\n## 深く潜ってみよう\n\nできることを分けて紹介するね。\n\nテーブル最適化:\n\n- binpack・sort・z-order の戦略で V3 テーブルをコンパクション（クエリ性能の向上）\n- 期限切れスナップショットと孤立ファイルの削除（ストレージコストの削減）\n- variant・geospatial・ナノ秒精度のタイムスタンプなど、V3 のデータ型に対応\n\n統計:\n\n- V3 テーブルの distinct 値の数（NDV）の統計を生成できる\n- 分析エンジンがクエリを効率よく計画するために使う\n\nクローラー:\n\n- S3 にある V3 テーブルを見つけて Glue Data Catalog に登録できる\n- V3 互換のエンジンからクエリできる\n\n提供範囲は、Glue Data Catalog のテーブル最適化・統計・クローラーが使えるすべてのリージョンだよ。\n\n## まとめ\n\n- Glue Data Catalog が Iceberg V3 のテーブル最適化・統計・クローラーに対応\n- binpack・sort・z-order のコンパクションと、スナップショット・孤立ファイルの削除\n- variant・geospatial・ナノ秒タイムスタンプも最適化の対象\n- NDV 統計の生成と、S3 上の V3 テーブルの発見・登録\n\nIceberg V3 に移行を考えているデータ基盤担当のみんなに、安心材料になる更新だよ！",
+  "title_en": "Iceberg V3 gets automatic upkeep: Glue Data Catalog adds optimization, statistics, and crawlers",
+  "summary_en": "AWS Glue Data Catalog now supports table optimization, statistics, and crawlers for Apache Iceberg V3 tables, including V3 types like variant and geospatial.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Glue now takes proper care of your Iceberg V3 tables!\n\n## What was announced?\n\nAWS What's New announced that AWS Glue Data Catalog now supports table optimization, statistics, and crawlers for Apache Iceberg Version 3 (V3) tables.\n\n## What changes\n\nYou can automatically maintain V3 tables, optimize them for query performance, and discover them in Amazon S3.\n\n## Dive Deep\n\nHere's what you can do, by feature.\n\nTable optimization:\n\n- Compact V3 tables using binpack, sort, or z-order strategies for better query performance\n- Remove expired snapshots and orphan files to reduce storage costs\n- Supports V3 data types, including variant, geospatial, and nanosecond-precision timestamps\n\nStatistics:\n\n- Generate number of distinct values (NDV) statistics for V3 tables\n- Analytics engines use them to plan queries efficiently\n\nCrawlers:\n\n- Discover V3 tables stored in Amazon S3 and register them in Glue Data Catalog\n- Query them with any V3-compatible engine\n\nIt's available in all Regions where Glue Data Catalog table optimization, statistics, and crawlers are available.\n\n## Wrap-up\n\n- Glue Data Catalog supports optimization, statistics, and crawlers for Iceberg V3\n- Binpack, sort, and z-order compaction, plus snapshot and orphan file cleanup\n- variant, geospatial, and nanosecond timestamps are covered\n- NDV statistics, and discovery of V3 tables in S3\n\nThis is reassuring for data platform folks thinking about moving to Iceberg V3!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-glue-iceberg-v3-optimization/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Glue Data Catalog now supports table optimization, statistics, and crawlers for Apache Iceberg V3",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-01T08:00:00+00:00"
+}

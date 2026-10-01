@@ -1,0 +1,18 @@
+{
+  "slug": "aws-what-s-new-quick-hierarchy-filter",
+  "title": "フィルタ 3 個がたった 1 個に！Amazon Quick の Hierarchy Filter",
+  "summary": "Amazon Quick に、Region・Country・City のような階層をひとつのコントロールでドリルダウンできる Hierarchy Filter が登場。最大 5 階層まで対応だよ！",
+  "body_md": "こんにちは、しぃちゃんだよ！ダッシュボードのフィルタがずらっと並んでごちゃごちゃ…って経験、みんなもあるよね？そこを解決する更新が来たよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Quick が Hierarchy Filter（階層フィルタ）に対応したと発表されたよ。Region・Country・City のような関連するディメンションを、ひとつのコントロールでたどれるフィルタなの。\n\n## 今までどうだったの？\n\n階層になっている項目をフィルタしたいときは、Region、Country、City のコントロールを横に並べる必要があったよ。画面がごちゃつくし、どの国がどの地域に属しているか読み手が知っていないと選びにくかったの。\n\n## これで何が変わるの？\n\n複数のフィルタコントロールをひとつにまとめられて、読み手は少ないクリックで目的のデータにたどり着けるよ。\n\n小売の売上ダッシュボードなら、こんな流れになるよ。\n\n- 読み手がドロップダウンを開く\n- 地域を展開して国を見る\n- 国を展開して都市を見る\n- 途中のどのレベルでも自由に選べる\n\n親子関係がコントロールの中に見えているので、「どの国がどの地域？」を知らなくても大丈夫だね！\n\n## 深く潜ってみよう\n\n- ひとつのフィルタに入れられるのは最大 5 階層のディメンション（広い順から詳細な順に並べる）\n- 読み手の選択は次のレベルを絞り込み、親の階層も自動で選択される\n- 作り方は、フィルタを追加してタイプを Hierarchy filter にし、フィールドを親から子の順に並べる\n- Amazon Quick が使えるすべての AWS リージョンで、今日から利用可能\n\n## まとめ\n\n- Region・Country・City のような階層を 1 つのフィルタで扱える\n- 最大 5 レベル、広い順から詳細な順に並べる\n- 親の自動選択で、読み手が階層を覚えなくていい\n- 全対応リージョンで利用可能\n\nダッシュボードを作る側のみんなと、それを見る側のみんな、どっちにも嬉しいね！",
+  "title_en": "Three filters become one: Hierarchy Filter in Amazon Quick",
+  "summary_en": "Amazon Quick adds a Hierarchy Filter, a single control to drill through related dimensions like Region, Country, and City. It holds up to five levels.",
+  "body_md_en": "Hello, it's Shii-chan! Ever had a dashboard crowded with a row of filters? Here's an update for that!\n\n## What was announced?\n\nAWS What's New announced that Amazon Quick now supports the hierarchy filter, a single control for drilling through related dimensions such as Region, Country, and City.\n\n## The story so far\n\nTo filter hierarchical fields, you had to place separate Region, Country, and City controls side by side. That cluttered the dashboard, and readers needed to know which country belonged to which region.\n\n## What changes\n\nYou can replace several stacked filter controls with one, and readers reach their data in fewer clicks.\n\nOn a retail sales dashboard, it goes like this:\n\n- A reader opens one dropdown\n- They expand a region to see its countries\n- They expand a country to see its cities\n- They can select any mix along the way\n\nThe relationships are visible in the control, so readers don't need to know which country belongs to which region!\n\n## Dive Deep\n\n- One filter holds up to five dimension levels, arranged broadest to most detailed\n- Each selection narrows the next level and auto-selects its parent chain\n- Authors add a filter, set its type to Hierarchy filter, and arrange the fields parent to child\n- It's available today in all AWS Regions where Amazon Quick is supported\n\n## Wrap-up\n\n- One filter handles hierarchies like Region, Country, and City\n- Up to five levels, broadest to most detailed\n- Auto-selecting parents means readers don't need to memorize the hierarchy\n- Available in all supported Regions\n\nGood news for both dashboard authors and the people reading them!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/quick-hierarchy-filter",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Quick adds Hierarchy Filter for guided dashboard drill-down",
+  "tags": [
+    "aws"
+  ],
+  "published_at": "2026-09-30T15:00:00+00:00"
+}

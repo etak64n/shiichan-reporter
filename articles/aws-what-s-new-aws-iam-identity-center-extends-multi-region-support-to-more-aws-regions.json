@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-iam-identity-center-extends-multi-region-support-to-more-aws-regions",
+  "title": "IAM Identity Center のマルチリージョンが、オプトイン・GovCloud・中国にも拡大！",
+  "summary": "IAM Identity Center を、オプトインリージョンや、GovCloud (US)・中国リージョン内のリージョン間でレプリケートできるようになったよ。障害時のサインイン耐性が上がるの！",
+  "body_md": "おつかれさま、しぃちゃんだよ！今日はサインインの耐障害性がぐっと広がるお知らせだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、IAM Identity Center のマルチリージョン対応が、より多くのリージョンに広がったと発表されたよ。\n\n## 今までどうだったの？\n\nマルチリージョン対応は、デフォルトで有効な商用 AWS リージョンでだけ使えたよ。\n\n## これで何が変わるの？\n\n次のレプリケーションができるようになったよ。\n\n- オプトインの AWS リージョンへのレプリケーション\n- AWS GovCloud (US) リージョン内のリージョン間\n- AWS 中国リージョン内のリージョン間\n\nプライマリリージョンで IAM Identity Center に障害が起きても、すでにプロビジョニングされたエンタイトルメントを使って、追加リージョン経由で AWS アカウントにアクセスし続けられるよ。AWS アプリケーションを、事業に合ったリージョンにデプロイしやすくもなるの。\n\n## 深く潜ってみよう\n\n- マルチリージョンを有効にすると、ID・エンタイトルメントなどの情報がプライマリから追加リージョンに自動でレプリケートされる\n- アプリケーション管理者は、標準のデプロイ手順で追加リージョンにデプロイできる。IAM Identity Center の管理はプライマリリージョンで続ける\n- 対象は、外部 ID プロバイダーか IAM Identity Center ディレクトリを ID ソースにしている組織インスタンス\n- マルチリージョンのカスタマーマネージド KMS キー（CMK）が必要\n- 新規インスタンスは、ワンクリックでマルチリージョンを有効にでき、CMK も一緒に作られる\n- 既存インスタンスは、AWS KMS でマルチリージョン CMK を作って、IAM Identity Center に設定する\n- IAM Identity Center 自体は追加料金なしだけど、CMK の保管と使用には標準の AWS KMS 料金がかかる\n\n## まとめ\n\n- マルチリージョン対応が、オプトインリージョン・GovCloud (US)・中国リージョンに拡大\n- 障害時も、追加リージョン経由で AWS アカウントにアクセスできる\n- マルチリージョン CMK が必要で、新規ならワンクリックで有効化\n\nワークフォースのサインインを止められない、AWS 管理者のみんなに刺さる更新だよ！",
+  "title_en": "IAM Identity Center multi-Region support extends to opt-in, GovCloud, and China Regions",
+  "summary_en": "You can now replicate IAM Identity Center to opt-in Regions and between Regions within AWS GovCloud (US) and AWS China, improving sign-in resilience.",
+  "body_md_en": "Hi, it's Shii-chan! Today's news widens the sign-in resilience story!\n\n## What was announced?\n\nAWS What's New announced that IAM Identity Center extends multi-Region support to more AWS Regions.\n\n## The story so far\n\nMulti-Region support was available only in the enabled-by-default commercial AWS Regions.\n\n## What changes\n\nYou can now replicate:\n\n- To opt-in AWS Regions\n- Between Regions within AWS GovCloud (US)\n- Between Regions within AWS China\n\nIf IAM Identity Center is affected by a disruption in the primary Region, users continue to have access to their AWS accounts using already provisioned entitlements in the additional Regions. It also makes it easier to deploy AWS applications in the Regions that best fit your business.\n\n## Dive Deep\n\n- With multi-Region support on, identities, entitlements, and other information are automatically replicated from the primary Region to additional Regions\n- Application administrators can use the standard deployment workflow in an additional Region, while you keep administering IAM Identity Center in the primary Region\n- It's for organization instances that use an external identity provider or the IAM Identity Center directory as the identity source\n- It requires a multi-Region customer managed KMS key (CMK)\n- For new instances, you can enable it with a single click, which also creates the CMK\n- For existing instances, create a multi-Region CMK in AWS KMS and configure it in IAM Identity Center\n- IAM Identity Center itself has no additional cost, but standard AWS KMS charges apply to the CMK\n\n## Wrap-up\n\n- Multi-Region support now covers opt-in Regions, GovCloud (US), and China Regions\n- Access to AWS accounts continues via additional Regions during a disruption\n- A multi-Region CMK is required, and new instances can enable it in one click\n\nThis is for AWS admins who can't let workforce sign-in go down!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-iam-identity-center-extends-multi-region-support-to-more-aws-regions",
+  "source_name": "AWS What's New",
+  "og_title": "AWS IAM Identity Center extends multi-Region support to more AWS Regions",
+  "tags": [
+    "aws",
+    "security",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-01T07:00:00+00:00"
+}
