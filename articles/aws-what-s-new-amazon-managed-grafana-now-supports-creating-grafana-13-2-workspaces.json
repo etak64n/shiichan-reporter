@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-managed-grafana-now-supports-creating-grafana-13-2-workspaces",
+  "title": "Managed Grafana で Grafana 13.2 のワークスペースが作れるよ！Git Sync も！",
+  "summary": "Amazon Managed Grafana で Grafana 13.2 の新規ワークスペースが作れるようになったよ。Git Sync、動的ダッシュボード、CloudWatch の PromQL クエリが使えるよ！",
+  "body_md": "やっほー、しぃちゃんだよ！ダッシュボードを使っている人に嬉しい更新だよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Managed Grafana が Grafana バージョン 13.2 の新規ワークスペース作成に対応したと発表されたの。オープンソースの Grafana 13.0 から 13.2 までの機能が入っているよ。\n\n## これで何が変わるの？\n\n注目の機能はこの 3 つだよ。\n\n- Git Sync: ワークスペースを Git リポジトリにリンクして、ダッシュボードをコードとして扱える。変更の追跡・レビュー・取り消しといったバージョン管理ができる\n- 動的ダッシュボード: レイアウトとパネルがより柔軟になって、データや変数に応じて変わる、レスポンシブな画面を作れる\n- CloudWatch データソースの PromQL 対応: CloudWatch が OpenTelemetry(OTLP)エンドポイント経由で取り込んだメトリクスを、Prometheus Query Language でクエリできる。既存の Metric Search と Metrics Insights に並ぶクエリタイプになる\n\n## 深く潜ってみよう\n\n対象は「新しいワークスペースの作成」だよ。Grafana 13.2 は、Amazon Managed Grafana が使えるすべての AWS リージョンで提供されるの。詳しい手順はユーザードキュメントと、製品ページ・料金ページを見てね。\n\n## まとめ\n\n- Grafana 13.2 のワークスペースを新規作成できる\n- Git Sync でダッシュボードをバージョン管理\n- 動的ダッシュボードで柔軟なレイアウト\n- CloudWatch データソースで PromQL が使える\n\nダッシュボードを Git で管理したい人や、OTLP のメトリクスを PromQL で見たい人に刺さるよ！",
+  "title_en": "Grafana 13.2 workspaces come to Amazon Managed Grafana, with Git Sync!",
+  "summary_en": "Amazon Managed Grafana can now create Grafana 13.2 workspaces, with Git Sync, dynamic dashboards, and PromQL queries in the CloudWatch data source.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Here's an update for anyone who uses dashboards.\n\n## What was announced?\n\nAWS What's New announced that Amazon Managed Grafana now supports creating new workspaces with Grafana version 13.2. It brings features from open-source Grafana 13.0 to 13.2.\n\n## What changes\n\nThree highlights:\n\n- Git Sync: link a workspace to a Git repository to treat dashboards as code, with version control for tracking, reviewing, and reverting changes\n- Dynamic dashboards: more adaptable layout and paneling, building responsive views driven by conditions that respond to data and variables\n- PromQL in the CloudWatch data source: query metrics that CloudWatch ingests via its OpenTelemetry (OTLP) endpoint with Prometheus Query Language, alongside the existing Metric Search and Metrics Insights query types\n\n## Dive Deep\n\nThis applies to creating new workspaces. Grafana 13.2 is available in all AWS Regions where Amazon Managed Grafana is generally available. See the user documentation, product page, and pricing page for details.\n\n## Wrap-up\n\n- You can create new Grafana 13.2 workspaces\n- Git Sync gives dashboards version control\n- Dynamic dashboards offer flexible layouts\n- The CloudWatch data source supports PromQL\n\nThis is for anyone who wants to manage dashboards in Git or view OTLP metrics with PromQL!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-managed-grafana-now-supports-creating-grafana-13-2-workspaces",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Managed Grafana now supports creating Grafana 13.2 workspaces",
+  "tags": [
+    "aws",
+    "devops"
+  ],
+  "published_at": "2026-09-30T19:30:00+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-cli-agent-toolkit-update-skill",
+  "title": "AWS CLI で Agent Toolkit のスキルを一括更新！たった 1 コマンドだよ",
+  "summary": "AWS CLI に、インストール済みスキルの更新確認と一括更新ができる 2 つのコマンドが加わったよ。check-skill-updates と update-skill --all だよ！",
+  "body_md": "おつかれさま、しぃちゃんだよ！コーディングエージェントのスキルを最新に保つのが楽になるよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS CLI の Agent Toolkit for AWS 向けコマンドに、スキルを最新に保つための 2 つの機能が加わったと発表されたの。\n\n## 今までどうだったの？\n\nこれまでは、スキルを 1 つずつ確認して、1 つずつ更新する必要があったの。\n\n## これで何が変わるの？\n\nこの 2 つのコマンドで、まとめて確認・更新できるよ。\n\n```\naws agent-toolkit check-skill-updates\naws agent-toolkit update-skill --all\n```\n\n- check-skill-updates: インストール済みのすべてのスキルを、レジストリにある最新版と比べる\n- update-skill --all: 古くなったスキルを 1 コマンドで全部更新する\n\nserverless、ストレージ、ネットワーク、分析など、いろいろな領域のスキルを入れているチームが、コーディングエージェントを常に最新のガイダンスで動かすのに特に役立つよ。\n\n## 深く潜ってみよう\n\nAgent Toolkit for AWS は、次の 3 つでできているよ。\n\n- AWS MCP Server: 15,000 以上の AWS API への、安全で監査可能なエージェント用インターフェース\n- エージェントスキル: ストレージ、ネットワーク、分析などで、エージェントに専門的なガイダンスを与える\n- プラグイン: MCP Server と、選ばれたスキル群を 1 つのインストールにまとめる\n\nAWS CLI には、すでに MCP Server とスキルをインストール・検索・設定する機能があって、Kiro、Claude Code、Codex、Cursor などの人気のコーディングエージェントで使えるよ。今回の 2 コマンドは、その既存機能への追加なの。\n\n## まとめ\n\n- check-skill-updates で、インストール済みスキルの更新有無をまとめて確認\n- update-skill --all で、古いスキルを 1 コマンドで更新\n- Agent Toolkit は MCP Server、スキル、プラグインで構成\n\nAWS 向けのスキルを複数入れて、コーディングエージェントを使っている人に刺さるよ！",
+  "title_en": "Update all Agent Toolkit skills with one AWS CLI command!",
+  "summary_en": "The AWS CLI adds two commands for the Agent Toolkit for AWS: check-skill-updates to compare installed skills, and update-skill --all to update them all at once.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Keeping your coding agent's skills up to date just got easier.\n\n## What was announced?\n\nAWS What's New announced two new capabilities in the AWS CLI commands for the Agent Toolkit for AWS that make it easier to keep agent skills up to date.\n\n## The story so far\n\nPreviously, you had to check and update each skill individually.\n\n## What changes\n\nThese two commands let you check and update in bulk:\n\n```\naws agent-toolkit check-skill-updates\naws agent-toolkit update-skill --all\n```\n\n- check-skill-updates: compares all installed skills against the latest versions in the registry\n- update-skill --all: updates every outdated skill in a single command\n\nThis is especially useful for teams that have installed many skills across serverless, storage, networking, analytics, and other domains, and want their coding agents to always work with the latest guidance.\n\n## Dive Deep\n\nThe Agent Toolkit for AWS consists of three parts:\n\n- AWS MCP Server: a secure, auditable agent interface to 15,000+ AWS APIs\n- Agent skills: expert guidance for agents across storage, networking, analytics, and more\n- Plugins: bundle the MCP server and curated sets of skills into a single install\n\nThe AWS CLI already lets you install, search, and configure the AWS MCP Server and skills across Kiro, Claude Code, Codex, Cursor, and other popular coding agents. These two commands extend that set.\n\n## Wrap-up\n\n- check-skill-updates shows which installed skills have updates\n- update-skill --all updates outdated skills in one command\n- The Agent Toolkit is made of the MCP Server, skills, and plugins\n\nThis is for anyone using coding agents with several AWS skills installed!",
+  "emotion": "smug",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/aws-cli-agent-toolkit-update-skill/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS CLI now supports bulk skill updates and version checks for the Agent Toolkit for AWS",
+  "tags": [
+    "aws",
+    "ai",
+    "devops"
+  ],
+  "published_at": "2026-09-30T20:16:00+00:00"
+}

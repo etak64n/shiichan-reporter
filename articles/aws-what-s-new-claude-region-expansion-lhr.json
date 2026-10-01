@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-claude-region-expansion-lhr",
+  "title": "Bedrock のロンドンリージョンで Claude がリージョン内推論に対応！",
+  "summary": "Amazon Bedrock の英国(ロンドン)リージョンで、Claude Opus 5.5 と Claude Sonnet 5 のリージョン内推論が使えるようになったよ！",
+  "body_md": "おつかれさま、しぃちゃんだよ！データを国外に出したくない人に嬉しいニュースだよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Bedrock の英国(ロンドン)リージョンで Anthropic の Claude Opus 5.5 と Claude Sonnet 5 のリージョン内サポートが始まったと発表されたの。\n\n## なぜ重要なの？\n\n英国内でデータを処理する必要がある金融、医療、公共分野のお客さんが、推論を国内にとどめたまま、これらのモデルを大規模に使えるようになるからだよ。\n\n## これで何が変わるの？\n\nロンドン(eu-west-2)の bedrock-runtime エンドポイントでリージョン内推論ができるよ。Amazon Bedrock は、呼び出したリージョン内でリクエストとデータを処理して、処理がそのリージョンの外に出ることはないと説明されているの。\n\n## 深く潜ってみよう\n\n- 対象モデル: Claude Opus 5.5 と Claude Sonnet 5\n- リージョン: ロンドン(eu-west-2)\n- エンドポイント: bedrock-runtime\n\nリージョンごとの最新のモデル提供状況は、Amazon Bedrock ユーザーガイドの「Regional availability by models」で確認してね。始めるときは Bedrock コンソールからだよ。\n\n## まとめ\n\n- ロンドンリージョンで Claude Opus 5.5 と Claude Sonnet 5 がリージョン内推論に対応\n- 推論リクエストとデータは呼び出したリージョン内で処理される\n- 金融・医療・公共など、英国内処理が必要な組織が主な対象\n\n英国のデータ所在要件のもとで Claude を使いたいチームに刺さる発表だよ！",
+  "title_en": "Claude models now run in-region in Bedrock's London Region!",
+  "summary_en": "Amazon Bedrock now supports in-region inference for Claude Opus 5.5 and Claude Sonnet 5 in the UK (London) Region.",
+  "body_md_en": "Hi everyone, it's Shii-chan! This is good news if you need to keep data in-country.\n\n## What was announced?\n\nAWS What's New announced in-region support for Anthropic's Claude Opus 5.5 and Claude Sonnet 5 on Amazon Bedrock in the UK (London) Region.\n\n## Why it matters\n\nCustomers who need to process data within the United Kingdom, including those in financial services, healthcare, and the public sector, can now use these models at scale while keeping inference in-country.\n\n## What changes\n\nYou get in-region inference on the bedrock-runtime endpoint in the London (eu-west-2) Region. Amazon Bedrock processes inference requests and data within the Region you call, and the processing never leaves that Region.\n\n## Dive Deep\n\n- Models: Claude Opus 5.5 and Claude Sonnet 5\n- Region: London (eu-west-2)\n- Endpoint: bedrock-runtime\n\nFor the latest model availability per Region, see \"Regional availability by models\" in the Amazon Bedrock User Guide. You can get started from the Bedrock console.\n\n## Wrap-up\n\n- Claude Opus 5.5 and Claude Sonnet 5 support in-region inference in London\n- Inference requests and data are processed within the Region you call\n- Aimed at organizations that need UK-only processing, such as finance, healthcare, and the public sector\n\nThis is for teams that want to use Claude under UK data residency requirements!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/claude-region-expansion-lhr/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Bedrock expands Claude models in-region support in the UK (London)",
+  "tags": [
+    "aws",
+    "anthropic",
+    "ai"
+  ],
+  "published_at": "2026-09-30T17:00:00+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-s3-vectors-introduces-metadata-pre-filtering",
+  "title": "S3 Vectors のメタデータ事前フィルタで、絞り込み検索の再現率が最大 5 倍に！",
+  "summary": "Amazon S3 Vectors が、類似度検索の前にメタデータフィルタを評価する事前フィルタに対応したよ。絞り込みが厳しいとき、最大 5 倍のマッチするベクトルを返せるよ！",
+  "body_md": "みんな、しぃちゃんだよ！ベクトル検索の「絞り込むと結果が減っちゃう」問題に効くアップデートだよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon S3 Vectors が事前フィルタ(pre-filtering)に対応したと発表されたの。メタデータのフィルタを類似度検索の前に評価するので、フィルタが厳しいとき、条件に合うベクトルを最大 5 倍多く返せるよ。パスや URL のようなプレフィックスで絞れる $startsWith 演算子も加わったの。\n\n## これで何が変わるの？\n\nRAG、エージェント、セマンティック検索のアプリで、フィルタをかけたときの結果がより完全になって、関連性の高い答えを返しやすくなるよ。\n\n## 深く潜ってみよう\n\n- 新しいベクトルバケットのインデックスは、デフォルトで事前フィルタが有効。PutVectors や QueryVectors の使い方は変わらない\n- 既存のインデックスは UpdateIndexMode API でその場で更新できる\n- 更新の前に、QueryVectors のクエリごとのパラメータで、今のフィルタと事前フィルタを同じインデックス上で比較できる\n- 追加料金なし。AWS China リージョンを含む、S3 Vectors が使えるすべての商用リージョンで利用可能\n- ただし、このデプロイは進行中で、完了まで数日かかる見込み\n\nAWS CLI、AWS SDK、S3 コンソールから使えるよ。\n\n## まとめ\n\n- 事前フィルタで、選択的なフィルタ時に最大 5 倍多くマッチを返す\n- $startsWith で、パスや URL のプレフィックス一致が可能\n- 新規インデックスはデフォルト有効、既存は UpdateIndexMode で更新\n- 追加料金なし。デプロイは数日かけて完了予定\n\nRAG やエージェントで、メタデータ絞り込み付きのベクトル検索を使っている人に刺さるよ！",
+  "title_en": "S3 Vectors metadata pre-filtering: up to 5x higher recall on filtered search!",
+  "summary_en": "Amazon S3 Vectors now evaluates metadata filters before similarity search, returning up to 5x more matching vectors when your filter is selective.",
+  "body_md_en": "Hi everyone, it's Shii-chan! This update targets the vector search problem where filtering shrinks your results.\n\n## What was announced?\n\nAWS What's New announced that Amazon S3 Vectors now supports pre-filtering. It evaluates metadata filters before running similarity search, returning up to 5x more of the matching vectors when your filter is selective. It also adds a prefix match operator, $startsWith, for values like paths and URLs.\n\n## What changes\n\nRAG, agentic, and semantic-search applications get more complete results when they filter, so they return more relevant answers.\n\n## Dive Deep\n\n- Indexes in new vector buckets use pre-filtering by default, with no change to how you call PutVectors or QueryVectors\n- Existing indexes can be updated in place with the UpdateIndexMode API\n- Before updating, you can compare pre-filtering against your current filtering on the same index using a per-query parameter on QueryVectors\n- No additional cost; available in all commercial AWS Regions where S3 Vectors is available, and in the AWS China Regions\n- The deployment is still in progress and is expected to complete in the coming days\n\nYou can use the AWS CLI, the AWS SDKs, or the S3 console.\n\n## Wrap-up\n\n- Pre-filtering returns up to 5x more matches when filters are selective\n- $startsWith enables prefix matching on paths and URLs\n- New indexes default to it; existing ones update via UpdateIndexMode\n- No extra cost, with deployment completing over the next few days\n\nThis is for anyone using filtered vector search in RAG or agents!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/s3-vectors-introduces-metadata-pre-filtering/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon S3 Vectors introduces metadata pre-filtering for up to 5x higher recall on filtered search",
+  "tags": [
+    "aws",
+    "ai",
+    "infrastructure"
+  ],
+  "published_at": "2026-09-30T20:00:00+00:00"
+}

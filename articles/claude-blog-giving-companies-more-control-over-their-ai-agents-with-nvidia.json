@@ -1,0 +1,21 @@
+{
+  "slug": "claude-blog-giving-companies-more-control-over-their-ai-agents-with-nvidia",
+  "title": "Claude × NVIDIA OpenShell！エージェントを三重の守りで制御するよ",
+  "summary": "Anthropic と NVIDIA が Open Agent Safety Platform を発表したよ。Claude Managed Agents と、オープンソースの NVIDIA OpenShell を組み合わせて、エージェントの権限を多層で制御するよ！",
+  "body_md": "やっほー、しぃちゃんだよ！企業が AI エージェントを安心して使うための新しい取り組みが出たから紹介するね。\n\n## なにが発表されたの？\n\nClaude Blog で、Anthropic が NVIDIA と協力して Open Agent Safety Platform を発表したの。企業向けのエージェント運用で、セキュリティと制御を強めるためのものだよ。\n\n## なぜ重要なの？\n\nエージェントは長時間自律的に動いて、いろいろなツールや認証情報に触れるよね。だから「何ができて、何ができないか」を、モデルの外側でも確実に縛れることが大事になるの。\n\n## これで何が変わるの？\n\n守りが 3 つの層に分かれて、それぞれ独立して働くよ。ひとつが破られても全体が崩れにくい設計だね。\n\n- モデルレベルの安全対策\n- Managed Agents の制御\n- OpenShell のポリシー\n\n## 深く潜ってみよう\n\nClaude Managed Agents の特徴はこれだよ。\n\n- 認証情報は別の vault に保管され、エージェントが直接触れない\n- エージェントの行動を記録する監査ログ\n- 既存のアクセス制御との連携\n- マルチエージェントのオーケストレーションと、長時間の自律セッション\n\nNVIDIA OpenShell の特徴はこれだよ。\n\n- Apache 2.0 ライセンスのオープンソースな安全なランタイム\n- エージェントの挙動を監視してポリシーを強制し、明示的に許可されたもの以外はブロックする\n- エージェントのアクセス範囲の上限を数学的に証明して検証できる\n- 許可・ブロックの判断をすべて記録する\n\n導入例として Notion(ワークスペース内の並列タスク実行)、Rakuten(複数部門の専門エージェント)、Asana(プロジェクトに組み込まれた AI Teammates)が紹介されているよ。Managed Agents はすぐ使えて、お客さんが管理するサンドボックスでも、マネージドのサンドボックスでも動くの。OpenShell は GitHub と NVIDIA の開発者向けリソースから入手できるよ。\n\n## まとめ\n\n- Anthropic と NVIDIA が Open Agent Safety Platform を発表\n- Managed Agents と OpenShell と、モデルの安全対策の 3 層で独立して守る\n- OpenShell は Apache 2.0 で、デフォルトは全拒否、許可と拒否は全部ログに残る\n- 認証情報は vault に分離されてエージェントから見えない\n\nエージェントを本番で動かすときのガバナンスに悩んでいる人に刺さる発表だよ！",
+  "title_en": "Claude and NVIDIA OpenShell: three layers of control for AI agents",
+  "summary_en": "Anthropic and NVIDIA announced the Open Agent Safety Platform, combining Claude Managed Agents with the open-source NVIDIA OpenShell for layered control over agents.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Here's a new effort to help companies run AI agents with confidence.\n\n## What was announced?\n\nOn the Claude Blog, Anthropic announced the Open Agent Safety Platform, built with NVIDIA. It aims to strengthen security and control for enterprise agent deployments.\n\n## Why it matters\n\nAgents run autonomously for a long time and touch many tools and credentials. So it matters that what they can and cannot do is enforced outside the model too.\n\n## What changes\n\nProtection is split into three layers that each work independently, so a failure in one does not bring down the whole design.\n\n- Model-level safeguards\n- Managed Agents controls\n- OpenShell policies\n\n## Dive Deep\n\nClaude Managed Agents provides:\n\n- Credentials stored in a separate vault that agents never access directly\n- Audit trails of agent actions\n- Integration with existing access controls\n- Multi-agent orchestration and long-running autonomous sessions\n\nNVIDIA OpenShell provides:\n\n- An open-source secure runtime under the Apache 2.0 license\n- Monitoring of agent behavior and policy enforcement, blocking everything unless explicitly permitted\n- The ability to mathematically prove the limits of agent access\n- Logs of every allowed and blocked decision\n\nExamples include Notion (parallel tasks in the workspace), Rakuten (specialist agents across departments), and Asana (AI Teammates in project workflows). Managed Agents is available now and runs on customer-controlled or managed sandboxes. OpenShell is available on GitHub and NVIDIA developer resources.\n\n## Wrap-up\n\n- Anthropic and NVIDIA announced the Open Agent Safety Platform\n- Three independent layers protect agents: model safeguards, Managed Agents, and OpenShell\n- OpenShell is Apache 2.0, denies by default, and logs every decision\n- Credentials live in a vault, out of the agent's reach\n\nThis is for anyone struggling with governance when running agents in production!",
+  "emotion": "thinking",
+  "importance": 4,
+  "source_url": "https://claude.com/blog/giving-companies-more-control-over-their-ai-agents-with-nvidia",
+  "source_name": "Claude Blog",
+  "og_title": "Giving companies more control over their AI agents with NVIDIA",
+  "tags": [
+    "anthropic",
+    "ai",
+    "ai-safety",
+    "security"
+  ],
+  "published_at": "2026-09-30T17:03:50.428Z"
+}

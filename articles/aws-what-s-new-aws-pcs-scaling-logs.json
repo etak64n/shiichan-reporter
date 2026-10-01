@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-pcs-scaling-logs",
+  "title": "AWS PCS にスケーリングログが登場！ノードが増えない理由が分かるよ",
+  "summary": "AWS Parallel Computing Service が、コンピュートノードグループのスケーリングを記録するスケーリングログに対応したよ。CloudWatch Logs、S3、Data Firehose に出力できるよ！",
+  "body_md": "みんな、しぃちゃんだよ！HPC の運用が少し楽になるアップデートだよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Parallel Computing Service(AWS PCS)がスケーリングログに対応したと発表されたの。AWS PCS がクラスタのコンピュートノードグループをどうスケールしたかを記録するログだよ。\n\n## 今までどうだったの？\n\nAWS PCS は、Slurm を使った HPC ワークロードの実行とスケーリングを簡単にするマネージドサービスだよ。今回のログで、スケーリングまわりの問題調査がしやすくなるんだ。\n\n## これで何が変わるの？\n\nログの 1 エントリは、1 つのコンピュートノードの 1 回の状態遷移を記録するの。たとえば次のようなものだよ。\n\n- インスタンスの起動\n- ノードの登録\n- スケールダウン\n- 理由つきの起動失敗\n\nこれで、こんなことを調べられるよ。\n\n- コンピュートノードグループが目標サイズに届かなかった理由\n- キャパシティ不足で失敗した起動\n- 特定のノードがいつ起動・停止したか\n\n## 深く潜ってみよう\n\nスケーリングログの配信はオプトインだよ。出力先は 3 つから選べるの。\n\n- Amazon CloudWatch Logs\n- Amazon S3\n- Amazon Data Firehose\n\nAWS PCS が使える全リージョンで利用できるよ。始め方は AWS PCS ユーザーガイドを見てね。\n\n## まとめ\n\n- AWS PCS がスケーリングログに対応\n- 1 エントリが 1 ノードの 1 回の状態遷移\n- 目標サイズに届かない理由やキャパシティ不足の失敗を追える\n- CloudWatch Logs、S3、Data Firehose に出力できて、オプトイン\n\nSlurm の HPC クラスタのスケーリング不調に悩んでいる人に刺さる更新だよ！",
+  "title_en": "AWS PCS adds scaling logs so you can see why nodes don't scale!",
+  "summary_en": "AWS Parallel Computing Service now supports scaling logs that record how compute node groups scale, deliverable to CloudWatch Logs, S3, and Data Firehose.",
+  "body_md_en": "Hi everyone, it's Shii-chan! This update makes HPC operations a bit easier.\n\n## What was announced?\n\nAWS What's New announced that AWS Parallel Computing Service (AWS PCS) now supports scaling logs, which record how AWS PCS scales the compute node groups in your cluster.\n\n## The story so far\n\nAWS PCS is a managed service that simplifies running and scaling HPC workloads on AWS using Slurm. The new logs make scaling issues easier to troubleshoot.\n\n## What changes\n\nEach log entry records one state transition for one compute node, for example:\n\n- An instance launch\n- A node registration\n- A scale-down\n- A launch failure with its reason\n\nWith these you can find out:\n\n- Why a compute node group did not reach its target size\n- Which launches failed for capacity reasons\n- When a specific node started or stopped\n\n## Dive Deep\n\nScaling log delivery is opt-in. You can send logs to three destinations:\n\n- Amazon CloudWatch Logs\n- Amazon S3\n- Amazon Data Firehose\n\nThe feature is available in all AWS Regions where AWS PCS is available. See the AWS PCS User Guide to get started.\n\n## Wrap-up\n\n- AWS PCS supports scaling logs\n- One entry is one state transition for one node\n- Trace why a group missed its target size and which launches failed for capacity\n- Opt-in delivery to CloudWatch Logs, S3, and Data Firehose\n\nThis is for anyone struggling with scaling behavior in Slurm HPC clusters!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/aws-pcs-scaling-logs/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Parallel Computing Service now supports scaling logs",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "devops"
+  ],
+  "published_at": "2026-09-30T19:00:00+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aurora-serverless-instant-16-acu-scaling",
+  "title": "Aurora Serverless が 1 秒で 16 ACU 増えるように！",
+  "summary": "Amazon Aurora Serverless が、1 秒以内に最大 16 ACU を追加でき、最大 256 ACU までスケールできるようになったよ。バースト的なエージェント AI に向いているよ！",
+  "body_md": "おつかれさま、しぃちゃんだよ！Aurora Serverless のスケールが速くなったよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Aurora Serverless がより大きなステップでスケールするようになったと発表されたの。現在の容量に 1 秒以内に最大 16 ACU を足せて、ワークロードが増えれば最大 256 ACU まで伸びるよ。\n\n## これで何が変わるの？\n\nワークロードが必要な容量に、より速く到達できるよ。処理が終われば自動でゼロまでスケールダウンするから、使った分だけの支払いなの。\n\nAWS は、活動のバーストと長いアイドル時間、予測しにくいトラフィックが特徴の、エージェント AI アプリケーションに特に向くと説明しているよ。\n\n## 深く潜ってみよう\n\n- 有効化: プラットフォームバージョン 3 または 4 で動く Aurora Serverless クラスタすべてで、デフォルトで有効。設定の変更は不要\n- バージョン 1 と 2 のクラスタ: 最新のバージョン 4 に直接アップグレードすれば恩恵を受けられる\n- バージョンの確認: AWS マネジメントコンソールのインスタンス設定、または RDS API の ServerlessV2PlatformVersion パラメータ\n\n料金とリージョンは Aurora の料金ページ、詳細は Aurora Serverless のスケーリングのドキュメントを見てね。\n\n## まとめ\n\n- 1 秒以内に最大 16 ACU を追加、最大 256 ACU までスケール\n- プラットフォームバージョン 3 / 4 ではデフォルトで有効\n- バージョン 1 / 2 は 4 へのアップグレードで対応\n- ゼロまでのスケールダウンで使った分だけ支払い\n\nバーストするエージェント AI や、アイドルが長い DB を運用している人に刺さる更新だよ！",
+  "title_en": "Aurora Serverless now scales 16 ACUs in a second!",
+  "summary_en": "Amazon Aurora Serverless can now add up to 16 ACUs within a second and scale up to 256 ACUs, which suits bursty agentic AI workloads.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Aurora Serverless just got faster at scaling.\n\n## What was announced?\n\nAWS What's New announced that Amazon Aurora Serverless now scales in larger steps, adding up to 16 ACUs to its current capacity within a second and continuing to scale up to 256 ACUs as your workload grows.\n\n## What changes\n\nYour workload reaches the capacity it needs faster. When the work finishes, Aurora Serverless automatically scales down to zero, so you only pay for what you use.\n\nAWS says this is especially well suited to agentic AI applications, which have bursts of activity, long idle windows, and unpredictable traffic.\n\n## Dive Deep\n\n- Enablement: on by default for all Aurora Serverless clusters on platform version 3 or 4, with no configuration changes\n- Clusters on versions 1 and 2: upgrade directly to the latest platform version 4 to benefit\n- Checking your version: in the AWS Management Console under instance configuration, or via the RDS API's ServerlessV2PlatformVersion parameter\n\nSee the Aurora pricing page for pricing and Regions, and the Aurora Serverless scaling documentation for details.\n\n## Wrap-up\n\n- Add up to 16 ACUs within a second, scaling up to 256 ACUs\n- On by default for platform versions 3 and 4\n- Versions 1 and 2 can upgrade to 4\n- Scale to zero and pay only for what you use\n\nThis is for anyone running bursty agentic AI or databases with long idle periods!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/08/aurora-serverless-instant-16-acu-scaling/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Aurora serverless now scales faster to support agentic AI and other bursty workloads",
+  "tags": [
+    "aws",
+    "serverless",
+    "infrastructure"
+  ],
+  "published_at": "2026-09-30T17:50:00+00:00"
+}

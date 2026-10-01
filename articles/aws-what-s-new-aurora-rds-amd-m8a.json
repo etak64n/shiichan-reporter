@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-aurora-rds-amd-m8a",
+  "title": "Amazon RDS に AMD EPYC 搭載の M8a インスタンスが登場！",
+  "summary": "Amazon RDS for PostgreSQL、MySQL、MariaDB が第 5 世代 AMD EPYC の M8a インスタンスに対応したよ。最大 75 Gbps のネットワークと 60 Gbps の EBS 帯域だよ！",
+  "body_md": "こんにちは、しぃちゃんだよ！データベースの新しいインスタンスが来たから紹介するね。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon RDS for PostgreSQL、MySQL、MariaDB が第 5 世代 AMD EPYC プロセッサ搭載の M8a データベースインスタンスに対応したと発表されたの。\n\n## これで何が変わるの？\n\nDB ワークロード向けのインスタンスの選択肢が増えたよ。M8a は vCPU 1 つが物理 CPU コア 1 つに対応しているから、コアあたりの性能が安定しやすいんだって。I/O が重いワークロードでも使いやすいスペックだよ！\n\n## 深く潜ってみよう\n\n原文から分かる仕様はこれだよ。\n\n- 最大 75 Gbps のネットワーク帯域\n- 最大 60 Gbps の Amazon EBS 帯域\n- AWS Nitro System 上で、第 6 世代 Nitro Card を使用\n\n提供リージョンはこの 9 つだよ。\n\n- 米国東部(バージニア北部、オハイオ)\n- 米国西部(オレゴン)\n- アジアパシフィック(ムンバイ、東京、ハイデラバード)\n- 欧州(アイルランド、フランクフルト、スペイン)\n\nRDS マネジメントコンソールか AWS CLI から使い始められるよ。対応するエンジンバージョンは RDS のドキュメントで確認してね。料金は RDS の料金ページに載っているよ。\n\n## まとめ\n\n- RDS for PostgreSQL / MySQL / MariaDB で M8a が利用可能に\n- 1 vCPU が 1 物理コアで、コアあたりの性能が安定\n- 最大 75 Gbps のネットワークと 60 Gbps の EBS 帯域\n- 東京を含む 9 リージョンで提供\n\nRDS で I/O の重い DB を動かしていて、インスタンスの選択肢を広げたい人に刺さる発表だよ！",
+  "title_en": "AMD-based M8a instances arrive on Amazon RDS!",
+  "summary_en": "Amazon RDS for PostgreSQL, MySQL, and MariaDB now support M8a instances on 5th generation AMD EPYC, with up to 75 Gbps network and 60 Gbps EBS bandwidth.",
+  "body_md_en": "Hi everyone, it's Shii-chan! A new database instance family is here, so let's take a look.\n\n## What was announced?\n\nAWS What's New announced that Amazon RDS for PostgreSQL, MySQL, and MariaDB now support M8a database instances powered by 5th generation AMD EPYC processors.\n\n## What changes\n\nYou get another choice of instances for database workloads. In M8a, each vCPU corresponds to a physical CPU core, which delivers consistent per-core performance. The specs also suit I/O-heavy workloads!\n\n## Dive Deep\n\nHere is what the announcement says about the specs:\n\n- Up to 75 Gbps of network bandwidth\n- Up to 60 Gbps of Amazon EBS bandwidth\n- Built on the AWS Nitro System with sixth-generation Nitro Cards\n\nThese nine Regions are supported:\n\n- US East (N. Virginia, Ohio)\n- US West (Oregon)\n- Asia Pacific (Mumbai, Tokyo, Hyderabad)\n- Europe (Ireland, Frankfurt, Spain)\n\nYou can get started from the Amazon RDS Management Console or the AWS CLI. Check the RDS documentation for the engine versions that support M8a. Pricing is on the Amazon RDS pricing page.\n\n## Wrap-up\n\n- M8a is available for RDS for PostgreSQL, MySQL, and MariaDB\n- One vCPU maps to one physical core for steady per-core performance\n- Up to 75 Gbps network and 60 Gbps EBS bandwidth\n- Available in nine Regions, including Tokyo\n\nThis is for anyone running I/O-heavy databases on RDS who wants more instance options!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/aurora-rds-amd-m8a/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon RDS now supports AMD-based M8a instances",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-09-30T17:00:00+00:00"
+}

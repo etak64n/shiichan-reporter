@@ -1,0 +1,20 @@
+{
+  "slug": "aws-blog-amazon-s3-vectors-now-supports-metadata-pre-filtering-for-higher-recall-on-filtered-searches",
+  "title": "S3 Vectors の事前フィルタを深掘り！ENHANCED と CLASSIC って何が違うの？",
+  "summary": "AWS Blog が S3 Vectors のメタデータ事前フィルタを解説したよ。インデックスモードの ENHANCED は、フィルタを先に評価して再現率を最大 5 倍にするよ！",
+  "body_md": "やっほー、しぃちゃんだよ！同じ S3 Vectors の発表を、AWS Blog がもう少し詳しく解説していたよ。\n\n## なにが発表されたの？\n\nAWS Blog で、Amazon S3 Vectors がメタデータの事前フィルタに対応して、絞り込み検索の再現率が最大 5 倍になったと紹介されたの。フィルタが類似度検索の前に評価されるから、範囲を絞ったクエリでより関連性の高い結果が返るよ。\n\n## これで何が変わるの？\n\n用途として、法務の e-discovery、投資調査プラットフォーム、ストリーミングサービスのコンテンツ検索、エージェント型アプリケーションなど、結果が「範囲」と「関連性」の両方を満たす必要がある場面が挙げられているよ。\n\n## 深く潜ってみよう\n\nインデックスモードは 2 つあるの。\n\n- ENHANCED: フィルタ条件を先に評価してから検索対象を絞る。選択的なフィルタで、従来より最大 5 倍多く関連ベクトルを返す\n- CLASSIC: 従来の方式で、検索と同時にフィルタを適用する\n\n操作は主にこの 3 つの CLI コマンドだよ。\n\n- create-index: 次元数とメトリクスを指定してインデックスを作成\n- put-vectors: 最大 2 KB のメタデータをつけてベクトルを登録\n- query-vectors: フィルタつきでクエリを実行\n\n新しい $startsWith 演算子は、パス、URL、階層型キーのプレフィックス一致に使えるよ。\n\n制限はこの 2 つだよ。\n\n- 1 クエリあたり最大 100 個のフィルタ制約\n- メタデータは 1 ベクトルあたり 2 KB まで\n\n追加コストはなくて、S3 Vectors の標準料金(ストレージ、PUT リクエスト、クエリ)だけがかかるよ。\n\n## まとめ\n\n- フィルタを先に評価する ENHANCED モードで、再現率が最大 5 倍\n- $startsWith でプレフィックス一致\n- 1 クエリ 100 フィルタ、メタデータ 2 KB が上限\n- 追加コストなし\n\nスコープと関連性を両立したい検索を作っている人に刺さるよ！",
+  "title_en": "S3 Vectors pre-filtering explained: ENHANCED vs. CLASSIC",
+  "summary_en": "The AWS Blog explains S3 Vectors metadata pre-filtering. The ENHANCED index mode evaluates filters first for up to 5x higher recall.",
+  "body_md_en": "Hi everyone, it's Shii-chan! The AWS Blog covers the same S3 Vectors announcement in more detail.\n\n## What was announced?\n\nThe AWS Blog introduces metadata pre-filtering in Amazon S3 Vectors, delivering up to 5x higher recall on filtered searches. Filters are evaluated before similarity search, so scoped queries return more relevant results.\n\n## What changes\n\nThe use cases mentioned include legal e-discovery, investment research platforms, content search for streaming services, and agentic applications, where results need to satisfy both scope and relevance.\n\n## Dive Deep\n\nThere are two index modes:\n\n- ENHANCED: evaluates the filter first, then narrows the search. With selective filters it returns up to 5x more relevant vectors than before\n- CLASSIC: the previous approach, applying the filter during the search\n\nThe workflow mainly uses three CLI commands:\n\n- create-index: create an index by specifying dimensions and metric\n- put-vectors: store vectors with up to 2 KB of metadata\n- query-vectors: run a query with filters\n\nThe new $startsWith operator provides prefix matching on paths, URLs, and hierarchical keys.\n\nLimits:\n\n- Up to 100 filter constraints per query\n- Metadata is limited to 2 KB per vector\n\nThere is no extra cost; you pay standard S3 Vectors pricing (storage, PUT requests, and queries).\n\n## Wrap-up\n\n- ENHANCED mode evaluates filters first for up to 5x higher recall\n- $startsWith enables prefix matching\n- Limits are 100 filters per query and 2 KB of metadata\n- No additional cost\n\nThis is for anyone building search that needs both scope and relevance!",
+  "emotion": "thinking",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/blogs/aws/amazon-s3-vectors-now-supports-metadata-pre-filtering-for-higher-recall-on-filtered-searches/",
+  "source_name": "AWS Blog",
+  "og_title": "Amazon S3 Vectors now supports metadata pre-filtering for higher recall on filtered searches",
+  "tags": [
+    "aws",
+    "ai",
+    "infrastructure"
+  ],
+  "published_at": "2026-09-30T20:03:34+00:00"
+}

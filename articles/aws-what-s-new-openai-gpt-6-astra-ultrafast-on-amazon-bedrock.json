@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-openai-gpt-6-astra-ultrafast-on-amazon-bedrock",
+  "title": "Bedrock の GPT-6 Astra に UltraFast モードが登場！最大 300 トークン/秒",
+  "summary": "Amazon Bedrock で OpenAI の GPT-6 Astra の UltraFast モードが使えるようになったよ。OpenAI によると、API で最大 6 倍速、最大 300 トークン/秒だよ！",
+  "body_md": "やっほー、しぃちゃんだよ！速さにこだわる人に嬉しいニュースが来たよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Bedrock で OpenAI の GPT-6 Astra の UltraFast モードが使えるようになったと発表されたの。UltraFast は、速度がいちばん大事なワークロード向けの、GPT-6 Astra のプレミアムな速度ティアだよ。\n\n## これで何が変わるの？\n\nOpenAI によると、UltraFast は API で最大 6 倍速い推論を、最大 300 トークン/秒で実現するよ(数値は OpenAI の主張として紹介されているものだよ)。\n\nAWS は、次のようなレイテンシに敏感な用途に向くとしているの。\n\n- リアルタイムのコーディングアシスタント\n- インタラクティブなエージェント\n- 速くて質の高い応答が必要な、顧客向けの体験\n\n## 深く潜ってみよう\n\nBedrock の推論エンジンが、本番ワークロードに必要な性能・セキュリティ・信頼性を提供するよ。AWS の既存の統制で、アクセスのガバナンスやモデル呼び出しの監査もできるの。\n\n使い始めるのは、Bedrock コンソールか、対応する Bedrock API からだよ。対応リージョン、エンドポイント、API、機能、推論プロファイル、料金は Bedrock のドキュメントで確認してね。原文に具体的な料金は書かれていないよ。\n\n## まとめ\n\n- Bedrock で GPT-6 Astra の UltraFast モードが利用可能に\n- OpenAI によると、最大 6 倍速で最大 300 トークン/秒\n- リアルタイムなコーディング支援や対話型エージェントに向く\n- 既存の AWS の統制で、アクセス管理と監査ができる\n\nレイテンシが体験に直結するアプリを作っている人に刺さる発表だよ！",
+  "title_en": "GPT-6 Astra UltraFast mode arrives on Amazon Bedrock, up to 300 tokens per second!",
+  "summary_en": "UltraFast mode for OpenAI's GPT-6 Astra is now on Amazon Bedrock. According to OpenAI, it delivers up to 6x faster inference with up to 300 tokens per second.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Here's good news for anyone who cares about speed.\n\n## What was announced?\n\nAWS What's New announced the availability of UltraFast mode for OpenAI's GPT-6 Astra on Amazon Bedrock. UltraFast is a premium speed tier for GPT-6 Astra, built for workloads where speed matters most.\n\n## What changes\n\nAccording to OpenAI, UltraFast delivers up to 6x faster inference in the API, with up to 300 tokens per second (these numbers are OpenAI's claims as quoted).\n\nAWS suggests it for latency-sensitive uses such as:\n\n- Real-time coding assistants\n- Interactive agents\n- Customer-facing experiences that need fast, high-quality responses\n\n## Dive Deep\n\nThe Amazon Bedrock inference engine delivers the performance, security, and reliability needed for production workloads. Established AWS controls let you govern access and audit model invocation activity.\n\nYou can get started in the Bedrock console or programmatically through supported Bedrock APIs. For supported Regions, endpoints, APIs, features, inference profiles, and pricing, see the Bedrock documentation. The announcement does not state specific prices.\n\n## Wrap-up\n\n- GPT-6 Astra UltraFast mode is available on Bedrock\n- According to OpenAI, up to 6x faster with up to 300 tokens per second\n- Suited to real-time coding help and interactive agents\n- Existing AWS controls cover access governance and auditing\n\nThis is for anyone building apps where latency shapes the experience!",
+  "emotion": "energetic",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/openai-gpt-6-astra-ultrafast-on-amazon-bedrock/",
+  "source_name": "AWS What's New",
+  "og_title": "OpenAI GPT-6 Astra now supports UltraFast mode on Amazon Bedrock",
+  "tags": [
+    "aws",
+    "openai",
+    "ai"
+  ],
+  "published_at": "2026-09-30T19:00:00+00:00"
+}

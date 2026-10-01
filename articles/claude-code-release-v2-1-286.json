@@ -1,0 +1,20 @@
+{
+  "slug": "claude-code-release-v2-1-286",
+  "title": "Claude Code v2.1.286！権限プロンプトの「2 of 5」表示と再開まわりの修正だよ",
+  "summary": "Claude Code v2.1.286 では、権限プロンプトに「2 of 5」のような件数が出るようになり、--resume や認証まわりなど多くの不具合が直ったよ！",
+  "body_md": "こんにちは、しぃちゃんだよ！Claude Code の新しいリリース v2.1.286 を紹介するね。\n\n## なにが発表されたの？\n\nGitHub の Claude Code Release で、v2.1.286 が公開されたの。追加が 2 つと、たくさんの修正が入っているよ。\n\n## これで何が変わるの？\n\n追加された機能はこの 2 つだよ。\n\n- 複数の権限リクエストが重なったとき、権限プロンプトに「2 of 5」のような件数を表示\n- フルスクリーンモードのリストの「N more」行でマウス操作に対応。クリックでリストの端へジャンプでき、ホバー時と押下時の見た目もある\n\n## 深く潜ってみよう\n\n修正の中から、影響が大きそうなものを選んだよ。\n\n- gcpAuthRefresh や awsAuthRefresh の認証情報が切れたとき、複数の Claude Code プロセスや IDE 拡張がそれぞれログイン用ブラウザを開いてしまう問題\n- 以前のセッションがクラッシュまたは強制終了したとき、claude --resume と claude --continue が、並列ツール呼び出しの後のターンをすべて失うことがある問題\n- ツールやフックがテキストではなくオブジェクト・数値・真偽値を返すと API 400 エラーになる問題(再開したセッションも含む)\n- 履歴がとても大きいクラウドセッションが、トランスクリプトの読み込み中にコンテナが止まって起きなくなる問題\n- Claude apps gateway の支出メーターが、1 時間のプロンプトキャッシュ書き込みを安い 5 分の料金で計算していた問題と、Web 検索などサーバー側ツールを使うストリーミングのターンで、最初のモデル呼び出しの入力トークンしか数えていなかった問題\n- 古い ~/.claude/.credentials.json が残っている macOS で、別ウィンドウで /login に成功した後も「Not logged in」や「Login expired」が出る問題\n- API がデフォルトやエイリアスが指すモデルを拒否すると毎ターン失敗していた問題。今は同じティアの 1 つ前のモデルで 1 回だけ再試行する\n\n原文にはもう少し項目が続いているから、全部を確認したい人はリリースページを見てね。\n\n## まとめ\n\n- 権限プロンプトに件数表示(「2 of 5」)\n- フルスクリーンのリストの「N more」行でマウス操作に対応\n- 認証更新、--resume / --continue、API 400、支出メーターなどを修正\n- モデル拒否時は同じティアの前のモデルで 1 回だけ再試行\n\nClaude Code を毎日使っている人、特に再開機能や gateway を使っている人に刺さるリリースだよ！",
+  "title_en": "Claude Code v2.1.286: a \"2 of 5\" permission counter and resume fixes!",
+  "summary_en": "Claude Code v2.1.286 shows a count like \"2 of 5\" on stacked permission prompts and fixes many issues around --resume and authentication.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Let's look at the new Claude Code release, v2.1.286.\n\n## What was announced?\n\nThe Claude Code Release on GitHub published v2.1.286. It adds two things and fixes a lot of issues.\n\n## What changes\n\nThe two additions:\n\n- A count such as \"2 of 5\" now appears on the permission prompt when several permission requests stack up\n- Mouse support for the \"N more\" rows of lists in fullscreen mode: click one to jump to that end of the list, with hover and pressed states\n\n## Dive Deep\n\nHere are the fixes that look most impactful:\n\n- Several Claude Code processes and IDE extensions each opening a login browser when gcpAuthRefresh or awsAuthRefresh credentials expire\n- claude --resume and --continue sometimes losing every turn after a batch of parallel tool calls when the earlier session crashed or was killed\n- API 400 errors after a tool or hook returned an object, number, or boolean instead of text, including in resumed sessions\n- Cloud sessions with very large histories never waking up because the container was stopped while the transcript was still loading\n- The Claude apps gateway's spend meter pricing 1-hour prompt cache writes at the cheaper 5-minute rate, and counting only the first model call's input tokens on streamed turns that run a server-side tool such as web search\n- macOS sessions still showing \"Not logged in\" or \"Login expired\" after /login succeeds in another window when a leftover ~/.claude/.credentials.json exists\n- Every turn failing when the API refuses the model your default or alias resolves to; Claude Code now retries once on the previous model of the same tier\n\nThe release notes list more items, so see the release page for the full list.\n\n## Wrap-up\n\n- Permission prompts show a count (\"2 of 5\")\n- Mouse support for \"N more\" rows in fullscreen lists\n- Fixes for auth refresh, --resume / --continue, API 400s, the spend meter, and more\n- On a model refusal, one retry on the previous model of the same tier\n\nThis is for people who use Claude Code every day, especially those who rely on resume or the gateway!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.286",
+  "source_name": "Claude Code Release",
+  "og_title": "v2.1.286",
+  "tags": [
+    "anthropic",
+    "ai",
+    "devops"
+  ],
+  "published_at": "2026-09-30T19:10:13Z"
+}

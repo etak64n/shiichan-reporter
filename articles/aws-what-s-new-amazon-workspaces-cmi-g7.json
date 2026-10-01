@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-workspaces-cmi-g7",
+  "title": "WorkSpaces Core Managed Instances に NVIDIA Blackwell GPU の G7 が登場！",
+  "summary": "Amazon WorkSpaces Core Managed Instances が、NVIDIA RTX PRO 4500 Blackwell GPU 搭載の Graphics G7 に対応したよ。G6 より最大 2.1 倍の性能だよ！",
+  "body_md": "やっほー、しぃちゃんだよ！グラフィックス重めの仕事に嬉しい新インスタンスだよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon WorkSpaces Core Managed Instances が Graphics G7 インスタンスに対応したと発表されたの。NVIDIA RTX PRO 4500 Blackwell Server Edition GPU と Intel Xeon 6 プロセッサを搭載しているよ。\n\n## これで何が変わるの？\n\nG7 は前世代の G6 と比べて、グラフィックス負荷の高いワークロードで最大 2.1 倍の性能だよ。CAD/CAM、3D レンダリング、科学可視化、動画編集、AI 支援デザインといったプロ向けアプリを、より高い忠実度とフレームレートで動かせるの。\n\n## 深く潜ってみよう\n\nスペックはこの通りだよ。\n\n- GPU メモリ: 1 GPU あたり 32 GB の GDDR7。メモリ帯域は 2.67 倍速く、より大きく複雑な 3D シーンやモデルを扱える\n- サイズ: 6 種類。GPU は 1〜8 個、vCPU は 8〜192、システムメモリは 32 GB〜768 GB\n- OS: Linux と Windows に対応。ライセンス持ち込み(BYOL)も可能\n\n提供リージョンはこの 4 つで、今後さらに追加される予定だよ。\n\n- 米国東部(バージニア北部)\n- 米国東部(オハイオ)\n- 米国西部(オレゴン)\n- 欧州(スペイン)\n\n使い始めるには、新しい WorkSpaces Core Managed Instance を作るときに G7 ファミリーのインスタンスタイプを指定してね。WorkSpaces Core パートナーのソリューション経由では、利用可能になった時点で G7 を選べるよ。\n\n## まとめ\n\n- WorkSpaces Core Managed Instances が G7(RTX PRO 4500 Blackwell + Xeon 6)に対応\n- G6 比で最大 2.1 倍の性能、GPU メモリは 32 GB GDDR7 で帯域は 2.67 倍\n- 6 サイズ、Linux / Windows、BYOL 対応\n- 現時点では 4 リージョンで提供\n\nVDI で CAD や 3D、動画編集を動かしている人に刺さる発表だよ！",
+  "title_en": "NVIDIA Blackwell GPU G7 instances arrive on WorkSpaces Core Managed Instances!",
+  "summary_en": "Amazon WorkSpaces Core Managed Instances now supports Graphics G7 instances with NVIDIA RTX PRO 4500 Blackwell GPUs, with up to 2.1x better performance than G6.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Here's a new instance family for graphics-heavy work.\n\n## What was announced?\n\nAWS What's New announced that Amazon WorkSpaces Core Managed Instances now supports Graphics G7 instances, powered by NVIDIA RTX PRO 4500 Blackwell Server Edition GPUs and Intel Xeon 6 processors.\n\n## What changes\n\nG7 delivers up to 2.1x better performance for graphics-intensive workloads compared to the previous generation G6. You can run demanding professional applications such as CAD/CAM, 3D rendering, scientific visualization, video editing, and AI-assisted design at higher fidelity and frame rates.\n\n## Dive Deep\n\nThe specs:\n\n- GPU memory: 32 GB of GDDR7 per GPU, with 2.67x faster memory bandwidth, enabling larger and more complex 3D scenes and models\n- Sizes: six, with 1 to 8 GPUs, 8 to 192 vCPUs, and 32 GB to 768 GB of system memory\n- OS: Linux and Windows, including bring-your-own-license\n\nIt is available in these four Regions, with more to be added as availability expands:\n\n- US East (N. Virginia)\n- US East (Ohio)\n- US West (Oregon)\n- Europe (Spain)\n\nTo get started, specify an instance type from the G7 family when creating a new WorkSpaces Core Managed Instance. Through a WorkSpaces Core partner solution, look for G7 types when they become available.\n\n## Wrap-up\n\n- WorkSpaces Core Managed Instances support G7 (RTX PRO 4500 Blackwell and Xeon 6)\n- Up to 2.1x better performance than G6, with 32 GB GDDR7 and 2.67x bandwidth\n- Six sizes, Linux and Windows, BYOL supported\n- Available in four Regions for now\n\nThis is for anyone running CAD, 3D, or video editing on virtual desktops!",
+  "emotion": "energetic",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-workspaces-cmi-g7/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon WorkSpaces Core Managed Instances adds support for NVIDIA Blackwell GPU",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-09-30T23:59:00+00:00"
+}
