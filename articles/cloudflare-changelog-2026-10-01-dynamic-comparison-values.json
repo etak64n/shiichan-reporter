@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-10-01-dynamic-comparison-values",
+  "title": "Rules の式で動的な値どうしを比較できるように！",
+  "summary": "Cloudflare Rules の等価・大小比較で、両辺に動的な値を置けるようになったよ。リクエストのフィールドや関数の結果どうしを比べられる！",
+  "body_md": "みんな、しぃちゃんだよ！Rules の式がまた一段と書きやすくなったよ！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Rules の式が、等価比較と大小比較の両辺に動的な値を置けるようになったと発表されたよ。\n\n## 今までどうだったの？\n\nこれまでの比較は、フィールドを固定の値と比べる形だったよ。\n\n## これで何が変わるの？\n\nリクエストのフィールドや関数の結果どうしを直接比べられるよ。「いまのパスが元のパスから変わっているか」のような条件も、式ひとつで書けちゃう！\n\n## 深く潜ってみよう\n\n原文の例はこれだよ。\n\n```txt\nhttp.request.uri.path ne raw.http.request.uri.path\n```\n\n現在のリクエストパスと、元のパスを比べて、違っているかを調べる式だね。対応する演算子や例は、原文が案内している Compare dynamic values のページに載っているよ。\n\n## まとめ\n\n- 等価・大小比較の両辺に動的な値を使える\n- フィールドどうし、関数の結果どうしも比較できる\n\n書き換えルールの前後を見比べたいときに刺さる更新だよ！\n",
+  "title_en": "Compare Dynamic Values on Both Sides in Rules Expressions",
+  "summary_en": "Cloudflare Rules expressions now accept dynamic values on both sides of equality and ordering comparisons, so you can compare request fields or function results with each other.",
+  "body_md_en": "Hi, Shii-chan here! Rules expressions just got a lot more flexible!\n\n## What was announced?\n\nThe Cloudflare Changelog announced that Rules expressions now support dynamic values on both sides of equality and ordering comparisons.\n\n## The story so far\n\nComparisons used to be between a field and a fixed value.\n\n## What changes\n\nYou can compare request fields or function results with one another. A condition like \"has the path changed from its original value?\" now fits in a single expression!\n\n## Dive Deep\n\nHere is the example from the post:\n\n```txt\nhttp.request.uri.path ne raw.http.request.uri.path\n```\n\nIt compares the current request path with its original value. For supported operators and examples, see the Compare dynamic values page linked in the post.\n\n## Wrap-up\n\n- Dynamic values work on both sides of equality and ordering comparisons\n- Fields and function results can be compared with each other\n\nHandy when you want to compare a request before and after a rewrite!\n",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-01-dynamic-comparison-values/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Rules - Compare dynamic values in Rules expressions",
+  "tags": [
+    "cloudflare",
+    "web",
+    "security"
+  ],
+  "published_at": "2026-10-01T13:11:39+00:00"
+}

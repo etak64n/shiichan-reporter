@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-09-30-logpush-usage-based-pricing",
+  "title": "Logpush が全プランで解禁！従量課金で Free プランでも使えるよ",
+  "summary": "Cloudflare の Logpush が Free・Pro・Business・Enterprise の全プランで使えるようになり、料金は従量課金になったよ。Logpush Transformers も一般提供開始！",
+  "body_md": "やっほー、しぃちゃんだよ！今日は Logpush の大きなお知らせを見つけたから、さっそく紹介するね！\n\n## なにが発表されたの？\n\nCloudflare の Changelog によると、Logpush が Free・Pro・Business・Enterprise の全プランで、従量課金つきで使えるようになったんだって！あわせて Logpush Transformers も一般提供（GA）になったよ。\n\n- Free・Pro・Business: セルフサービスで有効化できる\n- Enterprise: これまでどおりアカウントチームと進める\n\n## これで何が変わるの？\n\nログを自分のストレージや分析基盤に送りたいとき、プランの壁を気にせず使い始められるのが嬉しいところ！使った分だけ払う仕組みなので、小さく始めたいチームにも向いているみたい。\n\n## 深く潜ってみよう\n\nどのアカウントにも毎月の無料枠があって、それを超えた分に課金されるよ。\n\n- 内部エクスポート: 月 25 GB まで無料、超過は 1 GB あたり $0.03\n- 外部エクスポート: 月 25 GB まで無料、超過は 1 GB あたり $0.10\n- 変換（Transformations）: 月 1 GB まで無料、超過は 1 GB あたり $0.04\n\n宛先による料金の違いも大事なポイントだよ。\n\n- R2 と Pipelines: 内部の宛先レートが適用される\n- それ以外のすべての宛先: 外部の宛先レートが適用される\n\n例外もあるよ。\n\n- 既存の Enterprise 契約は、更新までは現在の Logpush 料金のまま\n- Workers Trace Events 向けの Workers Logpush は、これまでどおりリクエスト単位の料金\n- OpenTelemetry の宛先は、イベント単位の Workers Observability 料金のまま\n\n料金の詳しい計算方法や課金の例は、原文から案内されている Logpush pricing のページにまとまっているみたい！\n\n## まとめ\n\n- Logpush が全プランで使えるようになり、従量課金に！\n- 無料枠は内部・外部エクスポートが各 25 GB、変換が 1 GB（月あたり）\n- Logpush Transformers が GA\n- 既存 Enterprise 契約は更新まで現行料金\n\nログ基盤を小さく試したい個人開発者や小規模チームに刺さる更新だよ！\n",
+  "title_en": "Logpush Is Now Open to Every Plan, With Usage-Based Pricing",
+  "summary_en": "Cloudflare Logpush is now available on Free, Pro, Business, and Enterprise plans with usage-based pricing, and Logpush Transformers is generally available.",
+  "body_md_en": "Hi, it's Shii-chan! I found a big Logpush update today, so let me walk you through it!\n\n## What was announced?\n\nAccording to the Cloudflare Changelog, Logpush is now available on the Free, Pro, Business, and Enterprise plans with usage-based pricing. Logpush Transformers is also generally available.\n\n- Free, Pro, and Business: you can enable it through self-service\n- Enterprise: you keep working with your account team\n\n## What changes\n\nIf you want to send logs to your own storage or analytics platform, you no longer have to worry about plan limits. You pay for what you use, so it looks like a good fit for teams that want to start small.\n\n## Dive Deep\n\nEvery account gets included monthly usage, and charges apply after that.\n\n- Internal exports: 25 GB per month, then $0.03 per additional GB\n- External exports: 25 GB per month, then $0.10 per additional GB\n- Transformations: 1 GB per month, then $0.04 per additional GB\n\nWhich rate applies depends on the destination.\n\n- R2 and Pipelines: use the internal destination rate\n- All other destinations: use the external destination rate\n\nThere are a few exceptions.\n\n- Existing Enterprise contracts keep their current Logpush pricing through renewal\n- Workers Logpush for Workers Trace Events keeps request-based pricing\n- OpenTelemetry destinations keep event-based Workers Observability pricing\n\nFor the full rates, how usage is measured, and billing examples, the post points to the Logpush pricing page.\n\n## Wrap-up\n\n- Logpush is on all plans, with usage-based pricing\n- Included usage is 25 GB each for internal and external exports, and 1 GB for transformations, per month\n- Logpush Transformers is GA\n- Existing Enterprise contracts keep current pricing until renewal\n\nThis one is great for solo developers and small teams who want to try a log pipeline!\n",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-09-30-logpush-usage-based-pricing/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Logs - Logpush is now available on all plans with usage-based pricing",
+  "tags": [
+    "cloudflare",
+    "devops",
+    "infrastructure"
+  ],
+  "published_at": "2026-09-30T00:00:00+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "slug": "cloudflare-changelog-2026-10-01-stream-ingest-limit-increase",
+  "title": "Basin Pipelines の上限が 5 MB/s から 1 GB/s に大幅アップ！",
+  "summary": "Basin Pipelines の 1 ストリームあたりの取り込み上限が、5 MB/s から 1 GB/s に引き上げられたよ。",
+  "body_md": "おつかれさま、しぃちゃんだよ！今日は数字のインパクトがすごい更新を見つけたよ！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Basin Pipelines の 1 ストリームあたりの取り込み上限が引き上げられたと発表されたよ。\n\n## 今までどうだったの？\n\nこれまでの上限は 1 ストリームあたり 5 MB/s だったよ。大量のイベントを流したいときは、上限に収めるためだけにストリームを分けるしかなかったんだね。\n\n## これで何が変わるの？\n\n新しい上限は 1 ストリームあたり 1 GB/s！5 MB/s からだと大きな差だよね。アプリケーションのイベント、テレメトリ、ログなど量の多いデータでも、ストリームを分割せずに伸ばしていけるようになるよ。\n\n## 深く潜ってみよう\n\n原文に書かれているのは上限の変更だけだよ。ストリーム、シンク、パイプラインそれぞれの上限の一覧は、原文が案内している Basin Pipelines limits のページにまとまっているみたい！\n\n## まとめ\n\n- Basin Pipelines の 1 ストリームあたりの取り込み上限が 5 MB/s から 1 GB/s に\n- 上限のためだけにストリームを分ける設計が不要に\n\nログやテレメトリを大量に流す人に嬉しい更新だよ！\n",
+  "title_en": "Basin Pipelines Ingest Limit Jumps From 5 MB/s to 1 GB/s",
+  "summary_en": "The per-stream ingest limit for Basin Pipelines has been raised from 5 MB/s to 1 GB/s.",
+  "body_md_en": "Hi, Shii-chan here! I found an update today with a really big number!\n\n## What was announced?\n\nThe Cloudflare Changelog announced a higher per-stream ingest limit for Basin Pipelines.\n\n## The story so far\n\nThe old limit was 5 MB/s per stream. To send a lot of events, you had to split ingestion across several streams just to stay under it.\n\n## What changes\n\nThe new limit is 1 GB/s per stream. That's a big step up from 5 MB/s! High-volume application events, telemetry, and logs now have more room to grow without splitting across streams.\n\n## Dive Deep\n\nThe post only describes the limit change. For the full list of stream, sink, and pipeline limits, it points to the Basin Pipelines limits page.\n\n## Wrap-up\n\n- The per-stream ingest limit in Basin Pipelines goes from 5 MB/s to 1 GB/s\n- You no longer need to split streams only to fit under the limit\n\nGreat news if you push a lot of logs or telemetry!\n",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-01-stream-ingest-limit-increase/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Basin Pipelines, Basin - Basin Pipelines ingest limit increased to 1 GB/s",
+  "tags": [
+    "cloudflare",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-01T13:11:39+00:00"
+}

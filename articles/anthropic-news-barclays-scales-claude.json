@@ -1,0 +1,20 @@
+{
+  "slug": "anthropic-news-barclays-scales-claude",
+  "title": "Barclays が Claude を全社展開へ！開発者の 50% が Claude Code を使う計画だよ",
+  "summary": "英国の大手銀行 Barclays が Anthropic との提携を広げて、Claude をグローバルな業務に展開するよ。2026 年末までに開発者の 50% が Claude Code を使う見込み！",
+  "body_md": "やっほー、しぃちゃんだよ！今日は銀行での Claude の活用事例が出ていたから紹介するね！\n\n## なにが発表されたの？\n\nAnthropic の News で、英国の大手ユニバーサルバンク Barclays が Anthropic との提携を拡大して、Claude をグローバルな業務に展開していくと発表されたよ。\n\n## なぜ重要なの？\n\n厳しく規制された金融機関が、AI を本番の業務で広げていく事例だからだよ。Barclays は、強いセキュリティ統制と人による監督のもとで、責任ある形で導入すると説明しているみたい。\n\n## これで何が変わるの？\n\n原文では、次のような狙いが挙げられているよ。\n\n- ソフトウェア開発のスピードアップ\n- レガシーシステムの刷新\n- 業務効率の向上\n\nBarclays の Group Co-Chief Operating Officer の Anne Marie Darling さんは、定型的な作業を減らして、社員が複雑な問題解決やイノベーションに集中できるようにしたいという趣旨のコメントを出しているよ。\n\n## 深く潜ってみよう\n\n### Claude Code の展開計画\n\n- 2026 年末までに、開発者の 50% が Claude Code を使う見込み\n- 2027 年には、過半数に広がる見込み\n\n### すでに動いている活用例\n\n- Colleague Knowledge Assistant: 2025 年から稼働中。Claude と検索拡張生成（RAG）で動いていて、英国の 16,000 人以上の社員が、2,000 万人を超える個人のお客様に対応するときの情報探しに使っている。これまでの検索は 100 万回以上\n- Global Markets のメール処理: Claude のモデルが、毎日およそ 120,000 通の受信メールを分類して振り分け、手作業を減らしている。チームが問い合わせの優先順位をつけたり、必要な情報を見つけたりするのにも役立っている\n\n## まとめ\n\n- Barclays が Anthropic との提携を拡大し、Claude をグローバルに展開\n- Claude Code は 2026 年末までに開発者の 50%、2027 年には過半数が対象\n- 社員向けナレッジ検索と、1 日約 120,000 通のメール振り分けがすでに稼働中\n- セキュリティ統制と人による監督を前提にした導入\n\n規制の厳しい業界で AI の導入を考えている人に刺さる事例だよ！\n",
+  "title_en": "Barclays Scales Claude: 50% of Developers on Claude Code by Year-End",
+  "summary_en": "Barclays, a major British bank, is expanding its partnership with Anthropic to deploy Claude across its global operations, with Claude Code expected to reach 50% of developers by the end of 2026.",
+  "body_md_en": "Hi, Shii-chan here! I found a story about Claude being used at a bank, so let me share it!\n\n## What was announced?\n\nAnthropic News announced that Barclays, a major British universal bank, is expanding its partnership with Anthropic to deploy Claude across its global operations.\n\n## Why it matters\n\nThis is a case of a heavily regulated financial institution expanding AI in real production work. Barclays says it is doing this responsibly, with strong security controls and human oversight.\n\n## What changes\n\nThe post lists these goals:\n\n- Faster software development\n- Modernizing legacy systems\n- Better operational efficiency\n\nAnne Marie Darling, Group Co-Chief Operating Officer at Barclays, said the aim is to reduce routine tasks so employees can focus on complex problem-solving and innovation.\n\n## Dive Deep\n\n### Claude Code rollout plan\n\n- Claude Code is expected to reach 50% of developers by the end of 2026\n- It is expected to grow to a majority in 2027\n\n### What is already running\n\n- Colleague Knowledge Assistant: live since 2025. It uses Claude with retrieval-augmented generation (RAG) and helps more than 16,000 UK employees find information when assisting over 20 million retail customers. It has handled more than one million searches\n- Global Markets email processing: Claude models classify and route about 120,000 incoming emails a day, reducing manual handling and helping teams prioritize client inquiries and identify the information they need\n\n## Wrap-up\n\n- Barclays is expanding its partnership with Anthropic and rolling out Claude globally\n- Claude Code targets 50% of developers by the end of 2026 and a majority in 2027\n- A knowledge assistant for staff and routing of about 120,000 emails a day are already live\n- The rollout is built on security controls and human oversight\n\nA good read if you are thinking about adopting AI in a regulated industry!\n",
+  "emotion": "happy",
+  "importance": 1,
+  "source_url": "https://www.anthropic.com/news/barclays-scales-claude",
+  "source_name": "Anthropic News",
+  "og_title": "Barclays scales Claude to upgrade operations and improve client experience",
+  "tags": [
+    "anthropic",
+    "ai",
+    "business"
+  ],
+  "published_at": "2026-10-01T09:16:50.000Z"
+}

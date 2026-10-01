@@ -1,0 +1,19 @@
+{
+  "slug": "cloudflare-blog-managed-cloudflare-os",
+  "title": "Cloudflare OS、まるごとお任せのエージェント職場が来るよ！",
+  "summary": "会社のやり方を知っていて、データやシステムにもつながる「エージェントの職場」Cloudflare OS。フルマネージド版のウェイトリストが始まったよ！",
+  "body_md": "こんにちは、しぃちゃんだよ！会社のみんなが使えるエージェントの職場、Cloudflare OS のお知らせだよ！\n\n## なにが発表されたの？\n\nCloudflare の Blog で、Cloudflare OS のフルマネージド版のウェイトリストが開始されたよ。Cloudflare OS は、組織のみんなに「その会社のやり方を知っていて、データやシステムにつながるエージェントの作業場」を用意するものなんだって。クリック数回で起動できる予定だよ。\n\n## これで何が変わるの？\n\nエージェントが、ドキュメント作成、分析、ワークフローの自動化のような繰り返し作業を、ひとりで、またはチームと一緒にこなしてくれるよ。社内のデータやシステムにもアクセスできて、チーム用のツールを作ることもできるんだって。\n\n## 深く潜ってみよう\n\n### 最近の強化点\n\n- Git 連携: エージェントがコードベースを調べて、バグ修正や機能追加をして、GitHub のリポジトリにプルリクエストを出せる\n- Google Workspace 連携: Gmail のスレッドを読み、下書きを作り、メールを送れる。Google Drive 全体、特定のフォルダ、個別のドキュメントも接続できる\n- エクスポート: Excel（.xlsx）、CSV、PDF、Markdown、HTML に出力できる。Word（.docx）と PowerPoint（.pptx）は近日対応予定\n\n### 2 つの提供形態\n\n- オープンソース: GitHub のリポジトリから自分で運用する。カスタマイズは自由自在\n- フルマネージド（ウェイトリスト）: インフラと運用は Cloudflare におまかせ。アクセスポリシー、使えるスキルやコンテキスト、接続するシステムを、Cloudflare ダッシュボードで設定する。カスタムドメインと AI Gateway の連携にも対応\n\n料金については原文に書かれていなかったよ。オープンソース版はすぐに使えるみたい！\n\n## まとめ\n\n- Cloudflare OS は、会社の文脈を理解するエージェントの職場\n- Git、Google Workspace との連携や、各種ファイル形式への出力が追加された\n- オープンソース版は自己運用、フルマネージド版はウェイトリスト受付中\n\n社内向けのエージェント基盤を自前で作らずに済ませたい情報システム担当の人に刺さるよ！\n",
+  "title_en": "Cloudflare OS: A Fully Managed Agent Workspace for Your Company",
+  "summary_en": "Cloudflare OS is an agent workspace that knows how your company works and connects to its data and systems. The waitlist for fully managed deployments is now open.",
+  "body_md_en": "Hi, Shii-chan here! Here's news about Cloudflare OS, an agent workspace for everyone at a company!\n\n## What was announced?\n\nThe Cloudflare Blog opened the waitlist for fully managed Cloudflare OS deployments. Cloudflare OS gives everyone in your organization an agent workspace that knows how your company works and connects to its data and systems. You will be able to launch it in a few clicks.\n\n## What changes\n\nAgents can handle repetitive work such as document creation, analysis, and workflow automation, on their own or together with your team. They can access company data across systems, and they can build custom tools for your team.\n\n## Dive Deep\n\n### Recent enhancements\n\n- Git integration: agents can explore codebases, fix bugs, add features, and open pull requests on GitHub repositories\n- Google Workspace integration: read Gmail threads, create drafts, and send emails. You can connect Google Drive, specific folders, or individual documents\n- Export: output to Excel (.xlsx), CSV, PDF, Markdown, and HTML, with Word (.docx) and PowerPoint (.pptx) coming soon\n\n### Two deployment options\n\n- Open source: run it yourself from the GitHub repository, with full control over customization\n- Fully managed (waitlist): Cloudflare handles infrastructure and operations. You configure access policies, available skills and context, and connected systems in the Cloudflare dashboard, with custom domains and AI Gateway integration\n\nThe post does not mention pricing. The open-source version is available right away.\n\n## Wrap-up\n\n- Cloudflare OS is an agent workspace that understands your company's context\n- Git and Google Workspace integrations and more export formats were added\n- Open source is self-managed, and the fully managed version has a waitlist\n\nThis is for IT teams who want an internal agent platform without building it from scratch!\n",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://blog.cloudflare.com/managed-cloudflare-os/",
+  "source_name": "Cloudflare Blog",
+  "og_title": "Cloudflare OS: your company’s agent workspace, managed for you",
+  "tags": [
+    "cloudflare",
+    "ai"
+  ],
+  "published_at": "2026-10-01T13:00:00+00:00"
+}

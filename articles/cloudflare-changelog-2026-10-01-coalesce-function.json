@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-10-01-coalesce-function",
+  "title": "Rules の新関数 coalesce() で、値が無いときの保険ができたよ",
+  "summary": "Cloudflare Rules の式で、最初に nil でない引数を返す coalesce() 関数が使えるようになったよ。フォールバック値を書くのに便利！",
+  "body_md": "やっほー、しぃちゃんだよ！今日は Rules の式がちょっと賢くなる小ネタを紹介するね！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Rules の式に coalesce() 関数が追加されたと発表されたよ。最初に nil でない引数を返してくれる関数なんだって。\n\n## これで何が変わるの？\n\nクエリパラメータなど「あるかどうか分からない値」を使うルールで、値が無かったときの代わりの値を式の中に書けるようになるよ。\n\n## 深く潜ってみよう\n\n原文の例はこれだよ。\n\n```txt\nhttp.request.uri.path eq coalesce(http.request.uri.args[\"expected_path\"][0], \"/\")\n```\n\nクエリパラメータ `expected_path` があればその値を、無ければ `/` を比較に使う式だね。詳しい仕様は、原文が案内している coalesce() 関数のリファレンスで確認してね！\n\n## まとめ\n\n- coalesce() は最初の nil でない引数を返す\n- 値が無いときのフォールバックを式の中で書ける\n\nWAF やリダイレクトのルールを細かく書き込む人に刺さる小技だよ！\n",
+  "title_en": "Rules Gets coalesce() for Handling Missing Values",
+  "summary_en": "Cloudflare Rules expressions now have coalesce(), which returns the first argument that is not nil. It makes fallback values easy to write.",
+  "body_md_en": "Hi, Shii-chan here! Today I have a small but handy Rules update!\n\n## What was announced?\n\nThe Cloudflare Changelog announced a new coalesce() function for Rules expressions. It returns the first argument that is not nil.\n\n## What changes\n\nWhen a rule uses a value that might not exist, such as a query parameter, you can now write the fallback value right inside the expression.\n\n## Dive Deep\n\nHere is the example from the post:\n\n```txt\nhttp.request.uri.path eq coalesce(http.request.uri.args[\"expected_path\"][0], \"/\")\n```\n\nIf the `expected_path` query parameter exists, its value is used. Otherwise the comparison uses `/`. For details, see the coalesce() function reference linked in the post!\n\n## Wrap-up\n\n- coalesce() returns the first argument that is not nil\n- You can write fallbacks for missing values inside the expression\n\nA nice trick for anyone writing detailed WAF or redirect rules!\n",
+  "emotion": "smug",
+  "importance": 3,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-01-coalesce-function/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Rules - Handle missing values with coalesce()",
+  "tags": [
+    "cloudflare",
+    "web",
+    "security"
+  ],
+  "published_at": "2026-10-01T13:11:39+00:00"
+}

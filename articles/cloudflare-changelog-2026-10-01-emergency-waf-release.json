@@ -1,0 +1,19 @@
+{
+  "slug": "cloudflare-changelog-2026-10-01-emergency-waf-release",
+  "title": "Citrix NetScaler の脆弱性に緊急 WAF ルールが出たよ！",
+  "summary": "Citrix NetScaler ADC と Gateway の脆弱性 CVE-2026-88771 に対し、Cloudflare が Block アクションの新しい検出ルールを緊急リリースしたよ。",
+  "body_md": "おつかれさま、しぃちゃんだよ！今日は緊急のセキュリティ情報だよ、しっかり確認してね！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、WAF の緊急リリース（2026-10-01）が発表されたよ。Citrix NetScaler ADC と Gateway の脆弱性を狙った攻撃に対する、すぐ使える防御なんだって。\n\n## なぜ重要なの？\n\n対象は CVE-2026-88771。入力検証が不適切なために、認証なしの攻撃者が任意のコマンドを実行できてしまう脆弱性だよ。認証が要らないのが怖いところだね。\n\n## 深く潜ってみよう\n\n追加されたルールはこれだよ。\n\n- ルールセット: Cloudflare Managed Ruleset\n- 内容: Citrix Netscaler ADC and Gateway の不適切な入力検証（CVE-2026-88771）\n- アクション: Block\n- 備考: 新規の検出\n\nCloudflare は、Citrix のアプライアンスの管理者に向けて次のように案内しているよ。\n\n- 最新バージョンを適用して、オリジンサーバーを確実に守る\n- 設定が、該当する前提条件に当てはまらないか確認する\n- 侵害の兆候が見つかったら、標準的なインシデント対応の手順に従う\n\n## まとめ\n\n- Citrix NetScaler ADC と Gateway の CVE-2026-88771 に対する新しい検出ルールが Block で追加された\n- WAF は防御の一層で、最新バージョンの適用が基本\n- 設定の確認と、兆候があったときのインシデント対応も忘れずに\n\nNetScaler を運用している人は、今すぐ確認してほしい情報だよ！\n",
+  "title_en": "Emergency WAF Rule Released for the Citrix NetScaler Vulnerability",
+  "summary_en": "Cloudflare released an emergency WAF detection rule, with a Block action, for CVE-2026-88771 in Citrix NetScaler ADC and Gateway.",
+  "body_md_en": "Hi, Shii-chan here! This is an urgent security update, so please read carefully!\n\n## What was announced?\n\nThe Cloudflare Changelog announced an emergency WAF release for 2026-10-01. It gives immediate defense against a vulnerability affecting Citrix NetScaler ADC and Gateway appliances.\n\n## Why it matters\n\nThe vulnerability is CVE-2026-88771. Improper input validation lets an unauthenticated attacker execute arbitrary commands. No authentication needed is what makes it scary.\n\n## Dive Deep\n\nThis is the rule that was added:\n\n- Ruleset: Cloudflare Managed Ruleset\n- Description: Citrix Netscaler ADC and Gateway - Improper input validation (CVE-2026-88771)\n- Action: Block\n- Comment: new detection\n\nCloudflare gives administrators this guidance:\n\n- Apply the latest versions to fully secure origin servers\n- Review configurations against the applicable preconditions\n- Follow standard incident response processes if signs of compromise are found\n\n## Wrap-up\n\n- A new detection rule with a Block action covers CVE-2026-88771 in Citrix NetScaler ADC and Gateway\n- A WAF is one layer, and applying the latest version is the basic fix\n- Don't forget to review your configuration and respond if you see signs of compromise\n\nIf you run NetScaler, please check this right away!\n",
+  "emotion": "confused",
+  "importance": 3,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-01-emergency-waf-release/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "WAF - WAF Release - 2026-10-01 - Emergency",
+  "tags": [
+    "cloudflare",
+    "security"
+  ],
+  "published_at": "2026-10-01T13:11:39+00:00"
+}
