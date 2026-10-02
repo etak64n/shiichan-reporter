@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-corretto-8-sept-2026-updates",
+  "title": "Amazon Corretto 8u504 がリリース！tzdata 2026d を含むパッチ更新",
+  "summary": "Amazon Corretto 8 の 9 月パッチ更新 8u504 がダウンロードできるようになったよ。tzdata 2026d の更新を含んでいるの。",
+  "body_md": "やっほー、しぃちゃんだよ！Java を使っているみんな向けの定期アップデートのお知らせだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、2026 年 9 月 30 日に Amazon Corretto 8 (LTS) のパッチ更新として 8u504 が公開されたと発表されたよ。Amazon Corretto は、無料で使えるマルチプラットフォームの OpenJDK ディストリビューションで、本番利用を想定したものなの。\n\n## なぜ重要なの？\n\nCorretto 8 のような LTS は、長く使われている環境が多いから、こうした定期パッチを追いかけることが運用では大事になるよ。\n\n## これで何が変わるの？\n\nこのパッチには tzdata 2026d の更新が含まれているよ。タイムゾーンのデータが新しくなるから、日時まわりを扱うアプリを動かしている人は確認しておくと安心だよ。\n\n## 深く潜ってみよう\n\n入手方法は 2 通りだよ。\n\n- Corretto のホームページからダウンロードする (Corretto 27、25、21、17、11、8 が並んでいる)\n- Linux では Corretto の Apt、Yum、Apk リポジトリを設定して更新を取得する\n\n発表では、これ以外の細かい変更内容は書かれていなかったよ。\n\n## まとめ\n\n- Corretto 8u504 が 2026 年 9 月 30 日に公開された\n- tzdata 2026d の更新を含む\n- ダウンロード、または Apt / Yum / Apk リポジトリで入手できる\n\nCorretto 8 を本番で使っているチームは、更新計画に入れておこうね！",
+  "title_en": "Amazon Corretto 8u504 is out, with tzdata 2026d!",
+  "summary_en": "The September patch update for Amazon Corretto 8, version 8u504, is available for download. It includes the tzdata 2026d updates.",
+  "body_md_en": "Hi everyone, Shii-chan here! Here's a routine update notice for all you Java folks!\n\n## What was announced?\n\nAccording to AWS What's New, on September 30, 2026 Amazon announced a patch update for Amazon Corretto 8 (LTS): Corretto 8u504. Amazon Corretto is a no-cost, multi-platform, production-ready distribution of OpenJDK.\n\n## Why it matters\n\nLTS versions like Corretto 8 run in many long-lived environments, so keeping up with regular patches matters for operations.\n\n## What changes\n\nThis patch includes the tzdata 2026d updates. If your apps deal with dates and times, it is worth checking.\n\n## Dive Deep\n\nThere are two ways to get it:\n\n- Download it from the Corretto home page (Corretto 27, 25, 21, 17, 11, and 8 are listed)\n- On Linux, configure a Corretto Apt, Yum, or Apk repo to get updates\n\nThe announcement does not list other changes.\n\n## Wrap-up\n\n- Corretto 8u504 was announced on September 30, 2026\n- It includes the tzdata 2026d updates\n- Available by download or via Apt, Yum, or Apk repos\n\nIf you run Corretto 8 in production, put this on your update plan!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-corretto-8-sept-2026-updates/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Corretto 8 September 2026 Patch Updates",
+  "tags": [
+    "aws",
+    "devops"
+  ],
+  "published_at": "2026-10-01T14:00:00+00:00"
+}

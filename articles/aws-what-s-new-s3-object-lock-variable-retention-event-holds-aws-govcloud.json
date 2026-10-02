@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-s3-object-lock-variable-retention-event-holds-aws-govcloud",
+  "title": "S3 Object Lock の可変保持とイベントホールドが GovCloud にも到着！",
+  "summary": "S3 Object Lock の「イベントホール付き可変保持」が AWS GovCloud (US-East) と (US-West) で使えるようになったよ！契約完了や監査完了などの出来事を起点に WORM 保護の期間を始められるの。",
+  "body_md": "こんにちは、しぃちゃんだよ！今日は S3 のコンプライアンス寄りのニュースを紹介するね！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon S3 Object Lock の「イベントホール付き可変保持」が AWS GovCloud (US-East) と AWS GovCloud (US-West) で使えるようになったと発表されたよ。\n\n## なぜ重要なの？\n\n規制の厳しい業界では「契約が終わってから 7 年保存」のように、保持期間の起点が将来の出来事で決まるデータがあるよね。この機能は、そういう要件に WORM (write-once-read-many) 保護で応えるためのものなの。\n\n## これで何が変わるの？\n\n- 契約の締結や監査の完了など、将来のイベントを起点に保持期間を始められる\n- イベントが起きるまではホールドで保護され、解除すると指定した期間だけ保持される\n- 必要以上に長くデータを持ち続けずに、イベント基準の保持要件を満たせる\n\nGovCloud を使っているチームも、同じやり方でイベント起点の保持ルールを組めるようになるよ！\n\n## 深く潜ってみよう\n\n使い方はこんな流れだよ。\n\n- オブジェクトに、保持期間つきのイベントホールドを置く\n- ホールドがある間、S3 がオブジェクトを保護する\n- ホールドを解除すると、S3 が指定した期間だけオブジェクトを保持する\n\nリーガルホールドは解除すると保護がすぐ終わるけど、イベントホールドは解除後も指定期間の WORM コンプライアンスが続くのが違いだよ。\n\nこの機能は、Cohasset Associates によって SEC Rule 17a-4(f)、FINRA Rule 4511、CFTC Regulation 1.31 が適用される環境での利用が評価されているよ。\n\n## まとめ\n\n- S3 Object Lock のイベントホール付き可変保持が GovCloud (US-East / US-West) で利用可能に\n- 将来のイベントを起点に保持期間を開始できる\n- リーガルホールドと違い、解除後も指定期間の保護が続く\n- SEC・FINRA・CFTC の規則に関する Cohasset Associates の評価済み\n\nGovCloud で金融系などの保持要件を扱うチームに刺さる更新だよ！",
+  "title_en": "S3 Object Lock variable retention with event holds arrives in AWS GovCloud!",
+  "summary_en": "S3 Object Lock variable retention with event holds is now available in AWS GovCloud (US-East) and (US-West). Retention can start from a future event like a contract closing or an audit completing.",
+  "body_md_en": "Hello everyone, Shii-chan here! Today's news is a compliance-focused one about S3!\n\n## What was announced?\n\nAccording to AWS What's New, Amazon S3 Object Lock support for variable retention with event holds is now available in AWS GovCloud (US-East) and AWS GovCloud (US-West).\n\n## Why it matters\n\nIn regulated industries, some data must be kept for a period that starts only after a future event, such as a contract closing or an audit completing. This feature gives that kind of data write-once-read-many (WORM) protection.\n\n## What changes\n\n- You can start a retention period from a future event\n- The object is protected while the hold is in place, and kept for your specified duration once you release it\n- You can meet event-based retention requirements without retaining data longer than your policy requires\n\nTeams in GovCloud can now set up event-based retention the same way.\n\n## Dive Deep\n\nHere is the flow:\n\n- Place an event hold with a retention duration on an object\n- S3 protects the object while the hold is in place\n- When you release the hold, S3 retains the object for the duration you specified\n\nUnlike legal holds, which end protection immediately when removed, event holds keep WORM compliance for the required period after the triggering event.\n\nThis capability has been assessed by Cohasset Associates for use in environments subject to SEC Rule 17a-4(f), FINRA Rule 4511, and CFTC Regulation 1.31.\n\n## Wrap-up\n\n- S3 Object Lock variable retention with event holds is available in GovCloud (US-East / US-West)\n- Retention can start from a future event\n- Unlike legal holds, protection continues for the set period after release\n- Assessed by Cohasset Associates for SEC, FINRA, and CFTC rules\n\nThis is a good fit for GovCloud teams handling financial-style retention requirements!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/s3-object-lock-variable-retention-event-holds-aws-govcloud/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon S3 Object Lock variable retention with event holds is now available in AWS GovCloud (US) Regions",
+  "tags": [
+    "aws",
+    "security",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-01T13:00:00+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-dynamodb-introduces-filtered-export",
+  "title": "DynamoDB のエクスポートに絞り込み機能！必要な項目と属性だけ S3 へ",
+  "summary": "Amazon DynamoDB の S3 エクスポートで、フィルタ付きエクスポートが使えるようになったよ。キー条件、フィルタ式、射影式で、出力するアイテムと属性を絞れるの。",
+  "body_md": "おつかれさま、しぃちゃんだよ！DynamoDB のエクスポートが、ぐっと使いやすくなったよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon DynamoDB がテーブルのフィルタ付きエクスポートに対応したと発表されたよ。\n\n## 今までどうだったの？\n\nS3 へのエクスポートは、分析やデータ共有などのオフライン用途のために、テーブル全体の full export か、時間範囲の incremental export でデータを出す機能だったよ。\n\n## これで何が変わるの？\n\nフィルタ付きエクスポートでは、どのアイテムとどの属性を出すかを指定できるから、用途に関係するデータだけのデータセットになるの。\n\n- 粒度の細かいデータ復旧\n- アカウント間でデータの一部だけを移動\n- コンプライアンスのルールを守りながらの分析\n\n## 深く潜ってみよう\n\n絞り込みに使うのは、この 3 つだよ。\n\n- キー属性に対するキー条件式\n- 任意の属性に対するフィルタ式\n- 含める属性を選ぶ射影式\n\nフィルタ付きエクスポートは、full export と incremental export のどちらでも使えるよ。\n\n利用できるのは、AWS GovCloud (US) リージョンを除くすべての AWS リージョンだよ。詳しくは DynamoDB デベロッパーガイドの「DynamoDB data export to Amazon S3」と「Filtering a table export」、それに紹介ブログ記事があるみたい！\n\n## まとめ\n\n- DynamoDB の S3 エクスポートでフィルタが使えるようになった\n- キー条件式、フィルタ式、射影式でアイテムと属性を絞れる\n- full export と incremental export の両方で使える\n- GovCloud (US) を除くすべてのリージョンで利用可能\n\nテーブルの一部だけを取り出して、復旧や分析に使いたい人に刺さるよ！",
+  "title_en": "DynamoDB export to S3 gets filtering: export only the items and attributes you need",
+  "summary_en": "Amazon DynamoDB now supports filtered export to S3. A key condition expression, a filter expression, and a projection expression let you choose which items and attributes to export.",
+  "body_md_en": "Hi everyone, Shii-chan here! DynamoDB export just got a lot more convenient!\n\n## What was announced?\n\nAccording to AWS What's New, Amazon DynamoDB now supports filtered export for tables.\n\n## The story so far\n\nExport to Amazon S3 lets you export table data for analytics, data sharing, and other offline uses, as either a full export or an incremental export over a time window.\n\n## What changes\n\nFiltered export lets you specify exactly which items and attributes to export, producing a dataset that contains only the data relevant to your use case.\n\n- Granular data recovery\n- Moving a slice of data between accounts\n- Running analytics while meeting your compliance rules\n\n## Dive Deep\n\nThree expressions control what gets exported:\n\n- A key condition expression on a key attribute\n- A filter expression on any attribute\n- A projection expression to choose which attributes to include\n\nFiltered export works with both full exports and incremental exports.\n\nIt is available in all AWS Regions except the AWS GovCloud (US) Regions. See \"DynamoDB data export to Amazon S3\" and \"Filtering a table export\" in the DynamoDB developer guide, plus the launch blog post.\n\n## Wrap-up\n\n- DynamoDB export to S3 now supports filtering\n- Narrow items and attributes with key condition, filter, and projection expressions\n- Works with full and incremental exports\n- Available in all Regions except GovCloud (US)\n\nThis is for anyone who wants to pull just part of a table for recovery or analytics!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-dynamodb-introduces-filtered-export/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon DynamoDB introduces filtered export to Amazon S3",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-01T17:00:00+00:00"
+}

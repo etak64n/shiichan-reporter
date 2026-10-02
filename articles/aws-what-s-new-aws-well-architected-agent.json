@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-well-architected-agent",
+  "title": "AWS Well-Architected Agent がプレビュー開始！IaC の修正案までお届け",
+  "summary": "AI を使った AWS Well-Architected Agent のプレビューが始まったよ。Trusted Advisor と Well-Architected Tool の次世代版で、コスト・セキュリティ・性能・信頼性を分析して改善案を出すの。",
+  "body_md": "やっほー、しぃちゃんだよ！AWS のアーキテクチャ改善に、AI エージェントが登場したよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Well-Architected Agent のプレビューが発表されたよ。AWS Trusted Advisor と AWS Well-Architected Tool の次世代版という位置づけの AI サービスなの。\n\nなお、同じ内容を AWS Blog でも詳しく紹介していて、そちらは別の記事で取り上げているよ。\n\n## 今までどうだったの？\n\n従来のツールは、チェックや診断が中心だったよね。今回のエージェントは、ビジネス目標に合わせて優先順位をつけた、文脈のある推奨事項まで出すのが違いだよ。\n\n## これで何が変わるの？\n\nエージェントは、コスト、セキュリティ、性能、信頼性の観点で AWS のインフラを分析して最適化するよ。\n\n- 重要なメトリクスとアプリケーションのトポロジーを、Well-Architected のベストプラクティスと自動で突き合わせる\n- Terraform、CDK、CloudFormation のテンプレートを分析して、自動化できる修正を出す\n- 推奨事項は、リソース、アプリケーション、アーキテクチャの各レベルで、影響と工数による優先順位がつく\n\n## 深く潜ってみよう\n\n例として、信頼性を重視するチームには、重要なデータベースにマルチ AZ フェイルオーバーを追加する推奨が届くよ。設定変更を自動化する SSM ランブックと、コストと性能への影響を見せるクロスピラー分析つきで、変更を確定する前に確認できるの。\n\n推奨事項には、状況に応じて次のものが付くよ。\n\n- SSM ランブック\n- 具体的な CLI スクリプト\n- ガイド付きのコンソール手順\n\nIaC のレビューもできて、Terraform、CloudFormation、CDK のテンプレートからギャップを見つけ、Well-Architected に沿うために必要なコード変更を返してくれるよ。\n\n## まとめ\n\n- AWS Well-Architected Agent がプレビューで登場\n- コスト・セキュリティ・性能・信頼性を、ビジネス目標に合わせて分析\n- 影響と工数で優先順位つけされた推奨事項\n- SSM ランブック、CLI スクリプト、IaC の修正案つき\n\nアーキテクチャのレビューを効率化したい SRE やクラウド担当の人に刺さるよ！",
+  "title_en": "AWS Well-Architected Agent is in preview, with IaC fixes included!",
+  "summary_en": "The preview of the AI-powered AWS Well-Architected Agent has started. As the next-gen evolution of Trusted Advisor and the Well-Architected Tool, it analyzes cost, security, performance, and reliability and suggests fixes.",
+  "body_md_en": "Hi everyone, Shii-chan here! An AI agent has arrived to help improve your AWS architecture!\n\n## What was announced?\n\nAWS What's New announced the preview of AWS Well-Architected Agent, an AI-powered service that is the next-gen evolution of AWS Trusted Advisor and the AWS Well-Architected Tool.\n\nThe AWS Blog covers the same launch in more detail, and I cover that in another article.\n\n## The story so far\n\nEarlier tools focused on checks and diagnostics. The agent goes further by delivering contextualized recommendations prioritized by your business goals.\n\n## What changes\n\nThe agent analyzes and optimizes AWS infrastructure across cost, security, performance, and reliability.\n\n- It automatically correlates key metrics and application topology against Well-Architected best practices\n- It analyzes Terraform, CDK, and CloudFormation templates to deliver automation-ready fixes\n- Recommendations are prioritized by impact and effort at the resource, application, and architecture levels\n\n## Dive Deep\n\nFor example, a team prioritizing reliability can receive a recommendation to add multi-AZ failover to a critical database. It comes with an SSM runbook that automates the change and a cross-pillar analysis of how it affects cost and performance before you commit.\n\nWhere applicable, recommendations come with:\n\n- SSM runbooks\n- Prescriptive CLI scripts\n- Guided console walkthroughs\n\nIt can also run automated reviews of Terraform, CloudFormation, or CDK templates, identify gaps, and return the IaC code changes needed to align with Well-Architected best practices.\n\n## Wrap-up\n\n- AWS Well-Architected Agent is in preview\n- Analyzes cost, security, performance, and reliability against your business goals\n- Recommendations are prioritized by impact and effort\n- Comes with SSM runbooks, CLI scripts, and IaC fixes\n\nThis is for SREs and cloud teams who want more efficient architecture reviews!",
+  "emotion": "energetic",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-well-architected-agent/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Well-Architected Agent is now available in preview",
+  "tags": [
+    "aws",
+    "ai",
+    "devops"
+  ],
+  "published_at": "2026-10-01T20:00:00+00:00"
+}

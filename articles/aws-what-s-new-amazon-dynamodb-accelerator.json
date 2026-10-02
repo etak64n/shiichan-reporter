@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-dynamodb-accelerator",
+  "title": "DynamoDB Accelerator (DAX) が一気に 17 リージョン追加！",
+  "summary": "Amazon DynamoDB Accelerator (DAX) が、アジア太平洋やヨーロッパ、GovCloud など 17 の AWS リージョンで新たに使えるようになったよ。",
+  "body_md": "みんな、しぃちゃんだよ！DynamoDB のキャッシュ DAX が、一気に使える場所を増やしたよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon DynamoDB Accelerator (DAX) が 17 の AWS リージョンに追加されたと発表されたよ。\n\n追加されたリージョンはこれだよ。\n\n- Asia Pacific (Hong Kong)\n- Asia Pacific (Hyderabad)\n- Asia Pacific (Jakarta)\n- Asia Pacific (Malaysia)\n- Asia Pacific (Melbourne)\n- Asia Pacific (New Zealand)\n- Asia Pacific (Osaka)\n- Asia Pacific (Seoul)\n- Asia Pacific (Taipei)\n- Asia Pacific (Thailand)\n- Canada West (Calgary)\n- Europe (Milan)\n- Europe (Zurich)\n- Israel (Tel Aviv)\n- Mexico (Central)\n- AWS GovCloud (US-East)\n- AWS GovCloud (US-West)\n\n## なぜ重要なの？\n\nDAX は DynamoDB 向けの、フルマネージドで高可用なインメモリキャッシュだよ。シングルデジットミリ秒からマイクロ秒への、最大 10 倍の性能向上を、毎秒数百万リクエストでも出せると説明されているの。\n\n## これで何が変わるの？\n\nこれらのリージョンのお客さんは、データレジデンシーや低レイテンシの要件を満たしながら、DAX を使えるようになるよ。\n\n- リアルタイム入札、ゲームのリーダーボード、小売の商品カタログのような、読み取りが多くて突発的な負荷を高速化できる\n- DynamoDB テーブルの読み取りトラフィックを肩代わりできる\n- 自前でキャッシュ基盤を管理しなくていい\n\n## 深く潜ってみよう\n\nDAX は DynamoDB と API 互換だから、最小限のコード変更でマイクロ秒レイテンシのキャッシュを追加できるよ。パッチ適用、フェイルオーバー、スケーリングといった運用も自動で管理されるの。\n\nリージョンの完全な一覧は、AWS の Capabilities by Region などのリソースで確認できるよ。\n\n## まとめ\n\n- DAX が 17 の AWS リージョンで新たに利用可能に\n- 最大 10 倍の性能向上で、マイクロ秒の読み取りを実現\n- DynamoDB と API 互換で、コード変更は最小限\n- 運用はフルマネージド\n\n追加リージョンで読み取りが多い DynamoDB を動かしている人に刺さるよ！",
+  "title_en": "DynamoDB Accelerator (DAX) lands in 17 more Regions!",
+  "summary_en": "Amazon DynamoDB Accelerator (DAX) is now available in 17 additional AWS Regions across Asia Pacific, Europe, GovCloud, and more.",
+  "body_md_en": "Hi everyone, Shii-chan here! The DynamoDB cache DAX just expanded to a lot more places!\n\n## What was announced?\n\nAccording to AWS What's New, Amazon DynamoDB Accelerator (DAX) is now available in 17 additional AWS Regions.\n\nThe new Regions are:\n\n- Asia Pacific (Hong Kong)\n- Asia Pacific (Hyderabad)\n- Asia Pacific (Jakarta)\n- Asia Pacific (Malaysia)\n- Asia Pacific (Melbourne)\n- Asia Pacific (New Zealand)\n- Asia Pacific (Osaka)\n- Asia Pacific (Seoul)\n- Asia Pacific (Taipei)\n- Asia Pacific (Thailand)\n- Canada West (Calgary)\n- Europe (Milan)\n- Europe (Zurich)\n- Israel (Tel Aviv)\n- Mexico (Central)\n- AWS GovCloud (US-East)\n- AWS GovCloud (US-West)\n\n## Why it matters\n\nDAX is a fully managed, highly available, in-memory cache for Amazon DynamoDB. It delivers up to 10 times performance improvement, from single-digit milliseconds to microseconds, even at millions of requests per second.\n\n## What changes\n\nCustomers in these Regions can now meet local data residency and low-latency requirements while using DAX.\n\n- Accelerate read-intensive and bursty workloads such as real-time bidding, gaming leaderboards, and retail product catalogs\n- Offload read traffic from your DynamoDB tables\n- No need to manage your own cache infrastructure\n\n## Dive Deep\n\nDAX is API-compatible with DynamoDB, so you can add microsecond-latency caching with minimal code changes. Operations such as patching, failover, and scaling are managed automatically.\n\nFor the full list of Regions, see resources such as AWS Capabilities by Region.\n\n## Wrap-up\n\n- DAX is now in 17 more AWS Regions\n- Up to 10x faster, with microsecond reads\n- API-compatible with DynamoDB, so code changes are minimal\n- Fully managed operations\n\nThis is for anyone running read-heavy DynamoDB workloads in the new Regions!",
+  "emotion": "energetic",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-dynamodb-accelerator/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon DynamoDB Accelerator (DAX) is now available in additional Regions",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-01T16:44:00+00:00"
+}

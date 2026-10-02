@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-aws-security-hub-runtime-monitoring",
+  "title": "GuardDuty Runtime Monitoring が Security Hub Threat Analytics プランに統合！",
+  "summary": "Amazon GuardDuty Runtime Monitoring が AWS Security Hub の Threat Analytics プランに含まれるようになったよ。Security Hub を有効にしていれば、Runtime Monitoring の別料金は発生せず、請求は Security Hub にまとまるの。",
+  "body_md": "みんな、しぃちゃんだよ！今日は料金まわりの整理のニュースだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon GuardDuty Runtime Monitoring が AWS Security Hub の Threat Analytics プランに含まれるようになったと発表されたよ。\n\nRuntime Monitoring は、OS、ネットワーク、ファイルのアクティビティを調べて、コンテナエスケープ、権限昇格、クリプトマイニングといった脅威を検出するものだよ。対象は、Amazon EC2 インスタンス、Amazon EKS クラスター、AWS Fargate 上の Amazon ECS タスクなの。\n\n## 今までどうだったの？\n\nこれまでは、Runtime Monitoring の利用料は GuardDuty の請求として別に出ていたよ。\n\n## これで何が変わるの？\n\n- アカウントとリージョンで Security Hub を有効にしていれば、その分の Runtime Monitoring の GuardDuty 料金は別に発生しない\n- 利用分は Security Hub の請求に表示される\n- EC2、EKS、Fargate 上の ECS をまたぐ、ひとつの使用量タイプとして計測される\n\n検出の範囲、検出結果のタイプ、GuardDuty のセキュリティエージェントはそのままで、再設定も必要ないよ。\n\n## 深く潜ってみよう\n\n注意点がいくつかあるよ。\n\n- Threat Analytics プランの無料トライアルは、Security Hub Essentials プランの無料トライアルとは別\n- この変更で、Runtime Monitoring に新しい無料トライアルが追加されるわけではない\n\n請求への影響は、AWS Cost Explorer か Security Hub の使用量ページで確認できるよ。\n\n## まとめ\n\n- GuardDuty Runtime Monitoring が Security Hub の Threat Analytics プランに含まれた\n- 有効化済みのアカウントとリージョンでは、別の GuardDuty 料金は不要\n- 請求は Security Hub にまとまり、再設定は不要\n- 無料トライアルは別で、新しい無料枠は付かない\n\nSecurity Hub と GuardDuty の請求を整理したい、セキュリティや FinOps の担当の人に刺さるよ！",
+  "title_en": "GuardDuty Runtime Monitoring is now part of the Security Hub Threat Analytics plan!",
+  "summary_en": "Amazon GuardDuty Runtime Monitoring is now included in the AWS Security Hub Threat Analytics plan. If Security Hub is enabled, there are no separate GuardDuty charges for it, and usage appears under Security Hub.",
+  "body_md_en": "Hi everyone, Shii-chan here! Today's news is about tidying up pricing!\n\n## What was announced?\n\nAccording to AWS What's New, Amazon GuardDuty Runtime Monitoring is now included in the AWS Security Hub Threat Analytics plan.\n\nRuntime Monitoring inspects operating system, network, and file activity to surface threats such as container escapes, privilege escalation, and cryptomining. It covers Amazon EC2 instances, Amazon EKS clusters, and Amazon ECS tasks on AWS Fargate.\n\n## The story so far\n\nPreviously, Runtime Monitoring usage was billed separately under GuardDuty.\n\n## What changes\n\n- If Security Hub is enabled in an account and Region, you no longer receive separate GuardDuty charges for Runtime Monitoring there\n- That usage now appears on your bill under AWS Security Hub\n- Security Hub meters it as a single usage type spanning EC2, EKS, and ECS on Fargate\n\nYour detection coverage, finding types, and GuardDuty security agents stay the same, and you do not need to reconfigure anything.\n\n## Dive Deep\n\nA few things to note:\n\n- The free trial for the Threat Analytics plan is separate from the free trial for the Security Hub Essentials plan\n- This change does not add a new free trial for Runtime Monitoring\n\nYou can see how the change affects your bill in AWS Cost Explorer or on the Security Hub usage page.\n\n## Wrap-up\n\n- GuardDuty Runtime Monitoring is included in the Security Hub Threat Analytics plan\n- No separate GuardDuty charges where Security Hub is enabled\n- Billing moves to Security Hub, and no reconfiguration is needed\n- Free trials are separate, and no new free trial is added\n\nThis is for security and FinOps folks who want to tidy up Security Hub and GuardDuty billing!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-security-hub-runtime-monitoring/",
+  "source_name": "AWS What's New",
+  "og_title": "GuardDuty Runtime Monitoring is now included in the AWS Security Hub Threat Analytics plan",
+  "tags": [
+    "aws",
+    "security"
+  ],
+  "published_at": "2026-10-02T03:35:00+00:00"
+}

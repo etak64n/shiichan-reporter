@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-redshift-cross-region-queries-for-data-lake",
+  "title": "Redshift が別リージョンの S3 データレイクを直接クエリ！通信は VPC 内で完結",
+  "summary": "Amazon Redshift が、別の AWS リージョンにある S3 データレイクのテーブルをクエリできるようになったよ。enhanced VPC routing で、S3 との通信を自分の VPC 内に収めることもできるの。",
+  "body_md": "こんにちは、しぃちゃんだよ！データ分析をしているみんなに嬉しいニュースだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Redshift が別の AWS リージョンにある Amazon S3 のデータレイクのテーブルをクエリできるようになったと発表されたよ。\n\nあわせて、enhanced VPC routing を使うと、データレイクのクエリのトラフィックが S3 と Redshift の間で自分の VPC 内に留まるようになったの。どちらも、RG プロビジョニングクラスターと Serverless のコンピュート上で直接動く、統合データレイククエリエンジンの機能だよ。\n\n## なぜ重要なの？\n\nグローバルに分散したデータを持つ企業や、データの通り道を厳密に管理したいセキュリティ重視のお客さんに向けた機能なの。\n\n## これで何が変わるの？\n\n- 別リージョンの S3 データを、先にコピーやレプリケーションをせずに直接クエリできる\n- グローバルな分析やリージョンをまたいだレポートの統合がやりやすい\n- 居住性の要件で特定のリージョンに置く必要があるデータも、そのままクエリできる\n\n## 深く潜ってみよう\n\nクエリエンジンはクラスターのコンピュートで動くから、enhanced VPC routing を使うと、S3 と Redshift の間のデータはすべて VPC を通り、公衆ネットワークを通らないよ。金融、医療、政府のような規制業界では、コンプライアンス上のネットワーク境界を守る助けになるって説明されているの。\n\n注意点として、リージョンをまたぐクエリには、標準のデータ転送料金がかかるよ。\n\n提供範囲は、RG プロビジョニングクラスターと Serverless クラスターが使えるすべてのリージョンだよ。\n\n## まとめ\n\n- Redshift が別リージョンの S3 データレイクのテーブルをクエリ可能に\n- enhanced VPC routing で、S3 との通信が VPC 内に収まる\n- リージョンをまたぐクエリには標準のデータ転送料金がかかる\n- RG プロビジョニングと Serverless が使えるすべてのリージョンで利用可能\n\nデータを複数リージョンに持つ分析担当や、規制業界の人に刺さるよ！",
+  "title_en": "Redshift can query S3 data lakes in other Regions, with traffic kept in your VPC!",
+  "summary_en": "Amazon Redshift can now query Amazon S3 data lake tables in a different AWS Region. With enhanced VPC routing, traffic between S3 and Redshift stays within your own VPC.",
+  "body_md_en": "Hello everyone, Shii-chan here! Here's good news for anyone doing data analytics!\n\n## What was announced?\n\nAccording to AWS What's New, Amazon Redshift now supports querying Amazon S3 data lake tables located in a different AWS Region.\n\nAlso, with enhanced VPC routing, data lake query traffic between Amazon S3 and Amazon Redshift stays within your own VPC. Both capabilities are powered by the integrated data lake query engine that runs directly on the compute of RG provisioned and Serverless clusters.\n\n## Why it matters\n\nThese features are aimed at enterprises with globally distributed data and at security-sensitive customers who need tight control over how their data travels.\n\n## What changes\n\n- Query S3 data in another Region directly, without first copying or replicating it\n- Easier global analytics and reporting consolidated across Regions\n- Query data that must remain in a specific Region for residency requirements\n\n## Dive Deep\n\nBecause the query engine runs on your cluster's compute, data moving between S3 and Redshift flows entirely over your VPC when you use enhanced VPC routing, never over public networks. Regulated industries such as financial services, healthcare, and government benefit because it keeps queries within the network boundaries their compliance requires.\n\nNote that cross-Region queries incur standard data transfer charges.\n\nBoth capabilities are available in all Regions where RG provisioned and Serverless clusters are available.\n\n## Wrap-up\n\n- Redshift can query S3 data lake tables in other Regions\n- Enhanced VPC routing keeps S3 traffic inside your VPC\n- Cross-Region queries incur standard data transfer charges\n- Available wherever RG provisioned and Serverless clusters are\n\nThis is for analysts with data across Regions and for regulated industries!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/redshift-cross-Region-queries-for-data-lake",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Redshift now supports cross-Region queries for your data lake",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "security"
+  ],
+  "published_at": "2026-10-01T18:41:00+00:00"
+}

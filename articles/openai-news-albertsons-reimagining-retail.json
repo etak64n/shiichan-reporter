@@ -1,0 +1,20 @@
+{
+  "slug": "openai-news-albertsons-reimagining-retail",
+  "title": "夕食の相談からチェックアウトまで！Safeway が ChatGPT に登場",
+  "summary": "Albertsons Cos. が ChatGPT Enterprise と OpenAI API を活用していて、ChatGPT 内で買い物ができる Safeway の体験も発表されたよ。",
+  "body_md": "こんにちは、しぃちゃんだよ！今日は OpenAI の News から、小売の事例を紹介するね！\n\n## なにが発表されたの？\n\nOpenAI の News で、Albertsons Cos. の取り組みが紹介されたよ。Albertsons、Safeway、Vons、Jewel-Osco、Shaw's、ACME、Tom Thumb などのブランドで 2,200 店舗以上を持ち、毎週 3,600 万人以上のお客さんが利用する会社なの。\n\nこの事例は、導入事例系の読み物だよ。\n\n## なぜ重要なの？\n\n小売は小さな判断を大規模に積み重ねる仕事で、どの商品をプロモーションするか、従業員をどう助けるか、といった判断が数多くあるよ。そこに AI を入れる実例として紹介されているの。\n\n## これで何が変わるの？\n\n- 新しい Safeway の体験が ChatGPT 内にできて、夕食のアイデアからチェックアウトまで進められる\n- レシピ、写真、デジタルリスト、簡単な依頼から始められる\n- ChatGPT が関連商品や割引を表示し、カートの作成を助け、Safeway でのチェックアウトに案内する\n\n例として「4 人分のピザナイトを計画して」「デリで手軽な夕食を用意して」といった依頼が挙げられているよ。\n\n## 深く潜ってみよう\n\n社内では、選ばれたチームが ChatGPT Enterprise などを使って、仕事の進め方を見直しているよ。まず限られた領域で試して、うまくいく方法を見極めてから広げる進め方だそうだよ。\n\nOpenAI API では、予測モデルと生成 AI を組み合わせて、説明可能なデータ駆動のレコメンデーションやプロモーションの洞察を出して、マーチャントの判断を助けているよ。\n\nSafeway の体験は、今後 Albertsons、Vons、Jewel-Osco、Shaw's、ACME、Tom Thumb などの他ブランドにも広げる予定だよ。\n\n## まとめ\n\n- Albertsons Cos. は ChatGPT Enterprise と OpenAI API を活用中\n- Safeway の体験が ChatGPT 内に登場し、夕食の相談から購入まで進められる\n- 予測モデルと生成 AI で、説明可能なレコメンデーションを提供\n- Safeway 以外のブランドにも展開予定\n\n小売や EC で AI の使いどころを考えている人に刺さる事例だよ！",
+  "title_en": "From dinner ideas to checkout! Safeway comes to ChatGPT",
+  "summary_en": "Albertsons Cos. uses ChatGPT Enterprise and the OpenAI API, and a new Safeway experience in ChatGPT lets shoppers go from a dinner idea to checkout.",
+  "body_md_en": "Hello everyone, Shii-chan here! Today I'm sharing a retail story from OpenAI News!\n\n## What was announced?\n\nOpenAI News featured Albertsons Cos., which runs more than 2,200 stores under brands including Albertsons, Safeway, Vons, Jewel-Osco, Shaw's, ACME, and Tom Thumb, serving over 36 million customers each week.\n\nThis is a customer story.\n\n## Why it matters\n\nRetail runs on small decisions made at enormous scale, such as which products to promote and how to help an associate. This shows how AI is brought into that work.\n\n## What changes\n\n- A new Safeway experience in ChatGPT lets shoppers go from a dinner idea to checkout\n- Shoppers can start with a recipe, photo, digital list, or simple request\n- ChatGPT surfaces relevant products and savings, helps build a cart, and sends customers to Safeway to check out\n\nExample requests include \"Plan pizza night for four\" and \"Put together a quick dinner from the deli\".\n\n## Dive Deep\n\nInside the company, select teams use ChatGPT Enterprise and other tools to streamline work. They start with focused areas to see what works before scaling.\n\nWith the OpenAI API, Albertsons combines predictive models with generative AI to deliver explainable, data-driven recommendations and promotional insights that help merchants decide.\n\nThe Safeway experience is planned to expand to other brands, including Albertsons, Vons, Jewel-Osco, Shaw's, ACME, and Tom Thumb.\n\n## Wrap-up\n\n- Albertsons Cos. uses ChatGPT Enterprise and the OpenAI API\n- A Safeway experience in ChatGPT covers dinner planning through checkout\n- Predictive models plus generative AI give explainable recommendations\n- It is planned to expand beyond Safeway\n\nA good read if you are thinking about where AI fits in retail or e-commerce!",
+  "emotion": "happy",
+  "importance": 1,
+  "source_url": "https://openai.com/index/albertsons-reimagining-retail",
+  "source_name": "OpenAI News",
+  "og_title": "How Albertsons Companies is reimagining retail from the inside out",
+  "tags": [
+    "openai",
+    "ai",
+    "business"
+  ],
+  "published_at": "2026-10-01T16:00:00+00:00"
+}

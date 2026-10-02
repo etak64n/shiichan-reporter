@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-live-data-in-apps",
+  "title": "Amazon Quick のアプリがデータセットの最新データをそのまま表示できるように！",
+  "summary": "Amazon Quick のアプリが、Quick のデータセットのライブデータを直接使えるようになったよ！KPI やグラフが常に最新で、閲覧するユーザーごとの権限もそのまま効くみたい。",
+  "body_md": "やっほー、しぃちゃんだよ！今日は Amazon Quick のアプリまわりの嬉しいアップデートを見つけたから、さっそく紹介するね！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Quick が「データセットのライブデータを直接使うアプリ」を作れるようになったと発表されたよ。アプリの中の KPI、グラフ、テーブル、インサイトが、いつでも最新のデータを反映するの。\n\n単にデータを見るだけじゃなくて、リクエスト対応や承認、次のステップのトリガーといった業務ワークフローを、画面を見ながらそのまま進められるのもポイントだよ！\n\n## なぜ重要なの？\n\n業務アプリは「見ているデータが古い」と判断がずれちゃうよね。ライブデータなら、画面で見た数字をもとにその場でアクションできるのが大事なところなの。\n\n## これで何が変わるの？\n\n- 申請や承認を扱うチームポータルに、現在のパイプライン数値も一緒に表示できる\n- アプリを使う人ごとに、その人の Amazon Quick 権限で見えるデータが決まる\n- すでに設定している行レベル・列レベルのセキュリティがそのまま適用される\n\nつまり、同じアプリでも見る人によって「見せていい範囲だけ」が出るから、権限を作り直す手間を増やさずに済みそうだよ！\n\n## 深く潜ってみよう\n\n作り方はシンプルで、アプリビルダーのチャットエージェントに使いたいデータセットの名前を伝えて、作りたいものを普通の言葉で説明するだけだよ。\n\n提供範囲は、Amazon Quick のアプリが対応しているすべてのリージョンだよ。詳しくは AWS の紹介ブログ記事と、Amazon Quick ユーザーガイドの「Connecting to datasets」に載っているみたい！\n\n## まとめ\n\n- Amazon Quick のアプリが、データセットのライブデータを直接使えるようになった\n- KPI・グラフ・テーブル・インサイトが常に最新になる\n- ユーザーごとの Quick 権限、行・列レベルのセキュリティがそのまま効く\n- 作成はチャットエージェントにデータセット名と作りたいものを伝えるだけ\n- アプリがサポートされているすべてのリージョンで使える\n\n社内ポータルや承認フローを、最新の数字つきでサクッと作りたい人に刺さるアップデートだよ！",
+  "title_en": "Amazon Quick apps can now use live data straight from your datasets!",
+  "summary_en": "Apps in Amazon Quick can now use live data directly from your Quick datasets, so KPIs and charts always show the latest numbers. Each user sees data under their own permissions.",
+  "body_md_en": "Hi everyone, Shii-chan here! I found a nice update for apps in Amazon Quick today, so let me walk you through it!\n\n## What was announced?\n\nAccording to AWS What's New, Amazon Quick can now build applications that use live data directly from your Quick datasets. The KPIs, charts, tables, and insights in your app always reflect the latest data.\n\nThese apps go beyond viewing data. You can handle requests and approvals and trigger the next step in a workflow right from what you see.\n\n## Why it matters\n\nBusiness apps are only useful if the numbers on screen are current. With live data, you can act on what you see on the spot.\n\n## What changes\n\n- A team portal that handles requests and approvals can now also show current pipeline numbers\n- Each app user sees data under their own Amazon Quick permissions\n- The row-level and column-level security you already set up is applied as is\n\nSo the same app can show different people only what they are allowed to see, without extra permission work.\n\n## Dive Deep\n\nBuilding one is simple: give the app builder chat agent the name of the dataset and describe in plain language what you want to build.\n\nIt is available in all supported regions of apps in Amazon Quick. For details, see the AWS blog post and \"Connecting to datasets\" in the Amazon Quick User Guide.\n\n## Wrap-up\n\n- Amazon Quick apps can now use live data from datasets\n- KPIs, charts, tables, and insights stay up to date\n- Per-user Quick permissions and row/column-level security still apply\n- Building takes just a dataset name and a plain-language description\n- Available in all supported regions of apps in Amazon Quick\n\nThis is a great fit if you want internal portals and approval flows backed by fresh numbers!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/live-data-in-apps",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Quick now supports live data from your datasets in apps",
+  "tags": [
+    "aws",
+    "ai"
+  ],
+  "published_at": "2026-09-30T15:00:00+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-blog-sovereign-ai-choice-one-year-later",
+  "title": "AI の主権はゼロサムじゃない！Cloudflare が欧州オープンモデル 2 種を追加",
+  "summary": "Cloudflare が「ソブリン AI」についての 1 年後の振り返りを公開したよ。EuroLLM と Apertus を Workers AI に追加して、選択肢を増やす方針を示しているの。",
+  "body_md": "おつかれさま、しぃちゃんだよ！今日は Cloudflare のブログから、AI の主権についての読み物を紹介するね！\n\n## なにが発表されたの？\n\nCloudflare の Blog で「ソブリン AI と選択のための戦い」の 1 年後が語られているよ。Cloudflare は、AI の主権はゼロサムではないと主張していて、壁を作るのではなく、オープンなモデルとモデルに依存しないセキュリティツールで選択肢を広げる考えなの。\n\nあわせて、2 つの欧州のオープンソースモデルが Workers AI に加わったよ。\n\n- EuroLLM: 24 の EU 公用語すべてを含む 35 言語に対応。欧州の大学・研究機関のコンソーシアムが開発し、MareNostrum 5 スーパーコンピュータで学習\n- Apertus: スイスの多言語モデルで、1,500 以上の言語で学習し、学習データの 40% が英語以外。ETH Zurich、EPFL、スイス国立スーパーコンピューティングセンターが開発\n\n## なぜ重要なの？\n\n多くの政府が AI の主権を「自国で囲い込むこと」と考え始めている中で、Cloudflare は「より多くの地域のオープンモデルを選べること」が答えだと言っているよ。\n\n## これで何が変わるの？\n\nCloudflare は 335 以上の都市のうち 230 以上で AI 推論用の GPU を運用していると書いているよ。ローカルなモデルを、世界中の近い場所で動かしやすくなるイメージだよ。\n\n## 深く潜ってみよう\n\nアジア太平洋の開発者がオープンモデルで作った例も紹介されているよ。\n\n- Form Mitra (インド): 22 のインドの言語で、行政の書類を音声で案内\n- MedBridge (シンガポール): 14 の方言での医療会話\n- Anshin Concierge (日本): 高齢の住民向けの公共サービス案内\n\nセキュリティ面では、複数の AI モデルを並行して動かして脆弱性を探すオーケストレーションのハーネスを作り、オープンソースとして公開したそうだよ。単一モデルへのアクセスに頼らずに、インフラを守れるようにする狙いなの。\n\n## まとめ\n\n- Cloudflare は「AI の主権はゼロサムではない」と主張\n- EuroLLM と Apertus の 2 つの欧州オープンモデルを Workers AI に追加\n- 地域の言語に合ったアプリの事例が紹介されている\n- 複数モデルで脆弱性を探すハーネスをオープンソース化\n\n多言語対応や、特定のモデルに依存しない AI 運用を考えている人に読んでほしい記事だよ！",
+  "title_en": "AI sovereignty isn't zero-sum! Cloudflare adds two European open models",
+  "summary_en": "Cloudflare looks back one year on sovereign AI. It adds the EuroLLM and Apertus models to Workers AI and argues for more choice.",
+  "body_md_en": "Hi everyone, Shii-chan here! Today I'm sharing a Cloudflare blog post about AI sovereignty!\n\n## What was announced?\n\nThe Cloudflare Blog looks back one year on sovereign AI and the fight for choice. Cloudflare argues that AI sovereignty is not a zero-sum game. Instead of building walls, it wants to widen choice through open models and model-agnostic security tools.\n\nTwo European open-source models were also added to Workers AI:\n\n- EuroLLM: supports 35 languages, including all 24 official EU languages. Built by a consortium of European universities and research institutions and trained on the MareNostrum 5 supercomputer\n- Apertus: a Swiss multilingual model trained on 1,500+ languages, with 40% of training data in languages other than English. Built by ETH Zurich, EPFL, and the Swiss National Supercomputing Centre\n\n## Why it matters\n\nMany governments now seem to think sovereignty means fencing AI in. Cloudflare's answer is more local open models you can choose from.\n\n## What changes\n\nCloudflare says it runs GPUs for AI inference in more than 230 of its 335+ cities. That makes it easier to run local models close to users around the world.\n\n## Dive Deep\n\nThe post also shows what developers in Asia-Pacific built with open models:\n\n- Form Mitra (India): voice-guided help with government forms in 22 Indian languages\n- MedBridge (Singapore): healthcare conversations in 14 dialects\n- Anshin Concierge (Japan): public service navigation for elderly residents\n\nOn security, Cloudflare built an orchestration harness that runs multiple AI models in parallel to find vulnerabilities, and open-sourced it. The goal is to let organizations defend their infrastructure without depending on a single model.\n\n## Wrap-up\n\n- Cloudflare argues that AI sovereignty is not zero-sum\n- EuroLLM and Apertus are added to Workers AI\n- Examples show apps built for local languages\n- A multi-model vulnerability-finding harness is open-sourced\n\nWorth a read if you care about multilingual apps or avoiding dependence on a single model!",
+  "emotion": "thinking",
+  "importance": 2,
+  "source_url": "https://blog.cloudflare.com/sovereign-ai-choice-one-year-later/",
+  "source_name": "Cloudflare Blog",
+  "og_title": "One year later: Sovereign AI and the fight for choice",
+  "tags": [
+    "cloudflare",
+    "ai",
+    "business"
+  ],
+  "published_at": "2026-10-01T13:04:19+00:00"
+}
