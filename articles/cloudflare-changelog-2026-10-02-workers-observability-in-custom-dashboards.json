@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-10-02-workers-observability-in-custom-dashboards",
+  "title": "Workers のログとトレースを Custom Dashboards に！HTTP も WAF も 1 画面で見られるよ",
+  "summary": "Cloudflare の Custom Dashboards で、Workers Observability のログとトレース(OTel)をチャートにできるようになったよ！WAF や HTTP トラフィックと同じ画面に並べて、エラー急増の原因を探せるの。",
+  "body_md": "こんにちは、しぃちゃんだよ！今日は Workers を運用しているみんなに嬉しい、ダッシュボードの話だよ！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Custom Dashboards に **Workers Observability のデータ**でチャートを作れるようになったと発表されたよ！\n\n## これで何が変わるの？\n\nCloudflare のネットワーク側のデータと Workers のデータを、1 つのダッシュボードで見られるようになるよ。\n\nたとえば、こんな見方ができるの！\n\n- リクエスト量・WAF のブロック数・Worker のエラー率を同じ画面に並べる\n- 3 つとも同じ時間範囲で絞り込む\n- エラーの急増が、トラフィックの変化と重なっているか確かめる\n\n## 深く潜ってみよう\n\n追加された 2 つのデータセットはこれだよ。\n\n- Workers Observability — Logs\n- Workers Observability — Traces (OTel)\n\nチャートにできるのは、次のような項目だよ。\n\n- Worker の呼び出し回数\n- ログレベル\n- エラー\n- CPU 時間と実行時間(wall time)\n- span の数と所要時間\n\n対象は、アカウント内で Workers Logs または Workers Traces を有効にしている Worker すべてだよ。\n\nあわせて、Custom Dashboards はアカウントごとに最大 100 個まで作れるようになったよ！\n\n## まとめ\n\n- Custom Dashboards に Workers Observability の Logs と Traces (OTel) が追加\n- HTTP トラフィックやセキュリティイベントと同じビューで並べられる\n- Workers Logs か Workers Traces が有効な Worker が対象\n- ダッシュボードの上限は、アカウントあたり 100 個\n\nWorkers でアプリを動かして、障害の切り分けを 1 画面で済ませたいみんなに刺さるよ！\n",
+  "title_en": "Workers Observability Logs and Traces Now Work in Custom Dashboards!",
+  "summary_en": "Custom Dashboards can now chart Workers Observability logs and OTel traces. You can put them next to WAF and HTTP data to see whether error spikes line up with traffic changes.",
+  "body_md_en": "Hi there, it's Shii-chan! Today's news is a dashboard update for everyone running Workers!\n\n## What was announced?\n\nIn the Cloudflare Changelog, Cloudflare announced that you can now build Custom Dashboards charts from **Workers Observability data**.\n\n## What changes\n\nYou can see data from Cloudflare's network and from your Workers in one dashboard.\n\nFor example, you can:\n\n- Put request volume, WAF blocks, and Worker error rates on the same view\n- Filter all three by the same time range\n- Check whether a spike in errors lines up with a change in traffic\n\n## Dive Deep\n\nTwo new datasets were added.\n\n- Workers Observability — Logs\n- Workers Observability — Traces (OTel)\n\nYou can chart items such as:\n\n- Worker invocations\n- Log levels\n- Errors\n- CPU and wall time\n- Span counts and durations\n\nThe datasets are available for every Worker in your account that has Workers Logs or Workers Traces turned on.\n\nCustom Dashboards also now allow up to 100 dashboards for every account!\n\n## Wrap-up\n\n- Custom Dashboards gain Workers Observability Logs and Traces (OTel) datasets\n- You can chart them next to HTTP traffic and security events\n- They cover Workers that have Workers Logs or Workers Traces turned on\n- The limit is 100 dashboards per account\n\nIf you run apps on Workers and want to triage problems on a single screen, this one is for you!\n",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-02-workers-observability-in-custom-dashboards/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Analytics - Workers Observability logs and traces in Custom Dashboards",
+  "tags": [
+    "cloudflare",
+    "serverless",
+    "devops"
+  ],
+  "published_at": "2026-10-02T12:30:22+00:00"
+}

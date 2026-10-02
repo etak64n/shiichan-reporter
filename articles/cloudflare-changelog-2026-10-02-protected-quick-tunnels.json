@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-10-02-protected-quick-tunnels",
+  "title": "Quick Tunnel をメール認証で守れるよ！cloudflared の --allowed-mail 登場",
+  "summary": "cloudflared の新しい --allowed-mail フラグで、Quick Tunnel にメールのワンタイム PIN 認証をかけられるようになったよ！許可した人だけにローカルのサービスを見せられるの。",
+  "body_md": "みんな、しぃちゃんだよ！今日はローカルで動かしているものを、こっそり安全に見せられる新機能の話だよ！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Cloudflare Tunnel の Quick Tunnel にアクセス制限をかけられるようになったと発表されたよ！\n\ncloudflared に新しい `--allowed-mail` フラグが追加されて、訪問者はメールに届くワンタイム PIN で認証しないと、ローカルのサービスに届かなくなるの。\n\n## 今までどうだったの？\n\nこれまでは、trycloudflare.com の URL を知っている人なら、誰でもその裏のサービスにアクセスできたよ。\n\nURL が漏れたら、開発中のサーバーが丸見えになってしまうのが不安だったよね。\n\n## これで何が変わるの？\n\n特定の人にだけ、ローカルの開発サーバー・Webhook の受け口・デモを共有できるようになるよ！\n\nしかも、Cloudflare のアカウントも、ドメインの設定もいらないの。\n\n## 深く潜ってみよう\n\n基本の使い方はこれだよ！\n\n```\ncloudflared tunnel --url http://localhost:8080 --allowed-mail alice@example.com\n```\n\n許可の指定方法は 3 通りだよ。\n\n- 単一のメールアドレス: `--allowed-mail alice@example.com`\n- 複数のメールアドレス: フラグを繰り返すか、カンマ区切りで指定する(`--allowed-mail 'alice@example.com,bob@example.com'`)\n- ドメイン内のすべてのアドレス: `--allowed-mail '*@example.com'`\n\n知っておきたいポイントはこれだよ。\n\n- 訪問者は Cloudflare アカウントを持っていなくてよい\n- cloudflared のプロセスを止めると、全員のアクセスが終了する\n- 使うには cloudflared を最新版に更新する\n\n## まとめ\n\n- Quick Tunnel を `--allowed-mail` でメール認証付きにできる\n- 単一・複数・ドメイン全体のメールを許可できる\n- 訪問者のアカウントも、ドメイン設定も不要\n- cloudflared を止めればアクセスも終わる\n\nローカルのデモや Webhook の確認を、特定の相手にだけ見せたいみんなに刺さるよ！\n",
+  "title_en": "Protect Quick Tunnels with Email Auth: Meet cloudflared --allowed-mail!",
+  "summary_en": "The new --allowed-mail flag in cloudflared lets you require a one-time PIN sent by email before anyone can reach a Quick Tunnel. You can share a local service with specific people only.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today's news is about sharing things running on your machine, safely!\n\n## What was announced?\n\nIn the Cloudflare Changelog, Cloudflare announced that you can now restrict who can access a Quick Tunnel in Cloudflare Tunnel.\n\nA new `--allowed-mail` flag in cloudflared requires visitors to authenticate with a one-time PIN sent to their email before they reach your local service.\n\n## The story so far\n\nUntil now, anyone with a trycloudflare.com URL could access the service behind it.\n\nIf the URL leaked, your development server was exposed, and that was worrying.\n\n## What changes\n\nYou can share a local development server, webhook receiver, or demo with specific people only!\n\nAnd you don't need a Cloudflare account or any domain configuration.\n\n## Dive Deep\n\nHere's the basic usage!\n\n```\ncloudflared tunnel --url http://localhost:8080 --allowed-mail alice@example.com\n```\n\nThere are three ways to specify who is allowed.\n\n- A single email address: `--allowed-mail alice@example.com`\n- Multiple email addresses, by repeating the flag or using a comma-separated list (`--allowed-mail 'alice@example.com,bob@example.com'`)\n- Every address on a domain: `--allowed-mail '*@example.com'`\n\nHere are the points to know.\n\n- Visitors don't need a Cloudflare account\n- Access ends for everyone when you stop the cloudflared process\n- To use it, update cloudflared to the latest version\n\n## Wrap-up\n\n- You can protect a Quick Tunnel with email authentication using `--allowed-mail`\n- You can allow a single address, multiple addresses, or a whole domain\n- Neither visitor accounts nor domain setup are needed\n- Stopping cloudflared ends all access\n\nIf you want to show a local demo or webhook receiver only to specific people, this one is for you!\n",
+  "emotion": "smug",
+  "importance": 5,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-02-protected-quick-tunnels/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Cloudflare Tunnel - Protect Quick Tunnels with email authentication",
+  "tags": [
+    "cloudflare",
+    "security",
+    "devops"
+  ],
+  "published_at": "2026-10-02T12:30:22+00:00"
+}
