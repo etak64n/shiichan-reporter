@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-mcp-server-six-additional-regions",
+  "title": "AWS MCP Server が一気に 6 リージョン増えて 8 リージョンに！東京もロンドンも対応",
+  "summary": "AWS MCP Server が新たに 6 つのリージョンで使えるようになったよ！東京・シンガポール・シドニー・アイルランド・ロンドン・オレゴンが加わって、低レイテンシーとデータレジデンシーに対応しやすくなったの！",
+  "body_md": "おつかれさま、しぃちゃんだよ！今日は AI コーディングエージェントと AWS をつなぐ AWS MCP Server のリージョン拡大だよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、**AWS MCP Server が追加の 6 リージョンで利用可能** になったと発表されたよ。\n\nAWS MCP Server は Agent Toolkit for AWS の一部で、マネージドな Model Context Protocol サーバーだよ。AI コーディングエージェントに AWS API への単一のインターフェースを提供して、サービスごとの連携を自前で作って保守しなくても、エージェントが AWS サービスを見つけて呼び出せるの。\n\n## これで何が変わるの？\n\n新しく加わったリージョンはこの 6 つだよ。\n\n- アジアパシフィック(シンガポール)\n- アジアパシフィック(シドニー)\n- アジアパシフィック(東京)\n- 欧州(アイルランド)\n- 欧州(ロンドン)\n- 米国西部(オレゴン)\n\nうれしいポイントは 2 つあるよ。\n\n- 開発者の近くで動かせるから、レイテンシーが下がる\n- リクエストデータをリージョン内にとどめて、データレジデンシー要件に対応しやすい\n\n原文の例では、ロンドンの開発チームが、別の地域を経由せずローカルのエンドポイントにコーディングエージェントを向けて、インフラのプロビジョニング、稼働中ワークロードの確認、障害のデバッグができるよ、と説明されているよ。\n\n## 深く潜ってみよう\n\nポイントは、**AWS MCP Server 自体が動くリージョン** と **アクセスできるサービスの範囲** が別ということだよ。AWS MCP Server は、すべての商用 AWS リージョンのサービスにアクセスできるの。\n\nAWS MCP Server が動くリージョンは、合計で次の 8 つになったよ。\n\n- 米国東部(バージニア北部)\n- 米国西部(オレゴン)\n- アジアパシフィック(シンガポール)\n- アジアパシフィック(シドニー)\n- アジアパシフィック(東京)\n- 欧州(フランクフルト)\n- 欧州(アイルランド)\n- 欧州(ロンドン)\n\nはじめ方は、ドキュメントの「Getting started with the AWS MCP Server」と「AWS MCP Server endpoints and quotas」を見てね！\n\n## まとめ\n\n- AWS MCP Server が 6 リージョン追加されて、合計 8 リージョンに\n- 近くで動かすことで低レイテンシー、リージョン内にデータをとどめられる\n- アクセスできるサービスは、すべての商用リージョン\n\nアジアや欧州でコーディングエージェントに AWS を触らせたいみんなに、うれしいお知らせだよ！",
+  "title_en": "AWS MCP Server Grows to 8 Regions, Now Including Tokyo and London",
+  "summary_en": "The AWS MCP Server is now available in six additional Regions: Singapore, Sydney, Tokyo, Ireland, London, and Oregon. That means lower latency and easier data residency compliance.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today the AWS MCP Server, which connects AI coding agents to AWS, expands to more Regions.\n\n## What was announced?\n\nAWS What's New announced that the **AWS MCP Server is available in six additional AWS Regions**.\n\nThe AWS MCP Server is part of the Agent Toolkit for AWS. It's a managed Model Context Protocol server that gives AI coding agents a single interface to AWS APIs, so agents can discover and call AWS services without you building and maintaining per-service integrations.\n\n## What changes\n\nThe six new Regions are:\n\n- Asia Pacific (Singapore)\n- Asia Pacific (Sydney)\n- Asia Pacific (Tokyo)\n- Europe (Ireland)\n- Europe (London)\n- US West (Oregon)\n\nTwo benefits stand out:\n\n- You can run it closer to your developers, with lower latency\n- Request data stays within the Region, which helps meet data residency requirements\n\nThe announcement's example: a development team in London can point its coding agents at a local endpoint to provision infrastructure, inspect running workloads, and debug failures without routing requests to another geography.\n\n## Dive Deep\n\nThe key point is that the **Region where the AWS MCP Server runs** and the **services it can reach** are separate things. The AWS MCP Server can access services in all commercial AWS Regions.\n\nThe Regions where it runs are now these eight:\n\n- US East (N. Virginia)\n- US West (Oregon)\n- Asia Pacific (Singapore)\n- Asia Pacific (Sydney)\n- Asia Pacific (Tokyo)\n- Europe (Frankfurt)\n- Europe (Ireland)\n- Europe (London)\n\nTo get started, see \"Getting started with the AWS MCP Server\" and \"AWS MCP Server endpoints and quotas\" in the docs.\n\n## Wrap-up\n\n- Six Regions added, eight in total\n- Running closer means lower latency, and data can stay in-Region\n- It can still access services in all commercial Regions\n\nGood news if you want coding agents to work with AWS from Asia or Europe!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-mcp-server-six-additional-regions/",
+  "source_name": "AWS What's New",
+  "og_title": "The AWS MCP Server is now available in six additional AWS Regions",
+  "tags": [
+    "aws",
+    "ai",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-02T08:00:00+00:00"
+}

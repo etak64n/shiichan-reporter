@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-blog-announcing-cloudflare-ohttp-gateway",
+  "title": "Cloudflare OHTTP Gateway が登場！ Privacy Gateway は OHTTP Relay に改名だよ",
+  "summary": "セルフサーブの Cloudflare OHTTP Gateway がクローズドベータで始まるよ！あわせて従来の Privacy Gateway は Cloudflare OHTTP Relay に名前が変わったの！",
+  "body_md": "こんにちは、しぃちゃんだよ！今日はプライバシーを守る通信の新プロダクトのお話だよ！\n\n## なにが発表されたの？\n\nCloudflare の Blog で、セルフサーブの **Cloudflare OHTTP Gateway** のクローズドベータが発表されたよ。あわせて、これまでの Privacy Gateway を **Cloudflare OHTTP Relay** に改名して、2 つのプロダクトを区別しやすくしたんだって。\n\n## なぜ重要なの？\n\nOHTTP(Oblivious HTTP)は IETF の標準で、アプリのサーバーがユーザーの IP アドレスや TLS フィンガープリントを見ずにリクエストを受け取れる仕組みだよ。暗号化によって、平文が見えるのはクライアントとアプリサーバーだけで、リレーが見るのは暗号文の塊だけなの。\n\n大事なのは信頼の分離で、「クライアントが誰か」と「復号されたリクエストの中身」の両方を、1 つの当事者が見ることはないよ。\n\n## これで何が変わるの？\n\n2 つのプロダクトの違いはこうだよ。\n\n- OHTTP Relay(旧 Privacy Gateway): 暗号化されたリクエストをそのまま転送する。クライアントの識別情報は見えるけど、アプリサーバーからは隠す。Cloudflare の外にホストされているアプリ向け\n- OHTTP Gateway(新): リクエストを復号して、レスポンスを暗号化する。リクエストの中身は見えるけど、クライアントの識別情報は見えない。すでに Cloudflare の CDN や Workers 上にあるアプリ向け\n\nGateway は、リレーとサーバーの間の暗号処理を引き受けてくれるよ。\n\n## 深く潜ってみよう\n\nベータの詳細だよ。\n\n- 今秋、有料のアドオンとしてクローズドベータで提供\n- HPKE 鍵を自動で管理する\n- リレーの認証に Cloudflare Access と連携する\n- 参加はウェイトリストのフォームから(cloudflare.com/lp/privacy-edge/)\n\n試すには、OHTTP クライアントの実装、サードパーティのリレー(自分で作ってもよい)、そして Cloudflare の `pvcli` ツールでのテストが必要だよ。\n\n## まとめ\n\n- セルフサーブの OHTTP Gateway がクローズドベータで登場(有料アドオン)\n- Privacy Gateway は OHTTP Relay に改名\n- Gateway は Cloudflare 上のアプリ向け、Relay は外部ホストのアプリ向け\n\nユーザーのプライバシーを守る設計をしたいみんなに刺さるよ！",
+  "title_en": "Cloudflare OHTTP Gateway Arrives, and Privacy Gateway Is Now OHTTP Relay",
+  "summary_en": "A self-serve Cloudflare OHTTP Gateway is launching in closed beta, and the existing Privacy Gateway is renamed Cloudflare OHTTP Relay.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today is a new product for privacy-preserving communication.\n\n## What was announced?\n\nThe Cloudflare Blog announced the closed beta of a self-serve **Cloudflare OHTTP Gateway**. The existing Privacy Gateway is also renamed **Cloudflare OHTTP Relay**, to better distinguish the two products.\n\n## Why it matters\n\nOHTTP (Oblivious HTTP) is an IETF standard that lets app servers receive requests without seeing user IP addresses or TLS fingerprints. Thanks to encryption, only the client and app server can see plaintext, and the relay sees only ciphertext.\n\nThe key is separation of trust: no single party sees both who the client is and the decrypted request content.\n\n## What changes\n\nThe two products differ like this:\n\n- OHTTP Relay (formerly Privacy Gateway): blindly forwards encrypted requests. It sees client identifiers but hides them from app servers. Best for apps hosted outside Cloudflare\n- OHTTP Gateway (new): decrypts requests and encrypts responses. It sees request contents but not client identifiers. Best for apps already on Cloudflare's CDN or Workers\n\nThe Gateway handles the cryptographic work between the relay and your servers.\n\n## Dive Deep\n\nBeta details:\n\n- A closed beta this fall, as a paid add-on\n- It manages HPKE keys automatically\n- It integrates with Cloudflare Access for relay authentication\n- To join, fill in the waitlist form at cloudflare.com/lp/privacy-edge/\n\nTo get started you need an OHTTP client implementation, a third-party relay (you can build your own), and Cloudflare's `pvcli` tool for testing.\n\n## Wrap-up\n\n- A self-serve OHTTP Gateway enters closed beta as a paid add-on\n- Privacy Gateway is now OHTTP Relay\n- Gateway suits apps on Cloudflare; Relay suits apps hosted elsewhere\n\nA good one to watch if you design for user privacy!",
+  "emotion": "thinking",
+  "importance": 3,
+  "source_url": "https://blog.cloudflare.com/announcing-cloudflare-ohttp-gateway/",
+  "source_name": "Cloudflare Blog",
+  "og_title": "Announcing Cloudflare OHTTP Gateway – expanding access to Cloudflare’s privacy-preserving infrastructure",
+  "tags": [
+    "cloudflare",
+    "security",
+    "web"
+  ],
+  "published_at": "2026-10-02T13:00:00+00:00"
+}

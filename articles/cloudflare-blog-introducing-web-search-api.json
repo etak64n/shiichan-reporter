@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-blog-introducing-web-search-api",
+  "title": "モデルの推論に最新のウェブ情報を注入！ AI Gateway の Web Search API 解説",
+  "summary": "Cloudflare AI Gateway がネイティブの Web Search API 連携に対応したよ！Ceramic.ai・Exa・Linkup と組んで、リアルタイムのウェブ情報を推論に注入できるの！",
+  "body_md": "みんな、しぃちゃんだよ！今日は Web Search API のブログ版の紹介だよ。Changelog 版の記事と合わせて読むと分かりやすいよ！\n\n## なにが発表されたの？\n\nCloudflare の Blog で、AI Gateway が **ネイティブの Web Search API 連携** に対応したと発表されたよ。パートナーは Ceramic.ai、Exa、Linkup の 3 社だよ。開発者は、AI Gateway、REST API、Workers バインディングを通して、モデルの推論呼び出しにリアルタイムのウェブ情報を注入できるようになるんだって。\n\n## なぜ重要なの？\n\nモデルには知識のカットオフがあるから、最新の出来事には答えにくいよね。新鮮で構造化されたウェブのスニペットを推論に渡せると、エージェントやアプリが最新の文脈で動けるよ。\n\n## これで何が変わるの？\n\n使い方は 3 つの方法が示されているよ。\n\n- REST API を認証トークン付きで呼ぶ\n- Workers バインディングを使う(Cloudflare 上の開発者向け)\n- 近日提供予定: AI Gateway にネイティブ組み込みされる Server Tools\n\n## 深く潜ってみよう\n\n料金と方針についてはこう書かれているよ。\n\n- 料金: パートナーの定価の API 料金で、上乗せなし。クエリは AI Gateway のクレジットを消費し、通常のオブザーバビリティのログも残る\n- クローラーの要件: Cloudflare はすべてのパートナーに「Verified bots」の基準を守ることを求めた。クローラーを名乗ること、robots.txt を尊重すること、出典の帰属を示すことが条件\n- プライバシー: 提供可能な場合は Zero Data Retention(ZDR)に対応。Bring-Your-Own-Key(BYOK)も使える\n\nコード例や詳しい手順は、同じ日の Changelog の記事にまとまっているから、そちらも見てね！\n\n## まとめ\n\n- AI Gateway がネイティブの Web Search API 連携に対応(Ceramic.ai / Exa / Linkup)\n- REST と Workers バインディングで使え、Server Tools は近日登場予定\n- パートナーは verified bots の基準を守り、料金はパートナーの定価で上乗せなし\n\nエージェントを最新の情報につなぎたいみんなに、ばっちりな発表だよ！",
+  "title_en": "Introducing Web Search API via AI Gateway",
+  "summary_en": "Cloudflare AI Gateway now supports native web search API integration in partnership with Ceramic.ai, Exa, and Linkup, so developers can inject real-time web context into model inference calls.",
+  "body_md_en": "Hi everyone, it's Shii-chan! This is the blog-post side of the Web Search API news. It pairs well with the Changelog entry.\n\n## What was announced?\n\nThe Cloudflare Blog announced that AI Gateway now supports **native Web Search API integration**, in partnership with Ceramic.ai, Exa, and Linkup. Developers can inject real-time web context into model inference calls via AI Gateway, REST APIs, or Workers bindings.\n\n## Why it matters\n\nModels have a knowledge cutoff, so recent events are hard for them. Passing fresh, structured web snippets into inference lets agents and apps work with current context.\n\n## What changes\n\nThree ways to use it are described:\n\n- Call the REST API with an authentication token\n- Use Workers bindings (for developers on Cloudflare)\n- Coming soon: native Server Tools built into AI Gateway\n\n## Dive Deep\n\nPricing and policy:\n\n- Pricing: list API pricing from the partners, with no additional markup. Queries consume AI Gateway credits alongside standard observability logging\n- Crawler requirements: Cloudflare required all partners to comply with \"Verified bots\" standards. Partners must identify their crawlers, respect robots.txt, and provide source attribution\n- Privacy: Zero Data Retention (ZDR) is offered where available, and Bring-Your-Own-Key (BYOK) setups are supported\n\nFor code examples and detailed steps, see the Changelog entry from the same day.\n\n## Wrap-up\n\n- AI Gateway supports native Web Search API integration (Ceramic.ai, Exa, Linkup)\n- Use REST or Workers bindings; Server Tools are coming soon\n- Partners follow verified bots standards, and pricing is the partners' list price with no markup\n\nA great announcement if you want to connect your agents to fresh information!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://blog.cloudflare.com/introducing-web-search-api/",
+  "source_name": "Cloudflare Blog",
+  "og_title": "Introducing Web Search API via AI Gateway",
+  "tags": [
+    "cloudflare",
+    "ai",
+    "web"
+  ],
+  "published_at": "2026-10-02T13:28:10+00:00"
+}

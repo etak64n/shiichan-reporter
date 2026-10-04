@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-blog-network-performance-birthday-week-2026",
+  "title": "上位 1,000 ネットワークの 74 % で最速に！ Cloudflare の 2026 年ネットワーク性能アップデート",
+  "summary": "Cloudflare が、世界の上位 1,000 ネットワークのうち 74 % で最速のプロバイダーになったと報告したよ！4 月の 60 % から伸びていて、Challenge Pages のテレメトリで計測規模も広がったの！",
+  "body_md": "こんにちは、しぃちゃんだよ！今日は Birthday Week のネットワーク性能レポートだよ。数字の読み方も大事だから、計測方法も一緒に見ていくね！\n\n## なにが発表されたの？\n\nCloudflare の Blog で、2026 年のネットワーク性能アップデートが報告されたよ。Cloudflare は、世界の上位 1,000 ネットワークのうち **74 % で最速のプロバイダー** になったんだって(2026 年 8 月時点)。\n\n## なぜ重要なの？\n\nネットワークの速さは、ユーザー体験にそのまま響くよね。Cloudflare は、実ユーザーの環境での計測規模を広げつつ、プライバシーを保つ方法を取り入れたよ。\n\n## これで何が変わるの？\n\n前回からの変化はこうだよ。\n\n- 最速のネットワーク数の割合: 60 %(2026 年 4 月)から 74 %へ。14 ポイントの上昇で、150 のネットワークが追加された\n- 地理的な広がり: 最速となる国が 38 か国増えた\n\n## 深く潜ってみよう\n\n計測方法はこうなっているよ。\n\n- 主な指標: TCP ハンドシェイクが完了するまでの接続時間。25・50・75 パーセンタイルの加重平均であるトリミアンで評価する\n- データ源 1: Cloudflare ブランドのエラーページ(2021 年から)\n- データ源 2: 新しく加わった Challenge Pages。訪問者がセキュリティ確認の画面を見ている間に、小さな非インタラクティブの計測をバックグラウンドで実行する\n\n計測では、Cloudflare、Amazon CloudFront、Google、Fastly、Akamai などから軽いファイルを取得して、ユーザーの実際のネットワーク条件での完了時間を記録しているよ。Challenge Pages では Cloudflare Turnstile の技術を使うことで、プライバシーを保ちつつ、追加の操作なしに日常の利用の中でデータを集められるんだって。\n\nなお原文は、上位プロバイダーの差が 1〜2 ミリ秒しかないこともあって、データ量が増えるまでは外れ値で順位が動きやすい、とも述べているよ。\n\n## まとめ\n\n- 上位 1,000 ネットワークの 74 % で最速(4 月は 60 %)\n- 指標は TCP ハンドシェイク完了までの接続時間のトリミアン\n- Challenge Pages の計測で、プライバシーを保ちつつ規模を拡大\n\nCDN の性能比較の見方を知りたいみんなに刺さる読み物だよ！",
+  "title_en": "2026 Birthday Week: Network Performance Update",
+  "summary_en": "Cloudflare reports it is now the fastest provider across 74% of the top 1,000 global networks, up from 60% in April. Background telemetry from Challenge Pages expanded measurement scale while maintaining privacy.",
+  "body_md_en": "Hi everyone, it's Shii-chan! This is the Birthday Week network performance report. How the numbers are measured matters too, so we'll look at that.\n\n## What was announced?\n\nThe Cloudflare Blog reported its 2026 network performance update. Cloudflare is now the **fastest provider across 74% of the top 1,000 global networks** (as of August 2026).\n\n## Why it matters\n\nNetwork speed directly affects user experience. Cloudflare expanded its real-user measurement scale while keeping user privacy.\n\n## What changes\n\nCompared with last time:\n\n- Share of networks where Cloudflare is fastest: from 60% (April 2026) to 74%, a 14 percentage point gain across 150 additional networks\n- Geographic reach: 38 additional countries where Cloudflare ranks fastest\n\n## Dive Deep\n\nHow it's measured:\n\n- Primary metric: connection time, measured as TCP handshake completion, using the trimean (a weighted average of the 25th, 50th, and 75th percentiles)\n- Data source 1: Cloudflare-branded error pages (since 2021)\n- Data source 2: Challenge Pages, newly added, which run small, non-interactive measurements in the background while visitors see security verification screens\n\nThe system fetches lightweight files from several providers, including Cloudflare, Amazon CloudFront, Google, Fastly, and Akamai, and records completion times under users' actual network conditions. Challenge Pages use Cloudflare Turnstile technology, so data is collected during everyday interactions without extra user action, while maintaining privacy.\n\nThe post also notes that gaps between top providers are sometimes only 1-2 milliseconds, which makes rankings sensitive to outliers until data volume increases.\n\n## Wrap-up\n\n- Fastest across 74% of the top 1,000 networks (60% in April)\n- The metric is the trimean of TCP handshake connection time\n- Challenge Pages measurements expand scale while keeping privacy\n\nA nice read if you want to learn how CDN performance comparisons are made!",
+  "emotion": "energetic",
+  "importance": 2,
+  "source_url": "https://blog.cloudflare.com/network-performance-birthday-week-2026/",
+  "source_name": "Cloudflare Blog",
+  "og_title": "2026 Birthday week: network performance update",
+  "tags": [
+    "cloudflare",
+    "infrastructure",
+    "science"
+  ],
+  "published_at": "2026-10-02T13:00:00+00:00"
+}

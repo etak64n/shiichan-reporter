@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-blog-account-abuse-protection-dashboard",
+  "title": "アカウント悪用の糸口をたどれる！ Account Abuse Protection ダッシュボードが登場",
+  "summary": "Cloudflare の新しい Account Abuse Protection ダッシュボードは、エッジで作る Hashed User ID と状態を持つ分析で、アカウント悪用の調査とブロックを助けてくれるよ！Early Access で提供中なの！",
+  "body_md": "おつかれさま、しぃちゃんだよ！今日は不正ログインや不正登録の調査に使えるダッシュボードのお話だよ！\n\n## なにが発表されたの？\n\nCloudflare の Blog で、新しい **Account Abuse Protection ダッシュボード** が紹介されたよ。不正を行う人たちが AI を使って、状態を持たない(ステートレスな)セキュリティチェックをすり抜けようとしている、という背景があって、それに対して状態を持つ分析と、エッジで生成する Hashed User ID を使って、チームが悪用を調べてブロックできるようにするものなんだって。\n\n## これで何が変わるの？\n\nダッシュボードでは、調査を段階的に進められるよ。\n\n- 全体像: ログイン・登録の量、アカウント数、ユニーク IP、デバイス、地域や ASN の内訳\n- 絞り込み: ログイン失敗回数や、漏えいした認証情報との一致などの条件で対象を絞る\n- 個別アカウントの分析: イベント履歴、成功率、ネットワークやデバイスとの関連づけ\n- イベント追跡: 各ログイン・登録イベントのタイムスタンプ、Ray ID、緩和(mitigation)の記録\n\n## 深く潜ってみよう\n\n**Hashed User ID** は、顧客が渡す識別子(メール、ユーザー名、電話番号)を暗号学的にハッシュして、プライバシーに配慮したアカウントの目印にする仕組みだよ。この目印に、エッジで集めた行動・ネットワーク・デバイスのシグナルをためていくことで、生の個人情報を出さずに「そのアカウントのふだんの振る舞い」という文脈を作れるの。\n\n原文では、クレデンシャルスタッフィングの調査の流れが例になっているよ。異常を見つけて、リスクの高いアカウントを絞り込み、個別の詳細を見て、侵害された識別子を止める WAF ルールを入れる、という順番だね。\n\n提供状況と権限はこうだよ。\n\n- 現在は Early Access の顧客向け。Bot Management Enterprise の顧客は Early Access に申し込める\n- 新しいロールが 2 つ: 「Account Abuse Protection」(ダッシュボードへのアクセス)と「Account Abuse Protection PII」(機微なアカウント詳細の閲覧)\n\n## まとめ\n\n- アカウント悪用の調査用に、新しい Account Abuse Protection ダッシュボードが登場\n- Hashed User ID で、生の個人情報を出さずに行動の文脈をためられる\n- Early Access 中で、Bot Management Enterprise の顧客が申し込める\n\n不正ログインや不正登録と戦っている不正対策チームに刺さるよ！",
+  "title_en": "Follow the Thread: A New Dashboard to Investigate Account Abuse",
+  "summary_en": "Cloudflare's new Account Abuse Protection dashboard uses stateful analysis and edge-generated Hashed User IDs to help teams investigate and block account abuse. It's in Early Access.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today it's a dashboard for investigating fraudulent logins and signups.\n\n## What was announced?\n\nThe Cloudflare Blog introduced the new **Account Abuse Protection dashboard**. Fraudsters are increasingly using AI to bypass stateless security checks, so this uses stateful analysis and edge-generated Hashed User IDs to help teams investigate and block account abuse.\n\n## What changes\n\nThe dashboard supports a layered investigation:\n\n- Overview: login and signup volume, account counts, unique IPs, devices, and geographic and ASN breakdowns\n- Filtering: narrow down by criteria such as failed login counts and leaked credential matches\n- Individual account analysis: event histories, success rates, and network and device associations\n- Event tracking: timestamps, Ray IDs, and mitigation records for each login or signup event\n\n## Dive Deep\n\nA **Hashed User ID** is made by cryptographically hashing a customer-provided identifier (email, username, or phone) into a privacy-preserving anchor for the account. Behavioral, network, and device signals gathered at the edge accumulate on that anchor, giving context for the account's typical behavior without exposing raw PII.\n\nThe post walks through a credential stuffing investigation: spot anomalies, filter high-risk accounts, examine individual account details, and add WAF rules to block compromised identifiers.\n\nAvailability and access:\n\n- Currently available to Early Access customers; Bot Management Enterprise customers can sign up for Early Access\n- Two new roles: \"Account Abuse Protection\" (dashboard access) and \"Account Abuse Protection PII\" (viewing sensitive account details)\n\n## Wrap-up\n\n- A new Account Abuse Protection dashboard for investigating account abuse\n- Hashed User IDs build behavioral context without exposing raw PII\n- In Early Access, open to Bot Management Enterprise customers\n\nA good fit for fraud teams fighting fake logins and signups!",
+  "emotion": "thinking",
+  "importance": 2,
+  "source_url": "https://blog.cloudflare.com/account-abuse-protection-dashboard/",
+  "source_name": "Cloudflare Blog",
+  "og_title": "Follow the thread: a new dashboard to investigate account abuse",
+  "tags": [
+    "cloudflare",
+    "security",
+    "web"
+  ],
+  "published_at": "2026-10-02T13:00:00+00:00"
+}

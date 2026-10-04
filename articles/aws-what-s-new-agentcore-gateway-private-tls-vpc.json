@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-agentcore-gateway-private-tls-vpc",
+  "title": "ALB なしで VPC 内の自前サーバーへ直結！ AgentCore Gateway がプライベート CA に対応",
+  "summary": "Amazon Bedrock AgentCore Gateway が、プライベート CA で署名された TLS 証明書に対応したよ！MCP・OpenAPI・HTTP プロキシのターゲットに、間に ALB を挟まず VPC 内から安全につなげるの！",
+  "body_md": "こんにちは、しぃちゃんだよ！今日は AgentCore Gateway のセキュアな接続まわりのアップデートだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Bedrock AgentCore Gateway が **プライベート認証局(CA)で署名された TLS 証明書** に対応したと発表されたよ。\n\n対象は、MCP、OpenAPI、HTTP プロキシ(パススルー)の各ターゲットだよ。自分の組織のプライベート CA が発行した証明書を使うターゲットに、安全につなげるようになるの。\n\n## 今までどうだったの？\n\n原文によると、今回の機能で「間に Application Load Balancer を置かなくても」VPC 内のプライベートエンドポイントへネイティブに接続できるようになるよ。つまり、これまではプライベートなエンドポイントに届かせるために、中間の ALB が必要になる場面があったみたいだね。\n\n## これで何が変わるの？\n\n- プライベート CA の証明書を使った VPC 内のサーバーに、ゲートウェイから直接つなげる\n- 中間の ALB を用意・運用しなくて済む\n- 社内向けの MCP サーバーや API を、ゲートウェイ経由でエージェントに安全に公開しやすくなる\n\n## 深く潜ってみよう\n\n仕組みはこうなっているよ。\n\n- Amazon VPC Lattice で動くプライベートエンドポイントを使うゲートウェイターゲットに、プライベート CA 証明書を登録できる\n- ゲートウェイは、PEM 形式の CA 証明書を Amazon S3 または AWS Secrets Manager から取得する\n- 取得した証明書を、送信 TLS 接続の信頼の起点(トラストアンカー)として使う\n\n利用できるリージョンは、AgentCore Gateway と Amazon VPC Lattice の **両方** が使えるすべてのリージョンだよ。詳しい設定は AgentCore Developer Guide を見てね！\n\n## まとめ\n\n- AgentCore Gateway がプライベート CA 署名の TLS 証明書に対応\n- MCP / OpenAPI / HTTP プロキシの 3 種類のターゲットで使える\n- 証明書は S3 か Secrets Manager から取得、中間の ALB は不要\n\n社内のプライベート CA で運用している MCP サーバーや API を、エージェントにつなぎたいみんなに刺さるよ！",
+  "title_en": "Connect to Private VPC Servers Without an ALB: AgentCore Gateway Supports Private CAs",
+  "summary_en": "Amazon Bedrock AgentCore Gateway now supports TLS certificates signed by private certificate authorities on MCP, OpenAPI, and HTTP proxy targets, so you can connect to private VPC endpoints without an intermediate Application Load Balancer.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today's update is about secure connections in AgentCore Gateway.\n\n## What was announced?\n\nAWS What's New announced that Amazon Bedrock AgentCore Gateway now supports **TLS certificates signed by private certificate authorities (CAs)**.\n\nIt works on MCP, OpenAPI, and HTTP proxy (passthrough) targets, so you can connect securely to targets that use certificates issued by your own private CA.\n\n## The story so far\n\nAccording to the announcement, this feature lets you establish native connections to private endpoints in your VPC \"without requiring an intermediate Application Load Balancer.\" That suggests an ALB in the middle was needed in some setups before.\n\n## What changes\n\n- The gateway can connect directly to VPC servers that use private CA certificates\n- You don't need to set up and run an intermediate ALB\n- It's easier to expose internal MCP servers and APIs to agents through the gateway\n\n## Dive Deep\n\nHere's how it works:\n\n- You can register a private CA certificate with gateway targets that use private endpoints powered by Amazon VPC Lattice\n- The gateway fetches your PEM-encoded CA certificate from Amazon S3 or AWS Secrets Manager\n- It uses that certificate as the trust anchor for outbound TLS connections\n\nIt's available in all Regions where **both** AgentCore Gateway and Amazon VPC Lattice are available. See the AgentCore Developer Guide for configuration details.\n\n## Wrap-up\n\n- AgentCore Gateway supports TLS certificates signed by private CAs\n- It works for MCP, OpenAPI, and HTTP proxy targets\n- Certificates come from S3 or Secrets Manager, and no intermediate ALB is needed\n\nGreat if you run MCP servers or APIs behind a private CA and want agents to reach them!",
+  "emotion": "smug",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/agentcore-gateway-private-tls-vpc/",
+  "source_name": "AWS What's New",
+  "og_title": "AgentCore Gateway supports private TLS certificates for VPC endpoints",
+  "tags": [
+    "aws",
+    "ai",
+    "security"
+  ],
+  "published_at": "2026-10-02T08:00:00+00:00"
+}
