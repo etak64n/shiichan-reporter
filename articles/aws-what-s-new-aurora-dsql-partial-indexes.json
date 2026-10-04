@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-aurora-dsql-partial-indexes",
+  "title": "Aurora DSQL に部分インデックスが登場！WHERE 句でインデックスをスリムに",
+  "summary": "Amazon Aurora DSQL が部分インデックスに対応したよ。CREATE INDEX に WHERE 句を付けて条件に合う行だけを索引化でき、クエリ性能の向上とインデックスのストレージ削減につながるの！",
+  "body_md": "やっほー、しぃちゃんだよ！\n\nAurora DSQL で、インデックスを必要な行だけに絞れるようになったよ。これは嬉しいね！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Aurora DSQL が部分インデックス(partial index)に対応したと発表されたよ。テーブルの一部の行だけを対象にインデックスを作れて、条件に合う行だけを保存するの。\n\n## 今までどうだったの？\n\n元の発表には従来の仕様の説明はないよ。ただ、課題としてこんな状況が挙げられているの。\n\n- 少ない作業対象と、はるかに大きい履歴が同じテーブルにある(たとえば、何年分もの完了済み注文の中に、未処理の注文がある)\n\nこういうテーブルで全行を索引化すると、使わない履歴分までインデックスに入ってしまうよね。\n\n## これで何が変わるの？\n\n- インデックスが小さく保たれ、テーブルが育っても肥大化しにくい\n- 対象の行を狙うクエリは、読むデータが少なくなって性能が上がる\n- インデックスのストレージコストが下がる\n\n## 深く潜ってみよう\n\n使い方は、CREATE INDEX に WHERE 句を足すだけだよ。例として、未処理の注文だけを索引化するイメージはこんな感じ(テーブル名や列名は説明用の例だよ)。\n\n```sql\nCREATE INDEX ASYNC idx_open_orders\n  ON orders (customer_id)\n  WHERE status = 'open';\n```\n\nAurora DSQL は、フィルター条件がインデックスの条件の範囲内に収まるクエリで、この部分インデックスを使うよ。利用できるのは、Aurora DSQL が使えるすべての AWS リージョンだよ。詳しい構文は Aurora DSQL User Guide の CREATE INDEX を見てね。\n\n## まとめ\n\n- Aurora DSQL で CREATE INDEX に WHERE 句を付けた部分インデックスが使える\n- 小さな作業対象と大きな履歴が同居するテーブルで、性能とストレージの両方に効く\n- フィルターがインデックス条件の範囲内なら自動で使われる\n- Aurora DSQL の全リージョンで利用可能\n\n「未処理だけを高速に引きたい」テーブルを持っているみんなに、ぴったりの機能だよ！",
+  "title_en": "Aurora DSQL Adds Partial Indexes: Index Only the Rows You Need",
+  "summary_en": "Amazon Aurora DSQL now supports partial indexes. Add a WHERE clause to CREATE INDEX to index only qualifying rows, improving query performance and lowering index storage cost.",
+  "body_md_en": "Hi, it's Shii-chan!\n\nAurora DSQL lets you index only the rows you care about now. Nice!\n\n## What was announced?\n\nAWS What's New announced that Amazon Aurora DSQL supports partial indexes. You can build an index over a specific subset of a table, storing only qualifying rows.\n\n## The story so far\n\nThe announcement doesn't describe the previous behavior, but it points to a common situation:\n\n- A small working set sits alongside a much larger history in the same table, such as open orders among years of completed ones\n\nIndexing every row in such a table means the index also holds all that history you rarely query.\n\n## What changes\n\n- The index stays small as the table grows\n- Queries that target those rows read less data\n- Index storage cost goes down\n\n## Dive Deep\n\nYou add a WHERE clause to CREATE INDEX. Here is an illustrative example that indexes only open orders (table and column names are just for illustration):\n\n```sql\nCREATE INDEX ASYNC idx_open_orders\n  ON orders (customer_id)\n  WHERE status = 'open';\n```\n\nAurora DSQL uses a partial index for any query whose filter falls within the index's condition. It is available in all AWS Regions where Aurora DSQL is available. See CREATE INDEX in the Aurora DSQL User Guide for details.\n\n## Wrap-up\n\n- Partial indexes via a WHERE clause on CREATE INDEX in Aurora DSQL\n- Helps both performance and storage when a small working set lives next to a large history\n- Used automatically when the query filter falls within the index condition\n- Available in all Aurora DSQL Regions\n\nPerfect if you have a table where you mostly want fast access to the open rows!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aurora-dsql-partial-indexes/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Aurora DSQL now supports partial indexes",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-02T17:30:00+00:00"
+}

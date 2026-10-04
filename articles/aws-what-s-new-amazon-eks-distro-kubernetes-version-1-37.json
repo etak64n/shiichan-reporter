@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-eks-distro-kubernetes-version-1-37",
+  "title": "Amazon EKS が Kubernetes 1.37 に対応！HPA のゼロスケールも標準で有効に",
+  "summary": "Amazon EKS と EKS Distro が Kubernetes 1.37 をサポートしたよ。Metrics API と DRA のデバイス taint/toleration が GA、HPA の scale-to-zero はベータで標準有効になったの！",
+  "body_md": "おつかれさま、しぃちゃんだよ！\n\nEKS が Kubernetes 1.37 に対応したよ。今日からクラスターを作ったりアップグレードしたりできるの！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon EKS と Amazon EKS Distro が Kubernetes バージョン 1.37 をサポートしたと発表されたよ。\n\n- 新しい EKS クラスターを 1.37 で作成できる\n- 既存クラスターを 1.37 へアップグレードできる(EKS コンソール、eksctl、IaC ツールのいずれかで)\n- GovCloud (US) リージョンを含む、EKS が使えるすべての AWS リージョンで対応\n\n## これで何が変わるの？\n\nKubernetes 1.37 の主な改善点は次の3つだよ。\n\n- Metrics API が GA になり、metrics.k8s.io/v1 として提供される。Horizontal Pod Autoscaler と kubectl top が使う Pod とノードの CPU・メモリ使用量を返す\n- DRA(Dynamic Resource Allocation)のデバイス taint と toleration が GA になる。DRA ドライバーや管理者が GPU などのデバイスに taint を付けて、toleration がない限りスケジューラーに避けさせられる\n- HPA の scale-to-zero がベータになり、標準で有効になる。オブジェクトメトリクスや外部メトリクスを使うオートスケーラーで minReplicas: 0 を指定すると、アイドル時に Pod 0 個まで縮退し、需要が戻ると再び増やせる\n\n## 深く潜ってみよう\n\nscale-to-zero を使うときの条件を整理するね。\n\n- 対象は、オブジェクトメトリクスまたは外部メトリクスを使う HPA\n- minReplicas に 0 を指定する\n- ベータ機能で、標準で有効\n\n設定の例はこんな感じだよ。\n\n```yaml\nspec:\n  minReplicas: 0\n```\n\nアップグレード手順や利用できる Kubernetes バージョンの一覧は、EKS のドキュメントと Kubernetes のリリースノートを見てね。\n\n## まとめ\n\n- EKS と EKS Distro が Kubernetes 1.37 に対応(GovCloud を含む全リージョン)\n- Metrics API と DRA のデバイス taint/toleration が GA\n- HPA の scale-to-zero がベータで標準有効に\n\nGPU を使うワークロードを運用している人や、アイドル時のコストを減らしたい人に刺さるアップデートだよ！",
+  "title_en": "Amazon EKS Now Supports Kubernetes 1.37, with HPA Scale-to-Zero Enabled by Default",
+  "summary_en": "Amazon EKS and EKS Distro now support Kubernetes 1.37. The Metrics API and DRA device taints and tolerations graduate to GA, and HPA scale-to-zero is beta and on by default.",
+  "body_md_en": "Hi, it's Shii-chan!\n\nEKS now supports Kubernetes 1.37. You can create or upgrade clusters starting today!\n\n## What was announced?\n\nAWS What's New announced that Amazon EKS and Amazon EKS Distro support Kubernetes version 1.37.\n\n- You can create new EKS clusters on 1.37\n- You can upgrade existing clusters to 1.37 using the EKS console, eksctl, or an infrastructure-as-code tool\n- Supported in all AWS Regions where EKS is available, including AWS GovCloud (US)\n\n## What changes\n\nThe key improvements in Kubernetes 1.37 are:\n\n- The Metrics API graduates to GA as metrics.k8s.io/v1. It provides Pod and node CPU and memory usage for the Horizontal Pod Autoscaler and kubectl top\n- DRA (Dynamic Resource Allocation) device taints and tolerations graduate to GA. DRA drivers and administrators can taint devices such as GPUs so the scheduler avoids them unless tolerated\n- HPA scale-to-zero graduates to beta and is enabled by default. Autoscalers with minReplicas: 0 that use object or external metrics can scale workloads to zero Pods when idle and back up when demand returns\n\n## Dive Deep\n\nHere are the conditions for scale-to-zero:\n\n- The HPA uses object or external metrics\n- minReplicas is set to 0\n- It's a beta feature, enabled by default\n\nA configuration looks like this:\n\n```yaml\nspec:\n  minReplicas: 0\n```\n\nFor upgrade steps and the list of available Kubernetes versions, see the EKS documentation and the Kubernetes release notes.\n\n## Wrap-up\n\n- EKS and EKS Distro support Kubernetes 1.37 in all Regions, including GovCloud\n- The Metrics API and DRA device taints and tolerations are GA\n- HPA scale-to-zero is beta and on by default\n\nThis one is for anyone running GPU workloads or trying to cut idle costs!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-eks-distro-kubernetes-version-1-37",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon EKS and Amazon EKS Distro now support Kubernetes version 1.37",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "devops"
+  ],
+  "published_at": "2026-10-02T17:30:00+00:00"
+}

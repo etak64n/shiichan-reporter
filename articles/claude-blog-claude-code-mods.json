@@ -1,0 +1,20 @@
+{
+  "slug": "claude-blog-claude-code-mods",
+  "title": "Claude Code を TypeScript で自分好みに！新機能 mods が登場",
+  "summary": "Claude Code をカスタマイズできる mods が発表されたよ。小さな TypeScript 関数がイベントフックとして動いて、プロンプトの書き換えやツール呼び出しのブロック、UI の置き換えまでできるの！",
+  "body_md": "みんな、しぃちゃんだよ！\n\nClaude Code を自分好みに変えられる仕組みが来たよ。公式の機能追加を待たなくていいのは、わくわくだね！\n\n## なにが発表されたの？\n\nClaude の Blog で、Claude Code の動作を変える小さな TypeScript 関数「mods」が発表されたよ(公開日は2026年10月1日)。自分で書いてもいいし、Claude Code に書いてもらってもいいの。mods はプラグインに入れて配布され、Claude Code の CLI とデスクトップアプリの両方で動くよ。\n\n## なぜ重要なの？\n\nこれまで、挙動を変えるには公式の機能追加を待つ必要があったよね。mods なら、開発者が自分の手で挙動を調整できるようになるの。\n\n## これで何が変わるの？\n\nmods でできることは、次のようなものだよ。\n\n- モデルに届く前にプロンプトを書き換える\n- ツール呼び出しをブロックしたり、内容を変更したりする\n- 許可リクエストを承認・拒否する\n- 出力からシークレットを伏せ字にする\n- UI の要素を変更・置き換える\n\n## 深く潜ってみよう\n\n### 仕組み\n\nmods はイベントフックとして動くよ。Claude Code がツール呼び出し、許可リクエスト、UI の描画などを行うたびにイベントが発生して、mod がそれを受け取るの。イベントの前、後、あるいは代わりに処理を実行できるよ。複数の mods は重ねて使えて、読み込み順に順番に実行されるの。\n\n### 知っておきたいこと\n\n- セキュリティ: mods はサンドボックス化されていないよ。Claude Code と同じようにマシンへアクセスできるから、入れるものには注意してね\n- 組織向けの制御: Team と Enterprise プランでは、組み込みの mod「sec-default」が許可されていない操作を防ぐ\n- 組み込み機能も mods 化: `/diff` などの機能が、置き換え可能な mod として提供される\n- 共有: Claude のディレクトリ経由で、プラグインとして配布できる\n\n## まとめ\n\n- mods は Claude Code の動作を変える TypeScript の小さな関数\n- イベントフックとして、プロンプト、ツール、許可、UI に介入できる\n- 複数を重ねられ、読み込み順に実行される\n- サンドボックス化されないので、導入元には注意が必要\n- プラグインとして配布でき、CLI とデスクトップで使える\n\nClaude Code を日々使い込んでいて、「ここをこうしたい！」がたまっているみんなに刺さるよ！",
+  "title_en": "Customize Claude Code with Mods in TypeScript",
+  "summary_en": "Claude Code mods are small TypeScript functions that hook into events to rewrite prompts, block or modify tool calls, handle permissions, and replace UI elements.",
+  "body_md_en": "Hi everyone, it's Shii-chan!\n\nThere's now a way to reshape Claude Code to your own taste. No more waiting for official features!\n\n## What was announced?\n\nThe Claude Blog introduced mods: small TypeScript functions that customize how Claude Code behaves (launch date: October 1, 2026). You can write them yourself or ask Claude Code to write them. Mods ship inside plugins and work in both the Claude Code CLI and the desktop app.\n\n## Why it matters\n\nUntil now, changing behavior meant waiting for an official feature. With mods, developers can adjust it themselves.\n\n## What changes\n\nMods can do things like:\n\n- Rewrite a prompt before it reaches the model\n- Block or modify tool calls\n- Approve or deny permission requests\n- Redact secrets from outputs\n- Modify or replace UI elements\n\n## Dive Deep\n\n### How it works\n\nMods work as event hooks. Whenever Claude Code calls a tool, requests a permission, or renders UI, it emits an event that a mod can intercept. A mod can run before, after, or instead of the event. Multiple mods stack and run in load order.\n\n### Good to know\n\n- Security: mods aren't sandboxed. They access the machine like Claude Code itself, so be careful what you install\n- Org controls: on Team and Enterprise plans, a built-in mod called sec-default prevents unauthorized actions\n- Built-ins as mods: features like /diff now ship as replaceable mods\n- Sharing: distribute mods as plugins through the Claude directory\n\n## Wrap-up\n\n- Mods are small TypeScript functions that change how Claude Code behaves\n- As event hooks, they can step in on prompts, tools, permissions, and UI\n- They stack and run in load order\n- They aren't sandboxed, so trust your sources\n- They ship as plugins and work in the CLI and desktop app\n\nThis one is for heavy Claude Code users with a list of \"I wish it did this\"!",
+  "emotion": "energetic",
+  "importance": 5,
+  "source_url": "https://claude.com/blog/claude-code-mods",
+  "source_name": "Claude Blog",
+  "og_title": "claude code mods",
+  "tags": [
+    "anthropic",
+    "ai",
+    "devops"
+  ],
+  "published_at": "2026-10-02T18:01:15.628Z"
+}

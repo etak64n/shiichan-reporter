@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-health-introduces-version-catalog-software-lifecycle-management",
+  "title": "サポート終了に先回り！AWS Health のバージョンカタログが登場",
+  "summary": "AWS Health に、AWS サービスのソフトウェアバージョンのライフサイクル情報を一元化したバージョンカタログが登場したよ。RDS、EKS、Lambda などが対象で、AWS Health Dashboard から見られるの！",
+  "body_md": "こんにちは、しぃちゃんだよ！\n\nバージョンのサポート終了って、気づいたら目前だった、ということがあるよね。そんな「後手」を「先手」にしてくれる機能が来たよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Health のバージョンカタログ(version catalog)が発表されたよ。AWS サービス全体のソフトウェアバージョンについて、ライフサイクル情報を一か所にまとめたものなの。AWS Health Dashboard で見られるよ。\n\n## 今までどうだったの？\n\nAWS Health は、主要バージョンのサポート終了のマイルストーンについて、アカウントやリソースごとの Planned Lifecycle Event を、かなり前もって送ってくれていたよ。\n\nただ、これはアカウント固有の通知なんだね。サービス全体でどのバージョンがサポートされ、いつまでなのか、という全体像は別に調べる必要があったみたい。\n\n## これで何が変わるの？\n\nバージョンカタログは、サービス全体のサポート対象バージョンとそのタイムラインを見せてくれるの。\n\n- アカウント固有の Planned Lifecycle Event が届く前に、アップグレード計画を立てられる\n- ガバナンス用のルールを組める\n- サポート対象の新しいバージョンへ、早めに移行できる\n\nつまり、事後対応から先回りの管理に切り替えられるってことだね。\n\n## 深く潜ってみよう\n\n- 対象サービス: 開始時点では、Amazon RDS、Amazon EKS、AWS Lambda などの複数サービス。今後も追加される予定\n- 利用方法: AWS Health Dashboard から利用できる\n- API: AWS Health API は、Business Support Plus、Enterprise Support、または Unified Operations のお客様が使える。ライフサイクルデータを運用ワークフローに組み込めるよ\n- 提供範囲: すべての AWS 商用リージョン\n\n## まとめ\n\n- AWS サービスのバージョンのライフサイクル情報を一元化したバージョンカタログが登場\n- RDS、EKS、Lambda などが対象で、今後も増える\n- Dashboard で見られ、対象のサポートプランなら API で自動化にも使える\n- 全 AWS 商用リージョンで利用可能\n\nバージョン更新の計画や、end-of-support の管理を担当しているみんなに、特に刺さるよ！",
+  "title_en": "AWS Health Introduces the Version Catalog for Software Lifecycle Management",
+  "summary_en": "AWS Health's new version catalog centralizes lifecycle information for software versions across AWS services, including Amazon RDS, Amazon EKS, and AWS Lambda.",
+  "body_md_en": "Hello, it's Shii-chan!\n\nSometimes end of support is suddenly right around the corner. This feature helps you stay ahead of it!\n\n## What was announced?\n\nAWS What's New announced the AWS Health version catalog: a centralized source of lifecycle information for software versions across AWS services. It's available in the AWS Health Dashboard.\n\n## The story so far\n\nAWS Health already sent account and resource-specific Planned Lifecycle Events well in advance of major version end-of-support milestones.\n\nThose are account-specific notifications, though. A service-wide view of which versions are supported and until when had to be found separately.\n\n## What changes\n\nThe version catalog adds a service-wide view of supported versions and their timelines.\n\n- Build upgrade schedules before an account-specific Planned Lifecycle Event arrives\n- Set up governance controls\n- Move to newer supported versions early\n\nThat means moving from reactive to proactive management.\n\n## Dive Deep\n\n- Coverage: at launch, multiple services including Amazon RDS, Amazon EKS, and AWS Lambda, with more added over time\n- Access: the AWS Health Dashboard\n- API: customers on Business Support Plus, Enterprise Support, or Unified Operations can use the AWS Health API to integrate lifecycle data into operational workflows\n- Availability: all AWS Commercial Regions\n\n## Wrap-up\n\n- A version catalog centralizes lifecycle information for AWS service versions\n- RDS, EKS, and Lambda are covered, with more to come\n- View it in the Dashboard, and automate with the API on eligible support plans\n- Available in all AWS Commercial Regions\n\nThis one is especially for anyone who plans version upgrades and manages end of support!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-health-introduces-version-catalog-software-lifecycle-management",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Health introduces the version catalog for software lifecycle management",
+  "tags": [
+    "aws",
+    "devops",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-02T18:09:00+00:00"
+}

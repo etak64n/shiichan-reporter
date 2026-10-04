@@ -1,0 +1,20 @@
+{
+  "slug": "claude-blog-claude-for-government-is-now-generally-available",
+  "title": "Claude for Government が GA に！FedRAMP High 環境で座席課金なし",
+  "summary": "Claude for Government が連邦・州の機関向けに一般提供になったよ。FedRAMP High 認可の環境で動き、座席料金なしで、利用量に上限を設けて使えるの！",
+  "body_md": "やっほー、しぃちゃんだよ！\n\nClaude for Government が、ベータを卒業して一般提供になったよ。政府機関でも Claude が使いやすくなるね！\n\n## なにが発表されたの？\n\nClaude の Blog で、Claude for Government が連邦機関と州機関向けに一般提供(GA)になったと発表されたよ。2026年7月に始まったパブリックベータからの移行だよ。\n\n## なぜ重要なの？\n\n政府機関は、セキュリティ認可や監査、データの扱いに厳しい要件があるよね。今回の環境は FedRAMP High 認可を受けていて、そうした機関が Claude を使うための土台になるの。\n\n## これで何が変わるの？\n\n- 座席料金なし: 利用量に対して固定の増分で支払い、支出には厳格な上限(not-to-exceed)がある。具体的な金額や料金プランは発表には書かれていないよ\n- デスクトップ上のファイルを直接扱える\n- ソフトウェアの近代化やコーディング支援のため、Claude Code を利用できる\n\nメモの作成や RFP のレビューのような仕事には、Skills、Plugins、Projects といった機能が関連するみたい。\n\n## 深く潜ってみよう\n\n管理と監査まわりの要点はこちらだよ。\n\n- 部門レベルの管理者が、利用量の割り当て、モデルの上限、グループごとの支出を設定できる\n- 機関が自前の ID プロバイダーをつなぎ、SSO を使える。SCIM はセルフサービスで設定できる\n- 管理操作は記録され、Anthropic 側の機微な操作には2人の承認が必要\n- 会話履歴は機関が管理するデバイス上にローカルで残り、利用状況のエクスポートにはメータリングのデータだけが含まれる\n\nまた、Claude Code の CLI と Claude for Microsoft 365 も、同じ環境で早期アクセスとして展開中だよ。\n\n## まとめ\n\n- Claude for Government が連邦・州機関向けに GA\n- FedRAMP High 認可の環境で動く\n- 座席料金なし、利用量は上限つきの固定増分払い\n- 管理者による割り当て、SSO と SCIM、監査、ローカル保存の履歴を備える\n- Claude Code CLI と Claude for Microsoft 365 は早期アクセス中\n\n政府機関や、その導入を支援するみんなに、押さえてほしい発表だよ！",
+  "title_en": "Claude for Government Is Now Generally Available",
+  "summary_en": "Claude for Government is generally available for federal and state agencies, running in a FedRAMP High authorized environment with no seat fees and hard spending caps.",
+  "body_md_en": "Hi, it's Shii-chan!\n\nClaude for Government has graduated from beta to general availability. Government agencies get an easier way to use Claude!\n\n## What was announced?\n\nThe Claude Blog announced that Claude for Government is generally available for federal and state agencies, moving on from the public beta that began in July 2026.\n\n## Why it matters\n\nGovernment agencies have strict requirements for security authorization, auditing, and data handling. This environment is FedRAMP High authorized, giving agencies a foundation for using Claude.\n\n## What changes\n\n- No seat fees: agencies pay for usage in fixed increments with a hard not-to-exceed cap. The announcement gives no specific dollar amounts or tiers\n- Claude works directly with files on desktops\n- Claude Code is available for software modernization and coding help\n\nSkills, Plugins, and Projects are related features for tasks like memo creation and RFP reviews.\n\n## Dive Deep\n\nKey points on administration and auditing:\n\n- Department-level administrators can allocate usage, set model limits, and configure spending per group\n- Agencies connect their own identity providers for SSO, with self-serve SCIM setup\n- Administrative actions are recorded, and sensitive Anthropic operations require two-person approval\n- Conversation history stays local on agency-managed devices, and usage exports contain only metering data\n\nThe Claude Code CLI and Claude for Microsoft 365 are also rolling out in early access through the same environment.\n\n## Wrap-up\n\n- Claude for Government is GA for federal and state agencies\n- It runs in a FedRAMP High authorized environment\n- No seat fees; usage is paid in fixed increments with a hard cap\n- Admin allocation, SSO and SCIM, auditing, and local conversation history\n- Claude Code CLI and Claude for Microsoft 365 are in early access\n\nWorth knowing for government agencies and the people who help them adopt Claude!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://claude.com/blog/claude-for-government-is-now-generally-available",
+  "source_name": "Claude Blog",
+  "og_title": "claude for government is now generally available",
+  "tags": [
+    "anthropic",
+    "ai",
+    "security"
+  ],
+  "published_at": "2026-10-02T18:01:15.628Z"
+}
