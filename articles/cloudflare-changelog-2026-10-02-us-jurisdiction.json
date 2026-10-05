@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-10-02-us-jurisdiction",
+  "title": "D1 に US ジュリスディクションが登場！データを米国内にとどめられるよ",
+  "summary": "Cloudflare D1 で us ジュリスディクションを指定して、データベースの実行と保存を米国内に限定できるようになったよ！wrangler のオプション 1 つで作れるみたい！",
+  "body_md": "やっほー、しぃちゃんだよ！\n\n今日は Cloudflare D1 のうれしいアップデートを見つけたから、さっそく紹介するね！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、D1 データベースを `us` ジュリスディクションで作れるようになったことが発表されたよ！\n\nこのジュリスディクションを指定したデータベースは、米国内で実行され、データも米国内に保存されるんだって。リージョン単位のデータ所在地(データレジデンシー)の要件に使うための選択肢だよ！\n\n## なぜ重要なの？\n\n「データを特定の地域の外に出したくない」という要件は、サービスを作るうえでよく出てくるよね。\n\nD1 でそれを満たしたいとき、データの実行場所と保存場所を明示的に指定できる手段があると安心だよね。今回の `us` はその選択肢が増えた形なの！\n\n## これで何が変わるの？\n\n米国内でデータを扱う必要があるアプリを作る人が、D1 の作成時に `us` を指定するだけで、その要件に沿ったデータベースを用意できるようになるよ！\n\n## 深く潜ってみよう\n\n作り方はとってもシンプル！ wrangler で `--jurisdiction=us` を付けるだけだよ。\n\n```sh\nnpx wrangler@latest d1 create db-with-us-jurisdiction --jurisdiction=us\n```\n\n原文に書かれているのはここまでで、他のジュリスディクションの一覧や制限事項などの詳しい話は、原文が案内している「D1 data location」のドキュメントを見てね、という内容だったよ。\n\n## まとめ\n\n- D1 データベースを `us` ジュリスディクションで作れるようになったよ\n- 実行もデータの保存も米国内で行われるよ\n- 作成は `wrangler d1 create` に `--jurisdiction=us` を付けるだけ\n- 詳細は D1 のデータ所在地(data location)のドキュメントが参照先だよ\n\n米国内でのデータレジデンシー要件がある D1 ユーザーのみんなに刺さる更新だよ！",
+  "title_en": "D1 Now Has a US Jurisdiction: Keep Your Data Inside the United States!",
+  "summary_en": "Cloudflare D1 lets you create databases with the us jurisdiction, so they run and store data within the United States. One wrangler flag is all it takes!",
+  "body_md_en": "Hi, it's Shii-chan!\n\nI found a nice Cloudflare D1 update today, so let me share it with you!\n\n## What was announced?\n\nIn the Cloudflare Changelog, Cloudflare announced that you can now create D1 databases with the `us` jurisdiction.\n\nDatabases created with this jurisdiction run and persist data within the United States. It's an option for regional data residency requirements!\n\n## Why it matters\n\nMany projects need to keep data inside a specific region.\n\nHaving an explicit way to control where D1 runs and stores data helps with that, and `us` adds another choice to the list!\n\n## What changes\n\nIf you build apps that must handle data within the US, you can now pass `us` when creating a D1 database to get one that fits that requirement.\n\n## Dive Deep\n\nCreating one is simple. Just add `--jurisdiction=us` to the wrangler command.\n\n```sh\nnpx wrangler@latest d1 create db-with-us-jurisdiction --jurisdiction=us\n```\n\nThat's all the announcement says. For other jurisdictions and limitations, it points to the D1 data location documentation.\n\n## Wrap-up\n\n- You can create D1 databases with the `us` jurisdiction\n- They run and persist data within the United States\n- Add `--jurisdiction=us` to `wrangler d1 create`\n- The D1 data location docs have the details\n\nThis is great news for D1 users with US data residency requirements!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-02-us-jurisdiction/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "D1 - United States jurisdiction",
+  "tags": [
+    "cloudflare",
+    "serverless",
+    "security"
+  ],
+  "published_at": "2026-10-02T00:00:00+00:00"
+}
