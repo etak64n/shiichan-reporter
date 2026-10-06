@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-batch-job-cloudwatch-metrics",
+  "title": "AWS Batch のジョブ指標が CloudWatch に自動で届くよ！キュー状態も失敗率も見える",
+  "summary": "AWS Batch がジョブのメトリクスを Amazon CloudWatch に自動で発行するようになったよ！状態遷移の数と所要時間を AWS/Batch 名前空間で見られるの。",
+  "body_md": "みんな、しぃちゃんだよ！バッチ処理の「今どうなってるの？」がすぐ分かるようになるアップデートだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Batch がジョブのメトリクスを Amazon CloudWatch に発行するようになったと発表されたよ。バッチワークロードをネイティブに監視できて、ジョブキューの健全性、失敗率、ジョブの所要時間が見えるようになるの。\n\n## これで何が変わるの？\n\nジョブのライフサイクルを通じてメトリクスが出るので、キューの詰まりや失敗の増加に気づきやすくなるよ。見られる場所は次のとおり。\n\n- AWS Batch コンソール\n- Amazon CloudWatch コンソール\n- AWS CLI と AWS SDK\n\n## 深く潜ってみよう\n\nメトリクスの中身を整理するね。\n\n- 名前空間: `AWS/Batch`、ディメンションは `JobQueueName`\n- 状態遷移メトリクス: submitted、running、succeeded、failed などの状態に入ったジョブの数\n- 所要時間メトリクス: 状態間でかかった時間。たとえば submitted から runnable までの時間や、全体の実行時間\n- 提供リージョン: AWS Batch が利用できるすべてのリージョン\n\n発行は自動なので、設定は必要ないみたい。料金に関する記載は今回の内容にはなかったよ。\n\n## まとめ\n\n- AWS Batch のジョブメトリクスが CloudWatch に自動で発行される\n- 状態遷移の数と状態間の所要時間を、ジョブキュー単位で見られる\n- コンソール・CLI・SDK から参照できる\n- AWS Batch が使える全リージョンで利用可能\n\nバッチ処理のアラームやダッシュボードを整えたい運用担当さんに刺さるよ！",
+  "title_en": "AWS Batch Now Publishes Job Metrics to CloudWatch: Queue Health and Failure Rates at a Glance",
+  "summary_en": "AWS Batch now automatically publishes job metrics to Amazon CloudWatch. State transition counts and durations show up in the AWS/Batch namespace.",
+  "body_md_en": "Hi everyone, it's Shii-chan! This update makes it easy to answer \"what's going on with my batch jobs?\"\n\n## What was announced?\n\nAWS What's New announced that AWS Batch now publishes job metrics to Amazon CloudWatch. You get native observability for batch workloads, with visibility into job queue health, failure rates, and job durations.\n\n## What changes\n\nMetrics are emitted throughout the job lifecycle, making it easier to spot stuck queues or rising failures. You can view them in:\n\n- The AWS Batch console\n- The Amazon CloudWatch console\n- The AWS CLI and AWS SDKs\n\n## Dive Deep\n\nHere is what the metrics contain:\n\n- Namespace: `AWS/Batch`, with the `JobQueueName` dimension\n- State transition metrics: how many jobs entered a given state, such as submitted, running, succeeded, or failed\n- Duration metrics: how long jobs spent between states, such as submission to runnable or total execution time\n- Availability: all AWS Regions where AWS Batch is available\n\nPublishing is automatic, so no setup seems to be needed. The announcement does not mention pricing.\n\n## Wrap-up\n\n- AWS Batch job metrics are published to CloudWatch automatically\n- See state transition counts and durations between states per job queue\n- Available in the consoles, CLI, and SDKs\n- Available in all Regions where AWS Batch is available\n\nA good fit for operators who want alarms and dashboards for batch workloads!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-batch-job-cloudwatch-metrics/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Batch now publishes job metrics to Amazon CloudWatch",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "devops"
+  ],
+  "published_at": "2026-10-06T17:30:00+00:00"
+}

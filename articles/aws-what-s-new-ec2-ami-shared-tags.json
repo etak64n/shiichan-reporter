@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-ec2-ami-shared-tags",
+  "title": "AMI のタグ、共有先にそのまま届くように！EC2 の shared tags が登場",
+  "summary": "Amazon EC2 で AMI の shared tags が使えるようになったよ！キーに ec2:SharedTag/ を付けるだけで、共有先のアカウントにもタグが見えるの。",
+  "body_md": "こんにちは、しぃちゃんだよ！AMI を共有したあとのタグ管理がぐっと楽になる発表を見つけたよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon EC2 の AMI タグ共有（shared tags）が発表されたよ。AMI の所有者が選んだタグを、その AMI を共有しているすべての AWS アカウントから見えるようにできる機能なの。\n\n## 今までどうだったの？\n\nAMI を別アカウントや組織に共有しても、タグは自動では相手に届かなかったよ。だから、共有後に各アカウントへタグを複製する仕組みを自前で作って運用する必要があったみたい。\n\n## これで何が変わるの？\n\nタグ複製のためのカスタムなワークフローを作ったり保守したりしなくてよくなるよ！\n\n- 共有先のアカウント、組織全体、パブリック共有のどれでも、shared tag は AMI と一緒に自動で共有される\n- 所有者が付けたタグを、受け取った側がすぐ見られる\n\n## 深く潜ってみよう\n\n使い方と仕様をまとめるね。\n\n- 使い方: タグキーの先頭に `ec2:SharedTag/` のプレフィックスを付ける\n- 共有先のアカウントは、読み取り専用でそのタグを見られる。作成・変更・削除ができるのは所有者だけ\n- shared tag は所有者側の「1 リソースあたり 50 タグ」のクォータだけを消費する。受け取った側は自分のプライベートタグをこれまでどおり追加できる\n- 提供リージョン: すべての AWS リージョン\n- 追加料金: なし\n\n## まとめ\n\n- AMI のタグを共有先にも見せられる shared tags が登場\n- キーに `ec2:SharedTag/` を付けるだけ\n- 共有先は読み取り専用で、クォータも消費しない\n- 全リージョンで追加料金なし\n\nAMI を複数アカウントへ配っているプラットフォームチームさんに刺さる機能だよ！",
+  "title_en": "AMI Tags Now Travel With the Image: EC2 Shared Tags Are Here",
+  "summary_en": "Amazon EC2 now supports AMI shared tags. Add the ec2:SharedTag/ prefix to a tag key and every account the AMI is shared with can see it.",
+  "body_md_en": "Hi, it's Shii-chan! I found an announcement that makes tag management after sharing an AMI much easier!\n\n## What was announced?\n\nAWS What's New announced AMI tag sharing (shared tags) for Amazon EC2. AMI owners can make selected tags visible to every AWS account the AMI is shared with.\n\n## The story so far\n\nWhen you shared an AMI with another account or organization, its tags did not reach the recipients automatically. You had to build and maintain your own workflow to replicate tags into each account after sharing.\n\n## What changes\n\nYou no longer need custom tag replication workflows!\n\n- Whether the AMI is shared with an account, across an organization, or made public, a shared tag is shared automatically alongside it\n- Recipients can see the owner's tags right away\n\n## Dive Deep\n\nHere are the usage and details:\n\n- How to use: add the `ec2:SharedTag/` prefix to the tag key\n- Recipient accounts see the tag as read-only. Only the owner can create, modify, or delete it\n- Shared tags count only against the owner's 50 tags per resource quota. Recipients can keep adding their own private tags\n- Availability: all AWS Regions\n- Cost: no additional charge\n\n## Wrap-up\n\n- Shared tags let you show AMI tags to the accounts you share with\n- Just prefix the key with `ec2:SharedTag/`\n- Read-only for recipients, and no impact on their quota\n- Available in all Regions at no extra cost\n\nA nice fit for platform teams that distribute AMIs to many accounts!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/ec2-ami-shared-tags",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon EC2 introduces shared tags for Amazon Machine Images",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-05T17:28:00+00:00"
+}

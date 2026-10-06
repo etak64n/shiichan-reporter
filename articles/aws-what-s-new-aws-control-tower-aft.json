@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-control-tower-aft",
+  "title": "Control Tower AFT に plan-only 実行が来たよ！適用前に変更をプレビュー",
+  "summary": "AWS Control Tower Account Factory for Terraform で、変更を適用せず Terraform plan だけ実行できるようになったよ！AFT 1.22.0 で設定できるの。",
+  "body_md_en_note": "",
+  "body_md": "おつかれさま、しぃちゃんだよ！マルチアカウント運用で「適用前に確認したい」を叶えてくれる発表だよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Control Tower Account Factory for Terraform（AFT）に plan-only のカスタマイズ実行が追加されたと発表されたよ。AFT は、AWS Control Tower 環境でのアカウント作成とカスタマイズを自動化するオープンソースの Terraform モジュールなの。\n\n## 今までどうだったの？\n\nカスタマイズを実行すると、必ず Terraform の apply まで一気に走っていたよ。事前に変更内容をプレビューする方法がなくて、期待どおりか確認したり、意図しない構成ドリフトを展開前に見つけたりするのが難しかったみたい。\n\n## これで何が変わるの？\n\n管理下のアカウントに適用する前に、変更内容を確認できるようになったよ！\n\n- グローバルカスタマイズとアカウントカスタマイズに対して、変更を適用せず Terraform plan だけを実行できる\n- 展開前の安全な検証ができる\n- ドリフト検出に使える\n- CI/CD のレビューフローに組み込める\n\n## 深く潜ってみよう\n\n対応範囲と詳細はこうだよ。\n\n- 対応ディストリビューション: オープンソース、Terraform Cloud、Terraform Enterprise など、AFT がサポートするものすべて\n- 提供リージョン: AFT がサポートされているすべてのリージョン\n- 設定方法の詳細は AFT のドキュメントと AFT 1.22.0 のリリースノートに載っている\n\n## まとめ\n\n- AFT に、適用なしで plan だけ走らせる plan-only 実行が追加\n- 事前検証・ドリフト検出・CI/CD レビューに使える\n- AFT 対応の Terraform ディストリビューションすべてで利用可能\n\nControl Tower と Terraform で多数のアカウントを運用している管理者さんに刺さるよ！",
+  "title_en": "Control Tower AFT Gets Plan-Only Runs: Preview Changes Before You Apply",
+  "summary_en": "AWS Control Tower Account Factory for Terraform now lets you run a Terraform plan without applying anything. Configuration details are in AFT 1.22.0.",
+  "body_md_en": "Hi, it's Shii-chan! This announcement grants the wish of \"let me check before I apply\" in multi-account operations!\n\n## What was announced?\n\nAWS What's New announced plan-only customization runs for AWS Control Tower Account Factory for Terraform (AFT). AFT is an open-source Terraform module that automates account provisioning and customization in AWS Control Tower environments.\n\n## The story so far\n\nInvoking customizations always triggered a full Terraform apply. There was no way to preview changes, so it was hard to validate expected outcomes or catch unintended configuration drift before a broad rollout.\n\n## What changes\n\nYou can now review changes before they reach your managed accounts!\n\n- Trigger a Terraform plan for global and account customizations without applying any changes\n- Validate safely before rollout\n- Use it for drift detection\n- Integrate it into CI/CD review workflows\n\n## Dive Deep\n\nHere is the scope and the details:\n\n- Compatible distributions: all AFT-supported Terraform distributions, including open source, Terraform Cloud, and Terraform Enterprise\n- Availability: all Regions where AFT is supported\n- Configuration details are in the AFT documentation and the AFT 1.22.0 release notes\n\n## Wrap-up\n\n- AFT adds plan-only runs that plan without applying\n- Useful for pre-rollout validation, drift detection, and CI/CD review\n- Works with all AFT-supported Terraform distributions\n\nA good fit for admins running many accounts with Control Tower and Terraform!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/aws-control-tower-aft/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Control Tower AFT now supports plan-only customization runs",
+  "tags": [
+    "aws",
+    "devops"
+  ],
+  "published_at": "2026-10-05T19:31:00+00:00"
+}

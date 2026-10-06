@@ -1,0 +1,20 @@
+{
+  "slug": "openai-news-atlassian-partnership",
+  "title": "Atlassian と OpenAI が提携拡大！Rovo や Jira に GPT-6 Astra が来るよ",
+  "summary": "Atlassian と OpenAI がパートナーシップを拡大して、GPT-6 Astra や GPT-5.6 シリーズを Atlassian のプラットフォームと Rovo に取り込むよ！",
+  "body_md": "おつかれさま、しぃちゃんだよ！今日は仕事で Jira や Confluence を使っているみんなに関係がありそうな提携ニュースだよ！\n\n## なにが発表されたの？\n\nOpenAI の News で、Atlassian と OpenAI がパートナーシップを拡大すると発表されたよ。GPT-6 Astra や GPT-5.6 シリーズといった最先端モデルを、Atlassian のプラットフォームと AI エージェントの Rovo に取り込んでいくんだって。\n\n## なぜ重要なの？\n\n2023 年に始まったこの協業が、今回さらに広がったんだよ。仕事の計画・開発・納品が行われる場所に、最先端のモデルが直接つながるのが注目ポイントなの。\n\n## これで何が変わるの？\n\n具体的には、こんなことが示されているよ。\n\n- Atlassian の開発者は、最先端モデルへのアクセスが広がる\n- すでに 3,000 人を超える Atlassian の開発者が、ターミナル・IDE・コードレビューで Codex を使っている\n- Rovo は Teamwork Graph（人・プロジェクト・ドキュメント・意思決定をつなぐ仕組み）を使って、AI に仕事の文脈を理解させる\n\n例えばプロダクトマネージャーが、Jira のチケット、Confluence のドキュメント、チームの議論を横断して分析し、リリース準備の状況やブロッカー、見逃したマイルストーンを見つけられるそうだよ。ChatGPT や Codex をプラグインでワークフローにつなげば、プロジェクトの文脈も渡せるみたい。\n\n## 深く潜ってみよう\n\n今後の方向性として、原文には次のことが書かれているよ。\n\n- Jira とのより深い連携で、チームが AI エージェントに作業を割り当て、進捗を追い、意思決定を記録できるようにする\n- Atlassian の DX プラットフォームと組み合わせて、開発の速さへの AI の影響をエンジニアリングリーダーが評価できるようにする\n- 人による監督は維持する\n\n具体的な提供時期や料金は、今回の内容からは分からなかったよ。\n\n## まとめ\n\n- Atlassian と OpenAI が提携を拡大し、GPT-6 Astra や GPT-5.6 シリーズを Atlassian と Rovo に\n- 3,000 人超の Atlassian 開発者がすでに Codex を利用中\n- Teamwork Graph で Jira・Confluence などの文脈を AI に渡す\n- 今後は Jira で AI エージェントに作業を割り当てる連携を深める予定\n\nAtlassian 製品でチームの開発や計画を回している人に刺さる発表だよ！",
+  "title_en": "Atlassian and OpenAI Expand Their Partnership: GPT-6 Astra Heads to Rovo and Jira",
+  "summary_en": "Atlassian and OpenAI are expanding their partnership to bring GPT-6 Astra and the GPT-5.6 series into Atlassian's platform and Rovo.",
+  "body_md_en": "Hi, it's Shii-chan! Today's partnership news is relevant if you use Jira and Confluence at work!\n\n## What was announced?\n\nOpenAI News announced that Atlassian and OpenAI are expanding their partnership. Frontier models such as GPT-6 Astra and the GPT-5.6 series will be integrated across Atlassian's platform and Rovo, its AI agent tool.\n\n## Why it matters\n\nThis collaboration started in 2023 and has now grown. What stands out is frontier models connecting directly to the places where teams plan, build, and deliver work.\n\n## What changes\n\nThe announcement describes the following:\n\n- Atlassian developers get expanded access to frontier models\n- More than 3,000 Atlassian developers already use Codex in terminals, IDEs, and code review\n- Rovo uses the Teamwork Graph, which connects people, projects, documents, and decisions, to give AI business context\n\nFor example, a product manager can analyze Jira tickets, Confluence documents, and team discussions to assess launch readiness and spot blockers and missed milestones. Teams can also connect ChatGPT and Codex to their workflows through plugins to bring in project context.\n\n## Dive Deep\n\nHere is the direction described for what's next:\n\n- Deeper Jira integrations so teams can assign work to AI agents, track progress, and capture decisions\n- Combined with Atlassian's DX platform, engineering leaders can evaluate AI's impact on development speed\n- Human oversight is maintained\n\nThe post does not give specific availability dates or pricing.\n\n## Wrap-up\n\n- Atlassian and OpenAI expand their partnership, bringing GPT-6 Astra and GPT-5.6 to Atlassian and Rovo\n- Over 3,000 Atlassian developers already use Codex\n- The Teamwork Graph passes Jira and Confluence context to AI\n- Deeper Jira integration for assigning work to AI agents is planned\n\nA good fit for teams that run planning and development on Atlassian products!",
+  "emotion": "energetic",
+  "importance": 1,
+  "source_url": "https://openai.com/index/atlassian-partnership",
+  "source_name": "OpenAI News",
+  "og_title": "Atlassian and OpenAI expand partnership to turn enterprise knowledge into action",
+  "tags": [
+    "openai",
+    "ai",
+    "business"
+  ],
+  "published_at": "2026-10-06T16:00:00+00:00"
+}

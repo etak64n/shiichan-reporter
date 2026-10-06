@@ -1,0 +1,19 @@
+{
+  "slug": "cloudflare-changelog-2026-10-02-organization-account-zone-limits",
+  "title": "Cloudflare Organizations の上限が一気に拡大！2 万アカウント・20 万ゾーンまで対応",
+  "summary": "Cloudflare Organizations が最大 20,000 アカウント・200,000 ゾーンまで扱えるようになったよ！エンタープライズと MSSP/Distributor の Organization が対象なの。",
+  "body_md": "やっほー、しぃちゃんだよ！今日は Cloudflare の Organizations に、スケールがぐんと大きくなるお知らせが届いたよ！\n\n## なにが発表されたの？\n\nCloudflare の Changelog によると、Cloudflare Organizations で扱える数の上限が次のように引き上げられたの。\n\n- アカウント数: 最大 20,000\n- ゾーン数: 最大 200,000\n\n## なぜ重要なの？\n\nたくさんのお客さんのアカウントやドメインをまとめて管理する事業者にとって、Organization にいくつぶら下げられるかは運用の設計に直結するよね。その上限が大きく広がったことが、今回の注目ポイントだよ！\n\n## これで何が変わるの？\n\n大規模に Cloudflare を運用している企業や、複数の顧客を抱える MSSP / ディストリビューターのみんなが、より多くのアカウントとゾーンを 1 つの Organization の下で扱えるようになるみたい！\n\n## 深く潜ってみよう\n\n適用範囲や注意点を整理するね。\n\n- 対象: エンタープライズと MSSP/Distributor の Organization\n- サブ Organization を使っている MSSP/Distributor の場合、この上限はルートの Organization に対して適用される\n- レガシーのリセラーパートナーとブランドパートナーのテナントは、これまでのクォータの挙動のまま\n- もっと高い上限が必要なときは、担当のアカウントチームに相談する\n\n## まとめ\n\n- Organizations が最大 20,000 アカウント・200,000 ゾーンに対応\n- 対象はエンタープライズと MSSP/Distributor の Organization\n- サブ Organization の上限はルート側で数える\n- レガシーのパートナーテナントは従来どおり\n\n大量のアカウントやドメインをまとめて見ている事業者さんに、ぴったりのアップデートだよ！",
+  "title_en": "Cloudflare Organizations Limits Jump to 20,000 Accounts and 200,000 Zones",
+  "summary_en": "Cloudflare Organizations now supports up to 20,000 accounts and 200,000 zones. The new limits apply to enterprise and MSSP/Distributor Organizations.",
+  "body_md_en": "Hi, it's Shii-chan! Today Cloudflare has news about Organizations getting a lot more room to grow!\n\n## What was announced?\n\nAccording to the Cloudflare Changelog, the limits for Cloudflare Organizations have been raised to:\n\n- Accounts: up to 20,000\n- Zones: up to 200,000\n\n## Why it matters\n\nFor anyone managing many customer accounts and domains, the number of accounts an Organization can hold shapes how you design your operations. That ceiling just got much higher.\n\n## What changes\n\nLarge enterprises and MSSPs/Distributors with many customers can now manage more accounts and zones under a single Organization.\n\n## Dive Deep\n\nHere are the scope and caveats:\n\n- Applies to: enterprise and MSSP/Distributor Organizations\n- For MSSP/Distributors using sub-organizations, the limits are applied at the root Organization\n- Legacy reseller partner and brand partner tenants keep their existing quota behavior\n- If you need a higher limit, reach out to your account team\n\n## Wrap-up\n\n- Organizations now support up to 20,000 accounts and 200,000 zones\n- Applies to enterprise and MSSP/Distributor Organizations\n- Sub-organization usage counts against the root Organization\n- Legacy partner tenants are unchanged\n\nA great fit for providers who manage lots of accounts and domains!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-02-organization-account-zone-limits/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Cloudflare Fundamentals, Organizations - Organizations support increased account and zone limits",
+  "tags": [
+    "cloudflare",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-02T00:00:00+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-blog-root-ksk-2024-rollover",
+  "title": "10 月 11 日、DNS ルートの鍵が切り替わるよ！KSK-2024 への移行、準備できてる？",
+  "summary": "2026 年 10 月 11 日に DNS ルートの KSK が KSK-2017 から KSK-2024 へ切り替わるよ！リゾルバが新しい鍵を信頼しているかは、RFC 8509 のトラストアンカーセンチネルで確認できるの。",
+  "body_md": "やっほー、しぃちゃんだよ！インターネットの土台である DNS で、10 月 11 日に大きな鍵の切り替えがあるよ！\n\n## なにが発表されたの？\n\nCloudflare の Blog で、2026 年 10 月 11 日に DNS ルートが新しい KSK（鍵署名鍵）の KSK-2024 に切り替わることが解説されたよ。切り替わるのは次の鍵だよ。\n\n- 現在: KSK-2017（キータグ 20326）\n- 新しい鍵: KSK-2024（キータグ 38696）\n\nルート KSK のロールオーバーは、歴史上 2 回目なんだって。\n\n## なぜ重要なの？\n\nこの鍵は DNSSEC の信頼の連鎖の出発点で、DNS の応答が本物かを検証するのに使われるよ。DNSSEC を検証するリゾルバが新しい鍵を信頼していないと、切り替え後に検証に失敗するおそれがあるの。\n\n## これで何が変わるの？\n\n誰が何をすればいいかは、原文ではこう整理されているよ。\n\n- ほとんどの Web サイト運営者: 対応は不要\n- DNSSEC を検証するリゾルバの運営者: KSK-2024 を信頼しているか確認し、必要ならベンダーの手順に従う\n- Cloudflare のユーザー: 対応は不要。1.1.1.1 と Gateway DNS はすでに新しい鍵に対応済み\n\n## 深く潜ってみよう\n\n技術的なポイントをまとめるね。\n\n- KSK-2024 は 2025 年 1 月 11 日から KSK-2017 と並べて公開されていて、リゾルバは RFC 5011 で自動的に見つけられる\n- 2 つの鍵は同じ RSA/SHA-256 で、変わるのは鍵ペアだけ。アルゴリズムは変わらない\n- 準備状況は、RFC 8509 のトラストアンカーセンチネルで確認できる。特別な名前の DNS クエリで、リゾルバが新しい鍵を信頼しているかが分かる\n- テスト用のページは `https://dnstest.dev/ksk-2024/`\n\n今後の見通しも書かれているよ。\n\n- ICANN は 2027 年に KSK-2017 を失効させる予定\n- 将来のアルゴリズム移行として ECDSA P-256 が提案されている\n- ゆくゆくは ML-DSA-44 のようなポスト量子暗号への移行も視野に入っている\n\n## まとめ\n\n- 2026 年 10 月 11 日に、DNS ルートが KSK-2017 から KSK-2024 に切り替わる\n- 影響するのは主に DNSSEC 検証リゾルバの運営者。Cloudflare の 1.1.1.1 などは対応済み\n- RFC 8509 のトラストアンカーセンチネルで準備状況をテストできる\n- ICANN は 2027 年に KSK-2017 を失効させる予定\n\nDNS リゾルバを自前で運用しているインフラ担当さんは、今のうちにチェックしてね！",
+  "title_en": "The DNS Root Key Changes on October 11: Is Your Resolver Ready for KSK-2024?",
+  "summary_en": "On October 11, 2026, the DNS root key-signing key switches from KSK-2017 to KSK-2024. You can test whether your resolver is ready with RFC 8509 trust anchor sentinels.",
+  "body_md_en": "Hi, it's Shii-chan! A big key switch is coming to DNS, the foundation of the Internet, on October 11!\n\n## What was announced?\n\nThe Cloudflare Blog explains that on October 11, 2026, the DNS root switches to a new key-signing key (KSK), KSK-2024. The keys involved are:\n\n- Current: KSK-2017 (key tag 20326)\n- New: KSK-2024 (key tag 38696)\n\nThis is only the second root KSK rollover in history.\n\n## Why it matters\n\nThis key anchors the DNSSEC chain of trust and is used to verify that DNS responses are authentic. If a DNSSEC-validating resolver doesn't trust the new key, validation may fail after the switch.\n\n## What changes\n\nThe post sorts out who needs to do what:\n\n- Most website operators: no action required\n- Operators of DNSSEC-validating resolvers: verify that your systems trust KSK-2024, and follow vendor instructions if updates are needed\n- Cloudflare users: no action needed. 1.1.1.1 and Gateway DNS already support the new key\n\n## Dive Deep\n\nHere are the technical points:\n\n- KSK-2024 has been published alongside KSK-2017 since January 11, 2025, so resolvers can discover it automatically via RFC 5011\n- Both keys use RSA/SHA-256. Only the key pair changes, not the algorithm\n- You can check readiness with RFC 8509 trust anchor sentinels. These specially named DNS queries reveal whether a resolver trusts the new key\n- Test page: `https://dnstest.dev/ksk-2024/`\n\nThe post also looks ahead:\n\n- ICANN plans to revoke KSK-2017 in 2027\n- A future algorithm rollover to ECDSA P-256 has been proposed\n- Eventually, a move to post-quantum cryptography such as ML-DSA-44 is envisioned\n\n## Wrap-up\n\n- On October 11, 2026, the DNS root switches from KSK-2017 to KSK-2024\n- Mainly affects operators of DNSSEC-validating resolvers. Cloudflare's 1.1.1.1 is already ready\n- Test readiness with RFC 8509 trust anchor sentinels\n- ICANN plans to revoke KSK-2017 in 2027\n\nIf you run your own DNS resolvers, check them now!",
+  "emotion": "thinking",
+  "importance": 4,
+  "source_url": "https://blog.cloudflare.com/root-ksk-2024-rollover/",
+  "source_name": "Cloudflare Blog",
+  "og_title": "The keys to the Internet change on October 11. Are you ready?",
+  "tags": [
+    "cloudflare",
+    "security",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-06T17:50:11+00:00"
+}
