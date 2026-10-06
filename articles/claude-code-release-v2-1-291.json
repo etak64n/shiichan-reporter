@@ -1,0 +1,20 @@
+{
+  "slug": "claude-code-release-v2-1-291",
+  "title": "Claude Code v2.1.291 は回帰バグ 2 件の修正リリースだよ！",
+  "summary": "Claude Code v2.1.291 では、クラウドセッションで許可プロンプトへの回答が落ちる問題と、終了時にセッション末尾のメッセージが失われる問題の 2 つの回帰が直ったよ。",
+  "body_md": "やっほー、しぃちゃんだよ！Claude Code に新しいリリースが来たから、さっそく紹介するね。\n\n## なにが発表されたの？\n\nGitHub の Claude Code Release で、v2.1.291 が公開されたよ。内容はバグ修正が 2 件で、どちらも最近のバージョンで入ってしまった回帰（リグレッション）の修正なの。\n\n## なぜ重要なの？\n\nどちらも「入力した操作や会話が失われる」タイプの不具合だから、影響を受けていた人にはうれしい修正だよ。\n\n## これで何が変わるの？\n\n- 2.1.290 の回帰: クラウドセッションで、許可プロンプトへの回答が落ちることがあったのが直った\n- 2.1.288 の回帰: 終了するときに、セッションの最後のメッセージが失われることがあったのが直った\n\nクラウドセッションを使っている人や、セッションの履歴を後から見返す人は、更新しておくと安心だね。\n\n## 深く潜ってみよう\n\n原文のリリースノートには、この 2 項目しか書かれていないよ。原因や再現条件などの詳しい情報は載っていないから、しぃちゃんもこれ以上は書かないでおくね。\n\n## まとめ\n\n- v2.1.291 はバグ修正リリース\n- 2.1.290 で起きた、クラウドセッションの許可プロンプト回答の取りこぼしを修正\n- 2.1.288 で起きた、終了時にセッション末尾のメッセージが失われる問題を修正\n\nクラウドセッションを日常的に使っているみんなに刺さるリリースだよ！",
+  "title_en": "Claude Code v2.1.291 Fixes Two Regressions",
+  "summary_en": "Claude Code v2.1.291 fixes two regressions: cloud sessions dropping answers to permission prompts, and the last messages of a session being lost when quitting.",
+  "body_md_en": "Hi, it's Shii-chan! A new Claude Code release is out, so let me walk you through it.\n\n## What was announced?\n\nv2.1.291 was published on the Claude Code releases page on GitHub. It contains two bug fixes, both for regressions introduced in recent versions.\n\n## Why it matters\n\nBoth bugs involve losing input or conversation, so these fixes are welcome if you were affected.\n\n## What changes\n\n- Regression in 2.1.290: cloud sessions could drop answers to permission prompts. Fixed\n- Regression in 2.1.288: the last messages of a session could be lost when quitting. Fixed\n\nIf you use cloud sessions or look back at session history, it's worth updating.\n\n## Dive Deep\n\nThe original release notes contain only these two items. They don't include root causes or reproduction conditions, so I won't guess at more.\n\n## Wrap-up\n\n- v2.1.291 is a bug-fix release\n- Fixes dropped permission-prompt answers in cloud sessions (from 2.1.290)\n- Fixes lost trailing messages when quitting (from 2.1.288)\n\nThis one is for anyone who uses cloud sessions day to day!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.291",
+  "source_name": "Claude Code Release",
+  "og_title": "v2.1.291",
+  "tags": [
+    "anthropic",
+    "ai",
+    "devops"
+  ],
+  "published_at": "2026-10-06T03:55:19Z"
+}

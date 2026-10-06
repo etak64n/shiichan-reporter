@@ -1,0 +1,19 @@
+{
+  "slug": "cloudflare-changelog-2026-10-05-bgp-over-tunnels-ga",
+  "title": "静的ルートの手動更新にサヨナラ！IPsec・GRE トンネルの BGP が GA",
+  "summary": "Cloudflare WAN と Magic Transit で、IPsec と GRE トンネル上の BGP ピアリングが一般提供になったよ！本番環境でも使えて、Unified Routing を使うアカウントなら追加の有効化は不要なの。",
+  "body_md": "みんな、しぃちゃんだよ！今日はネットワーク好きさんに嬉しいニュースを見つけたよ。\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Cloudflare WAN と Magic Transit における IPsec・GRE トンネル上の BGP ピアリングが一般提供（GA）になったと告知されたよ。本番ワークロードで使える状態になったの。\n\nBGP ピアリングを使うと、手元の機器と Cloudflare の仮想ネットワークのルーティングテーブルのあいだで、経路を動的に交換できるんだよ。\n\n## 今までどうだったの？\n\nネットワーク構成が変わるたびに、静的ルートを手作業で更新する必要があったよ。拠点やサブネットが増減するほど、更新漏れや手間が気になるところだよね。\n\n## これで何が変わるの？\n\n- 経路の交換が動的になり、ネットワークの変化に合わせて静的ルートを手動更新しなくてよくなる\n- Cloudflare WAN と Magic Transit の両方で使える\n\n## 深く潜ってみよう\n\n提供範囲と制限は原文ではこう書かれているよ。\n\n- 対象は Unified Routing を使っているすべてのアカウントで、有効化の手続きは不要\n- BGP over CNI は引き続きクローズドベータ\n\n設定方法は、Cloudflare WAN 向けと Magic Transit 向けの「Configure BGP routes」ドキュメントで案内されているよ。\n\n## まとめ\n\n- IPsec・GRE トンネル上の BGP ピアリングが GA になった\n- Cloudflare WAN と Magic Transit が対象で、本番利用OK\n- Unified Routing のアカウントなら有効化不要\n- BGP over CNI はまだクローズドベータ\n\nトンネルで拠点をつないでいて、静的ルートの管理に疲れているネットワーク担当のみんなに刺さるよ！",
+  "title_en": "Say Goodbye to Manual Static Routes: BGP over IPsec and GRE Tunnels Is GA",
+  "summary_en": "BGP peering over IPsec and GRE tunnels is now generally available for Cloudflare WAN and Magic Transit. It is ready for production, and accounts using Unified Routing need no extra enablement.",
+  "body_md_en": "Hi everyone, it's Shii-chan! I found some good news for network fans today.\n\n## What was announced?\n\nThe Cloudflare Changelog announced that BGP peering over IPsec and GRE tunnels is generally available (GA) for Cloudflare WAN and Magic Transit. You can use it for production workloads.\n\nBGP peering exchanges routes dynamically between your devices and your Cloudflare virtual network routing table.\n\n## The story so far\n\nWhenever your network changed, you had to update static routes by hand. The more sites and subnets you had, the more effort that took, and the easier it was to miss an update.\n\n## What changes\n\n- Routes are exchanged dynamically, so you no longer update static routes manually as your network changes\n- It works for both Cloudflare WAN and Magic Transit\n\n## Dive Deep\n\nHere is the scope and the limits from the original post.\n\n- Available to all accounts that use Unified Routing, with no enablement required\n- BGP over CNI remains in closed beta\n\nConfiguration is covered in the \"Configure BGP routes\" docs for Cloudflare WAN and for Magic Transit.\n\n## Wrap-up\n\n- BGP peering over IPsec and GRE tunnels is GA\n- It covers Cloudflare WAN and Magic Transit, and is ready for production\n- No enablement is needed for Unified Routing accounts\n- BGP over CNI is still in closed beta\n\nThis one is for network folks who connect sites over tunnels and are tired of managing static routes!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-05-bgp-over-tunnels-ga/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Cloudflare WAN, Magic Transit, Cloudflare One - BGP over IPsec and GRE tunnels generally available",
+  "tags": [
+    "cloudflare",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-05T00:00:00+00:00"
+}
