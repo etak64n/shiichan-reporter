@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-eks-auto-mode-advanced-compute-config",
+  "title": "EKS Auto Mode で kubelet も sysctl も hugepages も調整できるように！",
+  "summary": "Amazon EKS Auto Mode の NodeClass に advancedCompute フィールドが加わって、kubelet 設定・Linux カーネルの sysctl・hugepages を宣言的に調整できるようになったよ！",
+  "body_md": "みんな、しぃちゃんだよ！今日は EKS Auto Mode のノードチューニングが解禁されたニュースだよ！\n\n## なにが発表されたの？\n\nAWS の What's New によると、Amazon EKS Auto Mode で、kubelet 設定・Linux カーネルの sysctl・hugepages を NodeClass リソースの中で直接調整できるようになったよ。\n\nノードのプロビジョニング、スケーリング、パッチ適用、アップグレードは今まで通り Auto Mode におまかせのままなの。\n\n## 今までどうだったの？\n\nEKS Auto Mode は運用をおまかせできる反面、ノードに特別なチューニングが必要なワークロードは載せにくかったよ。\n\nそういう要件には、EC2 起動テンプレートやカスタム AMI、特権付きの DaemonSet といった自前の仕組みが必要になりがちだったの。\n\n## これで何が変わるの？\n\n新しい `advancedCompute` フィールドを使うと、次のようなことができるよ。\n\n- CI/CD パイプラインでのルートレスコンテナビルド向けに、ユーザー名前空間を設定する\n- 退避のしきい値やコンテナログのローテーションを調整して、ノードをディスク・メモリ逼迫から守る\n- 大規模クラスタ向けに、ネットワークと ARP キャッシュの上限を引き上げる\n- HPC・データベース・低レイテンシなワークロード向けに、2Mi または 1Gi の hugepages を事前確保する\n\n起動テンプレートやカスタム AMI、特権 DaemonSet を保守しなくてよくなるのが大きいね！\n\n## 深く潜ってみよう\n\n- 設定は Kubernetes API で宣言的に適用する\n- EKS Auto Mode が設定を検証し、ノードの起動時に適用する\n- スケーリングやアップグレードのあとも設定は保たれる\n- EKS Auto Mode が使える全 AWS リージョンで利用できる\n\n使い方は、EKS ドキュメントの「Create a Node Class for Amazon EKS」に載っているよ。\n\n## まとめ\n\n- NodeClass の `advancedCompute` で kubelet・sysctl・hugepages を調整できる\n- 検証・起動時の適用・スケール/アップグレード後の維持は Auto Mode が担当\n- 起動テンプレート、カスタム AMI、特権 DaemonSet が不要になる\n\nノードチューニングが必要だから Auto Mode を諦めていた人に刺さるアップデートだよ！",
+  "title_en": "EKS Auto Mode Now Lets You Tune kubelet, sysctls, and Hugepages!",
+  "summary_en": "Amazon EKS Auto Mode adds an advancedCompute field to NodeClass so you can declaratively tune kubelet settings, Linux kernel sysctls, and hugepages.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today's news is about node tuning finally coming to EKS Auto Mode!\n\n## What was announced?\n\nAccording to AWS What's New, Amazon EKS Auto Mode now lets you tune kubelet settings, Linux kernel sysctls, and hugepages directly in the NodeClass resource.\n\nNode provisioning, scaling, patching, and upgrades are still handled by Auto Mode.\n\n## The story so far\n\nEKS Auto Mode takes care of operations for you, but workloads that needed specific node tuning were hard to run on it.\n\nThose needs often meant maintaining EC2 launch templates, custom AMIs, or privileged DaemonSets yourself.\n\n## What changes\n\nWith the new `advancedCompute` field, you can do things like:\n\n- Configure user namespaces for rootless container builds in CI/CD pipelines\n- Tune eviction thresholds and container log rotation to protect nodes from disk and memory pressure\n- Raise network and ARP cache limits for large clusters\n- Pre-allocate 2Mi or 1Gi hugepages for HPC, database, and latency-sensitive workloads\n\nNot having to maintain launch templates, custom AMIs, or privileged DaemonSets is a big win!\n\n## Dive Deep\n\n- You apply settings declaratively using the Kubernetes API\n- EKS Auto Mode validates them and applies them at node boot\n- Settings are preserved through scaling and upgrade events\n- It is available in all AWS Regions where EKS Auto Mode is available\n\nTo get started, see \"Create a Node Class for Amazon EKS\" in the EKS documentation.\n\n## Wrap-up\n\n- `advancedCompute` in NodeClass tunes kubelet, sysctls, and hugepages\n- Auto Mode handles validation, boot-time application, and keeping settings through scaling and upgrades\n- No launch templates, custom AMIs, or privileged DaemonSets needed\n\nThis is for anyone who skipped Auto Mode because of node tuning needs!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/eks-auto-mode-advanced-compute-config/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon EKS Auto Mode now supports advanced compute configuration",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "devops"
+  ],
+  "published_at": "2026-10-01T08:00:00+00:00"
+}

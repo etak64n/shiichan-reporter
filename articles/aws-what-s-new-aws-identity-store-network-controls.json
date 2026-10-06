@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-aws-identity-store-network-controls",
+  "title": "IAM Identity Center の Identity Store に、ネットワークアクセス制御が追加！",
+  "summary": "IAM Identity Center の Identity Store API と SCIM API へのアクセスを、リクエスト元のネットワークで制限できるようになったよ！VPC エンドポイントや IP 範囲で絞れるの。",
+  "body_md": "やっほー、しぃちゃんだよ！今日は IAM Identity Center のユーザー情報を守る新機能のニュースだよ！\n\n## なにが発表されたの？\n\nAWS の What's New によると、IAM Identity Center が、ユーザーとグループを保存する Identity Store に対するネットワークアクセス制御に対応したよ。Identity Store API と SCIM API へのアクセスを、リクエスト元のネットワークで制限できるの。\n\n## なぜ重要なの？\n\nこの 2 つの API は、ユーザー情報の中心にあるものだよ。\n\n- Identity Store API: 独自アプリやユーザープロビジョニングのワークフローが、ユーザーとグループの管理・検索に使う\n- SCIM API: 外部 ID プロバイダーが、ユーザーとグループの同期に使う\n\nここに入れる経路を絞れると、安心感がぐっと増すよね！\n\n## これで何が変わるの？\n\n制限の内容は API ごとに違う設定にできるよ。\n\n- Identity Store API: アカウントや組織内の許可された VPC エンドポイント経由、または特定のソース VPC からのリクエストだけを受け付ける\n- 両方の API: 特定の IP 範囲からのリクエストだけを許可する\n\n例えば、Identity Store API は VPC エンドポイント経由のみにして、SCIM は外部 ID プロバイダーが公開している IP 範囲からだけ許可する、という組み合わせができるよ。\n\n## 深く潜ってみよう\n\n- ネットワークアクセス制御は任意の機能で、デフォルトではオフ\n- AWS のサービスがユーザーに代わって行うリクエストは対象外\n- 設定は AWS SDK と AWS CLI から Identity Store API で行う\n- IAM Identity Center が使えるすべての AWS リージョンで利用できる\n\n## まとめ\n\n- Identity Store API と SCIM API へのアクセスをネットワークで制限できる\n- VPC エンドポイント・ソース VPC・IP 範囲で絞れて、API ごとに設定を変えられる\n- デフォルトはオフで、AWS サービスの代理リクエストは対象外\n\nID 基盤のアクセス経路をしっかり絞りたいセキュリティ担当の人に刺さるよ！",
+  "title_en": "IAM Identity Center Adds Network Access Controls for Identity Store!",
+  "summary_en": "You can now restrict access to the IAM Identity Center Identity Store API and SCIM API based on where requests originate, using VPC endpoints, source VPCs, or IP ranges.",
+  "body_md_en": "Hi, it's Shii-chan! Today's news is a new feature that protects user data in IAM Identity Center!\n\n## What was announced?\n\nAccording to AWS What's New, IAM Identity Center now supports network access controls for Identity Store, which stores your users and groups. You can restrict access to the Identity Store API and the SCIM API based on the network that requests originate from.\n\n## Why it matters\n\nThese two APIs sit at the center of your user data.\n\n- Identity Store API: custom applications and user provisioning workflows use it to manage and look up users and groups\n- SCIM API: your external identity provider uses it to synchronize users and groups\n\nBeing able to narrow the paths into them is a real confidence boost!\n\n## What changes\n\nYou can apply different restrictions to each API.\n\n- Identity Store API: require that requests arrive only through allowed VPC endpoints in your account or organization, or from specific source VPCs\n- Both APIs: allow requests only from specific IP ranges\n\nFor example, you can require that Identity Store API requests arrive only through VPC endpoints, while allowing SCIM requests from your external identity provider's published IP ranges.\n\n## Dive Deep\n\n- Network access controls are optional and turned off by default\n- Requests that AWS services make on your behalf are exempt\n- You configure them with the Identity Store API through the AWS SDKs and AWS CLI\n- Available in all AWS Regions where IAM Identity Center is offered\n\n## Wrap-up\n\n- Restrict Identity Store API and SCIM API access by network\n- Use VPC endpoints, source VPCs, or IP ranges, with different settings per API\n- Off by default, and AWS service requests on your behalf are exempt\n\nThis is for security teams who want to lock down access paths to their identity foundation!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-identity-store-network-controls/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS IAM Identity Center now supports network access controls for Identity Store",
+  "tags": [
+    "aws",
+    "security"
+  ],
+  "published_at": "2026-10-05T21:00:00+00:00"
+}

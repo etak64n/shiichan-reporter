@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-continuum-penetration-testing",
+  "title": "ペネトレーションテストがデプロイのたびに！AWS Continuum が CI/CD に直結(プレビュー)",
+  "summary": "AWS Continuum for Penetration Testing(旧 AWS Security Agent)が、CI/CD パイプラインに直接組み込めるようになったよ！パブリックプレビューで、結果はパイプラインの出力に出てくるの。",
+  "body_md": "おつかれさま、しぃちゃんだよ！今日はペネトレーションテストがデプロイの一部になるニュースだよ！\n\n## なにが発表されたの？\n\nAWS の What's New によると、AWS Continuum for Penetration Testing(以前の名前は AWS Security Agent)が、既存の CI/CD システムに直接組み込めるようになったよ。パブリックプレビューでの提供だよ。\n\n## 今までどうだったの？\n\nContinuum for Penetration Testing は、サードパーティのペンテストベンダーと契約しなくても、継続的でオンデマンドなペネトレーションテストを提供していたよ。\n\nでも毎日のようにコードを出すチームでは、セキュリティの検証がデプロイのワークフローの外で行われがちだったの。CI/CD 連携はそのギャップを埋めるものだよ。\n\n## これで何が変わるの？\n\nペネトレーションテストが「デプロイ時のイベント」になるよ。\n\n- 重大度、影響を受けるエンドポイント、修正の指針といった検出結果が、パイプラインの出力にそのまま届く\n- セキュリティに関係しない変更は、目立った遅延なく完了する\n- 修正後は、手動で再実行しなくてもパイプラインが自動で再テストして修正を確認する\n\n## 深く潜ってみよう\n\n- セキュリティの専門知識がなくても始められる\n- 自動生成されるパイプライン用のスニペットを既存のパイプラインに貼るだけで、5 分もかからずに設定できる\n- アプリケーションのコンテキストは最初の実行時に自動で用意され、事前に完全なペネトレーションテストをする必要はない\n- 継続的ペネトレーションテスト自体は、今日から使える\n\n詳しい手順は AWS のドキュメントにあるよ。\n\n## まとめ\n\n- AWS Continuum for Penetration Testing が CI/CD に統合(パブリックプレビュー)\n- 検出結果はパイプラインの出力に表示され、修正後は自動で再テスト\n- スニペットを貼るだけで 5 分未満で設定できる\n\nセキュリティ検証をシフトレフトしたい開発チームに刺さるよ！",
+  "title_en": "Penetration Testing on Every Deploy: AWS Continuum Plugs Into CI/CD (Preview)",
+  "summary_en": "AWS Continuum for Penetration Testing (formerly AWS Security Agent) now integrates directly into your CI/CD pipeline in public preview, with findings delivered in pipeline output.",
+  "body_md_en": "Hi, it's Shii-chan! Today penetration testing becomes part of your deploys!\n\n## What was announced?\n\nAccording to AWS What's New, AWS Continuum for Penetration Testing (formerly AWS Security Agent) now integrates directly into your existing CI/CD systems, in public preview.\n\n## The story so far\n\nContinuum for Penetration Testing already provided continuous, on-demand penetration testing without contracting third-party pentest vendors.\n\nBut for teams shipping code daily, security validation often happened outside the deployment workflow. CI/CD integration closes that gap.\n\n## What changes\n\nPenetration testing becomes a deploy-time event.\n\n- Findings, including severity, affected endpoints, and remediation guidance, arrive directly in pipeline output\n- Non-security changes complete with no meaningful delay\n- After remediation, the pipeline re-tests and verifies fixes automatically, with no manual re-triggers\n\n## Dive Deep\n\n- You don't need security expertise to get started\n- An auto-generated pipeline snippet can be pasted into any existing pipeline, and takes under five minutes to complete\n- Application context bootstraps automatically on the first run, with no prior full penetration test required\n- Continuous penetration testing itself is available today\n\nSee the AWS documentation for the details.\n\n## Wrap-up\n\n- AWS Continuum for Penetration Testing integrates with CI/CD (public preview)\n- Findings show up in pipeline output, and fixes are re-tested automatically\n- Setup takes under five minutes with a pasted snippet\n\nThis is for dev teams who want to shift security testing left!",
+  "emotion": "energetic",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-continuum-penetration-testing/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Continuum for Penetration Testing now supports continuous penetration testing integrated directly into your CI/CD pipeline",
+  "tags": [
+    "aws",
+    "security",
+    "devops"
+  ],
+  "published_at": "2026-10-05T18:32:00+00:00"
+}

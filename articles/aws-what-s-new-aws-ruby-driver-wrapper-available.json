@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-aws-ruby-driver-wrapper-available",
+  "title": "AWS Advanced Ruby Driver Wrapper が GA！Rails のフェイルオーバーが速くなるよ",
+  "summary": "RDS / Aurora の PostgreSQL・MySQL 互換向けの AWS Advanced Ruby Driver Wrapper が一般提供になったよ！切り替えやフェイルオーバーの時間を短縮して、ActiveRecord のアダプタも付いているの。",
+  "body_md": "やっほー、しぃちゃんだよ！今日は Ruby ユーザーさんに嬉しい、データベースドライバのニュースだよ！\n\n## なにが発表されたの？\n\nAWS の What's New によると、AWS Advanced Ruby Driver Wrapper が、Amazon RDS と Amazon Aurora の PostgreSQL・MySQL 互換データベース向けに一般提供になったよ。\n\n## なぜ重要なの？\n\nこのドライバは、RDS Blue/Green のスイッチオーバー、Aurora Global Database のスイッチオーバー、データベースのフェイルオーバーにかかる時間を短縮して、アプリケーションの可用性を高めてくれるよ。\n\n## これで何が変わるの？\n\nラッパーは Aurora と RDS にネイティブに統合されていて、クラスタの状態を監視できるの。予期せぬ障害でフェイルオーバーが起きたときも、新しく昇格したライターにすばやくつなぎ直せるよ。\n\nさらに ActiveRecord 用に `aws_postgresql` と `aws_mysql2` というアダプタが用意されていて、アプリケーションのコードを変えずに有効にできるみたい！\n\n## 深く潜ってみよう\n\n- コミュニティの `pg`(PostgreSQL)と `mysql2`(MySQL)ドライバの上に作られていて、通常の接続を超える機能を足している\n- データベース認証は、AWS Secrets Manager 認証と、AWS IAM のトークンベース認証など複数の方式に対応\n- Apache 2.0 ライセンスのオープンソースプロジェクト\n- 始め方は GitHub リポジトリの手順を参照\n\n## まとめ\n\n- RDS / Aurora の PostgreSQL・MySQL 互換向けの Ruby ドライバラッパーが GA\n- Blue/Green・Global Database のスイッチオーバーとフェイルオーバーの時間を短縮\n- Secrets Manager と IAM の認証に対応\n- ActiveRecord のアダプタでコード変更なしに有効化できる\n\nAurora や RDS で Rails を動かしている人に刺さるよ！",
+  "title_en": "AWS Advanced Ruby Driver Wrapper Is GA: Faster Failovers for Your Rails Apps!",
+  "summary_en": "The AWS Advanced Ruby Driver Wrapper is generally available for RDS and Aurora PostgreSQL and MySQL-compatible databases. It shortens switchover and failover times and comes with ActiveRecord adapters.",
+  "body_md_en": "Hi, it's Shii-chan! Today's news is a database driver for Ruby fans!\n\n## What was announced?\n\nAccording to AWS What's New, the AWS Advanced Ruby Driver Wrapper is now generally available for use with Amazon RDS and Amazon Aurora PostgreSQL and MySQL-compatible databases.\n\n## Why it matters\n\nThis driver reduces RDS Blue/Green switchover, Aurora Global Database switchover, and database failover times, which improves application availability.\n\n## What changes\n\nThe wrapper is natively integrated with Aurora and RDS, so it can monitor database cluster status. During failovers caused by unexpected failures, it can quickly connect to the newly promoted writer.\n\nIt also provides `aws_postgresql` and `aws_mysql2` adapters for ActiveRecord, so you can enable it without changing your application code!\n\n## Dive Deep\n\n- It builds on the community `pg` (PostgreSQL) and `mysql2` (MySQL) drivers to add functionality beyond standard connectivity\n- It supports multiple authentication mechanisms, including AWS Secrets Manager authentication and token-based authentication with AWS IAM\n- It is an open-source project under the Apache 2.0 license\n- See the GitHub repository for getting started instructions\n\n## Wrap-up\n\n- A Ruby driver wrapper for RDS / Aurora PostgreSQL and MySQL-compatible databases is GA\n- Shorter switchover and failover times for Blue/Green and Global Database\n- Supports Secrets Manager and IAM authentication\n- ActiveRecord adapters let you enable it with no code changes\n\nThis is for anyone running Rails on Aurora or RDS!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-ruby-driver-wrapper-available/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Advanced Ruby Driver Wrapper is generally available",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-05T17:00:00+00:00"
+}

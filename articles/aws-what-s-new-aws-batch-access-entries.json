@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-batch-access-entries",
+  "title": "AWS Batch が EKS のアクセスエントリ認証に対応！aws-auth ConfigMap だけじゃなくなったよ",
+  "summary": "AWS Batch が、Amazon EKS のアクセスエントリを使ってクラスタへ認証できるようになったよ！コンピューティング環境の API で accessEntry.desiredState を ENABLED にするだけなの。",
+  "body_md": "おつかれさま、しぃちゃんだよ！今日は AWS Batch と EKS の認証まわりのアップデートだよ！\n\n## なにが発表されたの？\n\nAWS の What's New によると、AWS Batch が、コンピューティング環境で Amazon EKS のアクセスエントリ認証に対応したよ。\n\n## 今までどうだったの？\n\nEKS のアクセスエントリは、IAM プリンシパルに Kubernetes クラスタへのアクセスを API で付与する仕組みで、従来の `aws-auth` ConfigMap を補完するものだよ。\n\nこれまでの AWS Batch は、このアクセスエントリの仕組みでは認証できなかったということだね。\n\n## これで何が変わるの？\n\nAWS Batch がアクセスエントリ経由でクラスタに認証できるようになって、クラスタのセットアップと認証ライフサイクルの管理がシンプルになるよ。\n\nConfigMap を直接いじらずに、API ベースで管理したい人に嬉しいね！\n\n## 深く潜ってみよう\n\n使い始めるには、`CreateComputeEnvironment` または `UpdateComputeEnvironment` API で、そのクラスタを対象とするすべての AWS Batch コンピューティング環境に `accessEntry.desiredState` を `ENABLED` に設定するよ。\n\n- AWS Batch はクラスタごとに 1 つのアクセスエントリを作る\n- そのアクセスエントリに `AWSBatchClusterPolicy` を関連付ける\n- 設定は AWS CLI、AWS SDK、AWS マネジメントコンソールから行える\n- AWS Batch が使えるすべての AWS リージョンで対応している\n\n詳しくは AWS Batch ユーザーガイドの「Amazon EKS access entry authentication」を見てね。\n\n## まとめ\n\n- AWS Batch が EKS のアクセスエントリ認証に対応\n- `accessEntry.desiredState` を `ENABLED` にして有効化する\n- クラスタごとにアクセスエントリが 1 つ作られ、`AWSBatchClusterPolicy` が関連付けられる\n\nEKS 上で AWS Batch を動かしていて、認証を API で整理したい人に刺さるよ！",
+  "title_en": "AWS Batch Now Supports EKS Access Entry Authentication, Beyond the aws-auth ConfigMap!",
+  "summary_en": "AWS Batch can now authenticate to Amazon EKS clusters through access entries. You just set accessEntry.desiredState to ENABLED on your compute environments.",
+  "body_md_en": "Hi, it's Shii-chan! Today we have an authentication update for AWS Batch on EKS!\n\n## What was announced?\n\nAccording to AWS What's New, AWS Batch now supports Amazon EKS access entry authentication for compute environments.\n\n## The story so far\n\nEKS access entries are an API-driven way to grant IAM principals access to Kubernetes clusters, complementing the existing `aws-auth` ConfigMap.\n\nUntil now, AWS Batch could not authenticate through this mechanism.\n\n## What changes\n\nAWS Batch can authenticate to your cluster through access entries, which simplifies cluster setup and authentication lifecycle management.\n\nIt's good news if you'd rather manage access through APIs than edit a ConfigMap!\n\n## Dive Deep\n\nTo get started, use the `CreateComputeEnvironment` or `UpdateComputeEnvironment` APIs to set `accessEntry.desiredState` to `ENABLED` on all AWS Batch compute environments targeting your cluster.\n\n- AWS Batch creates one access entry per cluster\n- It associates the `AWSBatchClusterPolicy` with that access entry\n- You can configure it through the AWS CLI, AWS SDKs, or the AWS Management Console\n- It is supported in all AWS Regions where AWS Batch is available\n\nFor details, see \"Amazon EKS access entry authentication\" in the AWS Batch User Guide.\n\n## Wrap-up\n\n- AWS Batch supports EKS access entry authentication\n- Enable it by setting `accessEntry.desiredState` to `ENABLED`\n- One access entry is created per cluster with `AWSBatchClusterPolicy` attached\n\nThis is for teams running AWS Batch on EKS who want tidier, API-driven authentication!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-batch-access-entries/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Batch now supports Amazon EKS access entry authentication",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "security"
+  ],
+  "published_at": "2026-10-05T15:31:00+00:00"
+}

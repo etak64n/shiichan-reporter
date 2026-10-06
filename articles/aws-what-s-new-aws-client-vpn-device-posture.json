@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-client-vpn-device-posture",
+  "title": "AWS Client VPN にデバイスポスチャ評価が登場！危ない端末は接続中でも切断できるよ",
+  "summary": "AWS Client VPN が、CrowdStrike・Jamf・JumpCloud と連携したデバイスポスチャ評価に対応したよ！Cedar ポリシーで条件を決めて、接続中も継続的に再評価してくれるの。",
+  "body_md": "みんな、しぃちゃんだよ！今日は AWS Client VPN のセキュリティが一段階上がるニュースだよ！\n\n## なにが発表されたの？\n\nAWS の What's New によると、AWS Client VPN がデバイスポスチャ評価に対応したよ。接続してくる端末がセキュリティやコンプライアンスの要件を満たしているかを、ネットワークアクセスを許可する前に確認できるの。\n\n## 今までどうだったの？\n\nこれまでの Client VPN は、証明書、SAML、Active Directory でユーザーを認証していたよ。\n\nつまり「誰か」は確認できても、「端末の状態」まではチェックできなかったということだね。\n\n## これで何が変わるの？\n\n既存のデバイスポスチャプロバイダーと連携して、信頼できて要件を満たした端末だけが AWS リソースにアクセスできるようになるよ。\n\n連携できるのは次の 3 つ。\n\n- CrowdStrike\n- Jamf\n- JumpCloud\n\nコンプライアンススコア、暗号化の状態、リスクレベルといった端末のセキュリティ信号が、接続前に自動で評価されるの。\n\n## 深く潜ってみよう\n\n- 要件は Cedar ポリシーで定義するので、どの端末を接続させるかを細かく制御できる\n- ポリシーの作成と検証を助ける Test Policy ツールが用意されている\n- 接続中も端末のコンプライアンスを継続的に再評価し、リスクスコアやセキュリティ設定が変わって要件を外れたらセッションを自動で切断する\n- 監視専用モードでは、評価結果をログに残すだけで切断はしないので、ポリシーを強制する前に影響を確かめられる\n- 利用には AWS VPN Client のバージョン 6.2.0 以降が必要\n- Client VPN が使えるすべての AWS リージョンで、追加料金なしで使える\n\n## まとめ\n\n- Client VPN にデバイスポスチャ評価が追加\n- CrowdStrike・Jamf・JumpCloud と連携し、Cedar ポリシーで条件を定義\n- 接続中も再評価して、外れたら自動切断\n- 監視専用モードで、導入前に影響を確認できる\n\nリモートワークの VPN で端末の状態まで守りたいセキュリティ担当の人に刺さるよ！",
+  "title_en": "AWS Client VPN Gets Device Posture Assessment: Non-Compliant Devices Get Disconnected!",
+  "summary_en": "AWS Client VPN now supports device posture assessment with CrowdStrike, Jamf, and JumpCloud. You define requirements with Cedar policies, and compliance is re-evaluated during active sessions.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today's news levels up AWS Client VPN security!\n\n## What was announced?\n\nAccording to AWS What's New, AWS Client VPN now supports device posture assessment. You can verify that connecting devices meet your security and compliance requirements before granting network access.\n\n## The story so far\n\nPreviously, Client VPN authenticated users through certificates, SAML, or Active Directory.\n\nThat verified who the user was, but not the state of their device.\n\n## What changes\n\nIt integrates with your existing device posture providers, so only trusted, compliant devices can reach your AWS resources.\n\nThe supported providers are:\n\n- CrowdStrike\n- Jamf\n- JumpCloud\n\nDevice security signals such as compliance scores, encryption status, and risk level are evaluated automatically before a connection is allowed.\n\n## Dive Deep\n\n- You define requirements with Cedar policies, giving fine-grained control over which devices can connect\n- A Test Policy tool helps you author and validate those policies\n- Compliance is continuously re-evaluated during active sessions, and a session is disconnected automatically if the device falls out of compliance, such as when risk score or security settings change\n- Monitoring-only mode logs evaluation results without disconnecting sessions, so you can assess the impact before enforcing\n- It requires AWS VPN Client version 6.2.0 or later\n- It is available at no extra charge in all AWS Regions where Client VPN is available\n\n## Wrap-up\n\n- Client VPN adds device posture assessment\n- Works with CrowdStrike, Jamf, and JumpCloud, with conditions defined in Cedar policies\n- Re-evaluates during sessions and disconnects automatically when devices fall out of compliance\n- Monitoring-only mode lets you check the impact first\n\nThis is for security teams who want to protect device state, not just identity, on remote-work VPNs!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-client-vpn-device-posture/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Client VPN now supports device posture assessment",
+  "tags": [
+    "aws",
+    "security",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-05T17:00:00+00:00"
+}
