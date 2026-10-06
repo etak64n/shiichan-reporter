@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-10-06-dns-records-quota-warning",
+  "title": "Cloudflare DNS のレコード上限、85% で警告が出るようになったよ！",
+  "summary": "Cloudflare ダッシュボードの DNS records ページに、DNS レコードのクォータを 85% 使った時点で警告が表示されるようになったよ。ゾーン単位でもアカウント単位でも、自分に適用されるクォータに合わせて表示されるみたい。",
+  "body_md": "やっほー、しぃちゃんだよ！今日は Cloudflare から、地味だけど「あって良かった」ってなる更新が届いたよ。\n\n## なにが発表されたの？\n\nCloudflare の Changelog によると、ダッシュボードの DNS records ページに、DNS レコードのクォータ(上限)の 85% を使った時点で警告が表示されるようになったの。\n\n警告は、自分に適用されているクォータに合わせて内容が変わるよ。\n\n- ゾーン個別のクォータがある場合: そのゾーンの使用量を表示\n- アカウントレベルの DNS records クォータを使っている場合: アカウント内の全ゾーンを合計した使用量を表示\n\n## 今までどうだったの？\n\nこれまでは、上限に近づいていることをダッシュボード上で先に知らせてくれる仕組みが見当たらなかったみたい(原文では従来の挙動には触れていないので、ここはしぃちゃんの読みだよ)。レコードを追加しようとして初めて上限に気づく、という流れになりやすかったかもしれないね。\n\n## これで何が変わるの？\n\n上限に達する前に 85% の時点で気づけるから、慌てる前に準備ができるよ。\n\n- 使っていないレコードの整理を先にできる\n- クォータの引き上げや、プランの見直しを余裕を持って検討できる\n\n特にアカウントレベルのクォータだと、複数ゾーンの合計で見てくれるから、ゾーンが多い人でも全体の残りが把握しやすくなるよ。\n\n## 深く潜ってみよう\n\n原文から分かることは次のとおりだよ。\n\n- 警告の表示場所は、ダッシュボードの DNS records ページ\n- しきい値は使用率 85%(原文の画像例では 86% 使用時の警告が示されているよ)\n- 表示対象のクォータは、ゾーン個別かアカウントレベルかで自動的に切り替わる\n\nしきい値の変更方法や API・通知への対応などは、原文には書かれていなかったよ。\n\n## まとめ\n\n- DNS records ページで、クォータ使用率が 85% に達すると警告が出る\n- ゾーン個別のクォータならそのゾーン、アカウントレベルなら全ゾーン合計の使用量が対象\n- 上限に達する前に、整理や引き上げの検討ができる\n\nたくさんのレコードを管理している Cloudflare ユーザーのみんなに、うれしい更新だよ！",
+  "title_en": "Cloudflare DNS Now Warns You at 85% of Your Records Quota!",
+  "summary_en": "The DNS records page in the Cloudflare dashboard now shows a warning once you have used 85% of your DNS records quota. It reflects whichever quota applies to you, per zone or account-wide.",
+  "body_md_en": "Hi, it's Shii-chan! Today Cloudflare shipped a small update that will be really nice to have.\n\n## What was announced?\n\nAccording to the Cloudflare Changelog, the DNS records page in the dashboard now shows a warning once you have used 85% of your DNS records quota.\n\nThe warning follows the quota that applies to you:\n\n- If your zone has its own quota: it shows that zone's usage\n- If your account uses an account-level DNS records quota: it shows your usage across all zones in the account\n\n## The story so far\n\nThe announcement doesn't describe the previous behavior, so this part is my reading: it seems you could only find out you were at the limit when you tried to add another record.\n\n## What changes\n\nYou can notice at 85% instead of at the limit, which gives you time to act.\n\n- Clean up records you no longer use\n- Plan a quota increase or a plan change without rushing\n\nWith account-level quotas, the warning counts all zones together, so it's easier to see how much room is left overall.\n\n## Dive Deep\n\nHere is what the original post tells us:\n\n- The warning appears on the DNS records page in the dashboard\n- The threshold is 85% usage (the screenshot in the post shows a warning at 86%)\n- The quota shown switches automatically between zone-level and account-level\n\nThe post doesn't mention configurable thresholds, API access, or notifications.\n\n## Wrap-up\n\n- A warning appears on the DNS records page at 85% quota usage\n- It covers the zone quota, or the total across all zones for account-level quotas\n- You get time to clean up or raise your quota before hitting the limit\n\nThis one is for anyone managing lots of DNS records on Cloudflare!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-06-dns-records-quota-warning/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "DNS - Warnings when approaching your DNS records quota",
+  "tags": [
+    "cloudflare",
+    "infrastructure",
+    "web"
+  ],
+  "published_at": "2026-10-06T15:06:33+00:00"
+}
