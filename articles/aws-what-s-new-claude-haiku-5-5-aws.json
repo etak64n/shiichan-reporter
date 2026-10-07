@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-claude-haiku-5-5-aws",
+  "title": "Claude Haiku 5.5 が AWS に登場！Haiku 4.5 より約 75% 安いよ",
+  "summary": "AWS で Claude Haiku 5.5 が使えるようになったよ。Claude 5.5 ファミリーでいちばん速くて効率的なモデルで、Amazon Bedrock と Claude Platform on AWS の 2 通りで利用できるの。",
+  "body_md": "やっほー、しぃちゃんだよ！Claude の小さくて速い子が AWS にやってきたよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Claude Haiku 5.5 が AWS で利用できるようになったと発表されたよ。Claude 5.5 ファミリーでいちばん速くて効率的なモデルで、サブエージェントや大量処理、コストを重視する用途向けだよ。\n\n## なぜ重要なの？\n\nAnthropic によると、ほとんどのタスクで Claude Haiku 4.5 より約 75% 低コストだそうだよ。コーディング、ツール使用、コンピューター操作、エージェント用途では、Haiku 4.5 から大きく進歩しているとのことだよ。\n\n## これで何が変わるの？\n\nHaiku 5.5 は、速さとコストが効いてくる場面に向いているよ。\n\n- 音声エージェント、ライブサポート、アプリ内アシスタントなどのリアルタイム体験\n- 分類、要約、ドキュメントからの主要項目抽出などの大量処理\n- 高速でコスト効率のよいサブエージェント\n\nたとえば Claude Opus 5.5 のような高性能モデルが計画を立てて、明確に決まったコーディング、ツール使用、ブラウザ自動化のタスクを Haiku に任せると、たくさんのエージェントを並列で動かしやすくなるよ。\n\n## 深く潜ってみよう\n\nHaiku 5.5 は、Haiku として初めて effort controls(エフォート制御)を備えたよ。タスクごとにコストと知能のバランスを調整できるんだ。\n\n使い方は 2 通りあるよ。\n\n- Amazon Bedrock: データを AWS のインフラ内に保ち、リージョンごとのデータ所在地を確保できる。Guardrails や Knowledge Bases など、AWS が管理する機能も統合サービスから使える\n- Claude Platform on AWS: Anthropic ネイティブのプラットフォーム体験と機能を、AWS コンソール経由で直接使える\n\nリージョンごとの提供状況は、Amazon Bedrock のドキュメントで確認してね。\n\n## まとめ\n\n- Claude Haiku 5.5 が AWS で利用可能に\n- Haiku 4.5 より約 75% 低コスト(Anthropic による)\n- Haiku 初の effort controls でコストと知能を調整できる\n- Amazon Bedrock と Claude Platform on AWS から使える\n\nリアルタイムの応答や大量処理、マルチエージェント構成のコストを下げたい人に刺さるよ！",
+  "title_en": "Claude Haiku 5.5 Comes to AWS at About 75% Lower Cost Than Haiku 4.5",
+  "summary_en": "Claude Haiku 5.5, the fastest and most efficient model in the Claude 5.5 family, is now available on AWS through Amazon Bedrock and Claude Platform on AWS.",
+  "body_md_en": "Hi, it's Shii-chan! A small, fast Claude has arrived on AWS.\n\n## What was announced?\n\nIn AWS What's New, AWS announced that Claude Haiku 5.5 is available on AWS. It is the fastest and most efficient model in the Claude 5.5 family, built for subagents and high-volume, cost-sensitive work.\n\n## Why it matters\n\nAccording to Anthropic, it costs around 75% less than Claude Haiku 4.5 for most tasks. It is also a significant step up from Haiku 4.5 across coding, tool use, computer use, and agents.\n\n## What changes\n\nHaiku 5.5 fits work where speed and cost matter most.\n\n- Real-time experiences like voice agents, live support, and in-app assistants\n- High-volume tasks like classification, summarization, and pulling key fields from documents\n- Fast, cost-efficient subagents\n\nFor example, a more capable model like Claude Opus 5.5 can plan the work and hand off well-defined coding, tool use, and browser automation tasks to Haiku, which makes running many agents in parallel practical.\n\n## Dive Deep\n\nHaiku 5.5 is the first Haiku with effort controls, so you can tune cost against intelligence for each task.\n\nThere are two ways to access it.\n\n- Amazon Bedrock: keeps your data within AWS infrastructure with regional data residency, and gives you AWS-managed features such as Guardrails and Knowledge Bases through a unified service\n- Claude Platform on AWS: direct access to Anthropic's native platform experience and capabilities through the AWS Console\n\nCheck the Amazon Bedrock documentation for regional availability.\n\n## Wrap-up\n\n- Claude Haiku 5.5 is available on AWS\n- Around 75% lower cost than Haiku 4.5 (according to Anthropic)\n- First Haiku with effort controls for balancing cost and intelligence\n- Available through Amazon Bedrock and Claude Platform on AWS\n\nThis is great if you want to cut the cost of real-time responses, high-volume jobs, or multi-agent setups!",
+  "emotion": "energetic",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/claude-haiku-5-5-aws/",
+  "source_name": "AWS What's New",
+  "og_title": "Claude Haiku 5.5 is now available on AWS",
+  "tags": [
+    "aws",
+    "anthropic",
+    "ai"
+  ],
+  "published_at": "2026-10-07T14:00:00+00:00"
+}

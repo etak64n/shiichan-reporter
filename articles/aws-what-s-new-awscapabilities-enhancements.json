@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-awscapabilities-enhancements",
+  "title": "AWS Capabilities by Region に機能単位の通知が！リージョン差分も一発で絞り込み",
+  "summary": "AWS Builder Center の AWS Capabilities by Region に、機能単位の提供開始通知と高度なフィルターが追加されたよ。1 万 9 千超の API オペレーションの差分も絞り込めるの。",
+  "body_md": "やっほー、しぃちゃんだよ！「あのリージョン、まだあの機能来ないかな？」って待っているみんなに朗報だよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Builder Center の AWS Capabilities by Region に、機能単位の提供開始通知と高度なフィルターが追加されたよ。\n\n## 今までどうだったの？\n\nリージョンごとにどの機能が使えるかは、自分で調べて見比べる必要があったよね。原文によると、対象は 19,000 以上の API オペレーションと 5,000 以上の CloudFormation リソースタイプもあるから、全体の一覧から差分を探すのは大変だったんだ。\n\n## これで何が変わるの？\n\n- 気になる AWS リージョンで、サービス単位または個別の機能単位で提供開始の通知を設定できる\n- 通知はアプリ内通知と、通知を有効にしてから使えるようになった機能をまとめた週次メールダイジェストで届く\n- API オペレーションと CloudFormation リソースを、提供状況でフィルターできる\n- リージョンを比較して、すべての機能、一致するものだけ、差分だけを表示できる\n\n## 深く潜ってみよう\n\n通知まわりの細かい仕様だよ。\n\n- サービスに通知を設定すると、そのサービス内のすべての機能が対象になる\n- 「All regions」を選ぶと、将来登場する AWS リージョンを含むすべてのリージョンが対象になる\n\nフィルターは、既存の検索や表示設定と組み合わせて使えるよ。\n\n利用条件はこうだよ。\n\n- 機能を比較するだけならアカウントは不要\n- 提供開始通知を設定するには、無料の Builder ID が必要\n\n## まとめ\n\n- 機能単位で提供開始通知を設定できる(アプリ内通知と週次メール)\n- 「All regions」で将来のリージョンもカバー\n- API オペレーションと CloudFormation リソースを提供状況でフィルター\n- リージョン比較は差分だけの表示もできる\n\n新しいリージョンに展開する予定の人や、リージョンをまたいで構成を組む人に刺さる更新だよ！",
+  "title_en": "AWS Capabilities by Region Adds Feature-Level Notifications and Advanced Filters",
+  "summary_en": "AWS Capabilities by Region in AWS Builder Center now offers availability notifications for individual features and advanced filters to compare Regions across more than 19,000 API operations.",
+  "body_md_en": "Hi, it's Shii-chan! Good news if you've ever wondered when a feature will reach your Region.\n\n## What was announced?\n\nIn AWS What's New, AWS announced feature-level availability notifications and advanced filters for AWS Capabilities by Region in AWS Builder Center.\n\n## The story so far\n\nYou had to look up which features were available in each Region and compare them yourself. According to the post, there are over 19,000 API operations and more than 5,000 CloudFormation resource types, so finding differences in a full listing was hard.\n\n## What changes\n\n- You can set availability notifications for an AWS service, or for an individual feature, in the Regions you care about\n- You get an in-app notification and a weekly email digest of capabilities that became available since you enabled notifications\n- You can filter API operations and CloudFormation resources by availability status\n- You can compare Regions to show all capabilities, only matching ones, or only differences\n\n## Dive Deep\n\nDetails on notifications:\n\n- Setting a notification for a service covers every feature within it\n- The \"All regions\" option covers every Region, including Regions that launch in the future\n\nThe filters work alongside search and existing display preferences.\n\nRequirements:\n\n- Comparing capabilities requires no account\n- Setting up availability notifications requires a Builder ID, which is free\n\n## Wrap-up\n\n- Feature-level availability notifications (in-app and weekly email)\n- \"All regions\" covers future Regions too\n- Filter API operations and CloudFormation resources by availability\n- Region comparison can show only the differences\n\nThis is handy if you are planning to expand into a new Region or design across Regions!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/awscapabilities-enhancements/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Capabilities by Region now offers availability notifications for individual features and advanced filters",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-07T15:00:00+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-claude-haiku-5-5-aws-govcloud",
+  "title": "Claude Haiku 5.5 が AWS GovCloud (US) にも！政府系ワークロードで使えるよ",
+  "summary": "AWS GovCloud (US) で Claude Haiku 5.5 が Amazon Bedrock 経由で使えるようになったよ。サブエージェントや大量処理向けの、速くて効率的なモデルなの。",
+  "body_md": "こんにちは、しぃちゃんだよ！Claude Haiku 5.5 の話題が、今度は GovCloud にも広がったよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS GovCloud (US) で Claude Haiku 5.5 が利用できるようになったと発表されたよ。Claude 5.5 ファミリーでいちばん速くて効率的なモデルで、サブエージェントや、大量でコスト重視の処理向けだよ。\n\n## なぜ重要なの？\n\nGovCloud (US) は、規制の厳しいワークロード向けのリージョンだよね。そこで新しい Haiku が選べるようになったのが今回のポイントだよ。\n\n## これで何が変わるの？\n\nAnthropic によると、ほとんどのタスクで Claude Haiku 4.5 より約 75% 低コストだそうだよ。Haiku 5.5 は Haiku 4.5 からコーディング、ツール使用、コンピューター操作、エージェントで大きく進歩していて、Haiku 初の effort controls も備えているよ。コストと知能のバランスをタスクごとに調整できるんだ。\n\n向いている用途はこれだよ。\n\n- 音声エージェント、ライブサポート、アプリ内アシスタントなどのリアルタイム体験\n- 分類、要約、ドキュメントからの項目抽出などの大量処理\n- 高速でコスト効率のよいサブエージェント\n\n## 深く潜ってみよう\n\nClaude Opus 5.5 のようなより高性能なモデルが計画を立てて、明確なコーディング、ツール使用、ブラウザ自動化のタスクを Haiku に任せる使い方が紹介されているよ。\n\nアクセスは Amazon Bedrock 経由で、データを AWS のインフラ内に保ち、リージョンごとのデータ所在地を確保できるよ。Guardrails や Knowledge Bases など、AWS が管理する機能も使えるんだ。提供状況は Amazon Bedrock のドキュメントのリージョン情報を見てね。\n\n通常のリージョン向けの発表では Claude Platform on AWS も案内されていたけど、この GovCloud の発表で案内されているのは Amazon Bedrock だけだったよ。\n\n## まとめ\n\n- AWS GovCloud (US) で Claude Haiku 5.5 が利用可能に\n- Haiku 4.5 より約 75% 低コスト(Anthropic による)\n- Haiku 初の effort controls を搭載\n- アクセスは Amazon Bedrock 経由\n\nGovCloud で AI を動かしている人や、規制環境でエージェントを組みたい人に刺さるニュースだよ！",
+  "title_en": "Claude Haiku 5.5 Is Now Available on AWS GovCloud (US)",
+  "summary_en": "Claude Haiku 5.5, a fast and efficient model for subagents and high-volume work, is now available in AWS GovCloud (US) through Amazon Bedrock.",
+  "body_md_en": "Hi, it's Shii-chan! The Claude Haiku 5.5 news has now reached GovCloud too.\n\n## What was announced?\n\nIn AWS What's New, AWS announced that Claude Haiku 5.5 is available in AWS GovCloud (US). It is the fastest and most efficient model in the Claude 5.5 family, built for subagents and high-volume, cost-sensitive work.\n\n## Why it matters\n\nGovCloud (US) is designed for regulated workloads, so being able to pick the new Haiku there is the key point of this announcement.\n\n## What changes\n\nAccording to Anthropic, it costs around 75% less than Claude Haiku 4.5 for most tasks. Haiku 5.5 is a significant step up from Haiku 4.5 across coding, tool use, computer use, and agents, and it is the first Haiku with effort controls, so you can tune cost against intelligence per task.\n\nIt fits these uses.\n\n- Real-time experiences like voice agents, live support, and in-app assistants\n- High-volume tasks like classification, summarization, and extracting fields from documents\n- Fast, cost-efficient subagents\n\n## Dive Deep\n\nThe announcement describes a pattern where a more capable model like Claude Opus 5.5 plans the work and hands off well-defined coding, tool use, and browser automation tasks to Haiku.\n\nAccess is through Amazon Bedrock, which keeps your data within AWS infrastructure with regional data residency and provides AWS-managed features like Guardrails and Knowledge Bases. See the Amazon Bedrock documentation for regional availability.\n\nThe announcement for standard Regions also mentions Claude Platform on AWS, but this GovCloud announcement only describes Amazon Bedrock.\n\n## Wrap-up\n\n- Claude Haiku 5.5 is available in AWS GovCloud (US)\n- Around 75% lower cost than Haiku 4.5 (according to Anthropic)\n- First Haiku with effort controls\n- Accessed through Amazon Bedrock\n\nThis is for anyone running AI in GovCloud or building agents in regulated environments!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/claude-haiku-5-5-aws-govcloud/",
+  "source_name": "AWS What's New",
+  "og_title": "Claude Haiku 5.5 is now available on AWS GovCloud (US)",
+  "tags": [
+    "aws",
+    "anthropic",
+    "ai"
+  ],
+  "published_at": "2026-10-07T14:00:00+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-10-07-organizations-generally-available",
+  "title": "Cloudflare Organizations がついに GA、アカウント管理がひとまとめに！",
+  "summary": "Cloudflare Organizations が Enterprise と MSSP/Distributor パートナー向けに一般提供になったよ。アカウント・メンバー・分析・共有ポリシーを最上位のコンテナでまとめて管理できるの。",
+  "body_md": "こんにちは、しぃちゃんだよ！たくさんのアカウントを抱えている人にうれしいニュースが来たよ。\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Cloudflare Organizations が Enterprise のお客様と MSSP/Distributor パートナー向けに一般提供(GA)になったと発表されたよ。\n\nOrganizations は、アカウント・メンバー・分析・共有ポリシーを一元管理するための、最上位のコンテナだよ。\n\n## これで何が変わるの？\n\n- Organization の Super Administrator は、個別のアカウント メンバーシップなしで、Organization 内のすべてのアカウントに暗黙のアクセス権を持つ\n- Enterprise のお客様は、単層の Organization でアカウントを管理できる\n- MSSP/Distributor パートナーは、ネストしたサブ組織で顧客アカウントを管理できる\n\nアカウントごとに管理者を招待して回る手間が減るのがうれしいところだよ。\n\n## 深く潜ってみよう\n\n気をつけたい点もあるよ。\n\n- Organization Roles はまだベータ\n- 現在の製品上の制限は引き続き適用される\n\n具体的な制限の一覧は原文に載っていなくて、別ページの Cloudflare Organizations のドキュメントで案内されているよ。\n\n## まとめ\n\n- Cloudflare Organizations が Enterprise と MSSP/Distributor パートナー向けに GA\n- Super Administrator は全アカウントに暗黙でアクセスできる\n- パートナーはサブ組織のネストで顧客アカウントを管理できる\n- Organization Roles はベータのまま\n\n複数アカウントをまとめて運用している Enterprise の管理者や、顧客アカウントを預かるパートナーに刺さる更新だよ！",
+  "title_en": "Cloudflare Organizations Is Now Generally Available",
+  "summary_en": "Cloudflare Organizations is generally available for Enterprise customers and MSSP/Distributor partners, giving you one top-level container for accounts, members, analytics, and shared policies.",
+  "body_md_en": "Hi, it's Shii-chan! Here is good news for anyone juggling lots of accounts.\n\n## What was announced?\n\nIn the Cloudflare Changelog, Cloudflare announced that Cloudflare Organizations is now generally available (GA) for Enterprise customers and MSSP/Distributor partners.\n\nOrganizations is a top-level container for centrally managing accounts, members, analytics, and shared policies.\n\n## What changes\n\n- Organization Super Administrators get implicit access to every account in their Organization, without separate account memberships\n- Enterprise customers can manage accounts in a single-tier Organization\n- MSSP/Distributor partners can use nested sub-organizations to manage customer accounts\n\nYou no longer need to add administrators account by account.\n\n## Dive Deep\n\nA few things to keep in mind.\n\n- Organization Roles is still in beta\n- Current product limitations still apply\n\nThe post doesn't list the limitations. It points to the separate Cloudflare Organizations documentation.\n\n## Wrap-up\n\n- Cloudflare Organizations is GA for Enterprise and MSSP/Distributor partners\n- Super Administrators get implicit access to all accounts\n- Partners can nest sub-organizations for customer accounts\n- Organization Roles remains in beta\n\nThis is a great fit for Enterprise admins running many accounts and for partners who manage customer accounts!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-07-organizations-generally-available/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Cloudflare Fundamentals, Cloudflare One, Gateway, Organizations - Cloudflare Organizations is generally available",
+  "tags": [
+    "cloudflare",
+    "infrastructure",
+    "business"
+  ],
+  "published_at": "2026-10-07T21:21:08+00:00"
+}

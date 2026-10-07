@@ -1,0 +1,20 @@
+{
+  "slug": "openai-news-radisson",
+  "title": "Radisson が ChatGPT プラグインでホテル探しを変える！検索の 1.5 倍で予約に",
+  "summary": "Radisson Hotel Group が Accenture と作った ChatGPT プラグインの事例だよ。ホテルの比較や予約への導線が、オーガニック検索の約 1.5 倍のコンバージョンになったと紹介されているの。",
+  "body_md": "みんな、しぃちゃんだよ！今日は ChatGPT でホテルを探す新しい旅のニュースだよ。\n\n## なにが発表されたの？\n\nOpenAI の News で、Radisson Hotel Group が Accenture Song と進めている、OpenAI 技術を使った取り組みが紹介されたよ。旅行者がホテルのサイトを訪れる前の、計画の早い段階で出会うための ChatGPT プラグインだよ。\n\n## なぜ重要なの？\n\nこれは導入事例の紹介で、AI が旅行の「検索」の入口になりつつあることを示す話だよ。原文によると、訪問から予約に至る割合は、2026 年 7〜8 月の Radisson のオーガニック検索の約 1.5 倍だったそうだよ。初期の結果という位置づけだね。\n\n## これで何が変わるの？\n\nプラグインでできることはこれだよ。\n\n- ホテルを地図上に表示する\n- 料金を比較する\n- 設備を表示する\n- 予約は Radisson のサイトに進んで行う\n\nさらに最近の ChatGPT のアップデートで、関連するときにプラグインが自動で表示されるようになって、@RadissonHotels と入力しなくてよくなったよ。\n\n## 深く潜ってみよう\n\n原文から拾えた具体的な情報だよ。\n\n- Radisson は EMEA と APAC に 10 ブランド、運営中または開発中のホテルは 1,640 軒以上\n- Accenture は 7 年間、Radisson の直販デジタルチャネルで予約増を支援してきた\n- プラグインは、エージェント型の開発で 6 週間で作られた\n- Radisson は ChatGPT のスポンサー広告の初期の導入ブランドでもあり、7 月の開始以降、欧州などに展開を広げている\n- 記録されたチェックアウトと予約イベントの半分以上は、広告のクリックだけでなくビュースルー計測で帰属された\n- プラグイン用に作った MCP サーバーと API が、広告にも使われ、今後の機能も支える\n\n次の優先事項は、プラグインの利用拡大と ChatGPT 内の機能追加だそうだよ。\n\n## まとめ\n\n- Radisson が ChatGPT プラグインでホテルの発見と比較を提供\n- 訪問から予約への転換率は、オーガニック検索の約 1.5 倍(初期結果)\n- 開発は Accenture と 6 週間、MCP サーバーと API は広告にも流用\n- 関連する場面で自動表示されるようになった\n\nEC や旅行サービスで、ChatGPT 内への出し方を考えている人に刺さる事例だよ！",
+  "title_en": "Radisson Brings Hotel Discovery into ChatGPT, Converting at 1.5x Organic Search",
+  "summary_en": "A look at Radisson Hotel Group's ChatGPT plugin, built with Accenture, which compares hotels and converts visits to bookings at about 1.5 times the rate of organic search.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today's news is about finding hotels inside ChatGPT.\n\n## What was announced?\n\nOpenAI News featured Radisson Hotel Group's work with Accenture Song using OpenAI technology. It is a ChatGPT plugin that reaches travelers early in their planning, often before they visit a hotel website.\n\n## Why it matters\n\nThis is a customer story, and it shows AI becoming an entry point for travel search. According to the post, the visit-to-booking conversion rate was about 1.5 times Radisson's organic search for July and August 2026. The post calls these early results.\n\n## What changes\n\nThe plugin does the following.\n\n- Shows hotels on a map\n- Compares prices\n- Displays amenities\n- Sends you to Radisson's site to book\n\nA recent ChatGPT update also shows the plugin automatically when relevant, so users no longer need to type @RadissonHotels.\n\n## Dive Deep\n\nHere are the concrete details from the post.\n\n- Radisson has ten hotel brands across EMEA and APAC, with more than 1,640 hotels operating or in development\n- Accenture has helped Radisson grow bookings through its direct digital channel for seven years\n- The plugin was built in six weeks using agentic development\n- Radisson is also an early advertiser with sponsored ads in ChatGPT, running since July and expanding into more European and other markets\n- More than half of recorded checkout and booking events were attributed through view-through measurement, not just ad clicks\n- The MCP server and APIs built for the plugin also power the ads and will support future features\n\nNext, Radisson plans to drive plugin adoption and add more functionality within ChatGPT.\n\n## Wrap-up\n\n- Radisson offers hotel discovery and comparison through a ChatGPT plugin\n- Visit-to-booking conversion is about 1.5 times organic search (early results)\n- Built with Accenture in six weeks, with the MCP server and APIs reused for ads\n- The plugin now appears automatically when relevant\n\nThis is a useful story if you are thinking about how to show up inside ChatGPT for commerce or travel!",
+  "emotion": "happy",
+  "importance": 1,
+  "source_url": "https://openai.com/index/radisson",
+  "source_name": "OpenAI News",
+  "og_title": "Radisson Hotel Group brings hotel discovery into ChatGPT",
+  "tags": [
+    "openai",
+    "ai",
+    "business"
+  ],
+  "published_at": "2026-10-07T07:00:00+00:00"
+}
