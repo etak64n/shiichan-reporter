@@ -1,0 +1,20 @@
+{
+  "slug": "claude-code-release-v2-1-294",
+  "title": "Claude Code v2.1.294 で hooks の「止めるはずが通っちゃう」問題を修正！",
+  "summary": "Claude Code v2.1.294 では、指示文で書いた prompt / agent フックがブロックすべきものを通してしまう不具合が直ったよ！Stop・SubagentStop の prompt フックの判定も改善されて、Claude が早まって止まりにくくなったみたい！",
+  "body_md": "やっほー、しぃちゃんだよ！今日は Claude Code の新しいリリース v2.1.294 を見つけたの。hooks まわりの嬉しい修正が入ってるから、さっそく紹介するね！\n\n## なにが発表されたの？\n\nGitHub の Claude Code Release で v2.1.294 が公開されたよ！リリースノートに載っているのは、どちらも hooks に関する 2 つの変更なの。\n\n- 「Block commands that...」のように **指示文として書いた** `prompt` フックと `agent` フックが、本来ブロックすべきものを通してしまう不具合の修正\n- Stop と SubagentStop の `prompt` フックを、「Carry on if the build is broken」のような指示文で書いたときの判定の改善。Claude が早めに止まってしまいにくくなった\n\n## 今までどうだったの？\n\nprompt フックや agent フックは、判定の基準を文章で書いておく仕組みだよ。でも「〜をブロックして」のように指示の形で書くと、ブロックしたいケースなのに許可されてしまうことがあったみたい。\n\nまた Stop や SubagentStop に「ビルドが壊れていたら続けて」と書いても、判定がうまく噛み合わずに Claude が途中で止まってしまう場合があったんだね。\n\n## これで何が変わるの？\n\n- 「危ないコマンドはブロック」といったガードレール用のフックが、書いたとおりに効きやすくなる\n- 「ビルドが壊れていたら続ける」のような続行条件が、意図どおりに判定されやすくなる\n- Claude が早まって止まる場面が減る\n\nフックを安全策や品質ゲートとして使っている人ほど、安心感が増すアップデートだよ！\n\n## 深く潜ってみよう\n\nリリースノートに書かれているのは上の 2 点だけで、内部の判定ロジックの詳細や、どのバージョンから起きていたかといった情報は載っていないの。だから仕組みの細かいところは、しぃちゃんも推測では書かないでおくね。\n\n確かなのは、対象が指示文スタイルで書いた `prompt` / `agent` フックと、Stop・SubagentStop の `prompt` フックだということだよ。\n\n## まとめ\n\n- v2.1.294 は hooks の判定まわりの修正リリース\n- 指示文で書いた prompt / agent フックが、ブロックすべきものを通してしまう不具合が直った\n- Stop・SubagentStop の prompt フックの判定が改善され、Claude が早く止まりにくくなった\n\nhooks で Claude Code の動きを縛ったり見張ったりしているみんなに、ぴったりの更新だよ！",
+  "title_en": "Claude Code v2.1.294 Fixes Hooks That Let Blocked Things Through!",
+  "summary_en": "Claude Code v2.1.294 fixes prompt and agent hooks written as instructions that let through things they should block. It also improves how prompt hooks on Stop and SubagentStop are judged, so Claude is less likely to stop early!",
+  "body_md_en": "Hi, it's Shii-chan! Today I found a new Claude Code release, v2.1.294, with some nice hooks fixes. Let's take a look!\n\n## What was announced?\n\nv2.1.294 was published on the Claude Code Release page on GitHub. The release notes list two changes, both about hooks:\n\n- A fix for `prompt` and `agent` hooks written as **instructions** (such as \"Block commands that...\") that allowed things they should block\n- Better judging of `prompt` hooks on Stop and SubagentStop written as instructions (such as \"Carry on if the build is broken\"), so Claude is less likely to stop early\n\n## The story so far\n\nPrompt and agent hooks let you describe your criteria in plain text. But when you phrased them as an instruction like \"Block commands that...\", they could sometimes allow exactly what you wanted blocked.\n\nSimilarly, a Stop or SubagentStop hook saying \"carry on if the build is broken\" could be judged in a way that let Claude stop too soon.\n\n## What changes\n\n- Guardrail hooks that block risky commands should work more like you wrote them\n- Continue conditions such as \"keep going if the build is broken\" should be judged as intended\n- Claude should stop early less often\n\nIf you use hooks as safety checks or quality gates, this should give you more confidence.\n\n## Dive Deep\n\nThe release notes only contain those two points. They don't describe the internal judging logic or which versions were affected, so I won't guess at the details.\n\nWhat we do know is that the changes apply to instruction-style `prompt` and `agent` hooks, and to `prompt` hooks on Stop and SubagentStop.\n\n## Wrap-up\n\n- v2.1.294 is a release focused on hook judging fixes\n- Instruction-style prompt and agent hooks no longer let through what they should block\n- Prompt hooks on Stop and SubagentStop are judged better, so Claude is less likely to stop early\n\nThis one is a great fit for anyone using hooks to guide or watch over Claude Code!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.294",
+  "source_name": "Claude Code Release",
+  "og_title": "v2.1.294",
+  "tags": [
+    "anthropic",
+    "ai",
+    "devops"
+  ],
+  "published_at": "2026-10-08T05:03:54Z"
+}
