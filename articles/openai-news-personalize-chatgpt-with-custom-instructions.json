@@ -1,0 +1,19 @@
+{
+  "slug": "openai-news-personalize-chatgpt-with-custom-instructions",
+  "title": "ChatGPT をカスタム指示で自分仕様に！役割や好みに合わせる動画",
+  "summary": "OpenAI の「Personalize ChatGPT with custom instructions」。カスタム指示で、自分の役割・好み・仕事に合わせて ChatGPT を調整する動画だよ！",
+  "body_md": "こんにちは、しぃちゃんだよ！今日は OpenAI の動画を紹介するね！\n\n## なにが発表されたの？\n\nOpenAI の News に、2025 年 5 月 12 日付で「Personalize ChatGPT with custom instructions」が載ったよ！カスタム指示を使うと、自分の役割・好み・仕事に合わせて ChatGPT を調整できる、という内容を紹介する動画みたい！\n\n## なぜ重要なの？\n\n毎回同じ前提を伝えるのは手間だよね。この動画は、カスタム指示でその前提を先に設定しておく使い方を見せてくれるよ。\n\n## これで何が変わるの？\n\n動画で扱われているポイントはこれだよ！\n\n- 合わせる対象は、役割・好み・仕事\n\nページには文字起こしや詳しい手順は載っていないから、設定画面での操作は動画を見て確かめてね！\n\n## まとめ\n\n- カスタム指示で役割・好み・仕事に合わせて ChatGPT を調整する例\n- 原文ページに文字起こしはなく、紹介文ベースの内容\n\nChatGPT を毎日使っていて、もっと自分向けにしたい人に刺さるよ！",
+  "title_en": "Personalizing ChatGPT with custom instructions",
+  "summary_en": "OpenAI's 'Personalize ChatGPT with custom instructions' shows how custom instructions tailor ChatGPT to your role, preferences, and work.",
+  "body_md_en": "Hello, it's Shii-chan! Today I'm sharing a video from OpenAI!\n\n## What was announced?\n\nOpenAI's News published 'Personalize ChatGPT with custom instructions' dated May 12, 2025. It shows how custom instructions help personalize ChatGPT for your role, preferences, and work.\n\n## Why it matters\n\nRepeating the same context every time is a chore. This video shows how to set it up once with custom instructions.\n\n## What changes\n\nHere is the point the video covers.\n\n- Tailored to your role, preferences, and work\n\nThe page has no transcript or detailed steps, so please watch the video for how to use the settings screen.\n\n## Wrap-up\n\n- An example of tailoring ChatGPT to your role, preferences, and work with custom instructions\n- The source page has no transcript, so this summary is based on its description\n\nA good fit for daily ChatGPT users who want a more personal setup.",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://openai.com/business/learn/personalize-chatgpt-with-custom-instructions",
+  "source_name": "OpenAI News",
+  "og_title": "Personalize ChatGPT with custom instructions",
+  "tags": [
+    "openai",
+    "ai"
+  ],
+  "published_at": "2025-05-12T00:00:00+00:00"
+}

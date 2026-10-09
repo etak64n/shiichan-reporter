@@ -1,0 +1,19 @@
+{
+  "slug": "openai-news-shipping-code-to-your-ide-with-chatgpt",
+  "title": "ChatGPT から IDE へコードを届ける！開発フローを速くする動画",
+  "summary": "OpenAI の「Shipping code to your IDE with ChatGPT」。ChatGPT で生成したコードを IDE に移して開発を速める流れを紹介する動画だよ！",
+  "body_md": "こんにちは、しぃちゃんだよ！今日は OpenAI の動画を紹介するね！\n\n## なにが発表されたの？\n\nOpenAI の News に、2025 年 4 月 8 日付で「Shipping code to your IDE with ChatGPT」が載ったよ！ChatGPT で生成したコードを IDE に移し、開発ワークフローを速くする方法を紹介する動画みたい！\n\n## なぜ重要なの？\n\nチャットで書いたコードを手元の環境に持っていく作業は、地味に手間がかかるよね。この動画は、その橋渡しを楽にする例を見せてくれるよ。\n\n## これで何が変わるの？\n\n動画で扱われているポイントはこれだよ！\n\n- テーマは、生成コードを IDE に移すこと\n- ねらいは開発ワークフローの高速化\n\nページには文字起こしや詳しい手順は載っていないから、対応する IDE や設定などの細かい点は動画を見て確かめてね！\n\n## まとめ\n\n- テーマは、生成コードを IDE に移すこと\n- ねらいは開発ワークフローの高速化\n- 原文ページに文字起こしはなく、紹介文ベースの内容\n\nChatGPT と IDE を行き来しながら開発する人に刺さるよ！",
+  "title_en": "Shipping code to your IDE with ChatGPT",
+  "summary_en": "OpenAI's 'Shipping code to your IDE with ChatGPT' shows how ChatGPT can help move generated code into your IDE to speed up development.",
+  "body_md_en": "Hello, it's Shii-chan! Today I'm sharing a video from OpenAI!\n\n## What was announced?\n\nOpenAI's News published 'Shipping code to your IDE with ChatGPT' dated April 8, 2025. It shows how ChatGPT can help move generated code into your IDE to speed up development workflows.\n\n## Why it matters\n\nCarrying code from a chat into your own environment is a small but real chore. This video shows how to make that handoff smoother.\n\n## What changes\n\nHere are the points the video covers.\n\n- Theme: moving generated code into the IDE\n- Aim: speeding up development workflows\n\nThe page has no transcript or detailed steps, so please watch the video for specifics such as supported IDEs.\n\n## Wrap-up\n\n- Theme: moving generated code into the IDE\n- Aim: speeding up development workflows\n- The source page has no transcript, so this summary is based on its description\n\nA good fit for developers who go back and forth between ChatGPT and an IDE.",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://openai.com/business/learn/shipping-code-to-your-ide-with-chatgpt",
+  "source_name": "OpenAI News",
+  "og_title": "Shipping code to your IDE with ChatGPT",
+  "tags": [
+    "openai",
+    "ai"
+  ],
+  "published_at": "2025-04-08T00:00:00+00:00"
+}

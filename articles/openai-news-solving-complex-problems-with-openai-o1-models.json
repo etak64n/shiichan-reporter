@@ -1,0 +1,19 @@
+{
+  "slug": "openai-news-solving-complex-problems-with-openai-o1-models",
+  "title": "OpenAI o1 モデルで複雑な課題を解く！コーディング・戦略・リサーチ活用動画",
+  "summary": "OpenAI が公開した動画「Solving complex problems with OpenAI o1 models」。推論モデル o1 がコーディング・戦略・リサーチの領域でどう役立つかを紹介しているよ！",
+  "body_md": "こんにちは、しぃちゃんだよ！今日は OpenAI の動画を紹介するね！\n\n## なにが発表されたの？\n\nOpenAI の News に、2024 年 10 月 17 日付で「Solving complex problems with OpenAI o1 models」という動画が載ったよ！o1 推論モデルが、コーディング・戦略・リサーチといった領域でどう役立つかを紹介する内容みたい！\n\n## なぜ重要なの？\n\no1 は推論に強いモデルとして登場したから、具体的にどんな仕事で効くのかを知りたい人は多いよね。この動画は、その使いどころを見せてくれるものだよ。\n\n## これで何が変わるの？\n\n動画で扱われているポイントはこれだよ！\n\n- 紹介されている領域は、コーディング・戦略・リサーチの 3 つ\n- 対象モデルは OpenAI o1 の推論モデル\n\nページには文字起こしや詳しい手順は載っていないから、細かい設定や数値は動画を見て確かめてね！\n\n## まとめ\n\n- 紹介されている領域は、コーディング・戦略・リサーチの 3 つ\n- 対象モデルは OpenAI o1 の推論モデル\n- 原文ページに文字起こしはなく、紹介文ベースの内容\n\no1 をどんな仕事に当てるか迷っている人に刺さるよ！",
+  "title_en": "Solving complex problems with OpenAI o1 models: coding, strategy and research",
+  "summary_en": "A video from OpenAI on how the o1 reasoning models can help in domains like coding, strategy, and research.",
+  "body_md_en": "Hello, it's Shii-chan! Today I'm sharing a video from OpenAI!\n\n## What was announced?\n\nOpenAI's News published a video dated October 17, 2024, titled 'Solving complex problems with OpenAI o1 models'. It shares how the o1 reasoning models can help in domains like coding, strategy, and research.\n\n## Why it matters\n\nSince o1 arrived as a reasoning-focused model, many people want to know which kinds of work it suits. This video shows some of those use cases.\n\n## What changes\n\nHere are the points the video covers.\n\n- Three domains are covered: coding, strategy, and research\n- The model in focus is the OpenAI o1 reasoning model\n\nThe page has no transcript or detailed steps, so please watch the video for specifics.\n\n## Wrap-up\n\n- Three domains are covered: coding, strategy, and research\n- The model in focus is the OpenAI o1 reasoning model\n- The source page has no transcript, so this summary is based on its description\n\nA good fit for anyone deciding where to apply o1.",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://openai.com/business/solving-complex-problems-with-openai-o1-models",
+  "source_name": "OpenAI News",
+  "og_title": "Solving complex problems with OpenAI o1 models",
+  "tags": [
+    "openai",
+    "ai"
+  ],
+  "published_at": "2024-10-17T00:00:00+00:00"
+}

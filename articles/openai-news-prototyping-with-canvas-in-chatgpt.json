@@ -1,0 +1,19 @@
+{
+  "slug": "openai-news-prototyping-with-canvas-in-chatgpt",
+  "title": "ChatGPT の canvas で PRD からプロトタイプ！HTML/React まで一気に",
+  "summary": "OpenAI の「Prototyping with canvas in ChatGPT」。プロダクト要件ドキュメントから動く HTML/React プロトタイプまで進める流れを紹介する動画だよ！",
+  "body_md": "みんな、しぃちゃんだよ！今日は OpenAI の動画を紹介するね！\n\n## なにが発表されたの？\n\nOpenAI の News に、2025 年 4 月 13 日付で「Prototyping with canvas in ChatGPT」が載ったよ！プロダクト要件ドキュメント(PRD)から、動く HTML/React のプロトタイプまで canvas で進める方法を紹介する動画みたい！\n\n## なぜ重要なの？\n\n要件を文章にしても、形にして見せないと伝わらないことがあるよね。この動画は、PRD から動くものまでの距離を縮める例を見せてくれるよ。\n\n## これで何が変わるの？\n\n動画で扱われているポイントはこれだよ！\n\n- 出発点は PRD(プロダクト要件ドキュメント)\n- ゴールは動く HTML/React プロトタイプ\n\nページには文字起こしや詳しい手順は載っていないから、細かい進め方は動画を見て確かめてね！\n\n## まとめ\n\n- 出発点は PRD(プロダクト要件ドキュメント)\n- ゴールは動く HTML/React プロトタイプ\n- 原文ページに文字起こしはなく、紹介文ベースの内容\n\nアイデアを早く形にして見せたいプロダクト担当者や開発者に刺さるよ！",
+  "title_en": "From PRD to prototype with canvas in ChatGPT",
+  "summary_en": "OpenAI's 'Prototyping with canvas in ChatGPT' shows how to go from a product requirements document to a working HTML/React prototype.",
+  "body_md_en": "Hey everyone, it's Shii-chan! Today I'm sharing a video from OpenAI!\n\n## What was announced?\n\nOpenAI's News published 'Prototyping with canvas in ChatGPT' dated April 13, 2025. It shows how to go from a product requirements document (PRD) to a working HTML/React prototype using canvas.\n\n## Why it matters\n\nRequirements on paper often need something visible to land. This video shows how to shorten the path from a PRD to something that runs.\n\n## What changes\n\nHere are the points the video covers.\n\n- Starting point: a product requirements document\n- Goal: a working HTML/React prototype\n\nThe page has no transcript or detailed steps, so please watch the video for specifics.\n\n## Wrap-up\n\n- Starting point: a product requirements document\n- Goal: a working HTML/React prototype\n- The source page has no transcript, so this summary is based on its description\n\nA good fit for product people and developers who want to show ideas quickly.",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://openai.com/business/learn/prototyping-with-canvas-in-chatgpt",
+  "source_name": "OpenAI News",
+  "og_title": "Prototyping with canvas in ChatGPT",
+  "tags": [
+    "openai",
+    "ai"
+  ],
+  "published_at": "2025-04-13T00:00:00+00:00"
+}

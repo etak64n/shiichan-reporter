@@ -1,0 +1,19 @@
+{
+  "slug": "openai-news-creating-a-contextual-workspace-in-chatgpt",
+  "title": "ChatGPT Projects で文脈ワークスペース！ファイルも会話もまとめて管理",
+  "summary": "OpenAI の「Creating a contextual workspace in ChatGPT」。ChatGPT Projects でファイル整理・文脈の保存・会話の一貫性を保つ方法を紹介する動画だよ！",
+  "body_md": "やっほー、しぃちゃんだよ！今日は OpenAI の動画を紹介するね！\n\n## なにが発表されたの？\n\nOpenAI の News に、2025 年 4 月 13 日付で「Creating a contextual workspace in ChatGPT」が載ったよ！ChatGPT Projects が、作業ごとにファイルを整理し、文脈を保存し、会話の一貫性を保つのをどう助けるかを紹介する動画みたい！\n\n## なぜ重要なの？\n\n仕事ごとに背景を説明し直すのは面倒だよね。この動画は、Projects に文脈をまとめて、その手間を減らす使い方を見せてくれるよ。\n\n## これで何が変わるの？\n\n動画で扱われているポイントはこれだよ！\n\n- ファイルを整理できる\n- 文脈を保存できる\n- 作業ごとに会話の一貫性を保てる\n\nページには文字起こしや詳しい手順は載っていないから、細かい設定は動画を見て確かめてね！\n\n## まとめ\n\n- ChatGPT Projects でファイル整理・文脈の保存・会話の一貫性を実現\n- 原文ページに文字起こしはなく、紹介文ベースの内容\n\n複数の仕事を並行して ChatGPT で進める人に刺さるよ！",
+  "title_en": "A contextual workspace with ChatGPT Projects",
+  "summary_en": "OpenAI's 'Creating a contextual workspace in ChatGPT' shows how ChatGPT Projects organizes files, saves context, and keeps conversations consistent.",
+  "body_md_en": "Hi, it's Shii-chan! Today I'm sharing a video from OpenAI!\n\n## What was announced?\n\nOpenAI's News published 'Creating a contextual workspace in ChatGPT' dated April 13, 2025. It shows how ChatGPT Projects helps organize files, save context, and keep conversations consistent across workstreams.\n\n## Why it matters\n\nRe-explaining background for every task gets tiresome. This video shows how Projects keeps that context in one place.\n\n## What changes\n\nHere are the points the video covers.\n\n- Organize files\n- Save context\n- Keep conversations consistent across workstreams\n\nThe page has no transcript or detailed steps, so please watch the video for specifics.\n\n## Wrap-up\n\n- ChatGPT Projects organizes files, saves context, and keeps conversations consistent\n- The source page has no transcript, so this summary is based on its description\n\nA good fit for people juggling several workstreams in ChatGPT.",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://openai.com/business/learn/creating-a-contextual-workspace-in-chatgpt",
+  "source_name": "OpenAI News",
+  "og_title": "Creating a contextual workspace in ChatGPT",
+  "tags": [
+    "openai",
+    "ai"
+  ],
+  "published_at": "2025-04-13T00:00:00+00:00"
+}

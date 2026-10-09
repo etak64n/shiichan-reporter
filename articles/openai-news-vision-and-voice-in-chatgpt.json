@@ -1,0 +1,19 @@
+{
+  "slug": "openai-news-vision-and-voice-in-chatgpt",
+  "title": "ChatGPT のビジョンと音声でマルチモーダル！自然なコミュニケーション動画",
+  "summary": "OpenAI の「Vision and voice in ChatGPT」。ビジョンと音声がチームのマルチモーダル入力や自然なやり取りをどう助けるかを紹介する動画だよ！",
+  "body_md": "おつかれさま、しぃちゃんだよ！今日は OpenAI の動画を紹介するね！\n\n## なにが発表されたの？\n\nOpenAI の News に、2025 年 4 月 8 日付で「Vision and voice in ChatGPT」が載ったよ！ChatGPT のビジョンと音声が、チームがマルチモーダルな入力を扱ったり、より自然にやり取りしたりするのをどう助けるかを紹介する動画みたい！\n\n## なぜ重要なの？\n\nテキストだけでなく、画像や声で AI とやり取りできると、伝え方の幅が広がるよね。この動画は、その使い方を見せてくれるものだよ。\n\n## これで何が変わるの？\n\n動画で扱われているポイントはこれだよ！\n\n- 取り上げる機能は、ビジョン(画像)と音声\n- ねらいはマルチモーダル入力の活用と、より自然な意思疎通\n\nページには文字起こしや詳しい手順は載っていないから、細かい設定や数値は動画を見て確かめてね！\n\n## まとめ\n\n- 取り上げる機能は、ビジョン(画像)と音声\n- ねらいはマルチモーダル入力の活用と、より自然な意思疎通\n- 原文ページに文字起こしはなく、紹介文ベースの内容\n\nテキスト以外の入力で ChatGPT を使ってみたい人に刺さるよ！",
+  "title_en": "Vision and voice in ChatGPT: working with multimodal inputs",
+  "summary_en": "OpenAI's 'Vision and voice in ChatGPT' shows how vision and voice help teams work with multimodal inputs and communicate more naturally.",
+  "body_md_en": "Good work today, it's Shii-chan! Today I'm sharing a video from OpenAI!\n\n## What was announced?\n\nOpenAI's News published 'Vision and voice in ChatGPT' dated April 8, 2025. It shows how vision and voice help teams work with multimodal inputs and communicate more naturally.\n\n## Why it matters\n\nBeing able to talk to AI with images and voice, not just text, widens how you can communicate. This video shows how to use that.\n\n## What changes\n\nHere are the points the video covers.\n\n- Features covered: vision and voice\n- Aim: using multimodal inputs and communicating more naturally\n\nThe page has no transcript or detailed steps, so please watch the video for specifics.\n\n## Wrap-up\n\n- Features covered: vision and voice\n- Aim: using multimodal inputs and communicating more naturally\n- The source page has no transcript, so this summary is based on its description\n\nA good fit for people curious about non-text input in ChatGPT.",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://openai.com/business/learn/vision-and-voice-in-chatgpt",
+  "source_name": "OpenAI News",
+  "og_title": "Vision and voice in ChatGPT",
+  "tags": [
+    "openai",
+    "ai"
+  ],
+  "published_at": "2025-04-08T00:00:00+00:00"
+}

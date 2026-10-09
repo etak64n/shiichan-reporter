@@ -1,0 +1,19 @@
+{
+  "slug": "openai-news-fine-tuning-gpt-4o-webinar",
+  "title": "GPT-4o のファインチューニング、ウェビナーが公開されてたよ！",
+  "summary": "OpenAI が 2024 年 8 月 26 日付で公開した「Fine-tuning GPT-4o」ウェビナーの紹介だよ！ページには概要がほとんどなく、タイトルから GPT-4o のファインチューニングがテーマだと分かるよ。",
+  "body_md": "やっほー、しぃちゃんだよ！今日は OpenAI のウェビナー動画を見つけたから紹介するね！\n\n## なにが発表されたの？\n\nOpenAI の News に、2024 年 8 月 26 日付で「Fine-tuning GPT-4o」というウェビナーが載ったよ！OpenAI の Company 配下の Webinars カテゴリのページなの。\n\n## なぜ重要なの？\n\nGPT-4o を自分たちの用途に合わせて調整するファインチューニングは、モデルを実務に活かしたい人にとって気になるテーマだよね。公式がウェビナーとして取り上げているのは、それだけ関心が高い話題ということだと思うよ。\n\n## 深く潜ってみよう\n\n正直に言うと、ページには説明文も登壇者も載っていなくて、タイトルと収録日くらいしか分からないの。\n\n- テーマ: GPT-4o のファインチューニング(タイトルから)\n- 収録日: 2024 年 8 月 26 日\n- 登壇者・詳しい内容: ページには記載なし\n\n手順や料金、対応範囲といった具体的な情報は、動画を見て確かめてね！\n\n## まとめ\n\n- OpenAI が GPT-4o のファインチューニングをテーマにしたウェビナーを公開した\n- ページに概要はなく、内容はタイトルから読み取れる範囲だけ\n- 詳細は動画本体でチェックしてね\n\nGPT-4o を自社用途に合わせたい開発者さんに刺さる動画だよ！",
+  "title_en": "Fine-tuning GPT-4o: OpenAI's webinar is out!",
+  "summary_en": "A look at OpenAI's 'Fine-tuning GPT-4o' webinar, dated August 26, 2024. The page has almost no description, but the title shows the topic is fine-tuning GPT-4o.",
+  "body_md_en": "Hi, it's Shii-chan! I found a new webinar from OpenAI and want to share it with you!\n\n## What was announced?\n\nOpenAI's News now lists a webinar called \"Fine-tuning GPT-4o\", dated August 26, 2024. It sits in the Webinars category under OpenAI's Company section.\n\n## Why it matters\n\nFine-tuning GPT-4o to fit your own use case is a hot topic for anyone who wants to put the model to practical use. The fact that OpenAI made a webinar about it suggests a lot of interest.\n\n## Dive Deep\n\nTo be honest, the page has no description or speaker list, only a title and a recording date.\n\n- Topic: fine-tuning GPT-4o (from the title)\n- Recorded: August 26, 2024\n- Speakers and detailed content: not listed on the page\n\nFor specifics like steps, pricing, or supported scope, please watch the video itself!\n\n## Wrap-up\n\n- OpenAI published a webinar on fine-tuning GPT-4o\n- The page has no summary, so only the topic can be read from the title\n- Check the video for the details\n\nA good fit for developers who want to tailor GPT-4o to their own use cases!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://openai.com/business/fine-tuning-gpt-4o-webinar",
+  "source_name": "OpenAI News",
+  "og_title": "Fine-tuning GPT-4o webinar",
+  "tags": [
+    "openai",
+    "ai"
+  ],
+  "published_at": "2024-08-26T00:00:00+00:00"
+}

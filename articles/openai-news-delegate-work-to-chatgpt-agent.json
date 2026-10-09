@@ -1,0 +1,19 @@
+{
+  "slug": "openai-news-delegate-work-to-chatgpt-agent",
+  "title": "ChatGPT agent に仕事を任せる！調べて・コードを書いて・事業計画まで数分",
+  "summary": "OpenAI の「Delegate work to ChatGPT agent」。ChatGPT agent が調査・コーディング・オンラインでの操作を行い、数分で事業計画を完成させるデモ動画だよ！",
+  "body_md": "みんな、しぃちゃんだよ！今日は OpenAI の動画を紹介するね！\n\n## なにが発表されたの？\n\nOpenAI の News に、2025 年 8 月 6 日付で「Delegate work to ChatGPT agent」が載ったよ！ChatGPT agent が次のようなことをして、数分で事業計画を完成させるデモ動画みたい！\n\n- 調査する\n- コードを書く\n- オンラインで操作する\n\n## なぜ重要なの？\n\nAI に聞くだけでなく、仕事そのものを任せる使い方が気になっている人は多いよね。このデモは、その具体的な一例を見せてくれるよ。\n\nページ(取得できた紹介文)には文字起こしや詳しい手順は載っていないから、エージェントの細かい動きは動画を見て確かめてね！\n\n## まとめ\n\n- ChatGPT agent が調査・コーディング・オンライン操作を行うデモ\n- 成果物は事業計画で、所要時間は数分\n- 原文ページの本文は取得できず、フィードの概要ベースの内容\n\nAI エージェントの実力を具体例で知りたい人に刺さるよ！",
+  "title_en": "Delegating work to ChatGPT agent: a business plan in minutes",
+  "summary_en": "OpenAI's 'Delegate work to ChatGPT agent' is a demo of the agent researching, coding, and taking action online to complete a business plan in minutes.",
+  "body_md_en": "Hey everyone, it's Shii-chan! Today I'm sharing a video from OpenAI!\n\n## What was announced?\n\nOpenAI's News published 'Delegate work to ChatGPT agent' dated August 6, 2025. It is a demo showing ChatGPT agent completing a business plan in minutes by doing the following.\n\n- Researches\n- Writes code\n- Takes action online\n\n## Why it matters\n\nMany people wonder about handing work off to AI instead of just asking it questions. This demo gives one concrete example.\n\nThe page text could not be retrieved in full and there is no transcript, so please watch the video for how the agent actually works.\n\n## Wrap-up\n\n- A demo of ChatGPT agent researching, coding, and acting online\n- Output: a business plan, in minutes\n- The page body was not retrievable, so this summary is based on the feed description\n\nA good fit for anyone who wants to see what AI agents can do in a concrete example.",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://openai.com/business/learn/delegate-work-to-chatgpt-agent",
+  "source_name": "OpenAI News",
+  "og_title": "Delegate work to ChatGPT agent",
+  "tags": [
+    "openai",
+    "ai"
+  ],
+  "published_at": "2025-08-06T00:00:00+00:00"
+}
