@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-network-firewall-container-attributes-wildcard",
+  "title": "Network Firewall のコンテナ属性フィルターがワイルドカード対応！1 ルールで payments-* をまとめて守れるよ",
+  "summary": "AWS Network Firewall のコンテナ属性ベース検査フィルターで、EKS と ECS 向けにワイルドカードが使えるようになったよ。app=payments-* のようなパターンで、複数のワークロードを 1 つのルールでカバーできるの！",
+  "body_md": "こんにちは、しぃちゃんだよ！\n\nコンテナのファイアウォール運用がぐっと楽になる更新が来たよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Network Firewall のコンテナ属性ベースの検査フィルターが **ワイルドカードマッチング** に対応したと発表されたよ。対象は Amazon EKS と Amazon ECS だよ。\n\n## 今までどうだったの？\n\n今までは、アプリケーションのバリアントごとに個別のコンテナ関連付け（container association）を作る必要があったの。新しいバリアントが次々デプロイされる環境だと、ルール管理が大変だったんだね。\n\n## これで何が変わるの？\n\nワイルドカードパターンで属性フィルターを書けば、複数のワークロードを 1 つのルールでまとめて指定できるよ。\n\n例えば `app=payments-*` と書くと、次のようなバリアントが自動的にカバーされるの。\n\n- payments-api\n- payments-worker\n- payments-cron\n\n新しいバリアントを追加しても関連付けを増やさなくていいから、運用の手間が減って、セキュリティのカバー範囲も揃えやすくなるよ！\n\n## 深く潜ってみよう\n\n発表文で分かるのはここまでだよ。\n\n- 対象は EKS と ECS のコンテナ属性ベース検査\n- 利用できるのは、コンテナ属性ベース検査に対応している全リージョン（一覧は AWS Region Table を参照）\n\n追加料金やパターンの詳しい文法は書かれていなかったから、細かい仕様は Network Firewall のドキュメントで確認してね。\n\n## まとめ\n\n- コンテナ属性フィルターでワイルドカードが使えるようになった\n- 1 つのルールで複数のワークロードにマッチできる\n- バリアントごとの関連付けが不要になる\n- EKS と ECS が対象\n\nコンテナを頻繁にデプロイしていて、ファイアウォールルールの管理に追われているセキュリティ担当のみんなに刺さるよ！",
+  "title_en": "Network Firewall Container Attribute Filters Now Support Wildcards!",
+  "summary_en": "AWS Network Firewall now supports wildcard matching in container attribute-based inspection filters for Amazon EKS and Amazon ECS. One rule with a pattern like app=payments-* can cover many workloads!",
+  "body_md_en": "Hi everyone, it's Shii-chan!\n\nHere's an update that makes container firewall operations a lot easier.\n\n## What was announced?\n\nIn AWS What's New, AWS Network Firewall announced **wildcard matching** in container attribute-based inspection filters. It works with Amazon EKS and Amazon ECS.\n\n## The story so far\n\nBefore, you had to create an individual container association for each variant of an application. In environments where new variants are deployed all the time, that made rule management a chore.\n\n## What changes\n\nYou can now write attribute filters with wildcard patterns, so a single rule can match many workloads.\n\nFor example, `app=payments-*` automatically covers variants like these:\n\n- payments-api\n- payments-worker\n- payments-cron\n\nNew variants don't need new associations, which cuts operational overhead and helps keep security coverage consistent!\n\n## Dive Deep\n\nHere is what the announcement says:\n\n- It applies to container attribute-based inspection for EKS and ECS\n- It is available in all AWS Regions where container attribute-based inspection is supported (see the AWS Region Table)\n\nThe announcement doesn't mention extra charges or detailed pattern syntax, so check the Network Firewall documentation for specifics.\n\n## Wrap-up\n\n- Container attribute filters now support wildcards\n- One rule can match multiple workloads\n- No per-variant associations needed\n- Covers EKS and ECS\n\nThis one is for security folks who deploy containers often and spend a lot of time managing firewall rules!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-network-firewall-container-attributes-wildcard",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Network Firewall adds wildcard support for container attribute filters",
+  "tags": [
+    "aws",
+    "security",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-08T16:00:00+00:00"
+}

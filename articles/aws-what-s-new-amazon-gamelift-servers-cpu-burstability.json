@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-gamelift-servers-cpu-burstability",
+  "title": "GameLift のコンテナフリートが CPU バースト対応！ピーク時だけ余ったCPUを使えるよ",
+  "summary": "Amazon GameLift Servers のコンテナフリートで CPU バースト機能が使えるようになったよ！普段の CPU 使用量でコンテナを詰めつつ、ピーク時はインスタンスの空き CPU を借りられるの。追加料金はなし！",
+  "body_md": "やっほー、しぃちゃんだよ！\n\nゲームサーバーのコンテナ運用に嬉しいニュースが来たから、さっそく紹介するね。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon GameLift Servers のコンテナフリートに **CPU バースト機能（CPU burstability）** が追加されたと発表されたよ！\n\nゲームサーバーのコンテナが、ふだんは決めた CPU 量で動きつつ、負荷が跳ね上がる瞬間だけインスタンス上の空いている CPU を使えるようになるんだって。\n\n## 今までどうだったの？\n\n今までコンテナフリートでは、固定の CPU 値が 2 つの役割を同時に担っていたの。\n\n- コンテナを 1 インスタンスにどれだけ詰め込めるか（パッキング密度）を決める\n- 実行時の CPU 使用量の上限（ハードキャップ）にもなる\n\nだから「たくさん詰めて効率よく使いたい」と「ピーク時に余裕を持たせたい」のどちらかを選ばなきゃいけなかったんだね。\n\n## これで何が変わるの？\n\nゲームサーバーの負荷って、試合の大半は低くて、物理演算・AI 処理・衝突判定などで急に跳ね上がる性質があるよね。\n\nCPU バーストを使うと、普段の CPU 需要に合わせてコンテナを詰めながら、ピーク時は空き CPU に食い込んで性能を保てるの。高密度に配置しても、ピーク性能を犠牲にしなくてよくなるんだよ！\n\n## 深く潜ってみよう\n\n原文から分かるポイントはこれだよ。\n\n- オプトイン方式で、コンテナグループ定義ごとに設定する\n- 標準のコンテナフリート料金に含まれていて、追加料金はかからない\n- コンテナフリートに対応している AWS リージョンで使える（中国リージョンを除く）\n\n具体的な設定項目名などは発表文には書かれていなかったから、詳しくは Amazon GameLift Servers の Developer Guide を見てね。\n\n## まとめ\n\n- コンテナフリートで CPU バースト機能が使えるようになった\n- パッキング密度とランタイム上限が切り離せるようになった\n- コンテナグループ定義ごとのオプトインで、追加料金なし\n- 中国リージョンを除く、コンテナフリート対応リージョンで利用可能\n\nコスト効率と瞬間的な性能の両方がほしい、ゲームサーバー運用のみんなに刺さる更新だよ！",
+  "title_en": "GameLift Container Fleets Now Support CPU Bursting for Peak Moments!",
+  "summary_en": "Amazon GameLift Servers container fleets now support CPU burstability. You can pack containers by typical CPU needs and still let game servers burst into idle instance CPU at peak, at no extra cost!",
+  "body_md_en": "Hi everyone, it's Shii-chan!\n\nThere's great news for people running game servers in containers, so let me walk you through it.\n\n## What was announced?\n\nIn AWS What's New, Amazon GameLift Servers announced **CPU burstability** for container fleets!\n\nGame server containers can now run at their configured CPU level most of the time, and borrow idle CPU on the instance when load spikes.\n\n## The story so far\n\nUntil now, a single fixed CPU value did two jobs in container fleets:\n\n- It decided how many containers could be packed onto an instance (packing density)\n- It also acted as the hard cap on CPU usage at runtime\n\nSo you had to choose between efficient resource use and keeping headroom for peaks.\n\n## What changes\n\nGame server load is bursty: low for most of a match, then spiking during physics calculations, AI processing, or collision detection.\n\nWith CPU burstability, you can pack containers based on typical CPU needs while letting server processes burst into idle CPU at peak moments. You get high-density deployments without giving up peak performance!\n\n## Dive Deep\n\nHere is what the announcement tells us:\n\n- It is opt-in, configured per container group definition\n- It is included in standard container fleet pricing at no additional cost\n- It is available in AWS Regions where container fleets are supported, excluding China Regions\n\nThe announcement doesn't list specific setting names, so check the Amazon GameLift Servers Developer Guide for details.\n\n## Wrap-up\n\n- Container fleets now support CPU burstability\n- Packing density and the runtime cap are no longer tied together\n- Opt-in per container group definition, with no extra charge\n- Available in container-fleet Regions, excluding China Regions\n\nThis one is for game server teams who want both cost efficiency and peak performance!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-gamelift-servers-cpu-burstability",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon GameLift Servers adds CPU burstability for container fleets",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "devops"
+  ],
+  "published_at": "2026-10-08T08:00:00+00:00"
+}
