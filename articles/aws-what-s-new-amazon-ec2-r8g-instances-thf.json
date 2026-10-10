@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-ec2-r8g-instances-thf",
+  "title": "EC2 R8g が AWS European Sovereign Cloud(ドイツ)に登場！",
+  "summary": "Graviton4 搭載のメモリ最適化インスタンス Amazon EC2 R8g が、AWS European Sovereign Cloud(ドイツ)リージョンで使えるようになったよ。Graviton3 の R7g より最大 30% 高速だって。",
+  "body_md": "みんな、しぃちゃんだよ！今日は EC2 のリージョン拡大のお知らせを見つけたよ。\n\n## なにが発表されたの？\n\nAWS What's New で、Amazon EC2 R8g インスタンスが AWS European Sovereign Cloud(ドイツ)リージョンで利用できるようになったと発表されたよ。\n\n## なぜ重要なの？\n\nR8g は AWS Graviton4 プロセッサ搭載のメモリ最適化インスタンスで、データベースやインメモリキャッシュ、リアルタイムのビッグデータ分析のようなメモリを多く使うワークロード向けなの。European Sovereign Cloud で選べるインスタンスが増えるので、選択肢が広がるね！\n\n## これで何が変わるの？\n\nEuropean Sovereign Cloud を使っているチームが、Graviton4 世代のメモリ最適化インスタンスを同じリージョン内で選べるようになるよ。\n\n## 深く潜ってみよう\n\nGraviton3 ベースの R7g と比べたときの数字はこうだよ。\n\n- Web アプリケーションが最大 30% 高速\n- データベースが最大 40% 高速\n- 大規模な Java アプリケーションが最大 45% 高速\n- vCPU とメモリが最大 3 倍(最大 48xlarge、最大 1.5 TB)\n\nそのほかの仕様はこれ！\n\n- 12 種類のサイズ(ベアメタル 2 種類を含む)\n- 最大 50 Gbps の拡張ネットワーキング帯域\n- Amazon EBS への帯域は最大 40 Gbps\n- AWS Nitro System 上で動作し、CPU 仮想化・ストレージ・ネットワークの処理を専用ハードウェアにオフロード\n\nGraviton ベースへの移行は、AWS Graviton Fast Start プログラムで案内されているよ。\n\n## まとめ\n\n- R8g が European Sovereign Cloud(ドイツ)で利用可能に\n- Graviton4 搭載で R7g より最大 30% 高速\n- 12 サイズ、最大 48xlarge・1.5 TB メモリ\n\nソブリンクラウドでメモリ重視のワークロードを動かしたい人に刺さるニュースだよ！",
+  "title_en": "EC2 R8g Instances Land in the AWS European Sovereign Cloud (Germany)!",
+  "summary_en": "Amazon EC2 R8g, the Graviton4-powered memory-optimized instances, are now available in the AWS European Sovereign Cloud (Germany) region, with up to 30% better performance than Graviton3-based instances.",
+  "body_md_en": "Hi everyone, it's Shii-chan! I found a fresh EC2 region expansion today.\n\n## What was announced?\n\nAWS What's New announced that Amazon EC2 R8g instances are now available in the AWS European Sovereign Cloud (Germany) region.\n\n## Why it matters\n\nR8g instances are memory-optimized and powered by AWS Graviton4. They target memory-intensive workloads such as databases, in-memory caches, and real-time big data analytics. More instance choices in the European Sovereign Cloud widen your options.\n\n## What changes\n\nTeams using the European Sovereign Cloud can now pick Graviton4-generation memory-optimized instances inside the same region.\n\n## Dive Deep\n\nCompared with Graviton3-based R7g:\n\n- Up to 30% faster for web applications\n- Up to 40% faster for databases\n- Up to 45% faster for large Java applications\n- Up to 3x more vCPU and memory (up to 48xlarge and 1.5 TB)\n\nOther specs:\n\n- 12 instance sizes, including two bare metal sizes\n- Up to 50 Gbps of enhanced networking bandwidth\n- Up to 40 Gbps of bandwidth to Amazon EBS\n- Built on the AWS Nitro System, which offloads CPU virtualization, storage, and networking to dedicated hardware\n\nFor migrating to Graviton, the AWS Graviton Fast Start program is the pointer in the announcement.\n\n## Wrap-up\n\n- R8g is now available in the European Sovereign Cloud (Germany)\n- Graviton4 gives up to 30% better performance than R7g\n- 12 sizes, up to 48xlarge and 1.5 TB of memory\n\nThis is for anyone who wants to run memory-heavy workloads in a sovereign cloud!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-ec2-r8g-instances-thf/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon EC2 R8g instances now available in additional regions",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-09T19:19:00+00:00"
+}

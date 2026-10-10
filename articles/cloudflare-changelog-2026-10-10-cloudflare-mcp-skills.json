@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-10-10-cloudflare-mcp-skills",
+  "title": "Cloudflare API MCP サーバーが Cloudflare skills を配信しはじめたよ！",
+  "summary": "Cloudflare API MCP サーバーが Skills over MCP 拡張を通じて Cloudflare skills を提供するようになったよ。対応する MCP クライアントに URL を追加するだけで使えるみたい！",
+  "body_md": "やっほー、しぃちゃんだよ！Cloudflare の MCP サーバーに嬉しい更新が来たよ。\n\n## なにが発表されたの？\n\nCloudflare の Changelog(Agents カテゴリ)で、Cloudflare API MCP サーバーが Skills over MCP 拡張を通じて Cloudflare skills を提供するようになったと告知されたよ。\n\n## なぜ重要なの？\n\nskills を MCP サーバー経由で配れるようになると、クライアント側に skills を別途インストールしなくても、サーバーから見つけて読み込めるようになるの。Cloudflare を AI エージェントで扱う人にとって、導入が楽になりそうだね！\n\n## これで何が変わるの？\n\nSkills over MCP 拡張に対応した MCP クライアントなら、Cloudflare の skills を自動で見つけて、そのファイルを読めるよ。\n\n## 深く潜ってみよう\n\n仕組みは次のとおりだよ。\n\n- クライアントは `skills/list` で skills を発見する\n- 各 skill のファイルは、次の形式の URI で読み取る\n\n```\nskill://{name}/{path}\n```\n\n使い方は、拡張に対応した MCP クライアントに次のサーバー URL を追加するだけ。\n\n```\nhttps://mcp.cloudflare.com/mcp\n```\n\n拡張に対応しているクライアントかどうかは、MCP クライアントの互換性表で確認できるよ。\n\n## まとめ\n\n- Cloudflare API MCP サーバーが Cloudflare skills を配信\n- 発見は `skills/list`、読み取りは `skill://{name}/{path}`\n- `https://mcp.cloudflare.com/mcp` を対応クライアントに追加すれば使える\n\nエージェントから Cloudflare を操作させたい人に刺さるよ！",
+  "title_en": "Cloudflare API MCP Server Now Serves Cloudflare Skills!",
+  "summary_en": "The Cloudflare API MCP server now serves Cloudflare skills through the Skills over MCP extension. Add its URL to a compatible MCP client to use them.",
+  "body_md_en": "Hi everyone, it's Shii-chan! There's a nice update for Cloudflare's MCP server.\n\n## What was announced?\n\nCloudflare's Changelog (Agents category) announced that the Cloudflare API MCP server now serves Cloudflare skills through the Skills over MCP extension.\n\n## Why it matters\n\nWhen skills are delivered over MCP, clients can discover and read them from the server without installing skills separately. That should make it easier to work with Cloudflare from AI agents.\n\n## What changes\n\nMCP clients that support the Skills over MCP extension can discover Cloudflare's skills and read their files.\n\n## Dive Deep\n\nHow it works:\n\n- Clients discover skills with `skills/list`\n- Each skill's files are read using a URI of this form:\n\n```\nskill://{name}/{path}\n```\n\nTo use it, add this server URL to an MCP client that supports the extension:\n\n```\nhttps://mcp.cloudflare.com/mcp\n```\n\nYou can check whether your client supports the extension in the MCP client compatibility matrix.\n\n## Wrap-up\n\n- The Cloudflare API MCP server now serves Cloudflare skills\n- Discovery via `skills/list`, reading via `skill://{name}/{path}`\n- Add `https://mcp.cloudflare.com/mcp` to a compatible client to use it\n\nThis is for anyone who wants agents to work with Cloudflare!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-10-cloudflare-mcp-skills/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Agents - Cloudflare API MCP server serves Cloudflare skills",
+  "tags": [
+    "cloudflare",
+    "ai",
+    "devops"
+  ],
+  "published_at": "2026-10-10T08:30:10+00:00"
+}

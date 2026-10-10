@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-ec2-r8gd-thf",
+  "title": "ローカル NVMe 付き EC2 R8gd も European Sovereign Cloud(ドイツ)で使えるよ！",
+  "summary": "最大 11.4 TB のローカル NVMe SSD を持つ Graviton4 搭載の EC2 R8gd が、AWS European Sovereign Cloud(ドイツ)で利用可能に。帯域の 25% 調整にも対応しているよ。",
+  "body_md": "おつかれさま、しぃちゃんだよ！R8g に続いて、ローカルストレージ付きの R8gd も来たよ。\n\n## なにが発表されたの？\n\nAWS What's New で、Amazon EC2 R8gd インスタンスが AWS European Sovereign Cloud(ドイツ)リージョンで利用できるようになったと発表されたよ。\n\n## なぜ重要なの？\n\nR8gd は Graviton4 搭載で、ローカルの NVMe SSD を持つのが特徴なの。高速・低レイテンシなローカルストレージが必要なアプリケーション向けだよ。ソブリンクラウドでもこの組み合わせが選べるようになったのがうれしいね！\n\n## これで何が変わるの？\n\nEuropean Sovereign Cloud で、ブロックレベルの高速ローカルストレージが必要なワークロードを Graviton4 世代で動かせるようになるよ。\n\n## 深く潜ってみよう\n\n- ローカル NVMe SSD(ブロックレベル)は最大 11.4 TB\n- Graviton3 ベースのインスタンスより最大 30% 高い性能\n- AWS Nitro System 上で動作\n- 12 サイズ、ネットワーク帯域は最大 50 Gbps、EBS への帯域は最大 40 Gbps\n- EC2 instance bandwidth weighting の設定で、ネットワークと EBS の帯域を 25% 調整できる\n- Elastic Fabric Adapter(EFA)は 24xlarge、48xlarge、metal-24xl、metal-48xl で利用可能\n\n帯域の重み付けは、ワークロードに合わせてネットワークと EBS のどちらに帯域を寄せるかを選べるので便利そうだね！\n\n## まとめ\n\n- R8gd が European Sovereign Cloud(ドイツ)で利用可能に\n- 最大 11.4 TB のローカル NVMe SSD と Graviton4\n- 帯域を 25% 調整できる bandwidth weighting に対応\n\n低レイテンシなローカルストレージが欲しい人に刺さるよ！",
+  "title_en": "EC2 R8gd with Local NVMe Arrives in the AWS European Sovereign Cloud (Germany)!",
+  "summary_en": "Amazon EC2 R8gd, Graviton4 instances with up to 11.4 TB of local NVMe SSD, are now available in the AWS European Sovereign Cloud (Germany), with support for 25% bandwidth adjustment.",
+  "body_md_en": "Hi everyone, it's Shii-chan! After R8g, the local-storage variant R8gd has arrived too.\n\n## What was announced?\n\nAWS What's New announced that Amazon EC2 R8gd instances are now available in the AWS European Sovereign Cloud (Germany) region.\n\n## Why it matters\n\nR8gd is powered by Graviton4 and comes with local NVMe SSD storage, which suits applications that need high-speed, low-latency local storage. Now you can pick that combination in the sovereign cloud too.\n\n## What changes\n\nIn the European Sovereign Cloud, workloads that rely on fast block-level local storage can run on Graviton4-generation instances.\n\n## Dive Deep\n\n- Up to 11.4 TB of local NVMe-based SSD block-level storage\n- Up to 30% better performance than Graviton3-based instances\n- Built on the AWS Nitro System\n- 12 sizes, up to 50 Gbps of network bandwidth, and up to 40 Gbps to Amazon EBS\n- Network and EBS bandwidth can be adjusted by 25% using EC2 instance bandwidth weighting\n- Elastic Fabric Adapter (EFA) is available on 24xlarge, 48xlarge, metal-24xl, and metal-48xl\n\nBandwidth weighting lets you shift bandwidth between networking and EBS to fit your workload.\n\n## Wrap-up\n\n- R8gd is now available in the European Sovereign Cloud (Germany)\n- Up to 11.4 TB of local NVMe SSD with Graviton4\n- Supports 25% bandwidth adjustment through bandwidth weighting\n\nThis is for anyone who needs low-latency local storage!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-ec2-r8gd-thf/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon EC2 R8gd instances are now available in additional regions",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-09T19:29:00+00:00"
+}

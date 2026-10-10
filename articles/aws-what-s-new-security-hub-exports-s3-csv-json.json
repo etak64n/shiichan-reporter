@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-security-hub-exports-s3-csv-json",
+  "title": "Security Hub の検出結果を S3 へ CSV・JSON でエクスポートできるように！",
+  "summary": "AWS Security Hub のすべての findings ページから、検出結果を CSV または JSON(OCSF)形式で S3 にオンデマンドでエクスポートできるようになったよ。",
+  "body_md": "やっほー、しぃちゃんだよ！Security Hub に、監査やレポート作成が楽になるアップデートが来たよ。\n\n## なにが発表されたの？\n\nAWS What's New で、AWS Security Hub が検出結果(findings)を Amazon S3 へ CSV または JSON(OCSF)形式でエクスポートできるようになったと発表されたよ。\n\n## 今までどうだったの？\n\nコンプライアンスレポートや監査証跡のために、コンソールの外で findings が必要なことってあるよね。これまでは、そのための抽出パイプラインを自分で作って運用する必要があったの。\n\n## これで何が変わるの？\n\n- 見ている findings ページからそのままエクスポートを開始できる\n- 結果は自分のアカウントの S3 バケットに届く\n- 抽出パイプラインを自作・運用しなくてよくなる\n\n## 深く潜ってみよう\n\nエクスポートできるのは、Security Hub コンソールのすべての findings ページだよ。\n\n- Threats\n- Exposure\n- Vulnerabilities\n- Posture Management\n- Sensitive Data\n- All Findings\n\n形式は2つから選べるよ。\n\n- CSV：スプレッドシートで確認・共有したいとき\n- JSON：Open Cybersecurity Schema Framework(OCSF)形式で欲しいとき\n\nSecurity Hub が使えるすべての AWS リージョンで利用できるよ。詳しくは Security Hub ユーザーガイドの findings export のページを見てね。\n\n## まとめ\n\n- 全 findings ページから S3 へオンデマンドでエクスポート\n- 形式は CSV または OCSF の JSON\n- Security Hub が提供されている全リージョンで利用可能\n\n監査対応やレポート作成で findings を外に持ち出したいセキュリティチームに刺さるよ！",
+  "title_en": "AWS Security Hub Can Now Export Findings to S3 as CSV or JSON!",
+  "summary_en": "AWS Security Hub now lets you export findings on demand from every findings page to Amazon S3 in CSV or JSON (OCSF) format.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Security Hub just got an update that makes audits and reporting easier.\n\n## What was announced?\n\nAWS What's New announced that AWS Security Hub now supports exporting findings to Amazon S3 in CSV or JSON (OCSF) format.\n\n## The story so far\n\nTeams often need findings outside the console for compliance reporting and audit evidence. Until now, that meant building and maintaining your own extraction pipeline.\n\n## What changes\n\n- You can start an export right from the findings page you're viewing\n- Results are delivered to an S3 bucket in your account\n- You no longer need to build and run your own extraction pipeline\n\n## Dive Deep\n\nYou can export from every findings page in the Security Hub console:\n\n- Threats\n- Exposure\n- Vulnerabilities\n- Posture Management\n- Sensitive Data\n- All Findings\n\nChoose one of two formats:\n\n- CSV: for reviewing or sharing in a spreadsheet\n- JSON: when you need findings in Open Cybersecurity Schema Framework (OCSF) format\n\nIt's available in all AWS Regions where Security Hub is available. See the findings export page in the Security Hub User Guide for details.\n\n## Wrap-up\n\n- On-demand export from every findings page to S3\n- CSV or OCSF JSON\n- Available in all Regions where Security Hub is offered\n\nThis is for security teams who need to take findings outside the console for audits and reports!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/security-hub-exports-s3-csv-json/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Security Hub now exports findings to S3 in CSV or JSON format",
+  "tags": [
+    "aws",
+    "security",
+    "devops"
+  ],
+  "published_at": "2026-10-09T22:00:00+00:00"
+}
