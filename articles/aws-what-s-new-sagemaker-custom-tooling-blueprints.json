@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-sagemaker-custom-tooling-blueprints",
+  "title": "SageMaker Unified Studio のプロジェクトを自前の CloudFormation で定義できるよ！",
+  "summary": "Amazon SageMaker Unified Studio で、ドメイン管理者が独自の CloudFormation テンプレートをカスタム Tooling ブループリントとして登録し、プロジェクトの土台を定義できるようになったよ。",
+  "body_md": "やっほー、しぃちゃんだよ！SageMaker Unified Studio の管理者さんに嬉しいアップデートが来たよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon SageMaker Unified Studio がカスタム Tooling ブループリントに対応したと発表されたよ。ドメイン管理者が、自分たちの AWS CloudFormation テンプレートで、すべてのプロジェクトの土台を定義できるようになったの。\n\n## これで何が変わるの？\n\n組織ごとの要件に合わせてプロジェクト環境を調整できるよ。たとえば、会社の命名規則に沿った IAM ロール名にしたり、AWS 管理ポリシーの代わりに独自のアクセス許可境界を使ったりできるの。\n\n## 深く潜ってみよう\n\n使い方と特徴はこれだよ。\n\n- 管理者が必要なプロジェクト環境を記述した CloudFormation テンプレートを書き、カスタム Tooling ブループリントとして登録する\n- サービスはテンプレートを登録時と、プロジェクトのデプロイ後に毎回検証し、必要なリソースが存在することをチームメンバーが使う前に確認する\n- テンプレートには CloudFormation が対応する任意のリソースを入れられる（例: AWS Lake Formation の許可、Amazon Athena のワークグループ、VPC のセキュリティグループ）\n- プロジェクトごとに編集しなくても、複数の AWS アカウントとリージョンで使える\n- デプロイ時にプロジェクト ID やドメイン ID などの予約済みパラメータが自動で埋められるので、テンプレートは 1 回定義すればあちこちに適用できる\n\n対応リージョンは、SageMaker Unified Studio が使えるすべての AWS リージョンだよ。詳しくは管理者ガイドの「Custom blueprints as Tooling」に載っているの。\n\n## まとめ\n\n- 自前の CloudFormation テンプレートでプロジェクトの土台を定義できる\n- IAM ロール名やアクセス許可境界を組織の基準に合わせられる\n- 登録時とデプロイ後にテンプレートが検証される\n- 複数アカウント・リージョンで、プロジェクトごとの編集なしに使える\n\n命名規則や権限の統制が厳しい組織で、SageMaker Unified Studio を管理している人に刺さるよ！",
+  "title_en": "Define SageMaker Unified Studio projects with your own CloudFormation!",
+  "summary_en": "Amazon SageMaker Unified Studio now supports custom Tooling blueprints, letting domain administrators define the foundation of every project with their own CloudFormation templates.",
+  "body_md_en": "Hi, it's Shii-chan! Here's a good update for SageMaker Unified Studio administrators.\n\n## What was announced?\n\nAWS What's New announced that Amazon SageMaker Unified Studio now supports custom Tooling blueprints. Domain administrators can define the foundation of every project using their own AWS CloudFormation templates.\n\n## What changes\n\nYou can tailor project environments to your organization's requirements. For example, IAM role names can follow company naming standards, or you can use custom permissions boundaries instead of AWS managed policies.\n\n## Dive Deep\n\nHow it works:\n\n- An administrator writes a CloudFormation template describing the project environment and registers it as a custom Tooling blueprint\n- The service validates the template at registration and again after each project deployment, confirming the required resources exist before any team member uses the project\n- Templates can include any CloudFormation-supported resource, such as AWS Lake Formation grants, Amazon Athena workgroups, or VPC security groups\n- A template works across multiple AWS accounts and Regions without per-project edits\n- At deployment, reserved template parameters such as the project ID and domain ID are filled in automatically, so you define the template once and apply it everywhere\n\nIt's available in all AWS Regions where SageMaker Unified Studio is available. See \"Custom blueprints as Tooling\" in the administrator guide for details.\n\n## Wrap-up\n\n- Define project foundations with your own CloudFormation templates\n- Match IAM role names and permissions boundaries to your standards\n- Templates are validated at registration and after deployment\n- Works across accounts and Regions without per-project edits\n\nIt's a good fit for admins of SageMaker Unified Studio in organizations with strict naming and permission rules.",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/sagemaker-custom-tooling-blueprints/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon SageMaker Unified Studio now supports custom Tooling blueprints",
+  "tags": [
+    "aws",
+    "devops",
+    "ai"
+  ],
+  "published_at": "2026-10-09T08:00:00+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-kiro-claude-5-5-aws-govcloud-us",
+  "title": "GovCloud の Kiro で Claude Opus 5.5 と Sonnet 5.5 が使えるよ！",
+  "summary": "AWS GovCloud (US) リージョンの Kiro IDE と CLI で、Anthropic の Claude Opus 5.5 と Claude Sonnet 5.5 が使えるようになったよ。どちらも 1M コンテキストで、クレジット倍率は Opus 5.5 が 2.0 倍、Sonnet 5.5 が 1.3 倍なの。",
+  "body_md": "みんな、しぃちゃんだよ！GovCloud の Kiro に、Anthropic の新しい 2 つのモデルが来たよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Anthropic の Claude Opus 5.5 と Claude Sonnet 5.5 が、AWS GovCloud (US) リージョンの Kiro IDE と CLI で利用できるようになったと発表されたよ。\n\n## これで何が変わるの？\n\nGovCloud 環境で Kiro を使っているチームが、最新の Claude モデルを選べるようになったよ。能力を最大にしたいときは Opus 5.5、スループットを重視したいときは Sonnet 5.5、というコストと性能のダイヤルが手に入るの。\n\n## 深く潜ってみよう\n\n2 つのモデルの特徴はこれだよ。\n\n- Claude Opus 5.5: Anthropic のこれまでで最も高性能な Opus モデルで、長時間のエージェント的なコーディング作業で Opus 5 から前進している。リクエストごとに適応的に考える量を決める。Kiro の社内ベンチマークでは、Opus 5 と比べてツール呼び出しが約 40% 少なく、トークンは約半分でタスクを完了。1M コンテキストで、クレジット倍率は 2.0 倍（Opus 5 は 2.2 倍）\n- Claude Sonnet 5.5: Anthropic のこれまでで最速の Sonnet モデル。出力は 30% 以上速く、実務のコーディングやナレッジワークは Opus 5.5 に近い性能。文章が明確になって協力相手として強くなった。1M コンテキストで、クレジット倍率は 1.3 倍。Sonnet 5 を使っているチームの自然なアップグレード先\n\n使い始めるには、IDE か CLI を最新版に更新して再起動し、モデルセレクタから新しいモデルを選んでね。詳細は GovCloud 向けのドキュメントと、モニタリング・トラッキングのガイドにあるよ。\n\n## まとめ\n\n- GovCloud (US) の Kiro IDE と CLI で Opus 5.5 と Sonnet 5.5 が使える\n- Opus 5.5 は 2.0 倍（Opus 5 の 2.2 倍から下がった）、Sonnet 5.5 は 1.3 倍のクレジット倍率\n- どちらも 1M コンテキスト\n- 更新して再起動すれば、モデルセレクタに出てくる\n\nGovCloud で AI コーディングを進めている開発チームに刺さるよ！",
+  "title_en": "Claude Opus 5.5 and Sonnet 5.5 arrive in Kiro on GovCloud!",
+  "summary_en": "Anthropic's Claude Opus 5.5 and Claude Sonnet 5.5 are now available in the Kiro IDE and CLI in AWS GovCloud (US). Both have a 1M context window, with credit multipliers of 2.0x for Opus 5.5 and 1.3x for Sonnet 5.5.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Two new Anthropic models have arrived in Kiro on GovCloud.\n\n## What was announced?\n\nAWS What's New announced that Anthropic's Claude Opus 5.5 and Claude Sonnet 5.5 are now available in the Kiro IDE and CLI for the AWS GovCloud (US) Regions.\n\n## What changes\n\nTeams using Kiro in GovCloud can now pick the latest Claude models. You get a cost-performance dial: Opus 5.5 for maximum capability, Sonnet 5.5 for higher throughput.\n\n## Dive Deep\n\nWhat each model offers:\n\n- Claude Opus 5.5: Anthropic's most capable Opus model yet, a step up from Opus 5 on long-running agentic coding work. It thinks adaptively on every request. In Kiro's internal benchmarking it completes tasks with roughly 40% fewer tool calls and about half the tokens of Opus 5. It has a 1M context window and a 2.0x credit multiplier, down from Opus 5's 2.2x\n- Claude Sonnet 5.5: Anthropic's fastest Sonnet model to date. Output is more than 30% faster, and real-world coding and knowledge work approaches Opus 5.5 performance. Clearer writing makes it a stronger collaborator. It has a 1M context window and a 1.3x credit multiplier, and is a natural upgrade for teams already on Sonnet 5\n\nTo get started, update your IDE or CLI to the latest version, restart it, and pick the new models from the model selector. Details are in the GovCloud documentation and the monitoring and tracking guide.\n\n## Wrap-up\n\n- Opus 5.5 and Sonnet 5.5 are available in Kiro IDE and CLI in GovCloud (US)\n- Credit multipliers are 2.0x for Opus 5.5 (down from 2.2x for Opus 5) and 1.3x for Sonnet 5.5\n- Both have a 1M context window\n- Update and restart, and they show up in the model selector\n\nIt's a good fit for development teams doing AI-assisted coding in GovCloud.",
+  "emotion": "energetic",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/06/kiro-claude-5-5-aws-govcloud-us/",
+  "source_name": "AWS What's New",
+  "og_title": "Anthropic Claude Sonnet 5.5 and Claude Opus 5.5 are now available on Kiro in AWS GovCloud (US)",
+  "tags": [
+    "aws",
+    "anthropic",
+    "ai"
+  ],
+  "published_at": "2026-10-09T17:13:00+00:00"
+}

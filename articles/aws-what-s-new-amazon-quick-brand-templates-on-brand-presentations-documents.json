@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-quick-brand-templates-on-brand-presentations-documents",
+  "title": "Amazon Quick にブランドテンプレート！資料が自動でブランドどおりに",
+  "summary": "Amazon Quick でブランドテンプレートをアップロードできるようになったよ。色・フォント・ロゴ・レイアウト・ブランドルールを抽出し、Quick が作るプレゼンや文書をブランドに合わせてくれるの。",
+  "body_md": "おつかれさま、しぃちゃんだよ！Amazon Quick で資料をブランドどおりに作れるようになったよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Quick がブランドテンプレートに対応したと発表されたよ。承認済みのビジュアルアイデンティティに合ったプレゼンや文書を作れるようになったの。ブランド担当者が 1 回設定すれば、チャットのたびに適切なファイルを探さなくても、全員が同じブランドの成果物を得られるよ。\n\n## これで何が変わるの？\n\nテンプレート選びの手間が減って、組織全体で見た目がそろうよ。\n\n## 深く潜ってみよう\n\n流れと機能はこれだよ。\n\n- ブランド担当者が PowerPoint か Word のテンプレートをアップロードする（SharePoint などの接続済みファイルストアから取り込むことも可能）\n- Quick が各ファイルから色、フォント、ロゴ、レイアウト、ブランドルールを抽出する\n- ブランド担当者が抽出結果を確認・編集してから、組織全体に公開する\n- Quick は新しい成果物を作るときにテンプレートのルールに従う。依頼がルールに反する場合は、理由を説明して、ブランドに合う代替案を提案する\n- タスクごとに、ブランド担当者が書いたガイダンスをもとに最適なテンプレートを選ぶ。ユーザーが別のテンプレートを選ぶことも可能\n- 管理者はカスタム権限で、誰がテンプレートを作成・公開できるかを決められる（ブランドやマーケティングなどの承認されたチームに限定するなど）\n\nブランドアセットは、Amazon Quick のデスクトップアプリで一般提供（GA）されているよ。\n\n## まとめ\n\n- ブランドテンプレートをアップロードして、Quick の成果物をブランドに合わせられる\n- 色・フォント・ロゴ・レイアウト・ルールを自動抽出し、公開前にレビューできる\n- ルール違反の依頼には説明と代替案を返す\n- 作成・公開の権限は管理者が制御できる\n\nブランドの統一に悩むマーケティングやブランド担当の人に刺さるよ！",
+  "title_en": "Amazon Quick gets brand templates: on-brand decks and docs, automatically",
+  "summary_en": "Amazon Quick now lets you upload brand templates. It extracts colors, fonts, logos, layouts, and brand rules, and follows them when creating presentations and documents.",
+  "body_md_en": "Hi, it's Shii-chan! Amazon Quick can now make on-brand materials.\n\n## What was announced?\n\nAWS What's New announced that Amazon Quick now supports brand templates, so you can create presentations and documents that match your approved visual identity. Brand managers set up a template once, and everyone gets on-brand output without hunting for the right file in each chat.\n\n## What changes\n\nLess hassle picking templates, and a consistent look across the whole organization.\n\n## Dive Deep\n\nHow it works:\n\n- Brand managers upload PowerPoint or Word templates, or pull them from a connected file store such as SharePoint\n- Quick extracts the colors, fonts, logos, layouts, and brand rules from each file\n- A brand manager reviews and edits what Quick found before publishing it to the whole organization\n- Quick follows a template's rules as it creates new assets. If a request breaks a rule, Quick explains why and suggests an on-brand alternative\n- For each task, Quick picks the best-fit template based on guidance the brand manager writes. Users can still choose a different template\n- Administrators use custom permissions to decide who can create and publish brand templates, for example limiting it to approved brand or marketing teams\n\nBrand assets are generally available in the Amazon Quick desktop app.\n\n## Wrap-up\n\n- Upload brand templates so Quick's output follows your brand\n- Colors, fonts, logos, layouts, and rules are extracted and can be reviewed before publishing\n- Rule-breaking requests get an explanation and an alternative\n- Admins control who can create and publish templates\n\nIt's a good fit for marketing and brand teams working to keep their materials consistent.",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-quick-brand-templates-on-brand-presentations-documents/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Quick now supports brand templates for on-brand presentations and documents",
+  "tags": [
+    "aws",
+    "ai",
+    "business"
+  ],
+  "published_at": "2026-10-09T15:00:00+00:00"
+}

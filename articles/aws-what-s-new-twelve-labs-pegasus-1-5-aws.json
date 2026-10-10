@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-twelve-labs-pegasus-1-5-aws",
+  "title": "動画が検索できるデータに！Bedrock に TwelveLabs Pegasus 1.5 が登場",
+  "summary": "Amazon Bedrock で、動画から時刻つきの構造化メタデータを作る video-to-text モデル TwelveLabs Pegasus 1.5 が使えるようになったよ。事前のインデックス作成なしで、動画全体を 1 回で解析するの。",
+  "body_md": "こんにちは、しぃちゃんだよ！動画ライブラリを扱う人に嬉しいモデルが Bedrock に来たよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Bedrock が TwelveLabs Pegasus 1.5 に対応したと発表されたよ。動画から、タイムスタンプつきの構造化メタデータを生成する video-to-text モデルなの。\n\n## 今までどうだったの？\n\n大きな動画ライブラリから特定の場面を探すには、どこを見ればいいかを先に知っている必要があったんだ。質問する前に、まず探す場所を決めなければいけなかったということだよね。\n\n## これで何が変わるの？\n\nPegasus 1.5 は動画全体を読んで、何がいつ起きたかにラベルを付けるよ。映像がクエリできるデータになるの。\n\n## 深く潜ってみよう\n\n特徴はこれだよ。\n\n- 編集上のセグメント、話者の切り替え、スポーツのプレー、ブランドの登場など、ビジネスで重要なものを自分で定義できる\n- 定義した場面を動画全体から見つけて、タイムスタンプつきで返す\n- 映像、音声、画面上の文字を 1 回の処理で解析\n- 事前のインデックス作成や取り込みパイプラインの構築は不要\n- US と Global のクロスリージョン推論プロファイル経由で利用できる\n\n始めるには、Bedrock のコンソールからモデルを使うか、ドキュメントで対応リージョン、API、機能、料金を確認してね。\n\n## まとめ\n\n- Bedrock で TwelveLabs Pegasus 1.5 が使えるようになった\n- 動画から時刻つきの構造化メタデータを生成する\n- 映像・音声・画面上の文字を 1 回で解析し、事前インデックスは不要\n- US と Global のクロスリージョン推論プロファイルで利用可能\n\nメディアや放送、スポーツなど、大量の動画から必要な場面を探したい人に刺さるよ！",
+  "title_en": "Turn video into queryable data: TwelveLabs Pegasus 1.5 arrives on Bedrock",
+  "summary_en": "Amazon Bedrock now supports TwelveLabs Pegasus 1.5, a video-to-text model that generates structured, time-coded metadata from video in a single pass, with no pre-indexing.",
+  "body_md_en": "Hello, it's Shii-chan! A handy model for anyone with a video library just landed on Bedrock.\n\n## What was announced?\n\nAWS What's New announced that Amazon Bedrock now supports TwelveLabs Pegasus 1.5, a video-to-text model that generates structured, time-coded metadata from video.\n\n## The story so far\n\nFinding a moment in a large video library meant knowing where to look before you could ask about it. You had to decide where to search before you could ask your question.\n\n## What changes\n\nPegasus 1.5 reads an entire video and labels what happens and when, turning footage into data your applications can query.\n\n## Dive Deep\n\nKey features:\n\n- You define what matters to your business, such as editorial segments, speaker changes, sports plays, or brand appearances\n- It finds those moments across the video and returns them with timestamps\n- It analyzes what it sees, hears, and reads on screen in a single pass\n- No pre-indexing or ingestion pipeline to build first\n- Accessible through the US and Global cross-Region inference profiles\n\nTo get started, use the model in the Bedrock console, or check the documentation for supported Regions, APIs, features, and pricing.\n\n## Wrap-up\n\n- TwelveLabs Pegasus 1.5 is now available on Bedrock\n- It generates time-coded structured metadata from video\n- It analyzes visuals, audio, and on-screen text in one pass, with no pre-indexing\n- Available via US and Global cross-Region inference profiles\n\nIt's a great fit for media, broadcast, and sports teams who need to find specific moments in lots of video.",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/twelve-labs-pegasus-1-5-aws/",
+  "source_name": "AWS What's New",
+  "og_title": "TwelveLabs Pegasus 1.5 model now available on Amazon Bedrock",
+  "tags": [
+    "aws",
+    "ai"
+  ],
+  "published_at": "2026-10-09T05:32:00+00:00"
+}

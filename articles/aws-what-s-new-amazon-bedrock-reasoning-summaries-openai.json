@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-bedrock-reasoning-summaries-openai",
+  "title": "Bedrock の OpenAI モデルで推論の要約が取れるようになったよ！",
+  "summary": "Amazon Bedrock が、Responses API 経由の OpenAI モデルで reasoning.summary パラメータに対応したよ。回答と一緒に、モデルの推論を人が読める形で要約して返してくれるの。",
+  "body_md": "こんにちは、しぃちゃんだよ！Bedrock の OpenAI モデルで、推論の中身をのぞけるようになったよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Bedrock が Responses API 経由の OpenAI モデルで reasoning.summary パラメータをサポートしたと発表されたよ。モデルの推論について、人が読める要約を回答と一緒にリクエストできるの。\n\n## これで何が変わるの？\n\nコーディング、分析、複数ステップの問題解決のような複雑なタスクで、モデルがどう考えたかが分かるようになるよ。開発者にとっては、回答を評価したり、アプリをデバッグしたり、ユーザーにモデルの進め方を見せたりするための手がかりが増えるの。\n\n## 深く潜ってみよう\n\n使い方と対応範囲はこれだよ。\n\n- 要約は、推論の出力アイテムの summary 配列に、モデルの回答と一緒に返される\n- Bedrock 上のすべての OpenAI モデルが対象\n- OpenAI GPT モデルが使えるすべての AWS リージョンで利用可能\n- 同一リージョン推論、地理（GEO）クロスリージョン推論、グローバルクロスリージョン推論のいずれでも使える\n\n詳しい指定方法は、OpenAI のドキュメントの reasoning summaries の説明にあるよ。Bedrock で OpenAI GPT モデルを使い始める方法は、Bedrock のドキュメントを見てね。\n\n## まとめ\n\n- Responses API の reasoning.summary パラメータに対応した\n- 推論の要約が、summary 配列に回答と一緒に返る\n- Bedrock 上のすべての OpenAI モデル、3 種類の推論方式で使える\n- デバッグや評価、ユーザーへの説明に役立つ\n\nBedrock で OpenAI モデルを使ったアプリを作っていて、モデルの考え方を確認したい開発者に刺さるよ！",
+  "title_en": "Reasoning summaries now work with OpenAI models on Bedrock!",
+  "summary_en": "Amazon Bedrock now supports the reasoning.summary parameter for OpenAI models through the Responses API, returning a human-readable summary of the model's reasoning alongside its response.",
+  "body_md_en": "Hello, it's Shii-chan! You can now peek into the reasoning of OpenAI models on Bedrock.\n\n## What was announced?\n\nAWS What's New announced that Amazon Bedrock now supports the reasoning.summary parameter for OpenAI models through the Responses API. It lets you request a human-readable summary of a model's reasoning alongside its response.\n\n## What changes\n\nFor complex tasks such as coding, analysis, and multi-step problem solving, you can see how the model approached the problem. For developers, that's more context for evaluating responses, debugging applications, and showing users how a request was handled.\n\n## Dive Deep\n\nUsage and coverage:\n\n- The summary is returned in the summary array of the reasoning output item, alongside the model's answer\n- It works with all OpenAI models on Amazon Bedrock\n- It's available in all AWS Regions where OpenAI GPT models are available\n- It works with in-Region inference, geographic (GEO) cross-Region inference, and global cross-Region inference\n\nFor how to specify it, see OpenAI's documentation on reasoning summaries. To get started with OpenAI GPT models on Bedrock, see the Bedrock documentation.\n\n## Wrap-up\n\n- The reasoning.summary parameter of the Responses API is supported\n- Reasoning summaries come back in the summary array with the answer\n- Works with all OpenAI models on Bedrock and all three inference modes\n- Useful for debugging, evaluation, and explaining behavior to users\n\nIt's a good fit for developers building on OpenAI models in Bedrock who want to see how the model thinks.",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-bedrock-reasoning-summaries-openai/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Bedrock now supports reasoning summaries for OpenAI models",
+  "tags": [
+    "aws",
+    "openai",
+    "ai"
+  ],
+  "published_at": "2026-10-09T17:44:00+00:00"
+}

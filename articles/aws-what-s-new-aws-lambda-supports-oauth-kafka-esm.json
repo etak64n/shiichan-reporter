@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-lambda-supports-oauth-kafka-esm",
+  "title": "Lambda の Kafka イベントソースが OAuth 認証に対応したよ！",
+  "summary": "AWS Lambda のセルフマネージド Apache Kafka イベントソースマッピングが OAuth 認証に対応したよ。Confluent Cloud、Aiven、Redpanda などでも使えて、Cognito や Okta などの IdP で認証できるの。",
+  "body_md": "みんな、しぃちゃんだよ！Lambda で Kafka を使っている人に嬉しい、OAuth 対応のお知らせだよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Lambda がセルフマネージド Apache Kafka のイベントソースマッピング（ESM）で OAuth 認証に対応したと発表されたよ。自分で運用している Kafka クラスターだけでなく、Confluent Cloud、Aiven、Redpanda のようなマネージドサービスも対象なの。\n\n## 今までどうだったの？\n\nKafka ESM が対応していた認証方式は、SASL/PLAIN、SASL/SCRAM、相互 TLS（mTLS）だけだったんだ。だから OAuth を必須とする規制の厳しい業界のお客さんは、自分のクラスターで Kafka ESM を使えなかったの。\n\n## これで何が変わるの？\n\nエンタープライズの ID プロバイダー経由で、Lambda の Kafka コンシューマーを認証できるようになったよ。Amazon Cognito や Okta といった IdP を使って、Kafka クラスターと Lambda コンシューマーに同じアイデンティティのガバナンスとアクセスポリシーを適用できるの。\n\n## 深く潜ってみよう\n\n補足はこれだよ。\n\n- Kafka ESM は自動スケーリング、エラー処理、バッチ処理、イベントフィルタリングを提供する。決済処理、不正検知、リアルタイムデータパイプラインといったユースケースで、サーバーレスな Kafka コンシューマーとして使われている\n- OAuth を使うには、認証設定を含む新しい Kafka ESM を作成する。方法は AWS マネジメントコンソール、Lambda API、AWS CLI、AWS CloudFormation、AWS SAM から選べる\n- 対応リージョンは、セルフマネージド Kafka ESM が使える AWS 商用リージョンすべて\n\n## まとめ\n\n- セルフマネージド Kafka ESM が OAuth 認証に対応した\n- Confluent Cloud、Aiven、Redpanda などのマネージドサービスも対象\n- Cognito や Okta などの IdP で認証し、ポリシーを統一できる\n- 新規の ESM 作成時に、コンソール、API、CLI、CloudFormation、SAM から設定できる\n\nOAuth が必須の環境で、Lambda を使った Kafka コンシューマーを組みたい人に刺さるよ！",
+  "title_en": "Lambda Kafka event sources now support OAuth authentication!",
+  "summary_en": "AWS Lambda now supports OAuth authentication for self-managed Apache Kafka event source mappings, including Confluent Cloud, Aiven, and Redpanda, using identity providers such as Amazon Cognito or Okta.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Here's OAuth support for anyone using Kafka with Lambda.\n\n## What was announced?\n\nAWS What's New announced that AWS Lambda now supports OAuth authentication for self-managed Apache Kafka event source mappings (ESM). That covers Kafka clusters you run yourself as well as managed offerings such as Confluent Cloud, Aiven, and Redpanda.\n\n## The story so far\n\nKafka ESM supported only SASL/PLAIN, SASL/SCRAM, and mutual TLS (mTLS) as authentication methods. Customers in regulated industries that require OAuth couldn't use Kafka ESM with their clusters.\n\n## What changes\n\nYou can now authenticate Lambda Kafka consumers through your enterprise identity provider. With an IdP such as Amazon Cognito or Okta, you can apply the same identity governance and access policies across your Kafka clusters and Lambda consumers.\n\n## Dive Deep\n\nSome extra details:\n\n- Kafka ESM provides automatic scaling, error handling, batching, and event filtering, and is used for serverless Kafka consumers in cases like payment processing, fraud detection, and real-time data pipelines\n- To use OAuth, create a new Kafka ESM with your authentication configuration, through the AWS Management Console, Lambda API, AWS CLI, AWS CloudFormation, or AWS SAM\n- It's available in all AWS commercial Regions where self-managed Kafka ESM is available\n\n## Wrap-up\n\n- Self-managed Kafka ESM now supports OAuth authentication\n- Managed services like Confluent Cloud, Aiven, and Redpanda are covered\n- Authenticate with IdPs such as Cognito or Okta and unify policies\n- Configure it when creating a new ESM via the console, API, CLI, CloudFormation, or SAM\n\nIt's a great fit if you need OAuth and want Lambda-based Kafka consumers.",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-Lambda-supports-oauth-kafka-esm/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Lambda supports OAuth authentication for self-managed Apache Kafka event sources",
+  "tags": [
+    "aws",
+    "serverless",
+    "security"
+  ],
+  "published_at": "2026-10-09T16:30:00+00:00"
+}

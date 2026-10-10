@@ -1,0 +1,19 @@
+{
+  "slug": "cloudflare-changelog-2026-10-09-r2-bandwidth-by-location",
+  "title": "R2 の帯域をロケーション別に見られるようになったよ！",
+  "summary": "Cloudflare R2 の帯域幅を、リクエストを処理した Cloudflare のロケーション別にダッシュボードで確認できるようになったよ。バケットの絞り込みと、読み取り・書き込みの切り替えもできるの。",
+  "body_md": "こんにちは、しぃちゃんだよ！R2 のダッシュボードに、帯域をロケーション別に見られるグラフが加わったよ。\n\n## なにが発表されたの？\n\nCloudflare の Changelog に、「R2 - R2 bandwidth by Cloudflare location」が載ったよ。各リクエストを処理した Cloudflare のロケーション別に、R2 の帯域幅を Cloudflare のダッシュボードで見られるようになったの。\n\n## これで何が変わるの？\n\nどのロケーションが最も帯域を使っているかが分かるようになったよ。\n\n## 深く潜ってみよう\n\nできることはこれだよ。\n\n- 特定のバケットを選んで絞り込める\n- ダウンロード（読み取り）とアップロード（書き込み）の帯域を切り替えて見られる\n- 既定では、選んだ期間の合計帯域が多い上位 5 ロケーションを表示\n- 「Top 5 locations」のドロップダウンで他のロケーションを選べて、同時に最大 6 つまで表示できる\n\n見るには、ダッシュボードの R2 概要ページに行けばいいよ。詳しくはドキュメントの「R2 metrics and analytics」にまとまっているの。\n\n## まとめ\n\n- R2 の帯域をロケーション別に表示できるようになった\n- バケット別の絞り込みと、読み取り・書き込みの切り替えに対応\n- 既定は上位 5 ロケーション、最大 6 つまで選べる\n\nR2 のトラフィックがどこから来ているか把握したい人に刺さるよ！",
+  "title_en": "See your R2 bandwidth by Cloudflare location!",
+  "summary_en": "Cloudflare R2 bandwidth can now be viewed in the dashboard by the Cloudflare location that served each request, with bucket filtering and a read/write toggle.",
+  "body_md_en": "Hello, it's Shii-chan! The R2 dashboard just got a chart that breaks down bandwidth by location.\n\n## What was announced?\n\nCloudflare's Changelog posted \"R2 - R2 bandwidth by Cloudflare location\". You can now view R2 bandwidth by the Cloudflare location that served each request, in the Cloudflare dashboard.\n\n## What changes\n\nYou can now see which locations consume the most bandwidth.\n\n## Dive Deep\n\nWhat you can do:\n\n- Select a specific bucket\n- Switch between download (read) and upload (write) bandwidth\n- By default, the chart shows the top five locations by total bandwidth in the selected time range\n- Use the \"Top 5 locations\" dropdown to select other locations, up to six at a time\n\nGo to the R2 overview in the dashboard to see it. More details are in the \"R2 metrics and analytics\" docs.\n\n## Wrap-up\n\n- R2 bandwidth is now shown by location\n- Bucket filtering and a read/write toggle are supported\n- The default is the top five locations, with up to six selectable\n\nIt's a good fit if you want to know where your R2 traffic is coming from.",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-09-r2-bandwidth-by-location/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "R2 - R2 bandwidth by Cloudflare location",
+  "tags": [
+    "cloudflare",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-09T00:00:00+00:00"
+}

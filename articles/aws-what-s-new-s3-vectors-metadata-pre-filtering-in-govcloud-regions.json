@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-s3-vectors-metadata-pre-filtering-in-govcloud-regions",
+  "title": "S3 Vectors のメタデータ事前フィルタが GovCloud に！前方一致の $startsWith も",
+  "summary": "Amazon S3 Vectors のメタデータ事前フィルタリングが AWS GovCloud (US) リージョンで使えるようになったよ。絞り込みが厳しいときに最大 5 倍多くの一致ベクトルを返し、前方一致の $startsWith 演算子も加わったの。",
+  "body_md": "やっほー、しぃちゃんだよ！S3 Vectors のフィルタ機能が GovCloud にも来たよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon S3 Vectors のメタデータ事前フィルタリングが、AWS GovCloud (US-East) と AWS GovCloud (US-West) で利用できるようになったと発表されたよ。\n\n## これで何が変わるの？\n\n事前フィルタリングは、類似度検索を実行する前にメタデータフィルタを評価する方式だよ。フィルタの絞り込みが厳しいとき、最大 5 倍多くの一致ベクトルを返せるの。RAG、エージェント、セマンティック検索のアプリが、フィルタ使用時により完全な結果を得られて、より関連性の高い回答を返せるようになるよ。\n\n## 深く潜ってみよう\n\n詳細はこれだよ。\n\n- パスや URL のような値でのフィルタに使える前方一致の演算子 $startsWith が追加された\n- GovCloud (US) リージョンの新しいベクトルバケットのインデックスは、既定で事前フィルタリングを使う。PutVectors での書き込みや QueryVectors でのフィルタ付きクエリの方法は変わらない\n- 既存のインデックスで使うには、UpdateIndexMode API でその場で更新する\n- 更新の前に、QueryVectors のクエリごとのパラメータを使って、同じインデックス上で現在のフィルタリングと事前フィルタリングを比較できる\n- 追加料金なしで、S3 Vectors が使えるすべての商用 AWS リージョンと AWS 中国リージョンでも利用できる\n\nなお、この変更は展開の途中で、完了は数日以内の予定とされているよ。始めるには、AWS CLI、AWS SDK、Amazon S3 コンソールを使ってね。\n\n## まとめ\n\n- 事前フィルタリングが GovCloud (US-East / US-West) で利用可能に\n- 絞り込みが厳しいとき最大 5 倍多くの一致ベクトルを返せる\n- 前方一致の $startsWith 演算子が追加\n- 既存インデックスは UpdateIndexMode で更新し、事前に比較もできる\n\nGovCloud で RAG やセマンティック検索を動かしている人に刺さるよ！",
+  "title_en": "S3 Vectors metadata pre-filtering comes to GovCloud, plus a $startsWith operator!",
+  "summary_en": "Amazon S3 Vectors metadata pre-filtering is now available in the AWS GovCloud (US) Regions. It returns up to 5x more matching vectors when a filter is selective, and adds a $startsWith prefix match operator.",
+  "body_md_en": "Hi, it's Shii-chan! The S3 Vectors filtering feature has reached GovCloud.\n\n## What was announced?\n\nAWS What's New announced that Amazon S3 Vectors metadata pre-filtering is now available in the AWS GovCloud (US-East) and AWS GovCloud (US-West) Regions.\n\n## What changes\n\nPre-filtering evaluates metadata filters before running similarity search. When your filter is selective, it returns up to 5x more of the matching vectors. RAG, agentic, and semantic-search applications get more complete results when they filter, so they can return more relevant answers.\n\n## Dive Deep\n\nDetails:\n\n- A new prefix match operator, $startsWith, lets you filter on values like paths and URLs\n- Indexes in new vector buckets in the GovCloud (US) Regions use pre-filtering by default, with no change to how you write vectors with PutVectors or run filtered queries with QueryVectors\n- To use pre-filtering on an existing index, update it in place with the UpdateIndexMode API\n- Before updating, you can compare pre-filtering against your current filtering on the same index using a per-query parameter on QueryVectors\n- It's available at no additional cost in all commercial AWS Regions where S3 Vectors is available, and in the AWS China Regions\n\nThe change is still being deployed, with completion planned in the coming days. To get started, use the AWS CLI, AWS SDKs, or the Amazon S3 console.\n\n## Wrap-up\n\n- Pre-filtering is available in GovCloud (US-East / US-West)\n- Up to 5x more matching vectors when a filter is selective\n- New $startsWith prefix match operator\n- Update existing indexes with UpdateIndexMode, and compare beforehand\n\nIt's a good fit if you run RAG or semantic search in GovCloud.",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/s3-vectors-metadata-pre-filtering-in-govcloud-regions/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon S3 Vectors metadata pre-filtering is now available in AWS GovCloud (US) Regions",
+  "tags": [
+    "aws",
+    "ai",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-09T17:00:00+00:00"
+}

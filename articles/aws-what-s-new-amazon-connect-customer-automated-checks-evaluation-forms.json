@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-connect-customer-automated-checks-evaluation-forms",
+  "title": "評価フォームを 1 クリックでチェック！Amazon Connect Customer の新機能",
+  "summary": "Amazon Connect Customer で、パフォーマンス評価フォームをベストプラクティスと照らし合わせる自動チェックが使えるようになったよ。AI が確実に採点できない曖昧な質問を見つけて、改善案を出してくれるの。",
+  "body_md": "こんにちは、しぃちゃんだよ！コンタクトセンターの評価フォームを作る人に嬉しい機能が来たよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Connect Customer が、パフォーマンス評価フォームを改善する自動チェックを提供すると発表されたよ。AI が自動で記入する評価の精度を上げるために、フォームへの変更を提案してくれるの。\n\n## これで何が変わるの？\n\n評価フォームを作るとき、マネージャーは 1 クリックでフォームをベストプラクティスと比較する自動チェックを実行できるよ。AI が確実に採点するには文脈が足りない評価の質問が一覧で返ってきて、より具体的にするための提案も付くの。\n\n## 深く潜ってみよう\n\n具体例として、「エージェントは販売時の開示を行いましたか？」という質問がフラグされることがあるよ。その場合、販売前にエージェントが何を開示しなければならないのかを正確に定義するよう促してくれるの。\n\nねらいは、人間のエージェントも AI のエージェントも公平で正確に採点できるようにしつつ、マネージャーがフォームを練る時間を減らすことだよ。\n\n提供リージョンはこの 8 つだよ。\n\n- 米国東部（バージニア北部）\n- 米国西部（オレゴン）\n- カナダ（中部）\n- 欧州（フランクフルト）\n- 欧州（ロンドン）\n- アジアパシフィック（シンガポール）\n- アジアパシフィック（シドニー）\n- アジアパシフィック（東京）\n\n## まとめ\n\n- 評価フォームを 1 クリックでベストプラクティスと比較できる\n- AI が採点しにくい曖昧な質問を見つけ、具体化の提案を出す\n- 人間と AI のエージェントを公平に採点しやすくなる\n- 8 つのリージョンで利用可能\n\nAI による自動評価を使っているコンタクトセンターの品質管理担当の人に刺さるよ！",
+  "title_en": "One-click checks for evaluation forms in Amazon Connect Customer!",
+  "summary_en": "Amazon Connect Customer now offers an automated check that compares performance evaluation forms against best practices, flagging questions that lack the context AI needs to score reliably and suggesting fixes.",
+  "body_md_en": "Hello, it's Shii-chan! Here's a handy feature for anyone building contact center evaluation forms.\n\n## What was announced?\n\nAWS What's New announced that Amazon Connect Customer now suggests changes to performance evaluation forms that improve the accuracy of evaluations automatically filled by AI.\n\n## What changes\n\nWhile setting up an evaluation form, managers can run an automated check that compares the form against best practices with a single click. They get a list of questions that are missing context for AI to score reliably, along with suggestions to make them more specific.\n\n## Dive Deep\n\nFor example, the check might flag \"Did the agent provide a sales disclosure?\" and prompt the manager to define exactly what the agent must disclose before a sale.\n\nThe goal is to score human and AI agents fairly and accurately while spending less time refining forms.\n\nAvailable in these eight Regions:\n\n- US East (N. Virginia)\n- US West (Oregon)\n- Canada (Central)\n- Europe (Frankfurt)\n- Europe (London)\n- Asia Pacific (Singapore)\n- Asia Pacific (Sydney)\n- Asia Pacific (Tokyo)\n\n## Wrap-up\n\n- Compare an evaluation form against best practices in one click\n- Finds vague questions that AI can't score reliably and suggests how to make them specific\n- Makes it easier to score human and AI agents fairly\n- Available in eight Regions\n\nIt's a good fit for quality managers in contact centers that use AI-based evaluation.",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-connect-customer-automated-checks-evaluation-forms/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Connect Customer now provides automated checks to improve performance evaluation forms",
+  "tags": [
+    "aws",
+    "ai",
+    "business"
+  ],
+  "published_at": "2026-10-09T17:00:00+00:00"
+}

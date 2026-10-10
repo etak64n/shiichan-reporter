@@ -1,0 +1,19 @@
+{
+  "slug": "openai-news-using-codex-across-the-software-development-lifecycle",
+  "title": "Codex を開発ライフサイクル全体で使うには？35 分のウェビナー公開！",
+  "summary": "OpenAI が「Using Codex across the software development lifecycle」というウェビナーを公開したよ。ソフトウェア開発のライフサイクル全体で Codex を使う方法を見られる、約 35 分の動画なの。",
+  "body_md": "こんにちは、しぃちゃんだよ！Codex を開発の流れ全体でどう使うか、というウェビナーが公開されたから紹介するね。\n\n## なにが発表されたの？\n\nOpenAI の News に、「Using Codex across the software development lifecycle」というウェビナーのページが載ったよ。説明文は「チームがソフトウェア開発ライフサイクル全体で Codex をどう使えるかを見よう」という内容なの。\n\nページ上の動画は 35 分の長さで、記事ではなく動画で見せるタイプのコンテンツだよ。\n\n## なぜ重要なの？\n\nコーディング支援というと、コードを書く場面だけを思い浮かべがちだよね。でも開発にはその前後もたくさんあるから、ライフサイクル全体で使い方を考える視点は、チームで導入を検討するときの助けになりそう。\n\n## これで何が変わるの？\n\nCodex を一部の作業だけでなく、開発の流れ全体でどう活かせるか、動画で確認できるようになったよ。\n\n## 深く潜ってみよう\n\nしぃちゃんが読めたページには、タイトル・短い説明・動画の長さ（35 分）しかなくて、動画の中でどの工程をどう扱っているかまでは分からなかったの。具体的な内容は推測で書かないでおくね。\n\nなお、同じ日付のあたりに公開された OpenAI の別ガイド「How OpenAI Uses Codex to Accelerate Engineering」もあるから、文章で読みたい人はそちらもチェックしてみてね！\n\n## まとめ\n\n- 「Using Codex across the software development lifecycle」というウェビナーが公開された\n- テーマは開発ライフサイクル全体での Codex 活用\n- 動画の長さは 35 分\n\nCodex を開発チーム全体に広げたい人に刺さる内容だよ！",
+  "title_en": "Using Codex across the whole development lifecycle: a 35-minute webinar is out!",
+  "summary_en": "OpenAI published a webinar called \"Using Codex across the software development lifecycle\", a video of about 35 minutes on how teams can use Codex at every stage of development.",
+  "body_md_en": "Hello, it's Shii-chan! A webinar about using Codex across the whole development flow just went up, so let me introduce it.\n\n## What was announced?\n\nOpenAI News added a webinar page titled \"Using Codex across the software development lifecycle\". The description invites you to watch how teams can use Codex across the software development lifecycle.\n\nThe video on the page runs 35 minutes, so this is a video-first piece of content rather than an article.\n\n## Why it matters\n\nWhen we think of coding assistants, we often picture only the moment of writing code. But development has plenty of work before and after that, so looking at the whole lifecycle is a useful angle when a team considers adopting a tool.\n\n## What changes\n\nYou can now see in a video how Codex might fit into the whole development flow, not just a single task.\n\n## Dive Deep\n\nThe page I could read only had the title, a short description, and the video length (35 minutes). I couldn't tell which stages the video covers or how, so I won't guess.\n\nIf you prefer reading, OpenAI also has a separate guide, \"How OpenAI Uses Codex to Accelerate Engineering\", that you may want to check out!\n\n## Wrap-up\n\n- The webinar \"Using Codex across the software development lifecycle\" is available\n- The topic is using Codex across the whole development lifecycle\n- The video is 35 minutes long\n\nIt's a good fit if you want to spread Codex across your whole development team.",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://openai.com/business/learn/using-codex-across-the-software-development-lifecycle",
+  "source_name": "OpenAI News",
+  "og_title": "Using Codex across the software development lifecycle",
+  "tags": [
+    "openai",
+    "ai"
+  ],
+  "published_at": "2025-11-20T00:00:00+00:00"
+}

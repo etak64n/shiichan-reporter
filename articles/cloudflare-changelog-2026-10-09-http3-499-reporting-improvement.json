@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-10-09-http3-499-reporting-improvement",
+  "title": "HTTP/3 の 499 が増えても慌てないで！キャンセル検知の改善だよ",
+  "summary": "Cloudflare が、クライアントがキャンセルした HTTP/3 リクエストの扱いと報告を改善したよ。キャンセルされたリクエストを早く止めて 499 として記録するので、HTTP/3 で 499 が増えて見えることがあるの。",
+  "body_md": "みんな、しぃちゃんだよ！アナリティクスで 499 が増えて見えても大丈夫、というアップデートが Cloudflare から出たよ。\n\n## なにが発表されたの？\n\nCloudflare の Changelog に、「Cloudflare Fundamentals - Improved HTTP/3 client cancellation reporting」が載ったよ。Free、Pro、Business、Enterprise のすべてのプランで、クライアントがキャンセルした HTTP/3 リクエストの扱いと報告が改善されたの。アナリティクスと、利用できる場合はログで、クライアントの挙動がより明確に見えるようになるよ。\n\n## 今までどうだったの？\n\nこれまでは、クライアントがリクエストストリームをキャンセルしても、Cloudflare が必ずしもリクエストを止めていなかったんだ。一部は 499 として記録されていたけれど、残りはオリジンまで処理が続いて、最終的なオリジンのステータスコードが記録されていたの。\n\n## これで何が変わるの？\n\n対象のリクエストを Cloudflare が早く止めるようになって、オリジンの無駄な処理が減るよ。そして、それらは 499 として記録されるの。\n\n## 深く潜ってみよう\n\n気をつけたいポイントはこれだよ。\n\n- HTTP/3 のトラフィックで 499 ステータスコードが増えて見えることがある\n- これは、すでにあったキャンセルがより一貫して報告されるようになったためで、失敗リクエストが増えたわけではない\n- 可用性の計算に 499 を含めている場合は、クライアントがキャンセルしたリクエストを表すので、サーバー側のエラー率から除外することを検討してね\n\n詳しくは Cloudflare のドキュメントの「Error 499」に説明があるよ。\n\n## まとめ\n\n- HTTP/3 のクライアントキャンセルを、より早く止めて 499 として記録するようになった\n- 全プランが対象\n- 499 が増えて見えても、失敗が増えたわけではない\n- 可用性の計算では 499 を除外することを検討しよう\n\n監視ダッシュボードやアラートで 499 を使っている運用担当の人は、ぜひチェックしてね！",
+  "title_en": "More 499s on HTTP/3? Don't panic: client cancellation reporting got better",
+  "summary_en": "Cloudflare improved how it handles and reports client-cancelled HTTP/3 requests. Cancelled requests are now stopped sooner and recorded as 499, so you may see more 499s on HTTP/3 traffic.",
+  "body_md_en": "Hi everyone, it's Shii-chan! If you see more 499s in your analytics, don't worry: Cloudflare just made an update.\n\n## What was announced?\n\nCloudflare's Changelog posted \"Cloudflare Fundamentals - Improved HTTP/3 client cancellation reporting\". Across Free, Pro, Business, and Enterprise plans, the handling and reporting of client-cancelled HTTP/3 requests has improved. You get a clearer view of client behavior in analytics and, where available, in logs.\n\n## The story so far\n\nPreviously, Cloudflare didn't always stop an HTTP/3 request when the client cancelled its request stream. Some cancellations were already recorded as 499, but others continued to the origin and showed the eventual upstream status.\n\n## What changes\n\nCloudflare now stops affected requests sooner, which reduces unnecessary origin work, and records them as 499.\n\n## Dive Deep\n\nThings to keep in mind:\n\n- You may see more 499 status codes on HTTP/3 traffic\n- This reflects more consistent reporting of existing cancellations, not an increase in failed requests\n- If you use 499s in availability calculations, consider excluding them from server-side error rates, since they represent requests cancelled by clients\n\nSee \"Error 499\" in the Cloudflare docs for more.\n\n## Wrap-up\n\n- HTTP/3 client cancellations are now stopped sooner and recorded as 499\n- All plans are covered\n- More 499s doesn't mean more failures\n- Consider excluding 499s from availability calculations\n\nIf you use 499s in monitoring dashboards or alerts, it's worth a look.",
+  "emotion": "thinking",
+  "importance": 3,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-09-http3-499-reporting-improvement/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Cloudflare Fundamentals - Improved HTTP/3 client cancellation reporting",
+  "tags": [
+    "cloudflare",
+    "web",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-09T00:00:00+00:00"
+}
