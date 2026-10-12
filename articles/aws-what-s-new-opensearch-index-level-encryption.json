@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-opensearch-index-level-encryption",
+  "title": "OpenSearch Service がインデックス単位の暗号化に対応！テナントごとに別の KMS キーで守れるよ",
+  "summary": "Amazon OpenSearch Service で、インデックスごとに専用の AWS KMS カスタマーマネージドキーで保存時暗号化できるようになったよ！OpenSearch 3.3 以降、14 リージョンで追加料金なしみたい！",
+  "body_md": "みんな、しぃちゃんだよ！\n\nマルチテナントのデータを守りたい人に嬉しい発表だよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon OpenSearch Service がインデックス単位の暗号化(index-level encryption)に対応したと発表されたよ。インデックスごとに、それぞれ専用の AWS Key Management Service(AWS KMS)カスタマーマネージドキーで保存時暗号化できるの。\n\n## 今までどうだったの？\n\nこの機能は、既存の保存時暗号化の上に作られているよ。インデックス単位だと、同じドメインにある所有者や機密度の違うデータを、別々のキーで守れるのが新しいところなの。\n\n## これで何が変わるの？\n\nたとえばマルチテナントのアプリでは、テナントごとにデータを別のキーで暗号化できるよ。同じドメインの中でも、データの所有者ごとにキーを分けて管理できるのが嬉しいね！\n\n## 深く潜ってみよう\n\n使い始める流れはこうだよ。\n\n- AWS マネジメントコンソールか AWS CLI で、新しいドメインを作るときに暗号化モードを `Native` にして、カスタマーマネージドキーを指定する\n- そのあと、ドメインに追加のキーを登録する\n- 登録したキーを使って、個別のインデックスを暗号化する\n\n提供条件はこうなの。\n\n- 対象は OpenSearch バージョン 3.3 以降のドメイン\n- 追加料金なし(標準の AWS KMS と OpenSearch Service の料金はかかる)\n- 14 の AWS リージョンで利用可能\n\n利用できるリージョンはこれだよ。\n\n- 米国東部(バージニア北部、オハイオ)\n- 米国西部(オレゴン)\n- カナダ(中部)\n- アジアパシフィック(ムンバイ、ソウル、シンガポール、シドニー、東京)\n- 欧州(フランクフルト、アイルランド、ロンドン、パリ)\n- 南米(サンパウロ)\n\n詳しくは、Amazon OpenSearch Service デベロッパーガイドの Index-level encryption を見てね。\n\n## まとめ\n\n- インデックスごとに専用の KMS カスタマーマネージドキーで暗号化できる\n- 新規ドメイン作成時に暗号化モードを `Native` にして有効化する\n- OpenSearch 3.3 以降、14 リージョンで利用できる\n- 追加料金はなし(KMS と OpenSearch の標準料金は別)\n\nテナントごとにキーを分けたい、マルチテナントの検索基盤を持つみんなに刺さるよ！",
+  "title_en": "Amazon OpenSearch Service Adds Index-Level Encryption with Per-Tenant KMS Keys",
+  "summary_en": "Amazon OpenSearch Service can now encrypt each index at rest with its own AWS KMS customer managed key. It needs OpenSearch 3.3 or later, is available in 14 Regions, and has no additional charge.",
+  "body_md_en": "Hi everyone, it's Shii-chan!\n\nHere's great news if you want to protect multi-tenant data!\n\n## What was announced?\n\nAWS What's New announced that Amazon OpenSearch Service now supports index-level encryption. You can encrypt each index at rest with its own AWS Key Management Service (AWS KMS) customer managed key.\n\n## The story so far\n\nThis builds on the existing encryption at rest capability. What's new is that, on the same domain, data with different ownership or sensitivity can sit under separate keys.\n\n## What changes\n\nIn a multi-tenant application, for example, you can encrypt each tenant's data with its own key. Keys can follow data owners even inside one domain!\n\n## Dive Deep\n\nHere's how to get started:\n\n- When you create a new domain in the AWS Management Console or AWS CLI, set the encryption mode to `Native` and specify a customer managed key\n- Register additional keys with the domain\n- Use those keys to encrypt individual indexes\n\nAvailability and cost:\n\n- Domains must run OpenSearch version 3.3 or later\n- No additional charge (standard AWS KMS and OpenSearch Service charges apply)\n- Available in 14 AWS Regions\n\nThe Regions are:\n\n- US East (N. Virginia, Ohio)\n- US West (Oregon)\n- Canada (Central)\n- Asia Pacific (Mumbai, Seoul, Singapore, Sydney, Tokyo)\n- Europe (Frankfurt, Ireland, London, Paris)\n- South America (São Paulo)\n\nSee Index-level encryption in the Amazon OpenSearch Service Developer Guide for more.\n\n## Wrap-up\n\n- Each index can be encrypted with its own KMS customer managed key\n- Enable it by setting the encryption mode to `Native` when creating a new domain\n- Needs OpenSearch 3.3 or later, in 14 Regions\n- No additional charge (standard KMS and OpenSearch charges still apply)\n\nIf you run a multi-tenant search platform and want per-tenant keys, this one's for you!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/opensearch-index-level-encryption",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon OpenSearch Service now supports index-level encryption",
+  "tags": [
+    "aws",
+    "security",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-12T02:30:00+00:00"
+}

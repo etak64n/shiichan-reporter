@@ -1,0 +1,19 @@
+{
+  "slug": "cloudflare-changelog-2026-10-12-unified-dashboard-navigation",
+  "title": "Zero Trust がメインのダッシュボードに合体！ナビゲーションが一つになったよ",
+  "summary": "Cloudflare ダッシュボードで Zero Trust とメインのナビゲーションが統合されたよ！全顧客に今日から提供で、Zero Trust の Network 項目は Networking 側の新しい体験に置き換わったみたい！",
+  "body_md": "こんにちは、しぃちゃんだよ！\n\nCloudflare のダッシュボードが、ちょっとすっきりしたみたい！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Cloudflare ダッシュボードの Zero Trust とメインのナビゲーションが一つに統合されたと発表されたよ。\n\n## 今までどうだったの？\n\nこれまでは Zero Trust 用とメイン用でナビゲーションが分かれていたので、製品をまたぐには行き来が必要だったよね。\n\n## これで何が変わるの？\n\n同じナビゲーションから、Cloudflare の各製品に移動できるようになったよ。\n\n- 全顧客が、プライマリナビゲーションから Zero Trust の製品を見られる\n- Zero Trust の顧客は、同じナビゲーションから他のサービスにもアクセスできる(開発者プラットフォーム、アカウントのメンバーシップ、リソースのタグ付けなど)\n\n## 深く潜ってみよう\n\n項目の位置も変わったから、気をつけてね。\n\n- Zero Trust の Network 項目は廃止。Networking ナビゲーションにある新しい体験に置き換わった\n- Resolvers & Proxies は、Traffic Controls(以前の名前は Traffic Policies)の下へ移動した\n\nこの更新は全顧客に今日から提供されているよ。詳しくは Cloudflare One のドキュメントを見てね。\n\n## まとめ\n\n- Zero Trust とメインのダッシュボードナビゲーションが統合された\n- 全顧客が今日から利用できる\n- Network 項目は Networking の新体験へ、Resolvers & Proxies は Traffic Controls 配下へ\n\nZero Trust と開発者向けサービスを両方使っているみんなに刺さるよ！",
+  "title_en": "Zero Trust Joins the Main Dashboard: Unified Navigation Is Here",
+  "summary_en": "The Cloudflare dashboard now combines Zero Trust and main navigation, available to all customers today. Zero Trust Network items were replaced by Networking experiences.",
+  "body_md_en": "Hi everyone, it's Shii-chan!\n\nThe Cloudflare dashboard just got tidier!\n\n## What was announced?\n\nThe Cloudflare Changelog announced that the dashboard now combines Zero Trust and main navigation.\n\n## The story so far\n\nZero Trust and the main dashboard had separate navigation, so moving between products meant jumping back and forth.\n\n## What changes\n\nYou can now move between Cloudflare products from the same navigation.\n\n- All customers can browse Zero Trust products from the primary navigation\n- Zero Trust customers can also reach other services from it (the developer platform, account memberships, and resource tagging)\n\n## Dive Deep\n\nSome items moved, so watch out:\n\n- The Zero Trust Network items were removed in favor of the new experiences under Networking navigation\n- Resolvers & Proxies moved under Traffic Controls (previously Traffic Policies)\n\nThe update is available to all customers starting today. See the Cloudflare One documentation for more.\n\n## Wrap-up\n\n- Zero Trust and main dashboard navigation are unified\n- Available to all customers today\n- Network items point to the new Networking experiences, and Resolvers & Proxies now lives under Traffic Controls\n\nIf you use both Zero Trust and developer services, this one's for you!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-12-unified-dashboard-navigation/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Cloudflare One - Unified dashboard navigation for Zero Trust",
+  "tags": [
+    "cloudflare",
+    "security"
+  ],
+  "published_at": "2026-10-12T19:04:16+00:00"
+}

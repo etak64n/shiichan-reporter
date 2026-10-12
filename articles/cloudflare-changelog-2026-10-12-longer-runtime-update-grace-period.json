@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-10-12-longer-runtime-update-grace-period",
+  "title": "Workers のランタイム更新中の猶予が 30 秒から最大 20 分に！長いリクエストも安心",
+  "summary": "Workers のランタイム更新時、処理中のリクエストや接続への猶予が最大 30 秒から最大 20 分に延びたよ！AI のストリーミング応答や WebSocket が中断されにくくなるみたい！",
+  "body_md": "こんにちは、しぃちゃんだよ！\n\nWorkers のランタイム更新で、処理中のリクエストがもっと長く待ってもらえるようになったよ！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Workers のランタイム更新中の、処理中リクエストと接続に対する猶予が最大 20 分になったと発表されたよ。\n\n## 今までどうだったの？\n\n以前の猶予は最大 30 秒だったの。長く続くリクエストは、更新のタイミングによっては途中で切られることがあったんだね。\n\n- 以前: 最大 30 秒\n- 今回から: 最大 20 分\n\n## これで何が変わるの？\n\nこんな処理が、更新に邪魔されず続けやすくなるよ。\n\n- 長時間かかる HTTP リクエスト\n- ストリーミングされる AI の応答\n- 接続中の WebSocket セッション\n\n## 深く潜ってみよう\n\n更新中の動きはこうだよ。\n\n- 新しい HTTP リクエストは、準備ができた更新後のランタイムに届く\n- 古いバージョンのプロセスは、新しいリクエストの受付を止めて、残りの処理を流し切る(ドレイン)\n- 猶予は、古いバージョンを動かしているプロセスごとに適用される\n- 猶予が終わると、そのプロセスで終わっていないリクエストと開いている接続は終了される\n\n注意点もあるよ。猶予が延びても、中断がなくなるわけじゃないの。\n\n- WebSocket の再接続、中断されたリクエストの安全な再試行、再起動後の保存済み状態からの復旧ができるように設計しておく\n- WebSocket Hibernation API を使う接続も含めて、猶予が終わる前に切断されることがある\n\n詳しくは Workers runtime updates のドキュメントを見てね。\n\n## まとめ\n\n- ランタイム更新中の猶予が、最大 30 秒から最大 20 分に\n- 長い HTTP リクエスト、AI のストリーミング応答、WebSocket が続きやすくなる\n- それでも切れる可能性はあるので、再接続・再試行・状態復旧の設計は必要\n\n長く続く接続や AI ストリーミングを Workers で動かしているみんなに刺さるよ！",
+  "title_en": "More Time for Requests to Finish During Workers Runtime Updates: Up to 20 Minutes",
+  "summary_en": "The grace period for pending requests and connections during Workers runtime updates grew from up to 30 seconds to up to 20 minutes, helping long requests, AI streams, and WebSockets.",
+  "body_md_en": "Hi everyone, it's Shii-chan!\n\nIn-flight requests now get much more time to finish during Workers runtime updates!\n\n## What was announced?\n\nThe Cloudflare Changelog says pending requests and connections to Workers now have a grace period of up to 20 minutes during runtime updates.\n\n## The story so far\n\nThe grace period used to be up to 30 seconds, so long-running requests could be cut off depending on update timing.\n\n- Before: up to 30 seconds\n- Now: up to 20 minutes\n\n## What changes\n\nThese kinds of work have more time to continue before an update interrupts them:\n\n- Long-running HTTP requests\n- Streamed AI responses\n- Live WebSocket sessions\n\n## Dive Deep\n\nHere's how an update behaves:\n\n- New incoming HTTP requests go to the updated runtime once it is ready\n- Processes running the previous version stop accepting these requests and drain existing work\n- The grace period applies to each process running the previous version\n- When it ends, unfinished requests and open connections on that process are terminated\n\nA longer grace period doesn't mean interruptions are gone:\n\n- Design your app to reconnect WebSockets, safely retry interrupted requests, and recover saved state after a restart\n- WebSockets can disconnect before the grace period ends, including connections using the WebSocket Hibernation API\n\nSee the Workers runtime updates docs for more.\n\n## Wrap-up\n\n- The grace period grew from up to 30 seconds to up to 20 minutes\n- Long HTTP requests, AI streams, and WebSockets have more room to finish\n- Interruptions can still happen, so keep reconnect, retry, and state recovery in your design\n\nIf you run long-lived connections or AI streaming on Workers, this one's for you!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-12-longer-runtime-update-grace-period/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Workers - More time for requests to finish during Workers runtime updates",
+  "tags": [
+    "cloudflare",
+    "serverless",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-12T19:04:14+00:00"
+}

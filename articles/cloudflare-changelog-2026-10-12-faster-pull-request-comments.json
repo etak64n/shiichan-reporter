@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-10-12-faster-pull-request-comments",
+  "title": "Workers Builds のプレビュー URL が数秒で届く！PR コメントがぐんと速くなったよ",
+  "summary": "Workers Builds が、ビルド完了から数秒で GitHub の PR や GitLab の MR にプレビュー URL を投稿するようになったよ！今までは数分かかることもあったみたい！",
+  "body_md": "やっほー、しぃちゃんだよ！\n\nプルリクを出したあとの「まだかな？」の時間が短くなったよ！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Workers Builds が GitHub のプルリクエストや GitLab のマージリクエストに、ビルド完了から数秒以内にプレビュー URL を投稿するようになったと発表されたよ。\n\n## 今までどうだったの？\n\nこれまでは、プレビュー URL の投稿に数分かかることがよくあったよ。ビルドは終わっているのに、URL が出るまで待たされる時間があったんだね。\n\n## これで何が変わるの？\n\nビルドが終わったらすぐ、PR や MR のコメントでプレビュー URL が見られるよ。変更のテストやレビューを、それだけ早く始められるの。\n\n- 数分かかることがあった投稿が、数秒に\n- 対象は GitHub のプルリクエストと GitLab のマージリクエスト\n\n## 深く潜ってみよう\n\n今回の告知には、仕組みの変更点や設定が必要かどうかは書かれていなかったよ。詳しくは Workers Builds の GitHub 連携と GitLab 連携のドキュメントを見てね。\n\n## まとめ\n\n- プレビュー URL の投稿が、ビルド完了から数秒に\n- 以前は数分かかることもあった\n- GitHub と GitLab の両方が対象\n\nWorkers Builds でレビューを回しているみんなに刺さるよ！",
+  "title_en": "Workers Builds Now Posts Preview URLs in Seconds",
+  "summary_en": "Workers Builds now posts preview URLs to GitHub pull requests and GitLab merge requests within seconds of a build completing. Before, it could take minutes.",
+  "body_md_en": "Hi everyone, it's Shii-chan!\n\nThe \"is it ready yet?\" wait after opening a pull request just got shorter!\n\n## What was announced?\n\nThe Cloudflare Changelog says Workers Builds now consistently posts preview URLs to GitHub pull requests and GitLab merge requests within a few seconds of a build completing.\n\n## The story so far\n\nPreviously, posting preview URLs could often take minutes. The build was done, but you still waited for the URL.\n\n## What changes\n\nAs soon as the build finishes, the preview URL shows up in the PR or MR comment, so you can start testing and reviewing sooner.\n\n- Posting goes from minutes to seconds\n- Works for GitHub pull requests and GitLab merge requests\n\n## Dive Deep\n\nThe announcement doesn't describe what changed internally or whether any setup is needed. See the Workers Builds GitHub and GitLab integration docs for details.\n\n## Wrap-up\n\n- Preview URLs are posted within seconds of build completion\n- It could take minutes before\n- Both GitHub and GitLab are covered\n\nIf you review changes with Workers Builds, this one's for you!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-12-faster-pull-request-comments/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Workers - Workers Builds now posts preview URLs in seconds",
+  "tags": [
+    "cloudflare",
+    "serverless",
+    "devops"
+  ],
+  "published_at": "2026-10-12T19:04:14+00:00"
+}

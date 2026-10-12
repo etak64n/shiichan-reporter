@@ -1,0 +1,21 @@
+{
+  "slug": "cloudflare-changelog-2026-09-18-queues-jurisdictions",
+  "title": "Cloudflare Queues が EU・US・FedRAMP の管轄に対応したよ！データの置き場所を固定できる！",
+  "summary": "Cloudflare Queues で、メッセージの保存と処理を特定の管轄内に限定できるようになったよ！eu・us・fedramp から選べて、キュー作成時にだけ指定できるみたい！",
+  "body_md_en_placeholder": "",
+  "body_md": "おつかれさま、しぃちゃんだよ！\n\nデータの置き場所を決めたいチームに嬉しい更新が来たよ！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Cloudflare Queues が管轄(jurisdiction)による制限に対応したと発表されたよ。キューに発行したメッセージが、特定の管轄内だけで保存・処理されるようになるの。GDPR や FedRAMP のようなデータレジデンシー要件への対応に役立つよ。\n\n## これで何が変わるの？\n\n指定できる管轄は 3 つだよ。\n\n- `eu`: 欧州連合\n- `us`: 米国\n- `fedramp`: FedRAMP-Moderate のデータセンター\n\n## 深く潜ってみよう\n\nCloudflare CLI(`cf`)では `--jurisdiction` フラグを使うよ。\n\n```sh\ncf queues create --queue-name my-eu-queue --jurisdiction eu\n```\n\nAPI なら、Create Queue エンドポイントに `jurisdiction` パラメータを渡すの。\n\n```sh\ncurl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/queues \\\n  --request POST \\\n  --header \"Authorization: Bearer $CLOUDFLARE_API_TOKEN\" \\\n  --header \"Content-Type: application/json\" \\\n  --data '{ \"queue_name\": \"my-eu-queue\", \"jurisdiction\": \"eu\" }'\n```\n\nここは大事！管轄はキューの作成時にしか設定できなくて、あとから変更できないよ。最初に決めてから作ろうね。詳しくは Queues の Data location のドキュメントを見てね。\n\n## まとめ\n\n- Queues のメッセージを特定の管轄内に限定できる\n- 選べるのは `eu`・`us`・`fedramp`\n- CLI の `--jurisdiction` か API の `jurisdiction` で指定する\n- 設定は作成時のみで、変更は不可\n\nデータ保存場所の要件があるシステムを作っているみんなに刺さるよ！",
+  "title_en": "Cloudflare Queues Now Supports EU, US, and FedRAMP Jurisdictions",
+  "summary_en": "Cloudflare Queues can now keep messages stored and processed only within a chosen jurisdiction: eu, us, or fedramp. It can only be set at queue creation.",
+  "body_md_en": "Hi everyone, it's Shii-chan!\n\nHere's a nice update for teams that care about where their data lives!\n\n## What was announced?\n\nThe Cloudflare Changelog says Cloudflare Queues now supports jurisdictional restrictions. Messages published to a queue are stored and processed only within a specific jurisdiction, which helps with data residency requirements such as GDPR or FedRAMP.\n\n## What changes\n\nThere are three supported jurisdictions:\n\n- `eu`: European Union\n- `us`: United States\n- `fedramp`: FedRAMP-Moderate data centers\n\n## Dive Deep\n\nWith the Cloudflare CLI (`cf`), use the `--jurisdiction` flag.\n\n```sh\ncf queues create --queue-name my-eu-queue --jurisdiction eu\n```\n\nWith the API, pass a `jurisdiction` parameter to the Create Queue endpoint.\n\n```sh\ncurl https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/queues \\\n  --request POST \\\n  --header \"Authorization: Bearer $CLOUDFLARE_API_TOKEN\" \\\n  --header \"Content-Type: application/json\" \\\n  --data '{ \"queue_name\": \"my-eu-queue\", \"jurisdiction\": \"eu\" }'\n```\n\nThis part matters: the jurisdiction can only be set when the queue is created and cannot be changed afterwards, so decide before you create it. See the Queues data location docs for more.\n\n## Wrap-up\n\n- Queue messages can be restricted to a specific jurisdiction\n- Choose from `eu`, `us`, and `fedramp`\n- Set it with `--jurisdiction` in the CLI or `jurisdiction` in the API\n- Creation-time only; it can't be changed later\n\nIf your system has data location requirements, this one's for you!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-09-18-queues-jurisdictions/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Queues - Queues now supports EU, US, and FedRAMP jurisdictions",
+  "tags": [
+    "cloudflare",
+    "serverless",
+    "security"
+  ],
+  "published_at": "2026-10-12T19:04:12+00:00"
+}

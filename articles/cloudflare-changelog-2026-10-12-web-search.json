@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-10-12-web-search",
+  "title": "エージェントがウェブ検索できるように！Agents SDK の web_search ツール、知ってた？",
+  "summary": "Agents SDK に、Cloudflare Web Search API を使った web_search ツールが追加されたよ！裏側は ceramic.ai・Exa・Linkup で、プロバイダーも選べるみたい！",
+  "body_md": "おつかれさま、しぃちゃんだよ！\n\nエージェントが自分でウェブを検索できるツールが、Agents SDK に追加されたよ！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Agents SDK に `web_search` ツールが加わったと発表されたよ。公開ウェブを、Cloudflare Web Search API 経由で検索するの。この API の裏側は ceramic.ai、Exa、Linkup が支えているよ。\n\n## これで何が変わるの？\n\nモデルが渡すのは、検索クエリと最大件数だけ。返ってくるのは、タイトル・URL・短くした説明が並んだ番号付きの短いリストだよ。\n\n`web_fetch` ツールも一緒に渡しておくと、検索結果のページを `web_fetch` で読むようにモデルへ指示してくれるよ。検索して、気になったページを読むという流れが作れるね！\n\n## 深く潜ってみよう\n\n使うには Agents SDK v0.27.0 以上が必要だよ。Pi Durable の拡張レジストリに追加してからハーネスを開くの。\n\n```ts\nimport { webSearchTool } from \"agents/websearch/pi\";\n\nthis.registry.install({\n  name: \"web-tools\",\n  tools: [webSearchTool({ binding: this.env.AI, provider: \"exa\" })],\n});\n```\n\nオプションはこの 2 つだよ。\n\n- `binding`: AI バインディング(例では `this.env.AI`)\n- `provider`: 使う検索バックエンド(例では `\"exa\"`)\n\nアダプタもそろっているよ。\n\n- Pi Durable: `agents/websearch/pi` の `webSearchTool`\n- AI SDK と TanStack AI: SDK に同梱\n- モデルなし(スケジュール実行のジョブなど): `agents/websearch` の `createAIWebSearch()` または `createHTTPWebSearch()`\n\n制限事項はこの告知には書かれていなかったよ。詳細はドキュメントの Web search を見てね。\n\n## まとめ\n\n- Agents SDK v0.27.0 以上で `web_search` ツールが使える\n- Cloudflare Web Search API 経由で、ceramic.ai・Exa・Linkup を利用\n- 結果はタイトル・URL・短い説明の番号付きリスト\n- `web_fetch` と組み合わせて、検索から読み込みまで通せる\n\nCloudflare 上で調べ物をしてくれるエージェントを作りたいみんなに刺さるよ！",
+  "title_en": "Agents Can Now Search the Web with the Agents SDK's web_search Tool",
+  "summary_en": "The Agents SDK gets a web_search tool built on the Cloudflare Web Search API, powered by ceramic.ai, Exa, and Linkup, with a selectable provider.",
+  "body_md_en": "Hi everyone, it's Shii-chan!\n\nAgents built with the Agents SDK can now search the web by themselves!\n\n## What was announced?\n\nThe Cloudflare Changelog announced a `web_search` tool for the Agents SDK. It searches the public web through the Cloudflare Web Search API, which is powered by ceramic.ai, Exa, and Linkup.\n\n## What changes\n\nThe model provides a query and a maximum number of results. It gets back a short numbered list of titles, URLs, and trimmed descriptions.\n\nIf you also give the agent the `web_fetch` tool, the model is told to use it to read the pages that search returns. That makes a search-then-read flow easy!\n\n## Dive Deep\n\nYou need Agents SDK v0.27.0 or later, and you add the tool to a Pi Durable extension registry before opening the harness.\n\n```ts\nimport { webSearchTool } from \"agents/websearch/pi\";\n\nthis.registry.install({\n  name: \"web-tools\",\n  tools: [webSearchTool({ binding: this.env.AI, provider: \"exa\" })],\n});\n```\n\nThe two options are:\n\n- `binding`: the AI binding (`this.env.AI` in the example)\n- `provider`: the search backend (`\"exa\"` in the example)\n\nAdapters are available too:\n\n- Pi Durable: `webSearchTool` from `agents/websearch/pi`\n- AI SDK and TanStack AI: included in the SDK\n- No model needed (for example, scheduled jobs): `createAIWebSearch()` or `createHTTPWebSearch()` from `agents/websearch`\n\nThe announcement doesn't state any limits. See the Web search documentation for details.\n\n## Wrap-up\n\n- `web_search` is available in Agents SDK v0.27.0 or later\n- Uses the Cloudflare Web Search API, powered by ceramic.ai, Exa, and Linkup\n- Results are a numbered list of titles, URLs, and short descriptions\n- Pairs with `web_fetch` for a full search-and-read flow\n\nIf you're building agents on Cloudflare that need to look things up, this one's for you!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-12-web-search/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Agents - New web_search tool in the Agents SDK, powered by the Cloudflare Web Search API",
+  "tags": [
+    "cloudflare",
+    "ai",
+    "serverless"
+  ],
+  "published_at": "2026-10-12T19:04:17+00:00"
+}

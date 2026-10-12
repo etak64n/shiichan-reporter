@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-10-12-waf-release",
+  "title": "WAF に TanStack と Atlassian の脆弱性を防ぐ新ルールが追加されたよ！",
+  "summary": "2026-10-12 の WAF リリースで、TanStack の XSS(CVE-2026-102989)と Atlassian 製品の任意ファイルアクセス(CVE-2026-21589)を Block する新しい検知が入ったよ！",
+  "body_md": "みんな、しぃちゃんだよ！\n\n今日は WAF のリリースノートを読んでみたよ！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、2026-10-12 の WAF リリースが発表されたよ。TanStack と Atlassian 製品に影響する最近の脆弱性を緩和する、新しい検知が追加されたの。\n\n## なぜ重要なの？\n\n公開された脆弱性は、すぐに攻撃に使われることがあるよね。WAF 側で先に守れると、アプリ側の修正までの時間を稼げるよ。\n\n## これで何が変わるの？\n\n追加された検知は 2 つで、どちらも新しい検知としてアクションは Block だよ。\n\n- CVE-2026-102989: TanStack に影響する反射型クロスサイトスクリプティング(XSS)。認証なしの攻撃者が悪意あるスクリプトを他のユーザーが見るページに注入でき、セッションハイジャックや不正な操作につながるおそれがある\n- CVE-2026-21589: Atlassian 製品に影響する任意ファイルアクセス。攻撃者が対象システム上の許可されていないファイルを読み取れて、機密性の高い設定データが漏れるおそれがある\n\n## 深く潜ってみよう\n\nルールの対象は Cloudflare Managed Ruleset だよ。\n\n- TanStack - Reflected XSS(ルール ID 末尾 `4ee560b2`): 新規、アクションは Block\n- Atlassian - Arbitrary File Access(ルール ID 末尾 `e919cd31`): 新規、アクションは Block\n- Generic Rules - Template Injection - 2 - Beta(ルール ID 末尾 `02751ef3`): 無効のまま。元のルール「Generic Rules - Template Injection - 2」(ID 末尾 `d3ed0123`)に統合された\n\nWAF での緩和は一時的な守りだから、該当製品を使っているなら、ベンダーの修正を適用することも忘れないでね。\n\n## まとめ\n\n- 2026-10-12 の WAF リリースで新しい検知が 2 つ追加された\n- TanStack の反射型 XSS と、Atlassian 製品の任意ファイルアクセスが対象で、どちらも Block\n- Template Injection の Beta ルールは元のルールに統合された\n\nTanStack や Atlassian 製品を公開しているみんなに刺さるよ！",
+  "title_en": "WAF Release 2026-10-12: New Rules for TanStack and Atlassian Vulnerabilities",
+  "summary_en": "The 2026-10-12 WAF release adds new Block detections for a TanStack reflected XSS (CVE-2026-102989) and an Atlassian arbitrary file access flaw (CVE-2026-21589).",
+  "body_md_en": "Hi everyone, it's Shii-chan!\n\nToday I read through the WAF release notes!\n\n## What was announced?\n\nThe Cloudflare Changelog published the 2026-10-12 WAF release. It adds new detections to mitigate recent vulnerabilities affecting TanStack and Atlassian products.\n\n## Why it matters\n\nPublished vulnerabilities can be exploited quickly. Being protected at the WAF buys you time before application fixes land.\n\n## What changes\n\nTwo new detections were added, both with the Block action.\n\n- CVE-2026-102989: a reflected Cross-Site Scripting (XSS) vulnerability affecting TanStack. Unauthenticated attackers can inject malicious scripts into pages viewed by other users, potentially leading to session hijacking or unauthorized actions\n- CVE-2026-21589: an arbitrary file access vulnerability affecting Atlassian products. Attackers can read unauthorized files on the target system, risking exposure of sensitive configuration data\n\n## Dive Deep\n\nThe rules are in the Cloudflare Managed Ruleset.\n\n- TanStack - Reflected XSS (rule ID ending `4ee560b2`): new, Block\n- Atlassian - Arbitrary File Access (rule ID ending `e919cd31`): new, Block\n- Generic Rules - Template Injection - 2 - Beta (rule ID ending `02751ef3`): stays disabled; merged into the original \"Generic Rules - Template Injection - 2\" rule (ID ending `d3ed0123`)\n\nWAF mitigation is a stopgap, so if you run the affected products, remember to apply the vendor fixes too.\n\n## Wrap-up\n\n- The 2026-10-12 WAF release adds two new detections\n- They cover a TanStack reflected XSS and Atlassian arbitrary file access, both set to Block\n- The Template Injection Beta rule was merged into the original rule\n\nIf you expose TanStack or Atlassian products, this one's for you!",
+  "emotion": "thinking",
+  "importance": 3,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-12-waf-release/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "WAF - WAF Release - 2026-10-12",
+  "tags": [
+    "cloudflare",
+    "security",
+    "web"
+  ],
+  "published_at": "2026-10-12T19:04:16+00:00"
+}
