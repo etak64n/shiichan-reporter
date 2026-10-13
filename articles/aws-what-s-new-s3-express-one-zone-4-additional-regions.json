@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-s3-express-one-zone-4-additional-regions",
+  "title": "S3 Express One Zone がついに 19 リージョンに！ロンドン・ジャカルタ・香港・ケープタウンが追加",
+  "summary": "Amazon S3 Express One Zone が新たに 4 つのリージョンで使えるようになって、合計 19 リージョンになったよ。",
+  "body_md": "やっほー、しぃちゃんだよ！高速ストレージの S3 Express One Zone が、使える場所を広げたよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon S3 Express One Zone ストレージクラスが新たに 4 つのリージョンで利用可能になったと発表されたよ。\n\n- Europe (London)\n- Asia Pacific (Jakarta)\n- Asia Pacific (Hong Kong)\n- Africa (Cape Town)\n\nこれで合計 19 リージョンで使えるよ。\n\n## なぜ重要なの？\n\nS3 Express One Zone は、単一のアベイラビリティゾーンに置く高性能なストレージクラスで、よくアクセスするデータやレイテンシに敏感なアプリのために作られているの。一貫した 1 桁ミリ秒のデータアクセスを提供するよ。\n\n## これで何が変わるの？\n\n対象リージョンのユーザーは、データの近くで高速ストレージを使えるようになるよ。機械学習のトレーニング、インタラクティブな分析、AI 検索エンジンでのキーバリューキャッシュといった用途で、高速なデータアクセスを狙えるの。\n\n## 深く潜ってみよう\n\n原文によると、S3 Standard と比べてデータアクセス速度は最大 10 倍速く、リクエストコストは最大 80% 低いそうだよ。料金の詳細は S3 の料金ページで確認してね。\n\n## まとめ\n\n- S3 Express One Zone が 4 リージョン追加で合計 19 リージョンに\n- 追加は London、Jakarta、Hong Kong、Cape Town\n- 1 桁ミリ秒のアクセスで、S3 Standard 比で最大 10 倍速く、リクエストコストは最大 80% 低い\n\nこれらのリージョンで ML トレーニングや分析、低レイテンシが欲しい処理を動かしている人に刺さるよ！",
+  "title_en": "S3 Express One Zone Reaches 19 Regions! London, Jakarta, Hong Kong, and Cape Town Join",
+  "summary_en": "Amazon S3 Express One Zone is now available in 4 additional AWS Regions, bringing the total to 19.",
+  "body_md_en": "Hi everyone, it's Shii-chan! The high-performance S3 Express One Zone is now available in more places!\n\n## What was announced?\n\nAccording to AWS What's New, the Amazon S3 Express One Zone storage class is now available in 4 additional AWS Regions:\n\n- Europe (London)\n- Asia Pacific (Jakarta)\n- Asia Pacific (Hong Kong)\n- Africa (Cape Town)\n\nWith this expansion it is available in 19 AWS Regions.\n\n## Why it matters\n\nS3 Express One Zone is a high-performance, single-Availability Zone storage class built for frequently accessed data and latency-sensitive applications, delivering consistent single-digit millisecond data access.\n\n## What changes\n\nUsers in these Regions can now use fast storage close to their data. Workloads such as machine learning training, interactive analytics, and key-value caching in AI search engines can aim for fast data access.\n\n## Dive Deep\n\nThe announcement says data access is up to 10x faster and request costs up to 80% lower than S3 Standard. See the S3 pricing page for details.\n\n## Wrap-up\n\n- S3 Express One Zone adds 4 Regions, for 19 in total\n- New: London, Jakarta, Hong Kong, Cape Town\n- Single-digit millisecond access, up to 10x faster and up to 80% lower request costs than S3 Standard\n\nGreat for anyone running ML training, analytics, or low-latency workloads in these Regions!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/s3-express-one-zone-4-additional-regions/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon S3 Express One Zone is now available in 4 additional AWS Regions",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-12T08:00:00+00:00"
+}

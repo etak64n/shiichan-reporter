@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-connect-customer-prefills-guides-acw",
+  "title": "通話後の入力作業が減る！Amazon Connect のガイドが会話内容から自動入力に",
+  "summary": "Amazon Connect Customer が、通話後に埋めるステップバイステップガイドを、会話から抽出した予約番号や要約などで事前入力できるようになったよ。",
+  "body_md": "おつかれさま、しぃちゃんだよ！コンタクトセンターの後処理を軽くしてくれるニュースだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Connect Customer が、エージェントが通話後に完了させるステップバイステップガイドを、顧客との会話から抽出した情報で事前入力できるようになったと発表されたよ。予約 ID、請求番号、会話の要約などが対象なの。\n\n## 今までどうだったの？\n\nエージェントは各コンタクトの後に、よく使う情報をガイドへ手入力していたよ。たとえば保険の請求通話を終えたら、契約番号、通話の要約、処理区分のコードを記録する、といった作業だね。\n\n## これで何が変わるの？\n\n- マネージャーが、会話から抽出する情報と自動入力するフィールドのルールを定義できる\n- エージェントは内容を確認して、必要なら直して送信するだけ\n- 後処理の時間が短くなり、入力ミスも減る\n\n## 深く潜ってみよう\n\nマネージャーは、各フォームフィールドにどの情報を入れるかを設定できるよ。\n\n情報抽出つきのガイドが使えるリージョンはこれだよ。\n\n- US East (N. Virginia)\n- US West (Oregon)\n- Asia Pacific (Seoul)\n- Asia Pacific (Singapore)\n- Asia Pacific (Sydney)\n- Asia Pacific (Tokyo)\n- Canada (Central)\n- Europe (Frankfurt)\n- Europe (London)\n\nコンタクトの要約は、これらに加えて Africa (Cape Town) でも使えるよ。詳しくは Amazon Connect Customer の管理者ガイドのステップバイステップガイドを見てね。\n\n## まとめ\n\n- 会話から抽出した情報でガイドを事前入力\n- マネージャーが抽出ルールと入力先フィールドを設定\n- エージェントは確認して送信するだけで、後処理の短縮と入力ミス削減につながる\n- 9 リージョンで利用可能（要約は Cape Town も）\n\nコンタクトセンターの運用担当や、後処理に時間がかかっているエージェントさんに刺さるよ！",
+  "title_en": "Less Typing After Calls! Amazon Connect Prefills Step-by-Step Guides from Conversations",
+  "summary_en": "Amazon Connect Customer can now prefill the step-by-step guides agents complete after a contact, using details extracted from the conversation such as booking IDs, claim numbers, and summaries.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Here's news that lightens after-contact work in contact centers!\n\n## What was announced?\n\nAccording to AWS What's New, Amazon Connect Customer can now fill in the step-by-step guides that agents complete after a contact, using information extracted from customer conversations, such as booking identifiers, claim numbers, and conversation summaries.\n\n## The story so far\n\nAgents spent time after each contact typing frequently used information into a guide. For example, an insurance agent finishing a claims call might record the policy number, a call summary, and a disposition code.\n\n## What changes\n\n- Managers define rules for which information to extract and which fields to fill\n- Agents just review, correct if needed, and submit\n- After-contact work gets shorter and data entry errors drop\n\n## Dive Deep\n\nManagers can set which information populates each form field.\n\nStep-by-step guides with information extraction are available in:\n\n- US East (N. Virginia)\n- US West (Oregon)\n- Asia Pacific (Seoul)\n- Asia Pacific (Singapore)\n- Asia Pacific (Sydney)\n- Asia Pacific (Tokyo)\n- Canada (Central)\n- Europe (Frankfurt)\n- Europe (London)\n\nContact summaries are also available in Africa (Cape Town). See the step-by-step guides section of the Amazon Connect Customer administrator guide for details.\n\n## Wrap-up\n\n- Guides are prefilled from details extracted from the conversation\n- Managers configure extraction rules and target fields\n- Agents review and submit, saving time and reducing errors\n- Available in 9 Regions (summaries also in Cape Town)\n\nGreat for contact center admins and agents who spend lots of time on after-contact work!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/connect-customer-prefills-guides-acw",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Connect Customer now prefills step-by-step guides for after contact work",
+  "tags": [
+    "aws",
+    "ai"
+  ],
+  "published_at": "2026-10-12T22:28:00+00:00"
+}

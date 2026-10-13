@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-lambda-web-functions",
+  "title": "Lambda に HTTP サーバーをそのまま載せられる！Lambda Web Functions 誕生",
+  "summary": "AWS Lambda の新しいコンピュート形態 Lambda Web Functions が登場。コードがポートで HTTP リクエストを直接受け、Express や Hono がアダプターなしで動いて、アクティブ CPU 時間で課金されるよ。",
+  "body_md": "みんな、しぃちゃんだよ！Lambda の使い方がガラッと広がる大型ニュースが来たよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Lambda Web Functions が発表されたよ。コードが HTTP リクエストを直接処理する、新しいサーバーレスのコンピュートプリミティブなの。コードがポートで待ち受けるだけで、普通の HTTP サーバーと同じように動くよ。\n\n同時に、既存の Lambda 関数は Lambda Event Functions に名称変更されるよ。名前が変わるだけで、コード変更や再デプロイは要らないの。\n\n## 今までどうだったの？\n\n今までの Lambda はイベント駆動のモデルで、HTTP フレームワークを動かすにはアダプターなどを挟む必要があったよ。\n\n## これで何が変わるの？\n\n- Express や Hono など使い慣れたフレームワークを、アダプターや特別な設定なしで使える\n- AI 推論エンドポイント、SSR の Web アプリ、ストリーミング API、マイクロサービス、Webhook に向く\n- データベースや外部サービス待ちのアイドル CPU 時間ではなく、アクティブ CPU 時間と環境が保持するメモリに対して支払う\n\n## 深く潜ってみよう\n\n- 1 つのウォーム実行環境が複数の同時リクエストを処理でき、コールドスタートを桁違いに減らせる\n- ネイティブ HTTP ストリーミングで、結果を少しずつクライアントに返せる\n- マルチリージョンで、リクエストをユーザーに近いリージョンから処理できる\n- VPC 接続に対応\n- 現時点の対応ランタイムは Node.js のみ\n\n作成方法は Lambda API、Agent Toolkit for AWS、マネジメントコンソール、AWS CLI、CloudFormation、SAM、CDK、各種 SDK から選べるよ。\n\n提供リージョンは次の5つだよ。\n\n- US East (N. Virginia)\n- US East (Ohio)\n- US West (Oregon)\n- Asia Pacific (Tokyo)\n- Europe (Ireland)\n\n## まとめ\n\n- HTTP サーバーをそのまま動かせる Lambda の新形態\n- 既存の Lambda は Event Functions に名称変更（作業は不要）\n- 複数同時リクエスト処理、HTTP ストリーミング、アクティブ CPU 課金\n- Node.js のみ、5 リージョンで提供開始\n\nLambda で Web アプリや AI 推論 API を動かしたい人に刺さるよ！",
+  "title_en": "Run HTTP Servers Directly on Lambda! Introducing Lambda Web Functions",
+  "summary_en": "AWS Lambda Web Functions is a new compute primitive where your code listens on a port and handles HTTP requests directly. Express and Hono work without adapters, and you pay for active CPU time.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Big news that widens what Lambda can do!\n\n## What was announced?\n\nAccording to AWS What's New, AWS Lambda announced Lambda Web Functions, a new serverless compute primitive where your code handles HTTP requests directly. Your code listens on a port and works like on any HTTP server.\n\nAt the same time, existing Lambda functions are being renamed Lambda Event Functions. It's a naming change only, with no code changes or redeployments needed.\n\n## The story so far\n\nLambda has been an event-driven model, so running HTTP frameworks typically needed adapters.\n\n## What changes\n\n- Use frameworks you already know, such as Express or Hono, with no adapters or custom configuration\n- Fits AI inference endpoints, SSR web apps, streaming APIs, microservices, and webhooks\n- You pay for active CPU time and the memory your environment holds, not idle CPU time spent waiting on databases or downstream services\n\n## Dive Deep\n\n- A single warm execution environment can serve multiple concurrent requests, which reduces cold starts by orders of magnitude\n- Native HTTP streaming sends results to clients incrementally\n- Multi-Region routing serves requests from the Region closest to the user\n- VPC connectivity is supported\n- Only the Node.js runtime is supported for now\n\nYou can create one with the Lambda API, Agent Toolkit for AWS, the console, the AWS CLI, CloudFormation, SAM, CDK, or the SDKs.\n\nIt launched in five Regions:\n\n- US East (N. Virginia)\n- US East (Ohio)\n- US West (Oregon)\n- Asia Pacific (Tokyo)\n- Europe (Ireland)\n\n## Wrap-up\n\n- A new Lambda form that runs HTTP servers as they are\n- Existing Lambda becomes Event Functions (no action needed)\n- Multi-concurrent requests, HTTP streaming, active CPU billing\n- Node.js only, launched in 5 Regions\n\nGreat for anyone who wants to run web apps or AI inference APIs on Lambda!",
+  "emotion": "energetic",
+  "importance": 5,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-lambda-web-functions/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Lambda announces Lambda Web Functions",
+  "tags": [
+    "aws",
+    "serverless",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-12T19:30:00+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "slug": "cloudflare-changelog-2026-10-12-warp-windows-ga",
+  "title": "Windows 版 Cloudflare One Client 2026.8.2110.0 で再接続ループにサヨナラ！",
+  "summary": "Windows 版 Cloudflare One Client の GA ホットフィックス。ホスト名ベースのスプリットトンネル設定が適用できないときの切断と再接続の繰り返しが直ったよ。",
+  "body_md": "おつかれさま、しぃちゃんだよ！Cloudflare One Client の Windows 版も更新されたよ、紹介するね！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Windows 版 Cloudflare One Client のバージョン 2026.8.2110.0 が GA リリースとして公開されたよ。stable releases のダウンロードページから入手できるホットフィックスなの。\n\n## 今までどうだったの？\n\nホスト名ベースのエントリを含むスプリットトンネル設定の適用に失敗すると、クライアントが切断と再接続を何度も繰り返してしまうことがあったよ。\n\n## これで何が変わるの？\n\nこの不具合が修正されたよ。Windows 端末でホスト名ベースのスプリットトンネルを使っている環境では、接続の安定につながるよ。\n\n## まとめ\n\n- Windows 版 Cloudflare One Client 2026.8.2110.0 が GA\n- ホスト名ベースのスプリットトンネル設定の適用失敗時の再接続ループを修正\n- stable releases のダウンロードページから入手可能\n\nWindows 端末を多く管理している情シスさんは、バージョンを確認してみてね！",
+  "title_en": "Say Goodbye to the Reconnect Loop: Cloudflare One Client for Windows 2026.8.2110.0!",
+  "summary_en": "A GA hotfix for the Windows Cloudflare One Client fixes repeated disconnects and reconnects when a hostname-based split tunnel configuration fails to apply.",
+  "body_md_en": "Hi everyone, it's Shii-chan! The Windows Cloudflare One Client has an update too, so let me share it!\n\n## What was announced?\n\nAccording to the Cloudflare Changelog, version 2026.8.2110.0 of the Cloudflare One Client for Windows is now a GA release. It is a hotfix available on the stable releases downloads page.\n\n## The story so far\n\nWhen a split tunnel configuration with hostname-based entries failed to apply, the client could repeatedly disconnect and reconnect.\n\n## What changes\n\nThat bug is fixed. Windows environments that use hostname-based split tunnel entries should get a more stable connection.\n\n## Wrap-up\n\n- Windows Cloudflare One Client 2026.8.2110.0 is GA\n- Fixes the reconnect loop when hostname-based split tunnel configuration fails to apply\n- Available from the stable releases downloads page\n\nIf you manage lots of Windows devices, check your client version!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-12-warp-windows-ga/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Cloudflare One Client - Cloudflare One Client for Windows (version 2026.8.2110.0)",
+  "tags": [
+    "cloudflare",
+    "security"
+  ],
+  "published_at": "2026-10-12T19:28:14+00:00"
+}

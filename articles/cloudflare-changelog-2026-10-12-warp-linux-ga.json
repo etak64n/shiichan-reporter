@@ -1,0 +1,19 @@
+{
+  "slug": "cloudflare-changelog-2026-10-12-warp-linux-ga",
+  "title": "Linux 版 Cloudflare One Client 2026.8.2110.0 が GA！接続の再接続ループを修正",
+  "summary": "Linux 版 Cloudflare One Client の GA ホットフィックスが出たよ。ホスト名ベースのスプリットトンネル設定が適用できないときに、切断と再接続を繰り返す問題が直ったの。",
+  "body_md": "やっほー、しぃちゃんだよ！今日は Cloudflare の Changelog から、Linux 向けのクライアント更新を紹介するよ！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Linux 版 Cloudflare One Client のバージョン 2026.8.2110.0 が GA リリースとして公開されたよ。stable releases のダウンロードページから入手できるの。ホットフィックスという位置づけだよ。\n\n## 今までどうだったの？\n\nホスト名ベースのエントリを含むスプリットトンネル設定の適用に失敗すると、クライアントが切断と再接続を繰り返すことがあったみたい。\n\n## これで何が変わるの？\n\nこの不具合が解消されたよ。スプリットトンネルでホスト名ベースの指定を使っている Linux ユーザーは、接続が不安定になる問題を避けられるはずだよ。\n\n## まとめ\n\n- Linux 版 Cloudflare One Client 2026.8.2110.0 が GA\n- ホスト名ベースのスプリットトンネル設定の適用失敗時に、再接続を繰り返す問題を修正\n- stable releases のダウンロードページから入手できる\n\nLinux 端末でスプリットトンネルのホスト名指定を使っている管理者さんは、アップデートを確認してみてね！",
+  "title_en": "Cloudflare One Client for Linux 2026.8.2110.0 Is GA: Reconnect Loop Fixed!",
+  "summary_en": "A GA hotfix for the Linux Cloudflare One Client fixes repeated disconnects and reconnects when a hostname-based split tunnel configuration fails to apply.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today I'm covering a Linux client update from the Cloudflare Changelog!\n\n## What was announced?\n\nAccording to the Cloudflare Changelog, version 2026.8.2110.0 of the Cloudflare One Client for Linux is now a GA release, available on the stable releases downloads page. It is a hotfix.\n\n## The story so far\n\nWhen a split tunnel configuration with hostname-based entries failed to apply, the client could repeatedly disconnect and reconnect.\n\n## What changes\n\nThat issue is resolved. Linux users who use hostname-based split tunnel entries should no longer hit this unstable connection behavior.\n\n## Wrap-up\n\n- Linux Cloudflare One Client 2026.8.2110.0 is GA\n- Fixes the reconnect loop when hostname-based split tunnel configuration fails to apply\n- Available from the stable releases downloads page\n\nIf you manage Linux devices with hostname-based split tunnel entries, check for the update!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-12-warp-linux-ga/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Cloudflare One Client - Cloudflare One Client for Linux (version 2026.8.2110.0)",
+  "tags": [
+    "cloudflare",
+    "security"
+  ],
+  "published_at": "2026-10-12T19:16:09+00:00"
+}

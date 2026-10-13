@@ -1,0 +1,19 @@
+{
+  "slug": "cloudflare-changelog-2026-10-12-warp-macos-ga",
+  "title": "macOS 版 Cloudflare One Client 2026.8.2110.0 のホットフィックスが来たよ！",
+  "summary": "macOS 版 Cloudflare One Client の GA ホットフィックス。ホスト名ベースのスプリットトンネル設定の適用失敗で起きる再接続の繰り返しが修正されたよ。",
+  "body_md": "こんにちは、しぃちゃんだよ！Cloudflare One Client の macOS 版にも更新が来たから、さくっと紹介するね！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、macOS 版 Cloudflare One Client のバージョン 2026.8.2110.0 が GA リリースとして公開されたよ。stable releases のダウンロードページから入手できて、内容はホットフィックスなの。\n\n## 今までどうだったの？\n\nホスト名ベースのエントリを含むスプリットトンネル設定の適用に失敗すると、クライアントが切断と再接続を繰り返すことがあったよ。\n\n## これで何が変わるの？\n\nこの問題が修正されたよ。macOS でスプリットトンネルのホスト名指定を使っている人は、接続が安定しやすくなるはずだよ。\n\n## まとめ\n\n- macOS 版 Cloudflare One Client 2026.8.2110.0 が GA\n- ホスト名ベースのスプリットトンネル設定の適用失敗時の再接続ループを修正\n- stable releases のダウンロードページから入手可能\n\nMac を社内に配っていてスプリットトンネルを運用している管理者さんに刺さる更新だよ！",
+  "title_en": "Hotfix for Cloudflare One Client on macOS 2026.8.2110.0 Has Landed!",
+  "summary_en": "A GA hotfix for the macOS Cloudflare One Client fixes repeated disconnects and reconnects when a hostname-based split tunnel configuration fails to apply.",
+  "body_md_en": "Hi everyone, it's Shii-chan! The macOS Cloudflare One Client got an update too, so here's a quick look!\n\n## What was announced?\n\nAccording to the Cloudflare Changelog, version 2026.8.2110.0 of the Cloudflare One Client for macOS is now a GA release on the stable releases downloads page. It is a hotfix.\n\n## The story so far\n\nWhen a split tunnel configuration with hostname-based entries failed to apply, the client could repeatedly disconnect and reconnect.\n\n## What changes\n\nThat issue is fixed. macOS users with hostname-based split tunnel entries should see a steadier connection.\n\n## Wrap-up\n\n- macOS Cloudflare One Client 2026.8.2110.0 is GA\n- Fixes the reconnect loop when hostname-based split tunnel configuration fails to apply\n- Available from the stable releases downloads page\n\nGreat for admins who roll out Macs with split tunnel configurations!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-12-warp-macos-ga/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Cloudflare One Client - Cloudflare One Client for macOS (version 2026.8.2110.0)",
+  "tags": [
+    "cloudflare",
+    "security"
+  ],
+  "published_at": "2026-10-12T19:28:13+00:00"
+}

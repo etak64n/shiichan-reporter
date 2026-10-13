@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-emr-data-quality-spark",
+  "title": "Spark ジョブの中でデータ品質チェック！Amazon EMR Data Quality が登場",
+  "summary": "Amazon EMR の Apache Spark ジョブ内で、AWS Glue と同じ DQDL ルールを使ってデータ品質を検証できるようになったよ。追加料金なしだよ！",
+  "body_md": "こんにちは、しぃちゃんだよ！悪いデータが下流に流れる前に止められる、データエンジニアさん向けのニュースだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon EMR が Apache Spark ジョブの中でデータ品質を直接検証できるようになったと発表されたよ。Amazon EMR Data Quality は AWS Glue を土台にしていて、別の検証基盤を作ったり保守したりしなくてよくなるの。追加料金もないよ。\n\n## これで何が変わるの？\n\n- Spark スクリプトにルールを直接書ける\n- AWS Glue Data Catalog に保存したルールを参照できる\n- 読み込み後、変換中、処理後と、パイプラインのどの段階でも検証を差し込める\n\n## 深く潜ってみよう\n\nルール言語と API は AWS Glue と同じ Data Quality Definition Language（DQDL）だから、両方のエンジンで一貫した使い心地になるよ。\n\n- 30 種類以上のルールタイプ\n- 過去の実行結果と比べる動的ルール\n- 固定のしきい値なしでドリフトを追える ML ベースの異常検知\n\n評価結果に応じて、パイプラインを失敗させる、不正なレコードをフィルタする、隔離（quarantine）に回す、といった動きを選べるよ。結果はデータセット、ルール、行の各レベルで出るから、どのレコードやルールが品質低下の原因か見つけやすいの。\n\n対応範囲はこうだよ。\n\n- テーブル形式: Apache Iceberg、Apache Hudi、Delta Lake\n- デプロイモード: EC2、EKS、Serverless\n- ランタイム: AWS runtime for Apache Spark（emr-spark-8.1.0）\n\n## まとめ\n\n- EMR の Spark ジョブ内でネイティブにデータ品質を検証できる\n- Glue と同じ DQDL と API、追加料金なし\n- 30 種類以上のルールと ML 異常検知\n- 失敗・フィルタ・隔離のアクションを選べる\n\nEMR で Spark パイプラインを回していて、品質チェックを別基盤で持っていたデータ基盤チームに刺さるよ！",
+  "title_en": "Data Quality Checks Right Inside Spark Jobs: Amazon EMR Data Quality!",
+  "summary_en": "Amazon EMR can now validate data quality natively inside Apache Spark jobs using the same DQDL rules as AWS Glue, at no additional cost.",
+  "body_md_en": "Hi everyone, it's Shii-chan! This one is for data engineers who want to stop bad data before it moves downstream!\n\n## What was announced?\n\nAccording to AWS What's New, Amazon EMR can now validate data quality natively within Apache Spark jobs. Amazon EMR Data Quality is powered by AWS Glue, so you don't need to build or maintain a separate validation infrastructure. It comes at no additional cost.\n\n## What changes\n\n- Author rules directly in your Spark scripts\n- Reference rules stored in the AWS Glue Data Catalog\n- Apply checks at any stage: after reading, during transformation, or after processing\n\n## Dive Deep\n\nIt uses the same rules language (Data Quality Definition Language, DQDL) and APIs as AWS Glue, giving a consistent experience across both engines.\n\n- 30+ rule types\n- Dynamic rules that compare against historical runs\n- ML-based anomaly detection for tracking drift without fixed thresholds\n\nBased on the evaluation results, you can fail the pipeline, filter invalid records, or route them to quarantine. Results are produced at the dataset, rule, and row level, so it's easy to see which records or rules drive the failures.\n\nSupport covers:\n\n- Table formats: Apache Iceberg, Apache Hudi, Delta Lake\n- Deployment modes: EC2, EKS, Serverless\n- Runtime: AWS runtime for Apache Spark (emr-spark-8.1.0)\n\n## Wrap-up\n\n- Native data quality validation inside EMR Spark jobs\n- Same DQDL and APIs as Glue, no additional cost\n- 30+ rule types plus ML anomaly detection\n- Choose to fail, filter, or quarantine\n\nGreat for data platform teams running Spark on EMR who kept quality checks in a separate system!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-emr-data-quality-spark/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon EMR now supports native data quality checks in Apache Spark jobs",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "devops"
+  ],
+  "published_at": "2026-10-12T07:00:00+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-agentcore-memory-consumption-based-pricing",
+  "title": "AgentCore Memory の短期記憶が従量課金に！小さなイベントほどお得になるよ",
+  "summary": "Amazon Bedrock AgentCore の短期メモリ（STM）が、イベント単位の定額から、取り込み・取得・保存のデータ量に応じた従量課金に変わったよ。",
+  "body_md": "おつかれさま、しぃちゃんだよ！今日は AI エージェント開発のコストに関わる料金改定のニュースだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Bedrock AgentCore memory の短期メモリ（STM）が消費ベースの料金になったと発表されたよ。エージェントが取り込み（ingest）・取得（retrieve）・保存（store）するデータ量で課金される形なの。\n\n## 今までどうだったの？\n\n今までは、イベント1件あたりの定額料金だったよ。小さなイベントを頻繁に書き込むエージェントでも、イベント数ぶん同じ単価がかかっていたの。長期メモリ（LTM）の料金は今回変わらないよ。\n\n## これで何が変わるの？\n\n小さなイベントをたくさん書くエージェントは、使った量に比例して支払う形になるよ。原文によると、ほとんどのワークロードでコストが下がり、ペイロードが小さいユースケースほど削減幅が大きいそうだよ。\n\n## 深く潜ってみよう\n\nSTM の料金は3つの軸で決まるよ。\n\n- 取り込み（ingestion）: 1 GB あたり $1.00\n- 取得（retrieval）: 1 GB あたり $0.20\n- 保存（storage）: 1 GB 月あたり $0.10\n\n取り込みと取得はイベントごとに課金され、課金対象サイズは最小 12 KB、最大 64 KB だよ。保存はイベントの実サイズで課金されるの。\n\n保存コストを抑えたいときは、メモリリソースの TTL（有効期間）を短くするといいよ。AgentCore Memory が提供されているすべてのリージョンで使えるよ。\n\n## まとめ\n\n- STM がイベント単位の定額から、データ量に応じた従量課金へ\n- 取り込み $1.00 / GB、取得 $0.20 / GB、保存 $0.10 / GB 月\n- 課金サイズは最小 12 KB、最大 64 KB（保存は実サイズ）\n- TTL を短くすると保存コストを抑えられる\n- 長期メモリの料金は変更なし\n\nAgentCore で小さなイベントを頻繁に書くエージェントを作っている人に刺さるよ！",
+  "title_en": "AgentCore Memory Short-Term Memory Goes Pay-as-You-Use! Small Events Get Cheaper",
+  "summary_en": "Short-term memory in Amazon Bedrock AgentCore now uses consumption-based pricing based on data ingested, retrieved, and stored, replacing the flat per-event rate.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today we have a pricing change that matters for AI agent developers!\n\n## What was announced?\n\nAccording to AWS What's New, short-term memory (STM) in Amazon Bedrock AgentCore memory now uses consumption-based pricing, based on the data your agents ingest, retrieve, and store.\n\n## The story so far\n\nPreviously STM was priced at a flat rate per event, so agents writing many small events paid the same unit price for each one. Long-term memory pricing is unchanged.\n\n## What changes\n\nAgents that write frequent, small events now pay in proportion to what they use. According to the announcement, most workloads see lower costs, and small-payload use cases see the largest reductions.\n\n## Dive Deep\n\nSTM is priced across three dimensions:\n\n- Ingestion: $1.00 per GB\n- Retrieval: $0.20 per GB\n- Storage: $0.10 per GB-month\n\nIngestion and retrieval are billed per event with a 12 KB minimum and 64 KB maximum billable size, while storage is billed on each event's actual size.\n\nTo manage storage costs, set a shorter time to live (TTL) on your memory resources. It is available in all AWS Regions where AgentCore Memory is offered.\n\n## Wrap-up\n\n- STM moves from a flat per-event rate to usage-based pricing\n- $1.00/GB ingestion, $0.20/GB retrieval, $0.10/GB-month storage\n- Billable size is 12 KB minimum and 64 KB maximum (storage uses actual size)\n- A shorter TTL keeps storage costs down\n- Long-term memory pricing is unchanged\n\nGreat for anyone building AgentCore agents that write many small events!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/agentcore-memory-consumption-based-pricing",
+  "source_name": "AWS What's New",
+  "og_title": "Announcing consumption-based pricing for short-term memory in Amazon Bedrock AgentCore",
+  "tags": [
+    "aws",
+    "ai"
+  ],
+  "published_at": "2026-10-12T16:00:00+00:00"
+}

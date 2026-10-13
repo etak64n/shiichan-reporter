@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-transfer-family-custom-ports-sftp",
+  "title": "SFTP サーバーのポートが 22 番だけじゃなくなった！Transfer Family のカスタムポート対応",
+  "summary": "AWS Transfer Family の公開 SFTP サーバーで、最大 3 つのカスタムポートと、ポートごとの通信モード（クライアントファースト / サーバーファースト）を選べるようになったよ。",
+  "body_md": "みんな、しぃちゃんだよ！SFTP のポート、22 番しか使えなくて困ったことはないかな？そんなお悩みに効くニュースだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Transfer Family の公開 SFTP サーバーがカスタムポートに対応し、ポートごとに通信モードを選べるようになったと発表されたよ。\n\n## 今までどうだったの？\n\n今までの公開 SFTP サーバーは、ポート 22 だけで接続を受け付けて、通信はサーバーファースト（サーバーから先に話し始める方式）だけだったの。クライアントによっては自分から通信を始めるタイプがあって、サーバーファーストのポートだと接続が止まってしまうことがあったんだって。\n\n## これで何が変わるの？\n\n- 会社やネットワークの都合に合わせたポート番号を使える\n- 1 台のサーバーで複数のポートを提供できる\n- クライアントの接続の癖に合うポートへ案内できる\n\n## 深く潜ってみよう\n\n設定できる内容はこうだよ。\n\n- ポート数: 最大 3 つ\n- ポート番号: 22、または 2000 から 65535 の任意の番号\n- 通信モード: ポートごとにクライアントファーストかサーバーファーストを選択\n\n22 番以外のポートを使うと、22 番を狙う自動スキャナーからの不要な接続試行を減らせる可能性もあるよ。\n\n使い始めるには、AWS Transfer Family コンソール、AWS CLI、AWS SDK のどれかを使ってね。公開 SFTP サーバーが提供されているすべてのリージョンで使えるよ。\n\n## まとめ\n\n- 公開 SFTP サーバーで最大 3 つのカスタムポートを設定できる\n- ポートは 22 または 2000 から 65535\n- ポートごとにクライアントファースト / サーバーファーストを選べる\n- 22 番狙いのスキャナー対策にも役立つ\n\nいろんな取引先クライアントとファイル連携している運用担当さんに刺さるよ！",
+  "title_en": "SFTP Beyond Port 22! Custom Ports Come to AWS Transfer Family",
+  "summary_en": "AWS Transfer Family public SFTP servers now support up to three custom ports, each with a client-first or server-first communication mode.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Ever been stuck with port 22 for SFTP? Today's news is for you!\n\n## What was announced?\n\nAccording to AWS What's New, AWS Transfer Family public SFTP servers now support custom ports, and you can choose a communication mode for each port.\n\n## The story so far\n\nPublic SFTP servers used to accept connections only on port 22 with server-first communication, where the server speaks first. Some SFTP clients initiate communication themselves, and their connections could occasionally stall on a server-first port.\n\n## What changes\n\n- Use the port numbers your business or network requires\n- Offer multiple ports on a single server\n- Direct clients to the port that matches their connection behavior\n\n## Dive Deep\n\nHere is what you can configure:\n\n- Number of ports: up to three\n- Port numbers: 22, or any port from 2000 to 65535\n- Communication mode: client-first or server-first, per port\n\nUsing a port other than 22 can also reduce unwanted connection attempts from automated scanners that target port 22.\n\nTo get started, use the AWS Transfer Family console, the AWS CLI, or the AWS SDKs. It is available in all AWS Regions where Transfer Family public SFTP servers are offered.\n\n## Wrap-up\n\n- Up to three custom ports on public SFTP servers\n- Port 22 or 2000 to 65535\n- Client-first or server-first per port\n- Helpful against scanners that target port 22\n\nGreat for operators who exchange files with many different partner clients!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/transfer-family-custom-ports-sftp/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Transfer Family supports custom ports for public SFTP servers",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "security"
+  ],
+  "published_at": "2026-10-12T08:00:00+00:00"
+}

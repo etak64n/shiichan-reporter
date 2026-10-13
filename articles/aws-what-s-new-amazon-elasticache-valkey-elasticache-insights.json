@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-elasticache-valkey-elasticache-insights",
+  "title": "ElastiCache for Valkey に ElastiCache Insights 登場！ダッシュボードが最初から用意済み",
+  "summary": "ElastiCache for Valkey のノードベースクラスター向けに、CloudWatch の事前構築ダッシュボード ElastiCache Insights が使えるようになったよ。",
+  "body_md": "おつかれさま、しぃちゃんだよ！キャッシュの状態、ひと目で見られたら嬉しいよね？そんなニュースだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon ElastiCache for Valkey に ElastiCache Insights が追加されたと発表されたよ。ノードベースのクラスター向けに用意された、Amazon CloudWatch の事前構築ダッシュボードなの。\n\n## これで何が変わるの？\n\nクラスターの健全性、メモリ、コンピュート、ネットワーク、コマンドスループット、レイテンシ、キースペース、エラーが1つの画面にまとまるよ。ElastiCache が自動で発行する OpenTelemetry メトリクスがもとになっているの。\n\n- リージョン全体のキャッシュの状態をひと目で確認できる\n- ノードがメモリ・ネットワーク・接続数の上限に近づいたことを検知できる\n- クラスター、シャード、ノード、アベイラビリティゾーンで絞り込める\n- コピーを保存して、自分のワークロード向けカスタムダッシュボードの出発点にできる\n\n## 深く潜ってみよう\n\n詳細モニタリングを使うと、メトリクスを 15 秒ごとに発行するよう選べて、Metrics タブやカスタムダッシュボードで見られるよ。この詳細モニタリングには CloudWatch の OpenTelemetry メトリクスの料金が適用されるから、気をつけてね。\n\n使い始めるには、次のどちらかだよ。\n\n- ElastiCache コンソールでクラスターの Metrics タブを開き、View in ElastiCache Insights を選ぶ\n- CloudWatch コンソールの Infrastructure Monitoring から ElastiCache Insights を選ぶ\n\n対象は、CloudWatch が OpenTelemetry メトリクスをサポートしているリージョンのノードベース Valkey クラスターだよ。\n\n## まとめ\n\n- ElastiCache for Valkey 向けの CloudWatch 事前構築ダッシュボード\n- 主要メトリクスを1画面で確認でき、上限接近も見つけやすい\n- 詳細モニタリングは 15 秒間隔で、CloudWatch の料金が適用\n- ノードベースの Valkey クラスターが対象\n\nValkey でキャッシュを運用していて、ダッシュボード作りが面倒だった人に刺さるよ！",
+  "title_en": "ElastiCache Insights Arrives for ElastiCache for Valkey: A Ready-Made Dashboard!",
+  "summary_en": "Amazon ElastiCache for Valkey now offers ElastiCache Insights, a pre-built CloudWatch dashboard for node-based clusters.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Wouldn't it be nice to see your cache health at a glance? That's today's news!\n\n## What was announced?\n\nAccording to AWS What's New, Amazon ElastiCache for Valkey now has ElastiCache Insights, a pre-built Amazon CloudWatch dashboard for node-based clusters.\n\n## What changes\n\nCluster health, memory, compute, network, command throughput, latency, keyspace, and errors come together in one view, built on OpenTelemetry metrics that ElastiCache publishes automatically.\n\n- Check cache health across a Region at a glance\n- Detect when a node nears its memory, network, or connection limits\n- Filter by cluster, shard, node, or Availability Zone\n- Save a copy as the starting point for a custom dashboard\n\n## Dive Deep\n\nWith detailed monitoring, you can choose to publish metrics every 15 seconds and view them on the Metrics tab or in a custom dashboard. CloudWatch pricing for OpenTelemetry metrics applies to detailed monitoring, so keep that in mind.\n\nTo get started, do either of these:\n\n- Open the Metrics tab for a cluster in the ElastiCache console and choose View in ElastiCache Insights\n- Choose ElastiCache Insights under Infrastructure Monitoring in the CloudWatch console\n\nIt is available for node-based Valkey clusters in AWS Regions where CloudWatch supports OpenTelemetry metrics.\n\n## Wrap-up\n\n- A pre-built CloudWatch dashboard for ElastiCache for Valkey\n- Key metrics in one view, with limit warnings easy to spot\n- Detailed monitoring at 15-second intervals, billed under CloudWatch pricing\n- For node-based Valkey clusters\n\nGreat for anyone running Valkey caches who found building dashboards tedious!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-elasticache-valkey-elasticache-insights/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon ElastiCache for Valkey introduces ElastiCache Insights",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "devops"
+  ],
+  "published_at": "2026-10-12T07:00:00+00:00"
+}

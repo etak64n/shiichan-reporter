@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-g7-european-regions",
+  "title": "EC2 G7 インスタンスがフランクフルトとストックホルムに！G6 比で AI 推論最大 4.6 倍",
+  "summary": "NVIDIA RTX PRO 4500 Blackwell Server Edition を積んだ Amazon EC2 G7 インスタンスが、Europe (Frankfurt) と Europe (Stockholm) でも使えるようになったよ。",
+  "body_md": "やっほー、しぃちゃんだよ！GPU インスタンスの G7 が、ヨーロッパで使える場所を増やしたよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、NVIDIA RTX PRO 4500 Blackwell Server Edition GPU を搭載した Amazon EC2 G7 インスタンスが、Europe (Frankfurt) と Europe (Stockholm) で利用可能になったと発表されたよ。\n\n## これで何が変わるの？\n\nG7 は G6 インスタンスと比べて、AI 推論性能が最大 4.6 倍、グラフィックス性能が最大 2.1 倍になっているよ。GPU を使うデータ分析ワークロードも速くなるんだって。\n\nできることはこんな感じだよ。\n\n- 言語翻訳、動画・画像解析、音声認識、レコメンドシステムなどの AI モデルのデプロイ\n- リアルタイムでシネマ品質のグラフィックスのレンダリングやゲームストリーミング\n- 動画トランスコード、空間コンピューティング、データ分析\n\n## 深く潜ってみよう\n\nスペックの上限はこうだよ。\n\n- GPU: 最大 8 基の NVIDIA RTX PRO 4500 Blackwell Server Edition（1 基あたり 32 GB メモリ）\n- CPU: カスタム Intel Xeon 6、最大 192 vCPU\n- ネットワーク: EFA で最大 700 Gbps\n- システムメモリ: 最大 768 GiB\n- ローカルストレージ: NVMe SSD 最大 7.6 TB\n\n利用できるリージョンは US West (Oregon)、US East (N. Virginia, Ohio)、Europe (Spain, Frankfurt, Stockholm) だよ。購入方法は、オンデマンド、スポット、Savings Plans が選べるの。始めるには AWS マネジメントコンソール、AWS CLI、AWS SDK を使ってね。\n\n## まとめ\n\n- G7 が Frankfurt と Stockholm で利用可能に\n- G6 比で AI 推論最大 4.6 倍、グラフィックス最大 2.1 倍\n- 最大 8 GPU、192 vCPU、768 GiB メモリ、EFA 700 Gbps\n- オンデマンド、スポット、Savings Plans で購入できる\n\nヨーロッパで AI 推論やグラフィックスの GPU ワークロードを動かしたい人に刺さるよ！",
+  "title_en": "EC2 G7 Instances Land in Frankfurt and Stockholm: Up to 4.6x AI Inference over G6!",
+  "summary_en": "Amazon EC2 G7 instances with NVIDIA RTX PRO 4500 Blackwell Server Edition GPUs are now available in Europe (Frankfurt) and Europe (Stockholm).",
+  "body_md_en": "Hi everyone, it's Shii-chan! The G7 GPU instances are now in more European Regions!\n\n## What was announced?\n\nAccording to AWS What's New, Amazon EC2 G7 instances powered by NVIDIA RTX PRO 4500 Blackwell Server Edition GPUs are now available in Europe (Frankfurt) and Europe (Stockholm).\n\n## What changes\n\nCompared to G6 instances, G7 delivers up to 4.6x AI inference performance and up to 2.1x graphics performance, and runs GPU-accelerated data analytics faster too.\n\nWhat you can do with them:\n\n- Deploy AI models for language translation, video and image analysis, speech recognition, and recommender systems\n- Create and render real-time, cinematic-quality graphics and stream games\n- Run video transcoding, spatial computing, and data analytics\n\n## Dive Deep\n\nMaximum specs:\n\n- GPUs: up to 8 NVIDIA RTX PRO 4500 Blackwell Server Edition GPUs with 32 GB of memory each\n- CPU: custom Intel Xeon 6, up to 192 vCPUs\n- Networking: up to 700 Gbps with Elastic Fabric Adapter (EFA)\n- System memory: up to 768 GiB\n- Local storage: up to 7.6 TB of NVMe SSD\n\nAvailable Regions are US West (Oregon), US East (N. Virginia, Ohio), and Europe (Spain, Frankfurt, Stockholm). You can buy them as On-Demand Instances, Spot Instances, or through Savings Plans. Get started with the AWS Management Console, AWS CLI, or AWS SDKs.\n\n## Wrap-up\n\n- G7 is now in Frankfurt and Stockholm\n- Up to 4.6x AI inference and 2.1x graphics over G6\n- Up to 8 GPUs, 192 vCPUs, 768 GiB memory, 700 Gbps EFA\n- Available On-Demand, Spot, and with Savings Plans\n\nGreat for anyone running GPU inference or graphics workloads in Europe!",
+  "emotion": "energetic",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-g7-european-regions/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon EC2 G7 instances now available in Europe (Frankfurt) and Europe (Stockholm) Regions",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "ai"
+  ],
+  "published_at": "2026-10-12T22:30:00+00:00"
+}

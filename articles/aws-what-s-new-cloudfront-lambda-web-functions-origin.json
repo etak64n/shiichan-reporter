@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-cloudfront-lambda-web-functions-origin",
+  "title": "CloudFront の前に Lambda Web Functions を置ける！OAC で守れて追加料金もなし",
+  "summary": "Amazon CloudFront が AWS Lambda Web Functions をオリジンとしてサポート。エッジでの TLS 終端、キャッシュ、カスタムドメイン、OAC による保護が使えて、追加料金はないよ。",
+  "body_md": "みんな、しぃちゃんだよ！さっきの Lambda Web Functions と相性ばっちりの、CloudFront のニュースだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon CloudFront が AWS Lambda Web Functions をオリジンとしてサポートしたと発表されたよ。Lambda Web Functions で作った Web アプリを、CloudFront のグローバルエッジネットワーク経由で配信できるの。\n\n## なぜ重要なの？\n\nLambda Web Functions は HTTP をそのまま受けるサーバーレスの新形態だよ。公開するときに、エッジでの高速化と保護を組み合わせられると嬉しいよね。\n\n## これで何が変わるの？\n\nアプリのコードを変えずに、次のメリットが得られるよ。\n\n- エッジでの TLS 終端で、レイテンシが下がり接続が速くなる\n- キャッシュによるパフォーマンス向上\n- マネージド TLS 証明書つきのカスタムドメイン\n\n## 深く潜ってみよう\n\nセキュリティ面ではオリジンアクセスコントロール（OAC）が使えるよ。\n\n- OAC により、Lambda Web Functions に CloudFront 経由でしか到達できなくなり、保護をバイパスするリクエストを防げる\n- CloudFront のエッジネットワークが、ネットワーク層の DDoS 攻撃から守ってくれる\n- AWS WAF を付けて、アプリケーション層の保護も追加できる\n- 自前でユーザー認証するアプリでは、元の認証情報がそのままアプリに届くので、既存のサインインの流れが動き続ける\n\n設定は CloudFront コンソール、SDK、CLI、CloudFormation から行えて、詳細は CloudFront の開発者ガイドにあるよ。CloudFront China リージョンを除く世界中で利用でき、追加料金はないの。\n\n## まとめ\n\n- Lambda Web Functions を CloudFront のオリジンにできる\n- エッジでの TLS 終端、キャッシュ、マネージド証明書つきカスタムドメイン\n- OAC で CloudFront 経由のアクセスだけに限定し、AWS WAF も併用できる\n- CloudFront China を除く全世界で利用でき、追加料金なし\n\nLambda Web Functions で Web アプリを公開したい人に刺さるよ！",
+  "title_en": "Put CloudFront in Front of Lambda Web Functions! Protect with OAC, No Extra Fees",
+  "summary_en": "Amazon CloudFront now supports AWS Lambda Web Functions as an origin, with edge TLS termination, caching, custom domains, and OAC protection, at no additional fees.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Here's CloudFront news that pairs perfectly with Lambda Web Functions!\n\n## What was announced?\n\nAccording to AWS What's New, Amazon CloudFront now supports AWS Lambda Web Functions as an origin. You can deliver web applications built on Lambda Web Functions through CloudFront's global edge network.\n\n## Why it matters\n\nLambda Web Functions is a new serverless form that handles HTTP directly. When you publish an app, it helps to combine edge acceleration with protection.\n\n## What changes\n\nWithout changing application code, you get:\n\n- TLS termination at the edge for lower latency and faster connections\n- Caching for better performance\n- Custom domains with managed TLS certificates\n\n## Dive Deep\n\nOn the security side, origin access control (OAC) is available:\n\n- OAC makes your Lambda Web Function reachable only through CloudFront, so requests that bypass your protections do not reach the origin\n- CloudFront's edge network protects it from network-layer DDoS attacks\n- You can attach AWS WAF for application-layer security\n- For apps that authenticate their own users, original credentials reach the application unchanged, so existing sign-in flows keep working\n\nYou can configure this with the CloudFront console, SDK, CLI, or CloudFormation; see the CloudFront Developer Guide. It is available worldwide except in the CloudFront China region, with no additional fees.\n\n## Wrap-up\n\n- Lambda Web Functions can be a CloudFront origin\n- Edge TLS termination, caching, and custom domains with managed certificates\n- OAC limits access to CloudFront, and AWS WAF can be added\n- Available worldwide except CloudFront China, with no additional fees\n\nGreat for anyone who wants to publish web apps on Lambda Web Functions!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/cloudfront-lambda-web-functions-origin/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon CloudFront now supports AWS Lambda Web Functions as an origin",
+  "tags": [
+    "aws",
+    "serverless",
+    "security"
+  ],
+  "published_at": "2026-10-12T23:10:00+00:00"
+}
