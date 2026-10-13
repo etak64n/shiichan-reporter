@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-bring-sagemaker-ai-expertise-to-your-coding-agent",
+  "title": "コーディングエージェントが SageMaker AI の達人に！AWS AI/ML スキルが登場",
+  "summary": "Agent Toolkit for AWS のコアスキルとして AWS AI/ML スキルが加わって、コーディングエージェントが SageMaker AI でモデルの選定・学習・最適化・デプロイをこなせるようになったよ。追加料金はなしみたい！",
+  "body_md": "やっほー、しぃちゃんだよ！エージェントに機械学習の作業をお願いしやすくなる発表が来たよ！\n\n## なにが発表されたの？\n\nAWS の What's New によると、AWS AI/ML スキルが Agent Toolkit for AWS のコアスキルになったの。コーディングエージェントが Amazon SageMaker AI でモデルの選定、学習、最適化、デプロイをしながら、EC2 や Bedrock など他の AWS スキルと同じ自然言語のワークフローで動けるよ。\n\n## これで何が変わるの？\n\nAgent Toolkit for AWS が「単一の公式な統合ポイント」になって、これまでの AWS Labs のスキルやプラグインを置き換えるよ。インストールと更新の道筋も一本化されるの。\n\nさらに、このスキルは SageMaker Studio JupyterLab にあらかじめ入っていて、Kiro や好きなコーディングエージェントと一緒に使えるよ。\n\n## 深く潜ってみよう\n\nスキルが対応する SageMaker AI の領域が広がったよ。\n\n- 推論の最適化: デプロイ済みモデルのレイテンシ、スループット、コストを最適化\n- モデルのカスタマイズ: ユースケースの定義から学習、評価、デプロイまでのガイド付きファインチューニング\n- Serverful 学習: 従来の ML と生成 AI の両方\n- MLflow: 実験管理とモデルのライフサイクル管理\n- JumpStart: 構築済みモデルのデプロイと、ユースケースに合うモデルの推薦\n- Processing jobs: マネージドなコンピュートでのデータ準備と ETL\n\n料金は追加なしで、エージェントが使う AWS リソース分だけ払うよ。使い始めるには、GitHub の Agent Toolkit for AWS からスキルをインストールするか、SageMaker Studio JupyterLab の事前インストール版を使ってね。\n\n## まとめ\n\n- AWS AI/ML スキルが Agent Toolkit for AWS のコアスキルに\n- AWS Labs のスキルとプラグインは、このツールキットに置き換わる\n- 推論最適化、モデルカスタマイズ、MLflow など 6 つの領域に対応\n- スキル自体は追加料金なし\n\nSageMaker AI の作業をエージェントに任せたい人に刺さるよ！",
+  "title_en": "Your coding agent becomes a SageMaker AI expert with the AWS AI/ML skill!",
+  "summary_en": "The AWS AI/ML skill is now a core skill in the Agent Toolkit for AWS, so a coding agent can select, train, optimize and deploy models on Amazon SageMaker AI. There's no additional charge.",
+  "body_md_en": "Hi, it's Shii-chan! Here's an announcement that makes it easier to hand machine learning work to your agent!\n\n## What was announced?\n\nAccording to AWS What's New, the AWS AI/ML skill is now a core skill in the Agent Toolkit for AWS. A coding agent can select, train, optimize, and deploy models on Amazon SageMaker AI in the same natural-language workflow it uses for other AWS skills like EC2 and Bedrock.\n\n## What changes\n\nThe Agent Toolkit for AWS is now the single, supported integration point, replacing the previous AWS Labs skills and plugins. You also get one consistent install and update path.\n\nThe skill is also pre-installed in SageMaker Studio JupyterLab, for use with Kiro or your coding agent of choice.\n\n## Dive Deep\n\nThe SageMaker AI areas supported by the skill have been extended:\n\n- Inference optimization: optimize deployed models for latency, throughput, and cost\n- Model customization: guided fine-tuning workflows, from use case definition through training, evaluation, and deployment\n- Serverful training: for both traditional ML and generative AI\n- MLflow: experiment tracking and model lifecycle management\n- JumpStart: deploy pre-built models and get recommendations on the right model for your use case\n- Processing jobs: data preparation and ETL on managed compute\n\nThere's no additional charge. You pay only for the AWS resources your agents use. To get started, install the skill from the Agent Toolkit for AWS on GitHub, or use the version pre-installed in SageMaker Studio JupyterLab.\n\n## Wrap-up\n\n- The AWS AI/ML skill is now a core skill in the Agent Toolkit for AWS\n- It replaces the AWS Labs skills and plugins\n- It covers six areas, including inference optimization, model customization, and MLflow\n- The skill itself has no additional charge\n\nThis is for anyone who wants an agent to handle their SageMaker AI work!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/bring-sagemaker-ai-expertise-to-your-coding-agent/",
+  "source_name": "AWS What's New",
+  "og_title": "Bring deep SageMaker AI expertise to your coding agent with the AWS AI/ML skill in the Agent Toolkit for AWS",
+  "tags": [
+    "aws",
+    "ai",
+    "devops"
+  ],
+  "published_at": "2026-10-13T14:00:00+00:00"
+}

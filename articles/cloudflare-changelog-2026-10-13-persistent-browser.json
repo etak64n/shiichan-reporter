@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-10-13-persistent-browser",
+  "title": "エージェントのブラウザがログインしたまま続きから！Agents SDK の browserTool",
+  "summary": "Cloudflare Agents SDK に browserTool が追加されて、エージェントが次のターンでも同じブラウザに戻れるようになったよ。タブも Cookie もログイン状態も残るみたい！",
+  "body_md": "おつかれさま、しぃちゃんだよ！エージェントがブラウザを使い捨てしなくてよくなる更新が来たよ！\n\n## なにが発表されたの？\n\nCloudflare の Changelog によると、Agents SDK に `browserTool` が登場したの。エージェントに Browser Run のブラウザを持たせて、後のターンでもそこに戻れるようにするツールだよ。\n\nサイトを開いて、ページを調べて、またそのページに戻る。そのとき、ブラウザのセッションが生きている間はタブも Cookie もログインセッションもそのまま残るんだって。\n\n## これで何が変わるの？\n\nモデルは Chrome DevTools Protocol (CDP) を使うコードを書いてブラウザを操作するよ。スクリーンショットは画像として返るから、画像に対応したモデルが見たり、UI に表示したりできるの。\n\n## 深く潜ってみよう\n\n使うには Agents SDK v0.28.0 以上が必要だよ。原文のサンプルでは、`Browser` を作って Lifecycle に登録し、Pi Durable の拡張レジストリに `browserTool` を追加してからハーネスを開く流れになっているの。\n\n```js\nimport { Browser, browserRun } from \"agents/browser\";\nimport { browserTool } from \"agents/browser/pi\";\n```\n\n動作の細かいところはこれだよ。\n\n- タブ: Pi の会話ごとに、デフォルトで専用のアクティブタブができる。Cookie とログインはブラウザ内で共有\n- 永続性: Durable Object が hibernate してもブラウザは次のターンまで生きていて、デフォルトのアイドルタイムアウトは 10 分\n- 再起動: セッションが切れたりクラッシュしたりすると新しいブラウザが作られ、`restarted: true` が返る。古いタブとログイン状態は失われる\n- 他の連携: AI SDK と TanStack AI のアダプターでも使える。他のハーネスは公開されている Browser と CDP の API から接続できる\n\n## まとめ\n\n- `browserTool` でエージェントが同じブラウザに戻れる\n- タブ・Cookie・ログインがターンをまたいで残る\n- アイドルタイムアウトは既定で 10 分、切れたら `restarted: true`\n- Agents SDK v0.28.0 以上が必要\n\nログインが必要なサイトをエージェントに操作させたい人に刺さるよ！",
+  "title_en": "Agents keep their browser logins between turns! browserTool in the Agents SDK",
+  "summary_en": "The Cloudflare Agents SDK now has a browserTool that lets an agent return to the same browser on later turns, with tabs, cookies, and login sessions intact.",
+  "body_md_en": "Hi, it's Shii-chan! Here's an update so agents don't have to throw their browser away every turn!\n\n## What was announced?\n\nAccording to the Cloudflare Changelog, the Agents SDK now has a `browserTool`. It gives your agent a Browser Run browser it can return to on later turns.\n\nYour agent can open a website, inspect a page, and come back to it. While the browser session stays alive, its tabs, cookies, and login session stay intact.\n\n## What changes\n\nThe model writes code that drives the browser through the Chrome DevTools Protocol (CDP). Screenshots come back as images that an image-capable model can inspect and your UI can display.\n\n## Dive Deep\n\nYou need Agents SDK v0.28.0 or later. In the original example, you create a `Browser`, register it with the Lifecycle, and add `browserTool` to a Pi Durable extension registry before opening the harness.\n\n```js\nimport { Browser, browserRun } from \"agents/browser\";\nimport { browserTool } from \"agents/browser/pi\";\n```\n\nHere are the details:\n\n- Tabs: each Pi conversation gets its own active tab by default. Cookies and logins are shared within the browser\n- Persistence: the browser stays alive between turns, even when the Durable Object hibernates. The default idle timeout is 10 minutes\n- Restarts: if the session expires or crashes, a fresh browser is created and `restarted: true` is reported. The old tabs and login state are lost\n- Other integrations: it also works with the AI SDK and TanStack AI adapters. Other harnesses can connect through the public Browser and CDP APIs\n\n## Wrap-up\n\n- `browserTool` lets an agent return to the same browser\n- Tabs, cookies, and logins survive across turns\n- The default idle timeout is 10 minutes, and a restart reports `restarted: true`\n- Agents SDK v0.28.0 or later is required\n\nThis one is for anyone who wants agents to work on sites that need a login!",
+  "emotion": "happy",
+  "importance": 5,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-13-persistent-browser/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Agents - New persistent browser tool in the Agents SDK, with tabs and logins that last between turns",
+  "tags": [
+    "cloudflare",
+    "ai",
+    "serverless"
+  ],
+  "published_at": "2026-10-13T17:37:58+00:00"
+}

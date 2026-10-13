@@ -1,0 +1,21 @@
+{
+  "slug": "cloudflare-changelog-2026-10-13-cloudflare-mcp-events",
+  "title": "Workers の障害をエージェントに即お知らせ！Cloudflare MCP が MCP Events に対応",
+  "summary": "Cloudflare API MCP サーバーが、Workers Issues で検知した問題を MCP Events として送れるようになったよ。ポーリングなしでエージェントが調査を始められるみたい！",
+  "body_md": "みんな、しぃちゃんだよ！エージェントが障害に自分から気づいてくれる、そんな更新が来たよ！\n\n## なにが発表されたの？\n\nCloudflare の Changelog によると、Cloudflare API MCP サーバーが Workers Issues を MCP Events として送るようになったの。これがこのサーバーが公開する最初のイベントだよ。\n\nWorkers Issues は Workers 向けの組み込みエラー監視で、本番の失敗を検知して関連する失敗を issue にまとめてくれるよ。SDK やアプリのラッパーは要らないの。\n\n## これで何が変わるの？\n\nIssues が新しい問題や再発した問題を見つけると、サーバーが署名付きイベントをクライアントの webhook に送ってくれるよ。だからエージェントはポーリングしなくても、通知をきっかけに調査を始められるの！\n\n## 深く潜ってみよう\n\n- MCP クライアントは `events/list` でイベント `cloudflare.alert.workers_observability_real_time_issue` を見つけるよ\n- `events/subscribe` で購読して、スコープはアカウント全体か単一の Worker を選べるよ\n\n使うための準備はこれだよ。\n\n- Worker で Issues を有効にする\n- MCP Events の webhook に対応したクライアントから `https://mcp.cloudflare.com/mcp` に接続する\n- 接続には Notifications Write と Workers Observability Write の権限が必要\n\n## まとめ\n\n- Workers Issues が MCP Events として届くようになった\n- 署名付きイベントが webhook に飛ぶので、ポーリング不要\n- アカウント単位でも Worker 単位でも購読できる\n\nWorkers の障害対応をエージェントに任せたい人に刺さるよ！",
+  "title_en": "Workers failures, straight to your agent! Cloudflare MCP now supports MCP Events",
+  "summary_en": "The Cloudflare API MCP server now sends Workers Issues as MCP Events, so an agent can start investigating without polling.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Here's an update that lets agents notice failures on their own!\n\n## What was announced?\n\nAccording to the Cloudflare Changelog, the Cloudflare API MCP server now sends Workers Issues as MCP Events. It's the first event the server exposes.\n\nWorkers Issues is built-in error monitoring for Workers. It detects production failures and groups related ones into issues, with no SDK or application wrapper.\n\n## What changes\n\nWhen Issues detects a new or recurring problem, the server posts a signed event to the client's webhook. An agent can start investigating from that notification without polling!\n\n## Dive Deep\n\n- MCP clients discover the event `cloudflare.alert.workers_observability_real_time_issue` with `events/list`\n- They subscribe with `events/subscribe`, scoped to an account or a single Worker\n\nHere's what you need to get started:\n\n- Enable Issues on your Worker\n- Connect `https://mcp.cloudflare.com/mcp` from a client that supports MCP Events webhooks\n- The connection needs the Notifications Write and Workers Observability Write permissions\n\n## Wrap-up\n\n- Workers Issues now arrive as MCP Events\n- Signed events go to your webhook, so no polling\n- You can subscribe per account or per Worker\n\nThis is for anyone who wants an agent to handle Workers incidents!",
+  "emotion": "energetic",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-13-cloudflare-mcp-events/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Agents, Workers - Cloudflare API MCP server sends Workers Issues as MCP Events",
+  "tags": [
+    "cloudflare",
+    "ai",
+    "serverless",
+    "devops"
+  ],
+  "published_at": "2026-10-13T17:37:56+00:00"
+}

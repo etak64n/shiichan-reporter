@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-10-13-byoip-workers-subrequest-context",
+  "title": "BYOIP 宛ての Workers サブリクエストで、偽の 403 とサヨナラ！",
+  "summary": "Workers から BYOIP の Cloudflare プロキシ済みホスト名へのサブリクエストで、Workers のコンテキストが保たれるようになったよ。設定変更は不要みたい！",
+  "body_md": "こんにちは、しぃちゃんだよ！地味だけどセキュリティルールの挙動に効く修正が来たよ！\n\n## なにが発表されたの？\n\nCloudflare の Changelog によると、Workers のサブリクエストが Bring Your Own IP (BYOIP) を使う Cloudflare プロキシ済みホスト名に向かうとき、Workers のコンテキストが保たれるようになったの。こうしたリクエストは、外部のインターネット通信ではなく Cloudflare 同士の通信として扱われるよ。\n\n## 今までどうだったの？\n\n一部の BYOIP 宛てサブリクエストでは、Workers のコンテキストと元のクライアントのシグナルが失われることがあったの。その結果、こんなことが起きていたよ。\n\n- セキュリティルールが想定外の動きをする\n- Bot Management が元のクライアントではなく Cloudflare 内部の接続を評価する\n- 影響を受けたリクエストが偽の 403 を返す\n\n## これで何が変わるの？\n\nBYOIP 宛ての Workers サブリクエストで、`CF-Worker` ヘッダーと `cf.worker.upstream_zone` フィールドが保たれるようになったよ。これで同一ゾーンでもクロスゾーンでも、セキュリティルールが一貫して評価されるの。\n\n## 深く潜ってみよう\n\n- 対象は、影響を受ける BYOIP サブリクエストの宛先ゾーン\n- そのゾーンの Bot Management フィールドが、元のエンドユーザーの接続を表すようになった\n- Bot score、verified bot の判定、JA3/JA4 フィンガープリントは、Cloudflare サービス間の内部接続を表さなくなった\n- 改善は自動で、設定変更は不要\n\n## まとめ\n\n- BYOIP 宛ての Workers サブリクエストで Workers コンテキストが保たれる\n- ルール評価が一貫し、Bot Management の結果も正確になる\n- 偽の 403 などの予期しない失敗が減る\n\nBYOIP のホスト名を Workers から呼んでいる人に刺さるよ！",
+  "title_en": "Say goodbye to false 403s on Workers subrequests to BYOIP destinations!",
+  "summary_en": "Cloudflare now preserves Workers context when a subrequest targets a Cloudflare-proxied hostname using BYOIP. No configuration changes are needed.",
+  "body_md_en": "Hi, it's Shii-chan! This fix is quiet, but it matters for how your security rules behave!\n\n## What was announced?\n\nAccording to the Cloudflare Changelog, Cloudflare now preserves Workers context when a Workers subrequest targets a Cloudflare-proxied hostname that uses Bring Your Own IP (BYOIP). These requests are identified as Cloudflare-to-Cloudflare traffic instead of external Internet traffic.\n\n## The story so far\n\nSome BYOIP subrequests could lose Workers context and the original client signals. That could lead to:\n\n- Security rules behaving unexpectedly\n- Bot Management evaluating an internal Cloudflare connection instead of the original client\n- Affected requests returning false 403 responses\n\n## What changes\n\nWorkers subrequests to BYOIP destinations now preserve the `CF-Worker` header and the `cf.worker.upstream_zone` field. That supports consistent security rule evaluation across same-zone and cross-zone subrequests.\n\n## Dive Deep\n\n- Bot Management fields on the destination zone now represent the original end-user connection for affected BYOIP subrequests\n- Bot scores, verified bot status, and JA3/JA4 fingerprints no longer represent the internal connection between Cloudflare services\n- The improvement is automatic and needs no configuration changes\n\n## Wrap-up\n\n- Workers context is preserved for subrequests to BYOIP destinations\n- Rule evaluation is consistent and Bot Management results are more accurate\n- Fewer unexpected failures such as false 403s\n\nThis is for anyone calling BYOIP-backed hostnames from Workers!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-13-byoip-workers-subrequest-context/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Workers, BYOIP, Bots - Workers subrequests now preserve context for BYOIP destinations",
+  "tags": [
+    "cloudflare",
+    "security",
+    "serverless"
+  ],
+  "published_at": "2026-10-13T17:37:56+00:00"
+}
