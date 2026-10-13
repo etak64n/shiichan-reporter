@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-datasync-enhanced-openzfs-nfs42-metadata",
+  "title": "DataSync Enhanced モードが FSx for OpenZFS と NFS 4.2 に対応！",
+  "summary": "AWS DataSync の Enhanced モードが、FSx for OpenZFS、NFS 4.2、そしてオブジェクトのメタデータを制御する ObjectMetadata オプションに対応したよ！",
+  "body_md": "こんにちは、しぃちゃんだよ！\n\nデータ移行に使う AWS DataSync に、嬉しいアップデートが来たよ！\n\n## なにが発表されたの？\n\nAWS の What's New によると、DataSync の Enhanced モードに次の 3 つが加わったよ！\n\n- Amazon FSx for OpenZFS をソースまたは宛先のロケーションとして利用できる\n- オンプレミスの NFS サーバーと FSx for OpenZFS ファイルシステムで NFS バージョン 4.2 に対応\n- オブジェクトストレージ転送向けの新しい `ObjectMetadata` オプション\n\n## 今までどうだったの？\n\nFSx for OpenZFS との間でデータを転送するときは、Basic モードに限られていたよ。また、最新バージョンの NFS サーバーからの転送では、古いプロトコルバージョンに設定し直す必要があったみたい。\n\n## これで何が変わるの？\n\n- FSx for OpenZFS の転送でも Enhanced モードを選べる\n- NFS サーバーを古いバージョンに戻さなくても、NFS 4.2 のまま転送できる\n- オブジェクトのユーザーメタデータをコピーするかどうかを選べる\n\n## 深く潜ってみよう\n\n`ObjectMetadata` オプションは、オブジェクトのユーザーメタデータを宛先にコピーするかどうかを制御するものだよ。使いどころは 2 つ紹介されているよ。\n\n- 宛先のメタデータをそのまま保ちたいとき(例: AWS Storage Gateway が配信するバケット)\n- 送信元のメタデータキーが宛先と互換性がないとき(例: Azure Blob Storage)\n\n既存のタスクは影響を受けず、スケジュールどおりに実行され続けるよ。これらの機能は、DataSync Enhanced モードがサポートされているすべての AWS リージョンで、Enhanced モードのタスクに使えるんだって！\n\n## まとめ\n\n- Enhanced モードで FSx for OpenZFS が使える\n- NFS 4.2 に対応\n- `ObjectMetadata` でメタデータのコピーを制御できる\n- 既存タスクには影響なし\n\nOpenZFS や新しい NFS サーバーからのデータ移行を考えているみんなに刺さるよ！",
+  "title_en": "DataSync Enhanced mode now supports FSx for OpenZFS, NFS 4.2, and object metadata controls",
+  "summary_en": "AWS DataSync Enhanced mode now supports FSx for OpenZFS, NFS 4.2, and a new ObjectMetadata option for object storage transfers.",
+  "body_md_en": "Hi, it's Shii-chan!\n\nAWS DataSync, the data transfer service, got a nice update!\n\n## What was announced?\n\nAccording to AWS What's New, DataSync Enhanced mode gained three things:\n\n- Amazon FSx for OpenZFS as a source or destination location\n- NFS version 4.2 for on-premises NFS servers and FSx for OpenZFS file systems\n- A new `ObjectMetadata` option for object storage transfers\n\n## The story so far\n\nTransfers to or from FSx for OpenZFS were limited to Basic mode. And to transfer from NFS servers on the latest version, you had to reconfigure them to an older protocol version.\n\n## What changes\n\n- You can use Enhanced mode for FSx for OpenZFS transfers\n- You can transfer from NFS 4.2 servers without downgrading them\n- You can choose whether an object's user metadata is copied\n\n## Dive Deep\n\nThe `ObjectMetadata` option controls whether an object's user metadata is copied to the destination. Two use cases are mentioned:\n\n- When destination metadata must stay intact, such as buckets served by AWS Storage Gateway\n- When source metadata keys are not compatible with the destination, such as Azure Blob Storage\n\nExisting tasks are unaffected and keep running as scheduled. These capabilities are available for Enhanced mode tasks in all AWS Regions where DataSync Enhanced mode is supported.\n\n## Wrap-up\n\n- FSx for OpenZFS works with Enhanced mode\n- NFS 4.2 is supported\n- `ObjectMetadata` controls metadata copying\n- Existing tasks are not affected\n\nThis one is for anyone planning migrations from OpenZFS or newer NFS servers!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/datasync-enhanced-openzfs-nfs42-metadata/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS DataSync Enhanced mode now supports FSx for OpenZFS, NFS 4.2, and object metadata controls",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-13T08:00:00+00:00"
+}

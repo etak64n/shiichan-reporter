@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-dcv-2026-0",
+  "title": "Amazon DCV 2026.0 が登場！RHEL 10 と Wayland、新 macOS クライアントも",
+  "summary": "Amazon DCV 2026.0 が公開されて、RHEL 10 などの新しい Linux、Wayland、新しい macOS クライアント、Windows 向けの URL リダイレクトなどが加わったよ！",
+  "body_md": "みんな、しぃちゃんだよ！\n\nリモートデスクトップの Amazon DCV に、新バージョン 2026.0 が来たよ！\n\n## なにが発表されたの？\n\nAWS の What's New によると、Amazon DCV 2026.0 が利用できるようになったよ。DCV は、Windows、Linux、macOS のリモートデスクトップやアプリケーションセッションに安全にアクセスするための、高性能なリモートディスプレイプロトコルだよ。\n\n## これで何が変わるの？\n\n主な追加点はこれだよ！\n\n- RHEL 10、Rocky Linux 10、CentOS 10、Ubuntu 26.04 に対応。Linux のホストとセッションは Wayland ディスプレイサーバーで動く\n- ゲームパッド対応の新しい macOS クライアント。Windows と Linux のクライアントも更新\n- Windows ホストでの URL リダイレクト。設定したリンクをリモートセッションで開くと、クライアント側のローカルブラウザで起動する\n- Windows でのプリンター設定のリダイレクト。リモートセッションからクライアント側のプリンター設定を使える\n- Linux と macOS クライアントのパフォーマンス改善\n- Amazon EC2 上の新しい macOS サーバーバージョンに対応\n\n## 深く潜ってみよう\n\nパフォーマンス面では、H.264 のフレームスライス対応と、スライスごとのマルチスレッドデコードが入ったよ。Linux と macOS のクライアントで、遅延を減らすのが狙いなの。\n\n細かい変更点は、DCV のリリースノートにまとまっているよ！\n\n## まとめ\n\n- 新しい Linux ディストリビューション (RHEL 10 / Rocky 10 / CentOS 10 / Ubuntu 26.04) と Wayland に対応\n- 新しい macOS クライアントで、ゲームパッドも使える\n- Windows ホストで URL リダイレクトとプリンター設定リダイレクト\n- Linux / macOS クライアントで低遅延化\n\nリモートワークステーションやクラウドデスクトップを運用しているみんなは、ぜひ試してみてね！",
+  "title_en": "Amazon DCV 2026.0 arrives with RHEL 10, Wayland, and a new macOS client",
+  "summary_en": "Amazon DCV 2026.0 adds support for newer Linux distributions with Wayland, a new macOS client, and Windows URL and printer preference redirection.",
+  "body_md_en": "Hi everyone, it's Shii-chan!\n\nThe remote desktop tool Amazon DCV has a new version, 2026.0!\n\n## What was announced?\n\nAccording to AWS What's New, Amazon DCV 2026.0 is now available. DCV is a high-performance remote display protocol that lets you securely access remote desktops and application sessions across Windows, Linux, and macOS.\n\n## What changes\n\nThe key additions are:\n\n- Support for RHEL 10, Rocky Linux 10, CentOS 10, and Ubuntu 26.04, with Linux hosts and sessions running on the Wayland display server\n- A new macOS client with gamepad support, plus updated Windows and Linux clients\n- URL redirection on Windows hosts, so configured links opened in a remote session launch in the local browser on the client device\n- Printer preferences redirection on Windows, giving remote sessions access to client-side printer settings\n- Performance improvements on Linux and macOS clients\n- Support for new macOS server versions on Amazon EC2\n\n## Dive Deep\n\nOn the performance side, H.264 frame slice support and slice-based multithreaded decoding were added, aiming for lower latency on the Linux and macOS clients.\n\nThe DCV release notes have the full list of changes.\n\n## Wrap-up\n\n- New Linux distributions (RHEL 10 / Rocky 10 / CentOS 10 / Ubuntu 26.04) and Wayland\n- A new macOS client with gamepad support\n- URL and printer preferences redirection on Windows hosts\n- Lower latency on Linux and macOS clients\n\nIf you run remote workstations or cloud desktops, this one is worth a look!",
+  "emotion": "energetic",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-dcv-2026-0/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon DCV releases version 2026.0 with RHEL 10 support and new clients",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-13T19:35:00+00:00"
+}

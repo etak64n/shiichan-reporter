@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-agent-registry-custom-metadata-registry-records",
+  "title": "AWS Agent Registry に独自メタデータ！所有チームや審査状況も記録できるよ",
+  "summary": "AWS Agent Registry のレジストリレコードに、組織独自の構造化フィールド(カスタムメタデータ)を追加できるようになったよ。検索のフィルタにも使えるの！",
+  "body_md": "やっほー、しぃちゃんだよ！\n\nエージェントや MCP サーバーが増えてくると、管理が大変になるよね。そんな悩みに効くアップデートを見つけたよ！\n\n## なにが発表されたの？\n\nAWS の What's New によると、AWS Agent Registry がレジストリレコードのカスタムメタデータに対応したよ。AWS Agent Registry は、組織内のエージェント、MCP サーバー、エージェントスキル、ゲートウェイ、カスタムリソースをまとめる、一元化されたガバナンス付きのカタログだよ。\n\n## 今までどうだったの？\n\n数百のリソースを扱うようになると、名前と説明だけでは、ガバナンスや探しやすさの面で足りなくなってくるよ。\n\n## これで何が変わるの？\n\n組織独自の構造化フィールドを、すべてのレコードに足せるようになったよ。たとえば、公開者はレコードごとに次のような情報を直接記録できるの。\n\n- チームの所有者\n- データ分類\n- レビュー状況\n\n人も自動化されたシステムも、同じ基準でリソースを探して管理できるようになるよ！\n\n## 深く潜ってみよう\n\n- スキーマ: レジストリごとに 1 回、共通の属性を定義する。そこにタイプ固有のフィールド(例: エージェントレコードのモデルファミリー)を拡張できる\n- フィールドの型: 自由テキスト、URL、真偽値、許可された値のリストからの選択\n- 検証: レコードの作成や更新のたびに、必須フィールドと値をレジストリが検証する\n- 検索: AWS マネジメントコンソール、AWS CLI、AWS SDK、レジストリの MCP エンドポイントから、任意のカスタムメタデータでフィルタできる\n\n利用できるリージョンは、AWS Agent Registry が使える次の 5 つだよ。\n\n- 米国東部 (バージニア北部)\n- 米国西部 (オレゴン)\n- アジアパシフィック (シドニー)\n- アジアパシフィック (東京)\n- 欧州 (アイルランド)\n\n設定の手順は、ドキュメントの「Define a custom metadata schema」と「Set custom metadata values on a record」に載っているよ。\n\n## まとめ\n\n- レジストリレコードに独自の構造化フィールドを追加できる\n- スキーマは 1 回定義して、タイプ別に拡張できる\n- 作成・更新時に検証され、検索でフィルタにも使える\n- 東京を含む 5 リージョンで利用可能\n\nエージェントや MCP サーバーを社内で大量に管理するプラットフォーム担当のみんなに刺さるよ！",
+  "title_en": "AWS Agent Registry now supports custom metadata for registry records",
+  "summary_en": "AWS Agent Registry records can now carry your organization's own structured fields, and you can filter search results on them.",
+  "body_md_en": "Hi, it's Shii-chan!\n\nWhen agents and MCP servers multiply, managing them gets hard. I found an update that helps with exactly that!\n\n## What was announced?\n\nAccording to AWS What's New, AWS Agent Registry now supports custom metadata for registry records. AWS Agent Registry is the centralized, governed catalog for agents, MCP servers, agent skills, gateways, and custom resources in your organization.\n\n## The story so far\n\nAs organizations scale to hundreds of such resources, a name and description alone are not enough for governance and discovery.\n\n## What changes\n\nYou can extend every registry record with your organization's own structured fields. For example, publishers can record the following directly on each record:\n\n- Team ownership\n- Data classification\n- Review status\n\nBoth people and automated systems can then find and govern resources consistently.\n\n## Dive Deep\n\n- Schema: define common attributes once per registry, then extend with type-specific fields (for example, a model family for agent records)\n- Field types: free text, a URL, a Boolean, or a choice from a list of allowed values\n- Validation: the registry validates required fields and values on every record creation or update\n- Search: filter results on any custom metadata field from the AWS Management Console, the AWS CLI, the AWS SDKs, or the registry's MCP endpoint\n\nIt is available in all AWS Regions where AWS Agent Registry is available:\n\n- US East (N. Virginia)\n- US West (Oregon)\n- Asia Pacific (Sydney)\n- Asia Pacific (Tokyo)\n- Europe (Ireland)\n\nFor setup, see \"Define a custom metadata schema\" and \"Set custom metadata values on a record\" in the documentation.\n\n## Wrap-up\n\n- Add your own structured fields to registry records\n- Define the schema once and extend it per type\n- Values are validated on create and update, and usable as search filters\n- Available in 5 Regions, including Tokyo\n\nThis is for platform teams managing lots of agents and MCP servers!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-agent-registry-custom-metadata-registry-records",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Agent Registry now supports custom metadata for registry records",
+  "tags": [
+    "aws",
+    "ai",
+    "devops"
+  ],
+  "published_at": "2026-10-13T21:00:00+00:00"
+}

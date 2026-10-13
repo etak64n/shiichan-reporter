@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-route-53-premium-domains",
+  "title": "Route 53 でプレミアムドメインが取れるようになったよ！",
+  "summary": "Amazon Route 53 Domains が、プレミアムドメインの検索・登録・移管・更新・復元に対応したよ！価格も先に表示されるの。",
+  "body_md": "おつかれさま、しぃちゃんだよ！\n\n短くて覚えやすいドメイン、ほしくなるよね。Route 53 にその朗報が届いたよ！\n\n## なにが発表されたの？\n\nAWS の What's New によると、Amazon Route 53 Domains がプレミアムドメイン名に対応したよ。Route 53 から直接、次の操作ができるようになったんだって。\n\n- 検索\n- 登録\n- 移管\n- 更新\n- 復元\n\n## 今までどうだったの？\n\nほとんどのドメインレジストリは、短い・覚えやすい・人気が高いといった名前を「プレミアム」として取り分けているよ。Route 53 Domains はこれまで対応しておらず、プレミアムドメインがほしい人は別のレジストラで登録・管理する必要があったの。そのせいで、ドメインのポートフォリオが複数のプロバイダーに分かれてしまっていたよ。\n\n## これで何が変わるの？\n\n- Route 53 でプレミアムドメインを探して取得できる\n- 他のレジストラにある既存のプレミアムドメインを Route 53 にまとめられる\n- プレミアムと通常のドメインを、ひとつの画面でまとめて管理できる\n\n## 深く潜ってみよう\n\nプレミアムドメインの探し方と登録は、通常のドメインと同じ流れだよ。プレミアムドメインはドメイン検索や空き状況の結果に自動で表示されて、価格が先に見えるから、確定する前にコストが分かるの。\n\n対応しているトップレベルドメインは、Route 53 の TLD 一覧で確認してね！\n\n## まとめ\n\n- Route 53 Domains がプレミアムドメインの登録・移管・更新・復元に対応\n- 検索結果に自動で表示され、価格は事前に分かる\n- プレミアムと通常ドメインを一元管理できる\n\nドメインを複数のレジストラに散らばらせたくないみんなに刺さるよ！",
+  "title_en": "Amazon Route 53 now supports Premium Domains",
+  "summary_en": "Amazon Route 53 Domains now supports searching, registering, transferring, renewing, and restoring premium domains, with pricing shown upfront.",
+  "body_md_en": "Hi, it's Shii-chan!\n\nShort, memorable domains are tempting, right? There is good news for them in Route 53!\n\n## What was announced?\n\nAccording to AWS What's New, Amazon Route 53 Domains now supports Premium Domain Names. You can do the following directly in Route 53:\n\n- Search\n- Register\n- Transfer\n- Renew\n- Restore\n\n## The story so far\n\nMost domain registries set aside names that are short, memorable, or in high demand as \"premium\". Route 53 Domains did not support them before, so you had to register and manage them with other registrars. That split domain portfolios across multiple providers.\n\n## What changes\n\n- You can find and get premium domains in Route 53\n- You can consolidate existing premium domains from other registrars\n- You can manage premium and standard domains together in one place\n\n## Dive Deep\n\nFinding and registering a premium domain works just like it does for standard domains. Premium domains appear automatically in domain search and availability results, with pricing shown upfront, so you know the cost before you commit.\n\nFor the supported top-level domains, check the Route 53 TLD list.\n\n## Wrap-up\n\n- Route 53 Domains supports registering, transferring, renewing, and restoring premium domains\n- They show up automatically in search results with upfront pricing\n- Premium and standard domains are managed together\n\nThis is for anyone who does not want domains scattered across registrars!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/route-53-premium-domains/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Route 53 now supports registrations, transfers, and renewals for Premium Domains",
+  "tags": [
+    "aws",
+    "web"
+  ],
+  "published_at": "2026-10-13T08:00:00+00:00"
+}

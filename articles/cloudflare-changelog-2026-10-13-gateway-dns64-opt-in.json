@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-10-13-gateway-dns64-opt-in",
+  "title": "Cloudflare Gateway の DNS64 が、設定ひとつでも EDNS でも選べるようになったよ！",
+  "summary": "Cloudflare Gateway の DNS64 を、DNS ロケーションの設定または EDNS オプション 65051 のどちらでもリクエストできるようになったよ！IPv6 専用ネットワーク向けの嬉しいアップデートなの。",
+  "body_md": "やっほー、しぃちゃんだよ！\n\n今日は Cloudflare Gateway の DNS64 まわりのアップデートを見つけたよ！IPv6 だけのネットワークを使っている人には、ちょっと嬉しい話みたい！\n\n## なにが発表されたの？\n\nCloudflare の Changelog によると、Gateway の DNS64 を次の 2 つの方法でリクエストできるようになったよ！\n\n- DNS ロケーションの設定で **Enable DNS64** をオンにする\n- 個々のクエリに、空の EDNS オプション `65051` を含める\n\nどちらも UDP、TCP、DNS over TLS (DoT)、DNS over HTTPS (DoH) で使えるんだって。\n\n## 今までどうだったの？\n\nDNS64 は、IPv6 専用ネットワークで使う仕組みだよ。A レコードから AAAA レコードを合成して、IPv6 から IPv4 への変換 (NAT64) を使うネットワークでも IPv4 だけのサイトに届くようにするの。\n\n今までは `cf-dns-options: dns64` という DoH ヘッダーで要求する方法があったよ。この方法は今回の追加後も、そのまま使えるって書いてあったよ！\n\n## これで何が変わるの？\n\nロケーション単位でまとめてオンにすることも、クエリ単位で必要なときだけ要求することもできるようになったよ。DoH ヘッダーが使えない UDP や TCP、DoT のクライアントでも EDNS オプションで要求できるのが大きいね！\n\n## 深く潜ってみよう\n\n- DNS64 はデフォルトではオフ\n- 2 つの方法(ロケーション設定と EDNS)は、それぞれ独立して合成をリクエストする\n- 既存の DoH ヘッダー `cf-dns-options: dns64` も独立してサポートされ続ける\n\ndig で EDNS から要求する例はこれだよ！\n\n```bash\ndig @\"{DNS_RESOLVER_IP}\" ipv4only.arpa AAAA +ednsopt=65051 +short\n```\n\n設定方法や API の更新時の挙動、リクエスト例の詳細は、Cloudflare の DNS64 のドキュメントにあるって案内されているよ。\n\n## まとめ\n\n- Gateway の DNS64 を、ロケーション設定の Enable DNS64 でリクエストできる\n- 空の EDNS オプション 65051 でも、クエリごとにリクエストできる\n- UDP、TCP、DoT、DoH のすべてに対応\n- デフォルトはオフで、既存の DoH ヘッダーも引き続き使える\n\nIPv6 専用ネットワークで Cloudflare Gateway を使っているネットワーク担当のみんなに刺さるアップデートだよ！",
+  "title_en": "Cloudflare Gateway DNS64 can now be requested via location settings or EDNS",
+  "summary_en": "Cloudflare Gateway DNS64 can now be requested through a DNS location setting or the EDNS option 65051. It is good news for IPv6-only networks!",
+  "body_md_en": "Hi, it's Shii-chan!\n\nToday I found an update about DNS64 in Cloudflare Gateway. It looks like good news for anyone running IPv6-only networks!\n\n## What was announced?\n\nAccording to the Cloudflare Changelog, you can now request Gateway DNS64 in two ways:\n\n- Turn on **Enable DNS64** in a Gateway DNS location's settings\n- Include an empty EDNS option `65051` in individual DNS queries\n\nBoth work over UDP, TCP, DNS over TLS (DoT), and DNS over HTTPS (DoH).\n\n## The story so far\n\nDNS64 is used on IPv6-only networks. It synthesizes AAAA records from A records, so networks that rely on NAT64 (IPv6-to-IPv4 translation) can still reach IPv4-only sites.\n\nUntil now, you could request it with the `cf-dns-options: dns64` DoH header. That header remains supported after this change.\n\n## What changes\n\nYou can enable it for a whole location, or request it only for the queries that need it. Because EDNS works at the DNS level, clients using UDP, TCP, or DoT can request it too, not only DoH clients.\n\n## Dive Deep\n\n- DNS64 is off by default\n- Each mechanism (location setting and EDNS) independently requests synthesis\n- The existing DoH header `cf-dns-options: dns64` remains supported independently\n\nHere is how to request it through EDNS with dig:\n\n```bash\ndig @\"{DNS_RESOLVER_IP}\" ipv4only.arpa AAAA +ednsopt=65051 +short\n```\n\nFor configuration, API update behavior, and request examples, the changelog points to the Cloudflare DNS64 documentation.\n\n## Wrap-up\n\n- Request Gateway DNS64 with the Enable DNS64 location setting\n- Or per query with the empty EDNS option 65051\n- Works over UDP, TCP, DoT, and DoH\n- Off by default, and the existing DoH header still works\n\nThis one is for network admins using Cloudflare Gateway on IPv6-only networks!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-13-gateway-dns64-opt-in/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Gateway, Cloudflare One - Request Gateway DNS64 through DNS locations and EDNS",
+  "tags": [
+    "cloudflare",
+    "infrastructure",
+    "security"
+  ],
+  "published_at": "2026-10-13T22:42:16+00:00"
+}

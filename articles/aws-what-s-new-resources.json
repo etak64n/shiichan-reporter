@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-resources",
+  "title": "Deadline Cloud monitor で、自分が触れるキューがすぐ見つかるように！",
+  "summary": "AWS Deadline Cloud の monitor が、ファーム全体ではなく特定のキュー・フリート・ジョブへの権限しかないユーザーにも、アクセスできるリソースを表示するようになったよ。",
+  "body_md": "やっほー、しぃちゃんだよ！\n\nAWS Deadline Cloud に、地味だけど助かるアップデートが来たよ！\n\n## なにが発表されたの？\n\nAWS の What's New によると、Deadline Cloud の monitor で、ファーム全体ではなく特定のキュー、フリート、ジョブにだけアクセスできるユーザーが、届くリソースを直接見つけられるようになったよ。Deadline Cloud は、視覚効果、アニメーション、製品デザイン、シミュレーション、ゲームなどの計算負荷が高い処理を回すフルマネージドサービスだよ。\n\n## 今までどうだったの？\n\n1 つのキューにしかアクセス権がないユーザーは、自分の作業にたどり着くために、管理者からファーム ID を教えてもらう必要があったの。\n\n## これで何が変わるの？\n\n- 権限のあるキューが monitor に表示される\n- そこへ到達するために必要な親 ID も表示される\n- 自分のアクセスレベルも分かる(直接付与とグループ継承の両方)\n- 権限レベルが違うチームでも、同じ monitor の URL を共有できる\n\n管理者への問い合わせの手間が減るのが嬉しいね！\n\n## 深く潜ってみよう\n\nこのリソース検出は、Deadline Cloud が使えるすべての AWS リージョンで利用できるよ。詳しい使い方は Deadline Cloud のユーザーガイドを見てね。\n\n## まとめ\n\n- アクセスできるキュー・フリート・ジョブを monitor で見つけられる\n- 親 ID とアクセスレベルも表示される\n- ひとつの URL を権限の違うメンバーで共有できる\n\nレンダリングやシミュレーションのチームで、ファームの権限を細かく分けて運用している管理者のみんなに刺さるよ！",
+  "title_en": "AWS Deadline Cloud monitor now helps users find their accessible resources",
+  "summary_en": "The Deadline Cloud monitor now shows users the queues, fleets, or jobs they can reach, even without access to a whole farm.",
+  "body_md_en": "Hi, it's Shii-chan!\n\nAWS Deadline Cloud got a small but helpful update!\n\n## What was announced?\n\nAccording to AWS What's New, users who have access to specific queues, fleets, or jobs, rather than an entire farm, can now find the resources they can reach directly from the Deadline Cloud monitor. Deadline Cloud is a fully managed service for compute-intensive workloads such as visual effects, animation, product design, simulation, and gaming.\n\n## The story so far\n\nA user with access to only one queue had to get the farm ID from an administrator before they could reach their work.\n\n## What changes\n\n- The monitor shows the queues you have access to\n- It shows the parent IDs needed to reach them\n- It shows your level of access, for both direct and group-inherited permissions\n- Teams can share a single monitor URL across different permission levels\n\nFewer questions to administrators!\n\n## Dive Deep\n\nResource discovery is available in all AWS Regions where Deadline Cloud is available. See the Deadline Cloud user guide for more.\n\n## Wrap-up\n\n- Find accessible queues, fleets, and jobs in the monitor\n- Parent IDs and access levels are shown\n- One URL can be shared across different permission levels\n\nThis is for administrators who split farm permissions finely for rendering and simulation teams!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/deadline-cloud/resources",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Deadline Cloud now helps users find their accessible resources in the Deadline Cloud monitor",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-13T18:54:00+00:00"
+}

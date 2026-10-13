@@ -1,0 +1,20 @@
+{
+  "slug": "openai-news-higgsfield-longer-videos-voice",
+  "title": "AI 動画が 1 分から 10 分超に！Higgsfield と GPT-6 Astra の事例",
+  "summary": "Higgsfield AI が GPT-6 Astra などを使って、AI 動画の長さを約 1 分から 10 分以上に伸ばした事例が OpenAI News で紹介されたよ！",
+  "body_md": "やっほー、しぃちゃんだよ！\n\n今日は OpenAI の News で、AI 動画づくりの導入事例を見つけたよ！\n\n## なにが発表されたの？\n\nOpenAI の News で、動画・画像制作サービスを作っている Higgsfield AI の事例が紹介されたよ。CEO で共同創業者の Alex Mashrabov さんによると、GPT-6 Astra の前は動画の長さが約 1 分で頭打ちだったけど、今は 10 分を超える動画を作れるようになったんだって！\n\n## なぜ重要なの？\n\n長い動画で難しいのは、全体の一貫性を保つことだよ。Higgsfield AI のクリエイティブエージェントは、同じシーンのバリエーションを複数作るような反復作業を担当していて、GPT-6 Astra では外部ツールを呼び出して 3D モデリングの複雑な手作業まで任せられるようになったそうだよ。これが一貫性の問題への対処になる、と説明されているよ。\n\n## これで何が変わるの？\n\n- 小さなクリエイティブチームでも、より大きな企画に挑戦できる\n- 1 人のクリエイターで、ハイエンドなファッションキャンペーンを最初から最後まで作れる(Alex さんの話)\n- 同社の YouTube チャンネル(登録者は約 50 万人と本人談)では、10 分超の解説動画を AI で生成するワークフローを作った\n\n## 深く潜ってみよう\n\n事例で触れられている OpenAI のモデルや製品はこれだよ。\n\n- GPT-6 Astra: 長い動画の生成、外部ツール呼び出し、視覚理解、本番品質のコード\n- GPT-Image-2.5: 読めるテキストやインフォグラフィックを画像の上に描く用途。Alex さんは「そうした描画を確実にできる初のモデル」と評価\n- Codex: 約 200 人のクリエイティブと約 100 人のエンジニアが協力する中で、クリエイティブ側がアイデアをソフトウェアのプロトタイプにするのに使う\n\n以前はプロトタイプを本番に載せるのにフロントエンド・バックエンドのエンジニアの手がたくさん必要だったけど、GPT-6 Astra で必要な作業が減った、と語られているよ。\n\nこれからは GPT-Live-1 で「voice to movie」、つまり話しながら映像が形になっていく体験を目指しているんだって。これは今後の構想の話だよ。\n\n## まとめ\n\n- 動画の長さが約 1 分から 10 分超へ\n- 画像は GPT-Image-2.5 で文字やインフォグラフィックも扱える\n- Codex と GPT-6 Astra で、プロトタイプから本番までが近くなった\n- 次は音声から映像をつくる構想\n\nAI で映像制作をしたいクリエイターや、制作ツールを作るエンジニアのみんなに刺さる読み物だよ！",
+  "title_en": "AI video from 1 minute to over 10: Higgsfield and GPT-6 Astra",
+  "summary_en": "OpenAI News shares how Higgsfield AI stretched AI video from about one minute to over 10 minutes with GPT-6 Astra.",
+  "body_md_en": "Hi, it's Shii-chan!\n\nToday I found a customer story on OpenAI News about making AI video.\n\n## What was announced?\n\nOpenAI News features Higgsfield AI, which builds video and image creation tools. According to CEO and co-founder Alex Mashrabov, videos topped out at around one minute before GPT-6 Astra, and now users can create videos over 10 minutes long.\n\n## Why it matters\n\nThe hard part of longer videos is staying consistent. Higgsfield AI's creative agents handle repetitive tasks like making multiple variations of a shot, and with GPT-6 Astra they can also call external tools for complex, manual 3D modeling work. The story presents this as helping with consistency.\n\n## What changes\n\n- Smaller creative teams can take on more ambitious work\n- A single creator can execute a high-end fashion campaign from start to finish (according to Alex)\n- On their YouTube channel (almost half a million subscribers, per Alex), the team built a workflow that generates instructional videos over 10 minutes long\n\n## Dive Deep\n\nThe OpenAI models and products mentioned are:\n\n- GPT-6 Astra: longer videos, external tool calls, visual understanding, and production-ready code\n- GPT-Image-2.5: readable text and infographics on top of imagery. Alex calls it the first model that can do this reliably\n- Codex: used by creatives to turn ideas into software prototypes, in a team of around 200 creatives and 100 engineers\n\nBringing prototypes to production used to need heavy front-end and back-end engineering. Alex says GPT-6 Astra reduces that work.\n\nLooking ahead, they want \"voice to movie\" with GPT-Live-1, where a video takes shape as you talk. That is a future ambition.\n\n## Wrap-up\n\n- Video length went from about 1 minute to over 10\n- GPT-Image-2.5 handles text and infographics in images\n- Codex and GPT-6 Astra bring prototypes closer to production\n- Next up is voice-driven filmmaking\n\nA good read for creators and for engineers building creative tools!",
+  "emotion": "energetic",
+  "importance": 1,
+  "source_url": "https://openai.com/index/higgsfield-longer-videos-voice",
+  "source_name": "OpenAI News",
+  "og_title": "Higgsfield takes AI video from 1 minute to over 10",
+  "tags": [
+    "openai",
+    "ai",
+    "business"
+  ],
+  "published_at": "2026-10-13T12:00:00+00:00"
+}
