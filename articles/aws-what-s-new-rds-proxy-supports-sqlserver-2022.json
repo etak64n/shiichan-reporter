@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-rds-proxy-supports-sqlserver-2022",
+  "title": "RDS Proxy がついに SQL Server 2022 に対応したよ！",
+  "summary": "Amazon RDS Proxy が Amazon RDS for SQL Server のメジャーバージョン 2022 に対応したよ。接続プールに加えて、Multi-AZ のフェイルオーバー時間を最大 83% 短縮できるみたい！",
+  "body_md": "やっほー、しぃちゃんだよ！データベースまわりの嬉しいアップデートが来たから紹介するね！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon RDS Proxy が Amazon RDS for SQL Server のメジャーバージョン 2022 のインスタンスに対応したと発表されたよ。\n\nRDS Proxy は、アプリケーションとデータベースの間に入って、確立済みの接続をプールして共有してくれる、フルマネージドで高可用性なデータベースプロキシなの。データベースの効率とアプリのスケーラビリティが上がるよ。\n\n## 背景: 今までどうだったの？\n\nSQL Server 2022 の RDS インスタンスでは RDS Proxy が使えなかったから、接続プールやフェイルオーバー時の接続維持といった恩恵を受けられなかったんだ。\n\n## これで何が変わるの？\n\nSQL Server 2022 のインスタンスでも、RDS Proxy の機能が使えるようになるよ。\n\n- 接続をプール・共有するので、接続数が多いアプリでもデータベースの負荷を抑えやすい\n- Multi-AZ 構成では、障害時に自動でスタンバイに接続し、アプリケーションの接続を維持する\n- フェイルオーバー時間を最大 83% 短縮できる\n\n## 深く潜ってみよう\n\n認証まわりは、SQL Server 向けの標準的な IAM 認証に対応しているよ。\n\n- アプリケーションは AWS Identity and Access Management(IAM)でプロキシに認証する\n- RDS Proxy は、AWS Secrets Manager に保存された認証情報でデータベースへの接続を管理する\n\n有効化は Amazon RDS コンソールで数ステップ。そのあと、アプリケーションの接続先を RDS Proxy のエンドポイントに向ければ完了だよ。\n\n## まとめ\n\n- RDS Proxy が RDS for SQL Server 2022 に対応\n- 接続プールで効率とスケーラビリティが向上\n- Multi-AZ のフェイルオーバー時間を最大 83% 短縮\n- IAM 認証と Secrets Manager による認証情報管理に対応\n\nSQL Server 2022 を RDS で動かしていて、接続数や切り替え時の安定性が気になる人に刺さるアップデートだよ！",
+  "title_en": "RDS Proxy Finally Supports SQL Server 2022!",
+  "summary_en": "Amazon RDS Proxy now supports Amazon RDS for SQL Server major version 2022. Besides connection pooling, it can cut Multi-AZ failover times by up to 83%.",
+  "body_md_en": "Hi, it's Shii-chan! A nice database update just landed, so let me walk you through it!\n\n## What was announced?\n\nIn AWS What's New, AWS announced that Amazon RDS Proxy now supports Amazon RDS for SQL Server instances running major version 2022.\n\nRDS Proxy is a fully managed, highly available database proxy that sits between your application and the database, pooling and sharing established connections. That improves database efficiency and application scalability.\n\n## The story so far\n\nRDS Proxy wasn't available for SQL Server 2022 RDS instances, so you couldn't get benefits like connection pooling or connection preservation during failover.\n\n## What changes\n\nYou can now use RDS Proxy with SQL Server 2022 instances.\n\n- Connections are pooled and shared, which helps keep database load down for connection-heavy apps\n- With Multi-AZ, RDS Proxy automatically connects to the standby during a failure and preserves application connections\n- Failover times can be reduced by up to 83%\n\n## Dive Deep\n\nFor authentication, standard IAM authentication for SQL Server is supported.\n\n- Your application authenticates to the proxy using AWS Identity and Access Management (IAM)\n- RDS Proxy manages database connections using credentials stored in AWS Secrets Manager\n\nYou enable it in a few steps on the Amazon RDS console, then point your application to the RDS Proxy endpoint.\n\n## Wrap-up\n\n- RDS Proxy now supports RDS for SQL Server 2022\n- Connection pooling improves efficiency and scalability\n- Multi-AZ failover times drop by up to 83%\n- IAM authentication with credentials in Secrets Manager is supported\n\nThis is for anyone running SQL Server 2022 on RDS who cares about connection counts and failover stability!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/rds-proxy-supports-sqlserver-2022",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon RDS Proxy now supports SQL Server 2022",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-14T07:00:00+00:00"
+}

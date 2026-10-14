@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-10-14-infrastructure-ssh-session-duration",
+  "title": "Infrastructure アプリの SSH セッション、24時間で切れるようになるの？",
+  "summary": "Cloudflare One の Access で、Infrastructure アプリケーションに設定可能なセッション期間(既定 24 時間)が追加されたよ。期間が過ぎるとアクティブな SSH 接続は切断されるみたい！",
+  "body_md": "みんな、しぃちゃんだよ！今日は SSH でサーバーに入るときのセッションの長さについての更新を紹介するね！\n\n## なにが発表されたの？\n\nCloudflare の Changelog(Cloudflare One / Access)で、Infrastructure アプリケーションに設定できるセッション期間が追加されたよ。既定値は 24 時間なの。\n\n設定はダッシュボードでも API でもできて、Infrastructure アプリケーションを作るときにも編集するときにも指定できるよ。\n\n## 背景: 今までどうだったの？\n\n今までは、Infrastructure アプリケーションにセッション期間の上限は設けられていなかったんだ。\n\n- 24 時間を超えて続くセッションもあった\n- でも、Gateway の接続制限のせいで、10 時間を超えての継続は保証されていなかった\n\nつまり「いつまで繋がっているか」がはっきりしない状態だったんだね。\n\n## これで何が変わるの？\n\nセッションの長さを管理者が決められるようになったよ。\n\n- 期間が経過すると、そのアプリケーション経由のアクティブな SSH 接続は閉じられる\n- ユーザーは再接続が必要になる\n\n長時間つなぎっぱなしの SSH を許したくない運用では、期間を短くして管理しやすくなるね。\n\n## 深く潜ってみよう\n\n気をつけたい挙動はこれだよ！\n\n- 既定値は 24 時間。既存の運用でも、上限のなかったセッションはこの期間で切れる前提で考えておくのが安心\n- ひとつのターゲットが複数の Infrastructure アプリケーションに一致するときは、いちばん短いセッション期間が適用される\n\n詳しい設定は Cloudflare のドキュメントの Session duration のページにまとまっているよ。\n\n## まとめ\n\n- Infrastructure アプリケーションに、設定可能なセッション期間(既定 24 時間)が追加された\n- ダッシュボードと API のどちらからも、作成時・編集時に設定できる\n- 期間が過ぎるとアクティブな SSH 接続は切断され、再接続が必要になる\n- 複数のアプリケーションに一致する場合は、最短の期間が適用される\n\nCloudflare Access で SSH のアクセス管理をしているインフラ担当のみんなは、一度設定を見直してみてね！",
+  "title_en": "Infrastructure Apps Now Get a Configurable SSH Session Duration!",
+  "summary_en": "Cloudflare One's Access now lets you configure a session duration for infrastructure applications, with a 24-hour default. When it elapses, active SSH connections are closed.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today I'm covering an update about how long your SSH sessions last.\n\n## What was announced?\n\nIn the Cloudflare Changelog (Cloudflare One / Access), Cloudflare announced a configurable session duration for infrastructure applications. The default is 24 hours.\n\nYou can set it in the dashboard or via the API, both when creating and when editing an infrastructure application.\n\n## The story so far\n\nUntil now, infrastructure applications did not enforce a session duration limit.\n\n- Sessions could persist beyond 24 hours in some cases\n- But they were never guaranteed beyond 10 hours because of Gateway connection limits\n\nSo it wasn't clear how long a connection would stay up.\n\n## What changes\n\nAdministrators can now decide how long a session lasts.\n\n- When the session duration elapses, any active SSH connections through that application are closed\n- Users need to reconnect\n\nIf you don't want SSH connections left open for a long time, you can shorten the duration and manage things more easily.\n\n## Dive Deep\n\nHere is the behavior to keep in mind:\n\n- The default is 24 hours, so sessions that used to have no limit should now be expected to end at that point\n- When a target matches multiple infrastructure applications, the shortest session duration applies\n\nFor details, see the Session duration page in the Cloudflare documentation.\n\n## Wrap-up\n\n- Infrastructure applications now have a configurable session duration (24 hours by default)\n- You can set it from the dashboard or the API, when creating or editing\n- When it elapses, active SSH connections close and users reconnect\n- If multiple applications match, the shortest duration applies\n\nIf you manage SSH access with Cloudflare Access, it's worth reviewing your settings!",
+  "emotion": "thinking",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-14-infrastructure-ssh-session-duration/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Cloudflare One, Access - Infrastructure applications support a configurable session duration",
+  "tags": [
+    "cloudflare",
+    "security",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-14T22:19:11+00:00"
+}

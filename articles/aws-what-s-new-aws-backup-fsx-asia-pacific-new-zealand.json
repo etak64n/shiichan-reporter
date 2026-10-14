@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-backup-fsx-asia-pacific-new-zealand",
+  "title": "ニュージーランドリージョンでも FSx を AWS Backup で守れるようになったよ！",
+  "summary": "AWS Backup が、アジアパシフィック(ニュージーランド)リージョンで Amazon FSx の 4 種類のファイルシステムに対応したよ。バックアップの一元管理ができるようになるみたい！",
+  "body_md": "おつかれさま、しぃちゃんだよ！今日はリージョン拡大のお知らせを紹介するね！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Backup がアジアパシフィック(ニュージーランド)リージョンで Amazon FSx に対応したと発表されたよ。\n\n対応するファイルシステムはこの 4 つだよ。\n\n- Amazon FSx for Lustre\n- Amazon FSx for NetApp ONTAP\n- Amazon FSx for OpenZFS\n- Amazon FSx for Windows File Server\n\n## 背景: なぜ重要なの？\n\nデータ保護は、事業継続や災害対策、規制への対応の土台になるよね。ニュージーランドリージョンで FSx を使っている場合、AWS Backup で他のリソースと同じように一元管理できると運用がぐっと楽になるよ。\n\n## これで何が変わるの？\n\nこのリージョンの FSx ファイルシステムのデータ保護を、他の対応する AWS リソースと並べて AWS Backup で自動化・一元管理できるようになるよ。\n\n## 深く潜ってみよう\n\nできることは次のとおりだよ。\n\n- ポリシーベースのバックアッププランで、バックアップのスケジュールと保持ルールを設定する\n- 暗号化されたボールトにバックアップを保存する\n- 必要なときにファイルシステムを復元する\n\nこれらを単一のサービスで行えるので、事業継続、災害復旧、規制コンプライアンスの要件を満たしやすくなるんだって。\n\n使い始めるには、AWS Backup コンソール、AWS CLI、または AWS SDK を使うよ。対応リージョンや機能の完全な一覧は AWS Backup のドキュメントで確認してね。\n\n## まとめ\n\n- ニュージーランドリージョンで、FSx の 4 種類が AWS Backup に対応\n- バックアッププラン、暗号化ボールト、復元を一元的に扱える\n- コンソール、CLI、SDK から利用可能\n\nニュージーランドリージョンで FSx を運用している人や、データ保護の要件を抱えているチームに刺さるよ！",
+  "title_en": "AWS Backup Now Protects FSx in the New Zealand Region!",
+  "summary_en": "AWS Backup now supports four Amazon FSx file system types in the Asia Pacific (New Zealand) Region, so you can manage their backups centrally.",
+  "body_md_en": "Hi, it's Shii-chan! Today I have a Region expansion to share!\n\n## What was announced?\n\nIn AWS What's New, AWS announced that AWS Backup now supports Amazon FSx in the Asia Pacific (New Zealand) Region.\n\nThe supported file systems are:\n\n- Amazon FSx for Lustre\n- Amazon FSx for NetApp ONTAP\n- Amazon FSx for OpenZFS\n- Amazon FSx for Windows File Server\n\n## Why it matters\n\nData protection is the foundation for business continuity, disaster recovery, and regulatory compliance. If you run FSx in the New Zealand Region, managing it with AWS Backup like your other resources makes operations much easier.\n\n## What changes\n\nYou can now automate and centrally manage data protection for FSx file systems in this Region, alongside your other supported AWS resources.\n\n## Dive Deep\n\nHere is what you can do:\n\n- Create policy-based backup plans to schedule backups and apply retention rules\n- Store backups in encrypted vaults\n- Restore file systems when needed\n\nDoing all of this from a single service helps you meet business continuity, disaster recovery, and regulatory compliance requirements.\n\nTo get started, use the AWS Backup console, the AWS CLI, or the AWS SDKs. For the complete list of supported Regions and features, see the AWS Backup documentation.\n\n## Wrap-up\n\n- All four FSx types are supported by AWS Backup in the New Zealand Region\n- Backup plans, encrypted vaults, and restores are handled in one place\n- Available through the console, CLI, and SDKs\n\nThis is for anyone running FSx in the New Zealand Region or working under data protection requirements!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-backup-fsx-asia-pacific-new-zealand/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Backup now supports Amazon FSx file systems in the Asia Pacific (New Zealand) Region",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "devops"
+  ],
+  "published_at": "2026-10-14T08:00:00+00:00"
+}
