@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-10-14-emergency-waf-release",
+  "title": "Cloudflare WAF が緊急リリース！ Web フレームワークの RCE 攻撃をブロックする新ルール",
+  "summary": "Cloudflare が 2026-10-14 に WAF の緊急リリースを出して、人気 Web フレームワークの重大な RCE 脆弱性への実攻撃をブロックする Managed Rule を追加したよ！ アクションは Block だよ。",
+  "body_md": "みんな、しぃちゃんだよ！ 今日は Cloudflare から WAF の緊急リリースが出たから、急いで紹介するね！\n\n## なにが発表されたの？\n\nCloudflare の Changelog に「WAF Release - 2026-10-14 - Emergency」が載ったよ。人気のある Web フレームワークで見つかった深刻な **リモートコード実行（RCE）脆弱性** が実際に悪用されているから、それをブロックする新しい Managed Rule が追加されたの。\n\n## なぜ重要なの？\n\nRCE は、攻撃者がサーバー上で任意のコマンドを動かせてしまう種類の脆弱性で、影響がとても大きいの。しかも今回は実際に悪用されている（active exploitation）状況だから、緊急リリースになったみたい。\n\n## これで何が変わるの？\n\nCloudflare を通して Web アプリを公開している人は、この新ルールで該当する攻撃リクエストが Block されるようになるよ。フレームワーク側の修正を適用するまでの時間かせぎとして、保護の層が 1 枚増える感じだね。\n\n## 深く潜ってみよう\n\nChangelog に書かれている内容はこんな感じだよ。\n\n- 攻撃の内容: 処理中に不正なパス列（invalid path sequences）を含む悪意ある入力を送ることで、Web サーバーの権限で任意のシステムコマンドを実行できてしまう\n- ルールセット: Cloudflare Managed Ruleset\n- カテゴリ: Generic Rules - Remote Code Execution\n- Rule ID: 末尾が `fd1bf420`\n- Legacy Rule ID: なし\n- 以前のアクション: なし（新規の検知）\n- 新しいアクション: Block\n\nCVE 番号や対象のフレームワーク名・バージョンは、この Changelog には書かれていなかったよ。詳しくは元の脆弱性の公開情報を確認してね。\n\n## まとめ\n\n- 2026-10-14 に WAF の緊急リリースが出た\n- 人気 Web フレームワークの重大な RCE 脆弱性への実攻撃を狙った新しい Managed Rule\n- Cloudflare Managed Ruleset の Generic Rules - Remote Code Execution で、アクションは Block\n- WAF はあくまで時間かせぎなので、フレームワーク側のパッチ適用も忘れずに\n\nCloudflare の WAF を使っている Web アプリの運用担当さんは、ぜひチェックしてね！",
+  "title_en": "Cloudflare Ships an Emergency WAF Release to Block a Web Framework RCE Exploit",
+  "summary_en": "On 2026-10-14 Cloudflare released an emergency WAF update with a new managed rule that blocks active exploitation of a critical remote code execution vulnerability in popular web frameworks. The action is Block.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Cloudflare just published an emergency WAF release, so let me walk you through it quickly.\n\n## What was announced?\n\nCloudflare's Changelog has a new entry: \"WAF Release - 2026-10-14 - Emergency\". It adds a new managed rule to block active exploitation of a critical **remote code execution (RCE)** vulnerability found in popular web frameworks.\n\n## Why it matters\n\nRCE lets attackers run arbitrary commands on a server, so the impact is large. Because this one is being actively exploited, Cloudflare shipped it as an emergency release.\n\n## What changes\n\nIf you serve web apps through Cloudflare, matching attack requests are now blocked by this rule. It adds one more layer of protection while you apply fixes on the framework side.\n\n## Dive Deep\n\nHere is what the changelog says:\n\n- Attack: by sending malicious input containing invalid path sequences during request processing, attackers can execute arbitrary system commands with web server privileges\n- Ruleset: Cloudflare Managed Ruleset\n- Category: Generic Rules - Remote Code Execution\n- Rule ID: ends with `fd1bf420`\n- Legacy Rule ID: N/A\n- Previous action: N/A (new detection)\n- New action: Block\n\nThe changelog does not name a CVE or the affected frameworks and versions, so check the original vulnerability disclosure for those.\n\n## Wrap-up\n\n- An emergency WAF release shipped on 2026-10-14\n- A new managed rule targets active exploitation of a critical RCE in popular web frameworks\n- It lives in Cloudflare Managed Ruleset under Generic Rules - Remote Code Execution, with action Block\n- A WAF buys you time, so still patch your framework\n\nIf you run apps behind Cloudflare WAF, give this one a look!",
+  "emotion": "confused",
+  "importance": 3,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-14-emergency-waf-release/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "WAF - WAF Release - 2026-10-14 - Emergency",
+  "tags": [
+    "cloudflare",
+    "security",
+    "web"
+  ],
+  "published_at": "2026-10-14T13:43:58+00:00"
+}
