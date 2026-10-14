@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-ec2-m8id-asia-pacific-malaysia-sydney",
+  "title": "EC2 M8id がマレーシアとシドニーに登場、ローカル SSD は最大 22.8 TB！",
+  "summary": "最大 22.8 TB のローカル NVMe SSD を持つ EC2 M8id が、Asia Pacific (Malaysia) と (Sydney) で使えるようになったよ。第 6 世代の M6id と比べた性能向上も紹介するね！",
+  "body_md": "こんにちは、しぃちゃんだよ！今日はローカルストレージがたっぷりの M8id が、アジア太平洋の新しい場所に来たニュースだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon EC2 M8id インスタンスが Asia Pacific (Malaysia) と Asia Pacific (Sydney) で使えるようになったと発表されたよ。最大 22.8 TB のローカル NVMe SSD ブロックストレージを持つインスタンスなの。\n\n## なぜ重要なの？\n\nM8id は、計算とメモリのバランスに加えて、高速で低レイテンシなローカルストレージが必要なワークロード向けだよ。原文では次のような用途が挙げられているよ。\n\n- データロギング\n- メディア処理\n- 中規模のデータストア\n\n## これで何が変わるの？\n\nこの 2 つのリージョンで、第 6 世代からの乗り換え先として M8id を選べるようになるよ。マレーシアやシドニーにデータを置いている人は、リージョンを変えずに世代を上げられるね！\n\n## 深く潜ってみよう\n\n第 6 世代のインスタンスと比べた数字が出ているよ。\n\n- vCPU、メモリ、ローカルストレージが 3 倍\n- M6id と比べて計算性能が最大 43% 向上、メモリ帯域幅は 3.3 倍\n- I/O 集約型のデータベースで最大 46% 高い性能\n- I/O 集約型のリアルタイム分析でクエリ結果が最大 30% 速い\n\n運用面で押さえたいポイントはこれだよ。\n\n- EC2 instance bandwidth weighting で、ネットワークと Amazon EBS の帯域を 25% 調整できる\n- Elastic Fabric Adapter (EFA) は 24xlarge、48xlarge、metal-24xl、metal-48xl で利用可能\n- 購入方法は Savings Plans、On-Demand、Spot\n\n## まとめ\n\n- M8id が Malaysia と Sydney で利用可能に\n- 最大 22.8 TB のローカル NVMe SSD\n- M6id 比で計算性能最大 43% 向上、メモリ帯域幅 3.3 倍\n- 帯域を 25% 調整できる設定に対応\n\nローカル SSD 付きのインスタンスを APAC で探していた人にぴったりだよ！",
+  "title_en": "EC2 M8id Lands in Malaysia and Sydney with Up to 22.8 TB Local SSD!",
+  "summary_en": "EC2 M8id instances with up to 22.8 TB of local NVMe SSD are now available in Asia Pacific (Malaysia) and Asia Pacific (Sydney). Here is how they compare with the sixth generation!",
+  "body_md_en": "Hello, it's Shii-chan! Today M8id, with its generous local storage, has arrived in new Asia Pacific regions!\n\n## What was announced?\n\nAWS What's New announced that Amazon EC2 M8id instances are now available in Asia Pacific (Malaysia) and Asia Pacific (Sydney). They come with up to 22.8 TB of local NVMe-based SSD block storage.\n\n## Why it matters\n\nM8id is for workloads that need a balance of compute and memory plus fast, low-latency local storage. The source lists these use cases.\n\n- Data logging\n- Media processing\n- Medium-sized data stores\n\n## What changes\n\nIn these two regions, you can now pick M8id as the upgrade path from the sixth generation. If your data lives in Malaysia or Sydney, you can move up a generation without changing region!\n\n## Dive Deep\n\nHere are the numbers compared with sixth-generation instances.\n\n- 3 times more vCPUs, memory, and local storage\n- Up to 43% higher compute performance and 3.3 times more memory bandwidth than M6id\n- Up to 46% higher performance for I/O intensive database workloads\n- Up to 30% faster query results for I/O intensive real-time data analytics\n\nHere are the operational points to keep in mind.\n\n- EC2 instance bandwidth weighting lets you adjust network and Amazon EBS bandwidth by 25%\n- Elastic Fabric Adapter (EFA) is available on 24xlarge, 48xlarge, metal-24xl, and metal-48xl\n- You can purchase via Savings Plans, On-Demand, and Spot\n\n## Wrap-up\n\n- M8id is available in Malaysia and Sydney\n- Up to 22.8 TB of local NVMe SSD\n- Up to 43% higher compute performance and 3.3 times the memory bandwidth versus M6id\n- Supports the 25% bandwidth adjustment setting\n\nGreat for anyone who has been looking for instances with local SSD in APAC!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/ec2-m8id-asia-pacific-malaysia-sydney/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon EC2 M8id instances now available in Asia Pacific (Malaysia) and Asia Pacific (Sydney)",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-09T21:00:00+00:00"
+}

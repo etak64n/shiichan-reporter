@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-license-manager-conversions-ubuntu-pro-marketplace",
+  "title": "Ubuntu LTS から Ubuntu Pro へ、License Manager でその場アップグレード！",
+  "summary": "AWS License Manager が、EC2 の Ubuntu LTS インスタンスを AWS Marketplace の Ubuntu Pro へその場で変換できるようになったよ。フリートの作り直しは不要みたい！",
+  "body_md": "おつかれさま、しぃちゃんだよ！今日は運用担当の人に嬉しい、セキュリティ強化のニュースだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS License Manager が、EC2 の Ubuntu LTS (Long Term Support) インスタンスを、AWS Marketplace で提供されている Ubuntu Pro へその場でアップグレードできるようになったと発表されたよ。\n\n## なぜ重要なの？\n\nセキュリティの体制を強化したり、コンプライアンスの要件を満たしたりするときに、フリートを作り直したり、新しいインスタンスや AMI に移行したりしなくて済むのがポイントだよ。\n\n## これで何が変わるの？\n\n- Canonical Ubuntu Pro のサブスクリプションを AWS Marketplace で持っている人は、変換のワークフローの中で直接アップグレードできる\n- まだサブスクリプションがない人は、License Manager コンソールの中から Canonical Ubuntu Pro を購読できる\n\nこれまで別の手段が必要だった作業を、License Manager の流れの中でできるのが嬉しいところだね！\n\n## 深く潜ってみよう\n\nUbuntu Pro の中身として、原文ではこんな点が紹介されているよ。\n\n- セキュリティパッチが最大 10 年。Legacy アドオンで 15 年まで延長できる\n- OS 本体だけでなく、NGINX、PostgreSQL、MongoDB、Redis など、広く使われるオープンソースアプリを含む数千の追加パッケージも対象\n- Kernel Livepatch に対応していて、重要なカーネルのセキュリティ修正を再起動なしで適用でき、ダウンタイムを抑えられる\n\n利用できる範囲は、AWS License Manager が使えるすべての商用リージョンだよ。始めるには、AWS License Manager コンソールと、AWS License Manager のユーザーガイドを見てね。\n\n## まとめ\n\n- EC2 の Ubuntu LTS を、Marketplace の Ubuntu Pro へその場で変換できる\n- フリートの再構築や、新しいインスタンス、AMI への移行は不要\n- パッチは最大 10 年、Legacy アドオンで 15 年まで\n- Kernel Livepatch で再起動なしの修正適用に対応\n- License Manager が使えるすべての商用リージョンで利用可能\n\nUbuntu の長期サポートやコンプライアンス対応が必要な運用チームに刺さるよ！",
+  "title_en": "Upgrade Ubuntu LTS to Ubuntu Pro in Place with AWS License Manager!",
+  "summary_en": "AWS License Manager now supports in-place conversion of EC2 Ubuntu LTS instances to Ubuntu Pro from AWS Marketplace, with no need to rebuild your fleet!",
+  "body_md_en": "Good work today, it's Shii-chan! Here is a security upgrade that operations folks will like!\n\n## What was announced?\n\nAWS What's New announced that AWS License Manager now supports in-place upgrades of EC2 Ubuntu LTS (Long Term Support) instances to Ubuntu Pro available on AWS Marketplace.\n\n## Why it matters\n\nYou can strengthen your security posture and meet compliance requirements without rebuilding your fleet or migrating workloads to a new instance or AMI.\n\n## What changes\n\n- If you already have a Canonical Ubuntu Pro subscription through AWS Marketplace, you can upgrade directly during the conversion workflow\n- If you don't have a subscription yet, you can subscribe to Canonical Ubuntu Pro from within the AWS License Manager console\n\nYou can now do this within the License Manager flow!\n\n## Dive Deep\n\nHere is what the source says about Ubuntu Pro.\n\n- Security patches for up to 10 years, extendable to 15 years with the Legacy add-on\n- Coverage extends beyond the base OS to thousands of additional packages, including widely used open-source applications such as NGINX, PostgreSQL, MongoDB, and Redis\n- Kernel Livepatch applies critical kernel security fixes without rebooting, minimizing downtime\n\nIt is available in all commercial regions where AWS License Manager is available. To get started, see the AWS License Manager console and the AWS License Manager User Guide.\n\n## Wrap-up\n\n- Convert EC2 Ubuntu LTS to Ubuntu Pro from Marketplace in place\n- No fleet rebuild or migration to new instances or AMIs\n- Patches for up to 10 years, up to 15 with the Legacy add-on\n- Kernel Livepatch supports fixes without reboots\n- Available in all commercial regions where License Manager is available\n\nThis is for ops teams that need long-term Ubuntu support and compliance coverage!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-license-manager-conversions-ubuntu-pro-marketplace/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS License Manager now supports license type conversions for Ubuntu Pro purchased through AWS Marketplace",
+  "tags": [
+    "aws",
+    "security",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-14T17:04:00+00:00"
+}

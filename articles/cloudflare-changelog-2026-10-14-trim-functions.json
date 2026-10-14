@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-10-14-trim-functions",
+  "title": "Cloudflare Rules に trim() 関数が仲間入り、余計な空白にサヨナラ！",
+  "summary": "Cloudflare Rules に、前後のバイトを取り除く trim()、trim_start()、trim_end() が追加されたよ。全プランの HTTP 製品で使えるみたい！",
+  "body_md": "おつかれさま、しぃちゃんだよ！今日はルール式でちょっと便利になる関数のお知らせだよ！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Cloudflare Rules に前後のバイトを取り除く 3 つの関数が追加されたと発表されたよ。リクエストの値を比較する前に、空白を取り除くのに使えるの。\n\n- `trim()`: 両端のバイトを取り除く\n- `trim_start()`: 先頭のバイトを取り除く\n- `trim_end()`: 末尾のバイトを取り除く\n\nすべての HTTP 製品で、すべてのプランが対象だよ。\n\n## これで何が変わるの？\n\nヘッダーの値に余計な空白が付いていると、`eq` での比較が合わなくなっちゃうことがあるよね。この関数で先に空白を落としておけば、比較が安定するよ。ルールを書く人は、前後の空白を気にして条件を増やさなくてよくなるね！\n\n## 深く潜ってみよう\n\n動作のルールはこうだよ。\n\n- 何も指定しないと、ASCII の空白を取り除く\n- オプションの定数文字列で、取り除くバイトの集合を自分で決められる\n- 入力が nil なら、nil を返す\n\n原文にある例は、ヘッダー `x-label` の値から前後の空白を取ってから比較する式だよ。\n\n```txt\ntrim(http.request.headers[\"x-label\"][0]) eq \"approved\"\n```\n\n詳しい仕様は、それぞれの関数のリファレンスにあるよ。\n\n## まとめ\n\n- `trim()`、`trim_start()`、`trim_end()` が Rules に追加された\n- 既定では ASCII の空白を除去、定数文字列で対象バイトを指定できる\n- 入力が nil のときは nil が返る\n- 全プランのすべての HTTP 製品で利用可能\n\nヘッダーやクエリの値を厳密に比較するルールを書いている人に刺さるよ！",
+  "title_en": "Cloudflare Rules Gets trim() Functions: Say Goodbye to Stray Whitespace!",
+  "summary_en": "Cloudflare Rules now has trim(), trim_start(), and trim_end() for removing surrounding bytes. They are available on all plans across HTTP products!",
+  "body_md_en": "Good work today, it's Shii-chan! Here is a small but handy update for rule expressions!\n\n## What was announced?\n\nThe Cloudflare Changelog announced three new functions in Cloudflare Rules for removing surrounding bytes. You can use them to remove whitespace before comparing request values.\n\n- `trim()`: removes bytes from both ends\n- `trim_start()`: removes bytes from the start\n- `trim_end()`: removes bytes from the end\n\nAll HTTP products support them, on all plans.\n\n## What changes\n\nIf a header value has stray whitespace, an `eq` comparison can fail. Trimming first makes the comparison reliable. When you write rules, you no longer need extra conditions to handle leading or trailing whitespace!\n\n## Dive Deep\n\nHere is how they behave.\n\n- By default, they remove ASCII whitespace\n- An optional constant string lets you specify a custom set of bytes\n- If the input value is nil, they return nil\n\nThe example in the source trims the `x-label` header value before comparing it.\n\n```txt\ntrim(http.request.headers[\"x-label\"][0]) eq \"approved\"\n```\n\nThe details are in each function's reference page.\n\n## Wrap-up\n\n- `trim()`, `trim_start()`, and `trim_end()` are added to Rules\n- ASCII whitespace is removed by default, and a constant string sets the bytes to remove\n- A nil input returns nil\n- Available on all plans across all HTTP products\n\nThis is for anyone writing rules that compare header or other request values strictly!",
+  "emotion": "smug",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-14-trim-functions/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Rules - Remove surrounding bytes with trim functions",
+  "tags": [
+    "cloudflare",
+    "web",
+    "security"
+  ],
+  "published_at": "2026-10-14T18:37:08+00:00"
+}
