@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-security-hub-cspm-cri-profile-v22",
+  "title": "Security Hub CSPM が CRI プロファイル v2.2 に対応！404 個のコントロールで自動チェック",
+  "summary": "AWS Security Hub CSPM が、金融業界向けの Cyber Risk Institute (CRI) プロファイル v2.2 に沿った自動セキュリティチェックに対応したよ。404 個のコントロールが使えるの！",
+  "body_md": "おつかれさま、しぃちゃんだよ！今日は金融業界のセキュリティ基準に関する AWS のアップデートだよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Security Hub CSPM が Cyber Risk Institute (CRI) プロファイルに沿った自動セキュリティチェックに対応したと発表されたよ。\n\nCRI プロファイルは、金融機関と業界団体による非営利の連合体 Cyber Risk Institute が作ったサイバーセキュリティのフレームワークだよ。金融サービス業界に適用されるサイバーセキュリティと規制上の期待を共通の要件にまとめて、一度自己評価すれば複数の規制に対して報告できるようにするものなの。\n\n## なぜ重要なの？\n\n複数の規制に対応する金融機関では、評価と報告の手間が大きな負担になりがちだよね。CRI プロファイルのチェックが自動化されると、その手間を減らせるんだ。\n\n## これで何が変わるの？\n\nSecurity Hub CSPM に CRI プロファイル v2.2 の新しい標準が追加されたよ。\n\n- 404 個のコントロールが、CRI プロファイル v2.2 の要件の一部をサポートする\n- 手動チェックが必要な要件は、コントロールの対象外\n\n## 深く潜ってみよう\n\n- 提供リージョン: Security Hub CSPM が使えるすべてのリージョン (AWS GovCloud (US) と中国リージョンを含む)\n- 有効化: Security Hub の中央設定 (central configuration) の利用が推奨されていて、組織の全アカウントまたは一部のアカウント、リンクされたすべてのリージョンに、1 回の操作で有効化できる\n- 通知: Security Hub の SNS トピックを購読すると、新機能やコントロールの通知を受け取れる\n- 試用: AWS Free Tier で 30 日間無料で試せる\n\n## まとめ\n\n- Security Hub CSPM が CRI プロファイル v2.2 の標準に対応\n- 404 個のコントロールで一部の要件を自動チェック (手動チェックが必要なものは対象外)\n- GovCloud と中国リージョンを含む全提供リージョンで利用可能\n- 中央設定でまとめて有効化できる\n\n金融サービス業界でコンプライアンス対応をしているみんなに刺さる更新だよ！",
+  "title_en": "Security Hub CSPM Adds CRI Profile v2.2 with 404 Automated Controls!",
+  "summary_en": "AWS Security Hub CSPM now supports automated security checks aligned with the Cyber Risk Institute (CRI) profile v2.2, with 404 controls available.",
+  "body_md_en": "Hello, it's Shii-chan! Today's AWS update is about security standards for the financial industry.\n\n## What was announced?\n\nAWS What's New announced that AWS Security Hub CSPM now supports automated security checks that align with the Cyber Risk Institute (CRI) profile.\n\nThe CRI Profile is a cybersecurity framework developed by the Cyber Risk Institute, a non-profit coalition of financial institutions and trade associations. It harmonizes the cybersecurity and regulatory expectations that apply to financial services into a common set of requirements, so an organization can assess itself once and report against multiple regulations.\n\n## Why it matters\n\nFor financial institutions facing several regulations, assessment and reporting can be a heavy lift. Automating CRI profile checks helps reduce that effort.\n\n## What changes\n\nSecurity Hub CSPM gets a new standard for CRI Profile v2.2.\n\n- 404 controls support a subset of CRI Profile v2.2 requirements\n- Requirements that need manual checks aren't covered by the controls\n\n## Dive Deep\n\n- Regions: all Regions where Security Hub CSPM is available, including AWS GovCloud (US) and the China Regions\n- Enabling: Security Hub central configuration is recommended, letting you enable the standard in all or only some of your organization's accounts and across all linked Regions with a single action\n- Notifications: subscribe to the Security Hub SNS topic for new features and controls\n- Trial: try Security Hub CSPM free for 30 days with the AWS Free Tier\n\n## Wrap-up\n\n- Security Hub CSPM supports the CRI Profile v2.2 standard\n- 404 controls automate checks for a subset of requirements (manual-check requirements aren't covered)\n- Available in all supported Regions, including GovCloud and China\n- Enable it in bulk with central configuration\n\nThis one is for anyone handling compliance in financial services!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/security-hub-cspm-cri-profile-v22/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Security Hub CSPM now supports the Cyber Risk Institute profile version 2.2",
+  "tags": [
+    "aws",
+    "security"
+  ],
+  "published_at": "2026-10-15T08:00:00+00:00"
+}

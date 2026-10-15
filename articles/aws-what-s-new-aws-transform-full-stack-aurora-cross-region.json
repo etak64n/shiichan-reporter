@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-transform-full-stack-aurora-cross-region",
+  "title": "AWS Transform の Windows モダナイゼーションが Aurora PostgreSQL のクロスリージョンに対応！",
+  "summary": "AWS Transform for full-stack Windows modernization が、変換した Aurora PostgreSQL のクロスリージョンデプロイに対応し、7 つのリージョンが追加されたよ！",
+  "body_md": "やっほー、しぃちゃんだよ！今日は AWS Transform の Windows モダナイゼーションのアップデートだよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Transform for full-stack Windows modernization が、変換後の Amazon Aurora PostgreSQL データベースのクロスリージョンデプロイに対応し、さらに 7 つの AWS リージョンで使えるようになったと発表されたよ。\n\n## これで何が変わるの？\n\nSQL Server のモダナイゼーションのあと、変換したデータベースをどこにデプロイするかを、より自由に選べるようになったよ。データレジデンシー、レイテンシー、ディザスタリカバリの要件に対応しやすくなるの。\n\n## 深く潜ってみよう\n\n流れはこうだよ。\n\n- SQL Server の Database Design Language (DDL) ファイルをアップロードする\n- 変換計画でターゲットの AWS リージョンを設定する\n- データベースが変換され、できた Aurora PostgreSQL クラスターが別のリージョンにデプロイされる\n\n同じワークフローで、依存する .NET アプリケーションも PostgreSQL に対応させてくれるよ。接続文字列と、ADO.NET や Entity Framework のデータアクセス呼び出しが更新されるの。\n\n利用できるリージョンは次の 8 つだよ。\n\n- US East (N. Virginia)\n- Europe (Frankfurt)\n- Europe (London)\n- Asia Pacific (Mumbai)\n- Asia Pacific (Seoul)\n- Asia Pacific (Tokyo)\n- Asia Pacific (Sydney)\n- Canada (Montreal)\n\n始めるには、AWS Transform の製品ページか、full-stack Windows のドキュメントを見てね。\n\n## まとめ\n\n- 変換した Aurora PostgreSQL を別のリージョンにデプロイできる\n- 変換計画でターゲットリージョンを指定するだけ\n- 依存する .NET アプリの接続文字列とデータアクセス呼び出しも更新される\n- 7 つのリージョンが追加された\n\nSQL Server から Aurora PostgreSQL への移行を考えている .NET 開発者のみんなに刺さる更新だよ！",
+  "title_en": "AWS Transform for Windows Modernization Adds Cross-Region Aurora PostgreSQL!",
+  "summary_en": "AWS Transform for full-stack Windows modernization now supports cross-region deployment of converted Aurora PostgreSQL databases and is available in seven more Regions.",
+  "body_md_en": "Hi, it's Shii-chan! Today's news is an update to AWS Transform for Windows modernization.\n\n## What was announced?\n\nAWS What's New announced that AWS Transform for full-stack Windows modernization adds support for cross-region deployment of converted Amazon Aurora PostgreSQL databases, and is available in seven additional AWS Regions.\n\n## What changes\n\nAfter SQL Server modernization, you get more control over where the converted database is deployed. That supports data residency, latency, and disaster recovery requirements.\n\n## Dive Deep\n\nHere's the flow:\n\n- Upload SQL Server Database Design Language (DDL) files\n- Set a target AWS Region in the transformation plan\n- The database is converted and the resulting Aurora PostgreSQL cluster is deployed to a different Region\n\nThe same workflow makes dependent .NET applications PostgreSQL compatible, updating connection strings and ADO.NET and Entity Framework data-access calls.\n\nIt's now available in these Regions:\n\n- US East (N. Virginia)\n- Europe (Frankfurt)\n- Europe (London)\n- Asia Pacific (Mumbai)\n- Asia Pacific (Seoul)\n- Asia Pacific (Tokyo)\n- Asia Pacific (Sydney)\n- Canada (Montreal)\n\nTo get started, see the AWS Transform product page or the AWS Transform for full-stack Windows documentation.\n\n## Wrap-up\n\n- Deploy converted Aurora PostgreSQL to a different Region\n- Just set the target Region in the transformation plan\n- Dependent .NET apps get updated connection strings and data-access calls\n- Seven more Regions are supported\n\nThis one is for .NET developers considering a move from SQL Server to Aurora PostgreSQL!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-transform-full-stack-aurora-cross-region",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Transform for full-stack Windows modernization now supports Aurora PostgreSQL cross-region deployment in 7 more Regions",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "devops"
+  ],
+  "published_at": "2026-10-15T17:00:00+00:00"
+}

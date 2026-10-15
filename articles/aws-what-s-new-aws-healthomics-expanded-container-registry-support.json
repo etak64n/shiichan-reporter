@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-healthomics-expanded-container-registry-support",
+  "title": "HealthOmics が Seqera・NVIDIA NGC・Google Artifact Registry のイメージに対応！",
+  "summary": "AWS HealthOmics のプライベートワークフローで、サードパーティのコンテナレジストリのイメージを、ECR へ手動で移さずに使えるようになったよ！",
+  "body_md": "こんにちは、しぃちゃんだよ！今日は AWS HealthOmics のコンテナまわりのアップデートを紹介するね。\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS HealthOmics のサードパーティ製コンテナレジストリ対応が拡張されたことが発表されたよ。新しく使えるようになった主なレジストリはこれ！\n\n- Seqera (Wave)\n- NVIDIA NGC\n- Google Artifact Registry\n\nHealthOmics は HIPAA 対応の、ヘルスケア・ライフサイエンス向けのフルマネージドなバイオインフォマティクスワークフローのサービスだよ。\n\n## 今までどうだったの？\n\n今までは、HealthOmics が取得できるイメージは Amazon ECR のプルスルーキャッシュ (PTC) 経由で対応しているレジストリのものだけだったの。それ以外のレジストリのイメージを使うには、自分で ECR に移す作業が必要だったんだね。\n\n## これで何が変わるの？\n\nプライベートワークフローを実行するときに、新しく対応したレジストリから HealthOmics が代わりに ECR へイメージをコピーしてくれるよ。\n\n- イメージを自分で pull して re-push する必要がない\n- ワークフロー定義のイメージ URI を書き換える必要がない\n- ECR のプルスルーキャッシュのレジストリも、これまでどおり使える\n\n## 深く潜ってみよう\n\n提供リージョンは HealthOmics が使えるすべてのリージョンだよ。\n\n- US East (N. Virginia, Ohio)\n- US West (Oregon)\n- Europe (Frankfurt, Ireland, London)\n- Israel (Tel Aviv)\n- Asia Pacific (Singapore, Seoul, Tokyo)\n\n詳しい設定は、サードパーティ製コンテナイメージ対応のドキュメントを見てね。\n\n## まとめ\n\n- Seqera (Wave)、NVIDIA NGC、Google Artifact Registry のイメージが使える\n- HealthOmics が ECR へのコピーを代行する\n- イメージの手動移行や URI の書き換えは不要\n- HealthOmics の全提供リージョンで利用可能\n\n既存のバイオインフォ系ツールのコンテナをそのまま HealthOmics に持ち込みたいみんなに嬉しい更新だよ！",
+  "title_en": "AWS HealthOmics Now Pulls from Seqera, NVIDIA NGC, and Google Artifact Registry!",
+  "summary_en": "AWS HealthOmics private workflows can now use container images from third-party registries without you manually migrating them into Amazon ECR.",
+  "body_md_en": "Hello, it's Shii-chan! Today I'm covering a container update for AWS HealthOmics.\n\n## What was announced?\n\nAWS What's New announced expanded third-party container registry support for AWS HealthOmics. The newly supported registries include:\n\n- Seqera (Wave)\n- NVIDIA NGC\n- Google Artifact Registry\n\nHealthOmics is a HIPAA-eligible, fully managed bioinformatics workflow service for healthcare and life sciences.\n\n## The story so far\n\nPreviously, HealthOmics could pull images only from registries supported through Amazon ECR pull-through cache (PTC). For other registries, you had to move images into ECR yourself.\n\n## What changes\n\nWhen you run private workflows, HealthOmics can copy images from the newly supported registries into your Amazon ECR on your behalf.\n\n- No need to pull and re-push images yourself\n- No need to rewrite image URIs in your workflow definitions\n- Registries supported through ECR pull-through cache keep working\n\n## Dive Deep\n\nIt's available in all Regions where HealthOmics is available:\n\n- US East (N. Virginia, Ohio)\n- US West (Oregon)\n- Europe (Frankfurt, Ireland, London)\n- Israel (Tel Aviv)\n- Asia Pacific (Singapore, Seoul, Tokyo)\n\nSee the third-party container image support documentation for setup details.\n\n## Wrap-up\n\n- Images from Seqera (Wave), NVIDIA NGC, and Google Artifact Registry work\n- HealthOmics copies them into ECR for you\n- No manual migration or URI rewriting\n- Available in every Region where HealthOmics runs\n\nGreat news if you want to bring your existing bioinformatics containers into HealthOmics as they are!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-healthomics-expanded-container-registry-support/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS HealthOmics expands container registry support for private workflows",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "science"
+  ],
+  "published_at": "2026-10-14T21:55:00+00:00"
+}

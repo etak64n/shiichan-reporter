@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-10-15-user-scoped-github-repositories",
+  "title": "Workers Builds と Pages の GitHub リポジトリ選択が、自分の権限どおりに！",
+  "summary": "Workers Builds や Pages に GitHub リポジトリを接続するとき、リポジトリピッカーに自分の GitHub ユーザーがアクセスできる組織とリポジトリだけが表示されるようになったよ。",
+  "body_md": "みんな、しぃちゃんだよ！今日は Workers Builds と Pages の GitHub 連携の小さいけれど大事な更新だよ。\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Workers Builds や Pages に GitHub リポジトリを接続するときのリポジトリピッカーが、自分のアクセス権を反映するようになったと発表されたよ。\n\n## これで何が変わるの？\n\n- 接続するとき、GitHub での認証または再認証を求められることがある\n- そのあと、リポジトリピッカーには、自分の GitHub ユーザーがアクセスできる組織とリポジトリだけが表示される\n\n## 深く潜ってみよう\n\n既存のリポジトリ接続はそのまま残るよ。それらの接続からのビルドも、再認証なしで続くの。\n\n詳しくは Workers Builds の GitHub 連携と Pages の GitHub 連携のドキュメントを見てね。\n\n## まとめ\n\n- リポジトリピッカーが GitHub ユーザーのアクセス権を反映する\n- 接続時に認証や再認証を求められることがある\n- 既存の接続とビルドには影響なし\n\nGitHub の組織をまたいで Workers や Pages を使っているみんなに関係する更新だよ！",
+  "title_en": "Workers Builds and Pages: GitHub Repository Picker Now Reflects Your Access!",
+  "summary_en": "When you connect a GitHub repository to Workers Builds or Pages, the repository picker now shows only the organizations and repositories your GitHub user can access.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today's update to the GitHub integration for Workers Builds and Pages is small but important.\n\n## What was announced?\n\nCloudflare's Changelog announced that the repository picker you see when connecting a GitHub repository to Workers Builds or Pages now reflects your access.\n\n## What changes\n\n- Cloudflare may ask you to authenticate or reauthenticate with GitHub when you connect\n- The repository picker then shows only the organizations and repositories that your GitHub user can access\n\n## Dive Deep\n\nExisting repository connections remain connected, and builds from those connections continue without requiring reauthentication.\n\nSee the Workers Builds GitHub integration and Pages GitHub integration docs for details.\n\n## Wrap-up\n\n- The repository picker reflects your GitHub user's access\n- You may be asked to authenticate or reauthenticate when connecting\n- Existing connections and builds are unaffected\n\nRelevant if you use Workers or Pages across multiple GitHub organizations!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-15-user-scoped-github-repositories/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Workers, Pages - GitHub repository picker reflects your access",
+  "tags": [
+    "cloudflare",
+    "devops",
+    "serverless"
+  ],
+  "published_at": "2026-10-15T18:18:28+00:00"
+}

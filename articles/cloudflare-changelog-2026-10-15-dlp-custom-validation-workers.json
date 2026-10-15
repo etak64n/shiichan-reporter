@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-10-15-dlp-custom-validation-workers",
+  "title": "DLP の誤検知を Workers で見極め！マッチの確信度を調整も却下もできるよ",
+  "summary": "Cloudflare One の DLP カスタムパターンで、自分のアカウントの Worker を使ってマッチを検証できるようになったよ。確信度の調整や、マッチの却下ができるの！",
+  "body_md": "おつかれさま、しぃちゃんだよ！今日は DLP (データ損失防止) のかしこい新機能を紹介するね。\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Cloudflare One の DLP カスタムパターンのエントリが、自分のアカウントの Cloudflare Workers を使ってマッチを検証できるようになったと発表されたよ。\n\n## なぜ重要なの？\n\nパターンマッチだけだと、組織ごとの事情までは判断できないよね。この機能を使うと、組織固有のロジックでマッチが本物かどうかを確かめられるの。\n\n## これで何が変わるの？\n\nWorker は、マッチに対して次のことができるよ。\n\n- マッチの確信度を調整する\n- マッチを却下する\n\n誤検知を減らしたい DLP の運用担当のみんなに嬉しい仕組みだね。\n\n## 深く潜ってみよう\n\n原文の Changelog は短くて、セットアップ手順と Worker の契約 (Worker contract) は、リンク先の「Validate data loss prevention matches with Cloudflare Workers」のドキュメントにまとまっているよ。\n\n## まとめ\n\n- DLP カスタムパターンのマッチを、自分の Worker で検証できる\n- 確信度の調整、またはマッチの却下ができる\n- 組織固有のロジックを DLP に組み込める\n\nDLP の誤検知に悩んでいる Zero Trust のセキュリティ担当のみんなに刺さる更新だよ！",
+  "title_en": "Validate DLP Matches with Cloudflare Workers: Adjust Confidence or Reject!",
+  "summary_en": "DLP custom pattern entries in Cloudflare One can now use Workers in your account to validate matches with organization-specific logic, adjusting confidence or rejecting a match.",
+  "body_md_en": "Hi, it's Shii-chan! Today I'm sharing a smart new DLP (data loss prevention) feature.\n\n## What was announced?\n\nCloudflare's Changelog announced that DLP custom pattern entries in Cloudflare One can use Cloudflare Workers in your account to validate matches.\n\n## Why it matters\n\nPattern matching alone can't know your organization's specifics. With this feature, you can check whether a match is real using organization-specific logic.\n\n## What changes\n\nYour Worker can do the following with a match:\n\n- Adjust the match's confidence\n- Reject the match\n\nThat's helpful if you want fewer false positives in your DLP setup.\n\n## Dive Deep\n\nThe changelog itself is short. Setup steps and the Worker contract are in the linked docs page, Validate data loss prevention matches with Cloudflare Workers.\n\n## Wrap-up\n\n- Validate DLP custom pattern matches with your own Worker\n- Adjust confidence or reject matches\n- Bring organization-specific logic into DLP\n\nThis one is for Zero Trust security folks fighting DLP false positives!",
+  "emotion": "smug",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-15-dlp-custom-validation-workers/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Cloudflare One - Validate data loss prevention matches with Cloudflare Workers",
+  "tags": [
+    "cloudflare",
+    "security",
+    "serverless"
+  ],
+  "published_at": "2026-10-15T18:18:27+00:00"
+}

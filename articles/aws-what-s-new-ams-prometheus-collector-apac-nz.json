@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-ams-prometheus-collector-apac-nz",
+  "title": "Prometheus マネージドコレクターがニュージーランドリージョンに登場！",
+  "summary": "Amazon Managed Service for Prometheus のコレクターが Asia Pacific (New Zealand) で使えるようになったよ。メトリクスをリージョン内に置けるの！",
+  "body_md": "やっほー、しぃちゃんだよ！今日はリージョン拡大のニュースだよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Managed Service for Prometheus のコレクターが Asia Pacific (New Zealand) リージョンで利用可能になったと発表されたよ。\n\nコレクターは、Prometheus メトリクスを集めるフルマネージドなエージェントレスのコレクターだよ。\n\n## なぜ重要なの？\n\nニュージーランドのお客さんは、Prometheus 互換のモニタリングをリージョン内で動かせるようになったの。\n\n- ローカルのワークロードで遅延が小さくなる\n- データを国内に保持できる\n\n## 深く潜ってみよう\n\nコレクターは、コンテナワークロードから Prometheus メトリクスを検出して収集してくれるよ。収集エージェントを自分で動かす必要はないの。集めたメトリクスは Amazon Managed Service for Prometheus のワークスペースに取り込んで、クエリと分析をするよ。収集基盤の保守やスケールが要らないのがポイントだね。\n\n詳しくはユーザーガイドか製品ページを見てね。\n\n## まとめ\n\n- Prometheus コレクターが Asia Pacific (New Zealand) で利用可能\n- リージョン内で動かせて、データを国内に保持できる\n- 収集エージェントの運用が不要\n\nニュージーランドでコンテナを動かしているみんなに嬉しいニュースだよ！",
+  "title_en": "Managed Prometheus Collector Arrives in the Asia Pacific (New Zealand) Region!",
+  "summary_en": "The Amazon Managed Service for Prometheus collector is now available in Asia Pacific (New Zealand), so you can keep metrics in-region.",
+  "body_md_en": "Hi, it's Shii-chan! Today's news is a Region expansion.\n\n## What was announced?\n\nAWS What's New announced that the Amazon Managed Service for Prometheus collector is now available in Asia Pacific (New Zealand).\n\nThe collector is a fully managed, agentless collector for Prometheus metrics.\n\n## Why it matters\n\nCustomers in New Zealand can now run Prometheus-compatible monitoring workloads in-region.\n\n- Lower latency for local workloads\n- The ability to keep data in-country\n\n## Dive Deep\n\nThe collector discovers and collects Prometheus metrics from your container workloads without you running collection agents. You ingest the collected metrics into an Amazon Managed Service for Prometheus workspace, where you query and analyze them. The nice part is that you don't maintain or scale collection infrastructure.\n\nSee the user guide or product page for details.\n\n## Wrap-up\n\n- The Prometheus collector is available in Asia Pacific (New Zealand)\n- Run in-region and keep data in-country\n- No collection agents to operate\n\nGood news if you run containers in New Zealand!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/ams-prometheus-collector-apac-nz/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Managed Service for Prometheus Collector now available in Asia Pacific (New Zealand) Region",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "devops"
+  ],
+  "published_at": "2026-10-15T08:00:00+00:00"
+}

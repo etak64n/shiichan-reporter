@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-10-15-app-library-custom-applications",
+  "title": "Application Library に自作アプリを登録できるように！Gateway ポリシーでそのまま参照",
+  "summary": "Cloudflare One の Application Library でカスタムアプリケーションを作成し、Gateway の DNS・Network・HTTP ポリシーから参照できるようになったよ！",
+  "body_md": "みんな、しぃちゃんだよ！今日は Cloudflare One の Application Library の更新を紹介するね。\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Application Library がカスタムアプリケーションに対応したことが発表されたよ。作ったアプリは、Gateway の DNS・Network・HTTP の各ポリシーから参照できるの。\n\n## 今までどうだったの？\n\nこれまでは、ライブラリに載っているアプリを使うのが基本だったみたい。社内システムのような独自のアプリをまとめて扱いたいときに、不便があったと考えられるよ。\n\n## これで何が変わるの？\n\nアプリの定義には次のものが使えるよ。\n\n- ホスト名\n- IP サブネット\n- ホスト名と IP サブネットの両方\n\nさらに TCP や UDP のポート、またはポート範囲を任意で追加すると、HTTP と Network のマッチングを絞り込めるの。\n\n## 深く潜ってみよう\n\nこのリリースでは、ほかにも次の改善が入っているよ。\n\n- Application Library の検索とフィルタリングの改善\n- アプリを確認するためのインターフェース・データ・メトリクスの更新\n- Gateway のポリシービルダーでアプリを選んで管理しやすくなった\n\n詳しくは Custom applications と Applications and app types のドキュメントを見てね。\n\n## まとめ\n\n- カスタムアプリケーションを Application Library に作れる\n- ホスト名・IP サブネット・ポートで定義できる\n- DNS・Network・HTTP ポリシーから参照できる\n- 検索・フィルタ・ポリシービルダーも使いやすくなった\n\n社内アプリ向けのポリシーを整理したい Zero Trust 管理者のみんなに刺さる更新だよ！",
+  "title_en": "Custom Applications Land in Cloudflare's Application Library!",
+  "summary_en": "You can now create custom applications in the Cloudflare One Application Library and reference them in Gateway DNS, Network, and HTTP policies.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today I'm covering an update to the Application Library in Cloudflare One.\n\n## What was announced?\n\nCloudflare's Changelog announced that the Application Library now supports custom applications. You can reference them in Gateway DNS, Network, and HTTP policies.\n\n## The story so far\n\nThe library was mainly about the applications already listed in it. It likely wasn't ideal when you wanted to handle your own in-house applications as a group.\n\n## What changes\n\nYou can define an application with:\n\n- Hostnames\n- IP subnets\n- Both hostnames and IP subnets\n\nYou can optionally add TCP or UDP ports or port ranges to restrict HTTP and Network matching.\n\n## Dive Deep\n\nThis release also includes:\n\n- Improved search and filtering in the Application Library\n- Updated interfaces, data, and metrics for reviewing applications\n- Easier selection and management of applications in the Gateway policy builder\n\nSee Custom applications and Applications and app types in the docs for details.\n\n## Wrap-up\n\n- Create custom applications in the Application Library\n- Define them by hostname, IP subnet, and ports\n- Reference them in DNS, Network, and HTTP policies\n- Search, filtering, and the policy builder got nicer too\n\nThis one is for Zero Trust admins who want tidier policies for internal apps!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-15-app-library-custom-applications/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Cloudflare One, Gateway - Application Library now supports custom applications",
+  "tags": [
+    "cloudflare",
+    "security",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-15T18:18:27+00:00"
+}

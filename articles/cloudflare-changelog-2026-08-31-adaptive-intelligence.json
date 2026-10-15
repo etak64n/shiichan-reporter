@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-08-31-adaptive-intelligence",
+  "title": "Bot Management のモデルが固定バージョンをやめた！Adaptive Intelligence が随時学習するよ",
+  "summary": "Cloudflare Bot Management の機械学習モデルが、番号付きの固定バージョンではなく、より頻繁に再学習する Adaptive Intelligence に生まれ変わったよ！新しいボットの手口を待たずに取り込めるの。",
+  "body_md": "やっほー、しぃちゃんだよ！今日は Cloudflare の Bot Management に入った、ちょっと大きな変化を紹介するね。わくわくしちゃう！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、新しいボット検知エンジン「Adaptive Intelligence」が公開されたよ。ボットスコアの裏側で動いている機械学習モデルが、これからは固定の番号付きバージョンとして配布されるのではなく、より頻繁に再学習されるようになったの。\n\n攻撃パターンが最初に現れてから、その対策がすべての顧客に届くまでの「すき間」を縮めるのが狙いなんだって。\n\n## 今までどうだったの？\n\n今までのモデルは、番号付きのバージョンとして出荷される形だったみたい。新しいバイパスツールやボットのフレームワークが出てきても、次の定期リリースを待たないと学習結果が反映されなかったんだね。\n\n## これで何が変わるの？\n\n- 新しいバイパスツールやボットのフレームワークが登場したら、モデルがそれを学習して取り込む\n- 定期リリースを待たずに知識が反映される\n- 移行すべきバージョンがなくなる\n\nBot Management を使っている人にとっては、モデルのバージョン管理や移行作業を気にしなくてよくなるのが嬉しいところだよ！\n\n## 深く潜ってみよう\n\n気になるのは「勝手に更新されて大丈夫なの？」ってところだよね。原文によると、更新はすべて事前に検証されるの。\n\n- 新しいモデルバージョンはまずシャドウモードで動く（スコアは計算されるけど、実際の判定には使われない）\n- 現行のモデルと比較される\n- そのうえで段階的にロールアウトされる\n\n対象は、Bot Management の設定で Auto-update machine learning をオンにしている Enterprise のお客さんだよ。この場合は Adaptive Intelligence が自動で適用されて、移行するバージョンも、ほかに設定することもないんだって。\n\n## まとめ\n\n- Bot Management のモデルが固定バージョンから、頻繁に再学習する Adaptive Intelligence に変わった\n- 新しいボットの手口を定期リリース待ちなしで取り込める\n- シャドウモードでの比較と段階的ロールアウトで安全性を確保\n- Auto-update machine learning をオンにした Enterprise 顧客は追加設定なしで利用できる\n\nボット対策の運用を少しでも楽にしたい Enterprise のセキュリティ担当のみんなに刺さる更新だよ！",
+  "title_en": "Bot Management Drops Fixed Model Versions: Adaptive Intelligence Keeps Learning!",
+  "summary_en": "Cloudflare Bot Management's machine learning model now retrains more frequently as Adaptive Intelligence, instead of shipping as a fixed, numbered version, so new bot tactics get folded in sooner.",
+  "body_md_en": "Hi, it's Shii-chan! Today I'm sharing a pretty big change to Cloudflare Bot Management, and I'm really excited about it!\n\n## What was announced?\n\nCloudflare's Changelog announced Adaptive Intelligence, a new bot detection engine. The machine learning model behind your bot score now retrains more frequently instead of shipping as a fixed, numbered version.\n\nThe goal is to close the gap between when an attack pattern first appears and when protection against it reaches every customer.\n\n## The story so far\n\nThe model used to ship as numbered versions. When new bypass tools and bot frameworks showed up, what the model learned about them had to wait for a scheduled release.\n\n## What changes\n\n- When new bypass tools and bot frameworks appear, the model learns from them and folds that knowledge in\n- No waiting for a scheduled release\n- No version to migrate\n\nIf you use Bot Management, you no longer need to think about model version management or migrations.\n\n## Dive Deep\n\nYou might wonder whether automatic updates are safe. According to the announcement, every update is validated first.\n\n- New model versions run in shadow mode first (scored, but not acted on)\n- They are compared against the current model\n- Then they roll out gradually\n\nEnterprise customers with Auto-update machine learning switched on under Bot Management configurations get Adaptive Intelligence automatically, with no version to migrate and nothing else to configure.\n\n## Wrap-up\n\n- Bot Management's model moves from fixed versions to frequently retrained Adaptive Intelligence\n- New bot tactics are picked up without waiting for a scheduled release\n- Shadow mode, comparison, and gradual rollout keep updates safe\n- Enterprise customers with Auto-update machine learning on get it with no extra setup\n\nThis one is for security folks on Enterprise plans who want bot defense to take less upkeep!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-08-31-adaptive-intelligence/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Bots - Bot Management's machine learning model now retrains more frequently instead of shipping fixed versions",
+  "tags": [
+    "cloudflare",
+    "security",
+    "web"
+  ],
+  "published_at": "2026-08-31T00:00:00+00:00"
+}

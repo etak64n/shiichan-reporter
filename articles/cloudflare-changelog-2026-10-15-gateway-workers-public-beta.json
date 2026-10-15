@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-10-15-gateway-workers-public-beta",
+  "title": "Gateway から Workers を呼べる！Forward アクションがパブリックベータに",
+  "summary": "Cloudflare Gateway の HTTP ポリシーで Forward アクションを使うと、許可されたトラフィックに自分の Worker のコードを実行できるよ。全 Zero Trust プランでパブリックベータだよ！",
+  "body_md": "やっほー、しぃちゃんだよ！今日は Gateway と Workers がつながる、わくわくのニュースだよ！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Cloudflare Gateway と Cloudflare Workers の統合が、全 Zero Trust プランでパブリックベータになったと発表されたよ。\n\nGateway の HTTP ポリシーで Forward アクションを使うと、一致して許可されたトラフィックに対して、自分のコードを動かせるの。別のプロキシを管理する必要はないよ。\n\n## なぜ重要なの？\n\nWeb トラフィックに独自の処理を挟みたいとき、これまでは自前のプロキシが必要になりがちだったよね。それを Workers に任せられるのが大きいところだよ。\n\n## これで何が変わるの？\n\nForward アクションでできることはこれ！\n\n- HTTP リクエストとレスポンスを変換する\n- コーチングページを返す\n- Slack 通知や R2 への保存といったバックグラウンド処理を動かす\n\n## 深く潜ってみよう\n\n- Worker は、リクエストと Gateway のコンテキストを受け取る。接続メタデータ、ユーザー ID、利用可能な場合はデバイスポスチャも含まれるよ\n- プロキシ接続、TLS 復号、アップストリームへのルーティングは Gateway が担当する\n- HTTP リクエストポリシーが Forward ポリシーより先に評価され、最終レスポンスはユーザーに返す前に検査される\n- Gateway は元のリクエストボディを Worker に渡す前に検査する。ボディ検査の Block 判定は Worker の処理を中断できる\n\n始めるには、Worker をデプロイして Forward ポリシーを設定するか、Worker テンプレートを使ってね。\n\n## まとめ\n\n- Gateway と Workers の統合がパブリックベータ (全 Zero Trust プラン)\n- Forward アクションで許可済みトラフィックに独自コードを実行できる\n- リクエスト変換・コーチングページ・バックグラウンド処理が可能\n- 評価順序と Block 判定の挙動に注意\n\nZero Trust の通信を自分好みにカスタマイズしたいみんなに刺さる機能だよ！",
+  "title_en": "Gateway Meets Workers: The Forward Action Is in Public Beta!",
+  "summary_en": "Cloudflare Gateway's Forward action in HTTP policies runs your own Worker code on matching, permitted traffic, now in public beta on all Zero Trust plans.",
+  "body_md_en": "Hi, it's Shii-chan! Today's news connects Gateway and Workers, and I'm so excited!\n\n## What was announced?\n\nCloudflare's Changelog announced that Gateway's integration with Cloudflare Workers is in public beta on all Zero Trust plans.\n\nWith the Forward action in Gateway HTTP policies, you can run your own code on matching, permitted traffic without managing a separate proxy.\n\n## Why it matters\n\nCustom handling of web traffic has often meant running your own proxy. Handing that to Workers is a big deal.\n\n## What changes\n\nWith the Forward action you can:\n\n- Transform HTTP requests and responses\n- Return a coaching page\n- Run background tasks such as Slack notifications and R2 captures\n\n## Dive Deep\n\n- Your Worker receives the request and Gateway context, including connection metadata, user identity, and device posture when available\n- Gateway handles the proxy connection, TLS decryption, and upstream routing\n- HTTP request policies are evaluated before Forward policies, and the final response is inspected before it returns to the user\n- Gateway inspects the original request body before delivering it to your Worker, and a body-inspection Block decision can interrupt the Worker\n\nTo get started, deploy a Worker and configure a Forward policy, or adapt one of the Worker templates.\n\n## Wrap-up\n\n- Gateway and Workers integration is in public beta on all Zero Trust plans\n- Forward runs your code on permitted traffic\n- Request transformation, coaching pages, and background tasks are possible\n- Keep the evaluation order and Block behavior in mind\n\nThis one is for anyone who wants to customize Zero Trust traffic handling!",
+  "emotion": "energetic",
+  "importance": 5,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-15-gateway-workers-public-beta/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Cloudflare One, Workers, Gateway - Gateway and Workers integration is now in public beta",
+  "tags": [
+    "cloudflare",
+    "serverless",
+    "security"
+  ],
+  "published_at": "2026-10-15T18:18:27+00:00"
+}
