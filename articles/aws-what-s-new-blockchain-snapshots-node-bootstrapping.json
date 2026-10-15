@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-blockchain-snapshots-node-bootstrapping",
+  "title": "Ethereum と Solana ノードの立ち上げが速くなる！無料の Blockchain Snapshots on AWS が登場",
+  "summary": "AWS What's New で、Ethereum と Solana の同期済みチェーンデータを Amazon S3 で公開する Blockchain Snapshots on AWS が発表されたよ！ピアツーピア同期の代わりにスナップショットからノードを起動できて、利用は無料なんだって。",
+  "body_md": "やっほー、しぃちゃんだよ！今日はブロックチェーンのノード運用をしているみんなに嬉しいニュースだよ。\n\n## なにが発表されたの？\n\nAWS What's New で「Blockchain Snapshots on AWS」が発表されたよ。Ethereum や Solana のノードを運用する人向けに、同期済みの公開ブロックチェーンのノードデータを Amazon S3 で公開する取り組みなの。ネットワークからピアツーピアで同期する代わりに、スナップショットからノードを立ち上げられるよ。\n\n## 今までどうだったの？\n\nノードを新しく立ち上げるときは、ネットワークからピアツーピアで同期するのが基本だったよね。完全に追いつくまで時間がかかるのが悩みどころだったの。\n\n## これで何が変わるの？\n\nスナップショットは Amazon S3 上にあって、AWS の中でノードを動かしている人は、遅延が小さく、データ転送が最適化される形で使えるよ。使い道として挙げられているのはこの 3 つ。\n\n- RPC フリートにキャパシティを追加する\n- 障害が起きたノードを復旧する\n- 破損したデータベースを再同期する\n\n## 深く潜ってみよう\n\n- 中身: 各ネットワークの公式(authoritative)スナップショットを、複数コアでの並列展開に向いた形式で再公開している。Amazon EC2 インスタンスでそのまま使えて、セットアップ時間の短縮につながる\n- 対象ネットワーク: Ethereum と Solana\n- 料金: 無料\n- 更新頻度: 上流の提供元と同じ頻度\n- 利用できるリージョン: 米国東部(バージニア北部)、欧州(アイルランド)、アジアパシフィック(東京)\n- 利用条件: 同じリージョンの Amazon EC2 インスタンスと、Amazon S3 のゲートウェイ VPC エンドポイントが必要\n\n使い始めるには、Blockchain Snapshots on AWS のドキュメントでセットアップ手順と最新のスナップショットを確認してね。\n\n## まとめ\n\n- Ethereum と Solana の同期済みチェーンデータを S3 で無料公開\n- 並列展開しやすい形式で、ノードの立ち上げ・復旧・再同期を短縮\n- 東京を含む 3 リージョンで、EC2 と S3 ゲートウェイ VPC エンドポイントが必要\n\nAWS でブロックチェーンノードや RPC フリートを運用しているエンジニアさんに刺さる発表だよ！",
+  "title_en": "Faster Ethereum and Solana Node Bootstrapping with Free Blockchain Snapshots on AWS!",
+  "summary_en": "AWS What's New announced Blockchain Snapshots on AWS, which publishes pre-synced Ethereum and Solana node data in Amazon S3. You can bootstrap a node from a snapshot instead of syncing peer-to-peer, at no charge.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Here's good news for anyone running blockchain nodes.\n\n## What was announced?\n\nAWS What's New announced Blockchain Snapshots on AWS. It is an initiative for Ethereum and Solana node operators that publishes pre-synced public blockchain node data in Amazon S3, so you can bootstrap a node from a snapshot instead of syncing peer-to-peer from the network.\n\n## The story so far\n\nStarting a new node has meant syncing peer-to-peer from the network, and catching up fully takes time.\n\n## What changes\n\nThe snapshots are hosted on Amazon S3 within AWS infrastructure, so nodes running on AWS benefit from reduced latency and optimized data transfer. The use cases AWS lists are:\n\n- Adding capacity to an RPC fleet\n- Recovering a failed node\n- Re-syncing a corrupted database\n\n## Dive Deep\n\n- What's inside: each network's authoritative snapshot, republished in a format optimized for parallel extraction across multiple cores, which an Amazon EC2 instance can use to reduce setup time\n- Networks: Ethereum and Solana\n- Price: no charge\n- Refresh cadence: the same as the upstream provider\n- Regions: US East (N. Virginia), Europe (Ireland), and Asia Pacific (Tokyo)\n- Requirements: an Amazon EC2 instance in the same Region, plus an Amazon S3 gateway VPC endpoint\n\nTo get started, see the Blockchain Snapshots on AWS documentation for setup instructions and the latest snapshots.\n\n## Wrap-up\n\n- Pre-synced Ethereum and Solana chain data is published in S3 at no charge\n- A parallel-friendly format speeds up node bootstrapping, recovery, and re-syncing\n- Available in three Regions including Tokyo, with EC2 and an S3 gateway VPC endpoint required\n\nThis is for engineers running blockchain nodes or RPC fleets on AWS!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/blockchain-snapshots-node-bootstrapping/",
+  "source_name": "AWS What's New",
+  "og_title": "Announcing Blockchain Snapshots on AWS for node bootstrapping",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-14T08:00:00+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-transfer-family-svg-ico-favicons",
+  "title": "Transfer Family の Web アプリに SVG ロゴと ICO ファビコンが使えるように！上限も 2 MB に",
+  "summary": "AWS Transfer Family のコンソールで、Web アプリのロゴに SVG、ファビコンに ICO が使えるようになったよ！アップロード上限も 2 MB に引き上げられたみたい。",
+  "body_md": "こんにちは、しぃちゃんだよ！今日は AWS Transfer Family の小さいけど嬉しい改善を紹介するね。\n\n## なにが発表されたの？\n\nAWS What's New で、AWS Transfer Family のコンソールが Web アプリのロゴに SVG ファイル、ファビコンに ICO ファイルを使えるようになったと発表されたよ。アップロード上限も 2 MB に引き上げられたの。\n\n## 今までどうだったの？\n\nこれまでコンソールで受け付けていたのは JPG と PNG だけで、上限はロゴが 50 KB、ファビコンが 20 KB だったよ。手持ちのブランド素材をそのまま使えないこともあったんじゃないかな。\n\n## これで何が変わるの？\n\n既存のブランド素材を、Web アプリのカスタマイズにそのまま使いやすくなるよ。\n\n- ロゴ: SVG が使える\n- ファビコン: ICO が使える\n- 上限: どちらも 2 MB まで\n\n## 深く潜ってみよう\n\n- コンソールは画像を自動でリサイズして、JPG または PNG に変換してから保存する\n- 既存の API のアップロード上限と形式の要件は変わらない\n- Transfer Family の Web アプリが提供されているすべての AWS リージョンで使える\n\n詳しくは Transfer Family の Web アプリのチュートリアルを見てね。\n\n## まとめ\n\n- コンソールで SVG ロゴと ICO ファビコンが使えるように\n- 上限は 50 KB / 20 KB から 2 MB に\n- API 側の上限と形式の要件は変更なし\n\nTransfer Family の Web アプリを自社ブランドに合わせたい人に刺さる更新だよ！",
+  "title_en": "AWS Transfer Family Web Apps Now Accept SVG Logos and ICO Favicons, Up to 2 MB!",
+  "summary_en": "The AWS Transfer Family console now supports SVG files for logos and ICO files for favicons in web apps, and the upload limit is raised to 2 MB.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today I'm covering a small but nice improvement to AWS Transfer Family.\n\n## What was announced?\n\nAWS What's New announced that the AWS Transfer Family console now supports SVG files for logos and ICO files for favicons in web apps. The upload limit is also raised to 2 MB.\n\n## The story so far\n\nThe console used to accept only JPG and PNG files, with logo uploads limited to 50 KB and favicon uploads limited to 20 KB. That may have made it hard to use your existing branding assets as they were.\n\n## What changes\n\nIt is easier to reuse your existing branding assets when customizing a web app.\n\n- Logos: SVG is supported\n- Favicons: ICO is supported\n- Limit: up to 2 MB for both\n\n## Dive Deep\n\n- The console automatically resizes images and converts them to JPG or PNG before saving\n- Existing API upload limits and format requirements remain unchanged\n- Available in all AWS Regions where Transfer Family web apps are offered\n\nFor more, see the Transfer Family web apps tutorial.\n\n## Wrap-up\n\n- SVG logos and ICO favicons work in the console\n- The limit goes from 50 KB / 20 KB to 2 MB\n- API limits and format requirements are unchanged\n\nThis is for anyone who wants their Transfer Family web app to match their brand!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/transfer-family-svg-ico-favicons/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Transfer Family console supports SVG logos and ICO favicons for web apps",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-14T08:00:00+00:00"
+}

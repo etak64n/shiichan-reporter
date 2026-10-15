@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-cloudwatch-pipelines-log-routing",
+  "title": "CloudWatch pipelines にログのルーティングとパーサーの連鎖が登場！1 本で振り分けまで",
+  "summary": "Amazon CloudWatch pipelines が、条件に応じてログを別のロググループへ送る条件付きルーティングと、複数のパーサーを順に適用するチェーンに対応したよ！",
+  "body_md": "やっほー、しぃちゃんだよ！今日はログ運用が楽になる CloudWatch のアップデートだよ。\n\n## なにが発表されたの？\n\nAWS What's New で、Amazon CloudWatch pipelines が条件付きログルーティングとパーサーの連鎖(チェーン)に対応したと発表されたよ。ログデータの変換方法と、送り先の CloudWatch ロググループをもっと細かく制御できるの。\n\nCloudWatch pipelines は、インフラを管理せずにテレメトリの取り込み・変換・CloudWatch へのルーティングができるフルマネージドサービスだよ。\n\n## 今までどうだったの？\n\nログのパイプラインには、本来は別々の場所に置きたい種類のイベントが混ざることがあるよね。さらに、あるログ形式の中に別の形式が入れ子になっていることもあって、扱いづらかったの。\n\n## これで何が変わるの？\n\n- 条件付きルーティング: 処理後のフィールドに対する条件で、イベントごとに別のロググループへ送れる。重大度・ソース・種類で分けて、それぞれに合う保持期間とアクセス制御を適用できる\n- パーサーの連鎖: 複数のパーサープロセッサーを順に適用でき、後ろのパーサーは前のパーサーが作ったフィールドを使える\n\nこの 2 つで、さまざまなログ形式を構造化して、正しいロググループへの振り分けまで 1 本のパイプラインで済ませられるよ。\n\n## 深く潜ってみよう\n\n連鎖の例として、まず JSON のエンベロープをパースして、そこから取り出したフィールドに Grok パーサーを適用する、という使い方が挙げられているよ。\n\n- 設定方法: AWS マネジメントコンソール、AWS CLI、AWS SDK\n- 提供範囲: CloudWatch pipelines が一般提供されているすべての商用 AWS リージョン\n\n始めるには Amazon CloudWatch pipelines のドキュメントを見てね。\n\n## まとめ\n\n- 処理後のフィールドの条件で、ログを別々のロググループへ振り分けられる\n- パーサーを連鎖させ、入れ子のログ形式も段階的に解析できる\n- コンソール・CLI・SDK で設定可能\n\n混在したログを整理して、保持期間やアクセス制御をロググループごとに使い分けたい運用担当さんに刺さるよ！",
+  "title_en": "CloudWatch Pipelines Adds Conditional Log Routing and Chained Parsers!",
+  "summary_en": "Amazon CloudWatch pipelines now supports conditional log routing to different log groups and chained parser processors applied in sequence.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today's CloudWatch update makes log operations easier.\n\n## What was announced?\n\nAWS What's New announced that Amazon CloudWatch pipelines now supports conditional log routing and chained parsers. You get more control over how log data is transformed and which CloudWatch log group it's sent to.\n\nCloudWatch pipelines is a fully managed service that ingests, transforms, and routes telemetry to CloudWatch without managing infrastructure.\n\n## The story so far\n\nLog pipelines often carry a mix of event types that belong in different places, and individual events can nest one log format inside another, which made them awkward to handle.\n\n## What changes\n\n- Conditional routing: send each event to a different log group based on conditions evaluated against processed fields. You can separate events by severity, source, or type and apply the right retention and access controls to each\n- Chained parsers: apply multiple parser processors in sequence, where later parsers consume fields produced by earlier ones\n\nTogether, these let you structure diverse log formats and route them to the right log groups in a single pipeline.\n\n## Dive Deep\n\nAs an example of chaining, you can parse a JSON envelope first, then apply a Grok parser to a field it extracts.\n\n- How to configure: AWS Management Console, AWS CLI, or AWS SDKs\n- Availability: all commercial AWS Regions where CloudWatch pipelines is generally available\n\nTo get started, see the Amazon CloudWatch pipelines documentation.\n\n## Wrap-up\n\n- Route logs to different log groups based on processed fields\n- Chain parsers to handle nested log formats step by step\n- Configure via the console, CLI, or SDKs\n\nThis is for ops folks who want to sort mixed logs and apply retention and access controls per log group!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/cloudwatch-pipelines-log-routing/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon CloudWatch announces log routing and chained log parsers",
+  "tags": [
+    "aws",
+    "devops",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-14T22:14:00+00:00"
+}
