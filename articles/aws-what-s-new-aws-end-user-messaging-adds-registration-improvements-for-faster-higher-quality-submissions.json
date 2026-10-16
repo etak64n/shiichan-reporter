@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-aws-end-user-messaging-adds-registration-improvements-for-faster-higher-quality-submissions",
+  "title": "AWS End User Messaging の登録がもう迷わない！却下されにくくなる3つの改善",
+  "summary": "AWS End User Messaging の登録で、準拠した例の提示、API による必須項目の明示、RCS 動画の撮影手順が追加されたよ！最初から正しく提出しやすくなったみたい。",
+  "body_md": "こんにちは、しぃちゃんだよ！SMS や RCS の登録って地味に大変だから、この改善は気になるよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS End User Messaging のメッセージング登録を、一度で正しく終わらせやすくする改善が発表されたよ。\n\n## 今までどうだったの？\n\n登録では、オプトインの証拠やサンプルメッセージといったコンプライアンス上の証拠が求められるよ。でも証拠が足りなかったり、必須項目を埋め忘れたりして、提出が遅れたり却下されたりすることが多かったんだって。\n\n## これで何が変わるの？\n\n改善は次の 3 つだよ！\n\n- 準拠したオプトインとサンプルメッセージのモックアップを、US 10DLC・US ショートコード・US トールフリー・RCS の登録で見られるようになった\n- 登録 API のレスポンスに条件付きロジックが含まれ、他の項目の値によってどの項目が必須かを推測しなくてよくなった\n- RCS 登録に、必須のコンプライアンス動画を撮るためのウォークスルーが追加された\n\n自分で作る前に「準拠した提出ってこういう形」と確認できるのが大きいね！\n\n## 深く潜ってみよう\n\nAPI の変化がちょっと技術的に面白いところだよ。レスポンスが、その登録に固有の必須項目を教えてくれるから、人間だけじゃなく AI エージェントも、項目の依存関係を当てずっぽうで扱わなくてよくなるの。\n\nこれらの改善は、AWS End User Messaging の登録が使えるすべてのリージョンで利用できるよ。詳細は End User Messaging User Guide を見てね！\n\n## まとめ\n\n- 準拠例のモックアップで、提出前にゴールが見える\n- API が登録ごとの必須項目を返してくれる\n- RCS の動画撮影にウォークスルーが付いた\n\nSMS・RCS の登録で差し戻しに悩んでいる人に刺さる更新だよ！",
+  "title_en": "AWS End User Messaging: three registration upgrades to avoid rejections",
+  "summary_en": "AWS End User Messaging adds compliant examples, API responses that show required fields, and an RCS video walkthrough so registrations are right the first time.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Messaging registrations can be a pain, so this improvement caught my eye!\n\n## What was announced?\n\nIn AWS What's New, AWS announced improvements to AWS End User Messaging that make it easier to complete messaging registrations correctly the first time.\n\n## The story so far\n\nRegistrations ask for compliance evidence such as opt-in proof and sample messages. Submissions were often delayed or denied when that evidence was incomplete or a required field was missed.\n\n## What changes\n\nThere are three improvements:\n\n- Mock-ups of a compliant opt-in and sample messages are now included for US 10DLC, US short code, US toll-free, and RCS registrations\n- The registration API response now surfaces conditional logic, so you no longer guess which fields are required based on other field values\n- RCS registration now includes a walkthrough for recording the compliant video that agent registrations require\n\nSeeing what a compliant submission looks like before building your own is a big help!\n\n## Dive Deep\n\nThe API change is the technical highlight. The response tells you which fields are required for your specific registration, so not only you but also your AI agents don't have to guess at field dependencies.\n\nThese improvements are available in all Regions where AWS End User Messaging registrations are available. See the End User Messaging User Guide for details.\n\n## Wrap-up\n\n- Compliant mock-ups show the goal before you submit\n- The API returns required fields per registration\n- RCS video recording now has a walkthrough\n\nThis update is for anyone struggling with rejected SMS and RCS registrations!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-end-user-messaging-adds-registration-improvements-for-faster-higher-quality-submissions",
+  "source_name": "AWS What's New",
+  "og_title": "AWS End User Messaging adds registration improvements for faster, higher-quality submissions",
+  "tags": [
+    "aws",
+    "devops"
+  ],
+  "published_at": "2026-10-16T07:00:00+00:00"
+}

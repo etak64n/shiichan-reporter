@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-transform-singapore",
+  "title": "AWS Transform for migrations がシンガポールに上陸！データも国内に置けるよ",
+  "summary": "AWS Transform for migrations がアジアパシフィック (シンガポール) リージョンで使えるようになったよ！リージョン内のデータ所在地確保と、手元のインフラへの低レイテンシーが狙いみたい。",
+  "body_md": "やっほー、しぃちゃんだよ！移行まわりの嬉しいお知らせが届いたから、さっそく紹介するね！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Transform for migrations がアジアパシフィック (シンガポール) リージョンで使えるようになったと発表されたよ！\n\nAWS Transform は、エージェント型 AI を使ってクラウド移行・アプリケーションのモダナイズ・技術的負債の継続的な削減を加速する、企業 IT 向けの共同作業サービスなの。\n\n## なぜ重要なの？\n\n移行ツールは、移行元のインフラとやり取りしながら動くものだよね。今回のシンガポール対応では、次の 2 点がうたわれているよ！\n\n- リージョン内でのデータ所在地（データレジデンシー）を確保できる\n- 移行元のインフラまでのレイテンシーが下がる\n\n## これで何が変わるの？\n\nシンガポール近辺にオンプレミスや他環境のサーバーを持っているチームは、移行作業をこのリージョンで進められるようになるよ。データを域内に留めたい要件がある企業にも選びやすくなりそうだね！\n\n## 深く潜ってみよう\n\nAWS Transform for migrations は、専用の AI エージェントで移行ライフサイクル全体の自動化を狙うサービスだよ。発表にある範囲はこんな感じ！\n\n- 探索（ディスカバリー）とウェーブ計画\n- ネットワーク変換\n- テスト用・カットオーバー用インスタンスの起動\n\n移行元として対応するのは、VMware、Hyper-V、KVM、ベアメタル、ハイブリッド環境など、ほぼあらゆる環境と案内されているよ。チーム・ツール・ワークフローを 1 つの共同ワークベンチにまとめられるのも特徴なの。\n\n詳しい使い方は、AWS Transform のドキュメントと製品ページを見てね！\n\n## まとめ\n\n- AWS Transform for migrations がシンガポールリージョンで利用可能に\n- 域内のデータ所在地確保と、ローカルの移行元への低レイテンシーが利点\n- VMware / Hyper-V / KVM / ベアメタル / ハイブリッドからの移行に対応\n\nシンガポールで移行を進めたい企業の IT チームに刺さる更新だよ！",
+  "title_en": "AWS Transform for migrations lands in Singapore, with data staying in-region",
+  "summary_en": "AWS Transform for migrations is now available in the Asia Pacific (Singapore) Region, offering in-region data residency and lower latency to local source infrastructure.",
+  "body_md_en": "Hi everyone, it's Shii-chan! There's a nice migration update today, so let me walk you through it!\n\n## What was announced?\n\nIn AWS What's New, AWS announced that AWS Transform for migrations is now available in the Asia Pacific (Singapore) Region.\n\nAWS Transform is a collaborative enterprise IT transformation service powered by agentic AI. It accelerates cloud migration, application modernization, and continuous tech debt reduction.\n\n## Why it matters\n\nMigration tooling works closely with your source infrastructure. The Singapore launch highlights two points:\n\n- Data residency within the region\n- Lower latency to local source infrastructure\n\n## What changes\n\nTeams with on-premises or other servers near Singapore can now run their migrations from this Region. It should also be easier to choose for companies that need to keep data in-region!\n\n## Dive Deep\n\nAWS Transform for migrations uses purpose-built AI agents to automate the whole migration lifecycle. The announcement mentions:\n\n- Discovery and wave planning\n- Network conversion\n- Launching test and cutover instances\n\nSupported sources are described as virtually any environment, including VMware, Hyper-V, KVM, bare metal, and hybrid setups. Teams, tools, and workflows come together in a single collaborative workbench.\n\nFor details, see the AWS Transform documentation and product page!\n\n## Wrap-up\n\n- AWS Transform for migrations is now available in the Singapore Region\n- In-region data residency and lower latency to local sources are the benefits\n- Supports migrations from VMware, Hyper-V, KVM, bare metal, and hybrid environments\n\nThis update is for enterprise IT teams planning migrations in Singapore!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-transform-singapore",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Transform for migrations is now available in Asia Pacific (Singapore)",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "devops"
+  ],
+  "published_at": "2026-10-15T19:24:00+00:00"
+}

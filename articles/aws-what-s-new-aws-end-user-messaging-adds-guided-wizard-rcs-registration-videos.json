@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-aws-end-user-messaging-adds-guided-wizard-rcs-registration-videos",
+  "title": "RCS 登録動画の撮影をウィザードがガイド！AWS End User Messaging の新機能",
+  "summary": "AWS End User Messaging に、RCS エージェント登録用の動画撮影を全部ガイドするウィザードが追加されたよ！正しいメッセージを正しい順番で送ってくれるみたい。",
+  "body_md": "おつかれさま、しぃちゃんだよ！RCS の登録で一番つまずきやすいところに、頼もしい助っ人が来たよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS End User Messaging に、RCS エージェント登録のための動画撮影をまるごと進行してくれるウィザードが追加されたよ。\n\n## 今までどうだったの？\n\n米国を含む複数の国での RCS 登録では、メッセージング体験を見せる画面録画が必要だよ。録画のために、テスト端末へ決まった順番でメッセージを送る必要があって、そのスクリプトを自分で用意していたの。\n\nそのせいでミスが起きやすく、動画の不一致や不足が、RCS 登録で最も難しい部分の 1 つになっていたんだって。\n\n## これで何が変わるの？\n\nウィザードが撮影の各ステップを進めてくれて、正しいメッセージを正しい順番で送ってくれるよ。だから最初の撮影で準拠した動画が撮れて、エージェントの承認も早くなる、というのが狙いなの！\n\n## 深く潜ってみよう\n\nウィザードは、動画の提出が必要なすべての RCS 登録フォームに表示されるよ。発表に書かれている情報はこのくらいで、細かい仕様はドキュメントに任せるね。詳しくは AWS End User Messaging User Guide を見てね！\n\n## まとめ\n\n- RCS 登録の動画撮影を、ウィザードが一括で進行\n- メッセージの内容と順番を自分でスクリプト化しなくていい\n- 動画提出が必要なすべての RCS 登録フォームで使える\n\nRCS エージェントを登録したい開発者に刺さる更新だよ！",
+  "title_en": "A guided wizard now handles RCS registration videos in AWS End User Messaging",
+  "summary_en": "AWS End User Messaging adds a wizard that drives the entire video capture for RCS agent registration, sending the right messages in the right order.",
+  "body_md_en": "Hi everyone, it's Shii-chan! A helpful sidekick has arrived for the trickiest part of RCS registration!\n\n## What was announced?\n\nIn AWS What's New, AWS announced a wizard in AWS End User Messaging that orchestrates the entire video capture for your RCS agent registration.\n\n## The story so far\n\nRCS registrations in multiple countries, including the United States, require a screen recording that demonstrates your messaging experience. To record it, you had to send a specific sequence of messages to a test device, and you scripted those messages yourself.\n\nThat easily introduced errors, and a mismatched or incomplete video became one of the hardest parts of registering for RCS.\n\n## What changes\n\nThe wizard drives each step of the capture, sending the right messages in the right order. The goal is that you record a compliant video the first time and get your agent approved sooner!\n\n## Dive Deep\n\nThe wizard is on all RCS registration forms that require a video submission. That's what the announcement says, so I'll leave finer details to the docs. See the AWS End User Messaging User Guide!\n\n## Wrap-up\n\n- A wizard drives the whole RCS registration video capture\n- No need to script message content and order yourself\n- Available on all RCS registration forms that require a video\n\nThis is for developers registering RCS agents!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-end-user-messaging-adds-guided-wizard-rcs-registration-videos",
+  "source_name": "AWS What's New",
+  "og_title": "AWS End User Messaging adds a guided wizard for RCS registration videos",
+  "tags": [
+    "aws",
+    "devops"
+  ],
+  "published_at": "2026-10-16T07:00:00+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-aws-end-user-messaging-now-supports-brand-profiles",
+  "title": "ブランド情報は1回入力すればOK！AWS End User Messaging の Brand Profiles が登場",
+  "summary": "AWS End User Messaging の Brand Profiles で、会社・ブランド情報を一度保存して SMS・RCS・WhatsApp の登録に使い回せるようになったよ！",
+  "body_md": "やっほー、しぃちゃんだよ！同じ入力を何回もするの、つらいよね。それを解決する新機能が出たよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS End User Messaging の Brand Profiles が発表されたよ。ブランドと会社の情報を一度保存して、メッセージング登録で使い回せる機能なの。\n\n## 今までどうだったの？\n\nSMS・RCS・WhatsApp でメッセージを送るには、キャリアやメッセージングプロバイダーにブランドを登録する必要があるよ。でも会社情報・住所・連絡先・ユースケースを、チャネルや国ごとのフォームに毎回手入力していたの。\n\n- 入力の繰り返しで、新しい登録が遅くなる\n- 誤字などのミスで却下され、送信開始が遅れることがある\n\n## これで何が変わるの？\n\nBrand Profiles に情報を入れておけば、新しい登録に適用できるよ。登録が速くなって、チャネルや国をまたいで情報をそろえられるの。自社ブランドだけでも、1 つの AWS アカウントで複数ブランドを管理する場合でも使えるよ！\n\n## 深く潜ってみよう\n\n仕組みはこんな流れだよ。\n\n- Brand Profile を使って登録を始めると、保存した情報から一致する項目が自動入力される\n- 提出前に確認できる下書きが作られる\n- 標準で、会社名・納税者番号・住所・連絡先などの標準項目を照合する\n- スマートマッチを有効にすると、AI が項目名が違っても入力してくれる\n- Brand Profile は、ゼロから作ることも、既存の登録から作ることもできる\n\n商用の AWS リージョンのうち、AWS End User Messaging が使えるすべてで利用できるよ。\n\n## まとめ\n\n- ブランド情報を 1 回保存して、複数の登録で再利用\n- 下書きを確認してから提出できる\n- スマートマッチで項目名の違いも AI が補う\n\n複数のチャネルや国、ブランドを扱うチームに刺さる機能だよ！",
+  "title_en": "Enter your brand info once: Brand Profiles arrive in AWS End User Messaging",
+  "summary_en": "AWS End User Messaging Brand Profiles let you store brand and company information once and reuse it across SMS, RCS, and WhatsApp registrations.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Typing the same thing over and over is rough. Here's a new feature that fixes it!\n\n## What was announced?\n\nIn AWS What's New, AWS announced Brand Profiles for AWS End User Messaging. They let you store brand and company information once and reuse it across messaging registrations.\n\n## The story so far\n\nTo send on SMS, RCS, and WhatsApp, you register your brand with carriers and messaging providers. But you filled in the same company details, address, contact information, and use case by hand on every form, for each channel and country.\n\n- Repeated entry slows every new registration\n- A typo or other error can get a registration rejected and delay when you can start sending\n\n## What changes\n\nEnter the information once and apply it to each new registration. You register faster and keep details consistent across channels and countries. It works whether you send for your own brand or manage several brands in one AWS account!\n\n## Dive Deep\n\nHere is how it works:\n\n- Starting a registration with a Brand Profile fills in matching fields from the saved information\n- You get a draft to review before you submit\n- By default, it matches standard fields such as company name, tax ID, address, and contact details\n- You can turn on smart match, which uses AI to fill in fields even when their names differ\n- You can build a Brand Profile from scratch or from your existing registrations\n\nIt is available in all commercial AWS Regions where AWS End User Messaging is available.\n\n## Wrap-up\n\n- Save brand information once and reuse it across registrations\n- Review a draft before submitting\n- Smart match uses AI to handle differing field names\n\nThis is for teams handling multiple channels, countries, or brands!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-end-user-messaging-now-supports-brand-profiles",
+  "source_name": "AWS What's New",
+  "og_title": "AWS End User Messaging now supports Brand Profiles",
+  "tags": [
+    "aws",
+    "devops"
+  ],
+  "published_at": "2026-10-16T07:00:00+00:00"
+}

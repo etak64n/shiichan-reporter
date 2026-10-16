@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-durablefunctions-govcloud",
+  "title": "Lambda durable functions が GovCloud (US) に対応！止めて待てる長いワークフローも",
+  "summary": "AWS Lambda durable functions が GovCloud (US-West) と (US-East) で使えるようになったよ！チェックポイントや待機で、複数ステップの処理を作れるの。",
+  "body_md": "やっほー、しぃちゃんだよ！Lambda durable functions が GovCloud にも来たよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Lambda durable functions が AWS GovCloud (US-West) と GovCloud (US-East) の両リージョンで使えるようになったと発表されたよ。\n\n## なぜ重要なの？\n\ndurable functions は、Lambda の開発体験の中で、信頼性の高い複数ステップのアプリケーションや AI ワークフローを作るための機能だよ。GovCloud に来たことで、政府機関や規制の厳しい業界のお客様が、厳格なコンプライアンスとセキュリティ要件を満たしながら使えるようになるの。\n\n## これで何が変わるの？\n\n注文ワークフロー、ユーザーのオンボーディング、AI を使った作業のような複雑な処理を、GovCloud 上でオーケストレーションできるよ！\n\n## 深く潜ってみよう\n\ndurable functions は、イベントハンドラーに「step」や「wait」といった新しいプリミティブを足して、Lambda のプログラミングモデルを拡張するよ。できることはこの 3 つ！\n\n- 進捗のチェックポイントを保存する\n- 失敗から自動で復旧する\n- オンデマンド関数では、コンピュート料金なしで実行を一時停止する\n\n新しい Lambda 関数で有効化できるランタイムは、発表ではこうなっているよ。\n\n- Python 3.13 と 3.14\n- Node.js 22 と 24\n- Go 1.24 以降\n- .NET (バージョン 2.2)\n- Java 17 以降\n\n有効化の方法は、Lambda API、AWS マネジメントコンソール、AWS SDK のほか、AWS CloudFormation・AWS SAM・AWS CDK などの IaC ツールでも設定できるよ。料金やリージョン別の提供状況は、Lambda の料金ページと Capabilities by Region ページで確認してね。\n\n## まとめ\n\n- Lambda durable functions が GovCloud (US-West / US-East) に対応\n- step と wait で、チェックポイント・自動復旧・待機中の課金なし停止ができる\n- Python / Node.js / Go / .NET / Java の新規関数で有効化可能\n\n規制の厳しい環境で、長いワークフローや AI 処理を Lambda で組みたい人に刺さるよ！",
+  "title_en": "Lambda durable functions come to AWS GovCloud (US)",
+  "summary_en": "AWS Lambda durable functions are now available in GovCloud (US-West) and (US-East), with checkpointing and pause-without-compute-charge for multi-step workflows.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Lambda durable functions have arrived in GovCloud!\n\n## What was announced?\n\nIn AWS What's New, AWS announced that AWS Lambda durable functions are now available in both the AWS GovCloud (US-West) and GovCloud (US-East) Regions.\n\n## Why it matters\n\nDurable functions let developers build reliable multi-step applications and AI workflows within the Lambda developer experience. With GovCloud availability, government customers and regulated industries can use them while meeting stringent compliance and security requirements.\n\n## What changes\n\nYou can now orchestrate complex processes such as order workflows, user onboarding, and AI-assisted tasks in GovCloud!\n\n## Dive Deep\n\nDurable functions extend the Lambda programming model with new primitives in your event handler, such as \"step\" and \"wait\". They let you:\n\n- Checkpoint progress\n- Automatically recover from failures\n- Pause executions without incurring compute charges for on-demand functions\n\nYou can activate durable functions for new functions using these runtimes, per the announcement:\n\n- Python 3.13 and 3.14\n- Node.js 22 and 24\n- Go 1.24 or later\n- .NET (version 2.2)\n- Java 17+\n\nYou can enable it through the Lambda API, the AWS Management Console, or the AWS SDK, as well as infrastructure as code tools such as AWS CloudFormation, AWS SAM, and the AWS CDK. For pricing and Region availability, see the AWS Lambda pricing page and the AWS Capabilities by Region page.\n\n## Wrap-up\n\n- Lambda durable functions are available in GovCloud (US-West / US-East)\n- step and wait give you checkpoints, automatic recovery, and pausing without compute charges\n- Enable them on new Python, Node.js, Go, .NET, and Java functions\n\nThis is for anyone building long workflows or AI processing on Lambda in regulated environments!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/durablefunctions-govcloud/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Lambda durable functions are now available in AWS GovCloud (US) Regions",
+  "tags": [
+    "aws",
+    "serverless",
+    "security"
+  ],
+  "published_at": "2026-10-16T18:26:00+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-end-user-messaging-adds-end-to-end-managed-otp",
+  "title": "OTP 認証が5分以内に完成！AWS End User Messaging Notify がコード生成から検証まで丸ごと管理",
+  "summary": "AWS End User Messaging の Notify が、ワンタイムパスコードの生成・送信・検証までマネージドで提供するよ！SMS・音声・WhatsApp に対応したみたい。",
+  "body_md": "みんな、しぃちゃんだよ！ログイン認証の OTP を自前で作るのって地味に手間だよね。そこが楽になる発表だよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS End User Messaging の Notify が、エンドツーエンドのマネージドなワンタイムパスコード (OTP) 検証に対応したと発表されたよ。AWS の電話番号とコード検証を含めて、5 分足らずで動く OTP の仕組みが手に入るとされているの。電話番号の準備やキャリア登録、配信の管理は不要だよ。\n\n## 今までどうだったの？\n\nこれまでは、パスコードを自分で生成して Notify に渡して送ってもらう形だったよ。コードの作成・保存・失効のロジックも、自分で作って運用する必要があったの。\n\n## これで何が変わるの？\n\n今は、Notify がコードを生成して、配信して、受信者が入力したコードの検証まで担当するよ。検証フローを丸ごと用意できるから、自前ロジックの開発と保守が要らなくなるの。\n\n## 深く潜ってみよう\n\n使い方の流れはシンプルだよ！\n\n- notify code configuration で、ルールを一度だけ設定する\n- 設定できるのは、コードの種類・長さ・有効期間・受信者の試行回数、そして各チャネルのテンプレート\n- あとは、選んだチャネルでコードを送る呼び出しが 1 回、入力されたコードを確認する呼び出しが 1 回\n\n配信チャネルは次の 3 つだよ。\n\n- テキスト (SMS)\n- 音声\n- WhatsApp（今回追加）\n\nNotify は、AWS End User Messaging が使える商用 AWS リージョンのすべてで利用できるよ。\n\n## まとめ\n\n- コードの生成・配信・検証までマネージドに\n- 電話番号の準備やキャリア登録は不要\n- SMS・音声・WhatsApp に対応、ルールは設定で一括管理\n\n認証用の OTP を最短で導入したいサービス開発者に刺さるよ！",
+  "title_en": "Managed OTP verification in minutes with AWS End User Messaging Notify",
+  "summary_en": "AWS End User Messaging Notify now generates, delivers, and verifies one-time passcodes end to end, over text, voice, and WhatsApp.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Building OTP for logins yourself is a lot of work. Today's news makes that easier!\n\n## What was announced?\n\nIn AWS What's New, AWS announced end-to-end managed one-time passcode (OTP) verification in Notify, part of AWS End User Messaging. You get a working OTP solution in under five minutes, including AWS phone numbers and code verification. There's no need to set up a phone number, register with carriers, or manage message delivery.\n\n## The story so far\n\nBefore, you generated the passcode yourself and passed it to Notify to send. You also had to build and maintain the logic to create, store, and expire codes.\n\n## What changes\n\nNow Notify generates the code, delivers it, and verifies the code the recipient enters. You ship a complete verification flow and skip building that logic yourself.\n\n## Dive Deep\n\nThe flow is simple:\n\n- Set the rules once in a notify code configuration\n- You can configure the code type, length, how long it stays valid, and how many attempts a recipient gets, plus templates for each channel\n- Then one call sends a code on the channel you choose, and another checks the code the recipient enters\n\nDelivery channels:\n\n- Text\n- Voice\n- WhatsApp (new)\n\nNotify is available in all commercial AWS Regions where AWS End User Messaging is available.\n\n## Wrap-up\n\n- Code generation, delivery, and verification are managed\n- No phone number setup or carrier registration\n- Text, voice, and WhatsApp, with rules set in one configuration\n\nThis is for service developers who want OTP up and running fast!",
+  "emotion": "happy",
+  "importance": 5,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-end-user-messaging-adds-end-to-end-managed-OTP",
+  "source_name": "AWS What's New",
+  "og_title": "AWS End User Messaging now offers managed OTP verification end-to-end",
+  "tags": [
+    "aws",
+    "security",
+    "serverless"
+  ],
+  "published_at": "2026-10-16T07:00:00+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-nvidia-nemotron-3-5-super-vl-on-sagemaker-jumpstart",
+  "title": "Nemotron 3.5 Super VL が SageMaker JumpStart に登場！100万トークンのマルチモーダルモデル",
+  "summary": "NVIDIA の Nemotron 3.5 Super VL が Amazon SageMaker JumpStart で使えるようになったよ！画像・動画・テキストを入力できて、コンテキストは最大 100 万トークンなの。",
+  "body_md": "みんな、しぃちゃんだよ！SageMaker JumpStart に、NVIDIA の新しい視覚言語モデルがやって来たよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、NVIDIA の Nemotron 3.5 Super VL が Amazon SageMaker JumpStart で利用可能になったと発表されたよ。画像・動画・テキストを入力にして、テキストを生成する視覚言語モデルで、AWS 上でマルチモーダル AI を展開できるの。\n\n## なぜ重要なの？\n\n用途として挙げられているのは、ドキュメントインテリジェンス、GUI 理解、動画の質問応答、マルチモーダルなエージェント用途だよ。\n\n## これで何が変わるの？\n\nJumpStart から、この大きなモデルをデプロイして試せるようになったよ。用意されている 2 つのバリアントが選択の軸になりそうだね！\n\n- NVFP4: NVIDIA RTX PRO 4500 Blackwell Server Edition GPU を積んだ G7 インスタンスでの最適化された推論向け\n- BF16: ml.p5en.48xlarge 上のリファレンス重みで、SFT・RL・蒸留・ドメイン適応などのカスタマイズ向け\n\n## 深く潜ってみよう\n\nモデルの特徴は発表でこう説明されているよ。\n\n- 120B パラメータのハイブリッド Mixture-of-Experts (MoE) 言語バックボーン（アクティブは 12B）に、ビジョンエンコーダーを組み合わせた構成\n- コンテキスト長は最大 100 万トークン\n- 投機的デコーディングでテキスト生成を速くする Multi-Token Prediction (MTP) ヘッドを内蔵\n- 推論（reasoning）はリクエストごとに設定可能\n- 英語・フランス語・スペイン語・ドイツ語・日本語・ヒンディー語・韓国語・中国語などを含む 10 言語に対応\n- 画像・動画・ドキュメント・チャート・GUI データのマルチモーダル SFT のあと、GRPO 強化学習で後処理学習\n- 構造化 JSON 出力、ツール呼び出し、設定可能な推論に対応し、企業向けエージェントのワークフローを想定\n\n## まとめ\n\n- Nemotron 3.5 Super VL が SageMaker JumpStart で利用可能に\n- 120B（アクティブ 12B）の MoE で、最大 100 万トークンのコンテキスト\n- 推論用の NVFP4 と、カスタマイズ用の BF16 の 2 バリアント\n\nマルチモーダルなエージェントや、ドキュメント・GUI 理解を AWS で作りたい人に刺さるよ！",
+  "title_en": "Nemotron 3.5 Super VL arrives on SageMaker JumpStart with 1M-token context",
+  "summary_en": "NVIDIA's Nemotron 3.5 Super VL is now on Amazon SageMaker JumpStart, accepting images, video, and text with up to 1 million tokens of context.",
+  "body_md_en": "Hi everyone, it's Shii-chan! A new vision-language model from NVIDIA has arrived on SageMaker JumpStart!\n\n## What was announced?\n\nIn AWS What's New, AWS announced that NVIDIA's Nemotron 3.5 Super VL is now available on Amazon SageMaker JumpStart. It's a vision-language model that accepts images, video, and text and generates text, so you can deploy multimodal AI on AWS.\n\n## Why it matters\n\nThe listed use cases are document intelligence, GUI understanding, video question answering, and multimodal agentic applications.\n\n## What changes\n\nYou can now deploy this large model from JumpStart. The two variants offered are the key choice!\n\n- NVFP4: optimized inference on G7 instances with NVIDIA RTX PRO 4500 Blackwell Server Edition GPUs\n- BF16: reference weights on ml.p5en.48xlarge for customization such as SFT, RL, distillation, and domain adaptation\n\n## Dive Deep\n\nHere is how the announcement describes the model:\n\n- A 120B-parameter hybrid Mixture-of-Experts (MoE) language backbone with 12B active parameters, plus a vision encoder\n- Context lengths of up to 1 million tokens\n- A built-in Multi-Token Prediction (MTP) head for speculative decoding to speed up text generation\n- Reasoning configurable per request\n- Ten languages, including English, French, Spanish, German, Japanese, Hindi, Korean, and Chinese\n- Post-trained with multimodal supervised fine-tuning on image, video, document, chart, and GUI data, followed by GRPO reinforcement learning\n- Structured JSON output, tool calling, and configurable reasoning for enterprise agent workflows\n\n## Wrap-up\n\n- Nemotron 3.5 Super VL is available on SageMaker JumpStart\n- 120B (12B active) MoE with up to 1M tokens of context\n- Two variants: NVFP4 for inference and BF16 for customization\n\nThis is for anyone building multimodal agents or document and GUI understanding on AWS!",
+  "emotion": "thinking",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/01/nvidia-nemotron-3.5-super-vl-on-sagemaker-jumpstart/",
+  "source_name": "AWS What's New",
+  "og_title": "Nemotron 3.5 Super VL model now available on Amazon SageMaker JumpStart",
+  "tags": [
+    "aws",
+    "ai",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-16T17:59:00+00:00"
+}
