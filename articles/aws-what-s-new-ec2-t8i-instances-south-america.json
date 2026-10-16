@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-ec2-t8i-instances-south-america",
+  "title": "EC2 T8i がサンパウロにも登場！T3 より最大 30% お得だよ",
+  "summary": "Amazon EC2 T8i インスタンスが南米（サンパウロ）で使えるようになったよ。Intel Xeon 6 搭載で、T3 より最大 30% 良い価格性能なの！",
+  "body_md": "こんにちは、しぃちゃんだよ！バースト型インスタンスの新世代が、サンパウロにも来たよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon EC2 T8i インスタンスが南米（サンパウロ）で使えるようになったと発表されたよ。AWS だけで使える第 6 世代のカスタム Intel Xeon 6 プロセッサと、最新の第 6 世代 AWS Nitro カードを使ったインスタンスなの。\n\n## 今までどうだったの？\n\nT8i はすでに、バージニア北部、フランクフルト、東京など複数のリージョンで提供されていて、今回そこにサンパウロが加わった形だよ。\n\n## これで何が変わるの？\n\n南米のリージョンでも、T3 から T8i に移って価格性能を上げられるよ。T3 と同じ CPU クレジットの仕組み（Standard と Unlimited のモード）なので、既存の T3 ユーザーがそのまま移行して恩恵を受けられるの。TCO を下げやすいね！\n\n## 深く潜ってみよう\n\nT8i の特徴はこうだよ（T3 との比較）。\n\n- 価格性能が最大 30% 向上\n- 計算性能が最大 70% 向上\n- ネットワーク帯域が 1.25 倍\n- EBS 帯域が 2.4 倍\n\nサイズは 4 つ用意されているよ。\n\n- nano\n- micro\n- small\n- medium\n\n向いているのは、CPU 使用率が低〜中程度のワークロードだよ。データ処理、ログインゲートウェイ、小規模データベース、バッチ処理、イベント駆動の関数、CI/CD パイプライン、マイクロサービス、低トラフィックの Web サイトなどが挙げられているよ。\n\nT8i.micro と T8i.small は AWS 無料利用枠の対象だよ。オンプレミスから移行する人や AWS を初めて使う人にとって、コスト効率のよい入口になるみたい。\n\n## まとめ\n\n- T8i がサンパウロで利用可能に\n- Intel Xeon 6 と第 6 世代 Nitro カード搭載、T3 比で価格性能は最大 30% 向上\n- nano / micro / small / medium の 4 サイズ、CPU クレジットの仕組みは T3 と同じ\n- micro と small は無料利用枠の対象\n\nサンパウロで T3 を使っていて、コストを下げたい人に刺さるよ！",
+  "title_en": "EC2 T8i arrives in São Paulo with up to 30% better price performance than T3!",
+  "summary_en": "Amazon EC2 T8i instances are now available in South America (São Paulo), powered by Intel Xeon 6 with up to 30% better price performance than T3.",
+  "body_md_en": "Hi, it's Shii-chan! The new generation of burstable instances has reached São Paulo.\n\n## What was announced?\n\nAWS What's New says Amazon EC2 T8i instances are now available in South America (São Paulo). They're powered by custom sixth generation Intel Xeon 6 processors, available exclusively on AWS, and built on the latest sixth generation AWS Nitro cards.\n\n## The story so far\n\nT8i was already offered in several Regions, such as N. Virginia, Frankfurt, and Tokyo. São Paulo joins that list.\n\n## What changes\n\nIn the South America Region, you can now move from T3 to T8i for better price performance. T8i uses the same CPU credit system as T3, with Standard and Unlimited modes, so existing T3 customers can upgrade and benefit right away, lowering their TCO.\n\n## Dive Deep\n\nCompared with T3, T8i offers:\n\n- Up to 30% better price performance\n- Up to 70% higher compute performance\n- 1.25x higher network bandwidth\n- 2.4x higher EBS bandwidth\n\nFour sizes are available:\n\n- nano\n- micro\n- small\n- medium\n\nThey're designed for workloads with low to moderate CPU utilization, such as data processing, login gateways, small databases, batch processing, event-driven functions, CI/CD pipelines, microservices, and low-traffic websites.\n\nT8i.micro and T8i.small are available under the AWS Free Tier. For customers new to AWS or migrating from on-premises, T8i is a cost-effective entry point.\n\n## Wrap-up\n\n- T8i is now available in São Paulo\n- Intel Xeon 6 and sixth generation Nitro cards, up to 30% better price performance than T3\n- Four sizes (nano, micro, small, medium) with the same CPU credit system as T3\n- micro and small are Free Tier eligible\n\nGreat if you run T3 in São Paulo and want to cut costs!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/ec2-t8i-instances-south-america/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon EC2 T8i instances are now available in South America (São Paulo)",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-15T20:00:00+00:00"
+}

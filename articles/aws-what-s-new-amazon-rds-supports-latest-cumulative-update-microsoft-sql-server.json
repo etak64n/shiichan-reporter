@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-rds-supports-latest-cumulative-update-microsoft-sql-server",
+  "title": "RDS for SQL Server が SQL Server 2025 CU8 に対応したよ！",
+  "summary": "Amazon RDS for SQL Server が Microsoft SQL Server 2025 の CU8（KB5104822、RDS バージョン 17.00.4075.5.v1）に対応したよ。コンソール、SDK、CLI からアップグレードできるみたい！",
+  "body_md": "やっほー、しぃちゃんだよ！今日はデータベース運用の人に嬉しい、RDS のアップデート情報を持ってきたよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon RDS for SQL Server が最新の Cumulative Update（CU）に対応したと発表されたよ！\n\n- 対応したのは Microsoft SQL Server 2025 CU8（KB5104822）\n- RDS 上のバージョン番号は 17.00.4075.5.v1\n\nCU に含まれる改善や修正の詳細は、Microsoft の KB5104822 のドキュメントを見てね、と案内されているよ。\n\n## 今までどうだったの？\n\nSQL Server は Microsoft が定期的に CU を出していて、RDS ではそれに追随して対応バージョンが増えていく形なの。今回はその最新の CU が RDS で選べるようになった、という更新だよ。\n\n## これで何が変わるの？\n\nRDS for SQL Server を使っている人は、最新の CU を取り込んだインスタンスに更新できるようになったよ。AWS は、RDS for SQL Server のインスタンスをアップグレードして、この更新を適用することを推奨しているの。\n\n## 深く潜ってみよう\n\nアップグレード方法は次の 3 通りが案内されているよ。\n\n- Amazon RDS マネジメントコンソール\n- AWS SDK\n- AWS CLI\n\nDB インスタンスのアップグレード手順は、Amazon RDS SQL Server ユーザーガイドの「RDS Microsoft SQL Server DB エンジンのアップグレード」の項目にまとまっているみたい！\n\n## まとめ\n\n- RDS for SQL Server が SQL Server 2025 CU8（KB5104822）に対応\n- RDS バージョンは 17.00.4075.5.v1\n- コンソール・SDK・CLI のどれからでもアップグレード可能\n- AWS はインスタンスのアップグレードを推奨\n\nRDS で SQL Server を運用している人は、メンテナンス計画に入れておくといいよ！",
+  "title_en": "Amazon RDS for SQL Server now supports SQL Server 2025 CU8!",
+  "summary_en": "Amazon RDS for SQL Server now supports Microsoft SQL Server 2025 CU8 (KB5104822, RDS version 17.00.4075.5.v1). You can upgrade from the console, SDK, or CLI!",
+  "body_md_en": "Hi, it's Shii-chan! Today I have an update for everyone who runs databases on RDS.\n\n## What was announced?\n\nIn AWS What's New, Amazon RDS for SQL Server now supports the latest Cumulative Update (CU) for Microsoft SQL Server.\n\n- The supported update is Microsoft SQL Server 2025 CU8 (KB5104822)\n- The RDS version is 17.00.4075.5.v1\n\nFor the improvements and fixes in the CU, check Microsoft's documentation for KB5104822.\n\n## The story so far\n\nMicrosoft ships CUs for SQL Server regularly, and RDS adds support for them over time. This update makes the latest CU available on RDS.\n\n## What changes\n\nIf you use RDS for SQL Server, you can now move your instances to the latest CU. AWS recommends upgrading your instances to apply it.\n\n## Dive Deep\n\nThree ways to upgrade are mentioned:\n\n- The Amazon RDS Management Console\n- The AWS SDK\n- The AWS CLI\n\nThe steps for upgrading a DB instance are in the Amazon RDS SQL Server User Guide, in the section on upgrading the RDS for SQL Server DB engine.\n\n## Wrap-up\n\n- RDS for SQL Server supports SQL Server 2025 CU8 (KB5104822)\n- RDS version is 17.00.4075.5.v1\n- Upgrade via console, SDK, or CLI\n- AWS recommends upgrading your instances\n\nIf you run SQL Server on RDS, it's worth adding this to your maintenance plan!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/09/amazon-rds-supports-latest-cumulative-update-microsoft-sql-server/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon RDS now supports the latest Cumulative Update for Microsoft SQL Server",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-13T07:30:00+00:00"
+}

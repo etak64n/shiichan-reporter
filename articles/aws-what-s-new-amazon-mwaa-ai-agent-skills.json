@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-mwaa-ai-agent-skills",
+  "title": "MWAA に AI エージェント用スキルが 4 つ登場したよ！",
+  "summary": "Amazon MWAA が Agent Toolkit for AWS と連携して、ワークフローの作成・デバッグ・テストと環境アップグレード用のエージェントスキルを提供するようになったよ。",
+  "body_md": "みんな、しぃちゃんだよ！データパイプラインを AI アシスタントに手伝ってもらえる更新だよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Managed Workflows for Apache Airflow（MWAA）が Agent Toolkit for AWS と統合されて、組み込みの AI エージェントスキルが使えるようになったと発表されたよ。エージェントスキルに対応した AI コーディングアシスタントなら何でも、MWAA のワークフローの作成・デバッグ・テストと、環境のアップグレードができるの。\n\n## これで何が変わるの？\n\nAI アシスタントが自然言語で MWAA と直接やり取りできるから、データパイプラインを作って保守する手作業が減るよ。たとえば ETL パイプラインを普通の言葉で説明すると、作成スキルがタスク間の依存関係とエラー処理つきの動く DAG を生成してくれるんだって。\n\n## 深く潜ってみよう\n\n用意されたスキルは次の 4 つだよ。\n\n- `authoring-mwaa-workflow`：ワークフローの作成\n- `debugging-mwaa-workflow`：ワークフローのデバッグ\n- `testing-mwaa-workflow`：ワークフローのテスト\n- `upgrading-mwaa-environments`：MWAA 環境のアップグレード\n\nその他の情報はこれだよ。\n\n- MWAA Provisioned と MWAA Serverless の両方の環境で使える\n- MWAA が使えるすべての AWS リージョンで利用可能\n- はじめ方は、`aws-data-analytics` プラグインをインストールして、AI コーディングアシスタントが MWAA のスキルを使うように設定する\n\n詳しくは、Amazon MWAA ユーザーガイドの「Using agent skills with Amazon MWAA」と Agent Toolkit for AWS のドキュメントを見てね。\n\n## まとめ\n\n- MWAA に作成・デバッグ・テスト・アップグレードの 4 スキル\n- スキル対応の AI コーディングアシスタントで利用可能\n- Provisioned と Serverless の両方に対応、MWAA のある全リージョンで利用可能\n- `aws-data-analytics` プラグインで導入\n\nAirflow の DAG を書いたり直したりする機会が多い人に刺さるよ！",
+  "title_en": "Amazon MWAA now offers four AI agent skills!",
+  "summary_en": "Amazon MWAA integrates with the Agent Toolkit for AWS to provide built-in agent skills for authoring, debugging, and testing workflows and upgrading environments.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Now your AI assistant can help with data pipelines.\n\n## What was announced?\n\nAWS What's New says Amazon Managed Workflows for Apache Airflow (MWAA) now integrates with the Agent Toolkit for AWS to provide built-in AI agent skills. With any AI coding assistant that supports agent skills, you can author, debug, and test MWAA workflows and upgrade MWAA environments.\n\n## What changes\n\nYour AI assistant can interact with MWAA directly in natural language, reducing the manual effort of building and maintaining data pipelines. For example, describe an ETL pipeline in plain language and the authoring skill generates a working DAG with task dependencies and error handling.\n\n## Dive Deep\n\nThe four skills are:\n\n- `authoring-mwaa-workflow`: author workflows\n- `debugging-mwaa-workflow`: debug workflows\n- `testing-mwaa-workflow`: test workflows\n- `upgrading-mwaa-environments`: upgrade MWAA environments\n\nOther details:\n\n- Works with both Amazon MWAA Provisioned and Amazon MWAA Serverless environments\n- Available in all AWS Regions where Amazon MWAA is available\n- To get started, install the `aws-data-analytics` plugin and configure your AI coding assistant to use the MWAA agent skills\n\nSee \"Using agent skills with Amazon MWAA\" in the MWAA User Guide and the Agent Toolkit for AWS documentation.\n\n## Wrap-up\n\n- Four MWAA skills: authoring, debugging, testing, upgrading\n- Works with AI coding assistants that support agent skills\n- Supports Provisioned and Serverless, in all MWAA Regions\n- Install via the `aws-data-analytics` plugin\n\nPerfect if you write and fix Airflow DAGs a lot!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-mwaa-ai-agent-skills/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Managed Workflows for Apache Airflow now offers AI agent skills",
+  "tags": [
+    "aws",
+    "ai",
+    "devops"
+  ],
+  "published_at": "2026-10-15T08:00:00+00:00"
+}

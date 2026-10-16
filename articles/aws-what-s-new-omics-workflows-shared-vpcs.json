@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-omics-workflows-shared-vpcs",
+  "title": "HealthOmics がアカウントをまたぐ共有 VPC に対応したよ！",
+  "summary": "AWS HealthOmics が AWS RAM による VPC の共有に対応したよ。他のアカウントが管理する VPC のサブネットとセキュリティグループに、ワークフローを直接置けるの！",
+  "body_md": "こんにちは、しぃちゃんだよ！ゲノム解析のワークフローにネットワーク管理の朗報だよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS HealthOmics が VPC のアカウント間共有に対応したと発表されたよ。AWS Resource Access Manager（RAM）を使って、他の AWS アカウントが管理する Amazon VPC のリソースにワークフローからアクセスできるの。\n\nHealthOmics は HIPAA 対応のサービスで、医療・ライフサイエンスのお客さん向けに、フルマネージドなバイオインフォマティクスのワークフローを提供しているよ。\n\n## 今までどうだったの？\n\nネットワークを一元管理している組織では、VPC ごとに AWS PrivateLink の VPC エンドポイントを別々に作って、VPC ピアリングで個別のルートテーブルを維持する必要があったんだ。\n\n## これで何が変わるの？\n\n1 つの VPC のサブネットとセキュリティグループを組織内の複数アカウントで共有できるよ。HealthOmics が各アカウントのワークフローを、共有されたサブネットに直接配置するの。\n\n- 複数アカウントが、中央管理された 1 つの VPC で動く（エンドポイントを VPC ごとに重複させなくていい）\n- 参加アカウントのワークフローは、別途の VPC ピアリングや重複した VPC エンドポイントなしで、プライベートにデータへアクセスできる\n- インフラの手間とネットワーク管理が減り、研究者や開発者は自分のアカウントでワークフローを動かせる\n\n## 深く潜ってみよう\n\n共有 VPC は、HealthOmics が使えるすべてのリージョンで利用可能だよ。確認できた範囲では、US East（バージニア北部、オハイオ）、US West（オレゴン）、Europe（フランクフルト、アイルランド、ロンドン）などが含まれているよ（一覧の続きは原文で確認してね）。\n\n## まとめ\n\n- HealthOmics が AWS RAM 経由の共有 VPC に対応\n- 共有サブネットとセキュリティグループにワークフローを直接配置\n- VPC ピアリングや重複した PrivateLink エンドポイントが不要に\n- HealthOmics が使える全リージョンで利用可能\n\nネットワークを中央管理しつつ、ゲノム解析をアカウント別に動かしたい組織に刺さるよ！",
+  "title_en": "AWS HealthOmics now supports shared VPCs across accounts!",
+  "summary_en": "AWS HealthOmics now supports sharing VPCs across accounts with AWS RAM, so workflows run directly in shared subnets managed by another account.",
+  "body_md_en": "Hi, it's Shii-chan! Good network-management news for genomics workflows.\n\n## What was announced?\n\nAWS What's New says AWS HealthOmics now supports sharing VPCs across accounts. With AWS Resource Access Manager (RAM), your workflows can access resources in Amazon VPCs managed by other AWS accounts.\n\nHealthOmics is a HIPAA-eligible service that offers fully managed bioinformatics workflows for healthcare and life sciences customers.\n\n## The story so far\n\nCustomers with centralized networking had to create separate AWS PrivateLink VPC endpoints in each VPC and maintain individual route tables using VPC peering.\n\n## What changes\n\nYou can share subnets and security groups from a single VPC across multiple accounts in your organization. HealthOmics then places each account's workflows directly into those shared subnets.\n\n- Multiple accounts run inside one centrally managed VPC, instead of duplicating endpoints across VPCs\n- Workflows in participating accounts access data privately without separate VPC peering or duplicated VPC endpoints\n- Less infrastructure overhead and simpler network management, while researchers and developers run workflows in their own accounts\n\n## Dive Deep\n\nShared VPCs are available in all Regions where HealthOmics is available. The announcement lists Regions including US East (N. Virginia, Ohio), US West (Oregon), and Europe (Frankfurt, Ireland, London); check the original for the full list.\n\n## Wrap-up\n\n- HealthOmics supports shared VPCs through AWS RAM\n- Workflows are placed directly in shared subnets and security groups\n- No more VPC peering or duplicated PrivateLink endpoints\n- Available in all HealthOmics Regions\n\nIdeal for organizations that centralize networking but run bioinformatics per account!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/omics-workflows-shared-vpcs/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS HealthOmics now supports shared VPCs",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "science"
+  ],
+  "published_at": "2026-10-15T17:42:00+00:00"
+}

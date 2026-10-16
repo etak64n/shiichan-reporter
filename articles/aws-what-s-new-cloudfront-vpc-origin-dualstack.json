@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-cloudfront-vpc-origin-dualstack",
+  "title": "CloudFront の VPC オリジンでやっと IPv6 まで通ったよ！",
+  "summary": "Amazon CloudFront の VPC オリジンがデュアルスタックに対応したよ。プライベートなオリジンのまま、エンドツーエンドで IPv6 配信ができるの！",
+  "body_md": "こんにちは、しぃちゃんだよ！セキュリティと IPv6 の「どっちか選ぶ」問題が解決したよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon CloudFront が Amazon VPC 内のオリジンへのエンドツーエンドの IPv6 配信に対応したと発表されたよ。新しい「デュアルスタック VPC オリジン」だよ。\n\n## 今までどうだったの？\n\nVPC オリジンを使うと、ALB、NLB、EC2 インスタンスをプライベートサブネットに置いて、自分の CloudFront ディストリビューションからだけ到達できるようにできるよ。ただ、これまでは公開オリジンのデュアルスタックには対応していても、VPC オリジンへは IPv4 だけで接続していたの。\n\nそのため、次のどちらかを選ぶ必要があったんだ。\n\n- IPv6 のためにオリジンをパブリックサブネットに移し、VPC オリジンのセキュリティを諦める\n- プライベートのままにして、IPv4 のままにする\n\n## これで何が変わるの？\n\nVPC オリジンをデュアルスタックに設定すれば、セキュリティを犠牲にせずにエンドツーエンドの IPv6 が使えるよ。IPv6 のアーキテクチャ要件や規制要件を満たしつつ、オリジンをインターネットに公開しないで済むのが嬉しいね！\n\n## 深く潜ってみよう\n\n- 対象は ALB、NLB、EC2 インスタンスのプライベートオリジン\n- VPC オリジンがサポートされているすべての AWS 商用リージョンで利用可能\n- 追加料金なし\n\nサポートリージョンの一覧と設定は、CloudFront VPC オリジンのドキュメントで確認してね。\n\n## まとめ\n\n- VPC オリジンがデュアルスタックに対応し、IPv6 がオリジンまで届く\n- 以前は VPC オリジンへは IPv4 のみで、IPv6 とプライベート構成が両立しなかった\n- 追加料金なし、VPC オリジンのある全商用リージョンで利用可能\n\nIPv6 の要件があるのにオリジンを隠したままにしたい人に刺さるよ！",
+  "title_en": "CloudFront VPC origins now go IPv6 all the way!",
+  "summary_en": "Amazon CloudFront now supports dual-stack VPC origins, giving you end-to-end IPv6 delivery to private origins without exposing them to the internet.",
+  "body_md_en": "Hi, it's Shii-chan! The \"security or IPv6?\" tradeoff is gone.\n\n## What was announced?\n\nAWS What's New says Amazon CloudFront now supports end-to-end IPv6 delivery to origins inside your Amazon VPC, with the new dual-stack VPC origins.\n\n## The story so far\n\nWith VPC origins, you keep your ALBs, NLBs, and EC2 instances in private subnets that only your CloudFront distributions can reach. But CloudFront supported dual-stack for public origins while connecting to VPC origins over IPv4 only.\n\nSo you had to pick one:\n\n- Move origins to public subnets for IPv6 and give up VPC origin security\n- Keep them private and stay on IPv4\n\n## What changes\n\nConfigure your VPC origins as dual-stack and you get end-to-end IPv6 without sacrificing security. You can meet IPv6 architecture and regulatory requirements without exposing origins to the internet.\n\n## Dive Deep\n\n- Applies to private ALB, NLB, and EC2 origins\n- Available in all AWS commercial Regions where VPC origins are supported\n- No additional cost\n\nSee the CloudFront VPC origins documentation for the list of supported Regions and setup.\n\n## Wrap-up\n\n- Dual-stack VPC origins bring IPv6 all the way to the origin\n- Before, VPC origins were IPv4 only, so IPv6 and private setups couldn't coexist\n- No extra cost, in all commercial Regions that support VPC origins\n\nPerfect if you need IPv6 but want to keep your origins hidden!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/cloudfront-vpc-origin-dualstack/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon CloudFront announces dual-stack support for VPC origins",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "web"
+  ],
+  "published_at": "2026-10-15T16:00:00+00:00"
+}

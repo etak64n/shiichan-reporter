@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-muse-spark-open-on-sagemaker-jumpstart",
+  "title": "Meta の Muse Spark Open が SageMaker JumpStart で使えるよ！",
+  "summary": "Meta のコーディング特化オープンウェイトモデル Muse Spark Open が Amazon SageMaker JumpStart に登場したよ。816B の MoE で 1M トークンのコンテキストに対応しているの！",
+  "body_md": "みんな、しぃちゃんだよ！エージェント型コーディング向けの大きなオープンモデルが JumpStart に来たよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Meta の Muse Spark Open が Amazon SageMaker JumpStart で使えるようになったと発表されたよ。長時間動くコーディングエージェントやマルチモーダルな開発ワークフロー向けに作られた、コーディング最適化のオープンウェイトモデルなの。\n\n## なぜ重要なの？\n\nマルチステップの推論とツール呼び出しを、AWS のインフラ上で企業のソフトウェア開発に持ち込めるよ。マルチファイルのリファクタリングや長いデバッグ作業のような、実際の開発者のワークフローで学習されていて、単発のツール呼び出しではなく、計画・実行・観察・自己修正を長い時間続ける設計なんだって。\n\n## 深く潜ってみよう\n\nモデルの仕様はこうだよ。\n\n- Mixture-of-Experts（MoE）構成で、総パラメータ 816B、トークンあたりのアクティブは 42B\n- コンテキストウィンドウは 1M トークン。依存関係やレガシーコード、数千ファイルを含むプロジェクト全体を分割せずに取り込める\n- 入力はテキスト、画像、ドキュメント、音声、音声つき動画。出力はテキスト\n\nJumpStart では 2 つのバリアントが選べるよ。\n\n- BF16：Muse-Spark-Open-816B-A42B\n- NVFP4 量子化：Muse-Spark-Open-816B-A42B-NVFP4（必要メモリはおよそ 4 分の 1 で、コスト効率のよいデプロイ向け）\n\nJumpStart なら数クリックでデプロイできるよ、と説明されているよ。\n\n## まとめ\n\n- Muse Spark Open が SageMaker JumpStart で利用可能\n- 816B の MoE（アクティブ 42B）、1M トークンのコンテキスト\n- BF16 と NVFP4 の 2 バリアント、NVFP4 は必要メモリが約 4 分の 1\n- 長時間動くコーディングエージェント向け\n\nセルフホストでコーディングエージェントの基盤モデルを動かしたい人に刺さるよ！",
+  "title_en": "Meta's Muse Spark Open arrives on SageMaker JumpStart!",
+  "summary_en": "Meta's coding-optimized open-weight model Muse Spark Open is now on Amazon SageMaker JumpStart, with 816B MoE parameters and a 1M-token context window.",
+  "body_md_en": "Hi everyone, it's Shii-chan! A big open model for agentic coding just landed on JumpStart.\n\n## What was announced?\n\nAWS What's New says Meta's Muse Spark Open is now available on Amazon SageMaker JumpStart. It's a coding-optimized open-weight model built for long-running coding agents and multimodal engineering workflows.\n\n## Why it matters\n\nIt brings multi-step reasoning and tool calling to enterprise software engineering on AWS infrastructure. It was trained on real developer workflows such as multi-file refactors and long debugging sessions, and it plans, acts, observes results, and self-corrects over long horizons rather than making single tool calls.\n\n## Dive Deep\n\nModel specs:\n\n- Mixture-of-Experts (MoE) architecture with 816B total parameters and 42B active per token\n- 1M-token context window, enough to ingest a whole project with dependencies, legacy code, and thousands of files without splitting tasks\n- Accepts text, images, documents, audio, and audio-video as input; generates text\n\nJumpStart offers two variants:\n\n- BF16: Muse-Spark-Open-816B-A42B\n- NVFP4 quantized: Muse-Spark-Open-816B-A42B-NVFP4 (needs roughly a quarter of the memory, for cost-efficient deployment)\n\nWith JumpStart you can deploy in just a few clicks.\n\n## Wrap-up\n\n- Muse Spark Open is available on SageMaker JumpStart\n- 816B MoE (42B active) with a 1M-token context\n- BF16 and NVFP4 variants; NVFP4 needs about a quarter of the memory\n- Built for long-running coding agents\n\nGreat if you want to self-host a foundation model for coding agents!",
+  "emotion": "energetic",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/01/muse-spark-open-on-sagemaker-jumpstart/",
+  "source_name": "AWS What's New",
+  "og_title": "Muse Spark Open model now available on Amazon SageMaker JumpStart",
+  "tags": [
+    "aws",
+    "ai"
+  ],
+  "published_at": "2026-10-15T18:00:00+00:00"
+}

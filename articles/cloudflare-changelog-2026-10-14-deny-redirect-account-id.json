@@ -1,0 +1,19 @@
+{
+  "slug": "cloudflare-changelog-2026-10-14-deny-redirect-account-id",
+  "title": "Access の拒否リダイレクトに account_id が付くようになったよ！",
+  "summary": "Cloudflare Access のアプリ対応の拒否リダイレクトに、アカウント情報があるとき account_id クエリパラメータが含まれるようになったよ。カスタムブロックページでアプリの所有アカウントを特定しやすくなるの。",
+  "body_md": "みんな、しぃちゃんだよ！Zero Trust まわりの小さいけど便利なアップデートを見つけたよ。\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Access（Cloudflare One）の拒否リダイレクトが更新されたよ。アプリ対応（App-aware）の拒否リダイレクトに、アカウントの情報がわかる場合は `account_id` クエリパラメータが含まれるようになったの。\n\n## 今までどうだったの？\n\nカスタムのブロックページには、アプリを表す `kid` などがリダイレクト URL で渡されていたよ。でも、そのアプリがどのアカウントのものかは URL から直接わからなかったんだね。\n\n## これで何が変わるの？\n\nカスタムブロックページ側で、`kid` が表すアプリを所有しているアカウントを特定できるようになるよ。アカウントスコープの API でアプリを引くような連携が作りやすくなるの！\n\n## 深く潜ってみよう\n\nカスタムリダイレクトの例はこんな形だよ。\n\n```\nhttps://denied.example.com/?kid={APP_AUD}&account_id={ACCOUNT_ID}&original_url=app.example.com%2Fadmin\n```\n\n- `kid` はアプリを表す値\n- `account_id` はアプリを所有するアカウントの ID（アカウント情報があるときだけ付く）\n- `original_url` は元のアクセス先\n\n大事な注意点もあるよ。`account_id` はあくまで文脈情報で、認証や認可の証明ではないと明記されているの。ブロックページ側でこの値だけを信用して権限判断をしないようにしてね。パラメータの詳しい説明は、ドキュメントの「Custom redirect URL parameters」にあるよ。\n\n## まとめ\n\n- アプリ対応の拒否リダイレクトに `account_id` が付くように（アカウント情報があるとき）\n- カスタムブロックページでアプリの所有アカウントを特定できる\n- アカウントスコープ API での検索連携に便利\n- 認証・認可の証明ではないので注意\n\nAccess のカスタムブロックページを自作している人に刺さる更新だよ！",
+  "title_en": "Access deny redirects now carry an account_id!",
+  "summary_en": "App-aware Cloudflare Access deny redirects now include an account_id query parameter when account context is available, so custom block pages can identify the account that owns the application.",
+  "body_md_en": "Hi everyone, it's Shii-chan! I found a small but handy Zero Trust update.\n\n## What was announced?\n\nThe Cloudflare Changelog says Access (Cloudflare One) deny redirects have been updated. App-aware deny redirects now include an `account_id` query parameter when account context is available.\n\n## The story so far\n\nCustom block pages already received values like `kid`, which represents the application, in the redirect URL. But you couldn't tell from the URL which account owned that application.\n\n## What changes\n\nYour custom block page can now identify the account that owns the application represented by `kid`. That makes it easier to look up applications through account-scoped APIs.\n\n## Dive Deep\n\nHere is an example custom redirect:\n\n```\nhttps://denied.example.com/?kid={APP_AUD}&account_id={ACCOUNT_ID}&original_url=app.example.com%2Fadmin\n```\n\n- `kid` identifies the application\n- `account_id` is the ID of the account that owns it (only present when account context is available)\n- `original_url` is the original destination\n\nOne important note: the changelog says `account_id` is context, not proof of authentication or authorization. Don't base permission decisions on this value alone. See \"Custom redirect URL parameters\" in the docs for details.\n\n## Wrap-up\n\n- App-aware deny redirects now include `account_id` when available\n- Custom block pages can identify the owning account\n- Useful for lookups through account-scoped APIs\n- Not proof of authentication or authorization\n\nThis one is for anyone building custom Access block pages!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-14-deny-redirect-account-id/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Access, Cloudflare One - Account context in Access deny redirects",
+  "tags": [
+    "cloudflare",
+    "security"
+  ],
+  "published_at": "2026-10-14T00:00:00+00:00"
+}

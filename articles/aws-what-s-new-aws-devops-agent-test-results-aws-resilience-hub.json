@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-devops-agent-test-results-aws-resilience-hub",
+  "title": "Resilience Hub のテスト結果を AWS DevOps Agent が調べてくれるよ！",
+  "summary": "次世代の AWS Resilience Hub が AWS DevOps Agent と連携したよ。レジリエンステストの調査と、障害モード評価の指摘への対話的な分析ができるの！",
+  "body_md": "やっほー、しぃちゃんだよ！耐障害性の確認に AI エージェントが加わったよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、次世代の AWS Resilience Hub が AWS DevOps Agent と統合されたと発表されたよ。障害モード評価（failure mode assessment）の指摘を確認して緩和策を実装したり、レジリエンステストの結果を見たりできるの。\n\nResilience Hub は、プラットフォームエンジニアリングや SRE のチームがワークロードの耐障害性を評価・強化するための、AWS マネジメントコンソールの拠点だよ。自動の依存関係の検出、生成 AI による障害モード分析、モジュール式のレジリエンスポリシー、レジリエンステスト、組織全体の状況レポートを備えているよ。\n\n## これで何が変わるの？\n\n指摘やテスト結果の「その先」を、エージェントと一緒に掘り下げられるようになるよ。\n\n## 深く潜ってみよう\n\n連携で使える機能は 2 つあるよ。\n\n- レジリエンステストの調査：テストを実行すると DevOps Agent の調査が起動して、テストを観察し構造化された分析を返す。症状、根本原因、影響に加えて、ARC のリージョンスイッチなどの観察された復旧アクションがわかる\n- 障害モード評価の指摘からの対話分析：Resilience Hub コンソールの指摘から、その文脈を引き継いだ状態で DevOps Agent のオンデマンドタスクを開始できる。質問したり調査したりして、緩和計画を作れる\n\nはじめ方は、Resilience Hub コンソールでサービスを選び、サービス設定で DevOps Agent を設定するよ。そのあと、障害モード評価の指摘またはレジリエンステストから DevOps Agent を起動してね。\n\n## まとめ\n\n- 次世代 Resilience Hub が AWS DevOps Agent と統合\n- テスト実行時に症状・根本原因・影響・復旧アクションを分析\n- 指摘から文脈つきでエージェントに質問し、緩和計画を作れる\n- サービス設定で DevOps Agent を設定して使う\n\nSRE やプラットフォームチームで、障害対応の訓練結果を活かしたい人に刺さるよ！",
+  "title_en": "AWS DevOps Agent now reviews your Resilience Hub test results!",
+  "summary_en": "The next generation of AWS Resilience Hub now integrates with AWS DevOps Agent, giving you test investigations and interactive analysis of failure mode assessment findings.",
+  "body_md_en": "Hi, it's Shii-chan! An AI agent just joined your resilience checks.\n\n## What was announced?\n\nAWS What's New says the next generation of AWS Resilience Hub now integrates with AWS DevOps Agent. You can review failure mode assessment findings, implement mitigations, and review resilience test results.\n\nResilience Hub is a central place in the AWS Management Console that helps platform engineering and SRE teams assess and strengthen workload resilience. It offers automated dependency discovery, generative AI-powered failure mode analysis, modular resilience policies, resilience testing, and organization-wide posture reporting.\n\n## What changes\n\nYou can now dig deeper into findings and test results together with the agent.\n\n## Dive Deep\n\nThe integration offers two things:\n\n- Resilience test investigations: when you run a test, Resilience Hub launches a DevOps Agent investigation that observes it and returns a structured analysis, including symptoms, root cause, impact, and observed recovery actions like ARC Region switch\n- Interactive analysis from findings: start a DevOps Agent on-demand task directly from a failure mode assessment finding in the console, with the finding's context already in place, to ask questions and build a mitigation plan\n\nTo get started, open the Resilience Hub console, select a service, and configure DevOps Agent in the service configuration. Then launch it from a finding or a resilience test.\n\n## Wrap-up\n\n- Next-gen Resilience Hub integrates with AWS DevOps Agent\n- Test runs get analysis of symptoms, root cause, impact, and recovery\n- Ask the agent about findings with context and build mitigation plans\n- Configure DevOps Agent in the service configuration\n\nGreat for SRE and platform teams who want to get more from resilience testing!",
+  "emotion": "energetic",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-devops-agent-test-results-aws-resilience-hub/",
+  "source_name": "AWS What's New",
+  "og_title": "Launch AWS DevOps Agent to review findings and test results from AWS Resilience Hub",
+  "tags": [
+    "aws",
+    "ai",
+    "devops"
+  ],
+  "published_at": "2026-10-15T07:00:00+00:00"
+}

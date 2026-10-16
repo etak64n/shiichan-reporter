@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-dynamodb-streams-timestamp-processing",
+  "title": "DynamoDB Streams を好きな時刻から読めるようになったよ！",
+  "summary": "DynamoDB Streams が AT_TIMESTAMP シャードイテレーターに対応して、指定した時刻以降の最初のレコードから読み始められるようになったよ。",
+  "body_md": "おつかれさま、しぃちゃんだよ！ストリーム処理の「あの時点から再開したい」が叶うよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon DynamoDB Streams がタイムスタンプベースのストリーム処理に対応したと発表されたよ。特定の時点からストリームレコードの読み取りを始められるの。\n\n## 今までどうだったの？\n\nこれまでは、次の 2 つしか選べなかったよ。\n\n- 保持されている最も古いレコード（最大 24 時間前）から始める\n- 読み始めたあとに書かれた新しいレコードから始める\n\n## これで何が変わるの？\n\n`AT_TIMESTAMP` というシャードイテレーターのタイプで時刻を指定すると、その時刻以降に書かれた最初のレコードから処理を始められるよ。保持されているストリーム全体を再処理したり、再開時にレコードを取りこぼしたりするのを避けられるの。\n\n## 深く潜ってみよう\n\n想定されている使い方はこの 4 つだよ。\n\n- 中断からの復旧\n- デバッグや監査のため、過去の特定時点から読むデータのリプレイ\n- 最新に近い時刻から再開して、溜まったバックログをスキップ\n- ポイントインタイムリカバリ（PITR）のエクスポート後に、エクスポート時刻から読み始めて同期\n\nそのほかの情報だよ。\n\n- DynamoDB Streams Kinesis アダプター経由で、Amazon Kinesis Client Library（KCL）と一緒に使える\n- すべての商用 AWS リージョン、AWS GovCloud（US）リージョン、中国リージョンで利用可能\n- 標準の GetRecords API リクエスト料金以外に追加料金はない\n\n詳しくは DynamoDB デベロッパーガイドのタイムスタンプのドキュメントを見てね。\n\n## まとめ\n\n- `AT_TIMESTAMP` で指定時刻以降の最初のレコードから読み取り開始\n- 以前は最古のレコード（最大 24 時間）か新着からの 2 択だった\n- 復旧、リプレイ、バックログのスキップ、PITR エクスポート後の同期に便利\n- KCL（Kinesis アダプター経由）で利用可能、追加料金なし\n\nDynamoDB Streams のコンシューマーを運用している人に刺さるよ！",
+  "title_en": "DynamoDB Streams can now start reading from any timestamp!",
+  "summary_en": "DynamoDB Streams now supports timestamp-based processing with the AT_TIMESTAMP shard iterator type, starting from the first record written at or after a time you choose.",
+  "body_md_en": "Hi, it's Shii-chan! Now you can say \"resume from that moment\" in stream processing.\n\n## What was announced?\n\nAWS What's New says Amazon DynamoDB Streams now supports timestamp-based stream processing, so you can begin reading stream records from a specific point in time.\n\n## The story so far\n\nPreviously you had only two choices:\n\n- Start from the oldest retained record (up to 24 hours old)\n- Start from new records written after you begin consuming\n\n## What changes\n\nSupply a timestamp with the `AT_TIMESTAMP` shard iterator type and processing begins at the first record written at or after that time. You avoid reprocessing entire retained streams or missing records when resuming.\n\n## Dive Deep\n\nThe use cases called out:\n\n- Recovery after an interruption\n- Data replay for debugging and auditing by reading from a specific point in the past\n- Skipping a backlog by resuming from a recent timestamp near the latest records\n- Synchronizing after a restore by starting at the export timestamp following a point-in-time recovery (PITR) export\n\nOther details:\n\n- Works with the Amazon Kinesis Client Library (KCL) through the DynamoDB Streams Kinesis adapter\n- Available in all commercial AWS Regions, the AWS GovCloud (US) Regions, and the China Regions\n- No additional charge beyond standard GetRecords API request charges\n\nSee the DynamoDB Streams timestamp documentation in the developer guide.\n\n## Wrap-up\n\n- `AT_TIMESTAMP` starts from the first record at or after a chosen time\n- Before, it was the oldest record (up to 24 hours) or new records only\n- Handy for recovery, replay, skipping backlogs, and syncing after PITR exports\n- Works with KCL via the Kinesis adapter, no extra charge\n\nPerfect if you run DynamoDB Streams consumers!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-dynamodb-streams-timestamp-processing",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon DynamoDB Streams now supports timestamp-based stream processing",
+  "tags": [
+    "aws",
+    "serverless",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-15T18:30:00+00:00"
+}

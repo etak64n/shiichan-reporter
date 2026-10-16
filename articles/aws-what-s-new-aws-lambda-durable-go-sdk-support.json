@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-lambda-durable-go-sdk-support",
+  "title": "Go で Lambda durable functions が書けるようになったよ！",
+  "summary": "AWS Lambda Durable Execution SDK for Go が一般提供になったよ。Go のコードで、チェックポイントつきの長時間ワークフローが組めるの！",
+  "body_md": "やっほー、しぃちゃんだよ！Go 好きさん、お待たせ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Lambda Durable Execution SDK for Go が一般提供（GA）になったと発表されたよ。Go の開発者が、Lambda durable functions を使って、壊れにくい長時間のワークフローを作れるの。\n\n## なぜ重要なの？\n\nLambda durable functions は、Lambda のイベント駆動モデルを拡張して、進捗を自動でチェックポイントし、外部のイベントを待つあいだ最大 1 年まで実行を一時停止できる仕組みだよ。Go でも独自の進捗管理を書かずに、次のようなマルチステップのアプリが作れるようになったね。\n\n- インフラの自動化\n- 承認ゲートつきのデプロイのロールアウト\n- AI モデルを呼んで人のレビュー待ちで止まるパイプライン\n\n## これで何が変わるの？\n\nGo ネイティブな体験で durable functions が使えるよ。普段の Go ツールがそのまま使えるのも嬉しいところ！\n\n## 深く潜ってみよう\n\nSDK が持つ機能はこの 4 つだよ。\n\n- ステップ：進捗の追跡\n- コールバック連携：人間やエージェントが関わるワークフロー向け\n- durable invocation：信頼できる関数の連鎖呼び出し\n- 待機：効率的な一時停止\n\n導入と開発まわりはこうなっているよ。\n\n```\ngo get\n```\n\n- Go モジュールに `go get` で追加する\n- 関数は単一の静的バイナリとして、`provided.al2023` ランタイムにデプロイする（他の Go の Lambda 関数と同じ）\n- `durabletest` パッケージで、ネットワークも AWS 認証情報もなしで、ローカルで完全なワークフローをテストできる\n- `durablelint` アナライザーで、再開時にワークフローを壊しかねないコードを検出できる\n\nはじめ方は、Lambda durable functions の開発者ガイドを見てね。\n\n## まとめ\n\n- Lambda Durable Execution SDK for Go が GA\n- チェックポイントと最大 1 年の待機で長時間ワークフローを構築\n- `provided.al2023` ランタイムに静的バイナリでデプロイ\n- `durabletest` でローカルテスト、`durablelint` で再開時の問題を検出\n\nGo で承認フローや AI パイプラインを組みたい人に刺さるよ！",
+  "title_en": "Lambda durable functions are now writable in Go!",
+  "summary_en": "The AWS Lambda Durable Execution SDK for Go is generally available, so you can build checkpointed, long-running workflows in Go.",
+  "body_md_en": "Hi, it's Shii-chan! Go fans, thanks for waiting!\n\n## What was announced?\n\nAWS What's New says the AWS Lambda Durable Execution SDK for Go is generally available. Go developers can build resilient, long-running workflows with Lambda durable functions.\n\n## Why it matters\n\nLambda durable functions extend Lambda's event-driven model with operations that checkpoint progress automatically and pause execution for up to a year while waiting on external events. In Go, you can now build multi-step apps without custom progress tracking, such as:\n\n- Infrastructure automation\n- Deployment rollouts with approval gates\n- Pipelines that call AI models and pause for human review\n\n## What changes\n\nYou get a native Go experience for durable functions, using the Go tools you already know.\n\n## Dive Deep\n\nThe SDK includes:\n\n- Steps for progress tracking\n- Callback integration for human and agent-in-the-loop workflows\n- Durable invocation for reliable function chaining\n- Waits for efficient suspension\n\nSetup and development:\n\n```\ngo get\n```\n\n- Add it to a Go module with `go get`\n- Deploy your function as a single static binary on the `provided.al2023` runtime, like any other Go function on Lambda\n- Test complete workflows locally with the `durabletest` package, with no network access or AWS credentials\n- Use the `durablelint` analyzer to catch code that could break a workflow when it resumes\n\nTo get started, see the Lambda durable functions developer guide.\n\n## Wrap-up\n\n- Lambda Durable Execution SDK for Go is GA\n- Checkpointing and waits of up to a year for long workflows\n- Deploy as a static binary on `provided.al2023`\n- `durabletest` for local tests, `durablelint` for resume-safety checks\n\nGreat if you want approval flows or AI pipelines in Go!",
+  "emotion": "energetic",
+  "importance": 5,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-lambda-durable-go-sdk-support/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Lambda Durable Execution SDK for Go is now generally available",
+  "tags": [
+    "aws",
+    "serverless",
+    "devops"
+  ],
+  "published_at": "2026-10-15T18:23:00+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-s3-metadata-six-additional-regions",
+  "title": "S3 Metadata が 6 リージョン増えて 38 リージョンになったよ！",
+  "summary": "Amazon S3 Metadata が新たに 6 つの AWS リージョンで使えるようになり、一般提供は 38 リージョンになったよ。",
+  "body_md": "おつかれさま、しぃちゃんだよ！S3 のデータ探しが楽になる機能が、さらに広がったよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon S3 Metadata が 6 つのリージョンで追加で使えるようになったと発表されたよ。\n\n- アジアパシフィック（ハイデラバード）\n- アジアパシフィック（マレーシア）\n- アジアパシフィック（ニュージーランド）\n- アジアパシフィック（台北）\n- アジアパシフィック（タイ）\n- メキシコ（中部）\n\nこれで S3 Metadata は 38 の AWS リージョンで一般提供になったよ。\n\n## これで何が変わるの？\n\nS3 Metadata は、S3 のデータを素早く見つけて理解するための、ほぼリアルタイムに更新される自動メタデータだよ。クエリしやすい形で、新しいオブジェクトにも既存のオブジェクトにも自動で入るの。ビジネス分析やリアルタイム推論アプリなどで S3 のデータを選び出して使うのに役立つよ。上記のリージョンのデータでも使えるようになったね！\n\n## 深く潜ってみよう\n\nS3 Metadata には「アノテーション」という拡張があるよ。\n\n- オブジェクトに、ビジネス上の文脈を JSON、XML、YAML で直接付けられる\n- 1 オブジェクトあたり最大 1 GB\n- 大規模に検索したいときは、S3 Metadata のアノテーションテーブルとして表面化できる（今回のリージョンでも対応）\n\n料金は S3 の料金ページ、詳細は製品ページとドキュメントを見てね。\n\n## まとめ\n\n- S3 Metadata が 6 リージョン追加（アジアパシフィック 5、メキシコ 1）\n- 一般提供は 38 リージョンに\n- 新規・既存オブジェクトのメタデータをほぼリアルタイムで更新\n- アノテーションで最大 1 GB の文脈情報を付けられる\n\nこれらのリージョンで S3 のデータを管理している人に刺さるよ！",
+  "title_en": "S3 Metadata grows by six Regions, now in 38!",
+  "summary_en": "Amazon S3 Metadata is now available in six additional AWS Regions, bringing general availability to 38 Regions.",
+  "body_md_en": "Hi, it's Shii-chan! A feature that makes finding S3 data easier just reached more places.\n\n## What was announced?\n\nAWS What's New says Amazon S3 Metadata is now available in six additional Regions:\n\n- Asia Pacific (Hyderabad)\n- Asia Pacific (Malaysia)\n- Asia Pacific (New Zealand)\n- Asia Pacific (Taipei)\n- Asia Pacific (Thailand)\n- Mexico (Central)\n\nWith this launch, S3 Metadata is generally available in 38 AWS Regions.\n\n## What changes\n\nS3 Metadata is a fast way to discover and understand your S3 data with automated, easily queried metadata that updates in near real time. It populates metadata for both new and existing objects, helping you curate and use your data for business analytics, real-time inference apps, and more. Now you can use it with data in the Regions above!\n\n## Dive Deep\n\nS3 Metadata has an extension called annotations:\n\n- Attach business context directly to objects in JSON, XML, or YAML\n- Up to 1 GB per object\n- To query annotations at scale, surface them in S3 Metadata annotation tables (available in these Regions too)\n\nSee the S3 pricing page for pricing, and the product page and documentation for details.\n\n## Wrap-up\n\n- Six new Regions (five in Asia Pacific, one in Mexico)\n- Generally available in 38 Regions\n- Near-real-time metadata for new and existing objects\n- Annotations let you attach up to 1 GB of context per object\n\nGood news if you manage S3 data in these Regions!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-s3-metadata-six-additional-regions/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon S3 Metadata now available in six additional AWS Regions",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-15T13:00:00+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-lambda-recursive-loops-eventbridge-custom",
+  "title": "Lambda の無限ループ検知が EventBridge カスタムバスにも対応したよ！",
+  "summary": "Lambda の再帰ループ検知が Amazon EventBridge のカスタムイベントバスにも対応したよ。暴走を自動で止めて、AWS Health Dashboard に通知してくれるの！",
+  "body_md": "こんにちは、しぃちゃんだよ！請求がこわい「無限ループ」を守ってくれるアップデートだよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Lambda の再帰ループ検知が Amazon EventBridge のカスタムイベントバスに対応したと発表されたよ。Lambda イベント関数と EventBridge カスタムバスのあいだで起きる再帰ループを、自動で検知して止めてくれるの。\n\n## 今までどうだったの？\n\n再帰ループ検知は、サポート対象の AWS サービスから Lambda 関数が再帰的に呼ばれているのを見つけて止める機能で、アカウントで標準で有効だよ。でも、EventBridge のカスタムバスは対象じゃなかったんだね。\n\nカスタムバスから Lambda を呼ぶ構成では、設定ミスやコードの不具合で EventBridge ルールが関数を再帰的に起動してしまうことがあるの。そうなると利用が暴走して、思わぬ課金につながるよ。\n\n## これで何が変わるの？\n\nそんなループを自動で止めて、AWS Health Dashboard にトラブルシュート手順つきの通知を送ってくれるよ。意図しない使用量や課金から守られるのが嬉しいところ！\n\n## 深く潜ってみよう\n\n- 追加の設定は不要で、アカウントで標準で有効\n- EventBridge カスタムバスが使える商用 AWS リージョンすべてで利用可能\n- ループを意図的に使っている関数は、`PutFunctionRecursionConfig` API で関数ごとに検知をオフにできる\n\n## まとめ\n\n- 再帰ループ検知が EventBridge カスタムバスに対応\n- 検知すると自動で停止し、Health Dashboard に通知\n- 設定不要・全商用リージョンで利用可能\n- 意図的な再帰は `PutFunctionRecursionConfig` で無効化\n\nEventBridge と Lambda でイベント駆動の自動化を組んでいる人は、安心材料が増えたね！",
+  "title_en": "Lambda loop detection now covers EventBridge custom buses!",
+  "summary_en": "AWS Lambda recursive loop detection now supports Amazon EventBridge custom event buses. It stops runaway loops automatically and sends an AWS Health Dashboard notification.",
+  "body_md_en": "Hi, it's Shii-chan! This update protects you from the scary infinite loop.\n\n## What was announced?\n\nAWS What's New says Lambda recursive loop detection now supports Amazon EventBridge custom event buses. It automatically detects and stops recursive loops between Lambda event functions and EventBridge custom buses.\n\n## The story so far\n\nRecursive loop detection finds Lambda functions that are invoked recursively by a supported AWS service and stops the loop. It is enabled by default on your account. But EventBridge custom buses weren't covered.\n\nWhen you invoke Lambda from a custom bus, a misconfiguration or code defect can make EventBridge rules trigger your function recursively. That leads to runaway usage and unexpected charges.\n\n## What changes\n\nNow those loops are stopped automatically, and you get an AWS Health Dashboard notification with troubleshooting instructions. You're protected from unintended usage and charges.\n\n## Dive Deep\n\n- No configuration needed; it's enabled by default on your account\n- Available in every commercial AWS Region where EventBridge custom event buses are available\n- If a function uses recursion on purpose, you can turn detection off for that function with the `PutFunctionRecursionConfig` API\n\n## Wrap-up\n\n- Loop detection now supports EventBridge custom buses\n- Loops are stopped automatically with a Health Dashboard notification\n- No setup, all commercial Regions\n- Use `PutFunctionRecursionConfig` for intentional recursion\n\nOne more safety net if you build event-driven automation with EventBridge and Lambda!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/lambda-recursive-loops-eventbridge-custom",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Lambda recursive loop detection now supports Amazon EventBridge Custom event buses",
+  "tags": [
+    "aws",
+    "serverless"
+  ],
+  "published_at": "2026-10-14T18:00:00+00:00"
+}

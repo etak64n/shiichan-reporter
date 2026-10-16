@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-time-sync-additional-instances-all-regions",
+  "title": "マイクロ秒精度の時刻が、さらに 135 種類の EC2 で使えるよ！",
+  "summary": "Amazon Time Sync Service のマイクロ秒精度の時刻が、12 ファミリー・135 種類の EC2 インスタンスタイプに追加され、全商用リージョンで使えるようになったよ。",
+  "body_md": "やっほー、しぃちゃんだよ！時刻の精度にこだわる人に嬉しいニュースだよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Time Sync Service のマイクロ秒精度の時刻が、12 ファミリーにわたる 135 種類の EC2 インスタンスタイプに追加され、すべての商用リージョンで使えるようになったと発表されたよ。\n\n## なぜ重要なの？\n\nこの機能は AWS Nitro System の中で動くリファレンスクロックを直接使っていて、マイクロ秒精度の時刻とナノ秒精度のハードウェアタイムスタンプを提供するよ。次のようなことが簡単にできるの。\n\n- アプリケーションのイベントの順序づけ\n- 片道のネットワーク遅延の測定\n- 分散アプリケーションのトランザクション速度の向上\n\n## これで何が変わるの？\n\n新しい世代のインスタンスでも、マイクロ秒精度の時刻が使えるようになったよ。\n\n## 深く潜ってみよう\n\n新たに対応したファミリーは次の 12 個だよ。\n\n- Gen8：C8a、C8i、C8i-flex、C8id、M8i、M8i-flex、R8a、X8i\n- Gen9：C9g、C9gd、M9g、M9gd\n\n使うには Precision Time Placement Group（PTPG）を作るよ。PTPG は新しいプレイスメント戦略で、Precision Time Protocol のハードウェアクロック（PHC）を有効にしてインスタンスを起動できるの。\n\nネットワークの低遅延と精密な時刻の両方が必要なら、PTPG をクラスタープレイスメントグループ（CPG）に関連付けると、低遅延のワークロードでも精密な時刻の恩恵を受けられるよ。詳細は Amazon Time Sync Service のドキュメントを見てね。\n\n## まとめ\n\n- マイクロ秒精度の時刻が 12 ファミリー・135 インスタンスタイプに追加\n- 全商用リージョンで利用可能\n- PTPG でインスタンスを起動して PHC を有効にする\n- CPG と組み合わせて低遅延と精密な時刻を両立\n\n金融システムなど、正確な時刻で分散処理をしたい人に刺さるよ！",
+  "title_en": "Microsecond-accurate time arrives on 135 more EC2 instance types!",
+  "summary_en": "Amazon Time Sync Service adds microsecond-accurate time on 135 additional EC2 instance types across 12 families in all commercial Regions.",
+  "body_md_en": "Hi, it's Shii-chan! Here's good news for anyone who cares about precise time.\n\n## What was announced?\n\nAWS What's New says Amazon Time Sync Service now supports microsecond-accurate time on 135 additional EC2 instance types, spanning 12 instance families, in all commercial Regions.\n\n## Why it matters\n\nThe feature uses the reference clocks running in the AWS Nitro System directly, providing microsecond-accurate time and nanosecond-precision hardware timestamps. It makes these easy:\n\n- Ordering application events\n- Measuring one-way network latency\n- Increasing distributed application transaction speed\n\n## What changes\n\nNewer instance generations can now use microsecond-accurate time too.\n\n## Dive Deep\n\nThe 12 newly supported families:\n\n- Gen8: C8a, C8i, C8i-flex, C8id, M8i, M8i-flex, R8a, X8i\n- Gen9: C9g, C9gd, M9g, M9gd\n\nTo use it, create a Precision Time Placement Group (PTPG), a new placement strategy that launches instances with the Precision Time Protocol hardware clock (PHC) enabled.\n\nIf you need both low network latency and precise time, associate a PTPG with a Cluster Placement Group (CPG) so your low-latency workloads benefit from precise time too. See the Amazon Time Sync Service documentation for details.\n\n## Wrap-up\n\n- Microsecond-accurate time on 135 more instance types across 12 families\n- Available in all commercial Regions\n- Launch with a PTPG to enable the PHC\n- Combine with a CPG for low latency and precise time\n\nGreat for distributed systems that depend on accurate time!",
+  "emotion": "thinking",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/time-sync-additional-instances-all-regions",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Time Sync Service adds support for microsecond-accurate time on 135 additional EC2 instance types in all commercial regions",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-15T17:34:00+00:00"
+}

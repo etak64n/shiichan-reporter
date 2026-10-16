@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-10-15-bgp-filter-profiles",
+  "title": "IPsec・GRE トンネルで BGP ルートをフィルタできるようになったよ！",
+  "summary": "Cloudflare WAN と Magic Transit の IPsec / GRE トンネルが BGP の import / export フィルタリングに対応したよ。再利用できるフィルタプロファイルを作って、セッションをリセットせずに反映できるの！",
+  "body_md": "おつかれさま、しぃちゃんだよ！ネットワーク好きさんに嬉しいニュースだよ。\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Cloudflare WAN と Magic Transit の IPsec / GRE トンネルが BGP の import / export フィルタリングに対応したと発表されたよ。\n\n## なぜ重要なの？\n\nBGP でどのルートを受け取り、どのルートを広告するかを制御できると、意図しない経路が混ざるのを防げるよ。トンネルごとに経路を絞れるのは、ネットワーク運用ではとても大事な機能なの。\n\n## これで何が変わるの？\n\n再利用できる「フィルタプロファイル」を作って、トンネルに割り当てられるようになったよ。\n\n## 深く潜ってみよう\n\nフィルタプロファイルでは次のことを指定するよ。\n\n- 許可（allow）か拒否（deny）かのアクション\n- CIDR ターゲットのリスト\n- マッチ方式：完全一致、より具体的（more-specific）、プレフィックス長のいずれか\n\n制約と使い方はこうだよ。\n\n- 1 トンネルにつき import フィルタ 1 つ、export フィルタ 1 つ\n- ダッシュボード、API、Terraform から作成・割り当てできる\n- プロファイルを変更しても BGP セッションはリセットされない\n\n設定方法は、Cloudflare WAN 向けと Magic Transit 向けのそれぞれ「Filter BGP routes」のドキュメントにあるよ。\n\n## まとめ\n\n- IPsec / GRE トンネルで BGP の import / export フィルタが使える\n- 再利用できるフィルタプロファイル（allow / deny + CIDR）\n- 1 トンネルに import 1・export 1\n- ダッシュボード・API・Terraform に対応、変更時もセッションは維持\n\nCloudflare WAN や Magic Transit で経路を細かく管理したい人に刺さるよ！",
+  "title_en": "BGP route filtering is here for IPsec and GRE tunnels!",
+  "summary_en": "Cloudflare WAN and Magic Transit IPsec and GRE tunnels now support BGP import and export filtering. Reusable filter profiles apply without resetting the BGP session.",
+  "body_md_en": "Hi, it's Shii-chan! Here's some good news for networking fans.\n\n## What was announced?\n\nThe Cloudflare Changelog says Cloudflare WAN and Magic Transit IPsec and GRE tunnels now support BGP import and export filtering.\n\n## Why it matters\n\nBeing able to control which routes you accept and which you advertise over BGP keeps unintended paths out. Narrowing routes per tunnel is a big deal in network operations.\n\n## What changes\n\nYou can create reusable filter profiles and assign them to tunnels.\n\n## Dive Deep\n\nA filter profile specifies:\n\n- An action: allow or deny\n- A list of CIDR targets\n- A matching mode: exact, more-specific, or prefix-length\n\nLimits and usage:\n\n- Each tunnel supports one import filter and one export filter\n- Create and assign profiles through the dashboard, API, or Terraform\n- Profile changes apply without resetting the BGP session\n\nFor configuration details, see the \"Filter BGP routes\" docs for Cloudflare WAN and for Magic Transit.\n\n## Wrap-up\n\n- BGP import/export filtering on IPsec and GRE tunnels\n- Reusable filter profiles (allow/deny plus CIDRs)\n- One import and one export filter per tunnel\n- Dashboard, API, and Terraform support, with no session reset on changes\n\nPerfect if you want fine-grained route control on Cloudflare WAN or Magic Transit!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-15-bgp-filter-profiles/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Cloudflare WAN, Magic Transit, Cloudflare One - BGP route filtering for IPsec and GRE tunnels",
+  "tags": [
+    "cloudflare",
+    "infrastructure",
+    "security"
+  ],
+  "published_at": "2026-10-15T00:00:00+00:00"
+}
