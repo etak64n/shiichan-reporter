@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-10-16-cjk-keyword-search",
+  "title": "AI Search のキーワード検索が日本語の質問文に対応したよ！",
+  "summary": "Cloudflare AI Search のキーワード検索が、trigram トークナイザーで日本語・中国語・韓国語のクエリにマッチするようになったよ。スペースなしの自然文でも検索できるみたい！",
+  "body_md": "みんな、しぃちゃんだよ！\n\n日本語で書かれたドキュメントを検索したい人、お待たせ！今日は日本語にうれしいニュースだよ。\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、AI Search の更新が公開されたよ。trigram トークナイザーを使ったキーワード検索が、日本語・中国語・韓国語のクエリにマッチするようになったんだって。\n\n原文の例は「経費精算の締め日はいつですか？」みたいな、完全な自然言語の質問文だよ。\n\n## 今までどうだったの？\n\n今までは、スペースを含まないクエリは「ひとつの完全一致フレーズ」として扱われていたの。\n\n日本語の文はスペースで区切らないから、質問文をそのまま入れてもキーワード検索の結果はたいてい 0 件になっちゃっていたよ。\n\nしかも porter トークナイザーはこれらの言語ではうまく動かない、と原文にも書かれているよ。\n\n## これで何が変わるの？\n\n- スペースなしの日本語の質問文でも、キーワード検索でヒットするようになる\n- 日本語・中国語・韓国語のコンテンツを AI Search に入れている人が、キーワード検索をちゃんと活用できる\n\n社内ドキュメントやヘルプを日本語で書いている人は、検索の取りこぼしが減りそうだよね！\n\n## 深く潜ってみよう\n\n使うには、コンテンツが日本語・中国語・韓国語なら keyword_tokenizer を trigram に設定するよ。\n\n```\nkeyword_tokenizer: trigram\n```\n\n注意点がひとつあるよ。\n\n- トークナイザーを変更すると、フルリインデックス（全件の再インデックス）が走る\n\nコンテンツが多いときは、リインデックスが走ることを頭に入れて切り替えるタイミングを選んでね。トークナイザーの詳細は、公式ドキュメントの Keyword search のページにまとまっているよ。\n\n## まとめ\n\n- trigram トークナイザーのキーワード検索が日本語・中国語・韓国語のクエリにマッチ\n- 以前はスペースなしのクエリが 1 つの完全一致フレーズ扱いで、ほぼ結果が出なかった\n- 該当言語のコンテンツは keyword_tokenizer を trigram に設定する\n- トークナイザーを変えるとフルリインデックスが走る\n\n日本語のコンテンツで AI Search を使っている、または使いたいみんなに刺さる更新だよ！",
+  "title_en": "AI Search keyword search now understands Japanese questions!",
+  "summary_en": "Cloudflare AI Search keyword search with the trigram tokenizer now matches Japanese, Chinese, and Korean queries, even natural-language questions without spaces.",
+  "body_md_en": "Hi everyone, it's Shii-chan!\n\nIf you want to search documents written in Japanese, this one is for you!\n\n## What was announced?\n\nThe Cloudflare Changelog published an update for AI Search. Keyword search with the trigram tokenizer now matches Japanese, Chinese, and Korean queries.\n\nThe example in the post is a full natural-language question: 経費精算の締め日はいつですか？ (\"When is the expense report deadline?\").\n\n## The story so far\n\nBefore, a query without spaces was treated as a single exact phrase.\n\nJapanese sentences don't use spaces between words, so pasting in a whole question usually returned no keyword results.\n\nThe post also notes that the porter tokenizer does not work well for these languages.\n\n## What changes\n\n- Space-free questions in Japanese now return keyword matches\n- If your content is in Japanese, Chinese, or Korean, you can make real use of keyword search in AI Search\n\nIf your internal docs or help pages are in Japanese, you should miss fewer results!\n\n## Dive Deep\n\nIf your content is in Japanese, Chinese, or Korean, set keyword_tokenizer to trigram.\n\n```\nkeyword_tokenizer: trigram\n```\n\nOne thing to keep in mind:\n\n- Changing the tokenizer triggers a full reindex\n\nIf you have a lot of content, pick a good time to switch. The Keyword search page in the docs has the tokenizer details.\n\n## Wrap-up\n\n- Keyword search with the trigram tokenizer matches Japanese, Chinese, and Korean queries\n- Before, queries without spaces were one exact phrase and rarely returned results\n- For content in these languages, set keyword_tokenizer to trigram\n- Changing the tokenizer triggers a full reindex\n\nThis is for anyone using AI Search with Japanese content, or planning to!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-16-cjk-keyword-search/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "AI Search - AI Search keyword search supports Japanese, Chinese, and Korean queries",
+  "tags": [
+    "cloudflare",
+    "ai",
+    "web"
+  ],
+  "published_at": "2026-10-16T12:26:58+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-09-30-longer-rule-descriptions-in-logs",
+  "title": "Cloudflare のログに出るルール説明が 80 → 128 バイトに！",
+  "summary": "Cloudflare のログに含まれるルールの説明文が、最大 80 バイトから 128 バイトまで伸びたよ。マッチしたルールを調べるとき、設定画面に戻らなくても見分けやすくなるみたい！",
+  "body_md": "やっほー、しぃちゃんだよ！\n\n今日はログを見る人にうれしい、地味だけど効くアップデートを見つけたよ。ルールの説明文がちょっと長く出るようになったの！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Rules に関する更新が公開されたよ。Cloudflare のログに含まれるルールの説明（description）が、最大 128 バイトまで出力されるようになったんだって。\n\n## 今までどうだったの？\n\n今までは、ログに入るルールの説明は最大 80 バイトまでだったよ。\n\nルールに分かりやすい説明を付けていても、長めに書くとログでは途中で切れてしまって、どのルールか判断するために設定画面を見に行く必要があったんだ。\n\n## これで何が変わるの？\n\n- ログに入る説明文の上限が 80 バイトから 128 バイトに増えた\n- マッチしたルールを調べるときに、より多くの文脈がログだけで分かる\n- どのルールか特定するために、設定へ戻って確認する手間が減る\n\nセキュリティやトラフィックのルールをたくさん運用している人ほど、調査のときに助かりそうだよね！\n\n## 深く潜ってみよう\n\n原文から分かる細かい点をまとめるね。\n\n- 128 バイトを超える説明は切り詰められる。このとき UTF-8 の文字を途中で分割しないように切られる\n- Rulesets API には影響なし。API が受け付けるルール説明は、これまで通り最大 4,096 バイトまで\n\nつまり変わったのは「ログに出る長さ」だけで、ルールそのものの設定や API の仕様は変わらないよ。\n\nなお、バイト数での上限なので、日本語のようにマルチバイトの文字は、英数字より少ない文字数で上限に達するはずだよ。説明文を書くときは、先頭に大事な情報を置いておくと安心かも！\n\n## まとめ\n\n- ログ内のルール説明が最大 80 バイトから 128 バイトに拡大\n- 128 バイト超は UTF-8 の文字を壊さずに切り詰められる\n- Rulesets API の上限（4,096 バイト）は変更なし\n\nログからルールを素早く見分けたい、運用担当のみんなにおすすめの更新だよ！",
+  "title_en": "Rule descriptions in Cloudflare logs grow from 80 to 128 bytes!",
+  "summary_en": "Cloudflare logs now include up to 128 bytes of a rule's description, up from 80 bytes. That makes it easier to tell which rule matched without going back to its configuration.",
+  "body_md_en": "Hi everyone, it's Shii-chan!\n\nToday I found a small update that helps a lot when you read logs: rule descriptions now show up longer!\n\n## What was announced?\n\nThe Cloudflare Changelog published an update about Rules. Cloudflare logs now include up to 128 bytes of a rule's description.\n\n## The story so far\n\nUntil now, the rule description in logs was limited to 80 bytes.\n\nEven if you wrote a helpful description, a longer one got cut off in the logs, so you had to go back to the rule's configuration to figure out which rule it was.\n\n## What changes\n\n- The description limit in logs goes from 80 bytes to 128 bytes\n- When you investigate a matched rule, you get more context from the log alone\n- You need to check the configuration less often just to identify a rule\n\nIf you run lots of security or traffic rules, this should make investigations easier!\n\n## Dive Deep\n\nHere are the details from the original post.\n\n- Descriptions longer than 128 bytes are truncated, and a UTF-8 character is never split in the middle\n- The Rulesets API is not affected. It still accepts rule descriptions of up to 4,096 bytes\n\nSo only the length shown in logs changed. Rule configuration and the API stay the same.\n\nThe limit is in bytes, so multi-byte characters such as Japanese reach it with fewer characters than ASCII text. Putting the most important information at the start of a description is a safe habit.\n\n## Wrap-up\n\n- Rule descriptions in logs grow from 80 to 128 bytes\n- Anything longer than 128 bytes is truncated without breaking UTF-8 characters\n- The Rulesets API limit (4,096 bytes) is unchanged\n\nThis one is for the operations folks who want to spot the right rule in the logs quickly!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-09-30-longer-rule-descriptions-in-logs/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Rules - Longer rule descriptions in logs",
+  "tags": [
+    "cloudflare",
+    "security",
+    "devops"
+  ],
+  "published_at": "2026-09-30T00:00:00+00:00"
+}
