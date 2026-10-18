@@ -1,0 +1,20 @@
+{
+  "slug": "claude-code-release-v2-1-303",
+  "title": "Claude Code v2.1.303 が登場！今回は不具合修正と安定性アップのお手入れ回",
+  "summary": "Claude Code の v2.1.303 がリリースされたよ！リリースノートは「バグ修正と信頼性の改善」の 1 行だけで、新機能の追加は書かれていないみたい。",
+  "body_md": "やっほー、しぃちゃんだよ！\n\nClaude Code に新しいバージョン v2.1.303 が出たよ！さっそくチェックしてきたの。\n\n## なにが発表されたの？\n\nGitHub の Claude Code Release ページで、v2.1.303 が公開されたよ！\n\nリリースノートに書かれている内容は、これだけ！\n\n- Bug fixes and reliability improvements(バグ修正と信頼性の改善)\n\nどの不具合をどう直したのかといった細かい説明は、リリースページには載っていないみたい。\n\n## これで何が変わるの？\n\n今回のリリースノートからは、新しいコマンドや設定が増えたとは読み取れないよ。\n\n- 使い方が変わる話ではなさそう\n- 既存の挙動の不具合が直って、動作がより安定する方向のアップデート\n\nただ、具体的にどんな場面で効くのかは原文に書かれていないから、しぃちゃんも推測では書かないでおくね！\n\n## 深く潜ってみよう\n\nもっと詳しく知りたいときは、前のバージョン v2.1.302 から v2.1.303 までのコミット履歴を GitHub で見るのが近道だと思うよ。\n\nリリースページ側には、変更内容の詳しい一覧は載っていないの。\n\n## まとめ\n\n- Claude Code v2.1.303 がリリースされたよ\n- 内容は「バグ修正と信頼性の改善」で、新機能の記載はなし\n- 詳細な修正内容はリリースノートには書かれていない\n\nClaude Code を毎日使っているみんなは、アップデートして安定性アップの恩恵を受けてね！\n",
+  "title_en": "Claude Code v2.1.303 Is Out: A Tidy-Up Release Focused on Bug Fixes and Reliability",
+  "summary_en": "Claude Code v2.1.303 has been released! The release notes contain a single line about bug fixes and reliability improvements, with no new features listed.",
+  "body_md_en": "Hi everyone, it's Shii-chan!\n\nA new version of Claude Code, v2.1.303, is out, and I went straight to check it!\n\n## What was announced?\n\nv2.1.303 was published on the Claude Code Release page on GitHub!\n\nHere is everything the release notes say:\n\n- Bug fixes and reliability improvements\n\nThe release page doesn't describe which bugs were fixed or how.\n\n## What changes\n\nFrom these release notes, we can't tell that any new commands or settings were added.\n\n- It doesn't look like a release that changes how you use the tool\n- It seems to be an update that fixes existing issues and makes behavior more stable\n\nThe source doesn't say in which situations the fixes will help, so I won't guess about that!\n\n## Dive Deep\n\nIf you want more detail, the commit history between v2.1.302 and v2.1.303 on GitHub is the quickest place to look.\n\nThe release page itself doesn't include a detailed list of changes.\n\n## Wrap-up\n\n- Claude Code v2.1.303 has been released\n- The notes say \"bug fixes and reliability improvements\", with no new features listed\n- Detailed fixes aren't described in the release notes\n\nIf you use Claude Code every day, update and enjoy the extra stability!\n",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.303",
+  "source_name": "Claude Code Release",
+  "og_title": "v2.1.303",
+  "tags": [
+    "anthropic",
+    "ai",
+    "devops"
+  ],
+  "published_at": "2026-10-18T22:26:54Z"
+}
