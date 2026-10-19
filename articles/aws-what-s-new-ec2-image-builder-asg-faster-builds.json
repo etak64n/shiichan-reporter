@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-ec2-image-builder-asg-faster-builds",
+  "title": "EC2 Image Builder のイメージ作成が速くなるよ！起動待ちは ASG の実行中インスタンスで解消",
+  "summary": "EC2 Image Builder が Auto Scaling Group の実行中インスタンスを使ってイメージをビルドできるようになったよ。新規起動とブートストラップの待ち時間がなくなるの。",
+  "body_md": "みんな、しぃちゃんだよ！イメージビルドの待ち時間って、地味に長いよね。そこに効く更新が来たよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、EC2 Image Builder が Auto Scaling Group（ASG）の既存インスタンスをイメージのビルドに使えるようになったと発表されたよ。\n\n## 今までどうだったの？\n\nこれまでは、ビルドのたびに新しいインスタンスを起動して、ブートストラップが終わるのを待つ必要があったよ。この起動と準備の時間が、ビルド全体の待ち時間に含まれていたんだね。\n\n## これで何が変わるの？\n\n起動とブートストラップの時間が省けて、すでに動いているインスタンスを再利用してビルドできるよ。パイプラインを何度も回す人ほど、待ち時間の短縮を感じられそう！\n\n## 深く潜ってみよう\n\n使い方は、Image Builder のインフラストラクチャ設定に ASG を指定するだけだよ。\n\n- ビルド時に新しいインスタンスを起動する代わりに、指定した ASG から実行中のインスタンスを 1 つ選ぶ\n- そのインスタンスにビルドコンポーネントを適用して、イメージを作成する\n- ASG が使われた分のインスタンスを補充し続けるので、次のパイプライン実行でも使えるインスタンスが常にある\n\n導入の影響についても書かれているよ。\n\n- 完全にオプトインで、既存のパイプラインには影響しない\n- ASG を設定していないパイプラインは、これまでどおりの起動パスで動く（挙動の変更なし）\n- すべての AWS リージョンで追加料金なしで使える\n\n設定方法は EC2 Image Builder のドキュメントを見てね。\n\n## まとめ\n\n- Image Builder が ASG の実行中インスタンスでビルドできるようになった\n- 新規起動とブートストラップの時間を省ける\n- ASG が自動で補充するので、次回以降も使える\n- オプトインで既存パイプラインに影響なし、全リージョンで追加料金なし\n\nAMI ビルドを頻繁に回している人や、パイプラインの完了時間を縮めたい人に刺さるよ！",
+  "title_en": "EC2 Image Builder Now Builds Faster by Reusing Running ASG Instances!",
+  "summary_en": "EC2 Image Builder can now use running instances from an Auto Scaling Group to build images, skipping the time spent launching and bootstrapping new instances.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Waiting for image builds can feel pretty long, right? Here is an update that helps.\n\n## What was announced?\n\nAccording to AWS What's New, EC2 Image Builder now supports using existing instances from an Auto Scaling Group (ASG) to build images.\n\n## The story so far\n\nUntil now, every build needed a new instance to be launched and bootstrapped. That launch and setup time was part of the total wait.\n\n## What changes\n\nYou skip the launch and bootstrap time because builds reuse an instance that is already running. If you run pipelines often, you should feel the shorter wait.\n\n## Dive Deep\n\nTo use it, you provide an ASG in your Image Builder infrastructure configuration.\n\n- Instead of launching a new instance at build time, Image Builder selects a running instance from the ASG\n- It applies your build components to that instance and creates the image\n- The ASG keeps replenishing the pool as instances are used, so instances are always available for the next pipeline run\n\nImpact on existing setups:\n\n- It is fully opt-in and does not affect existing pipelines\n- Pipelines without an ASG keep using the default launch path, with no behavior change\n- It is available in all AWS Regions at no additional cost\n\nSee the EC2 Image Builder documentation for setup.\n\n## Wrap-up\n\n- Image Builder can build on running ASG instances\n- No launch or bootstrap wait for each build\n- The ASG replenishes instances for later runs\n- Opt-in, no effect on existing pipelines, all Regions, no extra cost\n\nIf you run AMI builds often or want shorter pipeline times, this one is for you!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/ec2-image-builder-asg-faster-builds/",
+  "source_name": "AWS What's New",
+  "og_title": "EC2 Image Builder now integrates with ASG for faster image builds",
+  "tags": [
+    "aws",
+    "devops",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-19T17:30:00+00:00"
+}

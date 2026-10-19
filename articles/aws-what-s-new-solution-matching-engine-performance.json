@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-solution-matching-engine-performance",
+  "title": "AWS Partner Central、Solution Matching Engine の成果が数字で見えるようになったよ！",
+  "summary": "AWS Partner Central の Partner Analytics に、Solution Matching Engine（SME）が共同販売パイプラインにどう貢献しているかを見られるセクションが追加されたよ。レコメンド数や SME 経由の商談、停滞率などを確認できるの。",
+  "body_md": "やっほー、しぃちゃんだよ！今日は AWS パートナーのみんなに嬉しいお知らせを持ってきたよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Partner Central の Partner Analytics に「Solution Matching Engine performance」セクションが追加されたと発表されたよ。\n\nSolution Matching Engine（SME）が、自社と AWS Marketplace のリスティングにとってどのくらい働いているかを見られる画面なの。\n\n## なぜ重要なの？\n\nSME は AWS の営業担当にパートナーのソリューションをおすすめする仕組みで、共同販売（co-sell）の入口になるものだよ。ただ、これまでは「SME が自社のパイプラインにどれだけ効いているか」を把握する手段が見えにくかったみたい。今回、その貢献度が分析画面で確認できるようになったよ。\n\n## これで何が変わるの？\n\nパートナーは、自社の見え方（visibility）を数字で評価して、リスティングや商談情報のどこを直すか判断しやすくなるよ。\n\n## 深く潜ってみよう\n\nセクションで見られる指標はこれだよ！\n\n- レコメンド数\n- SME 経由の商談（SME-attributed opportunities）\n- AWS 起点の商談に占める自社のシェア\n- 停滞率（stall rate）\n- SME に帰属するパイプライン\n\n見方のオプションもあるよ。\n\n- レコメンドの種類、または AWS Marketplace のリスティングで絞り込み\n- 上位の顧客プロファイルを Region・業種・セグメント別に確認\n\n場所は、AWS Partner Central の Partner Analytics にある「Opportunity pipeline analysis」ページ。APN Customer Engagements（ACE）の対象になっているパートナーなら使えるよ。\n\n## まとめ\n\n- Partner Analytics に SME のパフォーマンスセクションが追加された\n- レコメンド数・SME 経由の商談・停滞率・パイプラインなどを確認できる\n- リスティング別、Region・業種・セグメント別に掘り下げられる\n- ACE 対象のパートナーが利用できる\n\nAWS Marketplace に出品していて、共同販売を伸ばしたいパートナーさんに刺さる更新だよ！",
+  "title_en": "AWS Partner Central Now Shows How Solution Matching Engine Performs for You!",
+  "summary_en": "AWS Partner Central's Partner Analytics has a new section showing how the Solution Matching Engine (SME) contributes to your co-sell pipeline, including recommendations, SME-attributed opportunities, and stall rate.",
+  "body_md_en": "Hi, it's Shii-chan! I've got good news today for AWS Partners.\n\n## What was announced?\n\nAccording to AWS What's New, Partner Analytics in AWS Partner Central now has a \"Solution Matching Engine performance\" section.\n\nIt shows how the Solution Matching Engine (SME) performs for your company and your AWS Marketplace listings.\n\n## Why it matters\n\nSME recommends partner solutions to AWS sellers, so it is an entry point for co-sell. Until now it was hard to see how much SME actually contributed to your pipeline. Now you can check that contribution right in the analytics.\n\n## What changes\n\nPartners can assess their visibility with numbers and decide where to improve their listings and opportunity information.\n\n## Dive Deep\n\nHere is what you can see in the section:\n\n- Recommendations\n- SME-attributed opportunities\n- Your share of AWS-originated opportunities\n- Stall rate\n- Pipeline attributed to SME\n\nYou can also explore the data:\n\n- Filter by recommendation type or AWS Marketplace listing\n- View top customer profiles by Region, industry, and segment\n\nYou can find it on the Opportunity pipeline analysis page under Partner Analytics in AWS Partner Central. All partners eligible for APN Customer Engagements (ACE) can use it.\n\n## Wrap-up\n\n- Partner Analytics gets an SME performance section\n- See recommendations, SME-attributed opportunities, stall rate, and pipeline\n- Drill down by listing, or by Region, industry, and segment\n- Available to ACE-eligible partners\n\nIf you list on AWS Marketplace and want to grow co-sell, this update is for you!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/solution-matching-engine-performance",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Partner Central adds Solution Matching Engine performance insights",
+  "tags": [
+    "aws",
+    "business"
+  ],
+  "published_at": "2026-10-17T03:00:00+00:00"
+}
