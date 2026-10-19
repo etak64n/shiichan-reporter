@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-10-19-cloud-workload-security-beta",
+  "title": "Cloud Workload Security がベータ公開！クラウド API を届く前にガードできるよ",
+  "summary": "Cloudflare の Cloud Workload Security (CWS) がベータで登場。クラウドプロバイダーに届く前の API リクエストに、Rego でポリシーを適用できるよ。Zero Trust Free プランでも使えるの！",
+  "body_md": "みんな、しぃちゃんだよ！今日はクラウドの設定ミスを防ぐのに役立ちそうな、Cloudflare の新しいベータ機能を紹介するよ！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、**Cloud Workload Security (CWS)** がベータとして利用できるようになったと告知されたよ。クラウドプロバイダーにリクエストが届く前に、ポリシーによる制御をかけられる仕組みなの。\n\n## なぜ重要なの？\n\nクラウドの API リクエストは、うっかり危険な設定を作ってしまう入り口にもなるよね。リクエストがプロバイダーに届く前にチェックできれば、問題のある操作を事前に止められる、というのが CWS のねらいだよ。\n\n## これで何が変わるの？\n\n原文の例では、「R2 バケットを公開状態にしてしまうリクエストをブロックする」というポリシーが挙げられているよ。クラウド環境の運用で「これだけは許さない」というルールを、リクエストの段階で守らせたい人にぴったりだね！\n\n## 深く潜ってみよう\n\n原文から分かる仕組みをまとめるね。\n\n- **ポリシーの定義**: リクエストフィルターと Rego によるチェックで書く\n- **対象の指定**: ワークロードとポリシーセットで、対象のクラウド環境を絞り込む\n- **管理**: ポリシーは Cloudflare ダッシュボードから管理する\n- **適用方法**: CWS プロキシを自分の環境で動かし、クライアントのリクエストをそのプロキシ経由にして、ポリシーを適用する\n\n利用条件は Zero Trust のサブスクリプションが必要で、Zero Trust Free プランで足りるとのことだよ。最初のガードレールの作り方は「Get started with Cloud Workload Security」のガイドに載っているみたい！\n\n## まとめ\n\n- CWS がベータで利用可能になった\n- クラウドプロバイダーに届く前の API リクエストにポリシーを適用できる\n- ポリシーはリクエストフィルターと Rego で定義し、ダッシュボードで管理する\n- CWS プロキシ経由でリクエストを流して強制する\n- Zero Trust Free プランでも利用できる\n\nクラウドの危ない操作をリクエストの時点で止めたい、セキュリティ担当やインフラ担当の人に刺さる発表だよ！",
+  "title_en": "Cloud Workload Security Is in Beta: Guard Cloud API Requests Before They Arrive!",
+  "summary_en": "Cloudflare's Cloud Workload Security (CWS) is now in Beta. You can apply policies written with request filters and Rego to cloud API requests before they reach your cloud provider, and the Zero Trust Free plan is enough.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today I'm introducing a new Cloudflare Beta feature that could help prevent cloud misconfigurations.\n\n## What was announced?\n\nIn the Cloudflare Changelog, Cloudflare announced that **Cloud Workload Security (CWS)** is now available in Beta. It lets you apply policy controls to cloud API requests before they reach your cloud provider.\n\n## Why it matters\n\nCloud API requests can also be the entry point for risky configurations. If you can check requests before they reach the provider, you can stop problematic operations up front. That's the idea behind CWS.\n\n## What changes\n\nThe example in the post is a policy that blocks requests that would make an R2 bucket public. If you want certain rules enforced at the request level in your cloud environments, this gives you a way to do it.\n\n## Dive Deep\n\nHere is what the post tells us about how it works:\n\n- **Defining policies**: write them with request filters and Rego checks\n- **Targeting**: use workloads and policy sets to target your cloud environments\n- **Management**: manage policies in the Cloudflare dashboard\n- **Enforcement**: run the CWS proxy in your environment and route client requests through it\n\nCWS requires a Zero Trust subscription, and the Zero Trust Free plan is sufficient. To configure your first guardrail, see the \"Get started with Cloud Workload Security\" guide.\n\n## Wrap-up\n\n- CWS is now available in Beta\n- You can apply policies to cloud API requests before they reach your cloud provider\n- Policies use request filters and Rego, and are managed in the dashboard\n- Requests are enforced by routing them through the CWS proxy\n- The Zero Trust Free plan is enough\n\nIf you want to stop risky cloud operations at the request stage, this one is for security and infrastructure folks!",
+  "emotion": "thinking",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-19-cloud-workload-security-beta/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Cloud Workload Security - Cloud Workload Security is now available in Beta",
+  "tags": [
+    "cloudflare",
+    "security",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-19T07:44:43+00:00"
+}
