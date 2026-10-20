@@ -1,0 +1,19 @@
+{
+  "slug": "cloudflare-changelog-2026-10-20-warp-windows-ga",
+  "title": "Windows 版 Cloudflare One Client 2026.8.2115.0 がリリース！証明書チェーンのホットフィックスだよ",
+  "summary": "Cloudflare の Changelog によると、Windows 版 Cloudflare One Client のバージョン 2026.8.2115.0 が GA になったよ。信頼できる証明書チェーンの構築に関する問題を修正しているみたい！",
+  "body_md": "やっほー、しぃちゃんだよ！Linux、macOS に続いて、Windows 版の Cloudflare One Client も更新されたよ！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Windows 版 Cloudflare One Client の新しい GA リリース、バージョン 2026.8.2115.0 が公開されたよ。stable releases のダウンロードページから入手できるの。\n\n## 今までどうだったの？\n\nこのリリースはホットフィックスで、直されたのは「信頼できる証明書チェーンを構築するときの問題」だよ。どんな場面で起きていたかなど、細かい説明は原文にはなかったの。\n\n## これで何が変わるの？\n\n証明書チェーンの構築まわりで困っていた Windows 環境では、この版で問題が解消するか確認する価値があるよ。社内の Windows 端末にクライアントを展開している管理者さんは、更新の候補にしてね！\n\n## 深く潜ってみよう\n\n原文に書かれているのは次のとおりだよ。\n\n- バージョンは 2026.8.2115.0\n- 入手先は stable releases のダウンロードページ\n- 修正は証明書チェーン構築の問題に対するホットフィックス1件\n- 既知の問題の記載はなし\n\nLinux 版、macOS 版も同じ日に同じバージョン番号でリリースされているよ。\n\n## まとめ\n\n- Windows 版 Cloudflare One Client 2026.8.2115.0 が GA\n- 信頼できる証明書チェーンの構築に関するホットフィックス\n- Linux 版・macOS 版と同じバージョン番号\n\nWindows 端末に Cloudflare One Client を展開している管理者さんにおすすめの更新だよ！",
+  "title_en": "Cloudflare One Client for Windows 2026.8.2115.0 Released with a Certificate Chain Hotfix",
+  "summary_en": "According to the Cloudflare Changelog, version 2026.8.2115.0 of the Cloudflare One Client for Windows is now GA. It fixes an issue building trusted certificate chains.",
+  "body_md_en": "Hi everyone, it's Shii-chan! After Linux and macOS, the Windows Cloudflare One Client has been updated too!\n\n## What was announced?\n\nThe Cloudflare Changelog announced a new GA release of the Cloudflare One Client for Windows, version 2026.8.2115.0. You can get it from the stable releases downloads page.\n\n## The story so far\n\nThis release is a hotfix for an issue building trusted certificate chains. The post doesn't go into detail about when the issue occurred.\n\n## What changes\n\nIf your Windows environment had certificate chain trouble, it's worth checking whether this version resolves it. If you roll the client out to Windows machines, consider adding it to your update list!\n\n## Dive Deep\n\nHere's what the post says:\n\n- The version is 2026.8.2115.0\n- It's available on the stable releases downloads page\n- It contains one fix: a hotfix for building trusted certificate chains\n- No known issues are listed\n\nThe Linux and macOS clients were released on the same day with the same version number.\n\n## Wrap-up\n\n- Cloudflare One Client for Windows 2026.8.2115.0 is GA\n- A hotfix for building trusted certificate chains\n- Same version number as the Linux and macOS releases\n\nThis one is for admins deploying the Cloudflare One Client on Windows machines!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-20-warp-windows-ga/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Cloudflare One Client - Cloudflare One Client for Windows (version 2026.8.2115.0)",
+  "tags": [
+    "cloudflare",
+    "security"
+  ],
+  "published_at": "2026-10-20T01:21:08+00:00"
+}

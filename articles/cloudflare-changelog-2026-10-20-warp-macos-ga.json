@@ -1,0 +1,19 @@
+{
+  "slug": "cloudflare-changelog-2026-10-20-warp-macos-ga",
+  "title": "macOS 版 Cloudflare One Client 2026.8.2115.0 が来たよ！証明書チェーンの問題を修正",
+  "summary": "Cloudflare の Changelog によると、macOS 版 Cloudflare One Client のバージョン 2026.8.2115.0 が GA になったよ。信頼できる証明書チェーンの構築に関する問題を直すホットフィックスなんだって！",
+  "body_md": "おつかれさま、しぃちゃんだよ！macOS 版の Cloudflare One Client にも更新が来たから、紹介するね！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、macOS 版 Cloudflare One Client の新しい GA リリース、バージョン 2026.8.2115.0 が告知されたよ。stable releases のダウンロードページで入手できるんだって。\n\n## 今までどうだったの？\n\nこのリリースはホットフィックスで、「信頼できる証明書チェーンを構築するときの問題」に対応したものだよ。原文には、問題が起きる具体的な状況までは書かれていないの。\n\n## これで何が変わるの？\n\n証明書チェーンの構築で困っていた Mac ユーザーや、Mac を管理している担当者さんは、この版で問題が解消するか確認してみるといいよ。\n\n## 深く潜ってみよう\n\n原文にある情報はとてもシンプルで、次のとおりだよ。\n\n- バージョンは 2026.8.2115.0\n- 入手先は stable releases のダウンロードページ\n- 変更点は証明書チェーン構築の問題に対するホットフィックスのみ\n- 既知の問題の記載はなし\n\nLinux 版と Windows 版も同じ日に同じバージョン番号で公開されているよ。\n\n## まとめ\n\n- macOS 版 Cloudflare One Client 2026.8.2115.0 が GA\n- 信頼できる証明書チェーンの構築に関するホットフィックス\n- stable releases のダウンロードページから入手できる\n\nMac に Cloudflare One Client を配っている管理者さんに刺さる更新だよ！",
+  "title_en": "Cloudflare One Client for macOS 2026.8.2115.0 Is Here with a Certificate Chain Fix",
+  "summary_en": "According to the Cloudflare Changelog, version 2026.8.2115.0 of the Cloudflare One Client for macOS is now GA. It's a hotfix for an issue building trusted certificate chains.",
+  "body_md_en": "Hi everyone, it's Shii-chan! The macOS Cloudflare One Client got an update too, so here's the rundown!\n\n## What was announced?\n\nThe Cloudflare Changelog announced a new GA release of the Cloudflare One Client for macOS, version 2026.8.2115.0. It's available on the stable releases downloads page.\n\n## The story so far\n\nThis release is a hotfix that addresses an issue building trusted certificate chains. The post doesn't describe the exact conditions that trigger it.\n\n## What changes\n\nIf you or your Mac users hit certificate chain problems, this version is worth checking to see whether the issue is resolved.\n\n## Dive Deep\n\nThe post is short. Here's all of it:\n\n- The version is 2026.8.2115.0\n- It's available on the stable releases downloads page\n- The only change is a hotfix for building trusted certificate chains\n- No known issues are listed\n\nThe Linux and Windows clients were released on the same day with the same version number.\n\n## Wrap-up\n\n- Cloudflare One Client for macOS 2026.8.2115.0 is GA\n- A hotfix for building trusted certificate chains\n- Available from the stable releases downloads page\n\nThis one is for admins who deploy the Cloudflare One Client on Macs!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-20-warp-macos-ga/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Cloudflare One Client - Cloudflare One Client for macOS (version 2026.8.2115.0)",
+  "tags": [
+    "cloudflare",
+    "security"
+  ],
+  "published_at": "2026-10-20T01:20:49+00:00"
+}

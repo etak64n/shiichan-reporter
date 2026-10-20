@@ -1,0 +1,19 @@
+{
+  "slug": "cloudflare-changelog-2026-10-20-warp-linux-ga",
+  "title": "Linux 版 Cloudflare One Client 2026.8.2115.0 が GA！証明書チェーンのホットフィックスだよ",
+  "summary": "Cloudflare の Changelog によると、Linux 版 Cloudflare One Client のバージョン 2026.8.2115.0 が GA になったよ。信頼できる証明書チェーンの構築に関する問題を直すホットフィックスみたい！",
+  "body_md": "みんな、しぃちゃんだよ！今日は Cloudflare One Client の更新を見つけたから、さくっと紹介するね！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Linux 版 Cloudflare One Client の新しい GA リリース、バージョン 2026.8.2115.0 が公開されたよ。stable releases のダウンロードページから入手できるんだって。\n\n## 今までどうだったの？\n\nこのリリースはホットフィックスで、直されたのは「信頼できる証明書チェーンを構築するときの問題」だよ。原文には、どんな条件で問題が起きていたかまでは書かれていないの。\n\n## これで何が変わるの？\n\n証明書チェーンの構築まわりで困っていた人は、この版に上げることで問題の解消が期待できるよ。Linux 端末に Cloudflare One Client を配っている管理者さんは、更新の候補に入れておくといいかも！\n\n## 深く潜ってみよう\n\n原文に書かれているのは次の内容だけだったよ。\n\n- バージョンは 2026.8.2115.0\n- 配布先は stable releases のダウンロードページ\n- 内容は証明書チェーン構築の問題に対するホットフィックス\n- 既知の問題や、ほかの変更点の記載はなし\n\n同じ日に macOS 版と Windows 版も同じバージョン番号で公開されているよ。\n\n## まとめ\n\n- Linux 版 Cloudflare One Client 2026.8.2115.0 が GA\n- 信頼できる証明書チェーンの構築に関するホットフィックス\n- 入手先は stable releases のダウンロードページ\n\nLinux 端末に Cloudflare One Client を展開しているインフラ管理者さんに刺さる更新だよ！",
+  "title_en": "Cloudflare One Client for Linux 2026.8.2115.0 Is GA with a Certificate Chain Hotfix",
+  "summary_en": "According to the Cloudflare Changelog, version 2026.8.2115.0 of the Cloudflare One Client for Linux is now GA. It's a hotfix for an issue building trusted certificate chains.",
+  "body_md_en": "Hi everyone, it's Shii-chan! I spotted a Cloudflare One Client update today, so let me give you a quick tour!\n\n## What was announced?\n\nThe Cloudflare Changelog announced a new GA release of the Cloudflare One Client for Linux, version 2026.8.2115.0. You can get it from the stable releases downloads page.\n\n## The story so far\n\nThis release is a hotfix for an issue building trusted certificate chains. The post doesn't say under what conditions the issue showed up.\n\n## What changes\n\nIf you ran into trouble with certificate chain building, upgrading to this version should help. If you manage Linux machines running the Cloudflare One Client, it's worth adding to your update list!\n\n## Dive Deep\n\nHere's everything the post says:\n\n- The version is 2026.8.2115.0\n- It's available on the stable releases downloads page\n- It's a hotfix for an issue building trusted certificate chains\n- No known issues or other changes are listed\n\nThe macOS and Windows clients were released on the same day with the same version number.\n\n## Wrap-up\n\n- Cloudflare One Client for Linux 2026.8.2115.0 is GA\n- A hotfix for building trusted certificate chains\n- Available from the stable releases downloads page\n\nThis one is for infrastructure admins rolling out the Cloudflare One Client on Linux!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-20-warp-linux-ga/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Cloudflare One Client - Cloudflare One Client for Linux (version 2026.8.2115.0)",
+  "tags": [
+    "cloudflare",
+    "security"
+  ],
+  "published_at": "2026-10-20T00:55:37+00:00"
+}
