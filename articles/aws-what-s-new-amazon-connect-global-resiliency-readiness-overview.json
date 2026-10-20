@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-connect-global-resiliency-readiness-overview",
+  "title": "Amazon Connect の Global Resiliency に準備状況ページが登場！リージョン切替の準備、ひと目で確認",
+  "summary": "Amazon Connect Customer Global Resiliency の管理サイトに、リージョン切替の準備状況を一覧できる Global Resiliency ページが追加されたよ。同期待ちや要対応のリソースも見られるの！",
+  "body_md": "おつかれさま、しぃちゃんだよ！今日は Amazon Connect の、いざというときの備えを確認しやすくするアップデートだよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Connect Customer Global Resiliency の管理サイトに Global Resiliency ページが追加されたと発表されたよ。リージョン切替の準備状況を、管理者が 1 か所で確認できるの。\n\n## これで何が変わるの？\n\nページには、全体の準備状況のステータスと、Global Resiliency が自動でレプリケートするリソースの一覧が出るよ。リソースの種類ごとの状態はこの 3 つだよ。\n\n- 同期済み\n- 同期待ち\n- 対応が必要\n\nたとえば、電話番号やユーザーがトラフィック配信グループに関連付けられていないと、ページがそれを指摘してくれるの。しかも、影響を受けるリソースをそのページから直接関連付けられるんだって。\n\n## 深く潜ってみよう\n\n管理者はいつでも自分の耐障害性の状態を見直して、インスタンスがリージョン切替に備えられているかを確認できるよ。\n\n利用できるのは、Amazon Connect Customer Global Resiliency が対応しているすべての AWS リージョンだよ。詳しくは Amazon Connect Customer の管理者ガイドを見てね。\n\n## まとめ\n\n- 管理サイトに Global Resiliency ページが追加\n- 全体ステータスと、リソース種別ごとの同期状況を確認できる\n- 未関連付けのリソースはページ上から直接関連付けられる\n\nコンタクトセンターの可用性を担当する管理者に刺さるよ！",
+  "title_en": "Amazon Connect Global Resiliency Gets a Readiness Page: Check Region Switch Prep at a Glance!",
+  "summary_en": "Amazon Connect Customer Global Resiliency now has a Global Resiliency page in the admin website to review Region switch readiness. It shows which resources are in sync, pending, or need action!",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today's Amazon Connect update makes it easier to check your readiness for the worst.\n\n## What was announced?\n\nIn AWS What's New, Amazon Connect Customer Global Resiliency announced a new Global Resiliency page in the admin website. It gives administrators a single place to review their Region switch readiness.\n\n## What changes\n\nThe page shows an overall readiness status and lists the resources that Global Resiliency natively replicates. Each resource type has one of these states:\n\n- In sync\n- Pending synchronization\n- Needs action\n\nFor example, if a phone number or user is not associated with a traffic distribution group, the page flags it. You can then associate the affected resources directly from the page.\n\n## Dive Deep\n\nAdministrators can review their resiliency posture at any time and verify that their instance is ready for a Region switch.\n\nIt's available in all AWS Regions where Amazon Connect Customer Global Resiliency is supported. See the Amazon Connect Customer admin guide for details.\n\n## Wrap-up\n\n- A new Global Resiliency page in the admin website\n- See overall status and sync state per resource type\n- Fix unassociated resources right from the page\n\nThis is for admins responsible for contact center availability!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-connect-global-resiliency-readiness-overview",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Connect Customer Global Resiliency now provides business users visibility into resiliency readiness across linked Regions",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-19T21:45:00+00:00"
+}

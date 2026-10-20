@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-mediaconnect-router-high-bitrate",
+  "title": "MediaConnect Router に高ビットレートモード！250 Mbps と 500 Mbps の新ティアが登場",
+  "summary": "AWS Elemental MediaConnect Router に、250 Mbps と 500 Mbps の 2 つの新ティアを持つ高ビットレートモードが追加されたよ。VSF TR-07 準拠のトランスポートストリーム配信などに使えるみたい！",
+  "body_md": "みんな、しぃちゃんだよ！今日は放送系のワークフロー向けの発表を紹介するね。\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Elemental MediaConnect Router が高ビットレートモードに対応したと発表されたよ。250 Mbps と 500 Mbps の 2 つの新しいティアが追加されたの。\n\n## なぜ重要なの？\n\n高いビットレートが必要なプロの放送事業者が、価値の高いコンテンツを品質や信頼性を落とさずに伝送できるようにするための機能だよ。\n\n## これで何が変わるの？\n\n業界標準のワークフローが組めるようになるよ。例として挙げられているのは VSF TR-07 準拠のトランスポートストリーム配信で、用途はこの 3 つだよ。\n\n- 放送コントリビューション\n- コンテンツ配信\n- リモートプロダクション\n\n## 深く潜ってみよう\n\n原文から分かる仕様はこれだけだよ。\n\n- 新ティアは 250 Mbps と 500 Mbps\n- 冗長なソースを最大 2 つまでサポート\n- データプレーンの最適化でジッターを低減\n\n料金は MediaConnect の料金ページで確認してね。\n\n## まとめ\n\n- MediaConnect Router に 250 Mbps と 500 Mbps の高ビットレートモードが追加\n- 冗長ソース最大 2 つに対応し、ジッターも低減\n- VSF TR-07 準拠の配信やリモートプロダクションに使える\n\n高ビットレートの映像伝送を AWS で組みたい放送エンジニアに刺さるよ！",
+  "title_en": "High Bitrate Mode Lands in MediaConnect Router: New 250 Mbps and 500 Mbps Tiers!",
+  "summary_en": "AWS Elemental MediaConnect Router now has a high bitrate mode with two new tiers, 250 Mbps and 500 Mbps. It supports workflows such as VSF TR-07 compliant transport stream distribution!",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today's news is for broadcast workflows.\n\n## What was announced?\n\nIn AWS What's New, AWS Elemental MediaConnect Router announced high bitrate modes with two new tiers: 250 Mbps and 500 Mbps.\n\n## Why it matters\n\nProfessional broadcasters that need higher bitrates can now transport high-value content without compromising quality or reliability.\n\n## What changes\n\nIt enables industry-standard workflows. The announcement gives VSF TR-07 compliant transport stream distribution as an example, for these uses:\n\n- Broadcast contribution\n- Content distribution\n- Remote production\n\n## Dive Deep\n\nThese are the specifics from the announcement:\n\n- New tiers: 250 Mbps and 500 Mbps\n- Up to two redundant sources are supported\n- Data plane optimizations reduce jitter\n\nCheck the MediaConnect pricing page for costs.\n\n## Wrap-up\n\n- MediaConnect Router adds 250 Mbps and 500 Mbps high bitrate modes\n- Up to two redundant sources, with lower jitter\n- Good for VSF TR-07 compliant distribution and remote production\n\nThis is for broadcast engineers building high bitrate video transport on AWS!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/mediaconnect-router-high-bitrate/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Elemental MediaConnect Router now supports high bitrate mode",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-19T08:00:00+00:00"
+}

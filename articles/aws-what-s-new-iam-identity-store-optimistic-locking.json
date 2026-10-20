@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-iam-identity-store-optimistic-locking",
+  "title": "IAM Identity Center に楽観的ロック！同時更新の上書き事故、知ってた？",
+  "summary": "IAM Identity Center の Identity Store で、ユーザーとグループに楽観的ロックが使えるようになったよ。Revision を渡すと、読んだ後に変更されていた場合は ConflictException で弾いてくれるの！",
+  "body_md": "やっほー、しぃちゃんだよ！今日は IAM Identity Center の、運用自動化にうれしいアップデートだよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、IAM Identity Center の Identity Store のユーザーとグループが楽観的ロックに対応したと発表されたよ。\n\n更新や削除のリクエストが、最後に読んだ後でユーザーやグループが変更されていない場合にだけ成功するようになるの。\n\n## 今までどうだったの？\n\n複数の管理者や自動化ワークフローが、ほぼ同時に同じユーザーやグループを更新すると、片方の書き込みがもう片方を黙って上書きしてしまうことがあったよ。\n\n## これで何が変わるの？\n\nユーザーとグループそれぞれに Revision という値が付くようになったの。属性が変更されるたびに値が変わるよ。SCIM プロビジョニング、Active Directory 同期、コンソールからの変更でも変わるんだって。\n\n- 作成、取得 (describe)、更新、一覧の各操作が現在の Revision を返す\n- UpdateUser、UpdateGroup、DeleteUser、DeleteGroup のリクエストに Revision を渡せる\n- 渡した Revision が現在の値と一致するときだけ成功する\n- 一致しないときは ConflictException が返るので、ワークフロー側で読み直して最新の値で再試行できる\n\n## 深く潜ってみよう\n\n使うときの注意点をまとめるね。\n\n- Revision の指定は任意。省略したリクエストは今まで通りに動くから、既存の連携はそのまま使えるよ\n- 条件付きリクエストは Identity Store API で使える。SCIM エンドポイントでは使えない\n- グループメンバーシップの操作は Revision を受け付けない\n- メンバーの追加や削除では、ユーザーにもグループにも Revision は変わらない\n- IAM Identity Center が使えるすべての AWS リージョンで利用可能\n\n## まとめ\n\n- ユーザーとグループに Revision が付き、楽観的ロックが使える\n- 不一致なら ConflictException で、黙った上書きを防げる\n- Revision は任意なので既存連携は壊れない\n- SCIM エンドポイントとグループメンバーシップ操作は対象外\n\nIdentity Store API で自動化スクリプトを書いている管理者に刺さるよ！",
+  "title_en": "Optimistic Locking Arrives in IAM Identity Center: No More Silent Overwrites!",
+  "summary_en": "IAM Identity Center's identity store now supports optimistic locking for users and groups. Pass a Revision, and if the record changed since you read it, you get a ConflictException!",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today's IAM Identity Center update is a nice one for automation.\n\n## What was announced?\n\nIn AWS What's New, IAM Identity Center announced optimistic locking for users and groups in its identity store.\n\nUpdate and delete requests now succeed only if the user or group hasn't changed since you last read it.\n\n## The story so far\n\nWhen multiple administrators or automated workflows modified the same user or group at nearly the same time, one write could silently overwrite another.\n\n## What changes\n\nEach user and group now has a Revision value. It changes every time the attributes are modified, including through SCIM provisioning, Active Directory sync, or the console.\n\n- Create, describe, update, and list operations return the current Revision\n- You can pass it on UpdateUser, UpdateGroup, DeleteUser, or DeleteGroup requests\n- The request succeeds only if the supplied Revision matches the current one\n- Otherwise it returns a ConflictException, so your workflow can re-read and retry with the latest values\n\n## Dive Deep\n\nA few things to keep in mind:\n\n- Providing a Revision is optional. Requests that omit it behave as before, so existing integrations keep working\n- Conditional requests are supported through the Identity Store API, not the SCIM endpoint\n- Group membership operations don't accept a Revision\n- Adding or removing members doesn't change the Revision of the user or the group\n- Available in all AWS Regions where IAM Identity Center is available\n\n## Wrap-up\n\n- Users and groups get a Revision and support optimistic locking\n- A mismatch returns a ConflictException, preventing silent overwrites\n- Revision is optional, so existing integrations don't break\n- The SCIM endpoint and group membership operations are out of scope\n\nThis is for admins writing automation against the Identity Store API!",
+  "emotion": "smug",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/iam-identity-store-optimistic-locking/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS IAM Identity Center now supports optimistic locking for users and groups in its identity store",
+  "tags": [
+    "aws",
+    "security",
+    "devops"
+  ],
+  "published_at": "2026-10-19T08:00:00+00:00"
+}

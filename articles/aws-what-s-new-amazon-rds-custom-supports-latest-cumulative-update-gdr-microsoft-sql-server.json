@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-rds-custom-supports-latest-cumulative-update-gdr-microsoft-sql-server",
+  "title": "RDS Custom for SQL Server が最新の CU と GDR に追従したよ！2019 と 2022 が対象",
+  "summary": "Amazon RDS Custom for SQL Server が、SQL Server 2019 CU32 + GDR と SQL Server 2022 CU26 + GDR の最新アップデートに対応したよ。コンソール、SDK、CLI からアップグレードできるみたい！",
+  "body_md": "おつかれさま、しぃちゃんだよ！今日は RDS Custom for SQL Server のバージョン更新のお知らせだよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon RDS Custom for SQL Server が最新の累積更新プログラム (CU) と GDR (General Distribution Release) に対応したと発表されたよ。\n\n## これで何が変わるの？\n\n対応したバージョンはこの 2 つだよ。\n\n- SQL Server 2019 CU32 + GDR KB5122772 (RDS バージョン 15.00.4490.9.v1)\n- SQL Server 2022 CU26 + GDR KB5122768 (RDS バージョン 16.00.4275.2.v1)\n\n既存の RDS Custom for SQL Server インスタンスを、これらの推奨アップデートへ上げられるようになったの。\n\n## 深く潜ってみよう\n\nアップグレードの方法は 3 通りあるよ。\n\n- Amazon RDS マネジメントコンソール\n- AWS SDK\n- AWS CLI\n\n各アップデートに含まれる改善や修正は、Microsoft のドキュメント (KB5122772 と KB5122768) で確認してね。アップグレード手順の詳細は Amazon RDS Custom User Guide にあるよ。\n\n## まとめ\n\n- SQL Server 2019 と 2022 の最新 CU + GDR に対応\n- コンソール、SDK、CLI からアップグレードできる\n\nRDS Custom で SQL Server を運用していて、パッチを最新に保ちたい人向けの更新だよ！",
+  "title_en": "RDS Custom for SQL Server Catches Up with the Latest CU and GDR Updates!",
+  "summary_en": "Amazon RDS Custom for SQL Server now supports the latest updates for SQL Server 2019 (CU32 + GDR) and SQL Server 2022 (CU26 + GDR). You can upgrade from the console, SDK, or CLI!",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today it's a version update notice for RDS Custom for SQL Server.\n\n## What was announced?\n\nIn AWS What's New, Amazon RDS Custom for SQL Server announced support for the latest Cumulative Updates (CU) and General Distribution Release (GDR) updates for Microsoft SQL Server.\n\n## What changes\n\nThese two versions are now supported:\n\n- SQL Server 2019 CU32 + GDR KB5122772 (RDS version 15.00.4490.9.v1)\n- SQL Server 2022 CU26 + GDR KB5122768 (RDS version 16.00.4275.2.v1)\n\nYou can upgrade your existing RDS Custom for SQL Server instances to these recommended updates.\n\n## Dive Deep\n\nThere are three ways to upgrade:\n\n- Amazon RDS Management Console\n- AWS SDK\n- AWS CLI\n\nFor the improvements and fixes in each update, see the Microsoft documentation for KB5122772 and KB5122768. Upgrade details are in the Amazon RDS Custom User Guide.\n\n## Wrap-up\n\n- Latest CU + GDR for SQL Server 2019 and 2022 are supported\n- Upgrade from the console, SDK, or CLI\n\nThis is for anyone running SQL Server on RDS Custom who wants to keep patches current!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-rds-custom-supports-latest-cumulative-update-gdr-microsoft-sql-server/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon RDS Custom now supports the latest Cumulative Update and GDR updates for Microsoft SQL Server",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-19T07:30:00+00:00"
+}

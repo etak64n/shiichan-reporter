@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-bedrock-grok-4-7-govcloud",
+  "title": "Grok 4.7 が GovCloud (US) の Amazon Bedrock に登場！",
+  "summary": "SpaceXAI の Grok 4.7 が、AWS GovCloud (US) の Amazon Bedrock で使えるようになったよ。コーディング、エージェント、ナレッジワーク向けのフロンティアモデルなの！",
+  "body_md": "やっほー、しぃちゃんだよ！今日は Bedrock のモデルラインナップが増えたよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Bedrock が AWS GovCloud (US) で SpaceXAI の Grok 4.7 に対応したと発表されたよ。Grok 4.7 は、コーディング、エージェントタスク、ナレッジワーク向けのフロンティアモデルなの。\n\n## これで何が変わるの？\n\nGovCloud (US) で Bedrock を使っている人が、Grok 4.7 を選べるようになったよ。\n\nGrok 4.6 からの強化点として、原文ではこの 3 つが挙がっているよ。\n\n- 複数種類のドキュメントが混ざった入力の扱いの改善\n- 計画とエラーからの回復を伴う、リポジトリ規模のコーディングの安定化\n- フォーム入力やポータル操作をこなすブラウザ操作エージェントの強化\n\n## 深く潜ってみよう\n\n使い始め方は、Amazon Bedrock コンソール、または対応する Amazon Bedrock API からだよ。\n\n対応リージョン、エンドポイント、API、機能、推論プロファイル、料金の詳細は、Amazon Bedrock のドキュメントにまとまっているみたい。原文からは、これ以上の仕様や数値は分からなかったよ。\n\n## まとめ\n\n- Grok 4.7 が GovCloud (US) の Amazon Bedrock で利用可能\n- Grok 4.6 より、混在ドキュメント、リポジトリ規模のコーディング、ブラウザ操作エージェントが強化\n- コンソールまたは Bedrock API から使える\n\nGovCloud でエージェントやコーディング支援を作りたい人に刺さるよ！",
+  "title_en": "Grok 4.7 Arrives on Amazon Bedrock in AWS GovCloud (US)!",
+  "summary_en": "SpaceXAI's Grok 4.7 is now available on Amazon Bedrock in AWS GovCloud (US). It's a frontier model built for coding, agentic tasks, and knowledge work!",
+  "body_md_en": "Hi everyone, it's Shii-chan! Bedrock's model lineup just grew.\n\n## What was announced?\n\nIn AWS What's New, Amazon Bedrock announced support for SpaceXAI Grok 4.7 in AWS GovCloud (US). Grok 4.7 is a frontier model built for coding, agentic tasks, and knowledge work.\n\n## What changes\n\nIf you use Bedrock in GovCloud (US), you can now pick Grok 4.7.\n\nThe announcement lists these improvements over Grok 4.6:\n\n- Better handling of mixed documents\n- More dependable repo-scale coding with planning and error recovery\n- Enhanced browser-use agents for form fills and portal navigation\n\n## Dive Deep\n\nYou can get started in the Amazon Bedrock console or programmatically through supported Amazon Bedrock APIs.\n\nFor supported Regions, endpoints, APIs, features, inference profiles, and pricing, see the Amazon Bedrock documentation. The announcement doesn't give more specs or numbers than that.\n\n## Wrap-up\n\n- Grok 4.7 is available on Amazon Bedrock in GovCloud (US)\n- Over Grok 4.6: better mixed-document handling, repo-scale coding, and browser-use agents\n- Use it from the console or the Bedrock APIs\n\nThis is for anyone building agents or coding assistants in GovCloud!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-bedrock-grok-4-7-govcloud/",
+  "source_name": "AWS What's New",
+  "og_title": "Grok 4.7 is now available on Amazon Bedrock in AWS GovCloud (US)",
+  "tags": [
+    "aws",
+    "ai"
+  ],
+  "published_at": "2026-10-19T13:00:00+00:00"
+}
