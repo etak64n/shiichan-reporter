@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-announce-native-pytorch-support-trainium",
+  "title": "to('neuron')でPyTorchがTrainiumで動く！TorchNeuronがパブリックベータに",
+  "summary": "AWS が Trainium 向けのオープンソースなネイティブ PyTorch バックエンド TorchNeuron のパブリックベータを公開したよ。`.to('neuron')` に切り替えるだけで PyTorch コードを動かせるの。",
+  "body_md": "やっほー、しぃちゃんだよ！\n\nPyTorch のコードをそのまま AWS のチップで動かせる、わくわくする発表だよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Trainium 向けのオープンソースなネイティブ PyTorch バックエンド TorchNeuron のパブリックベータが始まったと発表されたよ。\n\nTrainium は、ディープラーニングの学習と推論を高性能かつコスト効率よくこなすために設計された AI チップのシリーズなの。\n\n## なぜ重要なの？\n\nTorchNeuron は、AI の研究者や科学者が PyTorch で、Trainium 上でネイティブにモデルを試したり作ったりできるようにするものだよ。使い慣れた書き方のまま専用チップを使えるのは、うれしいよね。\n\n## これで何が変わるの？\n\n開発者は、PyTorch のコードを `.to('neuron')` に切り替えるだけで Trainium 上で動かせるよ。\n\n次の PyTorch の機能との互換性も保たれているの。\n\n- eager execution\n- `torch.compile`\n- 標準の PyTorch API\n\n## 深く潜ってみよう\n\n- Neuron Kernel Interface（NKI）と連携していて、カスタムオペレーターや Trainium ハードウェア向けの性能最適化ができる\n- オープンソースで、TorchNeuron の GitHub リポジトリから入手できる\n- 対象は Amazon EC2 の Trainium2 インスタンスと Trainium3 インスタンス\n\n現時点はパブリックベータだよ。詳しくは AWS Neuron のページを見てね。\n\n## まとめ\n\n- TorchNeuron は Trainium 向けのオープンソースなネイティブ PyTorch バックエンドで、パブリックベータ\n- `.to('neuron')` で PyTorch コードを動かせる\n- eager execution、`torch.compile`、標準 API と互換\n- NKI でカスタムオペレーターと最適化ができる\n- Trainium2 と Trainium3 の EC2 インスタンスが対象\n\nPyTorch で Trainium を試してみたいみんなに刺さる発表だよ！",
+  "title_en": "TorchNeuron: Native PyTorch on AWS Trainium Is in Public Beta",
+  "summary_en": "AWS launched the public beta of TorchNeuron, an open source native PyTorch backend for Trainium. You can run PyTorch code on Trainium by switching to .to('neuron').",
+  "body_md_en": "Hi, it's Shii-chan!\n\nThis one is exciting: you can run your PyTorch code on AWS chips as-is!\n\n## What was announced?\n\nAWS What's New announced the public beta of TorchNeuron, an open source native PyTorch backend for AWS Trainium.\n\nTrainium is a portfolio of AI chips designed to deliver high performance and cost efficiency for deep learning training and inference workloads.\n\n## Why it matters\n\nTorchNeuron lets AI scientists and researchers experiment and build models with PyTorch natively on Trainium. Using a custom chip with the code style you already know is a nice thing.\n\n## What changes\n\nDevelopers can enable their PyTorch code on Trainium by switching to `.to('neuron')`.\n\nFull PyTorch compatibility is maintained, including:\n\n- Eager execution\n- `torch.compile`\n- Standard PyTorch APIs\n\n## Dive Deep\n\n- It integrates with Neuron Kernel Interface (NKI) for custom operators and performance optimization on Trainium hardware\n- It's open source, available from the TorchNeuron GitHub repo\n- It targets Amazon EC2 Trainium2 and Trainium3 instances\n\nIt's a public beta for now. See the AWS Neuron page for more.\n\n## Wrap-up\n\n- TorchNeuron is an open source native PyTorch backend for Trainium, in public beta\n- Switch to `.to('neuron')` to run PyTorch code\n- Compatible with eager execution, `torch.compile`, and standard APIs\n- NKI enables custom operators and optimization\n- Targets Trainium2 and Trainium3 EC2 instances\n\nThis is for anyone who wants to try Trainium with PyTorch!",
+  "emotion": "energetic",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-announce-native-pytorch-support-trainium",
+  "source_name": "AWS What's New",
+  "og_title": "AWS announces TorchNeuron: Native PyTorch Support for AWS Trainium (Public Beta)",
+  "tags": [
+    "aws",
+    "ai",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-20T15:00:00+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-claude-structured-outputs-bedrock",
+  "title": "BedrockのClaudeでスキーマ通りのJSONが返ってくる！Structured outputs対応だよ",
+  "summary": "Amazon Bedrock が、すべての Anthropic Claude モデルで structured outputs に対応したよ。bedrock-runtime と bedrock-mantle の両エンドポイントで、スキーマに沿った JSON が返るの。",
+  "body_md": "おつかれさま、しぃちゃんだよ！\n\nLLM の出力をパースする作業から解放されるかもしれないお知らせだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Bedrock がすべての Anthropic Claude モデルで structured outputs に対応したと発表されたよ。\n\n対応するエンドポイントは 2 つだよ。\n\n- `bedrock-runtime`（boto3 や bedrock-runtime の API 経由）\n- `bedrock-mantle`（Messages API 経由）\n\nどちらでも、定義した構造に沿ったスキーマ準拠の JSON を受け取れるの。\n\n## なぜ重要なの？\n\nLLM の出力を後続の処理に渡すとき、形式が崩れると困るよね。今回は、独自のパース処理・リトライ処理・後処理なしで、スキーマに合った結果が得られると説明されているよ。\n\n## これで何が変わるの？\n\n原文が挙げている活用例はこれだよ。\n\n- 決算報告書やコンプライアンス文書から、必要な項目をすべて抽出する\n- 診療メモを電子カルテ（EHR）の形式に変換する\n- 商品カタログを、一貫して検証済みの内容で拡充する\n- 契約書の主要な条件・当事者・義務を分析する\n- サポートチケットの振り分けで、意図・感情・エンティティが常にアプリのデータモデルに合うようにする\n\n## 深く潜ってみよう\n\n原文は短く、スキーマの指定方法やパラメータの詳細は書かれていないの。詳しくは Amazon Bedrock のドキュメントを見てね。\n\n提供範囲は、Claude モデルが使えるリージョンと同じだよ。\n\n## まとめ\n\n- Bedrock 上のすべての Claude モデルで structured outputs が使える\n- `bedrock-runtime` と `bedrock-mantle` の両方に対応\n- パース・リトライ・後処理のコードを減らせる\n- 提供リージョンは Claude モデルが使える場所と同じ\n\nLLM の出力を安定してシステムに流し込みたいみんなに刺さる更新だよ！",
+  "title_en": "Structured Outputs for Claude Models Arrive on Amazon Bedrock",
+  "summary_en": "Amazon Bedrock now supports structured outputs for all Anthropic Claude models on both the bedrock-runtime and bedrock-mantle endpoints, returning schema-compliant JSON.",
+  "body_md_en": "Hi, it's Shii-chan!\n\nThis might free you from parsing LLM output by hand!\n\n## What was announced?\n\nAWS What's New announced that Amazon Bedrock now supports structured outputs for all Anthropic Claude models.\n\nTwo endpoints are supported:\n\n- `bedrock-runtime` (through boto3 and the bedrock-runtime APIs)\n- `bedrock-mantle` (through the Messages API)\n\nOn either one, you can receive schema-compliant JSON that conforms to a structure you define.\n\n## Why it matters\n\nWhen you pass LLM output to downstream code, a broken format causes trouble. The announcement says you get schema-compliant results without custom parsing, retry logic, or post-processing.\n\n## What changes\n\nThe examples in the announcement:\n\n- Extracting every required field from financial earnings reports and compliance documents\n- Parsing clinical notes into Electronic Health Records (EHR)\n- Enriching product catalogs with consistent, validated results\n- Analyzing contracts for key terms, parties, and obligations\n- Routing support tickets so intents, sentiments, and entities always match your application's data model\n\n## Dive Deep\n\nThe announcement is short and doesn't cover how to specify schemas or any parameters. See the Amazon Bedrock documentation for details.\n\nAvailability matches the Regions where Claude models are available.\n\n## Wrap-up\n\n- Structured outputs work with all Claude models on Bedrock\n- Both `bedrock-runtime` and `bedrock-mantle` are supported\n- Less parsing, retry, and post-processing code\n- Available wherever Claude models are available\n\nThis is for anyone who wants LLM output to flow reliably into their systems!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/claude-structured-outputs-bedrock/",
+  "source_name": "AWS What's New",
+  "og_title": "Structured outputs for Claude models available on Amazon Bedrock",
+  "tags": [
+    "aws",
+    "anthropic",
+    "ai"
+  ],
+  "published_at": "2026-10-20T14:00:00+00:00"
+}

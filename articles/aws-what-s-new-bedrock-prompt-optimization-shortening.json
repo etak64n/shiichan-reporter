@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-bedrock-prompt-optimization-shortening",
+  "title": "プロンプトを短く、でも精度は落とさない！Bedrock Advanced Prompt Optimizationに短縮機能",
+  "summary": "Amazon Bedrock Advanced Prompt Optimization に prompt shortening が追加されたよ。評価スコアを維持か向上させたまま、プロンプトを短くしてくれるの。",
+  "body_md": "やっほー、しぃちゃんだよ！\n\nプロンプトが長くなりすぎて、トークン代が気になっているみんなに朗報だよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Bedrock Advanced Prompt Optimization が prompt shortening に対応したと発表されたよ。評価スコアを維持または向上させたまま、プロンプトの長さを減らすオプション設定なの。\n\nAdvanced Prompt Optimization は、Amazon Bedrock 上のあらゆるモデル向けに、自分の評価基準に沿ってプロンプトを最適化する機能だよ。\n\n## 今までどうだったの？\n\nこれまでの最適化は品質だけを見ていて、最適化後のプロンプトは元より長くなりがちだったの。長いプロンプトは入力トークンのコストを押し上げて、最初のトークンが出るまでの時間も伸ばすことがあるよ。大規模な利用や低遅延が必要なアプリでは困るよね。\n\n## これで何が変わるの？\n\n入力データセットのプロンプトテンプレートで prompt shortening を有効にすると、オプティマイザーが長さを減らしてくれるよ。\n\n- 最適化後のプロンプトが返るのは、元より短く、評価スコアが元と同等以上のときだけ\n- そうでなければ元のプロンプトが返るので、長くなったりスコアが下がったりしない\n\n## 深く潜ってみよう\n\n結果には圧縮率と、元・最適化後のトークン数が含まれるよ。出力ファイルとコンソールの結果ページに出るの。たとえば圧縮率 0.7 なら、トークンが 30% 減ったことを表すよ。\n\n評価方法は何でも使えて、steering criteria、LLM-as-a-judge のルーブリック、カスタム Lambda 評価器のどれでも動くの。\n\n提供リージョンは、Advanced Prompt Optimization が使えるすべての AWS リージョンだよ。\n\n## まとめ\n\n- prompt shortening は任意のオプション設定\n- 短くて、スコアが同等以上のときだけ最適化後のプロンプトが返る\n- 圧縮率とトークン数が結果に出る\n- どの評価方法でも使える\n\nトークンコストとレイテンシを削りたいみんなに刺さる機能だよ！",
+  "title_en": "Bedrock Advanced Prompt Optimization Can Now Shorten Your Prompts",
+  "summary_en": "Amazon Bedrock Advanced Prompt Optimization now supports prompt shortening, an optional setting that reduces prompt length while maintaining or improving your evaluation scores.",
+  "body_md_en": "Hi, it's Shii-chan!\n\nGood news if you're worried about prompts getting too long and token costs creeping up!\n\n## What was announced?\n\nAWS What's New announced that Amazon Bedrock Advanced Prompt Optimization now supports prompt shortening, an optional setting that reduces the length of your prompt while maintaining or improving your evaluation scores.\n\nAdvanced Prompt Optimization optimizes prompts for any model on Amazon Bedrock against your own evaluation criteria.\n\n## The story so far\n\nUntil now, optimization focused on quality alone, and optimized prompts were often longer than the original. Longer prompts raise input token costs and can increase time to first token, which matters at scale and in latency-sensitive applications.\n\n## What changes\n\nWhen you turn on prompt shortening for a prompt template in your input dataset, the optimizer reduces the prompt's length.\n\n- The optimized prompt is returned only when it is shorter than your original and scores at least as high on your evaluation\n- Otherwise your original prompt is returned, so you never end up with a longer or lower-scoring prompt\n\n## Dive Deep\n\nResults include a compression ratio and the original and optimized token counts, in the output file and on the console results page. For example, a compression ratio of 0.7 means the optimized prompt uses 30% fewer tokens.\n\nIt works with any evaluation method, including steering criteria, LLM-as-a-judge rubrics, and custom Lambda evaluators.\n\nIt's available in all AWS Regions where Advanced Prompt Optimization is available.\n\n## Wrap-up\n\n- Prompt shortening is an optional setting\n- The optimized prompt is returned only if it is shorter and scores at least as high\n- Compression ratio and token counts appear in the results\n- Works with any evaluation method\n\nThis is for anyone trimming token costs and latency!",
+  "emotion": "smug",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/bedrock-prompt-optimization-shortening/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Bedrock Advanced Prompt Optimization now supports prompt shortening",
+  "tags": [
+    "aws",
+    "ai"
+  ],
+  "published_at": "2026-10-20T08:00:00+00:00"
+}
