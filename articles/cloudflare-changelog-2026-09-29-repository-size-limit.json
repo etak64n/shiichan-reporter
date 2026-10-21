@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-09-29-repository-size-limit",
+  "title": "Artifacts の新規リポジトリは 1 GB 上限に！9 月 29 日以降の作成分から適用だよ",
+  "summary": "Cloudflare Artifacts で、2026 年 9 月 29 日以降に作る新しいリポジトリには 1 GB のストレージ上限がかかるようになったよ！それより前に作ったリポジトリは今までどおり 10 GB のままなの。",
+  "body_md": "やっほー、しぃちゃんだよ！今日は Cloudflare の Artifacts に入った、ちょっと大事な制限の変更をお知らせするね！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Artifacts のストレージ上限についての更新が公開されたよ。\n\n- 2026 年 9 月 29 日以降に作成された新しいリポジトリは、1 リポジトリあたり **1 GB** のストレージ上限になる\n- 2026 年 9 月 29 日より前に作成されたリポジトリは、今までどおり **10 GB** の上限のまま\n\n適用の基準は「リポジトリを作った日」なんだね。既存のリポジトリが急に小さくなることはないみたい！\n\n## 今までどうだったの？\n\nこれまでは、1 リポジトリあたりの上限が 10 GB だったよ。今回の変更で、これから作るリポジトリだけ上限が 10 分の 1 になるの。\n\n## これで何が変わるの？\n\n新しく Artifacts のリポジトリを作る人は、1 GB に収まる前提で設計しておく必要があるよ。\n\n- 既存のリポジトリを使っている人: 作成日が 9 月 29 日より前なら、10 GB のまま使える\n- これから新規にリポジトリを作る人: 1 GB を超えそうなデータは、分割するなどの工夫を考えておくと安心\n\n## 深く潜ってみよう\n\n原文に書かれているのは上限の数字と適用条件までで、1 GB を超えたときの具体的な挙動などは載っていなかったよ。詳しい仕様は、原文が案内している Artifacts の limits ページで確認してね！\n\n## まとめ\n\n- 2026 年 9 月 29 日以降に作る Artifacts リポジトリは 1 GB 上限\n- それより前に作ったリポジトリは 10 GB 上限のまま\n- 詳細は Artifacts の limits ページを見るのがいちばん確実\n\nArtifacts に大きめのデータを入れようと考えているみんなは、新規作成の前に上限をチェックしておいてね！",
+  "title_en": "New Artifacts repos get a 1 GB storage limit starting September 29!",
+  "summary_en": "Cloudflare Artifacts now enforces a 1 GB storage limit per repo for repos created on or after September 29, 2026. Repos created before that date keep their 10 GB limit.",
+  "body_md_en": "Hi, it's Shii-chan! Today I'm sharing a small but important limit change that landed in Cloudflare Artifacts!\n\n## What was announced?\n\nThe Cloudflare Changelog published an update about Artifacts storage limits.\n\n- Repos created on or after September 29, 2026 get a storage limit of **1 GB** per repo\n- Repos created before September 29, 2026 keep their **10 GB** limit\n\nSo the creation date of the repo is what decides which limit applies. Existing repos won't suddenly shrink!\n\n## The story so far\n\nUntil now, the limit was 10 GB per repo. With this change, only newly created repos get a limit one tenth of that size.\n\n## What changes\n\nIf you're creating new Artifacts repos, you'll want to design around fitting in 1 GB.\n\n- If you already use Artifacts: repos created before September 29 stay at 10 GB\n- If you're creating new repos: it's a good idea to plan ahead, for example by splitting data that might grow beyond 1 GB\n\n## Dive Deep\n\nThe announcement covers the limit values and when they apply, but doesn't describe what happens when a repo goes over the limit. For the details, check the Artifacts limits page that the original post points to!\n\n## Wrap-up\n\n- Artifacts repos created on or after September 29, 2026 have a 1 GB limit\n- Repos created earlier keep their 10 GB limit\n- The Artifacts limits page is the most reliable place for details\n\nIf you're planning to put larger data into Artifacts, check the limit before you create a new repo!",
+  "emotion": "confused",
+  "importance": 2,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-09-29-repository-size-limit/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Artifacts - 1 GB storage limit for new Artifacts repos",
+  "tags": [
+    "cloudflare",
+    "serverless",
+    "infrastructure"
+  ],
+  "published_at": "2026-09-29T00:00:00+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-cognito-multi-region-us-govcloud",
+  "title": "Amazon Cognito のマルチリージョンレプリケーションが GovCloud (US) に拡大！",
+  "summary": "Amazon Cognito の multi-Region replication が AWS GovCloud (US) Regions でも使えるようになったよ！ユーザー情報を別リージョンにほぼリアルタイムで複製しておけるの！",
+  "body_md": "こんにちは、しぃちゃんだよ！今日は認証サービス Amazon Cognito の、対応リージョンが広がるお知らせだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Cognito の multi-Region replication（MRR）が AWS GovCloud (US) Regions に対応したと発表されたよ。\n\nMRR は、ユーザーやマシンの ID データを、あなたが指定したスタンバイリージョンの別のユーザープールに、ほぼリアルタイムで同期する機能なの。同期されるのは次のようなものだよ。\n\n- 認証情報（クレデンシャル）\n- ユーザープールの設定\n- フェデレーションの設定\n\n## 今までどうだったの？\n\nこれまで MRR が使えたのは、16 の商用リージョンだったよ。今回、GovCloud (US) Regions でも使えるようになったの。\n\n## これで何が変わるの？\n\nスタンバイリージョンにユーザーデータがあるから、プライマリリージョンで障害が起きても、トラフィックをスタンバイに向けて認証を止めずに済むよ。\n\nさらに、レジリエンス、データ所在地、コンプライアンスの要件に合ったリージョンの組み合わせで複製できるようになるの。GovCloud (US) で動かすワークロードを持つみんなに関係する更新だね！\n\n## 深く潜ってみよう\n\n使うときの条件はこれだよ。\n\n- MRR は、Essentials または Plus の機能ティアのユーザープール向けのアドオン\n- マルチリージョンの AWS KMS カスタマーマネージドキー（CMK）が必要\n\n対応リージョンの完全な一覧は AWS Capabilities by Region のページ、手順は Cognito の開発者ガイド、料金は料金ページに載っているよ。\n\n## まとめ\n\n- Cognito の multi-Region replication が GovCloud (US) Regions に対応\n- 従来は 16 の商用リージョンが対象だった\n- 認証情報・ユーザープール設定・フェデレーション設定をスタンバイリージョンへほぼリアルタイムに同期\n- Essentials / Plus ティアのアドオンで、マルチリージョン KMS CMK が必要\n\nGovCloud (US) で認証基盤の耐障害性を高めたいチームに刺さる更新だよ！",
+  "title_en": "Amazon Cognito multi-Region replication extends to AWS GovCloud (US)!",
+  "summary_en": "Amazon Cognito multi-Region replication now supports AWS GovCloud (US) Regions! You can replicate identity data to a standby Region in near real time.",
+  "body_md_en": "Hi, it's Shii-chan! Today's news is about more Regions for the authentication service Amazon Cognito!\n\n## What was announced?\n\nAWS announced in What's New that Amazon Cognito multi-Region replication (MRR) now supports AWS GovCloud (US) Regions.\n\nMRR synchronizes user and machine identity data to a secondary user pool in a standby Region you designate, in near real time. That includes:\n\n- Credentials\n- User pool configurations\n- Federation setups\n\n## The story so far\n\nPreviously, MRR was available in 16 commercial Regions. Now it also works in the AWS GovCloud (US) Regions.\n\n## What changes\n\nWith user data in the standby Region, you can redirect traffic and keep authentication available if there's a disruption in your primary Region.\n\nYou can also replicate between Regions that best match your resilience, data residency, and compliance requirements. If you run workloads in GovCloud (US), this update is for you!\n\n## Dive Deep\n\nHere's what you need to use it:\n\n- MRR is an add-on for user pools in the Essentials or Plus feature tiers\n- It requires a multi-Region AWS KMS customer managed key (CMK)\n\nThe full list of Regions is on the AWS Capabilities by Region page, setup steps are in the Cognito developer guide, and pricing is on the pricing page.\n\n## Wrap-up\n\n- Cognito multi-Region replication now supports GovCloud (US) Regions\n- It was previously available in 16 commercial Regions\n- Credentials, user pool configurations, and federation setups sync to a standby Region in near real time\n- It's an add-on for Essentials / Plus tiers and needs a multi-Region KMS CMK\n\nThis is for teams who want a more resilient authentication layer in GovCloud (US)!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/cognito-multi-region-us-govcloud/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Cognito extends multi-Region replication to AWS GovCloud (US) Regions",
+  "tags": [
+    "aws",
+    "security",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-21T17:00:00+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-transform-assess-s3-ebs-efs-fsx",
+  "title": "AWS Transform がストレージ移行アセスメントに対応！S3・EBS・EFS・FSx へのマッピングを自動化",
+  "summary": "AWS Transform の移行アセスメントが、オンプレミスのストレージ評価に対応したよ！インベントリをアップロードすると、最適な AWS サービスへのマッピングとコスト試算までしてくれるの！",
+  "body_md": "やっほー、しぃちゃんだよ！今日はストレージ移行を考えているみんなに嬉しい、AWS Transform のアップデートだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Transform の移行アセスメントが、オンプレミスストレージの AWS への移行評価に対応したと発表されたよ。\n\n## 今までどうだったの？\n\n原文の説明によると、これまでは、プロトコル・容量・性能の異なる何千ものボリュームを、手作業で分析する必要があったんだね。今回は、ストレージのインベントリをアップロードするだけで、AWS Transform がマッピングをしてくれるよ。\n\n## これで何が変わるの？\n\nAWS Transform がやってくれることはこれだよ。\n\n- 各ワークロードに最適なサービスを割り当てる\n- 推奨のサイズを見積もる\n- コストを予測して、TCO（総保有コスト）のビジネスケースを作る\n\n## 深く潜ってみよう\n\n### 入力にできるもの\n\n- NAS 共有、SAN LUN、直接接続ディスク、バックアップリポジトリ\n- NetApp Digital Advisor のエクスポート、RVTools ファイル、その他のインベントリ形式で取り込める\n\n### 振り分け先\n\n- Amazon S3\n- Amazon EBS\n- Amazon EFS\n- Amazon FSx（NetApp ONTAP、Windows File Server、OpenZFS、Lustre）\n\n### what-if シナリオ\n\nSingle-AZ と Multi-AZ、コスト最適化と性能最適化のようなデプロイ案を比較できるよ。結果について、チャットでフォローアップの質問もできるの。\n\n### 提供範囲\n\nAWS Transform が使えるすべての AWS リージョンで利用できるよ。詳しくは AWS Transform のユーザーガイドを見てね！\n\n## まとめ\n\n- AWS Transform の移行アセスメントが、オンプレミスストレージの評価に対応\n- インベントリをアップロードすると、S3 / EBS / EFS / FSx への最適マッピング、サイズ見積もり、TCO ビジネスケースを作成\n- what-if シナリオの比較と、チャットでの追加質問ができる\n\nストレージのクラウド移行計画を立てているインフラ担当のみんなに刺さる更新だよ！",
+  "title_en": "AWS Transform adds storage migration assessments for S3, EBS, EFS, and FSx!",
+  "summary_en": "Migration assessments in AWS Transform now evaluate on-premises storage! Upload an inventory and get best-fit service mapping plus cost projections.",
+  "body_md_en": "Hi, it's Shii-chan! Today's news is for anyone planning a storage migration: an AWS Transform update!\n\n## What was announced?\n\nAWS announced in What's New that migration assessments in AWS Transform now evaluate on-premises storage for migration to AWS.\n\n## The story so far\n\nAccording to the announcement, you used to have to manually analyze thousands of volumes across protocols, capacity, and performance. Now you upload a storage inventory and AWS Transform does the mapping for you.\n\n## What changes\n\nHere's what AWS Transform does for you:\n\n- Matches each workload to the best-fit service\n- Sizes the recommendation\n- Projects costs to produce a total cost of ownership (TCO) business case\n\n## Dive Deep\n\n### What you can bring\n\n- NAS shares, SAN LUNs, direct-attached disks, or backup repositories\n- Via a NetApp Digital Advisor export, an RVTools file, or other inventory\n\n### Where workloads are routed\n\n- Amazon S3\n- Amazon EBS\n- Amazon EFS\n- Amazon FSx (NetApp ONTAP, Windows File Server, OpenZFS, Lustre)\n\n### What-if scenarios\n\nYou can compare deployment options such as Single-AZ vs. Multi-AZ, or cost-optimized vs. performance-optimized. You can also ask follow-up questions about any result in chat.\n\n### Availability\n\nStorage migration assessments are available in all AWS Regions where AWS Transform is available. See the AWS Transform User Guide for details!\n\n## Wrap-up\n\n- AWS Transform migration assessments now cover on-premises storage\n- Upload an inventory to get best-fit mapping to S3 / EBS / EFS / FSx, sizing, and a TCO business case\n- Compare what-if scenarios and ask follow-up questions in chat\n\nThis is for infrastructure teams planning a storage migration to the cloud!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/transform-assess-s3-ebs-efs-fsx/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Transform adds storage migration assessments for Amazon S3, EBS, EFS, and FSx",
+  "tags": [
+    "aws",
+    "devops",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-21T19:10:00+00:00"
+}

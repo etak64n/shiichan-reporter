@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-aws-direct-connect-100g-manchester",
+  "title": "Direct Connect がマンチェスターで 100G に拡大！MACsec 対応のイングランド 3 拠点目",
+  "summary": "Equinix MA3 の AWS Direct Connect ロケーションで、MACsec 暗号化付きの 10 Gbps と 100 Gbps 専用接続が使えるようになったよ！イングランドで 3 番目の 100 Gbps 拠点なの！",
+  "body_md": "おつかれさま、しぃちゃんだよ！今日はネットワーク好きさんに、AWS Direct Connect の拡大のお知らせだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、イングランドのマンチェスター近くにある Equinix MA3 データセンターの Direct Connect ロケーションが拡大されたよ。MACsec 暗号化に対応した 10 Gbps と 100 Gbps の専用接続が使えるようになったの。\n\n## これで何が変わるの？\n\nこのロケーションから、次のところへプライベートで直接つながるよ。\n\n- 中国を除くすべてのパブリック AWS リージョン\n- AWS GovCloud リージョン\n- AWS Local Zones\n\nここはイングランドで 3 番目の、MACsec 暗号化付き 100 Gbps 接続を提供するロケーションなんだって。マンチェスター周辺からオンプレミスや拠点を AWS につなぎたいみんなには、選択肢が増えたね！\n\n## 深く潜ってみよう\n\nDirect Connect は、AWS とあなたのデータセンター、オフィス、コロケーション環境のあいだに、プライベートな物理接続を作るサービスだよ。公衆インターネット経由よりも、一貫したネットワーク体験を得られる場合があると説明されているの。世界には 150 以上の Direct Connect ロケーションがあるよ。購入やデプロイの方法は、Direct Connect の getting started ページを見てね！\n\n## まとめ\n\n- Equinix MA3（マンチェスター近郊）で、MACsec 付きの 10 Gbps と 100 Gbps の専用接続が利用可能に\n- 中国を除く全パブリックリージョン、GovCloud、Local Zones へ接続できる\n- イングランドで 3 番目の、MACsec 付き 100 Gbps 対応ロケーション\n\n英国北部で大容量の専用線を探しているネットワーク担当のみんなに刺さる発表だよ！",
+  "title_en": "Direct Connect 100G expands to Manchester, England!",
+  "summary_en": "The AWS Direct Connect location at Equinix MA3 now offers 10 Gbps and 100 Gbps dedicated connections with MACsec encryption. It's the third location in England with 100 Gbps MACsec!",
+  "body_md_en": "Hi, it's Shii-chan! Today's news is for networking fans: an AWS Direct Connect expansion!\n\n## What was announced?\n\nAWS announced in What's New that its Direct Connect location at the Equinix MA3 data center near Manchester, England has been expanded. It now supports 10 Gbps and 100 Gbps dedicated connections with MACsec encryption.\n\n## What changes\n\nFrom this location, you can establish private, direct network access to:\n\n- All public AWS Regions (except those in China)\n- AWS GovCloud Regions\n- AWS Local Zones\n\nThis is the third Direct Connect location in England to provide 100 Gbps connections with MACsec encryption. If you want to connect your on-premises sites near Manchester to AWS, you have one more option!\n\n## Dive Deep\n\nDirect Connect lets you establish a private, physical network connection between AWS and your data center, office, or colocation environment. These connections can provide a more consistent network experience than those made over the public internet. There are over 150 Direct Connect locations worldwide. See the Direct Connect getting started page to learn how to purchase and deploy!\n\n## Wrap-up\n\n- 10 Gbps and 100 Gbps dedicated connections with MACsec are now available at Equinix MA3 near Manchester\n- You can reach all public Regions except China, plus GovCloud and Local Zones\n- It's the third location in England with 100 Gbps MACsec connections\n\nThis is for network engineers looking for high-capacity dedicated links in the north of England!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-direct-connect-100g-manchester/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Direct Connect announces 100G expansion in Manchester, England",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-21T17:21:00+00:00"
+}

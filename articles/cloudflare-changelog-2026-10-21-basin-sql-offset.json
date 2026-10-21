@@ -1,0 +1,19 @@
+{
+  "slug": "cloudflare-changelog-2026-10-21-basin-sql-offset",
+  "title": "Basin SQL がついに OFFSET に対応！ページ送りが書けるようになったよ",
+  "summary": "Cloudflare の Basin SQL で OFFSET が使えるようになったよ！LIMIT と組み合わせて、Iceberg テーブルの結果をページ単位で取り出せるみたい！",
+  "body_md": "みんな、しぃちゃんだよ！今日は Basin SQL に入った、地味だけど便利なアップデートを紹介するね！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Basin SQL が `OFFSET` 句に対応したと発表されたよ。\n\nBasin SQL は、Basin Catalog にある Apache Iceberg テーブルに対してクエリを投げられる、サーバーレスの分散 SQL エンジンなの。`OFFSET` を使うと、指定した行数をスキップして結果を取り出せるよ。\n\n## これで何が変わるの？\n\nこれで `LIMIT` でページサイズを決めて、`OFFSET` で前のページ分を飛ばす、というよくあるページ送りが書けるよ。\n\nページサイズが 100 のときは、こんなふうに offset を増やしていくの。\n\n- 1 ページ目: `OFFSET 0`\n- 2 ページ目: `OFFSET 100`\n- 3 ページ目以降: ページごとに 100 ずつ増やす\n\n## 深く潜ってみよう\n\n行の順番を安定させるために、ユニークな列で `ORDER BY` を付けるのがポイントだよ。原文の例は、100 行ずつのページの 2 ページ目を取るクエリなの。\n\n```sql\nSELECT sale_id, total_amount\nFROM my_namespace.sales_data\nORDER BY sale_id\nLIMIT 100 OFFSET 100\n```\n\n構文や例の詳細は、Basin SQL リファレンスの OFFSET 句のところにあるよ。\n\n## まとめ\n\n- Basin SQL が `OFFSET` に対応した\n- `LIMIT` がページサイズ、`OFFSET` が読み飛ばす行数\n- ページ間で順序がぶれないよう、ユニークな列で `ORDER BY` する\n\nIceberg のデータを画面やレポートでページ分割して見せたいみんなに嬉しい更新だよ！",
+  "title_en": "Basin SQL finally supports OFFSET: pagination is now easy!",
+  "summary_en": "Basin SQL on Cloudflare now supports OFFSET! Combine it with LIMIT to page through results from your Iceberg tables.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today I'm sharing a small but handy update to Basin SQL!\n\n## What was announced?\n\nThe Cloudflare Changelog announced that Basin SQL now supports the `OFFSET` clause.\n\nBasin SQL is a serverless, distributed SQL engine for querying Apache Iceberg tables in Basin Catalog. With `OFFSET`, you can skip a specified number of rows when retrieving query results.\n\n## What changes\n\nYou can now write the usual pagination pattern: set the page size with `LIMIT`, and skip earlier rows with `OFFSET`.\n\nWith a page size of 100, increase the offset like this:\n\n- First page: `OFFSET 0`\n- Second page: `OFFSET 100`\n- Later pages: add 100 for each page\n\n## Dive Deep\n\nThe key tip is to add `ORDER BY` on a unique column so the row order stays consistent. The example in the announcement returns the second page of 100 rows:\n\n```sql\nSELECT sale_id, total_amount\nFROM my_namespace.sales_data\nORDER BY sale_id\nLIMIT 100 OFFSET 100\n```\n\nFor syntax and more examples, see the OFFSET clause in the Basin SQL reference.\n\n## Wrap-up\n\n- Basin SQL now supports `OFFSET`\n- `LIMIT` sets the page size and `OFFSET` sets how many rows to skip\n- Use `ORDER BY` on a unique column to keep order stable across pages\n\nThis is a nice update if you want to paginate Iceberg data in screens or reports!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-21-basin-sql-offset/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Basin SQL, Basin - Basin SQL supports OFFSET",
+  "tags": [
+    "cloudflare",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-21T20:10:07+00:00"
+}
