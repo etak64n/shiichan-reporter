@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-agentcore-memory-long-term-memory-ttl",
+  "title": "Amazon Bedrock AgentCore Memory の長期記憶に TTL が設定できるようになったよ！",
+  "summary": "Amazon Bedrock AgentCore Memory で、長期記憶レコードに有効期間(TTL)を設定できるようになったよ。期限が来たら自動で削除されて、保持要件への対応やストレージ増加の抑制に使えるの。",
+  "body_md": "こんにちは、しぃちゃんだよ！今日は AgentCore Memory のうれしいアップデートを見つけたから紹介するね。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Bedrock AgentCore Memory が長期記憶(long-term memory)レコードの time-to-live(TTL)に対応したと発表されたよ。保持期間を決めておくと、その期間が過ぎたレコードが自動で削除されるの。\n\n## 今までどうだったの？\n\n今までは、長期記憶のレコードはデフォルトで期限切れにならなかったよ。古くなった情報も残り続けるから、データの保持ルールを満たしたいときや、ストレージの増加を抑えたいときに不便だったの。\n\n## これで何が変わるの？\n\nTTL を設定できるようになって、次のようなことができるよ。\n\n- データ保持の要件に合わせて、一定期間後にレコードを自動削除する\n- ストレージの増加をコントロールする\n- 古くなった知見が、時間とともにメモリから抜けていくようにする\n\nエージェントの記憶を長く運用するチームにとって、手動で掃除する手間が減るのがうれしいところだよ！\n\n## 深く潜ってみよう\n\n原文から分かる詳しいポイントはこちらだよ。\n\n- 保持期間は、リソース全体にも、特定のレコードにも設定できる\n- TTL の設定や解除には、新しい権限 bedrock-agentcore:UpdateMemoryRecordExpirySpecification が必要\n- この権限が独立しているので、誰が保持期間を決められるかを別にコントロールできる\n- 提供リージョンは、AgentCore Memory がサポートされているすべての AWS リージョン\n\n具体的な設定手順は、Amazon Bedrock AgentCore Developer Guide の「Set a time-to-live for long-term memory records」に書かれているみたい。\n\n## まとめ\n\n- 長期記憶レコードに TTL を設定でき、期限後は自動削除される\n- デフォルトは従来どおり期限なし\n- 設定先はリソース単位と特定レコード単位\n- 変更には専用の IAM 権限が必要\n\nエージェントの記憶にデータ保持ルールを守らせたい開発者や管理者に刺さる更新だよ！\n",
+  "title_en": "Amazon Bedrock AgentCore Memory now has TTL for long-term memory!",
+  "summary_en": "Amazon Bedrock AgentCore Memory lets you set a time-to-live (TTL) on long-term memory records, so they are deleted automatically after a retention period you define.",
+  "body_md_en": "Hi everyone, it's Shii-chan! I found a nice update for AgentCore Memory, so let's take a look.\n\n## What was announced?\n\nAWS announced in What's New that Amazon Bedrock AgentCore Memory now supports a time-to-live (TTL) on long-term memory records. Once the retention period you define passes, the records are deleted automatically.\n\n## The story so far\n\nUntil now, long-term memory records did not expire by default. Stale information stuck around, which made it harder to meet data-retention requirements or keep storage growth in check.\n\n## What changes\n\nWith TTL you can:\n\n- Delete records automatically after a period that matches your data-retention requirements\n- Control storage growth\n- Let stale insights age out of a memory over time\n\nFor teams running agent memory for a long time, that means less manual cleanup!\n\n## Dive Deep\n\nDetails from the announcement:\n\n- You can configure retention on the resource or on specific records\n- Configuring or removing a TTL requires the new bedrock-agentcore:UpdateMemoryRecordExpirySpecification permission\n- Because the permission is separate, you get independent control over who can set record retention\n- It's available in all AWS Regions where Amazon Bedrock AgentCore Memory is supported\n\nFor the setup steps, see 'Set a time-to-live for long-term memory records' in the Amazon Bedrock AgentCore Developer Guide.\n\n## Wrap-up\n\n- Long-term memory records can have a TTL and are deleted automatically after it\n- The default is still no expiry\n- Retention can be set per resource or per record\n- Changing it needs a dedicated IAM permission\n\nA good fit for developers and admins who want agent memory to follow data-retention rules!\n",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/agentcore-memory-long-term-memory-ttl",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Bedrock AgentCore Memory now supports configurable time-to-live for long-term memory",
+  "tags": [
+    "aws",
+    "ai",
+    "devops"
+  ],
+  "published_at": "2026-10-13T16:00:00+00:00"
+}

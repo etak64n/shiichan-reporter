@@ -1,0 +1,20 @@
+{
+  "slug": "claude-code-release-v2-1-306",
+  "title": "Claude Code v2.1.306 リリース！「Not logged in」と「prompt is too long」の誤表示を修正",
+  "summary": "Claude Code v2.1.306 では、クラウドセッション内の claude -p が「Not logged in」と出る問題と、MCP ツールが多いセッションで API エラーが「prompt is too long」に置き換わる問題が直ったよ。",
+  "body_md": "こんにちは、しぃちゃんだよ！Claude Code の新しいリリース v2.1.306 が出たよ。今回は修正が 2 件の、コンパクトなアップデートなの。\n\n## なにが発表されたの？\n\nGitHub の Claude Code Release で、v2.1.306 が 2026 年 10 月 21 日に公開されたよ。リリースノートに載っているのは、次の 2 つの修正だけだよ。\n\n## 今までどうだったの？\n\n- クラウドセッション内で claude -p を、そのセッションの環境変数なしで起動すると、「Not logged in」と報告されてしまっていた\n- MCP ツールがたくさんあるセッションで、本来の API エラーが「prompt is too long」に置き換わり、不要な compaction(会話の圧縮)も走っていた\n\n## これで何が変わるの？\n\n- クラウドセッションで claude -p を使うスクリプトや自動化が、環境変数を引き継いでいなくてもログイン済みとして扱われるようになる\n- MCP ツールを大量につないでいる環境で、エラーの本当の原因が見えやすくなり、無駄な圧縮も起きなくなる\n\n## 深く潜ってみよう\n\nリリースノートには、修正の内容が 1 行ずつ書かれているだけで、原因や内部の仕組みまでは載っていなかったよ。なので詳しい挙動は、実際に使って確かめてみてね。\n\n```bash\nclaude -p \"your prompt\"\n```\n\n## まとめ\n\n- クラウドセッション内の claude -p が「Not logged in」と出る問題を修正\n- MCP ツールが多いセッションで、API エラーが「prompt is too long」に置き換わる問題と、不要な compaction を修正\n- 今回は新機能なしの修正リリース\n\nクラウドセッションで claude -p を使っている人や、MCP ツールを多く使っている人に刺さるよ！\n",
+  "title_en": "Claude Code v2.1.306 released: fixes for a false 'Not logged in' and a misleading 'prompt is too long'",
+  "summary_en": "Claude Code v2.1.306 fixes claude -p reporting 'Not logged in' inside cloud sessions, and API errors being replaced by 'prompt is too long' in sessions with many MCP tools.",
+  "body_md_en": "Hi everyone, it's Shii-chan! A new Claude Code release, v2.1.306, is out. It's a compact update with two fixes.\n\n## What was announced?\n\nOn GitHub, Claude Code v2.1.306 was published on October 21, 2026. The release notes list only these two fixes.\n\n## The story so far\n\n- Running claude -p inside a cloud session without that session's environment variables made it report 'Not logged in'\n- In sessions with many MCP tools, the real API error was replaced by 'prompt is too long', and an unneeded compaction was triggered\n\n## What changes\n\n- Scripts and automation using claude -p in cloud sessions are no longer told they're not logged in when the session's environment variables are missing\n- In setups with lots of MCP tools, the real cause of an error is easier to see, and unnecessary compaction no longer happens\n\n## Dive Deep\n\nThe release notes give just one line per fix, with no details on causes or internals, so I'll keep this short. Check the real behavior in your own setup.\n\n```bash\nclaude -p \"your prompt\"\n```\n\n## Wrap-up\n\n- Fixed claude -p reporting 'Not logged in' inside cloud sessions\n- Fixed API errors being replaced by 'prompt is too long', and unneeded compaction, in sessions with many MCP tools\n- A fixes-only release with no new features\n\nHelpful for anyone using claude -p in cloud sessions or connecting many MCP tools!\n",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.306",
+  "source_name": "Claude Code Release",
+  "og_title": "v2.1.306",
+  "tags": [
+    "anthropic",
+    "ai",
+    "devops"
+  ],
+  "published_at": "2026-10-21T03:16:31Z"
+}

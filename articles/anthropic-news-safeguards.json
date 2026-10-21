@@ -1,0 +1,20 @@
+{
+  "slug": "anthropic-news-safeguards",
+  "title": "Anthropic の News「Safeguards」一覧、中間選挙対策と蒸留攻撃への防御！",
+  "summary": "Anthropic の News「Safeguards」一覧を紹介するよ。10 月 14 日の 2026 年米中間選挙への備えや、10 月 12 日の蒸留攻撃への防御強化など、安全対策の投稿が並んでいるの。",
+  "body_md": "おつかれさま、しぃちゃんだよ！今日は Anthropic の News の「Safeguards」一覧ページを見てきたよ。Claude をどう守っているのかが分かる、じっくり読みたいカテゴリだよ！\n\n## なにが発表されたの？\n\n「Safeguards」は、Claude の悪用対策と利用者の保護に関する投稿を集めたカテゴリだよ。分類器、レッドチーミング、バグバウンティ、選挙の健全性、エージェントのセキュリティなどが並んでいて、22 本が掲載されているの。\n\n## なぜ重要なの？\n\nAI が広く使われるほど、悪用への備えは大事になるよね。どんな対策をどう公開しているかが分かるのは貴重だよ。\n\n## これで何が変わるの？\n\nセキュリティや信頼性を気にする人は、Anthropic の取り組みを時系列で追いやすくなるよ！\n\n## 深く潜ってみよう\n\n直近の主な投稿はこちらだよ。\n\n- 2026 年 10 月 14 日 Preparing for the 2026 US midterms: 選挙に向けた対策\n- 10 月 12 日 Strengthening our defenses against distillation attacks: モデル能力の不正なコピーへの防御\n- 9 月 1 日 Developing Enterprise Frontier Safeguards with our customers: 企業向けの safeguards\n- 8 月 31 日 Improving our alignment and security efforts: 無許可のシステムアクセスの事案を受けた取り組み\n- 8 月 14 日 How Claude's text watermark works: テキストの透かしの仕組み\n- 8 月 7 日 Improving Fable 5's biology safeguards: 生物学の分類器と誤検知\n- 7 月 2 日 Fable 5 のサイバー safeguards と jailbreak の枠組みの詳細\n\n## まとめ\n\n- Safeguards は悪用対策と利用者保護の投稿の一覧(22 本)\n- 直近は選挙対策、蒸留攻撃への防御、透かしの仕組みなどが話題\n- AI の安全対策の実際を知りたい人に刺さるよ！\n",
+  "title_en": "Anthropic News 'Safeguards': midterm election prep and defenses against distillation attacks!",
+  "summary_en": "A tour of the Safeguards listing in Anthropic's News, including preparation for the 2026 US midterms and stronger defenses against distillation attacks.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today I read the 'Safeguards' page in Anthropic's News, which shows how Claude is protected!\n\n## What was announced?\n\n'Safeguards' collects posts about preventing misuse and protecting users: classifiers, red-teaming, bug bounties, election integrity, and agent security. It lists 22 articles.\n\n## Why it matters\n\nAs AI spreads, preparing for misuse matters more. It's valuable to see what protections are published.\n\n## What changes\n\nIf you care about security and trust, you can follow Anthropic's efforts over time.\n\n## Dive Deep\n\nRecent posts:\n\n- Oct 14, 2026, Preparing for the 2026 US midterms: election safeguards\n- Oct 12, Strengthening our defenses against distillation attacks: preventing illicit copying of model capabilities\n- Sep 1, Developing Enterprise Frontier Safeguards with our customers\n- Aug 31, Improving our alignment and security efforts: a response to incidents of unauthorized system access\n- Aug 14, How Claude's text watermark works\n- Aug 7, Improving Fable 5's biology safeguards: classifiers and false positives\n- Jul 2: more details on Fable 5's cyber safeguards and the jailbreak framework\n\n## Wrap-up\n\n- Safeguards lists misuse-prevention and user-protection posts (22 articles)\n- Recent topics: elections, distillation attacks, and watermarking\n- Great for anyone curious about real AI safety work!\n",
+  "emotion": "thinking",
+  "importance": 2,
+  "source_url": "https://www.anthropic.com/news/safeguards",
+  "source_name": "Anthropic News",
+  "og_title": "safeguards",
+  "tags": [
+    "anthropic",
+    "ai-safety",
+    "security"
+  ],
+  "published_at": "2026-10-21T04:45:19+00:00"
+}

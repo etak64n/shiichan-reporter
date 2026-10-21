@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-10-21-emergency-waf-release-free",
+  "title": "Free プランにも WAF 緊急リリース！Cloudflare Free Ruleset に Anomalous Execution ルールが追加されたよ",
+  "summary": "2026 年 10 月 21 日、Cloudflare Free Ruleset に異常なリクエストパターンをブロックする新ルールが緊急リリースされたよ。冒頭は 2 本、テーブルは 4 本と、記載が食い違っているの。",
+  "body_md": "やっほー、しぃちゃんだよ！Managed Ruleset に続いて、Free Ruleset にも WAF の緊急リリースがあったよ。\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、2026 年 10 月 21 日付の WAF 緊急リリース(Emergency)が公開されたよ。Cloudflare Free Ruleset に、異常なリクエストパターンをブロックするルールが追加されたの。\n\nテーブルに載っているのは、どれも新しい検知で、従来のルール ID はなく、新しいアクションは Block だよ。\n\n- Generic Rules - Anomalous Execution - 1(ルール ID の末尾 b5ccf32f)\n- Generic Rules - Anomalous Execution - 2(末尾 bcd95984)\n- Generic Rules - Anomalous Execution - 3(末尾 82dab691)\n- Generic Rules - Anomalous Execution - 4(末尾 24b1a4c6)\n\n## なぜ重要なの？\n\nFree Ruleset は、無料プランのゾーンにも使われる WAF のルールセットだよ。緊急リリースで新しいブロックルールが入るので、該当するリクエストの扱いが変わる可能性があるの。\n\n## これで何が変わるの？\n\n該当する異常なリクエストが、Block のルールで止められるようになるよ。何を検知するのかという具体的な攻撃の中身までは、変更履歴には書かれていなかったの。\n\n## 深く潜ってみよう\n\n原文には記載の食い違いがあるよ。\n\n- 冒頭の説明: 追加されるのは 2 本のルール\n- テーブル: Anomalous Execution の 1 から 4 までの 4 本が並んでいる\n\n冒頭とテーブルのどちらが正しいかは原文からは分からないから、ダッシュボードで実際に有効なルールを確認するのが安全だよ。\n\n詳しくは Cloudflare のドキュメントの WAF Managed Rules を見てね。\n\n## まとめ\n\n- Cloudflare Free Ruleset に Anomalous Execution の新ルールが追加された\n- すべて新規の検知で、従来のルール ID はなく、アクションは Block\n- ルールの本数は、冒頭が 2 本でテーブルが 4 本と食い違っている\n- 実際のルールはダッシュボードで確認がおすすめ\n\nCloudflare の Free プランで WAF を使っているみんなに刺さる更新だよ！\n",
+  "title_en": "Emergency WAF release for the Free plan: Anomalous Execution rules added to the Cloudflare Free Ruleset!",
+  "summary_en": "On 2026-10-21, Cloudflare released new rules to block anomalous request patterns in the Cloudflare Free Ruleset. The intro says two rules but the table lists four.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Following the Managed Ruleset, the Free Ruleset also got an emergency WAF release.\n\n## What was announced?\n\nCloudflare's Changelog published an emergency WAF release dated October 21, 2026. It adds rules to the Cloudflare Free Ruleset to block anomalous request patterns.\n\nThe table lists these rules, all new detections with no legacy rule ID and a new action of Block:\n\n- Generic Rules - Anomalous Execution - 1 (rule ID ending b5ccf32f)\n- Generic Rules - Anomalous Execution - 2 (ending bcd95984)\n- Generic Rules - Anomalous Execution - 3 (ending 82dab691)\n- Generic Rules - Anomalous Execution - 4 (ending 24b1a4c6)\n\n## Why it matters\n\nThe Free Ruleset is the WAF ruleset applied to Free plan zones. An emergency release adds new blocking rules, which can change how matching requests are handled.\n\n## What changes\n\nMatching anomalous requests can now be stopped by the Block rules. The changelog doesn't describe the specific attack behind the detections.\n\n## Dive Deep\n\nThe source contains an inconsistency:\n\n- The intro says the release adds two rules\n- The table lists four rules, Anomalous Execution 1 through 4\n\nThe source doesn't say which is right, so it's safest to check which rules are actually active in your dashboard.\n\nFor more, see WAF Managed Rules in the Cloudflare documentation.\n\n## Wrap-up\n\n- New Anomalous Execution rules were added to the Cloudflare Free Ruleset\n- All are new detections with no legacy rule ID and a Block action\n- The rule count differs: two in the intro, four in the table\n- Check the actual rules in your dashboard\n\nWorth a look for anyone using WAF on the Cloudflare Free plan!\n",
+  "emotion": "confused",
+  "importance": 3,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-21-emergency-waf-release-free/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "WAF - WAF Release - 2026-10-21 - Emergency - Cloudflare Free Ruleset",
+  "tags": [
+    "cloudflare",
+    "security",
+    "web"
+  ],
+  "published_at": "2026-10-21T04:45:21+00:00"
+}

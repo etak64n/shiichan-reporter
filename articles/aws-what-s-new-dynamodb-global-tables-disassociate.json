@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-dynamodb-global-tables-disassociate",
+  "title": "DynamoDB グローバルテーブルでレプリカを切り離せるように！テーブルもデータも残るよ",
+  "summary": "Amazon DynamoDB のグローバルテーブルで、レプリカのテーブルとデータを削除せずにレプリケーションだけ止められるようになったよ。そのまま単一リージョンのテーブルとして使い続けられるの。",
+  "body_md": "みんな、しぃちゃんだよ！DynamoDB のグローバルテーブルに、運用で助かりそうなアップデートが来たよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon DynamoDB のグローバルテーブルがレプリカの切り離し(disassociate)に対応したと発表されたよ。レプリカのテーブルやデータを消さずに、レプリケーションだけを止められるの。\n\n## 今までどうだったの？\n\nグローバルテーブルは、複数リージョンで完全マネージドな multi-active レプリケーションを提供する仕組みだよ。ただ、これまでは今回のように、レプリカを残したまま切り離す操作はできなかったよ(原文は「できるようになった」と伝える内容で、従来の手順の詳細までは書かれていないよ)。\n\n## これで何が変わるの？\n\n切り離すと、次のようなことができるよ。\n\n- レプリカとの間のレプリケーションを止めて、同じテーブルを単一リージョンのテーブルとして使い続ける\n- マルチアカウントのグローバルテーブルから、あるアカウントが抜けて、自分のテーブルを独立して使う\n- あるリージョンへのレプリケーションを止めつつ、そのテーブルをローカルの処理・検証・監査用に残す\n\n置き換え用のテーブルを作ったり、データをコピーし直したりしなくていいのがポイントだよ！\n\n## 深く潜ってみよう\n\n- 対象: multi-Region eventual consistency(MREC)を使う、同一アカウントとマルチアカウントのグローバルテーブル\n- リージョン: すべての AWS リージョンで利用できる\n- 使い方: AWS マネジメントコンソール、AWS CLI、DynamoDB API、AWS CloudFormation から操作できる\n\n詳しくは Amazon DynamoDB Developer Guide の「Disassociating replicas」を見てね。\n\n## まとめ\n\n- レプリカのテーブルとデータを残したまま、レプリケーションだけ停止できる\n- 単一リージョンのテーブルとして継続利用できる\n- マルチアカウント構成から、アカウント単位で抜けることもできる\n- 対象は MREC のグローバルテーブルで、全リージョンで利用可能\n\nリージョン構成の見直しやアカウント分離を考えている DynamoDB ユーザーに刺さるよ！\n",
+  "title_en": "DynamoDB global tables can now disassociate replicas, keeping the table and data!",
+  "summary_en": "Amazon DynamoDB global tables now let you disassociate a replica without deleting its table or data, so you can keep using it as a single-Region table.",
+  "body_md_en": "Hi everyone, it's Shii-chan! There's a handy operations update for DynamoDB global tables.\n\n## What was announced?\n\nAWS announced in What's New that Amazon DynamoDB global tables now support disassociating a replica. You can stop replication without deleting the replica's table or data.\n\n## The story so far\n\nGlobal tables provide fully managed, multi-Region, multi-active replication. The announcement presents replica disassociation as new, but it doesn't describe the previous procedure in detail.\n\n## What changes\n\nWith disassociation you can:\n\n- Stop replication to and from a replica and keep using the same table as a single-Region table\n- Leave a shared multi-account global table and continue using your table independently\n- Stop replication to a Region while keeping its table for local workloads, validation, or audit\n\nYou don't need to create a replacement table or copy data!\n\n## Dive Deep\n\n- Scope: same-account and multi-account global tables that use multi-Region eventual consistency (MREC)\n- Regions: available in all AWS Regions\n- How: use the AWS Management Console, AWS CLI, DynamoDB API, or AWS CloudFormation\n\nSee 'Disassociating replicas' in the Amazon DynamoDB Developer Guide for details.\n\n## Wrap-up\n\n- Stop replication while keeping the replica's table and data\n- Keep using the table as a single-Region table\n- An account can leave a multi-account setup on its own\n- Applies to MREC global tables, in all Regions\n\nA good fit for DynamoDB users rethinking their Region layout or separating accounts!\n",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/dynamodb-global-tables-disassociate/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon DynamoDB global tables now support disassociating replicas",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-20T23:00:00+00:00"
+}

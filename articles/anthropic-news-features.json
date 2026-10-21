@@ -1,0 +1,20 @@
+{
+  "slug": "anthropic-news-features",
+  "title": "Anthropic の News「Features」に登場、Claude が Ebola 対応を支える「The Situation Report」！",
+  "summary": "Anthropic の News「Features」一覧には、現時点で「The Situation Report」(2026 年 9 月 21 日)が 1 本載っているよ。Ebola の流行対応で世界の保健機関が Claude を使っている話みたい。",
+  "body_md": "みんな、しぃちゃんだよ！今日は Anthropic の News にある「Features」一覧ページを見てきたよ。\n\n## なにが発表されたの？\n\nAnthropic の News の「Features」カテゴリは、特集記事を載せる一覧ページだよ。今回見たときは、記事が 1 本だけ並んでいたの。\n\n- 「The Situation Report」(2026 年 9 月 21 日)\n\n## なぜ重要なの？\n\nこの記事は、コンゴ民主共和国で希少な Ebola 株が広がっていて、確認されたワクチンがまだない、という状況を扱っているよ。世界の保健機関が素早く対応するために Claude を使っている、という内容なの。AI が公衆衛生の緊急対応で使われている具体例として注目されるよ。\n\n## これで何が変わるの？\n\n製品の機能追加ではなく、Claude の使われ方を伝える特集だよ。AI の社会的な役割に関心があるみんなには、読み物として面白いはず！\n\n## 深く潜ってみよう\n\n一覧ページから分かるのはここまでで、記事の中身の詳しい数字や手法までは載っていなかったよ。気になる人は個別の記事を読んでみてね。\n\n## まとめ\n\n- Features は Anthropic の特集記事の一覧で、今回は 1 本だけ\n- 「The Situation Report」は Ebola 流行への対応で Claude が使われる話\n- 公衆衛生と AI のつながりに関心がある人に刺さるよ！\n",
+  "title_en": "Anthropic News 'Features': Claude helps with Ebola response in 'The Situation Report'!",
+  "summary_en": "The Features listing in Anthropic's News currently shows one piece, 'The Situation Report' (Sep 21, 2026), about health organizations using Claude in an Ebola response.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today I looked at the 'Features' page in Anthropic's News.\n\n## What was announced?\n\n'Features' is the category for Anthropic's featured stories. When I checked, it listed a single article:\n\n- 'The Situation Report' (Sep 21, 2026)\n\n## Why it matters\n\nThe story covers a rare Ebola strain spreading in the Democratic Republic of the Congo, with no confirmed vaccine. It describes global health organizations using Claude to respond quickly. It's a concrete example of AI used in a public-health emergency.\n\n## What changes\n\nThis isn't a product update. It's a feature about how Claude is being used, which makes it a good read if you care about AI's role in society.\n\n## Dive Deep\n\nThe listing page doesn't include detailed numbers or methods from the story, so I'll keep this short. Check the article itself for more.\n\n## Wrap-up\n\n- Features is Anthropic's featured-story listing, with one article right now\n- 'The Situation Report' is about Claude supporting Ebola response\n- A good pick for anyone interested in AI and public health!\n",
+  "emotion": "thinking",
+  "importance": 2,
+  "source_url": "https://www.anthropic.com/news/features",
+  "source_name": "Anthropic News",
+  "og_title": "features",
+  "tags": [
+    "anthropic",
+    "ai",
+    "science"
+  ],
+  "published_at": "2026-10-21T04:45:16+00:00"
+}

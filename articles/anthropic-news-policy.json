@@ -1,0 +1,20 @@
+{
+  "slug": "anthropic-news-policy",
+  "title": "Anthropic の News「Policy」一覧、独立評価者の更新から 2026 年版 Usage Policy まで！",
+  "summary": "Anthropic の News「Policy」一覧を紹介するよ。10 月 15 日の独立評価者の更新、10 月 8 日の Usage Policy 更新など、政策や安全に関する投稿が並んでいるの。",
+  "body_md": "やっほー、しぃちゃんだよ！今日は Anthropic の News の「Policy」一覧ページを見てきたよ。ちょっと真面目な話だけど、大事なことがいっぱい！\n\n## なにが発表されたの？\n\n「Policy」は、AI 政策・安全・政府との関係・会社のコミットメントに関する投稿を新しい順に並べたカテゴリだよ。見出しは 51 本で、ページには最新の 24 本が表示され、残りは「See more」から見られるみたい。\n\n## なぜ重要なの？\n\n利用ルールや安全性の方針は、Claude を使うときの前提になるよ。変更点を知っておくと、アプリや運用の見直しに役立つの。\n\n## これで何が変わるの？\n\n政策の動きを時系列で追えるから、「いつ何が変わったの？」を探しやすくなるよ！\n\n## 深く潜ってみよう\n\n直近の主な投稿はこちらだよ。\n\n- 2026 年 10 月 15 日 An update on independent evaluators: METR など外部の評価者が、従業員に近いアクセスで安全性テストをする話\n- 10 月 8 日 2026 Usage Policy update: Usage Policy の改訂\n- 8 月 11 日 テキサス州知事の責任あるデータセンター開発の呼びかけへの支持\n- 7 月 27 日 Our position on open-weights models: オープンウェイトモデルに関する立場\n- 7 月 21 日 Public First Action へのさらに 2,000 万ドルの寄付(合計 4,000 万ドル)\n- 6 月 12 日 Fable 5 と Mythos 5 へのアクセス停止を求める米政府の指示についての声明\n\nさらに遡ると、Responsible Scaling Policy バージョン 3.0(2026 年 2 月)や Claude の新しい constitution(1 月)も載っているよ。\n\n## まとめ\n\n- Policy は政策・安全・会社のコミットメントをまとめた一覧(51 本)\n- 直近は独立評価者と Usage Policy の更新が目立つ\n- 利用規約や安全方針の動向を押さえたい人に刺さるよ！\n",
+  "title_en": "Anthropic News 'Policy': independent evaluators, the 2026 Usage Policy, and more!",
+  "summary_en": "A tour of the Policy listing in Anthropic's News, including the Oct 15 update on independent evaluators and the Oct 8 Usage Policy update.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today I read the 'Policy' page in Anthropic's News. It's serious stuff, but important!\n\n## What was announced?\n\n'Policy' lists posts about AI policy, safety, government relations, and company commitments, newest first. The header says 51 articles; the page shows the latest 24, with a 'See more' link.\n\n## Why it matters\n\nUsage and safety policies are the ground rules for using Claude, so knowing what changed helps when you review your apps and operations.\n\n## What changes\n\nYou can follow policy changes over time and find 'what changed, and when?' more easily.\n\n## Dive Deep\n\nRecent posts:\n\n- Oct 15, 2026, An update on independent evaluators: outside evaluators, including METR, getting employee-like access for safety testing\n- Oct 8, 2026 Usage Policy update: a revised Usage Policy\n- Aug 11: support for Governor Abbott's call for responsible data center development\n- Jul 27, Our position on open-weights models\n- Jul 21: another $20 million to Public First Action, bringing total support to $40M\n- Jun 12: a statement on the US government directive to suspend access to Fable 5 and Mythos 5\n\nFurther back, you'll find Responsible Scaling Policy Version 3.0 (February 2026) and Claude's new constitution (January).\n\n## Wrap-up\n\n- Policy collects policy, safety, and commitment posts (51 articles)\n- Recent highlights: independent evaluators and the Usage Policy update\n- Useful for anyone tracking usage rules and safety direction!\n",
+  "emotion": "thinking",
+  "importance": 2,
+  "source_url": "https://www.anthropic.com/news/policy",
+  "source_name": "Anthropic News",
+  "og_title": "policy",
+  "tags": [
+    "anthropic",
+    "ai-safety",
+    "business"
+  ],
+  "published_at": "2026-10-21T04:45:18+00:00"
+}

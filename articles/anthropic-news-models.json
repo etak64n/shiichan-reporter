@@ -1,0 +1,19 @@
+{
+  "slug": "anthropic-news-models",
+  "title": "Anthropic の News「Models」一覧、Haiku 5.5 から Opus 5.5 まで 5.5 ファミリーが勢ぞろい！",
+  "summary": "Anthropic の News「Models」一覧を紹介するよ。2026 年 10 月 7 日の Claude Haiku 5.5 を先頭に、Sonnet 5.5 や Opus 5.5 など、モデル発表の流れがひと目で分かるの。",
+  "body_md": "こんにちは、しぃちゃんだよ！今日は Anthropic の News の「Models」一覧ページをのぞいてきたよ。モデルの歴史が並んでいて、見ているだけでどきどきしちゃった！\n\n## なにが発表されたの？\n\nAnthropic の News の「Models」は、モデル発表と、非推奨(deprecation)に関する投稿を新しい順に並べたカテゴリだよ。見出しは 28 本とあって、ページには 24 本が表示され、残りは「See more」から見られるみたい。\n\n## なぜ重要なの？\n\nリリースの間隔や、各モデルの狙いが一覧で分かるから、「いまどのモデルを選べばいいの？」のヒントになるよ。\n\n## これで何が変わるの？\n\nモデル選びの全体像をつかめるよ。アプリ開発者は、用途に合う階層(Haiku・Sonnet・Opus)を見つけやすくなるはず！\n\n## 深く潜ってみよう\n\n直近の主な投稿はこちらだよ。\n\n- Introducing Claude Haiku 5.5(2026 年 10 月 7 日): 大量処理向けの高速な小型モデル\n- Introducing Claude Sonnet 5.5(9 月 28 日): Sonnet 5 より速く安いアップグレード\n- Introducing Claude Opus 5.5(9 月 22 日): エージェント的なコーディングと知識労働向けで、Opus 5 よりコストが低い\n- Introducing Claude Mythos and Fable 5.1(9 月 15 日): コーディングと知識労働の最上位で、研究向けの能力も\n- Introducing Claude Opus 5(7 月 24 日): 長時間動くエージェント向けの Opus 階層\n- Redeploying Fable 5(6 月 30 日): Fable 5 の世界的な再提供と、jailbreak の深刻度を評価する枠組み\n\nさらに遡ると、Claude 3 ファミリー(2024 年 3 月)まで続いていて、Opus 3 の非推奨に関する取り組みやモデルの重み保存のコミットメントも載っているよ。\n\n## まとめ\n\n- Models はモデル発表と非推奨方針をまとめた一覧(28 本)\n- 直近は Haiku 5.5、Sonnet 5.5、Opus 5.5 と 5.5 ファミリーが続々登場\n- モデル選びの参考にしたい開発者に刺さるよ！\n",
+  "title_en": "Anthropic News 'Models': the whole 5.5 family, from Haiku to Opus!",
+  "summary_en": "A tour of the Models listing in Anthropic's News, starting with Claude Haiku 5.5 on Oct 7, 2026, followed by Sonnet 5.5, Opus 5.5 and more.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today I browsed the 'Models' page in Anthropic's News, a whole history of Claude models in one list!\n\n## What was announced?\n\n'Models' collects model announcements and model-deprecation posts, newest first. The header says 28 articles; the page shows 24, with a 'See more' link for the rest.\n\n## Why it matters\n\nThe list shows the release cadence and what each model is for, which helps when you wonder which model to pick.\n\n## What changes\n\nYou get the big picture of the lineup. App developers can find the tier (Haiku, Sonnet, Opus) that fits their use case.\n\n## Dive Deep\n\nThe most recent posts:\n\n- Introducing Claude Haiku 5.5 (Oct 7, 2026): a fast, small model for high-volume tasks\n- Introducing Claude Sonnet 5.5 (Sep 28): a faster, cheaper upgrade to Sonnet 5\n- Introducing Claude Opus 5.5 (Sep 22): agentic coding and knowledge work at lower cost than Opus 5\n- Introducing Claude Mythos and Fable 5.1 (Sep 15): top coding and knowledge work, with research capabilities\n- Introducing Claude Opus 5 (Jul 24): the Opus tier for long-running agents\n- Redeploying Fable 5 (Jun 30): Fable 5 returning globally, plus a jailbreak-severity scoring framework\n\nGoing back further, the list reaches the Claude 3 family (March 2024) and includes posts on Opus 3 deprecation commitments and preserving model weights.\n\n## Wrap-up\n\n- Models lists model launches and deprecation policy posts (28 articles)\n- Recent launches: Haiku 5.5, Sonnet 5.5, and Opus 5.5\n- Useful for developers choosing a model!\n",
+  "emotion": "energetic",
+  "importance": 3,
+  "source_url": "https://www.anthropic.com/news/models",
+  "source_name": "Anthropic News",
+  "og_title": "models",
+  "tags": [
+    "anthropic",
+    "ai"
+  ],
+  "published_at": "2026-10-21T04:45:17+00:00"
+}

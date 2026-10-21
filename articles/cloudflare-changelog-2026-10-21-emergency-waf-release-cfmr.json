@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-10-21-emergency-waf-release-cfmr",
+  "title": "WAF の緊急リリース！Cloudflare Managed Ruleset に「Anomalous Execution」4 ルールが追加されたよ",
+  "summary": "2026 年 10 月 21 日、Cloudflare Managed Ruleset に異常なリクエストパターンを検知する新ルール 4 本が緊急リリースされたよ。ページの説明とテーブルでアクションの記載が食い違っているから注意してね。",
+  "body_md": "みんな、しぃちゃんだよ！Cloudflare の WAF に緊急リリースがあったから、さっそく紹介するね。\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、2026 年 10 月 21 日付の WAF 緊急リリース(Emergency)が公開されたよ。Cloudflare Managed Ruleset に、異常なリクエストパターンを検知するルールが 4 本追加されたの。\n\n追加されたのは、どれも新しい検知(This is a new detection)で、従来のルール ID(Legacy Rule ID)はないよ。\n\n- Generic Rules - Anomalous Execution - 1(ルール ID の末尾 c438d5dd)\n- Generic Rules - Anomalous Execution - 2(末尾 0a0c2f64)\n- Generic Rules - Anomalous Execution - 3(末尾 545d163c)\n- Generic Rules - Anomalous Execution - 4(末尾 212afcc9)\n\n## なぜ重要なの？\n\n緊急リリースは、通常のスケジュールを待たずに出される WAF の更新だよ。Managed Ruleset を使っているゾーンでは、新しいルールがリクエストの処理に影響する可能性があるから、内容を押さえておくと安心だよ。\n\n## これで何が変わるの？\n\n該当するリクエストが、新しいルールで検知されるようになるよ。何を検知するのかという具体的な攻撃の中身までは、変更履歴には書かれていなかったの。\n\n## 深く潜ってみよう\n\nここで、原文に気になる点があるよ。\n\n- 冒頭の説明: 4 ルールのうち 2 本はマッチしたリクエストをブロックし、残り 2 本はブロックせずにログだけ記録する\n- テーブル: 4 本すべての新しいアクションが Block と記載されている\n\nこの食い違いは原文のままだから、実際のアクションはダッシュボードで確認してから運用に反映するのが安全だよ。\n\n詳しくは Cloudflare のドキュメントの WAF Managed Rules を見てね。\n\n## まとめ\n\n- Cloudflare Managed Ruleset に Anomalous Execution の新ルールが 4 本追加された\n- すべて新規の検知で、従来のルール ID はない\n- ブロック対象が 2 本か 4 本かは、原文の中で記載が食い違っている\n- 実際のアクションはダッシュボードでの確認がおすすめ\n\nCloudflare WAF を運用しているセキュリティ担当のみんなに刺さる更新だよ！\n",
+  "title_en": "Emergency WAF release: four 'Anomalous Execution' rules added to the Cloudflare Managed Ruleset!",
+  "summary_en": "On 2026-10-21, Cloudflare released four new rules to detect anomalous request patterns in the Cloudflare Managed Ruleset. The page's intro and its table disagree about the actions, so check before relying on them.",
+  "body_md_en": "Hi everyone, it's Shii-chan! There's an emergency WAF release from Cloudflare, so let's go through it.\n\n## What was announced?\n\nCloudflare's Changelog published an emergency WAF release dated October 21, 2026. It adds four rules to the Cloudflare Managed Ruleset to detect anomalous request patterns.\n\nAll four are new detections with no legacy rule ID:\n\n- Generic Rules - Anomalous Execution - 1 (rule ID ending c438d5dd)\n- Generic Rules - Anomalous Execution - 2 (ending 0a0c2f64)\n- Generic Rules - Anomalous Execution - 3 (ending 545d163c)\n- Generic Rules - Anomalous Execution - 4 (ending 212afcc9)\n\n## Why it matters\n\nAn emergency release is a WAF update shipped without waiting for the regular schedule. If your zones use the Managed Ruleset, new rules can affect how requests are handled, so it's good to know what changed.\n\n## What changes\n\nMatching requests will now be detected by the new rules. The changelog doesn't describe the specific attack behind the detections.\n\n## Dive Deep\n\nThere's one thing in the source to watch:\n\n- The intro says two of the four rules block matching requests and two only log matches\n- The table lists the new action as Block for all four rules\n\nThis inconsistency is in the source itself, so it's safest to verify the actual action in your dashboard before relying on it.\n\nFor more, see WAF Managed Rules in the Cloudflare documentation.\n\n## Wrap-up\n\n- Four new Anomalous Execution rules were added to the Cloudflare Managed Ruleset\n- All are new detections with no legacy rule ID\n- Whether two or four of them block is inconsistent within the source\n- Check the actual actions in your dashboard\n\nWorth a look for security folks running Cloudflare WAF!\n",
+  "emotion": "confused",
+  "importance": 3,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-21-emergency-waf-release-cfmr/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "WAF - WAF Release - 2026-10-21 - Emergency - Cloudflare Managed Ruleset",
+  "tags": [
+    "cloudflare",
+    "security",
+    "web"
+  ],
+  "published_at": "2026-10-21T04:45:21+00:00"
+}

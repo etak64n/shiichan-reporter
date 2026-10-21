@@ -1,0 +1,20 @@
+{
+  "slug": "anthropic-news-security",
+  "title": "Anthropic の News「Security」一覧、Anthropic Cyber Mission と Project Glasswing！",
+  "summary": "Anthropic の News「Security」一覧を紹介するよ。10 月 8 日の Anthropic Cyber Mission や Project Glasswing、脅威インテリジェンス報告など、サイバーセキュリティの投稿が並んでいるの。",
+  "body_md": "やっほー、しぃちゃんだよ！今日は Anthropic の News の「Security」一覧ページを見てきたよ。サイバーセキュリティ好きのみんな、必見だよ！\n\n## なにが発表されたの？\n\n「Security」は、サイバーセキュリティ、脅威インテリジェンス、安全な AI 開発に関する投稿を新しい順に並べたカテゴリだよ。15 本が掲載されているの。\n\n## なぜ重要なの？\n\nAI で攻撃も防御も変わっていく中で、Anthropic が何を見つけ、どう備えているかが分かるよ。\n\n## これで何が変わるの？\n\n脅威の動向や防御側の取り組みを、一覧から順に追えるよ。セキュリティ担当のみんなの情報収集に使えるね！\n\n## 深く潜ってみよう\n\n直近の主な投稿はこちらだよ。\n\n- 2026 年 10 月 8 日 Introducing the Anthropic Cyber Mission: 長期的なサイバーセキュリティへのコミットメント\n- 9 月 10 日 Detecting and countering misuse of AI: September 2026: 悪用の試みを阻止した脅威インテリジェンス報告\n- 7 月 30 日 サイバーセキュリティ評価で起きた 3 つの実際の事案の調査\n- 6 月 3 日 1 年分の AI を使ったサイバー脅威を MITRE ATT&CK に対応づけた学び\n- 6 月 2 日 Expanding Project Glasswing: さらに約 150 の組織へ拡大\n- 4 月 4 日 Project Glasswing: 重要なソフトウェアを AI 時代に守る取り組みの開始\n\n3 月には Mozilla と協力して Firefox の脆弱性を Claude で見つける取り組み、2 月には蒸留攻撃の検知と防止、Claude Code Security の話題もあるよ。\n\n## まとめ\n\n- Security はサイバーセキュリティ関連の投稿の一覧(15 本)\n- 直近は Cyber Mission と Project Glasswing、脅威インテリジェンス報告が中心\n- セキュリティ担当者や防御側に関心があるみんなに刺さるよ！\n",
+  "title_en": "Anthropic News 'Security': the Anthropic Cyber Mission and Project Glasswing!",
+  "summary_en": "A tour of the Security listing in Anthropic's News, including the Anthropic Cyber Mission (Oct 8, 2026), Project Glasswing, and threat intelligence reports.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today I read the 'Security' page in Anthropic's News. Cybersecurity fans, this one's for you!\n\n## What was announced?\n\n'Security' lists posts about cybersecurity, threat intelligence, and secure AI development, newest first. It has 15 articles.\n\n## Why it matters\n\nAs AI changes both attack and defense, it's useful to see what Anthropic has found and how it prepares.\n\n## What changes\n\nYou can follow threat trends and defender-focused work from one list, handy for security teams.\n\n## Dive Deep\n\nRecent posts:\n\n- Oct 8, 2026, Introducing the Anthropic Cyber Mission: a long-term cybersecurity commitment\n- Sep 10, Detecting and countering misuse of AI: September 2026: a threat intelligence report on disrupted misuse attempts\n- Jul 30: investigating three real-world incidents in cybersecurity evaluations\n- Jun 3: what we learned mapping a year of AI-enabled cyber threats to MITRE ATT&CK\n- Jun 2, Expanding Project Glasswing: about 150 more organizations\n- Apr 4, Project Glasswing: securing critical software for the AI era\n\nEarlier you'll find the Mozilla partnership to improve Firefox's security (March), and detecting distillation attacks and Claude Code Security (February).\n\n## Wrap-up\n\n- Security lists cybersecurity-related posts (15 articles)\n- Recent focus: the Cyber Mission, Project Glasswing, and threat reports\n- Great for security teams and anyone interested in defense!\n",
+  "emotion": "thinking",
+  "importance": 3,
+  "source_url": "https://www.anthropic.com/news/security",
+  "source_name": "Anthropic News",
+  "og_title": "security",
+  "tags": [
+    "anthropic",
+    "security",
+    "ai-safety"
+  ],
+  "published_at": "2026-10-21T04:45:19+00:00"
+}
