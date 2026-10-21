@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-10-02-monitors",
+  "title": "SQL クエリでアラートが作れる！Cloudflare に Monitors (Beta) が登場",
+  "summary": "Cloudflare のダッシュボードに、自分の SQL API クエリを使ってアラートを作れる Monitors (Beta) が追加されたよ！しきい値・異常検知・SLO の 3 方式に対応！",
+  "body_md": "こんにちは、しぃちゃんだよ！Cloudflare のアラートがぐっと自由になる新機能が出たから、さっそく紹介するね。\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Alerts セクションに **Monitors (Beta)** が追加されたと告知されたよ。自分で書いた SQL API のクエリをもとにアラートを作るための専用スペースなの。場所は Cloudflare ダッシュボードの Observability > Alerts > Monitors だよ。\n\n## なぜ重要なの？\n\nこれまでの Cloudflare の通知は、DDoS や SSL/TLS、Health Checks など、あらかじめ用意されたものが中心だったよ。Monitors では、自分が見たい指標をクエリで定義して監視できるから、サービス固有の関心事にあわせたアラートが作れるんだね。\n\n## これで何が変わるの？\n\n- 「このクエリの結果がこうなったら知らせて」を、自分の指標で設定できる\n- 見た目で組み立てるビルダーもあるので、SQL に慣れていなくても始めやすい\n- 用意済みの通知は「Platform Notifications」として別の場所に整理された\n\n## 深く潜ってみよう\n\n各モニターは、サポートされている SQL API のデータセットに対してクエリを **スケジュール実行** して、結果が検知条件を満たしたら通知を送る仕組みだよ。\n\n検知方法は 3 種類あるよ。\n\n- **Threshold**: クエリ結果が固定値を超えたときに発火\n- **Anomaly detection**: 過去のベースラインから、設定した感度以上にずれたときに発火\n- **SLO**: 成功イベントと全イベントの比率が目標のパーセンテージを下回ったときに発火\n\nモニタービルダーには、次の機能があるよ。\n\n- ビジュアルクエリビルダー\n- カスタム SQL のサポート\n- クエリプレビュー(シグナルをグラフ表示。期間は最大 7 日まで設定可能)\n\n## まとめ\n\n- Observability > Alerts > Monitors に Monitors (Beta) が登場\n- SQL API のクエリを定期評価して、条件を満たすと通知\n- 検知は Threshold / Anomaly detection / SLO の 3 方式\n- 既存の DDoS・SSL/TLS・Health Checks などの通知は Platform Notifications に分離\n\nCloudflare のデータを自分の指標で見張りたい運用担当のみんなに刺さる Beta 機能だよ！\n",
+  "title_en": "Build Alerts from SQL Queries: Cloudflare Monitors (Beta) Is Here!",
+  "summary_en": "Cloudflare's dashboard now has Monitors (Beta), a place to create alerts from your own SQL API queries, with threshold, anomaly detection, and SLO detection methods.",
+  "body_md_en": "Hi everyone, Shii-chan here! Cloudflare just made alerting a lot more flexible, so let's dig in.\n\n## What was announced?\n\nThe Cloudflare Changelog announced **Monitors (Beta)** in the Alerts section. It's a dedicated space for creating alerts based on your own SQL API queries. You'll find it in the Cloudflare dashboard under Observability > Alerts > Monitors.\n\n## Why it matters\n\nCloudflare notifications have mostly been pre-defined ones, such as DDoS, SSL/TLS, and Health Checks. With Monitors you define the signal you care about as a query, so you can build alerts around what matters to your own service.\n\n## What changes\n\n- You can say \"tell me when this query result looks like this\" using your own metrics\n- A visual builder is included, so you can get started even if SQL isn't your strong suit\n- The pre-defined notifications now live separately under Platform Notifications\n\n## Dive Deep\n\nEach monitor evaluates a query against a supported SQL API dataset **on a schedule** and sends a notification when the result meets your detection criteria.\n\nThere are three detection methods:\n\n- **Threshold**: triggers when a query result crosses a fixed value\n- **Anomaly detection**: triggers when a result deviates from its historical baseline by more than a configured sensitivity\n- **SLO**: triggers when the ratio of successful events to total events drops below a target percentage\n\nThe monitor builder includes:\n\n- A visual query builder\n- Custom SQL support\n- A query preview that charts the signal over a configurable time range of up to 7 days\n\n## Wrap-up\n\n- Monitors (Beta) lives under Observability > Alerts > Monitors\n- It runs your SQL API queries on a schedule and notifies you when conditions are met\n- Detection: Threshold, Anomaly detection, or SLO\n- Pre-defined DDoS, SSL/TLS, Health Checks, and other notifications moved to Platform Notifications\n\nIf you want to watch your Cloudflare data with your own metrics, this Beta is for you!\n",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-02-monitors/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Notifications - Monitors (Beta)",
+  "tags": [
+    "cloudflare",
+    "devops",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-02T00:00:00+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "openai-news-openai-models-google-cloud",
+  "title": "まさかの組み合わせ！OpenAI のモデルと Codex が Google Cloud の Model Garden に来るよ",
+  "summary": "OpenAI と Google Cloud が提携し、OpenAI の最先端モデルと Codex のワークフローが Gemini の Model Garden に Google Cloud Marketplace 経由で登場するよ。",
+  "body_md": "みんな、しぃちゃんだよ！ちょっとびっくりな提携ニュースが入ってきたから、さっそく紹介するね。\n\n## なにが発表されたの？\n\nOpenAI の News で、OpenAI と Google Cloud が協力して、OpenAI の最先端モデルと **Codex** のエージェント的なワークフローを、Google Cloud の **Model Garden** で使えるようにすると発表されたよ。購入は Google Cloud Marketplace を通して行う形だよ。\n\n## なぜ重要なの？\n\nGoogle Cloud にはもともと AI 開発者やデータサイエンティストがたくさん集まっているよ。その人たちが、今使っている環境のままで OpenAI のモデルを使えるようになるのがポイントなの。企業にとっては、モデルを試す段階から本格導入へ進む道筋が増えるよ。\n\n## これで何が変わるの？\n\n- Google Cloud 上で、大規模なエージェントワークフローに OpenAI のモデルをネイティブに使える\n- 厳しいデータ要件がある業界でも、Google Cloud のアクセス制御・集中的なデータガバナンス・インフラと組み合わせて、誰が機微なデータにどう触れるかを管理できる\n- すでに Google Cloud の利用コミットメントがある企業は、それを今回の購入に充てられる\n\n## 深く潜ってみよう\n\n原文から分かる範囲の詳細はこれだよ。\n\n- **購入方法**: Model Garden 経由で OpenAI の最先端モデルを購入し、取引は Google Cloud Marketplace で処理される\n- **今後の対応**: OpenAI のモデルは、近いうちに Google Antigravity と Gemini Agent でも使えるようになる予定\n- **提供時期とアクセス**: 一般提供は数週間以内を予定。興味のある顧客は OpenAI のサイトのフォームからアクセスを申し込める\n- **クラウドとの関係**: Microsoft は引き続き OpenAI の主要なクラウドパートナー\n\n具体的な対応モデル名や料金は、今回の告知では触れられていないよ。\n\n## まとめ\n\n- OpenAI のモデルと Codex ワークフローが Google Cloud の Model Garden に登場\n- 購入は Google Cloud Marketplace 経由で、既存の利用コミットメントを適用可能\n- Google Antigravity と Gemini Agent への対応も近日予定\n- 一般提供は数週間以内、アクセスはフォームから申し込み\n\nGoogle Cloud を主に使っていて、OpenAI のモデルも選択肢に入れたい企業のみんなに刺さるニュースだよ！\n",
+  "title_en": "A Surprise Pairing: OpenAI Models and Codex Are Coming to Google Cloud's Model Garden",
+  "summary_en": "OpenAI and Google Cloud are bringing OpenAI's frontier models and Codex workflows to Model Garden, available through Google Cloud Marketplace.",
+  "body_md_en": "Hi everyone, Shii-chan here! A rather surprising partnership just landed, so let's take a look.\n\n## What was announced?\n\nOpenAI News announced that OpenAI and Google Cloud are bringing OpenAI's frontier models and **Codex** agentic workflows to Google Cloud's **Model Garden**. Purchases are handled through Google Cloud Marketplace.\n\n## Why it matters\n\nGoogle Cloud already attracts many AI developers and data scientists. The key point is that they can use OpenAI models within the environment they already use. For enterprises, it adds a path from evaluation to broader adoption.\n\n## What changes\n\n- You get native access to OpenAI models for large-scale agentic workflows on Google Cloud\n- Organizations with strict data requirements can combine the models with Google Cloud's access controls, centralized data governance, and infrastructure to control who accesses sensitive data and how it's used\n- Enterprises with existing Google Cloud spend commitments can apply them to these purchases\n\n## Dive Deep\n\nHere's what the announcement tells us:\n\n- **Purchasing**: buy OpenAI frontier models through Model Garden, with transactions handled via Google Cloud Marketplace\n- **Coming next**: OpenAI models will soon be available in Google Antigravity and Gemini Agent\n- **Timing and access**: general availability is planned within the coming weeks, and interested customers can request access through a form on OpenAI's website\n- **Cloud relationships**: Microsoft remains OpenAI's primary cloud partner\n\nThe announcement doesn't mention specific model names or pricing.\n\n## Wrap-up\n\n- OpenAI models and Codex workflows are coming to Google Cloud's Model Garden\n- Purchases go through Google Cloud Marketplace and can use existing spend commitments\n- Google Antigravity and Gemini Agent support is coming soon\n- General availability is planned within weeks, with access requested via a form\n\nIf you're mainly on Google Cloud and want OpenAI models as an option, this one's for you!\n",
+  "emotion": "energetic",
+  "importance": 4,
+  "source_url": "https://openai.com/index/openai-models-google-cloud",
+  "source_name": "OpenAI News",
+  "og_title": "OpenAI models are coming to Google Cloud",
+  "tags": [
+    "openai",
+    "ai",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-21T12:00:00+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-10-02-destination-enhancements",
+  "title": "Cloudflare の Webhook 通知が Free プランでも解禁！コーディングエージェントにも届くよ",
+  "summary": "Cloudflare Notifications の Webhook 宛先が Free を含む全プランで使えるようになり、アラートの送信先にコーディングエージェントも追加されたよ！",
+  "body_md": "やっほー、しぃちゃんだよ！今日は Cloudflare のアラート通知まわりに、うれしいアップデートが来ていたから紹介するね。\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Notifications の宛先(Destinations)が強化されたことが告知されたよ。変更点は 2 つ！\n\n- Webhook 宛先が Free を含む **すべてのプラン** で使えるようになった\n- **コーディングエージェント** がアラートの宛先としてサポートされた\n\n## 今までどうだったの？\n\nこれまで Webhook を宛先にするには **Pro プラン以上** が必要だったの。Free プランだと、Slack や自前の仕組みにアラートを飛ばしたくても Webhook は選べなかったんだね。\n\n## これで何が変わるの？\n\n- Free プランのユーザーも、アラートを Webhook で好きなシステムに連携できるようになるよ\n- 有料ゾーンを持たないアカウントでも、Webhook 宛先を **最大 100 個** まで設定できるよ\n- メール、Webhook、PagerDuty に並んで、対応するコーディングエージェントへ直接アラートを届けられるよ\n\n個人開発やホビーのサイトでも、通知を自動化しやすくなりそうだね！\n\n## 深く潜ってみよう\n\n設定する場所は Cloudflare ダッシュボードの Observability > Alerts > Destinations だよ。詳しい手順は Changelog からリンクされている「Configure webhooks」のドキュメントにまとまっているよ。\n\nコーディングエージェント宛ての具体的な対応エージェントや連携の仕組みは、今回の告知では詳しく触れられていないよ。使いたいみんなはドキュメントを確認してね。\n\n## まとめ\n\n- Webhook 宛先が Free を含む全プランで利用可能に(以前は Pro 以上)\n- 有料ゾーンなしのアカウントは Webhook 宛先を最大 100 個まで設定可能\n- コーディングエージェントがアラートの宛先に追加\n- 設定は Observability > Alerts > Destinations から\n\nFree プランで Cloudflare を使っていて、アラートを自動化したいみんなに刺さるアップデートだよ！\n",
+  "title_en": "Cloudflare Webhooks Now on Every Plan, Plus Coding Agent Alert Destinations!",
+  "summary_en": "Cloudflare Notifications webhook destinations are now available on all plans including Free, and coding agents are now supported as alert destinations.",
+  "body_md_en": "Hi everyone, Shii-chan here! Cloudflare has a nice update to alert notifications today, so let's take a look.\n\n## What was announced?\n\nThe Cloudflare Changelog announced two enhancements to Notifications destinations:\n\n- Webhook destinations are now available on **every plan**, including Free\n- **Coding agents** are now supported as alert destinations\n\n## The story so far\n\nUntil now, webhook destinations required a **Pro plan or higher**. On the Free plan you couldn't send alerts to your own tools through a webhook.\n\n## What changes\n\n- Free plan users can now connect alerts to the systems they like via webhooks\n- Accounts without a paid zone can configure up to **100 webhook destinations**\n- You can deliver alerts directly to supported coding agents, alongside email, webhooks, and PagerDuty\n\nThis should make it easier to automate notifications even for personal and hobby sites!\n\n## Dive Deep\n\nYou can configure destinations in the Cloudflare dashboard under Observability > Alerts > Destinations. The linked \"Configure webhooks\" documentation has the setup details.\n\nThe announcement doesn't spell out which coding agents are supported or how the integration works, so check the docs if you want to use it.\n\n## Wrap-up\n\n- Webhook destinations are available on all plans including Free (previously Pro and above)\n- Accounts without a paid zone get up to 100 webhook destinations\n- Coding agents are now alert destinations\n- Configure it under Observability > Alerts > Destinations\n\nIf you're on the Free plan and want to automate your alerting, this one's for you!\n",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-02-destination-enhancements/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Notifications - Webhooks on all plans and coding agent destinations",
+  "tags": [
+    "cloudflare",
+    "devops",
+    "ai"
+  ],
+  "published_at": "2026-10-02T00:00:00+00:00"
+}
