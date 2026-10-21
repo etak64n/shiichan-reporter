@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-s3-server-access-logs-cloudwatch-logs-regions",
+  "title": "S3 サーバーアクセスログの CloudWatch Logs 配信が GovCloud・China・欧州ソブリンにも！",
+  "summary": "Amazon S3 サーバーアクセスログを CloudWatch Logs に配信する機能が、GovCloud (US)、AWS European Sovereign Cloud、AWS China の各リージョンでも使えるようになったよ。これで全 AWS リージョンで利用できるの！",
+  "body_md": "やっほー、しぃちゃんだよ！今日は S3 のログまわりのリージョン拡大を紹介するね！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon S3 サーバーアクセスログの Amazon CloudWatch Logs への配信が、新たに 5 つのリージョンで使えるようになったと発表されたよ。\n\n追加されたのはこの 3 つの区分だよ。\n\n- AWS GovCloud (US) リージョン\n- AWS European Sovereign Cloud\n- AWS China リージョン\n\nこの追加で、S3 サーバーアクセスログの CloudWatch Logs 配信は、すべての AWS リージョンで利用できるようになったんだって！\n\n## なぜ重要なの？\n\nこの配信は、これまでの S3 汎用バケットへの配信を補う、もうひとつの配信先だよ。政府系や主権クラウド、中国リージョンでも同じ運用ができるようになるのが大きいの。\n\n## これで何が変わるの？\n\nアクセスログを CloudWatch Logs に置くと、こんなことができるよ。\n\n- ログが届くそばからクエリできる\n- エラー率などにアラームを設定できる\n- AWS KMS のキーで暗号化できる\n- トラフィックのパターンを監視したり、アクセスインシデントを調査したりできる\n- S3 へのアクセスを、ほかの運用データと突き合わせられる\n\nこれまで S3 バケットにたまったログを後から分析していた人は、リアルタイムに近い形で監視できるようになるね！\n\n## 深く潜ってみよう\n\n料金は、CloudWatch Logs の vended logs の料金が発生するよ。詳しくは Amazon CloudWatch の料金ページで確認してね。使い方の詳細は Amazon S3 ユーザーガイドにまとまっているみたい！\n\n## まとめ\n\n- GovCloud (US)、European Sovereign Cloud、China の各リージョンに対応が広がった\n- S3 サーバーアクセスログの CloudWatch Logs 配信が全 AWS リージョンで使える\n- クエリ、アラーム、KMS 暗号化、他の運用データとの突き合わせができる\n- CloudWatch Logs の vended logs 料金がかかる\n\n規制の厳しいリージョンで S3 のアクセス監視をしている人に刺さる更新だよ！",
+  "title_en": "S3 Access Logs to CloudWatch Logs Now Reach GovCloud, China, and the European Sovereign Cloud!",
+  "summary_en": "Amazon S3 server access log delivery to Amazon CloudWatch Logs is now available in the AWS GovCloud (US) Regions, AWS European Sovereign Cloud, and AWS China Regions, which makes it available in all AWS Regions!",
+  "body_md_en": "Hi, it's Shii-chan! Today I'm sharing a Region expansion for S3 logging!\n\n## What was announced?\n\nIn AWS What's New, Amazon S3 server access log delivery to Amazon CloudWatch Logs is now available in five additional AWS Regions.\n\nThe newly added Regions are:\n\n- AWS GovCloud (US) Regions\n- AWS European Sovereign Cloud\n- AWS China Regions\n\nWith this addition, delivery of S3 server access logs to CloudWatch Logs is available in all AWS Regions!\n\n## Why it matters\n\nThis delivery path complements the existing delivery of server access logs to S3 general purpose buckets. Being able to run the same setup in government, sovereign, and China Regions is the big deal here.\n\n## What changes\n\nWith access logs in CloudWatch Logs, you can:\n\n- Query logs as they arrive\n- Set alarms, for example on error rates\n- Encrypt them with AWS KMS keys\n- Monitor traffic patterns and investigate access incidents\n- Correlate S3 access activity with the rest of your operational data\n\nIf you used to analyze logs after they piled up in an S3 bucket, you can now monitor much closer to real time!\n\n## Dive Deep\n\nCloudWatch Logs charges for vended logs apply. See the Amazon CloudWatch pricing page for details. For how to set it up, check the Amazon S3 User Guide.\n\n## Wrap-up\n\n- Support extends to the GovCloud (US), European Sovereign Cloud, and China Regions\n- S3 server access log delivery to CloudWatch Logs is available in all AWS Regions\n- You get querying, alarms, KMS encryption, and correlation with other operational data\n- CloudWatch Logs vended logs charges apply\n\nThis one is for anyone monitoring S3 access in tightly regulated Regions!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-s3-server-access-logs-cloudwatch-logs-regions/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon S3 server access log delivery to Amazon CloudWatch Logs now available in five additional AWS Regions",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "security"
+  ],
+  "published_at": "2026-10-21T13:00:00+00:00"
+}

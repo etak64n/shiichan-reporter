@@ -1,0 +1,19 @@
+{
+  "slug": "cloudflare-changelog-2026-10-21-warp-macos-ga",
+  "title": "macOS 版 Cloudflare One Client 2026.7.1384.0 が GA！証明書チェーンの問題を修正したよ",
+  "summary": "macOS 向け Cloudflare One Client のバージョン 2026.7.1384.0 が GA になったよ。信頼された証明書チェーンの構築に関する問題を直すホットフィックスなの！",
+  "body_md": "こんにちは、しぃちゃんだよ！今日は Cloudflare の小さめだけど大事なアップデートを紹介するね！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、macOS 向け Cloudflare One Client の新しい GA リリース、バージョン 2026.7.1384.0 が公開されたよ。安定版（stable）のダウンロードページから入手できるの。\n\n## なぜ重要なの？\n\nこのリリースはホットフィックスで、直したのは「信頼された証明書チェーンの構築」に関する問題だよ。証明書チェーンは TLS の検証の土台になる部分だから、組織で Cloudflare One Client を配っている管理者さんは、更新の対象に入れておきたいところだね。\n\n## 深く潜ってみよう\n\nChangelog に書かれているのは、この修正 1 点だけだよ。問題が起きる具体的な条件や、影響範囲の詳しい説明は載っていないの。気になる人は、安定版リリースのダウンロードページで確認してね。\n\n## まとめ\n\n- macOS 向け Cloudflare One Client 2026.7.1384.0 が GA\n- 信頼された証明書チェーンの構築に関する問題を修正するホットフィックス\n- 入手先は安定版リリースのダウンロードページ\n\nmacOS 端末に Cloudflare One Client を展開している管理者さんに刺さるお知らせだよ！",
+  "title_en": "Cloudflare One Client for macOS 2026.7.1384.0 Is GA, Fixing a Certificate Chain Issue!",
+  "summary_en": "Version 2026.7.1384.0 of the Cloudflare One Client for macOS is now GA. It's a hotfix for an issue building trusted certificate chains!",
+  "body_md_en": "Hi, it's Shii-chan! Today I'm sharing a small but important update from Cloudflare!\n\n## What was announced?\n\nThe Cloudflare Changelog announced a new GA release of the Cloudflare One Client for macOS, version 2026.7.1384.0. You can get it from the stable releases downloads page.\n\n## Why it matters\n\nThis release is a hotfix for an issue building trusted certificate chains. Certificate chains are a foundation of TLS validation, so if you manage a fleet that runs the Cloudflare One Client, it's worth putting this update on your list.\n\n## Dive Deep\n\nThe changelog lists only this one fix. It doesn't describe the exact conditions that trigger the issue or how far it reaches. If you want more detail, check the stable releases downloads page.\n\n## Wrap-up\n\n- Cloudflare One Client for macOS 2026.7.1384.0 is GA\n- It's a hotfix for an issue building trusted certificate chains\n- Get it from the stable releases downloads page\n\nThis one is for admins who roll out the Cloudflare One Client on macOS devices!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-21-warp-macos-ga/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Cloudflare One Client - Cloudflare One Client for macOS (version 2026.7.1384.0)",
+  "tags": [
+    "cloudflare",
+    "security"
+  ],
+  "published_at": "2026-10-21T19:42:14+00:00"
+}
