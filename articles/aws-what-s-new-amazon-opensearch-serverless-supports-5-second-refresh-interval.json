@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-opensearch-serverless-supports-5-second-refresh-interval",
+  "title": "OpenSearch Serverless の反映が 10 秒から 5 秒に！ 設定なしで倍速だよ",
+  "summary": "Amazon OpenSearch Serverless の既定のリフレッシュ間隔が、検索コレクションとベクトルコレクションの両方で 10 秒から 5 秒になったよ。設定変更は不要！",
+  "body_md": "やっほー、しぃちゃんだよ！\n\n何もしなくても速くなる、うれしい更新だよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon OpenSearch Serverless の既定のリフレッシュ間隔が 5 秒に短縮されたことが発表されたよ。対象は、検索コレクションとベクトルコレクションの両方だよ。\n\n## 今までどうだったの？\n\nリフレッシュ間隔は、新しく取り込んだドキュメントがどれくらい早く検索できるようになるかを決める設定。これまでの既定値は 10 秒だったよ。\n\n## これで何が変わるの？\n\n既定値が 10 秒から 5 秒になって、書き込んだデータが検索できるようになるまでの時間が短くなるよ。read-after-write の見え方が自動でよくなって、設定変更も操作も要らないの。\n\n特にうれしいのは、データを継続的に取り込みつつ、ほぼリアルタイムで検索したいワークロードだよ。\n\n- 頻繁に更新されるコンテンツの全文検索\n- RAG(検索拡張生成)\n- セマンティック検索\n- レコメンドやパーソナライズ\n\n頻繁に変わるデータセットなら、アプリや AI エージェントが取り込んだばかりのデータを早く取り出して使えるから、検索結果や RAG の回答の関連性や正確さも上がるみたい！\n\n## 深く潜ってみよう\n\n- 適用先は、次世代の Amazon OpenSearch Serverless\n- 既定で有効になる\n- 提供リージョンは、OpenSearch Serverless が使える 24 リージョンすべて\n\n詳しくは OpenSearch Serverless のドキュメントを見てね。\n\n## まとめ\n\n- 既定のリフレッシュ間隔が 10 秒から 5 秒に\n- 検索コレクションとベクトルコレクションの両方が対象\n- 設定変更も操作も不要\n- 24 リージョンで利用できる\n\nRAG やレコメンドで、データの鮮度を気にしている人に刺さるよ！",
+  "title_en": "OpenSearch Serverless Now Refreshes in 5 Seconds by Default!",
+  "summary_en": "Amazon OpenSearch Serverless now defaults to a 5-second refresh interval, down from 10 seconds, for both search and vector collections. No configuration changes needed.",
+  "body_md_en": "Hi, it's Shii-chan!\n\nHere's a nice update that makes things faster without you doing anything!\n\n## What was announced?\n\nAWS What's New announced that Amazon OpenSearch Serverless reduces its default refresh interval to 5 seconds, for both search and vector collections.\n\n## The story so far\n\nThe refresh interval controls how quickly newly ingested documents become available for search. The default used to be 10 seconds.\n\n## What changes\n\nThe default drops from 10 seconds to 5 seconds, so newly written data becomes searchable faster. You get quicker read-after-write visibility automatically, with no configuration changes and no action required.\n\nIt's especially useful for workloads that continuously ingest data and need near real-time retrieval:\n\n- Full-text search over frequently updated content\n- Retrieval-augmented generation (RAG)\n- Semantic search\n- Recommendation and personalization\n\nFor datasets that change often, applications and AI agents can retrieve and act on freshly ingested data sooner, which improves the relevance and accuracy of search results and RAG responses.\n\n## Dive Deep\n\n- It applies to the next generation of Amazon OpenSearch Serverless\n- It takes effect by default\n- It's available in all 24 Regions where OpenSearch Serverless is available\n\nSee the OpenSearch Serverless documentation for details.\n\n## Wrap-up\n\n- Default refresh interval goes from 10 seconds to 5 seconds\n- Applies to both search and vector collections\n- No configuration or action needed\n- Available in 24 Regions\n\nThis is for anyone who cares about data freshness in RAG or recommendations!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-opensearch-serverless-supports-5-second-refresh-interval/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon OpenSearch Serverless now supports a 5-second default refresh interval",
+  "tags": [
+    "aws",
+    "serverless",
+    "ai"
+  ],
+  "published_at": "2026-10-22T18:34:00+00:00"
+}

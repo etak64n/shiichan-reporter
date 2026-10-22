@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-aws-direct-connect-100g-bangalore",
+  "title": "AWS Direct Connect の 100G がバンガロールにも拡大！",
+  "summary": "インド・バンガロール近郊の Netmagic DC2 にある既存の Direct Connect ロケーションで、100 Gbps の専用接続が使えるようになったよ。",
+  "body_md": "おつかれさま、しぃちゃんだよ！\n\nネットワーク好きさん向けの、インドからのお知らせだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Direct Connect の 100 Gbps 専用接続が拡大されたことが発表されたよ。\n\n場所は、インドのバンガロール近郊にある Netmagic DC2 データセンターの、既存の Direct Connect ロケーションだよ。\n\n## なぜ重要なの？\n\nDirect Connect は、AWS と自分のデータセンター、オフィス、コロケーション環境のあいだに、プライベートな物理ネットワーク接続を張るサービス。公衆インターネット経由より、一貫したネットワーク体験を得られる場合があるんだって。\n\n大量のデータをやり取りする環境では、接続の帯域が上がることが大事になるよね。\n\n## これで何が変わるの？\n\nこのロケーションから、次の宛先にプライベートで直接つなげるようになるよ。\n\n- すべてのパブリック AWS リージョン(中国のリージョンを除く)\n- AWS GovCloud リージョン\n- AWS Local Zones\n\n## 深く潜ってみよう\n\nDirect Connect のロケーションは世界に 150 か所以上あるよ。購入やデプロイの手順は、Direct Connect の製品詳細ページのロケーションの項目や、はじめにのページで確認できるみたい。\n\n料金などの細かい条件は、原文には載っていなかったよ。\n\n## まとめ\n\n- バンガロール近郊の Netmagic DC2 で 100 Gbps の専用接続が使える\n- 中国を除くすべてのパブリックリージョン、GovCloud、Local Zones にプライベート接続できる\n- Direct Connect のロケーションは世界で 150 か所以上\n\nインドで大容量のハイブリッド接続を考えている人に刺さるよ！",
+  "title_en": "AWS Direct Connect 100G Expands to Bangalore, India!",
+  "summary_en": "100 Gbps dedicated connections are now available at the existing AWS Direct Connect location in the Netmagic DC2 data center near Bangalore, India.",
+  "body_md_en": "Hi, it's Shii-chan!\n\nHere's some news for network fans, straight from India!\n\n## What was announced?\n\nAWS What's New announced an expansion of 100 Gbps dedicated connections for AWS Direct Connect.\n\nIt's at the existing Direct Connect location in the Netmagic DC2 data center near Bangalore, India.\n\n## Why it matters\n\nDirect Connect lets you set up a private, physical network connection between AWS and your data center, office, or colocation environment. These connections can provide a more consistent network experience than those over the public internet.\n\nIf you move a lot of data, having more bandwidth on that link really matters.\n\n## What changes\n\nFrom this location, you can now get private, direct network access to:\n\n- All public AWS Regions (except those in China)\n- AWS GovCloud Regions\n- AWS Local Zones\n\n## Dive Deep\n\nThere are over 150 Direct Connect locations worldwide. You can find the locations section of the Direct Connect product detail pages, and the getting started page, for how to purchase and deploy.\n\nThe announcement doesn't mention pricing or other detailed terms.\n\n## Wrap-up\n\n- 100 Gbps dedicated connections are available at Netmagic DC2 near Bangalore\n- Private access to all public Regions except China, GovCloud and Local Zones\n- Direct Connect has over 150 locations worldwide\n\nThis is for anyone planning high-capacity hybrid connectivity in India!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-direct-connect-100g-bangalore/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Direct Connect announces 100G expansion in Bangalore, India",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-22T16:00:00+00:00"
+}
