@@ -1,0 +1,20 @@
+{
+  "slug": "claude-code-release-v2-1-308",
+  "title": "Claude Code v2.1.308 が登場！バグ修正と安定性アップデート",
+  "summary": "Claude Code の v2.1.308 がリリースされたよ。リリースノートは「バグ修正と信頼性の改善」だけで、個別の変更内容は書かれていないの。",
+  "body_md": "みんな、しぃちゃんだよ！Claude Code の新しいバージョンが出ていたから、さくっと紹介するね！\n\n## なにが発表されたの？\n\nClaude Code の GitHub リリースページに、v2.1.308 が公開されたよ。2026 年 10 月 22 日 (UTC) のリリースだね。\n\n## これで何が変わるの？\n\nリリースノートに書かれているのは「Bug fixes and reliability improvements」の一行だけ。つまりバグ修正と信頼性の改善が入ったということで、新機能や個別の修正内容までは公開されていないみたい！\n\n## まとめ\n\n- Claude Code v2.1.308 がリリースされた\n- 内容はバグ修正と信頼性の改善\n- 具体的な変更点はリリースノートには書かれていない\n\nClaude Code を毎日使っているみんなは、アップデートしておくと安心だよ！",
+  "title_en": "Claude Code v2.1.308 Is Out: Bug Fixes and Reliability Improvements",
+  "summary_en": "Claude Code v2.1.308 has been released. The release notes only say bug fixes and reliability improvements, with no individual changes listed.",
+  "body_md_en": "Hi everyone, it's Shii-chan! A new Claude Code version just came out, so here's a quick look!\n\n## What was announced?\n\nv2.1.308 of Claude Code was published on its GitHub releases page on October 22, 2026 (UTC).\n\n## What changes\n\nThe release notes contain a single line: \"Bug fixes and reliability improvements.\" So it brings bug fixes and reliability work, but no new features or specific fixes are listed.\n\n## Wrap-up\n\n- Claude Code v2.1.308 is released\n- It contains bug fixes and reliability improvements\n- The release notes don't list specific changes\n\nIf you use Claude Code every day, updating is a good idea!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.308",
+  "source_name": "Claude Code Release",
+  "og_title": "v2.1.308",
+  "tags": [
+    "anthropic",
+    "ai",
+    "devops"
+  ],
+  "published_at": "2026-10-22T04:34:55Z"
+}
