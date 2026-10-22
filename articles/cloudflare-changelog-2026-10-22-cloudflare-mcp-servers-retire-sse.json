@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-10-22-cloudflare-mcp-servers-retire-sse",
+  "title": "Cloudflare の MCP サーバーから /sse が消えたよ！接続先は /mcp に変えてね",
+  "summary": "Cloudflare の製品別 MCP サーバーが /mcp だけを提供するようになったよ。/sse へのリクエストは 410 Gone が返るから、設定済みの人は URL の書き換えが必要なの。",
+  "body_md": "やっほー、しぃちゃんだよ！\n\n今日は MCP クライアントを使っているみんなに、ちょっと大事なお知らせがあるの。設定を放っておくと、突然つながらなくなっちゃうかもしれないよ！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Agents 分野の更新として告知されたよ。Cloudflare の製品別 MCP サーバーは、これから `/mcp` だけを提供するようになったの。\n\n`/sse` にリクエストすると、`410 Gone` が返ってくるよ。このレスポンスにはそのサーバーの `/mcp` の URL も含まれていて、たいていの MCP クライアントは接続エラーとしてそれを表示してくれるみたい。\n\n## 今までどうだったの？\n\nこれまでは `/sse` の URL でも Cloudflare の MCP サーバーにつなげられたよ。そのため、`/sse` の URL を設定ファイルに書いたまま使っている人もいるはず。今回の変更で、その経路は使えなくなったの。\n\n## これで何が変わるの？\n\n変わるのは、接続先 URL とサインインまわりだよ。\n\n- `/sse` の URL を設定している人は、`/mcp` に書き換える必要があるよ\n- `/sse` 経由でサインインしていた人は、クライアントから再サインインを求められるよ\n- すでに `/mcp` を使っている人は影響なし！\n\nエラーに出てくる URL をそのままコピーして設定し直せば、すぐ直せそうだよ。\n\n## 深く潜ってみよう\n\n原文に書かれている具体例は、ドキュメント用 MCP サーバーの URL だよ。\n\n```\nhttps://docs.mcp.cloudflare.com/mcp\n```\n\n原文では、`/sse` を指している設定を `/mcp` に変えるように案内されているよ。それ以上の移行手順や、ほかの変更点は書かれていなかったの。\n\n## まとめ\n\n- Cloudflare の製品別 MCP サーバーは `/mcp` のみを提供するようになった\n- `/sse` へのリクエストは `410 Gone` で、返ってくるレスポンスに `/mcp` の URL が入っている\n- `/sse` 設定の人は URL を `/mcp` に変更すればOK\n- `/sse` でサインインしていた人は再サインインが必要\n\nCloudflare の MCP サーバーをエージェントやエディタにつないでいる人は、今のうちに設定を見直しておくと安心だよ！",
+  "title_en": "Cloudflare MCP servers no longer serve /sse — switch to /mcp",
+  "summary_en": "Cloudflare's product-specific MCP servers now serve only /mcp. Requests to /sse return 410 Gone, so clients configured with an /sse URL need to be updated.",
+  "body_md_en": "Hi, it's Shii-chan!\n\nHere's a quick heads-up for everyone who uses MCP clients. If your config is left as is, your connection might suddenly stop working!\n\n## What was announced?\n\nThis comes from the Cloudflare Changelog, filed under Agents. Cloudflare's product-specific MCP servers now serve only `/mcp`.\n\nA request to `/sse` now returns `410 Gone`. The response includes the server's `/mcp` URL, and most MCP clients show it in their connection error.\n\n## The story so far\n\nUntil now, you could connect to Cloudflare's MCP servers through an `/sse` URL too. So some of you may still have an `/sse` URL saved in a config file. With this change, that path no longer works.\n\n## What changes\n\nWhat changes is the connection URL and sign-in:\n\n- If you configured an `/sse` URL, you need to change it to `/mcp`\n- If you signed in through `/sse`, your client will ask you to sign in again\n- If you already use `/mcp`, nothing changes for you!\n\nCopying the URL from the error message into your config should be a quick fix.\n\n## Dive Deep\n\nThe example in the announcement is the docs MCP server URL:\n\n```\nhttps://docs.mcp.cloudflare.com/mcp\n```\n\nThe post tells you to change any config pointing at `/sse` to `/mcp`. It doesn't list further migration steps or other changes.\n\n## Wrap-up\n\n- Cloudflare's product-specific MCP servers now serve only `/mcp`\n- Requests to `/sse` return `410 Gone`, with the `/mcp` URL in the response\n- If you use an `/sse` config, change the URL to `/mcp`\n- If you signed in via `/sse`, you'll need to sign in again\n\nIf you connect agents or editors to Cloudflare's MCP servers, it's worth checking your config now!",
+  "emotion": "confused",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-22-cloudflare-mcp-servers-retire-sse/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Agents - Cloudflare MCP servers no longer serve /sse",
+  "tags": [
+    "cloudflare",
+    "ai",
+    "serverless"
+  ],
+  "published_at": "2026-10-22T15:17:40+00:00"
+}
