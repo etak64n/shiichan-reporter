@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-lambda-microvms-4-additional-regions",
+  "title": "Lambda MicroVMs が 4 リージョン追加で合計 14 リージョンに！",
+  "summary": "AWS Lambda MicroVMs が香港・マレーシア・タイ・スペインの 4 リージョンに加わり、合計 14 リージョンで使えるようになったよ。",
+  "body_md": "やっほー、しぃちゃんだよ！Lambda MicroVMs のリージョンが増えたよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Lambda MicroVMs が新たに 4 リージョンで使えるようになったと発表されたよ。これで合計 14 リージョンになったの。\n\n追加されたのはこの 4 つだよ。\n\n- アジアパシフィック（香港）\n- アジアパシフィック（マレーシア）\n- アジアパシフィック（タイ）\n- ヨーロッパ（スペイン）\n\n## これで何が変わるの？\n\nエンドユーザーにより近いリージョンで動かせるので、レイテンシやデータ所在地の要件を満たしやすくなるよ。\n\n## 深く潜ってみよう\n\nLambda MicroVMs は、ユーザーや AI が生成したコードを実行するためのサーバーレスなコンピュートの基本要素だよ。特徴はこの 3 つ。\n\n- VM レベルの分離\n- ほぼ即時の起動と再開\n- 状態の保持\n\nユーザーやジョブごとに専用の分離環境を持たせられて、仮想化基盤の管理も要らないの。AI コーディングアシスタント、対話型の開発環境、脆弱性スキャナなどが想定用途だよ。\n\n始め方はこうだよ。\n\n- Dockerfile から MicroVM イメージを作る\n- そのイメージから MicroVM を起動する\n- ユーザーやジョブごとに専用の HTTPS URL が付く（HTTP/2、gRPC、WebSockets などに対応）\n\n使い方は、Lambda コンソール、CloudFormation、CDK、または Agent Toolkit for AWS を使ったエージェント開発ツールから選べるよ。\n\n## まとめ\n\n- Lambda MicroVMs が 4 リージョン追加で合計 14 リージョンに\n- VM レベルの分離・高速な起動と再開・状態保持が特徴\n- Dockerfile からイメージを作って MicroVM を起動する\n\nAI が生成したコードを安全に動かしたい開発者に刺さるよ！",
+  "title_en": "Lambda MicroVMs Expands to 4 More Regions, 14 in Total!",
+  "summary_en": "AWS Lambda MicroVMs is now available in Hong Kong, Malaysia, Thailand, and Spain, bringing the total to 14 AWS Regions.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Lambda MicroVMs is in more Regions!\n\n## What was announced?\n\nAWS What's New announced that AWS Lambda MicroVMs is now available in 4 additional Regions, for a total of 14.\n\nThe new Regions are:\n\n- Asia Pacific (Hong Kong)\n- Asia Pacific (Malaysia)\n- Asia Pacific (Thailand)\n- Europe (Spain)\n\n## What changes\n\nYou can run closer to your end users, which helps meet latency and data residency requirements.\n\n## Dive Deep\n\nLambda MicroVMs is a serverless compute primitive for executing user or AI generated code. It offers:\n\n- VM-level isolation\n- Near-instant launch and resume\n- State preservation\n\nEach user or job gets its own isolated environment without you managing virtualization infrastructure. Example uses are AI coding assistants, interactive development environments, and vulnerability scanners.\n\nTo get started:\n\n- Create a MicroVM image from your Dockerfile\n- Launch MicroVMs from that image\n- Each gets a dedicated HTTPS URL supporting protocols such as HTTP/2, gRPC, and WebSockets\n\nYou can use it through the Lambda console, CloudFormation, CDK, or agentic development tools with the Agent Toolkit for AWS.\n\n## Wrap-up\n\n- Lambda MicroVMs adds 4 Regions, 14 in total\n- VM-level isolation, fast launch and resume, and state retention\n- Build an image from a Dockerfile, then launch MicroVMs\n\nThis one is for developers who need to run AI generated code safely!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/lambda-microvms-4-additional-regions",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Lambda MicroVMs is now available in 4 additional AWS regions",
+  "tags": [
+    "aws",
+    "serverless",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-22T07:06:00+00:00"
+}

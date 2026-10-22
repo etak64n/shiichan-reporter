@@ -1,0 +1,20 @@
+{
+  "slug": "openai-news-uber-chatgpt-work-rollout",
+  "title": "Uber が ChatGPT Work を 3 万人超の全社員に展開！パイロット 1,000 人からの大拡大",
+  "summary": "Uber が、ChatGPT Enterprise 上のエージェント ChatGPT Work を 3 万人以上の全社員に展開するよ。最初は 1,000 人のパイロットだったんだって。",
+  "body_md": "みんな、しぃちゃんだよ！今日は導入事例のニュースだよ！\n\n## なにが発表されたの？\n\nOpenAI の News で、Uber が ChatGPT Work を全社に展開すると紹介されたよ。ChatGPT Work は、ChatGPT Enterprise の中で幅広いタスクをこなしてくれるエージェントなの。対象はグローバルで 3 万人以上の従業員だよ。\n\n## なぜ重要なの？\n\n最初は 1,000 人のパイロットだったところから、一気に全社へ広がったよ。原文によると、これは Uber にとって、ナレッジワーク向けのエージェント基盤としては初の全社展開なんだって。\n\n## これで何が変わるの？\n\n複雑で複数ステップのタスクを、完成した成果物まで任せられる基盤が全社で使えるようになるよ。\n\nChatGPT Work がつながるツールはこれだよ。\n\n- Google Drive\n- Gmail\n- Google Calendar\n- Slack\n\nこれらを使って、調査、会議資料の準備、プレゼン作成、データ分析、アプリをまたぐワークフローの実行ができるの。\n\n## 深く潜ってみよう\n\nモデルまわりの情報はこうだよ。\n\n- 既定のモデルは GPT-6.1 Sol で、性能とコスト効率のバランスを取る\n- 音声や画像生成などのマルチモーダル機能も使える\n- ソフトウェアエンジニアは引き続き Codex を使う\n\n展開を支える仕組みも紹介されていたよ。\n\n- Uber 社内の AI スキルライブラリ\n- 承認済みの連携先\n- 専任の社員トレーニング\n\n対象部門は運用、財務、マーケティング、プロダクトなど。採用状況、ユースケース、測定可能な成果については、今後さらに共有される予定だって。\n\n## まとめ\n\n- Uber が ChatGPT Work を 3 万人以上の社員に展開\n- 1,000 人のパイロットからの拡大で、同社初の全社的なエージェント基盤\n- Google Drive・Gmail・Google Calendar・Slack と連携\n- 既定モデルは GPT-6.1 Sol\n\n大企業でエージェントの全社導入を考えている人の参考になる事例だよ！",
+  "title_en": "Uber Rolls Out ChatGPT Work to All 30,000+ Employees!",
+  "summary_en": "Uber is rolling out ChatGPT Work, an agent in ChatGPT Enterprise, to more than 30,000 employees, up from a pilot of 1,000.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today we have a customer story!\n\n## What was announced?\n\nIn OpenAI's News, Uber's company-wide rollout of ChatGPT Work was announced. ChatGPT Work is an agent inside ChatGPT Enterprise that helps with a wide range of tasks. It is going to more than 30,000 employees worldwide.\n\n## Why it matters\n\nIt grew from a pilot of 1,000 employees to the whole company. According to the announcement, this is Uber's first company-wide deployment of an agentic platform tailored for knowledge work.\n\n## What changes\n\nEmployees get an agent platform for complex, multi-step tasks that delivers finished work.\n\nChatGPT Work connects with these tools:\n\n- Google Drive\n- Gmail\n- Google Calendar\n- Slack\n\nWith them, people can research, prepare meeting briefs, create presentations, analyze data, and complete workflows across applications.\n\n## Dive Deep\n\nAbout the models:\n\n- GPT-6.1 Sol is the default, balancing performance and cost\n- Multimodal capabilities such as voice and image generation are available\n- Software engineers keep using Codex\n\nThe rollout is supported by:\n\n- Uber's internal AI skills library\n- Approved integrations\n- Dedicated employee training\n\nTeams in operations, finance, marketing, and product are covered. The companies plan to share more about adoption, use cases, and measurable outcomes as the rollout progresses.\n\n## Wrap-up\n\n- Uber rolls out ChatGPT Work to 30,000+ employees\n- Expanded from a 1,000-person pilot, and its first company-wide agentic platform\n- Connects with Google Drive, Gmail, Google Calendar, and Slack\n- GPT-6.1 Sol is the default model\n\nA useful reference for anyone planning an enterprise-wide agent rollout!",
+  "emotion": "happy",
+  "importance": 1,
+  "source_url": "https://openai.com/index/uber-chatgpt-work-rollout",
+  "source_name": "OpenAI News",
+  "og_title": "Uber brings ChatGPT Work to all employees with OpenAI",
+  "tags": [
+    "openai",
+    "ai",
+    "business"
+  ],
+  "published_at": "2026-10-22T20:07:34+00:00"
+}

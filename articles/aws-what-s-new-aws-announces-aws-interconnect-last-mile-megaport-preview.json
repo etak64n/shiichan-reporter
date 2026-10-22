@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-aws-announces-aws-interconnect-last-mile-megaport-preview",
+  "title": "拠点から AWS へ数クリックで専用線！AWS Interconnect - last mile が Megaport とプレビュー開始",
+  "summary": "AWS が Megaport と組んだフルマネージドな接続サービス AWS Interconnect - last mile のプレビューを開始したよ。支社やデータセンターを数クリックで AWS に接続できて、SLA は 99.99% なの。",
+  "body_md": "おつかれさま、しぃちゃんだよ！ネットワークまわりの新サービスが出たよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Interconnect - last mile のプレビューが Megaport と一緒に発表されたよ。支社、データセンター、リモート拠点を AWS につなぐ、フルマネージドな接続サービスだよ。\n\nMegaport は、31 か国・1,200 以上のデータセンターに対応した、世界最大級の SDN を運用している会社なんだって。\n\n## これで何が変わるの？\n\nネットワーク設定の手間が大きく減るよ。AWS マネジメントコンソールで、次の項目を選ぶだけで、AWS へのプライベートな高速接続が作れるの。\n\n- AWS リージョン\n- 帯域幅\n- Direct Connect Gateway ID\n- パートナーのサブスクライバー ID\n\n開始すると AWS がアクティベーションキーを発行して、Megaport 側でプロビジョニングを完了する流れだよ。\n\n## 深く潜ってみよう\n\n事前にキャパシティを確保しておき、複雑な設定を自動化してくれるよ。\n\n- BGP ピアリング\n- VLAN 設定\n- ASN の割り当て\n\nGA では、コンソールから帯域を 1 Gbps から 100 Gbps まで動的に変更できるようになる予定だよ。ダウンタイムなしのメンテナンスが前提の設計で、SLA は 99.99%。\n\nプレビューの提供メトロは、サンノゼ（us-west-1）と北バージニア（us-east-1）で、どちらも Megaport 経由だよ。プレビューの Interconnect は、マネジメントコンソールや CLI などから作成できるみたい。\n\n## まとめ\n\n- AWS と Megaport の協業で、拠点と AWS をつなぐマネージド接続のプレビューが開始\n- コンソールでリージョン・帯域・ID を選ぶだけで接続できる\n- BGP・VLAN・ASN の設定を自動化\n- GA では 1〜100 Gbps に動的スケール予定、SLA は 99.99%\n\n拠点とクラウドの専用接続を、手間なく用意したいネットワーク担当者に刺さるよ！",
+  "title_en": "AWS Interconnect - last mile Preview with Megaport: Connect Your Sites in a Few Clicks!",
+  "summary_en": "AWS launched the preview of AWS Interconnect - last mile with Megaport, a fully managed way to connect branch offices and data centers to AWS in a few clicks, backed by a 99.99% SLA.",
+  "body_md_en": "Hi everyone, it's Shii-chan! A new networking service is here!\n\n## What was announced?\n\nAWS What's New announced the preview of AWS Interconnect - last mile with Megaport. It is a fully managed connectivity offering for connecting branch offices, data centers, and remote locations to AWS.\n\nMegaport operates one of the world's largest SDNs, with 1,200+ enabled data centers across 31 countries.\n\n## What changes\n\nMuch less network setup work. In the AWS Management Console you choose:\n\n- AWS Region\n- Bandwidth speed\n- Direct Connect Gateway ID\n- Partner subscriber ID\n\nThen AWS generates an activation key to complete provisioning with Megaport.\n\n## Dive Deep\n\nCapacity is pre-provisioned and complex configuration is automated:\n\n- BGP peering\n- VLAN configuration\n- ASN assignment\n\nAt GA, you will be able to scale bandwidth dynamically from 1 Gbps to 100 Gbps in the console. The service is designed for high availability with zero down-time maintenance and a 99.99% SLA.\n\nIn preview it is available in the San Jose (us-west-1) and N. Virginia (us-east-1) metros through Megaport. You can create a preview Interconnect using the console, the CLI, and more.\n\n## Wrap-up\n\n- Preview of a managed connection between your sites and AWS, built with Megaport\n- Pick Region, bandwidth, and IDs in the console\n- BGP, VLAN, and ASN setup is automated\n- GA plans 1 to 100 Gbps dynamic scaling, with a 99.99% SLA\n\nThis one is for network teams who want to connect sites to the cloud without the hassle!",
+  "emotion": "energetic",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-announces-AWS-interconnect-last-mile-megaport-preview/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS announces AWS Interconnect - last mile preview with Megaport",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-22T12:00:00+00:00"
+}

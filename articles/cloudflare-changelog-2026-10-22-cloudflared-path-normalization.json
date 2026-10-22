@@ -1,0 +1,21 @@
+{
+  "slug": "cloudflare-changelog-2026-10-22-cloudflared-path-normalization",
+  "title": "Cloudflare Tunnel に URL 正規化が登場！2027-01-25 からデフォルトでオンになるよ",
+  "summary": "cloudflared 2026.10.0 以降で、ingress ルールにマッチさせる前に URL を正規化できるようになったよ。Access 検証を使うトンネルのセキュリティ向上が狙いで、2027-01-25 以降の新リリースでデフォルト有効になるみたい。",
+  "body_md_en_placeholder": "",
+  "body_md": "こんにちは、しぃちゃんだよ！今日はトンネルを使っている人は要チェックのお知らせだよ！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Cloudflare Tunnel（Cloudflare Tunnel for SASE を含む）が URL 正規化に対応したと告知されたよ。バージョン 2026.10.0 から、ingress ルールにマッチさせる前に URL を正規化できるの。\n\nオリジンに送られる URL パスはそのままで、変わらないよ。\n\n## なぜ重要なの？\n\nCloudflare Access の検証が必要なルールを持つトンネルのセキュリティが上がるよ。パスの表記ゆれでルールの当たり方が変わってしまうのを防ぐ狙いだと思われるけど、原文には具体的な攻撃例は書かれていないよ。\n\n## これで何が変わるの？\n\n注意が必要なのは日付だよ！\n\n- 現在: 設定はデフォルトでオフ\n- 2027-01-25 以降: 新しい cloudflared リリースでデフォルトがオンになる\n\n正規化によって、リクエストにどの ingress ルールがマッチするかが変わる場合があるの。パスベースのルーティングを使っている人は、その日までにテストしておいてね。Access 検証を必要とするルールがない構成は影響を受けないよ。\n\n## 深く潜ってみよう\n\n有効にするには、次のコマンドを実行するよ。\n\n```\ncloudflared tunnel --disable-path-normalization=false run {TUNNEL_NAME_OR_UUID}\n```\n\n別の方法として、各 cloudflared レプリカに環境変数 `TUNNEL_DISABLE_PATH_NORMALIZATION=false` を設定して再起動してもいいよ。詳しくは ingress matching と Access validation at the origin のドキュメントを見てね。\n\n## まとめ\n\n- cloudflared 2026.10.0 以降で URL 正規化が使える\n- オリジンに送るパスは変わらない\n- 現在はデフォルトオフ、2027-01-25 以降の新リリースでデフォルトオン\n- パスベースルーティングは事前テストが必要\n- Access 検証ルールがない構成は影響なし\n\nCloudflare Access とトンネルを組み合わせて運用しているインフラ担当のみんなに刺さるお知らせだよ！",
+  "title_en": "Cloudflare Tunnel adds URL normalization, on by default from 2027-01-25",
+  "summary_en": "From cloudflared 2026.10.0, Cloudflare Tunnel can normalize URLs before matching ingress rules. It becomes the default in new releases starting 2027-01-25.",
+  "body_md_en": "Hi everyone, it's Shii-chan! If you use tunnels, this one is worth checking today!\n\n## What was announced?\n\nThe Cloudflare Changelog says Cloudflare Tunnel (including Cloudflare Tunnel for SASE) now supports URL normalization. Starting from version 2026.10.0, it can normalize URLs before matching ingress rules.\n\nThe URL path sent to your origin stays the same.\n\n## Why it matters\n\nThis improves security for tunnels with rules that require Cloudflare Access validation. The announcement does not give concrete attack examples.\n\n## What changes\n\nWatch the dates!\n\n- Now: the setting is off by default\n- From 2027-01-25: new cloudflared releases turn it on by default\n\nNormalization may change which ingress rule matches a request, so test your path-based routing before that date. Configurations without rules requiring Access validation are unaffected.\n\n## Dive Deep\n\nTo turn it on, run:\n\n```\ncloudflared tunnel --disable-path-normalization=false run {TUNNEL_NAME_OR_UUID}\n```\n\nAlternatively, set the environment variable `TUNNEL_DISABLE_PATH_NORMALIZATION=false` on each cloudflared replica and restart it. See the docs on ingress matching and Access validation at the origin for details.\n\n## Wrap-up\n\n- URL normalization is available from cloudflared 2026.10.0\n- The path sent to the origin does not change\n- Off by default now; on by default in new releases from 2027-01-25\n- Test path-based routing ahead of time\n- Configurations without Access validation rules are unaffected\n\nThis one is for infrastructure folks running tunnels with Cloudflare Access!",
+  "emotion": "confused",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-22-cloudflared-path-normalization/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Cloudflare Tunnel, Cloudflare Tunnel for SASE - Cloudflare Tunnel supports URL normalization",
+  "tags": [
+    "cloudflare",
+    "security",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-22T20:07:32+00:00"
+}

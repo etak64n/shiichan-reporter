@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-10-22-granular-read-and-monitor-ga",
+  "title": "Cloudflare Tunnel の Read And Monitor ロールが GA！ログ配信だけ任せられるよ",
+  "summary": "Cloudflare Tunnel の Granular Connector cloudflared Read And Monitor ロールが GA になったよ。特定の Tunnel だけ、書き込み権限なしで閲覧とリモートログのストリーミングを許可できるの。",
+  "body_md": "おつかれさま、しぃちゃんだよ！Tunnel の権限まわりに嬉しい更新が来たよ！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Cloudflare Tunnel - Granular Connector cloudflared Read And Monitor ロールが一般提供（GA）になったと告知されたよ。\n\n## 今までどうだったの？\n\n既存の Read ロールでは、リモートログのストリーミングはできなかったの。ログまで見せたいときは、より広い権限を渡す必要があったんだね。\n\n## これで何が変わるの？\n\nこのロールを使うと、次のことが同時にできるよ。\n\n- 特定の Tunnel インスタンスだけに閲覧権限を付ける\n- 書き込み権限は渡さない\n- アカウント内のすべての Tunnel へのアクセスも渡さない\n- リモートログのストリーミングを許可する\n\nサポート担当が、設定を変えずに Tunnel のトラブルシュートをできるようになるよ。\n\n## 深く潜ってみよう\n\nこのロールには Cloudflare Tunnel - Granular Connector cloudflared Read と同じアクセスが含まれるよ。\n\n- 選択した Tunnel の閲覧\n- IP とホスト名のルート\n- コネクタのホスト詳細\n\nそれに加えて、リモートログのストリーミングが付くのが違いだよ。割り当て方は、Grant a granular permission の手順に沿うの。使えるロールの一覧は resource-scoped roles のリファレンスにあるよ。\n\n## まとめ\n\n- Read And Monitor ロールが GA\n- 特定 Tunnel だけに、閲覧とリモートログのストリーミングを許可できる\n- 書き込みや全 Tunnel へのアクセスは不要\n- 既存の Read ロールにはログ配信の権限がない\n\n最小権限で運用チームやサポートに Tunnel の調査を任せたい管理者に刺さるよ！",
+  "title_en": "Cloudflare Tunnel's Read And Monitor Role Is GA: Log Streaming Without Write Access!",
+  "summary_en": "The Cloudflare Tunnel Granular Connector cloudflared Read And Monitor role is generally available. It grants read access and remote log streaming for specific Tunnels without write access.",
+  "body_md_en": "Hi everyone, it's Shii-chan! There's a nice permissions update for Tunnel!\n\n## What was announced?\n\nThe Cloudflare Changelog says the Cloudflare Tunnel - Granular Connector cloudflared Read And Monitor role is now generally available.\n\n## The story so far\n\nThe existing Read role does not grant log streaming access. If you wanted someone to see logs, you had to give them broader permissions.\n\n## What changes\n\nWith this role you can:\n\n- Grant read access to specific Tunnel instances only\n- Withhold write access\n- Withhold access to every Tunnel in your account\n- Allow remote log streaming\n\nSupport operators can troubleshoot a Tunnel without changing its configuration.\n\n## Dive Deep\n\nThe role includes the same access as Cloudflare Tunnel - Granular Connector cloudflared Read:\n\n- Viewing selected Tunnels\n- Their IP and hostname routes\n- Connector host details\n\nOn top of that, it adds remote log streaming. To assign it, follow Grant a granular permission. The available roles are listed in the resource-scoped roles reference.\n\n## Wrap-up\n\n- The Read And Monitor role is GA\n- Grants read access and remote log streaming for specific Tunnels\n- No write access or all-Tunnel access needed\n- The existing Read role does not include log streaming\n\nThis one is for admins who want to give ops and support teams least-privilege access to investigate Tunnels!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-22-granular-read-and-monitor-ga/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Cloudflare Fundamentals, Cloudflare One, Cloudflare Tunnel for SASE, Cloudflare Tunnel - Granular Tunnel Read And Monitor role is generally available",
+  "tags": [
+    "cloudflare",
+    "security",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-22T20:07:33+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-quick-now-available-in-the-aws-singapore-region",
+  "title": "Amazon Quick がシンガポールリージョンに登場！データ主権の要件にも対応",
+  "summary": "Amazon Quick が AWS アジアパシフィック（シンガポール）リージョン（ap-southeast-1）で使えるようになったよ。データはリージョン内で保存・処理されるんだって。",
+  "body_md": "こんにちは、しぃちゃんだよ！Amazon Quick のリージョン拡大のニュースだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Quick が AWS アジアパシフィック（シンガポール）リージョン（ap-southeast-1）で利用可能になったと発表されたよ。\n\n## これで何が変わるの？\n\nシンガポールのお客さんが、データ主権のローカル要件を満たしたまま Amazon Quick を使えるようになるよ。データはシンガポールリージョン内で保存・処理されるの。\n\nAmazon Quick は、仕事の質問にすばやく答えて、その答えを行動につなげてくれる、ビジネスユーザー向けのエージェント型チームメイトだよ。アプリを切り替えずに判断や行動ができるのがポイントなんだって。\n\n## 深く潜ってみよう\n\nこのリージョンで使える主な機能はこれだよ。\n\n- AI を使ったチャット\n- Research\n- Spaces\n- QuickSight ダッシュボード\n\n対応リージョンの全一覧は、Quick のリージョン提供状況ページで確認できるよ。\n\n## まとめ\n\n- Amazon Quick が ap-southeast-1 で利用可能に\n- データはシンガポールリージョン内で保存・処理される\n- チャット・Research・Spaces・QuickSight ダッシュボードが使える\n\nシンガポールでデータの所在地を気にしながら AI アシスタントを導入したい人に刺さるよ！",
+  "title_en": "Amazon Quick Arrives in the AWS Singapore Region with Local Data Residency!",
+  "summary_en": "Amazon Quick is now available in the AWS Asia Pacific (Singapore) Region (ap-southeast-1), with data stored and processed locally.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Here's a region expansion for Amazon Quick!\n\n## What was announced?\n\nAWS What's New announced that Amazon Quick is now available in the AWS Asia Pacific (Singapore) Region (ap-southeast-1).\n\n## What changes\n\nCustomers in Singapore can use Amazon Quick while meeting local data sovereignty requirements. Data is stored and processed within the Singapore Region.\n\nAmazon Quick is an agentic teammate for business users that quickly answers questions at work and turns those answers into actions, without switching applications.\n\n## Dive Deep\n\nCapabilities available in this Region:\n\n- AI-powered chat\n- Research\n- Spaces\n- QuickSight dashboards\n\nFor the full list of Regions, see the Quick regional availability page.\n\n## Wrap-up\n\n- Amazon Quick is available in ap-southeast-1\n- Data is stored and processed within the Singapore Region\n- Chat, Research, Spaces, and QuickSight dashboards are included\n\nThis one is for teams in Singapore who want an AI assistant while keeping data local!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-quick-now-available-in-the-aws-singapore-region/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Quick Now Available in the AWS Singapore Region",
+  "tags": [
+    "aws",
+    "ai"
+  ],
+  "published_at": "2026-10-22T07:00:00+00:00"
+}

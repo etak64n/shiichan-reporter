@@ -1,0 +1,19 @@
+{
+  "slug": "cloudflare-changelog-2026-10-22-emergency-waf-release-free",
+  "title": "Free プランも対象！WAF Free Ruleset の PHP RCE ルールに CVE 名が付いたよ",
+  "summary": "Cloudflare Free Ruleset の既存 7 ルールの名前とメタデータが更新され、CVE-2026-109618 と CVE-2026-109619 が明記されたよ。検知ロジックとアクションは変更なし。",
+  "body_md": "みんな、しぃちゃんだよ！Managed Ruleset に続いて、Free Ruleset の緊急リリースも出たよ！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、2026-10-22 の WAF 緊急リリース（Cloudflare Free Ruleset）が告知されたよ。Free Ruleset の既存 7 ルールの名前とメタデータを更新して、CVE-2026-109618 と CVE-2026-109619 を識別できるようにしたの。\n\n## これで何が変わるの？\n\n動作は変わらないよ！\n\n- 検知ロジックは変更なし\n- アクションも変更なし\n- 変わるのは名前と説明のメタデータだけ\n\nFree プランでも、ルール名から対象の CVE が分かるようになるよ。\n\n## 深く潜ってみよう\n\n対象は、説明が「PHP Remote Code Execution Attack (CVE-2026-109618, CVE-2026-109619)」のルール 7 本だよ。\n\n- 無印、#2、#3、#4、#5、#6、#7 の 7 本\n- 以前のアクションは Block で、新しいアクションは N/A（変更なし）\n- コメントは「Rule metadata description refined. Detection unchanged.」\n\n## まとめ\n\n- Free Ruleset の PHP RCE ルール 7 本の名前とメタデータを更新\n- CVE-2026-109618 と CVE-2026-109619 が明記された\n- 検知ロジックとアクションは変更なし\n\nFree プランで WAF のログを見ている人は、ルール名の変化に気づいても慌てなくて大丈夫だよ！",
+  "title_en": "Free Plan Too! WAF Free Ruleset's PHP RCE Rules Now Name Their CVEs",
+  "summary_en": "This emergency release updates the names and metadata of seven existing Cloudflare Free Ruleset rules to identify CVE-2026-109618 and CVE-2026-109619. Detection logic and actions are unchanged.",
+  "body_md_en": "Hi everyone, it's Shii-chan! After the Managed Ruleset, the Free Ruleset got an emergency release too!\n\n## What was announced?\n\nThe Cloudflare Changelog announced the 2026-10-22 emergency WAF release for the Cloudflare Free Ruleset. It updates the names and metadata of seven existing rules to identify CVE-2026-109618 and CVE-2026-109619.\n\n## What changes\n\nBehavior does not change.\n\n- Detection logic is unchanged\n- Actions are unchanged\n- Only names and description metadata change\n\nOn the Free plan too, rule names now tell you which CVEs they cover.\n\n## Dive Deep\n\nThe affected rules are described as \"PHP Remote Code Execution Attack (CVE-2026-109618, CVE-2026-109619)\".\n\n- Seven rules: the base one plus #2 to #7\n- Previous action is Block, new action is N/A (unchanged)\n- Comment: \"Rule metadata description refined. Detection unchanged.\"\n\n## Wrap-up\n\n- Names and metadata of seven PHP RCE rules in the Free Ruleset are updated\n- CVE-2026-109618 and CVE-2026-109619 are now identified\n- Detection logic and actions are unchanged\n\nIf you watch WAF logs on the Free plan, no need to worry when you notice the rule names change!",
+  "emotion": "thinking",
+  "importance": 2,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-22-emergency-waf-release-free/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "WAF - WAF Release - 2026-10-22 - Emergency - Cloudflare Free Ruleset",
+  "tags": [
+    "cloudflare",
+    "security"
+  ],
+  "published_at": "2026-10-22T20:07:33+00:00"
+}

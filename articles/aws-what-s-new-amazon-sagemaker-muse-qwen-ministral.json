@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-sagemaker-muse-qwen-ministral",
+  "title": "SageMaker AI のサーバーレスカスタマイズに Muse Glimmer・Qwen3.8・Ministral 3 が追加！",
+  "summary": "Amazon SageMaker AI のサーバーレスモデルカスタマイズが、Muse Glimmer、Qwen3.8 27B、Ministral 3（3B・8B・14B）に対応したよ。SFT・DPO・RFT と LoRA・フルファインチューニングが使えるの。",
+  "body_md": "みんな、しぃちゃんだよ！SageMaker AI で調整できるモデルが増えたよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、SageMaker AI のサーバーレスモデルカスタマイズが新しいモデルに対応したと発表されたよ。\n\n- Muse Glimmer\n- Qwen3.8 27B\n- Ministral 3 の 3B、8B、14B\n\nこれまではデプロイが中心だったところに、自分のドメインやワークフロー向けの調整ができるようになったんだね。\n\n## これで何が変わるの？\n\n使える手法はこの 3 つだよ。\n\n- SFT（教師あり微調整）: ラベル付きデータでドメイン特化タスクの精度を上げる\n- DPO（直接選好最適化）: 選好データで、組織のトーンに出力をそろえる\n- RFT（強化学習による微調整）: 報酬シグナルで新しいタスクの性能を上げる\n\nどれも LoRA とフルファインチューニングの両方で使えるよ。自社データで調整した小さなモデルが、そのタスクならフロンティアモデル並みの品質になり、コストとレイテンシも下がる、というのが狙いなの。\n\n## 深く潜ってみよう\n\nサーバーレスなので、インフラのプロビジョニングと学習のオーケストレーションは SageMaker AI が担当するよ。データと評価に集中できて、料金は使った分だけ。\n\n既に対応しているモデルファミリーはこれだよ。\n\n- Nova\n- Gemma 4\n- Nemotron 3.5\n- Qwen\n- Llama\n- gpt-oss\n- DeepSeek\n\n提供リージョンはこの 4 つだよ。\n\n- 米国東部（バージニア北部）\n- 米国西部（オレゴン）\n- アジアパシフィック（東京）\n- ヨーロッパ（アイルランド）\n\n## まとめ\n\n- Muse Glimmer、Qwen3.8 27B、Ministral 3（3B・8B・14B）が対応\n- SFT・DPO・RFT と LoRA・フルファインチューニングを選べる\n- インフラ管理は不要で、従量課金\n- 米国東部・米国西部・東京・アイルランドで利用可能\n\n自社データでモデルを調整したいけど GPU クラスタは触りたくない人に刺さるよ！",
+  "title_en": "SageMaker AI Serverless Customization Adds Muse Glimmer, Qwen3.8, and Ministral 3!",
+  "summary_en": "Amazon SageMaker AI serverless model customization now supports Muse Glimmer, Qwen3.8 27B, and Ministral 3 (3B, 8B, 14B) with SFT, DPO, RFT, LoRA, and full fine-tuning.",
+  "body_md_en": "Hi everyone, it's Shii-chan! SageMaker AI can customize more models now!\n\n## What was announced?\n\nAWS What's New announced that SageMaker AI serverless model customization now supports these models:\n\n- Muse Glimmer\n- Qwen3.8 27B\n- Ministral 3 in 3B, 8B, and 14B\n\nIn addition to deploying them, you can now adapt them to your domains and workflows.\n\n## What changes\n\nTechniques available:\n\n- SFT: improve accuracy on domain-specific tasks with labeled data\n- DPO: align outputs with your organization's tone using preference data\n- RFT: improve performance on new tasks using reward signals\n\nAll work with either LoRA or full fine-tuning. The idea is that a smaller, right-sized model tuned on your data can match frontier-model quality on your tasks while cutting cost and latency.\n\n## Dive Deep\n\nWith serverless customization, SageMaker AI handles infrastructure provisioning and training orchestration, so you focus on data and evaluation. You pay only for what you use.\n\nModel families already supported:\n\n- Nova\n- Gemma 4\n- Nemotron 3.5\n- Qwen\n- Llama\n- gpt-oss\n- DeepSeek\n\nAvailable Regions:\n\n- US East (N. Virginia)\n- US West (Oregon)\n- Asia Pacific (Tokyo)\n- Europe (Ireland)\n\n## Wrap-up\n\n- Muse Glimmer, Qwen3.8 27B, and Ministral 3 (3B, 8B, 14B) are supported\n- Choose SFT, DPO, or RFT with LoRA or full fine-tuning\n- No infrastructure to manage, pay as you go\n- Available in US East, US West, Tokyo, and Ireland\n\nThis one is for teams who want to tune models on their own data without touching GPU clusters!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-sagemaker-muse-qwen-ministral/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon SageMaker AI now supports serverless model customization for Muse Glimmer, Qwen 3.8 and Ministral 3 models",
+  "tags": [
+    "aws",
+    "ai"
+  ],
+  "published_at": "2026-10-22T08:00:00+00:00"
+}

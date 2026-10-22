@@ -1,0 +1,19 @@
+{
+  "slug": "cloudflare-changelog-2026-10-22-emergency-waf-release-cfmr",
+  "title": "WAF 緊急リリース：Managed Ruleset の PHP RCE ルール 7 本に CVE を明記！",
+  "summary": "Cloudflare Managed Ruleset の既存 7 ルールの名前とメタデータが更新され、CVE-2026-109618 と CVE-2026-109619 が明記されたよ。検知ロジックとアクションは変わらないの。",
+  "body_md": "やっほー、しぃちゃんだよ！WAF の緊急リリースが出たから紹介するね！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、2026-10-22 の WAF 緊急リリース（Cloudflare Managed Ruleset）が告知されたよ。既存の 7 ルールの名前とメタデータを更新して、CVE-2026-109618 と CVE-2026-109619 を識別できるようにしたものだよ。\n\n## これで何が変わるの？\n\n結論から言うと、動作は変わらないよ！\n\n- 検知ロジックは変更なし\n- ルールのアクションも変更なし\n- 変わるのは名前と説明のメタデータだけ\n\nだから、設定の見直しは基本いらないよ。ログやダッシュボードでルール名から CVE を追いやすくなるのが嬉しいところだね。\n\n## 深く潜ってみよう\n\n対象は、説明が「PHP Remote Code Execution Attack (CVE-2026-109618, CVE-2026-109619)」のルール 7 本だよ。\n\n- 無印、#2、#3、#4、#5、#6、#7 の 7 本\n- 以前のアクションは Block で、新しいアクションは N/A（変更なし）\n- コメントは「Rule metadata description refined. Detection unchanged.」\n\nなお、Free Ruleset 側にも同様の緊急リリースが別に出ているよ。\n\n## まとめ\n\n- Managed Ruleset の PHP RCE ルール 7 本の名前とメタデータを更新\n- CVE-2026-109618 と CVE-2026-109619 が明記された\n- 検知ロジックとアクションは変更なし\n\nWAF のログやルール名で脆弱性を追っているセキュリティ担当の人に知っておいてほしい更新だよ！",
+  "title_en": "WAF Emergency Release: Seven PHP RCE Rules in Managed Ruleset Now Name Their CVEs!",
+  "summary_en": "This emergency release updates the names and metadata of seven existing Cloudflare Managed Ruleset rules to identify CVE-2026-109618 and CVE-2026-109619. Detection logic and actions are unchanged.",
+  "body_md_en": "Hi everyone, it's Shii-chan! A WAF emergency release is out, so let's take a look!\n\n## What was announced?\n\nThe Cloudflare Changelog announced the 2026-10-22 emergency WAF release for the Cloudflare Managed Ruleset. It updates the names and metadata of seven existing rules to identify CVE-2026-109618 and CVE-2026-109619.\n\n## What changes\n\nThe short version: behavior does not change.\n\n- Detection logic is unchanged\n- Rule actions are unchanged\n- Only names and description metadata change\n\nSo you generally don't need to review your configuration. The nice part is that you can trace the CVEs from rule names in logs and dashboards.\n\n## Dive Deep\n\nThe affected rules are described as \"PHP Remote Code Execution Attack (CVE-2026-109618, CVE-2026-109619)\".\n\n- Seven rules: the base one plus #2 to #7\n- Previous action is Block, new action is N/A (unchanged)\n- Comment: \"Rule metadata description refined. Detection unchanged.\"\n\nA similar emergency release was also published separately for the Free Ruleset.\n\n## Wrap-up\n\n- Names and metadata of seven PHP RCE rules in the Managed Ruleset are updated\n- CVE-2026-109618 and CVE-2026-109619 are now identified\n- Detection logic and actions are unchanged\n\nGood to know for security teams who track vulnerabilities through WAF logs and rule names!",
+  "emotion": "thinking",
+  "importance": 2,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-22-emergency-waf-release-cfmr/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "WAF - WAF Release - 2026-10-22 - Emergency - Cloudflare Managed Ruleset",
+  "tags": [
+    "cloudflare",
+    "security"
+  ],
+  "published_at": "2026-10-22T20:07:32+00:00"
+}
