@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-connect-global-resiliency-persistent-chat",
+  "title": "Amazon Connect の永続チャットがリージョンをまたげるように！",
+  "summary": "Amazon Connect Customer Global Resiliency が、リンクされた AWS リージョン間での永続チャットに対応したよ！会話の文脈・メタデータ・トランスクリプトを引き継いで、途中から再開できるの。",
+  "body_md": "おつかれさま、しぃちゃんだよ！\n\nコンタクトセンターの話題が来たよ。チャットの続きを別のリージョンで再開できるようになったんだって！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Connect Customer Global Resiliency が、リンクされた AWS リージョンをまたぐ永続チャットに対応したと発表されたよ。長く続くチャット体験を、リージョンをまたいで提供できる仕組みなの。\n\n## 今までどうだったの？\n\n原文には従来の挙動の詳細は書かれていないけれど、この機能の狙いは、ユーザーが同じ内容を何度も説明しなくて済むようにすることだよ。\n\n## これで何が変わるの？\n\nエンドユーザーは、以前の会話を文脈つきで再開できるよ。メタデータやトランスクリプトも引き継がれるの。\n\n- エンドユーザー: 同じ情報をもう一度伝えなくてよくなるよ\n- エージェント: チャットの添付ファイルを含む会話履歴の全体を見られるので、よりパーソナルな対応ができるよ\n\n例えば、ユーザーが US-East (N. Virginia) でチャットを始めて、あとでリンクされた US-West (Oregon) リージョンに戻ってきても、全履歴と添付ファイルつきで同じ会話を続けられるんだって。\n\n## 深く潜ってみよう\n\n- 導入方法: Global routing にオンボードすることが条件だよ\n- 提供範囲: Amazon Connect Customer Global Resiliency がサポートされているすべての AWS リージョンで使えるよ\n- 詳細: Amazon Connect Customer Admin Guide に設定情報があるよ\n\n原文に書かれているのはここまでなので、料金や細かい制限は公式ドキュメントで確認してね。\n\n## まとめ\n\n- リンクされたリージョン間で、永続チャットを再開できるようになったよ\n- 文脈、メタデータ、トランスクリプト、添付ファイルが引き継がれるよ\n- 利用には Global routing へのオンボードが必要だよ\n- Global Resiliency がサポートされているリージョンで使えるよ\n\nマルチリージョンでコンタクトセンターを運用しているみんなに刺さる更新だよ！",
+  "title_en": "Amazon Connect Persistent Chat Now Works Across Linked AWS Regions",
+  "summary_en": "Amazon Connect Customer Global Resiliency now supports persistent chat across linked AWS Regions, carrying over context, metadata, and transcripts so conversations can resume.",
+  "body_md_en": "Hi, it's Shii-chan!\n\nHere's some contact center news: you can now pick a chat back up in a different Region!\n\n## What was announced?\n\nIn AWS What's New, Amazon Connect Customer Global Resiliency now provides a way to deliver long, persistent chat experiences across linked AWS Regions.\n\n## The story so far\n\nThe announcement doesn't describe the previous behavior in detail, but the goal of this capability is that end users no longer have to repeat information.\n\n## What changes\n\nEnd users can resume previous conversations with full context. Metadata and transcripts are carried over too.\n\n- End users: no need to repeat the same information\n- Agents: access to the entire conversation history, including chat attachments, for more personalized service\n\nFor example, a user can start a chat in US-East (N. Virginia) and later come back in the linked US-West (Oregon) Region, continuing the same conversation with full history and attachments.\n\n## Dive Deep\n\n- How to adopt: onboard to Global routing\n- Availability: all AWS Regions where Amazon Connect Customer Global Resiliency is supported\n- More details: see the Amazon Connect Customer Admin Guide\n\nThat's all the announcement says, so check the official documentation for pricing and finer limits.\n\n## Wrap-up\n\n- Persistent chats can resume across linked Regions.\n- Context, metadata, transcripts, and attachments carry over.\n- You need to onboard to Global routing.\n- It works in Regions where Global Resiliency is supported.\n\nThis one is for teams running multi-Region contact centers!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-connect-global-resiliency-persistent-chat",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Connect Customer Global Resiliency now supports persistent chat across linked AWS Regions",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-23T17:00:00+00:00"
+}

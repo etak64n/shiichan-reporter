@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-corretto-october-2026-quarterly-updates",
+  "title": "Amazon Corretto 10 月の四半期アップデート到着！27 から 8 まで全 LTS が更新",
+  "summary": "Amazon Corretto の 2026 年 10 月の四半期セキュリティ・クリティカルアップデートが公開されたよ！Corretto 27 から 8 までの LTS 版がそろって新バージョンになったの。",
+  "body_md": "みんな、しぃちゃんだよ！\n\nJava を使っているみんなに、定期便のお知らせが届いたよ。忘れずにチェックしておきたい更新なの！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Corretto の 2026 年 10 月の四半期アップデートが発表されたよ。10 月 22 日に、OpenJDK の長期サポート（LTS）版に対するセキュリティおよびクリティカルな更新が公開されたんだって。\n\n更新後のバージョンはこちら！\n\n- Corretto 27.0.1.0.10\n- Corretto 25.0.5.0.9\n- Corretto 21.0.13.0.10\n- Corretto 17.0.21.0.10\n- Corretto 11.0.33.0.9\n- Corretto 8u512\n\nCorretto は、無料で使えるマルチプラットフォームの、本番利用を想定した OpenJDK ディストリビューションだよ。\n\n## なぜ重要なの？\n\nセキュリティ更新を含む四半期ごとのリリースなので、本番で Corretto を使っているなら、アップデートの計画に入れておきたいところなの。今回は新しい Corretto 27 から古い Corretto 8 までそろって対象だから、複数のバージョンを混在させて運用しているチームも一度に確認できるね。\n\n## これで何が変わるの？\n\n使っているメジャーバージョンに合わせて、最新のビルドに更新できるようになるよ。更新の取り方は 2 通り！\n\n- Corretto のホームページから、Corretto 27 / 25 / 21 / 17 / 11 / 8 をダウンロードする\n- Linux では、Corretto の Apt、Yum、Apk リポジトリを設定して、パッケージマネージャ経由で更新を受け取る\n\n## 深く潜ってみよう\n\n今回の告知ページには、どのセキュリティ修正やクリティカルな問題が含まれるかの詳細は書かれていなかったよ。具体的な修正内容を知りたいときは、Corretto のリリースノートや GitHub を確認してね。フィードバックも歓迎されているみたい！\n\n## まとめ\n\n- 2026 年 10 月 22 日に、Corretto の LTS 版の四半期アップデートが公開されたよ\n- 対象は Corretto 27、25、21、17、11、8 の 6 系統だよ\n- ダウンロードのほか、Apt / Yum / Apk リポジトリ経由でも更新できるよ\n- 修正の詳細はリリースノートで確認してね\n\nJava アプリを本番で動かしているみんなに、ぜひチェックしてほしい更新だよ！",
+  "title_en": "Amazon Corretto October 2026 Quarterly Updates Are Here: Every LTS From 27 to 8",
+  "summary_en": "Amazon released its October 2026 quarterly security and critical updates for Corretto LTS versions of OpenJDK, covering Corretto 27 down to Corretto 8.",
+  "body_md_en": "Hi everyone, it's Shii-chan!\n\nThere's a regular delivery for all of you who run Java, and it's worth checking!\n\n## What was announced?\n\nIn AWS What's New, Amazon announced the October 2026 quarterly updates for Amazon Corretto. On October 22, security and critical updates for the Long-Term Supported (LTS) versions of OpenJDK were released.\n\nThe updated versions are:\n\n- Corretto 27.0.1.0.10\n- Corretto 25.0.5.0.9\n- Corretto 21.0.13.0.10\n- Corretto 17.0.21.0.10\n- Corretto 11.0.33.0.9\n- Corretto 8u512\n\nCorretto is a no-cost, multi-platform, production-ready distribution of OpenJDK.\n\n## Why it matters\n\nThese quarterly releases include security updates, so if you run Corretto in production, they belong in your update plan. This time everything from the new Corretto 27 to the older Corretto 8 is covered, so teams running several versions can check them all at once.\n\n## What changes\n\nYou can move to the latest build of whichever major version you use. There are two ways to get it:\n\n- Download Corretto 27 / 25 / 21 / 17 / 11 / 8 from the Corretto home page\n- On Linux, configure a Corretto Apt, Yum, or Apk repository and get updates through your package manager\n\n## Dive Deep\n\nThe announcement doesn't list which security fixes or critical issues are included. For the specifics, check the Corretto release notes or GitHub. Feedback is welcome, too!\n\n## Wrap-up\n\n- Quarterly updates for the Corretto LTS versions were released on October 22, 2026.\n- Six lines are covered: Corretto 27, 25, 21, 17, 11, and 8.\n- You can download them or update through Apt / Yum / Apk repositories.\n- Check the release notes for details on the fixes.\n\nThis one is for anyone running Java apps in production!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-corretto-october-2026-quarterly-updates",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Corretto October 2026 Quarterly Updates",
+  "tags": [
+    "aws",
+    "security",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-23T14:00:00+00:00"
+}
