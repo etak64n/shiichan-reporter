@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-mwaa-mexico-central",
+  "title": "メキシコ(中部)リージョンで Amazon MWAA Provisioned が使えるように！",
+  "summary": "Amazon MWAA の Provisioned 環境が Mexico (Central) リージョン(mx-central-1)で使えるようになったよ。Serverless は先に提供済みだったみたい。",
+  "body_md": "おつかれさま、しぃちゃんだよ！\n\nリージョン拡大のお知らせが届いたから、さっそく紹介するね。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Managed Workflows for Apache Airflow(Amazon MWAA)の Provisioned 環境が、Mexico (Central) リージョン(mx-central-1)で利用できるようになったと発表されたよ。\n\nこのリージョンでは Amazon MWAA Serverless がすでに使えていて、今回 Provisioned 環境も選べるようになった、という流れなの。\n\n## これで何が変わるの？\n\nメキシコ(中部)のお客さんは、Airflow のワークフローを、データソースやエンドユーザーのより近くで動かせるよ。原文では次のメリットが挙げられているの。\n\n- レイテンシーの低減\n- データレジデンシー要件への対応\n\n## 深く潜ってみよう\n\nAmazon MWAA は、Apache Airflow 向けのマネージドなオーケストレーションサービスで、データパイプラインをクラウド上で大規模に構築・運用しやすくするものだよ。\n\nProvisioned 環境の作成方法は次の 4 つ。\n\n- AWS マネジメントコンソール\n- AWS CLI\n- AWS SDK\n- AWS CloudFormation\n\n対応リージョンの最新の一覧は、Amazon MWAA の対応リージョンのドキュメントで確認してね。\n\n## まとめ\n\n- Amazon MWAA Provisioned 環境が mx-central-1 で利用可能に\n- Serverless はすでに提供済みで、今回 Provisioned も選べる\n- レイテンシー低減とデータレジデンシー対応が期待できる\n\nメキシコでデータパイプラインを運用するチームや、データを国内に置きたい要件があるみんなに刺さる発表だよ！",
+  "title_en": "Amazon MWAA Provisioned Environments Land in Mexico (Central)!",
+  "summary_en": "Amazon MWAA Provisioned environments are now available in the Mexico (Central) Region (mx-central-1). MWAA Serverless was already available there.",
+  "body_md_en": "Hi, it's Shiichan!\n\nA Region expansion just landed, so let me share it.\n\n## What was announced?\n\nAccording to AWS What's New, Amazon Managed Workflows for Apache Airflow (Amazon MWAA) Provisioned environments are now available in the Mexico (Central) Region (mx-central-1).\n\nAmazon MWAA Serverless was already available in this Region, and now you can use Provisioned environments too.\n\n## What changes\n\nCustomers in Mexico (Central) can run their Airflow workflows closer to their data sources and end users. The announcement names two benefits:\n\n- Lower latency\n- Help meeting data residency requirements\n\n## Dive Deep\n\nAmazon MWAA is a managed orchestration service for Apache Airflow that makes it easier to set up and operate end-to-end data pipelines in the cloud at scale.\n\nYou can create Provisioned environments with:\n\n- The AWS Management Console\n- The AWS CLI\n- The AWS SDKs\n- AWS CloudFormation\n\nFor the latest list of supported Regions, see the Amazon MWAA supported Regions documentation.\n\n## Wrap-up\n\n- Amazon MWAA Provisioned environments are available in mx-central-1\n- Serverless was already there, and now Provisioned is an option too\n- Expect lower latency and easier data residency compliance\n\nIf you run data pipelines in Mexico or need to keep data in-country, this one is for you!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-mwaa-mexico-central/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon MWAA now available in Mexico (Central) Region",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "devops"
+  ],
+  "published_at": "2026-10-23T08:00:00+00:00"
+}

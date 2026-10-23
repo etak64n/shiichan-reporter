@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-emr-eks-reduces-emr-charge-30-percent",
+  "title": "EMR on EKS の EMR 料金が 30% オフ！Spark がお得に",
+  "summary": "Amazon EMR on EKS で上乗せされる EMR 料金が 30% 引き下げられたよ。vCPU 時間・GB 時間の両方が対象で、何もしなくても自動で適用されるみたい！",
+  "body_md": "こんにちは、しぃちゃんだよ！\n\n今日はうれしい値下げのニュースだよ。Spark を EKS で動かしているみんな、要チェックなの！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon EMR on EKS を実行するときに EKS へ上乗せされる EMR 料金が 30% 引き下げられると発表されたよ。\n\n- 値下げの対象は、vCPU 時間あたりの料金と GB 時間あたりの料金の両方\n- 基盤になっている Amazon EKS の料金は変わらない\n- EKS デプロイオプションで動く EMR のワークロードはすべて対象\n\n## これで何が変わるの？\n\nApache Spark のワークロードを Amazon EKS 上でより低コストに実行できるようになるよ。新しい価格は EMR on EKS のワークロードに自動で適用されるから、利用者側で何かする必要はないんだって。\n\n注意したいのは、下がるのは「EMR の上乗せ分」だけという点。EKS 自体の料金は据え置きだから、請求全体が 30% 下がるわけではないよ。\n\n## 深く潜ってみよう\n\n原文から分かるのは次のとおり。\n\n- 提供範囲: Amazon EMR on EKS が使えるすべての AWS リージョン\n- 追加作業: 不要(新価格が自動適用)\n\n具体的な改定後の単価は原文の発表文には載っていなかったよ。実際の金額は Amazon EMR の料金ページで確認してね。\n\n## まとめ\n\n- EMR on EKS の EMR 料金が 30% 引き下げられた\n- vCPU 時間と GB 時間の両方が対象で、EKS の料金は変わらない\n- 対象リージョンは EMR on EKS が使えるすべてのリージョンで、自動適用\n\nEKS 上で Spark を回している、コストが気になるデータ基盤チームのみんなに嬉しいお知らせだよ！",
+  "title_en": "EMR on EKS Gets a 30% Cut in EMR Charges!",
+  "summary_en": "Amazon EMR on EKS cuts the EMR charge added on top of EKS by 30 percent, for both vCPU-hours and GB-hours. The new price applies automatically!",
+  "body_md_en": "Hi, it's Shiichan!\n\nThis one's a happy price-cut story. If you run Spark on EKS, take a look!\n\n## What was announced?\n\nAccording to AWS What's New, the EMR charge added to EKS when you run EMR on EKS is being reduced by 30 percent.\n\n- The cut applies to both the per-vCPU-hour charge and the per-GB-hour charge\n- The underlying Amazon EKS charges stay the same\n- All EMR workloads on the EKS deployment option benefit\n\n## What changes\n\nYou can run Apache Spark workloads on Amazon EKS at a lower cost. The new price applies to your EMR on EKS workloads automatically, so you don't need to do anything.\n\nOne thing to keep in mind: only the EMR portion goes down. EKS charges are unchanged, so your total bill won't drop by a full 30%.\n\n## Dive Deep\n\nHere is what the announcement tells us:\n\n- Availability: all AWS Regions where Amazon EMR on EKS is available\n- Action required: none, because the new price is applied automatically\n\nThe announcement we read doesn't list the new per-unit prices. Check the Amazon EMR pricing page for exact numbers.\n\n## Wrap-up\n\n- The EMR charge for EMR on EKS is down 30 percent\n- It covers both vCPU-hours and GB-hours, while EKS charges stay as they are\n- It's available in all Regions where EMR on EKS is offered, and applies automatically\n\nIf you run Spark on EKS and keep an eye on costs, this is good news for you!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/emr-eks-reduces-emr-charge-30-percent/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon EMR on EKS reduces EMR charge by 30 percent",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-23T08:00:00+00:00"
+}

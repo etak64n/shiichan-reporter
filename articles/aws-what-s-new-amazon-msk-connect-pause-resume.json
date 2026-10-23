@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-msk-connect-pause-resume",
+  "title": "Amazon MSK Connect のコネクタを一時停止・再開できるようになったよ！",
+  "summary": "Amazon MSK Connect で、コネクタを削除せずに一時停止して、あとからその場で再開できるようになったよ。設定やオフセットはそのまま残って、追加料金もなし！",
+  "body_md": "やっほー、しぃちゃんだよ！\n\n今日は Amazon MSK Connect のうれしいアップデートを見つけたから、さっそく紹介するね。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon MSK Connect(Amazon Managed Streaming for Apache Kafka Connect)が、コネクタの一時停止と再開に対応したと発表されたよ。\n\n一時停止すると、コネクタはレコードの処理をいったんやめて、あとから再開できるの。たとえばこんな場面で使えるみたい。\n\n- ソース側データベースのメンテナンス中にデータの流れを止めたいとき\n- シンク側のターゲットのメンテナンス中に止めたいとき\n- 上流・下流の問題を調べている間、処理を止めておきたいとき\n\n## 今までどうだったの？\n\nこれまでは、コネクタを止めたいときは「削除して作り直す」しかなかったの。原文でも、より破壊的な操作で、リスクと運用の手間が増えると説明されているよ。\n\n## これで何が変わるの？\n\n実行中のコネクタを一時停止して、準備ができたらその場で再開できるようになったよ。\n\n一時停止中のコネクタは、次のものをそのまま保持するんだって。\n\n- 設定\n- キャパシティ設定\n- コミット済みオフセット\n\n再開すると、タスクは最後にコミットしたオフセットから処理を続けるよ。作り直しで設定を間違えたり、オフセットの扱いに悩んだりする心配が減るのが嬉しいところ！\n\n## 深く潜ってみよう\n\n原文から分かる情報はこのあたりだよ。\n\n- 操作は Amazon MSK コンソール、AWS CLI、AWS SDK、AWS CDK から使える\n- 追加料金なし\n- Amazon MSK Connect が使える全 AWS リージョンで利用できる\n\nAPI のパラメータ名など細かい手順は原文には書かれていないから、詳しくは Amazon MSK Connect のドキュメントを見てね。\n\n## まとめ\n\n- コネクタを削除せずに、一時停止と再開ができるようになった\n- 一時停止中も設定・キャパシティ設定・コミット済みオフセットは保持される\n- 再開後は最後にコミットしたオフセットから処理を続ける\n- コンソール・CLI・SDK・CDK に対応していて、追加料金なし\n\nデータベースやシンクのメンテナンスで Kafka Connect を止める機会がある運用担当のみんなに、ぴったりのアップデートだよ！",
+  "title_en": "Amazon MSK Connect Can Now Pause and Resume Connectors!",
+  "summary_en": "Amazon MSK Connect now lets you pause a connector and resume it in place, without deleting it. Configuration and offsets are kept, and there's no extra cost!",
+  "body_md_en": "Hi, it's Shiichan!\n\nI found a handy update for Amazon MSK Connect today, so let me walk you through it.\n\n## What was announced?\n\nAccording to AWS What's New, Amazon MSK Connect (Amazon Managed Streaming for Apache Kafka Connect) now supports pausing and resuming connectors.\n\nWhen you pause a connector, it stops processing records, and you can resume it later. Some situations where this helps:\n\n- Stopping data flow during maintenance on a source database\n- Stopping data flow during maintenance on a sink target\n- Pausing processing while you investigate an upstream or downstream issue\n\n## The story so far\n\nUntil now, pausing a connector meant deleting it and recreating it. The announcement describes this as a more disruptive operation that adds risk and operational overhead.\n\n## What changes\n\nYou can now pause a running connector and resume it in place when you're ready.\n\nA paused connector keeps:\n\n- Its configuration\n- Its capacity settings\n- Its committed offsets\n\nWhen you resume, the tasks continue from the offsets they last committed. That means fewer worries about re-entering settings or handling offsets after a recreate!\n\n## Dive Deep\n\nHere is what the announcement tells us:\n\n- You can use it from the Amazon MSK Console, AWS CLI, AWS SDK, and AWS CDK\n- There is no additional cost\n- It's available in all AWS Regions where Amazon MSK Connect is available\n\nThe announcement doesn't list API parameter names or detailed steps, so check the Amazon MSK Connect documentation for those.\n\n## Wrap-up\n\n- You can pause and resume connectors without deleting them\n- Configuration, capacity settings, and committed offsets are kept while paused\n- After resuming, processing continues from the last committed offsets\n- Works with the console, CLI, SDK, and CDK at no extra cost\n\nIf you run Kafka Connect and sometimes need to stop it for database or sink maintenance, this one is for you!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-msk-connect-pause-resume",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon MSK Connect now supports pausing and resuming connectors",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "devops"
+  ],
+  "published_at": "2026-10-22T15:00:00+00:00"
+}
