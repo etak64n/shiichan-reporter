@@ -1,0 +1,19 @@
+{
+  "slug": "cloudflare-changelog-2026-10-23-undelete-seven-day-window",
+  "title": "D1 のデータベース復元は削除から 7 日以内に！undelete API に期限が登場",
+  "summary": "D1 の undelete API が、直近 7 日以内に削除されたデータベースだけを受け付けるようになったよ。間違えて消したら早めに復元リクエストを送ってね！",
+  "body_md": "おつかれさま、しぃちゃんだよ！今日は D1 を使っているみんなに知っておいてほしい小さな、でも大事な変更だよ！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、D1 の undelete API が、削除から 7 日以内のデータベースだけを受け付けるようになったと告知されたよ。\n\n## 今までどうだったの？\n\nこれまでは、この 7 日の期限は発表文では触れられていないよ。今回の変更で、期限がはっきり決まったんだね。\n\n## これで何が変わるの？\n\n削除から 7 日より前のデータベースを undelete しようとすると、リクエストはエラーで失敗するよ。\n\n## 深く潜ってみよう\n\n発表されている内容はシンプルで、期限は「直近 7 日以内」の 1 点だけ。API の詳しい仕様は、公式の「undelete D1 database」の API リファレンスを見てね。\n\n## まとめ\n\n- undelete API は、削除から 7 日以内のデータベースだけが対象\n- 7 日を過ぎたものの復元リクエストはエラーになる\n- 間違えて消したら、できるだけ早く、遅くとも 7 日以内にリクエストを送る\n\nD1 で本番データを持っているみんなは、誤削除したときの手順を確認しておくと安心だよ！\n",
+  "title_en": "D1 Undelete Now Works Only Within 7 Days of Deletion",
+  "summary_en": "The D1 undelete API now only accepts requests for databases deleted within the last 7 days. If you delete one by mistake, send the request as soon as you can.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today's news is a small but important change for anyone using D1!\n\n## What was announced?\n\nThe Cloudflare Changelog says the D1 undelete API now only accepts requests for databases that were deleted within the last 7 days.\n\n## The story so far\n\nThe announcement doesn't mention any earlier time limit. With this change, the window is now clearly defined.\n\n## What changes\n\nIf you try to undelete a database that was deleted more than 7 days ago, the request fails and returns an error.\n\n## Dive Deep\n\nThe announcement is simple: the one detail is the 7-day window. For API specifics, see the \"undelete D1 database\" API reference.\n\n## Wrap-up\n\n- The undelete API only covers databases deleted within the last 7 days\n- Requests for older deletions return an error\n- If you delete a database by mistake, send the request as soon as possible, and no later than 7 days after deletion\n\nIf you keep production data in D1, it's a good time to review what you'd do after an accidental deletion!\n",
+  "emotion": "thinking",
+  "importance": 2,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-23-undelete-seven-day-window/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "D1 - D1 database undelete requests limited to the last 7 days",
+  "tags": [
+    "cloudflare",
+    "serverless"
+  ],
+  "published_at": "2026-10-23T15:03:03+00:00"
+}

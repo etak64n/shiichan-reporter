@@ -1,0 +1,19 @@
+{
+  "slug": "cloudflare-changelog-2026-10-23-radar-homepage-redesign",
+  "title": "Cloudflare Radar のホームページがリニューアル！インタラクティブな地図で世界のネットを見よう",
+  "summary": "Cloudflare Radar のホームページが、ジャーナリストや政策担当者、一般の人にも見やすいようにリニューアルされたよ。インタラクティブマップとタブ式のインサイトが入ったの！",
+  "body_md": "やっほー、しぃちゃんだよ！今日は Cloudflare Radar のホームページが新しくなったニュースだよ！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Cloudflare Radar のホームページのリニューアルが告知されたよ。目的は、世界のインターネットのデータを、ジャーナリストや政策担当者、普通のユーザーといった幅広い人にも探索しやすくすること。技術者が頼りにしている深さは残したままなんだって。\n\n## なぜ重要なの？\n\nRadar は世界のインターネットの状況を見られるサービスで、技術者以外にも見てもらいたい、という方向性がはっきりした更新だよ。入り口が分かりやすくなると、データを読む人の幅が広がりそうだね。\n\n## これで何が変わるの？\n\nホームページの見え方が変わったよ。\n\n- インタラクティブマップ: 世界のインターネットトラフィックや障害を表示。特定の国や傾向を調べる出発点になる\n- 厳選されたインサイトのセクション: タブで切り替えながら、Radar のデータ全体の要約統計を見られる。各分野を詳しく見るための導線つき\n- 新しいインターフェース: Cloudflare の各製品と同じ Kumo コンポーネントで構築\n\n## 深く潜ってみよう\n\n発表されている技術的な情報は、Kumo コンポーネントを使っていることくらい。今後も Radar の全ページが改善されていく予定だよ。フィードバックは radar@cloudflare.com に送れるよ。詳しくはブログ記事にも書かれているみたい！\n\n## まとめ\n\n- Radar のホームページがリニューアルされた\n- インタラクティブマップで世界のトラフィックと障害を見られる\n- タブ式のインサイトで要約統計から各分野へ進める\n- Cloudflare 製品共通の Kumo コンポーネントで作られている\n- 今後、Radar の全ページが改善される予定\n\nインターネットの動きを眺めるのが好きな人や、障害の状況を手軽に知りたい人に刺さる更新だよ！\n",
+  "title_en": "Cloudflare Radar's Homepage Gets a Redesign with an Interactive Map",
+  "summary_en": "The Cloudflare Radar homepage was redesigned to make Internet data easier to explore for journalists, policymakers, and everyday users, with an interactive map and tabbed insights.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today the Cloudflare Radar homepage got a fresh new look!\n\n## What was announced?\n\nThe Cloudflare Changelog announced a redesigned Cloudflare Radar homepage. The goal is to make global Internet data easier to explore for broader audiences, including journalists, policymakers, and everyday users, while preserving the depth that technical users rely on.\n\n## Why it matters\n\nRadar shows what is happening on the Internet worldwide, and this update makes it clear it is aimed beyond technical readers too. A friendlier entry point should widen the group of people who can read the data.\n\n## What changes\n\nThe homepage now looks different:\n\n- Interactive map: shows Internet traffic and outages around the world, and is a starting point for exploring specific countries and trends\n- Curated insights section: tabbed navigation highlights summary statistics across Radar data, with a call to action to explore each area in depth\n- Updated interface: built with Kumo components, the same ones used across Cloudflare products\n\n## Dive Deep\n\nThe only technical detail shared is the use of Kumo components. Cloudflare says all Radar pages will see improvements as the redesign continues. You can send feedback to radar@cloudflare.com, and there is a blog post with more details.\n\n## Wrap-up\n\n- The Radar homepage has been redesigned\n- An interactive map shows global traffic and outages\n- Tabbed insights lead from summary statistics into each area\n- Built with Kumo components shared across Cloudflare products\n- More improvements are planned for all Radar pages\n\nThis is for anyone who likes watching how the Internet behaves, or wants a quick look at outages!\n",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-23-radar-homepage-redesign/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Radar - Redesigned Cloudflare Radar homepage",
+  "tags": [
+    "cloudflare",
+    "web"
+  ],
+  "published_at": "2026-10-23T15:03:02+00:00"
+}
