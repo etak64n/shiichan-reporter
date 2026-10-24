@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-10-23-workers-builds-pin-npm-version",
+  "title": "Workers Builds の npm バージョンを package.json で固定できるようになったよ！",
+  "summary": "Cloudflare の Workers Builds で、package.json の packageManager フィールドを使って npm のバージョンを指定できるようになったよ！ローカルとビルドで lockfile の扱いがそろうみたい！",
+  "body_md": "やっほー、しぃちゃんだよ！今日は「ローカルでは動くのにビルドだと依存関係が変わっちゃう」を防げる、うれしいアップデートを見つけたよ！\n\n## なにが発表されたの？\n\nCloudflare の Changelog によると、Workers Builds で使う npm のバージョンを、`package.json` の `packageManager` フィールドで選べるようになったよ！\n\nビルドは依存関係をインストールする前に、指定された npm バージョンを先にインストールするんだって。設定はこんな感じだよ！\n\n```json\n{\n  \"packageManager\": \"npm@11.19.1\"\n}\n```\n\n## これで何が変わるの？\n\n指定した npm バージョンがビルドの前にインストールされるので、新しい npm で書き出された lockfile が、ローカルでもビルドでも同じようにインストールされるようになるよ！\n\n「手元では通るのに Workers Builds だと挙動が違う」というときの原因をひとつ減らせるから、lockfile を新しめの npm で更新しているチームに嬉しい変更だね！\n\n## 深く潜ってみよう\n\n原文に書かれている注意点をまとめるよ！\n\n- `packageManager` フィールドは npm だけじゃなくて、Yarn・pnpm・Bun のバージョンも指定できるよ\n- バージョンは `npm@11.19.1` のような正確なバージョンで書く。範囲指定は使わないでね\n- `engines.npm` フィールドは、Workers Builds が npm のバージョンを選ぶときには使われないよ\n\n詳しい設定は、Workers Builds のドキュメントの「Package manager versions」にまとまっているみたい！\n\n## まとめ\n\n- Workers Builds が `package.json` の `packageManager` を見て npm のバージョンを決めるようになった\n- 依存関係のインストール前に、指定バージョンの npm が入る\n- Yarn・pnpm・Bun のバージョンも同じフィールドで指定できる\n- 範囲指定ではなく exact なバージョンを書くこと、`engines.npm` は使われないことに注意\n\nローカルとビルドの lockfile のズレに悩んでいる Workers ユーザーさんに刺さるアップデートだよ！",
+  "title_en": "You can now pin your npm version in Workers Builds with packageManager!",
+  "summary_en": "Cloudflare Workers Builds now lets you choose the npm version through the packageManager field in package.json, so lockfiles install the same way in your build as they do locally.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today I found a nice update for anyone who has been bitten by \"it works locally, but the build installs something different\".\n\n## What was announced?\n\nAccording to Cloudflare's Changelog, Workers Builds can now use the npm version you set in the `packageManager` field of your `package.json`.\n\nBefore the build installs dependencies, it installs the npm version you specified. Here is what the setting looks like:\n\n```json\n{\n  \"packageManager\": \"npm@11.19.1\"\n}\n```\n\n## What changes\n\nA lockfile written by a newer npm version now installs the same way in your build as it does on your machine. That removes one possible cause of \"works locally, behaves differently in Workers Builds\", which is great for teams that update lockfiles with a recent npm.\n\n## Dive Deep\n\nHere are the details from the original post:\n\n- The `packageManager` field also sets the version of Yarn, pnpm, and Bun\n- Use an exact version such as `npm@11.19.1`, not a range\n- Workers Builds does not use the `engines.npm` field to choose an npm version\n\nFor more, see \"Package manager versions\" in the Workers Builds documentation.\n\n## Wrap-up\n\n- Workers Builds reads `packageManager` in `package.json` to decide the npm version\n- The specified npm version is installed before dependencies\n- The same field sets Yarn, pnpm, and Bun versions\n- Use exact versions, and remember that `engines.npm` is not used\n\nIf you have run into lockfile differences between local and build environments on Workers, this one is for you!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-23-workers-builds-pin-npm-version/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Workers - Pin your npm version in Workers Builds with packageManager",
+  "tags": [
+    "cloudflare",
+    "devops",
+    "serverless"
+  ],
+  "published_at": "2026-10-23T00:00:00+00:00"
+}
