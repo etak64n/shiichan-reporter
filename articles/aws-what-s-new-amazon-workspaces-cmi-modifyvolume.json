@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-workspaces-cmi-modifyvolume",
+  "title": "WorkSpaces Core Managed Instances が ModifyVolume API に対応！再起動なしでディスク変更",
+  "summary": "Amazon WorkSpaces Core Managed Instances で ModifyVolume API が使えるようになったよ。ボリュームのデタッチもインスタンスの再起動もなしに、サイズや種類、IOPS、スループットを変更できるの。",
+  "body_md": "やっほー、しぃちゃんだよ！今日は WorkSpaces Core のストレージ運用がぐっと楽になる更新だよ！\n\n## なにが発表されたの？\n\nAWS の What's New によると、Amazon WorkSpaces Core Managed Instances が ModifyVolume API に対応したよ。ボリュームのサイズ、タイプ、IOPS、スループットを、その場で変更できる API なの。\n\n## 今までどうだったの？\n\n従来は、デプロイ済みのマネージドインスタンスでストレージの容量や性能を変えたいとき、インスタンスを作り直す必要があったよ。\n\n## これで何が変わるの？\n\nボリュームをデタッチしなくても、インスタンスを再起動しなくても、変更できるよ。容量不足や性能不足に気づいたときに、作り直さず対応できるのが大きいね。\n\n## 深く潜ってみよう\n\nできる変更はこれだよ。\n\n- ボリュームサイズを最大 16,384 GiB まで増やす\n- サポートされている Amazon EBS のボリュームタイプ間で切り替える\n- gp3・io1・io2 ボリュームの IOPS を調整する\n- gp3 ボリュームのスループットを変更する\n\nそのほかの情報だよ。\n\n- 冪等性トークンに対応していて、変更リクエストの重複を防げる\n- 進捗は Amazon EC2 の `DescribeVolumesModifications` オペレーションで追跡できる\n- WorkSpaces Core Managed Instances が使えるすべての AWS リージョンで利用可能\n- 使い始めるには `ModifyVolume` を直接呼ぶか、WorkSpaces Core パートナーソリューション経由で使う(パートナーソリューション側は今後提供される予定)\n\n詳しくは、WorkSpaces Instances API Reference の ModifyVolume と、Amazon EBS ユーザーガイドの制限事項を見てね。\n\n## まとめ\n\n- WorkSpaces Core Managed Instances で ModifyVolume API が使える\n- デタッチも再起動も不要で、サイズ・タイプ・IOPS・スループットを変更できる\n- サイズは最大 16,384 GiB まで、IOPS は gp3・io1・io2、スループットは gp3 が対象\n- 進捗は `DescribeVolumesModifications` で確認できる\n\nWorkSpaces Core を使ってデスクトップ基盤を作っている運用担当のみんなに刺さる更新だよ！",
+  "title_en": "WorkSpaces Core Managed Instances now support ModifyVolume, with no restart needed!",
+  "summary_en": "Amazon WorkSpaces Core Managed Instances now supports the ModifyVolume API. You can change volume size, type, IOPS, or throughput in place, without detaching the volume or restarting the instance.",
+  "body_md_en": "Hi everyone, Shii-chan here! Today's update makes storage operations for WorkSpaces Core a lot easier!\n\n## What was announced?\n\nAccording to AWS What's New, Amazon WorkSpaces Core Managed Instances now supports the ModifyVolume API. It lets you change a volume's size, type, IOPS, or throughput in place.\n\n## The story so far\n\nPreviously, changing storage capacity or performance on a deployed managed instance required rebuilding it.\n\n## What changes\n\nYou can make the change without detaching the volume or restarting the instance. When you run low on capacity or performance, you can respond without rebuilding.\n\n## Dive Deep\n\nHere are the changes you can make:\n\n- Increase volume size up to 16,384 GiB\n- Switch between supported Amazon EBS volume types\n- Adjust IOPS for gp3, io1, and io2 volumes\n- Modify throughput for gp3 volumes\n\nOther details:\n\n- Idempotency tokens are supported to prevent duplicate changes\n- Track progress with the Amazon EC2 `DescribeVolumesModifications` operation\n- Available in all AWS Regions where WorkSpaces Core Managed Instances is available\n- To get started, call `ModifyVolume` directly, or use it through your WorkSpaces Core partner solution once available\n\nFor more, see ModifyVolume in the WorkSpaces Instances API Reference and the limitations in the Amazon EBS User Guide.\n\n## Wrap-up\n\n- WorkSpaces Core Managed Instances now support the ModifyVolume API\n- You can change size, type, IOPS, and throughput without detaching or restarting\n- Size goes up to 16,384 GiB, IOPS applies to gp3, io1, and io2, and throughput applies to gp3\n- Progress is visible through `DescribeVolumesModifications`\n\nThis is for operations teams building desktop infrastructure on WorkSpaces Core!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-workspaces-cmi-modifyvolume/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon WorkSpaces Core Managed Instances now supports ModifyVolume API",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-26T18:00:00+00:00"
+}

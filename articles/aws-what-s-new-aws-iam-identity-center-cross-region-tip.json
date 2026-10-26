@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-iam-identity-center-cross-region-tip",
+  "title": "IAM Identity Center の信頼できる ID 伝播が、ついにリージョンをまたげるように！",
+  "summary": "AWS IAM Identity Center の trusted identity propagation が、別のリージョンのサービスにも使えるようになったよ。追加料金なしだよ！",
+  "body_md": "こんにちは、しぃちゃんだよ！今日は AWS のアクセス管理まわりで、マルチリージョン構成の人に嬉しいお知らせだよ！\n\n## なにが発表されたの？\n\nAWS の What's New によると、AWS IAM Identity Center が、リージョンをまたぐ trusted identity propagation(信頼できる ID 伝播)に対応したよ。\n\ntrusted identity propagation は、ユーザーの ID をリクエストと一緒に運ぶ仕組みだよ。AWS サービスは、そのユーザーと所属グループをもとに権限を与えられて、そのユーザーのアクセスを監査用に記録できるの。\n\n## 今までどうだったの？\n\n従来は、ユーザーの ID にアクセスするすべての AWS サービスが同じリージョンにある必要があったよ。別のリージョンのサービスに届かせるには、次のどちらかしかなかったんだって。\n\n- 個々のユーザーを区別できない、広めの IAM ロールで許可する\n- すべてのサービスを 1 つのリージョンにまとめる\n\n## これで何が変わるの？\n\nユーザーの ID がリクエストと一緒に、リージョンをまたいで自動的に伝わるようになったよ。\n\n- ユーザーとグループに基づいてアクセスを許可できる\n- 誰がどのリソースにアクセスしたかを監査できる\n- ユーザー単位のきめ細かいアクセス制御を保てる\n\n原文では、リージョンを分ける理由として、次のようなものが挙げられているよ。\n\n- 計算処理と、それが参照するデータを分ける\n- 容量に余裕のあるリージョンでワークロードを動かす\n- ディザスタリカバリ\n- グローバルなスケール\n\n## 深く潜ってみよう\n\n原文から分かる情報は次のとおりだよ。\n\n- 追加料金なし\n- IAM Identity Center が利用できるすべてのリージョンで使える\n- 設定方法の詳細は、IAM Identity Center ユーザーガイドの Trusted identity propagation の概要を見てね\n\n## まとめ\n\n- trusted identity propagation が、リージョンをまたげるようになった\n- 以前は広めの IAM ロールか、1 リージョンへの集約が必要だった\n- ユーザー・グループ単位の許可と監査がリージョン間で続けられる\n- 追加料金なし、IAM Identity Center の提供リージョンすべてで利用可能\n\nマルチリージョンでデータ分析基盤などを組んでいて、ユーザー単位の権限管理に悩んでいたみんなに刺さる更新だよ！",
+  "title_en": "IAM Identity Center trusted identity propagation now works across Regions!",
+  "summary_en": "AWS IAM Identity Center now supports trusted identity propagation to AWS services in different Regions, at no additional cost.",
+  "body_md_en": "Hello, Shii-chan here! Today's news is about AWS access management, and it is good news for multi-Region setups!\n\n## What was announced?\n\nAccording to AWS What's New, AWS IAM Identity Center now supports cross-Region trusted identity propagation.\n\nTrusted identity propagation carries a user's identity with their request. AWS services can then grant permissions based on who the user is and their group associations, and log that user's access for auditing.\n\n## The story so far\n\nPreviously, all of the AWS services accessing a user's identity had to be in the same Region. To reach services in another Region, you had to either:\n\n- Grant access through broad IAM roles that cannot distinguish individual users\n- Consolidate all your services into a single Region\n\n## What changes\n\nA user's identity now travels with the request across Regions automatically.\n\n- You can grant access based on the user and their groups\n- You can audit who accessed which resources\n- You keep fine-grained access control for every individual user\n\nThe announcement lists reasons to spread workloads across Regions:\n\n- Separating compute from the data it queries\n- Running workloads where capacity is available\n- Disaster recovery\n- Global scale\n\n## Dive Deep\n\nHere is what the announcement tells us:\n\n- No additional cost\n- Available in all Regions where IAM Identity Center is available\n- For setup details, see the trusted identity propagation overview in the IAM Identity Center User Guide\n\n## Wrap-up\n\n- Trusted identity propagation now works across Regions\n- Before, you needed broad IAM roles or a single Region\n- Per-user and per-group permissions and auditing now continue across Regions\n- No additional cost, in all Regions where IAM Identity Center is available\n\nThis is for anyone running multi-Region analytics or data platforms who wants per-user permissions!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-iam-identity-center-cross-region-tip/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS IAM Identity Center now supports cross-Region trusted identity propagation",
+  "tags": [
+    "aws",
+    "security",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-26T08:00:00+00:00"
+}

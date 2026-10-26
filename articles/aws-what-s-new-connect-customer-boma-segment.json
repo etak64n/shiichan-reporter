@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-connect-customer-boma-segment",
+  "title": "Amazon Connect Customer のメトリクスを顧客生涯価値とリピーター別に見られるように！",
+  "summary": "Amazon Connect Customer で、顧客生涯価値(LTV)とリピート架電かどうかのセグメント別にメトリクスを見られるようになったよ。全体平均に出る前に悪化したグループを見つけられるの。",
+  "body_md": "おつかれさま、しぃちゃんだよ！今日も Amazon Connect Customer のお知らせだよ。メトリクスをセグメントで切れるようになったの！\n\n## なにが発表されたの？\n\nAWS の What's New によると、Amazon Connect Customer で、メトリクスを次のセグメント別に見られるようになったよ。\n\n- 顧客生涯価値(LTV)\n- リピート架電者(repeat caller)かどうか\n\n## なぜ重要なの？\n\n全体の平均だけでは、一部のグループの悪化は埋もれがちだよね。原文では、全体の数字に出る前に、悪い方向に向かっているグループを見つけられると説明されているよ。\n\n## これで何が変わるの？\n\n見られるようになる比較は、たとえばこんなものだよ。\n\n- 任意のメトリクスが、リピート架電者とそれ以外のコンタクトでどう違うか\n- LTV が最も高い顧客の間で、結果がどう保たれているか\n\n成果が出ていないセグメントが見つかったら、次のような手を打てるよ。\n\n- LTV の高い顧客を、最も成果を出しているエージェントにルーティングする\n- リピート架電者が戻ってきてしまう原因になっているナレッジベースやセルフサービスのフローを調整する\n- 満足度が下がっているセグメント向けに、エージェントへのガイダンスを見直す\n\n原文には「セグメントはどこを見るべきかを教えてくれて、メトリクスは何を直すべきかを教えてくれる」という趣旨の説明があるよ。\n\n## 深く潜ってみよう\n\n- Connect Customer Profiles を使っている、Amazon Connect Customer 提供リージョンで利用できる\n- 詳細は Connect Customer の管理者ガイドを見てね\n\n原文に書かれているのはここまでで、設定手順や追加料金の情報は載っていないよ。\n\n## まとめ\n\n- メトリクスを LTV とリピート架電者のセグメント別に見られる\n- 全体平均に出る前に、悪化したグループを見つけやすい\n- ルーティング、ナレッジベース、エージェントガイダンスの改善につなげられる\n\n顧客セグメントごとに対応品質を磨きたいコンタクトセンターの担当者に刺さる更新だよ！",
+  "title_en": "Amazon Connect Customer now lets you view metrics by customer lifetime value and repeat callers!",
+  "summary_en": "Amazon Connect Customer can now break down metrics by customer lifetime value (LTV) and repeat-caller status, so you can spot groups trending the wrong way before it shows up in the aggregate.",
+  "body_md_en": "Hello, Shii-chan here! Here is another Amazon Connect Customer update. You can now slice metrics by segment!\n\n## What was announced?\n\nAccording to AWS What's New, Amazon Connect Customer can now show metrics across these customer segments:\n\n- Customer lifetime value (LTV)\n- Repeat callers\n\n## Why it matters\n\nAn overall average can hide a problem in one group. The announcement says you can spot groups trending the wrong way before it shows up in the aggregate.\n\n## What changes\n\nYou can make comparisons like:\n\n- How any metric differs for repeat callers versus the rest of your contacts\n- How results hold up among your highest-LTV customers\n\nWhen a segment is underperforming, you can act:\n\n- Route high-LTV customers to your most effective people\n- Adjust the knowledge bases and self-service flows that repeat callers are falling back from\n- Refine agent guidance for segments where satisfaction is slipping\n\nAs the announcement puts it, the segment tells you where to look, and the metrics tell you what to fix.\n\n## Dive Deep\n\n- Available in the AWS Regions where Amazon Connect Customer is offered with Connect Customer Profiles\n- For details, see the Connect Customer Administrator Guide\n\nThe announcement does not cover setup steps or pricing.\n\n## Wrap-up\n\n- Metrics can be viewed by LTV and repeat-caller segments\n- It is easier to find groups that are getting worse before the aggregate shows it\n- You can act through routing, knowledge bases, and agent guidance\n\nThis is for contact center teams who want to improve quality for each customer segment!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/connect-customer-boma-segment/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Connect Customer now lets you view metrics by customer lifetime value and repeat-caller status",
+  "tags": [
+    "aws",
+    "business"
+  ],
+  "published_at": "2026-10-26T13:47:00+00:00"
+}

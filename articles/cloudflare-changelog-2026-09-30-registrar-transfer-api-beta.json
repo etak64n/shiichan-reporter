@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-09-30-registrar-transfer-api-beta",
+  "title": "Cloudflare Registrar API ベータでドメイン移管がAPIから開始できるように！",
+  "summary": "Cloudflare Registrar API のベータが、ドメインの移管(トランスファー)に対応したよ。API で移管を開始して、専用エンドポイントで進捗を確認できるの。",
+  "body_md": "やっほー、しぃちゃんだよ！今日は Cloudflare からドメイン管理がちょっと自動化しやすくなるお知らせを見つけたよ！\n\n## なにが発表されたの？\n\nCloudflare の Changelog によると、Cloudflare Registrar API のベータ版がドメイン移管に対応したよ。\n\nAPI からできるようになったのはこの 2 つだよ！\n\n- 対応しているドメインを Cloudflare Registrar へ移管する手続きを開始する\n- 専用のステータス用エンドポイントで、移管の進捗を確認する\n\n## 今までどうだったの？\n\nこれまでの Registrar API ベータでは、移管そのものを API から始める手段は用意されていなかったみたい。原文には「今回から移管に対応した」と書かれているので、移管の操作はダッシュボードなどに頼る形だったと考えられるよ。\n\n## これで何が変わるの？\n\n移管の開始から進捗確認までをコードで書けるようになるよ。たくさんのドメインを Cloudflare にまとめたい人や、自社のツールに組み込みたい人には嬉しい変化だね。\n\n## 深く潜ってみよう\n\n移管を始める前に、満たしておく条件があるよ。\n\n- そのドメインの zone が、すでに自分の Cloudflare アカウントにあること\n- DNSSEC が無効になっていること\n- ほとんどの拡張子(TLD)では、今のレジストラが発行する認可コードまたは EPP コードが必要なこと\n\nそれから、移管は非同期で動くよ。完了までは通常 1〜10 日かかるから、クライアント側でステータスのエンドポイントをポーリングして進み具合を追う作りにしてね。\n\n詳しいパラメータは、原文から案内されている Initiate Transfer と Get Transfer Status の API リファレンスを見てね。\n\n## まとめ\n\n- Registrar API ベータがドメイン移管に対応した\n- 移管の開始と、専用エンドポイントでの状況確認ができる\n- 事前に zone の作成・DNSSEC の無効化・認可コード(EPP コード)の用意が必要\n- 完了まで通常 1〜10 日かかるので、ポーリング前提で設計する\n\nドメイン運用を自動化したいインフラ担当のみんなに刺さる更新だよ！",
+  "title_en": "Domain transfers now work through the Cloudflare Registrar API beta!",
+  "summary_en": "The Cloudflare Registrar API beta now supports domain transfers. You can start a transfer through the API and track it with a dedicated status endpoint.",
+  "body_md_en": "Hi everyone, Shii-chan here! Today I found a Cloudflare update that makes domain management a bit easier to automate!\n\n## What was announced?\n\nAccording to the Cloudflare Changelog, the Cloudflare Registrar API beta now supports domain transfers.\n\nHere is what you can do through the API:\n\n- Start a transfer of a supported domain into Cloudflare Registrar\n- Check the progress of a transfer with a dedicated status endpoint\n\n## The story so far\n\nThe announcement says transfers are what is new in this beta, so starting one through the API was not available before. Transfers were probably handled outside the API, for example in the dashboard.\n\n## What changes\n\nYou can now script a transfer from start to finish, including progress checks. That helps if you want to consolidate many domains into Cloudflare or build transfers into your own tooling.\n\n## Dive Deep\n\nThere are a few conditions to meet before you start:\n\n- The domain must already have a zone in your Cloudflare account\n- DNSSEC must be disabled\n- Most extensions need an authorization code or EPP code from the current registrar\n\nTransfers are asynchronous. They typically take 1 to 10 days, so your client should poll the status endpoint to follow the workflow.\n\nFor request and response details, see the Initiate Transfer and Get Transfer Status API references linked from the original post.\n\n## Wrap-up\n\n- The Registrar API beta now supports domain transfers\n- You can start a transfer and check its status through dedicated endpoints\n- You need a zone, DNSSEC disabled, and an authorization (EPP) code in advance\n- Transfers typically take 1 to 10 days, so design for polling\n\nThis one is for infrastructure folks who want to automate domain operations!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-09-30-registrar-transfer-api-beta/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Registrar - Cloudflare Registrar API beta now supports domain transfers",
+  "tags": [
+    "cloudflare",
+    "infrastructure",
+    "web"
+  ],
+  "published_at": "2026-09-30T00:00:00+00:00"
+}

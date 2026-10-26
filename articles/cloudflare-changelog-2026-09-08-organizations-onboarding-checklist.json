@@ -1,0 +1,19 @@
+{
+  "slug": "cloudflare-changelog-2026-09-08-organizations-onboarding-checklist",
+  "title": "Cloudflare Organizations に新規作成時のオンボーディングチェックリストが登場！",
+  "summary": "Cloudflare Organizations で組織を新しく作ると、設定すべきタスクのチェックリストが表示されるようになったよ。いつでも閉じられるの。",
+  "body_md": "こんにちは、しぃちゃんだよ！今日は Cloudflare の小さいけれど親切なアップデートを紹介するね！\n\n## なにが発表されたの？\n\nCloudflare の Changelog によると、Cloudflare Organizations で組織を作成すると、新しい組織の設定で行うタスクのチェックリストが、組織のホーム画面に表示されるようになったよ。このチェックリストはいつでも閉じられるみたい！\n\n## なぜ重要なの？\n\nOrganizations は、複数のアカウントを 1 つの画面からまとめて管理するための機能だよ。原文では、次のような要素が挙げられているの。\n\n- アナリティクス\n- 共有設定\n- 監査ログ\n- 組織のスーパー管理者(org super administrator)\n\n機能が多いぶん、作った直後に何から手を付けるか迷いやすいよね。そこにガイドが付いた形だよ。なお Organizations は現在、Enterprise アカウント向けのベータ版だよ。\n\n## これで何が変わるの？\n\n組織を作った管理者が、最初にやることを画面上で確認できるようになるよ。ドキュメントを探し回らなくても、設定の抜け漏れを減らしやすくなるはず！\n\n## まとめ\n\n- 新しい組織を作ると、設定タスクのチェックリストが表示される\n- チェックリストはいつでも閉じられる\n- Organizations は Enterprise アカウント向けのベータ機能\n\nこれから Organizations を使い始める Enterprise の管理者さんに嬉しい更新だよ！",
+  "title_en": "Cloudflare Organizations gets an onboarding checklist for new orgs!",
+  "summary_en": "When you create a new organization in Cloudflare Organizations, you now see a checklist of setup tasks. You can dismiss it at any time.",
+  "body_md_en": "Hello, Shii-chan here! Today I have a small but thoughtful update from Cloudflare!\n\n## What was announced?\n\nAccording to the Cloudflare Changelog, when you create an organization in Cloudflare Organizations, the organization home page now shows a checklist of tasks for configuring it. You can dismiss the checklist at any time.\n\n## Why it matters\n\nOrganizations lets administrators manage multiple accounts from a single pane of glass. The announcement lists:\n\n- Analytics\n- Shared configurations\n- Audit logs\n- Org super administrators\n\nWith that many features, it can be hard to know where to start right after creating an organization. The checklist gives you a guide. Organizations is currently in beta for Enterprise accounts.\n\n## What changes\n\nAdministrators can see what to do first, right on the screen. You do not have to dig through docs, and it should be easier to avoid missing a setup step.\n\n## Wrap-up\n\n- Creating a new organization shows a checklist of setup tasks\n- You can dismiss the checklist at any time\n- Organizations is a beta feature for Enterprise accounts\n\nThis is for Enterprise administrators who are just starting with Organizations!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-09-08-organizations-onboarding-checklist/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Cloudflare Fundamentals - Organizations onboarding checklist",
+  "tags": [
+    "cloudflare",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-01T00:00:00+00:00"
+}

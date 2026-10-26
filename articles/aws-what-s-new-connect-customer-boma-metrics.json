@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-connect-customer-boma-metrics",
+  "title": "Amazon Connect Customer が「対応の成果」をスコア化！満足・解約リスク・購入まで見える",
+  "summary": "Amazon Connect Customer が、顧客対応の結果をスコアで測れるようになったよ。満足して帰ったか、解約リスクがあるか、購入したか、セルフサービスで解決したかが分かるの。",
+  "body_md": "やっほー、しぃちゃんだよ！今日は Amazon Connect Customer の、コンタクトセンターの見え方が変わるお知らせだよ！\n\n## なにが発表されたの？\n\nAWS の What's New によると、Amazon Connect Customer が、顧客とのやり取りの成果(アウトカム)をスコア化するようになったよ。見えるのはこの 4 つだよ。\n\n- 顧客が満足して帰ったか\n- 解約(チャーン)のリスクがあるか\n- 購入に至ったか\n- セルフサービスで困りごとが解決したか\n\n## 今までどうだったの？\n\n従来は、やり取りがどれだけ効率よく進んだかが中心だったよ。今回は、そのやり取りが目的を果たしたかも見られるようになったんだね。\n\n## これで何が変わるの？\n\n「早く終わったか」だけでなく「うまくいったか」で運用を見直せるよ。各メトリクスにはデフォルトの定義があって、自分のビジネスでの成功の定義に合わせて調整できるの。\n\n## 深く潜ってみよう\n\n- 分析ダッシュボードと API の両方で利用できる\n- Amazon Connect Customer が提供されているすべての AWS リージョンで使える\n- 詳しい指標の説明は、Connect Customer の管理者ガイドを見てね\n\n原文に書かれているのはここまでで、スコアの算出方法の詳細までは書かれていないよ。\n\n## まとめ\n\n- 顧客対応の成果を、満足・解約リスク・購入・セルフサービス解決でスコア化\n- 効率だけでなく、やり取りが成功したかを見られる\n- 定義はビジネスに合わせて調整可能\n- ダッシュボードと API で利用でき、提供リージョンすべてで使える\n\nコンタクトセンターの改善を数字で回したい運用担当のみんなに刺さる更新だよ！",
+  "title_en": "Amazon Connect Customer now scores the outcomes of customer interactions!",
+  "summary_en": "Amazon Connect Customer now scores interaction outcomes: whether the customer left satisfied, is at risk of churning, made a purchase, or resolved their need in self-service.",
+  "body_md_en": "Hi everyone, Shii-chan here! Today's news changes how you can see your contact center in Amazon Connect Customer!\n\n## What was announced?\n\nAccording to AWS What's New, Amazon Connect Customer now scores the outcome of your customer interactions. It shows whether the customer:\n\n- Left satisfied\n- Is at risk of churning\n- Made a purchase\n- Resolved their need in self-service\n\n## The story so far\n\nBefore, the focus was on how efficiently an interaction ran. Now you can also see whether it worked.\n\n## What changes\n\nYou can review operations by \"did it go well\" and not just \"was it quick\". Each metric comes with a default definition that you can adjust to match how your business defines success.\n\n## Dive Deep\n\n- Available in both the analytics dashboards and the APIs\n- Available in all AWS Regions where Amazon Connect Customer is offered\n- For metric details, see the Connect Customer Administrator Guide\n\nThe announcement does not describe how the scores are calculated.\n\n## Wrap-up\n\n- Interaction outcomes are scored: satisfaction, churn risk, purchase, and self-service resolution\n- You can see whether an interaction worked, not only how efficient it was\n- Definitions can be adjusted to your business\n- Available through dashboards and APIs in all supported Regions\n\nThis is for operations teams who want to improve their contact center with numbers!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/connect-customer-boma-metrics/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Connect Customer now measures the outcomes that drive retention and revenue",
+  "tags": [
+    "aws",
+    "ai",
+    "business"
+  ],
+  "published_at": "2026-10-26T13:31:00+00:00"
+}

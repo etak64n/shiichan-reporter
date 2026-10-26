@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-10-08-uuidv7-log-ids",
+  "title": "AI Gateway のログ ID がまさかの UUIDv7 に！ULID チェックは要注意",
+  "summary": "AI Gateway の新しいログ ID とリクエスト ID が、小文字の UUIDv7 になったよ。ULID 形式を前提にしたコードは直したほうがいいみたい！",
+  "body_md": "みんな、しぃちゃんだよ！今日は AI Gateway の ID 形式が変わったお知らせだよ。地味だけど、コードによっては影響が出るから要チェックなの！\n\n## なにが発表されたの？\n\nCloudflare の Changelog によると、AI Gateway の新しいログ ID とリクエスト ID は、小文字の UUIDv7 になったよ。例はこんな形だよ。\n\n```\n019a7b3e-5f2c-7c41-9d3e-2b8f6a1c4e07\n```\n\n## 今までどうだったの？\n\n- ログ ID: 26 文字の ULID\n- リクエスト ID: ランダムな UUID\n\nそれぞれ別の形式だったんだね。\n\n## これで何が変わるの？\n\n形式が UUIDv7 にそろったよ。さらに、AI Gateway が 1 ステップで応答するリクエストでは、次の 3 つのレスポンスヘッダーが同じ値になるよ。\n\n- `cf-aig-request-id`\n- `cf-aig-log-id`\n- `cf-aig-event-id`\n\nログとリクエストを突き合わせるときに、ID を見比べる手間が減りそう！\n\n## 深く潜ってみよう\n\n- provider リクエストや Universal リクエストで自分の `cf-aig-event-id` を指定した場合は、AI Gateway はその値を返すよ\n- 既存のログ ID は変わらないよ\n- logs API は新旧どちらの形式も受け付けるよ\n\n対応が必要なのは、ログ ID が ULID の形をしている前提で検証や正規表現チェックをしているコードだよ。原文では、ログ ID は不透明な文字列として扱って、ULID 形式をチェックしているコードは更新してね、と案内されているよ。\n\n## まとめ\n\n- 新しいログ ID・リクエスト ID は小文字の UUIDv7\n- 1 ステップ応答では 3 つの ID ヘッダーが同じ値になる\n- 既存のログ ID はそのまま、logs API は両形式に対応\n- ULID 形式を前提にしたコードは更新が必要\n\nAI Gateway のログを自前で集計している人は、ぜひ見直してみてね！",
+  "title_en": "AI Gateway log IDs are now UUIDv7, so check any ULID assumptions!",
+  "summary_en": "New AI Gateway log IDs and request IDs are lowercase UUIDv7. If your code assumes the ULID format, you should update it.",
+  "body_md_en": "Hi everyone, Shii-chan here! Today's news is about an ID format change in AI Gateway. It looks small, but it can affect some code, so it is worth a check!\n\n## What was announced?\n\nAccording to the Cloudflare Changelog, new AI Gateway log IDs and request IDs are lowercase UUIDv7. Here is an example:\n\n```\n019a7b3e-5f2c-7c41-9d3e-2b8f6a1c4e07\n```\n\n## The story so far\n\n- Log IDs: 26-character ULIDs\n- Request IDs: random UUIDs\n\nThe two used different formats.\n\n## What changes\n\nBoth now use UUIDv7. For a request that AI Gateway answers in a single step, these three response headers carry the same value:\n\n- `cf-aig-request-id`\n- `cf-aig-log-id`\n- `cf-aig-event-id`\n\nThat should make it easier to match logs with requests.\n\n## Dive Deep\n\n- For provider and Universal requests, if you set your own `cf-aig-event-id`, AI Gateway returns it instead\n- Existing log IDs do not change\n- The logs API accepts both formats\n\nThe code that needs attention is anything that validates log IDs as ULIDs. The announcement says to treat log IDs as opaque strings and to update code that checks for the ULID format.\n\n## Wrap-up\n\n- New log IDs and request IDs are lowercase UUIDv7\n- In single-step responses, the three ID headers share one value\n- Existing log IDs stay the same, and the logs API accepts both formats\n- Code that assumes ULIDs needs an update\n\nIf you process AI Gateway logs yourself, take a look at your parsing code!",
+  "emotion": "confused",
+  "importance": 3,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-08-uuidv7-log-ids/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "AI Gateway - AI Gateway log IDs and request IDs now use UUIDv7",
+  "tags": [
+    "cloudflare",
+    "ai",
+    "serverless"
+  ],
+  "published_at": "2026-10-08T00:00:00+00:00"
+}
