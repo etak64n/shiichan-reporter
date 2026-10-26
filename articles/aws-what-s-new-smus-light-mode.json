@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-smus-light-mode",
+  "title": "SageMaker Unified Studio にライトモード！IDC ベースのドメインでも選べるよ",
+  "summary": "Amazon SageMaker Unified Studio が、Identity Center(IDC)ベースのドメインでもライトモードに対応したよ。ダーク・ライト・デバイス設定から選べて、設定はブラウザやデバイスをまたいで保持されるの。",
+  "body_md": "みんな、しぃちゃんだよ！\n\nSageMaker Unified Studio の見た目が選べるようになったよ。小さな更新だけど、毎日使う人には嬉しいよね。\n\n## なにが発表されたの？\n\nAWS の What's New によると、Amazon SageMaker Unified Studio が Identity Center(IDC)ベースのドメインでライトモードに対応したよ。\n\n## 今までどうだったの？\n\nIAM ベースのドメインでは見た目を設定できたけれど、IDC ベースのドメインではダークモードしか選べない状態だったよ(今回の発表で、IDC でもライトを選べるようになったという位置づけ)。\n\n## これで何が変わるの？\n\nIAM ベースと IDC ベースのどちらのドメインでも、好みの表示モードを設定できるようになったよ。明るい環境で読みやすくなったり、目の負担を減らしたりできるの。\n\n## 深く潜ってみよう\n\n設定手順はこうだよ！\n\n- SageMaker Unified Studio の設定で、プロフィール設定の「Customize appearance」を選ぶ\n- ダークモード、ライトモード、デバイス設定(OS の設定に合わせる)から選ぶ\n- 設定はブラウザやデバイスをまたいで保持される\n\nSageMaker Unified Studio が使えるすべての AWS リージョンで利用できるよ。\n\n## まとめ\n\n- IDC ベースのドメインでライトモードが選べる\n- ダーク / ライト / デバイス設定の 3 択\n- 設定はブラウザ・デバイスをまたいで保持される\n\nSageMaker Unified Studio を長時間使うみんなに刺さる更新だよ！",
+  "title_en": "Light mode comes to SageMaker Unified Studio for IDC-based domains!",
+  "summary_en": "Amazon SageMaker Unified Studio now supports light mode in Identity Center (IDC) based domains. Choose dark, light or device setting, and your choice persists across browsers and devices.",
+  "body_md_en": "Hi everyone, it's Shii-chan!\n\nYou can now pick how SageMaker Unified Studio looks. It's a small update, but a nice one for daily users!\n\n## What was announced?\n\nAccording to AWS What's New, Amazon SageMaker Unified Studio now supports light mode for Identity Center (IDC) based domains.\n\n## The story so far\n\nThe release framing is that IDC-based domains previously did not offer the light option, while IAM-based domains let you set a visual preference. With this launch, both domain types can.\n\n## What changes\n\nYou can set your preferred visual mode in both IAM-based and IDC-based domains. It helps readability in bright environments and reduces eye strain.\n\n## Dive Deep\n\nHere's how to set it:\n\n- In SageMaker Unified Studio settings, choose \"Customize appearance\" under your Profile settings\n- Pick dark mode, light mode or device setting (matches your operating system)\n- The setting persists across browsers and devices\n\nIt's available in all AWS Regions where SageMaker Unified Studio is available.\n\n## Wrap-up\n\n- Light mode is available in IDC-based domains\n- Choose dark, light or device setting\n- The choice persists across browsers and devices\n\nIf you spend long hours in SageMaker Unified Studio, this one is for you!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/smus-light-mode",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon SageMaker Unified Studio adds light mode support for IDC-based domains",
+  "tags": [
+    "aws",
+    "ai"
+  ],
+  "published_at": "2026-10-26T15:32:00+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-connect-customer-validate-flow-actions",
+  "title": "Amazon Connect Customer のテストで、アクションの「結果」まで検証できるようになったよ！",
+  "summary": "Amazon Connect Customer のテスト・シミュレーションで、フローアクションが開始したかだけでなく、Lambda 応答や Lex の解決インテントなど返ってきた結果も検証できるようになったよ。",
+  "body_md": "こんにちは、しぃちゃんだよ！\n\nコンタクトセンターのフローをテストしている人に嬉しい更新が来たよ！\n\n## なにが発表されたの？\n\nAWS の What's New によると、Amazon Connect Customer のテストとシミュレーションで、カスタマーエクスペリエンスのフローアクションの結果を検証できるようになったよ。\n\n## 今までどうだったの？\n\nこれまでは、アクションが開始したことは確認できても、完了時に何が返ってきたかまでは確かめられなかったの。テストが失敗しても、後ろのステップから原因をさかのぼる必要があったんだね。\n\n## これで何が変わるの？\n\nテストが失敗したとき、予想外の結果を返した「そのアクション」をピンポイントで特定できるよ。問題の解決が早くなって、フローの変更に自信を持って臨めるの。\n\n## 深く潜ってみよう\n\n検証できる結果の例はこれだよ！\n\n- Lambda 関数のレスポンス\n- Amazon Lex が解決したインテント\n- Agentic CX ブロックが設定した変数\n\n機能の詳細は Connect Customer の管理者ガイド(テストとシミュレーション)に載っていて、リージョンごとの対応状況は「Availability of Connect Customer features by Region」で確認できるよ。\n\n## まとめ\n\n- アクションの開始だけでなく、完了時に返るデータも検証できる\n- 失敗したアクションをピンポイントで特定できる\n- Lambda 応答・Lex インテント・Agentic CX ブロックの変数が対象\n\nConnect のフローを頻繁に変更していて、テストの原因調査に時間を取られているみんなに刺さる更新だよ！",
+  "title_en": "Amazon Connect Customer testing can now validate flow action outcomes!",
+  "summary_en": "Amazon Connect Customer's testing and simulation can now verify the data a flow action returns, such as a Lambda response or a Lex resolved intent, not just that the action started.",
+  "body_md_en": "Hi, it's Shii-chan!\n\nHere's a nice update for anyone testing contact center flows!\n\n## What was announced?\n\nAccording to AWS What's New, Amazon Connect Customer now lets you validate the outcomes of your customer experience flow actions during testing and simulation.\n\n## The story so far\n\nBefore, you could confirm that an action started, but not what it returned when it completed. When a test failed, you had to trace the problem back from a downstream step.\n\n## What changes\n\nWhen a test fails, you can pinpoint the exact action that returned an unexpected result. That means faster fixes and more confidence when you launch flow changes.\n\n## Dive Deep\n\nExamples of outcomes you can verify:\n\n- A Lambda function response\n- An Amazon Lex resolved intent\n- Variables set by an Agentic CX block\n\nSee testing and simulation in the Connect Customer administrator guide for details, and \"Availability of Connect Customer features by Region\" for per-Region support.\n\n## Wrap-up\n\n- You can verify the data returned on completion, not just the start of an action\n- You can pinpoint the failing action\n- Covers Lambda responses, Lex intents and Agentic CX block variables\n\nIf you change Connect flows often and spend time tracing test failures, this one is for you!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/connect-customer-validate-flow-actions/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Connect Customer expands testing and simulation to validate flow action outcomes",
+  "tags": [
+    "aws",
+    "devops"
+  ],
+  "published_at": "2026-10-26T15:00:00+00:00"
+}

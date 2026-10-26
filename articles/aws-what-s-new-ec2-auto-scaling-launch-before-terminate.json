@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-ec2-auto-scaling-launch-before-terminate",
+  "title": "Auto Scaling の「先に起動してから終了」をアカウント全体の既定にできるよ！",
+  "summary": "EC2 Auto Scaling で Launch Before Terminate をアカウントレベルの既定動作にできるようになったよ。PutAccountSetting / DescribeAccountSettings API で設定して、全リージョン・追加料金なしで使えるの。",
+  "body_md": "こんにちは、しぃちゃんだよ！\n\nインスタンスの入れ替え中に容量が減っちゃう問題、気になってた人も多いよね。それに効く更新が来たよ！\n\n## なにが発表されたの？\n\nAWS の What's New によると、EC2 Auto Scaling で Launch Before Terminate を、アカウント内のすべての Auto Scaling グループの既定の入れ替え動作として有効にできるようになったよ。有効にすると、Auto Scaling は置き換え用のインスタンスを先に起動し、ヘルスチェックに通るのを待ってから、置き換え対象を終了するの。\n\n## 今までどうだったの？\n\nこの動作はグループごとに設定する必要があったよ。グループが多いと設定漏れも起きやすくて、入れ替え中に容量が落ちる可能性が残っていたの。\n\n## これで何が変わるの？\n\nアカウント設定で一度有効にするだけで、全グループに適用されるよ。入れ替えのあいだも十分な容量と可用性を保ちやすくなるの。\n\n## 深く潜ってみよう\n\n対象になる入れ替えイベントはこれだよ！\n\n- インスタンスリフレッシュ\n- リバランス\n- ヘルスチェックによる入れ替え\n- 最大インスタンス有効期間による入れ替え\n\n設定まわりのポイントはこうだよ。\n\n- 設定場所: EC2 Auto Scaling のアカウント設定\n- 新しい API: `PutAccountSetting` と `DescribeAccountSettings`\n- 使える手段: AWS マネジメントコンソール、AWS CLI、AWS SDK\n- 提供範囲: すべての AWS リージョン、追加料金なし\n\n## まとめ\n\n- Launch Before Terminate をアカウント単位の既定にできる\n- 置き換え用を先に起動してヘルスチェック通過後に終了する\n- 新 API `PutAccountSetting` / `DescribeAccountSettings` で管理\n- 全リージョンで追加料金なし\n\n多数の Auto Scaling グループを運用していて、入れ替え時の容量低下が気になるみんなに刺さる更新だよ！",
+  "title_en": "Make Launch Before Terminate the account-wide default in EC2 Auto Scaling!",
+  "summary_en": "EC2 Auto Scaling can now enable Launch Before Terminate as the account-level default. Manage it with the new PutAccountSetting and DescribeAccountSettings APIs, in all Regions at no extra cost.",
+  "body_md_en": "Hi, it's Shii-chan!\n\nDid you ever worry about losing capacity while instances get replaced? Here's an update that helps!\n\n## What was announced?\n\nAccording to AWS What's New, EC2 Auto Scaling now lets you enable Launch Before Terminate as the default replacement behavior across all Auto Scaling groups in your account. When it's on, Auto Scaling launches a replacement instance and waits for it to pass health checks before terminating the instance it replaces.\n\n## The story so far\n\nThis behavior had to be configured on each Auto Scaling group. With many groups, it was easy to miss one, and capacity could still dip during replacement.\n\n## What changes\n\nYou enable it once in the account settings and it applies to every group. Your applications keep full capacity and availability during replacements.\n\n## Dive Deep\n\nIt applies to these replacement events:\n\n- Instance refreshes\n- Rebalancing\n- Health check replacements\n- Maximum-instance-lifetime replacements\n\nSetup details:\n\n- Where: EC2 Auto Scaling account settings\n- New APIs: `PutAccountSetting` and `DescribeAccountSettings`\n- Interfaces: AWS Management Console, AWS CLI and AWS SDKs\n- Availability: all AWS Regions, at no additional cost\n\n## Wrap-up\n\n- Launch Before Terminate can be the account-level default\n- A replacement launches first and must pass health checks before the old instance terminates\n- Managed with the new `PutAccountSetting` / `DescribeAccountSettings` APIs\n- All Regions, no extra cost\n\nIf you run many Auto Scaling groups and worry about capacity during replacements, this one is for you!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/ec2-auto-scaling-launch-before-terminate/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS EC2 Auto Scaling now supports Launch Before Terminate at account-level to replace instances",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "devops"
+  ],
+  "published_at": "2026-10-26T08:00:00+00:00"
+}

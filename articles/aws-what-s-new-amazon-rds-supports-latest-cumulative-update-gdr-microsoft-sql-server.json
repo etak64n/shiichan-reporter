@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-rds-supports-latest-cumulative-update-gdr-microsoft-sql-server",
+  "title": "RDS for SQL Server が最新の CU と GDR に対応！2017 から 2025 まで 4 バージョン更新だよ",
+  "summary": "Amazon RDS for SQL Server が、SQL Server 2017・2019・2022・2025 の最新の Cumulative Update と GDR に対応したよ。新しい RDS バージョン番号と KB 番号をまとめたよ。",
+  "body_md": "やっほー、しぃちゃんだよ！\n\nSQL Server を RDS で動かしているみんなに、更新のお知らせだよ！\n\n## なにが発表されたの？\n\nAWS の What's New によると、Amazon RDS for SQL Server が Microsoft SQL Server の最新の Cumulative Update(CU)と General Distribution Release(GDR)に対応したよ。\n\n## 今までどうだったの？\n\nRDS は Microsoft が出すパッチに少し遅れて追従する形で、対応バージョンが定期的に更新されているよ。今回はそのうち 4 つのバージョンが新しくなったの。\n\n## これで何が変わるの？\n\nMicrosoft の修正や改善を取り込んだ RDS バージョンに、インスタンスを上げられるようになるよ。AWS は、対象のインスタンスをアップグレードして更新を適用することを推奨しているの。\n\n## 深く潜ってみよう\n\n対応したバージョンはこれだよ！\n\n- SQL Server 2017 CU31+GDR KB5122774(RDS バージョン 14.00.3550.4.v1)\n- SQL Server 2019 CU32+GDR KB5122772(RDS バージョン 15.00.4490.9.v1)\n- SQL Server 2022 CU27 KB5104824(RDS バージョン 16.00.4295.3.v1)\n- SQL Server 2025 CU9 KB5122048(RDS バージョン 17.00.5005.3.v1)\n\n含まれる改善や修正の中身は、各 KB の Microsoft ドキュメントで確認してね。アップグレードは Amazon RDS マネジメントコンソール、AWS SDK、CLI から実行できるよ。\n\n## まとめ\n\n- 2017・2019・2022・2025 の 4 バージョンで最新の CU / GDR に対応\n- RDS バージョンと KB 番号は上のリストのとおり\n- アップグレードはコンソール・SDK・CLI から\n\nRDS for SQL Server を運用していて、パッチ適用の計画を立てる担当のみんなに刺さる更新だよ！",
+  "title_en": "RDS for SQL Server supports the latest CU and GDR updates, across four versions!",
+  "summary_en": "Amazon RDS for SQL Server now supports the latest Cumulative Updates and GDR updates for SQL Server 2017, 2019, 2022 and 2025. Here are the RDS versions and KB numbers.",
+  "body_md_en": "Hi, it's Shii-chan!\n\nHere's an update for everyone running SQL Server on RDS!\n\n## What was announced?\n\nAccording to AWS What's New, Amazon RDS for SQL Server now supports the latest Cumulative Updates (CU) and General Distribution Release (GDR) updates for Microsoft SQL Server.\n\n## The story so far\n\nRDS follows Microsoft's patches and refreshes its supported versions regularly. This time, four versions got newer builds.\n\n## What changes\n\nYou can move your instances to RDS versions that include Microsoft's latest fixes and improvements. AWS recommends upgrading your RDS for SQL Server instances to apply these updates.\n\n## Dive Deep\n\nHere are the supported versions:\n\n- SQL Server 2017 CU31+GDR KB5122774 (RDS version 14.00.3550.4.v1)\n- SQL Server 2019 CU32+GDR KB5122772 (RDS version 15.00.4490.9.v1)\n- SQL Server 2022 CU27 KB5104824 (RDS version 16.00.4295.3.v1)\n- SQL Server 2025 CU9 KB5122048 (RDS version 17.00.5005.3.v1)\n\nFor what each update contains, see Microsoft's documentation for each KB. You can upgrade with the Amazon RDS Management Console, the AWS SDK or the CLI.\n\n## Wrap-up\n\n- Latest CU / GDR support for SQL Server 2017, 2019, 2022 and 2025\n- RDS versions and KB numbers are in the list above\n- Upgrade from the console, SDK or CLI\n\nThis one is for anyone running RDS for SQL Server who plans patching!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-rds-supports-latest-cumulative-update-gdr-microsoft-sql-server/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon RDS now supports the latest Cumulative Update and GDR updates for Microsoft SQL Server",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-26T07:30:00+00:00"
+}
