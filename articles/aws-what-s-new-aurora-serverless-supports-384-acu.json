@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aurora-serverless-supports-384-acu",
+  "title": "Aurora serverless の上限が 384 ACU に！最大 768 GiB メモリまで自動スケール",
+  "summary": "Aurora PostgreSQL 互換の Aurora serverless が、最大 384 ACU に対応したよ！従来の 256 ACU から 50% 増えて、1 つのデータベースで約 768 GiB のメモリまでスケールできるの！",
+  "body_md": "やっほー、しぃちゃんだよ！\n\nAurora serverless のスケール上限がぐんと上がったよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Aurora PostgreSQL 互換エディションの Aurora serverless が、最大 384 Aurora Capacity Units (ACU) に対応したと発表されたよ！\n\n## 今までどうだったの？\n\nこれまでの最大は 256 ACU だったよ。今回はそこから 50% の増加だね。\n\n## これで何が変わるの？\n\n1 ACU はおよそ 2 GiB のメモリと、それに見合う CPU とネットワークを持つよ。だから 1 つの Aurora serverless データベースが、最大で 768 GiB のメモリまでスケールできるようになったの！\n\nもちろん、処理が終われば自動でゼロまでスケールダウンして、使った分だけの支払いになるよ。発表では、短時間の活動が突発し、アイドルが長く、トラフィックが読めない agentic AI アプリケーションに特に向いていると紹介されているの。\n\n## 深く潜ってみよう\n\n設定の方法はこうだよ。\n\n- 新しいクラスター: 対応する Aurora PostgreSQL のエンジンバージョンを選んで、最大キャパシティを 384 ACU まで設定する\n- Platform Version 4 の既存クラスター: クラスターを変更して最大キャパシティを更新する(必要ならエンジンバージョンも)。すでに Platform Version 4 なら、ダウンタイムはない\n- それより古いプラットフォームバージョンの既存クラスター: 保留中のメンテナンスアクションで Platform Version 4 にアップグレードする\n\n384 ACU に対応する Aurora PostgreSQL のバージョンはこの 5 つ！\n\n- 18.4\n- 17.10\n- 16.14\n- 15.18\n- 14.23\n\n料金とリージョンの詳細は Aurora の料金ページ、キャパシティの詳細は Amazon Aurora User Guide を見てね。\n\n## まとめ\n\n- Aurora PostgreSQL 互換の serverless が最大 384 ACU(約 768 GiB)に対応\n- 従来の 256 ACU から 50% 増\n- ゼロまでのスケールダウンは今までどおり\n- 既存クラスターも、Platform Version 4 ならダウンタイムなしで変更できる\n\nより重いワークロードを serverless のまま動かしたい人に刺さるアップデートだよ！",
+  "title_en": "Aurora serverless now scales up to 384 ACUs, about 768 GiB of memory",
+  "summary_en": "Aurora serverless for Aurora PostgreSQL-Compatible Edition now supports up to 384 ACUs, a 50% increase over the previous 256, so a single database can scale to roughly 768 GiB of memory.",
+  "body_md_en": "Hi everyone, it's Shii-chan!\n\nThe scaling ceiling for Aurora serverless just went way up!\n\n## What was announced?\n\nAccording to AWS What's New, Aurora serverless for Aurora PostgreSQL-Compatible Edition now supports database capacity of up to 384 Aurora Capacity Units (ACUs).\n\n## The story so far\n\nThe previous maximum was 256 ACUs, so this is a 50% increase.\n\n## What changes\n\nEach ACU provides approximately 2 GiB of memory with corresponding CPU and networking, so a single Aurora serverless database can now scale up to 768 GiB of memory.\n\nWhen the workload completes, it still scales down to zero automatically, so you only pay for what you use. The announcement calls it especially well-suited for agentic AI applications, which typically have bursts of activity, long idle windows, and unpredictable traffic.\n\n## Dive Deep\n\nHow to set it up:\n\n- New clusters: select a supported Aurora PostgreSQL engine version and set the maximum capacity up to 384 ACUs\n- Existing clusters on Platform Version 4: modify the cluster to update the maximum capacity (and the engine version if needed); there is no downtime if the database is already on Platform Version 4\n- Existing clusters on older platform versions: upgrade to Platform Version 4 through a pending maintenance action\n\nSupported Aurora PostgreSQL versions for 384 ACUs:\n\n- 18.4\n- 17.10\n- 16.14\n- 15.18\n- 14.23\n\nFor pricing and Region availability, see the Aurora pricing page; for capacity details, see the Amazon Aurora User Guide.\n\n## Wrap-up\n\n- Aurora serverless for PostgreSQL-compatible now supports up to 384 ACUs (about 768 GiB)\n- A 50% increase over the previous 256 ACUs\n- Scaling down to zero works as before\n- Existing clusters on Platform Version 4 can change with no downtime\n\nThis is for anyone who wants to run heavier workloads on serverless!",
+  "emotion": "energetic",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aurora-serverless-supports-384-acu/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Aurora serverless now supports up to 384 ACUs",
+  "tags": [
+    "aws",
+    "serverless",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-27T16:00:00+00:00"
+}

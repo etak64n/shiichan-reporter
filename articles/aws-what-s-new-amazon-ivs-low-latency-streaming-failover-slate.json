@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-ivs-low-latency-streaming-failover-slate",
+  "title": "Amazon IVS に failover slate！配信が途切れてもぐるぐる画面にサヨナラ",
+  "summary": "Amazon IVS Low-Latency Streaming に failover slate が追加されたよ！配信が突然途切れたとき、バッファリングの輪や固まった画面の代わりにアニメーション画像を表示して、復帰したら自動で再生が再開されるの！",
+  "body_md": "おつかれさま、しぃちゃんだよ！\n\nライブ配信中の「あっ、止まった！」をやさしくカバーしてくれる機能が来たよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Interactive Video Service (Amazon IVS) の Low-Latency Streaming に failover slate が追加されたと発表されたよ！\n\nfailover slate は、配信者のストリームが予期せず中断したときに、IVS が視聴者に表示するアニメーション画像のことだよ。\n\n## 今までどうだったの？\n\n配信が途切れると、視聴者にはバッファリングの輪や固まった画面が見えていたよ。何が起きているのか分からなくて、離脱しちゃう原因にもなりそうだよね。\n\n## これで何が変わるの？\n\n配信者が再接続するまで、視聴者には slate が表示されるよ。再接続すれば、視聴者がプレーヤーを更新しなくても、ライブ再生が自動で再開されるの！\n\n発表では、一時的な中断の間も視聴者をつなぎとめられる機能で、モバイル端末からの配信や、接続が不安定な場所からの配信にぴったりと紹介されているよ。\n\n## 深く潜ってみよう\n\n- 新規チャンネルにも既存チャンネルにも有効化できる\n- slate の動作は Amazon EventBridge のイベントと Amazon CloudWatch のメトリクスで監視できる\n\n利用できるリージョンは、IVS のコンソールと API が使えるリージョンの一覧(AWS Region table)で確認してね。詳しくは Amazon IVS Failover Slate のドキュメントを見てみてね！\n\n## まとめ\n\n- 配信が中断したら、視聴者にアニメーション画像の slate を表示\n- 配信者が復帰すれば、再生は自動で再開\n- 既存チャンネルでも有効化できて、EventBridge と CloudWatch で監視できる\n\nモバイルや不安定な回線から配信するサービスを運用している人に刺さるよ！",
+  "title_en": "Amazon IVS adds a failover slate, so viewers don't stare at a buffering wheel",
+  "summary_en": "Amazon IVS Low-Latency Streaming now provides a failover slate, an animated image shown when a broadcaster's stream is unexpectedly interrupted. Playback resumes automatically once the broadcaster reconnects.",
+  "body_md_en": "Hi everyone, it's Shii-chan!\n\nHere's a feature that gently covers those \"oh no, the stream stopped!\" moments in live streaming!\n\n## What was announced?\n\nAccording to AWS What's New, Amazon Interactive Video Service (Amazon IVS) Low-Latency Streaming now provides a failover slate.\n\nA failover slate is an animated image that IVS shows to viewers when a broadcaster's stream is unexpectedly interrupted.\n\n## The story so far\n\nWhen a stream dropped, viewers saw a buffering wheel or a frozen frame. They had no idea what was going on, which could easily make them leave.\n\n## What changes\n\nViewers see the slate until the broadcaster reconnects. Live playback then resumes automatically, with no need to refresh the player.\n\nThe announcement describes it as a way to retain your audience during momentary disruptions, ideal for broadcasters streaming from mobile devices or places with unreliable connectivity.\n\n## Dive Deep\n\n- You can enable it on new or existing channels\n- You can monitor slate activity with Amazon EventBridge events and Amazon CloudWatch metrics\n\nFor Region availability, check the AWS Region table for where the IVS console and APIs are available. See the Amazon IVS Failover Slate documentation for details!\n\n## Wrap-up\n\n- Viewers see an animated slate when a stream is interrupted\n- Playback resumes automatically when the broadcaster comes back\n- Works on existing channels, with EventBridge and CloudWatch for monitoring\n\nThis is for teams running streaming services with mobile or unstable connections!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-ivs-low-latency-streaming-failover-slate",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon IVS Low-Latency Streaming now provides a failover slate",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-26T15:40:00+00:00"
+}

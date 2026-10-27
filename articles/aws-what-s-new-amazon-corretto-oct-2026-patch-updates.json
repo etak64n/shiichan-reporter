@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-corretto-oct-2026-patch-updates",
+  "title": "Amazon Corretto の 2026 年 10 月パッチが公開！Corretto 27 から 8 まで一斉更新",
+  "summary": "Amazon Corretto の LTS と Feature Release で、2026 年 10 月のパッチアップデートが公開されたよ！Corretto 27、25、21、17、11、8 の新しいビルドがダウンロードできるの！",
+  "body_md": "おつかれさま、しぃちゃんだよ！\n\nJava を使っている人は要チェックの、定例パッチのお知らせだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、2026 年 10 月 26 日に Amazon Corretto の Long-Term Support (LTS) と Feature Release (FR) の OpenJDK 向けパッチアップデートが発表されたよ！\n\nダウンロードできる新しいビルドはこれ！\n\n- Corretto 27: 27.0.1.0.11\n- Corretto 25: 25.0.5.0.10\n- Corretto 21: 21.0.13.0.11\n- Corretto 17: 17.0.21.0.11\n- Corretto 11: 11.0.33.0.10\n- Corretto 8: 8u512\n\nAmazon Corretto は、無料で使える、マルチプラットフォームで本番利用向けの OpenJDK ディストリビューションだよ。\n\n## 深く潜ってみよう\n\nLinux では、Corretto の Apt、Yum、Apk リポジトリを設定しておけば、パッケージマネージャー経由でアップデートを受け取れるよ。それ以外は Corretto のサイトからダウンロードしてね。\n\n今回の発表文には、個別の修正内容は書かれていなかったよ。何が直ったかは、リリースノートで確認してね。フィードバックも歓迎されているみたい！\n\n## まとめ\n\n- 2026 年 10 月 26 日に Corretto の LTS と FR のパッチが公開された\n- 対象は 27、25、21、17、11、8 の 6 系統\n- Apt、Yum、Apk リポジトリでも更新できる\n\nJVM のバージョンを運用している人は、パッチ適用の予定に入れておくといいよ！",
+  "title_en": "Amazon Corretto October 2026 patch updates are out, from Corretto 27 down to 8",
+  "summary_en": "Amazon announced October 2026 patch updates for Corretto LTS and Feature Release versions of OpenJDK. New builds of Corretto 27, 25, 21, 17, 11, and 8 are available.",
+  "body_md_en": "Hi everyone, it's Shii-chan!\n\nHere's the regular patch announcement that Java users should check!\n\n## What was announced?\n\nAccording to AWS What's New, on October 26, 2026 Amazon announced a patch update for Amazon Corretto Long-Term Support (LTS) and Feature Release (FR) versions of OpenJDK.\n\nThe new builds available for download:\n\n- Corretto 27: 27.0.1.0.11\n- Corretto 25: 25.0.5.0.10\n- Corretto 21: 21.0.13.0.11\n- Corretto 17: 17.0.21.0.11\n- Corretto 11: 11.0.33.0.10\n- Corretto 8: 8u512\n\nAmazon Corretto is a no-cost, multi-platform, production-ready distribution of OpenJDK.\n\n## Dive Deep\n\nOn Linux, you can get the updates by configuring a Corretto Apt, Yum, or Apk repository. Otherwise, download from the Corretto site.\n\nThe announcement doesn't list the individual fixes, so check the release notes for what changed. Feedback is welcome too!\n\n## Wrap-up\n\n- Corretto LTS and FR patch updates were released on October 26, 2026\n- Six lines are covered: 27, 25, 21, 17, 11, and 8\n- You can also update through Apt, Yum, or Apk repositories\n\nIf you run JVMs in production, put this on your patching schedule!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-corretto-oct-2026-patch-updates",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Corretto October 2026 Patch Updates",
+  "tags": [
+    "aws",
+    "devops"
+  ],
+  "published_at": "2026-10-27T14:00:00+00:00"
+}

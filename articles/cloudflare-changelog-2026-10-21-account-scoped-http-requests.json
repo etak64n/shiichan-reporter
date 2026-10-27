@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-10-21-account-scoped-http-requests",
+  "title": "Logpush の HTTP リクエストログが 1 ジョブで全ゾーン分まとめて届くように！",
+  "summary": "Cloudflare Logpush の HTTP リクエストログがアカウントスコープのデータセットに対応したよ！ゾーンごとにジョブを作らなくても、1 つのジョブでアカウント内の全ゾーンのログを配信できるの！",
+  "body_md": "こんにちは、しぃちゃんだよ！\n\nログ配信の設定がぐっとラクになるアップデートを見つけたよ！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Logpush が HTTP リクエストログをアカウントスコープのデータセットとしてサポートしたと発表されたよ！\n\nジョブは Cloudflare ダッシュボードか Logpush API で、アカウントレベルで作成するんだって。\n\n## 今までどうだったの？\n\n今まではゾーンごとに別々のジョブを作って管理する必要があったよ。ゾーンが増えるほどジョブも増えて、管理が大変だったよね。\n\n## これで何が変わるの？\n\n1 つのジョブで、アカウント内のすべてのゾーンのログを配信できるようになったよ！ゾーンをたくさん持っている人ほど、設定と運用の手間が減るはず！\n\n## 深く潜ってみよう\n\n気をつけたいポイントはこれだよ。\n\n- 各ログエントリの `ZoneName` フィールドで、どのゾーンのログか見分けられる\n- カスタムフィールドは、これまでどおりゾーンごとに設定する\n- アカウントスコープのジョブは、各ゾーンのカスタムフィールド設定を尊重する\n- アカウント全体で一括のカスタムフィールド設定は、サポートされていない\n\n設定の詳しい手順は、Cloudflare のドキュメントの API configuration にまとまっているみたい！\n\n## まとめ\n\n- HTTP リクエストログがアカウントスコープのデータセットに対応\n- 1 ジョブでアカウント内の全ゾーンのログを配信できる\n- ゾーンの識別は `ZoneName` フィールドで行う\n- カスタムフィールドはゾーンごとの設定のまま\n\n複数ゾーンを運用していて、ログ基盤への配信を整理したい人に刺さるよ！",
+  "title_en": "Logpush now delivers HTTP request logs for every zone with a single job",
+  "summary_en": "Cloudflare Logpush now supports HTTP request logs as an account-scoped dataset, so one job can deliver logs for every zone in your account.",
+  "body_md_en": "Hi everyone, it's Shii-chan!\n\nI found an update that makes log delivery setup much easier!\n\n## What was announced?\n\nAccording to the Cloudflare Changelog, Logpush now supports HTTP request logs as an account-scoped dataset.\n\nYou create the job at the account level, either in the Cloudflare dashboard or through the Logpush API.\n\n## The story so far\n\nUntil now you had to create and maintain a separate job for each zone. The more zones you had, the more jobs you had to manage.\n\n## What changes\n\nOne job can now deliver logs for every zone in the account. If you run many zones, that means less setup and less upkeep.\n\n## Dive Deep\n\nHere are the points to watch:\n\n- The `ZoneName` field in each log entry identifies the source zone\n- Custom fields are still configured per zone\n- An account-scoped job honors each zone's custom fields configuration\n- Account-wide custom fields configuration is not supported\n\nFor setup details, see API configuration in the Cloudflare docs.\n\n## Wrap-up\n\n- HTTP request logs are now an account-scoped dataset\n- One job delivers logs for all zones in the account\n- Use the `ZoneName` field to tell zones apart\n- Custom fields remain a per-zone setting\n\nThis is for anyone running multiple zones who wants to tidy up log delivery!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-21-account-scoped-http-requests/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "logpush, Logs - Account-scoped HTTP request logs in Logpush",
+  "tags": [
+    "cloudflare",
+    "infrastructure",
+    "devops"
+  ],
+  "published_at": "2026-10-21T00:00:00+00:00"
+}

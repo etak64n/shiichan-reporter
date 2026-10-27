@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-mediaconnect-cross-account-endpoints",
+  "title": "MediaConnect Router にエンドポイントレジストリが登場！アカウントをまたぐライブ映像共有がシンプルに",
+  "summary": "AWS Elemental MediaConnect Router に、外部接続を一元管理するエンドポイントレジストリが追加されたよ！AWS RAM で他の AWS アカウントと直接共有できて、追加料金はかからないみたい！",
+  "body_md": "みんな、しぃちゃんだよ！\n\nライブ映像のアカウント間共有がラクになるニュースだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Elemental MediaConnect Router が新しいエンドポイントレジストリで外部接続を管理できるようになったと発表されたよ！\n\nレジストリには、次の 2 種類を登録して一元管理できるんだって。\n\n- 標準エンドポイント: サービスの外にあるカメラ、ソース、モニター、その他の宛先など\n- 他の AWS アカウントとの接続\n\n登録したエンドポイントは、他の AWS アカウントに直接共有できるよ。\n\n## 今までどうだったの？\n\nアカウントをまたぐときは、ルーターの入力と出力を手動でつないだり、IP アドレスを別途すり合わせたり、接続のセキュリティを自分で管理したりする必要があったよ。\n\n## これで何が変わるの？\n\n発表によると、変わる点はこれだよ！\n\n- 必要なコンピュートインスタンスが減って、コストが下がる\n- ネットワークのホップ数が減って、レイテンシーが下がる\n- 入力と出力の手動チェーンが不要になる\n- IP アドレスの帯域外での調整が不要になる\n\n想定されている使い方は、コンテンツ配信事業者が下流のパートナーにライブ映像を共有するケースや、組織の境界をまたいで放送事業者が協力するケースだよ！\n\n## 深く潜ってみよう\n\n仕組みの要点はこの 3 つ！\n\n- AWS Resource Access Manager (AWS RAM) によるアカウント間共有\n- 暗号化とプロトコルの制御を透過的に検証\n- Connection Manager による組み込みの接続管理\n\n利用できるのは、MediaConnect Router が使えるすべての AWS リージョンで、追加料金はないよ。\n\n## まとめ\n\n- 外部接続を一元管理するエンドポイントレジストリが追加された\n- AWS RAM で他アカウントに直接共有できる\n- コスト削減とレイテンシー低減が期待できる\n- 追加料金なし\n\nライブ映像を社外のパートナーや別アカウントと安全にやり取りしたい人に刺さるよ！",
+  "title_en": "MediaConnect Router adds an endpoint registry for simpler cross-account live video",
+  "summary_en": "AWS Elemental MediaConnect Router now has an endpoint registry that manages external connections in one place. You can share endpoints with other AWS accounts through AWS RAM at no additional cost.",
+  "body_md_en": "Hi everyone, it's Shii-chan!\n\nHere's news that makes sharing live video across accounts easier!\n\n## What was announced?\n\nAccording to AWS What's New, AWS Elemental MediaConnect Router now manages external connections through a new endpoint registry.\n\nYou can register and manage two kinds of things in it:\n\n- Standard endpoints: devices or software outside the service, such as cameras, sources, monitors, and other destinations\n- Connections to other AWS accounts\n\nRegistered endpoints can be shared directly with other AWS accounts.\n\n## The story so far\n\nWorking across accounts meant manually chaining router inputs and outputs, coordinating IP addresses out of band, and managing connection security yourself.\n\n## What changes\n\nAccording to the announcement:\n\n- Fewer compute instances are needed, which lowers costs\n- Fewer network hops mean lower latency\n- No more manual chaining of router inputs and outputs\n- No more out-of-band IP address coordination\n\nThe use cases mentioned include content distributors sharing live feeds with downstream partners and broadcasters collaborating across organizational boundaries.\n\n## Dive Deep\n\nThree key pieces:\n\n- Cross-account sharing through AWS Resource Access Manager (AWS RAM)\n- Transparent verification of encryption and protocol controls\n- Built-in connection management with Connection Manager\n\nIt's available in all AWS Regions where MediaConnect Router is available, at no additional cost.\n\n## Wrap-up\n\n- A new endpoint registry manages external connections in one place\n- Share endpoints directly with other accounts via AWS RAM\n- Expect lower costs and lower latency\n- No additional cost\n\nThis is for anyone who needs to move live video securely to partners or other accounts!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/mediaconnect-cross-account-endpoints/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Elemental MediaConnect Router now supports endpoint connection management",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-26T08:00:00+00:00"
+}

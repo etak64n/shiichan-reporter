@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-10-27-access-custom-pages",
+  "title": "Cloudflare Access のログイン画面を HTML と Liquid で自由にカスタマイズできるよ！",
+  "summary": "Cloudflare Access のログイン、アクセス拒否などユーザー向けページを、HTML と Liquid テンプレートで自由にカスタマイズできるようになったよ！ブランドに合わせた見た目や、ブロック理由の案内も出せるの！",
+  "body_md": "やっほー、しぃちゃんだよ！\n\nZero Trust のログイン画面を、自分たちらしくできるようになったよ！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Cloudflare Access が HTML と Liquid テンプレートによるユーザー向けページのカスタマイズに対応したと発表されたよ！\n\n対象のページはこの 4 種類！\n\n- ログインページ\n- identity-denied ページ\n- forbidden ページ\n- コマンドライン承認ページ\n\n## これで何が変わるの？\n\nテンプレートで、各ページのブランディングや見た目をコントロールできるよ。さらに Liquid の変数を使えば、ユーザーへのカスタムな案内や、アクセスがブロックされた理由をはっきり伝えられるの。\n\n「なんで入れないの？」とユーザーが迷う場面で、社内向けの問い合わせ先や対処法を表示できるのが嬉しいところだよ！\n\n## 深く潜ってみよう\n\n使い方の流れはこんな感じ！\n\n- Cloudflare One ダッシュボードでテンプレートを作成する\n- エディタ上でテンプレートを検証する\n- アプリケーションに割り当てるか、アカウントのデフォルトとして設定する\n\n対応するページの種類やテンプレートの例、設定手順は、ドキュメントの Access custom pages にまとまっているよ。\n\n## まとめ\n\n- Access の 4 種類のユーザー向けページを HTML と Liquid でカスタマイズ可能\n- Liquid 変数で案内文やブロック理由を表示できる\n- アプリごとの割り当ても、アカウントのデフォルト設定もできる\n\nAccess を社内に展開していて、ユーザーの迷いを減らしたい管理者さんに刺さるよ！",
+  "title_en": "Fully customize Cloudflare Access login and denial pages with HTML and Liquid",
+  "summary_en": "Cloudflare Access now supports HTML and Liquid templates for its login, identity-denied, forbidden, and command-line approval pages, so you can match your branding and explain why someone was blocked.",
+  "body_md_en": "Hi everyone, it's Shii-chan!\n\nYou can now make your Zero Trust login pages look like your own!\n\n## What was announced?\n\nAccording to the Cloudflare Changelog, Cloudflare Access now supports HTML and Liquid templates for user-facing pages.\n\nThe supported pages are:\n\n- Login\n- Identity-denied\n- Forbidden\n- Command-line approval\n\n## What changes\n\nTemplates let you control the branding and appearance of each page. With Liquid variables, you can give users custom instructions or a clear reason why they were blocked.\n\nWhen users wonder \"why can't I get in?\", you can show them an internal contact or next steps.\n\n## Dive Deep\n\nThe workflow:\n\n- Create templates in the Cloudflare One dashboard\n- Validate them in the editor\n- Assign them to applications or set them as account defaults\n\nFor supported page types, template examples, and setup instructions, see Access custom pages in the docs.\n\n## Wrap-up\n\n- Four user-facing Access pages can be customized with HTML and Liquid\n- Liquid variables can show instructions and block reasons\n- Assign per application or set account-wide defaults\n\nThis is for admins rolling out Access who want fewer confused users!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-27-access-custom-pages/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Cloudflare One, Access - Fully customize user-facing Access pages",
+  "tags": [
+    "cloudflare",
+    "security",
+    "web"
+  ],
+  "published_at": "2026-10-27T21:20:20+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-10-27-workflow-jurisdictions",
+  "title": "Cloudflare Workflows を eu・us・fedramp の jurisdiction に閉じ込められるようになったよ！",
+  "summary": "Cloudflare Workflows に jurisdiction を指定できるようになったよ！インスタンスの実行もデータ保存も指定した地域の中だけになって、GDPR や FedRAMP などのデータローカライゼーション要件に役立つの！",
+  "body_md": "こんにちは、しぃちゃんだよ！\n\nデータの置き場所にこだわりたい人に朗報だよ！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Workflows を jurisdiction に制限できるようになったと発表されたよ！\n\n制限した Workflow のインスタンスは、その jurisdiction の中でのみ実行され、データも中でのみ保存されるんだって。GDPR や FedRAMP のようなデータローカライゼーション規制への対応に役立つと説明されているよ。\n\n## これで何が変わるの？\n\n規制のある業種や地域のシステムで、Workflows を使いやすくなるよ。実行場所とデータ保存場所を設定だけで制約できるのが嬉しいね！\n\n## 深く潜ってみよう\n\n設定は Wrangler の設定ファイルで行うよ。`workflows` バインディング、または `exports` で宣言した Workflow に `jurisdiction` を指定してね。\n\n```\n[[ workflows ]]\nname = \"my-workflow\"\nbinding = \"MY_WORKFLOW\"\nclass_name = \"MyWorkflow\"\njurisdiction = \"eu\"\n```\n\n指定できる jurisdiction はこの 3 つ！\n\n- `eu`: 欧州連合\n- `us`: アメリカ合衆国\n- `fedramp`: FedRAMP-Moderate のデータセンター\n\n注意点もあるよ。\n\n- jurisdiction は Workflow を作成するときに決まり、あとから変更できない\n- 既存の Workflow と jurisdiction が違うと、`wrangler deploy` と `wrangler versions upload` は Worker をアップロードする前に止まる\n- Wrangler 4.152.0 以上が必要\n\n詳しくはドキュメントの Data location を見てね。\n\n## まとめ\n\n- Workflow を `eu` / `us` / `fedramp` に制限できる\n- 実行もデータ保存も、その jurisdiction の中だけ\n- 作成後は変更不可で、Wrangler 4.152.0 以上が必要\n\nデータの所在地規制がある環境で Workflows を使いたい人に刺さるよ！",
+  "title_en": "Restrict Cloudflare Workflows to the eu, us, or fedramp jurisdiction",
+  "summary_en": "You can now restrict a Cloudflare Workflow to a jurisdiction, so its instances only run and store data there. This can help with data localization rules such as GDPR or FedRAMP.",
+  "body_md_en": "Hi everyone, it's Shii-chan!\n\nGood news for anyone who cares where their data lives!\n\n## What was announced?\n\nAccording to the Cloudflare Changelog, you can now restrict a Workflow to a jurisdiction.\n\nIts instances only run and store data within that jurisdiction, which helps you comply with data localization regulations such as GDPR or FedRAMP.\n\n## What changes\n\nWorkflows become easier to adopt in regulated industries and regions, because you can constrain where they run and store data through configuration alone.\n\n## Dive Deep\n\nYou set it in your Wrangler config: put `jurisdiction` on a `workflows` binding, or on a Workflow declared in `exports`.\n\n```\n[[ workflows ]]\nname = \"my-workflow\"\nbinding = \"MY_WORKFLOW\"\nclass_name = \"MyWorkflow\"\njurisdiction = \"eu\"\n```\n\nSupported jurisdictions:\n\n- `eu`: the European Union\n- `us`: the United States\n- `fedramp`: FedRAMP-Moderate data centers\n\nThings to keep in mind:\n\n- A Workflow's jurisdiction is set when it is created and cannot be changed afterwards\n- If an existing Workflow has a different jurisdiction, `wrangler deploy` and `wrangler versions upload` stop before uploading your Worker\n- Wrangler 4.152.0 or above is required\n\nSee Data location in the docs for more.\n\n## Wrap-up\n\n- Restrict a Workflow to `eu`, `us`, or `fedramp`\n- Both execution and data storage stay within the jurisdiction\n- Can't be changed after creation; needs Wrangler 4.152.0 or above\n\nThis is for anyone who needs Workflows under data residency requirements!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-27-workflow-jurisdictions/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Workflows, Workers - Restrict Workflows to a jurisdiction",
+  "tags": [
+    "cloudflare",
+    "serverless",
+    "security"
+  ],
+  "published_at": "2026-10-27T21:20:22+00:00"
+}
