@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-replication-backfill-amazon-ecr",
+  "title": "Amazon ECR の既存イメージ、API 1回でまるごとレプリケーション！",
+  "summary": "Amazon ECR が replication backfill に対応したよ！設定前に push 済みのイメージも、1回の API 呼び出しでレプリケーション先へコピーできるの。",
+  "body_md": "やっほー、しぃちゃんだよ！今日は Amazon ECR の嬉しいアップデートなの。「前からあるイメージはどうするの？」問題がついに解決だよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Elastic Container Registry(Amazon ECR)が **replication backfill** に対応したと発表されたよ。プライベートレジストリにある既存のイメージを、設定済みのレプリケーション先へコピーできる機能なの。\n\n## 今までどうだったの？\n\nこれまでのレプリケーションは、レプリケーション設定を有効にした「あと」に push されたイメージにしか適用されなかったの。\n\nだから設定前からあるイメージをコピーしたいときは、手動でタグを付け直して(retag して)レプリケーションを発火させる必要があって、ちょっと手間だったよ。\n\n## これで何が変わるの？\n\nバックフィルを使えば、イメージカタログ全体を新規または既存のレプリケーション先へ、**API 1回の呼び出し**でレプリケーションできるよ！\n\n使いどころは原文ではこんなケースが挙げられているよ。\n\n- 新しい AWS リージョンへ展開するとき\n- ディザスタリカバリの準備を検証するとき\n- レプリケーションルールを更新したとき\n- コンプライアンス上、複数リージョンに完全なイメージカタログを置きたいとき\n\n## 深く潜ってみよう\n\n運用面で押さえておきたい点はこれだよ。\n\n- バックフィルジョブは最大 10 個まで同時実行できる\n- 進捗とイメージごとの結果を、新しい API で確認できる\n- ジョブはいつでも停止できて、すでにレプリケーション済みのイメージは削除されない\n- Amazon ECR が使えるすべての AWS リージョンで利用できる\n\n具体的な API 名やパラメータは原文の要約には載っていなかったから、使うときは Amazon ECR のユーザーガイドを見てね！\n\n## まとめ\n\n- 設定前に push 済みのイメージも、API 1回でレプリケーション可能に\n- 同時実行は最大 10 ジョブ、進捗と結果は専用 API で確認\n- 途中停止してもコピー済みのイメージは残る\n- 全 ECR 対応リージョンで利用可能\n\nマルチリージョン構成や DR を運用しているみんなに、特に刺さるアップデートだよ！",
+  "title_en": "Amazon ECR Replication Backfill: Replicate Existing Images with One API Call",
+  "summary_en": "Amazon ECR now supports replication backfill, so images pushed before replication was configured can be copied to your destinations with a single API call.",
+  "body_md_en": "Hi everyone, Shii-chan here! Today's news is a handy Amazon ECR update that answers the question: what about the images I already have?\n\n## What was announced?\n\nIn AWS What's New, Amazon Elastic Container Registry (Amazon ECR) now supports **replication backfill**. It replicates existing images in your private registry to your configured replication destinations.\n\n## The story so far\n\nUntil now, replication only applied to images pushed after the replication configuration was enabled.\n\nTo replicate images that already existed, you had to manually retag them to trigger replication, which was a hassle.\n\n## What changes\n\nWith backfill, you can replicate your full image catalog to new or existing destinations with **a single API call**.\n\nThe announcement lists these use cases:\n\n- Expanding to a new AWS Region\n- Validating disaster recovery readiness\n- Updating replication rules\n- Keeping complete image catalogs across Regions for compliance\n\n## Dive Deep\n\nHere are the operational details:\n\n- You can run up to ten backfill jobs concurrently\n- New APIs let you monitor progress and per-image results\n- You can stop a job at any time without deleting images that were already replicated\n- It's available in all AWS Regions where Amazon ECR is available\n\nThe announcement doesn't list specific API names or parameters, so check the Amazon ECR user guide when you try it.\n\n## Wrap-up\n\n- Images pushed before replication was set up can now be replicated with one API call\n- Up to ten concurrent jobs, with dedicated APIs for progress and results\n- Stopping a job keeps what has already been copied\n- Available in all Regions where ECR is available\n\nIf you run multi-Region setups or DR, this one is for you!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/replication-backfill-amazon-ecr",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon ECR now supports replication backfill for existing container images",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "devops"
+  ],
+  "published_at": "2026-10-26T20:24:00+00:00"
+}
