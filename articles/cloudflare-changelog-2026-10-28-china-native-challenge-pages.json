@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-10-28-china-native-challenge-pages",
+  "title": "China Network の Challenge Page が中国本土ホストの Turnstile に！",
+  "summary": "Cloudflare China Network 経由の Challenge Page が、中国本土でホストされた Turnstile ウィジェットを使うようになったよ。設定変更は不要で自動適用されるの。",
+  "body_md": "やっほー、しぃちゃんだよ！今日は Cloudflare China Network のチャレンジページが速くなるお知らせだよ！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Cloudflare China Network 経由で表示される Challenge Page が、中国本土でホストされた Turnstile ウィジェットを使うようになったと発表されたよ。\n\n## 今までどうだったの？\n\nこれまではウィジェットが国をまたいでリクエストを送る必要があったみたい。今回の変更はそこを解消するもので、原文では国境をまたぐリクエストが不要になると説明されているよ。\n\n## これで何が変わるの？\n\n中国本土の訪問者は、チャレンジをより速く、より安定して完了できるようになるよ。サイト運営側は何もしなくていいのも嬉しいところだね！\n\n## 深く潜ってみよう\n\n- 対象は China Network のゾーンが Challenge Page を出すとき。自動で適用され、ユーザー側の作業は不要\n- Cloudflare のグローバルネットワークで配信される訪問者には、これまでどおりグローバルの Challenge Page が表示される\n\n詳しくはドキュメントの「Interstitial Challenge Pages」と「Cloudflare China Network」を見てね。\n\n## まとめ\n\n- China Network の Challenge Page で中国本土ホストの Turnstile を使用\n- 国境をまたぐリクエストが不要になり、速度と安定性が向上\n- 設定変更は不要、グローバルの訪問者には影響なし\n\n中国本土向けにサイトを配信している運営のみんなに刺さる更新だよ！",
+  "title_en": "Challenge Pages on the China Network now use Turnstile hosted in Mainland China",
+  "summary_en": "Challenge Pages served through the Cloudflare China Network now use Turnstile widgets hosted in Mainland China, applied automatically with no action needed.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today's news makes challenge pages on the Cloudflare China Network faster!\n\n## What was announced?\n\nIn the Cloudflare Changelog, Cloudflare announced that Challenge Pages served through the Cloudflare China Network now use Turnstile widgets hosted in Mainland China.\n\n## The story so far\n\nWidgets previously had to make cross-border requests. This change removes that need, which is how the original post explains the improvement.\n\n## What changes\n\nVisitors in Mainland China can complete challenges faster and more reliably. Site owners don't need to do anything, which is nice!\n\n## Dive Deep\n\n- It applies when a China Network zone presents a Challenge Page, automatically, with no action needed\n- Visitors served by Cloudflare's global network still get the global Challenge Page experience\n\nSee \"Interstitial Challenge Pages\" and \"Cloudflare China Network\" in the docs for more.\n\n## Wrap-up\n\n- China Network Challenge Pages use Turnstile hosted in Mainland China\n- No cross-border requests, so challenges are faster and more reliable\n- No configuration changes; global visitors are unaffected\n\nThis is for teams serving sites to visitors in Mainland China!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-28-china-native-challenge-pages/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "China Network, Challenges, Bots - China-native Challenge Pages for the China Network",
+  "tags": [
+    "cloudflare",
+    "security",
+    "web"
+  ],
+  "published_at": "2026-10-28T21:06:28+00:00"
+}

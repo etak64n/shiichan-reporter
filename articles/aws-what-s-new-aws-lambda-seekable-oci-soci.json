@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-lambda-seekable-oci-soci",
+  "title": "Lambda Managed Instances のコンテナ起動が最大 70% 短縮！SOCI 遅延読み込み対応",
+  "summary": "AWS Lambda が Lambda Managed Instances 上の OCI イメージ関数で Seekable OCI (SOCI) の遅延読み込みに対応したよ。コンテナの起動時間は最大 70% 短縮されるそうなの。",
+  "body_md": "みんな、しぃちゃんだよ！今日は Lambda のコンテナ起動が最大 70% 速くなるお知らせだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Lambda が Seekable OCI (SOCI) による遅延読み込みに対応したと発表されたよ。対象は Lambda Managed Instances 上で動く、OCI イメージとしてパッケージされた Event Functions だよ。\n\n## 今までどうだったの？\n\nデータ処理パイプライン、高スループットな API バックエンド、バッチ計算のような計算量の多いワークロードでは、コンテナイメージが数ギガバイトになることがあるよ。新しい実行環境を用意するとき、イメージ全体のダウンロードと準備に数分かかることもあったんだ。\n\n## これで何が変わるの？\n\nSOCI に対応すると、Lambda は実行環境の起動の各段階で必要なファイルだけを取得するようになるよ。イメージ全体を先に落とさないので、スケールアウトするときの関数の起動が速くなって、AWS は起動時間が最大 70% 短縮されるとしているの。\n\n## 深く潜ってみよう\n\n使い方は 3 ステップだよ。\n\n- コンテナイメージの SOCI インデックス(イメージ層のファイルの目次)を作る\n- インデックスつきのイメージを Amazon ECR にプッシュする\n- 関数の作成・更新時に、イメージ URI を SOCI インデックスつきのタグ(例: `my-function:v1-soci`)にして、関数バージョンを公開する\n\nLambda が SOCI インデックスを自動で検出して遅延読み込みを有効にするので、追加の設定は要らないよ。\n\nKiro、Claude Code、Codex を使っているなら、Agent Toolkit for AWS の Lambda Managed Instances スキルを入れて、エージェント経由で関数の設定とデプロイもできるみたい。\n\n提供リージョンは、Lambda Managed Instances が使えるすべての AWS 商用リージョンだよ。詳細は Lambda Managed Instances の開発者ガイドを見てね。\n\n## まとめ\n\n- Lambda Managed Instances の OCI イメージ関数で SOCI 遅延読み込みが使える\n- 必要なファイルだけ取得し、起動時間は最大 70% 短縮\n- SOCI インデックスを作って ECR にプッシュするだけで、追加設定は不要\n\n数ギガバイト級のイメージで重い処理を回している、Lambda ユーザーのみんなに刺さるよ！",
+  "title_en": "AWS Lambda Managed Instances gets SOCI lazy loading, cutting container startup by up to 70%",
+  "summary_en": "AWS Lambda now supports Seekable OCI (SOCI) lazy loading for OCI-image Event Functions on Lambda Managed Instances, reducing container startup times by up to 70%.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today's news is about Lambda container startup getting up to 70% faster!\n\n## What was announced?\n\nIn AWS What's New, AWS announced that AWS Lambda now supports lazy loading with Seekable OCI (SOCI). It applies to Event Functions packaged as OCI images running on Lambda Managed Instances.\n\n## The story so far\n\nCompute-intensive workloads such as data processing pipelines, high-throughput API backends, and batch computation can have container images of several gigabytes. Downloading and preparing the full image could take several minutes when provisioning new execution environments.\n\n## What changes\n\nWith SOCI, Lambda fetches only the files needed at each stage of execution environment startup. Because the whole image isn't downloaded upfront, functions start faster as you scale, and AWS says startup times drop by up to 70%.\n\n## Dive Deep\n\nGetting started takes three steps:\n\n- Create a SOCI index (a table of contents for the files in your image layers) for your container image\n- Push the indexed image to Amazon ECR\n- When creating or updating your function, set the image URI to the SOCI-indexed tag (for example, `my-function:v1-soci`) and publish a function version\n\nLambda automatically detects the SOCI index and enables lazy loading, with no additional configuration.\n\nIf you use Kiro, Claude Code, or Codex, you can install the Lambda Managed Instances skill from the Agent Toolkit for AWS to configure and deploy functions through your agent.\n\nIt is available in all AWS commercial Regions where Lambda Managed Instances is offered. See the Lambda Managed Instances developer guide for details.\n\n## Wrap-up\n\n- SOCI lazy loading is available for OCI-image functions on Lambda Managed Instances\n- Only the needed files are fetched, cutting startup time by up to 70%\n- Create a SOCI index and push it to ECR; no extra configuration is needed\n\nThis is for Lambda users running heavy workloads from multi-gigabyte images!",
+  "emotion": "happy",
+  "importance": 5,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-lambda-seekable-oci-soci/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Lambda supports Seekable OCI (SOCI) lazy loading for Lambda Managed Instances",
+  "tags": [
+    "aws",
+    "serverless",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-28T18:44:00+00:00"
+}

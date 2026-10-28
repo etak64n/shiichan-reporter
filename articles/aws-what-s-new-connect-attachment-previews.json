@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-connect-attachment-previews",
+  "title": "Amazon Connect Customer で添付ファイルがその場でプレビューできるように！",
+  "summary": "Amazon Connect Customer のエージェントワークスペースで、PDF・画像・テキストの添付をダウンロードせずにプレビューできるようになったよ。メール・チャット・ケースで使えるの。",
+  "body_md": "みんな、しぃちゃんだよ！今日は Amazon Connect Customer の、ちょっと地味だけど現場に嬉しいアップデートを紹介するね！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Connect Customer のエージェントワークスペースに添付ファイルのインラインプレビューが入ったと発表されたよ。エージェントはダウンロードしなくても、画面の中で添付を確認できるの。\n\n## なぜ重要なの？\n\n原文には従来の手順は書かれていないけれど、今回の狙いは「ダウンロードの必要を減らす」ことだよ。顧客の機密情報を含むファイルを手元に落とす場面が減る、という意味だね。\n\n## これで何が変わるの？\n\n- 対応ファイルは PDF、画像、テキストファイル\n- メール、チャット、ケースのどれでもプレビューできる\n- 添付どうしの移動や、複数ページの文書の閲覧も会話画面を離れずにできる\n\nAWS は、対応時間(contact handling time)の短縮と、機密性の高い顧客情報をダウンロードする機会の削減につながるとしているよ。\n\n## 深く潜ってみよう\n\n使えるリージョンはこの 10 個だよ。\n\n- US East (N. Virginia)\n- US West (Oregon)\n- Africa (Cape Town)\n- Asia Pacific (Seoul)\n- Asia Pacific (Singapore)\n- Asia Pacific (Sydney)\n- Asia Pacific (Tokyo)\n- Canada (Central)\n- Europe (Frankfurt)\n- Europe (London)\n\n料金や設定手順は発表文には書かれていないよ。詳しくは Amazon Connect の管理者向けドキュメントを見てね。\n\n## まとめ\n\n- PDF・画像・テキストをエージェントワークスペース内でプレビュー可能\n- メール・チャット・ケースで利用できる\n- ダウンロードを減らして、対応時間の短縮と情報管理の改善を狙う\n\nコンタクトセンターの運用担当や、機密書類を扱う窓口のみんなに刺さるアップデートだね！",
+  "title_en": "Amazon Connect Customer now previews attachments inline",
+  "summary_en": "Agents in Amazon Connect Customer can preview PDFs, images, and text files in the agent workspace without downloading them, across email, chat, and cases.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today I'm covering a quiet but very practical update for Amazon Connect Customer!\n\n## What was announced?\n\nIn AWS What's New, AWS announced inline attachment previews in the Amazon Connect Customer agent workspace. Agents can check attachments right on screen without downloading them.\n\n## Why it matters\n\nThe announcement doesn't describe the old workflow, but the goal is to reduce the need to download files. That means fewer cases of sensitive customer files landing on an agent's machine.\n\n## What changes\n\n- Supported formats: PDFs, images, and text files\n- Works across email, chat, and cases\n- Agents can move between attachments and read multi-page documents without leaving the conversation\n\nAWS says this reduces contact handling time and limits the need to download sensitive customer information.\n\n## Dive Deep\n\nThe feature is available in these 10 Regions:\n\n- US East (N. Virginia)\n- US West (Oregon)\n- Africa (Cape Town)\n- Asia Pacific (Seoul)\n- Asia Pacific (Singapore)\n- Asia Pacific (Sydney)\n- Asia Pacific (Tokyo)\n- Canada (Central)\n- Europe (Frankfurt)\n- Europe (London)\n\nPricing and setup steps aren't in the announcement, so check the Amazon Connect admin documentation for details.\n\n## Wrap-up\n\n- Preview PDFs, images, and text files inside the agent workspace\n- Available in email, chat, and cases\n- Aims to cut downloads, shorten handling time, and keep sensitive data in place\n\nThis one is for contact center teams and anyone handling sensitive documents!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/connect-attachment-previews/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Connect Customer supports inline attachment previews",
+  "tags": [
+    "aws",
+    "business"
+  ],
+  "published_at": "2026-10-27T19:15:00+00:00"
+}

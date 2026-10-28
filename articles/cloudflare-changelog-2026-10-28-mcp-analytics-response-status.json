@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-10-28-mcp-analytics-response-status",
+  "title": "MCP ツール呼び出し分析の既定値が success のみに！response_status で絞り込めるよ",
+  "summary": "Cloudflare の MCP ツール呼び出し分析に response_status パラメータが追加されたよ。既定値は success で、以前の全件カウントが欲しいときは all を指定するの。",
+  "body_md": "おつかれさま、しぃちゃんだよ！今日は Cloudflare の MCP 分析 API の、ちょっと注意が必要な変更を見つけたよ！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、MCP のツール呼び出し分析に `response_status` クエリパラメータが追加されたよ。アカウント、ポータル、サーバーそれぞれの timeseries エンドポイントで使えるの。\n\n## 今までどうだったの？\n\nこれまでのカウントには、失敗した呼び出しとキャッシュされた呼び出しも含まれていたよ。今回からは既定値が変わるから、同じリクエストでも数字が変わる可能性があるんだ。\n\n## これで何が変わるの？\n\n値を指定してステータス別に数えられるようになったよ。成功だけ、エラーだけ、といった見方がしやすくなるね。ダッシュボードや監視でこの API を使っているみんなは、数字が減って見えても慌てずに確認してね！\n\n## 深く潜ってみよう\n\n指定できる値はこれだよ。\n\n- `success`: 成功した呼び出しだけを数える(既定値)\n- `error`: エラーの呼び出しだけを数える\n- `cached`: キャッシュされた呼び出しだけを数える\n- `all`: すべてのステータスを含める\n\n以前と同じ全件のカウントが必要なら、明示的に `all` を指定してね。\n\n```txt\nGET /accounts/{account_id}/access/ai-controls/mcp/analytics/tool-calls/timeseries?response_status=all\n```\n\nレスポンスには、選んだ `response_status` が含まれるよ。空の値を含む無効な値は 400 が返るから気をつけてね。全パラメータとスコープ別のエンドポイントは、ドキュメントの「View tool-call analytics」にあるよ。\n\n## まとめ\n\n- timeseries エンドポイントに `response_status` が追加された\n- 既定値は `success` で、以前の全件カウントは `all` を指定すると得られる\n- 無効な値は 400 エラーになる\n\nMCP ポータルの利用状況を API で集計している運用担当のみんなは、既存のクエリを一度見直してね！",
+  "title_en": "Cloudflare MCP tool-call analytics now default to successful calls, with a response_status filter",
+  "summary_en": "MCP tool-call analytics in Cloudflare gain a response_status query parameter. The default is success; set all to get the previous all-status counts.",
+  "body_md_en": "Hi everyone, it's Shii-chan! I found a change in Cloudflare's MCP analytics API that deserves a little attention!\n\n## What was announced?\n\nIn the Cloudflare Changelog, MCP tool-call analytics now support a `response_status` query parameter on the account, portal, and server timeseries endpoints.\n\n## The story so far\n\nPreviously, counts included failed and cached calls. The default changes now, so the same request can return different numbers.\n\n## What changes\n\nYou can count by status: successes only, errors only, and so on. If you use this API in dashboards or monitoring, don't panic if numbers look lower. Just check the default!\n\n## Dive Deep\n\nThese are the accepted values:\n\n- `success`: counts successful calls only (the default)\n- `error`: counts errored calls only\n- `cached`: counts cached calls only\n- `all`: includes every status\n\nIf you need the previous all-status counts, set `all` explicitly:\n\n```txt\nGET /accounts/{account_id}/access/ai-controls/mcp/analytics/tool-calls/timeseries?response_status=all\n```\n\nThe response includes the selected `response_status`. Invalid values, including an empty value, return 400. All query parameters and scoped endpoints are listed under \"View tool-call analytics\" in the docs.\n\n## Wrap-up\n\n- `response_status` is now available on the timeseries endpoints\n- The default is `success`; use `all` to get the previous counts\n- Invalid values return 400\n\nIf you aggregate MCP portal usage through the API, take a moment to review your existing queries!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-28-mcp-analytics-response-status/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Access, Cloudflare One - Filter MCP tool-call analytics by response status",
+  "tags": [
+    "cloudflare",
+    "ai",
+    "devops"
+  ],
+  "published_at": "2026-10-28T21:06:30+00:00"
+}

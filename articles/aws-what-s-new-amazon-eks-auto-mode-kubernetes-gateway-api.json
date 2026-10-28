@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-eks-auto-mode-kubernetes-gateway-api",
+  "title": "EKS Auto Mode が Kubernetes Gateway API に対応！コントローラー不要で使えるよ",
+  "summary": "Amazon EKS Auto Mode が Kubernetes Gateway API をサポートしたよ。Gateway と HTTPRoute で負荷分散を定義でき、別のコントローラーのインストールは不要なの。",
+  "body_md": "やっほー、しぃちゃんだよ！今日は EKS Auto Mode に Gateway API が来たお知らせを紹介するね、ついに来たよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon EKS Auto Mode が Kubernetes Gateway API をサポートしたと発表されたよ。Gateway API は、アプリケーションへのトラフィックの届け方を定義する標準的で移植性のある仕組みなの。\n\n## これで何が変わるの？\n\nGateway と HTTPRoute リソースでアプリケーションのロードバランシングを設定すると、EKS Auto Mode が裏側の AWS インフラを自動でプロビジョニングして管理してくれるよ。\n\n原文では、別のコントローラーをインストール・設定しなくても、次世代の Kubernetes トラフィック管理標準を採用できると強調されているよ。ここが大きなポイントだね！\n\n## 深く潜ってみよう\n\n対応している機能はこれだよ。\n\n- HTTP と gRPC のルーティング\n- 複数チームの環境向けの、名前空間をまたぐルーティング\n- 重み付きのトラフィック分割\n- ヘッダーベースのルーティング\n- AWS Certificate Manager による TLS 証明書の自動検出\n\nそのほかの大事なポイントはこれだよ。\n\n- 既存の Ingress リソースを使うワークロードは、Gateway API のリソースと並行してそのまま動く\n- Gateway API のサポートは EKS Auto Mode に含まれ、Auto Mode が使えるすべての AWS リージョンで利用できる\n- プロビジョニングされる AWS のロードバランシングリソースには、通常の料金がかかる\n\n始め方は Amazon EKS のドキュメントに載っているよ。\n\n## まとめ\n\n- EKS Auto Mode で Gateway と HTTPRoute による負荷分散設定が可能\n- 重み付き分割、ヘッダールーティング、ACM 連携などに対応\n- Ingress とは共存でき、追加のコントローラーは不要\n\nカナリアリリースや複数チームでのクラスター共有を考えている、Kubernetes 運用のみんなに刺さるアップデートだよ！",
+  "title_en": "Amazon EKS Auto Mode now supports the Kubernetes Gateway API",
+  "summary_en": "Amazon EKS Auto Mode now supports the Kubernetes Gateway API. You define load balancing with Gateway and HTTPRoute resources, with no separate controller to install.",
+  "body_md_en": "Hi, it's Shii-chan! Today the Gateway API has finally arrived in EKS Auto Mode, so let me tell you about it!\n\n## What was announced?\n\nIn AWS What's New, AWS announced that Amazon EKS Auto Mode now supports the Kubernetes Gateway API, a standard and portable way to define how traffic reaches your applications.\n\n## What changes\n\nYou configure application load balancing with Gateway and HTTPRoute resources, and EKS Auto Mode provisions and manages the underlying AWS infrastructure automatically.\n\nThe announcement stresses that you can adopt the next-generation Kubernetes traffic management standard without installing or configuring a separate controller. That's the big point!\n\n## Dive Deep\n\nSupported capabilities:\n\n- HTTP and gRPC routing\n- Cross-namespace traffic routing for multi-team environments\n- Weighted traffic splitting\n- Header-based routing\n- Automatic TLS certificate discovery through AWS Certificate Manager\n\nOther key points:\n\n- Existing workloads using Ingress resources continue to work alongside Gateway API resources\n- Gateway API support is included in EKS Auto Mode and is available in all AWS Regions where Auto Mode is supported\n- Standard charges apply for the AWS load balancing resources provisioned\n\nSetup instructions are in the Amazon EKS documentation.\n\n## Wrap-up\n\n- Define load balancing in EKS Auto Mode with Gateway and HTTPRoute\n- Weighted splitting, header routing, and ACM integration are supported\n- It coexists with Ingress and needs no extra controller\n\nThis is for Kubernetes operators planning canary releases or sharing clusters across teams!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-eks-auto-mode-kubernetes-gateway-api/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon EKS Auto Mode now supports Kubernetes Gateway API",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "devops"
+  ],
+  "published_at": "2026-10-28T17:33:00+00:00"
+}

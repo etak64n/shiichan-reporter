@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-10-28-workers-builds-90-day-retention",
+  "title": "Workers Builds のビルドとログが 90 日間残るようになったよ！",
+  "summary": "Cloudflare Workers Builds が、ビルドとビルドログを完了から 90 日間保持するようになったよ。90 日を過ぎてもバージョンやデプロイは残るからロールバックできるの。",
+  "body_md": "みんな、しぃちゃんだよ！今日は Workers Builds のビルド履歴についてのお知らせだよ！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Workers Builds が各ビルドとそのビルドログを、ビルド完了から 90 日間保持するようになったと発表されたよ。\n\n## これで何が変わるの？\n\n過去のビルドが失敗した理由を、90 日以内なら後から見返せるよ。見る場所は次の 2 つだよ。\n\n- Worker の Deployments タブにある「View build history」\n- Workers Builds API\n\n## 深く潜ってみよう\n\n- 90 日を過ぎると、ビルドとログは削除される\n- そのビルドが作ったバージョンとデプロイは、Worker の version history に残るので、ロールバックは引き続きできる\n- もっと長くログを残したいときは、Get build logs API エンドポイントでダウンロードしておく\n\n制限の詳細は Workers Builds の limits ドキュメントに載っているよ。\n\n## まとめ\n\n- ビルドとログを完了から 90 日間保持\n- 90 日後もバージョンとデプロイは残り、ロールバック可能\n- 長期保管はログのダウンロードで対応\n\nCI のログを後から調べることが多い Workers 利用者のみんなは、保管期限を覚えておくと安心だね！",
+  "title_en": "Workers Builds now keeps builds and build logs for 90 days",
+  "summary_en": "Cloudflare Workers Builds now retains each build and its logs for 90 days after it finishes. Versions and deployments stay in version history, so rollbacks still work.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today's news is about build history in Workers Builds!\n\n## What was announced?\n\nIn the Cloudflare Changelog, Cloudflare announced that Workers Builds now retains each build and its build logs for 90 days after the build finishes.\n\n## What changes\n\nWithin 90 days, you can look back at why a past build failed. You can find them in two places:\n\n- \"View build history\" in your Worker's Deployments tab\n- The Workers Builds API\n\n## Dive Deep\n\n- After 90 days, a build and its logs are removed\n- The versions and deployments it created stay in your Worker's version history, so you can still roll back\n- If you need logs for longer, download them with the Get build logs API endpoint\n\nSee the Workers Builds limits documentation for details.\n\n## Wrap-up\n\n- Builds and logs are kept for 90 days after completion\n- Versions and deployments remain afterwards, so rollbacks still work\n- Download logs if you need long-term storage\n\nIf you often dig through CI logs later, keep the retention window in mind!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-28-workers-builds-90-day-retention/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Workers - Workers Builds now retains builds and build logs for 90 days",
+  "tags": [
+    "cloudflare",
+    "serverless",
+    "devops"
+  ],
+  "published_at": "2026-10-28T21:06:30+00:00"
+}
