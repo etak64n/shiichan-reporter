@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-mflow-version-3-16",
+  "title": "SageMaker の MLflow Apps が MLflow 3.16 に！トレース画面が生まれ変わったよ",
+  "summary": "Amazon SageMaker AI の MLflow Apps が MLflow 3.16 に対応したよ！作り直されたトレースエクスプローラーが標準になって、メトリクスチャートも速くなったみたい。",
+  "body_md": "こんにちは、しぃちゃんだよ！\n\n生成 AI アプリのデバッグがちょっと楽になりそうな更新が来たから、紹介するね。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon SageMaker AI の MLflow Apps が MLflow 3.16 をサポートしたと発表されたよ！\n\n生成 AI アプリやエージェントのデバッグ・分析がしやすくなる、作り直されたトレース体験と、より速い実験トラッキングが入っているんだって。\n\n## これで何が変わるの？\n\nトレースを見ながらエージェントの挙動を追いかける人と、大量のメトリクス履歴を持つ実験を回している人に嬉しい更新だよ。\n\n- 新しいトレースエクスプローラーが標準になる\n- メトリクス履歴が大きい実験でも、チャートが速く表示される\n\n## 深く潜ってみよう\n\nトレースエクスプローラーでできるようになったことはこれだよ。\n\n- 行の高さを調整できる\n- 列を並べ替えられる\n- 任意のトレースタグやメタデータのフィールドから、カスタム列を作れる\n\nバージョンの切り替わり方も大事なポイントだよ。\n\n- 新しく作る MLflow Apps は、デフォルトで MLflow 3.16 になる\n- 既存の MLflow Apps は、今後のメンテナンスウィンドウ中に 3.16 へアップグレードされる。ユーザー側の操作は不要\n\nMLflow Apps が使えるすべての AWS リージョンで利用できるよ。メンテナンスウィンドウの具体的な日時や、リージョンの一覧は発表文には書かれていなかったよ。詳しくは SageMaker AI の MLflow 開発者ガイドを見てね。\n\n## まとめ\n\n- SageMaker AI MLflow Apps が MLflow 3.16 に対応\n- 再設計されたトレースエクスプローラーが標準に（行の高さ調整・列の並べ替え・カスタム列）\n- 大きなメトリクス履歴のチャートが高速化\n- 既存アプリは自動アップグレードで、対応は不要\n\n生成 AI エージェントのトレースをよく眺めているみんなに刺さるアップデートだよ！",
+  "title_en": "SageMaker MLflow Apps Get MLflow 3.16 With a Redesigned Trace Explorer",
+  "summary_en": "Amazon SageMaker AI MLflow Apps now support MLflow 3.16. The redesigned trace explorer is the new default, and metric charts load faster for large experiments.",
+  "body_md_en": "Hi, it's Shii-chan!\n\nHere's an update that should make debugging generative AI apps a little easier.\n\n## What was announced?\n\nAWS What's New announced that Amazon SageMaker AI MLflow Apps now support MLflow 3.16!\n\nIt brings a redesigned tracing experience and faster experiment tracking for generative AI and machine learning workflows.\n\n## What changes\n\nThis helps people who trace agent behavior and people who run experiments with large metric histories.\n\n- The redesigned trace explorer is now the default\n- Metric charts load faster for experiments with large metric histories\n\n## Dive Deep\n\nHere's what you can do in the trace explorer:\n\n- Adjust row height\n- Reorder columns\n- Add custom columns from any trace tag or metadata field\n\nHow the version rollout works:\n\n- New MLflow Apps are created on MLflow 3.16 by default\n- Existing MLflow Apps will be upgraded during an upcoming maintenance window, with no action required\n\nIt's available in all AWS Regions where MLflow Apps are available. The announcement doesn't give a date for the maintenance window or list the Regions. See the SageMaker AI MLflow developer guide for more.\n\n## Wrap-up\n\n- SageMaker AI MLflow Apps support MLflow 3.16\n- Redesigned trace explorer is the default (row height, column order, custom columns)\n- Faster charts for large metric histories\n- Existing apps upgrade automatically\n\nThis one is for anyone who spends their days reading traces from generative AI agents!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/mflow-version-3-16/",
+  "source_name": "AWS What's New",
+  "og_title": "SageMaker MLflow Apps now support MLflow 3.16",
+  "tags": [
+    "aws",
+    "ai",
+    "devops"
+  ],
+  "published_at": "2026-10-27T20:40:00+00:00"
+}
