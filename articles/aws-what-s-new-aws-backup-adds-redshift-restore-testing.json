@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-backup-adds-redshift-restore-testing",
+  "title": "Redshift のバックアップ、本当に戻せる？ AWS Backup が復元テストに対応！",
+  "summary": "AWS Backup の復元テストが Amazon Redshift をサポートしたよ。定期的に復元を自動実行して、成功するかと所要時間を RTO と照らして確認できるの。",
+  "body_md": "おつかれさま、しぃちゃんだよ！\n\nバックアップは「戻せて」はじめて安心だよね。そこに嬉しいお知らせが来たよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Backup の復元テスト (restore testing) が Amazon Redshift に対応したと発表されたよ。\n\n## 今までどうだったの？\n\n復元テストは、バックアップの復元を定期的に自動で実行する機能だよ。これまでは Redshift をこの復元テストプランに含められなかったけど、今回から他の対応リソースと一緒に入れられるようになったの。\n\n## これで何が変わるの？\n\nRedshift のバックアップが本当に復元できるか、復元にどれくらい時間がかかるかを確認できるよ。復旧の準備ができているかを評価したり、災害復旧や事業継続に関する規制・コンプライアンス要件を満たしたりするのに役立つの！\n\n## 深く潜ってみよう\n\n復元テストプランは、次のことを自動で行うよ。\n\n- 復旧ポイントを自動で選ぶ\n- スケジュールどおりに復元を実行する\n- 復元ジョブの完了時間を、目標復旧時間 (RTO) と比べて測る\n\n使い始めるには、次の流れだよ。\n\n- 復元テストプランを作成する\n- Redshift リソースを ARN またはタグで割り当てる\n- 各テストで、最新の復旧ポイントか、対象になりうるランダムな復旧ポイントのどちらを復元するか選ぶ\n- 必要なら復元テストの検証 (validation) を使って、AWS Backup がテスト用リソースを削除する前に復元結果を確認する\n\nAWS Backup コンソール、AWS CLI、AWS SDK から使えるよ。提供リージョンは、AWS Backup で復元テストと Redshift の両方がサポートされているすべてのリージョンだよ。\n\n## まとめ\n\n- AWS Backup の復元テストが Amazon Redshift に対応\n- 復元の成否と所要時間 (RTO との比較) を定期的に自動確認できる\n- ARN またはタグで対象を指定し、最新かランダムな復旧ポイントを選べる\n- 削除前の検証もオプションで使える\n\nデータウェアハウスの復旧計画を数字で説明したい運用担当のみんなに刺さるよ！",
+  "title_en": "AWS Backup Restore Testing Now Supports Amazon Redshift",
+  "summary_en": "AWS Backup restore testing now supports Amazon Redshift, so you can automatically run periodic restores and measure completion time against your RTO.",
+  "body_md_en": "Hi everyone, it's Shii-chan!\n\nA backup only counts if you can restore it, and there's good news on exactly that!\n\n## What was announced?\n\nAWS announced that AWS Backup restore testing now supports Amazon Redshift.\n\n## The story so far\n\nRestore testing automates periodic restore runs for your backups. Redshift couldn't be part of those plans before. Now you can include it alongside other supported resources.\n\n## What changes\n\nYou can confirm that your Redshift backups restore successfully and measure how long restores take. That helps you evaluate recovery readiness and meet regulatory and compliance requirements for disaster recovery and business continuity.\n\n## Dive Deep\n\nA restore testing plan automatically does the following:\n\n- Selects recovery points\n- Runs restores on a schedule\n- Measures restore job completion time against your recovery time objectives (RTO)\n\nTo get started:\n\n- Create a restore testing plan\n- Assign your Redshift resources by ARN or tag\n- Choose whether each test restores the latest or a random eligible recovery point\n- Optionally use restore testing validation to confirm the restored resource before AWS Backup deletes the test resources\n\nYou can use the AWS Backup console, the AWS CLI, or the AWS SDKs. It's available in all Regions where AWS Backup supports both restore testing and Redshift.\n\n## Wrap-up\n\n- AWS Backup restore testing now covers Amazon Redshift\n- Restore success and duration (against RTO) are checked automatically and regularly\n- Pick targets by ARN or tag, with the latest or a random recovery point\n- Optional validation before cleanup\n\nThis is for operations folks who want to back up their data warehouse recovery plan with real numbers!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-backup-adds-redshift-restore-testing/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Backup adds restore testing support for Amazon Redshift",
+  "tags": [
+    "aws",
+    "devops",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-28T08:00:00+00:00"
+}

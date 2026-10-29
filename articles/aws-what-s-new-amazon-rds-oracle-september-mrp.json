@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-rds-oracle-september-mrp",
+  "title": "RDS for Oracle に 2026 年 9 月の MRP が到着！ タイムゾーンも DST 46 に更新",
+  "summary": "Amazon RDS for Oracle が Oracle Database 19c と 26ai の 2026 年 9 月 Monthly Recommended Patch に対応したよ。最新のセキュリティ更新とタイムゾーンファイル DST 46 を含むの。",
+  "body_md": "おつかれさま、しぃちゃんだよ！\n\nOracle を RDS で動かしている人は要チェックの更新だよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon RDS for Oracle が、Oracle Database 19c と 26ai の 2026 年 9 月 Monthly Recommended Patch (MRP) に対応したと発表されたよ。\n\n## なぜ重要なの？\n\nMRP は、四半期ごとの Release Update (RU) の上に積まれるマイナーエンジンバージョンだよ。Oracle の Critical Security Patch Update (CSPU) と、Oracle が推奨する追加の修正をまとめたものなの。\n\n今回の 2026 年 9 月 MRP は、2026 年 7 月の RU の上に適用され、Oracle 9 月の CSPU を含んでいるよ。最新のセキュリティ更新が入っているから、AWS はこの MRP へのアップグレードを推奨しているの。\n\n## これで何が変わるの？\n\nタイムゾーンファイルが更新されて、夏時間 (DST) バージョン 46 になったよ。次の地域のルール変更が反映されるの。\n\n- カナダのブリティッシュコロンビア州とアルバータ州: 2026 年 11 月 1 日に有効\n- モロッコと西サハラ: 2026 年 9 月 20 日に有効。恒久的な UTC オフセットへ移行\n\nこれらの地域のタイムゾーン情報つきタイムスタンプを保存しているなら、新しいルールに合ったデータを保てるよ！\n\n## 深く潜ってみよう\n\n適用できるエンジンバージョンはこの 2 つだよ。\n\n- 19.0.0.0.ru-2026-07.mrp-2026-09.r2\n- 26.0.0.0.ru-2026-07.mrp-2026-09.r2\n\n新しいデータベースインスタンスに適用することも、既存のインスタンスをアップグレードすることもできるよ。操作は Amazon RDS マネジメントコンソール、AWS SDK、AWS CLI から行えるの。MRP の対応状況は、Amazon RDS for Oracle のリリースノートで確認してね。\n\n## まとめ\n\n- RDS for Oracle が 19c と 26ai の 2026 年 9 月 MRP に対応\n- 7 月の RU の上に、Oracle 9 月の CSPU を含む\n- DST バージョン 46 で、カナダ西部とモロッコなどのルール変更に対応\n- AWS はこの MRP へのアップグレードを推奨\n\nRDS for Oracle を運用していて、セキュリティパッチを追従したいみんなに刺さるよ！",
+  "title_en": "RDS for Oracle Gets the September 2026 MRP, With DST Version 46 Time Zones",
+  "summary_en": "Amazon RDS for Oracle now supports the September 2026 Monthly Recommended Patch for Oracle Database 19c and 26ai, with the latest security updates and the DST version 46 time zone file.",
+  "body_md_en": "Hi everyone, it's Shii-chan!\n\nHere's an update worth checking if you run Oracle on RDS!\n\n## What was announced?\n\nAWS announced that Amazon RDS for Oracle now supports the September 2026 Monthly Recommended Patch (MRP) for Oracle Database 19c and 26ai.\n\n## Why it matters\n\nAn MRP is a minor engine version that builds on a quarterly Release Update (RU). It bundles Oracle's Critical Security Patch Update (CSPU) with additional Oracle-recommended fixes.\n\nThe September 2026 MRP is applied on top of the July 2026 RU and includes the Oracle September CSPU. AWS recommends upgrading to it because it includes the latest security updates.\n\n## What changes\n\nThe time zone file is updated to daylight saving time (DST) version 46, which reflects these rule changes:\n\n- British Columbia and Alberta in Canada: effective November 1, 2026\n- Morocco and Western Sahara: effective September 20, 2026, moving to permanent UTC offsets\n\nIf you store timestamps with time zone information for these areas, your data stays aligned with the new rules.\n\n## Dive Deep\n\nThe engine versions are:\n\n- 19.0.0.0.ru-2026-07.mrp-2026-09.r2\n- 26.0.0.0.ru-2026-07.mrp-2026-09.r2\n\nYou can apply it to new database instances or upgrade existing ones from the Amazon RDS Management Console, the AWS SDK, or the CLI. See the Amazon RDS for Oracle release notes for which MRPs are supported per engine version.\n\n## Wrap-up\n\n- RDS for Oracle supports the September 2026 MRP for 19c and 26ai\n- Built on the July RU and includes Oracle's September CSPU\n- DST version 46 covers rule changes in western Canada, Morocco, and more\n- AWS recommends upgrading\n\nThis is for anyone running RDS for Oracle who wants to keep up with security patches!",
+  "emotion": "thinking",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-rds-oracle-september-mrp",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon RDS for Oracle now supports September 2026 Monthly Recommended Patch",
+  "tags": [
+    "aws",
+    "security",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-28T21:00:00+00:00"
+}

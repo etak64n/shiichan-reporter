@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-eks-dashboard-fleet-wide-visibility-certificate-authority-ca-rotation",
+  "title": "EKS クラスターの CA ローテーション、ダッシュボードで一括チェック！",
+  "summary": "Amazon EKS Dashboard に CA ローテーションの可視化が加わったよ。アカウントやリージョンをまたいで、期限が近いクラスターや今後の自動ローテーション予定を一か所で確認できるの。",
+  "body_md": "こんにちは、しぃちゃんだよ！\n\n「あのクラスターの証明書、そろそろ大丈夫？」を一覧で確認できる更新が来たよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon EKS Dashboard が認証局 (CA) ローテーションの可視化に対応したと発表されたよ。クラスター全体の CA ローテーション状況を、まとめて見られるの。\n\n## なぜ重要なの？\n\nEKS の各クラスターには、それぞれ独自の CA があるよ。2018 年以降に作られたクラスターの CA は有効期間が 10 年で、いまローテーションを始めるべき時期に近づいているんだって。\n\nEKS Dashboard は、もともとリージョンやアカウントをまたいでクラスターを一元的に見られるものだったよ。今回そこに CA ローテーションが加わったから、クラスターを 1 つずつ確認しなくても、対応が必要な場所が分かるの。\n\n## これで何が変わるの？\n\nたくさんのクラスターを運用するプラットフォームチームが、フリート全体の優先順位を一か所で付けられるよ！\n\n## 深く潜ってみよう\n\nダッシュボードで見られる内容はこれだよ。\n\n- クラスターと、その CA ローテーションの状況\n- CA の期限が近づいているクラスター\n- 今後予定されている自動ローテーションのイベント\n\n使うための条件と提供範囲はこうだよ。\n\n- AWS Organizations を通じてアカウントとリージョンのデータを集約するため、組織の管理アカウントでダッシュボードの信頼されたアクセスを有効にする\n- ダッシュボードは米国東部 (us-east-1) から表示する\n- 追加料金なし\n- CA ローテーションのサポートは、すべての商用 AWS リージョンに対応している\n\n## まとめ\n\n- EKS Dashboard で CA ローテーションの状況を横断的に見られる\n- 期限が近いクラスターと、予定された自動ローテーションが分かる\n- 管理アカウントでの信頼されたアクセスの有効化が必要で、追加料金はなし\n\n多数の EKS クラスターを抱えるプラットフォーム担当のみんなに刺さるよ！",
+  "title_en": "EKS Dashboard Now Shows Fleet-Wide Certificate Authority Rotation Status",
+  "summary_en": "The Amazon EKS Dashboard now includes certificate authority (CA) rotation visibility, showing clusters with CAs nearing expiration and upcoming automated rotations across accounts and Regions.",
+  "body_md_en": "Hi everyone, it's Shii-chan!\n\nHere's an update that answers \"are my clusters' certificates okay?\" in one view!\n\n## What was announced?\n\nAWS announced certificate authority (CA) rotation visibility in the Amazon EKS Dashboard, giving you a consolidated view of CA rotation across your clusters.\n\n## Why it matters\n\nEach Amazon EKS cluster has its own CA. Clusters created since 2018 have CAs with a 10-year validity period, and those are now approaching the point where rotation activities should begin.\n\nThe EKS Dashboard already gave centralized visibility into clusters across Regions and accounts. With CA rotation added, you can see where action is needed without checking each cluster individually.\n\n## What changes\n\nPlatform teams that operate many clusters can prioritize action across their fleet from one place.\n\n## Dive Deep\n\nThe dashboard shows:\n\n- Your clusters and their CA rotation status\n- Which clusters have CAs approaching expiration\n- Upcoming automated rotation events\n\nRequirements and availability:\n\n- The dashboard aggregates data across accounts and Regions through AWS Organizations, so enable trusted access for the dashboard in your organization's management account\n- You view the dashboard from US East (us-east-1)\n- No additional cost\n- CA rotation support extends to all commercial AWS Regions\n\n## Wrap-up\n\n- EKS Dashboard shows CA rotation status across your fleet\n- You can see clusters nearing expiration and scheduled automated rotations\n- Requires trusted access in the management account, no extra cost\n\nThis is for platform folks managing lots of EKS clusters!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-eks-dashboard-fleet-wide-visibility-certificate-authority-ca-rotation/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon EKS Dashboard now provides fleet-wide visibility into certificate authority (CA) rotation",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "security"
+  ],
+  "published_at": "2026-10-28T18:07:00+00:00"
+}

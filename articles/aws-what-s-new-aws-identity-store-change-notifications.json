@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-identity-store-change-notifications",
+  "title": "Identity Store の変更をリアルタイムでキャッチ！ EventBridge 通知が来たよ",
+  "summary": "AWS IAM Identity Center の Identity Store が、ユーザーやグループの作成・更新・削除を Amazon EventBridge にリアルタイムで送るようになったよ。",
+  "body_md": "こんにちは、しぃちゃんだよ！\n\nID 管理を自動化したい人にうれしい更新を見つけたよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS IAM Identity Center の Identity Store が Amazon EventBridge への変更通知に対応したと発表されたよ。\n\n次のものが作成・更新・削除されたとき、リアルタイムのイベントが EventBridge に届くの。\n\n- ユーザー\n- グループ\n- グループメンバーシップ\n- Identity Store そのもの\n\n## これで何が変わるの？\n\nID のライフサイクルに関わるイベントに自動で反応できて、変更をその場で検知してセキュリティやコンプライアンスの運用に活かせるよ。\n\n## 深く潜ってみよう\n\nIdentity Store は、AWS アカウントやアプリケーション全体の ID とアクセスを管理する中央リポジトリで、IAM Identity Center の ID ソースになっているものだよ。\n\n原文にある活用例はこんな感じ。\n\n- セキュリティチームが EventBridge ルールで AWS Lambda を起動し、ユーザーのプロビジョニングを監査する\n- SIEM システムにアラートを送る\n- ユーザーやグループが変わったとき、下流のアプリケーションのアクセスを更新する\n- 大きな組織で、特定のグループへの追加・削除をきっかけに、入社・退社の対応を自動化する\n\n提供範囲と料金はこうだよ。\n\n- IAM Identity Center が使えるすべてのリージョンで利用可能。イベントはインスタンスの有効なリージョンごとに送られる\n- 標準の Amazon EventBridge の利用料金以外に追加料金はなし\n\n## まとめ\n\n- Identity Store のユーザー・グループ・メンバーシップの変更が EventBridge に届く\n- Lambda や SIEM と組み合わせて、監査・アラート・オンボーディング自動化ができる\n- 追加料金なし (EventBridge の通常料金のみ)\n\nID 管理や監査の自動化を進めたいセキュリティ・基盤担当のみんなに刺さるよ！",
+  "title_en": "Identity Store Changes Now Flow to Amazon EventBridge in Real Time",
+  "summary_en": "AWS IAM Identity Center's Identity Store now delivers real-time events to Amazon EventBridge when users, groups, or memberships are created, updated, or deleted.",
+  "body_md_en": "Hi everyone, it's Shii-chan!\n\nI found a nice update for anyone who wants to automate identity management!\n\n## What was announced?\n\nAWS announced that the AWS IAM Identity Center Identity Store now delivers change notifications to Amazon EventBridge.\n\nReal-time events arrive when any of these are created, updated, or deleted:\n\n- Users\n- Groups\n- Group memberships\n- The identity store itself\n\n## What changes\n\nYou can respond automatically to identity lifecycle events and detect changes as they happen, which supports security and compliance processes.\n\n## Dive Deep\n\nThe Identity Store is a central repository for managing identities and access across AWS accounts and applications, and it is the identity source for IAM Identity Center.\n\nExamples from the announcement:\n\n- Security teams create EventBridge rules that trigger AWS Lambda functions to audit user provisioning\n- Send alerts to SIEM systems\n- Update access in downstream applications when users or groups change\n- Automate onboarding and offboarding in large workforces when users are added to or removed from specific groups\n\nAvailability and pricing:\n\n- Available in all Regions where IAM Identity Center is available; events are sent in each enabled Region of your instance\n- No additional cost beyond standard Amazon EventBridge usage charges\n\n## Wrap-up\n\n- Identity Store changes to users, groups, and memberships reach EventBridge\n- Combine with Lambda or a SIEM for auditing, alerting, and onboarding automation\n- No extra charge beyond normal EventBridge usage\n\nThis is for security and platform folks who want to automate identity management and auditing!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-identity-store-change-notifications/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS IAM Identity Center's Identity Store now supports change notifications through Amazon EventBridge",
+  "tags": [
+    "aws",
+    "security",
+    "devops"
+  ],
+  "published_at": "2026-10-28T08:00:00+00:00"
+}

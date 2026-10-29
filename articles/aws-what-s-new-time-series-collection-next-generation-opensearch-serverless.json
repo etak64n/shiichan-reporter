@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-time-series-collection-next-generation-opensearch-serverless",
+  "title": "OpenSearch Serverless に時系列コレクション登場！ ウォーム階層でログを安く長く",
+  "summary": "次世代の Amazon OpenSearch Serverless に時系列コレクションが追加されたよ。低コストのウォームストレージ階層、ホット最大 100 TB、アラートと異常検知に対応しているの。",
+  "body_md": "みんな、しぃちゃんだよ！\n\nログやメトリクスを溜め込む人に、うれしい発表が来たよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、次世代の Amazon OpenSearch Serverless が時系列コレクション (time series collections) に対応したと発表されたよ。\n\nクラスターのプロビジョニングや管理なしで、ログ、メトリクス、トレース、イベントデータを取り込み、保存し、分析できるの。\n\n## これで何が変わるの？\n\n- 取り込みのスパイクを自動で吸収する\n- 最近のデータは高速にクエリできる状態を保つ\n- 数か月から数年ぶんの履歴も、同じコレクションの中で低コストに検索できる\n\n## 深く潜ってみよう\n\n時系列コレクションには、既存のホットストレージ階層に加えて、低コストなウォームストレージ階層が追加されたよ。アクセス頻度の低いデータを、ホットの料金を払わずに保持できるの。ホットに置く期間も選べるよ。\n\n規模と機能はこうだよ。\n\n- コレクションあたり最大 100 TB のホットストレージ\n- アプリケーション監視、セキュリティ分析、IoT テレメトリのような大量のオブザーバビリティ用途に対応\n- アラートと異常検知も使えるようになり、別のツールなしで問題の通知や普段と違うパターンの発見ができる\n\nすべての AWS リージョンのうち、OpenSearch Serverless が使えるリージョンで今日から使えるよ。ウォームストレージの料金は OpenSearch Serverless の料金ページで確認してね。詳細は機能ページ、ローンチブログ、ドキュメントにあるよ。\n\n## まとめ\n\n- 次世代 OpenSearch Serverless に時系列コレクションが登場\n- 低コストのウォーム階層が追加され、ホット期間は選べる\n- ホットは最大 100 TB、アラートと異常検知も利用可能\n\nログ基盤やオブザーバビリティのコストと運用負荷を減らしたいみんなに刺さるよ！",
+  "title_en": "Time Series Collections Arrive in Next-Gen Amazon OpenSearch Serverless",
+  "summary_en": "Next-generation Amazon OpenSearch Serverless adds time series collections with a lower-cost warm storage tier, up to 100 TB of hot storage, and alerting and anomaly detection.",
+  "body_md_en": "Hi everyone, it's Shii-chan!\n\nHere's good news for anyone piling up logs and metrics!\n\n## What was announced?\n\nAWS announced support for time series collections on the next generation of Amazon OpenSearch Serverless.\n\nYou can ingest, store, and analyze logs, metrics, traces, and event data without provisioning or managing clusters.\n\n## What changes\n\n- Ingest spikes are absorbed automatically\n- Recent data stays fast to query\n- Months or years of history stay searchable at low cost, all in the same collection\n\n## Dive Deep\n\nTime series collections add a lower-cost warm storage tier in addition to the existing hot tier, so you can retain infrequently accessed data without paying hot storage prices. You choose how long data stays hot before moving to warm.\n\nScale and features:\n\n- Up to 100 TB of hot storage per collection\n- Handles high-volume observability workloads such as application monitoring, security analytics, and IoT telemetry\n- Alerting and anomaly detection are also now available, so you get notified about issues and can spot unusual patterns without separate tooling\n\nIt's available today in all AWS Regions where OpenSearch Serverless is available. See the OpenSearch Serverless pricing page for warm storage costs, and the feature page, launch blog, and documentation for more.\n\n## Wrap-up\n\n- Time series collections arrive on next-gen OpenSearch Serverless\n- A lower-cost warm tier is added, with a configurable hot period\n- Up to 100 TB hot, plus alerting and anomaly detection\n\nThis is for anyone who wants lower cost and less work for log and observability platforms!",
+  "emotion": "energetic",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/time-series-collection-next-generation-opensearch-serverless/",
+  "source_name": "AWS What's New",
+  "og_title": "Introducing time series collections for the next generation of Amazon OpenSearch Serverless",
+  "tags": [
+    "aws",
+    "serverless",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-28T18:35:00+00:00"
+}

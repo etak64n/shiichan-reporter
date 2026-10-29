@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-marketplace-business-storefront",
+  "title": "AWS Marketplace と Amazon Business が合体！ 統合ストアフロントが誕生",
+  "summary": "AWS Marketplace と Amazon Business の統合ストアフロントが発表されたよ。ソフトウェアやAIツールと物品を、ひとつのカタログと承認ルールで調達できるの。",
+  "body_md": "やっほー、しぃちゃんだよ！\n\n今日は調達まわりの発表だよ。エンジニアの手元というより、会社の購買のお話なの。\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Marketplace と Amazon Business の統合ストアフロント (unified storefront) が発表されたよ。\n\n組織は、AWS Marketplace のソフトウェア、データ、AI ツールと、Amazon Business の物品や備品を、ひとつの厳選カタログにまとめてチームに提供できるようになったの。\n\n## 今までどうだったの？\n\n多くの企業は両方で買い物をしているけど、カタログが 2 つあって、承認ルールも重複していて、レポートも別々だったみたい。\n\n## これで何が変わるの？\n\n調達チームにとって、入口がひとつになるよ。管理者はガバナンスルールを一度設定すれば、両方のカタログに適用されるの！\n\n## 深く潜ってみよう\n\nAWS Marketplace Storefront の上に作られていて、仕組みはこんな感じだよ。\n\n- 管理者が組織の Amazon Business アカウントを接続し、Amazon Business の商品を自社ブランドのストアフロントに取り込む\n- 購入者は AWS Marketplace の出品と Amazon Business の商品を同じ場所で見られる\n- AWS Marketplace の出品の購入はストアフロント内で完結し、AWS の請求書に載る\n- Amazon Business の商品を選ぶと、シングルサインオンで認証済みの Amazon Business のカートに移動する。二度目のログインは不要\n- 各ストアフロントは、管理者が設定したアカウントにだけ接続する\n\nAmazon Business コネクターは、AWS Marketplace が提供されているすべてのリージョンで使えるよ。対象は、AWS Marketplace と Amazon Business の両方の API にアクセスできる AWS Marketplace Storefront の利用者だよ。\n\n## まとめ\n\n- AWS Marketplace と Amazon Business を統合したストアフロントが登場\n- ガバナンスルールは一度設定すれば両カタログに適用される\n- Marketplace の購入は AWS の請求書に載り、Amazon Business はシングルサインオンでカートへ\n\n会社の調達や購買を担当しているみんなに刺さる発表だよ！",
+  "title_en": "AWS Marketplace and Amazon Business Unified Storefront Is Here",
+  "summary_en": "AWS Marketplace and Amazon Business announced a unified storefront that puts software, data, and AI tools alongside physical goods in one catalog with one set of governance rules.",
+  "body_md_en": "Hi everyone, it's Shii-chan!\n\nToday's news is about procurement, so it's more about a company's purchasing than an engineer's workflow.\n\n## What was announced?\n\nAWS announced the AWS Marketplace and Amazon Business unified storefront.\n\nOrganizations can give their teams one curated catalog that puts software, data, and AI tools from AWS Marketplace alongside physical goods and supplies from Amazon Business.\n\n## The story so far\n\nMany enterprises buy from both, but they had two catalogs with duplicated approval rules and separate reporting.\n\n## What changes\n\nProcurement teams get one front door. Administrators set governance rules once, and they apply across both catalogs.\n\n## Dive Deep\n\nIt's built on AWS Marketplace Storefront. Here's how it works:\n\n- Administrators connect their organization's Amazon Business account and import Amazon Business products into their branded storefront\n- Buyers browse AWS Marketplace listings and Amazon Business products in one place\n- Purchases of AWS Marketplace listings complete in the storefront and appear on the customer's AWS invoice\n- Selecting an Amazon Business product uses single sign-on to take the buyer to an authenticated Amazon Business cart, with no second login\n- Each storefront connects only to the accounts its administrator sets up\n\nThe Amazon Business connector is available in all AWS Regions where AWS Marketplace operates, for AWS Marketplace Storefront customers who have access to both the AWS Marketplace and Amazon Business APIs.\n\n## Wrap-up\n\n- A unified storefront now combines AWS Marketplace and Amazon Business\n- Governance rules are set once and apply to both catalogs\n- Marketplace purchases land on the AWS invoice, and Amazon Business uses single sign-on to the cart\n\nThis is for people who handle purchasing and procurement at their company!",
+  "emotion": "happy",
+  "importance": 1,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/marketplace-business-storefront/",
+  "source_name": "AWS What's New",
+  "og_title": "Announcing the AWS Marketplace and Amazon Business unified storefront",
+  "tags": [
+    "aws",
+    "business"
+  ],
+  "published_at": "2026-10-28T08:00:00+00:00"
+}

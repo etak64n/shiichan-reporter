@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-bedrock-agentcore-cli-version-1-0-available",
+  "title": "AgentCore CLI がついに 1.0！ 起動が速く、コマンドも統一されたよ",
+  "summary": "Amazon Bedrock AgentCore CLI が 1.0 で一般提供になったよ。起動の高速化、一貫したコマンド構造、より多くの AgentCore リソースへの対応が入っているの。",
+  "body_md": "やっほー、しぃちゃんだよ！\n\nエージェント開発の相棒、AgentCore CLI がついに 1.0 になったよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Bedrock AgentCore CLI バージョン 1.0 (@aws/agentcore 1.0.0) の一般提供開始が発表されたよ。この CLI は、AI エージェントと関連リソースの作成・開発・デプロイ・運用を、ターミナルから行うためのものなの。\n\n1.0 では、起動が速くなり、コマンド構造が一貫したものになり、より多くの AgentCore リソースに対応するように作り直されたよ。\n\n## これで何が変わるの？\n\n1.0 では、プロジェクトのワークフローを使うこともできるし、プロジェクトに追加しなくても次のリソースを直接扱えるようになったよ。\n\n- harness\n- runtime\n- memory\n- identity\n- gateway\n- payments\n\n## 深く潜ってみよう\n\n使い勝手まわりの変更点だよ。\n\n- 既存のリソースを ID または ARN で呼び出せる\n- インタラクティブなシェルを開ける\n- harness をエクスポートできる\n- 検索できるメニュー、リソースピッカー、ガイド付きワークフローを使える\n- リージョン選択、JSON 出力、デバッグ、バージョン表示のグローバルフラグが、どのコマンドでも一貫している\n\n既存のプロジェクトは、次のコマンドでバージョン 1 に移行できるよ。\n\n```\nagentcore migrate\n```\n\nインストールは npm から行えて、ソースは GitHub で公開されているよ。詳しくは、AgentCore の製品ページ、CLI リファレンス、Get started のドキュメントを見てね。\n\n## まとめ\n\n- AgentCore CLI 1.0 (@aws/agentcore 1.0.0) が一般提供に\n- 起動が速くなり、コマンド構造とグローバルフラグが統一された\n- プロジェクトに追加しなくても、各リソースを直接扱える\n- `agentcore migrate` で既存プロジェクトを移行できる\n\nターミナルでエージェントを作って運用したい開発者のみんなに刺さるよ！",
+  "title_en": "AgentCore CLI Hits 1.0: Faster Startup and a Consistent Command Structure",
+  "summary_en": "Amazon Bedrock AgentCore CLI version 1.0 is generally available, with faster startup, a consistent command structure, and support for more AgentCore resources.",
+  "body_md_en": "Hi everyone, it's Shii-chan!\n\nThe AgentCore CLI, your companion for building agents, has hit 1.0!\n\n## What was announced?\n\nAWS announced the general availability of Amazon Bedrock AgentCore CLI version 1.0 (@aws/agentcore 1.0.0). The CLI helps developers create, develop, deploy, and operate AI agents and supporting resources from the terminal.\n\nVersion 1.0 is rebuilt with faster startup, a consistent command structure, and support for more AgentCore resources.\n\n## What changes\n\nWith 1.0 you can use the project workflow, or work directly with these resources without first adding them to a project:\n\n- harnesses\n- runtimes\n- memory\n- identity\n- gateways\n- payments\n\n## Dive Deep\n\nUsability changes:\n\n- Invoke existing resources by ID or ARN\n- Open an interactive shell\n- Export a harness\n- Use searchable menus, resource pickers, and guided workflows\n- Consistent global flags for region selection, JSON output, debugging, and version information across commands\n\nExisting projects can be migrated to version 1 with this command:\n\n```\nagentcore migrate\n```\n\nInstall it from npm, or explore the source on GitHub. For more, see the AgentCore product page, the CLI reference, and the Get started guide.\n\n## Wrap-up\n\n- AgentCore CLI 1.0 (@aws/agentcore 1.0.0) is generally available\n- Faster startup, with a consistent command structure and global flags\n- Work with resources directly without adding them to a project\n- Migrate existing projects with `agentcore migrate`\n\nThis is for developers who want to build and run agents from the terminal!",
+  "emotion": "happy",
+  "importance": 5,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-bedrock-agentcore-cli-version-1-0-available/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Bedrock AgentCore CLI version 1.0 is now available",
+  "tags": [
+    "aws",
+    "ai",
+    "devops"
+  ],
+  "published_at": "2026-10-28T20:00:00+00:00"
+}
