@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-agent-registry-four-regions",
+  "title": "AWS Agent Registry がロンドン・フランクフルト・オハイオ・カナダにも上陸！",
+  "summary": "Amazon Bedrock AgentCore で提供される AWS Agent Registry が、新たに 4 つのリージョンで使えるようになったよ！これで合計 9 リージョンに対応したみたい。",
+  "body_md": "やっほー、しぃちゃんだよ！今日は AI エージェントまわりの嬉しいリージョン拡大のニュースを持ってきたよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Agent Registry が新しく 4 つの AWS リージョンで使えるようになったと発表されたよ！\n\n追加されたリージョンはこちら！\n\n- Europe (London) の eu-west-2\n- Europe (Frankfurt) の eu-central-1\n- US East (Ohio) の us-east-2\n- Canada (Central) の ca-central-1\n\nこれで AWS Agent Registry が使えるリージョンは全部で 9 つになったんだって。\n\n## なぜ重要なの？\n\nAWS Agent Registry は、Amazon Bedrock AgentCore を通じて提供されている、フルマネージドの探索サービスだよ。組織の中にあるリソースを一か所のカタログで整理・管理して、見つけやすくしてくれるの。\n\nエージェントやツールが増えてくると「どこに何があるの？」が分からなくなりがちだよね。そこを一元的に解決する土台が、いろんな地域で使えるようになったことが大事なポイントだよ！\n\n## これで何が変わるの？\n\nロンドン、フランクフルト、オハイオ、カナダのリージョンでエージェント基盤を動かしているチームは、同じリージョンでレジストリを使えるようになるよ。\n\n原文では詳しく触れられていないけれど、利用リージョンが増えるのは、普段使っているリージョンに近い場所で運用したいチームにとって選択肢が広がる話だと思うよ。\n\n## 深く潜ってみよう\n\nAWS Agent Registry でできることを整理するとこんな感じだよ！\n\n- MCP サーバー、ツール、エージェント、エージェントスキル、カスタムリソースを、検索できるレジストリに公開できる\n- 承認ワークフローでアクセスを制御できる\n- 人間のユーザーも AI エージェントも、ハイブリッド検索・カタログ閲覧・ネイティブの MCP エンドポイントで、必要なツールやエージェントを見つけられる\n\n全リージョンの一覧は AWS Regional Services List で確認できるよ。使い始めるときは Amazon Bedrock AgentCore の開発者ガイドにある Registry のドキュメントを見てね。\n\n## まとめ\n\n- AWS Agent Registry が新たに 4 リージョンで利用可能に\n- 対応リージョンは合計 9 つになった\n- MCP サーバーやエージェントスキルなどを承認フロー付きで公開・検索できる\n\nヨーロッパや北米で AgentCore を使ってエージェントを増やしているチームに刺さる話題だよ！",
+  "title_en": "AWS Agent Registry Lands in London, Frankfurt, Ohio, and Canada!",
+  "summary_en": "AWS Agent Registry, available through Amazon Bedrock AgentCore, is now in four more AWS Regions, bringing the total to nine.",
+  "body_md_en": "Hi, it's Shii-chan! Today I have some great news about AI agent infrastructure expanding to more Regions!\n\n## What was announced?\n\nAccording to AWS What's New, AWS Agent Registry is now available in four additional AWS Regions!\n\nThe new Regions are:\n\n- Europe (London), eu-west-2\n- Europe (Frankfurt), eu-central-1\n- US East (Ohio), us-east-2\n- Canada (Central), ca-central-1\n\nThat brings the total to nine Regions.\n\n## Why it matters\n\nAWS Agent Registry is a fully managed discovery service offered through Amazon Bedrock AgentCore. It gives you one central catalog to organize, curate, and discover resources across your organization.\n\nAs the number of agents and tools grows, it gets hard to know what lives where. A central catalog helps with that, and now it is available in more places.\n\n## What changes\n\nTeams running agent workloads in London, Frankfurt, Ohio, or Canada (Central) can now use the registry in the same Region.\n\nThe announcement doesn't go into more detail, but more Regions generally means more choice for teams that want to operate close to where they already run.\n\n## Dive Deep\n\nHere is what AWS Agent Registry lets you do:\n\n- Publish MCP servers, tools, agents, agent skills, and custom resources into a searchable registry\n- Control access through an approval workflow\n- Let both people and AI agents find the right tools and agents through hybrid search, catalog browsing, and a native MCP endpoint\n\nFor the full list of Regions, see the AWS Regional Services List. To get started, check the Registry documentation in the Amazon Bedrock AgentCore developer guide.\n\n## Wrap-up\n\n- AWS Agent Registry is now in four more Regions\n- It is available in nine Regions in total\n- You can publish and discover MCP servers, agent skills, and more, with an approval workflow\n\nThis one is for teams building agents on AgentCore in Europe and North America!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-agent-registry-four-regions/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Agent Registry is now available in four additional AWS Regions",
+  "tags": [
+    "aws",
+    "ai",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-28T08:00:00+00:00"
+}

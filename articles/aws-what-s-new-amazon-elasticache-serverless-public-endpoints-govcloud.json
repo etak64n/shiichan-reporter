@@ -1,0 +1,21 @@
+{
+  "slug": "aws-what-s-new-amazon-elasticache-serverless-public-endpoints-govcloud",
+  "title": "ElastiCache Serverless のパブリックエンドポイントが GovCloud (US) にも対応！",
+  "summary": "Amazon ElastiCache Serverless for Valkey のパブリックエンドポイントが AWS GovCloud (US) リージョンで使えるようになったよ。VPC の外からでも IAM 認証と TLS 1.3 で接続できるの！",
+  "body_md": "みんな、しぃちゃんだよ！今日は GovCloud で使えるキャッシュの嬉しいアップデートを紹介するね！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon ElastiCache Serverless for Valkey のパブリックエンドポイントが AWS GovCloud (US) リージョンで使えるようになったと発表されたよ！\n\nこれでパブリックエンドポイントは、次のすべてで使えることになったよ。\n\n- すべての商用 AWS リージョン\n- AWS GovCloud (US) リージョン\n- 中国リージョン\n\n## 今までどうだったの？\n\n原文によると、パブリックエンドポイントは VPC の外で動くアプリケーションから、VPN・踏み台ホスト・SSH トンネルなしでキャッシュにつなげる仕組みだよ。GovCloud (US) ではこの機能がまだ使えるリージョンに入っていなかったんだね。\n\n## これで何が変わるの？\n\nGovCloud (US) でも、サーバーレス関数など VPC の外にあるアプリから、直接キャッシュに接続できるようになるよ。VPC の設定やインフラの準備が要らなくて、キャッシュは 1 分かからずに作れるんだって！\n\n## 深く潜ってみよう\n\n具体的な仕様はこんな感じだよ。\n\n- 認証: すべての接続で TLS 1.3 上の IAM 認証を使うので、保存したりローテーションしたりするパスワードは不要\n- クライアント: IAM 認証をビルトインでサポートする Valkey GLIDE 2.2 以降、または他の Valkey クライアントと Developer Toolkit for ElastiCache の組み合わせ\n- Developer Toolkit for ElastiCache: IAM 認証トークンの生成と更新をしてくれるオープンソースのライブラリ\n- 料金: 標準の ElastiCache Serverless の料金以外に追加料金なし\n- 作り方: Valkey 9.0 以降のサーバーレスキャッシュを、パブリックエンドポイント付きで AWS マネジメントコンソール、AWS SDK、AWS CLI から作成\n\n## まとめ\n\n- ElastiCache Serverless for Valkey のパブリックエンドポイントが GovCloud (US) に対応\n- VPN・踏み台・SSH トンネルなしで VPC 外から接続できる\n- IAM 認証と TLS 1.3 でパスワード管理が要らない\n- 追加料金なし、Valkey 9.0 以降で利用可能\n\nGovCloud でサーバーレスなアプリにキャッシュを手軽に足したい人に刺さるアップデートだよ！",
+  "title_en": "ElastiCache Serverless Public Endpoints Now Reach AWS GovCloud (US)!",
+  "summary_en": "Public endpoints for Amazon ElastiCache Serverless for Valkey are now available in AWS GovCloud (US) Regions, with IAM authentication over TLS 1.3.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today I'm sharing a handy caching update for GovCloud!\n\n## What was announced?\n\nAWS What's New says Amazon ElastiCache Serverless for Valkey now supports public endpoints in the AWS GovCloud (US) Regions!\n\nPublic endpoints are now available in:\n\n- All commercial AWS Regions\n- The AWS GovCloud (US) Regions\n- The China Regions\n\n## The story so far\n\nA public endpoint lets applications running outside a VPC connect to a cache without a VPN, a bastion host, or an SSH tunnel. Until now, GovCloud (US) wasn't among the Regions with this option.\n\n## What changes\n\nIn GovCloud (US), serverless functions and other apps outside a VPC can now connect to the cache directly. There is no VPC to configure and no infrastructure to provision, and you can create a cache in under a minute.\n\n## Dive Deep\n\nThe details:\n\n- Authentication: every connection uses IAM authentication over TLS 1.3, so there is no password to store or rotate\n- Clients: Valkey GLIDE 2.2 or later, which has built-in IAM support, or another Valkey client paired with the Developer Toolkit for ElastiCache\n- Developer Toolkit for ElastiCache: an open-source library that generates and refreshes IAM authentication tokens\n- Pricing: no additional charge beyond standard ElastiCache Serverless pricing\n- Getting started: create a Valkey 9.0 or later serverless cache with a public endpoint using the AWS Management Console, AWS SDK, or AWS CLI\n\n## Wrap-up\n\n- Public endpoints for ElastiCache Serverless for Valkey now work in GovCloud (US)\n- No VPN, bastion host, or SSH tunnel needed to connect from outside a VPC\n- IAM authentication and TLS 1.3 mean no passwords to manage\n- No extra charge, and Valkey 9.0 or later is required\n\nThis is for anyone in GovCloud who wants to add a cache to a serverless app with little setup!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-elasticache-serverless-public-endpoints-govcloud/",
+  "source_name": "AWS What's New",
+  "og_title": "Public endpoints for Amazon ElastiCache Serverless now in AWS GovCloud (US)",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "serverless",
+    "security"
+  ],
+  "published_at": "2026-10-28T19:00:00+00:00"
+}

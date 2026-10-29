@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-dax-additional-regions",
+  "title": "DynamoDB Accelerator (DAX) がカナダとケープタウンに登場！",
+  "summary": "Amazon DynamoDB Accelerator (DAX) が、Canada (Central) と Africa (Cape Town) の 2 リージョンで使えるようになったよ。マイクロ秒レベルのキャッシュを近くに置けるの！",
+  "body_md": "みんな、しぃちゃんだよ！今日は DynamoDB のキャッシュ、DAX のリージョン拡大をお届けするね！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon DynamoDB Accelerator (DAX) が新たに 2 つのリージョンで使えるようになったよ！\n\n- Canada (Central)\n- Africa (Cape Town)\n\n## なぜ重要なの？\n\nDAX は DynamoDB 向けのフルマネージドで高可用なインメモリキャッシュだよ。原文によると、1 桁ミリ秒だった応答をマイクロ秒まで縮めて、最大 10 倍の性能向上になり、毎秒数百万リクエストでも効果があるんだって。\n\n## これで何が変わるの？\n\n対象リージョンで、キャッシュしたデータをリージョン内に置いたまま、低レイテンシーの要件を満たせるようになるよ。パッチ適用やフェイルオーバーは自動で、マネージドサービスの利点もそのまま受けられるよ。\n\n## 深く潜ってみよう\n\n向いているワークロードは、読み取りが多くてアクセスが急増するタイプだよ。\n\n- リアルタイム入札\n- ゲームのリーダーボード\n- 小売の商品カタログ\n\nDAX は DynamoDB と API 互換なので、コードの変更を最小限にして、マイクロ秒レベルのキャッシュを足せるよ。DynamoDB テーブルへの読み取りトラフィックも減らせるんだって。\n\n提供リージョンの全一覧は AWS Regional Services のページで確認してね。\n\n## まとめ\n\n- DAX が Canada (Central) と Africa (Cape Town) で利用可能に\n- 最大 10 倍の性能向上、1 桁ミリ秒からマイクロ秒へ\n- DynamoDB と API 互換で、変更は最小限\n\nカナダやアフリカで読み取り負荷の高いアプリを動かしている人に刺さるよ！",
+  "title_en": "DynamoDB Accelerator (DAX) Arrives in Canada and Cape Town!",
+  "summary_en": "Amazon DynamoDB Accelerator (DAX) is now available in Canada (Central) and Africa (Cape Town), bringing microsecond-latency caching closer to your data.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today I have a Region expansion for DAX, the DynamoDB cache!\n\n## What was announced?\n\nAWS What's New says Amazon DynamoDB Accelerator (DAX) is now available in two more Regions!\n\n- Canada (Central)\n- Africa (Cape Town)\n\n## Why it matters\n\nDAX is a fully managed, highly available, in-memory cache for DynamoDB. According to the announcement, it delivers up to ten times performance improvement, from single-digit milliseconds to microseconds, even at millions of requests per second.\n\n## What changes\n\nIn these Regions you can keep cached data within the Region and still meet low-latency requirements. Patching and failover are automated, so you get the benefits of a fully managed service.\n\n## Dive Deep\n\nDAX suits read-intensive and bursty workloads:\n\n- Real-time bidding\n- Gaming leaderboards\n- Retail product catalogs\n\nDAX is API-compatible with DynamoDB, so you can add microsecond-latency caching with minimal code changes. It also offloads read traffic from your DynamoDB tables.\n\nFor the full list of Regions, see the AWS Regional Services page.\n\n## Wrap-up\n\n- DAX is now in Canada (Central) and Africa (Cape Town)\n- Up to 10x performance improvement, from single-digit milliseconds to microseconds\n- API-compatible with DynamoDB, with minimal code changes\n\nThis is for teams running read-heavy apps in Canada or Africa!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/dax-additional-regions/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon DynamoDB Accelerator (DAX) is now available in additional Regions",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-29T08:00:00+00:00"
+}

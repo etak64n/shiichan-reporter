@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-rds-oracle-sqlserver-autoscaling-additional-storage-volumes",
+  "title": "RDS for Oracle と SQL Server の追加ストレージも自動スケール！最大 256 TiB まで",
+  "summary": "Amazon RDS for Oracle と SQL Server で、追加ストレージボリュームにも RDS ストレージ自動スケーリングが使えるようになったよ。ダウンタイムなしで容量が増えるの！",
+  "body_md": "おつかれさま、しぃちゃんだよ！今日はデータベースの容量管理が楽になるアップデートだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon RDS for SQL Server と Amazon RDS for Oracle が、追加ストレージボリュームでも RDS ストレージ自動スケーリングに対応したと発表されたよ！\n\nストレージ自動スケーリングは、データベースの負荷の増加に合わせて、ダウンタイムなしで容量を自動で増やしてくれる機能だよ。\n\n## 今までどうだったの？\n\n追加ストレージボリュームを使うと、最大 3 つのボリュームを足して、容量を最大 256 TiB まで増やせるよ。でも今までは、プライマリボリュームでは自動スケーリングを有効にできたものの、追加ボリュームの容量は、予想される需要をもとに手動でプロビジョニングする必要があったんだ。\n\n- 少なく見積もるとアプリケーションのダウンタイムにつながる\n- 多く見積もると、使われないリソースと高いコストにつながる\n\n## これで何が変わるの？\n\n追加ボリュームごとに、希望する最大ストレージの上限を決めるだけで、あとは自動スケーリングにおまかせできるよ。容量の読み違いによる障害や無駄が減るね！\n\n## 深く潜ってみよう\n\n- 仕組み: 実際のストレージ使用量を継続的に監視して、使用率がプロビジョニング済み容量に近づくと、自動で容量を増やす\n- 対象: 新規と既存のどちらのデータベースインスタンスでも使える\n- 料金: 自動スケーリングに追加料金はなく、プロビジョニングしたストレージ分だけ支払う\n- 有効化: AWS マネジメントコンソール、AWS CLI、Amazon RDS API から\n- 提供範囲: すべての商用 AWS リージョンと AWS GovCloud (US) リージョン\n\n## まとめ\n\n- 追加ストレージボリュームでも RDS ストレージ自動スケーリングが使える\n- 対象は RDS for Oracle と RDS for SQL Server\n- ボリュームごとに最大容量を決めるだけで、ダウンタイムなしで自動拡張\n- 追加料金なし\n\n大容量の Oracle や SQL Server を RDS で運用していて、容量計画に悩んでいる人に刺さるよ！",
+  "title_en": "RDS for Oracle and SQL Server Now Autoscale Additional Storage Volumes, Up to 256 TiB!",
+  "summary_en": "Amazon RDS for Oracle and SQL Server now support RDS storage autoscaling on additional storage volumes, growing capacity with zero downtime.",
+  "body_md_en": "Hi, it's Shii-chan! Today's update makes database capacity management easier!\n\n## What was announced?\n\nAWS What's New says Amazon RDS for SQL Server and Amazon RDS for Oracle now support RDS storage autoscaling on additional storage volumes!\n\nRDS storage autoscaling automatically scales storage capacity in response to growing database workloads, with zero downtime.\n\n## The story so far\n\nAdditional storage volumes let you add up to three volumes and increase capacity up to 256 TiB. But until now, autoscaling could be enabled only on the primary volume, and you had to manually provision capacity on the additional volumes based on anticipated demand.\n\n- Under-provisioning could result in application downtime\n- Over-provisioning could result in under-utilized resources and higher costs\n\n## What changes\n\nYou just set your desired maximum storage limit for each additional volume, and autoscaling takes care of the rest. That means fewer outages and less waste from guessing capacity wrong!\n\n## Dive Deep\n\n- How it works: RDS continuously monitors actual storage consumption and scales capacity up automatically when utilization approaches provisioned capacity\n- Scope: works with new and existing database instances\n- Pricing: no additional charge for autoscaling, and you pay only for the provisioned storage\n- Enabling it: use the AWS Management Console, AWS CLI, or Amazon RDS API\n- Availability: all commercial AWS Regions and the AWS GovCloud (US) Regions\n\n## Wrap-up\n\n- Storage autoscaling now works on additional storage volumes\n- It applies to RDS for Oracle and RDS for SQL Server\n- Set a maximum per volume and capacity grows with zero downtime\n- No additional charge\n\nThis is for anyone running large Oracle or SQL Server databases on RDS who is tired of capacity planning!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-rds-oracle-sqlserver-autoscaling-additional-storage-volumes",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon RDS for Oracle and SQL Server now support storage autoscaling on additional storage volumes",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-29T18:06:00+00:00"
+}

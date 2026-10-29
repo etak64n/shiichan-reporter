@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-acm-acme-support-govcloud-us",
+  "title": "GovCloud (US) の ACM が ACME に対応！証明書の更新を自動化しよう",
+  "summary": "AWS Certificate Manager の ACME プロトコル対応が GovCloud (US-East) と (US-West) に広がったよ。Certbot などの ACMEv2 クライアントで公開 TLS 証明書を自動発行・更新できるの！",
+  "body_md": "こんにちは、しぃちゃんだよ！今日は証明書管理がぐっと楽になる GovCloud のニュースだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Certificate Manager (ACM) の ACME プロトコル対応が、AWS GovCloud (US-East) と AWS GovCloud (US-West) で使えるようになったと発表されたよ！\n\nACM はフルマネージドの ACME サーバーエンドポイントを用意していて、Amazon Trust Services から公開 TLS 証明書を発行してくれるよ。\n\n## なぜ重要なの？\n\n原文によると、CA/Browser Forum が 2029 年までに証明書の有効期間を 47 日にすることを義務づけるので、手作業での公開証明書の管理は現実的じゃなくなるんだって。\n\n## これで何が変わるの？\n\n標準プロトコルの ACME で、証明書の発行から更新までを完全に自動化する道が、GovCloud (US) でも開けたよ。\n\n## 深く潜ってみよう\n\n使えるクライアントは、ACMEv2 に対応していればどれでもよくて、原文ではこの 3 つが例に挙がっていたよ。\n\n- Certbot\n- cert-manager (Kubernetes 用)\n- acme.sh\n\n料金や設定手順などの詳しいことは、AWS News ブログの記事、ACM の ACME ドキュメント、ACM の料金ページに案内があるよ。\n\n## まとめ\n\n- ACM の ACME 対応が GovCloud (US-East) と (US-West) に拡大\n- Amazon Trust Services の公開 TLS 証明書を ACMEv2 クライアントで発行できる\n- 証明書の有効期間短縮に備えて、発行と更新の自動化が進められる\n\nGovCloud で Kubernetes や Web サーバーの証明書運用を自動化したい人に刺さるよ！",
+  "title_en": "ACM Brings ACME Support to GovCloud (US) for Automated Certificates!",
+  "summary_en": "AWS Certificate Manager's ACME support is now in AWS GovCloud (US-East) and (US-West), so ACMEv2 clients such as Certbot can automate public TLS certificate issuance and renewal.",
+  "body_md_en": "Hi, it's Shii-chan! Today's GovCloud news makes certificate management a lot easier!\n\n## What was announced?\n\nAWS What's New says AWS Certificate Manager (ACM) ACME protocol support is now available in AWS GovCloud (US-East) and AWS GovCloud (US-West)!\n\nACM provides a fully managed ACME server endpoint that issues public TLS certificates from Amazon Trust Services.\n\n## Why it matters\n\nThe announcement notes that the CA/Browser Forum is mandating 47-day certificate lifetimes by 2029, which makes manual management of public certificates untenable.\n\n## What changes\n\nWith the standard ACME protocol, you can now fully automate certificate issuance and renewal in GovCloud (US) too.\n\n## Dive Deep\n\nAny ACMEv2-compatible client works. The announcement names these three:\n\n- Certbot\n- cert-manager for Kubernetes\n- acme.sh\n\nFor details such as pricing and setup, see the AWS News blog post, the ACM ACME documentation, and the ACM pricing page.\n\n## Wrap-up\n\n- ACM ACME support now covers GovCloud (US-East) and (US-West)\n- Public TLS certificates from Amazon Trust Services can be issued with ACMEv2 clients\n- You can automate issuance and renewal ahead of shorter certificate lifetimes\n\nThis is for anyone in GovCloud who wants to automate certificates for Kubernetes or web servers!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/acm-acme-support-govcloud-us/",
+  "source_name": "AWS What's New",
+  "og_title": "ACM now supports ACME for public certificates in AWS GovCloud (US)",
+  "tags": [
+    "aws",
+    "security",
+    "devops"
+  ],
+  "published_at": "2026-10-29T08:00:00+00:00"
+}
