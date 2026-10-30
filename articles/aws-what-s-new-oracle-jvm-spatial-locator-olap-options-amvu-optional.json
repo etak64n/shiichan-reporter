@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-oracle-jvm-spatial-locator-olap-options-amvu-optional",
+  "title": "RDS for Oracle の JVM・Spatial などで自動マイナーバージョンアップグレードをオフにできるよ！",
+  "summary": "Amazon RDS for Oracle で、JVM・Spatial・Locator・OLAP オプションを使う DB インスタンスでも、自動マイナーバージョンアップグレードをオフにできるようになったよ。",
+  "body_md": "やっほー、しぃちゃんだよ！RDS for Oracle の運用で地味に嬉しい変更があったから紹介するね。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon RDS for Oracle が、JVM、Spatial、Locator、OLAP のいずれかのオプションを使う新規・既存の DB インスタンスで、自動マイナーバージョンアップグレードをオフにできるようになったと告知されたよ。\n\n## 今までどうだったの？\n\nこれらのオプションを使うには、自動マイナーバージョンアップグレードを有効にしておく必要があったよ。\n\n## これで何が変わるの？\n\nマイナーバージョンアップグレードをいつ適用するかを、自分で決められるようになるよ。メンテナンスの時期を自分の都合に合わせたいチームに嬉しい変更だね。\n\n## 深く潜ってみよう\n\n運用上のポイントはこれだよ。\n\n- 自動アップグレードをオフにした場合は、Oracle の最新のセキュリティ修正を取り込めるように、新しいマイナーバージョンを定期的に適用することが推奨されている\n- 自動アップグレードをオンのまま、環境ごとのアップグレード順序を制御したいときは、AWS Organizations の upgrade rollout policy が使える\n- 提供範囲は、RDS for Oracle が使える全商用 AWS リージョンと AWS GovCloud (US) リージョン\n\nオプションについて詳しくは、RDS ユーザーガイドの「Adding options to Oracle DB instances」を見てね。\n\n## まとめ\n\n- JVM、Spatial、Locator、OLAP オプションでも自動マイナーアップグレードをオフにできる\n- オフにしたら、セキュリティ修正のために定期的な手動適用が推奨\n- 順序だけ制御したいなら upgrade rollout policy が使える\n\nOracle のオプションを使いつつ、アップグレードのタイミングを厳密に管理したい DBA さんに刺さるよ！",
+  "title_en": "Amazon RDS for Oracle no longer requires automatic minor version upgrades for JVM, Spatial, Locator, and OLAP options",
+  "summary_en": "Amazon RDS for Oracle now lets you turn off automatic minor version upgrades on DB instances that use the JVM, Spatial, Locator, or OLAP option.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Here's a quietly nice change for running RDS for Oracle.\n\n## What was announced?\n\nAWS What's New announced that Amazon RDS for Oracle now lets you turn off automatic minor version upgrades on new and existing DB instances that use the JVM, Spatial, Locator, or OLAP option.\n\n## The story so far\n\nPreviously, these options required automatic minor version upgrades to be enabled.\n\n## What changes\n\nYou now decide when to apply minor version upgrades. That's good news for teams who want maintenance to follow their own schedule.\n\n## Dive Deep\n\nOperational notes:\n\n- If you turn off automatic minor version upgrades, apply new minor versions regularly so your instances keep the latest Oracle security fixes\n- To keep automatic upgrades on and still control the order in which environments are upgraded, use the AWS Organizations upgrade rollout policy\n- Available in all commercial AWS Regions and the AWS GovCloud (US) Regions where RDS for Oracle is available\n\nSee \"Adding options to Oracle DB instances\" in the Amazon RDS User Guide for more on options.\n\n## Wrap-up\n\n- Automatic minor upgrades can be turned off even with JVM, Spatial, Locator, or OLAP options\n- If you turn them off, apply updates regularly for security fixes\n- Use the upgrade rollout policy if you only need to control ordering\n\nThis one is for DBAs who use Oracle options and want tight control over upgrade timing!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/oracle-jvm-spatial-locator-olap-options-amvu-optional/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon RDS for Oracle no longer requires automatic minor version upgrades for JVM, Spatial, Locator, and OLAP options",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-30T17:00:00+00:00"
+}

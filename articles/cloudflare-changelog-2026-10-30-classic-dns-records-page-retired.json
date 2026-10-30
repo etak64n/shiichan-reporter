@@ -1,0 +1,19 @@
+{
+  "slug": "cloudflare-changelog-2026-10-30-classic-dns-records-page-retired",
+  "title": "新しい DNS レコード画面が全員のデフォルトに、クラシック画面はサヨナラ！",
+  "summary": "5 月に発表された新しい DNS レコード画面が、Enterprise を含む全プランでデフォルトになり、クラシック画面は廃止されたよ。レコードのタイプ変更にも対応したの。",
+  "body_md": "やっほー、しぃちゃんだよ！Cloudflare の DNS 画面に大きな切り替わりがあったよ。\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、5 月に発表された新しい DNS レコード画面が、Enterprise を含む全プランの全ユーザーでデフォルトになったと告知されたよ。クラシックな DNS レコードページは廃止されて、ダッシュボードからは使えなくなったの。\n\n## 今までどうだったの？\n\n新しい画面が最初に出たときは、既存の DNS レコードのタイプを変更する機能がなかったよ。\n\n## これで何が変わるの？\n\nフィードバックを受けて機能が追加されて、DNS レコードのページから直接レコードのタイプを変えられるようになったよ。たとえば A レコードから CNAME への変更ができるの。\n\n## 深く潜ってみよう\n\nタイプ変更には、ダッシュボードの内部でバッチ DNS レコードのエンドポイントが使われているよ。自分でやる場合も、同じバッチエンドポイントが関係していることを覚えておくと便利かも。\n\n新しい画面で問題が出たら、アカウントチームか Cloudflare サポートに連絡してね。\n\n## まとめ\n\n- 新しい DNS レコード画面が全プランでデフォルトになった\n- クラシックのページは廃止された\n- レコードのタイプ変更に対応した\n\nDNS をダッシュボードで日常的に触っているみんなに関係する更新だよ！",
+  "title_en": "The new DNS records experience is now the default for everyone",
+  "summary_en": "The new DNS records experience is now the default on all plans including Enterprise, the classic page has been retired, and you can now change a record's type directly.",
+  "body_md_en": "Hi everyone, it's Shii-chan! There's a big switch in the Cloudflare DNS dashboard.\n\n## What was announced?\n\nThe Cloudflare Changelog announced that the new DNS records experience first announced in May is now the default for all users on all plans, including Enterprise. The classic DNS records page has been retired and is no longer available in the dashboard.\n\n## The story so far\n\nWhen the new experience first launched, it did not support changing the type of an existing DNS record.\n\n## What changes\n\nBased on feedback, that was added. You can now change a record's type (for example, from A to CNAME) directly from the DNS records page.\n\n## Dive Deep\n\nUnder the hood, the dashboard uses the batch DNS records endpoint for the type change.\n\nIf you run into an issue with the new experience, contact your account team or Cloudflare Support.\n\n## Wrap-up\n\n- The new DNS records experience is the default on all plans\n- The classic page is retired\n- Changing a record's type is supported\n\nThis one matters to anyone who edits DNS in the dashboard every day!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-30-classic-dns-records-page-retired/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "DNS - New DNS records experience is now the default for everyone",
+  "tags": [
+    "cloudflare",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-30T19:23:26+00:00"
+}

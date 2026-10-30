@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-openai-daybreak-red-govcloud-east",
+  "title": "OpenAI の Daybreak Red が GovCloud (US-East) の Bedrock に登場！",
+  "summary": "OpenAI の Daybreak Red(GPT-5.6 Cyber)が、適格な顧客向けに Amazon Bedrock の AWS GovCloud (US-East) で使えるようになったよ。脆弱性調査やエクスプロイト再現などの防御側の作業向けなの。",
+  "body_md": "やっほー、しぃちゃんだよ！AWS の What's New から、セキュリティ向けの AI モデルの提供拡大を紹介するね。\n\n## なにが発表されたの？\n\nAWS の What's New で、OpenAI の Daybreak Red が、適格な顧客向けに Amazon Bedrock の AWS GovCloud (US-East) で利用できるようになったと告知されたよ。セキュリティチームが脆弱性を見つけ、エクスプロイトをテストし、防御を築くための強力なツールとして位置づけられているの。\n\n## なぜ重要なの？\n\nDaybreak Red: GPT-5.6 Cyber は、OpenAI の Daybreak サイバー防御イニシアチブの一部で、認可された脆弱性調査、エクスプロイトの再現、緩和策の開発のために作られているよ。検証された防御担当者が、この種の作業で拒否されにくくなる一方で、本人確認、モニタリング、アクセス制御は強化されているの。\n\n## これで何が変わるの？\n\n政府系のワークロードを扱う GovCloud 環境でも、この種のモデルを Bedrock 経由で使える選択肢ができるよ。\n\n## 深く潜ってみよう\n\n原文から分かることはこれだよ。\n\n- Bedrock の次世代推論エンジン上で動き、ゼロオペレーターアクセスがチップレベルで強制される\n- 推論データはモデルの学習に使われず、Daybreak Red のデータを OpenAI と共有する必要もない\n- 利用可能なリージョンは US East (Ohio) と AWS GovCloud (US-East)\n- 利用には、OpenAI の Daybreak アクセスへの登録が必要\n\n始め方は、まず Daybreak の適格性について OpenAI か AWS のアカウントチームに問い合わせるよ。承認されたら、アカウントチームと協力してアクセスを有効にしてもらうの。\n\n## まとめ\n\n- Daybreak Red(GPT-5.6 Cyber)が GovCloud (US-East) の Bedrock で使える\n- 認可された脆弱性調査、エクスプロイト再現、緩和策の開発向け\n- 推論データは学習に使われない\n- 利用には適格性の審査と Daybreak アクセスへの登録が必要\n\n政府系のセキュリティチームや、防御側の脆弱性調査を担当する人に刺さるよ！",
+  "title_en": "Daybreak Red from OpenAI now available on Amazon Bedrock in AWS GovCloud (US-East)",
+  "summary_en": "Daybreak Red from OpenAI (GPT-5.6 Cyber) is now available to eligible customers on Amazon Bedrock in AWS GovCloud (US-East), built for authorized vulnerability research and defense.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Here's a security-focused AI model expansion from AWS What's New.\n\n## What was announced?\n\nAWS What's New announced that Daybreak Red from OpenAI is now available to eligible customers on Amazon Bedrock in AWS GovCloud (US-East). It is positioned as a powerful tool for security teams to find vulnerabilities, test exploits, and build defenses.\n\n## Why it matters\n\nDaybreak Red: GPT-5.6 Cyber is part of OpenAI's Daybreak cyber defense initiative and is built for authorized vulnerability research, exploit reproduction, and mitigation development. Verified defenders get fewer refusals for this work, along with stronger identity verification, monitoring, and access controls.\n\n## What changes\n\nGovCloud environments that handle government workloads now have the option of using this kind of model through Bedrock.\n\n## Dive Deep\n\nWhat the announcement tells us:\n\n- It runs on Bedrock's next-generation inference engine, with zero-operator access enforced at the chip\n- Your inference data is not used to train models, and you do not need to share your Daybreak Red data with OpenAI\n- The model is available in US East (Ohio) and AWS GovCloud (US-East)\n- Access requires enrollment in Daybreak access from OpenAI\n\nTo get started, contact OpenAI or your AWS account team about Daybreak eligibility. Once approved, work with your AWS account team to enable access.\n\n## Wrap-up\n\n- Daybreak Red (GPT-5.6 Cyber) is available on Bedrock in GovCloud (US-East)\n- It targets authorized vulnerability research, exploit reproduction, and mitigation development\n- Inference data is not used for training\n- Access requires eligibility review and Daybreak enrollment\n\nThis one is for government security teams and anyone doing defensive vulnerability research!",
+  "emotion": "thinking",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/openai-daybreak-red-govcloud-east/",
+  "source_name": "AWS What's New",
+  "og_title": "Daybreak Red from OpenAI now available to eligible customers on Amazon Bedrock in AWS GovCloud (US-East)",
+  "tags": [
+    "aws",
+    "ai",
+    "security"
+  ],
+  "published_at": "2026-10-30T18:20:00+00:00"
+}

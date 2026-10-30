@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-10-30-chrome-152",
+  "title": "Browser Run が Chrome 152 に！User-Agent の許可ルールは要チェックだよ",
+  "summary": "Browser Run がデフォルトで Chrome 152 を使うようになったよ。Quick Actions の既定 User-Agent も Chrome 119 から 152 に変わるので、許可ルールを使っている人は更新が必要みたい。",
+  "body_md": "みんな、しぃちゃんだよ！Cloudflare の Browser Run がバージョンアップしたよ。\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Browser Run がデフォルトで Chrome 152 を実行するようになったと告知されたよ。最新の Web プラットフォーム機能、レンダリング修正、セキュリティパッチが入るし、コードの変更は不要なの。\n\n## 今までどうだったの？\n\nQuick Actions の既定 User-Agent は Chrome 119 を名乗っていたよ。\n\n## これで何が変わるの？\n\n既定の User-Agent が Chrome 152 になるよ。Browser Run の User-Agent を許可リストにしたり、マッチさせたりしている人はルールの更新が必要だよ。自分の値は、これまで通り userAgent パラメータで指定できるの。\n\n## 深く潜ってみよう\n\n同じリリースに入った改善はこちら。\n\n- サイト互換性の向上: Quick Actions のリクエストが通常の Chrome からのものに近くなり、ブロックされにくくなる\n- 大きなレスポンスヘッダー: 大きなヘッダーを返すページも正しく読み込める\n- ルート証明書の更新: 信頼されなくなったルート証明書をトラストストアから削除\n- 絶対リンク: /links が絶対 URL を返し、links-only のクロールは相対リンクもたどる\n- Markdown 出力の改善: /markdown とクロールの Markdown 出力でコードブロックの言語を保持\n- エラーの分かりやすさ: タイムアウトした Quick Actions は一貫したエラーを返す。例外を投げた Outbound Workers はブラウザに HTTP エラーを返す\n\n## まとめ\n\n- Browser Run が Chrome 152 になった\n- 既定の User-Agent が Chrome 119 から 152 に変わった\n- 互換性、証明書、リンク、Markdown、エラー処理がまとめて改善された\n\nBrowser Run でスクレイピングや自動化をしていて、User-Agent で許可制御している人に刺さるよ！",
+  "title_en": "Browser Run now runs Chrome 152",
+  "summary_en": "Browser Run now uses Chrome 152 by default, and the default Quick Actions User-Agent moves from Chrome 119 to 152, so check any allowlist rules that match it.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Cloudflare's Browser Run just got an upgrade.\n\n## What was announced?\n\nThe Cloudflare Changelog announced that Browser Run now runs Chrome 152 by default. Your sessions get current web platform features, rendering fixes, and security patches, with no code changes needed.\n\n## The story so far\n\nThe default User-Agent for Quick Actions reported Chrome 119.\n\n## What changes\n\nThe default User-Agent now reports Chrome 152. If you allowlist or match the Browser Run User-Agent, update your rules. You can still set your own value with the userAgent parameter.\n\n## Dive Deep\n\nOther improvements in the same release:\n\n- Better site compatibility: Quick Actions requests look more like regular Chrome requests, so fewer sites block them\n- Large response headers: pages that return large headers now load correctly\n- Updated root certificates: distrusted roots were removed from the trust store\n- Absolute links: /links returns absolute URLs, and links-only crawls follow relative links\n- Better Markdown output: /markdown and crawl output keep code block languages\n- Clearer errors: timed-out Quick Actions return a consistent error, and Outbound Workers that throw return an HTTP error to the browser\n\n## Wrap-up\n\n- Browser Run now runs Chrome 152\n- The default User-Agent changed from Chrome 119 to 152\n- Compatibility, certificates, links, Markdown, and errors all improved\n\nThis one is for anyone automating with Browser Run, especially if you control access by User-Agent!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-30-chrome-152/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Browser Run - Browser Run now runs Chrome 152",
+  "tags": [
+    "cloudflare",
+    "web",
+    "serverless"
+  ],
+  "published_at": "2026-10-30T19:23:26+00:00"
+}

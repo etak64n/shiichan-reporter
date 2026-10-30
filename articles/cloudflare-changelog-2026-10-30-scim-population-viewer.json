@@ -1,0 +1,19 @@
+{
+  "slug": "cloudflare-changelog-2026-10-30-scim-population-viewer",
+  "title": "SCIM population viewer で、届いたユーザーとグループがダッシュボードで見えるよ！",
+  "summary": "Cloudflare One に SCIM population viewer が追加されて、IdP ごとにプロビジョニングされたユーザーとグループを、API も問い合わせも使わずに確認できるようになったよ。",
+  "body_md": "おつかれさま、しぃちゃんだよ！SCIM を使っている人に便利な Cloudflare One の更新を紹介するね。\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、SCIM population viewer が告知されたよ。アイデンティティプロバイダーごとに、Cloudflare One へプロビジョニングされたユーザーとグループを見られる機能なの。\n\n## 今までどうだったの？\n\nCloudflare が何を受け取ったのかを確かめるには、API リクエストを投げるか、サポートに問い合わせる必要があったよ。\n\n## これで何が変わるの？\n\nダッシュボードだけで「IdP から届いたはずのユーザーが本当に届いているか」を確認できるから、SCIM の連携トラブルの切り分けがぐっと楽になるよ。\n\n## 深く潜ってみよう\n\nZero Trust の Integrations、Identity providers で、SCIM resources にあるユーザー数かグループ数を選ぶとビューアが開くよ。\n\nできることはこれだよ。\n\n- ユーザーはユーザー名・メール・名前・リソース ID で、グループは名前・リソース ID で検索\n- リソースの属性を整形表示か JSON 表示で確認\n- グループのメンバーを見て、Cloudflare と IdP のリソース ID をプロビジョニングログと突き合わせ\n- 編集権限があれば、個別のリソースを Cloudflare の SCIM population から削除\n\n注意点として、見えるのは「プロビジョニングされたリソース」であって、イベントの履歴ではないよ。失敗したリクエストを調べるときは SCIM プロビジョニングログを使ってね。既存の SCIM の削除処理やポリシーの挙動は変わらないよ。\n\n## まとめ\n\n- IdP ごとのプロビジョニング済みユーザーとグループを閲覧できる\n- 検索、属性表示、ID の突き合わせ、個別削除ができる\n- 履歴の調査はこれまで通りプロビジョニングログで行う\n\nSCIM 連携の運用や障害調査を担当する管理者さんに刺さるよ！",
+  "title_en": "Inspect SCIM users and groups with the new population viewer in Cloudflare One",
+  "summary_en": "Cloudflare One's new SCIM population viewer lets you inspect the users and groups provisioned by each identity provider, without API requests or support tickets.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Here's a handy Cloudflare One update for anyone using SCIM.\n\n## What was announced?\n\nThe Cloudflare Changelog announced the SCIM population viewer. It shows the users and groups provisioned to Cloudflare One by each identity provider.\n\n## The story so far\n\nTo check what Cloudflare had actually received, you had to make API requests or open a support ticket.\n\n## What changes\n\nYou can now confirm from the dashboard whether the users your IdP should have sent really arrived, which makes troubleshooting SCIM much easier.\n\n## Dive Deep\n\nIn Zero Trust > Integrations > Identity providers, select a user or group count under SCIM resources to open the viewer.\n\nHere is what you can do.\n\n- Search users by username, email, name, or resource ID, and groups by name or resource ID\n- Inspect resource attributes in formatted or JSON views\n- View group members and compare Cloudflare and IdP resource IDs with provisioning logs\n- Delete individual resources from the Cloudflare SCIM population when you have edit permission\n\nNote that the viewer shows provisioned resources, not provisioning event history. Use SCIM provisioning logs to investigate failed requests. Existing SCIM deprovisioning and policy behavior remain unchanged.\n\n## Wrap-up\n\n- View provisioned users and groups per identity provider\n- Search, view attributes, compare IDs, and delete individual resources\n- Keep using provisioning logs for event history\n\nThis one is for admins who run and debug SCIM integrations!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-30-scim-population-viewer/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Cloudflare One, Access - Inspect provisioned users and groups with the SCIM population viewer",
+  "tags": [
+    "cloudflare",
+    "security"
+  ],
+  "published_at": "2026-10-30T19:23:28+00:00"
+}

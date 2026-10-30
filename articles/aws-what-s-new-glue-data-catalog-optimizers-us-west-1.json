@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-glue-data-catalog-optimizers-us-west-1",
+  "title": "Glue Data Catalog の Iceberg テーブル最適化が米国西部(北カリフォルニア)に来たよ！",
+  "summary": "AWS Glue Data Catalog の Apache Iceberg テーブル自動最適化が、US West (N. California) リージョンで使えるようになったよ。小さなファイルの圧縮や古いスナップショットの削除をバックグラウンドでやってくれるの。",
+  "body_md": "やっほー、しぃちゃんだよ！AWS の What's New から、データレイクまわりのリージョン拡大を紹介するね。\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Glue Data Catalog の Apache Iceberg テーブル向け自動最適化が、US West (N. California) リージョンで使えるようになったと告知されたよ。\n\n## なぜ重要なの？\n\nIceberg テーブルは書き込みのたびに、小さなファイル、スナップショット、参照されなくなったファイルがたまっていくよ。放っておくとクエリが遅くなって、ストレージコストも増えちゃうの。\n\n## これで何が変わるの？\n\nこのリージョンでも、最適化がバックグラウンドで自動で回るようになるよ。個別のテーブルにも、Data Catalog 内の全テーブルにも有効にできるの。\n\n## 深く潜ってみよう\n\nテーブル最適化が継続的にやってくれることはこの 3 つだよ。\n\n- 小さなファイルの圧縮(コンパクション)\n- 保持設定を過ぎたスナップショットの削除\n- 不要になった参照なしファイルの削除\n\n各実行は、AWS Glue コンソール、Amazon CloudWatch のメトリクスとログで確認できるよ。有効化は、AWS Glue コンソール、AWS CLI、AWS SDK から行えるの。対応リージョンの一覧は Supported Regions for table optimizers に載っているよ。\n\n## まとめ\n\n- US West (N. California) で Iceberg テーブルの自動最適化が使える\n- 圧縮、スナップショット削除、不要ファイル削除が自動で行われる\n- コンソール、CLI、SDK で有効化でき、実行は CloudWatch で監視できる\n\n北カリフォルニアリージョンで Iceberg のデータレイクを運用している人に刺さるよ！",
+  "title_en": "AWS Glue Data Catalog Iceberg table optimization comes to US West (N. California)",
+  "summary_en": "AWS Glue Data Catalog now supports automatic table optimization for Apache Iceberg tables in US West (N. California), compacting small files and removing old snapshots in the background.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Here's a data lake Region expansion from AWS What's New.\n\n## What was announced?\n\nAWS What's New announced that AWS Glue Data Catalog now supports automatic table optimization for Apache Iceberg tables in the US West (N. California) Region.\n\n## Why it matters\n\nIceberg tables accumulate small files, snapshots, and unreferenced files with every write. Left alone, that slows queries and increases storage costs.\n\n## What changes\n\nIn this Region, optimization now runs automatically in the background. You can enable it for individual tables or for all tables in your Data Catalog.\n\n## Dive Deep\n\nTable optimization continuously does these three things.\n\n- Compacts small files\n- Removes snapshots that are past your retention settings\n- Deletes unreferenced files that are no longer needed\n\nYou can monitor each run from the AWS Glue console, Amazon CloudWatch metrics, and logs. You can enable it using the AWS Glue console, AWS CLI, or AWS SDKs. The full Region list is in Supported Regions for table optimizers.\n\n## Wrap-up\n\n- Automatic Iceberg table optimization is available in US West (N. California)\n- Compaction, snapshot removal, and unreferenced file cleanup happen automatically\n- Enable via console, CLI, or SDKs, and monitor with CloudWatch\n\nThis one is for teams running Iceberg data lakes in N. California!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/glue-data-catalog-optimizers-us-west-1/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Glue Data Catalog now supports Apache Iceberg table optimization in the US West (N. California) Region",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-30T08:00:00+00:00"
+}

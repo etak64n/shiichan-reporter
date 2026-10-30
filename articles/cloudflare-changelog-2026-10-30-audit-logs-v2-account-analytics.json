@@ -1,0 +1,19 @@
+{
+  "slug": "cloudflare-changelog-2026-10-30-audit-logs-v2-account-analytics",
+  "title": "Audit Logs v2 にアカウント分析が登場、失敗率までひと目で分かる！",
+  "summary": "Audit Logs v2 のダッシュボードに、アカウントレベルの監査ログ向け分析が追加されたよ。操作数の推移グラフとサマリーカードで、絞り込みながら調査できるの。",
+  "body_md": "やっほー、しぃちゃんだよ！監査ログを見る人に嬉しい更新が Cloudflare から来たよ。\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Audit Logs v2 にアカウントレベルの監査ログ向け分析がダッシュボードに追加されたと告知されたよ。\n\n## これで何が変わるの？\n\nログの表を目で追うだけでなく、グラフとカードで「いつ、誰が、どの製品で、どれだけ失敗したか」をつかんでから掘り下げられるようになるよ。\n\n## 深く潜ってみよう\n\n画面の構成はこうだよ。\n\n- Actions over time チャート: 選んだ期間の操作を、成功と失敗に分けて表示\n- サマリーカード: Total actions、Unique actors、Products impacted、Failure rate\n\nカードを選ぶと、アクションの種類、認証方法、上位のアクター、上位の製品、失敗したアクションを調べられるよ。値は絞り込み条件として適用したり除外したりできて、分析と監査ログの表の両方が更新される仕組みなの。\n\n制限として、アカウント分析は組織(organization)レベルの監査ログでは使えないよ。\n\n## まとめ\n\n- アカウントレベルの監査ログに分析ビューが追加された\n- 成功と失敗の推移、4 つのサマリーカードで全体像をつかめる\n- 値の適用と除外でグラフと表を同時に絞り込める\n- 組織レベルのログでは非対応\n\nアカウントの変更履歴を監視するセキュリティ・運用担当の人に刺さるよ！",
+  "title_en": "Audit Logs v2 gets account analytics",
+  "summary_en": "Audit Logs v2 now includes analytics for account-level audit logs in the dashboard, with an actions-over-time chart and summary cards you can filter and drill into.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Cloudflare has a nice update for people who read audit logs.\n\n## What was announced?\n\nThe Cloudflare Changelog announced that Audit Logs v2 now includes analytics for account-level audit logs in the dashboard.\n\n## What changes\n\nInstead of only scanning a table, you can see the big picture first (who did what, in which product, and how often it failed) and then dig in.\n\n## Dive Deep\n\nHere is how the screen is organized.\n\n- Actions over time chart: separates successful and failed actions for the selected time range\n- Summary cards: Total actions, Unique actors, Products impacted, and Failure rate\n\nSelect a card to investigate action types, authentication methods, top actors, top products, or failed actions. You can apply or exclude values as filters, which updates both the analytics and the audit log table.\n\nOne limitation: account analytics are not available for organization-level audit logs.\n\n## Wrap-up\n\n- Account-level audit logs now have an analytics view\n- A success/failure chart and four summary cards give you the overview\n- Apply or exclude values to filter the chart and table together\n- Not available for organization-level logs\n\nThis one is for security and operations folks who watch account changes!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-30-audit-logs-v2-account-analytics/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Audit Logs - Audit Logs v2: Account analytics",
+  "tags": [
+    "cloudflare",
+    "security"
+  ],
+  "published_at": "2026-10-30T19:23:25+00:00"
+}

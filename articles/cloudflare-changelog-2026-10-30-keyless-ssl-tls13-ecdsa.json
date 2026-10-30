@@ -1,0 +1,19 @@
+{
+  "slug": "cloudflare-changelog-2026-10-30-keyless-ssl-tls13-ecdsa",
+  "title": "Keyless SSL が ECDSA 証明書で TLS 1.3 に対応したよ！",
+  "summary": "Keyless SSL で ECDSA 証明書を使うと、TLS 1.3 がネゴシエートされるようになったよ。秘密鍵は自分のキーサーバーに置いたまま。RSA 証明書は引き続き TLS 1.2 までなの。",
+  "body_md": "こんにちは、しぃちゃんだよ！証明書まわりで、秘密鍵を手放したくない人に嬉しい更新だよ。\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Keyless SSL が ECDSA 証明書で TLS 1.3 をサポートしたと告知されたよ。\n\n## これで何が変わるの？\n\nゾーンで TLS 1.3 を有効にしていて、Keyless の ECDSA 証明書を提供するホスト名に訪問者が接続すると、TLS 1.3 がネゴシエートされるようになるよ。秘密鍵は自分のキーサーバーに置いたままで大丈夫！\n\n## 深く潜ってみよう\n\n対応状況を整理するとこうなるよ。\n\n- Keyless SSL の ECDSA 証明書: TLS 1.3 に対応\n- Keyless SSL の RSA 証明書: 引き続き最大 TLS 1.2 までネゴシエート\n\nTLS 1.3 を使いたい場合は、ECDSA 証明書を使うのがポイントだね。詳しい制限事項は Keyless SSL の limitations のドキュメントに書かれているよ。\n\n## まとめ\n\n- Keyless SSL の ECDSA 証明書で TLS 1.3 が使える\n- 秘密鍵は自分のキーサーバーに置いたまま\n- RSA 証明書は TLS 1.2 まで\n\n鍵を外に出せない規制業界などで Keyless SSL を使っている人に刺さるよ！",
+  "title_en": "Keyless SSL now supports TLS 1.3 with ECDSA certificates",
+  "summary_en": "Keyless SSL now negotiates TLS 1.3 for ECDSA certificates while your private keys stay on your own key server. RSA certificates still negotiate up to TLS 1.2.",
+  "body_md_en": "Hi everyone, it's Shii-chan! This one is for folks who don't want to give up control of their private keys.\n\n## What was announced?\n\nThe Cloudflare Changelog announced that Keyless SSL now supports TLS 1.3 for ECDSA certificates.\n\n## What changes\n\nWhen TLS 1.3 is enabled on your zone, visitors connecting to a hostname that serves a Keyless ECDSA certificate negotiate TLS 1.3. Your private keys stay on your own key server.\n\n## Dive Deep\n\nHere is the current picture.\n\n- Keyless SSL with ECDSA certificates: TLS 1.3 supported\n- Keyless SSL with RSA certificates: still negotiate up to TLS 1.2\n\nSo if you want TLS 1.3, ECDSA is the way to go. The Keyless SSL limitations page has the details.\n\n## Wrap-up\n\n- TLS 1.3 works with Keyless SSL ECDSA certificates\n- Private keys stay on your own key server\n- RSA certificates are limited to TLS 1.2\n\nThis one is for teams, such as in regulated industries, that can't let their keys leave their hands!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-30-keyless-ssl-tls13-ecdsa/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "SSL/TLS - Keyless SSL supports TLS 1.3 with ECDSA certificates",
+  "tags": [
+    "cloudflare",
+    "security"
+  ],
+  "published_at": "2026-10-30T19:23:27+00:00"
+}

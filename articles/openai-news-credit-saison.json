@@ -1,0 +1,20 @@
+{
+  "slug": "openai-news-credit-saison",
+  "title": "クレディセゾンの ChatGPT Enterprise 試験導入で ROI 954％！",
+  "summary": "クレディセゾンが 315 人で行った ChatGPT Enterprise のパイロットで、ROI 954％、1 人あたり月 14 時間の削減という結果が出て、全社展開が決まった事例だよ。",
+  "body_md": "こんにちは、しぃちゃんだよ！今日は OpenAI の News から、日本企業の導入事例を紹介するね。\n\n## なにが発表されたの？\n\nOpenAI の News で、クレディセゾン(Credit Saison)が ChatGPT Enterprise のパイロットで ROI 954％を達成した事例が公開されたよ。\n\n## なぜ重要なの？\n\n「AI を入れたら本当に効果があるの？」という疑問に、数字で答えている事例だからだよ。しかもパイロットから全社展開まで進んだ流れが書かれているの。\n\n## これで何が変わるの？\n\n社内で AI 導入を進めたい人にとって、パイロットの人選や進め方の参考になるよ。\n\n## 深く潜ってみよう\n\nパイロットの概要はこうだよ。\n\n- 期間: 2025 年 6 月下旬から 8 月上旬\n- 参加者: 315 人(日本の従業員約 3,700 人のうち 10％弱)\n- 構成: 希望者、推薦された社員、社長を含む全役員、各部門の代表\n- 支援: OpenAI による役員向けトレーニングと初心者向けワークショップ\n\n結果の数字はこちら。\n\n- ROI 954％(目標は 500％)\n- 1 人あたり月 14 時間の削減、年間で約 169 時間(目標は月 7.5 時間)\n- 事後アンケートで、管理職の 75％、非管理職の 70％が「なくては困る」と回答\n- 法務の回答者の約 80％が仕事の力が上がったと回答、IT の回答者の 80％超が仕事の満足度が上がったと回答\n\n進め方の工夫もあって、中央の AI 推進チームが専用の Slack チャンネルで成功も失敗も共有したそうだよ。株主総会を模擬する音声のカスタム GPT が経営層の関心を集めたり、執行役員の水野克己さんが企業調査用のカスタム GPT を自作して毎日使っていたりしたみたい。この結果を受けて、パイロット終了の約 1 か月後の 2025 年 9 月に全社展開が承認されたよ。\n\n## まとめ\n\n- 315 人のパイロットで ROI 954％、月 14 時間の削減\n- どちらも事前の目標を上回った\n- 役員を巻き込み、共有の場を作ったことが全社展開につながった\n\nAI 導入の社内説得材料がほしい推進担当の人に刺さる事例だよ！",
+  "title_en": "Credit Saison reports 954% ROI in a ChatGPT Enterprise pilot",
+  "summary_en": "Credit Saison's 315-person ChatGPT Enterprise pilot showed 954% ROI and 14 hours saved per participant each month, leading to a companywide rollout.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today I'm sharing a customer story from OpenAI News.\n\n## What was announced?\n\nOpenAI News published a story about Credit Saison, which reported 954% ROI in its ChatGPT Enterprise pilot.\n\n## Why it matters\n\nMany teams wonder whether AI really pays off. This story answers with numbers, and it follows the path from pilot to companywide adoption.\n\n## What changes\n\nIf you're pushing for AI adoption at work, the way the pilot was staffed and run is a useful reference.\n\n## Dive Deep\n\nThe pilot at a glance:\n\n- Period: late June to early August 2025\n- Participants: 315 people, just under 10% of about 3,700 employees in Japan\n- Mix: volunteers, nominated employees, every executive including the president, and department representatives\n- Support: executive training and beginner workshops from OpenAI\n\nThe results:\n\n- 954% ROI (the target was 500%)\n- 14 hours saved per participant each month, about 169 hours a year (the target was 7.5 hours a month)\n- In a post-pilot survey, 75% of managers and 70% of nonmanagers said they could not do without the tool\n- About 80% of legal respondents said it improved their ability to do their jobs, and over 80% of IT respondents reported greater job satisfaction\n\nA central AI adoption team shared successes and failures in a dedicated Slack channel. A custom voice-based GPT that simulated shareholder meetings drew strong interest from senior leadership, and executive president and COO Katsumi Mizuno built his own custom GPT for company research. About a month after the pilot, in September 2025, a companywide rollout was approved.\n\n## Wrap-up\n\n- A 315-person pilot reached 954% ROI and 14 hours saved per month\n- Both beat the initial targets\n- Involving executives and creating a place to share learnings helped lead to the rollout\n\nThis one is for AI adoption leads who need evidence to bring to their company!",
+  "emotion": "energetic",
+  "importance": 1,
+  "source_url": "https://openai.com/index/credit-saison",
+  "source_name": "OpenAI News",
+  "og_title": "Credit Saison achieves 954% ROI in a ChatGPT Enterprise pilot",
+  "tags": [
+    "openai",
+    "ai",
+    "business"
+  ],
+  "published_at": "2026-10-29T00:00:00+00:00"
+}

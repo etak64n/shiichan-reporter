@@ -1,0 +1,20 @@
+{
+  "slug": "openai-news-helping-websites-express-ai-training-preferences",
+  "title": "robots.txt で AI 学習の希望を伝える共通シグナルに OpenAI が対応するよ！",
+  "summary": "OpenAI が、サイト運営者が robots.txt で AI 学習への希望を示す共通シグナルを尊重すると発表したよ。実装は数か月以内の予定で、既存のクローラー制御も有効なの。",
+  "body_md": "みんな、しぃちゃんだよ！サイトを運営している人に関係する、OpenAI の News の発表を紹介するね。\n\n## なにが発表されたの？\n\nOpenAI の News で、Web サイトが AI 学習についての希望を伝えやすくする取り組みが発表されたよ。OpenAI は、robots.txt に書かれる共通のシグナルを尊重すると表明したの。\n\n## なぜ重要なの？\n\nサイト運営者が「コンテンツを基盤生成 AI の学習に使っていいか」を示す方法が、提供者ごとにバラバラだと大変だよね。共通のシグナルがあれば、参加する複数の提供者に、同じ書き方でまとめて意思表示できる可能性があるの。\n\n## これで何が変わるの？\n\nサイト運営者は、robots.txt を通じて AI 学習の希望を伝えられるようになるよ。このシグナルは任意(voluntary)のもので、IETF のドラフト「training preference signal」とひも付いているの。OpenAI は他の AI 提供者にも、このシグナルを尊重するよう呼びかけているよ。\n\n## 深く潜ってみよう\n\n原文から分かることは次の通りだよ。\n\n- OpenAI は「今後数か月」でシグナルへの対応を実装する予定で、実装の詳細は後日アップデートする\n- 土台になったのは IETF の AI Preferences ワーキンググループの作業で、OpenAI はそこの参加者とともに共通シグナルを発表する立場\n- OpenAI の既存の robots.txt によるクローラー制御は、新しいシグナルと並んで引き続き有効\n\n具体的な記述方法(シグナルの構文)は発表ページでは説明されておらず、IETF のドラフト仕様を見る必要があるよ。しぃちゃんも、まだ実装前なので細かい書き方は断言できないの。\n\n## まとめ\n\n- OpenAI は robots.txt の共通 AI 学習シグナルを尊重する方針\n- 実装は数か月以内の予定、詳細は後日\n- 既存のクローラー制御は引き続き有効\n- 構文は IETF のドラフトを確認する\n\n自分のサイトのコンテンツと AI 学習の関係を管理したいサイト運営者さんに刺さるよ！",
+  "title_en": "OpenAI will honor a shared robots.txt signal for AI training preferences",
+  "summary_en": "OpenAI says it will honor a shared robots.txt signal that lets website operators state their AI training preferences. Implementation is planned in the coming months, and existing crawler controls stay in effect.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Here's an OpenAI News announcement that matters to anyone running a website.\n\n## What was announced?\n\nOpenAI News announced an effort to make it easier for websites to express AI training preferences. OpenAI says it will honor a shared signal in robots.txt.\n\n## Why it matters\n\nIf every provider had its own way to say whether content can be used for training foundational generative AI, site operators would have a hard time. A shared signal could let them state their preference once for participating providers.\n\n## What changes\n\nSite operators can communicate AI training preferences through robots.txt. The signal is voluntary and linked to an IETF draft titled \"training preference signal\". OpenAI also encourages other AI providers to honor it.\n\n## Dive Deep\n\nHere is what the article tells us.\n\n- OpenAI plans to implement support in the coming months and will share implementation details later\n- The signal draws on the work of the IETF AI Preferences working group, and OpenAI is joining other participants in announcing it\n- OpenAI's existing robots.txt crawler controls remain in effect alongside the new signal\n\nThe article does not describe the signal's syntax, so check the IETF draft for details. Since it isn't implemented yet, I can't say exactly how it will be written.\n\n## Wrap-up\n\n- OpenAI will honor a shared robots.txt AI training signal\n- Implementation is planned in the coming months\n- Existing crawler controls still apply\n- Check the IETF draft for the syntax\n\nThis one is for site operators who want to manage how their content relates to AI training!",
+  "emotion": "thinking",
+  "importance": 3,
+  "source_url": "https://openai.com/index/helping-websites-express-ai-training-preferences",
+  "source_name": "OpenAI News",
+  "og_title": "Making it easier for websites to express AI training preferences",
+  "tags": [
+    "openai",
+    "web",
+    "ai"
+  ],
+  "published_at": "2026-10-30T09:30:00+00:00"
+}

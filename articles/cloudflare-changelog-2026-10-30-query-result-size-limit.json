@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-10-30-query-result-size-limit",
+  "title": "D1 のクエリ結果が 50 MB 上限に！11 月 4 日から超えるとエラーだよ",
+  "summary": "Cloudflare D1 が 2026 年 11 月 4 日から、クエリ結果サイズの上限を 50 MB に強制するよ。超えるクエリは失敗するので、事前に結果を小さくしておく必要があるの。",
+  "body_md": "こんにちは、しぃちゃんだよ！D1 を使っているみんなに、期限つきの大事なお知らせだよ。\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、D1 が 2026 年 11 月 4 日(水)から、クエリ結果の最大サイズ 50 MB を強制すると告知されたよ。\n\n## 今までどうだったの？\n\nこれまでは、この 50 MB の上限は強制されていなかったよ。\n\n## これで何が変わるの？\n\n50 MB を超える結果を返すクエリは失敗して、次のエラーが返るようになるよ。\n\n```\nD1 query result exceeded the maximum response size limit of 50 MB\n```\n\n影響は小さい見込みで、この上限は D1 全体のリクエストの 99.999 パーセンタイルをカバーしているから、ほとんどのユーザーは影響を受けないみたい。\n\n## 深く潜ってみよう\n\n大きな結果を返しているクエリがある人は、施行日までに結果を小さくしてね。\n\n- SELECT * をやめて、必要なカラムだけを選ぶ\n- LIMIT と OFFSET でページネーションする\n\n```sql\nSELECT id, name FROM users ORDER BY id LIMIT 1000 OFFSET 0;\n```\n\nREST API 経由のインポートとエクスポートはこの上限の対象外で、今まで通り動くよ。詳しくは D1 の limits と error list のドキュメントを見てね。\n\n## まとめ\n\n- 2026 年 11 月 4 日から、D1 のクエリ結果は 50 MB まで\n- 超えると上記のエラーで失敗する\n- 対策は必要なカラムだけの取得とページネーション\n- インポートとエクスポートは対象外\n\nD1 で大きなテーブルを丸ごと読んでいるアプリを持つ人は、今のうちにチェックしてね！",
+  "title_en": "D1 will enforce a 50 MB maximum query result size on November 4",
+  "summary_en": "Starting Wednesday, November 4, 2026, Cloudflare D1 will enforce a 50 MB maximum query result size, and larger results will fail, so shrink big queries before then.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Here's an important heads-up with a deadline for D1 users.\n\n## What was announced?\n\nThe Cloudflare Changelog announced that, beginning Wednesday, November 4, 2026, D1 will enforce a maximum query result size of 50 MB.\n\n## The story so far\n\nUntil now, this 50 MB limit was not enforced.\n\n## What changes\n\nQueries that return a result larger than 50 MB will fail with this error:\n\n```\nD1 query result exceeded the maximum response size limit of 50 MB\n```\n\nMost users should not notice, because the limit covers the 99.999th percentile of requests across D1.\n\n## Dive Deep\n\nIf your queries return large results, reduce the size before the enforcement date.\n\n- Select only the columns you need instead of using SELECT *\n- Paginate large result sets with LIMIT and OFFSET\n\n```sql\nSELECT id, name FROM users ORDER BY id LIMIT 1000 OFFSET 0;\n```\n\nImport and export operations via the REST API are not subject to this limit and continue to work as they do today. See the D1 limits and D1 error list documentation for details.\n\n## Wrap-up\n\n- From November 4, 2026, D1 query results are capped at 50 MB\n- Larger results fail with the error above\n- Fix it by selecting fewer columns and paginating\n- Import and export are not affected\n\nIf you have an app that reads big tables in one go on D1, check it now!",
+  "emotion": "confused",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-30-query-result-size-limit/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "D1 - D1 will enforce a maximum query result size of 50 MB",
+  "tags": [
+    "cloudflare",
+    "serverless",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-30T19:23:28+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-10-29-dls-dashboard-overview",
+  "title": "Data Localization Suite の設定が 1 ページで見渡せる Overview が登場！",
+  "summary": "Cloudflare ダッシュボードに Data Localization Suite の Overview ができて、Regional Services・Customer Metadata Boundary・Geo Key Manager の設定を読み取り専用でまとめて確認できるようになったよ。",
+  "body_md": "みんな、しぃちゃんだよ！データの置き場所を管理している人には嬉しいダッシュボードの更新が来たよ。\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、ダッシュボードに Data Localization Suite(DLS)の Overview が追加されたと告知されたよ。アカウントのデータローカライゼーション設定を、読み取り専用でまとめて見られるページなの。\n\n## 今までどうだったの？\n\nこれまでは、トラフィックがどこで処理されて、ログや秘密鍵がどこに保存されるのかを確認するのに、いくつものダッシュボードページや API を見て回る必要があったよ。\n\n## これで何が変わるの？\n\nRegional Services、Customer Metadata Boundary、Geo Key Manager の設定が 1 か所に集まるから、監査や社内確認のときに「今どうなってるっけ？」がすぐ分かるよ。\n\n## 深く潜ってみよう\n\n場所は Application Security の Data Localization Suite か、ダッシュボードで「DLS」と検索すると出てくるよ。タブは製品ごとに分かれているの。\n\n- Regional Services: リージョナル化されたホスト名(リージョンやゾーンで絞り込める)、IP バインディング、Spectrum アプリケーションを、それぞれのリージョンつきで表示\n- Customer Metadata Boundary: 境界がオンかどうか、リージョン(US または EU)、リージョン外アクセスを許可しているか\n- Geo Key Manager: geo ポリシーを持つ全カスタム証明書の、ホスト名・ゾーン・リージョン・ステータス\n\n各項目は設定変更ができるダッシュボードページにリンクしていて、各タブから製品ドキュメントにも飛べるよ。このページ自体は閲覧専用だよ。\n\n## まとめ\n\n- DLS の設定を 1 ページで確認できる Overview が追加された\n- 3 製品ぶんがタブで整理されている\n- 変更は各項目のリンク先で行う\n\nデータレジデンシーの要件に向き合うセキュリティ・コンプライアンス担当の人に刺さる更新だよ！",
+  "title_en": "A single Overview page for Data Localization Suite settings",
+  "summary_en": "The Cloudflare dashboard now has a read-only Data Localization Suite Overview that shows your Regional Services, Customer Metadata Boundary, and Geo Key Manager settings in one place.",
+  "body_md_en": "Hi everyone, it's Shii-chan! There's a handy dashboard update for anyone who manages where their data lives.\n\n## What was announced?\n\nIn the Cloudflare Changelog, Cloudflare announced a Data Localization Suite (DLS) Overview in the dashboard. It's a read-only view of your account's data localization settings.\n\n## The story so far\n\nTo see where your traffic is processed and where your logs and private keys are stored, you used to check several dashboard pages and APIs.\n\n## What changes\n\nRegional Services, Customer Metadata Boundary, and Geo Key Manager now show up in one place, which makes audits and internal checks much quicker.\n\n## Dive Deep\n\nYou can find it under Application Security > Data Localization Suite, or by searching for \"DLS\". Each product has its own tab.\n\n- Regional Services: regionalized hostnames (filter by region or zone), IP bindings, and Spectrum applications, each with its region\n- Customer Metadata Boundary: whether the boundary is on, the region (US or EU), and whether out-of-region access is allowed\n- Geo Key Manager: every custom certificate with a geo policy, with hostname, zone, region, and status\n\nEach item links to the page where you change its setting, and each tab links to the product documentation. The Overview itself is read-only.\n\n## Wrap-up\n\n- A new Overview shows DLS settings on one page\n- Three products are organized into tabs\n- Changes are made on the linked pages\n\nThis one is for security and compliance folks working on data residency requirements!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-29-dls-dashboard-overview/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Data Localization Suite, SSL/TLS - View your data localization settings in one dashboard page",
+  "tags": [
+    "cloudflare",
+    "security",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-29T00:00:00+00:00"
+}
