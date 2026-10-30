@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-cloudfront-viewer-isp-post-quantum-visbility",
+  "title": "CloudFront が閲覧者の ISP とポスト量子 TLS の情報をオリジンに渡せるようになったよ！",
+  "summary": "Amazon CloudFront が、CloudFront-Viewer-ISP と CloudFront-Viewer-TLS-Details の 2 つのヘッダーをオリジンへ転送できるようになったよ！ISP 別の分析や、ポスト量子暗号の利用率の計測に使えるの。",
+  "body_md": "やっほー、しぃちゃんだよ！CloudFront で見える情報が増えたから紹介するね！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon CloudFront が 2 つのオプションのヘッダーをオリジンに転送できるようになったと発表されたよ！\n\n- CloudFront-Viewer-ISP: 閲覧者のインターネットサービスプロバイダー(ISP)の名前。リクエストがどのネットワークから来たか分かる\n- CloudFront-Viewer-TLS-Details: 各閲覧者の TLS 接続で使われた暗号の情報。ポスト量子暗号(PQC)を使った接続かどうか分かる\n\n## これで何が変わるの？\n\nCloudFront-Viewer-ISP を使うと、トラフィックやパフォーマンスをネットワーク別に分けて見られるよ。特定のプロバイダーからだけ来る不審なトラフィックを切り分けることもできるの。\n\nCloudFront-Viewer-TLS-Details には、接続ごとの鍵交換、署名方式、署名公開鍵の種類が入っているよ。実際に PQC で接続している閲覧者の割合を測ったり、まだ対応していないクライアントを見つけたりできるんだね！\n\n## 深く潜ってみよう\n\n設定の流れはこうだよ。\n\n- 転送したいヘッダーをオリジンリクエストポリシーに追加する\n- そのポリシーをディストリビューションにアタッチする\n\n詳しくは CloudFront Developer Guide の、CloudFront ヘッダーの追加とポリシーによるオリジンリクエストの制御の項目を見てね。\n\n## まとめ\n\n- CloudFront-Viewer-ISP で ISP 別のトラフィック分析ができる\n- CloudFront-Viewer-TLS-Details で PQC の利用率を測れる\n- オリジンリクエストポリシーに追加するだけで使える\n\nCDN の運用担当や、ポスト量子暗号への移行状況を把握したいセキュリティ担当に刺さる更新だよ！",
+  "title_en": "CloudFront Now Forwards Viewer ISP and Post-Quantum TLS Details to Your Origin",
+  "summary_en": "Amazon CloudFront can now forward two optional headers to your origin, CloudFront-Viewer-ISP and CloudFront-Viewer-TLS-Details, for per-network analysis and measuring post-quantum cryptography adoption.",
+  "body_md_en": "Hi everyone, it's Shii-chan! CloudFront shows you more now, so let me introduce it!\n\n## What was announced?\n\nAWS What's New announced that Amazon CloudFront can forward two new optional headers to your origin.\n\n- CloudFront-Viewer-ISP: the name of the viewer's internet service provider (ISP), so you can see which network a request came from\n- CloudFront-Viewer-TLS-Details: the cryptography used on each viewer's TLS connection, so you can see whether it used post-quantum cryptography (PQC)\n\n## What changes\n\nWith CloudFront-Viewer-ISP, you can break down traffic and performance by network, and isolate unusual traffic from a single provider.\n\nCloudFront-Viewer-TLS-Details includes the key exchange, signature scheme and signature public key type for each connection. You can measure the share of viewers who actually connect with PQC and identify clients that don't yet.\n\n## Dive Deep\n\nHere's how to set it up:\n\n- Add the header you want to an origin request policy\n- Attach the policy to your distribution\n\nSee \"adding CloudFront headers\" and \"controlling origin requests with a policy\" in the CloudFront Developer Guide.\n\n## Wrap-up\n\n- CloudFront-Viewer-ISP enables per-ISP traffic analysis\n- CloudFront-Viewer-TLS-Details lets you measure PQC adoption\n- Just add them to an origin request policy\n\nA good fit for CDN operators and security teams tracking the move to post-quantum cryptography!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/cloudfront-viewer-isp-post-quantum-visbility/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon CloudFront now provides viewer ISP and post-quantum TLS details",
+  "tags": [
+    "aws",
+    "security",
+    "web"
+  ],
+  "published_at": "2026-10-30T18:15:00+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-10-30-cloudflare-wan-regional-processing",
+  "title": "Cloudflare WAN の Gateway HTTP 検査で処理リージョンを選べるようになったよ！",
+  "summary": "Cloudflare WAN のトラフィックで、Regional Services を使った Gateway の処理リージョンを指定できるようになったよ！TLS 復号と HTTP 検査を選んだリージョンで行えて、データ主権の要件に役立つの。",
+  "body_md": "やっほー、しぃちゃんだよ！今日はデータの置き場所にこだわりたい人に嬉しい、Cloudflare WAN のお知らせだよ！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Cloudflare WAN が Gateway の処理リージョン(Regional Services)に対応したことが公開されたよ！\n\n## なぜ重要なの？\n\n組織によっては、機密性の高い通信をどの地域で処理するかを決める必要があるよね。この機能は、そうしたデータ主権の目標をサポートするためのものなの。\n\n## これで何が変わるの？\n\nHTTPS トラフィックは、選んだリージョンの外にある Cloudflare のデータセンターに入ってくることもあるよ。でも Gateway が選択したリージョンへ転送するまで暗号化されたままで、TLS の復号と HTTP 検査はそのリージョンで行われるの！\n\n## 深く潜ってみよう\n\n仕組みと条件はこうだよ。\n\n- トラフィックの入口は IPsec トンネル、GRE トンネル、Direct CNI のいずれか\n- 復号と検査の前は暗号化されたまま\n- 利用には unified routing が必要\n- 処理リージョンの対象は Gateway の HTTP トラフィックのみで、Gateway DNS やネットワークポリシーの処理には適用されない\n- 設定はアカウントチームへの連絡が必要\n\n対応リージョンや制限の詳細は、Cloudflare One の「Data residency」ドキュメントに書かれているみたいだよ！\n\n## まとめ\n\n- Cloudflare WAN で Gateway の処理リージョンを指定できる\n- 復号と HTTP 検査が選んだリージョンで行われる\n- unified routing が必須で、対象は HTTP のみ(DNS とネットワークポリシーは対象外)\n\nデータ主権やデータレジデンシーの要件がある企業のネットワーク担当者に刺さる更新だよ！",
+  "title_en": "Cloudflare WAN Now Lets You Pick a Processing Region for Gateway HTTP Inspection",
+  "summary_en": "Cloudflare WAN traffic can now use a Gateway processing region with Regional Services, so TLS decryption and HTTP inspection happen in the region you choose, supporting data sovereignty goals.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Here's a Cloudflare WAN update for anyone who cares about where their data is processed!\n\n## What was announced?\n\nThe Cloudflare Changelog announced that Cloudflare WAN now supports a Gateway processing region (Regional Services).\n\n## Why it matters\n\nSome organizations must decide in which region sensitive traffic is processed. This feature supports those data sovereignty goals.\n\n## What changes\n\nHTTPS traffic may enter a Cloudflare data center outside your selected region. It stays encrypted until Gateway forwards it to the region you chose, and TLS decryption and HTTP inspection happen there.\n\n## Dive Deep\n\nHow it works and what it needs:\n\n- Traffic can enter through an IPsec tunnel, a GRE tunnel, or Direct CNI\n- It stays encrypted until decryption and inspection\n- Unified routing is required\n- The processing region applies only to Gateway HTTP traffic, not to Gateway DNS or network policy processing\n- To configure it, contact your account team\n\nFor supported regions and limitations, see the \"Data residency for Cloudflare One\" documentation.\n\n## Wrap-up\n\n- You can set a Gateway processing region for Cloudflare WAN\n- Decryption and HTTP inspection happen in the region you pick\n- Unified routing is required, and it covers HTTP only (not DNS or network policies)\n\nThis one is for network teams with data residency or sovereignty requirements!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-30-cloudflare-wan-regional-processing/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Data Localization Suite, Cloudflare WAN, Cloudflare One - Cloudflare WAN supports regional Gateway HTTP inspection",
+  "tags": [
+    "cloudflare",
+    "security",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-30T23:45:09+00:00"
+}

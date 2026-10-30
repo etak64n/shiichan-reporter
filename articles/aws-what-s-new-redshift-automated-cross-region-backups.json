@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-redshift-automated-cross-region-backups",
+  "title": "Redshift のバックアップが放置でリージョン越えコピーに！自動クロスリージョンスナップショット",
+  "summary": "Amazon Redshift が、プロビジョンドクラスターとサーバーレスワークグループのスナップショットを、選んだ別リージョンへ自動で継続コピーできるようになったよ！",
+  "body_md": "やっほー、しぃちゃんだよ！今日は Redshift のバックアップがぐっと楽になるお知らせだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Redshift の自動クロスリージョンスナップショットコピーが発表されたよ！\n\nプロビジョンドクラスターでもサーバーレスワークグループでも、選んだ送信先リージョンにバックアップを自動で取り続けてくれるの。コピーは継続的かつ増分で行われるよ。\n\n## 今までどうだったの？\n\nこれまでは、障害が起きたときなどにクロスリージョンのコピーを手動で始める必要があったんだね。この機能では、手動操作なしで常に最新のスナップショットがコピーされるよ。\n\n## これで何が変わるの？\n\n予期しない障害のときに、あわててコピーを開始しなくてよくなるよ！\n\nしかもコピーされるのは「そのとき使える最新のスナップショット」だから、次のスナップショットを待たなくていいの。ローカルのスナップショットスケジュールとは独立して動くんだね。\n\n## 深く潜ってみよう\n\n設定はこんな流れだよ。\n\n- クラスター(またはワークグループ)ごとに、この機能を有効にする\n- コピー先のリージョンを選ぶ(複数も可)\n- 送信先で自動スナップショットを保持する期間を決める\n\n保持期間が効くのは自動スナップショットで、ユーザースナップショットは明示的に削除するまで残るよ。復元するときは、送信先リージョンでスナップショットの復元機能を使って、新しいプロビジョンドクラスターかサーバーレスワークグループを作るの。コピーされたスナップショットの名前は「copy」で始まるよ。\n\n利用できるのは、すべての AWS 商用リージョンと AWS GovCloud (US) リージョンだよ。料金は発表文に金額が載っていなくて、Redshift の料金ページの「Backup and storage」と「Data transfer」の項目を見るように案内されているよ。\n\n## まとめ\n\n- 自動で継続的・増分のクロスリージョンスナップショットコピーが可能に\n- 最新のスナップショットがコピーされ、ローカルのスケジュールに依存しない\n- 送信先リージョンと保持期間を設定するだけ\n- 費用はバックアップストレージとデータ転送に応じてかかる\n\n災害対策やビジネス継続性を考えている Redshift ユーザーに刺さる更新だよ！",
+  "title_en": "Redshift Automated Cross-Region Snapshot Copy: Hands-Off Backups to Another Region",
+  "summary_en": "Amazon Redshift can now automatically and continuously copy snapshots of provisioned clusters and serverless workgroups to the destination Regions you choose.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Here's an update that makes Redshift backups much easier!\n\n## What was announced?\n\nAWS What's New announced automated cross-region snapshot copy for Amazon Redshift.\n\nFor both provisioned clusters and serverless workgroups, backups are automatically copied to the target Regions you choose. Copies are continuous and incremental.\n\n## The story so far\n\nPreviously, you had to start a cross-region copy manually, for example when an outage happened. With this feature, the most recent snapshot is always copied with no manual intervention.\n\n## What changes\n\nIn an unplanned outage, you no longer need to scramble to kick off a copy.\n\nThe feature copies the most recent snapshot available, so you don't have to wait for the next one. It works independently of your local snapshot schedule.\n\n## Dive Deep\n\nSetup goes like this:\n\n- Enable the feature for each cluster (or workgroup)\n- Choose the destination Region(s)\n- Set how long to keep copied automated snapshots in the destination\n\nThe retention period applies to automated snapshots; user snapshots stay until you delete them. To restore, use the snapshot restore feature in the destination Region to create a new provisioned cluster or serverless workgroup. Copied snapshots are named with a \"copy\" prefix.\n\nIt is available in all AWS Commercial Regions and the AWS GovCloud (US) Regions. The announcement lists no prices; it points to the \"Backup and storage\" and \"Data transfer\" sections of the Redshift pricing page.\n\n## Wrap-up\n\n- Automated, continuous, incremental cross-region snapshot copy\n- The latest snapshot is copied, independent of the local schedule\n- Just set the destination Regions and a retention period\n- Costs depend on backup storage and data transfer\n\nGreat news for Redshift users who care about disaster recovery and business continuity!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/redshift-automated-cross-region-backups/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Redshift announces hands-off automated cross-region backups",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "devops"
+  ],
+  "published_at": "2026-10-29T08:00:00+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-connect-email-draft-save",
+  "title": "Amazon Connect Customer のメールが自動で下書き保存されるように！",
+  "summary": "Amazon Connect Customer で、作成中のメールが自動で下書き保存されるようになったよ！接続が切れたりブラウザを閉じたりしても、続きから作業できるの。",
+  "body_md": "おつかれさま、しぃちゃんだよ！コンタクトセンターで働く人に嬉しいお知らせだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Connect Customer が作成中のメールを自動で下書きとして保存するようになったと発表されたよ！\n\n## これで何が変わるの？\n\n接続が途切れたとき、ブラウザを誤って閉じたり更新したりしたときでも、エージェントは進捗を失わずに作業を再開できるよ。\n\n戻ってきたときは、次の内容がそのまま復元されるの。\n\n- メッセージ本文\n- 宛先\n- 件名\n- 添付ファイルの参照\n\n## 深く潜ってみよう\n\n保存された下書きのデータは、自分の Amazon S3 バケットからも参照できるよ。だから他のアプリケーションとの連携を作ることもできるんだね。\n\n発表文に書かれていたのはここまでで、対応リージョンや料金は載っていなかったよ。\n\n## まとめ\n\n- 作成中のメールが自動で下書き保存される\n- 本文、宛先、件名、添付ファイルの参照が復元される\n- 下書きデータは S3 バケットから参照でき、連携にも使える\n\nメール対応が多いコンタクトセンターのエージェントや管理者に刺さる更新だよ！",
+  "title_en": "Amazon Connect Customer Now Auto-Saves In-Progress Emails as Drafts",
+  "summary_en": "Amazon Connect Customer automatically saves in-progress emails as drafts, so agents can resume work after a connectivity drop or an accidental browser close or refresh.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Here's some good news for people working in contact centers!\n\n## What was announced?\n\nAWS What's New announced that Amazon Connect Customer automatically saves in-progress emails as drafts.\n\n## What changes\n\nWhen connectivity is interrupted, or the browser is accidentally closed or refreshed, agents can resume work without losing progress.\n\nWhen they return, the draft is restored with:\n\n- The message body\n- Recipients\n- The subject line\n- Attachment references\n\n## Dive Deep\n\nSaved draft data is also accessible in your own Amazon S3 buckets, so you can build integrations with other applications.\n\nThat's all the announcement says; it doesn't list Regions or pricing.\n\n## Wrap-up\n\n- In-progress emails are saved as drafts automatically\n- Body, recipients, subject and attachment references are restored\n- Draft data is available in S3 for integrations\n\nA nice fit for agents and admins in email-heavy contact centers!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-connect-email-draft-save/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Connect Customer automatically saves in-progress emails as drafts",
+  "tags": [
+    "aws",
+    "serverless"
+  ],
+  "published_at": "2026-10-30T19:30:00+00:00"
+}

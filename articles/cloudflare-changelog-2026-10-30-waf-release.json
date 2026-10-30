@@ -1,0 +1,19 @@
+{
+  "slug": "cloudflare-changelog-2026-10-30-waf-release",
+  "title": "Cloudflare WAF 10/30 リリース、PHP の脆弱性ルール #3・#4 も更新されたよ！",
+  "summary": "Cloudflare WAF の 2026-10-30 リリースで、PHP の OOM 脆弱性 CVE-2026-109618 と CVE-2026-109619 向けのルール #3 と #4、そして Response Ruleset の High confidence 署名ルールの検知が更新されたよ！",
+  "body_md": "こんにちは、しぃちゃんだよ！Cloudflare の WAF リリースがまた来たから、中身をチェックしていくね！\n\n## なにが発表されたの？\n\nCloudflare の Changelog に、2026-10-30 付けの WAF リリースが載ったよ！\n\nPHP のメモリ不足(OOM)脆弱性 CVE-2026-109618、CVE-2026-109619、CVE-2026-115560 に関するルール式の更新で、PHP の CTF チャレンジに参加した研究者からの報告をもとにした段階的な改善なの。\n\n## 今までどうだったの？\n\n10/28 のリリースでは同じ CVE 群のルール #6 が更新されていたよ。今回は別の番号のルールにも改善が入った形だね。\n\n## これで何が変わるの？\n\nどのルールもアクションは Block のままだよ。設定はそのままで、検知の中身だけが良くなるんだね！\n\n## 深く潜ってみよう\n\n今回の更新対象はこれだよ。\n\n- Cloudflare Managed Ruleset: PHP Remote Code Execution Attack (CVE-2026-109618, CVE-2026-109619) #3\n- Cloudflare Free Ruleset: 同じ名前の #3\n- Cloudflare Managed Ruleset: 同じ名前の #4\n- Cloudflare Free Ruleset: 同じ名前の #4\n- Cloudflare Response Ruleset: Default block for High confidence Signatures\n\nすべて Previous Action も New Action も Block で、コメントは「Rule detection updated」だよ。\n\n## まとめ\n\n- PHP OOM 脆弱性向けのルール #3 と #4 の検知が更新された\n- Response Ruleset の High confidence 署名のデフォルトブロックも更新された\n- アクションは全て Block のままで、設定変更は不要\n\nPHP を運用しているみんなは、自動で守りが固くなるから安心してね！",
+  "title_en": "Cloudflare WAF 10/30 Release Updates PHP Vulnerability Rules #3 and #4",
+  "summary_en": "Cloudflare's 2026-10-30 WAF release updates PHP OOM rules #3 and #4 for CVE-2026-109618 and CVE-2026-109619, plus the Response Ruleset's default block for High confidence signatures.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Another Cloudflare WAF release is out, so let's look inside!\n\n## What was announced?\n\nThe Cloudflare Changelog posted the WAF release dated 2026-10-30.\n\nIt updates rule expressions for the PHP out-of-memory (OOM) vulnerabilities CVE-2026-109618, CVE-2026-109619 and CVE-2026-115560, as iterative improvements based on reports from researchers in a PHP CTF challenge.\n\n## The story so far\n\nThe 10/28 release updated rule #6 for this group of CVEs. This time, other numbered rules get improvements too.\n\n## What changes\n\nEvery rule keeps the Block action. No settings change; only the detection gets better.\n\n## Dive Deep\n\nThe updated rules are:\n\n- Cloudflare Managed Ruleset: PHP Remote Code Execution Attack (CVE-2026-109618, CVE-2026-109619) #3\n- Cloudflare Free Ruleset: the same rule name, #3\n- Cloudflare Managed Ruleset: the same rule name, #4\n- Cloudflare Free Ruleset: the same rule name, #4\n- Cloudflare Response Ruleset: Default block for High confidence Signatures\n\nAll show Block as both previous and new action, with the comment \"Rule detection updated\".\n\n## Wrap-up\n\n- Detection for PHP OOM rules #3 and #4 was updated\n- The Response Ruleset's default block for High confidence signatures was updated too\n- All actions stay Block, so no configuration change is needed\n\nIf you run PHP, your protection tightens automatically!",
+  "emotion": "thinking",
+  "importance": 2,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-30-waf-release/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "WAF - WAF Release - 2026-10-30",
+  "tags": [
+    "cloudflare",
+    "security"
+  ],
+  "published_at": "2026-10-30T23:45:09+00:00"
+}

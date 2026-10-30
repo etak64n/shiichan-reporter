@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-sagemaker-custom-designations",
+  "title": "SageMaker Unified Studio にカスタム designation が登場！権限をロール別に切り分けよう",
+  "summary": "Amazon SageMaker Unified Studio で、プロジェクトメンバーの操作権限をまとめた「カスタム designation」を作れるようになったよ！Owner と Contributor だけだった今までから大きく進化したの。",
+  "body_md": "みんな、しぃちゃんだよ！SageMaker Unified Studio の権限管理がぐっと細かくなったから、さっそく紹介するね！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon SageMaker Unified Studio のカスタム designation が発表されたよ！\n\ndesignation は、プロジェクトメンバーが何をできるかを決める、名前付きの権限セットのことなの。\n\n## 今までどうだったの？\n\n今までのメンバーの役割は Owner と Contributor の 2 種類だけで、権限もほとんど同じだったの。組織のペルソナに合わせた権限の分け方ができなかったんだね。\n\n## これで何が変わるの？\n\n管理者が組織のペルソナに合わせた権限セットを作って、メンバーに割り当てられるようになったよ！\n\nデータエンジニア、データスチュワード、アナリスト、自動パイプラインが、同じプロジェクトの中で違うアクセス権を持てるの。権限を分けるためだけにプロジェクトを増やす必要がなくなるよ。職務分掌(separation of duties)のための単一の権限モデルとしても使えるんだね。\n\n## 深く潜ってみよう\n\n- 管理者は SageMaker Unified Studio の管理ポータルで designation を作成する\n- 権限は Catalog、Subscriptions、Connections、Notebooks、Data Agent といったカテゴリごとに選ぶ\n- designation はドメイン単位で定義し、そのドメイン内のどのプロジェクトにも割り当てられる\n- メンバーが操作すると、割り当てられた designation を評価して許可か拒否を判断する\n- 例: 「Data Steward」はサブスクリプション申請の承認とアセットの公開、「Analyst」はデータのクエリとノートブックの実行だけ\n- どのドメインにも Owner と Contributor の管理済み designation が最初からあり、追加で最大 10 個まで作れる\n\n利用できるのは SageMaker Unified Studio が使える全リージョンで、料金については発表文に記載がなかったよ。\n\n## まとめ\n\n- 権限をまとめたカスタム designation を作って割り当てられる\n- ドメイン単位で定義し、どのプロジェクトにも使える\n- 追加で作れるのは最大 10 個\n- ロールごとにプロジェクトを分ける必要がなくなる\n\nデータガバナンスを担当する管理者や、複数の職種が同じプロジェクトで働くチームに刺さる更新だよ！",
+  "title_en": "SageMaker Unified Studio Gets Custom Designations for Role-Based Permissions",
+  "summary_en": "Amazon SageMaker Unified Studio now supports custom designations, named permission sets that control what project members can do, going beyond the old Owner and Contributor roles.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Permissions in SageMaker Unified Studio just got much finer, so let me introduce it!\n\n## What was announced?\n\nAWS What's New announced custom designations for Amazon SageMaker Unified Studio.\n\nA designation is a named permission set that controls what actions a project member can perform.\n\n## The story so far\n\nMembers could only be Owner or Contributor, and their permissions were nearly identical. There was no way to split access by your organization's personas.\n\n## What changes\n\nAdministrators can now define permission sets that match their personas and assign them to members.\n\nData engineers, stewards, analysts and automated pipelines can work in the same project with differentiated access, so you no longer need separate projects just to isolate permissions. It also gives you a single permission model for separation of duties.\n\n## Dive Deep\n\n- Administrators create designations in the SageMaker Unified Studio administration portal\n- Permissions are picked by category: Catalog, Subscriptions, Connections, Notebooks and Data Agent\n- Each designation is defined at the domain level and can be assigned in any project in that domain\n- When a member acts, the studio evaluates their designation and allows or denies the request\n- Example: a \"Data Steward\" can approve subscription requests and publish assets, while an \"Analyst\" can only query data and run notebooks\n- Every domain includes managed Owner and Contributor designations, and you can create up to 10 more\n\nIt is available in all Regions where SageMaker Unified Studio is available. The announcement doesn't mention pricing.\n\n## Wrap-up\n\n- Create and assign custom permission sets as designations\n- Defined per domain and usable across projects\n- Up to 10 additional designations\n- No more splitting projects just to separate roles\n\nThis is for administrators handling data governance and teams where several job roles share a project!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/sagemaker-custom-designations/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon SageMaker Unified Studio now supports custom designations",
+  "tags": [
+    "aws",
+    "ai",
+    "security"
+  ],
+  "published_at": "2026-10-29T08:00:00+00:00"
+}

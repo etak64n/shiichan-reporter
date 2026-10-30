@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-kiro-web-search-aws-govcloud-us",
+  "title": "Kiro の Web 検索が AWS GovCloud (US) でも使えるようになったよ！",
+  "summary": "Kiro の Web 検索が AWS GovCloud (US) で利用可能になったよ！エージェントが最新の情報を引用つきで答えてくれて、管理者はオフにもできるの。",
+  "body_md": "やっほー、しぃちゃんだよ！AI コーディングエージェント Kiro のお知らせだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Kiro の Web 検索が AWS GovCloud (US) で使えるようになったと発表されたよ！\n\n## これで何が変わるの？\n\nKiro の Web 検索は、エージェントがインターネット上の最新情報にリアルタイムでアクセスできる機能だよ。回答に最新の検索結果やページの内容が反映されるの。\n\nエージェントは、最近の変更やモデルの学習データより新しい話題が質問に出てきたときに、自動で Web 検索を使うよ。Web の結果を使った回答には引用がつくから、出典を確認できるんだね。\n\n## 深く潜ってみよう\n\n管理面の機能も用意されているよ。\n\n- Kiro の企業管理者は、Kiro コンソールの Settings から、組織全体で Web 検索と Web fetch をオフにできる\n- チームは、個別のカスタムエージェントから Web ツールを外せる\n- capability ベースの権限ルールで Web ツールをブロックすることもできる\n\n詳しくは AWS GovCloud (US) のドキュメントやモニタリングと追跡のガイドを見るか、AWS のアカウントチームに問い合わせてね。\n\n## まとめ\n\n- Kiro の Web 検索が AWS GovCloud (US) で使える\n- 最新情報の質問に自動で検索し、回答には引用がつく\n- 管理者は組織単位、カスタムエージェント単位、権限ルールで制御できる\n\nGovCloud 環境で Kiro を使う開発チームと、その管理者に刺さる更新だよ！",
+  "title_en": "Web Search Is Now Available on Kiro in AWS GovCloud (US)",
+  "summary_en": "Kiro's web search is now available in AWS GovCloud (US), giving the agent real-time information with citations, and administrators can turn it off.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Here's news about Kiro, the AI coding agent!\n\n## What was announced?\n\nAWS What's New announced that Kiro web search is now available in AWS GovCloud (US).\n\n## What changes\n\nKiro web search gives the agent real-time access to current information on the internet, so its answers draw on up-to-date search results and page content.\n\nThe agent uses web search automatically when a question involves recent changes or topics beyond the model's training data. Answers that use web results include citations, so you can check the sources.\n\n## Dive Deep\n\nThere are admin controls too:\n\n- Kiro enterprise administrators can turn off web search and web fetch for their organization from the Kiro console under Settings\n- Teams can remove web tools from individual custom agents\n- Web tools can also be blocked with capability-based permission rules\n\nFor more details, see the AWS GovCloud (US) documentation and the monitoring and tracking guide, or contact your AWS account team.\n\n## Wrap-up\n\n- Kiro web search works in AWS GovCloud (US)\n- It searches automatically for recent topics, and answers include citations\n- Admins can control it per organization, per custom agent, or with permission rules\n\nA good fit for dev teams using Kiro in GovCloud, and their administrators!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/kiro-web-search-aws-govcloud-us/",
+  "source_name": "AWS What's New",
+  "og_title": "Web Search now available on Kiro in AWS GovCloud (US)",
+  "tags": [
+    "aws",
+    "ai",
+    "devops"
+  ],
+  "published_at": "2026-10-30T19:40:00+00:00"
+}

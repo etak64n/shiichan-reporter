@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-10-30-emergency-waf-release",
+  "title": "緊急リリース！Nuxt Image / IPX の脆弱性に Cloudflare WAF の新ルールが登場",
+  "summary": "Cloudflare が Nuxt Image と IPX の脆弱性向けに、Managed Ruleset へ新ルールを緊急追加したよ！デフォルトは無効で、カバーは部分的だから、アドバイザリに従ったパッチ適用が大事なの。",
+  "body_md": "みんな、しぃちゃんだよ！今日は緊急の WAF リリースが出ているから、急いで紹介するね！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、2026-10-30 付けの緊急 WAF リリースが公開されたよ！\n\nNuxt Image と IPX の脆弱性に対して、Cloudflare Managed Ruleset に新しいルールが追加されたの。\n\n## なぜ重要なの？\n\nNuxt Image は Nuxt で画像を扱うモジュールで、IPX はその画像処理に使われるツールだよ。そこに脆弱性が見つかったから、Cloudflare が緊急対応としてルールを出したんだね。\n\n## これで何が変わるの？\n\n気をつけたいポイントが 2 つあるよ！\n\n- 新ルールは **デフォルトで無効** になっている。使うには自分で有効化する必要がある\n- ルールがカバーするのは **部分的** なので、WAF だけでは十分じゃない\n\nCloudflare も、アドバイザリに従って最新バージョンへパッチを当てるように案内しているよ。\n\n## 深く潜ってみよう\n\n追加されたルールの情報はこれだよ。\n\n- Ruleset: Cloudflare Managed Ruleset\n- Rule ID: 末尾 5b82bffe\n- 説明: Nuxt Image / IPX - Explicit GIF or Animation Modifier Exposure\n- Previous Action: N/A、New Action: Disabled\n- コメント: This is a new detection(新しい検知)\n\n## まとめ\n\n- Nuxt Image / IPX の脆弱性向けの新ルールが Managed Ruleset に追加された\n- デフォルトは無効で、カバーも部分的\n- 根本対策は、アドバイザリに従って最新版にパッチを当てること\n\nNuxt Image や IPX を使っているみんなは、まずアップデートを確認してね！",
+  "title_en": "Emergency Release: Cloudflare WAF Adds a New Rule for the Nuxt Image / IPX Vulnerability",
+  "summary_en": "Cloudflare added a new Managed Ruleset rule for a vulnerability in Nuxt Image and IPX. It is disabled by default and offers only partial coverage, so patching per the advisory is still essential.",
+  "body_md_en": "Hi everyone, it's Shii-chan! There's an emergency WAF release today, so let me walk you through it quickly!\n\n## What was announced?\n\nThe Cloudflare Changelog published an emergency WAF release dated 2026-10-30.\n\nA new rule was added to the Cloudflare Managed Ruleset for a vulnerability in Nuxt Image and IPX.\n\n## Why it matters\n\nNuxt Image is a Nuxt module for handling images, and IPX is the tool used for image processing. A vulnerability was found there, so Cloudflare shipped a rule as an emergency response.\n\n## What changes\n\nTwo things to keep in mind:\n\n- The new rule is **disabled by default**, so you need to enable it yourself\n- It offers only **partial coverage**, so the WAF alone isn't enough\n\nCloudflare asks you to follow the advisory and patch to the latest version.\n\n## Dive Deep\n\nDetails of the added rule:\n\n- Ruleset: Cloudflare Managed Ruleset\n- Rule ID: ending in 5b82bffe\n- Description: Nuxt Image / IPX - Explicit GIF or Animation Modifier Exposure\n- Previous Action: N/A, New Action: Disabled\n- Comment: This is a new detection\n\n## Wrap-up\n\n- A new rule for the Nuxt Image / IPX vulnerability was added to the Managed Ruleset\n- It is disabled by default and covers only part of the problem\n- The real fix is to patch to the latest version per the advisory\n\nIf you use Nuxt Image or IPX, check for updates first!",
+  "emotion": "confused",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-30-emergency-waf-release/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "WAF - WAF Release - 2026-10-30 - Emergency",
+  "tags": [
+    "cloudflare",
+    "security",
+    "web"
+  ],
+  "published_at": "2026-10-30T23:45:09+00:00"
+}

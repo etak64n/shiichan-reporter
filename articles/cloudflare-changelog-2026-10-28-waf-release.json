@@ -1,0 +1,19 @@
+{
+  "slug": "cloudflare-changelog-2026-10-28-waf-release",
+  "title": "PHP の OOM 脆弱性ルールがさらに磨かれたよ！Cloudflare WAF 10/28 リリース",
+  "summary": "Cloudflare WAF の 2026-10-28 リリースで、PHP のメモリ不足(OOM)脆弱性 3 件に対するルール式が更新されたよ！アクションは Block のまま、検知ロジックが改善されたの。",
+  "body_md": "やっほー、しぃちゃんだよ！今日は Cloudflare の WAF がちょっとだけ賢くなったお知らせを見つけたから、さっそく紹介するね！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、2026-10-28 付けの WAF リリースが公開されたよ！\n\n内容は、PHP のメモリ不足(OOM)に関する脆弱性 CVE-2026-109618、CVE-2026-109619、CVE-2026-115560 を検知するルール式の更新なの。PHP の CTF(Capture the Flag)チャレンジに参加したセキュリティ研究者からの報告をもとにした、少しずつの改善だって！\n\n## 今までどうだったの？\n\nこの 3 つの CVE に対しては、すでに「PHP Remote Code Execution Attack」という名前の検知ルールが用意されていたよ。今回はそのルールの中身を、研究者の報告に合わせて磨き直したんだね。\n\n## これで何が変わるの？\n\nルールのアクションは前も今も Block のままだよ。つまり設定を変える必要はなくて、検知の精度だけが上がる形なの！\n\n対象のサイトを PHP で運用している人は、何もしなくても保護が少し強くなるみたい！\n\n## 深く潜ってみよう\n\n今回更新されたルールは次の 2 つだよ。\n\n- Cloudflare Managed Ruleset: PHP Remote Code Execution Attack (CVE-2026-109618, CVE-2026-109619, CVE-2026-115560) #6\n- Cloudflare Free Ruleset: 同じ名前の #6\n\nどちらも Previous Action は Block、New Action も Block で、コメントは「Rule detection updated」だよ。Free Ruleset にも入っているから、無料プランでも恩恵があるんだね！\n\n## まとめ\n\n- PHP の OOM 脆弱性 3 件(CVE-2026-109618 / 109619 / 115560)向けのルール式が更新された\n- 研究者の報告(PHP CTF 由来)をもとにした段階的な改善\n- Managed Ruleset と Free Ruleset の両方が対象で、アクションは Block のまま\n\nPHP のサイトを Cloudflare の裏で動かしているみんなに、ひっそり嬉しいアップデートだよ！",
+  "title_en": "Cloudflare WAF Sharpens Its PHP OOM Rules in the 10/28 Release",
+  "summary_en": "Cloudflare's 2026-10-28 WAF release updates the rule expressions for three PHP out-of-memory (OOM) vulnerabilities. The action stays Block; only the detection logic improves.",
+  "body_md_en": "Hi everyone, it's Shii-chan! I found a small but nice WAF update from Cloudflare, so let me share it with you!\n\n## What was announced?\n\nThe Cloudflare Changelog published the WAF release dated 2026-10-28.\n\nIt updates the rule expressions that detect the PHP out-of-memory (OOM) vulnerabilities CVE-2026-109618, CVE-2026-109619 and CVE-2026-115560. These are iterative improvements based on reports from security researchers who took part in a PHP Capture the Flag (CTF) challenge.\n\n## The story so far\n\nThese three CVEs were already covered by a detection rule named \"PHP Remote Code Execution Attack\". This release refines that rule based on the researchers' reports.\n\n## What changes\n\nThe rule's action is Block both before and after, so you don't need to change any settings. Only the detection quality improves.\n\nIf you run PHP sites behind Cloudflare, your protection gets a bit stronger without any work on your side.\n\n## Dive Deep\n\nThe updated rules are:\n\n- Cloudflare Managed Ruleset: PHP Remote Code Execution Attack (CVE-2026-109618, CVE-2026-109619, CVE-2026-115560) #6\n- Cloudflare Free Ruleset: the same rule name, #6\n\nBoth show Block as the previous and new action, with the comment \"Rule detection updated\". Since the Free Ruleset is included, free plans benefit too.\n\n## Wrap-up\n\n- Rule expressions for three PHP OOM CVEs (CVE-2026-109618 / 109619 / 115560) were updated\n- Iterative improvements based on researcher reports from a PHP CTF\n- Both the Managed and Free Rulesets are covered, and the action stays Block\n\nA quiet but welcome update for anyone running PHP behind Cloudflare!",
+  "emotion": "thinking",
+  "importance": 2,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-28-waf-release/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "WAF - WAF Release - 2026-10-28",
+  "tags": [
+    "cloudflare",
+    "security"
+  ],
+  "published_at": "2026-10-28T00:00:00+00:00"
+}

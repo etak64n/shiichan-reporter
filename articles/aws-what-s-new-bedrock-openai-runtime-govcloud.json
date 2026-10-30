@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-bedrock-openai-runtime-govcloud",
+  "title": "GovCloud (US) の Bedrock で OpenAI GPT-5.6 が API 対応拡大＆クロスリージョン推論に！",
+  "summary": "Amazon Bedrock が AWS GovCloud (US) で OpenAI GPT-5.6 の Terra と Luna を bedrock-runtime で提供し、Responses、Converse、Chat Completions の各 API とクロスリージョン推論に対応したよ！",
+  "body_md": "みんな、しぃちゃんだよ！GovCloud で OpenAI のモデルを使う人に大きなお知らせだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Bedrock が AWS GovCloud (US) で OpenAI の GPT-5.6 モデルに対応を広げたと発表されたよ！\n\n- 対象モデル: GPT-5.6 の Terra と Luna\n- 対応 API: Responses API、Converse API、Chat Completions API(すべて bedrock-runtime エンドポイント)\n- 新機能: AWS GovCloud (US) 内でのクロスリージョン推論\n\n## これで何が変わるの？\n\nクロスリージョン推論は、AWS GovCloud (US) の 2 つのリージョンにまたがってリクエストを自動で振り分けてくれるよ。複数リージョンの容量を自分で管理しなくても、スループットが上がって冗長性も増すの。米国のデータ主権を保ったままスケールできて、需要が急に増えたときにも強いんだね！\n\nそれに、OpenAI のネイティブな API が bedrock-runtime で動くようになったので、他の Bedrock モデルと同じアカウントレベルの管理がそのまま使えるよ。\n\n## 深く潜ってみよう\n\n使用状況は次の場所で確認できるよ。\n\n- Bedrock のモデル呼び出しログ(Amazon S3 または CloudWatch Logs に配信可能)\n- CloudWatch メトリクス(呼び出し数、トークン数、レイテンシー、スロットル、エラー)\n- AWS Cost Explorer と Cost and Usage Report(モデル別に費用を割り当て可能)\n\n詳しくは、Amazon Bedrock User Guide にある GPT-5.6(Terra と Luna)のモデルカードを見てね。\n\n## まとめ\n\n- GovCloud (US) の Bedrock で GPT-5.6 Terra / Luna を bedrock-runtime から使える\n- Responses、Converse、Chat Completions の 3 つの API に対応\n- GovCloud (US) 内のクロスリージョン推論で高スループットと冗長性を確保\n- ログ、メトリクス、コスト管理は他の Bedrock モデルと同じ\n\n政府系や規制の厳しい環境で OpenAI モデルを使いたい開発チームに刺さる更新だよ！",
+  "title_en": "Bedrock in AWS GovCloud (US) Expands API Support and Adds Cross-Region Inference for OpenAI Models",
+  "summary_en": "Amazon Bedrock now offers OpenAI GPT-5.6 (Terra and Luna) on bedrock-runtime in AWS GovCloud (US), with the Responses, Converse and Chat Completions APIs plus Cross-Region Inference.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Big news for anyone using OpenAI models in GovCloud!\n\n## What was announced?\n\nAWS What's New announced that Amazon Bedrock expands support for OpenAI GPT-5.6 models in AWS GovCloud (US).\n\n- Models: GPT-5.6 Terra and Luna\n- APIs: Responses, Converse and Chat Completions (all on the bedrock-runtime endpoint)\n- New: Cross-Region Inference within AWS GovCloud (US)\n\n## What changes\n\nCross-Region Inference automatically routes requests across both AWS GovCloud (US) Regions. You get higher throughput and redundancy without managing capacity across Regions, while maintaining US data sovereignty and handling demand spikes.\n\nBecause the native OpenAI APIs now run on bedrock-runtime, the same account-level controls you use for other Bedrock models apply.\n\n## Dive Deep\n\nYou can track usage in:\n\n- Bedrock model invocation logging (deliverable to Amazon S3 or CloudWatch Logs)\n- CloudWatch metrics (invocation counts, token counts, latency, throttles, errors)\n- AWS Cost Explorer and the Cost and Usage Report (attribute spend by model)\n\nFor details, see the GPT-5.6 (Terra and Luna) model cards in the Amazon Bedrock User Guide.\n\n## Wrap-up\n\n- GPT-5.6 Terra / Luna are available on bedrock-runtime in GovCloud (US)\n- Responses, Converse and Chat Completions APIs are supported\n- Cross-Region Inference within GovCloud (US) gives higher throughput and redundancy\n- Logging, metrics and cost tracking work like other Bedrock models\n\nA good fit for teams in government or regulated environments that want OpenAI models!",
+  "emotion": "energetic",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/bedrock-openai-runtime-govcloud/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Bedrock expands API support and introduces Cross-Region Inferencing for OpenAI models in AWS GovCloud (US)",
+  "tags": [
+    "aws",
+    "ai",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-30T20:43:00+00:00"
+}

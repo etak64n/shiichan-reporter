@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-sagemaker-gpu-partitioning",
+  "title": "1 枚の GPU で最大 7 モデル！SageMaker AI 推論が GPU パーティショニングに対応",
+  "summary": "Amazon SageMaker AI のリアルタイム推論エンドポイントが、NVIDIA MIG を使った GPU パーティショニングに対応したよ！1 つの GPU を最大 7 つに分けて、複数のモデルを載せられるの。",
+  "body_md": "みんな、しぃちゃんだよ！GPU のムダ使いを減らせる、嬉しいお知らせが来たよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon SageMaker AI の推論が、リアルタイムエンドポイント向けに GPU パーティショニングに対応したと発表されたよ！\n\nNVIDIA の Multi-Instance GPU(MIG)技術で 1 つの GPU を最大 7 つの独立したパーティションに分けて、それぞれにメモリと演算を持たせられるの。\n\n## 今までどうだったの？\n\nファインチューニングしたモデル、埋め込みモデル、リランカー、分類器のような小〜中規模のモデルでも、1 モデルにつき GPU を 1 枚まるごと割り当てる必要があったよ。だから 1 インスタンスで動かせるモデル数は GPU の枚数まで。モデルが使い切れない GPU の分まで料金を払っていたんだね。\n\n## これで何が変わるの？\n\nエンドポイントの GPU の分け方を自分で決めて、モデルごとに合うサイズのパーティションに載せられるようになったよ！\n\n- 複数のモデルが 1 枚の GPU を共有できる\n- ハードウェアで隔離されているので、忙しいモデルが隣のモデルのメモリやスループットを奪わない\n- 必要な量に合わせたサイズにできるから、1 モデルには大きすぎた新しい世代のインスタンスも選べる\n\nモデルは今まで通り名前で呼び出すので、アプリのコードは変えなくていいの。\n\n## 深く潜ってみよう\n\n- 設定: inference component をホストするエンドポイントを作るときに GPU パーティショニングを設定する\n- 対応インスタンス: P4d、P5、G7、G7e\n- 対応リージョン:\n  - US East (N. Virginia)\n  - US East (Ohio)\n  - US West (Oregon)\n  - Asia Pacific (Singapore)\n  - Asia Pacific (Tokyo)\n  - Europe (Frankfurt)\n  - Europe (Ireland)\n\n詳しくは SageMaker AI Developer Guide のアクセラレーターパーティショニングの項目を見てね。\n\n## まとめ\n\n- MIG で 1 つの GPU を最大 7 パーティションに分割できる\n- 小〜中規模モデルを 1 つの GPU で共有でき、ハードウェアで隔離される\n- アプリのコードは変更不要\n- P4d / P5 / G7 / G7e の 7 リージョンで利用可能\n\n小さなモデルをたくさん運用していて、GPU コストを下げたいみんなに刺さる更新だよ！",
+  "title_en": "SageMaker AI Inference Adds GPU Partitioning: Up to 7 Models on One GPU",
+  "summary_en": "Amazon SageMaker AI real-time endpoints now support GPU partitioning with NVIDIA MIG, splitting one GPU into up to seven isolated partitions so several models can share it.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Here's a way to waste fewer GPUs!\n\n## What was announced?\n\nAWS What's New announced that Amazon SageMaker AI inference now supports GPU partitioning for real-time endpoints.\n\nUsing NVIDIA Multi-Instance GPU (MIG) technology, it divides a GPU into up to seven isolated partitions, each with its own memory and compute.\n\n## The story so far\n\nEven for small and mid-size models such as fine-tuned variants, embedding models, rerankers and classifiers, each model needed a whole GPU. An instance hosted no more models than it had GPUs, and you paid for GPU capacity those models could never use.\n\n## What changes\n\nYou choose how to divide the GPUs behind your endpoint and place each model on a partition sized to fit it.\n\n- Several models share one GPU\n- Hardware-enforced isolation keeps a busy model from taking memory or throughput from its neighbors\n- Right-sizing opens up newer instance generations that would be too big for a single model\n\nYou still invoke each model by name, so your application code doesn't change.\n\n## Dive Deep\n\n- Setup: configure GPU partitioning when you create an endpoint that hosts inference components\n- Instances: P4d, P5, G7 and G7e\n- Regions:\n  - US East (N. Virginia)\n  - US East (Ohio)\n  - US West (Oregon)\n  - Asia Pacific (Singapore)\n  - Asia Pacific (Tokyo)\n  - Europe (Frankfurt)\n  - Europe (Ireland)\n\nSee the accelerator partitioning section of the SageMaker AI Developer Guide for details.\n\n## Wrap-up\n\n- MIG splits one GPU into up to seven partitions\n- Small and mid-size models can share a GPU with hardware isolation\n- No application code changes\n- Available on P4d / P5 / G7 / G7e in seven Regions\n\nGreat if you run many small models and want to cut GPU costs!",
+  "emotion": "energetic",
+  "importance": 5,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/sagemaker-gpu-partitioning/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon SageMaker AI inference now supports GPU partitioning for real-time endpoints",
+  "tags": [
+    "aws",
+    "ai",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-30T08:00:00+00:00"
+}

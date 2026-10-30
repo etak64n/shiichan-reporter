@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-prometheus-collectors-msk-metrics",
+  "title": "Managed Prometheus collector が MSK のコンシューマーグループメトリクスに対応したよ！",
+  "summary": "Managed Prometheus collector が Amazon MSK のコンシューマーグループメトリクスを収集できるようになったよ！Kafka exporter のメトリクスとラグを、エージェントなしで見られるの。",
+  "body_md": "やっほー、しぃちゃんだよ！Kafka を使っているみんなに嬉しい監視まわりのお知らせだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Managed Prometheus collector が Amazon MSK のコンシューマーグループメトリクスに対応したと発表されたよ！\n\nAmazon Managed Service for Prometheus と Amazon CloudWatch の両方で使えて、MSK クラスターから Kafka exporter のメトリクスとコンシューマーグループのラグ(遅れ)メトリクスを集めてくれるの。\n\n## これで何が変わるの？\n\nManaged Prometheus collector は、ワークロードの Prometheus メトリクスを見つけて集めてくれる仕組みだから、収集エージェントを自分で動かして運用する必要がないよ。\n\n集めたメトリクスは、Amazon Managed Service for Prometheus のワークスペースか CloudWatch に取り込んで、クエリや分析ができるの。コンシューマーグループのメトリクスを見れば Kafka ストリームの健全性やコンシューマーの性能が分かって、ストリーミングアプリの処理のボトルネックも見つけやすくなるよ！\n\n## 深く潜ってみよう\n\n- 収集対象: Kafka exporter のメトリクスとコンシューマーグループのラグメトリクス\n- 送信先: Amazon Managed Service for Prometheus のワークスペース、または Amazon CloudWatch\n- 提供リージョン: Managed Prometheus collector が一般提供されているすべての AWS リージョン\n\n## まとめ\n\n- MSK のコンシューマーグループメトリクスを Managed Prometheus collector で収集できる\n- 収集エージェントの運用は不要\n- ラグを見て、ストリーミング処理のボトルネックを検知できる\n\nMSK で Kafka を動かしている運用担当のみんなに刺さる更新だよ！",
+  "title_en": "Managed Prometheus Collectors Now Support Amazon MSK Consumer-Group Metrics",
+  "summary_en": "Managed Prometheus collectors can now collect Amazon MSK consumer-group metrics, including Kafka exporter metrics and consumer-group lag, without running your own agents.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Here's a monitoring update for everyone using Kafka!\n\n## What was announced?\n\nAWS What's New announced that managed Prometheus collectors now support Amazon MSK consumer-group metrics.\n\nIt works with both Amazon Managed Service for Prometheus and Amazon CloudWatch, and collects Kafka exporter metrics and consumer-group lag metrics from your MSK clusters.\n\n## What changes\n\nManaged Prometheus collectors discover and collect Prometheus metrics from your workloads, so you don't run and operate collection agents yourself.\n\nYou ingest the collected metrics into an Amazon Managed Service for Prometheus workspace or into CloudWatch to query and analyze them. Consumer-group metrics show Kafka stream health and consumer performance, and help you detect processing bottlenecks in streaming applications.\n\n## Dive Deep\n\n- Collected: Kafka exporter metrics and consumer-group lag metrics\n- Destinations: an Amazon Managed Service for Prometheus workspace, or Amazon CloudWatch\n- Availability: all AWS Regions where managed Prometheus collectors are generally available\n\n## Wrap-up\n\n- MSK consumer-group metrics can be collected with managed Prometheus collectors\n- No collection agents to operate\n- Lag metrics help you spot bottlenecks in streaming processing\n\nGreat for operations folks running Kafka on MSK!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/prometheus-collectors-msk-metrics/",
+  "source_name": "AWS What's New",
+  "og_title": "Managed Prometheus collectors now support Amazon MSK consumer-group metrics",
+  "tags": [
+    "aws",
+    "devops",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-30T08:00:00+00:00"
+}

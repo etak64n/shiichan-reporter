@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-msk-tls",
+  "title": "Amazon MSK がついに TLS 1.3 対応！追加料金なしでセキュリティポリシーを選べるよ",
+  "summary": "Amazon MSK Provisioned クラスターが、暗号化ポリシーを通じて TLS 1.3 に対応したよ！名前付きセキュリティポリシーを選ぶだけで、追加料金もかからないの。",
+  "body_md": "こんにちは、しぃちゃんだよ！MSK の通信の暗号化が一歩進んだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon MSK Provisioned クラスターが暗号化ポリシーを通じて TLS 1.3 に対応したと発表されたよ！\n\n## なぜ重要なの？\n\nTLS 1.3 は、ストリーミングデータの暗号化をより速く、より安全にするプロトコルだよ。コンプライアンスの枠組みや企業のセキュリティ標準で求められることも増えているの。さらに、「今は暗号文を集めておいて、あとで解読する」攻撃からデータを守るポスト量子暗号の前提条件のひとつでもあるんだね。\n\n## これで何が変わるの？\n\nクラスター設定で名前付きセキュリティポリシーを選ぶだけで、オプトインできるよ。ポリシーを適用するまで、既存のクラスターは変わらないの。\n\n## 深く潜ってみよう\n\n名前付きセキュリティポリシーは、クラスターが受け付ける TLS のバージョンと暗号スイートを定義するよ。ポリシーの要件を満たさない接続は拒否されるの。\n\n- TLS 1.2 と 1.3 の両方を許可するポリシー: クライアントが対応する最も高いバージョンで接続する。TLS 1.3 対応のクライアントはすぐ 1.3 で、1.2 のクライアントは 1.2 のまま接続できる。クライアントを自分のペースでアップグレードできる\n- TLS 1.3 のみを許可する厳しいポリシー: コンプライアンス要件に合わせて、接続を TLS 1.3 だけに制限できる\n\n追加料金はなく、MSK Provisioned が使えるすべてのリージョンで利用できるよ。具体的なポリシー名は発表文には載っていなかったから、MSK のドキュメントで確認してね。\n\n## まとめ\n\n- MSK Provisioned で TLS 1.3 が使える\n- 名前付きポリシーを選んでオプトイン、既存クラスターはそのまま\n- 1.2/1.3 併用から 1.3 のみへ、段階的に移行できる\n- 追加料金なし\n\nコンプライアンス要件に対応したいセキュリティ担当や、Kafka クライアントを段階的に更新したいチームに刺さる更新だよ！",
+  "title_en": "Amazon MSK Now Supports TLS 1.3 with Selectable Security Policies at No Extra Cost",
+  "summary_en": "Amazon MSK Provisioned clusters now support TLS 1.3 through encryption policies. You opt in by selecting a named security policy, at no additional cost.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Encryption for MSK just took a step forward!\n\n## What was announced?\n\nAWS What's New announced that Amazon MSK Provisioned clusters now support TLS 1.3 through encryption policies.\n\n## Why it matters\n\nTLS 1.3 delivers faster, more secure encryption for streaming data, and compliance frameworks and enterprise security standards increasingly require it. It is also one of the prerequisites for post-quantum cryptography, which protects against attacks that collect encrypted traffic now to decrypt it later.\n\n## What changes\n\nYou opt in by selecting a named security policy in your MSK cluster configuration. Existing clusters don't change until a policy is applied.\n\n## Dive Deep\n\nA named security policy defines which TLS version and cipher suites a cluster accepts. Any connection that doesn't meet the policy is rejected.\n\n- Policies supporting both TLS 1.2 and 1.3: each connection negotiates the highest version the client supports. TLS 1.3 clients connect on 1.3 right away, while 1.2 clients keep using 1.2, so you can upgrade clients at your own pace\n- Stricter TLS 1.3-only policies: restrict connections to TLS 1.3 to match tighter compliance requirements\n\nThere is no additional cost, and it's available in all Regions where MSK Provisioned is available. The announcement doesn't name the specific policies, so check the MSK documentation.\n\n## Wrap-up\n\n- TLS 1.3 is available on MSK Provisioned\n- Opt in with a named policy; existing clusters stay as they are\n- Migrate step by step from 1.2/1.3 to 1.3 only\n- No additional cost\n\nA good fit for security teams chasing compliance and teams upgrading Kafka clients gradually!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-msk-tls/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon MSK now supports TLS 1.3 for data in transit",
+  "tags": [
+    "aws",
+    "security",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-30T17:00:00+00:00"
+}
