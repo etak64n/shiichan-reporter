@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-msk-connect-update-plugin-worker-configurations",
+  "title": "MSK Connect のコネクタ、もう作り直さなくていいの！プラグインとワーカー設定をその場で更新",
+  "summary": "Amazon MSK Connect で、既存コネクタのカスタムプラグインとワーカー設定を削除・再作成なしで更新できるようになったよ！コミット済みオフセットも保持されるの。",
+  "body_md": "やっほー、しぃちゃんだよ！\n\nKafka Connect を運用している人、コネクタの更新で「消して作り直し」をしたことはないかな？今日はそれにサヨナラできる発表だよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon MSK Connect が既存コネクタのカスタムプラグインとワーカー設定を更新できるようになったと発表されたよ。\n\nAmazon MSK Connect は、Amazon MSK(Managed Streaming for Apache Kafka)と一緒に Apache Kafka Connect のコネクタをデプロイ・監視・スケールできるフルマネージドサービスだよ。\n\n## 今までどうだったの？\n\nこれまでは、コネクタのプラグインやワーカー設定を変えたいとき、コネクタを削除して作り直すしかなかったの。中断を伴う操作で、リスクも運用の手間も増えてたんだって。\n\n## これで何が変わるの？\n\nプラグインとワーカー設定をインプレースで更新できるようになったよ。しかも、コネクタはコミット済みのオフセットを保持するから、更新が終わるとタスクは止まったところから処理を続けるの。\n\nこんな場面で便利だよ。\n\n- カスタムプラグインを更新して、依存関係を更新した新しいバージョンのコネクタコードを動かしたい\n- ワーカー設定で、キーや値のコンバーターを切り替えたい\n- プロデューサーやコンシューマーのプロパティを、スループットやレイテンシに合わせて調整したい\n\n## 深く潜ってみよう\n\n追加料金なしで、Amazon MSK Connect がサポートされているすべての AWS リージョンで使えるよ。詳しい手順は Amazon MSK Connect の開発者ガイドを見てね。\n\n## まとめ\n\n- 既存コネクタのカスタムプラグインとワーカー設定をインプレースで更新できる\n- 削除・再作成が不要になって、オフセットも保持される\n- 追加コストなし、MSK Connect の提供リージョンすべてで利用可能\n\nKafka Connect のコネクタを本番で運用していて、バージョンアップや設定チューニングのたびにヒヤヒヤしていた人に刺さるよ！",
+  "title_en": "No More Recreating Connectors! Update MSK Connect Plugins and Worker Configurations in Place",
+  "summary_en": "Amazon MSK Connect now lets you update the custom plugin and worker configuration of an existing connector without deleting and recreating it, and committed offsets are kept.",
+  "body_md_en": "Hi, it's Shii-chan!\n\nIf you run Kafka Connect, have you ever had to delete a connector and rebuild it just to make an update? Today's news says goodbye to that!\n\n## What was announced?\n\nAccording to AWS What's New, Amazon MSK Connect now lets you update the custom plugin and worker configuration of an existing connector.\n\nAmazon MSK Connect is a fully managed service that lets you deploy, monitor, and scale Apache Kafka Connect connectors with Amazon MSK (Managed Streaming for Apache Kafka).\n\n## The story so far\n\nPreviously, updating a connector's plugin or worker configuration meant deleting the connector and recreating it. That was a disruptive operation that added risk and operational overhead.\n\n## What changes\n\nYou can now update the plugin and worker configuration in place. The connector keeps its committed offsets, so its tasks continue processing from where they left off once the update completes.\n\nHere are some cases where this helps:\n\n- Updating the custom plugin to run a new version of your connector code, for example one with updated dependencies\n- Switching key and value converters in the worker configuration\n- Tuning producer and consumer properties for throughput and latency\n\n## Dive Deep\n\nThis is available at no additional cost in all AWS Regions where Amazon MSK Connect is supported. See the Amazon MSK Connect developer guide for the steps.\n\n## Wrap-up\n\n- Update the custom plugin and worker configuration of an existing connector in place\n- No delete-and-recreate, and offsets are preserved\n- No additional cost, in all Regions where MSK Connect is supported\n\nThis is great if you run Kafka Connect connectors in production and used to hold your breath at every version bump or config tweak!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-msk-connect-update-plugin-worker-configurations",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon MSK Connect now supports updating connector plugins and worker configurations",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "devops"
+  ],
+  "published_at": "2026-10-29T15:00:00+00:00"
+}

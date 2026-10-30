@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aurora-postgresql-post-quantum-tls-key-exchange",
+  "title": "Aurora PostgreSQL がポスト量子 TLS 鍵交換に対応、ssl_groups で選べるように！",
+  "summary": "Amazon Aurora PostgreSQL-Compatible Edition がポスト量子 TLS(PQ-TLS)鍵交換に対応したよ！バージョン 18 以上で ssl_groups パラメータを変更して暗号グループを選べるの。",
+  "body_md": "みんな、しぃちゃんだよ！\n\n今日は Aurora のセキュリティ関連のお知らせだよ。ポスト量子暗号って、ちょっと未来っぽくてわくわくするよね！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Aurora PostgreSQL-Compatible Edition がポスト量子 TLS(PQ-TLS)鍵交換に対応したと発表されたよ。転送中のデータを暗号化するときに、ポスト量子暗号のオプションを使えるようになるんだって。\n\n## なぜ重要なの？\n\nデータベースとの通信は TLS で守られているけど、今回の対応で、その鍵交換にポスト量子暗号の選択肢が加わったの。組織のセキュリティ基準に合わせて暗号グループを選べるのがポイントだよ。\n\n## これで何が変わるの？\n\nAmazon Aurora PostgreSQL のバージョン 18 以上で、`ssl_groups` パラメータを変更できるようになったよ。Amazon Aurora PostgreSQL の許可リストから暗号グループを選んで、組織のセキュリティ基準に合わせられるの。\n\n## 深く潜ってみよう\n\n原文から分かる具体的な情報は次のとおりだよ。\n\n- 対象: Amazon Aurora PostgreSQL-Compatible Edition のバージョン 18 以上\n- 設定: `ssl_groups` パラメータを変更する\n- 選択肢: Amazon Aurora PostgreSQL の許可リストにある暗号グループ\n\n許可リストの中身や提供リージョンなど、これ以外の詳細は発表文では触れられていないよ。始めるときは、AWS の getting started ページを見てね。\n\n## まとめ\n\n- Aurora PostgreSQL がポスト量子 TLS 鍵交換に対応\n- バージョン 18 以上で `ssl_groups` パラメータを変更できる\n- 許可リストから、組織のセキュリティ基準に合う暗号グループを選べる\n\n暗号化の将来への備えを進めたい人や、セキュリティ要件が厳しい環境で Aurora を使っている人に刺さる発表だよ！",
+  "title_en": "Amazon Aurora PostgreSQL Now Supports Post-Quantum TLS Key Exchange via ssl_groups",
+  "summary_en": "Amazon Aurora PostgreSQL-Compatible Edition now supports post-quantum TLS (PQ-TLS) key exchange. On versions 18 and higher you can modify the ssl_groups parameter to choose cryptographic groups.",
+  "body_md_en": "Hi everyone, it's Shii-chan!\n\nToday's news is about Aurora security. Post-quantum cryptography feels a little like the future, which is exciting!\n\n## What was announced?\n\nAccording to AWS What's New, Amazon Aurora PostgreSQL-Compatible Edition now supports post-quantum TLS (PQ-TLS) key exchange. This gives you post-quantum cryptography options for encrypting your data in transit.\n\n## Why it matters\n\nConnections to your database are protected by TLS, and now the key exchange has post-quantum options too. The key point is that you can choose cryptographic groups to align with your organization's security standards.\n\n## What changes\n\nAmazon Aurora PostgreSQL versions 18 and higher support modification of the `ssl_groups` parameter. You can select cryptographic groups from the Amazon Aurora PostgreSQL allow list to match your organization's standards.\n\n## Dive Deep\n\nHere is what the announcement tells us:\n\n- Target: Amazon Aurora PostgreSQL-Compatible Edition versions 18 and higher\n- Setting: modify the `ssl_groups` parameter\n- Choices: cryptographic groups on the Amazon Aurora PostgreSQL allow list\n\nThe announcement doesn't cover other details such as the contents of the allow list or Region availability. To get started, see the AWS getting started page.\n\n## Wrap-up\n\n- Aurora PostgreSQL supports post-quantum TLS key exchange\n- On versions 18 and higher, you can modify the `ssl_groups` parameter\n- Pick cryptographic groups from the allow list to fit your security standards\n\nThis is for you if you want to prepare your encryption for the future, or run Aurora in an environment with strict security requirements!",
+  "emotion": "thinking",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aurora-postgresql-post-quantum-tls-key-exchange/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Aurora now supports post-quantum TLS key exchange",
+  "tags": [
+    "aws",
+    "security",
+    "infrastructure"
+  ],
+  "published_at": "2026-10-29T16:00:00+00:00"
+}

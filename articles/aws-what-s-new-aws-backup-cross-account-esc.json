@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-backup-cross-account-esc",
+  "title": "AWS European Sovereign Cloud の AWS Backup がクロスアカウント管理とバックアップに対応したよ！",
+  "summary": "AWS Backup が AWS European Sovereign Cloud (Germany) リージョンで、クロスアカウント管理、クロスアカウントバックアップ、委任管理者に対応したよ！追加料金はなしなの。",
+  "body_md": "こんにちは、しぃちゃんだよ！\n\n今日は AWS Backup のアップデートだよ。バックアップを組織でまとめて管理したい人は要チェック！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Backup が AWS European Sovereign Cloud (Germany) リージョンで次の 3 つに対応したと発表されたよ。\n\n- クロスアカウント管理\n- クロスアカウントバックアップ\n- 委任管理者\n\nAWS Organizations を使って、組織内のアカウントのバックアップを一元的に管理・監視・コピーできるようになるんだって。\n\n## なぜ重要なの？\n\nAWS European Sovereign Cloud で複数アカウントを運用している組織にとって、組織単位のバックアップ運用は欠かせないよね。今回の対応で、Organizations ベースの管理方法がこのリージョンでも使えるようになったの。\n\n## これで何が変わるの？\n\nそれぞれの機能でできることはこうだよ。\n\n- クロスアカウント管理: Organizations の管理アカウントまたは委任管理者アカウントから、組織全体のバックアップポリシーをデプロイできる。組織内の全アカウントのバックアップ・コピー・復元ジョブを 1 か所で監視できる\n- クロスアカウントバックアップ: 復旧ポイントを組織内の別アカウントのバックアップボールトにコピーできる。元のアカウントでの誤削除や悪意ある削除への備えになる\n- 委任管理者: メンバーアカウントを委任管理者として登録すれば、管理アカウントへのアクセスなしで組織のバックアップを管理できる\n\n## 深く潜ってみよう\n\n料金は、これらの機能に追加料金はなくて、標準の AWS Backup 料金が適用されるよ。\n\n使い始めるには AWS Backup コンソールを開いてね。詳しくは AWS Backup のドキュメントに載っているよ。\n\n## まとめ\n\n- European Sovereign Cloud (Germany) でクロスアカウント管理・バックアップ・委任管理者が使える\n- 組織全体のバックアップポリシーを一括デプロイして、ジョブを 1 か所で監視\n- 別アカウントのボールトへコピーして、誤削除や悪意ある削除に備える\n- 追加料金なし\n\nソブリンクラウドで組織的にバックアップ運用をしたい人にぴったりのアップデートだよ！",
+  "title_en": "AWS Backup Adds Cross-Account Management and Backup in the AWS European Sovereign Cloud",
+  "summary_en": "AWS Backup now supports cross-account management, cross-account backup, and delegated administrators in the AWS European Sovereign Cloud (Germany) Region, at no additional charge.",
+  "body_md_en": "Hi, it's Shii-chan!\n\nToday's news is an AWS Backup update. If you want to manage backups across an organization, take a look!\n\n## What was announced?\n\nAccording to AWS What's New, AWS Backup now supports three things in the AWS European Sovereign Cloud (Germany) Region:\n\n- Cross-account management\n- Cross-account backup\n- Delegated administrators\n\nUsing AWS Organizations, you can centrally manage, monitor, and copy backups across the accounts in your organization.\n\n## Why it matters\n\nIf your organization runs many accounts in the AWS European Sovereign Cloud, organization-level backup operations matter. Now the Organizations-based approach is available in this Region too.\n\n## What changes\n\nHere is what each capability lets you do:\n\n- Cross-account management: deploy organization-wide backup policies from your AWS Organizations management account or a delegated administrator account, and monitor backup, copy, and restore jobs across all accounts from one place\n- Cross-account backup: copy recovery points to a backup vault in another account in your organization, which adds protection against accidental or malicious deletion in the source account\n- Delegated administrators: register a member account as a delegated administrator so your teams can manage backups without needing access to your management account\n\n## Dive Deep\n\nThere is no additional charge for these capabilities. Standard AWS Backup pricing applies.\n\nTo get started, open the AWS Backup console. The AWS Backup documentation has more details.\n\n## Wrap-up\n\n- Cross-account management, backup, and delegated administrators in European Sovereign Cloud (Germany)\n- Deploy organization-wide policies and monitor jobs in one place\n- Copy to another account's vault to guard against accidental or malicious deletion\n- No additional charge\n\nThis is a good fit if you run backups across an organization in the sovereign cloud!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-backup-cross-account-esc/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Backup now supports cross-account management and cross-account backup in the AWS European Sovereign Cloud",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "security"
+  ],
+  "published_at": "2026-10-29T08:00:00+00:00"
+}
