@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-kiro-haiku-5-5-aws-govcloud-us",
+  "title": "GovCloud (US) の Kiro に Claude Haiku 5.5 が到着！Claude 5.5 が全部そろったよ",
+  "summary": "AWS GovCloud (US) の Kiro IDE と CLI で Claude Haiku 5.5 が使えるように。これで Claude 5.5 の 3 モデルがそろい、1M コンテキストで 0.06x のクレジット倍率だよ。",
+  "body_md": "こんにちは、しぃちゃんだよ！GovCloud (US) の Kiro に、Claude 5.5 ファミリー最速のモデルが来たよ。\n\n## なにが発表されたの？\n\nAWS の「AWS What's New」で、AWS GovCloud (US) リージョン向けの Kiro IDE と CLI で、Anthropic の新しいモデル **Claude Haiku 5.5** が使えるようになったと発表されたよ。これで Claude 5.5 の 3 モデルすべてが、GovCloud (US) の Kiro で使えるようになったの。\n\n## なぜ重要なの？\n\nClaude Haiku 5.5 は Claude 5.5 ファミリーで最速のモデルで、Claude Haiku 4.5 から確実に進歩しているよ。大量に走る、素早い応答が必要な作業向けに作られているの。\n\n## これで何が変わるの？\n\n使いどころの例はこちら。\n\n- 長いコンテキストの要約と圧縮\n- リクエストの分類とルーティング\n- テキストの大量処理\n- 多くのファイルにまたがる、小さく狙いを絞った編集\n- 並列で動くレビュー用サブエージェント。難しい計画やコーディングは Opus 5.5 と Sonnet 5.5 が担当する\n\n## 深く潜ってみよう\n\nモデルの仕様と料金はこうだよ。\n\n- 5 段階の努力レベル（low から max）の適応的思考を使う。デフォルトは medium\n- コンテキストウィンドウは 1M\n- クレジット倍率は 0.06x\n- 100K トークンを超えるリクエストは 0.3x の倍率で課金される\n\n使うには、IDE か CLI を最新版に更新して再起動し、モデルセレクターから選んでね。詳細は GovCloud のドキュメントと、モニタリング・トラッキングガイドにあるよ。AWS のアカウントチームにも相談できるの。\n\n## まとめ\n\n- GovCloud (US) の Kiro IDE と CLI で Claude Haiku 5.5 が利用可能に\n- Claude 5.5 の 3 モデルがそろった\n- 1M コンテキスト、クレジット倍率 0.06x（100K トークン超は 0.3x）\n- 要約、分類、一括処理、並列レビューに向いている\n\nGovCloud (US) で Kiro を使っている開発チームの人に刺さるよ！",
+  "title_en": "Claude Haiku 5.5 Arrives in Kiro on GovCloud (US), Completing the Claude 5.5 Lineup!",
+  "summary_en": "Claude Haiku 5.5 is now available in the Kiro IDE and CLI in AWS GovCloud (US), completing all three Claude 5.5 models, with a 1M context window and a 0.06x credit multiplier.",
+  "body_md_en": "Hi, it's Shii-chan! The fastest model in the Claude 5.5 family has come to Kiro in GovCloud (US).\n\n## What was announced?\n\nIn AWS What's New, AWS announced that Anthropic's new model **Claude Haiku 5.5** is now available in the Kiro IDE and CLI for the AWS GovCloud (US) Regions. With it, all three Claude 5.5 models are now available in Kiro in AWS GovCloud (US).\n\n## Why it matters\n\nClaude Haiku 5.5 is the fastest model in the Claude 5.5 family, and a clear step up from Claude Haiku 4.5. It's built for work that runs in large volumes and needs quick responses.\n\n## What changes\n\nExample uses:\n\n- Summarizing and compacting long context\n- Classifying and routing requests\n- Processing text in bulk\n- Small, targeted edits across many files\n- A review subagent that runs in parallel, while Opus 5.5 and Sonnet 5.5 take on harder planning and coding work\n\n## Dive Deep\n\nHere are the specs and pricing.\n\n- It uses adaptive thinking across five effort levels from low to max, with medium as the default\n- The context window is 1M\n- The credit multiplier is 0.06x\n- Requests over 100K tokens are billed at a 0.3x multiplier\n\nTo use it, update your IDE or CLI to the latest version, restart it, and pick the model from the model selector. See the GovCloud documentation and the monitoring and tracking guide for details, or contact your AWS account team.\n\n## Wrap-up\n\n- Claude Haiku 5.5 is available in the Kiro IDE and CLI in GovCloud (US)\n- All three Claude 5.5 models are now there\n- 1M context, 0.06x credit multiplier (0.3x over 100K tokens)\n- Well suited to summarization, classification, bulk processing, and parallel review\n\nThis is for development teams using Kiro in GovCloud (US)!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/kiro-haiku-5-5-aws-govcloud-us/",
+  "source_name": "AWS What's New",
+  "og_title": "Haiku 5.5 now available on Kiro in AWS GovCloud (US)",
+  "tags": [
+    "aws",
+    "anthropic",
+    "ai"
+  ],
+  "published_at": "2026-11-02T20:45:00+00:00"
+}

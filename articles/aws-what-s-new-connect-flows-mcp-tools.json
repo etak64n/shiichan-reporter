@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-connect-flows-mcp-tools",
+  "title": "Amazon Connect のフローから MCP ツールを直接呼べるように！Lambda 不要だよ",
+  "summary": "Amazon Connect Customer のフローに External Tool ブロックが登場。Bedrock AgentCore Gateway 経由で MCP ツールを呼び出せて、カスタム Lambda を書かなくて済むよ。",
+  "body_md": "やっほー、しぃちゃんだよ！コンタクトセンターのフローから、外部ツールを直接呼べるようになったよ。Lambda を書く手間が減るのは嬉しいね！\n\n## なにが発表されたの？\n\nAWS の「AWS What's New」で、Amazon Connect Customer のカスタマーエクスペリエンスのフローで、**Model Context Protocol（MCP）ツール**を呼び出せるようになったと発表されたよ。新しい **External Tool ブロック**を使うの。\n\n## 今までどうだったの？\n\n外部アプリのデータ取得や処理の起動をフローから行うには、カスタム Lambda 関数を書く必要があったよ。\n\n## これで何が変わるの？\n\nAmazon Bedrock AgentCore Gateway を通じて、サードパーティのアプリケーションにフローをつなげられるよ。エージェント型の体験で使っているツールを、そのまま再利用できるから、カスタム Lambda は要らないの。\n\n原文の例はこんな感じだよ。金融機関のお客様が最近の取引について問い合わせてきたとき、フローが External Tool ブロックで、CRM のケース履歴や、銀行システムの取引詳細を取ってこられるんだって。\n\n## 深く潜ってみよう\n\n対応リージョンはこの 9 つだよ。\n\n- 米国東部（バージニア北部）\n- 米国西部（オレゴン）\n- カナダ（中部）\n- 欧州（フランクフルト）\n- 欧州（ロンドン）\n- アジアパシフィック（ソウル）\n- アジアパシフィック（シンガポール）\n- アジアパシフィック（シドニー）\n- アジアパシフィック（東京）\n\n詳しくは管理者ガイドを見てね。\n\n## まとめ\n\n- フローに External Tool ブロックが追加され、MCP ツールを呼び出せる\n- Bedrock AgentCore Gateway 経由で、エージェント型体験と同じツールを再利用できる\n- カスタム Lambda 関数を書かなくていい\n- 9 リージョンで利用可能\n\nAmazon Connect でフローを組んでいる人や、AI エージェントとフローの連携を考えている人に刺さるよ！",
+  "title_en": "Amazon Connect Flows Can Now Call MCP Tools Directly, No Lambda Needed!",
+  "summary_en": "Amazon Connect Customer flows get a new External Tool block that invokes MCP tools through Amazon Bedrock AgentCore Gateway, with no custom Lambda functions.",
+  "body_md_en": "Hi, it's Shii-chan! Contact center flows can now call external tools directly. Writing less Lambda is always nice!\n\n## What was announced?\n\nIn AWS What's New, AWS announced that Amazon Connect Customer can now invoke **Model Context Protocol (MCP) tools** in customer experience flows, using the new **External Tool block**.\n\n## The story so far\n\nTo retrieve data from an external app or trigger an action from a flow, you needed to write custom Lambda functions.\n\n## What changes\n\nThrough Amazon Bedrock AgentCore Gateway, flows connect to third-party applications. You can reuse the same tools your agentic experiences use, so there's no custom Lambda to write.\n\nThe example in the post: when a customer contacts a financial institution about a recent transaction, a flow can use the External Tool block to retrieve case history from a CRM system or transaction details from a banking platform.\n\n## Dive Deep\n\nIt's available in these nine Regions:\n\n- US East (N. Virginia)\n- US West (Oregon)\n- Canada (Central)\n- Europe (Frankfurt)\n- Europe (London)\n- Asia Pacific (Seoul)\n- Asia Pacific (Singapore)\n- Asia Pacific (Sydney)\n- Asia Pacific (Tokyo)\n\nSee the administrator guide for details.\n\n## Wrap-up\n\n- Flows get an External Tool block that invokes MCP tools\n- Reuse the same tools as agentic experiences through Bedrock AgentCore Gateway\n- No custom Lambda functions required\n- Available in nine Regions\n\nThis is for anyone building flows in Amazon Connect or connecting AI agents with flows!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/connect-flows-mcp-tools/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Connect Customer now supports Model Context Protocol (MCP) tools in flows",
+  "tags": [
+    "aws",
+    "ai",
+    "serverless"
+  ],
+  "published_at": "2026-11-02T16:00:00+00:00"
+}

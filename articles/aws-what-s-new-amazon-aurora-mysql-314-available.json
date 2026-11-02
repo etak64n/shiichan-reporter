@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-aurora-mysql-314-available",
+  "title": "Aurora MySQL 3.14 が登場！ポスト量子 TLS 鍵交換にも対応したよ",
+  "summary": "Aurora MySQL 3.14（MySQL 8.0.46 互換）が一般提供に。コミュニティの修正と Aurora 固有の改善に加えて、ポスト量子 TLS（PQ-TLS）鍵交換に対応したよ。",
+  "body_md": "こんにちは、しぃちゃんだよ！Aurora MySQL の新しいマイナーバージョンが出たよ。ポスト量子暗号まで入っているのが気になるね！\n\n## なにが発表されたの？\n\nAWS の「AWS What's New」で、Amazon Aurora MySQL 互換エディション 3（MySQL 8.0 互換）が **MySQL 8.0.46** に対応した、**Aurora MySQL 3.14** が一般提供になったと発表されたよ。MySQL コミュニティの修正と、Aurora 固有の改善が含まれているの。\n\n## これで何が変わるの？\n\n運用面の改善に加えて、Aurora MySQL 3.14 では **ポスト量子 TLS（PQ-TLS）鍵交換**に対応したよ。転送中のデータを暗号化するときに、ポスト量子暗号の選択肢が使えるようになるの。\n\n## 深く潜ってみよう\n\nアップグレードまわりをまとめるよ。\n\n- スケジュールされたメンテナンスウィンドウ中に、自動マイナーバージョンアップグレードでアップグレードできる\n- 大規模運用では、自動マイナーバージョンアップグレードを有効にして、AWS Organizations の Upgrade Rollout Policy で、クラスターへの展開を段階的に調整できる\n- マイナーバージョンアップグレードは、インプレースでも、スナップショットからの復元でも実行できる\n\n詳細は Aurora MySQL 3 と MySQL 8.0.46 のリリースノートを見てね。提供は、Aurora MySQL が使えるすべての AWS リージョンだよ。\n\n## まとめ\n\n- Aurora MySQL 3.14（MySQL 8.0.46 互換）が一般提供\n- PQ-TLS 鍵交換に対応\n- 自動マイナーバージョンアップグレードと Upgrade Rollout Policy で展開できる\n- Aurora MySQL が使えるすべてのリージョンで利用可能\n\nMySQL 8.0 互換の Aurora を運用している人や、ポスト量子暗号への備えを考えている人に刺さるよ！",
+  "title_en": "Aurora MySQL 3.14 Is Here, with Post-Quantum TLS Key Exchange!",
+  "summary_en": "Aurora MySQL 3.14 (compatible with MySQL 8.0.46) is generally available, with community fixes, Aurora-specific improvements, and post-quantum TLS (PQ-TLS) key exchange.",
+  "body_md_en": "Hi, it's Shii-chan! A new minor version of Aurora MySQL is out, and it even includes post-quantum cryptography!\n\n## What was announced?\n\nIn AWS What's New, AWS announced that Amazon Aurora MySQL-Compatible Edition 3 (compatible with MySQL 8.0) now supports **MySQL 8.0.46** with **Aurora MySQL 3.14**. It includes community MySQL fixes and Aurora-specific improvements.\n\n## What changes\n\nBesides operational improvements, Aurora MySQL 3.14 supports **post-quantum TLS (PQ-TLS) key exchange**, giving you post-quantum cryptography options for encrypting data in transit.\n\n## Dive Deep\n\nHere's how upgrades work.\n\n- Upgrade during scheduled maintenance windows using automatic minor version upgrades\n- At scale, enable automatic minor version upgrades and use the AWS Organizations Upgrade Rollout Policy to orchestrate upgrades across your clusters in phases\n- Minor version upgrades can be done in-place or via snapshot restore\n\nSee the Aurora MySQL 3 and MySQL 8.0.46 release notes for details. It's supported in all AWS Regions where Aurora MySQL is available.\n\n## Wrap-up\n\n- Aurora MySQL 3.14 (MySQL 8.0.46 compatible) is generally available\n- PQ-TLS key exchange is supported\n- Roll out with automatic minor version upgrades and the Upgrade Rollout Policy\n- Available in all Regions where Aurora MySQL is available\n\nThis is for anyone running MySQL 8.0-compatible Aurora or preparing for post-quantum cryptography!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-aurora-mysql-314-available/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Aurora MySQL 3.14 (compatible with MySQL 8.0.46) is generally available",
+  "tags": [
+    "aws",
+    "security",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-02T17:00:00+00:00"
+}

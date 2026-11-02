@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-rds-per-snapshot-billing",
+  "title": "RDS のスナップショット代が 1 個ずつ見える！per snapshot billing が始まったよ",
+  "summary": "Amazon RDS が per snapshot billing に対応。コスト配分タグを使って、スナップショット 1 個ごとのコストを確認できるよ。追加料金なしで、デフォルトで有効なの。",
+  "body_md": "やっほー、しぃちゃんだよ！バックアップ代がどのスナップショットにかかっているのか、ついに見えるようになったよ！\n\n## なにが発表されたの？\n\nAWS の「AWS What's New」で、Amazon RDS が RDS スナップショットの **per snapshot billing（スナップショットごとの課金表示）**に対応したと発表されたよ。個々のスナップショットのコストを取得できるの。\n\n## 今までどうだったの？\n\nこれまで RDS のスナップショット料金は、Cost and Usage レポートと Cost Explorer で、データベースインスタンス単位に集約されていたよ。だから、インスタンス全体の合計は分かっても、個々のスナップショットまで掘り下げられなかったんだね。\n\n## これで何が変わるの？\n\nスナップショットにコスト配分タグを付ければ、各スナップショットがいくらかかっているかが正確に分かるよ。バックアップ費用や予算の把握がしやすくなるの。\n\n「どの古いスナップショットが高くついているの？」を探したい人には嬉しい更新だね。\n\n## 深く潜ってみよう\n\n条件をまとめるよ。\n\n- すべての RDS スナップショットで、デフォルトで有効\n- 追加料金なし\n- すべての Amazon RDS エンジンが対象\n- すべての商用 AWS リージョンと、AWS GovCloud（US）リージョンで利用可能\n\nコスト配分タグを活用するのがポイントだよ。詳しくはドキュメントを見てね。\n\n## まとめ\n\n- RDS が per snapshot billing に対応\n- スナップショット 1 個ごとのコストを確認できる\n- コスト配分タグを使う\n- デフォルトで有効、追加料金なし、全エンジン・全商用リージョンと GovCloud（US）で利用可能\n\nFinOps を担当している人や、バックアップ費用を整理したい DB 運用の人に刺さるよ！",
+  "title_en": "See RDS Snapshot Costs One by One with Per Snapshot Billing!",
+  "summary_en": "Amazon RDS now supports per snapshot billing, so you can see the cost of each individual snapshot using cost allocation tags, enabled by default at no additional charge.",
+  "body_md_en": "Hi, it's Shii-chan! You can finally see which snapshots your backup spend is going to!\n\n## What was announced?\n\nIn AWS What's New, AWS announced that Amazon RDS now supports **per snapshot billing** for RDS snapshots. It lets you get the cost of each individual snapshot.\n\n## The story so far\n\nPreviously, RDS snapshot charges were aggregated at the database instance level in the Cost and Usage report and Cost Explorer. You could see the aggregate for an instance, but not drill down to each snapshot.\n\n## What changes\n\nWith cost allocation tags on your snapshots, you can see exactly how much each snapshot costs. That gives you a better understanding of your backup spend and budgets.\n\nIf you've wondered which old snapshot is costing the most, this update is for you!\n\n## Dive Deep\n\nHere are the conditions.\n\n- Enabled by default on all RDS snapshots\n- No additional charge\n- Covers all Amazon RDS engines\n- Available in all commercial AWS Regions and the AWS GovCloud (US) Regions\n\nThe key is to use cost allocation tags. See the documentation for details.\n\n## Wrap-up\n\n- RDS supports per snapshot billing\n- See the cost of each individual snapshot\n- Uses cost allocation tags\n- Enabled by default, no extra charge, all engines, all commercial Regions and GovCloud (US)\n\nThis is for FinOps owners and DB operators who want to tidy up backup spend!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-rds-per-snapshot-billing/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon RDS now supports per snapshot billing",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-02T18:43:00+00:00"
+}

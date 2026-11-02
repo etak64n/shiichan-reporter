@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-quick-desktop-organization-sign-in",
+  "title": "Amazon Quick のデスクトップ版は Web と同じサインインで OK！OIDC 登録が不要に",
+  "summary": "Amazon Quick のデスクトップアプリが、組織が Web 版で使っているサインイン方法をそのまま使えるように。管理者は IdP に OIDC アプリを登録しなくてよくなったよ。",
+  "body_md": "おつかれさま、しぃちゃんだよ！Amazon Quick のデスクトップアプリの導入が、管理者さんにとってぐっと楽になったよ。\n\n## なにが発表されたの？\n\nAWS の「AWS What's New」で、Amazon Quick のデスクトップアプリが、組織が Quick の Web 版で使っているのと**同じサインイン方法**でユーザーをサインインさせるようになったと発表されたよ。\n\n## 今までどうだったの？\n\nデスクトップ版を使い始める前に、管理者は ID プロバイダーに OIDC アプリケーションを登録して、デスクトップ用のサインインを別に設定する必要があったよ。\n\n## これで何が変わるの？\n\nその手間が不要になったよ。Web 版の Quick にサインインできるユーザーなら、デスクトップアプリにもサインインできるの。\n\n## 深く潜ってみよう\n\nデスクトップアクセスを有効にする手順はこうだよ。\n\n- 管理者が Amazon Quick コンソールで、デスクトップコネクタを 1 回追加する\n- ユーザーは Quick のアカウント名を入力し、Sign In を選んで、ブラウザでサインインを完了する\n\n対応するアカウントの種類は次の 3 つだよ。\n\n- IAM Identity Center を使うアカウント\n- IAM フェデレーションを使うアカウント\n- ネイティブの Amazon Quick ユーザー\n\nデスクトップのサインインを別に管理したい組織は、従来どおり専用の ID プロバイダー設定もできるよ。対応プロバイダーの例は、Microsoft Entra ID、Google Workspace、Okta、Ping Identity だね。\n\nAmazon Quick のデスクトップ版は、Amazon Quick のフル機能が使える AWS リージョンで利用できるよ。\n\n## まとめ\n\n- デスクトップ版が、組織の Web 版と同じサインイン方法を使う\n- 管理者は OIDC アプリの登録や別のサインイン設定が不要\n- 管理者がコンソールでデスクトップコネクタを 1 回追加するだけ\n- 別の IdP 設定を作ることも、引き続き可能\n\nQuick の導入担当の人や、デスクトップアプリの展開で止まっていた情シスの人に刺さるよ！",
+  "title_en": "Amazon Quick on Desktop Now Uses Your Organization's Existing Sign-In, No OIDC Setup!",
+  "summary_en": "The Amazon Quick desktop app now signs users in with the same method the organization uses for Quick on the web, so administrators no longer register an OIDC application.",
+  "body_md_en": "Hi, it's Shii-chan! Rolling out the Amazon Quick desktop app just got much easier for administrators.\n\n## What was announced?\n\nIn AWS What's New, AWS announced that the Amazon Quick desktop application now signs users in with the **same sign-in method** the organization already uses for Quick on the web.\n\n## The story so far\n\nBefore users could get started with the desktop app, administrators had to register an OIDC application in their identity provider and set up separate desktop sign-in.\n\n## What changes\n\nThat's no longer needed. If a user can sign in to Quick on the web, that user can sign in to the desktop application.\n\n## Dive Deep\n\nHere's how to turn on desktop access.\n\n- An administrator adds the desktop connector once in the Amazon Quick console\n- Users enter their Quick account name, choose Sign In, and finish signing in through their browser\n\nThree kinds of accounts are supported:\n\n- Accounts that use IAM Identity Center\n- Accounts that use IAM federation\n- Native Amazon Quick users\n\nIf your organization wants to manage desktop sign-in separately, you can still set up a dedicated identity provider configuration with providers such as Microsoft Entra ID, Google Workspace, Okta, or Ping Identity.\n\nAmazon Quick on desktop is available in AWS Regions that support the full Amazon Quick feature set.\n\n## Wrap-up\n\n- The desktop app uses the organization's web sign-in method\n- Administrators don't register an OIDC app or set up separate sign-in\n- One desktop connector in the console is all it takes\n- A dedicated IdP configuration is still possible\n\nThis is for Quick administrators and IT teams whose desktop rollout was stuck!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-quick-desktop-organization-sign-in/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Quick on desktop now uses your organization's existing Amazon Quick sign-in",
+  "tags": [
+    "aws",
+    "security"
+  ],
+  "published_at": "2026-11-02T18:36:00+00:00"
+}

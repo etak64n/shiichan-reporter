@@ -1,0 +1,19 @@
+{
+  "slug": "cloudflare-changelog-2026-11-02-billing-postponed-default-sync-interval",
+  "title": "AI Search の課金が 12 月 1 日にお預け！同期間隔の初期値は 24 時間に",
+  "summary": "Cloudflare AI Search の課金開始が 2026 年 11 月 1 日から 12 月 1 日に延期され、同期間隔のデフォルトも 6 時間から 24 時間に変わるよ。",
+  "body_md": "おつかれさま、しぃちゃんだよ！Cloudflare の AI Search から、ちょっとだけ嬉しいお知らせと、設定に関わる変更が届いたよ。\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、AI Search について 2 つの変更が告知されたよ。\n\n- 課金の開始が **2026 年 11 月 1 日 → 12 月 1 日** に 1 か月延期\n- インスタンスのデフォルトの同期間隔が **6 時間 → 24 時間** に変更\n\n## 今までどうだったの？\n\n課金は 11 月 1 日から始まる予定だったよ。同期間隔は、特に指定しなければ 6 時間ごとに同期される設定だったんだね。\n\n## これで何が変わるの？\n\n12 月 1 日より前の AI Search の利用には課金されないよ。料金と無料枠の内容は変わらないから、延期されただけだよ！\n\nデフォルトの同期間隔が長くなるので、新しく作るインスタンスは同期の頻度が下がるよ。更新の反映を早くしたい人は、間隔を自分で選ぼうね。\n\n## 深く潜ってみよう\n\n同期間隔は、今でも自由に選べるよ。\n\n- 選べる範囲は 15 分から 24 時間まで\n- ダッシュボードのインスタンス設定にある Sync interval で変更できる\n- API では sync_interval フィールドで指定できる\n\n料金とインクルードされる使用量の詳細は、Cloudflare のドキュメントの Limits and pricing を見てね。\n\n## まとめ\n\n- AI Search の課金開始は 12 月 1 日に延期（料金・無料枠は変更なし）\n- デフォルトの同期間隔は 6 時間から 24 時間へ\n- 15 分から 24 時間までは引き続き設定できる\n\nAI Search を使っている人や、これから RAG を組もうとしている人は、同期間隔の見直しをしておくといいよ！",
+  "title_en": "AI Search Billing Pushed to December 1, and the Default Sync Interval Is Now 24 Hours",
+  "summary_en": "Cloudflare AI Search billing now starts on December 1, 2026 instead of November 1, and the default sync interval changes from 6 hours to 24 hours.",
+  "body_md_en": "Hi, it's Shii-chan! There's a bit of good news and a settings change for Cloudflare AI Search.\n\n## What was announced?\n\nThe Cloudflare Changelog announced two changes to AI Search:\n\n- Billing start is postponed by one month, from **November 1, 2026 to December 1, 2026**\n- The default sync interval for instances changes from **6 hours to 24 hours**\n\n## The story so far\n\nBilling was set to begin on November 1. And unless you picked something else, AI Search instances synced every 6 hours.\n\n## What changes\n\nYou won't be charged for AI Search usage before December 1, 2026. Pricing and included usage are unchanged, so it's just a delay!\n\nWith the longer default, new instances sync less often. If you want updates reflected faster, choose your own interval.\n\n## Dive Deep\n\nYou can still pick any supported interval.\n\n- The range is 15 minutes to 24 hours\n- Change it with the Sync interval setting in your instance settings in the dashboard\n- In the API, use the sync_interval field\n\nFor rates and included usage, see Limits and pricing in the Cloudflare docs.\n\n## Wrap-up\n\n- AI Search billing now starts December 1 (pricing and included usage unchanged)\n- The default sync interval goes from 6 hours to 24 hours\n- You can still set anything from 15 minutes to 24 hours\n\nIf you use AI Search, or plan to build RAG on it, it's a good time to review your sync interval!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-11-02-billing-postponed-default-sync-interval/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "AI Search - AI Search billing postponed to December 1, 2026, and default sync interval is now 24 hours",
+  "tags": [
+    "cloudflare",
+    "ai"
+  ],
+  "published_at": "2026-11-02T23:33:22+00:00"
+}

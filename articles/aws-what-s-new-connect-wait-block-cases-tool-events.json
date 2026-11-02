@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-connect-wait-block-cases-tool-events",
+  "title": "Connect の Wait ブロックがケースの更新を待てるように！返金ステータスで再開も",
+  "summary": "Amazon Connect Customer の Wait ブロックが、Cases のフィールド条件と External Tool の完了を待てるようになったよ。不要な転送を減らせるの。",
+  "body_md": "おつかれさま、しぃちゃんだよ！Amazon Connect のフローが、リアルタイムのデータ変化に反応しやすくなったよ。\n\n## なにが発表されたの？\n\nAWS の「AWS What's New」で、Amazon Connect Customer の **Wait ブロック**が、Cases と External Tool のイベントに対応したと発表されたよ。\n\n## 今までどうだったの？\n\nWait ブロックで待てるのは、Lambda 関数の完了だったよ。\n\n## これで何が変わるの？\n\nLambda の完了に加えて、次のどちらかを待てるようになったの。\n\n- Connect Case のフィールドが、指定した条件を満たすまで\n- External Tool の呼び出しが完了するまで\n\nこれで、重要な情報がそろうまで対話を先へ進めず、不要な転送を減らせるよ。お客様にも、エージェントにも時間の節約になるね。\n\n原文の例はこうだよ。ケースの返金ステータスのフィールドが更新されるまでフローを止めておいて、更新されたら自動で再開し、その結果に基づいて対話をルーティングするの。\n\n## 深く潜ってみよう\n\n今回の発表に、料金やリージョンの具体的な数字は載っていなかったよ。リージョンごとの機能の提供状況は、管理者ガイドと「Availability of Connect Customer features by Region」で確認してね。\n\n## まとめ\n\n- Wait ブロックが Cases のフィールド条件に対応\n- External Tool の呼び出し完了も待てる\n- 情報がそろってから先へ進めるので、不要な転送を減らせる\n\nAmazon Connect で、ケース管理と連動したフローを作っている人に刺さるよ！",
+  "title_en": "Connect's Wait Block Can Now Wait on Case Updates, Like a Refund Status!",
+  "summary_en": "The Wait block in Amazon Connect Customer now supports Cases field conditions and External Tool completion, helping reduce unnecessary transfers.",
+  "body_md_en": "Hi, it's Shii-chan! Amazon Connect flows can now react to real-time data changes more easily.\n\n## What was announced?\n\nIn AWS What's New, AWS announced that the **Wait block** in Amazon Connect Customer now supports Cases and External Tool events.\n\n## The story so far\n\nThe Wait block could wait for a Lambda function to complete.\n\n## What changes\n\nIn addition to waiting for Lambda, you can now wait until either of these happens:\n\n- A Connect Case field meets a specified condition\n- An External Tool invocation completes\n\nThat lets you wait for critical information before advancing an interaction, reducing unnecessary transfers and saving time for both end-customers and agents.\n\nHere's the example from the post: hold a flow until a refund status field is updated on a case, then automatically resume and route the interaction based on the outcome.\n\n## Dive Deep\n\nThe announcement doesn't include pricing or other specific figures. Check the administrator guide and Availability of Connect Customer features by Region for Region details.\n\n## Wrap-up\n\n- The Wait block supports Cases field conditions\n- It can also wait for an External Tool invocation to complete\n- Interactions advance once the information is ready, reducing unnecessary transfers\n\nThis is for anyone building flows tied to case management in Amazon Connect!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/connect-wait-block-cases-tool-events/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Connect Customer now supports Cases and External Tool events in the Wait block",
+  "tags": [
+    "aws",
+    "serverless"
+  ],
+  "published_at": "2026-11-02T16:00:00+00:00"
+}

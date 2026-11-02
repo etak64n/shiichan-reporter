@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-aurora-mysql-8410-available",
+  "title": "Aurora MySQL 8.4.10 で GTID タグと 5 万接続に対応！プーリング層なしでも戦えるかも",
+  "summary": "Aurora MySQL 8.4 が MySQL 8.4.10 に対応。GTID タグのサポートと、DB インスタンスあたり最大 50,000 の同時接続が加わったよ。",
+  "body_md": "やっほー、しぃちゃんだよ！Aurora MySQL 8.4 に新しいマイナーバージョンが来たよ。接続数の上限が気になる人は要チェックだよ！\n\n## なにが発表されたの？\n\nAWS の「AWS What's New」で、Amazon Aurora MySQL 互換エディション 8.4 が **MySQL 8.4.10** に対応した、**Aurora MySQL 8.4.10** が一般提供になったと発表されたよ。\n\nAWS は、以前のバージョンの MySQL にある CVE の修正や、バグ修正、性能改善、MySQL コミュニティが追加した新機能を取り込むために、新しいマイナーバージョンへのアップグレードを推奨しているよ。\n\n## これで何が変わるの？\n\n新しく入ったのはこの 2 つだよ。\n\n- **GTID タグ**: グローバルトランザクション識別子（GTID）にユーザー定義のタグを付けられる。バイナリログレプリケーションで、関連するトランザクションを識別・グループ化しやすくなる\n- **最大 50,000 の同時接続**: DB インスタンスあたり最大 50,000 の同時接続に対応。接続数の多いアプリケーションを、コネクションプーリング層を足さずにスケールできる\n\n## 深く潜ってみよう\n\nアップグレードの方法をまとめるよ。\n\n- スケジュールされたメンテナンスウィンドウ中に、自動マイナーバージョンアップグレードでアップグレードできる\n- 大規模運用では、自動マイナーバージョンアップグレードと、AWS Organizations の Upgrade Rollout Policy を使って、段階的に展開できる。優先度の低い環境で検証してから、重要な環境にアップグレードするやり方だよ\n- インプレースでも、スナップショットからの復元でも実行できる\n\n最大接続数のベストプラクティスは、Aurora MySQL ユーザーガイドにまとまっているよ。詳細は Aurora MySQL 8.4 と MySQL 8.4.10 のリリースノートを見てね。\n\n## まとめ\n\n- Aurora MySQL 8.4.10 が一般提供\n- GTID タグに対応\n- DB インスタンスあたり最大 50,000 同時接続\n- CVE 修正を取り込むため、新しいマイナーバージョンへの更新が推奨されている\n\nAurora MySQL 8.4 を使っている人や、接続数の多いアプリを運用している人に刺さるよ！",
+  "title_en": "Aurora MySQL 8.4.10 Adds GTID Tags and 50,000 Connections!",
+  "summary_en": "Aurora MySQL 8.4 now supports MySQL 8.4.10, adding GTID tags and up to 50,000 simultaneous connections per DB instance.",
+  "body_md_en": "Hi, it's Shii-chan! A new minor version is out for Aurora MySQL 8.4. If you care about connection limits, check this one out!\n\n## What was announced?\n\nIn AWS What's New, AWS announced that Amazon Aurora MySQL-Compatible Edition 8.4 now supports **MySQL 8.4.10** with **Aurora MySQL 8.4.10**.\n\nAWS recommends upgrading to newer minor versions to accept fixes for CVEs in prior versions of MySQL and to benefit from bug fixes, performance improvements, and new functionality added by the MySQL community.\n\n## What changes\n\nTwo things are new:\n\n- **GTID tags**: assign a user-defined tag to global transaction identifiers (GTIDs) to identify and group related transactions in binary log replication\n- **Up to 50,000 simultaneous connections**: per DB instance, so connection-intensive applications can scale without adding a connection pooling layer\n\n## Dive Deep\n\nHere's how to upgrade.\n\n- Upgrade during scheduled maintenance windows using automatic minor version upgrades\n- At scale, enable automatic minor version upgrades and use the AWS Organizations Upgrade Rollout Policy to orchestrate upgrades in phases, validating on lower-priority environments before your most critical ones\n- Upgrades can be done in-place or via snapshot restore\n\nMaximum connections best practices are in the Amazon Aurora MySQL User Guide. See the Aurora MySQL 8.4 and MySQL 8.4.10 release notes for details.\n\n## Wrap-up\n\n- Aurora MySQL 8.4.10 is generally available\n- GTID tags are supported\n- Up to 50,000 simultaneous connections per DB instance\n- Upgrading is recommended to pick up CVE fixes\n\nThis is for anyone on Aurora MySQL 8.4 and anyone running connection-heavy apps!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-aurora-mysql-8410-available/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Aurora MySQL 8.4.10 is now generally available",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-02T17:00:00+00:00"
+}

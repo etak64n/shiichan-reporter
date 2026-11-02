@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-cloudfront-self-service-quotas",
+  "title": "CloudFront の上限緩和がセルフサービスに！サポートケースにサヨナラ",
+  "summary": "Amazon CloudFront が AWS Service Quotas に対応し、28 個のクォータを確認・監視・引き上げ申請できるよ。Business Support 以上なら基準内の申請は自動承認されるの。",
+  "body_md": "こんにちは、しぃちゃんだよ！CloudFront の上限緩和が、サポートケースなしでできるようになったよ。待ち時間が減るのは嬉しいね！\n\n## なにが発表されたの？\n\nAWS の「AWS What's New」で、Amazon CloudFront が **AWS Service Quotas** に対応したと発表されたよ。Service Quotas のコンソールか API から、**28 個**の CloudFront クォータを確認・監視し、引き上げをリクエストできるの。\n\n## 今までどうだったの？\n\nディストリビューション、キャッシュポリシー、オリジン、代替ドメイン名といったリソースのクォータを増やすには、サポートケースを開いて、手動レビューを待つ必要があったよ。\n\n## これで何が変わるの？\n\nAWS Business Support 以上を契約していれば、公開されているしきい値の範囲内の引き上げリクエストは**自動で承認**されるよ。たとえば次のような変更が、サポートケースなしでできるの。\n\n- ディストリビューションのクォータを 500 から 1,000 へ\n- ディストリビューションあたりの代替ドメイン名を 100 から 500 へ\n\n## 深く潜ってみよう\n\n一部のクォータは、使用量メトリクスを Amazon CloudWatch に **5 分ごと**に発行するよ。これでアラームを設定して、上限に達する前に引き上げをリクエストできるね。\n\n提供は、CloudFront が使えるすべての AWS リージョンだよ。使い始めるには、Service Quotas コンソールで CloudFront のクォータを見て、引き上げを申請してね。詳しくは CloudFront デベロッパーガイドの「Amazon CloudFront quotas」にあるよ。\n\n## まとめ\n\n- CloudFront の 28 個のクォータを Service Quotas から確認・申請できる\n- Business Support 以上なら、しきい値内の引き上げは自動承認\n- 一部のクォータは CloudWatch に 5 分ごとに使用量を発行\n- CloudFront が使えるすべてのリージョンで利用可能\n\n多数のドメインやディストリビューションを運用しているチームの人に刺さるよ！",
+  "title_en": "CloudFront Quota Increases Go Self-Service, No Support Case Needed!",
+  "summary_en": "Amazon CloudFront now supports AWS Service Quotas, so you can view, monitor, and request increases for 28 quotas. With Business Support or higher, requests within published thresholds are approved automatically.",
+  "body_md_en": "Hi, it's Shii-chan! You can now raise CloudFront limits without opening a support case. Less waiting is always nice!\n\n## What was announced?\n\nIn AWS What's New, AWS announced that Amazon CloudFront now supports **AWS Service Quotas**. From the Service Quotas console or API, you can view, monitor, and request increases for **28** CloudFront quotas.\n\n## The story so far\n\nIncreasing a quota on resources such as distributions, cache policies, origins, or alternate domain names meant opening a support case and waiting for manual review.\n\n## What changes\n\nIf you have AWS Business Support or higher, limit increase requests within published thresholds are now **approved automatically**. For example, without a support case you can raise:\n\n- Your distribution quota from 500 to 1,000\n- The number of alternate domain names per distribution from 100 to 500\n\n## Dive Deep\n\nSome quotas also publish usage metrics to Amazon CloudWatch **every 5 minutes**, so you can set alarms and request an increase before you hit a limit.\n\nIt's available in all AWS Regions where CloudFront is supported. To get started, open the Service Quotas console, view your CloudFront quotas, and request increases. See Amazon CloudFront quotas in the CloudFront Developer Guide for more.\n\n## Wrap-up\n\n- 28 CloudFront quotas can be viewed and increased through Service Quotas\n- With Business Support or higher, increases within thresholds are automatic\n- Some quotas publish usage to CloudWatch every 5 minutes\n- Available in all Regions where CloudFront is supported\n\nThis is for teams running many domains or distributions!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/cloudfront-self-service-quotas/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon CloudFront now supports self-service increases in AWS Service Quotas",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "web"
+  ],
+  "published_at": "2026-11-02T08:00:00+00:00"
+}
