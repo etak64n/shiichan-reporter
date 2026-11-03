@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-11-04-personal-agent-policies",
+  "title": "Cloudflare Bots、パーソナルエージェントを個別にコントロール！",
+  "summary": "Cloudflare の「Configure AI bot policies」が「AI Crawler and Agent access policies」に名前を変えて、上位のパーソナルエージェントごとにアクションを設定できるようになったよ。デフォルトでは既存の Agents ポリシーを引き継ぐの。",
+  "body_md": "やっほー、しぃちゃんだよ！AI エージェントがサイトを見に来る時代、アクセスの扱いをどうするか悩んでいる人に朗報だよ！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Bots の設定が更新されたよ。\n\n- 「Configure AI bot policies」という設定の名前が「AI Crawler and Agent access policies」に変わった\n- 上位のパーソナルエージェントごとに、アクションを個別に設定できるようになった\n\nパーソナルエージェントとは、人に代わって、依頼に応じて情報を取ってきたり、ブラウズしたりするエージェントのことだよ。\n\n## なぜ重要なの？\n\nエージェントへのアクセスを一括で制御すると、困ることがあるよね。たとえば、訪問者がエージェントを使って答えを探したり、商品を比べたりするのを妨げたくない、でも不要なアクセスは抑えたい、という場面だよ。\n\n## これで何が変わるの？\n\n今回のアップデートで、エージェントのトラフィック全体に 1 つのアクションを当てはめなくても、上位のパーソナルエージェントを 1 つずつ設定できるようになったの。サイトのコンテンツを使って答えを探したり商品を比較したりしてもらいつつ、エージェントのアクセスを自分でコントロールできるよ。\n\n## 深く潜ってみよう\n\n設定の場所と、ポイントはこれだよ。\n\n- 場所: Security > Settings > AI Crawler and Agent access policies\n- デフォルト: パーソナルエージェントは、すでに設定してある Agents ポリシーを引き継ぐ\n- Cloudflare の推奨: パーソナルエージェントには Allow (ブロックしない)\n\nどのエージェントが個別設定の対象になるかは、この Changelog には書かれていなかったよ。詳しくは、Cloudflare のブログ記事と、AI Crawler and Agent access policies のドキュメントを見てね。\n\n## まとめ\n\n- 「Configure AI bot policies」が「AI Crawler and Agent access policies」に改名\n- 上位のパーソナルエージェントごとにアクションを設定できる\n- デフォルトは既存の Agents ポリシーを継承\n- Cloudflare は Allow (ブロックしない) を推奨\n\nサイトを運営していて、AI エージェントとの付き合い方を細かく決めたいみんなに刺さる更新だよ！",
+  "title_en": "Cloudflare Bots Now Lets You Control Personal Agents One by One",
+  "summary_en": "Cloudflare renamed Configure AI bot policies to AI Crawler and Agent access policies, and you can now set actions for the top Personal Agents individually. By default, they inherit your existing Agents policy.",
+  "body_md_en": "Hi everyone, it's Shii-chan! If you have been wondering how to handle AI agents visiting your site, here is some good news!\n\n## What was announced?\n\nIn the Cloudflare Changelog, the Bots settings were updated:\n\n- The Configure AI bot policies setting is now named AI Crawler and Agent access policies\n- You can set actions for the top Personal Agents individually\n\nPersonal agents act on a person's behalf, fetching information or browsing in response to a request.\n\n## Why it matters\n\nControlling all agent access in one go has downsides. For example, you may want visitors to use agents to find answers or compare products, while still limiting access you don't want.\n\n## What changes\n\nWith this update, you no longer need to apply one action to all agent traffic. You can configure the top Personal Agents one by one, which gives you control over agent access while still allowing visitors to use agents with your site's content.\n\n## Dive Deep\n\nHere is where to find it and what to know:\n\n- Location: Security > Settings > AI Crawler and Agent access policies\n- Default: Personal Agents inherit your existing Agents policy\n- Cloudflare's recommendation: Allow (do not block) for Personal Agents\n\nThe changelog entry does not say which agents are covered by the individual settings. For details, see Cloudflare's blog post and the documentation for AI Crawler and Agent access policies.\n\n## Wrap-up\n\n- Configure AI bot policies is now AI Crawler and Agent access policies\n- Actions can be set for the top Personal Agents individually\n- The default inherits your existing Agents policy\n- Cloudflare recommends Allow (do not block)\n\nIf you run a site and want finer control over how AI agents treat it, this update is for you!",
+  "emotion": "smug",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-11-04-personal-agent-policies/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Bots - Granular access controls for the top Personal Agents",
+  "tags": [
+    "cloudflare",
+    "web",
+    "security"
+  ],
+  "published_at": "2026-11-04T00:00:00+00:00"
+}
