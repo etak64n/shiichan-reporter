@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-eks-argo-cd-notifications",
+  "title": "EKS の Argo CD に通知機能が登場！Slack から EventBridge まで 16 サービス対応",
+  "summary": "Amazon EKS Capability for Argo CD が Argo CD Notifications に対応したよ。同期・失敗・ヘルス変化を 16 の通知サービスに送れて、SQS と EventBridge は IAM Capability Role で認証できるの！追加料金はないよ。",
+  "body_md": "こんにちは、しぃちゃんだよ！EKS で Argo CD を使っている人に、うれしいお知らせが来たよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon EKS Capability for Argo CD が Argo CD Notifications に対応したと発表されたよ。アプリケーションが同期したとき、失敗したとき、ヘルス状態が変わったときに通知を受け取れるの。\n\n## これで何が変わるの？\n\n使い方は、本家の Argo CD と同じ流れだよ。\n\n- クラスタの中に、トリガーとメッセージテンプレートを定義する\n- 個々の Application に、アノテーションで購読を設定する\n\n通知先は 16 の通知サービスから選べるよ。たとえばこんなところが対応しているの。\n\n- Slack\n- PagerDuty\n- Opsgenie\n- Amazon SQS\n- Amazon EventBridge\n\nデプロイのイベントを、自分のイベント駆動のワークフローにつなげたい人には、SQS や EventBridge が使えるのが嬉しいところだね！\n\n## 深く潜ってみよう\n\n認証まわりが、EKS ならではの工夫になっているよ。\n\n- Amazon SQS と Amazon EventBridge: IAM Capability Role で認証するので、クラスタにクレデンシャルを置かなくていい\n- Slack トークンのようにサードパーティの認証情報が必要なサービス: シークレットの代わりに AWS Secrets Manager の ARN を指定すると、EKS が代わりに使ってくれる\n\n提供範囲と料金はこうだよ。\n\n- リージョン: EKS Capability for Argo CD が使えるすべての AWS リージョン\n- 料金: 通知機能そのものは追加料金なし。ただし SQS や EventBridge など、通知先で使うサービスの標準料金はかかるよ\n\n詳しい設定は Amazon EKS のユーザーガイドを見てね。\n\n## まとめ\n\n- EKS Capability for Argo CD が Argo CD Notifications に対応した\n- 同期・失敗・ヘルス変化を、16 の通知サービスに送れる\n- SQS と EventBridge は IAM Capability Role で認証、サードパーティの秘密情報は Secrets Manager の ARN で指定できる\n- 追加料金はなし(通知先サービスの料金は別)\n\nEKS でマネージドな Argo CD を使って、デプロイの状況を Slack や自動化に流したい人に刺さるよ！",
+  "title_en": "Argo CD Notifications Arrive on Amazon EKS, with 16 Services Supported",
+  "summary_en": "The Amazon EKS Capability for Argo CD now supports Argo CD Notifications. You can send sync, failure, and health-change events to 16 services, and SQS and EventBridge authenticate through your IAM Capability Role at no additional charge.",
+  "body_md_en": "Hi everyone, Shii-chan here! Here's good news for anyone running Argo CD on EKS.\n\n## What was announced?\n\nAWS What's New says the Amazon EKS Capability for Argo CD now supports Argo CD Notifications. You get notified when your applications sync, fail, or change health.\n\n## What changes\n\nThe workflow is the same as upstream Argo CD:\n\n- Define triggers and message templates in your cluster\n- Subscribe individual Applications with an annotation\n\nYou can deliver to 16 notification services. For example:\n\n- Slack\n- PagerDuty\n- Opsgenie\n- Amazon SQS\n- Amazon EventBridge\n\nSQS and EventBridge are handy if you want to route deployment events into your own event-driven workflows.\n\n## Dive Deep\n\nAuthentication has some EKS-specific conveniences:\n\n- Amazon SQS and Amazon EventBridge: authenticate with your IAM Capability Role, so you don't store credentials in the cluster\n- Services that need third-party credentials, such as a Slack token: specify an AWS Secrets Manager ARN in place of the secret, and EKS uses it on your behalf\n\nAvailability and pricing:\n\n- Regions: all AWS Regions where the EKS Capability for Argo CD is available\n- Pricing: no additional charge for notifications. Standard charges still apply for the services you notify, such as Amazon SQS or Amazon EventBridge\n\nFor setup details, see the Amazon EKS User Guide.\n\n## Wrap-up\n\n- The EKS Capability for Argo CD now supports Argo CD Notifications\n- Sync, failure, and health-change events can go to 16 notification services\n- SQS and EventBridge use the IAM Capability Role, and third-party secrets can be referenced by Secrets Manager ARN\n- No additional charge (destination services are billed separately)\n\nThis is for teams using managed Argo CD on EKS who want deployment status flowing into Slack or their own automation!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-eks-argo-cd-notifications",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon EKS Capabilities now supports Argo CD Notifications",
+  "tags": [
+    "aws",
+    "devops",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-03T06:00:00+00:00"
+}

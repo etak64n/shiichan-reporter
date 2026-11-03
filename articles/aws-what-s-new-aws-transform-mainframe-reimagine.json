@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-transform-mainframe-reimagine",
+  "title": "メインフレーム移行が一段ラクに！AWS Transform が項目単位で業務機能を発見",
+  "summary": "AWS Transform for mainframe の assess and reimagine ワークフローが、フィールド単位の精度で業務機能を見つけるようになり、新しい要件カバレッジレポートも生成するようになったよ。z/OS の COBOL と PL/I が対象なの！",
+  "body_md": "やっほー、しぃちゃんだよ！今日は、メインフレームのモダナイズを支える AWS Transform のアップデートを紹介するね！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Transform for mainframe の assess and reimagine ワークフローが改善されたと発表されたよ。追加されたのは 2 つ。\n\n- 業務機能(business function)をフィールド単位の精度で発見する\n- 新しい要件カバレッジレポートを生成する\n\n対象は z/OS 上の COBOL と PL/I のワークロードだよ。\n\n## 今までどうだったの？\n\n今までは、同じテーブルやファイルを使う業務機能が、まとめて 1 つにグループ化されていたの。\n\nそれに、トレーサビリティのレポートが欲しいときは、AWS Transform が出す成果物から自分で作る必要があったよ。\n\n## これで何が変わるの？\n\n- グループ化の基準が変わった: 同じデータフィールドに影響する業務機能だけがまとまるよ。画面やキューも含まれて、名前や説明もわかりやすくなったの\n- 要件カバレッジレポートが付いた: 自分でトレーサビリティを組み立てなくても、要件が網羅されているかを確認できるよ\n\nより正確な業務機能のカタログから、モダナイズを始められるのが嬉しいところだね！\n\n## 深く潜ってみよう\n\n要件カバレッジレポートで分かることはこれだよ。\n\n- ソースコードのすべての行が、どう扱われたかで分類されている\n- すべての業務ルールが、元になった正確なソース行にリンクしている\n- すべての要件が、それを支える業務ルールに裏付けられている\n\nポートフォリオ全体から 1 行単位まで、カバレッジを掘り下げて確認できるよ。確認が終わったら、Kiro などの IDE でのフォワードエンジニアリングに進めるの。作る前に網羅性を検証できるわけだね。\n\n提供範囲は、AWS Transform for mainframe が使えるすべての AWS リージョンだよ。詳しくは製品ページとドキュメントを見てね。\n\n## まとめ\n\n- 業務機能の発見がフィールド単位の精度になった\n- 画面とキューも対象になり、名前と説明が明確になった\n- 要件カバレッジレポートで、ソース行・業務ルール・要件の対応を確認できる\n- Kiro などでのフォワードエンジニアリングの前に、網羅性を検証できる\n\nz/OS の COBOL や PL/I の資産をモダナイズしようとしている人に刺さる更新だよ！",
+  "title_en": "AWS Transform for Mainframe Now Finds Business Functions at Field-Level Precision",
+  "summary_en": "The assess and reimagine workflow in AWS Transform for mainframe now discovers business functions with field-level precision and generates a requirements coverage report for z/OS COBOL and PL/I workloads.",
+  "body_md_en": "Hi everyone, Shii-chan here! Today I'm covering an update to AWS Transform for mainframe.\n\n## What was announced?\n\nAWS What's New says the assess and reimagine workflow in AWS Transform for mainframe has been improved in two ways:\n\n- It discovers business functions with field-level precision\n- It generates a new requirements coverage report\n\nIt targets z/OS COBOL and PL/I workloads.\n\n## The story so far\n\nBefore, business functions that used the same table or file were grouped together.\n\nAnd if you wanted traceability reporting, you had to build it yourself from AWS Transform artifacts.\n\n## What changes\n\n- Grouping is more precise: business functions are grouped only when they affect the same data fields. They now include screens and queues, and have clearer names and descriptions\n- A coverage report is included: you can check requirements coverage without assembling traceability yourself\n\nYou can start modernizing from a more accurate catalog of business functions.\n\n## Dive Deep\n\nThe requirements coverage report shows:\n\n- Every line of source code, classified by how it was handled\n- Every business rule, linked to the exact lines it came from\n- Every requirement, backed by the business rules that support it\n\nYou can review coverage from the full portfolio down to a single line, then move into forward engineering in Kiro and other IDEs. That means you can verify coverage before you build.\n\nIt's available in all AWS Regions where AWS Transform for mainframe is available. See the product page and documentation for details.\n\n## Wrap-up\n\n- Business function discovery is now field-level\n- Screens and queues are included, with clearer names and descriptions\n- The coverage report links source lines, business rules, and requirements\n- You can verify coverage before forward engineering in Kiro and other IDEs\n\nThis one is for teams modernizing z/OS COBOL and PL/I assets!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-transform-mainframe-reimagine/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Transform for mainframe improves the reimagine modernization workflow",
+  "tags": [
+    "aws",
+    "ai",
+    "devops"
+  ],
+  "published_at": "2026-11-03T08:00:00+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "slug": "cloudflare-changelog-2026-11-03-r2-request-error-breakdowns",
+  "title": "R2 のメトリクスが進化！リージョン別・エラーコード別で見られるよ",
+  "summary": "Cloudflare R2 のバケットのメトリクスページに、リージョン別のリクエスト分布と、HTTP ステータスコード別のエラー内訳が追加されたよ。レート制限(429)の絞り込みもできるの！",
+  "body_md": "おつかれさま、しぃちゃんだよ！R2 を使っている人にうれしいダッシュボードの更新が来たよ！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、R2 バケットの Metrics ページに 2 つのビューが加わったと告知されたよ。\n\n- Request Distribution by Region: リージョンごとのリクエストの動きを比べられるよ。書き込み・読み取り・エラー・レート制限エラー(429)で絞り込めるの\n- Errors by Status Code: HTTP ステータスコード別に、エラーの件数と推移を比べられるよ\n\n## これで何が変わるの？\n\nエラーが増えたとき、「どの地域からのリクエストなのか」「どのステータスコードなのか」を、ダッシュボード上で切り分けられるようになるよ。\n\n- 特定のリージョンだけでエラーが多いのかを確認できる\n- 429 のレート制限エラーだけを取り出して見られる\n- ステータスコード別の推移から、エラーの傾向をつかめる\n\n## 深く潜ってみよう\n\n場所は、Cloudflare ダッシュボードの R2 のバケットの Metrics ページ(Bucket metrics)だよ。リージョンの比較は「Compare regions」から使えるみたい。\n\nエラーの原因を調べるときは、R2 の error code reference を見るといいよ、と案内されているの。原文には、それぞれのビューのスクリーンショットも載っているよ。\n\n## まとめ\n\n- R2 バケットの Metrics に、リージョン別のリクエスト分布が追加された\n- 書き込み・読み取り・エラー・429 のレート制限エラーで絞り込める\n- ステータスコード別のエラー件数と推移も見られる\n\nR2 の運用中にエラーの原因を追いかけたい人に、ぴったりの更新だよ！",
+  "title_en": "R2 Metrics Now Break Down Requests by Region and Errors by HTTP Status",
+  "summary_en": "The R2 bucket Metrics page in the Cloudflare dashboard now lets you compare request activity by region and errors by HTTP status code, including rate-limited (429) errors.",
+  "body_md_en": "Hi everyone, Shii-chan here! Here's a dashboard update that R2 users will like.\n\n## What was announced?\n\nThe Cloudflare Changelog says the R2 bucket Metrics page gained two views:\n\n- Request Distribution by Region: compare request activity across regions. You can filter by writes, reads, errors, or rate-limited errors (429)\n- Errors by Status Code: compare error counts and trends, grouped by HTTP status code\n\n## What changes\n\nWhen errors go up, you can now tell where the requests come from and which status codes are involved, right in the dashboard.\n\n- Check whether errors are concentrated in a particular region\n- Pull out just the 429 rate-limited errors\n- Read error trends by status code\n\n## Dive Deep\n\nYou'll find these on the Metrics page of an R2 bucket in the Cloudflare dashboard (Bucket metrics). Region comparison is available under \"Compare regions\".\n\nTo troubleshoot errors, the post points to the R2 error code reference. The original post also includes a screenshot of each view.\n\n## Wrap-up\n\n- R2 bucket Metrics now show request distribution by region\n- You can filter by writes, reads, errors, or 429 rate-limited errors\n- Error counts and trends by status code are available too\n\nA nice fit for anyone chasing down errors while running R2!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-11-03-r2-request-error-breakdowns/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "R2 - Request metrics breakdown by region and HTTP error code",
+  "tags": [
+    "cloudflare",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-03T21:00:59+00:00"
+}
