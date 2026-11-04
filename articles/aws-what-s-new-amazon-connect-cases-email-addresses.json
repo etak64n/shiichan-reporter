@@ -1,0 +1,18 @@
+{
+  "slug": "aws-what-s-new-amazon-connect-cases-email-addresses",
+  "title": "Amazon Connect Customer、ケースからのメールでアドレスを自動入力！",
+  "summary": "Amazon Connect Customer で、ケースから新しいメールスレッドを始めるとき、顧客プロファイルのメールアドレスが自動で入るようになったよ！",
+  "body_md": "おつかれさま、しぃちゃんだよ！コンタクトセンターの小さいけど嬉しい改善が届いたよ。\n\n## なにが発表されたの？\n\nAWS の What's New によると、Amazon Connect Customer で、エージェントがケースから新しいメールスレッドを始めるとき、リンクされた顧客プロファイルからメールアドレスが自動で入力されるようになったよ。\n\n## 今までどうだったの？\n\nこれまでは、アドレスを調べたり入力したりする手間があったみたい。手入力だと、入力ミスも起こりやすいよね。\n\n## これで何が変わるの？\n\nアドレスを探したり打ったりする必要がなくなるから、エージェントの時間が節約できて、手入力のミスも減るよ！\n\n## 深く潜ってみよう\n\nCases が使えるリージョンはこれだよ。\n\n- US East (N. Virginia)\n- US West (Oregon)\n- Canada (Central)\n- Europe (Frankfurt)\n- Europe (London)\n- Asia Pacific (Seoul)\n- Asia Pacific (Singapore)\n- Asia Pacific (Sydney)\n- Asia Pacific (Tokyo)\n- Africa (Cape Town)\n\n詳しくは Cases のウェブページとドキュメントを見てね。\n\n## まとめ\n\n- ケースから新しいメールスレッドを始めると、顧客プロファイルのアドレスが自動入力される\n- 調べる手間と入力ミスが減る\n- 上の 10 リージョンの Cases で使える\n\nメール対応が多いコンタクトセンターのエージェントさんや管理者さんに刺さる改善だよ！",
+  "title_en": "Amazon Connect Customer Prefills Email Addresses for New Threads Started from Cases",
+  "summary_en": "Amazon Connect Customer now fills in the customer's email address from the linked profile when agents start a new email thread from a case.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Here's a small but nice improvement for contact centers.\n\n## What was announced?\n\nAccording to AWS What's New, Amazon Connect Customer now automatically fills in the customer's email address from the linked customer profile when agents start a new email thread from a case.\n\n## The story so far\n\nBefore this, agents had to look up or type the address themselves, which can lead to typos.\n\n## What changes\n\nAgents no longer need to look up or type the address. That saves time and reduces manual entry errors!\n\n## Dive Deep\n\nCases is available in these AWS Regions.\n\n- US East (N. Virginia)\n- US West (Oregon)\n- Canada (Central)\n- Europe (Frankfurt)\n- Europe (London)\n- Asia Pacific (Seoul)\n- Asia Pacific (Singapore)\n- Asia Pacific (Sydney)\n- Asia Pacific (Tokyo)\n- Africa (Cape Town)\n\nSee the Cases webpage and documentation for details.\n\n## Wrap-up\n\n- Starting an email thread from a case prefills the address from the customer profile\n- Less lookup effort and fewer typos\n- Available in Cases in the 10 Regions above\n\nThis is for agents and admins in contact centers that handle lots of email!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-connect-cases-email-addresses/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Connect Customer prefills the email address for new threads started from cases",
+  "tags": [
+    "aws"
+  ],
+  "published_at": "2026-11-03T17:00:00+00:00"
+}

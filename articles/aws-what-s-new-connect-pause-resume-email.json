@@ -1,0 +1,18 @@
+{
+  "slug": "aws-what-s-new-connect-pause-resume-email",
+  "title": "メール対応を一時停止できるように！Amazon Connect Customer の pause と resume",
+  "summary": "Amazon Connect Customer で、エージェントがメールを一時停止して後で再開できるようになったよ。停止時間は通常の対応時間とは別に記録されるの！",
+  "body_md": "みんな、しぃちゃんだよ！今日はコンタクトセンター向けの、メール対応が楽になる新機能だよ。\n\n## なにが発表されたの？\n\nAWS の What's New によると、Amazon Connect Customer でエージェントがメールを一時停止して、あとで再開できるようになったよ。\n\n情報や承認を待っている間にメールを止めておいて、優先度の高い問い合わせに対応できるんだね。\n\n## なぜ重要なの？\n\n原文の例はこんな感じだよ。返金の承認を上司に待っているエージェントが、メールを一時停止して、かかってきた電話に出られるの。\n\n待ち時間にも作業を止めずに済むから、現場の動きが自然になるね！\n\n## これで何が変わるの？\n\n一時停止していた時間は、実際に対応した時間とは別に記録されるよ。だからスーパーバイザーは、メール対応にかけた時間をより正確に見られるの。\n\n## 深く潜ってみよう\n\nできることはこれだよ。\n\n- エージェントは Agent Workspace か Contact Control Panel(CCP)から、メールを一時停止・再開できる\n- 各メールがどれくらい一時停止されているかも確認できる\n- スーパーバイザーは、一時停止中のメールと停止時間をリアルタイムで監視できる\n- 設定したしきい値を超えて停止しているメールは、flows で自動的に再開したり転送したりできる\n\n利用できるリージョンはこれだよ。\n\n- US East (N. Virginia)\n- US West (Oregon)\n- Africa (Cape Town)\n- Asia Pacific (Seoul)\n- Asia Pacific (Singapore)\n- Asia Pacific (Sydney)\n- Asia Pacific (Tokyo)\n- Canada (Central)\n- Europe (Frankfurt)\n- Europe (London)\n\n## まとめ\n\n- エージェントがメールを一時停止して再開できる\n- 停止時間は対応時間と別に記録される\n- スーパーバイザーはリアルタイム監視でき、flows で自動再開や転送もできる\n\n承認待ちの多い業務を抱えるコンタクトセンターのみんなに刺さる機能だよ！",
+  "title_en": "Amazon Connect Customer Lets Agents Pause and Resume Emails",
+  "summary_en": "Amazon Connect Customer now lets agents pause emails and resume them later, with paused time tracked separately from active handling time.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today there's a new feature that makes email handling easier in contact centers.\n\n## What was announced?\n\nAccording to AWS What's New, Amazon Connect Customer lets agents pause emails and resume them later.\n\nWhile waiting for information or approvals, agents can set an email aside and handle higher-priority contacts.\n\n## Why it matters\n\nHere's the example from the original post. An agent waiting for a supervisor to approve a refund can pause the email and take an incoming call.\n\nWaiting time no longer blocks the agent's work!\n\n## What changes\n\nPaused time is tracked separately from active handling time. That gives supervisors a more accurate view of how long agents actually spend working on emails.\n\n## Dive Deep\n\nHere's what you can do.\n\n- Agents can pause and resume emails from the Agent Workspace or the Contact Control Panel (CCP)\n- They can see how long each email has been paused\n- Supervisors can monitor paused emails and pause duration in real time\n- Flows can automatically resume or transfer emails paused beyond a configured threshold\n\nAvailable Regions:\n\n- US East (N. Virginia)\n- US West (Oregon)\n- Africa (Cape Town)\n- Asia Pacific (Seoul)\n- Asia Pacific (Singapore)\n- Asia Pacific (Sydney)\n- Asia Pacific (Tokyo)\n- Canada (Central)\n- Europe (Frankfurt)\n- Europe (London)\n\n## Wrap-up\n\n- Agents can pause and resume emails\n- Paused time is tracked separately from handling time\n- Supervisors can monitor in real time, and flows can auto-resume or transfer\n\nThis is for contact centers with lots of approval-driven work!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/connect-pause-resume-email/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Connect Customer lets agents pause and resume emails",
+  "tags": [
+    "aws"
+  ],
+  "published_at": "2026-11-03T20:15:00+00:00"
+}

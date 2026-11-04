@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-11-03-waf-release",
+  "title": "Cloudflare WAF が PHP の OOM 脆弱性ルールを更新！phpMyAdmin の新検知も追加",
+  "summary": "2026-11-03 の WAF リリースで、PHP の OOM 脆弱性 3 件に対する検知ルールが更新されて、phpMyAdmin の認証バイパス検知が新しく追加されたよ！",
+  "body_md": "みんな、しぃちゃんだよ！Cloudflare の WAF にまた更新が来たから、さっそく紹介するね。\n\n## なにが発表されたの？\n\nCloudflare の Changelog に、2026-11-03 付けの WAF リリースが載ったよ。\n\nPHP のメモリ不足(OOM)につながる脆弱性、CVE-2026-109618、CVE-2026-109619、CVE-2026-115560 のルール式が更新されたの。\n\n## 今までどうだったの？\n\nこれらの PHP の脆弱性には、すでに検知ルールがあったよ。今回の更新は、セキュリティ研究者からの報告を受けた「少しずつの改善」なの。\n\n報告は PHP の Capture the Flag(CTF)チャレンジの中で集まったものだと書かれているよ。\n\n## これで何が変わるの？\n\n既存の 4 ルールは、アクションは Block のまま、検知ロジックだけが良くなったよ。\n\nなので、設定を変えなくても、Free と Managed のルールセットを使っている人は更新後の検知を受けられるみたい！\n\n## 深く潜ってみよう\n\n変更されたルールはこちらだよ。\n\n- Cloudflare Free Ruleset: PHP Remote Code Execution Attack (CVE-2026-109618, CVE-2026-109619) #2(Block から Block、検知更新)\n- Cloudflare Free Ruleset: 同 #3(Block から Block、検知更新)\n- Cloudflare Managed Ruleset: 同 #2(Block から Block、検知更新)\n- Cloudflare Managed Ruleset: 同 #3(Block から Block、検知更新)\n\n新しい検知は 1 つあるよ。\n\n- Cloudflare Managed Ruleset: phpMyAdmin - Authentication Bypass(新規、アクションは Disabled)\n\n新規ルールは Disabled で出ているから、使いたい人は自分で有効化を検討する形になるよ。Legacy Rule ID はどれも N/A だよ。\n\n## まとめ\n\n- PHP の OOM 脆弱性 3 件に関するルール式が更新された\n- 更新された 4 ルールは Block のままで、検知だけ改善\n- phpMyAdmin の認証バイパス検知が新規追加(Disabled)\n\nPHP や phpMyAdmin を Cloudflare の WAF の後ろで動かしているみんなに刺さる更新だよ！",
+  "title_en": "Cloudflare WAF Updates PHP OOM Rules and Adds a New phpMyAdmin Detection",
+  "summary_en": "The 2026-11-03 WAF release updates detections for three PHP out-of-memory CVEs and adds a new phpMyAdmin authentication bypass detection.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Cloudflare WAF has a new update, so let's take a look.\n\n## What was announced?\n\nThe Cloudflare Changelog has a WAF release dated 2026-11-03.\n\nIt updates the rule expressions for PHP out-of-memory (OOM) vulnerabilities CVE-2026-109618, CVE-2026-109619 and CVE-2026-115560.\n\n## The story so far\n\nDetection rules for these PHP vulnerabilities already existed. This update is a set of iterative improvements based on reports from security researchers.\n\nThe reports came from a PHP Capture the Flag (CTF) challenge.\n\n## What changes\n\nThe four existing rules keep the Block action, and only their detection logic is improved.\n\nSo if you use the Free or Managed rulesets, you get the improved detection without changing your settings!\n\n## Dive Deep\n\nHere are the updated rules.\n\n- Cloudflare Free Ruleset: PHP Remote Code Execution Attack (CVE-2026-109618, CVE-2026-109619) #2 (Block to Block, detection updated)\n- Cloudflare Free Ruleset: the same attack, #3 (Block to Block, detection updated)\n- Cloudflare Managed Ruleset: the same attack, #2 (Block to Block, detection updated)\n- Cloudflare Managed Ruleset: the same attack, #3 (Block to Block, detection updated)\n\nThere is also one new detection.\n\n- Cloudflare Managed Ruleset: phpMyAdmin - Authentication Bypass (new, action Disabled)\n\nThe new rule ships as Disabled, so you decide whether to enable it. The legacy rule ID is N/A for all of them.\n\n## Wrap-up\n\n- Rule expressions for three PHP OOM CVEs were updated\n- The four updated rules stay on Block with better detection\n- A new phpMyAdmin authentication bypass detection was added (Disabled)\n\nThis is for anyone running PHP or phpMyAdmin behind Cloudflare WAF!",
+  "emotion": "thinking",
+  "importance": 3,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-11-03-waf-release/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "WAF - WAF Release - 2026-11-03",
+  "tags": [
+    "cloudflare",
+    "security",
+    "web"
+  ],
+  "published_at": "2026-11-03T00:00:00+00:00"
+}
