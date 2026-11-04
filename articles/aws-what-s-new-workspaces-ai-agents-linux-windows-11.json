@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-workspaces-ai-agents-linux-windows-11",
+  "title": "AI エージェント用 WorkSpaces に Linux と Windows 11 がやってきた！",
+  "summary": "WorkSpaces for AI agents が、Windows Server に加えて Linux と Windows 11 のクラウドデスクトップに対応したよ！エージェントごとに必要な OS を選べるようになったの。",
+  "body_md": "こんにちは、しぃちゃんだよ！AI エージェントのお仕事場が増えたってニュースだよ、わくわく！\n\n## なにが発表されたの？\n\nAWS の What's New で、WorkSpaces for AI agents が Linux と Windows 11 のクラウドデスクトップに対応したと発表されたよ！\n\n## 今までどうだったの？\n\nこれまでエージェント用のデスクトップは Windows Server だけだったの。だから、エージェントが使いたいアプリやワークフローが別の OS を前提にしていると、合わせにくかったと思う！\n\n## これで何が変わるの？\n\nエージェントごとに、ワークフローやアプリが必要とする OS を選べるようになったよ。社員の人たちが普段使っている環境と同じ場所でエージェントを動かせるから、re-platform(作り直し)は不要だと発表されているの。\n\n- Linux: エージェントに OS への完全な root アクセスを渡せる。ビルド・テスト・スクリプト実行など、開発者向けの作業にぴったり\n- Windows 11: チームが毎日使う業務アプリをエージェントが扱える\n- Windows Server: 引き続き利用できる\n\n## 深く潜ってみよう\n\nセキュリティとガバナンスは、新しい 2 つの OS でも Windows Server デスクトップと同じだよ。\n\n- ネットワーク分離\n- IAM ベースのアクセス\n- 組織で既に使っているコンプライアンス境界\n\n発表ページには、料金・対応リージョン・クォータ・インスタンスサイズは書かれていなかったよ。始め方は AWS のデベロッパーガイドの agent-access のページで確認してね！\n\n## まとめ\n\n- WorkSpaces for AI agents が Linux と Windows 11 に対応\n- Linux は root フルアクセスで、ビルドやテストの自動化に向く\n- Windows 11 は業務アプリを使うエージェント向け\n- セキュリティとガバナンスの制御は Windows Server と同じ\n\nエージェントに開発作業や業務アプリ操作を任せたい企業のみんなに刺さるよ！",
+  "title_en": "WorkSpaces for AI Agents Now Offers Linux and Windows 11 Desktops!",
+  "summary_en": "WorkSpaces for AI agents now supports Linux and Windows 11 cloud desktops in addition to Windows Server, so each agent can run on the OS its workflow needs.",
+  "body_md_en": "Hello, it's Shii-chan! The workplaces for AI agents just got more options, and I'm so excited!\n\n## What was announced?\n\nAccording to AWS What's New, WorkSpaces for AI agents now supports Linux and Windows 11 cloud desktops.\n\n## The story so far\n\nUntil now, agent desktops were Windows Server only. If an agent's apps or workflows expected a different OS, it was probably hard to fit them in.\n\n## What changes\n\nYou can now pick the OS each agent's workflow and applications need. Agents can work in the same environments your workforce already uses, with no re-platforming, per the announcement.\n\n- Linux: agents get full root access to the OS, which suits builds, tests, and scripts\n- Windows 11: agents can work in the enterprise applications your teams use every day\n- Windows Server: still available\n\n## Dive Deep\n\nThe two new OSs have the same security and governance controls as Windows Server desktops:\n\n- Network isolation\n- IAM-based access\n- The compliance boundaries your organization already has\n\nThe announcement doesn't list pricing, Regions, quotas, or instance sizes. See the agent-access page in the AWS developer guide to get started!\n\n## Wrap-up\n\n- WorkSpaces for AI agents adds Linux and Windows 11\n- Linux gives full root access for build and test automation\n- Windows 11 fits agents that use enterprise apps\n- Security and governance controls match Windows Server\n\nThis is for companies that want agents to handle developer tasks or business app work!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/workspaces-ai-agents-linux-windows-11",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon WorkSpaces for AI agents now supports Linux and Windows 11 cloud desktops",
+  "tags": [
+    "aws",
+    "ai",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-03T18:00:00+00:00"
+}

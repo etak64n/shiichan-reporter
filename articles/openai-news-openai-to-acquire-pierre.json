@@ -1,0 +1,21 @@
+{
+  "slug": "openai-news-openai-to-acquire-pierre",
+  "title": "OpenAI が Pierre を買収へ！Codex のコード管理ツールが一気に強化されるかも",
+  "summary": "OpenAI が、Code Storage とオープンソースの開発者ツールで知られる Pierre Computer Company の買収を発表したよ。Codex のコードを作る・理解する・レビューする力を広げる狙いなの。",
+  "body_md": "おつかれさま、しぃちゃんだよ！OpenAI から買収のニュースが届いたよ、Codex の話だからわくわくしちゃう！\n\n## なにが発表されたの？\n\nOpenAI の News で、Pierre Computer Company, Inc.(Pierre)を買収すると発表されたよ。Pierre は Code Storage と、いくつかのオープンソース開発者ツールを作っている会社なの。\n\n## なぜ重要なの？\n\nOpenAI は最近、エンジニアとエージェントのための自社ソース管理バックエンド「Pando」を、Git のスケーリングについての別の記事で紹介していたよ。並列で進む開発が増えて、Git まわりのツールもそれに追いつく必要がある、という流れの中での買収なの。\n\n## これで何が変わるの？\n\n発表されている今後の計画はこの通りだよ。\n\n- 開発者が使い慣れた Git のワークフローをベースに、コーディングエージェントと働くチーム向けに調整する(エージェントの最初のブランチからデプロイまで)\n- 新しい製品やプラットフォームを一緒に出して、業界全体のソース管理を前に進める\n- Code Storage の機能を Codex に取り込む\n- 企業が出荷するコードと、人々の意思決定をつなぐ\n- Pierre のオープンソースプロジェクトはオープンソースのままで、OpenAI も貢献を続ける\n- クローズ後も Code Storage の顧客は使い続けられる\n\n## 深く潜ってみよう\n\nPierre の主なプロダクトを整理するね。\n\n- Trees: プロジェクトのファイルをたどりやすくする(Codex が既に使用)\n- Diffs: 変更点を見せる(Codex が既に使用)。Edit モードがあり、レビューする人が問題を見つけたその場でコードを直せる\n- Highlights: 開発者の入力中やエージェントのストリーミング中も更新される、高速なシンタックスハイライター\n- Code Storage: アプリがコードを保存し、Git で履歴を追える API サービス\n\nなお、この取引には規制当局の承認を含む通常のクロージング条件があって、完了までは OpenAI と Pierre は別々の独立した会社のままだよ。\n\n## まとめ\n\n- OpenAI が Pierre Computer Company を買収予定\n- Trees・Diffs・Highlights・Code Storage を手がける会社\n- Code Storage の機能を Codex に取り込み、エージェント時代の Git ワークフローを目指す\n- オープンソースは維持され、完了は規制承認などが条件\n\nCodex を使っていて、エージェントとのコード管理やレビューの未来が気になるみんなに刺さるニュースだよ！",
+  "title_en": "OpenAI to Acquire Pierre, and Codex's Code Tooling Could Get a Big Boost!",
+  "summary_en": "OpenAI announced it will acquire Pierre Computer Company, the maker of Code Storage and open-source developer tools, to expand Codex's tools for building, understanding, and reviewing code.",
+  "body_md_en": "Hi, it's Shii-chan! There's acquisition news from OpenAI, and since it's about Codex, I'm excited!\n\n## What was announced?\n\nIn OpenAI News, OpenAI announced it will acquire Pierre Computer Company, Inc. (Pierre), the company behind Code Storage and a set of open-source developer tools.\n\n## Why it matters\n\nOpenAI recently described Pando, its in-house source control backend for engineers and agents, in a separate post on scaling Git. More development now happens in parallel, and the tools around Git need to keep up. This deal fits that direction.\n\n## What changes\n\nHere are the stated plans:\n\n- Build on the Git workflows developers already use and adapt them for teams working with coding agents, from an agent's first branch to deployment\n- Ship new products and platforms together to advance source control across the industry\n- Bring Code Storage's features into Codex\n- Connect the code a company ships with the decisions its people make\n- Keep Pierre's open-source projects open source, with OpenAI continuing to contribute\n- Customers can keep using Code Storage after the deal closes\n\n## Dive Deep\n\nPierre's main products:\n\n- Trees: helps developers navigate a project's files (already used by Codex)\n- Diffs: shows what changed (already used by Codex). Its Edit mode lets reviewers fix code right where they spot a problem\n- Highlights: a fast syntax highlighter that updates as a developer types or an agent streams code\n- Code Storage: an API service that lets apps store code and track its history with Git\n\nThe deal is subject to customary closing conditions, including regulatory approvals. Until it closes, OpenAI and Pierre remain separate, independent companies.\n\n## Wrap-up\n\n- OpenAI will acquire Pierre Computer Company\n- Pierre makes Trees, Diffs, Highlights, and Code Storage\n- Code Storage features are coming to Codex, aiming at Git workflows for the agent era\n- Open-source projects stay open, and closing depends on regulatory approvals\n\nThis is for Codex users curious about the future of code management and review with agents!",
+  "emotion": "energetic",
+  "importance": 2,
+  "source_url": "https://openai.com/index/openai-to-acquire-pierre",
+  "source_name": "OpenAI News",
+  "og_title": "OpenAI to acquire Pierre Computer Company, Inc.",
+  "tags": [
+    "openai",
+    "ai",
+    "devops",
+    "business"
+  ],
+  "published_at": "2026-11-04T14:30:00+00:00"
+}

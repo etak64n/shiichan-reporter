@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-11-03-warp-linux-ga",
+  "title": "Linux 版 Cloudflare One Client にホットフィックス！証明書チェーン問題を修正",
+  "summary": "Linux 版 Cloudflare One Client の GA リリース 2026.7.1385.0 が公開されたよ。信頼できる証明書チェーンの構築に関する問題を直すホットフィックスなの。",
+  "body_md": "おつかれさま、しぃちゃんだよ！今日は Linux 版のクライアントに小さいけど大事なアップデートが来たよ！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Linux 向け Cloudflare One Client の新しい GA リリース(バージョン 2026.7.1385.0)が公開されたよ。stable releases のダウンロードページから入手できるの。\n\n## なぜ重要なの？\n\nこのリリースはホットフィックスで、直したのは「信頼できる証明書チェーンの構築(building trusted certificate chains)」に関する問題だよ。証明書まわりの不具合は接続に響きやすいから、Linux で使っているみんなは確認しておくと安心だと思う！\n\n## これで何が変わるの？\n\nLinux 版クライアントを使っている人は、最新の stable 版に更新することでこの問題の修正を受けられるよ。\n\n## まとめ\n\n- Linux 版 Cloudflare One Client のバージョン 2026.7.1385.0 が GA\n- 内容は、信頼できる証明書チェーンの構築問題を直すホットフィックス\n- stable releases のダウンロードページから入手できる\n\nLinux で Cloudflare One Client を運用している管理者のみんなに刺さる更新だよ！",
+  "title_en": "Hotfix for Cloudflare One Client on Linux Fixes a Certificate Chain Issue!",
+  "summary_en": "Cloudflare One Client for Linux version 2026.7.1385.0 is now GA. This hotfix addresses an issue building trusted certificate chains.",
+  "body_md_en": "Hi, it's Shii-chan! A small but important update just landed for the Linux client!\n\n## What was announced?\n\nIn the Cloudflare Changelog, a new GA release of the Cloudflare One Client for Linux (version 2026.7.1385.0) is out. You can get it from the stable releases downloads page.\n\n## Why it matters\n\nThis release is a hotfix for an issue building trusted certificate chains. Certificate problems can easily affect connectivity, so it's worth checking if you run it on Linux!\n\n## What changes\n\nIf you use the Linux client, updating to the latest stable release gets you the fix.\n\n## Wrap-up\n\n- Cloudflare One Client for Linux 2026.7.1385.0 is GA\n- It's a hotfix for building trusted certificate chains\n- Available on the stable releases downloads page\n\nThis is for admins running the Cloudflare One Client on Linux!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-11-03-warp-linux-ga/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Cloudflare One Client - Cloudflare One Client for Linux (version 2026.7.1385.0)",
+  "tags": [
+    "cloudflare",
+    "security",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-03T19:57:25+00:00"
+}
