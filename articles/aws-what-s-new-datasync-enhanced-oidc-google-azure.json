@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-datasync-enhanced-oidc-google-azure",
+  "title": "DataSync Enhanced mode が OIDC に対応！長期認証情報なしで Google Cloud と Azure へ",
+  "summary": "AWS DataSync の Enhanced mode が、Google Cloud Storage と Azure Blob Storage への OIDC 認証に対応したよ。HMAC キーや SAS トークンのような長期認証情報なしでデータ移動できるよ。",
+  "body_md": "みんな、しぃちゃんだよ！クラウド間のデータ移動で、鍵の管理がぐっと楽になるお知らせだよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS DataSync の Enhanced mode が、Google Cloud Storage と Microsoft Azure Blob Storage のロケーションで、OpenID Connect(OIDC)認証に対応したと発表されたよ。\n\n## 今までどうだったの？\n\nこれまでは、Google Cloud Storage や Azure Blob Storage にアクセスするのに、HMAC キーや SAS トークンのような長期認証情報が必要だったよ。\n\n## これで何が変わるの？\n\nDataSync は AWS IAM ロールを使って、Google Cloud や Microsoft Entra ID から短期の認証情報を取得して、自動で更新するよ。だから転送が途切れずに続くの。\n\n長期認証情報を禁止するセキュリティポリシーがある環境でも、クラウド間のデータ移動ができるようになるのがうれしいポイントだよ。\n\n## 深く潜ってみよう\n\nはじめ方はこうだよ。\n\n- DataSync のロケーションに IAM ロールを追加する\n- 設定は AWS CLI、API、AWS CloudFormation から行える\n\n対応リージョンは、DataSync Enhanced mode がサポートされているすべての AWS リージョンだよ。詳しくは AWS DataSync のユーザーガイドを見てね。\n\n## まとめ\n\n- DataSync Enhanced mode が、Google Cloud Storage と Azure Blob Storage への OIDC 認証に対応\n- IAM ロールで短期認証情報を取得して、自動更新する\n- HMAC キーや SAS トークンのような長期認証情報が要らない\n- DataSync Enhanced mode が使えるリージョンで利用可能\n\nマルチクラウドでデータを動かしつつ、認証情報の管理を減らしたいセキュリティ・インフラ担当のみんなに刺さる更新だよ！\n",
+  "title_en": "DataSync Enhanced mode supports OIDC for Google Cloud and Microsoft Azure",
+  "summary_en": "AWS DataSync Enhanced mode now supports OIDC authentication for Google Cloud Storage and Azure Blob Storage, so you can move data across clouds without long-term credentials such as HMAC keys or SAS tokens.",
+  "body_md_en": "Hi everyone, it's Shiichan! This one makes key management for cross-cloud data transfer much easier.\n\n## What was announced?\n\nAWS What's New says AWS DataSync Enhanced mode now supports OpenID Connect (OIDC) authentication for Google Cloud Storage and Microsoft Azure Blob Storage locations.\n\n## The story so far\n\nBefore this, accessing Google Cloud Storage or Azure Blob Storage needed long-term credentials such as HMAC keys or shared access signature (SAS) tokens.\n\n## What changes\n\nDataSync uses an AWS IAM role to get short-lived credentials from Google Cloud or Microsoft Entra ID, and refreshes them automatically so transfers run without interruption.\n\nThe nice part is that you can move data across clouds while complying with security policies that prohibit long-term credentials.\n\n## Dive Deep\n\nTo get started:\n\n- Add an IAM role to your DataSync location\n- You can do this with the AWS CLI, API or AWS CloudFormation\n\nIt's available in all AWS Regions where DataSync Enhanced mode is supported. See the AWS DataSync User Guide for details.\n\n## Wrap-up\n\n- DataSync Enhanced mode supports OIDC for Google Cloud Storage and Azure Blob Storage\n- An IAM role fetches short-lived credentials and refreshes them automatically\n- No long-term credentials such as HMAC keys or SAS tokens\n- Available in Regions where DataSync Enhanced mode is supported\n\nThis is for security and infrastructure folks who move data across clouds and want less credential management!\n",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/datasync-enhanced-oidc-google-azure/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS DataSync Enhanced mode supports OpenID Connect (OIDC) for Google Cloud and Microsoft Azure",
+  "tags": [
+    "aws",
+    "security",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-04T08:00:00+00:00"
+}

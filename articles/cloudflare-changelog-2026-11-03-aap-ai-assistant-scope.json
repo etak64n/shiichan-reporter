@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-11-03-aap-ai-assistant-scope",
+  "title": "AI アシスタントが誰の代わりにログインしたか分かるように！Account Abuse Protection の新機能",
+  "summary": "Account Abuse Protection が、認識できる AI アシスタントによるログイン・サインアップを可視化するようになったよ。どのアカウントの代理かも分かり、アシスタントを一律ブロックせずに調査と対処ができるよ。",
+  "body_md": "こんにちは、しぃちゃんだよ！AI アシスタントがユーザーの代わりにログインする時代ならではのお知らせだよ。\n\n## なにが発表されたの？\n\nCloudflare の Changelog によると、Account Abuse Protection が、認識できる AI アシスタントがログインやサインアップのリクエストをしたときに、それを表示するようになったよ。どのアカウントのために動いていたかも分かるの。\n\n## なぜ重要なの？\n\nAI アシスタントが人の代わりに操作するようになると、「怪しいボット」と「ユーザーが頼んだ正当な代理操作」を区別したくなるよね。\n\n全部ブロックすると、アシスタントを便利に使っている人まで困っちゃうからね。\n\n## これで何が変わるの？\n\n見える場所は 3 つあるよ。\n\n- Population overview: ユーザー全体でどの AI アシスタントが動いているか、何個のアカウントがそれを使っているか\n- Account activity: ログイン・サインアップの各イベントについて、AI アシスタントによるリクエストかどうか、どのアシスタントか\n- AI assistant filters: AI アシスタントのイベント数や、使っているアシスタントの種類数でアカウントを絞り込める\n\nこれを使うと、問題のある 1 つのアカウントだけを調査・対処して、同じアシスタントを使っている他のユーザーには影響を出さずに済むよ。AI Crawler and Agent access policies でのエージェント設定を調整するときにも役立つよ。\n\n## 深く潜ってみよう\n\n制限事項もしっかり書かれているよ。\n\n- 可視化の対象はログインとサインアップのイベントだけ\n- Cloudflare が認識できないアシスタントからのリクエストは、ふつうのトラフィックとして表示される\n\nつまり「認識済みのアシスタント」限定の機能だよ。詳しくは AI assistants のドキュメントを見てね。\n\n## まとめ\n\n- 認識できる AI アシスタントのログイン・サインアップが、どのアカウントの代理かまで分かる\n- アシスタント関連のイベント数などでアカウントを絞り込める\n- アシスタントを一律ブロックせず、1 アカウントごとに対処できる\n- 対象はログインとサインアップのみで、未認識のアシスタントは通常トラフィック扱い\n\nAI エージェント時代の認証まわりを守る担当のみんなに刺さる更新だよ！\n",
+  "title_en": "See which AI assistants act on behalf of users in Account Abuse Protection",
+  "summary_en": "Account Abuse Protection now shows when a recognized AI assistant makes a login or sign-up request and which account it acted for, so you can mitigate one account without blocking the assistant for everyone.",
+  "body_md_en": "Hi, it's Shiichan! This one is very much about the era of AI assistants logging in for people.\n\n## What was announced?\n\nAccording to Cloudflare's Changelog, Account Abuse Protection now shows when a recognized AI assistant makes a login or sign-up request, and which account it was acting for.\n\n## Why it matters\n\nAs AI assistants act on behalf of people, you want to tell suspicious bots apart from legitimate delegated actions that users asked for.\n\nBlocking everything would hurt people who rely on those assistants.\n\n## What changes\n\nYou can see this in three places:\n\n- Population overview: which AI assistants are active across your users and how many accounts use them\n- Account activity: for every login and sign-up event, whether an AI assistant made the request and which one\n- AI assistant filters: filter accounts by the number of AI assistant events or the number of AI assistants\n\nThis lets you investigate and mitigate a single account without blocking an assistant for everyone else who relies on it. It also helps you tune your agent settings in AI Crawler and Agent access policies.\n\n## Dive Deep\n\nThe post is clear about the limits:\n\n- Visibility covers login and sign-up events only\n- Requests from assistants that Cloudflare doesn't recognize appear as ordinary traffic\n\nSo this works for recognized assistants. See the AI assistants docs for details.\n\n## Wrap-up\n\n- For recognized AI assistants, you can see their logins and sign-ups and the account they acted for\n- You can filter accounts by assistant-related event counts\n- You can handle one account at a time instead of blocking an assistant outright\n- Only login and sign-up events are covered, and unrecognized assistants look like normal traffic\n\nThis is for anyone protecting authentication in the age of AI agents!\n",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-11-03-aap-ai-assistant-scope/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Bots - See which AI assistants act for your users in Account Abuse Protection",
+  "tags": [
+    "cloudflare",
+    "security",
+    "ai"
+  ],
+  "published_at": "2026-11-03T00:00:00+00:00"
+}

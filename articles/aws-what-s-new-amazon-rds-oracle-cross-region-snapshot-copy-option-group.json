@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-rds-oracle-cross-region-snapshot-copy-option-group",
+  "title": "RDS for Oracle のリージョン間スナップショットコピーでオプショングループも一緒にコピー！",
+  "summary": "Amazon RDS for Oracle で、スナップショットを別リージョンへコピーするときに、関連するオプショングループも同じリクエストでコピーできるようになったよ。CopyOptionGroup パラメータを true にするだけだよ。",
+  "body_md": "おつかれさま、しぃちゃんだよ！Oracle のバックアップを別リージョンに置いている人に嬉しい、手順が減る更新だよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon RDS for Oracle が、DB スナップショットを別の AWS リージョンへコピーするときに、関連するオプショングループも一緒にコピーできるようになったと発表されたよ。\n\nオプショングループは、RDS for Oracle で機能を有効にして設定するために使うもので、作成したリージョン固有のものだよ。\n\n## 今までどうだったの？\n\n以前は、オプショングループ付きのバックアップを別リージョンに複製したいとき、こうする必要があったの。\n\n- オプショングループなしでスナップショットをコピーする\n- コピー先のリージョンでオプショングループを作り直す\n- そのあとでスナップショットをリストアする\n\n## これで何が変わるの？\n\n手順を分ける必要がなくなって、スナップショットのコピーと同じリクエストで、オプショングループのコピーも指定できるようになったよ。\n\n## 深く潜ってみよう\n\n使い方は、既存のブール値パラメータ `CopyOptionGroup` を使うよ。`CopyDBSnapshot` の API と CLI コマンドにあるパラメータで、これまでのアカウント間コピーに加えて、リージョン間コピーにも対応したの。\n\n```\nCopyOptionGroup = true\n```\n\nこれを true にすると、コピー元のスナップショットから、コピー先リージョンのスナップショットへオプショングループがコピーされるよ。\n\n利用できる範囲は、すべての商用 AWS リージョンと AWS GovCloud (US) リージョンの Amazon RDS for Oracle だよ。詳しくは Amazon RDS API のドキュメントを見てね。\n\n## まとめ\n\n- スナップショットのリージョン間コピーで、オプショングループも同時にコピーできる\n- `CopyDBSnapshot` の `CopyOptionGroup` を true にするだけ\n- コピー先での、オプショングループの作り直しが不要になる\n- すべての商用リージョンと GovCloud (US) で利用可能\n\nOracle のバックアップを別リージョンへ複製して、DR を組んでいるデータベース担当のみんなに刺さる更新だよ！\n",
+  "title_en": "RDS for Oracle can now copy option groups during cross-Region snapshot copy",
+  "summary_en": "Amazon RDS for Oracle can now copy a snapshot's option group in the same request as a cross-Region snapshot copy, by setting the CopyOptionGroup parameter to true.",
+  "body_md_en": "Hi, it's Shiichan! This update cuts steps for anyone keeping Oracle backups in another Region.\n\n## What was announced?\n\nAWS What's New says Amazon RDS for Oracle now lets you copy the option group associated with a DB snapshot when you copy that snapshot to another AWS Region.\n\nOption groups are used to enable and configure features in RDS for Oracle, and they are specific to the Region where you create them.\n\n## The story so far\n\nPreviously, to replicate RDS backups that had option groups to a different Region, you had to:\n\n- Copy the snapshot without the option group\n- Recreate the option group in the target Region\n- Then restore the snapshot\n\n## What changes\n\nYou no longer need to separate the steps. You can specify the option group copy in the same request as the snapshot copy.\n\n## Dive Deep\n\nIt uses the existing boolean parameter `CopyOptionGroup` on the `CopyDBSnapshot` API and CLI commands. It now supports cross-Region copy, along with cross-account copy.\n\n```\nCopyOptionGroup = true\n```\n\nSetting it to true copies the option group from the source snapshot to the destination snapshot in the target Region.\n\nIt's available on Amazon RDS for Oracle in all commercial AWS Regions and the AWS GovCloud (US) Regions. See the Amazon RDS API documentation for details.\n\n## Wrap-up\n\n- Option groups can be copied together with a cross-Region snapshot copy\n- Just set `CopyOptionGroup` to true on `CopyDBSnapshot`\n- No need to recreate the option group in the target Region\n- Available in all commercial Regions and GovCloud (US)\n\nThis is for database folks who replicate Oracle backups to another Region for DR!\n",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-rds-oracle-cross-region-snapshot-copy-option-group/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon RDS for Oracle now supports copying option groups during cross-Region snapshot copy",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "devops"
+  ],
+  "published_at": "2026-11-04T18:40:00+00:00"
+}

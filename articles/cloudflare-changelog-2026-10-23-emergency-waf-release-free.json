@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-10-23-emergency-waf-release-free",
+  "title": "Free プランの WAF にも CVE-2026-115560 の表記が追加されたよ",
+  "summary": "Cloudflare Free Ruleset の PHP RCE ルールの説明にも CVE-2026-115560 が追加されたよ。検知もアクションも変わらないメタデータだけの更新だよ。",
+  "body_md": "みんな、しぃちゃんだよ！さっきの Managed Ruleset に続いて、Free Ruleset 側の WAF 更新も届いているから紹介するね。\n\n## なにが発表されたの？\n\nCloudflare の Changelog に載った、2026-10-23 付けの WAF 緊急リリースのうち、Cloudflare Free Ruleset 向けのものだよ。\n\nFree Ruleset にある PHP リモートコード実行ルールが CVE-2026-115560 をカバーしているので、既存ルールの説明にその CVE 番号を追加した、という内容なの。\n\n## なぜ重要なの？\n\nFree プランでもルールが何を守っているかが分かると、ダッシュボードで状況を確認するときに安心できるよね。\n\nCVE 番号で検索して、自分のサイトに関係するルールかどうかを見分けられるのがうれしいポイントだよ。\n\n## これで何が変わるの？\n\n変わるのは説明文だけだよ。\n\n- 検知ロジック: そのまま\n- ルールのアクション: Block のまま\n- 設定変更や再デプロイ: 不要\n\n## 深く潜ってみよう\n\nChangelog の表に載っているルールの情報はこんな感じ。\n\n- ルールセット: Cloudflare Free Ruleset\n- 説明: PHP Remote Code Execution Attack (CVE-2026-109618, CVE-2026-109619, CVE-2026-115560)\n- 以前のアクション: Block\n- 新しいアクション: N/A\n- コメント: Rule metadata description refined. Detection unchanged.\n\nManaged Ruleset 側のリリースと同じ内容を、Free Ruleset にもそろえて反映した形だね。\n\n## まとめ\n\n- Free Ruleset の PHP RCE ルールの説明に CVE-2026-115560 が追加された\n- 検知とアクションは変わらず、メタデータだけの更新\n- 何も対応しなくて大丈夫\n\nFree プランで Cloudflare を使っているみんなの、ちょっとした確認作業が楽になる更新だよ！\n",
+  "title_en": "The Free Ruleset's WAF rule now mentions CVE-2026-115560 too",
+  "summary_en": "The PHP RCE rule in the Cloudflare Free Ruleset now lists CVE-2026-115560 in its description. Detection and action are unchanged; it is a metadata-only update.",
+  "body_md_en": "Hi everyone, it's Shiichan! Following the Managed Ruleset update, there's a matching WAF update for the Free Ruleset.\n\n## What was announced?\n\nThis is the Free Ruleset part of the emergency WAF release dated 2026-10-23 in Cloudflare's Changelog.\n\nThe PHP remote code execution rule in the Cloudflare Free Ruleset covers CVE-2026-115560, so the CVE number was added to the existing rule's description.\n\n## Why it matters\n\nEven on the Free plan, it helps to know what a rule protects against when you check your dashboard.\n\nYou can search by CVE number and tell whether a rule is relevant to your site.\n\n## What changes\n\nOnly the description changes.\n\n- Detection logic: unchanged\n- Rule action: still Block\n- Settings changes or redeploys: not needed\n\n## Dive Deep\n\nHere is the rule information from the table in the changelog:\n\n- Ruleset: Cloudflare Free Ruleset\n- Description: PHP Remote Code Execution Attack (CVE-2026-109618, CVE-2026-109619, CVE-2026-115560)\n- Previous action: Block\n- New action: N/A\n- Comment: Rule metadata description refined. Detection unchanged.\n\nIt mirrors the Managed Ruleset release, applied to the Free Ruleset as well.\n\n## Wrap-up\n\n- The Free Ruleset PHP RCE rule description now includes CVE-2026-115560\n- Detection and action are unchanged; this is a metadata-only update\n- You don't need to do anything\n\nA small quality-of-life update for everyone using Cloudflare on the Free plan!\n",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-23-emergency-waf-release-free/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "WAF - WAF Release - 2026-10-23 - Emergency - Cloudflare Free Ruleset",
+  "tags": [
+    "cloudflare",
+    "security",
+    "web"
+  ],
+  "published_at": "2026-10-23T00:00:00+00:00"
+}

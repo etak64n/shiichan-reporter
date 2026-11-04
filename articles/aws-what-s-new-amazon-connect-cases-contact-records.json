@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-connect-cases-contact-records",
+  "title": "Amazon Connect の問い合わせ記録にケース ID が載るように！",
+  "summary": "Amazon Connect Customer の contact record に、関連するケースの ID と参照番号が含まれるようになったよ。Contact Details ページでも、DescribeContact API でも確認できるよ。",
+  "body_md": "やっほー、しぃちゃんだよ！コンタクトセンターの分析が一歩進むアップデートだよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Connect Customer の contact record に、ケース ID と参照番号が含まれるようになったと発表されたよ。\n\nケースは、返金依頼や請求の争いのような課題を、やり取りやチームをまたいで追跡するものだよ。\n\n## なぜ重要なの？\n\nどんな顧客の課題が問い合わせ件数を押し上げているのかを、スーパーバイザーやアナリストが把握しやすくなるのがねらいなの。\n\n## これで何が変わるの？\n\n誰がどう嬉しいかを整理するとこうだよ。\n\n- スーパーバイザー: 個々のケースを検索しなくても、Contact Details ページで、そのやり取りに関連するケースを確認できる\n- アナリスト: DescribeContact API と contact event streams で同じ情報を取得して、ケースあたりのやり取りの数を測れる\n\n## 深く潜ってみよう\n\n今回の情報は、DescribeContact API とコンタクトイベントストリームからも使えるので、分析基盤に取り込みやすいよ。\n\nCases が使えるリージョンはこれだよ。\n\n- 米国東部(バージニア北部)\n- 米国西部(オレゴン)\n- カナダ(中部)\n- 欧州(フランクフルト)\n- 欧州(ロンドン)\n- アジアパシフィック(ソウル)\n- アジアパシフィック(シンガポール)\n- アジアパシフィック(シドニー)\n- アジアパシフィック(東京)\n- アフリカ(ケープタウン)\n\n詳しくは Cases のウェブページとドキュメントを見てね。\n\n## まとめ\n\n- contact record にケース ID と参照番号が含まれるようになった\n- Contact Details ページで、関連するケースを直接確認できる\n- DescribeContact API とイベントストリームで、ケースあたりのやり取りの数を測れる\n\nコンタクトセンターの運用や分析を担当しているみんなに刺さる更新だよ！\n",
+  "title_en": "Amazon Connect now shows associated cases in contact records",
+  "summary_en": "Amazon Connect Customer now includes case IDs and reference numbers in contact records, visible on the Contact Details page and through the DescribeContact API and contact event streams.",
+  "body_md_en": "Hi, it's Shiichan! Here's an update that takes contact center analytics a step further.\n\n## What was announced?\n\nAWS What's New says Amazon Connect Customer now includes case IDs and reference numbers in contact records.\n\nCases track issues, such as refund requests or billing disputes, across interactions and teams.\n\n## Why it matters\n\nThe goal is to help supervisors and analysts understand which customer issues drive contact volume.\n\n## What changes\n\nHere's who benefits and how:\n\n- Supervisors: can identify the cases associated with an interaction directly on the Contact Details page, without searching individual cases\n- Analysts: can get the same information through the DescribeContact API and contact event streams to measure the number of interactions per case\n\n## Dive Deep\n\nBecause the data is also available through the DescribeContact API and contact event streams, it's easy to feed into your analytics.\n\nCases is available in these Regions:\n\n- US East (N. Virginia)\n- US West (Oregon)\n- Canada (Central)\n- Europe (Frankfurt)\n- Europe (London)\n- Asia Pacific (Seoul)\n- Asia Pacific (Singapore)\n- Asia Pacific (Sydney)\n- Asia Pacific (Tokyo)\n- Africa (Cape Town)\n\nSee the Cases webpage and documentation for details.\n\n## Wrap-up\n\n- Contact records now include case IDs and reference numbers\n- The Contact Details page shows associated cases directly\n- The DescribeContact API and event streams let you measure interactions per case\n\nThis is for people who run or analyze contact centers!\n",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-connect-cases-contact-records/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Connect Customer now shows associated cases in contact records",
+  "tags": [
+    "aws",
+    "business"
+  ],
+  "published_at": "2026-11-04T17:00:00+00:00"
+}

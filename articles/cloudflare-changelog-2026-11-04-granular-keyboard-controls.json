@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-11-04-granular-keyboard-controls",
+  "title": "Browser Isolation で入力だけブロック！検索・コピー・ズームは使えるキーボード設定(beta)",
+  "summary": "Browser Isolation のポリシーに「Allow read-only actions」が beta で追加されたよ。データ入力は防ぎつつ、ページ内検索・全選択・コピー・印刷・ズームは使えるよ。",
+  "body_md": "みんな、しぃちゃんだよ！「入力は止めたいけど、読む作業は邪魔したくない」という悩みに効く設定が来たよ。\n\n## なにが発表されたの？\n\nCloudflare の Changelog によると、Browser Isolation(隔離)のポリシーで、キーボードの設定に 3 つ目の選択肢「Allow read-only actions」が beta で追加されたよ。\n\n## 今までどうだったの？\n\nこれまでのキーボード設定は二択だったの。\n\n- すべての入力を許可する\n- すべてをブロックする\n\n入力をブロックすると、ページ内検索やズームのような、読むときに欠かせない操作まで使えなくなっちゃうのが不便だったんだね。\n\n## これで何が変わるの？\n\nAllow read-only actions にすると、データ入力はブロックしたまま、ブラウザの組み込み操作を残せるよ。使えるままになるのはこれだよ。\n\n- ページ内検索(find in page)\n- すべて選択\n- コピー\n- 印刷\n- ズーム\n\nそれ以外のキーボード入力は、隔離されたページに届かないようにブロックされるよ。\n\n## 深く潜ってみよう\n\nコピーと印刷は、それぞれ別のポリシー設定の影響を受けるよ。上書きではなく、設定が組み合わさる仕組みなの。\n\nたとえばキーボードを Allow read-only actions にして、コピーを Do not allow にすると、検索とズームはできるけど、コピーはできなくなるよ。\n\n設定方法はこの 2 通りだよ。\n\n- ダッシュボード: 隔離ポリシーの設定で Keyboard を Allow read-only actions にする\n- API: `biso_admin_controls` オブジェクトで `version` を `v2` にして、`keyboard` を `enable_read_only_actions` にする\n\n詳しくは Keyboard のドキュメントを見てね。\n\n## まとめ\n\n- キーボード設定に Allow read-only actions が追加された(beta)\n- 検索・全選択・コピー・印刷・ズームは使え、それ以外の入力はブロックされる\n- コピーや印刷は専用のポリシー設定と組み合わさる\n- API では `enable_read_only_actions` と `version` の `v2` を指定する\n\n閲覧だけさせたい業務ツールやデータ漏えい対策を考えている Zero Trust 担当のみんなに刺さる更新だよ！\n",
+  "title_en": "Block data entry in Browser Isolation but keep search, copy and zoom (beta)",
+  "summary_en": "Browser Isolation policies gain a beta keyboard option, Allow read-only actions, which blocks data entry while keeping find in page, select all, copy, print and zoom.",
+  "body_md_en": "Hi everyone, it's Shiichan! This setting helps when you want to stop typing but not get in the way of reading.\n\n## What was announced?\n\nAccording to Cloudflare's Changelog, isolation policies in Browser Isolation now have a third keyboard option in beta: Allow read-only actions.\n\n## The story so far\n\nThe keyboard setting used to be binary:\n\n- Allow all input\n- Block everything\n\nBlocking everything also took away reading essentials such as find in page and zoom, which was inconvenient.\n\n## What changes\n\nWith Allow read-only actions, you can block data entry while preserving built-in browser actions. These keep working:\n\n- Find in page\n- Select all\n- Copy\n- Print\n- Zoom\n\nAll other keyboard input is blocked from reaching the isolated page.\n\n## Dive Deep\n\nCopy and print remain subject to their own policy settings. The controls compose instead of overriding each other.\n\nFor example, setting the keyboard to Allow read-only actions and copy to Do not allow lets users search and zoom but prevents them from copying content.\n\nThere are two ways to set it up:\n\n- Dashboard: set Keyboard to Allow read-only actions in your isolation policy settings\n- API: in the `biso_admin_controls` object, set `version` to `v2` and `keyboard` to `enable_read_only_actions`\n\nSee the Keyboard docs for details.\n\n## Wrap-up\n\n- The keyboard setting gains Allow read-only actions (beta)\n- Find, select all, copy, print and zoom work, and other input is blocked\n- Copy and print combine with their own policy settings\n- In the API, use `enable_read_only_actions` with `version` set to `v2`\n\nThis is for Zero Trust admins who want view-only access to business tools or want to limit data leakage!\n",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-11-04-granular-keyboard-controls/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Browser Isolation, Cloudflare One - Block data entry with Browser Isolation without losing search, copy, and zoom (beta)",
+  "tags": [
+    "cloudflare",
+    "security",
+    "web"
+  ],
+  "published_at": "2026-11-04T23:45:16+00:00"
+}

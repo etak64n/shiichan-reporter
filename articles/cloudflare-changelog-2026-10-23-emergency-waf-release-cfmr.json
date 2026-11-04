@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-10-23-emergency-waf-release-cfmr",
+  "title": "WAF の PHP RCE ルールに CVE-2026-115560 が追加！検知ロジックはそのままだよ",
+  "summary": "Cloudflare Managed Ruleset の PHP リモートコード実行ルールが CVE-2026-115560 もカバーしていることを示すため、説明に CVE 番号が追加されたよ。検知ロジックとアクションは変わらないよ。",
+  "body_md": "やっほー、しぃちゃんだよ！今日は WAF のちょっと地味だけど大事な更新を見つけたから、さっそく紹介するね。\n\n## なにが発表されたの？\n\nCloudflare の Changelog に、2026-10-23 付けの WAF の緊急リリース(Cloudflare Managed Ruleset 向け)が載っていたよ。\n\nManaged Ruleset にもともとあった PHP のリモートコード実行(RCE)ルールが、実は CVE-2026-115560 もカバーしていたみたい。そこで、このルールの説明に CVE の識別子を追加したよ、という内容なの。\n\n## なぜ重要なの？\n\nWAF のルールは「どの脆弱性に効くのか」が分からないと、運用する側が影響範囲を判断しにくいよね。\n\nCVE 番号がルールの説明に載ると、脆弱性情報と見比べて「この CVE はもう守られているのかな？」をすぐ確認できるようになるの。\n\n## これで何が変わるの？\n\n変わったのはルールのメタデータ(説明文)だけだよ。\n\n- 検知ロジック: 変更なし\n- ルールのアクション: 変更なし(これまでと同じ Block)\n- 説明に含まれる CVE: CVE-2026-109618、CVE-2026-109619、CVE-2026-115560\n\nだから設定を直したり、何か対応したりする必要はないよ！\n\n## 深く潜ってみよう\n\nChangelog の表によると、対象のルールはこんな感じだよ。\n\n- ルールセット: Cloudflare Managed Ruleset\n- 説明: PHP Remote Code Execution Attack\n- 以前のアクション: Block\n- 新しいアクション: N/A(変更なし)\n- コメント: Rule metadata description refined. Detection unchanged.\n\n表のコメントにも「検知は変わっていない」とはっきり書かれているよ。詳しいことは WAF Managed Rules のドキュメントを見てね。\n\n## まとめ\n\n- Managed Ruleset の PHP RCE ルールが CVE-2026-115560 もカバーしていると明記された\n- 変わったのはルールの説明(メタデータ)だけで、検知とアクションは同じ\n- ユーザー側の作業は特に不要\n\nWAF の運用で CVE とルールの対応表を管理しているセキュリティ担当のみんなに刺さる更新だよ！\n",
+  "title_en": "WAF's PHP RCE rule now lists CVE-2026-115560, with no change in detection",
+  "summary_en": "The PHP remote code execution rule in the Cloudflare Managed Ruleset also covers CVE-2026-115560, so its description now lists the CVE. Detection logic and rule actions are unchanged.",
+  "body_md_en": "Hi, it's Shiichan! Today I found a small but useful WAF update, so let's go through it.\n\n## What was announced?\n\nCloudflare's Changelog has an emergency WAF release dated 2026-10-23 for the Cloudflare Managed Ruleset.\n\nThe existing PHP remote code execution (RCE) rule in the Managed Ruleset turns out to cover CVE-2026-115560 as well. So the release adds that CVE identifier to the rule's description.\n\n## Why it matters\n\nWhen you run a WAF, you want to know which vulnerabilities a rule actually protects against, so you can judge your exposure.\n\nWith the CVE number in the rule description, you can compare it with vulnerability reports and quickly check whether a given CVE is already covered.\n\n## What changes\n\nOnly the rule metadata (the description) changed.\n\n- Detection logic: unchanged\n- Rule action: unchanged (still Block)\n- CVEs in the description: CVE-2026-109618, CVE-2026-109619, CVE-2026-115560\n\nYou don't need to change any settings or take any action.\n\n## Dive Deep\n\nAccording to the table in the changelog, the affected rule looks like this:\n\n- Ruleset: Cloudflare Managed Ruleset\n- Description: PHP Remote Code Execution Attack\n- Previous action: Block\n- New action: N/A (no change)\n- Comment: Rule metadata description refined. Detection unchanged.\n\nThe comment says clearly that detection is unchanged. For more details, see the WAF Managed Rules documentation.\n\n## Wrap-up\n\n- The Managed Ruleset PHP RCE rule now explicitly lists CVE-2026-115560\n- Only the description (metadata) changed; detection and action stay the same\n- No work needed on your side\n\nThis one is for security folks who keep a map between CVEs and WAF rules!\n",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-23-emergency-waf-release-cfmr/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "WAF - WAF Release - 2026-10-23 - Emergency - Cloudflare Managed Ruleset",
+  "tags": [
+    "cloudflare",
+    "security",
+    "web"
+  ],
+  "published_at": "2026-10-23T00:00:00+00:00"
+}

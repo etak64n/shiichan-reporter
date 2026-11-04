@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-ec2-vpc-related-resources-all-types",
+  "title": "EC2 と VPC のコンソールで、すべてのリソースの関連リソースが見られるように！",
+  "summary": "Amazon EC2、Amazon VPC、AWS Global View のコンソールで、これまでセキュリティグループだけだった関連リソースの表示が、すべての EC2・VPC リソースタイプに広がったよ。",
+  "body_md": "やっほー、しぃちゃんだよ！コンソールで「これ、何とつながってるんだっけ？」を調べるのが楽になる更新だよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon EC2、Amazon VPC、AWS Global View のコンソールが、すべてのリソースタイプで関連リソースを表示するようになったと発表されたよ。\n\n## 今までどうだったの？\n\nこれまで、関連リソースを見る選択肢があったのはセキュリティグループだけだったの。\n\n## これで何が変わるの？\n\nEC2 と VPC のすべてのリソースタイプで、関係を見られるようになったよ。たとえばこんなリソースが対象だよ。\n\n- EC2 インスタンス\n- Amazon EBS ボリューム\n- 起動テンプレート\n- Auto Scaling グループ\n- サブネット\n- ルートテーブル\n\nほかにも、とあるので、さらに多くのタイプが含まれるよ。あわせて、Related Resources タブがコンソールのツールバーに移動して、アクセスしやすくなったの。\n\n## 深く潜ってみよう\n\n発表で挙げられている使い方の例はこれだよ。\n\n- EC2 インスタンスの問題を調べるとき、コンソールのページを行き来せずに、関連する EBS ボリューム、セキュリティグループ、サブネット、ルートテーブルを見られる\n- ネットワーク管理者は、サブネットから関連するルートテーブル、ネットワーク ACL、インスタンスまでたどって、構成レビューやセキュリティ監査を効率化できる\n\nすべての商用 AWS リージョンで利用できるよ。\n\n## まとめ\n\n- 関連リソースの表示が、セキュリティグループだけから、EC2・VPC のすべてのリソースタイプへ拡大\n- Related Resources タブがツールバーに移動\n- トラブルシュートや構成レビューで、ページを行き来する手間が減る\n- すべての商用 AWS リージョンで利用可能\n\n障害調査やネットワークの棚卸しをよくやる運用担当のみんなに刺さる更新だよ！\n",
+  "title_en": "EC2 and VPC consoles now show related resources for every resource type",
+  "summary_en": "The Amazon EC2, Amazon VPC and AWS Global View consoles now show related resources for all resource types, not just security groups, and the Related Resources tab moves to the console toolbar.",
+  "body_md_en": "Hi, it's Shiichan! This update makes it easier to answer \"what is this connected to?\" in the console.\n\n## What was announced?\n\nAWS What's New says the Amazon EC2, Amazon VPC and AWS Global View consoles now display related resources for all resource types.\n\n## The story so far\n\nPreviously, only security groups had an option to view related resources.\n\n## What changes\n\nYou can now see relationships for all EC2 and VPC resource types, including:\n\n- EC2 instances\n- Amazon EBS volumes\n- Launch Templates\n- Auto Scaling groups\n- Subnets\n- Route tables\n\nThe list continues beyond these, so more types are covered. The Related Resources tab has also moved to the console toolbar for easier access.\n\n## Dive Deep\n\nThe announcement gives these examples:\n\n- When investigating an EC2 instance issue, you can view its associated EBS volumes, security groups, subnets and route tables without navigating between multiple console pages\n- Network administrators can trace connections from a subnet to its route tables, network ACLs and instances, streamlining configuration reviews and security audits\n\nIt's available in all commercial AWS Regions.\n\n## Wrap-up\n\n- Related resources go from security groups only to every EC2 and VPC resource type\n- The Related Resources tab moves to the toolbar\n- Less page-hopping when troubleshooting or reviewing configuration\n- Available in all commercial AWS Regions\n\nThis is for ops folks who often investigate incidents or audit networks!\n",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/ec2-vpc-related-resources-all-types/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon EC2 and VPC now display related resources for all resource types",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-04T08:00:00+00:00"
+}

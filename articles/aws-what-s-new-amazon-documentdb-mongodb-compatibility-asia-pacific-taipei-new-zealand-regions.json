@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-documentdb-mongodb-compatibility-asia-pacific-taipei-new-zealand-regions",
+  "title": "Amazon DocumentDB がアジアパシフィック(台北)とニュージーランドに到着！",
+  "summary": "Amazon DocumentDB (with MongoDB compatibility) が、アジアパシフィック(台北)とアジアパシフィック(ニュージーランド)のリージョンで使えるようになったよ。",
+  "body_md": "みんな、しぃちゃんだよ！DocumentDB の提供リージョンが、また広がったよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon DocumentDB (with MongoDB compatibility) が、アジアパシフィック(台北)とアジアパシフィック(ニュージーランド)の 2 つのリージョンで利用できるようになったと発表されたよ。\n\n## これで何が変わるの？\n\n台北とニュージーランドの近くでサービスを動かしているみんなは、そのリージョンに DocumentDB のクラスターを作れるようになるよ。\n\nDocumentDB は、フルマネージドでネイティブな JSON データベースで、インフラを管理せずに、重要なドキュメント系ワークロードを運用できるものだよ。\n\n## 深く潜ってみよう\n\n発表で紹介されている DocumentDB の特徴はこれだよ。\n\n- ストレージは、アプリケーションに影響なく、自動で最大 128 TiB までスケールする\n- Amazon CloudWatch、AWS CloudTrail、AWS Lambda、AWS Backup などとネイティブに統合\n- 毎秒数百万リクエストに対応し、最大 15 個の低レイテンシな読み取りレプリカへ、ダウンタイムなしに数分でスケールアウトできる\n\nクラスターは、AWS マネジメントコンソール、AWS CLI、AWS SDK から作成できるよ。詳しくは製品ページと料金ページを見てね。\n\n## まとめ\n\n- DocumentDB が台北とニュージーランドのリージョンで利用可能に\n- ストレージは自動で最大 128 TiB まで拡張し、読み取りレプリカは最大 15 個\n- コンソール、CLI、SDK からクラスターを作成できる\n\nアジアパシフィックで MongoDB 互換のデータベースを近くに置きたいみんなに刺さる更新だよ！\n",
+  "title_en": "Amazon DocumentDB is now available in Asia Pacific (Taipei) and Asia Pacific (New Zealand)",
+  "summary_en": "Amazon DocumentDB (with MongoDB compatibility) is now available in the Asia Pacific (Taipei) and Asia Pacific (New Zealand) Regions.",
+  "body_md_en": "Hi everyone, it's Shiichan! DocumentDB's Region list just grew again.\n\n## What was announced?\n\nAWS What's New says Amazon DocumentDB (with MongoDB compatibility) is now available in the Asia Pacific (Taipei) and Asia Pacific (New Zealand) Regions.\n\n## What changes\n\nIf you run services near Taipei or New Zealand, you can now create DocumentDB clusters in those Regions.\n\nDocumentDB is a fully managed, native JSON database that makes it simple and cost-effective to operate critical document workloads without managing infrastructure.\n\n## Dive Deep\n\nHighlights of DocumentDB from the announcement:\n\n- Storage scales automatically up to 128 TiB without any impact to your application\n- Native integration with Amazon CloudWatch, AWS CloudTrail, AWS Lambda, AWS Backup and more\n- Supports millions of requests per second and scales out to 15 low-latency read replicas in minutes with no application downtime\n\nYou can create a cluster from the AWS Management Console, AWS CLI or AWS SDKs. See the product and pricing pages for details.\n\n## Wrap-up\n\n- DocumentDB is available in the Taipei and New Zealand Regions\n- Storage scales automatically up to 128 TiB, with up to 15 read replicas\n- Create clusters from the console, CLI or SDKs\n\nThis is for anyone who wants MongoDB-compatible databases closer to users in Asia Pacific!\n",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-documentdb-mongodb-compatibility-asia-pacific-taipei-new-zealand-regions/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon DocumentDB (with MongoDB compatibility) is now available in the Asia Pacific (Taipei) and Asia Pacific (New Zealand) Regions",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-04T19:00:00+00:00"
+}

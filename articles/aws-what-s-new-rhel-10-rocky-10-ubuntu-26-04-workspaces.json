@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-rhel-10-rocky-10-ubuntu-26-04-workspaces",
+  "title": "WorkSpaces Personal に RHEL 10・Rocky 10・Ubuntu 26.04 のバンドルが登場！",
+  "summary": "Amazon WorkSpaces Personal に、Rocky Linux 10、Red Hat Enterprise Linux 10、Ubuntu 26.04 LTS の新しい Linux バンドルが追加されたよ。Wayland ベースで、既存の WorkSpaces はそのまま動くよ。",
+  "body_md": "こんにちは、しぃちゃんだよ！Linux デスクトップを WorkSpaces で使っているみんなに、新しい OS の選択肢が増えたよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon WorkSpaces Personal に新しい Linux バンドルが追加されたよ。\n\n- Rocky Linux 10\n- Red Hat Enterprise Linux 10\n- Ubuntu 26.04 LTS\n\n## これで何が変わるの？\n\nこれらのバンドルで、最新のエンタープライズ向け Linux OS の WorkSpaces を起動できて、そのリリースでしか使えない新しいソフトウェアパッケージも使えるよ。\n\n新しいバンドルは、モダンな Wayland のディスプレイ技術を採用していて、最新の Linux デスクトップ機能を使えるの。新しい OS は、各ディストリビューションによる、より強いセキュリティと長いサポート期間ももたらすよ。\n\n## 深く潜ってみよう\n\n既存の環境への影響と、提供の範囲はこうだよ。\n\n- 次のバンドルは引き続き利用できる: Rocky Linux 8 と 9、Red Hat Enterprise Linux 8 と 9、Ubuntu 22.04 LTS と 24.04 LTS\n- 既存の WorkSpaces は変更なしで動き続ける。アプリやワークフローの準備ができたら、ユーザーを新しい OS へ移せる\n- 使い始めるには、新しい Linux WorkSpace を作るときに、マネージドの Rocky Linux 10、RHEL 10、Ubuntu 26.04 LTS のいずれかのバンドルを選ぶ\n- サイズは Standard、Performance、Power、PowerPro\n- Amazon WorkSpaces が使えるすべての AWS リージョンで利用できる\n\n対応 OS の全一覧は Bundles and images for WorkSpaces Personal、料金は Amazon WorkSpaces の料金ページを見てね。\n\n## まとめ\n\n- Rocky Linux 10、RHEL 10、Ubuntu 26.04 LTS のバンドルが WorkSpaces Personal に追加\n- Wayland ベースで、新しいパッケージや長いサポート期間が使える\n- 既存の WorkSpaces や旧バージョンのバンドルはそのまま使える\n- 4 種類のサイズで、すべての対応リージョンで利用可能\n\nLinux のデスクトップ環境を WorkSpaces で提供している管理者や開発者のみんなに刺さる更新だよ！\n",
+  "title_en": "RHEL 10, Rocky 10 and Ubuntu 26.04 bundles arrive for Amazon WorkSpaces",
+  "summary_en": "Amazon WorkSpaces Personal adds new Linux bundles for Rocky Linux 10, Red Hat Enterprise Linux 10 and Ubuntu 26.04 LTS, with Wayland-based desktops. Existing WorkSpaces keep running unchanged.",
+  "body_md_en": "Hi, it's Shiichan! Folks using Linux desktops on WorkSpaces now have new OS choices.\n\n## What was announced?\n\nAWS What's New says Amazon WorkSpaces Personal has new Linux bundles:\n\n- Rocky Linux 10\n- Red Hat Enterprise Linux 10\n- Ubuntu 26.04 LTS\n\n## What changes\n\nWith these bundles you can launch WorkSpaces on the latest enterprise Linux operating systems and use newer software packages that are only available in these releases.\n\nThe bundles feature modern Wayland display technology, giving you access to the latest Linux desktop capabilities. The new OS options also bring stronger security and longer support lifecycles from each distribution.\n\n## Dive Deep\n\nImpact on existing setups and scope:\n\n- These bundles remain available: Rocky Linux 8 and 9, Red Hat Enterprise Linux 8 and 9, and Ubuntu 22.04 LTS and 24.04 LTS\n- Existing WorkSpaces keep running with no changes. You can move users to the new operating systems once your applications and workflows are ready\n- To get started, select a managed Rocky Linux 10, RHEL 10 or Ubuntu 26.04 LTS bundle when you create a new Linux WorkSpace\n- Sizes: Standard, Performance, Power and PowerPro\n- Available in all AWS Regions where Amazon WorkSpaces is available\n\nFor the full list of supported operating systems, see Bundles and images for WorkSpaces Personal. For pricing, see the Amazon WorkSpaces pricing page.\n\n## Wrap-up\n\n- Rocky Linux 10, RHEL 10 and Ubuntu 26.04 LTS bundles are added to WorkSpaces Personal\n- Wayland-based, with newer packages and longer support lifecycles\n- Existing WorkSpaces and older bundles are unaffected\n- Four sizes, in all supported Regions\n\nThis is for admins and developers who provide Linux desktops through WorkSpaces!\n",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/rhel-10-rocky-10-ubuntu-26-04-workspaces/",
+  "source_name": "AWS What's New",
+  "og_title": "RHEL 10, Rocky 10 and Ubuntu 26.04 Bundles for WorkSpaces",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-04T08:00:00+00:00"
+}
