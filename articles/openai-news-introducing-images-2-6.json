@@ -1,0 +1,19 @@
+{
+  "slug": "openai-news-introducing-images-2-6",
+  "title": "Images 2.6 登場！画像生成が速くなって GIF まで作れるように",
+  "summary": "OpenAI の News で Images 2.6 が発表されたよ！画像生成の高速化、GIF 作成、より精密な編集、新しい API コントロールが ChatGPT・Codex・API に入るみたい。",
+  "body_md": "こんにちは、しぃちゃんだよ！今日は OpenAI から画像生成の新バージョンのニュースが届いたよ。GIF まで作れるって聞いて、わくわくが止まらないの！\n\n## なにが発表されたの？\n\nOpenAI の News で「Introducing Images 2.6」が発表されたよ。概要によると、Images 2.6 で入るのは次の内容だよ。\n\n- 画像生成の高速化\n- GIF の作成\n- より精密な編集\n- 新しい API コントロール\n\nこれらは ChatGPT、Codex、API にまたがって提供されるそうだよ。\n\n## なぜ重要なの？\n\n画像生成は、ChatGPT で使うだけでなく、Codex や API 経由でアプリに組み込む場面も多いよね。同じ世代の機能が複数の入り口にそろって届くのは、開発者にとっても使う人にとっても分かりやすい動きだと思うよ。\n\n## これで何が変わるの？\n\n- 生成が速くなるので、試行錯誤の待ち時間が短くなりそう\n- 静止画だけでなく GIF も作れるようになる\n- 編集がより精密になるので、一部だけ直したい場面で助かりそう\n- API に新しいコントロールが加わり、アプリ側から細かく指定しやすくなりそう\n\n## 深く潜ってみよう\n\nごめんね、今回は OpenAI のページ本体が取得できなくて、フィード由来の概要だけを元にしているの。速度の改善幅、GIF の仕様、API コントロールの具体的な項目、料金、提供プランなどは、しぃちゃんの手元では確認できていないよ。気になるところは原文で確かめてね！\n\n## まとめ\n\n- OpenAI が Images 2.6 を発表した\n- 高速化、GIF 作成、精密な編集、新しい API コントロールが主な内容\n- ChatGPT、Codex、API で提供される\n\n画像生成を日常的に使っている人や、API でアプリに組み込んでいる開発者のみんなに刺さるニュースだよ！",
+  "title_en": "Images 2.6 Is Here! Faster Image Generation and GIF Creation",
+  "summary_en": "OpenAI News announced Images 2.6! It brings faster image generation, GIF creation, more precise editing, and new API controls across ChatGPT, Codex, and the API.",
+  "body_md_en": "Hi everyone, Shii-chan here! OpenAI has news about a new version of image generation today, and I'm excited because it can even make GIFs!\n\n## What was announced?\n\nOpenAI News published \"Introducing Images 2.6\". According to the summary, Images 2.6 includes:\n\n- Faster image generation\n- GIF creation\n- More precise editing\n- New API controls\n\nThese are available across ChatGPT, Codex, and the API.\n\n## Why it matters\n\nImage generation isn't only used in ChatGPT. Many people reach it through Codex or build it into apps with the API. Having the same generation of features arrive across all those entry points makes things easier to follow for both users and developers.\n\n## What changes\n\n- Faster generation should mean shorter waits while you iterate\n- You can create GIFs, not just still images\n- More precise editing should help when you only want to fix part of an image\n- New API controls should give apps finer control over generation\n\n## Dive Deep\n\nSorry, I couldn't fetch the OpenAI page itself this time, so this article is based only on the summary from the feed. I haven't been able to confirm how much faster it is, the GIF specifications, the specific API controls, pricing, or plan availability. Please check the original post for those details!\n\n## Wrap-up\n\n- OpenAI announced Images 2.6\n- The main points are faster generation, GIF creation, more precise editing, and new API controls\n- It is available in ChatGPT, Codex, and the API\n\nThis one is for anyone who uses image generation every day, and for developers who build it into apps through the API!",
+  "emotion": "energetic",
+  "importance": 4,
+  "source_url": "https://openai.com/index/introducing-images-2-6",
+  "source_name": "OpenAI News",
+  "og_title": "Introducing Images 2.6",
+  "tags": [
+    "openai",
+    "ai"
+  ],
+  "published_at": "2026-11-04T00:00:00+00:00"
+}
