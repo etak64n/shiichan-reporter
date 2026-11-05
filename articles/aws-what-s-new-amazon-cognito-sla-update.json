@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-cognito-sla-update",
+  "title": "Cognito の Plus プランが SLA 99.99% に！",
+  "summary": "2026 年 11 月 1 日から、Amazon Cognito の Plus 機能プランのユーザープールの SLA が 99.9% から 99.99% に引き上げられたよ。Essentials と Lite は変わらないの。",
+  "body_md": "みんな、しぃちゃんだよ！\n\n今日は Cognito の SLA が上がった発表だよ。数字の「9」がひとつ増えたの！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Cognito の Plus 機能プランのユーザープールについて、サービス水準合意(SLA)の月間稼働率が 99.99% になったと発表されたよ。2026 年 11 月 1 日から適用で、これまでは 99.9% だったんだって。\n\n## これで何が変わるの？\n\n- すでに Plus のユーザープールは、新しい保証が自動で適用される\n- Essentials と Lite のユーザープールは、これまでどおり 99.9% で、条件の変更もない\n\n認証基盤が止まるとサービス全体に影響するから、稼働率の保証が上がるのは Plus を使う人にとって安心材料になりそうだよ。\n\n## 深く潜ってみよう\n\n99.99% の保証を受けるには、ユーザープールが Plus プランである必要があるよ。切り替えは AWS マネジメントコンソール、AWS CLI、AWS SDK からできるの。\n\nPlus プランには、脅威対策の機能も含まれているよ。\n\n- アダプティブ認証\n- 漏えいした認証情報の検出\n- 脅威とユーザー活動のログ記録とエクスポート\n\n適用条件や除外事項の全文は、Amazon Cognito の SLA に書かれているよ。\n\n## まとめ\n\n- Plus プランのユーザープールの SLA が 99.9% から 99.99% に(2026 年 11 月 1 日から)\n- 既存の Plus は自動で対象\n- Essentials と Lite は 99.9% のまま\n- 切り替えはコンソール、CLI、SDK から\n\n認証基盤の可用性を重視していて、Plus プランを検討している人に刺さる発表だよ！",
+  "title_en": "Amazon Cognito's Plus Plan Now Comes with a 99.99% SLA!",
+  "summary_en": "Starting November 1, 2026, the Amazon Cognito SLA commits to 99.99% Monthly Uptime Percentage for user pools on the Plus feature plan, up from 99.9%. Essentials and Lite are unchanged.",
+  "body_md_en": "Hi, it's Shii-chan!\n\nToday's news is that the Cognito SLA went up. One more nine!\n\n## What was announced?\n\nIn AWS's What's New feed, the Amazon Cognito Service Level Agreement (SLA) now commits to a Monthly Uptime Percentage of 99.99% for user pools on the Plus feature plan. It starts November 1, 2026, up from 99.9%.\n\n## What changes\n\n- User pools already on Plus are covered by the new commitment automatically\n- User pools on Essentials and Lite stay at 99.9%, with no change to their terms\n\nWhen your authentication layer goes down, everything built on it feels it, so a higher commitment is reassuring for Plus users.\n\n## Dive Deep\n\nTo qualify for 99.99%, a user pool must be on the Plus plan. You can switch using the AWS Management Console, AWS CLI, or AWS SDKs.\n\nThe Plus plan also includes threat protection features:\n\n- Adaptive authentication\n- Compromised credentials detection\n- Threat and user activity logging and export\n\nFor full terms and exclusions, see the Amazon Cognito SLA.\n\n## Wrap-up\n\n- Plus plan user pools: SLA goes from 99.9% to 99.99% (from November 1, 2026)\n- Existing Plus pools are covered automatically\n- Essentials and Lite remain at 99.9%\n- Switch via the console, CLI, or SDKs\n\nThis is for anyone who cares about authentication availability and is considering the Plus plan!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-cognito-sla-update/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Cognito announces 99.99% Service Level Agreement for the Plus feature plan",
+  "tags": [
+    "aws",
+    "security"
+  ],
+  "published_at": "2026-11-05T18:00:00+00:00"
+}

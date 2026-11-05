@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-dynamodb-now-supports-bulk-put-items",
+  "title": "S3 から DynamoDB へ一括書き込み！bulk put items が一般提供開始",
+  "summary": "Amazon DynamoDB の bulk put items が GA になったよ。S3 のデータを既存テーブルへ、自前のパイプラインなしで書き込めるの。Standard と Accelerated の 2 つのティアがあるよ。",
+  "body_md": "こんにちは、しぃちゃんだよ！\n\nS3 のデータを DynamoDB に入れたい人、ちょっと注目してほしいの！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon DynamoDB の bulk put items が一般提供(GA)になったと発表されたよ。Amazon S3 のデータを、既存の DynamoDB テーブルに書き込めるフルマネージドの機能だよ。\n\n## 今までどうだったの？\n\n他のシステムが作って S3 に置いたデータを、既存の DynamoDB テーブルに書き込むには、これまでカスタムのパイプラインを作って、テーブルのキャパシティも管理する必要があったんだって。\n\n## これで何が変わるの？\n\n入力ファイルがある S3 の場所を指定すれば、あとは DynamoDB が処理してくれるよ。\n\n- 既存のワークロードに影響を与えずに書き込める\n- 取り込み用のカスタムパイプラインを作らなくていい\n- コスト効率よく書き込める\n\n## 深く潜ってみよう\n\n**条件式**\n\n各アイテムに個別の条件式を付けられるから、挿入のみの書き込みや、バージョンで守った書き込みができるよ。\n\n**2 つのティア**\n\n- Standard: ほとんどのワークロードに向いている\n- Accelerated: より時間に敏感なワークロード向け\n\n**提供リージョン**\n\n- Standard ティア: すべての商用 AWS リージョンと AWS GovCloud (US) リージョン\n- Accelerated ティア: 提供リージョンが限られるので、リージョン提供状況のページで確認してね\n\n**主な用途**\n\n- 毎日のデータ更新\n- 大規模なカタログの拡充\n- バックフィル\n- 移行\n\n詳しくは、DynamoDB のブログ記事と Amazon DynamoDB デベロッパーガイドにあるよ。\n\n## まとめ\n\n- S3 から既存の DynamoDB テーブルへ、フルマネージドで一括書き込みできる(GA)\n- カスタムの取り込みパイプラインとキャパシティ管理が要らない\n- アイテムごとの条件式で、挿入のみやバージョン管理つきの書き込みができる\n- Standard と Accelerated の 2 ティア\n\nデータの定期更新やバックフィル、移行を DynamoDB でやっている人に刺さる発表だよ！",
+  "title_en": "Bulk Writes from S3 to DynamoDB: Bulk Put Items Is Now Generally Available!",
+  "summary_en": "Amazon DynamoDB bulk put items is generally available. It writes data from Amazon S3 into existing tables without a custom pipeline, with Standard and Accelerated tiers.",
+  "body_md_en": "Hi, it's Shii-chan!\n\nIf you load S3 data into DynamoDB, this one is worth a look!\n\n## What was announced?\n\nIn AWS's What's New feed, bulk put items for Amazon DynamoDB is now generally available. It is a fully managed feature that writes data from Amazon S3 into your existing DynamoDB tables.\n\n## The story so far\n\nWriting data that other systems produce and store in S3 into existing DynamoDB tables has typically meant building custom pipelines and managing table capacity.\n\n## What changes\n\nYou point bulk put items at the S3 location of your input files, and DynamoDB handles the rest.\n\n- Writes don't impact existing workloads\n- No custom ingestion pipeline to build\n- Cost-efficient writes\n\n## Dive Deep\n\n**Condition expressions**\n\nEach item supports its own condition expression, so you can enforce insert-only or version-guarded writes.\n\n**Two tiers**\n\n- Standard: fits most workloads\n- Accelerated: for more time-sensitive workloads\n\n**Availability**\n\n- Standard tier: all commercial AWS Regions and the AWS GovCloud (US) Regions\n- Accelerated tier: limited Regions, so check the regional availability page\n\n**Common use cases**\n\n- Daily refreshes\n- Large catalog enrichments\n- Backfills\n- Migrations\n\nFor more, see the DynamoDB blog post and the Amazon DynamoDB Developer Guide.\n\n## Wrap-up\n\n- Fully managed bulk writes from S3 into existing DynamoDB tables (GA)\n- No custom ingestion pipeline or capacity management\n- Per-item condition expressions enable insert-only or version-guarded writes\n- Standard and Accelerated tiers\n\nThis is for anyone doing regular data refreshes, backfills, or migrations on DynamoDB!",
+  "emotion": "energetic",
+  "importance": 5,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-dynamodb-now-supports-bulk-put-items/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon DynamoDB now supports bulk put items",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "serverless"
+  ],
+  "published_at": "2026-11-05T18:00:00+00:00"
+}

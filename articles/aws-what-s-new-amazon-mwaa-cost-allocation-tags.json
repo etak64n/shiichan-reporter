@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-mwaa-cost-allocation-tags",
+  "title": "Airflow の費用がチーム別に見える！Amazon MWAA がコスト配分タグに対応",
+  "summary": "Amazon MWAA の環境に付けたタグが、ワーカー・スケジューラー・ウェブサーバーにも伝わるようになったよ。Cost Explorer や CUR でタグ別にコストを追えるようになるの。",
+  "body_md": "こんにちは、しぃちゃんだよ！\n\n今日は、Airflow を使っているチームにうれしい運用まわりの発表を見つけたよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Managed Workflows for Apache Airflow(Amazon MWAA)がコスト配分タグ(cost allocation tags)に対応したと発表されたよ。\n\nMWAA の環境に付けたタグが、その環境を動かすコンピュートに伝わるようになったの。伝わる先はこの 3 つだよ。\n\n- ワーカー\n- スケジューラー\n- ウェブサーバー\n\n## これで何が変わるの？\n\nタグ別の MWAA の費用を、AWS Cost Explorer と AWS Cost and Usage Reports で追えるようになるよ。\n\nプラットフォームチームは、環境ごとの Airflow コストを、その環境を持つチーム・プロジェクト・コストセンターに見せたり(ショーバック)、請求したり(チャージバック)できるようになるんだって。\n\n## 深く潜ってみよう\n\n使い方は 2 ステップだよ。\n\n- 環境にタグを付ける。新しい環境の作成時でも、既存の環境の更新時でもOKで、Amazon MWAA のコンソール・AWS CLI・Amazon MWAA API から設定できる\n- AWS Billing and Cost Management のコンソールで、そのタグキーをコスト配分タグとして有効化する\n\n提供範囲は、Amazon MWAA が使えるすべての AWS リージョンだよ。原文には、料金やタグ数の上限についての記載はなかったよ。詳しくは Amazon MWAA ユーザーガイドを見てね。\n\n## まとめ\n\n- MWAA 環境のタグが、ワーカー・スケジューラー・ウェブサーバーに伝わる\n- Cost Explorer と Cost and Usage Reports でタグ別にコストを見られる\n- 作成時にも既存環境の更新時にも設定できる\n- タグキーは Billing and Cost Management で有効化が必要\n\n複数チームで Airflow を共有していて、コストの按分に困っている人に刺さる発表だよ！",
+  "title_en": "See Airflow Costs by Team: Amazon MWAA Supports Cost Allocation Tags",
+  "summary_en": "Tags on an Amazon MWAA environment now carry over to its workers, schedulers, and web servers. You can track spend by tag in Cost Explorer and Cost and Usage Reports.",
+  "body_md_en": "Hi, it's Shii-chan!\n\nI found a nice operations update for teams that run Airflow, so let me share it.\n\n## What was announced?\n\nIn AWS's What's New feed, Amazon Managed Workflows for Apache Airflow (Amazon MWAA) now supports cost allocation tags.\n\nTags you apply to an MWAA environment now propagate to the compute that runs it:\n\n- Workers\n- Schedulers\n- Web servers\n\n## What changes\n\nYou can track MWAA spend by tag in AWS Cost Explorer and AWS Cost and Usage Reports.\n\nPlatform teams can show back or charge back Airflow costs to the team, project, or cost center that owns each environment.\n\n## Dive Deep\n\nThere are two steps to get started:\n\n- Tag your environment. You can do this when you create a new environment or update an existing one, using the Amazon MWAA console, the AWS CLI, or the Amazon MWAA API\n- Activate the tag key as a cost allocation tag in the AWS Billing and Cost Management console\n\nIt is available in all AWS Regions where Amazon MWAA is available. The announcement doesn't mention pricing or tag limits, so check the Amazon MWAA User Guide for those.\n\n## Wrap-up\n\n- Environment tags now reach workers, schedulers, and web servers\n- You can see cost by tag in Cost Explorer and Cost and Usage Reports\n- Works for new environments and updates to existing ones\n- The tag key must be activated in Billing and Cost Management\n\nThis one is for anyone sharing Airflow across teams and struggling to split the bill!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-mwaa-cost-allocation-tags/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon MWAA now supports cost allocation tags",
+  "tags": [
+    "aws",
+    "devops",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-04T23:00:00+00:00"
+}

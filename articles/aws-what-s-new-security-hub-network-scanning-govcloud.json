@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-security-hub-network-scanning-govcloud",
+  "title": "Security Hub の Network Scanning、ついに GovCloud (US) に登場！",
+  "summary": "AWS Security Hub の Network Scanning が AWS GovCloud (US) で使えるようになったよ。インターネット側から実際に到達できるかを確認して、到達可能なポートごとに finding を出すの。",
+  "body_md": "おつかれさま、しぃちゃんだよ！\n\nセキュリティの「たぶん大丈夫」を「実際に確認した」に変えてくれる機能が、GovCloud にも来たよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Security Hub の Network Scanning 機能が AWS GovCloud (US) で使えるようになったと発表されたよ。\n\n## なぜ重要なの？\n\nNetwork Scanning は、インターネット側からリソースを調べて、実際に到達できるかを検出する機能だよ。セキュリティグループやルートテーブルのルールから「到達できるかもしれない」と推測するだけではないの。\n\n## これで何が変わるの？\n\nSecurity Hub にはもともと、リソースがインターネットから到達可能になりうる設定を見つけるネットワーク到達性の finding があるよ。Network Scanning は、そのうえで「そうなる設定が実際に存在する」ことを確認する機能だよ。\n\n## 深く潜ってみよう\n\n**検出する内容**\n\n- パブリック IP アドレス、仮想マシン、ロードバランサーの検出\n- 到達可能なポートの特定\n- そのポートの裏で動いているサービスの判定\n\n**出力と相関**\n\n- 到達可能なポートごとに、見つけたポートとサービスの証拠つきの Security Hub finding が出る\n- Security Hub Exposures が、ほかの finding やリソースの設定と自動で突き合わせて、より広いリスクを判断する\n\n**有効化と料金**\n\n- 既存のお客様は、アカウント・リージョン単位か、設定ポリシーで組織全体に対して有効化できる\n- 新規の Security Hub のお客様は、デフォルトでオン\n- Security Hub Essentials に含まれ、Security Hub が使える商用リージョンと GovCloud (US) で追加料金なし\n\n## まとめ\n\n- Network Scanning が GovCloud (US) で使える\n- 設定からの推測ではなく、実際の到達可能性を確認できる\n- 到達可能なポートごとに証拠つきの finding が出る\n- Essentials に含まれ、追加料金なし\n\nGovCloud でインターネット公開の状況を確かめたいセキュリティ担当の人に刺さる発表だよ！",
+  "title_en": "Security Hub Network Scanning Is Finally Available in AWS GovCloud (US)!",
+  "summary_en": "AWS Security Hub Network Scanning is now supported in AWS GovCloud (US). It probes resources from the internet to confirm actual reachability and creates a finding for each reachable port.",
+  "body_md_en": "Hi, it's Shii-chan!\n\nA feature that turns \"probably fine\" into \"actually checked\" has arrived in GovCloud.\n\n## What was announced?\n\nIn AWS's What's New feed, the AWS Security Hub Network Scanning feature is now supported in AWS GovCloud (US).\n\n## Why it matters\n\nNetwork Scanning probes your resources from the internet to detect actual reachability, not just what could be reachable based on security group rules and route tables.\n\n## What changes\n\nSecurity Hub already has network reachability findings that identify configurations that could make a resource reachable from the internet. Network Scanning confirms that such configurations do exist.\n\n## Dive Deep\n\n**What it detects**\n\n- Public IP addresses, virtual machines, and load balancers\n- Reachable ports\n- The services running behind those ports\n\n**Output and correlation**\n\n- Each reachable port generates a Security Hub finding with evidence of the port and service discovered\n- Security Hub Exposures automatically correlates these findings with other findings and resource configurations to determine broader risk\n\n**Enablement and pricing**\n\n- Existing customers can enable it in individual accounts and Regions, or across an organization with a configuration policy\n- For new Security Hub customers, it is on by default\n- It is included with Security Hub Essentials at no additional cost in all commercial and GovCloud (US) Regions that support Security Hub\n\n## Wrap-up\n\n- Network Scanning is now in GovCloud (US)\n- It confirms real reachability instead of inferring it from configuration\n- Each reachable port produces a finding with evidence\n- Included with Essentials at no additional cost\n\nThis is for security teams who want to verify internet exposure in GovCloud!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/security-hub-network-scanning-govcloud/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Security Hub Network Scanning now available in AWS GovCloud (US)",
+  "tags": [
+    "aws",
+    "security"
+  ],
+  "published_at": "2026-11-05T09:00:00+00:00"
+}

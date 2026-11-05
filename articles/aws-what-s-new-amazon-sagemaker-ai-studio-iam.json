@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-sagemaker-ai-studio-iam",
+  "title": "SageMaker AI Studio が IAM Identity Center のマルチリージョンレプリケーションに対応！",
+  "summary": "SageMaker AI Studio のドメインを、IAM Identity Center のプライマリリージョンとは別のリージョンに置けるようになったよ。データ所在地の要件に合わせやすくなるの。",
+  "body_md": "やっほー、しぃちゃんだよ！\n\n今日は SageMaker AI Studio のリージョンまわりの制約が緩くなった話だよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon SageMaker AI が IAM Identity Center(IdC)のマルチリージョンレプリケーションに対応したと発表されたよ。IdC のプライマリリージョンとは別のリージョンに、SageMaker AI Studio のドメインをデプロイできるようになったの。\n\n## 今までどうだったの？\n\nこれまでは、プライマリの IdC インスタンスと SageMaker AI Studio のドメインが、同じリージョンにある必要があったんだって。\n\n## これで何が変わるの？\n\nプライマリの IdC インスタンスを複製して、Studio を使いたいリージョンに置けるようになったよ。\n\n- プライマリ IdC は今のリージョンのまま、Studio のワークロードだけコンプライアンス上必要なリージョンで動かせる\n- 従業員の所在地やデータ所在地の要件に合わせて、ドメインのリージョンを選べる\n- ID 管理は一元化したまま、シングルサインオン(SSO)も維持できる\n\n## 深く潜ってみよう\n\n対象は、SageMaker AI Studio が使える標準の AWS リージョンすべてで、原文には次の 15 リージョンが挙がっていたよ。\n\n- アジアパシフィック: 東京、ソウル、シンガポール、シドニー、ムンバイ\n- カナダ(中部)\n- 欧州: アイルランド、フランクフルト、ロンドン、パリ、ストックホルム\n- 南米(サンパウロ)\n- 米国: 東部(バージニア北部)、東部(オハイオ)、西部(オレゴン)\n\n設定の詳細は、SageMaker AI のドキュメントと、IAM Identity Center ユーザーガイドのマルチリージョン対応のページにあるよ。\n\n## まとめ\n\n- IdC のプライマリとは別のリージョンに Studio ドメインを置ける\n- 以前は同じリージョンである必要があった\n- データ所在地の要件を満たしつつ、SSO と一元的な ID 管理を保てる\n- 対象は 15 リージョン\n\nデータ所在地の制約がある組織で、SageMaker AI Studio を使いたい管理者に刺さる発表だよ！",
+  "title_en": "SageMaker AI Studio Now Works with IAM Identity Center Multi-Region Replication!",
+  "summary_en": "You can now deploy SageMaker AI Studio domains in a different Region from your IAM Identity Center primary Region, which helps with data residency requirements.",
+  "body_md_en": "Hi, it's Shii-chan!\n\nToday's news is about a Region restriction on SageMaker AI Studio getting looser.\n\n## What was announced?\n\nIn AWS's What's New feed, Amazon SageMaker AI now supports IAM Identity Center (IdC) multi-region replication. You can deploy SageMaker AI Studio domains in a different Region from your IdC instance's primary Region.\n\n## The story so far\n\nUntil now, the primary IdC instance had to be in the same Region as the SageMaker AI Studio domain.\n\n## What changes\n\nYou can replicate your primary IdC instance into the Region where you want to use Studio.\n\n- Keep the primary IdC where it is, and run Studio workloads in the Regions your compliance rules require\n- Pick the domain Region to match your workforce location and data residency needs\n- Keep centralized identity management and single sign-on (SSO)\n\n## Dive Deep\n\nIt's available in all standard AWS Regions where SageMaker AI Studio is supported. The announcement listed these 15:\n\n- Asia Pacific: Tokyo, Seoul, Singapore, Sydney, Mumbai\n- Canada (Central)\n- Europe: Ireland, Frankfurt, London, Paris, Stockholm\n- South America (São Paulo)\n- US: East (N. Virginia), East (Ohio), West (Oregon)\n\nFor setup, see the SageMaker AI documentation and the multi-Region section of the IAM Identity Center User Guide.\n\n## Wrap-up\n\n- Studio domains can live in a different Region from the IdC primary\n- Before, they had to be in the same Region\n- You can meet data residency needs while keeping SSO and central identity management\n- 15 Regions are supported\n\nThis is for administrators at organizations with data residency constraints who want to use SageMaker AI Studio!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-sagemaker-ai-studio-iam/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon SageMaker AI Studio Now Supports IAM Identity Center Multi-Region Replication",
+  "tags": [
+    "aws",
+    "ai",
+    "security"
+  ],
+  "published_at": "2026-11-05T08:00:00+00:00"
+}

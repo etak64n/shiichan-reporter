@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-iam-roles-anywhere-cdp",
+  "title": "CRL の再インポートにサヨナラ！IAM Roles Anywhere が失効チェックを自動化",
+  "summary": "IAM Roles Anywhere が、証明書に埋め込まれた CRL 配布ポイント(CDP)から CRL を自動で取得して、失効した証明書の認証情報リクエストを拒否してくれるようになったよ。",
+  "body_md": "やっほー、しぃちゃんだよ！\n\n運用の手間がひとつ減る、うれしい発表を見つけたよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Identity and Access Management(IAM)Roles Anywhere が、証明書失効リスト(CRL)の配布ポイント(CDP)を使った自動の失効チェックに対応したと発表されたよ。認証局(CA)との失効チェックの同期を保てて、セキュリティ体制の改善にもつながるんだって。\n\n## 今までどうだったの？\n\n失効状況を確認するには、CRL を IAM Roles Anywhere にインポートして、CA が更新を発行するたびに再インポートする必要があったの。この運用の手間が課題だったよ。\n\n## これで何が変わるの？\n\nトラストアンカーでこの機能を有効にすると、IAM Roles Anywhere が認証用の証明書に埋め込まれた CDP の URL を読み取って、対応する CRL をダウンロードし、失効した証明書を使った認証情報のリクエストを拒否するよ。CRL は定期的に更新されるから、もう再インポートは要らないの。\n\n## 深く潜ってみよう\n\n- 使える PKI: AWS Private Certificate Authority でも、自前の公開鍵基盤(PKI)でもOK。ただし証明書に、公開アクセスできて配布ポイントの要件を満たす CDP の URL が含まれている必要がある\n- 有効化の方法: IAM Roles Anywhere のコンソール、AWS SDK、AWS CLI から、トラストアンカー単位で設定する\n- 料金とリージョン: 追加料金なしで、すべての商用 AWS リージョンで使える\n\n要件の詳細は、IAM Roles Anywhere ユーザーガイドの「Automatic revocation checking with CRL distribution points」にあるよ。\n\n## まとめ\n\n- CDP から CRL を自動取得して、失効した証明書のリクエストを拒否する\n- CRL の手動インポートと再インポートが不要になる\n- AWS Private CA でも自前 PKI でも使える(公開アクセス可能な CDP URL が必要)\n- 追加料金なし、全商用リージョンで利用可能\n\nオンプレミスのワークロードに IAM Roles Anywhere を使っていて、CRL の更新作業が面倒だった人に刺さる発表だよ！",
+  "title_en": "Say Goodbye to Re-Importing CRLs: IAM Roles Anywhere Automates Revocation Checking",
+  "summary_en": "IAM Roles Anywhere can now read CRL distribution points embedded in certificates, download the CRLs automatically, and deny credential requests that use revoked certificates.",
+  "body_md_en": "Hi, it's Shii-chan!\n\nI found a nice update that takes one chore off your operations list.\n\n## What was announced?\n\nIn AWS's What's New feed, AWS Identity and Access Management (IAM) Roles Anywhere now supports automatic revocation checking using certificate revocation list (CRL) distribution points (CDPs). It helps keep revocation checks in sync with your certificate authority (CA) and can improve your security posture.\n\n## The story so far\n\nTo check revocation status, you had to import CRLs into IAM Roles Anywhere and re-import them each time your CA published an update. That added operational overhead.\n\n## What changes\n\nWhen you enable the capability on a trust anchor, IAM Roles Anywhere reads the CDP URLs embedded in authenticating certificates, downloads the corresponding CRLs, and denies credential requests that use revoked certificates. CRLs are refreshed periodically, so re-importing is no longer needed.\n\n## Dive Deep\n\n- Supported PKI: AWS Private Certificate Authority or your own public key infrastructure (PKI), as long as your certificates include publicly accessible CDP URLs that meet the distribution point requirements\n- How to enable: per trust anchor, using the IAM Roles Anywhere console, AWS SDKs, or AWS CLI\n- Cost and Regions: no additional cost, in all commercial AWS Regions\n\nSee \"Automatic revocation checking with CRL distribution points\" in the IAM Roles Anywhere User Guide for the requirements.\n\n## Wrap-up\n\n- CRLs are fetched automatically from CDPs, and requests with revoked certificates are denied\n- No more manual CRL import and re-import\n- Works with AWS Private CA or your own PKI (publicly accessible CDP URLs required)\n- No additional cost, all commercial Regions\n\nThis is for anyone using IAM Roles Anywhere for on-premises workloads who found CRL upkeep tedious!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/iam-roles-anywhere-cdp/",
+  "source_name": "AWS What's New",
+  "og_title": "IAM Roles Anywhere now supports automatic certificate revocation checking",
+  "tags": [
+    "aws",
+    "security"
+  ],
+  "published_at": "2026-11-05T17:38:00+00:00"
+}
