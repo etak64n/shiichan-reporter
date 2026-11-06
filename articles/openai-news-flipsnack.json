@@ -1,0 +1,19 @@
+{
+  "slug": "openai-news-flipsnack",
+  "title": "登録コスト約 75% 減！Flipsnack の ChatGPT Ads 運用術",
+  "summary": "Flipsnack が ChatGPT Ads のキャンペーンをクリック重視からコンバージョン重視に作り替え、5 キャンペーンで登録数が約 310% 増、登録単価が約 75% 減になった事例だよ！",
+  "body_md": "おつかれさま、しぃちゃんだよ！今日は OpenAI の広告まわりの事例を紹介するね。\n\n## なにが発表されたの？\n\nOpenAI の News（広告のお客様事例）で、**Flipsnack** の事例が公開されたよ。Flipsnack は、静的なドキュメントをインタラクティブなデジタル体験に変えるサービスで、カタログや営業資料、社内向け資料などに使われているの。\n\n## なぜ重要なの？\n\nChatGPT Ads でどんな目的設定が成果につながったかが、数字つきで分かるからだよ。\n\n## これで何が変わるの？\n\n以前は検索広告に大きく頼っていた Flipsnack が、ChatGPT Ads のテストで、どんなニーズが製品登録につながるかを学んだよ。\n\n- 最初はクリック重視（固定入札）のキャンペーン\n- その後、コンバージョン重視の目的と「コンバージョン最大化」の入札に作り直し\n\n## 深く潜ってみよう\n\n成果は米国の 5 キャンペーンでの比較だよ。\n\n- 登録あたりのコストは約 75% 低下\n- 登録数は約 310% 増加\n- 日次予算の設定は変えておらず、支出は約 1.3% の増加\n\n注意点として、比較期間は 2026 年 8 月 25〜31 日と 9 月 2〜8 日で、アトリビューションは 30 日クリックベース（ビューは除外）。目的と入札を同時に変えているので、変更点を切り分けた結果ではないよ。\n\nキャンペーン構成も工夫されていて、Magazine・Catalog・Brochure のような文書ニーズ別と、Sales Enablement・Employee Benefits・Real Estate・Hospitality のような業務・業界別に分けているの。\n\n## まとめ\n\n- クリック重視から、登録を目的にしたコンバージョン重視へ切り替え\n- 5 キャンペーンで登録数約 310% 増、登録単価約 75% 減\n- ニーズや業界別にキャンペーンを分割\n\nChatGPT Ads で広告運用をしているマーケターに刺さる事例だよ！",
+  "title_en": "About 75% lower cost per signup! How Flipsnack runs ChatGPT Ads",
+  "summary_en": "Flipsnack rebuilt its ChatGPT Ads campaigns from click-focused to conversion-focused. Across five campaigns, registrations rose about 310% and cost per registration fell about 75%.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today I'm sharing a customer story about advertising on OpenAI.\n\n## What was announced?\n\nOpenAI News (the ads customer stories) published a story about **Flipsnack**, a service that turns static documents into interactive digital experiences, used for catalogs, sales presentations, internal communications, and more.\n\n## Why it matters\n\nIt shows with numbers which campaign objective worked in ChatGPT Ads.\n\n## What changes\n\nFlipsnack relied heavily on search advertising. Its ChatGPT Ads test taught it which customer needs turn into signups.\n\n- It started with click-focused campaigns using fixed bids\n- It then rebuilt them with a conversions objective and bidding set to maximize conversions\n\n## Dive Deep\n\nThe results compare five US campaigns.\n\n- Cost per registration fell about 75%\n- Registrations rose about 310%\n- Daily budget settings were unchanged, and spend rose about 1.3%\n\nA caveat: the comparison covers August 25-31 versus September 2-8, 2026, with 30-day click attribution (views excluded). Objectives and bidding changed together, so the result doesn't isolate one change.\n\nThe campaign structure also helped: some campaigns target document needs (Magazine, Catalog, Brochure) and others target uses and industries (Sales Enablement, Employee Benefits, Real Estate, Hospitality).\n\n## Wrap-up\n\n- Switched from click-focused to registration-focused campaigns\n- Five campaigns: about 310% more registrations, about 75% lower cost per registration\n- Campaigns were split by need and industry\n\nThis is for marketers running ads in ChatGPT!",
+  "emotion": "happy",
+  "importance": 1,
+  "source_url": "https://openai.com/ads/customers/flipsnack",
+  "source_name": "OpenAI News",
+  "og_title": "Flipsnack grows product signups with conversion optimization",
+  "tags": [
+    "openai",
+    "business"
+  ],
+  "published_at": "2026-11-05T00:45:15+00:00"
+}

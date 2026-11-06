@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-rds-oracle-kerberos-self-managed-ad",
+  "title": "信頼関係の設定が不要に！RDS for Oracle が自己管理 AD との Kerberos 認証に対応",
+  "summary": "Amazon RDS for Oracle の DB インスタンスを、自己管理の Microsoft Active Directory に直接参加させて Kerberos 認証できるようになったよ！",
+  "body_md": "おつかれさま、しぃちゃんだよ！今日は RDS for Oracle の認証まわりのアップデートだよ。\n\n## なにが発表されたの？\n\nAWS の What's New によると、**Amazon RDS for Oracle** の DB インスタンスを、**自己管理の Microsoft Active Directory（AD）ドメインに直接参加**させられるようになったよ。AD ドメインのユーザーは Kerberos で RDS for Oracle に認証できるの。\n\n自己管理 AD は、オンプレミス、Amazon EC2、他のクラウドプロバイダーのどこで動いていてもいいんだって。\n\n## 今までどうだったの？\n\n自己管理 AD で Kerberos 認証を使うには、AWS Managed Microsoft AD を用意して、AWS 管理ドメインと自己管理ドメインの間に信頼関係を結ぶ必要があったよ。\n\n## これで何が変わるの？\n\n- 追加のディレクトリを立てずに、既存の AD をそのまま使える\n- 信頼関係の設定が不要になる\n- 追加料金なしで使える\n\n## 深く潜ってみよう\n\n- 設定方法: AWS マネジメントコンソール、AWS CLI、AWS SDK\n- 提供範囲: RDS for Oracle が使えるすべての商用 AWS リージョン\n- 詳細は Amazon RDS ユーザーガイドの「Working with self-managed Active Directory with an Amazon RDS for Oracle DB instance」を参照\n\n## まとめ\n\n- 自己管理 AD に RDS for Oracle を直接参加できる\n- AWS Managed Microsoft AD と信頼関係の構成が不要に\n- 追加料金なし、すべての商用リージョンで利用可能\n\nオンプレの AD を中心に Oracle の認証を管理している人に刺さる更新だよ！",
+  "title_en": "No trust relationship needed! RDS for Oracle supports Kerberos with self-managed AD",
+  "summary_en": "Amazon RDS for Oracle DB instances can now join your self-managed Microsoft Active Directory directly, so users can authenticate with Kerberos.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today's update is about authentication for RDS for Oracle.\n\n## What was announced?\n\nAccording to AWS What's New, you can now **join Amazon RDS for Oracle DB instances directly to your self-managed Microsoft Active Directory (AD) domain**. Users in your domain can authenticate to RDS for Oracle with Kerberos.\n\nYour self-managed AD can run on premises, on Amazon EC2, or with another cloud provider.\n\n## The story so far\n\nTo use Kerberos with self-managed AD, you had to deploy AWS Managed Microsoft AD and set up a trust between the AWS managed domain and your self-managed domain.\n\n## What changes\n\n- Use your existing AD without deploying an additional directory\n- No trust relationship to set up\n- No additional charge\n\n## Dive Deep\n\n- Set up with the AWS Management Console, AWS CLI, or AWS SDK\n- Available in all commercial AWS Regions where RDS for Oracle is available\n- See \"Working with self-managed Active Directory with an Amazon RDS for Oracle DB instance\" in the Amazon RDS User Guide\n\n## Wrap-up\n\n- RDS for Oracle can join self-managed AD directly\n- No AWS Managed Microsoft AD or trust required\n- No extra charge, in all commercial Regions\n\nThis is for teams that manage Oracle authentication around an on-premises AD!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/rds-oracle-kerberos-self-managed-ad/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon RDS for Oracle now supports Kerberos authentication with self-managed Active Directory",
+  "tags": [
+    "aws",
+    "security",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-05T10:30:00+00:00"
+}

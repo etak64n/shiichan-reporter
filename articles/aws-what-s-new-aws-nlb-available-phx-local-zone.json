@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-aws-nlb-available-phx-local-zone",
+  "title": "フェニックスの Local Zone に Network Load Balancer が登場！親リージョンへの遠回りにサヨナラ",
+  "summary": "Phoenix Local Zone（us-west-2-phx-2a）で AWS Network Load Balancer が使えるようになったよ！接続がゾーン内で完結して低遅延になるの。",
+  "body_md": "みんな、しぃちゃんだよ！今日は Local Zones のお知らせだよ。\n\n## なにが発表されたの？\n\nAWS の What's New によると、**AWS Network Load Balancer** が **Phoenix Local Zone（us-west-2-phx-2a）** で利用できるようになったよ。\n\nAWS Local Zones は、リージョンがない大都市圏や産業の中心地の近くに、コンピュート、ストレージ、データベースなど一部のサービスを置くインフラ展開の形だよ。\n\n## 今までどうだったの？\n\nターゲットが Phoenix Local Zone にあっても、ロードバランサーは親リージョンのアベイラビリティーゾーンに置く必要があったの。そのため、接続とトラフィックが親リージョンまで往復して、遅延が増え、アプリが動くゾーンの外を通っていたよ。\n\n## これで何が変わるの？\n\n- 接続のルーティングがターゲットのいるゾーン内で完結する\n- Phoenix 都市圏のユーザーに対して、低く安定した遅延を実現\n- トラフィックが Local Zone の外に出ない\n\nAWS は、リアルタイムゲーム、メディアストリーミング、ライブの金融アプリのような遅延に敏感なワークロードで特に有効だと説明しているよ。\n\n## 深く潜ってみよう\n\n- Network Load Balancer は Phoenix Local Zone に直接作成できる\n- Local Zones は、AWS Global View コンソールの Local Zones タブ、または ModifyAvailabilityZoneGroup API で有効化できる\n- 利用可能・発表済みの Local Zones は Locations のページで確認できる\n\n## まとめ\n\n- Phoenix Local Zone で Network Load Balancer が利用可能に\n- 親リージョンへの往復がなくなり、低遅延に\n- ゲーム・動画配信・金融など遅延に敏感な用途向け\n\nPhoenix 周辺のユーザーに向けてサービスを出している人に刺さる更新だよ！",
+  "title_en": "Network Load Balancer arrives in the Phoenix Local Zone, no more detours to the parent Region",
+  "summary_en": "AWS Network Load Balancer is now available in the Phoenix Local Zone (us-west-2-phx-2a), keeping connection routing local for lower latency.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today's news is about Local Zones.\n\n## What was announced?\n\nAccording to AWS What's New, **AWS Network Load Balancer** is now available in the **Phoenix Local Zone (us-west-2-phx-2a)**.\n\nAWS Local Zones place compute, storage, database, and other select services closer to large population, industry, and IT centers where no AWS Region exists today.\n\n## The story so far\n\nEven if your targets ran in the Phoenix Local Zone, the load balancer had to be in an Availability Zone in the parent Region. Connections and traffic traveled to the parent Region and back, adding latency and routing traffic outside the zone where your application runs.\n\n## What changes\n\n- Connection routing stays local to your targets\n- Lower and more consistent latency for users in the Phoenix metro area\n- Traffic stays within the Local Zone\n\nAWS says this is especially valuable for latency-sensitive workloads such as real-time gaming, media streaming, and live financial applications.\n\n## Dive Deep\n\n- You can create a Network Load Balancer directly in the Phoenix Local Zone\n- Enable Local Zones from the Local Zones tab in the AWS Global View console, or with the ModifyAvailabilityZoneGroup API\n- The Locations page lists available and announced Local Zones\n\n## Wrap-up\n\n- Network Load Balancer is available in the Phoenix Local Zone\n- No more round trips to the parent Region, so lower latency\n- Suited to gaming, streaming, and finance\n\nThis is for anyone serving users around Phoenix!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-nlb-available-phx-local-zone/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Network Load Balancer is now available in the AWS Phoenix Local Zone",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-05T20:00:00+00:00"
+}

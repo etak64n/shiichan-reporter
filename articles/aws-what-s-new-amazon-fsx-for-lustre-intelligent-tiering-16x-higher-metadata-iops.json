@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-fsx-for-lustre-intelligent-tiering-16x-higher-metadata-iops",
+  "title": "メタデータ IOPS が 16 倍の 192,000 に！FSx for Lustre の Intelligent-Tiering が大幅強化",
+  "summary": "Amazon FSx for Lustre の Intelligent-Tiering で、メタデータ IOPS が最大 12,000 から 192,000 に、16 倍になったよ！",
+  "body_md": "やっほー、しぃちゃんだよ！今日は FSx for Lustre の性能アップのお知らせだよ。\n\n## なにが発表されたの？\n\nAWS の What's New によると、**Amazon FSx for Lustre** の Intelligent-Tiering ストレージクラスを使うファイルシステムで、**最大 192,000 のメタデータ IOPS** に対応したよ。\n\n## 今までどうだったの？\n\n以前の最大値は 12,000 IOPS だったの。メタデータ IOPS は、1 秒間に作成・一覧・読み取り・削除できるファイルやディレクトリの数を決める指標だよ。\n\n## これで何が変わるの？\n\n- 12,000 → 192,000 IOPS で 16 倍に\n- ファイル数が非常に多い機械学習の研究や HPC のワークロードで、結果が出るまでの時間を短縮できる\n- ストレージコストを抑えながら、より高い性能まで拡張できる\n\n## 深く潜ってみよう\n\nIntelligent-Tiering は、AWS によれば Lustre ファイルストレージとして最安かつ唯一の完全な伸縮性を持つクラスで、ホットなデータとコールドなデータが混在し、常に SSD 並みの性能までは求めないワークロード向けだよ。\n\n提供範囲には注意してね。\n\n- 対象は **新規** の Intelligent-Tiering ファイルシステム\n- Intelligent-Tiering が使えるすべての AWS リージョンで利用可能\n- 詳細は FSx for Lustre ユーザーガイドのメタデータ性能の項目を参照\n\n## まとめ\n\n- メタデータ IOPS が最大 192,000 に（従来の 16 倍）\n- 新規の Intelligent-Tiering ファイルシステムが対象\n- ML 研究や HPC のメタデータ集約型ワークロード向け\n\nファイル数が膨大な ML や HPC を回している人に刺さる更新だよ！",
+  "title_en": "16x metadata IOPS, up to 192,000! FSx for Lustre Intelligent-Tiering gets a big boost",
+  "summary_en": "Amazon FSx for Lustre Intelligent-Tiering file systems now support up to 192,000 metadata IOPS, 16x the previous maximum of 12,000.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today's news is a performance boost for FSx for Lustre.\n\n## What was announced?\n\nAccording to AWS What's New, **Amazon FSx for Lustre** file systems using the Intelligent-Tiering storage class now support **up to 192,000 metadata IOPS**.\n\n## The story so far\n\nThe previous maximum was 12,000 IOPS. Metadata IOPS determine how many files and directories you can create, list, read, and delete per second.\n\n## What changes\n\n- 12,000 to 192,000 IOPS, a 16x increase\n- Metadata-intensive machine learning research and HPC workloads can get to results faster\n- You can scale to higher performance while optimizing storage costs\n\n## Dive Deep\n\nPer AWS, Intelligent-Tiering is the lowest-cost and only fully elastic Lustre file storage in the cloud, optimized for workloads that mix hot and cold data and don't need consistent SSD-level performance.\n\nAvailability notes:\n\n- Applies to **new** Intelligent-Tiering file systems\n- Available in all AWS Regions where Intelligent-Tiering is available\n- See the file system metadata performance section of the FSx for Lustre User Guide\n\n## Wrap-up\n\n- Up to 192,000 metadata IOPS (16x before)\n- New Intelligent-Tiering file systems only\n- Aimed at metadata-intensive ML research and HPC\n\nThis is for anyone running ML or HPC with huge numbers of files!",
+  "emotion": "energetic",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-fsx-for-lustre-intelligent-tiering-16x-higher-metadata-iops",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon FSx for Lustre delivers 16x higher metadata IOPS on Intelligent-Tiering file systems",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "ai"
+  ],
+  "published_at": "2026-11-05T15:39:00+00:00"
+}

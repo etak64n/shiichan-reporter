@@ -1,0 +1,19 @@
+{
+  "slug": "cloudflare-changelog-2026-11-06-user-api-token-redesign",
+  "title": "User API トークンの作成画面が Account API トークン風にリニューアルされたよ！",
+  "summary": "Cloudflare の User API トークンのダッシュボードが、Account API トークンに近い画面に刷新されたよ！ポリシー編集や有効期限、IP 制限を作成フローの中で確認できるの。",
+  "body_md": "やっほー、しぃちゃんだよ！今日は Cloudflare ダッシュボードの使い心地アップデートだよ。\n\n## なにが発表されたの？\n\nCloudflare の Changelog によると、**User API トークン**の作成画面が刷新されたよ。Account API トークンに近い画面になり、ユーザー所有の認証情報を作りやすく、確認しやすくなったの。ユーザースコープの動作は変わらないよ。\n\n## 今までどうだったの？\n\nUser API トークンと Account API トークンでは、ダッシュボードでの作成体験が異なっていたよ。今回、その差が小さくなったの。\n\n## これで何が変わるの？\n\n- 作成フローが Account API トークンと揃い、作成と確認の流れが分かりやすくなった\n- ポリシーが読みやすく、管理しやすくなった\n- 作成前に、その場でポリシーブロックを追加・編集・削除できる\n- 有効期限のプリセットとクライアント IP アドレスのフィルタリングが作成フローに組み込まれ、制限をまとめて確認できる\n\n## 深く潜ってみよう\n\n大事なポイントがひとつあるよ。\n\n- 画面は Account API トークンに近づいたけれど、User API トークンは**これまでどおり、作成したユーザーの代わりに動作する**\n\n詳しくはドキュメントの「Create API token」「Create tokens via API」「Account API tokens」を見てね。\n\n## まとめ\n\n- User API トークンの作成画面を刷新\n- ポリシー編集、有効期限プリセット、IP フィルターを作成フローに統合\n- 動作はユーザースコープのまま\n\nCloudflare のトークンをよく発行する人に嬉しい更新だよ！",
+  "title_en": "User API tokens get a redesigned creation experience on Cloudflare",
+  "summary_en": "Cloudflare's User API tokens now use a dashboard experience closer to Account API tokens, with policy editing, expiration presets, and IP filtering built into the creation flow.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today's update is a nicer Cloudflare dashboard experience.\n\n## What was announced?\n\nAccording to the Cloudflare Changelog, **User API tokens** have a redesigned creation experience. It more closely matches Account API tokens, making it easier to create and review user-owned credentials while preserving their user-scoped behavior.\n\n## The story so far\n\nCreating User API tokens and Account API tokens felt different in the dashboard. This update narrows that gap.\n\n## What changes\n\n- The creation flow matches Account API tokens, with a clearer create and review experience\n- Policies are easier to read and manage\n- You can add, edit, and remove policy blocks inline before creating the token\n- Expiration presets and client IP address filtering are built into the flow, so you can review restrictions in one place\n\n## Dive Deep\n\nOne important point:\n\n- Even though the dashboard now looks more like Account API tokens, User API tokens **still act on behalf of the creating user**\n\nSee the docs for \"Create API token\", \"Create tokens via API\", and \"Account API tokens\".\n\n## Wrap-up\n\n- Redesigned User API token creation\n- Policy editing, expiration presets, and IP filtering in one flow\n- Behavior remains user-scoped\n\nA nice update for anyone who creates Cloudflare tokens often!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-11-06-user-api-token-redesign/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Cloudflare Fundamentals - User API tokens have a redesigned creation experience",
+  "tags": [
+    "cloudflare",
+    "security"
+  ],
+  "published_at": "2026-11-06T01:36:18+00:00"
+}

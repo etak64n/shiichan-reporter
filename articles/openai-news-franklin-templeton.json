@@ -1,0 +1,20 @@
+{
+  "slug": "openai-news-franklin-templeton",
+  "title": "運用会社の調査がAIで変わる！Franklin Templeton が Codex で投資リサーチを再設計中だよ",
+  "summary": "Franklin Templeton が、エージェントとセマンティックレイヤーで「連続的なインテリジェンス」を作り、株式リサーチのワークフローを作り変えている事例だよ！",
+  "body_md": "こんにちは、しぃちゃんだよ！今日は OpenAI の導入事例から、資産運用会社のお話を紹介するね。\n\n## なにが発表されたの？\n\nOpenAI の News で、**Franklin Templeton** の事例が公開されたよ。最初は株式リサーチを対象に、ポートフォリオマネージャーがさまざまなリサーチの見方を比べたり、投資のリスクを調べたりするための AI ワークフローを作っているんだって。Codex は、投資チームが使っているツールのひとつなの。\n\n## なぜ重要なの？\n\n金融のように判断の責任が重い分野で、AI をどう設計するかがよく分かる事例だからだよ。\n\n## これで何が変わるの？\n\n- 以前の株式リサーチは、アナリストが順番に進める人主導の流れだった（初期分析、決算説明会の確認、競合の調査など）\n- 目指す形は、AI が洞察を継続的に浮かび上がらせ、人の判断と組み合わせる流れ\n- リサーチ・リスク・コンプライアンス・トレーディングという別々の視点を、ポートフォリオマネージャー向けにまとめる\n\n## 深く潜ってみよう\n\n- 最初はデータをデータベースに入れてモデルをつないだだけで、データ同士の関係をモデルが理解できず、欲しい答えが出なかった\n- そこでエージェントと「セマンティックレイヤー」（データの意味と関連を構造化したモデル）を足したら結果が変わった\n- ハッカソンで Codex を使い、現場の実務者が自分でツールを作る場を設けている\n- 試作を本番にするときは、セキュリティレビュー・専門家のサポート・データ管理を通す\n- 一般的なツールのように好みを学習して同じ提供元ばかり表示すると偏りが出るため、多様な調査や意見に触れられることを重視している\n- リスクをきちんと分析した投資アイデアが良いアイデア、という考え方で、リスクを強調するよう設計している\n\n## まとめ\n\n- 株式リサーチから AI ワークフローの開発を開始\n- セマンティックレイヤーとエージェントが成果の分かれ目だった\n- 偏りを避け、リスクを前面に出す設計思想\n- 本番化にはセキュリティレビューなどの統制を通す\n\n業務データを AI につなぐ設計で悩んでいる人に刺さる事例だよ！",
+  "title_en": "AI is changing investment research! Franklin Templeton is redesigning its workflow with Codex",
+  "summary_en": "Franklin Templeton is using agents and a semantic layer to build \"continuous intelligence\" for equity research, and rethinking how portfolio managers weigh views and risks.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today I'm sharing a customer story from OpenAI about an asset manager.\n\n## What was announced?\n\nOpenAI News published a story about **Franklin Templeton**. Starting with equity research, the firm is building AI workflows that help portfolio managers compare research views and examine investment risks. Codex is one of several tools its investment teams use.\n\n## Why it matters\n\nIt shows how to design AI in a field where decisions carry a lot of responsibility.\n\n## What changes\n\n- Equity research used to be human-led and sequential: first-pass analysis, earnings calls, competitor studies\n- The goal is for AI to keep surfacing insights and combine them with human judgment\n- Separate views from research, risk, compliance, and trading are brought together for portfolio managers\n\n## Dive Deep\n\n- At first the team just put data in a database and connected models, but the models didn't understand how the data fit together\n- Adding agents and a semantic layer (a structured model of what the data means and how it connects) changed the results\n- Hackathons with Codex let practitioners build their own tools\n- Moving experiments to production goes through security review, expert support, and data controls\n- Tools that learn preferences can narrow what people see, so the firm stresses access to diverse research and opinions\n- Its view is that a good idea is one whose risks have been analyzed, so the systems are designed to emphasize risk\n\n## Wrap-up\n\n- AI workflows started with equity research\n- The semantic layer and agents made the difference\n- The design avoids bias and puts risk up front\n- Production use goes through proper controls\n\nThis is for anyone struggling to connect business data to AI!",
+  "emotion": "thinking",
+  "importance": 1,
+  "source_url": "https://openai.com/index/franklin-templeton",
+  "source_name": "OpenAI News",
+  "og_title": "Franklin Templeton uses OpenAI to support investment research",
+  "tags": [
+    "openai",
+    "ai",
+    "business"
+  ],
+  "published_at": "2026-11-05T00:00:00+00:00"
+}

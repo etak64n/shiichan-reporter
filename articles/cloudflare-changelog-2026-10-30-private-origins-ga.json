@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-10-30-private-origins-ga",
+  "title": "プライベートなオリジンも公開ホスト名で！Cloudflare Services for Private Origins が GA になったよ！",
+  "summary": "Cloudflare Services for Private Origins が一般提供になったよ！Cloudflare WAN・Cloudflare Tunnel・Cloudflare Mesh 経由で、プライベートネットワーク内のオリジンに公開ホスト名をプロキシできるの！",
+  "body_md": "やっほー、しぃちゃんだよ！今日は Cloudflare から、社内ネットワークの中にあるサーバーをきれいに公開できる話が届いたよ。わくわくが止まらないの！\n\n## なにが発表されたの？\n\nCloudflare の Changelog によると、**Cloudflare Services for Private Origins** が一般提供（GA）になったよ！公開ホスト名へのリクエストを、プライベートネットワーク内のオリジンにプロキシできる機能なんだって。\n\n接続の方法は次の 3 つだよ。\n\n- Cloudflare WAN\n- Cloudflare Tunnel\n- Cloudflare Mesh\n\n## なぜ重要なの？\n\nオリジンがプライベートネットワークの中にあると、これまでは「どうやって外から安全につなぐか」を自分で考える必要があったよね。この機能は、Cloudflare の公開ホスト名とプライベートなオリジンをひとつの仕組みでつなぐためのものなの。\n\n## これで何が変わるの？\n\n- 社内ネットワークや閉じた環境にあるサービスを、公開ホスト名の裏側に置いたまま Cloudflare 経由で提供できる\n- すでに Cloudflare WAN・Tunnel・Mesh を使っている人は、その接続をオリジンへの経路として活用できる\n\n## 深く潜ってみよう\n\nChangelog 自体は短くて、制限や前提条件、各接続方式の使い分けまでは書かれていないの。詳しい設定は、Changelog から案内されている「Private origins」のドキュメントと、発表ブログ記事を見るのが確実だよ。\n\n## まとめ\n\n- Cloudflare Services for Private Origins が GA\n- 公開ホスト名からプライベートネットワーク内のオリジンへプロキシできる\n- 接続方法は Cloudflare WAN / Tunnel / Mesh の 3 種類\n\nオリジンを閉じたネットワークに置いている Cloudflare ユーザーのみんなに刺さる発表だよ！",
+  "title_en": "Public hostnames for private origins: Cloudflare Services for Private Origins is now GA!",
+  "summary_en": "Cloudflare Services for Private Origins is generally available. You can proxy public hostnames to origins in your private network over Cloudflare WAN, Cloudflare Tunnel, or Cloudflare Mesh.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today's news from Cloudflare is about serving origins that live inside a private network. I'm so excited!\n\n## What was announced?\n\nAccording to the Cloudflare Changelog, **Cloudflare Services for Private Origins** is now generally available. It lets you proxy public hostnames to origins inside your private network.\n\nYou can connect in three ways:\n\n- Cloudflare WAN\n- Cloudflare Tunnel\n- Cloudflare Mesh\n\n## Why it matters\n\nWhen an origin sits in a private network, you have to figure out how to reach it safely from the outside. This feature ties a public Cloudflare hostname to a private origin using connectivity you may already have.\n\n## What changes\n\n- Services in closed or internal networks can sit behind a public hostname and be served through Cloudflare\n- If you already use Cloudflare WAN, Tunnel, or Mesh, you can use that connection as the path to your origin\n\n## Dive Deep\n\nThe changelog entry is short. It doesn't cover limits, prerequisites, or how to choose between the connection methods. For setup details, see the Private origins documentation and the announcement blog post linked from the changelog.\n\n## Wrap-up\n\n- Cloudflare Services for Private Origins is GA\n- Public hostnames can be proxied to origins in a private network\n- Three connection methods: Cloudflare WAN, Tunnel, and Mesh\n\nThis one is for Cloudflare users who keep their origins in closed networks!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-30-private-origins-ga/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "DNS - Cloudflare Services for Private Origins is generally available",
+  "tags": [
+    "cloudflare",
+    "infrastructure",
+    "security"
+  ],
+  "published_at": "2026-10-30T00:00:00+00:00"
+}

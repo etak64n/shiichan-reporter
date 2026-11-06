@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-interconnect-last-mile-northern-virginia",
+  "title": "AWS Interconnect - last mile に北バージニアが追加！ニューヨークに続く 2 つ目のメトロだよ",
+  "summary": "AWS Interconnect - last mile に Northern Virginia のメトロが追加されたよ！ニューヨークに続く 2 つ目で、Lumen 経由では GA、Megaport と Equinix 経由ではプレビューなの。",
+  "body_md": "おつかれさま、しぃちゃんだよ！今日はネットワーク接続のお知らせだよ。\n\n## なにが発表されたの？\n\nAWS の What's New によると、**AWS Interconnect - last mile** に、新しく **Northern Virginia（米国）のメトロ**が加わったよ。ニューヨークに続く 2 つ目のメトロで、データセンター、支社、コロケーション施設を AWS につなげられるの。\n\n## なぜ重要なの？\n\nAWS Interconnect - last mile は、クロスコネクトを手配したりルーターを設定したりせずに、マネージドでプライベートな冗長接続を使える仕組みだよ。接続できる場所が増えると、使える人も増えるよね。\n\n## これで何が変わるの？\n\n- 北バージニアのメトロ経由で、AWS に接続できる\n- Lumen のお客様は、米国本土のどこからでも GA の接続を注文できる\n- 接続先は、中国を除くすべてのパブリック AWS リージョンと AWS Local Zones\n\n## 深く潜ってみよう\n\n標準の仕様はこうだよ。\n\n- すべての接続はデフォルトで、物理的に分離された 2 か所に、冗長な 4 本のリンクで構成される\n- Direct Connect ポートまでの可用性 SLA は 99.99%\n- AWS とパートナーのエッジデバイスの間は、デフォルトで MACsec により暗号化される\n\nパートナーごとの状況は次のとおりだよ。\n\n- Lumen: 北バージニアメトロ経由で GA\n- Megaport: プレビュー\n- Equinix: プレビュー\n\n接続は、AWS マネジメントコンソール、AWS CLI、AWS Interconnect API で作成できるよ。料金は AWS Interconnect - last mile の料金ページを見てね。\n\n## まとめ\n\n- 北バージニアがニューヨークに続く 2 つ目のメトロに\n- Lumen は GA、Megaport と Equinix はプレビュー\n- 2 拠点・4 リンクの冗長構成、99.99% SLA、MACsec 暗号化がデフォルト\n\nオンプレから AWS へ、手間をかけずに冗長なプライベート接続を引きたい人に刺さる更新だよ！",
+  "title_en": "AWS Interconnect - last mile adds a Northern Virginia metro, the second after New York",
+  "summary_en": "AWS Interconnect - last mile adds a Northern Virginia metro, joining New York. It's generally available through Lumen and in preview through Megaport and Equinix.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today's news is about network connectivity.\n\n## What was announced?\n\nAccording to AWS What's New, **AWS Interconnect - last mile** has a new **Northern Virginia, USA metro**. It joins New York as the second metro where you can connect your data center, branch office, or colocation facility to AWS.\n\n## Why it matters\n\nAWS Interconnect - last mile gives you managed, private, resilient connections to AWS, so you don't have to order cross-connects or configure routers. More metros means more people can use it.\n\n## What changes\n\n- You can connect to AWS through the Northern Virginia metro\n- Lumen customers anywhere in the continental United States can order generally available connections\n- You can reach all public AWS Regions (except those in China) and AWS Local Zones\n\n## Dive Deep\n\nStandard characteristics:\n\n- Every connection is provisioned by default across two physically diverse locations with four redundant links\n- 99.99% availability SLA up to the Direct Connect port\n- Traffic between AWS and partner edge devices is encrypted with MACsec by default\n\nPartner status:\n\n- Lumen: generally available through the Northern Virginia metro\n- Megaport: preview\n- Equinix: preview\n\nYou can create connections with the AWS Management Console, AWS CLI, or AWS Interconnect API. See the AWS Interconnect - last mile pricing page for costs.\n\n## Wrap-up\n\n- Northern Virginia is the second metro after New York\n- Lumen is GA; Megaport and Equinix are in preview\n- Two locations, four links, a 99.99% SLA, and MACsec by default\n\nThis is for anyone who wants resilient private connectivity from on premises to AWS without the hassle!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/interconnect-last-mile-northern-virginia/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Interconnect - last mile announces new metro in Northern Virginia, USA",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-05T21:30:00+00:00"
+}

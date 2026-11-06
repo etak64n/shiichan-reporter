@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-waf-stripe-fiat-payouts",
+  "title": "AI ボットからの課金を現地通貨で受け取れる！AWS WAF が Stripe 連携に対応",
+  "summary": "AWS WAF の AI traffic monetization が Stripe に対応したよ！AI ボットからのステーブルコイン支払いを、現地通貨で Stripe 残高に受け取れるの。",
+  "body_md": "こんにちは、しぃちゃんだよ！今日は AI ボットにコンテンツ利用料を課す仕組みのアップデートだよ。\n\n## なにが発表されたの？\n\nAWS の What's New によると、**AWS WAF AI traffic monetization** が Stripe と連携したよ。パブリッシャーやコンテンツ所有者、API 提供者は、AI ボットやエージェントからのステーブルコイン支払いを受け取り、現地通貨で Stripe 残高に入金できるの。\n\n## 今までどうだったの？\n\n受け取り方法はステーブルコインの支払いのみだったので、ステーブルコインを保有したり、暗号資産ウォレットを管理したりする必要があったよ。\n\n## これで何が変わるの？\n\n- ステーブルコインやウォレットを持たずに、エージェントのアクセスを収益化できる\n- 既存の料金設定とエージェントポリシーはそのまま使える\n- すべての決済プロバイダーの収益が、AWS WAF コンソールの収益分析にまとまる\n\n## 深く潜ってみよう\n\n仕組みはこうだよ。\n\n- エージェントが保護されたコンテンツをリクエストすると、AWS WAF が HTTP 402 レスポンスで、受け付ける支払い資格情報の種類を返す\n- エージェントが有効な支払い資格情報を付けて再リクエストすると、コンテンツが制限なしで返される\n\n始めるには、AWS WAF コンソールで Stripe Connect を使って Stripe アカウントをつなぐよ。\n\n料金と提供範囲は次のとおりだよ。\n\n- Stripe 連携の追加料金はなし（通常の AWS WAF と Stripe の処理手数料は発生）\n- Amazon CloudFront を使う AWS WAF の全顧客が対象\n- AWS WAF の web ACL が CloudFront ディストリビューションに関連付けられている全エッジロケーションで利用可能\n\n## まとめ\n\n- Stripe が新しい支払い受け取り方法に追加\n- 現地通貨で Stripe 残高に入金\n- 402 レスポンスで支払いを求める仕組みは変わらない\n\nコンテンツや API を AI エージェントに有料提供したい事業者に刺さる更新だよ！",
+  "title_en": "Get paid by AI bots in local currency! AWS WAF adds Stripe payouts",
+  "summary_en": "AWS WAF AI traffic monetization now integrates with Stripe, so you can collect stablecoin payments from AI bots and have them settle in local currency to your Stripe balance.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today's update is about charging AI bots for content access.\n\n## What was announced?\n\nAccording to AWS What's New, **AWS WAF AI traffic monetization** now integrates with Stripe. Publishers, content owners, and API providers can collect stablecoin payments from AI bots and agents that settle in local currency directly to their Stripe balance.\n\n## The story so far\n\nPayouts were stablecoin-only, so you had to hold stablecoins or manage a crypto wallet.\n\n## What changes\n\n- You can monetize agent access without holding stablecoins or a wallet\n- Existing pricing and agent policies work unchanged\n- Revenue from all payment providers appears in the AWS WAF console revenue analytics\n\n## Dive Deep\n\nHow it works:\n\n- When an agent requests protected content, AWS WAF returns an HTTP 402 response listing the payment credential types it accepts\n- Once the agent returns with a valid payment credential and requests again, the content is returned ungated\n\nTo get started, connect your Stripe account through Stripe Connect in the AWS WAF console.\n\nPricing and availability:\n\n- No additional charge for the Stripe integration (standard AWS WAF and Stripe processing fees apply)\n- Available to all AWS WAF customers using Amazon CloudFront\n- Available in all edge locations where AWS WAF web ACLs are associated with CloudFront distributions\n\n## Wrap-up\n\n- Stripe is a new payout method\n- Payouts settle in local currency to your Stripe balance\n- The 402-based payment flow is unchanged\n\nThis is for anyone who wants to charge AI agents for content or APIs!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-waf-stripe-fiat-payouts/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS WAF AI traffic monetization now supports fiat payouts through Stripe",
+  "tags": [
+    "aws",
+    "web",
+    "security"
+  ],
+  "published_at": "2026-11-05T08:00:00+00:00"
+}

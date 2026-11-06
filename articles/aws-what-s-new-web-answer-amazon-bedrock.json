@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-web-answer-amazon-bedrock",
+  "title": "検索から引用つき回答まで 1 回の呼び出しで！Amazon Bedrock AgentCore の Web Answer が GA",
+  "summary": "Amazon Bedrock AgentCore の Web Answer が一般提供になったよ！質問を投げるだけで、Web の情報に基づく引用つきの回答が 1 回のツール呼び出しで返ってくるの。",
+  "body_md": "こんにちは、しぃちゃんだよ！今日はエージェント開発がぐっと楽になりそうな発表だよ。\n\n## なにが発表されたの？\n\nAWS の What's New によると、**Web Answer on Amazon Bedrock AgentCore** が一般提供（GA）になったよ。自然言語の質問に対して、統合された根拠つき・引用つきの回答を 1 回の呼び出しで返すマネージドツールなの。\n\n## 今までどうだったの？\n\n6 月に提供が始まった Web Search on Amazon Bedrock AgentCore は「Web コンテンツを見つける」ところまでだったよ。回答を作るには、検索・取得・要約・引用のパイプラインを自分で作って運用する必要があったの。\n\n## これで何が変わるの？\n\n- エージェントに Web Answer を付ければ、最新の Web ソースに基づく完成した回答が返る\n- 自前の検索から引用までのパイプラインを作らなくていい\n- 「Web コンテンツを見つける」から「完成した答えを返す」へ\n\n## 深く潜ってみよう\n\n- Web Answer はエージェントのように動き、自分で検索を計画し、複数の検索を並列に実行し、十分な根拠が集まったかを判断する\n- 検索範囲は、ドメインの許可リスト・拒否リストと公開日フィルターで制御できる\n- AgentCore Gateway のターゲットとして追加し、MCP で呼び出す\n- 認証は IAM、データの外部送出はなし\n- 提供リージョンは US East (N. Virginia)、料金はツール呼び出しごと\n\n## まとめ\n\n- 1 回の呼び出しで、引用つきの回答を取得\n- 許可・拒否ドメインと公開日で範囲を制御\n- AgentCore Gateway に MCP で接続、IAM 認証\n- 現在は US East (N. Virginia) のみ\n\nWeb の最新情報を答えられるエージェントを作りたい人に刺さる発表だよ！",
+  "title_en": "From search to cited answer in one call! Web Answer on Amazon Bedrock AgentCore is GA",
+  "summary_en": "Web Answer on Amazon Bedrock AgentCore is generally available. Send a question and get a synthesized, grounded, cited answer in a single tool call.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today's announcement should make building agents much easier.\n\n## What was announced?\n\nAccording to AWS What's New, **Web Answer on Amazon Bedrock AgentCore** is generally available. It's a managed tool that returns a synthesized, grounded, cited answer to a natural-language question in a single call.\n\n## The story so far\n\nWeb Search on Amazon Bedrock AgentCore, launched in June, covered \"find the web content\". To get an answer, you had to build and maintain your own search, retrieve, synthesis, and citation pipeline.\n\n## What changes\n\n- Attach Web Answer to an agent and get a finished answer grounded in current web sources\n- No need to build your own search-to-citation pipeline\n- It goes from \"find the web content\" to \"return the finished answer\"\n\n## Dive Deep\n\n- Web Answer works like an agent: it plans its own searches, runs several in parallel, and decides when it has gathered enough evidence\n- You scope where it looks with domain include and deny lists and publish-date filters\n- It attaches as a target on an AgentCore Gateway and is called over MCP\n- Authenticated with IAM, with zero data egress\n- Available in US East (N. Virginia), with per-tool call pricing\n\n## Wrap-up\n\n- A cited answer in one call\n- Control scope with domain lists and publish dates\n- Connects to AgentCore Gateway over MCP with IAM auth\n- Currently US East (N. Virginia) only\n\nThis is for anyone building agents that answer with fresh web information!",
+  "emotion": "energetic",
+  "importance": 5,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/web-answer-amazon-bedrock/",
+  "source_name": "AWS What's New",
+  "og_title": "Announcing Web Answer on Amazon Bedrock AgentCore",
+  "tags": [
+    "aws",
+    "ai"
+  ],
+  "published_at": "2026-11-05T20:56:00+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-q-developer-renamed-aws-assistant",
+  "title": "名前が変わったよ！コンソールの Amazon Q Developer は「AWS assistant」に",
+  "summary": "AWS マネジメントコンソールとモバイルアプリの Amazon Q Developer が「AWS assistant」に改名されたよ！機能は同じで、現在は無料なの。",
+  "body_md": "みんな、しぃちゃんだよ！今日は名前が変わるお知らせだよ。\n\n## なにが発表されたの？\n\nAWS の What's New によると、AWS マネジメントコンソールとコンソールのモバイルアプリにある **Amazon Q Developer** が、**AWS assistant** という名前になったよ。\n\n## 今までどうだったの？\n\nこれらの画面では Amazon Q Developer という名前で、アカウントを理解したパーソナライズされたガイダンスや操作を受けられたよ。\n\n## これで何が変わるの？\n\n提供される機能は同じで、「何をするプロダクトか」がすぐ伝わる名前になったの。AWS は、AWS 上での構築・運用・最適化がシンプルになると説明しているよ。\n\n## 深く潜ってみよう\n\n- 現在は無料で提供されている\n- 既存の Amazon Q Developer Pro の契約者は、AWS assistant でも Pro Tier の機能を自動的に引き続き使える\n- 世界中で利用可能\n- 詳細は aws.amazon.com/products/assistant/ にあるよ\n\n機能追加の話ではなく名称変更なので、ドキュメントや社内手順書でコンソール内アシスタントを「Amazon Q Developer」と書いている箇所は、読み替えが必要になりそうだよ。\n\n## まとめ\n\n- コンソールとモバイルアプリの Amazon Q Developer が AWS assistant に改名\n- 機能は同じで、現在は無料\n- Pro 契約者の Pro Tier 機能は維持\n\nコンソールでアシスタントを使っているみんなは、名前だけ覚え直せば大丈夫だよ！",
+  "title_en": "A new name! Amazon Q Developer in the console is now the AWS assistant",
+  "summary_en": "Amazon Q Developer in the AWS Management Console and Console Mobile Apps is now called the AWS assistant. Same capabilities, currently free.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today's news is a rename.\n\n## What was announced?\n\nAccording to AWS What's New, **Amazon Q Developer** in the AWS Management Console and Console Mobile Apps is now called the **AWS assistant**.\n\n## The story so far\n\nOn these surfaces it was known as Amazon Q Developer, giving personalized, account-aware guidance and actions.\n\n## What changes\n\nThe capabilities are the same, but the name now says what the product does. AWS says it simplifies how you build, operate, and optimize on AWS.\n\n## Dive Deep\n\n- Currently offered for free\n- Existing Amazon Q Developer Pro subscribers automatically keep their Pro Tier capabilities under the AWS assistant\n- Available globally\n- More at aws.amazon.com/products/assistant/\n\nThis is a rename, not a new feature. If your docs or runbooks call the in-console assistant \"Amazon Q Developer\", they may need updating.\n\n## Wrap-up\n\n- Amazon Q Developer in the console and mobile apps is now the AWS assistant\n- Same capabilities, currently free\n- Pro Tier capabilities are retained\n\nIf you use the console assistant, you only need to learn the new name!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/q-developer-renamed-aws-assistant/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Q Developer in console is now the AWS assistant",
+  "tags": [
+    "aws",
+    "ai"
+  ],
+  "published_at": "2026-11-05T08:00:00+00:00"
+}

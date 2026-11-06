@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-security-hub-sbom-inventory",
+  "title": "全社のソフトウェア構成が一目で！AWS Security Hub に SBOM インベントリが登場",
+  "summary": "AWS Security Hub が、EC2・ECR・Lambda にインストールされたソフトウェアパッケージの SBOM インベントリを組織全体で表示するようになったよ！追加設定なし、Essentials に含まれるの。",
+  "body_md": "みんな、しぃちゃんだよ！今日はセキュリティチームに嬉しい発表だよ。\n\n## なにが発表されたの？\n\nAWS の What's New によると、**AWS Security Hub** が **SBOM（Software Bill of Materials）インベントリ**を提供するようになったよ。コンピュートリソースにインストールされているソフトウェアパッケージやアプリケーションを、組織全体で継続的に更新される形で見られるの。\n\n## なぜ重要なの？\n\n脆弱性が見つかったときに「そのパッケージはどこにあるの？」をすぐ答えられるかは、セキュリティ運用でとても大事だよね。それを一箇所で見られるようになるよ。\n\n## これで何が変わるの？\n\n- 中央のセキュリティチームが、組織全体のパッケージ一覧を確認できる\n- 検出結果のトリアージ時に、リソースの詳細ページで、そこに入っているパッケージを確認し、役割や重要度を判断できる\n- API でもインベントリを照会できる\n\n## 深く潜ってみよう\n\nSBOM は Amazon Inspector が生成したものを元に作られるよ。対象はこの 3 つ。\n\n- Amazon EC2 インスタンス\n- Amazon ECR コンテナイメージ\n- AWS Lambda 関数\n\nできることはこうだよ。\n\n- SBOM ページに、パッケージごとにバージョン、種類、インストールされているリソース数が一覧表示される\n- パッケージの属性、アカウント、リージョンで絞り込み・グループ化ができる\n- リソース詳細ページの「Installed software」タブに、そのリソースの全パッケージが表示される\n\n料金と提供範囲は次のとおりだよ。\n\n- Security Hub Essentials に追加料金なしで含まれる\n- 新しい有効化は不要。Amazon Inspector が有効な場所で自動的に表示される\n- Security Hub が使えるすべての AWS リージョンで利用可能\n\n## まとめ\n\n- Inspector の SBOM を元に、組織全体のパッケージインベントリを表示\n- EC2・ECR・Lambda が対象、API でも照会可能\n- 追加費用・追加設定なし\n\nSBOM を使って脆弱性対応を素早くしたいセキュリティ担当の人に刺さる更新だよ！",
+  "title_en": "See your whole software footprint at a glance! AWS Security Hub adds an SBOM inventory",
+  "summary_en": "AWS Security Hub now provides an organization-wide SBOM inventory of software on your EC2, ECR, and Lambda resources, with no extra configuration and included in Security Hub Essentials.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today's announcement is good news for security teams.\n\n## What was announced?\n\nAccording to AWS What's New, **AWS Security Hub** now provides a **Software Bill of Materials (SBOM) inventory**: a continuously updated, organization-wide view of the software packages and applications installed on your compute resources.\n\n## Why it matters\n\nWhen a vulnerability appears, being able to answer \"where is that package?\" quickly is key to security operations. Now you can see it in one place.\n\n## What changes\n\n- Central security teams get an organization-wide package list\n- During triage, the resource detail page shows what is installed, so you can judge its function and criticality\n- You can also query the inventory through the Security Hub API\n\n## Dive Deep\n\nThe inventory is built from SBOMs that Amazon Inspector generates for:\n\n- Amazon EC2 instances\n- Amazon ECR container images\n- AWS Lambda functions\n\nWhat you can do:\n\n- The SBOM page lists each package with its version, type, and number of resources where it is installed\n- Filter and group by package attributes, account, and Region\n- The Installed software tab on a resource detail page lists every package on that resource\n\nPricing and availability:\n\n- Included with Security Hub Essentials at no additional cost\n- No new enablement; it populates automatically where Amazon Inspector is enabled\n- Available in all AWS Regions where Security Hub is available\n\n## Wrap-up\n\n- Organization-wide package inventory built from Inspector SBOMs\n- Covers EC2, ECR, and Lambda, and is queryable via API\n- No extra cost or configuration\n\nThis is for security folks who want faster vulnerability response with SBOMs!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/security-hub-sbom-inventory/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Security Hub now provides an SBOM inventory for your compute resources",
+  "tags": [
+    "aws",
+    "security"
+  ],
+  "published_at": "2026-11-06T00:30:00+00:00"
+}
