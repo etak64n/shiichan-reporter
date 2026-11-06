@@ -1,0 +1,19 @@
+{
+  "slug": "cloudflare-changelog-2026-11-05-expiring-policies",
+  "title": "Email security の許可・ブロックポリシーに有効期限が付けられるようになったよ！",
+  "summary": "Cloudflare Email security で、allow / block ポリシーを作るときに有効期限を設定できるようになったよ。期限が過ぎると自動で失効するので、一時的な対応の消し忘れを防げるの。",
+  "body_md": "やっほー、しぃちゃんだよ！今日はメールセキュリティの運用がちょっと楽になるニュースを見つけたよ。\n\n## なにが発表されたの？\n\nCloudflare の Changelog によると、Email security で allow（許可）または block（ブロック）のポリシーを作るときに、有効期限の日付を設定できるようになったみたい！\n\n選んだ日付が過ぎるとポリシーは自動的に失効して、それ以降は適用されなくなるよ。\n\n## 今までどうだったの？\n\n一時的に特定の送信元を許可したり、ブロックしたりしたいとき、使い終わったら手動でポリシーを削除する必要があったよ。\n\n消し忘れると、本来は一時的だったはずの例外がずっと残り続けちゃう可能性があったの。\n\n## これで何が変わるの？\n\n- 期間限定の許可・ブロックを、作成時に期限まで決めて登録できる\n- 期限が来れば自動で失効するので、手動で外す手間と消し忘れの心配が減る\n- セキュリティ担当の人は、一時対応のポリシーが積み上がっていくのを防ぎやすくなる\n\n## 深く潜ってみよう\n\n原文でわかるのは次のところまでだよ。\n\n- 対象は allow と block のポリシー\n- 期限を過ぎたポリシーは失効して適用されなくなる\n- プランを問わず、すべての Email security のお客さんが使える\n\n設定画面での場所や、期限に指定できる範囲などの細かい仕様は、Changelog には書かれていなかったよ。\n\n## まとめ\n\n- Email security の allow / block ポリシーに有効期限を設定できるように\n- 期限後は自動で失効して適用されない\n- 全プランで利用可能\n\nメールのポリシーを運用していて、一時的な例外をよく作る管理者さんに刺さる更新だよ！",
+  "title_en": "Email security policies can now expire on their own!",
+  "summary_en": "Cloudflare Email security now lets you set an expiration date when you create an allow or block policy. Once the date passes, the policy stops applying, so temporary exceptions don't linger.",
+  "body_md_en": "Hi, it's Shii-chan! Today I found a small update that makes email security operations a bit easier.\n\n## What was announced?\n\nAccording to the Cloudflare Changelog, Email security now lets you set an expiration date when you create an allow or block policy.\n\nWhen the selected date passes, the policy expires and no longer applies.\n\n## The story so far\n\nIf you wanted to temporarily allow or block a sender, you had to remember to delete the policy by hand when you were done.\n\nIf it got forgotten, a temporary exception could stay in place indefinitely.\n\n## What changes\n\n- You can set an end date for temporary allow and block policies when you create them\n- Policies expire automatically, so there's less manual cleanup and less risk of forgetting\n- Security teams can keep temporary policies from piling up\n\n## Dive Deep\n\nHere is what the changelog tells us:\n\n- It applies to allow and block policies\n- Expired policies no longer apply\n- It is available to all Email security customers, regardless of plan\n\nThe changelog doesn't describe where the setting lives in the dashboard or any limits on the date you can pick.\n\n## Wrap-up\n\n- Allow / block policies in Email security can now have an expiration date\n- Expired policies stop applying automatically\n- Available on every plan\n\nThis one is great for admins who often create temporary exceptions in their email policies!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-11-05-expiring-policies/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Email security - Set expiration dates for Email security policies",
+  "tags": [
+    "cloudflare",
+    "security"
+  ],
+  "published_at": "2026-11-05T00:00:00+00:00"
+}

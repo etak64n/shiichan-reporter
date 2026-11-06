@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-ec2-imdsv1enabled-cloudwatch-metric",
+  "title": "IMDSv1 が残ってるインスタンス、ひと目でわかる！EC2 に ImdsV1Enabled メトリクス登場",
+  "summary": "Amazon EC2 が ImdsV1Enabled という CloudWatch メトリクスを公開したよ。IMDSv1 がまだ有効なインスタンスを把握して、IMDSv2 への移行状況を追えるの。",
+  "body_md": "みんな、しぃちゃんだよ！今日は IMDSv2 移行を進めている人にうれしいお知らせだよ。\n\n## なにが発表されたの？\n\nAWS の What's New によると、Amazon EC2 が `ImdsV1Enabled` という CloudWatch メトリクスを公開するようになったよ！\n\nこれで、どのインスタンスでまだ Instance Metadata Service Version 1（IMDSv1）が有効なのかを見えるようになるの。\n\n## 今までどうだったの？\n\n複数のアカウントやリージョンにまたがって、IMDSv1 が残っているインスタンスを探すには、各インスタンスのメタデータオプションを確認する自前のツールを作る必要があったよ。\n\n## これで何が変わるの？\n\n- CloudWatch のダッシュボードで、IMDSv1 を許可しているインスタンスを追跡できる\n- アラームを設定して、移行の漏れを見つけたり、対応の優先順位を付けたりできる\n- アカウント・リージョンをまたいだ移行状況を、大規模でも継続的に確認できる\n\n## 深く潜ってみよう\n\n原文に書かれている情報はこのあたりだよ。\n\n- 提供範囲: すべての AWS リージョン\n- 料金: 追加費用なし\n- 詳しい説明は EC2 ユーザーガイドの ImdsV1Enabled メトリクスの項目に、移行手順は「Transition to IMDSv2」にあるよ\n\nメトリクスのディメンションなど細かい仕様は、発表文には載っていなかったよ。\n\n## まとめ\n\n- IMDSv1 が有効なインスタンスを示す ImdsV1Enabled メトリクスが登場\n- ダッシュボードとアラームで IMDSv2 への移行状況を追える\n- 全リージョンで追加費用なし\n\n多くのアカウントで EC2 を運用していて、IMDSv2 への移行を完了させたいセキュリティ・インフラ担当の人に刺さるよ！",
+  "title_en": "Spot leftover IMDSv1 instances at a glance with the new EC2 ImdsV1Enabled metric!",
+  "summary_en": "Amazon EC2 now publishes an ImdsV1Enabled CloudWatch metric. It shows which instances still have IMDSv1 enabled, so you can track your IMDSv2 migration.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Here's good news if you're working on your IMDSv2 migration.\n\n## What was announced?\n\nAccording to AWS What's New, Amazon EC2 now publishes a CloudWatch metric called `ImdsV1Enabled`.\n\nIt gives you visibility into which instances still have Instance Metadata Service Version 1 (IMDSv1) enabled.\n\n## The story so far\n\nTo find instances that still allowed IMDSv1 across accounts and Regions, you had to build your own tooling to check each instance's metadata options.\n\n## What changes\n\n- You can track instances that still allow IMDSv1 on CloudWatch dashboards\n- You can set alarms to find migration gaps and prioritize remediation\n- You get an ongoing signal across accounts and Regions, even at scale\n\n## Dive Deep\n\nHere is what the announcement says:\n\n- Availability: all AWS Regions\n- Cost: no additional charge\n- Details are in the ImdsV1Enabled metric section of the EC2 User Guide, and migration steps are in \"Transition to IMDSv2\"\n\nThe announcement doesn't cover details such as metric dimensions.\n\n## Wrap-up\n\n- The new ImdsV1Enabled metric shows instances with IMDSv1 enabled\n- Dashboards and alarms let you track your IMDSv2 migration\n- Available in all Regions at no additional cost\n\nThis is a great fit for security and infrastructure teams running EC2 across many accounts who want to finish the IMDSv2 migration!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/ec2-imdsv1enabled-cloudwatch-metric/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon EC2 now publishes ImdsV1Enabled CloudWatch metric",
+  "tags": [
+    "aws",
+    "security",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-05T08:00:00+00:00"
+}

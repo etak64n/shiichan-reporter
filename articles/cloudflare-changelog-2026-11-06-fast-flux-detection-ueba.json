@@ -1,0 +1,19 @@
+{
+  "slug": "cloudflare-changelog-2026-11-06-fast-flux-detection-ueba",
+  "title": "Cloudflare One の UEBA が fast flux を検知！リスクスコアに反映されるよ",
+  "summary": "Cloudflare One の UEBA に、fast flux 検知が定義済みのリスク行動として追加されたよ。有効にすると、検知結果がユーザーのリスクスコアに加わるの。",
+  "body_md": "こんにちは、しぃちゃんだよ！今日は Cloudflare One のセキュリティ機能のアップデートを紹介するね。\n\n## なにが発表されたの？\n\nCloudflare の Changelog によると、Cloudflare One の UEBA（ユーザー・エンティティ行動分析）に、fast flux 検知が定義済みのリスク行動として追加されたよ！\n\n有効にすると、検知結果がそのユーザーのリスクスコアに加わるの。\n\n## なぜ重要なの？\n\nfast flux は、ドメインに対して返す IP アドレスを素早く入れ替える DNS の手法だよ。攻撃者はこれを使って、悪意あるインフラを追跡しにくく、止めにくくできるの。\n\nこれを検知できると、セキュリティチームは怪しい挙動を早めに見つけて調べやすくなるよ。\n\n## これで何が変わるの？\n\n- fast flux に関わる挙動が、ユーザーのリスクスコアに反映される\n- 既存のリスクスコアの運用の中で、DNS ベースの怪しい動きも見られるようになる\n\n## 深く潜ってみよう\n\n有効にする手順と提供範囲は次のとおりだよ。\n\n- 場所: Cloudflare Zero Trust ダッシュボードの Risk score の中の Risk behaviors\n- 対象プラン: Enterprise\n- 詳細は「User risk score」のドキュメントを参照\n\n検知の閾値や仕組みの詳細は、Changelog には書かれていなかったよ。\n\n## まとめ\n\n- UEBA に fast flux 検知が定義済みのリスク行動として追加\n- 有効にすると検知がユーザーのリスクスコアに寄与する\n- Enterprise プランで、Risk behaviors から有効化\n\nZero Trust でユーザーのリスクを見ているセキュリティチームに刺さる更新だよ！",
+  "title_en": "Cloudflare One's UEBA now detects fast flux and feeds it into risk scores!",
+  "summary_en": "Cloudflare One now includes fast flux detection as a predefined UEBA risk behavior. When enabled, detections contribute to a user's risk score.",
+  "body_md_en": "Hello, it's Shii-chan! Today I'm covering a security update for Cloudflare One.\n\n## What was announced?\n\nAccording to the Cloudflare Changelog, Cloudflare One now includes fast flux detection as a predefined risk behavior for user and entity behavior analytics (UEBA).\n\nWhen it's enabled, detections contribute to a user's risk score.\n\n## Why it matters\n\nFast flux is a DNS technique that rapidly changes the IP addresses returned for a domain. Threat actors can use it to make malicious infrastructure harder to track and take down.\n\nDetecting it helps security teams spot risky activity and investigate it sooner.\n\n## What changes\n\n- Fast flux behavior is reflected in the user's risk score\n- DNS-based suspicious activity can be part of your existing risk score workflow\n\n## Dive Deep\n\nHere's how to turn it on and who can use it:\n\n- Where: Risk score, then Risk behaviors, in the Cloudflare Zero Trust dashboard\n- Plans: Enterprise\n- More details: see the \"User risk score\" documentation\n\nThe changelog doesn't describe detection thresholds or how the detection works.\n\n## Wrap-up\n\n- Fast flux detection is now a predefined UEBA risk behavior\n- When enabled, detections contribute to a user's risk score\n- Available on Enterprise plans, enabled from Risk behaviors\n\nThis one is for security teams who track user risk in Zero Trust!",
+  "emotion": "thinking",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-11-06-fast-flux-detection-ueba/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Cloudflare One - Cloudflare One adds fast flux detection to UEBA",
+  "tags": [
+    "cloudflare",
+    "security"
+  ],
+  "published_at": "2026-11-06T17:58:24+00:00"
+}
