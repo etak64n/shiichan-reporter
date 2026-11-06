@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-ec2-capacity-blocks-ml",
+  "title": "EC2 Capacity Blocks for ML の前払い料金が償却表示に！GPU コストを配賦しやすいよ",
+  "summary": "CUR 2.0 と Cost Explorer で、EC2 Capacity Blocks for ML の前払い料金が予約期間にわたって償却されて表示されるようになったよ。未使用分のコストも見えるの。",
+  "body_md": "おつかれさま、しぃちゃんだよ！GPU を予約して使っている人に嬉しい、コスト管理のアップデートだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Data Exports for Cost and Usage Report（CUR）2.0 と AWS Cost Explorer が、Amazon EC2 Capacity Blocks for ML の前払い料金を、各予約の期間にわたって償却（amortize）して表示するようになったと発表されたよ。\n\n## 今までどうだったの？\n\nこれまでは、Capacity Block の前払い料金は購入日に 1 回の請求として表示されていたよ。そのせいで、そのコストが予約期間中の利用にどう割り振られるのか分かりにくかったの。\n\n## これで何が変わるの？\n\n償却されたコストがインスタンスの利用状況と並んで表示されるようになったよ。\n\n- Capacity Block に起動した各インスタンスの償却コストが見える\n- 未使用のキャパシティの償却コストが見える\n\nだから、前払い料金を実際に使ったワークロードに紐づけたり、使われなかった分を見つけたりできるの。GPU コストをチーム、プロジェクト、アプリケーションに配賦できるし、予約のうち未使用だった割合を見て、次の Capacity Block の購入計画にも活かせるよ。\n\n## 深く潜ってみよう\n\n- CUR 2.0: 償却コストは `reservation_amortized_upfront_fee_for_billing_period` と `reservation_effective_cost` の列に出る。`reservation_net_effective_cost` は割引後の償却コストを示す\n- Cost Explorer: 償却コストのビューを選ぶと、予約に配賦された Capacity Block のコストが見られる\n- 料金とリージョン: 追加料金なし。AWS GovCloud（US）リージョンと中国リージョンを除くすべての AWS リージョンで使える\n\n## まとめ\n\n- Capacity Blocks for ML の前払い料金が、予約期間にわたって償却表示される\n- インスタンスごとの償却コストと未使用分のコストが分かる\n- CUR 2.0 と Cost Explorer の両方で使え、追加料金はなし\n\nML 向け GPU を予約していて、コスト配賦や FinOps を担当している人に刺さるよ！",
+  "title_en": "EC2 Capacity Blocks for ML upfront fees are now amortized in CUR 2.0 and Cost Explorer",
+  "summary_en": "CUR 2.0 and Cost Explorer now amortize the upfront fee of EC2 Capacity Blocks for ML across each reservation, including the cost of unused capacity.",
+  "body_md_en": "Hi, it's Shii-chan! This cost management update is great news if you reserve GPUs!\n\n## What was announced?\n\nIn AWS What's New, AWS announced that AWS Data Exports for Cost and Usage Report (CUR) 2.0 and AWS Cost Explorer now amortize the upfront fee for Amazon EC2 Capacity Blocks for ML across the duration of each reservation.\n\n## The story so far\n\nPreviously, a Capacity Block's upfront fee appeared as a single charge on the purchase date, which made it hard to see how that cost was spread across usage over the reservation.\n\n## What changes\n\nThe amortized cost now appears alongside your instance usage:\n\n- The amortized cost of each instance launched into a Capacity Block\n- The amortized cost of unused capacity\n\nThat lets you attribute the upfront fee to the workloads that used it and spot capacity that went unused. You can allocate GPU costs to teams, projects, and applications, and see what share of a reservation went unused to plan future Capacity Block purchases.\n\n## Dive Deep\n\n- CUR 2.0: amortized costs appear in the `reservation_amortized_upfront_fee_for_billing_period` and `reservation_effective_cost` columns, and `reservation_net_effective_cost` shows the amortized cost after discounts\n- Cost Explorer: select the amortized cost view to see Capacity Block costs allocated for the reservation\n- Pricing and Regions: no additional charge, in all AWS Regions except the AWS GovCloud (US) Regions and the China Regions\n\n## Wrap-up\n\n- Capacity Blocks for ML upfront fees are amortized over the reservation\n- You can see per-instance amortized cost and unused capacity cost\n- Works in both CUR 2.0 and Cost Explorer at no extra charge\n\nThis is for anyone reserving ML GPUs and handling cost allocation or FinOps!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-ec2-capacity-blocks-ml/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS launches support for amortization of EC2 Capacity Blocks for ML",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "ai"
+  ],
+  "published_at": "2026-11-06T15:00:00+00:00"
+}

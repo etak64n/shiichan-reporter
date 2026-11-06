@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-redshift-expands-super-to-16-million-bytes",
+  "title": "Redshift の SUPER 型が文字列 1,600 万バイトまで！上限が 65,535 バイトから大幅アップ",
+  "summary": "Amazon Redshift の SUPER 型で、1 つの文字列を最大 1,600 万バイトまで格納できるようになったよ。以前の上限は 65,535 バイトで、データベースパラメータでオプトインして使うの。",
+  "body_md": "こんにちは、しぃちゃんだよ！Redshift の SUPER 型に、嬉しい上限アップが来たよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Redshift が SUPER データ型の中の個々の文字列を最大 1,600 万バイトまでサポートしたと発表されたよ。データベースパラメータでオプトインすると有効になるの。\n\n## 今までどうだったの？\n\nこれまで、SUPER 型の中の個々の文字列は 65,535 バイトまでという制限があったよ。それより長い文字列を入れたいときは、ロード前に複雑な変換をして元データを Redshift に格納できる形に直す必要があったの。\n\n## これで何が変わるの？\n\n65,535 バイトを超える長い文字列を、追加の処理なしで直接取り込めるようになるよ。たとえば利用規約や契約書のような長いドキュメントだね。取り込んだデータは SQL でクエリできるの。\n\n- 前: 文字列は 65,535 バイトまで。長いものは事前変換が必要\n- 今: 最大 1,600 万バイトまで直接取り込める\n\n## 深く潜ってみよう\n\n- 対象のデータ: JSON、PARQUET、TEXT、CSV のソースファイルの取り込み時と、ELT（extract, load, transform）処理でのデータ変換時に適用される\n- 使い方: データベースパラメータでオプトインする\n- クエリ: PartiQL でデータを探索・ナビゲートしたり、文字列関数で変換したりできる\n- 関数: JSON_PARSE、CONCAT、LISTAGG が、最大 1,600 万バイトの入力文字列を受け取り、その長さの文字列を返せる\n- 提供リージョン: Redshift が使えるすべての AWS リージョン（AWS GovCloud（US）リージョンを含む）\n\n## まとめ\n\n- SUPER 型の個々の文字列の上限が 65,535 バイトから約 1,600 万バイトに\n- データベースパラメータでオプトインして使う\n- JSON、PARQUET、TEXT、CSV の取り込みと ELT で有効\n- JSON_PARSE、CONCAT、LISTAGG も大きな文字列に対応\n\n長文テキストを含む半構造化データを Redshift に入れたいデータエンジニアさんに刺さるよ！",
+  "title_en": "Amazon Redshift SUPER now stores strings up to 16 million bytes",
+  "summary_en": "Amazon Redshift now supports individual strings up to 16 million bytes in SUPER data types, up from 65,535 bytes. You opt in through a database parameter.",
+  "body_md_en": "Hi, it's Shii-chan! Redshift's SUPER type just got a very welcome limit increase!\n\n## What was announced?\n\nIn AWS What's New, AWS announced that Amazon Redshift now supports individual strings up to 16 million bytes within SUPER data types. You enable it by opting in through a database parameter.\n\n## The story so far\n\nPreviously, individual strings within SUPER data types were limited to 65,535 bytes. To store longer ones, you needed complex pre-loading transformations to reshape the source data.\n\n## What changes\n\nYou can now ingest large individual strings greater than 65,535 bytes without extra processing, such as lengthy documents like terms and conditions and contracts. Once loaded, they're queryable using SQL.\n\n- Before: strings capped at 65,535 bytes, with pre-load transformations for longer ones\n- Now: up to 16 million bytes ingested directly\n\n## Dive Deep\n\n- Applies to: ingestion from JSON, PARQUET, TEXT, and CSV source files, and data transformation in ELT (extract, load, transform) processes\n- How to enable: opt in through a database parameter\n- Querying: explore and navigate the data with PartiQL, or transform it with string functions\n- Functions: JSON_PARSE, CONCAT, and LISTAGG can take input strings and return output strings up to 16 million bytes\n- Availability: all AWS Regions where Amazon Redshift is available, including the AWS GovCloud (US) Regions\n\n## Wrap-up\n\n- The SUPER string limit goes from 65,535 bytes to 16 million bytes\n- Opt in via a database parameter\n- Works for JSON, PARQUET, TEXT, and CSV ingestion and for ELT\n- JSON_PARSE, CONCAT, and LISTAGG handle the larger strings\n\nThis is for data engineers loading semi-structured data with long text into Redshift!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-redshift-expands-super-to-16-million-bytes/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Redshift expands SUPER data type to store strings up to 16 million bytes",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-06T16:00:00+00:00"
+}

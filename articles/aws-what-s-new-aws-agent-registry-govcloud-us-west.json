@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-agent-registry-govcloud-us-west",
+  "title": "AWS Agent Registry が GovCloud（US-West）で一般提供！エージェントの台帳が政府向けにも",
+  "summary": "Amazon Bedrock AgentCore の AWS Agent Registry が、AWS GovCloud（US-West）リージョンで一般提供になったよ。MCP サーバーやエージェントを承認ワークフロー付きで一元管理できるの。",
+  "body_md": "みんな、しぃちゃんだよ！AI エージェントの管理まわりで、公共機関向けのニュースが来たよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Bedrock AgentCore から使える AWS Agent Registry が、AWS GovCloud（US-West）リージョンで一般提供になったと発表されたよ。\n\nAWS Agent Registry は、リソースを整理・キュレーション・発見するための中央カタログを提供する、フルマネージドの発見サービスなの。\n\n## なぜ重要なの？\n\nエージェントやツールが増えると、組織の中に何があるのか分からなくなりがちだよね。GovCloud（US-West）で使えることで、公共機関やそのパートナーが、環境内のエージェントとツールを 1 つのガバナンスされたインベントリとして持てるようになるの。\n\n## これで何が変わるの？\n\n承認ワークフローと AWS CloudTrail の監査ログが、コンプライアンスと監督の要件を支えてくれるよ。GovCloud でも、人と AI エージェントが適切なツールやエージェントを見つけられるようになるの。\n\n## 深く潜ってみよう\n\n検索可能なレジストリに公開できるのは、次のリソースだよ。\n\n- MCP サーバー\n- ツール\n- エージェント\n- エージェントスキル\n- カスタムリソース\n\n何が発見可能になるかは、承認ワークフローで制御できるの。見つける方法は次の 3 つだよ。\n\n- ハイブリッド検索\n- カタログのブラウジング\n- ネイティブな MCP エンドポイント\n\n始めるには、AWS Agent Registry のドキュメントを見てね。\n\n## まとめ\n\n- AWS Agent Registry が GovCloud（US-West）で一般提供に\n- MCP サーバー、ツール、エージェント、スキルなどを検索可能なレジストリで管理\n- 承認ワークフローと CloudTrail 監査ログでガバナンスを支える\n\nGovCloud でエージェント基盤を整備する公共機関やパートナー企業に刺さるよ！",
+  "title_en": "AWS Agent Registry is now generally available in AWS GovCloud (US-West)",
+  "summary_en": "AWS Agent Registry, available through Amazon Bedrock AgentCore, is now generally available in AWS GovCloud (US-West), with approval workflows and CloudTrail audit logs.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Here's some news for public sector teams managing AI agents!\n\n## What was announced?\n\nIn AWS What's New, AWS announced that AWS Agent Registry, available through Amazon Bedrock AgentCore, is now generally available in the AWS GovCloud (US-West) Region.\n\nAWS Agent Registry is a fully managed discovery service that gives your organization a central catalog for organizing, curating, and discovering resources.\n\n## Why it matters\n\nAs agents and tools multiply, it gets hard to know what exists in your organization. With Agent Registry in GovCloud (US-West), public sector organizations and their partners get a single governed inventory of the agents and tools in their environment.\n\n## What changes\n\nApproval workflows and AWS CloudTrail audit logs support compliance and oversight requirements. People and AI agents in GovCloud can find the right tools and agents.\n\n## Dive Deep\n\nYou can publish these resources to a searchable registry:\n\n- MCP servers\n- Tools\n- Agents\n- Agent skills\n- Custom resources\n\nAn approval workflow controls what becomes discoverable. People and agents can find resources through:\n\n- Hybrid search\n- Catalog browsing\n- A native MCP endpoint\n\nTo get started, see the AWS Agent Registry documentation.\n\n## Wrap-up\n\n- AWS Agent Registry is generally available in GovCloud (US-West)\n- Manage MCP servers, tools, agents, skills and more in a searchable registry\n- Approval workflows and CloudTrail audit logs support governance\n\nThis is for public sector organizations and partners building agent platforms on GovCloud!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-agent-registry-govcloud-us-west/",
+  "source_name": "AWS What's New",
+  "og_title": "Agent Registry is now generally available in AWS GovCloud (US-West) Region",
+  "tags": [
+    "aws",
+    "ai",
+    "security"
+  ],
+  "published_at": "2026-11-06T19:48:00+00:00"
+}

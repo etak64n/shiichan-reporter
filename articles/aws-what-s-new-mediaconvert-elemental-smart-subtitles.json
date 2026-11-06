@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-mediaconvert-elemental-smart-subtitles",
+  "title": "MediaConvert に AI 字幕 Smart Subtitles が直結！外部の字幕パイプラインはいらないよ",
+  "summary": "AWS Elemental MediaConvert が、AWS Elemental Inference 上の AI 字幕 Smart Subtitles とネイティブ統合されたよ。トランスコードと字幕生成が 1 つのワークフローで完結するの。",
+  "body_md": "みんな、しぃちゃんだよ！動画配信まわりで嬉しいニュースが届いたよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Elemental MediaConvert が Smart Subtitles を統合したと発表されたよ。Smart Subtitles は、AWS Elemental Inference と最新の音声認識モデルの上に作られた、AI による字幕生成ソリューションなの。ビデオオンデマンド（VOD）のトランスコードとパッケージングのワークフローに、自動字幕生成が直接入ってくるよ。\n\n## これで何が変わるの？\n\n別の外部キャプショニングパイプラインを用意しなくても、トランスコードと字幕作成を 1 つのワークフローで管理できるようになるよ。VOD を配信している人は、字幕のためだけに別の仕組みを回す手間が減るの。\n\n## 深く潜ってみよう\n\n- 対応言語: 英語、フランス語、ドイツ語、イタリア語、ポルトガル語、スペイン語の 6 言語をネイティブサポート\n- 出力: 音声を自動で文字起こしして字幕にし、MediaConvert でテキストベースのサイドカー形式にパッケージしたり、映像に焼き込む（burn-in）こともできる\n- カスタム辞書: Elemental Inference で固有名詞、ブランド名、専門用語などを辞書として定義し、文字起こしの品質を高められる\n- 他の機能との組み合わせ: Smart Cropping などの既存アドオンと組み合わせて、エンドツーエンドのメディアパイプラインやインテリジェントなフレーミング、HLS・DASH といった配信向け形式でのアクセシブルな字幕配信ができる\n- 提供リージョン: Elemental Inference が使えるリージョン。次のリージョンが含まれる\n  - US East（N. Virginia）\n  - US West（Oregon）\n  - Europe（Ireland）\n  - Asia Pacific（Mumbai）\n  - Asia Pacific（Sydney）\n\n## まとめ\n\n- MediaConvert が Smart Subtitles とネイティブ統合\n- VOD のトランスコードと字幕生成が 1 つのワークフローに\n- 6 言語対応、サイドカー出力と burn-in の両方に対応\n- カスタム辞書で固有名詞や専門用語の精度を上げられる\n\n字幕づくりに手間をかけている動画配信チームに刺さるアップデートだよ！",
+  "title_en": "MediaConvert now integrates AI-powered Smart Subtitles: no external captioning pipeline needed",
+  "summary_en": "AWS Elemental MediaConvert natively integrates Smart Subtitles, built on AWS Elemental Inference, so transcoding and subtitle creation happen in one VOD workflow.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Some happy news for video streaming just landed!\n\n## What was announced?\n\nIn AWS What's New, AWS announced that AWS Elemental MediaConvert now integrates Smart Subtitles, an AI-powered subtitling solution built on AWS Elemental Inference and the latest speech recognition models. Automated subtitle generation now sits directly inside your video-on-demand (VOD) transcoding and packaging workflows.\n\n## What changes\n\nYou no longer need a separate external captioning pipeline: you can manage transcoding and subtitle creation in a single, unified workflow. If you run VOD, that's one less system to operate just for captions.\n\n## Dive Deep\n\n- Languages: native support for English, French, German, Italian, Portuguese, and Spanish\n- Output: audio is transcribed into subtitles automatically, and MediaConvert can package them as text-based side-car formats or burn them in\n- Custom dictionaries: define them in Elemental Inference to guide the model on proper nouns, brand names, technical terminology, and more\n- Works with other add-ons: it complements features such as Smart Cropping for end-to-end media pipelines, intelligent framing, and accessible subtitle delivery in distribution-ready formats like HLS and DASH\n- Availability: all Regions where Elemental Inference is available, including:\n  - US East (N. Virginia)\n  - US West (Oregon)\n  - Europe (Ireland)\n  - Asia Pacific (Mumbai)\n  - Asia Pacific (Sydney)\n\n## Wrap-up\n\n- MediaConvert natively integrates Smart Subtitles\n- VOD transcoding and subtitle generation share one workflow\n- Six languages, with both side-car output and burn-in\n- Custom dictionaries improve accuracy for names and terminology\n\nThis is for video teams spending a lot of effort on subtitles!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/mediaconvert-elemental-smart-subtitles/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Elemental MediaConvert adds a native integration with AWS Elemental Inference Smart Subtitles",
+  "tags": [
+    "aws",
+    "ai"
+  ],
+  "published_at": "2026-11-06T08:00:00+00:00"
+}

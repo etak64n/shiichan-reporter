@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-msk-replicator-additional-aws-regions",
+  "title": "Amazon MSK Replicator が GovCloud（US-East・US-West）に登場！",
+  "summary": "Amazon MSK Replicator が AWS GovCloud（US-East、US-West）で使えるようになったよ。Kafka クラスター間のレプリケーションを、自前のインフラなしで自動化できるの。",
+  "body_md": "やっほー、しぃちゃんだよ！Kafka を使っている GovCloud ユーザーさんに朗報だよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon MSK Replicator が AWS GovCloud（US-East、US-West）リージョンで使えるようになったと発表されたよ。Amazon MSK クラスター間のストリーミングデータのレプリケーションに加えて、外部の Apache Kafka クラスターから Amazon MSK Provisioned クラスターへのレプリケーションもできるの。外部クラスターは、オンプレミス、AWS 上のセルフマネージド、他のクラウドのどれでも大丈夫だよ。\n\n## これで何が変わるの？\n\nMSK Replicator は、Kafka クラスター間のデータレプリケーションを自動化する Amazon MSK の機能だよ。カスタムのレプリケーション基盤を管理したり、オープンソースのツールを設定したりする必要がなくなるの。GovCloud でも、リージョン障害に強いストリーミングアプリケーションを作りやすくなるよ。\n\n## 深く潜ってみよう\n\n- 自動の非同期レプリケーション: カスタムコードの作成、インフラの管理、リージョン間ネットワークの設定が不要\n- 自動スケール: 基盤リソースが自動でスケールするので、容量を監視しなくてもオンデマンドでレプリケートできる\n- メタデータも複製: 次の情報もレプリケートされる\n  - トピックの設定\n  - アクセス制御リスト（ACL）\n  - コンシューマーグループのオフセット\n- フェイルオーバー: リージョンで予期しないイベントが起きたら、別の AWS リージョンにフェイルオーバーして処理を再開できる\n- 始め方: Amazon MSK コンソールまたは CLI から。ドキュメント、製品ページ、料金ページも用意されている\n\n## まとめ\n\n- MSK Replicator が GovCloud（US-East、US-West）で利用可能に\n- MSK クラスター間と、外部 Kafka から MSK Provisioned へのレプリケーションに対応\n- トピック設定、ACL、コンシューマーグループのオフセットも複製される\n- 障害時は別リージョンにフェイルオーバーして処理を再開できる\n\nGovCloud で Kafka の可用性や事業継続性を高めたい人に刺さるよ！",
+  "title_en": "Amazon MSK Replicator is now available in AWS GovCloud (US-East, US-West)",
+  "summary_en": "Amazon MSK Replicator is now available in the AWS GovCloud (US-East, US-West) Regions, automating Kafka replication without custom infrastructure.",
+  "body_md_en": "Hi, it's Shii-chan! Good news for Kafka users on GovCloud!\n\n## What was announced?\n\nIn AWS What's New, AWS announced that Amazon MSK Replicator is now available in the AWS GovCloud (US-East, US-West) Regions. You can replicate streaming data across Amazon MSK clusters, and from external Apache Kafka clusters to Amazon MSK Provisioned clusters. The external clusters can be on-premises, self-managed on AWS, or on other cloud providers.\n\n## What changes\n\nMSK Replicator is a feature of Amazon MSK that automates data replication between Kafka clusters, so you don't need to manage custom replication infrastructure or configure open-source tools. It makes it easier to build regionally resilient streaming applications in GovCloud too.\n\n## Dive Deep\n\n- Automatic asynchronous replication: no custom code, no infrastructure to manage, and no cross-region networking to set up\n- Automatic scaling: the underlying resources scale on their own, so you replicate on demand without monitoring capacity\n- Metadata is replicated too:\n  - Topic configurations\n  - Access Control Lists (ACLs)\n  - Consumer group offsets\n- Failover: if an unexpected event occurs in a Region, you can fail over to another AWS Region and resume processing\n- Getting started: use the Amazon MSK console or the CLI; documentation, product, and pricing pages are available\n\n## Wrap-up\n\n- MSK Replicator is available in GovCloud (US-East, US-West)\n- Supports replication between MSK clusters and from external Kafka to MSK Provisioned\n- Topic configs, ACLs, and consumer group offsets are replicated\n- On a Region event, fail over to another Region and resume processing\n\nThis is for anyone who wants higher Kafka availability and business continuity on GovCloud!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-msk-replicator-additional-aws-regions",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon MSK Replicator is now available in AWS GovCloud (US-East, US-West) Regions",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-06T16:00:00+00:00"
+}

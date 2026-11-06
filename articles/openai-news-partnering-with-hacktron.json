@@ -1,0 +1,20 @@
+{
+  "slug": "openai-news-partnering-with-hacktron",
+  "title": "OpenAI が Hacktron と手を組んだよ！自社システムの脆弱性探しを強化",
+  "summary": "OpenAI が Hacktron と提携して、自社システムの脆弱性を探すことを発表したよ。特にサードパーティ連携部分を重点的にテストして、Hacktron には Daybreak Red 経由で最先端モデルへのアクセスも広げるの。",
+  "body_md": "おつかれさま、しぃちゃんだよ！今日は OpenAI のセキュリティ強化のニュースを紹介するね！\n\n## なにが発表されたの？\n\nOpenAI の News で、Hacktron との提携が発表されたよ。OpenAI のシステムにある脆弱性を一緒に探すのが目的なの。OpenAI のエンジニアと Hacktron のセキュリティ研究者が、優先度の高い領域を一緒に選んでテストして、特にシステムがサードパーティのサービスとどうつながっているかに注目するみたい。\n\nこの提携の一環として、Hacktron が最先端モデルを使える範囲も、Daybreak Red 経由で広がるよ。\n\n## なぜ重要なの？\n\nAI エージェントがいろんなサービスをこれまでにない形でつなぐようになると、その接続部分のテストがますます大事になるよ。OpenAI は、フロンティア AI でサイバー防御を加速させるのと同じ緊張感で、自社システムの脆弱性も見つけて直していくと説明しているの。\n\n## これで何が変わるの？\n\n外部との連携部分を、より深くテストして防御に活かせるようになるよ。OpenAI は他にも次の取り組みを進めているの。\n\n- 次のセキュリティスプリントに Cathedral の研究者が参加する\n- バグバウンティの報酬を引き上げた\n\n## 深く潜ってみよう\n\nHacktron は、コードレビュー、ペネトレーションテスト、レッドチーミング向けの AI エージェントを作っているチームだよ。OpenAI は、Security Bug Bounty プログラムを通じて Hacktron を知ったそうで、研究者が見つけて報告した脆弱性のインパクトに感銘を受けたと書いているの。Hacktron の研究は、アプリケーション、クラウドインフラ、ID システムがどう相互作用するかの脆弱性を明らかにしてきたみたい。\n\n対象範囲の確認や発見の報告は、OpenAI の Security Bug Bounty プログラム（Bugcrowd 上）から行えるよ。\n\n## まとめ\n\n- OpenAI が Hacktron と提携して自社システムの脆弱性を探す\n- 重点はサードパーティサービスとの連携部分\n- Hacktron への最先端モデルのアクセスを Daybreak Red 経由で拡大\n- バグバウンティの増額や Cathedral とのセキュリティスプリントも並行して進行\n\nセキュリティ担当の人や、AI エージェント時代の防御を考えている人に刺さるニュースだよ！",
+  "title_en": "OpenAI partners with Hacktron to hunt for vulnerabilities in its own systems",
+  "summary_en": "OpenAI is partnering with Hacktron to find vulnerabilities in its systems, focusing on connections with third-party services, and is expanding Hacktron's access to frontier models through Daybreak Red.",
+  "body_md_en": "Hi, it's Shii-chan! Today I'm sharing a security news item from OpenAI!\n\n## What was announced?\n\nIn OpenAI News, OpenAI announced a partnership with Hacktron to find vulnerabilities in OpenAI's systems. OpenAI engineers and Hacktron's security researchers will pick high-priority areas to test together, with a focus on how the systems interact with third-party services.\n\nAs part of the partnership, Hacktron's access to frontier models is expanding through Daybreak Red.\n\n## Why it matters\n\nAs AI agents connect services in new ways, testing those connections matters more and more. OpenAI says it is applying the same urgency to finding and fixing vulnerabilities in its own systems as it does to accelerating cyber defense with frontier AI.\n\n## What changes\n\nConnections to outside services can be tested more deeply, and what's learned feeds back into defenses. OpenAI is also running other efforts:\n\n- Cathedral's researchers will join the next security sprint\n- Bug bounty rewards have been raised\n\n## Dive Deep\n\nHacktron builds AI agents for code review, penetration testing, and red teaming. OpenAI got to know the team through its Security Bug Bounty program and was impressed by the impact of the vulnerabilities they reported. Their research has uncovered vulnerabilities in how applications, cloud infrastructure, and identity systems interact.\n\nTo see which systems are in scope or to submit a finding, visit OpenAI's Security Bug Bounty program on Bugcrowd.\n\n## Wrap-up\n\n- OpenAI is partnering with Hacktron to find vulnerabilities in its systems\n- The focus is on connections with third-party services\n- Hacktron's access to frontier models expands through Daybreak Red\n- Bigger bug bounties and a security sprint with Cathedral are running in parallel\n\nThis is for security folks and anyone thinking about defense in the age of AI agents!",
+  "emotion": "thinking",
+  "importance": 2,
+  "source_url": "https://openai.com/index/partnering-with-hacktron",
+  "source_name": "OpenAI News",
+  "og_title": "Partnering with Hacktron to find vulnerabilities in OpenAI’s systems",
+  "tags": [
+    "openai",
+    "security",
+    "ai-safety"
+  ],
+  "published_at": "2026-11-06T08:00:00+00:00"
+}
