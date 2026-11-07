@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-11-06-provider-key-security",
+  "title": "AI Gateway に保存した API キー、最後に使ったのはいつ？ 使用状況が見えるようになったよ！",
+  "summary": "Cloudflare AI Gateway の Provider Keys で、保存済みキーの最終使用日などが確認できるようになったよ！90 日以上動きのないキーも見つけやすくなったみたい。",
+  "body_md": "やっほー、しぃちゃんだよ！今日は AI Gateway のキー管理がちょっと安心になるニュースを見つけたから、さっそく紹介するね。\n\n## なにが発表されたの？\n\nCloudflare の Changelog によると、AI Gateway に保存している provider key（各 AI プロバイダーの API キー）の使用状況が見られるようになったよ！ローテーションや削除をするかどうかの判断材料に使えるの。\n\n## なぜ重要なの？\n\nAI Gateway に自分のキーを預ける使い方（Bring your own keys）だと、使わなくなったキーがそのまま残りがち。使われていないのに有効なままの認証情報は、管理する側からすると気になる存在だよね。どのキーが今も使われているのかが分かると、整理しやすくなるよ。\n\n## これで何が変わるの？\n\n- Provider Keys の画面で、キーがプロバイダーごとにまとまって表示される\n- 各キーにはマスクされたプレビュー、エイリアス、最終使用日、最終更新日が出る\n- 「Key security」セクションで、記録上のアクティビティが 90 日より古いキーがハイライトされる\n\nハイライトされたキーは、依存しているものがないか確認してから削除できるよ。不要なキーを棚卸ししたい運用担当の人には嬉しいね！\n\n## 深く潜ってみよう\n\n気をつけたいのはタイミングだよ。使用状況の追跡は 2026 年 11 月から始まると書かれているよ。キーの保存・ローテーション・削除の詳しい手順は、公式ドキュメントの「Bring your own keys」にまとまっているみたい。原文に書かれているのはここまでで、それ以外の仕様は分からないよ。\n\n## まとめ\n\n- 保存済み provider key の使用状況が AI Gateway で確認できる\n- キーはプロバイダー別に、マスク表示・エイリアス・最終使用日・最終更新日つきで一覧\n- 90 日より古いアクティビティのキーは Key security で目立つ\n- 追跡は 2026 年 11 月から開始\n\nAI Gateway でたくさんのキーを預けているチームに特に刺さる更新だよ！",
+  "title_en": "See When Your AI Gateway Provider Keys Were Last Used!",
+  "summary_en": "Cloudflare AI Gateway now shows usage activity for stored provider keys in Provider Keys, and highlights keys with no activity for over 90 days.",
+  "body_md_en": "Hi, it's Shii-chan! Today I found a news item that makes key management in AI Gateway a little more reassuring, so let me share it.\n\n## What was announced?\n\nAccording to Cloudflare's Changelog, AI Gateway now shows usage activity for your stored provider keys (the API keys for each AI provider). You can use it to decide which credentials to rotate or remove.\n\n## Why it matters\n\nWhen you bring your own keys to AI Gateway, keys you no longer use tend to linger. A credential that is unused but still valid is something every admin wants to keep track of. Knowing which keys are still active makes cleanup easier.\n\n## What changes\n\n- Keys in Provider Keys are grouped by provider\n- Each key shows a masked preview, alias, last-used date, and last-updated date\n- The Key security section highlights keys with recorded activity older than 90 days\n\nYou can review highlighted keys and delete them after checking their dependencies. That's handy for anyone auditing stored keys!\n\n## Dive Deep\n\nOne thing to note: usage tracking starts in November 2026. Details on storing, rotating, and removing keys are in the \"Bring your own keys\" documentation. The announcement doesn't say more than this, so I won't guess at other specifics.\n\n## Wrap-up\n\n- Usage of stored provider keys can be reviewed in AI Gateway\n- Keys are listed by provider with masked previews, aliases, last-used and last-updated dates\n- Keys with activity older than 90 days stand out in Key security\n- Tracking starts in November 2026\n\nTeams storing many keys in AI Gateway will get the most out of this one!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-11-06-provider-key-security/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "AI Gateway - Review provider key activity in AI Gateway",
+  "tags": [
+    "cloudflare",
+    "ai",
+    "security"
+  ],
+  "published_at": "2026-11-06T00:00:00+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-moonshot-ai-kimi-k3-1-pro-on-amazon-bedrock",
+  "title": "Kimi K3.1 Pro (Highspeed) が Amazon Bedrock に登場！",
+  "summary": "Moonshot AI のオープンウェイトモデル Kimi K3.1 Pro (Highspeed) が Amazon Bedrock で使えるようになったよ！100 万トークンのコンテキストとプロンプトキャッシュに対応みたい。",
+  "body_md": "みんな、しぃちゃんだよ！Bedrock のモデルラインナップにまた新しい仲間が増えたから、紹介するね。\n\n## なにが発表されたの？\n\nAWS の What's New で、Moonshot AI の Kimi K3.1 Pro が Amazon Bedrock で利用できるようになったと発表されたよ。Bedrock のオープンウェイトモデルが拡充された形なの。\n\n今回使えるのは Kimi K3.1 Pro (Highspeed)。出力トークン毎秒 (OTPS) が高く、コーディングやドキュメント処理のようなエージェント用途で応答が速いのが特長だよ。\n\n## なぜ重要なの？\n\nオープンウェイトの大型モデルを、Bedrock のセキュリティとガバナンスの枠組みの中で使えるのがポイント。AWS によると、独自モデルと同じセキュリティ境界で動くよ。\n\n## これで何が変わるの？\n\n- Bedrock のコンソールから Kimi K3.1 Pro を選んで使える\n- エージェント系のコーディングや文書処理で、速い応答を狙える\n- 明示的なプロンプトキャッシュで、レイテンシーと入力コストを下げられる\n\n## 深く潜ってみよう\n\nMoonshot AI によると、Kimi K3.1 Pro の特徴はこうだよ。\n\n- オープンウェイトで、ネイティブにマルチモーダルなエージェント型モデル\n- コンテキストウィンドウは 100 万トークン\n- 同社でこれまででもっとも高性能な、3 兆パラメータ級のモデル\n- コーディング、3D 制作、金融リサーチなどのエージェント作業が向上したと報告\n\n提供リージョンは、Bedrock が使えるすべての AWS リージョンで、クロスリージョン推論経由だよ。料金などの詳細は原文に書かれていないので、Bedrock のドキュメントで確認してね。\n\n## まとめ\n\n- Kimi K3.1 Pro (Highspeed) が Amazon Bedrock に登場\n- 100 万トークンのコンテキストとネイティブマルチモーダル\n- 明示的なプロンプトキャッシュに対応\n- 全 Bedrock リージョンでクロスリージョン推論から利用可能\n\nエージェント開発で速い応答と長いコンテキストがほしい人にぴったりの更新だよ！",
+  "title_en": "Kimi K3.1 Pro (Highspeed) Arrives on Amazon Bedrock!",
+  "summary_en": "Moonshot AI's open-weight Kimi K3.1 Pro (Highspeed) is now on Amazon Bedrock, with a 1-million-token context window and explicit prompt caching.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Bedrock's model lineup just got a new member, so let me introduce it.\n\n## What was announced?\n\nIn AWS What's New, Moonshot AI's Kimi K3.1 Pro is now available on Amazon Bedrock, expanding the open-weight model portfolio.\n\nThe model offered is Kimi K3.1 Pro (Highspeed). It delivers high output tokens per second (OTPS), for faster, more responsive agentic use cases such as coding and document processing.\n\n## Why it matters\n\nYou can use a large open-weight model within Bedrock's security and governance. According to AWS, it runs within the same security boundary as proprietary models.\n\n## What changes\n\n- You can pick Kimi K3.1 Pro in the Amazon Bedrock console\n- Agentic coding and document processing can get faster responses\n- Explicit prompt caching helps reduce latency and input costs\n\n## Dive Deep\n\nAccording to Moonshot AI, Kimi K3.1 Pro is:\n\n- An open-weight, natively multimodal agentic model\n- Built with a 1-million-token context window\n- Their most capable 3-trillion-parameter-class model to date\n- Reported to improve coding, 3D creation, financial research, and other agentic work\n\nIt's available in all AWS Regions where Amazon Bedrock is available, through cross-Region inference. Pricing isn't covered in the announcement, so check the Bedrock documentation.\n\n## Wrap-up\n\n- Kimi K3.1 Pro (Highspeed) is now on Amazon Bedrock\n- 1-million-token context and native multimodality\n- Explicit prompt caching supported\n- Available in all Bedrock Regions via cross-Region inference\n\nA great fit if you want fast responses and long context for agent development!",
+  "emotion": "energetic",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/moonshot-ai-kimi-k3-1-pro-on-amazon-bedrock",
+  "source_name": "AWS What's New",
+  "og_title": "Kimi K3.1 Pro (Highspeed) now available on Amazon Bedrock",
+  "tags": [
+    "aws",
+    "ai"
+  ],
+  "published_at": "2026-11-06T22:47:00+00:00"
+}
