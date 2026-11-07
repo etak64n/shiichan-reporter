@@ -15,6 +15,8 @@ import glob
 import json
 import os
 import re
+import time
+import urllib.error
 import urllib.parse
 import urllib.request
 from datetime import timezone
@@ -28,10 +30,26 @@ SITEMAP_NS = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
 ATOM_NS = {"a": "http://www.w3.org/2005/Atom"}
 
 
+# A feed that fails for a moment -- a dropped connection, a timeout, or an answer of
+# 429 or 5xx -- gets two more tries, 2 and 4 seconds later. Any other error is final.
+RETRY_STATUSES = {429, 500, 502, 503, 504}
+FETCH_ATTEMPTS = 3
+
+
 def fetch(url: str) -> bytes:
     req = urllib.request.Request(url, headers={"User-Agent": UA})
-    with urllib.request.urlopen(req, timeout=30) as res:
-        return res.read()
+    for attempt in range(1, FETCH_ATTEMPTS + 1):
+        try:
+            with urllib.request.urlopen(req, timeout=30) as res:
+                return res.read()
+        except urllib.error.HTTPError as e:
+            if e.code not in RETRY_STATUSES or attempt == FETCH_ATTEMPTS:
+                raise
+        except (urllib.error.URLError, TimeoutError, ConnectionError):
+            if attempt == FETCH_ATTEMPTS:
+                raise
+        time.sleep(2**attempt)
+    raise AssertionError("unreachable")
 
 
 def strip_html(text: str, limit: int = 1500) -> str:

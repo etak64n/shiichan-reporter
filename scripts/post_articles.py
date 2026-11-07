@@ -15,6 +15,8 @@ import glob
 import json
 import os
 import sys
+import time
+import urllib.error
 import urllib.request
 from datetime import datetime, timezone
 
@@ -56,14 +58,30 @@ def purge_cache(published: int) -> None:
         method="POST",
     )
     try:
-        with urllib.request.urlopen(req, timeout=15) as resp:
-            body = json.load(resp)
+        body = purge_request(req)
         if body.get("success"):
             print("cache purged (purge_everything)")
         else:
             print(f"cache purge failed: {body.get('errors')}", file=sys.stderr)
     except Exception as e:
         print(f"cache purge error: {e}", file=sys.stderr)
+
+
+def purge_request(req: urllib.request.Request) -> dict:
+    """Send the purge, and again 2 and 4 seconds later after a dropped connection,
+    a timeout, or an answer of 429 or 5xx. Purging everything twice does no harm."""
+    for attempt in range(1, 4):
+        try:
+            with urllib.request.urlopen(req, timeout=15) as resp:
+                return json.load(resp)
+        except urllib.error.HTTPError as e:
+            if e.code not in (429, 500, 502, 503, 504) or attempt == 3:
+                raise
+        except (urllib.error.URLError, TimeoutError, ConnectionError):
+            if attempt == 3:
+                raise
+        time.sleep(2**attempt)
+    raise AssertionError("unreachable")
 
 
 # Fields this script itself dereferences. The blog API validates the rest, so
