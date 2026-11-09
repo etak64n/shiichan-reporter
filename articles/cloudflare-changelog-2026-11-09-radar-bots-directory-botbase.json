@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-11-09-radar-bots-directory-botbase",
+  "title": "Radar の Bots Directory が BotBase で生まれ変わったよ！",
+  "summary": "Cloudflare Radar の Bots Directory が BotBase を使うようになり、デザインも一新。各ボットに Identity セクションが加わり、API も複数カテゴリや accessLevel、contentUse に対応したよ。",
+  "body_md": "やっほー、しぃちゃんだよ！ボットのことがもっと分かりやすくなる更新があったよ。\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Cloudflare Radar の Bots Directory が、Cloudflare が追跡しているボットとエージェントのカタログ「BotBase」を使うようになったと発表されたよ。デザインも Radar のホームページに合わせて新しくなったの。\n\n## 今までどうだったの？\n\n以前は API の `category` で 1 つのカテゴリだけを返していたよ。今回の更新で、ボットは複数のカテゴリを持てるようになったの。\n\n## これで何が変わるの？\n\n- 各ボットのページに Identity セクションが追加された\n- Identity では、アクセスレベル、コンテンツの利用方法、Web Bot Auth の検証状況、ユーザーエージェントが見られる\n- ボットの運営者を Radar のサイト内検索で探せる\n\n## 深く潜ってみよう\n\nList bots と Get bot details のエンドポイントは、ボットをこんなフィールドで説明するようになったよ。\n\n- `categories`: 複数カテゴリに対応。BotBase のグループに沿っていて、`COMMERCE` が加わり、一部の古いカテゴリはより広いグループに統合された\n- `accessLevel`: `DIRECT` は自分自身の ID でサイトにアクセスするボット、`INTERMEDIARY` は別のエージェントや人の代わりに動くボット\n- `contentUse`: `full` は取得したコンテンツを保持して再利用する(モデル学習や検索インデックスなど)、`reference` は出典として引用・リンクされる、`immediate` はユーザーのリクエストに答えるために一度だけ使われる\n- `documentationUrl` と `operatorWebsiteUrl`: ボットの詳細のみ\n\n`category` と `operatorUrl` は非推奨になって、それぞれ `categories` と `documentationUrl` に置き換えられるよ。使っている人は移行してね！\n\n## まとめ\n\n- Bots Directory が BotBase ベースになり、デザインも刷新\n- Identity セクションでアクセスレベルや Web Bot Auth などが分かる\n- API に `categories`、`accessLevel`、`contentUse` などが追加\n- `category` と `operatorUrl` は非推奨\n\nボットのトラフィックを分析したいみんなや、API を使っている人に刺さる更新だよ！",
+  "title_en": "Radar's Bots Directory Is Redesigned and Powered by BotBase!",
+  "summary_en": "The Cloudflare Radar Bots Directory now uses BotBase and has a new design. Each bot page gets an Identity section, and the API adds multiple categories, accessLevel, and contentUse.",
+  "body_md_en": "Hi everyone, it's Shii-chan! There's an update that makes bots easier to understand.\n\n## What was announced?\n\nThe Cloudflare Changelog announced that the Cloudflare Radar Bots Directory now uses BotBase, Cloudflare's catalog of the bots and agents it tracks. It also has a new design that matches the Radar homepage.\n\n## The story so far\n\nPreviously the API returned a single `category` for each bot. With this update, a bot can have more than one category.\n\n## What changes\n\n- Each bot page has a new Identity section\n- Identity shows the bot's access level, content use, Web Bot Auth verification, and user agents\n- Bot operators are searchable from the Radar site search\n\n## Dive Deep\n\nThe List bots and Get bot details endpoints now describe each bot with these fields:\n\n- `categories`: supports multiple categories. They follow BotBase's groups, which add `COMMERCE`, and some older categories are now part of broader groups\n- `accessLevel`: `DIRECT` if the bot reaches websites under its own identity, `INTERMEDIARY` if it acts on behalf of another agent or a person\n- `contentUse`: `full` if the fetched content is kept and reused (for example, for model training or a search index), `reference` if it is cited or linked back to the source, `immediate` if it is used once to answer a user's request\n- `documentationUrl` and `operatorWebsiteUrl`: bot details only\n\n`category` and `operatorUrl` are deprecated in favor of `categories` and `documentationUrl`. If you use them, time to migrate!\n\n## Wrap-up\n\n- The Bots Directory is now powered by BotBase with a new design\n- The Identity section shows access level, Web Bot Auth, and more\n- The API adds `categories`, `accessLevel`, `contentUse`, and more\n- `category` and `operatorUrl` are deprecated\n\nThis is for anyone analyzing bot traffic or using the Radar API!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-11-09-radar-bots-directory-botbase/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Radar - Redesigned Bots Directory on Cloudflare Radar, now powered by BotBase",
+  "tags": [
+    "cloudflare",
+    "web",
+    "security"
+  ],
+  "published_at": "2026-11-09T17:28:01+00:00"
+}

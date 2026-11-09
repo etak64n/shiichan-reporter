@@ -1,0 +1,21 @@
+{
+  "slug": "aws-what-s-new-nitro-sandboxes-eks-ecs-ec2",
+  "title": "AWS Nitro Sandboxes 登場！Pod もタスクも 1 つずつ専用 VM に",
+  "summary": "AWS Nitro Sandboxes は、Nitro Hypervisor が管理する軽量 VM。EKS の Pod、ECS のタスク、EC2 上の VM を、ハードウェアで分離して動かせるよ。",
+  "body_md": "みんな、しぃちゃんだよ！AI エージェントが書いたコードを安全に動かしたい人に、うれしい発表が来たよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Nitro Sandboxes が発表されたよ！Nitro Hypervisor が管理する軽量 VM で、EKS の Pod、ECS のタスク、軽量 VM(中で動く AI エージェントも含む)を、それぞれ専用のハードウェア分離 VM で動かせるの。\n\n## なぜ重要なの？\n\nLLM が生成したコードや、信頼できないワークロード、マルチテナントの処理は、隣の処理から確実に隔離したいよね。Nitro System の分離境界をワークロード単位で使えるのが大きいポイントだよ。\n\n## これで何が変わるの？\n\n- 信頼できない・マルチテナント・規制対象のワークロードを、1 つのインスタンスの中で安全に動かせる\n- LLM 生成コードを、専用の分離環境で実行できる\n- 1 台の EC2 インスタンスを複数のエージェント系ワークロードで安全に共有でき、利用率が上がってコンピュートコストも下げられる\n\n## 深く潜ってみよう\n\n- 性能: EC2 インスタンス上で動き、ほぼネイティブの EC2 性能。Nitro ハイパーバイザーの分離を引き継ぐ\n- 証明: 暗号による構成証明で、整合性が証明された Nitro Sandboxes にだけシークレットを渡せる\n- EKS と ECS: 有効化は 1 行の変更で、Pod やタスクごとに専用 VM になる。Pod Identity、VPC CNI、EBS・EFS・S3 ストレージ、CloudWatch はそのまま使える\n- EC2: 自分の AMI、オーケストレーション、VMM で直接動かせる。Amazon Linux と Firecracker はネイティブ対応で、他の選択肢向けにはパッチが用意されている\n\n提供範囲はこれだよ！\n\n- ほとんどの Nitro ベースの EC2 インスタンス\n- 世界中のすべての商用 AWS リージョン\n- 追加料金なし\n\n詳細は EKS、ECS、EC2 それぞれのユーザーガイドにあるよ。\n\n## まとめ\n\n- Nitro Hypervisor 管理の軽量 VM で、Pod・タスク・VM を 1 つずつ分離\n- EKS と ECS は 1 行の変更で有効化でき、既存の統合もそのまま\n- 構成証明でシークレットの受け渡しを制御できる\n- 全商用リージョンで追加料金なし\n\nAI エージェントのコード実行基盤を作るみんなや、マルチテナントを安全に運用したいみんなに刺さるよ！",
+  "title_en": "AWS Nitro Sandboxes Are Here: One Dedicated VM per Pod and Task!",
+  "summary_en": "AWS Nitro Sandboxes are lightweight VMs managed by the Nitro Hypervisor. They run EKS pods, ECS tasks, and VMs in their own hardware-isolated environments.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Here's great news for anyone who wants to run agent-written code safely.\n\n## What was announced?\n\nAWS What's New announced AWS Nitro Sandboxes! They are lightweight VMs managed by the Nitro Hypervisor. You can run an Amazon EKS pod, an Amazon ECS task, or a lightweight VM, including AI agents inside them, in its own hardware-isolated VM.\n\n## Why it matters\n\nLLM-generated code, untrusted workloads, and multi-tenant processing all need solid isolation from their neighbors. Getting the Nitro System isolation boundary per workload is the big deal.\n\n## What changes\n\n- You can safely run untrusted, multi-tenant, or regulated workloads within a single instance\n- LLM-generated code can run in an isolated environment of its own\n- One EC2 instance can be shared securely across multiple agentic workloads, improving utilization and lowering compute costs\n\n## Dive Deep\n\n- Performance: runs on your EC2 instances with near-native EC2 performance and inherits Nitro Hypervisor isolation\n- Attestation: cryptographic attestation releases secrets only to Nitro Sandboxes that have proven their integrity\n- EKS and ECS: enabling it is a one-line change, and each pod or task gets its own VM. Pod Identity, VPC CNI, EBS/EFS/S3 storage, and CloudWatch work out of the box\n- EC2: run directly with your own AMI, orchestration, and VMMs. Amazon Linux and Firecracker are natively supported, and patches are available for other options\n\nAvailability:\n\n- Most Nitro-based EC2 instances\n- All commercial AWS Regions worldwide\n- No additional charge\n\nSee the EKS, ECS, and EC2 user guides for details.\n\n## Wrap-up\n\n- Lightweight VMs managed by the Nitro Hypervisor isolate each pod, task, or VM\n- EKS and ECS enable it with a one-line change, and existing integrations keep working\n- Attestation controls where secrets are released\n- Available in all commercial Regions at no additional charge\n\nThis is for anyone building code-execution platforms for AI agents or running multi-tenant workloads safely!",
+  "emotion": "energetic",
+  "importance": 5,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/nitro-sandboxes-eks-ecs-ec2/",
+  "source_name": "AWS What's New",
+  "og_title": "Introducing AWS Nitro Sandboxes on Amazon EKS, ECS and EC2 for hardware isolated pods, tasks and VMs",
+  "tags": [
+    "aws",
+    "security",
+    "infrastructure",
+    "ai"
+  ],
+  "published_at": "2026-11-09T08:00:00+00:00"
+}

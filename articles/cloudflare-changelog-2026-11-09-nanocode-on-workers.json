@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-11-09-nanocode-on-workers",
+  "title": "Nanocode のコーディングエージェントが Durable Objects で動くよ！",
+  "summary": "Nanocode のコーディングエージェントを Cloudflare Durable Objects で動かせるようになったよ。セッション履歴が永続化され、中断後も復旧できるの。",
+  "body_md": "おつかれさま、しぃちゃんだよ！コーディングエージェントを Cloudflare で動かせる新しい選択肢が出たよ。\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Nanocode のコーディングエージェントを Cloudflare Durable Objects で動かせると紹介されたよ！セッション履歴が永続化されて、中断後に復旧できるんだって。\n\n## なぜ重要なの？\n\nコーディングエージェントは作業が長くなりがちだから、途中で止まっても続きから再開できることが大事なの。Durable Objects なら状態を持ったまま動かせるのが相性いいね。\n\n## これで何が変わるの？\n\n- Nanocode を Cloudflare 上でホストできる\n- セッション履歴が残り、中断から復旧できる\n- Agents SDK なしで使える\n\n## 深く潜ってみよう\n\n仕組みはこんな感じだよ。\n\n- Nanocode の Rust エンジンが WebAssembly として動く\n- エンジンは Codex と Claude Code のプロンプトとツールの慣習を実装している\n- Cloudflare 向けのホストが、ターンの進捗とツール結果を SQLite に保存する\n- アラームを使って、保留中の作業を再開する\n\nこのホストは Nanocode プロジェクトが Cloudflare とは独立して保守していて、Agents SDK は必要ないよ。まずはリファレンス Worker から始めて、モデルや復旧の制限は「Nanocode on Workers」のガイドで確認してね。\n\n## まとめ\n\n- Nanocode のコーディングエージェントが Durable Objects で動く\n- Rust エンジンは WebAssembly で実行\n- 進捗とツール結果は SQLite に保存、アラームで再開\n- 保守は Nanocode プロジェクトが独立して担当\n\nコーディングエージェントを自前でホストしたいみんなにおすすめだよ！",
+  "title_en": "Nanocode Coding Agents Now Run in Durable Objects!",
+  "summary_en": "You can now run Nanocode coding agents in Cloudflare Durable Objects, with persistent session history and recovery after interruptions.",
+  "body_md_en": "Hi everyone, it's Shii-chan! There's a new way to run coding agents on Cloudflare.\n\n## What was announced?\n\nThe Cloudflare Changelog says you can now run Nanocode coding agents in Cloudflare Durable Objects, with persistent session history and recovery after interruptions!\n\n## Why it matters\n\nCoding agents often work for a long time, so resuming after an interruption matters. Durable Objects, which hold state, are a natural fit.\n\n## What changes\n\n- You can host Nanocode on Cloudflare\n- Session history persists and the agent can recover from interruptions\n- No Agents SDK is required\n\n## Dive Deep\n\nHere is how it works:\n\n- Nanocode's Rust engine runs as WebAssembly\n- The engine implements Codex and Claude Code prompt and tool conventions\n- The Cloudflare host saves turn progress and tool results in SQLite\n- It uses alarms to resume pending work\n\nThe Nanocode project maintains the host independently of Cloudflare, and it does not require the Agents SDK. Start with the reference Worker, and check the Nanocode on Workers guide for setup, models, and recovery limits.\n\n## Wrap-up\n\n- Nanocode coding agents run in Durable Objects\n- The Rust engine runs as WebAssembly\n- Progress and tool results are saved in SQLite, and alarms resume work\n- The Nanocode project maintains it independently\n\nThis is for anyone who wants to host their own coding agent!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-11-09-nanocode-on-workers/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Agents - Run the Nanocode agent harness in Cloudflare Durable Objects",
+  "tags": [
+    "cloudflare",
+    "ai",
+    "serverless"
+  ],
+  "published_at": "2026-11-09T17:27:59+00:00"
+}

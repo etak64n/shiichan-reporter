@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-blog-launching-vite-ecosystem-fund",
+  "title": "Vite Ecosystem Fund 始動！最初の 44 プロジェクトに約 30 万ドル",
+  "summary": "Cloudflare が Vite Ecosystem Fund の第 1 弾として、44 のプロジェクトとメンテナーに計 $301,300 を分配するよ。選定は Vite スタックのコアチームの審査員が担当したの。",
+  "body_md": "やっほー、しぃちゃんだよ！今日はオープンソースを支える基金のニュースだよ。\n\n## なにが発表されたの？\n\nCloudflare のブログで、Vite Ecosystem Fund の第 1 弾として、オープンソースのプロジェクトとメンテナーに最初の $301,300 を分配すると発表されたよ。受取先を選んだのは、Cloudflare に雇われていないメンテナーも含む、Vite スタックのコアチームの審査員だって。\n\n## なぜ重要なの？\n\nVoidZero が Cloudflare に加わったとき、Cloudflare は Vite まわりのオープンソースのエコシステムを強くするために $1 million を約束していたの。今回はその最初の分配だよ。\n\n## これで何が変わるの？\n\n- 第 1 弾で 44 のプロジェクトとメンテナーに分配される\n- 優先されたのは、依存関係、エコシステムに欠かせないプラグイン、重要な貢献者、エコシステムを前進させたプロジェクト\n- 受取先には、Babel、ESLint、pnpm、PostCSS、Prettier、Rollup、Terser、typescript-eslint などが含まれる\n\n## 深く潜ってみよう\n\n審査員は、Vite、Vitest、Rolldown、Oxc、Vite+ といった Vite スタックのプロジェクトのコアチームメンバーだよ。\n\n資金は Cloudflare の Open Collective を通じて、2 つの形で配られるの。\n\n- エコシステムの受取先への寄付\n- コアメンテナー向けのスタイペンド(月額上限 $4,000、貢献した時間に対して 1 時間 $50 で請求)\n\nスタイペンドの対象は、コーディング、ドキュメント、issue のトリアージ、Discord でのサポート、ミーティング、上流の依存関係での作業だよ。すでにその作業で報酬を得ているメンテナー(VoidZero の従業員など)は対象外。\n\nなお、$301,300 の内訳(寄付とスタイペンドの割合)は、ブログには書かれていないよ。今後も Cloudflare は四半期ごとに、約束した金額を分配していくと述べているの。\n\n## まとめ\n\n- 約束した $1 million のうち、第 1 弾で $301,300 を 44 の受取先に分配\n- 審査は Vite スタックのコアチーム(Cloudflare 非所属も含む)\n- Open Collective 経由で寄付とスタイペンドの 2 形態\n- 分配は四半期ごとに続く\n\nVite まわりのツールを日々使っているみんなに、ぜひ知ってほしいニュースだよ！",
+  "title_en": "Vite Ecosystem Fund Launches: About $300K to the First 44 Recipients!",
+  "summary_en": "Cloudflare is distributing the first $301,300 of the Vite Ecosystem Fund to 44 open source projects and maintainers, chosen by a panel of Vite stack core team members.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today's news is about a fund that supports open source.\n\n## What was announced?\n\nThe Cloudflare Blog announced that Cloudflare is distributing the first $301,300 of the Vite Ecosystem Fund to open source projects and maintainers. The recipients were chosen by a panel of Vite stack core team members, including maintainers not employed by Cloudflare.\n\n## Why it matters\n\nWhen VoidZero joined Cloudflare, Cloudflare committed $1 million to strengthen the open source ecosystem around Vite. This is the first distribution from that commitment.\n\n## What changes\n\n- The first round goes to 44 projects and maintainers\n- Priority went to dependencies, ecosystem-critical plugins, significant contributors, and projects that advanced the ecosystem\n- Recipients include Babel, ESLint, pnpm, PostCSS, Prettier, Rollup, Terser, and typescript-eslint\n\n## Dive Deep\n\nThe panel was made up of core team members from Vite stack projects: Vite, Vitest, Rolldown, Oxc, and Vite+.\n\nFunds are allocated through Cloudflare's Open Collective in two forms:\n\n- Contributions to ecosystem recipients\n- Stipends for core maintainers, up to $4,000 per calendar month, invoiced at $50 per hour contributed\n\nEligible stipend work includes coding, documentation, issue triage, Discord support, meetings, and work on upstream dependencies. Maintainers already paid for this work, such as VoidZero employees, are not eligible.\n\nThe post does not say how the $301,300 splits between contributions and stipends. Cloudflare says it will continue to distribute the committed amount every quarter.\n\n## Wrap-up\n\n- The first round distributes $301,300 of the committed $1 million to 44 recipients\n- A panel of Vite stack core team members, including non-Cloudflare maintainers, chose them\n- Funds go out through Open Collective as contributions and stipends\n- Distributions will continue every quarter\n\nThis is worth knowing for anyone who uses Vite-related tools every day!",
+  "emotion": "happy",
+  "importance": 1,
+  "source_url": "https://blog.cloudflare.com/launching-vite-ecosystem-fund/",
+  "source_name": "Cloudflare Blog",
+  "og_title": "Launching the Vite Ecosystem Fund",
+  "tags": [
+    "cloudflare",
+    "business",
+    "web"
+  ],
+  "published_at": "2026-11-09T13:00:00+00:00"
+}

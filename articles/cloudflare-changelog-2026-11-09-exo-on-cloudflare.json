@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-11-09-exo-on-cloudflare",
+  "title": "Markdown 1 枚でエージェント定義！Exo が Cloudflare で動くよ",
+  "summary": "Exo のエージェントを Cloudflare 上で動かせるようになったよ。Durable Objects が会話を調整し、Cloudflare Sandboxes が Linux ツールを実行するの。",
+  "body_md": "みんな、しぃちゃんだよ！エージェントを Markdown で定義できるって聞いて、わくわくしちゃった。\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Exo のエージェントを Cloudflare 上で動かせるようになったと紹介されたよ！\n\n- Durable Objects が会話を調整する\n- Cloudflare Sandboxes が Linux ツールを実行する\n\nという役割分担になっているの。\n\n## なぜ重要なの？\n\nエージェントを動かすには、会話の状態管理と、安全にコマンドを走らせる環境の両方が必要だよね。その両方を Cloudflare のプラットフォームで用意できるのが注目ポイントだよ。\n\n## これで何が変わるの？\n\n- エージェントを Markdown ファイルで定義して、Exo の CLI か HTTP API で実行できる\n- 実行基盤として Cloudflare を選べる\n\n## 深く潜ってみよう\n\nCloudflare のアダプターをデプロイして Exo のプロバイダーを設定したら、`openai` という名前の vault 認証情報を追加して、次の定義を `agent.md` として保存するよ。\n\n```\n---\nharness: basic\nmodel:\n  name: gpt-6.1-sol\n  credential: openai\n---\nHelp the user with their task.\n```\n\nあとは Exo の CLI で、Cloudflare のデプロイに対して実行するだけ！\n\n```\nexo --provider cloudflare agent run --agent-file agent.md\n```\n\nCloudflare のアダプターは Exo プロジェクトが Cloudflare とは独立して保守していて、Agents SDK は必要ないよ。アーキテクチャや復旧の挙動、セットアップ手順は Exo のガイドを見てね。\n\n## まとめ\n\n- Exo のエージェントが Cloudflare で動く\n- Durable Objects が会話を調整し、Sandboxes が Linux ツールを実行\n- Markdown で定義して CLI から実行できる\n- アダプターは Exo プロジェクトが独立して保守、Agents SDK は不要\n\nシンプルにエージェントを試したいみんなに刺さるよ！",
+  "title_en": "Define Agents in Markdown: Exo Now Runs on Cloudflare!",
+  "summary_en": "You can now run Exo agents on Cloudflare, with Durable Objects coordinating conversations and Cloudflare Sandboxes running Linux tools.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Defining an agent in Markdown got me really excited.\n\n## What was announced?\n\nThe Cloudflare Changelog says you can now run Exo agents on Cloudflare!\n\n- Durable Objects coordinate conversations\n- Cloudflare Sandboxes run Linux tools\n\n## Why it matters\n\nRunning an agent needs both conversation state management and a safe place to run commands. Getting both from the Cloudflare platform is the interesting part.\n\n## What changes\n\n- You can define an agent in a Markdown file and run it with Exo's CLI or HTTP API\n- Cloudflare becomes an option as the execution platform\n\n## Dive Deep\n\nAfter deploying the Cloudflare adapter and configuring your Exo provider, add an `openai` vault credential and save this definition as `agent.md`:\n\n```\n---\nharness: basic\nmodel:\n  name: gpt-6.1-sol\n  credential: openai\n---\nHelp the user with their task.\n```\n\nThen run it against your Cloudflare deployment with Exo's CLI:\n\n```\nexo --provider cloudflare agent run --agent-file agent.md\n```\n\nThe Exo project maintains the Cloudflare adapter independently of Cloudflare, and it does not require the Agents SDK. See the Exo guide for architecture, recovery behavior, and setup instructions.\n\n## Wrap-up\n\n- Exo agents run on Cloudflare\n- Durable Objects coordinate conversations and Sandboxes run Linux tools\n- Define agents in Markdown and run them from the CLI\n- The adapter is maintained independently by the Exo project and needs no Agents SDK\n\nThis is for anyone who wants to try agents the simple way!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-11-09-exo-on-cloudflare/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Workers, Agents - Run Exo agents on Cloudflare",
+  "tags": [
+    "cloudflare",
+    "ai",
+    "serverless"
+  ],
+  "published_at": "2026-11-09T17:27:58+00:00"
+}
