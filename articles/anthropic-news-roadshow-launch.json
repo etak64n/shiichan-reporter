@@ -1,0 +1,19 @@
+{
+  "slug": "anthropic-news-roadshow-launch",
+  "title": "Anthropic が IPO のロードショーを開始！ 想定価格は 1 株 70〜78 ドル",
+  "summary": "Anthropic が新規株式公開(IPO)のロードショーを始めたよ。Nasdaq Global Select Market に「ANT」で上場申請していて、価格帯は 1 株 70.00〜78.00 ドルなの。",
+  "body_md": "やっほー、しぃちゃんだよ！今日はちょっと毎日の技術ニュースと毛色が違う、Anthropic の大きな発表だよ。\n\n## なにが発表されたの？\n\nAnthropic の News(Announcements)で、Anthropic, PBC が Class A 普通株式の新規株式公開(IPO)に向けたロードショーを開始したと発表されたよ。\n\n## なぜ重要なの？\n\nAI 開発企業が株式市場に上場しようとしている、という会社の節目になる話だよ。ただし、発表時点では登録届出書は SEC に提出済みで、まだ有効になっていないの。有効になるまでは株式の販売も購入もできないよ。\n\n## これで何が変わるの？\n\n開発者が試せる新機能の発表ではないよ。Claude の使い方がすぐ変わるという内容は、原文には書かれていないの。この発表は、Anthropic という会社のあり方に関する話だね。\n\n## 深く潜ってみよう\n\n発表されている条件はこれだよ。\n\n- 売り出し総数: 8 億 2,500 万株\n- Anthropic が売る株: 約 8 億 135 万株\n- 既存の株主が売る株: 約 2,365 万株(この分の売却代金は Anthropic には入らない)\n- 引受人への追加購入オプション: 30 日間、最大で約 1 億 2,375 万株\n- 価格帯: 1 株あたり 70.00〜78.00 ドル\n- 上場先: Nasdaq Global Select Market(ティッカーは「ANT」で申請中)\n\n募集は目論見書によってのみ行われ、予備目論見書は Goldman Sachs & Co. LLC と Morgan Stanley & Co. LLC から入手できるよ。この発表は売り出しの申し込みではなく、違法になる地域では販売できないとも書かれているの。\n\n## まとめ\n\n- Anthropic が IPO のロードショーを開始\n- 8 億 2,500 万株、価格帯は 1 株 70.00〜78.00 ドル\n- Nasdaq Global Select Market に「ANT」で上場申請中\n- 登録届出書はまだ有効ではなく、売買はできない\n\n手を動かす話ではないけれど、Anthropic の動きを追っている人や、AI 業界の資金面が気になる人に刺さるニュースだよ！",
+  "title_en": "Anthropic launches its IPO roadshow, with a $70 to $78 price range!",
+  "summary_en": "Anthropic has started the roadshow for its proposed IPO. It has applied to list on the Nasdaq Global Select Market as ANT, with a price range of $70.00 to $78.00 per share.",
+  "body_md_en": "Hi, it's Shii-chan! Today's news is a bit different from our usual tech updates: a big announcement from Anthropic.\n\n## What was announced?\n\nAnthropic News (under Announcements) says Anthropic, PBC has started the roadshow for its proposed initial public offering (IPO) of Class A common stock.\n\n## Why it matters\n\nThis is a milestone for the company: an AI developer moving toward the public stock market. At the time of the announcement, the registration statement was filed with the SEC but not yet effective, so shares cannot be sold or bought until it takes effect.\n\n## What changes\n\nThis is not a feature developers can try. The announcement says nothing about changes to how you use Claude. It is about the company itself.\n\n## Dive Deep\n\nThe terms that were announced:\n\n- Total shares offered: 825 million\n- Shares sold by Anthropic: about 801.35 million\n- Shares sold by certain existing stockholders: about 23.65 million (Anthropic receives none of the proceeds from these)\n- Underwriters' option: 30 days to buy up to about 123.75 million more shares\n- Price range: $70.00 to $78.00 per share\n- Listing: applied for the Nasdaq Global Select Market under the symbol \"ANT\"\n\nThe offering is made only through a prospectus, and preliminary copies are available from Goldman Sachs & Co. LLC and Morgan Stanley & Co. LLC. The announcement is not an offer to sell, and no sales may occur in any jurisdiction where that would be unlawful.\n\n## Wrap-up\n\n- Anthropic has started its IPO roadshow\n- 825 million shares at $70.00 to $78.00 per share\n- Applied to list on the Nasdaq Global Select Market as ANT\n- The registration statement is not yet effective, so no trading yet\n\nNot a hands-on topic, but worth a look if you follow Anthropic or the financial side of the AI industry!",
+  "emotion": "energetic",
+  "importance": 1,
+  "source_url": "https://www.anthropic.com/news/roadshow-launch",
+  "source_name": "Anthropic News",
+  "og_title": "Anthropic launches roadshow for proposed initial public offering",
+  "tags": [
+    "anthropic",
+    "business"
+  ],
+  "published_at": "2026-11-10T11:32:16.000Z"
+}

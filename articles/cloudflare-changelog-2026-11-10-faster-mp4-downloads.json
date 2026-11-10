@@ -1,0 +1,19 @@
+{
+  "slug": "cloudflare-changelog-2026-11-10-faster-mp4-downloads",
+  "title": "Cloudflare Stream の MP4 ダウンロード生成が最大 40% 高速に！",
+  "summary": "Cloudflare Stream で MP4 ダウンロードを生成する処理が最大 40% 速くなったよ。実装の変更は不要で、1 分より長いオンデマンド動画で特に効果があるみたい！",
+  "body_md": "やっほー、しぃちゃんだよ！今日は動画まわりのうれしいスピードアップのニュースを見つけたから、さっそく紹介するね。\n\n## なにが発表されたの？\n\nCloudflare の Changelog によると、Cloudflare Stream で MP4 ダウンロードを生成する処理が最大 40% 高速になったんだって。Changelog は発表・更新告知の性格が強い場所で、今回も短くて要点がはっきりした更新だよ。\n\n## なぜ重要なの？\n\nStream に置いた動画を MP4 ファイルとして配りたい場面では、ダウンロード用ファイルの生成を待つ時間がそのまま体験の待ち時間になるよね。そこが縮まるのは地味だけど効くポイントなの。\n\n## これで何が変わるの？\n\n- 実装の変更は不要で、今までと同じ操作のまま速くなる\n- 効果が大きいのは 1 分を超えるオンデマンド動画\n\nつまり、長めの動画を扱っている人ほどありがたい更新だよ！\n\n## 深く潜ってみよう\n\nMP4 ダウンロードの生成方法は 3 つあるよ。\n\n- ダッシュボードから生成する\n- Cloudflare CLI の `cf` コマンドを使う\n- API に POST リクエストを送る\n\nCLI の例はこんな感じ！\n\n```sh\ncf stream videos downloads create default --identifier \"$VIDEO_UID\"\n```\n\nAPI の場合はこうなるよ。\n\n```bash\ncurl \"https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/stream/$IDENTIFIER/downloads/default\" \\\n  --request POST \\\n  --header \"Authorization: Bearer $CLOUDFLARE_API_TOKEN\"\n```\n\nどちらの方法でも、レスポンスにはダウンロード URL と処理の進捗が入っているよ。例では `status` が `inprogress`、`percentComplete` が 75.0 になっていて、進み具合を確認できるみたい！\n\n## まとめ\n\n- Stream の MP4 ダウンロード生成が最大 40% 高速に\n- 実装の変更は不要\n- 1 分を超えるオンデマンド動画で特に効果的\n- ダッシュボード、`cf` CLI、API のどれからでも生成できる\n\nStream で長めの動画を配信していて、MP4 の提供もしている人にぴったりの更新だよ！",
+  "title_en": "Cloudflare Stream MP4 downloads now generate up to 40% faster!",
+  "summary_en": "Generating MP4 downloads from Cloudflare Stream is now up to 40% faster, with no changes needed on your side. It helps most with on-demand videos longer than 1 minute!",
+  "body_md_en": "Hi, it's Shii-chan! Today I found a nice speed-up for video workflows, so let me share it with you.\n\n## What was announced?\n\nAccording to the Cloudflare Changelog, generating MP4 downloads from Cloudflare Stream is now up to 40% faster. The Changelog is where Cloudflare posts short product updates, and this one is brief and to the point.\n\n## Why it matters\n\nWhen you want to offer videos stored in Stream as MP4 files, the time spent generating the download file is time your viewers wait. Cutting that down is a small change that makes a real difference.\n\n## What changes\n\n- No changes to your implementation are required. The same steps are just faster\n- The biggest gains are for on-demand videos longer than 1 minute\n\nIf you work with longer videos, this one is for you!\n\n## Dive Deep\n\nThere are three ways to generate an MP4 download.\n\n- From the Dashboard\n- With the `cf` command of the Cloudflare CLI\n- By sending a POST request to the API\n\nHere is the CLI example.\n\n```sh\ncf stream videos downloads create default --identifier \"$VIDEO_UID\"\n```\n\nAnd this is the API version.\n\n```bash\ncurl \"https://api.cloudflare.com/client/v4/accounts/$ACCOUNT_ID/stream/$IDENTIFIER/downloads/default\" \\\n  --request POST \\\n  --header \"Authorization: Bearer $CLOUDFLARE_API_TOKEN\"\n```\n\nEither way, the response includes the download URL and the processing progress. In the example, `status` is `inprogress` and `percentComplete` is 75.0, so you can see how far along it is.\n\n## Wrap-up\n\n- MP4 download generation in Stream is up to 40% faster\n- No implementation changes needed\n- Most effective for on-demand videos longer than 1 minute\n- Works from the Dashboard, the `cf` CLI, or the API\n\nA great fit if you serve longer videos from Stream and offer MP4 downloads!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-11-10-faster-mp4-downloads/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Stream - Faster MP4 downloads from Cloudflare Stream",
+  "tags": [
+    "cloudflare",
+    "web"
+  ],
+  "published_at": "2026-11-10T17:47:44+00:00"
+}

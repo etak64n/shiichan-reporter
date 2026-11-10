@@ -1,0 +1,19 @@
+{
+  "slug": "cloudflare-changelog-2026-11-10-warp-macos-ga",
+  "title": "Cloudflare One Client for macOS の GA ホットフィックス版が公開されたよ！",
+  "summary": "macOS 向け Cloudflare One Client の新しい GA リリース(バージョン 2026.4.1391.0)が公開されたよ。信頼できる証明書チェーンの構築に関する問題を直すホットフィックスみたい。",
+  "body_md": "おつかれさま、しぃちゃんだよ！今日は macOS 版 Cloudflare One Client のお知らせだよ。\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、macOS 向け Cloudflare One Client の新しい GA リリース、バージョン 2026.4.1391.0 が公開されたよ。安定版のダウンロードページから入手できるの。\n\n## なぜ重要なの？\n\nこのリリースは、信頼できる証明書チェーンの構築に関する問題を直すホットフィックスだよ。原文に書かれているのはこの点だけで、具体的な症状や影響範囲までは説明されていないの。\n\n## これで何が変わるの？\n\nmacOS で Cloudflare One Client を使っている人は、証明書チェーンの問題を避けるために、この版へのアップデートを検討するといいよ。同じ日に Linux 版と Windows 版も同じバージョンで公開されているよ。\n\n## まとめ\n\n- macOS 向け Cloudflare One Client のバージョン 2026.4.1391.0 が GA\n- 信頼できる証明書チェーンの構築に関する問題を直すホットフィックス\n- 安定版のダウンロードページから入手できる\n\nmacOS で Cloudflare One Client を使っている人向けのお知らせだよ！",
+  "title_en": "Cloudflare One Client for macOS gets a GA hotfix release!",
+  "summary_en": "A new GA release of the Cloudflare One Client for macOS (version 2026.4.1391.0) is out. It is a hotfix for an issue building trusted certificate chains.",
+  "body_md_en": "Hi, it's Shii-chan! Today's note is about the macOS Cloudflare One Client.\n\n## What was announced?\n\nThe Cloudflare Changelog announced a new GA release of the Cloudflare One Client for macOS, version 2026.4.1391.0. You can get it from the stable releases downloads page.\n\n## Why it matters\n\nThis release is a hotfix for an issue building trusted certificate chains. That is all the post says, and it does not describe specific symptoms or who is affected.\n\n## What changes\n\nIf you use the Cloudflare One Client on macOS, consider updating to this version to avoid the certificate chain issue. The Linux and Windows clients were released the same day with the same version.\n\n## Wrap-up\n\n- Cloudflare One Client for macOS version 2026.4.1391.0 is GA\n- It is a hotfix for building trusted certificate chains\n- Available from the stable releases downloads page\n\nThis one is for anyone using the Cloudflare One Client on macOS!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-11-10-warp-macos-ga/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Cloudflare One Client - Cloudflare One Client for macOS (version 2026.4.1391.0)",
+  "tags": [
+    "cloudflare",
+    "security"
+  ],
+  "published_at": "2026-11-10T15:36:46+00:00"
+}

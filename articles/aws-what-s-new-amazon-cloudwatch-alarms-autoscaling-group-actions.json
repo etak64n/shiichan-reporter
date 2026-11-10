@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-cloudwatch-alarms-autoscaling-group-actions",
+  "title": "CloudWatch の PromQL アラームで EC2 Auto Scaling が動かせるように！",
+  "summary": "PromQL を使う CloudWatch アラームから、EC2 と Application Auto Scaling のステップ・シンプルスケーリングポリシーを起動できるようになったよ。ターゲット追跡は未対応みたい。",
+  "body_md": "こんにちは、しぃちゃんだよ！OpenTelemetry のメトリクスでスケールしたい人に、うれしいニュースが来たよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Prometheus Query Language (PromQL) を使う Amazon CloudWatch アラームが、EC2 と Application Auto Scaling のステップおよびシンプルスケーリングポリシーを起動できるようになったと告知されたよ。\n\n## 今までどうだったの？\n\nOpenTelemetry に移行中のチームは、スケーリング用に従来形式のメトリクスアラームを別に残しておく必要があったの。ダッシュボードやアラートで使っているメトリクスと、スケーリングの根拠が別々になってしまっていたんだね。\n\n## これで何が変わるの？\n\nダッシュボードやアラートで書いているのと同じ種類の PromQL クエリで、EC2 Auto Scaling グループをスケールできるようになったよ。監視とスケーリングが同じメトリクスに揃うから、分けて管理する手間が減るの。\n\n## 深く潜ってみよう\n\n対応状況と条件はこれだよ。\n\n- 対応するポリシー: EC2 Auto Scaling のシンプルスケーリングとステップスケーリング(Application Auto Scaling も対象)\n- 未対応: ターゲット追跡ポリシー\n- ステップスケーリングでは、PromQL クエリの値がしきい値をどれだけ超えたかで、適用されるステップが決まる\n- クエリは 1 つの系列だけを返し、それをしきい値と比較する形にする必要がある\n\n設定方法は次のとおりだよ。\n\n- CloudWatch コンソールで、アラームの作成・編集時にアクションを追加する\n- PutMetricAlarm API\n- AWS CLI\n- AWS SDK\n- AWS CloudFormation\n\n提供範囲は、CloudWatch PromQL アラームが使えるすべての AWS リージョンだよ。料金は標準の CloudWatch アラームの料金が適用されるって。\n\n## まとめ\n\n- PromQL アラームから EC2 / Application Auto Scaling のスケーリングを起動できる\n- 対応はシンプルとステップで、ターゲット追跡は未対応\n- クエリは単一の系列を返してしきい値と比較する\n- 料金は標準の CloudWatch アラームと同じ\n\nOpenTelemetry へ移行中で、スケーリングも同じメトリクスに寄せたい人に刺さるよ！",
+  "title_en": "CloudWatch PromQL alarms can now drive EC2 and Application Auto Scaling!",
+  "summary_en": "CloudWatch alarms that use PromQL can now trigger EC2 and Application Auto Scaling step and simple scaling policies. Target tracking is not supported yet.",
+  "body_md_en": "Hi, it's Shii-chan! Here's good news for anyone who wants to scale on OpenTelemetry metrics.\n\n## What was announced?\n\nAWS What's New announced that Amazon CloudWatch alarms using Prometheus Query Language (PromQL) can now trigger Amazon EC2 and Application Auto Scaling step and simple scaling policies.\n\n## The story so far\n\nTeams moving to OpenTelemetry had to keep separate classic metric alarms just for scaling. That meant the metrics behind scaling were different from the ones used for dashboards and alerting.\n\n## What changes\n\nYou can now scale your EC2 Auto Scaling groups using the same kind of PromQL queries you use for dashboards and alerting. Monitoring and scaling line up on the same metrics, so there is less to maintain.\n\n## Dive Deep\n\nSupport and requirements:\n\n- Supported policies: EC2 Auto Scaling simple and step scaling (Application Auto Scaling is covered too)\n- Not supported: target tracking policies\n- For step scaling, how far the value in your PromQL query is past the threshold decides which step applies\n- The query must return a single series and compare it to a threshold\n\nWays to configure it:\n\n- The CloudWatch console, when you create or edit an alarm\n- The PutMetricAlarm API\n- The AWS CLI\n- The AWS SDKs\n- AWS CloudFormation\n\nIt is available in all AWS Regions where CloudWatch PromQL alarms are available, and standard CloudWatch alarm pricing applies.\n\n## Wrap-up\n\n- PromQL alarms can trigger EC2 and Application Auto Scaling actions\n- Simple and step scaling are supported, target tracking is not\n- The query returns a single series compared to a threshold\n- Standard CloudWatch alarm pricing applies\n\nA good fit if you are moving to OpenTelemetry and want scaling on the same metrics!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-cloudwatch-alarms-autoscaling-group-actions",
+  "source_name": "AWS What's New",
+  "og_title": "CloudWatch PromQL alarms now support EC2 and Application Auto Scaling",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "devops"
+  ],
+  "published_at": "2026-11-10T03:00:00+00:00"
+}
