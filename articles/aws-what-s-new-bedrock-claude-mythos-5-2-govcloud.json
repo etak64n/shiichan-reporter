@@ -1,0 +1,21 @@
+{
+  "slug": "aws-what-s-new-bedrock-claude-mythos-5-2-govcloud",
+  "title": "まさかの GovCloud 上陸！Bedrock に Claude Mythos 5.2 が登場",
+  "summary": "Amazon Bedrock が、AWS GovCloud (US) の適格な顧客向けに Claude Mythos 5.2 の提供を開始したよ。サイバーセキュリティ能力が高い Anthropic モデルとして初の GovCloud 提供で、利用は許可リスト制だよ。",
+  "body_md": "みんな、しぃちゃんだよ！\n\n今日はセキュリティ好きなみんなが気になりそうなニュースだよ。GovCloud にすごいモデルがやってきたの。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Bedrock が AWS GovCloud (US) の適格な顧客向けに Claude Mythos 5.2 を提供開始したと発表されたよ。\n\nAnthropic によると、Claude Mythos 5.2 は同社がこれまでで最も高度な AI モデルで、サイバーセキュリティ・ソフトウェアコーディング・複雑な推論タスクが得意なんだって。\n\n## なぜ重要なの？\n\nこのモデルは、サイバーセキュリティ能力が強力な Anthropic のモデルとして、AWS GovCloud (US) で使える初めてのものだよ。政府系や規制の厳しい環境で、これほどの能力を持つモデルが選べるようになるのが注目ポイントなの。\n\n## これで何が変わるの？\n\n原文によると、Claude Mythos 5.2 にはこんな特徴があるよ。\n\n- ソフトウェアの高度なセキュリティ脆弱性を見つけられる\n- その脆弱性が悪用可能であることを示せる\n- 大規模なコードベースを理解できる\n- 以前の AI モデルより少ない手作業の誘導で、実行しやすい調査結果を出せる\n\nこれによって、セキュリティチームは防御側の作業を加速し、重要なソフトウェアの脆弱性を脅威が現実になる前に見つけて修正できる、と説明されているよ。\n\n## 深く潜ってみよう\n\n使えるのは AWS GovCloud (US) の各リージョンで、Amazon Bedrock 経由だよ。ただし誰でも使えるわけじゃないの。\n\n- 対象は適格な顧客のみ\n- アクセスは許可リストに載った組織に限定\n- 始めるには Anthropic の Cyber Verification Program から申請する\n\n## まとめ\n\n- Bedrock が GovCloud (US) で Claude Mythos 5.2 を提供開始\n- サイバーセキュリティ能力の高い Anthropic モデルとして GovCloud 初\n- 脆弱性の発見と悪用可能性の実証、大規模コードの理解が強み\n- 利用は許可リスト制で、Cyber Verification Program 経由で申請\n\nGovCloud でセキュリティ業務を担当する防御側のチームに刺さる発表だよ！",
+  "title_en": "A GovCloud First: Claude Mythos 5.2 Arrives on Amazon Bedrock",
+  "summary_en": "Amazon Bedrock now offers Claude Mythos 5.2 to eligible customers in AWS GovCloud (US). It is the first Anthropic model with powerful cybersecurity capabilities available there, and access is allow-list only.",
+  "body_md_en": "Hi everyone, it's Shii-chan!\n\nHere's news for everyone who loves security. Something big just landed in GovCloud.\n\n## What was announced?\n\nAccording to AWS What's New, Amazon Bedrock now offers Claude Mythos 5.2 to eligible customers in AWS GovCloud (US).\n\nAnthropic describes Claude Mythos 5.2 as its most advanced AI model to date, for use cases across cybersecurity, software coding, and complex reasoning.\n\n## Why it matters\n\nThis is the first Anthropic model with powerful cybersecurity capabilities to be available in AWS GovCloud (US). Teams in government and other regulated environments now have access to a model with this level of capability.\n\n## What changes\n\nAccording to the announcement, Claude Mythos 5.2 can do the following.\n\n- Identify sophisticated security vulnerabilities in software\n- Demonstrate that they are exploitable\n- Comprehend large codebases\n- Deliver actionable findings with less manual guidance than previous AI models\n\nThe announcement says this helps security teams speed up defensive work, and find and fix vulnerabilities in critical software before threats emerge.\n\n## Dive Deep\n\nThe model is available in the AWS GovCloud (US) Regions through Amazon Bedrock, but not for everyone.\n\n- Available to eligible customers only\n- Access is limited to allow-listed organizations\n- To get started, apply through Anthropic's Cyber Verification Program\n\n## Wrap-up\n\n- Bedrock now offers Claude Mythos 5.2 in GovCloud (US)\n- It is the first cyber-capable Anthropic model there\n- Strengths: finding vulnerabilities, showing exploitability, understanding large codebases\n- Access is allow-listed and starts with the Cyber Verification Program\n\nThis one is for defensive security teams working in GovCloud!",
+  "emotion": "thinking",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/bedrock-claude-mythos-5-2-govcloud/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Bedrock now offers Claude Mythos 5.2 to Eligible Customers in AWS GovCloud (US)",
+  "tags": [
+    "aws",
+    "anthropic",
+    "ai",
+    "security"
+  ],
+  "published_at": "2026-11-09T18:30:00+00:00"
+}

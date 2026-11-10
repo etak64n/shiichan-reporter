@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-11-10-rust-sdk",
+  "title": "Flagship に公式 Rust SDK が誕生！Rust から OpenFeature でフラグ評価",
+  "summary": "Cloudflare の Flagship に公式 Rust SDK が登場したよ。非同期 Rust サーバーアプリから OpenFeature 経由でフィーチャーフラグを評価できて、ローカル評価にも対応しているんだ。",
+  "body_md": "みんな、しぃちゃんだよ！\n\nRust を書くみんなに朗報だよ。Cloudflare の Flagship に公式 SDK が来たの。\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Flagship に公式の Rust SDK が追加されたと発表されたよ。非同期 Rust のサーバーアプリケーションから、OpenFeature を通じてフィーチャーフラグを評価できるの。ターゲティングルールやパーセンテージロールアウトは、他の Flagship SDK と同じものが使えるよ。\n\n## なぜ重要なの？\n\nこれまで Flagship の公式 SDK がなかった Rust サーバーでも、他の言語と同じルールでフラグを評価できるようになるのが嬉しいところだよ。\n\n## これで何が変わるの？\n\n`cloudflare-flagship` クレートをインストールして、プロバイダーを登録すれば使えるよ。\n\n```\ncargo add cloudflare-flagship\n```\n\n使い方の流れはこうだよ。\n\n- アプリ ID・アカウント ID・API トークンで `FlagshipClientOptions` を作る\n- `OpenFeature` に `FlagshipServerProvider` を登録する\n- `EvaluationContext` にターゲティングキーを入れて、`get_bool_value` でフラグを評価する\n\n原文の例では、ターゲティングキーに `user-42`、フラグ名に `new-checkout` を使っていて、評価に失敗したときは `false` を返すようになっているよ。\n\n## 深く潜ってみよう\n\n評価の方法は 2 つあるの。\n\n- HTTP 評価（デフォルト）: 評価のたびに HTTP でリクエストする\n- ローカル評価: フラグ定義をダウンロードして、プロセス内で評価する。評価ごとのネットワークリクエストが不要\n\nそのほかの機能と要件はこれだよ。\n\n- 構造化された評価コンテキスト\n- オプションのレスポンスキャッシュ\n- ログとテレメトリのフック\n- Rust 1.88 以降と Tokio ランタイムが必要\n\nセットアップや設定オプションは、Rust SDK のドキュメントを見てね。\n\n## まとめ\n\n- Flagship に公式 Rust SDK（`cloudflare-flagship`）が登場\n- OpenFeature 経由で、他の SDK と同じルールでフラグを評価できる\n- デフォルトは HTTP 評価で、ローカル評価も選べる\n- Rust 1.88 以降と Tokio が必要\n\nRust でバックエンドを書いていて、フィーチャーフラグを使いたい開発者に刺さるよ！",
+  "title_en": "Flagship Now Has an Official Rust SDK for OpenFeature",
+  "summary_en": "Cloudflare's Flagship now has an official Rust SDK. You can evaluate feature flags from async Rust server applications through OpenFeature, with local evaluation support.",
+  "body_md_en": "Hi everyone, it's Shii-chan!\n\nGood news for Rust developers. Cloudflare's Flagship now has an official SDK for you.\n\n## What was announced?\n\nThe Cloudflare Changelog announced that Flagship now has an official Rust SDK. You can evaluate feature flags from async Rust server applications through OpenFeature, with the same targeting rules and percentage rollouts as the other Flagship SDKs.\n\n## Why it matters\n\nRust servers can now evaluate flags with the same rules as other languages, using an official SDK.\n\n## What changes\n\nInstall the `cloudflare-flagship` crate and register the provider.\n\n```\ncargo add cloudflare-flagship\n```\n\nHere is the flow.\n\n- Build `FlagshipClientOptions` with an app ID, account ID, and API token\n- Register a `FlagshipServerProvider` with `OpenFeature`\n- Put a targeting key in an `EvaluationContext` and evaluate with `get_bool_value`\n\nThe example in the changelog uses the targeting key `user-42` and the flag `new-checkout`, and falls back to `false` if evaluation fails.\n\n## Dive Deep\n\nThere are two ways to evaluate.\n\n- HTTP evaluation (default): each evaluation makes an HTTP request\n- Local evaluation: flag definitions are downloaded and evaluated in-process, so no network request is needed per evaluation\n\nOther features and requirements:\n\n- Structured evaluation context\n- An optional response cache\n- Logging and telemetry hooks\n- Requires Rust 1.88 or later and a Tokio runtime\n\nSee the Rust SDK documentation for setup and configuration options.\n\n## Wrap-up\n\n- Flagship has an official Rust SDK (`cloudflare-flagship`)\n- Evaluate flags through OpenFeature with the same rules as other SDKs\n- HTTP evaluation is the default, and local evaluation is available\n- Requires Rust 1.88+ and Tokio\n\nThis one is for developers writing Rust backends who want feature flags!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-11-10-rust-sdk/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Flagship - Evaluate Flagship feature flags from Rust",
+  "tags": [
+    "cloudflare",
+    "serverless",
+    "devops"
+  ],
+  "published_at": "2026-11-10T09:46:43+00:00"
+}

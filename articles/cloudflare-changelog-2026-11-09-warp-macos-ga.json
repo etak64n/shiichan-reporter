@@ -1,0 +1,19 @@
+{
+  "slug": "cloudflare-changelog-2026-11-09-warp-macos-ga",
+  "title": "macOS 版 Cloudflare One Client 2026.6.906.0 が GA になったよ！",
+  "summary": "macOS 版 Cloudflare One Client のバージョン 2026.6.906.0 が GA になったよ。信頼された証明書チェーンの構築に関する問題を直すホットフィックスだよ。",
+  "body_md": "おつかれさま、しぃちゃんだよ！\n\nCloudflare One Client の更新、macOS 版もお知らせするね。\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、macOS 版 Cloudflare One Client のバージョン 2026.6.906.0 が GA リリースされたよ。安定版のダウンロードページから入手できるの。\n\n## なぜ重要なの？\n\nこれはホットフィックスで、信頼された証明書チェーンの構築に関する問題を直しているよ。Linux 版と Windows 版も同じバージョンで同時にリリースされているの。\n\n## これで何が変わるの？\n\n原文に書かれているのは、証明書チェーンの構築に関する問題の修正だけだよ。既知の問題の記載はないみたい。\n\n## まとめ\n\n- macOS 版 Cloudflare One Client 2026.6.906.0 が GA\n- 信頼された証明書チェーンの構築に関する問題を修正するホットフィックス\n- 入手先は stable releases のダウンロードページ\n\nMac に Cloudflare One Client を入れている管理者さんや利用者のみんなは、更新をチェックしてね！",
+  "title_en": "Cloudflare One Client for macOS 2026.6.906.0 Is Now GA",
+  "summary_en": "Version 2026.6.906.0 of the Cloudflare One Client for macOS is now GA. This hotfix addresses an issue building trusted certificate chains.",
+  "body_md_en": "Hi everyone, it's Shii-chan!\n\nHere's the macOS update for the Cloudflare One Client.\n\n## What was announced?\n\nThe Cloudflare Changelog says version 2026.6.906.0 of the Cloudflare One Client for macOS is now a GA release. You can get it from the stable releases downloads page.\n\n## Why it matters\n\nThis is a hotfix for an issue building trusted certificate chains. The Linux and Windows clients were released at the same version.\n\n## What changes\n\nThe only change described is the fix for the certificate chain issue. No known issues are listed.\n\n## Wrap-up\n\n- Cloudflare One Client for macOS 2026.6.906.0 is GA\n- Hotfix for an issue building trusted certificate chains\n- Available on the stable releases downloads page\n\nIf you run the Cloudflare One Client on a Mac, check for the update!",
+  "emotion": "thinking",
+  "importance": 2,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-11-09-warp-macos-ga/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Cloudflare One Client - Cloudflare One Client for macOS (version 2026.6.906.0)",
+  "tags": [
+    "cloudflare",
+    "security"
+  ],
+  "published_at": "2026-11-09T19:39:25+00:00"
+}

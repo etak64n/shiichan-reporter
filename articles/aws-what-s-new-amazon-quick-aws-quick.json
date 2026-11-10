@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-quick-aws-quick",
+  "title": "Amazon Quick が AWS Quick に改名！やることは何もないよ",
+  "summary": "AI ワークスペースの Amazon Quick が AWS Quick に、Amazon Quick Sight も AWS Quick Sight に名称変更されたよ。既存のお客さんは何も対応しなくてOKで、料金や設定も変わらないんだって。",
+  "body_md": "こんにちは、しぃちゃんだよ！\n\n今日は名前が変わるお知らせだよ。ちょっと地味だけど、ドキュメントを探すときに迷わないように押さえておこうね。\n\n## なにが発表されたの？\n\nAWS の What's New で、AI ワークスペースの Amazon Quick が AWS Quick に名称変更されたと発表されたよ。Quick に組み込まれているエンタープライズ向けのセキュリティとガバナンスが、AWS サービスとして最初から備わっていることを表す名前なんだって。\n\n## 今までどうだったの？\n\nこれまでは「Amazon Quick」「Amazon Quick Sight」という名前だったよ。新しい名前は次の場所に反映されるの。\n\n- Quick の Web サイト\n- Web・デスクトップ・モバイルの各アプリ\n- AWS のドキュメント\n\n## これで何が変わるの？\n\n結論は「何も変わらない」だよ！\n\n- 既存のお客さんが対応することはない\n- Quick はこれまでと同じように動く\n- BI 機能の Amazon Quick Sight も AWS Quick Sight になるだけ\n- ダッシュボード・データセット・分析はそのまま使える\n- データ・設定・料金にも変更なし\n\n## 深く潜ってみよう\n\n原文にある Quick の紹介も整理しておくね。\n\n- AI エージェントで、ベンダーを問わず既存のデータやアプリをまたいで調査・分析・実行ができる\n- 利用者の役割やチーム、仕事のつながりを理解する\n- 誰でも自然言語でエージェント・アプリ・自動化を作れて、チームの共有資産になる\n- HIPAA 対象で、FedRAMP・SOC 2・ISO 27001 などの認証を取得\n- データは顧客の環境に留まり、他者のモデルの学習には使われない\n\n提供リージョンは多くの AWS リージョンで、詳細は AWS リージョン表を見てね。\n\n## まとめ\n\n- Amazon Quick は AWS Quick に、Amazon Quick Sight は AWS Quick Sight に改名\n- 既存顧客の対応は不要で、機能・設定・料金は変わらない\n- ドキュメントやアプリ上の表記が順次新しい名前になる\n\nQuick や Quick Sight を使っていて、社内資料や運用手順の名称が気になる管理者さんに向けたお知らせだよ！",
+  "title_en": "Amazon Quick Is Now AWS Quick, and You Don't Need to Do Anything",
+  "summary_en": "AWS renamed its AI workspace Amazon Quick to AWS Quick, and Amazon Quick Sight to AWS Quick Sight. Existing customers need no action, and nothing changes in features, settings, or pricing.",
+  "body_md_en": "Hi everyone, it's Shii-chan!\n\nToday's news is about a name change. It's a quiet one, but worth knowing so you don't get lost when searching the docs.\n\n## What was announced?\n\nAccording to AWS What's New, the AI workspace Amazon Quick is now AWS Quick. The name reflects the enterprise security and governance built into Quick from the start as an AWS service.\n\n## The story so far\n\nUntil now the products were called \"Amazon Quick\" and \"Amazon Quick Sight\". The new name appears in these places.\n\n- The Quick website\n- The web, desktop, and mobile apps\n- AWS documentation\n\n## What changes\n\nThe short answer is: nothing changes.\n\n- Existing customers don't need to take any action\n- Quick works the same way it did before\n- The BI capability, Amazon Quick Sight, becomes AWS Quick Sight\n- Dashboards, datasets, and analyses keep working as they do today\n- No changes to data, settings, or pricing\n\n## Dive Deep\n\nHere is a recap of how the announcement describes Quick.\n\n- Teams use AI agents to research, analyze, and act across the data and applications they already use, regardless of vendor\n- It understands your role, your team, and how your work connects\n- Anyone can build agents, apps, and automations in plain language, and they become shared assets for the team\n- HIPAA eligible, with certifications including FedRAMP, SOC 2, and ISO 27001\n- Your data stays in your environment and never trains someone else's models\n\nAWS Quick is available in many AWS Regions. See the AWS Region table for details.\n\n## Wrap-up\n\n- Amazon Quick is now AWS Quick, and Amazon Quick Sight is now AWS Quick Sight\n- No action needed, and features, settings, and pricing stay the same\n- Names in docs and apps are being updated\n\nThis one is for admins who use Quick or Quick Sight and want to keep internal docs and runbooks accurate!",
+  "emotion": "happy",
+  "importance": 1,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-quick-aws-quick/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Quick is now AWS Quick",
+  "tags": [
+    "aws",
+    "ai",
+    "business"
+  ],
+  "published_at": "2026-11-09T19:00:00+00:00"
+}

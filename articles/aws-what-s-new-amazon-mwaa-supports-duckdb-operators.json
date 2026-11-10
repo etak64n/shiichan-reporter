@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-mwaa-supports-duckdb-operators",
+  "title": "Amazon MWAA が DuckDB オペレーターに対応！追加セットアップなしで使えるよ",
+  "summary": "Amazon MWAA の Airflow 3.3.1 で DuckDB が事前インストール済みになり、DuckDBExecuteQueryOperator でそのままタスクを書けるようになったよ。S3 上のデータのチェックや変換にぴったり！",
+  "body_md": "やっほー、しぃちゃんだよ！\n\n今日は Airflow を使っているみんなに嬉しいニュースを見つけちゃった。データ処理がぐっと手軽になりそうで、しぃちゃんわくわくが止まらないの。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Managed Workflows for Apache Airflow（Amazon MWAA）が DuckDB オペレーターに対応したと発表されたよ。\n\nDuckDB は組み込み型の分析データベースで、Amazon S3 など DuckDB が対応するデータソースに対して、データ品質チェック・集計・変換ができるんだ。\n\n## 今までどうだったの？\n\n今までは、MWAA で DuckDB を使いたいときに自分で環境を整える必要があったよ。今回のアップデートで、その手間がなくなるみたい！\n\n## これで何が変わるの？\n\nMWAA の Airflow 3.3.1 では、DuckDB が AWS 接続向けに事前インストール・事前設定された状態で入っているよ。だから、追加のセットアップなしで `DuckDBExecuteQueryOperator` を使ってタスクを書き始められるの。\n\nたとえば S3 に置いたデータの品質チェックや集計を、DAG の中で SQL として手軽に書ける、というイメージだよ。\n\n## 深く潜ってみよう\n\n使い始めるまでの流れはこの 3 ステップだよ！\n\n- MWAA 環境を Airflow 3.3.1 にアップデートする\n- 環境の実行ロールに、データストアへのアクセス権限を追加する\n- `DuckDBExecuteQueryOperator` を使ってタスクを書く\n\n対象と提供範囲はこちらだよ。\n\n- 対象は Airflow 3.3.1 を実行している MWAA の Provisioned 環境\n- MWAA が使える全 AWS リージョンで利用可能\n\n詳しい使い方は、Amazon MWAA ユーザーガイドの「Using DuckDB with Amazon MWAA」にまとまっているよ。\n\n## まとめ\n\n- MWAA が DuckDB オペレーターにネイティブ対応した\n- Airflow 3.3.1 の Provisioned 環境では DuckDB が事前インストール済み\n- 実行ロールに権限を足せば、`DuckDBExecuteQueryOperator` がすぐ使える\n- 全 MWAA 対応リージョンで利用可能\n\nS3 上のデータの品質チェックや変換を Airflow で回しているデータエンジニアのみんなに刺さる更新だよ！",
+  "title_en": "Amazon MWAA Now Supports DuckDB Operators, No Extra Setup Needed",
+  "summary_en": "DuckDB now comes preinstalled in Amazon MWAA on Airflow 3.3.1, so you can write tasks with DuckDBExecuteQueryOperator right away. It is handy for checking and transforming data in S3.",
+  "body_md_en": "Hi everyone, it's Shii-chan!\n\nI found some great news for everyone using Airflow today. Data processing is about to get a lot easier, and I'm so excited!\n\n## What was announced?\n\nAccording to AWS What's New, Amazon Managed Workflows for Apache Airflow (Amazon MWAA) now supports DuckDB operators.\n\nDuckDB is an embedded analytical database. You can use it for data quality checks, summaries, and transformations on data from sources DuckDB supports, including Amazon S3.\n\n## The story so far\n\nUntil now, using DuckDB on MWAA meant preparing the environment yourself. This update removes that work.\n\n## What changes\n\nIn MWAA's Airflow 3.3.1, DuckDB is preinstalled and preconfigured for AWS connections. That means you can start writing tasks with `DuckDBExecuteQueryOperator` with no additional setup.\n\nFor example, you can write quality checks and aggregations on data in S3 as SQL inside your DAG.\n\n## Dive Deep\n\nHere is how to get started in 3 steps.\n\n- Update your MWAA environment to Airflow 3.3.1\n- Add access to your data stores to the environment's execution role\n- Write tasks using `DuckDBExecuteQueryOperator`\n\nAvailability details:\n\n- Supported on MWAA Provisioned environments running Airflow 3.3.1\n- Available in all AWS Regions where MWAA is available\n\nFor more, see \"Using DuckDB with Amazon MWAA\" in the Amazon MWAA User Guide.\n\n## Wrap-up\n\n- MWAA now natively supports DuckDB operators\n- DuckDB is preinstalled on Airflow 3.3.1 Provisioned environments\n- Add permissions to the execution role and `DuckDBExecuteQueryOperator` is ready to use\n- Available in every Region where MWAA is offered\n\nThis one is for data engineers who run quality checks and transformations on S3 data with Airflow!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-mwaa-supports-duckdb-operators/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon MWAA now supports DuckDB operators",
+  "tags": [
+    "aws",
+    "devops",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-09T18:00:00+00:00"
+}

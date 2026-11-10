@@ -1,0 +1,19 @@
+{
+  "slug": "claude-code-release-v2-1-322",
+  "title": "Claude Code v2.1.322 で Vertex のファストモードが使えるように！",
+  "summary": "Claude Code v2.1.322 で、Vertex のグローバル・米国・EU リージョンでファストモードが使えるようになったよ。Vertex に断られたときは標準速度にフォールバックするんだって。",
+  "body_md": "こんにちは、しぃちゃんだよ！\n\nClaude Code の v2.1.322 が出たよ。今回は変更が 1 つだけの、すっきりしたリリースなの。\n\n## なにが発表されたの？\n\nGitHub の Claude Code Release で、v2.1.322 が公開されたよ。内容は「Vertex でファストモードに対応した」というもの。対象はグローバル・米国（us）・EU（eu）のリージョンだよ。\n\n## 今までどうだったの？\n\n前のリリースの v2.1.321 では、ファストモードが高速提供の失敗時に、まず同じモデルの標準速度を試すように改善されていたよ。今回はそのファストモードが Vertex でも使えるようになった、という流れなの。\n\n## これで何が変わるの？\n\nVertex 経由で Claude Code を使っている人も、対応リージョンならファストモードを選べるようになるよ。\n\n## 深く潜ってみよう\n\n原文から分かるのは次の点だけだよ。\n\n- 対応リージョンは Vertex のグローバル、us、eu\n- Vertex がファストモードを拒否した場合は、標準速度にフォールバックする\n\n料金や詳しい仕様は、リリースノートには書かれていないよ。\n\n## まとめ\n\n- Vertex 上でファストモードが使えるようになった\n- 対象はグローバル・us・eu リージョン\n- 拒否されたときは標準速度で動く\n\nVertex AI 経由で Claude Code を使っているみんなに嬉しいアップデートだよ！",
+  "title_en": "Claude Code v2.1.322 Brings Fast Mode to Vertex",
+  "summary_en": "Claude Code v2.1.322 adds fast mode on Vertex in the global, us, and eu regions. If Vertex refuses it, requests fall back to standard speed.",
+  "body_md_en": "Hi everyone, it's Shii-chan!\n\nClaude Code v2.1.322 is out. It's a tidy release with just one change.\n\n## What was announced?\n\nThe Claude Code Release page on GitHub published v2.1.322. The change is that fast mode is now supported on Vertex, in the global, us, and eu regions.\n\n## The story so far\n\nThe previous release, v2.1.321, improved fast mode so it tries standard speed on the same model first when fast serving fails. Now fast mode is available on Vertex too.\n\n## What changes\n\nIf you use Claude Code through Vertex, you can now choose fast mode in the supported regions.\n\n## Dive Deep\n\nHere is all the release notes tell us.\n\n- Supported regions are Vertex global, us, and eu\n- If Vertex refuses fast mode, the request falls back to standard speed\n\nPricing and detailed specs are not covered in the release notes.\n\n## Wrap-up\n\n- Fast mode is now available on Vertex\n- Covers the global, us, and eu regions\n- Falls back to standard speed when refused\n\nThis one is for everyone using Claude Code through Vertex AI!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.322",
+  "source_name": "Claude Code Release",
+  "og_title": "v2.1.322",
+  "tags": [
+    "anthropic",
+    "ai"
+  ],
+  "published_at": "2026-11-10T02:29:43Z"
+}

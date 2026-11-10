@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-bedrock-agentcore-web-search-api",
+  "title": "たった 1 回の API 呼び出しで Web 検索！AgentCore に InvokeWebSearch が登場",
+  "summary": "Amazon Bedrock AgentCore の Web Search API が一般提供になったよ。InvokeWebSearch API でリソースを作らずに Web 検索ができて、料金は 1,000 クエリあたり $7 だよ。",
+  "body_md": "やっほー、しぃちゃんだよ！\n\nエージェントに Web 検索をさせたいみんな、これはかなり手軽になりそうだよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Bedrock AgentCore の Web Search API が一般提供（GA）になったと発表されたよ。1 回の API 呼び出しで Web を検索できるの。\n\n## 今までどうだったの？\n\nAgentCore の Web Search は、これまで AgentCore Gateway 経由の MCP ツールとして使えたよ。\n\n## これで何が変わるの？\n\n新しい `InvokeWebSearch` API で、アプリケーション、独自のエージェントループ、データパイプラインから、作成するリソースなしで検索結果を取得できるようになったの。\n\nAPI は、Amazon が運営する Web インデックスからランク付けした結果を返すよ。各結果にはこんな情報が入っているの。\n\n- 本文の抜粋\n- ページタイトル（ある場合）\n- URL（ある場合）\n- 公開時刻（ある場合）\n\n## 深く潜ってみよう\n\n- リクエストごとに、ドメインと公開時刻で絞り込める（例: 最近の製品発表を探す、信頼できるドメインで主張を確認する）\n- AWS SDK か AWS CLI で呼び出し、AWS IAM で認可する\n- AWS PrivateLink 経由で VPC から呼び出せる\n- リクエストを AWS CloudTrail のデータイベントとして記録できる\n- 料金は 1,000 クエリあたり $7 で、AgentCore Gateway 経由の Web Search と同じ。ゲートウェイの料金はかからない\n\n利用できるリージョンはこちらだよ。\n\n- 米国東部（バージニア北部）\n- 米国東部（オハイオ）\n- 米国西部（オレゴン）\n- アジアパシフィック（シドニー）\n- アジアパシフィック（東京）\n- 欧州（アイルランド）\n\n詳しくは AgentCore Developer Guide の「Search the web with the InvokeWebSearch API」を見てね。\n\n## まとめ\n\n- AgentCore の Web Search API が GA\n- `InvokeWebSearch` で、リソース作成なしに 1 回の呼び出しで検索できる\n- ドメインと公開時刻のフィルタ、IAM 認可、PrivateLink、CloudTrail に対応\n- 1,000 クエリあたり $7 で、東京を含む 6 リージョンで利用可能\n\nエージェントやデータパイプラインに Web 検索を組み込みたい開発者のみんなに刺さるよ！",
+  "title_en": "Web Search in One API Call: AgentCore Gets InvokeWebSearch",
+  "summary_en": "The Web Search API on Amazon Bedrock AgentCore is now generally available. The InvokeWebSearch API lets you search the web with no resources to create, at $7 per 1,000 queries.",
+  "body_md_en": "Hi everyone, it's Shii-chan!\n\nIf you want your agents to search the web, this just got much easier.\n\n## What was announced?\n\nAccording to AWS What's New, the Web Search API on Amazon Bedrock AgentCore is now generally available. You can search the web with a single API call.\n\n## The story so far\n\nWeb Search on AgentCore had been available as an MCP tool through AgentCore Gateway.\n\n## What changes\n\nThe new `InvokeWebSearch` API gives applications, custom agent loops, and data pipelines search results with no resources to create.\n\nThe API returns ranked results from the Amazon-operated web index. Each result includes:\n\n- A text extract\n- The page title, when available\n- The URL, when available\n- The publication time, when available\n\n## Dive Deep\n\n- Filter each request by domain and publication time, for example to find recent product announcements or check a claim against trusted domains\n- Call it with the AWS SDKs or AWS CLI and authorize with AWS IAM\n- Call it from your VPC through AWS PrivateLink\n- Log requests as AWS CloudTrail data events\n- Billed at $7 per 1,000 queries, the same rate as Web Search through AgentCore Gateway, with no gateway charges\n\nIt is available in these Regions.\n\n- US East (N. Virginia)\n- US East (Ohio)\n- US West (Oregon)\n- Asia Pacific (Sydney)\n- Asia Pacific (Tokyo)\n- Europe (Ireland)\n\nSee \"Search the web with the InvokeWebSearch API\" in the AgentCore Developer Guide for details.\n\n## Wrap-up\n\n- The AgentCore Web Search API is GA\n- `InvokeWebSearch` searches in one call with no resources to create\n- Supports domain and time filters, IAM authorization, PrivateLink, and CloudTrail\n- $7 per 1,000 queries, in 6 Regions including Tokyo\n\nThis one is for developers who want web search in their agents and data pipelines!",
+  "emotion": "energetic",
+  "importance": 5,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-bedrock-agentcore-web-search-api/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Bedrock AgentCore now offers a Web Search API",
+  "tags": [
+    "aws",
+    "ai",
+    "serverless"
+  ],
+  "published_at": "2026-11-10T09:46:32+00:00"
+}

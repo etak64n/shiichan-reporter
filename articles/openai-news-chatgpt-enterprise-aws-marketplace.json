@@ -1,0 +1,20 @@
+{
+  "slug": "openai-news-chatgpt-enterprise-aws-marketplace",
+  "title": "ChatGPT Enterprise が AWS Marketplace で買えるように！",
+  "summary": "ChatGPT Enterprise が AWS Marketplace で購入できるようになったよ。既存の AWS の購買・請求の仕組みを使えて、対象の支出は AWS のコミットメントに充当できるんだって。",
+  "body_md": "おつかれさま、しぃちゃんだよ！\n\n今日は、会社で ChatGPT の導入を考えているみんなに関係するお知らせだよ。\n\n## なにが発表されたの？\n\nOpenAI の News で、ChatGPT Enterprise が AWS Marketplace 経由で利用できるようになったと発表されたよ。組織は既存の AWS の購買・請求の関係を使って、ChatGPT Enterprise を探して、購入して、管理できるの。\n\n## なぜ重要なの？\n\n新しいサービスを導入するときは、契約や調達の手続きが大きなハードルになりがちだよね。AWS Marketplace で買えるなら、すでにある AWS の購買フローに乗せられるから、評価から本番展開までが早くなる、と AWS 側のコメントでも紹介されているよ。\n\n## これで何が変わるの？\n\n- 既存の AWS アカウント経由で購入し、他のソフトウェア支出と一緒に管理できる\n- 対象となる支出を、AWS のコミットメントに充当できる\n- 直接 OpenAI から買う場合と同じモデルと機能が使え、新機能も同時に提供される\n\n## 深く潜ってみよう\n\n原文から拾える内容をまとめるね。\n\n- ChatGPT Enterprise の範囲は ChatGPT、ChatGPT Work、Codex、dots\n- 条件を満たす顧客は ChatGPT for Healthcare と ChatGPT for Financial Services も AWS Marketplace で購入できる\n- Amazon Bedrock で使える OpenAI モデルとは補完関係にある。開発者は Bedrock のモデルで AI アプリやエージェントを作り、それ以外の従業員は日々の業務で ChatGPT Enterprise を使う、という使い分けが想定されている\n- 利用の可否は、OpenAI か AWS のアカウントチームに問い合わせて確認する\n\n## まとめ\n\n- ChatGPT Enterprise が AWS Marketplace で購入可能になった\n- 既存の AWS 購買・請求を使え、対象支出は AWS コミットメントに充当できる\n- 機能やモデルは直接購入と同じで、新機能も同時に届く\n- Healthcare 版と Financial Services 版も対象顧客は購入できる\n\nAWS 中心で調達していて、全社に ChatGPT を広げたい情シスや調達担当のみんなに刺さる発表だよ！",
+  "title_en": "ChatGPT Enterprise Is Now Available in AWS Marketplace",
+  "summary_en": "ChatGPT Enterprise can now be purchased through AWS Marketplace. Organizations can use their existing AWS purchasing and billing, and eligible spend can count toward AWS commitments.",
+  "body_md_en": "Hi everyone, it's Shii-chan!\n\nToday's news is for anyone thinking about bringing ChatGPT to their company.\n\n## What was announced?\n\nOpenAI News announced that ChatGPT Enterprise is now available through AWS Marketplace. Organizations can find, purchase, and manage it through their existing AWS purchasing and billing relationships.\n\n## Why it matters\n\nContracts and procurement are often the biggest hurdle when adopting a new service. Buying through AWS Marketplace lets teams use the purchasing flow they already have, which AWS says speeds the move from evaluation to rollout.\n\n## What changes\n\n- Buy through your existing AWS account and manage it with your other software spend\n- Eligible spend can count toward your AWS commitments\n- You get the same models and features as buying directly from OpenAI, and new features ship at the same time\n\n## Dive Deep\n\nHere is what the announcement says.\n\n- ChatGPT Enterprise covers ChatGPT, ChatGPT Work, Codex, and dots\n- Eligible customers can also buy ChatGPT for Healthcare and ChatGPT for Financial Services through AWS Marketplace\n- It complements the OpenAI models in Amazon Bedrock: developers build AI apps and agents with the Bedrock models, while other staff use ChatGPT Enterprise for daily work\n- To check eligibility, contact your OpenAI or AWS account team\n\n## Wrap-up\n\n- ChatGPT Enterprise is now purchasable in AWS Marketplace\n- Use existing AWS purchasing and billing, with eligible spend counting toward commitments\n- Same features and models as buying directly, with new features arriving at the same time\n- Eligible customers can also buy the Healthcare and Financial Services editions\n\nThis one is for IT and procurement teams that buy through AWS and want to roll ChatGPT out company-wide!",
+  "emotion": "happy",
+  "importance": 1,
+  "source_url": "https://openai.com/index/chatgpt-enterprise-aws-marketplace",
+  "source_name": "OpenAI News",
+  "og_title": "ChatGPT Enterprise now available in AWS Marketplace",
+  "tags": [
+    "openai",
+    "aws",
+    "business"
+  ],
+  "published_at": "2026-11-09T19:00:00+00:00"
+}

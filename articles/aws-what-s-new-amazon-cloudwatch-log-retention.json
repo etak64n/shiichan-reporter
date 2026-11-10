@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-cloudwatch-log-retention",
+  "title": "CloudWatch Logs の保持期間、アカウント単位で 1 本のポリシーにまとめられるよ！",
+  "summary": "Amazon CloudWatch Logs でアカウントレベルの保持ポリシーが使えるようになったよ。全ロググループ、またはプレフィックスで絞ったロググループの保持期間を 1 つのポリシーで設定できて、追加料金はなしだよ。",
+  "body_md": "こんにちは、しぃちゃんだよ！\n\nログの保持期間をロググループごとに設定していた人、これは楽になるよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon CloudWatch Logs がアカウントレベルの保持ポリシーに対応したと発表されたよ。1 つのポリシーで、AWS アカウント内のすべて、または一部のロググループのデータ保持期間を設定できるの。\n\n## 今までどうだったの？\n\n原文は従来の仕組みの詳細を書いていないけれど、「ロググループの名前を 1 つずつ追わずに」済むようになる、という説明があるよ。プラットフォームチームやセキュリティチームが、各ロググループを自分たちの保持基準にそろえやすくなるのが狙いなんだ。\n\n## これで何が変わるの？\n\nポリシーの範囲は 2 通りから選べるよ。\n\n- アカウント内のすべてのロググループ\n- `/aws/lambda` のような、決まったプレフィックスで始まる名前のロググループ\n\nさらに、既存のロググループにも適用するか、新しく作られるものだけに適用するかも選べるの。\n\nたとえば、中央のプラットフォームチームがアカウント全体に 90 日のベースラインを設定して、`/security` で始まるロググループには監査要件のために 1 年のポリシーを設定する、という使い方ができるよ。\n\n## 深く潜ってみよう\n\n- 複数のポリシーが同じロググループに一致したときは、最も長い保持期間が適用される\n- 1 アカウント・1 リージョンあたり最大 20 個のポリシーを作成・管理できる\n- 管理方法は AWS マネジメントコンソール、AWS CLI、AWS SDK\n- 追加料金なし\n- 中東（バーレーン）と中東（UAE）を除く、すべての商用 AWS リージョンで利用可能\n\nAPI リファレンスには `PutAccountPolicy` オペレーションが載っているよ。\n\n## まとめ\n\n- CloudWatch Logs にアカウントレベルの保持ポリシーが登場\n- 全ロググループ、またはプレフィックス一致のロググループを対象にできる\n- 既存と新規のどちらに適用するか選べ、複数一致なら最長の期間が優先される\n- 最大 20 ポリシー、追加料金なしで、一部の中東リージョンを除く商用リージョンで利用可能\n\nログの保持基準を組織で統一したいプラットフォームチームやセキュリティチームに刺さるよ！",
+  "title_en": "CloudWatch Logs Now Lets You Set Retention for a Whole Account With One Policy",
+  "summary_en": "Amazon CloudWatch Logs now supports account-level retention policies. One policy can set retention for all log groups or a prefix-matched subset, at no additional cost.",
+  "body_md_en": "Hi everyone, it's Shii-chan!\n\nIf you've been setting log retention one log group at a time, this makes life easier.\n\n## What was announced?\n\nAccording to AWS What's New, Amazon CloudWatch Logs now supports account-level retention policies. You can use a single policy to set how long log data is kept across all or a subset of log groups in an AWS account.\n\n## The story so far\n\nThe announcement doesn't detail the old approach, but it says teams can now do this without tracking individual log group names. The goal is to help platform and security teams bring each log group in line with their retention standards.\n\n## What changes\n\nYou can choose the scope of a policy in two ways.\n\n- All log groups in the account\n- Log groups whose names start with a prefix, such as `/aws/lambda`\n\nYou can also choose whether it applies to existing log groups or only new ones.\n\nFor example, a central platform team can set a 90-day baseline for the account and a 1-year policy for log groups that start with `/security` to meet audit requirements.\n\n## Dive Deep\n\n- When more than one policy matches a log group, the longest retention period applies\n- You can create and manage up to 20 policies per account and region\n- Manage them with the AWS Management Console, AWS CLI, and AWS SDKs\n- No additional cost\n- Available in all commercial AWS Regions except Middle East (Bahrain) and Middle East (UAE)\n\nThe API reference describes the `PutAccountPolicy` operation.\n\n## Wrap-up\n\n- CloudWatch Logs gets account-level retention policies\n- Target all log groups or prefix-matched ones\n- Choose existing or new groups, and the longest period wins when several match\n- Up to 20 policies at no extra cost, in commercial Regions except two Middle East ones\n\nThis one is for platform and security teams who want consistent log retention across the organization!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-cloudwatch-log-retention/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon CloudWatch Logs announces account-level retention policies",
+  "tags": [
+    "aws",
+    "devops",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-09T22:15:00+00:00"
+}

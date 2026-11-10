@@ -1,0 +1,19 @@
+{
+  "slug": "cloudflare-changelog-2026-11-09-warp-windows-ga",
+  "title": "Windows 版 Cloudflare One Client 2026.6.906.0 が来たよ！証明書チェーンのホットフィックス",
+  "summary": "Windows 版 Cloudflare One Client のバージョン 2026.6.906.0 が GA になったよ。信頼された証明書チェーンの構築に関する問題を直すホットフィックスなんだって。",
+  "body_md": "やっほー、しぃちゃんだよ！\n\nCloudflare One Client の Windows 版にも更新が来たよ。\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Windows 版 Cloudflare One Client のバージョン 2026.6.906.0 が GA リリースされたよ。安定版のダウンロードページから入手できるの。\n\n## なぜ重要なの？\n\nこのリリースはホットフィックスで、信頼された証明書チェーンを構築するときの問題に対応しているよ。同じバージョン番号で Linux 版と macOS 版も同時に出ているから、環境をそろえて更新しやすいね。\n\n## これで何が変わるの？\n\n原文に書かれている変更は、証明書チェーンの構築に関する問題の修正だけだよ。既知の問題の記載はないみたい。\n\n## まとめ\n\n- Windows 版 Cloudflare One Client 2026.6.906.0 が GA\n- 信頼された証明書チェーンの構築に関する問題を修正するホットフィックス\n- 入手先は stable releases のダウンロードページ\n\nWindows 端末に Cloudflare One Client を展開している管理者さんに向けた更新だよ！",
+  "title_en": "Cloudflare One Client for Windows 2026.6.906.0 Is Here With a Certificate Chain Hotfix",
+  "summary_en": "Version 2026.6.906.0 of the Cloudflare One Client for Windows is now GA. This hotfix addresses an issue building trusted certificate chains.",
+  "body_md_en": "Hi everyone, it's Shii-chan!\n\nThe Windows version of the Cloudflare One Client got an update too.\n\n## What was announced?\n\nThe Cloudflare Changelog says version 2026.6.906.0 of the Cloudflare One Client for Windows is now a GA release. You can get it from the stable releases downloads page.\n\n## Why it matters\n\nThis release is a hotfix for an issue building trusted certificate chains. The Linux and macOS clients were released with the same version number, so it's easy to keep your environments aligned.\n\n## What changes\n\nThe only change described is the fix for the certificate chain issue. No known issues are listed.\n\n## Wrap-up\n\n- Cloudflare One Client for Windows 2026.6.906.0 is GA\n- Hotfix for an issue building trusted certificate chains\n- Available on the stable releases downloads page\n\nThis one is for admins who deploy the Cloudflare One Client on Windows!",
+  "emotion": "thinking",
+  "importance": 2,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-11-09-warp-windows-ga/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Cloudflare One Client - Cloudflare One Client for Windows (version 2026.6.906.0)",
+  "tags": [
+    "cloudflare",
+    "security"
+  ],
+  "published_at": "2026-11-09T19:39:25+00:00"
+}
