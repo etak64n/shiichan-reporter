@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-athena-system-tables",
+  "title": "Athena の system tables が登場！クエリの利用状況を SQL でそのまま分析できるよ",
+  "summary": "Amazon Athena に system tables が追加されたよ！利用データが自動で Iceberg テーブルに溜まり、コスト配分やオブザーバビリティの分析を SQL だけでできるの。",
+  "body_md": "やっほー、しぃちゃんだよ！Athena を使っているみんな、運用がぐっとラクになるよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Athena に system tables が追加されたと発表されたよ。使用データを自動で記録して、オブザーバビリティ、利用状況の分析、監査に使えるようにするものだよ。\n\n## 今までどうだったの？\n\nAthena の利用データは、`GetQueryExecution` などの API、CloudWatch メトリクス、CloudTrail ログで取得できたよ。ただ、検索や集計や結合をしたいときは、自前でパイプラインを作る必要があったの。\n\n## これで何が変わるの？\n\nsystem tables を有効にすると、クエリ完了から数分で、ワークグループ全体の使用データが使えるようになるよ。\n\n- データは、サービス管理の読み取り専用の Iceberg テーブルとして Amazon S3 Tables に保存される。保持期間は設定できる\n- スキーマ定義、パーティション、コンパクション、スナップショット管理は AWS がやってくれるので、運用の負担がない\n- 検索、フィルター、集計、結合を、カスタムパイプラインなしで直接できる\n- 例えば `query_executions` テーブルを使って、ワークグループ別、ユーザー別、テーブル別のスキャン量を示すコスト配分ダッシュボードを、シンプルな SQL と ETL なしで作れる\n\n## 深く潜ってみよう\n\n- データはオープンな Apache Iceberg 形式なので、Athena のほか DuckDB、Amazon Redshift、Amazon EMR など、Iceberg 互換のエンジンでもクエリできる\n- AWS Agent Toolkit に、system tables をクエリして利用パターンや最適化の提案を出すスキルがある\n- 提供範囲は、Athena と Amazon S3 Tables の両方が使えるすべての AWS リージョン\n- 有効にするには、Athena のコンソールか API を使う\n\n## まとめ\n\n- Athena の使用データが、クエリ完了から数分で Iceberg テーブルとして使える\n- AWS がテーブルの運用を管理し、保持期間は設定できる\n- コスト配分などの分析を SQL だけで行える\n- DuckDB や Redshift など、他のエンジンからも読める\n\nAthena のコストや利用状況を、チームごとに見える化したい人に刺さるよ！",
+  "title_en": "Athena System Tables Are Here: Analyze Query Usage with Plain SQL!",
+  "summary_en": "Amazon Athena now offers system tables that automatically capture usage data as Iceberg tables, so you can do cost allocation and observability analysis with SQL alone.",
+  "body_md_en": "Hi everyone, it's Shii-chan! If you use Athena, operations just got easier!\n\n## What was announced?\n\nAWS What's New announced that Amazon Athena now offers system tables that automatically capture your usage data for observability, usage analysis, and audit use cases.\n\n## The story so far\n\nAthena usage data was available through APIs like `GetQueryExecution`, CloudWatch metrics, and CloudTrail logs. But to search, aggregate, or join it, you had to build custom pipelines.\n\n## What changes\n\nWhen you enable system tables, usage data is available within minutes of query completion across your workgroups.\n\n- Data is stored as service-managed, read-only Iceberg tables on Amazon S3 Tables, with configurable retention\n- AWS manages schema definition, partitioning, compaction, and snapshot maintenance, so there's no operational burden\n- You can search, filter, aggregate, and join directly, with no custom pipelines\n- For example, the `query_executions` table can power cost allocation dashboards showing data scanned by workgroup, user, or table, using simple SQL and no custom ETL\n\n## Dive Deep\n\n- Because the data is in open Apache Iceberg format, you can also query it with DuckDB, Amazon Redshift, Amazon EMR, or any Iceberg-compatible engine\n- The AWS Agent Toolkit provides skills for querying system tables to surface usage patterns and optimization recommendations\n- Available in all AWS Regions where Athena and Amazon S3 Tables are available\n- Enable system tables from the Athena console or API\n\n## Wrap-up\n\n- Athena usage data is available as Iceberg tables within minutes of query completion\n- AWS manages the tables, and retention is configurable\n- Cost allocation and other analysis can be done in SQL alone\n- Other engines like DuckDB and Redshift can read it too\n\nThis is for anyone who wants to see Athena costs and usage by team!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/athena-system-tables/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Athena introduces system tables for observability, auditing, and usage analytics",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "devops"
+  ],
+  "published_at": "2026-11-09T16:00:00+00:00"
+}

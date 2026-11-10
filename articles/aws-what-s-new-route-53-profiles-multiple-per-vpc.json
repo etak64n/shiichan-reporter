@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-route-53-profiles-multiple-per-vpc",
+  "title": "Route 53 Profiles が 1 つの VPC に複数関連付け可能に！優先度で順番に評価するよ",
+  "summary": "Amazon Route 53 Profiles を 1 つの VPC に複数関連付けられるようになったよ！各 Profile に優先度を付けて、チームごとに設定を分けて管理できるの。",
+  "body_md": "やっほー、しぃちゃんだよ！DNS をチームで管理しているみんなに嬉しいアップデートだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Route 53 Profiles を 1 つの VPC に複数関連付けられるようになったと発表されたよ。\n\n## 今までどうだったの？\n\nこれまで、VPC に関連付けられる Profile は 1 つだけだったの。セキュリティチームが DNS Firewall のルールグループを管理し、クラウド基盤やネットワークの管理者がプライベートホストゾーンや Resolver の転送ルールを管理する、といった場合でも、全員が 1 つの Profile を共有して、そこにプライベートホストゾーン、Resolver ルール、DNS Firewall ルールグループをまとめて関連付ける必要があったよ。\n\n## これで何が変わるの？\n\n同じ VPC に複数の Profile を関連付けて、それぞれに優先度を設定できるようになったよ。\n\n- 共有する設定は 1 つの Profile に、チーム固有の設定は別の Profile に置ける\n- 設定をマージしなくてよい\n- 3月 2026 に出た細かい IAM 権限と組み合わせると、各チームが最小権限で自分の Profile を所有・管理できて、セキュリティ面も良くなる\n\n## 深く潜ってみよう\n\n- Route 53 は、VPC の Profile を優先度の数字が小さいものから順に評価する\n- Profile と VPC の関連付けごとに、標準の Route 53 Profiles の料金がかかる\n- Route 53 Profiles が使えるすべての AWS リージョンで利用可能\n\n料金の詳細は Amazon Route 53 の料金ページ、使い方は Amazon Route 53 Developer Guide の Route 53 Profiles を見てね。\n\n## まとめ\n\n- 1 つの VPC に複数の Profile を関連付けられる\n- 優先度の小さい順に評価される\n- チームごとに Profile を分けて、最小権限で管理しやすくなる\n- 関連付けごとに標準の Profiles 料金がかかる\n\nセキュリティチームとネットワークチームで DNS 設定を分担している人に刺さるよ！",
+  "title_en": "Route 53 Profiles: Multiple Profiles per VPC, Evaluated by Priority!",
+  "summary_en": "Amazon Route 53 Profiles now lets you associate more than one Profile with a VPC and set a priority for each, so teams can manage their own configurations separately.",
+  "body_md_en": "Hi everyone, it's Shii-chan! This is a nice update for teams that share DNS management!\n\n## What was announced?\n\nAWS What's New announced that Amazon Route 53 Profiles now lets you associate more than one Profile with a VPC.\n\n## The story so far\n\nPreviously, a VPC could have only one Profile. Even when a security team managed DNS Firewall rule groups while cloud infrastructure and network admin teams managed private hosted zones and Resolver forwarding rules, everyone had to share a single Profile and associate everything with it.\n\n## What changes\n\nYou can now associate multiple Profiles with the same VPC and set a priority for each.\n\n- Keep shared configurations in one Profile and team-specific ones in another\n- No need to merge them\n- Combined with the granular IAM permissions launched in March 2026, each team can own and manage its own Profile with least privilege, improving security posture\n\n## Dive Deep\n\n- Route 53 evaluates a VPC's Profiles in priority order, starting with the lowest number\n- Each Profile-VPC association is billed at standard Route 53 Profiles pricing\n- Available in all AWS Regions where Route 53 Profiles is available\n\nSee the Amazon Route 53 pricing page for costs and Route 53 Profiles in the Amazon Route 53 Developer Guide for usage.\n\n## Wrap-up\n\n- Multiple Profiles can be associated with one VPC\n- They're evaluated from the lowest priority number\n- Teams can split Profiles and manage them with least privilege\n- Each association is billed at standard Profiles pricing\n\nThis is for anyone whose security and network teams share DNS configuration!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/route-53-profiles-multiple-per-vpc/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Route 53 Profiles now supports multiple Profiles per VPC",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "security"
+  ],
+  "published_at": "2026-11-09T08:00:00+00:00"
+}

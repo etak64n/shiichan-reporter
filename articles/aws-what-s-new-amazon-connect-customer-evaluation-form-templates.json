@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-connect-customer-evaluation-form-templates",
+  "title": "Amazon Connect Customer に評価フォームのテンプレートが登場！ゼロから作らなくていいよ",
+  "summary": "Amazon Connect Customer に評価フォームのテンプレートが追加されたよ！カスタマーサービス、インバウンド営業、セルフサービスの 3 つの場面で、人間と AI エージェントの評価を始められるの。",
+  "body_md": "やっほー、しぃちゃんだよ！コンタクトセンターの運用をしているみんなに朗報だよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Connect Customer に評価フォームのテンプレートが追加されたと発表されたよ。\n\nマネージャーがフォームをゼロから作らなくてよくなり、人間のエージェントと AI エージェントの働きぶりを自動で評価する仕組みを、短時間で導入できるようになるの。\n\n## これで何が変わるの？\n\nテンプレートがカバーする、典型的な顧客対応のシナリオはこの 3 つだよ。\n\n- カスタマーサービス\n- インバウンド営業\n- セルフサービス\n\nどのテンプレートも、人間と AI エージェントの両方の行動を評価するよ。例えば、カスタマーサービスのテンプレートには「エージェントは顧客の問題に共感を示したか？」といった質問が入っているの。\n\nさらに、顧客満足度や離脱リスクなど、ビジネス成果を評価する質問も入っているので、エージェントの行動と成果の関係を見られるよ。テンプレートはそのまま使っても、カスタマイズしてから展開してもいいんだって。\n\n## 深く潜ってみよう\n\n利用できるリージョンはこの 8 つだよ。\n\n- 米国東部（バージニア北部）\n- 米国西部（オレゴン）\n- カナダ（中部）\n- ヨーロッパ（フランクフルト）\n- ヨーロッパ（ロンドン）\n- アジアパシフィック（シンガポール）\n- アジアパシフィック（シドニー）\n- アジアパシフィック（東京）\n\n料金は Amazon Connect Customer の料金ページ、使い方はドキュメントを見てね。\n\n## まとめ\n\n- 評価フォームのテンプレートが追加された\n- カスタマーサービス、インバウンド営業、セルフサービスの 3 種類\n- 人間と AI エージェントの行動に加え、満足度や離脱リスクなどの成果も評価\n- そのままでもカスタマイズしても使える\n\nコンタクトセンターで、AI エージェントも含めた品質評価を素早く始めたい人に刺さるよ！",
+  "title_en": "Amazon Connect Customer Launches Evaluation Form Templates: No More Starting from Scratch!",
+  "summary_en": "Amazon Connect Customer now provides evaluation form templates for customer service, inbound sales, and self-service, covering both human and AI agents.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Good news for contact center teams!\n\n## What was announced?\n\nAWS What's New announced that Amazon Connect Customer now provides evaluation form templates.\n\nManagers no longer have to build forms from scratch, which reduces the time to deploy automated evaluations of human and AI agent performance.\n\n## What changes\n\nThe templates cover three typical customer interaction scenarios:\n\n- Customer service\n- Inbound sales\n- Self-service\n\nEach template assesses both human and AI agent behaviors. For example, the customer service template includes questions such as \"Did the agent show empathy toward the customer's issue?\"\n\nTemplates also include questions that assess business outcomes such as customer satisfaction and attrition risk, so managers can see how agent behaviors relate to outcomes. You can use the templates as-is or customize them before deploying.\n\n## Dive Deep\n\nThe feature is available in these eight Regions:\n\n- US East (N. Virginia)\n- US West (Oregon)\n- Canada (Central)\n- Europe (Frankfurt)\n- Europe (London)\n- Asia Pacific (Singapore)\n- Asia Pacific (Sydney)\n- Asia Pacific (Tokyo)\n\nSee the Amazon Connect Customer pricing page for costs and the documentation for usage.\n\n## Wrap-up\n\n- Evaluation form templates are now available\n- Three types: customer service, inbound sales, and self-service\n- They assess human and AI agent behaviors plus outcomes like satisfaction and attrition risk\n- Use them as-is or customize them\n\nThis is for contact centers that want to start quality evaluation, including AI agents, quickly!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-connect-customer-evaluation-form-templates/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Connect Customer launches evaluation form templates",
+  "tags": [
+    "aws",
+    "ai"
+  ],
+  "published_at": "2026-11-09T18:00:00+00:00"
+}

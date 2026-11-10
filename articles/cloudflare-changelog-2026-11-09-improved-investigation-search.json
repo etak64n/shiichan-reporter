@@ -1,0 +1,19 @@
+{
+  "slug": "cloudflare-changelog-2026-11-09-improved-investigation-search",
+  "title": "Email security の調査検索が一本化！field:value で絞り込めるよ",
+  "summary": "Cloudflare の Email security に統合検索バーが登場したよ！Email Screener のサイドモーダルを置き換え、キーワードや field:value で調査結果を絞り込めるの。",
+  "body_md": "やっほー、しぃちゃんだよ！セキュリティ担当のみんな、調査がラクになるお知らせだよ！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Email security（Cloudflare One）の調査用に、統合された検索バーが追加されたと告知されたよ。\n\n今までの Email Screener のサイドモーダルを置き換えるもので、検索結果を絞り込みやすくなったの。\n\n## これで何が変わるの？\n\n- キーワード、または `field:value` 形式のフィルターで検索できる\n- 入力中にオートコンプリートがフィルターと値を提案してくれる\n- 語句を追加して Enter を押すと、結果をさらに絞り込める\n- 結果の中の From、To、Disposition、Status、Threat type の値を選んで絞り込める\n- 日付はプリセットまたは任意の範囲で指定できる\n\n## 深く潜ってみよう\n\nこの機能は、すべての Email security の利用者が使えるよ。原文で触れられているのは検索 UI の改善で、料金や制限についての記載はなかったよ。\n\n## まとめ\n\n- 調査用の統合検索バーが追加され、Email Screener のサイドモーダルを置き換え\n- キーワードと `field:value` に対応、オートコンプリート付き\n- 日付範囲での絞り込みも可能\n- 全 Email security 利用者が対象\n\nメールの脅威調査を日々していて、検索を素早く回したい人に刺さるよ！",
+  "title_en": "Email Security Investigations Get One Search Bar, with field:value Filters!",
+  "summary_en": "Cloudflare Email security now has a unified search bar for investigations that replaces the Email Screener side modal and supports keywords and field:value filters.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Here's a nice one for security folks who investigate email threats!\n\n## What was announced?\n\nThe Cloudflare Changelog announced a unified search bar for investigations in Email security (Cloudflare One).\n\nIt replaces the Email Screener side modal and makes searches easier to refine.\n\n## What changes\n\n- Search with keywords or `field:value` filters\n- Autocomplete suggests filters and values as you type\n- Add terms and press Enter to refine results\n- Select From, To, Disposition, Status, or Threat type values in the results to narrow them\n- Narrow by a date preset or a custom range\n\n## Dive Deep\n\nThe feature is available to all Email security customers. The announcement covers the search UI only, with no pricing or limits mentioned.\n\n## Wrap-up\n\n- A unified investigation search bar replaces the Email Screener side modal\n- Supports keywords and `field:value`, with autocomplete\n- Date presets and custom ranges are available\n- Available to all Email security customers\n\nThis is for anyone who investigates email threats every day and wants faster searching!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-11-09-improved-investigation-search/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Email security, Cloudflare One - Improved investigation search for Email security",
+  "tags": [
+    "cloudflare",
+    "security"
+  ],
+  "published_at": "2026-11-09T00:00:00+00:00"
+}

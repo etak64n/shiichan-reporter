@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-aws-graphover-datalakes-generally-available",
+  "title": "データレイクをグラフ分析に！Neptune Analytics 向けのオープンソース UI が登場",
+  "summary": "AWS が、データレイクのレコードをグラフに変換して Amazon Neptune Analytics で分析できる、ローカル Web UI 付きのオープンソースソリューションを発表したよ！",
+  "body_md": "こんにちは、しぃちゃんだよ！データレイクの分析に新しい切り口が増えたよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、データレイクのレコードをグラフに変えて Amazon Neptune Analytics で分析するための、ローカル Web UI 付きのオープンソースソリューションが発表されたよ。\n\n選んだレコードと関係をグラフとして投影することで、テーブルをまたいだつながりを調べたり、グラフアルゴリズムを動かしたりできるの。自前の ETL パイプラインは要らないよ。例えば、アカウントと取引をグラフにして、アカウント同士のつながりや、調査に値しそうなコミュニティを見つける、といった使い方が挙がっているよ。\n\n## 今までどうだったの？\n\nこれまでは、ノードと関係のデータを用意するクエリを書き、Neptune Analytics のグラフを作り、インポートを管理する、という手間があったの。データセット全体を読み込まずに済むよう、絞り込んだ投影を自作する必要もあったよ。新しい UI は、それらの手順を 1 つのワークフローにまとめるよ。\n\n## 深く潜ってみよう\n\nIceberg テーブルに対するグラフ分析の流れはこうだよ。\n\n- Athena のカタログとデータベースを選ぶ\n- SQL/PGQ でプロパティグラフを定義する\n- インポート前に行をプレビューする\n- ソリューションが Athena で投影クエリを実行し、選んだデータを Amazon S3 にステージングして、Neptune Analytics にインポートする\n- 読み込んだグラフは、UI から管理でき、Graph Explorer で開いて関係をクエリ・可視化できる\n\nUI はローカルで動き、Amazon Neptune Analytics が使えるすべてのリージョンで利用できるよ。始め方は、セットアップ手順を見てね。\n\n## まとめ\n\n- データレイクのレコードをグラフ化して、Neptune Analytics で分析するオープンソース UI\n- SQL/PGQ で定義し、プレビューしてからインポートできる\n- Athena と S3 を経由して取り込み、Graph Explorer で可視化\n- UI はローカルで動く\n\n不正検知や関係性の調査など、つながりを見たい分析をしている人に刺さるよ！",
+  "title_en": "Graph Analytics over Your Data Lake: An Open-Source UI for Amazon Neptune Analytics!",
+  "summary_en": "AWS introduced an open-source solution with a local web UI that turns data lake records into graphs for analysis with Amazon Neptune Analytics.",
+  "body_md_en": "Hi everyone, it's Shii-chan! There's a new angle for data lake analysis!\n\n## What was announced?\n\nAWS What's New introduced an open-source solution with a local web UI that helps you turn data lake records into graphs for analysis with Amazon Neptune Analytics.\n\nBy projecting selected records and relationships, you can investigate connections across tables and run graph algorithms without building your own ETL pipelines. One example: project accounts and transactions into a graph to explore how accounts are connected or identify communities that may warrant investigation.\n\n## The story so far\n\nBefore, you had to write queries to prepare node and relationship data, create a Neptune Analytics graph, and manage the import. You might also need to build a selective projection to avoid loading a whole dataset. The new UI brings those steps into a single workflow.\n\n## Dive Deep\n\nHere's the flow for graph analytics over Iceberg tables:\n\n- Select an Athena catalog and database\n- Define a property graph using SQL/PGQ\n- Preview rows before import\n- The solution runs the projection queries through Athena, stages the selected data in Amazon S3, and imports it into Neptune Analytics\n- Manage the resulting graph from the UI, and open it in Graph Explorer to query and visualize relationships\n\nThe UI runs locally and is available in all Regions where Amazon Neptune Analytics is available. See the setup instructions to get started.\n\n## Wrap-up\n\n- An open-source UI to graph data lake records and analyze them in Neptune Analytics\n- Define with SQL/PGQ and preview before importing\n- Data flows through Athena and S3, and you can visualize it in Graph Explorer\n- The UI runs locally\n\nThis is for anyone doing fraud detection or relationship investigation who wants to see connections!",
+  "emotion": "thinking",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-graphover-datalakes-generally-available",
+  "source_name": "AWS What's New",
+  "og_title": "Introducing an open-source UI for graph analytics over data lakes with Amazon Neptune Analytics",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-09T17:00:00+00:00"
+}

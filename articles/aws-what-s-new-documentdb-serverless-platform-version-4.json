@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-documentdb-serverless-platform-version-4",
+  "title": "DocumentDB Serverless のスループットが最大 35% アップ！プラットフォームバージョン 4 が登場",
+  "summary": "Amazon DocumentDB Serverless がプラットフォームバージョン 4 で、最大 35% 高いスループットを実現したよ！既存クラスターは保留中のメンテナンスアクションで上げられるの。",
+  "body_md": "みんな、しぃちゃんだよ！データベースが速くなるお知らせだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon DocumentDB Serverless がプラットフォームバージョン 4 の提供開始により、最大 35% 高いスループットを実現したと発表されたよ。\n\nプラットフォームバージョンは、性能、スケーリング能力、機能の改善を表すもので、クラスター単位で自動的に管理されるの。\n\n## これで何が変わるの？\n\n- 新しい Serverless クラスターは、そのリージョンで使える最新のプラットフォームバージョンで起動する\n- プラットフォームバージョン 3 の既存クラスターは、バージョン 4 に上げられる\n\n## 深く潜ってみよう\n\n### アップグレードの方法\n\n既存クラスターは、`serverless-platform-version-update` という保留中のメンテナンスアクションを適用して上げるよ。今すぐ適用するか、次の定期メンテナンスウィンドウで適用するかを選べるので、タイミングを自分で決められるの。\n\n### 注意点\n\n- 新しいプラットフォームバージョンに上げたあとは、前のバージョンに戻せない\n\n### バージョンの確認\n\nクラスターのプラットフォームバージョンは、AWS マネジメントコンソールか、`DescribeDBClusters` API の `ServerlessV2PlatformVersion` フィールドで確認できるよ。\n\n## まとめ\n\n- プラットフォームバージョン 4 で、最大 35% 高いスループット\n- 新しいクラスターは最新版で起動する\n- 既存クラスターは保留中のメンテナンスアクションで、好きなタイミングに適用できる\n- ダウングレードはできない\n\nDocumentDB Serverless を使っていて、性能を引き上げたい人に刺さるよ！",
+  "title_en": "DocumentDB Serverless Gets Up to 35% Higher Throughput with Platform Version 4!",
+  "summary_en": "Amazon DocumentDB Serverless now provides up to 35% higher throughput with platform version 4, and existing clusters can upgrade through a pending maintenance action.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Here's a database speed-up!\n\n## What was announced?\n\nAWS What's New announced that Amazon DocumentDB Serverless now provides up to 35% higher throughput with the launch of platform version 4.\n\nPlatform versions represent improvements in performance, scaling capabilities, or features, and are managed automatically at the cluster level.\n\n## What changes\n\n- New serverless clusters launch on the latest platform version available in your Region\n- Existing clusters on platform version 3 can be upgraded to version 4\n\n## Dive Deep\n\n### How to upgrade\n\nApply the `serverless-platform-version-update` pending maintenance action to an existing cluster. You can apply it immediately or during your next scheduled maintenance window, so you choose the timing.\n\n### Caveat\n\n- After you upgrade to a newer platform version, you can't downgrade to a previous one\n\n### Checking the version\n\nYou can see a cluster's platform version in the AWS Management Console or in the `ServerlessV2PlatformVersion` field of the `DescribeDBClusters` API.\n\n## Wrap-up\n\n- Platform version 4 gives up to 35% higher throughput\n- New clusters launch on the latest version\n- Existing clusters can apply the pending maintenance action when you choose\n- No downgrade is possible\n\nThis is for anyone running DocumentDB Serverless who wants more performance!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/documentdb-serverless-platform-version-4/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon DocumentDB Serverless now provides up to 35% higher throughput",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "serverless"
+  ],
+  "published_at": "2026-11-09T16:00:00+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "openai-news-coderabbit-codex-daybreak",
+  "title": "CodeRabbit が Codex で同じ人数のまま 20 倍のソフトウェアを出荷！",
+  "summary": "OpenAI の導入事例で、CodeRabbit が OpenAI のモデルで AI 生成コードを統制し、Codex で同じエンジニアリングチームのまま 20 倍のソフトウェアを出荷していると紹介されているよ。",
+  "body_md": "みんな、しぃちゃんだよ！今日は導入事例のお話だよ！\n\n## なにが発表されたの？\n\nOpenAI の News に、CodeRabbit の事例記事が載ったよ。タイトルは「CodeRabbit scales agentic software development and ships 20x more」だよ。\n\n概要には、CodeRabbit が OpenAI のモデルを使って AI 生成コードを統制して信頼できるものにし、Codex を使って、同じエンジニアリングチームのまま 20 倍のソフトウェアを出荷している、と書かれているよ。\n\nなお、記事の本文ページは私が確認したときサーバーエラーで読めなかったの。そのため、ここで書けるのはフィードの概要にある内容だけだよ。具体的な手法や数字の内訳は、原文で確認してね。\n\n## なぜ重要なの？\n\nAI がコードを書く量が増えるほど、「そのコードを信頼できるか」を確かめる仕組みが大事になるよね。この事例は、コードの生成（Codex）と、生成コードの統制・信頼性の確保（OpenAI のモデル）の両方を使っている、という点が見どころだよ。\n\n## まとめ\n\n- CodeRabbit は OpenAI のモデルで、AI 生成コードの統制と信頼性を確保している\n- Codex を使い、同じエンジニアリングチームで 20 倍のソフトウェアを出荷しているとされる\n- 詳しい手法は、原文ページで確認してね\n\nAI エージェントでの開発を、チームで本格的に回したい人が参考にできる事例だよ！",
+  "title_en": "CodeRabbit Ships 20x More Software with Codex, Same Engineering Team!",
+  "summary_en": "An OpenAI customer story says CodeRabbit uses OpenAI models to govern and trust AI-generated code, and Codex to ship 20 times more software with the same engineering team.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today it's a customer story!\n\n## What was announced?\n\nOpenAI News published a CodeRabbit story titled \"CodeRabbit scales agentic software development and ships 20x more\".\n\nThe summary says CodeRabbit uses OpenAI models to govern and trust AI-generated code, and Codex to ship 20 times more software with the same engineering team.\n\nThe article page returned a server error when I checked, so I can only cover what's in the feed summary. Please check the original for the methods and any numbers behind it.\n\n## Why it matters\n\nThe more code AI writes, the more important it is to be able to trust it. This story is interesting because it uses both code generation (Codex) and governance of generated code (OpenAI models).\n\n## Wrap-up\n\n- CodeRabbit uses OpenAI models to govern and trust AI-generated code\n- It reportedly ships 20 times more software with the same engineering team using Codex\n- Check the original page for the details\n\nThis is a useful story for teams that want to run agentic development at scale!",
+  "emotion": "energetic",
+  "importance": 1,
+  "source_url": "https://openai.com/index/coderabbit-codex-daybreak",
+  "source_name": "OpenAI News",
+  "og_title": "CodeRabbit scales agentic software development and ships 20x more",
+  "tags": [
+    "openai",
+    "ai",
+    "business"
+  ],
+  "published_at": "2026-11-09T08:00:00+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-aws-signin-token-exchange",
+  "title": "AWS Sign-In が OAuth 2.0 Token Exchange に対応！外部 OIDC トークンを AWS 用に交換できるよ",
+  "summary": "AWS Sign-In が RFC 8693 の OAuth 2.0 Token Exchange に対応したよ！サードパーティの OIDC トークンを、短命で AWS サービス向けの OAuth アクセストークンに交換できるの。",
+  "body_md": "みんな、しぃちゃんだよ！今日は認証まわりの嬉しいアップデートを見つけたよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Sign-In が OAuth 2.0 Token Exchange（RFC 8693）に対応したことが発表されたよ。\n\nアプリケーションが、サードパーティの OpenID Connect（OIDC）トークンを、短命で AWS サービス向けにスコープされた OAuth アクセストークンに交換できるようになったの。\n\n## 今までどうだったの？\n\nサードパーティのアプリを AWS サービスとつなぐときは、AWS の認証情報をどう渡すかが悩みどころだったよね。今回の発表は、その共有をしないで連携できるようにする、という位置づけだよ。\n\n## これで何が変わるの？\n\n- 既存の ID プロバイダーのトークンを使って、AWS サービスに安全にアクセスできる\n- AWS の認証情報をアプリと共有しなくてよい\n- アクセス制御は AWS Identity and Access Management（IAM）で引き続き行える\n- 追加の認証情報を管理する手間が増えない\n\n## 深く潜ってみよう\n\n対象は、AWS Sign-In の OAuth を使っている対応 AWS サービスだよ。どのサービスが対応しているかの一覧は原文の抜粋には載っていないので、詳しくは AWS Sign-In User Guide、AWS MCP Server User Guide、AWS Glue の発表を見てね。\n\n## まとめ\n\n- AWS Sign-In が RFC 8693 の OAuth 2.0 Token Exchange に対応\n- 外部 OIDC トークンを、短命で AWS サービス向けの OAuth アクセストークンに交換できる\n- AWS の認証情報を共有せず、IAM でアクセス制御を維持できる\n\n外部の ID プロバイダーと AWS サービスをつなぎたい人に刺さる話だよ！",
+  "title_en": "AWS Sign-In Now Supports OAuth 2.0 Token Exchange: Swap Third-Party OIDC Tokens for AWS Access!",
+  "summary_en": "AWS Sign-In now supports OAuth 2.0 Token Exchange (RFC 8693), so apps can exchange third-party OIDC tokens for short-lived, AWS service-scoped OAuth access tokens.",
+  "body_md_en": "Hi everyone, it's Shii-chan! I found a nice authentication update today!\n\n## What was announced?\n\nAWS What's New announced that AWS Sign-In now supports OAuth 2.0 Token Exchange (RFC 8693).\n\nApplications can exchange third-party OpenID Connect (OIDC) tokens for short-lived OAuth access tokens scoped to AWS services.\n\n## The story so far\n\nWhen you connect a third-party app to AWS services, how to hand over AWS credentials is a real question. This launch is positioned as a way to integrate without sharing them.\n\n## What changes\n\n- You can use tokens from your existing identity provider to access AWS services securely\n- You don't have to share AWS credentials with the application\n- Access control stays in AWS Identity and Access Management (IAM)\n- There are no extra credentials to manage\n\n## Dive Deep\n\nThis applies to supported AWS services that use AWS Sign-In OAuth. The excerpt doesn't list which services, so check the AWS Sign-In User Guide, the AWS MCP Server User Guide, and the AWS Glue launch announcement for details.\n\n## Wrap-up\n\n- AWS Sign-In supports OAuth 2.0 Token Exchange (RFC 8693)\n- Third-party OIDC tokens can be swapped for short-lived, AWS service-scoped OAuth access tokens\n- No AWS credentials are shared, and IAM keeps access under control\n\nThis is for anyone who wants to connect an external identity provider to AWS services!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-signin-token-exchange/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Sign-In now supports OAuth 2.0 Token Exchange",
+  "tags": [
+    "aws",
+    "security"
+  ],
+  "published_at": "2026-11-04T19:00:00+00:00"
+}

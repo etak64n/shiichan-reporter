@@ -1,0 +1,19 @@
+{
+  "slug": "cloudflare-changelog-2026-11-09-durable-objects-reactivation-placement",
+  "title": "Durable Objects のコールドスタートが減るかも！再開は前回動いたマシンで",
+  "summary": "Durable Objects が、しばらく休んだあとの再起動を、最後に動かしたマシンでできるだけ行うようになったよ！SQLite バックエンドのコールドスタートが減る可能性があるの。",
+  "body_md": "こんにちは、しぃちゃんだよ！Durable Objects に地味だけど嬉しい改善が入ったよ！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Durable Objects の起動場所の選び方が改善されたと告知されたよ。\n\n非アクティブになったあとに再開（リアクティベート）される Durable Object は、可能な限り、最後にそのオブジェクトを動かしたマシンで起動するようになったの。\n\n## これで何が変わるの？\n\n同じマシンで起動できれば、データをもう一度読み込まなくて済むよ。そのため、アイドルになってからすぐ再開される SQLite バックエンドの Durable Objects では、コールドスタートが減る可能性があるの。\n\nただし、実際の効果はワークロードやトラフィックのパターンによると書かれているよ。\n\n## 深く潜ってみよう\n\n- 変更は全リージョンですでに有効\n- 利用者側の作業は不要で、何もしなくても効果を受けられる\n- 配置の仕組みは、ドキュメントの Data location のページで説明されている\n\n## まとめ\n\n- 再開時は、最後に動かしたマシンで起動するよう改善\n- SQLite バックエンドの Durable Objects でコールドスタートが減る可能性がある\n- 全リージョンで有効、設定変更は不要\n\nDurable Objects のレイテンシが気になっている人に刺さる更新だよ！",
+  "title_en": "Fewer Durable Objects Cold Starts? Reactivation Now Prefers the Last Machine!",
+  "summary_en": "Durable Objects now restart on the machine that last ran them whenever possible, which can make cold starts less frequent for SQLite-backed objects.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Durable Objects got a quiet but nice improvement!\n\n## What was announced?\n\nThe Cloudflare Changelog says Cloudflare improved how it chooses where to start a Durable Object after it has been inactive.\n\nReactivated Durable Objects now start on the machine that last ran them whenever possible.\n\n## What changes\n\nStarting on the same machine means the data doesn't need to be loaded again. That can make cold starts less frequent for SQLite-backed Durable Objects that are reactivated soon after going idle.\n\nActual results depend on your workload and traffic patterns, though.\n\n## Dive Deep\n\n- The change is already live in all regions\n- No action is needed from customers to see benefits\n- How Durable Objects are placed is covered in the Data location documentation\n\n## Wrap-up\n\n- Reactivation now prefers the machine that last ran the object\n- Cold starts may become less frequent for SQLite-backed Durable Objects\n- Live in all regions, with no configuration needed\n\nThis is for anyone watching Durable Objects latency!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-11-09-durable-objects-reactivation-placement/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Durable Objects - Improved Durable Object Startup Placement",
+  "tags": [
+    "cloudflare",
+    "serverless"
+  ],
+  "published_at": "2026-11-09T00:00:00+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-claude-fable-5-2-aws-govcloud",
+  "title": "Claude Fable 5.2 が AWS GovCloud（US）にも登場！規制の厳しい環境でも使えるよ",
+  "summary": "Claude Fable 5.2 が AWS GovCloud（US）で利用可能になったよ！規制のある顧客にも、Anthropic の技術作業向け最上位の一般提供モデルが届くの。",
+  "body_md": "こんにちは、しぃちゃんだよ！さっきの Fable 5.2 のニュースに続いて、GovCloud 版のお知らせだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Claude Fable 5.2 が AWS GovCloud（US）で利用可能になったと発表されたよ。Anthropic が一般提供しているモデルの中で技術作業に最も強力なものを、規制のある顧客に届ける、という位置づけだよ。\n\n## これで何が変わるの？\n\nGovCloud（US）を使っている規制の厳しい環境のお客さんも、同じモデルを使えるようになるよ。\n\n発表にある Fable 5.2 の特徴は、通常の AWS 版の発表と同じ内容だよ。\n\n- コーディング、数学、科学の最も難しいプロジェクトで新しい水準。ソフトウェアエンジニアリング、科学研究、金融などで推奨されている\n- 数時間から最大数日間、人の手を離れて自律的に作業できる\n- 複数のリポジトリやモノレポにまたがる、大きくて定義があいまいな課題に取り組み、自分で検証しながら進める\n- 引き継いだ結論にも疑問を向けるので、これまでの Claude モデルが見逃した根本原因を見つける\n- Anthropic のテストでは、リードエージェントとして数百のサブエージェントを調整し、再現できない結果に印を付けた\n\n## 深く潜ってみよう\n\n- Claude Mythos 5.2 は、Fable 5.2 と同じ基盤モデルでサイバーとバイオの能力をフルに保持したもの。Anthropic の検証プログラム経由で提供される\n- Fable 5.2 と Mythos 5.2 は「対象モデル」に指定されていて、安全性の監視のためにデータ保持が必要\n- Enterprise Frontier Safeguards が使えるようになるまで、対象の顧客はゼロデータ保持で Fable 5.2 を使える。詳細は Amazon Bedrock の abuse detection のページを見てね\n\n## まとめ\n\n- Claude Fable 5.2 が AWS GovCloud（US）で利用可能\n- 長時間の自律作業や大規模なエンジニアリングが得意\n- 対象モデルとしてデータ保持が必要で、当面はゼロデータ保持も選べる\n\n規制のある環境で、高度な AI エージェントを使いたい人に刺さるよ！",
+  "title_en": "Claude Fable 5.2 Comes to AWS GovCloud (US) for Regulated Customers!",
+  "summary_en": "Claude Fable 5.2 is now available on AWS GovCloud (US), bringing Anthropic's most capable generally available model for technical work to regulated customers.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Following the earlier Fable 5.2 news, here's the GovCloud edition!\n\n## What was announced?\n\nAWS What's New announced that Claude Fable 5.2 is now available on AWS GovCloud (US), bringing Anthropic's most capable generally available model for technical work to regulated customers.\n\n## What changes\n\nCustomers in regulated environments on GovCloud (US) can now use the same model.\n\nThe description of Fable 5.2 matches the main AWS announcement:\n\n- Sets a new standard on the hardest projects in coding, math, and science, and is recommended for software engineering, scientific research, and finance\n- Can work for hours and up to days unattended\n- Takes on large, loosely defined problems across multiple repositories and monorepos, testing its own work as it goes\n- More willing to question inherited conclusions, so it finds root causes previous Claude models miss\n- In Anthropic's testing, it coordinated hundreds of subagents as a lead agent and flagged results that don't reproduce\n\n## Dive Deep\n\n- Claude Mythos 5.2 is the same underlying model with its full cyber and bio capabilities retained, available through Anthropic's verification programs\n- Fable 5.2 and Mythos 5.2 are designated covered models, which require data retention for safety monitoring\n- Until Enterprise Frontier Safeguards is available, eligible customers can use Fable 5.2 with zero data retention. See the Amazon Bedrock abuse detection page for details\n\n## Wrap-up\n\n- Claude Fable 5.2 is available on AWS GovCloud (US)\n- Strong at long autonomous work and large engineering tasks\n- As a covered model it requires data retention, with zero data retention an option for now\n\nThis is for anyone who needs advanced AI agents in a regulated environment!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/claude-fable-5-2-aws-govcloud/",
+  "source_name": "AWS What's New",
+  "og_title": "Claude Fable 5.2 is now available on AWS GovCloud (US)",
+  "tags": [
+    "aws",
+    "anthropic",
+    "ai"
+  ],
+  "published_at": "2026-11-09T18:30:00+00:00"
+}
