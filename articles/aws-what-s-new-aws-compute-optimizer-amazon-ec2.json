@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-compute-optimizer-amazon-ec2",
+  "title": "GovCloud でも最新世代 EC2 のライトサイジング提案が！Compute Optimizer が対応拡大",
+  "summary": "AWS Compute Optimizer が、GovCloud (US-West) で 389、GovCloud (US-East) で 276 の EC2 インスタンスタイプに追加対応したよ。追加料金なしで、C7i や M8g など最新世代も対象なの。",
+  "body_md": "やっほー、しぃちゃんだよ！今日は AWS What's New から、GovCloud 向けのうれしいアップデートを紹介するね。\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Compute Optimizer が AWS GovCloud (US) リージョンで対応する Amazon EC2 インスタンスタイプを増やしたと発表されたよ。\n\n- GovCloud (US-West): 389 タイプを追加\n- GovCloud (US-East): 276 タイプを追加\n\n## 今までどうだったの？\n\nGovCloud では、現行世代のインスタンスタイプの多くがライトサイジング提案の対象外だったため、規制対象やガバメント向けのワークロードでは、コストや性能の改善余地を手作業で分析する必要があったんだ。\n\n## これで何が変わるの？\n\n最新世代のファミリーまで含めて、手動分析なしでライトサイジングの推奨が出るようになるよ。今回追加されたのは、ワークロード種別ごとにこのファミリーだよ。\n\n- コンピューティング最適化: C7i、C7i-flex、C8g、C8gn\n- 汎用: M7i、M7i-flex、M8g、M8gd、M8i、M8i-flex\n- メモリ最適化: R7i、R8g、R8gd、R8i、R8i-flex\n- メモリ集約型: X2iedn、X8i\n- ストレージ最適化: I7i、I7ie、I8g、I8ge\n\n## 深く潜ってみよう\n\n拡張後の対応状況はこうなるよ。\n\n- GovCloud (US-West): 102 ファミリー、724 インスタンスタイプ\n- GovCloud (US-East): 69 ファミリー、542 インスタンスタイプ\n\nEC2 インスタンスと EC2 Auto Scaling グループの両方の推奨が対象で、追加料金はないよ。使い始めるには、AWS マネジメントコンソール、AWS CLI、AWS SDK のいずれかを使うの。\n\n## まとめ\n\n- GovCloud (US-West) で 389、US-East で 276 のインスタンスタイプに追加対応\n- C7i から I8ge まで、最新世代ファミリーが対象\n- EC2 と Auto Scaling グループの推奨に対応、追加料金なし\n\nGovCloud でコスト最適化を進めたい運用担当さんに刺さるよ！",
+  "title_en": "Right-Sizing for Latest-Gen EC2 in GovCloud: Compute Optimizer Expands Support",
+  "summary_en": "AWS Compute Optimizer now supports 389 additional EC2 instance types in GovCloud (US-West) and 276 in GovCloud (US-East), including current-generation families like C7i and M8g, at no additional cost.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today I have a nice AWS What's New update for GovCloud.\n\n## What was announced?\n\nAWS Compute Optimizer now supports more Amazon EC2 instance types in the AWS GovCloud (US) Regions:\n\n- GovCloud (US-West): 389 additional instance types\n- GovCloud (US-East): 276 additional instance types\n\n## The story so far\n\nMany current-generation instance types weren't covered by right-sizing recommendations in GovCloud, so customers with regulated and government workloads had to analyze cost and performance opportunities manually.\n\n## What changes\n\nYou now get right-sizing recommendations for the latest generation families without manual analysis. The additions are:\n\n- Compute Optimized: C7i, C7i-flex, C8g, C8gn\n- General Purpose: M7i, M7i-flex, M8g, M8gd, M8i, M8i-flex\n- Memory Optimized: R7i, R8g, R8gd, R8i, R8i-flex\n- Memory Intensive: X2iedn, X8i\n- Storage Optimized: I7i, I7ie, I8g, I8ge\n\n## Dive Deep\n\nAfter the expansion:\n\n- GovCloud (US-West): 724 instance types across 102 families\n- GovCloud (US-East): 542 instance types across 69 families\n\nIt covers both EC2 instance and EC2 Auto Scaling group recommendations at no additional cost. You can start using it through the AWS Management Console, AWS CLI, or AWS SDK.\n\n## Wrap-up\n\n- 389 more instance types in US-West and 276 more in US-East\n- Latest-generation families from C7i to I8ge are covered\n- EC2 and Auto Scaling group recommendations, at no additional cost\n\nThis is for operations teams who want to optimize costs in GovCloud!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/10/aws-compute-optimizer-amazon-ec2/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Compute Optimizer now supports additional Amazon EC2 instance types in the AWS GovCloud (US) Regions",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "devops"
+  ],
+  "published_at": "2026-10-30T22:50:00+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-rds-mysql-26-10-preview-environment",
+  "title": "RDS for MySQL 26.10 がプレビュー環境に登場！READ COMMITTED が速くなる改善つき",
+  "summary": "Amazon RDS for MySQL 26.10 が RDS Database Preview Environment で試せるようになったよ。READ COMMITTED のグローバル mutex をなくす改善や、パージ遅延の警告ログが入っているの。",
+  "body_md": "こんにちは、しぃちゃんだよ！MySQL の次のバージョンを先に試せるお知らせだよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon RDS for MySQL 26.10 が Amazon RDS Database Preview Environment で利用可能になったと発表されたよ。MySQL 26.10 のプレリリース版を、RDS for MySQL 上で評価できるの。\n\n## 今までどうだったの？\n\nビジー状態の READ COMMITTED ワークロードでは、リードビューを閉じるたびにグローバル mutex が必要だった。そのため NUMA システムでは性能に影響が出ることがあったんだ。\n\n## これで何が変わるの？\n\n26.10 には、バグ修正、セキュリティパッチ、そして次の改善が入っているよ。\n\n- READ COMMITTED の性能: リードビューのオブジェクトを再利用できるようになり、閉じるときのグローバル mutex が不要になった\n- パージ遅延の警告: 履歴リスト長 (HLL) が innodb_max_purge_lag を超えたときと、パージ遅延が DML を遅らせ始めたときに、エラーログへ警告が出る。性能に影響する前に、パージのたまりを見つけられる\n\n## 深く潜ってみよう\n\nプレビュー環境には、守るべきルールがあるよ。\n\n- データベースインスタンスの保持期間は最大 60 日で、期間後は自動で削除される\n- プレビュー環境で作ったスナップショットは、プレビュー環境内のインスタンスの作成・復元にだけ使える\n- 料金は米国東部 (オハイオ) リージョンの料金に準じる\n\n詳細な変更点は MySQL 26.10 のリリースノートを見てね。\n\n## まとめ\n\n- RDS for MySQL 26.10 を Database Preview Environment で評価できる\n- READ COMMITTED でリードビュー再利用により、グローバル mutex を削減\n- パージ遅延を示す警告がエラーログに出る\n- インスタンスは最大 60 日で自動削除、本番では使えない\n\n次のバージョンの挙動を先に確かめたい DBA さんに刺さるよ！",
+  "title_en": "RDS for MySQL 26.10 Lands in the Preview Environment, with READ COMMITTED Improvements",
+  "summary_en": "Amazon RDS for MySQL 26.10 is now available in the RDS Database Preview Environment. It removes a global mutex on read-view closure for READ COMMITTED workloads and adds purge lag warnings to the error log.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Here's a chance to try the next MySQL version early.\n\n## What was announced?\n\nAWS What's New announced that Amazon RDS for MySQL 26.10 is available in the Amazon RDS Database Preview Environment, so you can evaluate the pre-release of MySQL 26.10 on Amazon RDS for MySQL.\n\n## The story so far\n\nOn busy READ COMMITTED workloads, NUMA systems performance could be impacted because each read view that closed required a global mutex.\n\n## What changes\n\nMySQL 26.10 includes bug fixes, security patches, and these improvements:\n\n- READ COMMITTED performance: read-view objects can now be reused, which eliminates the global mutex on closure\n- Purge lag warnings: the error log now reports warnings when the history-list length (HLL) crosses innodb_max_purge_lag and when purge lag begins delaying DML, so you can detect purge backlogs before they affect performance\n\n## Dive Deep\n\nThe Preview Environment has some rules:\n\n- Database instances are retained for a maximum of 60 days and are automatically deleted afterward\n- Snapshots created in the Preview Environment can only be used to create or restore instances within the Preview Environment\n- Instances are priced as per the US East (Ohio) Region\n\nSee the MySQL 26.10 release notes for the full list of changes.\n\n## Wrap-up\n\n- Evaluate RDS for MySQL 26.10 in the Database Preview Environment\n- Read-view reuse removes a global mutex for READ COMMITTED\n- Purge lag warnings appear in the error log\n- Instances are deleted after at most 60 days, so this isn't for production\n\nThis is for DBAs who want to check the next version's behavior early!",
+  "emotion": "thinking",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/rds-mysql-26-10-preview-environment/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon RDS for MySQL 26.10 is now available in Amazon RDS Database Preview Environment",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-10T17:00:00+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "openai-news-ada",
+  "title": "解決率30%から最大60%へ！Ada が GPT-4 で変えたカスタマーサービス",
+  "summary": "AI カスタマーサービス基盤の Ada が、封じ込め率ではなく解決率を指標に据え、GPT-4 でシステムを作り直した事例だよ。解決率は 30% から通常最大 60% に上がったんだって。",
+  "body_md": "やっほー、しぃちゃんだよ！今日は OpenAI の導入事例から、Ada のお話を紹介するね。\n\n## なにが発表されたの？\n\nOpenAI の News に載った顧客事例「Ada uses GPT-4 to deliver a new customer service standard」だよ。Ada は 2016 年創業の、AI ネイティブなカスタマーサービス自動化プラットフォームなの。Verizon、YETI、Canva、Square などが顧客として挙がっているよ。\n\n## なぜ重要なの？\n\nチャットボットの成果は「人に回らなかった会話の割合」（封じ込め率）で測られがちだけど、それだと体験の悪い対応が隠れてしまうの。Ada は初期版で封じ込め率 70% に対し、実際の解決率は 30% だったそうだよ。\n\n## これで何が変わるの？\n\n新しい仕組みでも封じ込め率は同程度のまま、解決率は通常で最大 60% になり、上位の顧客では 80% を超えたんだって。Ada は、きちんと解決できる会話の数が 2 倍になったと言っているよ。顧客にとっては、コスト削減・満足度・継続利用に効いてくるよね。\n\n## 深く潜ってみよう\n\n- 指標の転換: 解決率を主指標にした\n- 評価の自動化: GPT-4 と過去データで、返答が関連性・正確性・安全性を満たして解決したかを採点する枠組みを構築。人間のレビュアーとの一致率は 80〜90% だった\n- 作り直し: 2022 年に LLM の推論ベースで製品を再構築。中心の計画エージェントとサブエージェントによるマルチエージェント構成で、すべて OpenAI の API で動く\n\nOpenAI を選んだ理由として、次の 3 点が挙げられているよ。\n\n- 社内の評価セットで OpenAI を上回る他社モデルを見ていない\n- GPT-4o でレイテンシが大きく改善し、リアルタイム音声に使える\n- ファインチューニングで、ハルシネーションの確信度スコアを作れる\n\nAda の目標は解決率 100% だよ。\n\n## まとめ\n\n- 封じ込め率ではなく解決率を指標にした\n- 旧版は封じ込め率 70%、解決率 30%\n- 新版は解決率が通常最大 60%、上位顧客は 80% 超\n- GPT-4 で会話の解決を自動採点し、人間と 80〜90% 一致\n- マルチエージェント構成で再構築\n\nカスタマーサポートの自動化に取り組む人は、指標の選び方を考える参考になるよ！",
+  "title_en": "From 30% Resolution to Up to 60%: How Ada Rebuilt Customer Service with GPT-4",
+  "summary_en": "AI customer service platform Ada switched its key metric from containment to resolution and rebuilt its product on GPT-4. Resolution rose from 30% to typically up to 60%.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today I'm sharing a customer story from OpenAI about Ada.\n\n## What was announced?\n\n\"Ada uses GPT-4 to deliver a new customer service standard\" is a customer story on OpenAI News. Ada is an AI-native customer service automation platform founded in 2016, with customers such as Verizon, YETI, Canva, and Square.\n\n## Why it matters\n\nChatbots are often judged by containment rate, the share of chats that never reach a human. That can hide poor experiences. Ada's first version had a 70% containment rate but only a 30% resolution rate.\n\n## What changes\n\nThe new system keeps similar containment but typically reaches up to 60% resolution, with top customers above 80%. Ada says it has doubled the number of conversations it resolves well, which affects cost savings, satisfaction, and retention.\n\n## Dive Deep\n\n- Metric shift: resolution rate became the key metric\n- Automated evaluation: using GPT-4 and historical data, Ada built a framework that scores whether replies were relevant, accurate, and safe. It reached 80-90% agreement with human reviewers\n- Rebuild: in 2022 the product was rebuilt on LLM reasoning, as a multi-agent setup with a central planning agent and subagents, all powered by OpenAI's API\n\nAda gave three reasons for choosing OpenAI:\n\n- No rival model beat OpenAI on its internal evaluation set\n- GPT-4o brought major latency gains for real-time voice\n- Fine-tuning helps produce hallucination confidence scores\n\nAda's goal is a 100% resolution rate.\n\n## Wrap-up\n\n- Resolution rate replaced containment rate as the key metric\n- Old version: 70% containment, 30% resolution\n- New version: typically up to 60% resolution, over 80% for top customers\n- GPT-4 scores conversations automatically, agreeing with humans 80-90% of the time\n- Rebuilt as a multi-agent system\n\nIf you work on support automation, this is a good prompt to rethink your metrics!",
+  "emotion": "happy",
+  "importance": 1,
+  "source_url": "https://openai.com/business/customer-stories/ada",
+  "source_name": "OpenAI News",
+  "og_title": "Using GPT-4 to deliver a new customer service standard",
+  "tags": [
+    "openai",
+    "ai",
+    "business"
+  ],
+  "published_at": "2024-09-05T08:00:00+00:00"
+}

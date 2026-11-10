@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-s3-tables-server-access-logging",
+  "title": "S3 Tables にサーバーアクセスログがついに来たよ！監査もコスト配分も",
+  "summary": "Amazon S3 Tables がサーバーアクセスログに対応したよ。テーブルバケットへのリクエストの詳細記録を、追加料金なし（ログのストレージ代のみ）で取得でき、Athena や DuckDB で分析できるの。",
+  "body_md": "みんな、しぃちゃんだよ！S3 Tables を使っている人に待望のアップデートが来たよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon S3 Tables がサーバーアクセスログに対応したと発表されたよ。テーブルバケットへのリクエストの詳細な記録を取れるようになったの。\n\n## 今までどうだったの？\n\n汎用バケットにはサーバーアクセスログがあるけれど、S3 Tables のテーブルバケットでは、同じ形でリクエストの記録を取れなかったんだ。\n\n## これで何が変わるの？\n\nテーブル操作、名前空間の管理、データアクセスを追跡できるので、次の用途に使えるよ。\n\n- セキュリティ監査\n- アクセス分析\n- コスト配分\n\nログ配信に追加料金はなく、ログファイルのストレージ代だけがかかるの。\n\n## 深く潜ってみよう\n\n- 配信先: テーブルバケットで有効にすると、そのバケット内の全テーブルと名前空間へのリクエストログが、同じアカウント・同じリージョンの汎用バケットに配信される\n- 記録内容: リクエスト元、操作、テーブル名、名前空間、レスポンスステータス、リクエストの所要時間\n- 形式: 汎用バケットのサーバーアクセスログと同じスペース区切り。既存のログ分析の流れを使い回せて、Amazon Athena や DuckDB など好きなクエリエンジンで分析できる\n- 有効化の方法: AWS マネジメントコンソール、AWS CLI、AWS SDK、AWS CloudFormation\n- 提供リージョン: S3 Tables が使えるすべての AWS リージョン\n\n## まとめ\n\n- S3 Tables のテーブルバケットでサーバーアクセスログが使える\n- 追加料金なし、ログのストレージ代のみ\n- 既存と同じ形式なので Athena や DuckDB で分析可能\n- 設定はコンソール・CLI・SDK・CloudFormation から\n\nS3 Tables で監査やコスト配分をきちんとやりたいデータ基盤担当さんに刺さるよ！",
+  "title_en": "S3 Tables Gets Server Access Logging: Audits and Cost Attribution Made Easier",
+  "summary_en": "Amazon S3 Tables now supports server access logging for table buckets. Log delivery has no additional cost beyond log storage, and you can query logs with Amazon Athena or DuckDB.",
+  "body_md_en": "Hi everyone, it's Shii-chan! A long-awaited update just landed for S3 Tables users.\n\n## What was announced?\n\nAWS What's New announced that Amazon S3 Tables now supports server access logging, giving you detailed records of the requests made to your table buckets.\n\n## The story so far\n\nGeneral purpose buckets have server access logs, but table buckets in S3 Tables didn't offer the same kind of request records.\n\n## What changes\n\nYou can track table operations, namespace management, and data access to support:\n\n- Security audits\n- Access analysis\n- Cost attribution\n\nLog delivery has no additional cost, and you pay only for the storage of the log files.\n\n## Dive Deep\n\n- Delivery: when you enable it on a table bucket, S3 delivers logs for requests to all tables and namespaces in that bucket to a general purpose bucket in the same account and Region\n- Records: requester, operation, table name, namespace, response status, and request timing\n- Format: the same space-delimited format as S3 server access logs for general purpose buckets, so you can reuse existing log analysis workflows and query with any engine, such as Amazon Athena and DuckDB\n- How to enable: AWS Management Console, AWS CLI, AWS SDKs, or AWS CloudFormation\n- Availability: all AWS Regions where S3 Tables are available\n\n## Wrap-up\n\n- Server access logging is available for S3 Tables table buckets\n- No additional cost beyond log storage\n- Same format as before, so Athena and DuckDB work\n- Enable it from the console, CLI, SDKs, or CloudFormation\n\nThis is for data platform teams who want proper audits and cost attribution on S3 Tables!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-s3-tables-server-access-logging/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon S3 Tables now support S3 server access logging",
+  "tags": [
+    "aws",
+    "security",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-10T08:00:00+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-11-09-partitioned-bm-cookie",
+  "title": "iframe 埋め込みでも Bot Management が途切れない！__cf_bm に Partitioned 属性",
+  "summary": "Cloudflare が、対応する HTTPS リクエストで __cf_bm クッキーに Partitioned 属性を付けるようにしたよ。他サイトの iframe 内でも、サードパーティクッキー制限の影響を受けにくく、Bot Management の継続性を保てるの。",
+  "body_md": "やっほー、しぃちゃんだよ！今日は Cloudflare の Changelog から、Bot Management のクッキーの話だよ。\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Bot Management が使う __cf_bm クッキーに Partitioned 属性を付けるようになったと発表されたよ。対応する HTTPS リクエストが対象で、同じクッキーを SameSite=None と Secure で発行できる場合にだけ付くの。\n\n## 今までどうだったの？\n\n自分のコンテンツが他のサイトの iframe 経由で表示されると、ブラウザは __cf_bm をサードパーティクッキーとして扱うよ。ブラウザのプライバシー制御がサードパーティクッキーをブロックすることがあり、そうなると Bot Management の判定に必要なクッキーが残らない場合があったんだ。\n\n## これで何が変わるの？\n\nPartitioned 属性があると、__cf_bm クッキーは、埋め込み先のトップレベルサイトの範囲内で保持されるよ。そのため、他サイトに埋め込まれていても、リクエストをまたいで Bot Management の継続性を保てるの。\n\n## 深く潜ってみよう\n\n- 付与の条件: 対応する HTTPS リクエストで、かつ SameSite=None と Secure で発行できるとき\n- 設定: 発表では、ユーザー側の設定は求められていない\n\nクッキーの詳細は、Cloudflare cookies のドキュメントを見てね。\n\n## まとめ\n\n- __cf_bm に Partitioned 属性が付くようになった\n- SameSite=None と Secure で発行できる HTTPS リクエストが対象\n- iframe で他サイトに埋め込まれても、Bot Management の継続性を保てる\n\n自分のコンテンツを iframe で他サイトに埋め込ませているサイト運営者さんに刺さるよ！",
+  "title_en": "Bot Management Stays Consistent in Iframes: Partitioned Attribute on __cf_bm",
+  "summary_en": "Cloudflare now adds the Partitioned attribute to the __cf_bm cookie on compatible HTTPS requests, so Bot Management can keep continuity when your content is embedded in an iframe on another site.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today's Cloudflare Changelog item is about the Bot Management cookie.\n\n## What was announced?\n\nCloudflare now adds the Partitioned attribute to the __cf_bm cookie on compatible HTTPS requests. The attribute is added only when the cookie can also be issued with SameSite=None and Secure.\n\n## The story so far\n\nWhen users access your content through an iframe on another site, the browser handles __cf_bm as a third-party cookie. Browser privacy controls may block third-party cookies, which can leave Bot Management without the cookie it relies on.\n\n## What changes\n\nWith Partitioned, the __cf_bm cookie persists within the embedding top-level site. Bot Management can preserve continuity across requests, even when your content is embedded on another site.\n\n## Dive Deep\n\n- Condition: compatible HTTPS requests where the cookie can also be issued with SameSite=None and Secure\n- Configuration: the announcement doesn't mention any setting you need to change\n\nSee the Cloudflare cookies documentation for more.\n\n## Wrap-up\n\n- The Partitioned attribute is now added to __cf_bm\n- It applies to HTTPS requests where SameSite=None and Secure can be used\n- Bot Management keeps continuity even when your content is embedded in an iframe\n\nThis is for site owners whose content is embedded in iframes on other sites!",
+  "emotion": "smug",
+  "importance": 2,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-11-09-partitioned-bm-cookie/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Bots - Partitioned cookie support for Bot Management",
+  "tags": [
+    "cloudflare",
+    "web",
+    "security"
+  ],
+  "published_at": "2026-11-09T00:00:00+00:00"
+}

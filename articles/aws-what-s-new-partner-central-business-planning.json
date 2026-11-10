@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-partner-central-business-planning",
+  "title": "AWS Partner Central のビジネスプランニングが新しくなったよ！AI の準備度スコアつき",
+  "summary": "AWS Partner Central のコンソールに、新しいビジネスプランニング機能が登場したよ。AWS チームと共同でプランを作り、AI 支援の準備度スコアや進捗の追跡、API・SDK 連携が使えるの。",
+  "body_md": "やっほー、しぃちゃんだよ！今日は AWS パートナー向けの、ビジネスプランニングのアップデートを紹介するね。\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Partner Central が AWS コンソール内で新しいビジネスプランニング体験を提供すると発表されたよ。パートナーは AWS ビジネスを伸ばすためのプランを自分で始めることも、AWS のチームが始めたプランに参加して共同作業することもできるの。\n\n## これで何が変わるの？\n\nパートナーは AWS のパートナー開発、テクノロジー、マーケティング、スペシャリストの各チームと共同で、プランのストーリー、目標、施策を決められるよ。\n\n## 深く潜ってみよう\n\n- AI 支援: プランの準備度スコアで、改善すべき点を把握できる\n- 進捗の追跡: 目標に対する進捗をリアルタイムで確認できる\n- 資料: 添付ファイルを追加でき、ビジネスレビューの準備のためにプランをエクスポートできる\n- 連携: API と SDK でビジネスプランニングを自社のワークフローに組み込め、プログラムによる通知も使える\n- 対象: AWS のパートナー管理チームと実際にやり取りしている AWS パートナー\n- リージョン: AWS Partner Central は米国東部 (バージニア北部) リージョンで提供\n- 始め方: AWS Partner Central にサインインして「Business Plan」を選ぶ\n\n## まとめ\n\n- Partner Central のコンソールに新しいビジネスプランニングが登場\n- AWS の各チームとプランを共同作成できる\n- AI 支援の準備度スコア、リアルタイムの進捗、エクスポートに対応\n- API・SDK・通知で自社ワークフローと連携可能\n\nAWS パートナーのビジネス担当さんに刺さるアップデートだよ！",
+  "title_en": "A Better Business Planning Experience in AWS Partner Central, with AI Readiness Scores",
+  "summary_en": "AWS Partner Central now has a new business planning experience in the AWS Console. Partners can co-build plans with AWS teams, use AI-assisted readiness scores and real-time tracking, and integrate through APIs and SDKs.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today's update is about business planning for AWS Partners.\n\n## What was announced?\n\nAWS What's New announced that AWS Partner Central now offers a new business planning experience in the AWS Console. Partners can initiate plans for growing their AWS business or collaborate on plans initiated by AWS teams.\n\n## What changes\n\nPartners can work with AWS partner development, technology, marketing, and specialist teams to define plan narratives, goals, and initiatives.\n\n## Dive Deep\n\n- AI assistance: plan readiness scores help partners identify areas to improve\n- Tracking: real-time tracking shows progress against goals\n- Materials: add attachments and export plans to prepare for business reviews\n- Integration: use APIs and SDKs to integrate business planning into your workflows, and programmatic notifications are also available\n- Eligibility: AWS Partners who are actively engaged with AWS Partner management teams\n- Region: AWS Partner Central is available in the US East (N. Virginia) Region\n- Getting started: sign in to AWS Partner Central and choose Business Plan\n\n## Wrap-up\n\n- New business planning in the Partner Central console\n- Co-create plans with AWS teams\n- AI-assisted readiness scores, real-time tracking, and export\n- APIs, SDKs, and notifications for workflow integration\n\nThis is for business owners at AWS Partner companies!",
+  "emotion": "happy",
+  "importance": 1,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/partner-central-business-planning/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Partner Central now provides an improved business planning experience",
+  "tags": [
+    "aws",
+    "business"
+  ],
+  "published_at": "2026-11-10T16:00:00+00:00"
+}

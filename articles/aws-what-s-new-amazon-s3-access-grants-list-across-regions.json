@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-s3-access-grants-list-across-regions",
+  "title": "S3 Access Grants の権限をアカウント横断で一括取得！API 1回で全部見えるよ",
+  "summary": "Amazon S3 Access Grants で、InstanceScope に ALL を指定すると、ListCallerAccessGrants 1 回の呼び出しで複数アカウントのグラントを一覧できるようになったよ。GetDataAccess もオーナーアカウントを自動で探してくれるの。",
+  "body_md": "こんにちは、しぃちゃんだよ！S3 Access Grants の使い勝手がぐっと上がるアップデートが来たよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon S3 Access Grants が複数の AWS アカウントにまたがるグラントを、1 回の API 呼び出しで見つけて一覧できるようになったと発表されたよ。\n\n## 今までどうだったの？\n\n自分がアクセスできるグラントを調べるには、アカウントごとに別々に問い合わせる必要があったんだ。\n\n## これで何が変わるの？\n\n1 回の ListCallerAccessGrants で、自分の S3 Access Grants インスタンスと、共有されているすべてのインスタンスのグラントがまとめて返ってくるよ。自分がアクセスできる S3 データの全体像が分かるの。\n\n## 深く潜ってみよう\n\n使い方は 2 つあるよ。\n\n- 一覧の取得: ListCallerAccessGrants のリクエストで、新しいパラメータ InstanceScope を ALL にする。AWS Resource Access Manager (AWS RAM) 経由で共有されたすべてのインスタンスに問い合わせ、全グラントを 1 つのレスポンスで返す。各グラントにはオーナーのアカウントが示される\n- 認証情報の取得: S3 パスに対する GetDataAccess でも InstanceScope を ALL にすると、S3 Access Grants がオーナーアカウントを探し、そのインスタンスにリクエストを回して、一致するグラントの認証情報を返す\n\n追加料金はなく、S3 Access Grants が使えるすべてのリージョンで利用できるよ。AWS SDK、API、CLI から使えるの。\n\n## まとめ\n\n- InstanceScope を ALL にすると、複数アカウントのグラントを 1 回で一覧できる\n- 各グラントにオーナーアカウントが表示される\n- GetDataAccess もオーナーのインスタンスを自動で探してくれる\n- 追加料金なし、SDK・API・CLI で利用可能\n\nアカウントをまたいで S3 のアクセス権を管理しているプラットフォーム担当さんに刺さるよ！",
+  "title_en": "List S3 Access Grants Across Accounts with a Single API Call",
+  "summary_en": "Amazon S3 Access Grants can now list grants across multiple AWS accounts in one ListCallerAccessGrants call by setting InstanceScope to ALL. GetDataAccess also finds the owning account for you.",
+  "body_md_en": "Hi everyone, it's Shii-chan! S3 Access Grants just got a lot easier to use.\n\n## What was announced?\n\nAWS What's New announced that Amazon S3 Access Grants can now discover and list all your grants across multiple AWS accounts with a single API call.\n\n## The story so far\n\nTo see the grants you could use, you had to query each account separately.\n\n## What changes\n\nA single ListCallerAccessGrants call returns grants from your own S3 Access Grants instance and every instance shared with you, giving you a complete view of the S3 data you can access.\n\n## Dive Deep\n\nThere are two ways to use it:\n\n- Listing: set the new InstanceScope parameter to ALL in your ListCallerAccessGrants request. S3 Access Grants queries every instance shared with you through AWS Resource Access Manager (AWS RAM) and returns all grants in one combined response, each identifying the account that owns it\n- Credentials: when you request credentials with GetDataAccess for an S3 path and set InstanceScope to ALL, S3 Access Grants locates the owning account, routes the request to its instance, and returns credentials for the matching grant\n\nIt's available at no additional cost in all Regions where S3 Access Grants is available, through the AWS SDK, API, or CLI.\n\n## Wrap-up\n\n- InstanceScope set to ALL lists grants across accounts in one call\n- Each grant shows its owning account\n- GetDataAccess finds the owner's instance automatically\n- No additional cost, via SDK, API, or CLI\n\nThis is for platform teams managing S3 access across accounts!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-s3-access-grants-list-across-regions/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon S3 Access Grants now support listing grants across multiple AWS accounts",
+  "tags": [
+    "aws",
+    "security",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-10T14:00:00+00:00"
+}

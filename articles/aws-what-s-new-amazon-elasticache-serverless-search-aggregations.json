@@ -1,0 +1,21 @@
+{
+  "slug": "aws-what-s-new-amazon-elasticache-serverless-search-aggregations",
+  "title": "ElastiCache Serverless がベクトル・全文・ハイブリッド検索に対応！マイクロ秒で検索可能に",
+  "summary": "Amazon ElastiCache Serverless for Valkey が、ベクトル検索・全文検索・ハイブリッド検索と集計に対応したよ。ベクトル検索はマイクロ秒レベルのレイテンシで最大 99% の再現率、書き込み直後から検索できるんだって。",
+  "body_md": "やっほー、しぃちゃんだよ！キャッシュサービスが検索エンジンにもなる、びっくりのアップデートが来たよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon ElastiCache Serverless for Valkey が、ベクトル検索・全文検索・ハイブリッド検索と、集計（aggregations）に対応したと発表されたよ。\n\n## 今までどうだったの？\n\nライブデータを検索するアプリは、レイテンシと再現率のトレードオフに悩まされ、さらに更新が検索に反映されるまで遅れることもあったんだ。\n\n## これで何が変わるの？\n\nElastiCache Serverless の検索では、次のことができるよ。\n\n- ベクトル検索でマイクロ秒レベルのレイテンシ、最大 99% の再現率、1 日あたり数十億クエリ\n- 更新は書き込みが完了すればすぐ、最短でマイクロ秒で検索可能\n- 複数の検索タイプを 1 つのクエリで組み合わせ、再現率を調整し、サーバー側の集計で結果を分析\n\nAI エージェント向けの使い方も紹介されていて、エージェント・セッション・タスクごとに専用のデータストアを持たせて、記憶や文脈の検索に使えるの。エージェントは本番や他のエージェントに影響せずに、試して失敗してやり直せるよ。各データストアは数秒で準備でき、ネットワーク設定なしでパブリックエンドポイントから接続でき、使った分だけの課金で、管理するインフラもないんだって。\n\n## 深く潜ってみよう\n\n- 向いている用途: レイテンシに敏感でトラフィックが読みにくいアプリ、検索をすぐ始めたいチーム。商品発見、レコメンド、RAG（検索拡張生成）にも使える\n- 提供範囲: すべての商用 AWS リージョン、AWS GovCloud (US) リージョン、AWS European Sovereign Cloud リージョン。ElastiCache の Valkey バージョン 9 が対象\n\n## まとめ\n\n- ElastiCache Serverless for Valkey でベクトル・全文・ハイブリッド検索と集計が使える\n- ベクトル検索はマイクロ秒レベルで最大 99% の再現率\n- 更新は書き込み直後から検索可能\n- エージェントごとの専用データストアにも使える\n\nRAG やレコメンドを低レイテンシで動かしたい開発者さんに刺さるよ！",
+  "title_en": "ElastiCache Serverless Adds Vector, Full-Text, and Hybrid Search with Microsecond Latency",
+  "summary_en": "Amazon ElastiCache Serverless for Valkey now supports vector, full-text, and hybrid search plus aggregations. Vector search offers microsecond-level latency at up to 99% recall, and updates are searchable as soon as writes complete.",
+  "body_md_en": "Hi everyone, it's Shii-chan! A cache service that doubles as a search engine just arrived.\n\n## What was announced?\n\nAWS What's New announced that Amazon ElastiCache Serverless for Valkey now supports vector, full-text, and hybrid search, along with aggregations.\n\n## The story so far\n\nApplications searching live data often faced a hard trade-off between latency and recall, along with delays before updates became searchable.\n\n## What changes\n\nWith search on ElastiCache Serverless you can:\n\n- Run vector search with latency as low as microseconds at up to 99% recall, serving billions of queries per day\n- Search updates in as little as microseconds, as soon as writes complete\n- Combine search types in a single query, tune recall, and analyze results with server-side aggregations\n\nThe announcement also describes agent use: give every agent, session, or task its own datastore for memory and context retrieval, so agents can experiment, fail, and retry without touching production or each other. Each datastore is ready in seconds, reachable over a public endpoint with no network setup, and billed only for what it uses, with zero infrastructure to manage.\n\n## Dive Deep\n\n- Good fits: latency-sensitive applications with unpredictable traffic and teams that want to get started with search quickly. It can also power product discovery, recommendation systems, and retrieval-augmented generation (RAG)\n- Availability: all commercial AWS Regions, AWS GovCloud (US) Regions, and the AWS European Sovereign Cloud Region, on ElastiCache version 9 for Valkey\n\n## Wrap-up\n\n- Vector, full-text, hybrid search, and aggregations on ElastiCache Serverless for Valkey\n- Vector search at microsecond-level latency with up to 99% recall\n- Updates are searchable right after writes\n- Works for per-agent datastores too\n\nThis is for developers who want low-latency RAG or recommendations!",
+  "emotion": "energetic",
+  "importance": 5,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-elasticache-serverless-search-aggregations/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon ElastiCache Serverless now supports vector, full-text and hybrid searches plus aggregations",
+  "tags": [
+    "aws",
+    "ai",
+    "serverless",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-10T08:00:00+00:00"
+}
