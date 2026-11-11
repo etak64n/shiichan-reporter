@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-gamelift-game-session-insights",
+  "title": "GameLift の配置がなぜ失敗？Game Session Placement Insights で丸見えに！",
+  "summary": "Amazon GameLift Servers に、ゲームセッション配置ごとの診断ログを出す Game Session Placement Insights が登場。評価されたロケーションやレイテンシ・コスト要因まで分かるよ！",
+  "body_md": "こんにちは、しぃちゃんだよ！今日はゲーム開発者さん向けの嬉しいアップデートだよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon GameLift Servers の Game Session Placement Insights が発表されたよ！ゲームセッションのキュールーティングについて、配置リクエストごとの詳細な診断ログを出してくれる機能なの。\n\n## 今までどうだったの？\n\nGameLift Servers は、レイテンシとコストの要因をもとに複数のフリートロケーションを評価するキューで、配置リクエストをさばいているよ。でも以前は、配置がなぜ成功したのか、失敗したのか、タイムアウトしたのかを見る手段が限られていて、キューの最適化が難しかったんだって。\n\n## これで何が変わるの？\n\nすべての配置について、次のことが記録されるよ。\n\n- 評価されたフリートロケーション\n- ルーティングの判断に影響したプレイヤーのレイテンシとコストの要因\n- 最終的な配置結果\n\nこれで、いつも遅い配置、繰り返す失敗、思わぬ場所に入るセッションといったパターンを見つけて、キューを調整できるよ。プレイヤー体験の改善につながるね！\n\n## 深く潜ってみよう\n\n- キューごとに有効化できる\n- ログの配信先は Amazon CloudWatch Logs、Amazon S3、Amazon Data Firehose\n- GameLift Servers がサポートするすべてのリージョンで利用可能\n\n## まとめ\n\n- 配置ごとの診断ログで、キューの挙動が見える\n- キュー単位でオンにして、3 つの配信先を選べる\n\nマッチメイキングや配置のチューニングに悩むゲーム開発者に刺さるよ！",
+  "title_en": "GameLift Game Session Placement Insights Shows Why Placements Succeed or Fail!",
+  "summary_en": "Amazon GameLift Servers now offers Game Session Placement Insights, with per-placement diagnostic logs showing evaluated locations, latency and cost factors, and the final outcome!",
+  "body_md_en": "Hi everyone, Shii-chan here! Today's update is great news for game developers.\n\n## What was announced?\n\nAWS What's New announced Game Session Placement Insights for Amazon GameLift Servers. It delivers detailed, per-placement diagnostic logs for game session queue routing.\n\n## The story so far\n\nGameLift Servers routes placement requests through queues that evaluate multiple fleet locations based on latency and cost factors. Previously, developers had limited visibility into why placements succeeded, failed, or timed out, which made queue optimization difficult.\n\n## What changes\n\nFor every placement, the logs capture:\n\n- Which fleet locations were evaluated\n- The player latency and cost factors that influenced routing\n- The final placement outcome\n\nYou can spot patterns such as consistently slow placements, repeated failures, or sessions landing in unexpected locations, then tune your queues to improve the player experience!\n\n## Dive Deep\n\n- Enable it per queue\n- Deliver logs to Amazon CloudWatch Logs, Amazon S3, or Amazon Data Firehose\n- Available in all supported Amazon GameLift Servers regions\n\n## Wrap-up\n\n- Per-placement diagnostic logs make queue behavior visible\n- Turn it on per queue and pick from three destinations\n\nIf you tune placements for your game, this one is for you!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/gamelift-game-session-insights/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon GameLift Servers now supports Game Session Placement Insights",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "devops"
+  ],
+  "published_at": "2026-11-10T08:00:00+00:00"
+}

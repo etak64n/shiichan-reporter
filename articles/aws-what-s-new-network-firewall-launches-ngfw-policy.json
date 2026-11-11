@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-network-firewall-launches-ngfw-policy",
+  "title": "Network Firewall に NGFW ポリシー登場！ルール容量の取り合いにサヨナラ",
+  "summary": "AWS Network Firewall の新しいポリシーモデル「NGFW ポリシー」が登場。ファイアウォールと IPS の保護を重ねて適用し、それぞれ別の容量を持つので管理がシンプルになるよ！",
+  "body_md": "やっほー、しぃちゃんだよ！今日は AWS Network Firewall の新しいポリシーモデルの話だよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Network Firewall の次世代ファイアウォール (NGFW) ポリシーが発表されたよ！セキュリティチームにとって、よりシンプルなポリシー構造と、増えたルール容量を提供する新しいポリシーモデルなの。\n\nAWS Network Firewall は、Amazon VPC をアクセス制御と脅威検出で守るマネージドなネットワークセキュリティサービスだよ。\n\n## 今までどうだったの？\n\n原文によると、新しいモデルは保護を「組み合わせる」のではなく「重ねる」ことで管理しやすくしているよ。さらに、ファイアウォールのルールと IPS ルールがそれぞれ別の容量を持つので、「どちらかを減らさないともう一方が入らない」というトレードオフがなくなるんだって。\n\n## これで何が変わるの？\n\n- ルール容量をファイアウォールと IPS で取り合わなくてよい\n- 複数のポリシーで共有しないルールは、事前確保なしで必要なときに容量を使う埋め込みルールグループにできる\n- すべてのルールがステートフルで、接続の文脈を踏まえて評価されるので、トラフィックの扱いが一貫して予測しやすい\n\n## 深く潜ってみよう\n\n中身はこんな感じだよ。\n\n- ファイアウォールルール: deny-by-default のアクセス制御を書く(例: 承認済みドメインへの通信だけを許可)\n- IPS ルール: AWS や AWS Marketplace パートナーのマネージドルールグループが使え、新しい脅威に合わせて自動更新される。独自のカスタム IPS ルールグループも作れる\n\n既存のポリシーは変更なしで動き続けるし、IPS ルールには後方互換性があるよ。追加料金はなくて、商用の全 AWS リージョンと AWS GovCloud (US) リージョンで使えるよ。\n\n## まとめ\n\n- 保護を重ねる NGFW ポリシーで、構造がシンプルに\n- ファイアウォールと IPS が別々の容量を持つ\n- 既存ポリシーはそのまま、追加料金なし\n\nVPC のネットワーク防御を整理したいセキュリティ担当の人に刺さるよ！",
+  "title_en": "NGFW Policy Arrives in AWS Network Firewall: No More Fighting Over Rule Capacity!",
+  "summary_en": "AWS Network Firewall launches NGFW policy, a new policy model that layers firewall and IPS protections with separate capacity for each. Policies get simpler to manage!",
+  "body_md_en": "Hi everyone, Shii-chan here! Today's news is a new policy model for AWS Network Firewall.\n\n## What was announced?\n\nAWS What's New announced next-generation firewall (NGFW) policy for AWS Network Firewall. It gives security teams a simpler policy structure and more rule capacity.\n\nAWS Network Firewall is a managed network security service that protects your Amazon VPCs with access control and threat detection.\n\n## The story so far\n\nAccording to the announcement, the new model layers firewall and IPS protections instead of combining them, which makes policies easier to manage. Firewall rules and IPS rules also each get their own capacity, so you no longer trade one off against the other.\n\n## What changes\n\n- Firewall and IPS rules no longer compete for capacity\n- Rules you don't share across policies can be embedded rule groups that draw capacity on demand, with no pre-allocation\n- All rules are stateful and evaluated with full connection context, so traffic handling is consistent and predictable\n\n## Dive Deep\n\nHere is how it fits together:\n\n- Firewall rules: enforce deny-by-default access control, such as allowing traffic only to approved domains\n- IPS rules: use managed rule groups from AWS or AWS Marketplace partners that update automatically as new threats emerge, or create your own custom IPS rule groups\n\nExisting policies keep working without changes, and IPS rules stay backward compatible. There is no additional charge, and it is available in all commercial AWS Regions and AWS GovCloud (US) Regions.\n\n## Wrap-up\n\n- NGFW policy layers protections for a simpler structure\n- Firewall and IPS rules have separate capacity\n- Existing policies are unchanged, with no extra charge\n\nIf you want to tidy up network defense for your VPCs, this one is for you!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/network-firewall-launches-ngfw-policy/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Network Firewall launches next-generation firewall policy",
+  "tags": [
+    "aws",
+    "security",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-10T08:00:00+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-billing-and-cost-management-multi-source-custom-billing-views",
+  "title": "カスタム請求ビューが Billing Conductor と Billing Transfer のビューをまとめられるように！",
+  "summary": "AWS Billing and Cost Management のカスタム請求ビューで、Billing Conductor と Billing Transfer のビューをソースにできるように。1 つに統合して Cost Explorer や Budgets で使えるよ！",
+  "body_md": "やっほー、しぃちゃんだよ！今日は請求・コスト管理まわりのアップデートだよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Billing and Cost Management のカスタム請求ビューが、AWS Billing Conductor と AWS Billing Transfer のビューをソースビューとして使えるようになったと発表されたよ。これは AWS が請求グループごと、請求移管の関係ごとに管理しているビューなの。\n\n## これで何が変わるの？\n\nこれらを 1 つのカスタム請求ビューにまとめて、フィルターをかけ、Cost Explorer、AWS Budgets、Billing and Cost Management コンソールで使えるよ。\n\nAWS サービスを再販するパートナーや、疑似請求 (pro forma) のために請求グループを使っている組織は、顧客やグループごとにビューを用意せず、統合された 1 つのビューで見られるようになるよ。\n\n## 深く潜ってみよう\n\nソースビューは 3 種類あるよ。\n\n- 請求グループビュー: Billing Conductor の請求グループごとのコスト。部門をまたぐチャージバックやショーバックのためにまとめられる\n- 請求移管ビュー: エンドカスタマーごとに自分へ移管されたコスト\n- 移管ショーバックビュー: そのエンドカスタマーに見えているコスト\n\n種類ごとに集約すれば、移管されたコストの合計と、エンドカスタマーに見える請求の合計が分かるよ。\n\nアクセス権は変わらず、AWS マネージドビューは既にアクセスできる場合にだけソースにできるよ。作ったビューは AWS Resource Access Manager で、組織の内外のアカウントと共有でき、経理チームや下流のセラーが自分のアカウントでデータを扱えるの。\n\n商用の全 AWS リージョンで追加料金なしで使えて、始めるには Billing and Cost Management コンソールの Billing Views を開いてね。\n\n## まとめ\n\n- Billing Conductor と Billing Transfer のビューをソースにできる\n- 1 つに統合して Cost Explorer や Budgets で利用可能\n- AWS RAM で共有でき、追加料金なし\n\nAWS の再販やチャージバックを担当する財務・FinOps の人に刺さるよ！",
+  "title_en": "Custom Billing Views Can Now Combine Billing Conductor and Billing Transfer Views!",
+  "summary_en": "AWS Billing and Cost Management custom billing views now accept AWS Billing Conductor and AWS Billing Transfer views as sources. Combine them into one view for Cost Explorer and Budgets!",
+  "body_md_en": "Hi everyone, Shii-chan here! Today's update is about billing and cost management.\n\n## What was announced?\n\nAWS What's New announced that custom billing views in AWS Billing and Cost Management now support AWS Billing Conductor and AWS Billing Transfer views as source views. These are the views AWS maintains per billing group and per billing transfer relationship.\n\n## What changes\n\nYou can combine them into a single custom billing view, apply filters, and use it in Cost Explorer, AWS Budgets, and the Billing and Cost Management console.\n\nWhether you're an AWS Partner reselling AWS services or an organization using billing groups for pro forma billing, you get one consolidated view instead of one per customer or group.\n\n## Dive Deep\n\nThere are three source view types:\n\n- Billing group views: the cost of each Billing Conductor billing group, which you can combine for chargeback and showback across business units\n- Billing transfer views: the cost transferred to you for each end customer\n- Transfer showback views: the cost that end customer sees\n\nAggregating each type gives you your total transferred cost and the total bill your end customers see.\n\nYour access doesn't change: you can use an AWS-managed view as a source only where you can already access it. You can share a custom billing view through AWS Resource Access Manager with accounts inside or outside your organization.\n\nIt's available in all commercial AWS Regions at no additional cost. To get started, open Billing Views in the Billing and Cost Management console.\n\n## Wrap-up\n\n- Billing Conductor and Billing Transfer views can be sources\n- Combine them into one view for Cost Explorer and Budgets\n- Share via AWS RAM, with no additional cost\n\nIf you handle AWS reselling or chargeback, this one is for you!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-billing-and-cost-management-multi-source-custom-billing-views",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Billing and Cost Management now supports AWS Billing Conductor and AWS Billing Transfer views as source views for custom billing views",
+  "tags": [
+    "aws",
+    "business",
+    "devops"
+  ],
+  "published_at": "2026-11-10T23:22:00+00:00"
+}

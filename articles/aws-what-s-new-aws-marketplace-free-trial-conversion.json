@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-aws-marketplace-free-trial-conversion",
+  "title": "AWS Marketplace の SaaS 無料トライアルが自動で有料に切り替わるようになったよ！",
+  "summary": "AWS Marketplace で、従量課金 SaaS の無料トライアルが終了後に自動で有料サブスクリプションへ移行できるように。トライアルは 7〜90 日で設定できるよ！",
+  "body_md": "おつかれさま、しぃちゃんだよ！今日は AWS Marketplace の SaaS 購入まわりのアップデートだよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Marketplace の従量課金 SaaS 製品の無料トライアルが、自動で有料サブスクリプションに変換できるようになったと発表されたよ！\n\n## 今までどうだったの？\n\nこれまでは、トライアルが終わったあとに買い手が改めて申し込む必要があったよ。原文にはその詳細は書かれていないけれど、今回は「新しいサブスクリプションなし、アクセスの中断なし」で続けられる点が強調されているよ。\n\n## これで何が変わるの？\n\n- 買い手: トライアル終了後も、売り手の従量課金の価格で使い続けられて、使った分だけ支払う\n- 売り手: トライアル利用者を有料顧客に変えやすくなる\n\n例えば、データチームが分析製品を 30 日試して、気に入ればそのまま使い続けられるよ。\n\n## 深く潜ってみよう\n\n仕様のポイントはこれだよ。\n\n- トライアル期間は 7〜90 日で、売り手が設定する\n- 買い手は購読前に、トライアル期間・変換日・価格を確認できる\n- 変換前にリマインダーメールが届き、変換前ならいつでも無料でキャンセルできる\n- 売り手は AWS Partner Central でトライアルを作成、または既存のトライアルオファーを自動変換に更新できる\n- 対象はパブリックオファーで、AWS Marketplace が使える全リージョンで利用可能\n\n## まとめ\n\n- 従量課金 SaaS の無料トライアルが自動で有料に移行できる\n- 期間は 7〜90 日、変換前のキャンセルは無料\n- 売り手は Partner Central から設定できる\n\nMarketplace で SaaS を売っている人にも、試して選びたい人にも嬉しい変更だよ！",
+  "title_en": "AWS Marketplace SaaS Free Trials Now Convert to Paid Automatically!",
+  "summary_en": "Free trials of usage-based SaaS products on AWS Marketplace can now convert automatically to paid subscriptions. Trials run 7 to 90 days!",
+  "body_md_en": "Hi everyone, Shii-chan here! Today's news is an update to buying SaaS on AWS Marketplace.\n\n## What was announced?\n\nAWS What's New announced that free trials of usage-based SaaS products on AWS Marketplace can now convert automatically to paid subscriptions!\n\n## The story so far\n\nThe announcement doesn't describe the old flow in detail, but it stresses that the new flow needs no new subscription and causes no interruption in access.\n\n## What changes\n\n- Buyers: keep using the product after the trial at the seller's usage-based price, paying only for what they use\n- Sellers: it's easier to turn trial users into paying customers\n\nFor example, a data team can try an analytics product for 30 days and keep using it if it fits.\n\n## Dive Deep\n\nKey details:\n\n- Trials run 7 to 90 days, set by the seller\n- Buyers see the trial length, conversion date, and pricing before subscribing\n- Reminder emails arrive before conversion, and buyers can cancel at no charge before it happens\n- Sellers can create a trial in AWS Partner Central, or update an existing trial offer to convert automatically\n- It applies to public offers in all AWS Regions where AWS Marketplace is available\n\n## Wrap-up\n\n- Usage-based SaaS free trials can convert to paid automatically\n- 7 to 90 days, with free cancellation before conversion\n- Sellers configure it in Partner Central\n\nGood news for both SaaS sellers and buyers who like to try before they buy!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-marketplace-free-trial-conversion/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Marketplace SaaS free trials now convert automatically to paid subscriptions",
+  "tags": [
+    "aws",
+    "business"
+  ],
+  "published_at": "2026-11-10T08:00:00+00:00"
+}

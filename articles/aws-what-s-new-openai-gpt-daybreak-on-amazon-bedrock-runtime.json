@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-openai-gpt-daybreak-on-amazon-bedrock-runtime",
+  "title": "OpenAI のサイバーセキュリティモデル Daybreak が Bedrock の bedrock-runtime で使えるように！",
+  "summary": "Amazon Bedrock の bedrock-runtime エンドポイントで、OpenAI の Daybreak Red と Daybreak Blue が利用可能に。対象は Daybreak に登録済みの適格な顧客だよ！",
+  "body_md": "みんな、しぃちゃんだよ！今日は Bedrock にセキュリティ特化の OpenAI モデルがやってきた話だよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Bedrock の bedrock-runtime エンドポイントから、OpenAI のサイバーセキュリティ特化モデルが使えるようになったと発表されたよ。対象は適格な顧客で、モデルはこの 2 つだよ。\n\n- Daybreak Red: GPT-5.6 Cyber\n- Daybreak Blue: GPT-5.6 Sol\n\n## なぜ重要なの？\n\nセキュリティの調査では、通常のモデルだと拒否されやすい作業もあるよ。Daybreak は、拒否のしきい値を下げる代わりに、本人確認・モニタリング・アクセス制御を強くして、調査の速さと深さを上げる考え方だと説明されているの。\n\n## これで何が変わるの？\n\n- Daybreak Blue は多くのセキュリティチームの出発点で、脆弱性の発見、検知エンジニアリング、インシデント対応などの防御ワークフロー向け\n- Daybreak Red は、脆弱性調査、エクスプロイトの再現、緩和策の開発など、高度で許可された作業向け\n\n## 深く潜ってみよう\n\n- 推論データはモデルのトレーニングに使われず、OpenAI とのデータ共有へのオプトインも不要\n- bedrock-runtime では、US とグローバルのクロスリージョン推論 (CRIS) プロファイルで利用できる\n- 利用には OpenAI の Daybreak アクセスへの登録が必要。登録は OpenAI か AWS のアカウントチームに相談し、承認後に AWS 側でアクセスをリクエストする\n\nbedrock-mantle エンドポイントでのリージョン提供状況は、ドキュメントを確認してね。\n\n## まとめ\n\n- Daybreak Red / Blue が bedrock-runtime で利用可能に\n- 推論データは学習に使われない\n- 使うには Daybreak への登録と AWS 側のアクセス申請が必要\n\nAWS 上で脆弱性調査やインシデント対応に AI を使いたいセキュリティチームに刺さるよ！",
+  "title_en": "OpenAI's Daybreak Cybersecurity Models Arrive on Amazon Bedrock Runtime!",
+  "summary_en": "Eligible customers can now use OpenAI's Daybreak Red and Daybreak Blue models through the bedrock-runtime endpoint on Amazon Bedrock. Daybreak enrollment is required!",
+  "body_md_en": "Hi everyone, Shii-chan here! Today, security-focused OpenAI models come to Bedrock.\n\n## What was announced?\n\nAWS What's New announced that eligible customers can access OpenAI's specialized cybersecurity models through the bedrock-runtime endpoint on Amazon Bedrock:\n\n- Daybreak Red: GPT-5.6 Cyber\n- Daybreak Blue: GPT-5.6 Sol\n\n## Why it matters\n\nSecurity investigations include tasks that general models may refuse. Daybreak's approach, as described, is a lower refusal threshold matched by stronger identity verification, monitoring, and access controls, which improves the speed and depth of an investigation.\n\n## What changes\n\n- Daybreak Blue is the starting point for most security teams, covering defensive workflows like vulnerability discovery, detection engineering, and incident response\n- Daybreak Red is for advanced, authorized tasks such as vulnerability research, exploit reproduction, and mitigation development\n\n## Dive Deep\n\n- Your inference data is not used for model training, and you don't need to opt in to sharing data with OpenAI\n- On bedrock-runtime, the models are available through US and Global cross-Region inference (CRIS) profiles\n- Access requires enrollment in Daybreak from OpenAI. Contact OpenAI or your AWS account team about eligibility, then request access on AWS once approved\n\nFor regional availability through the bedrock-mantle endpoint, check the documentation.\n\n## Wrap-up\n\n- Daybreak Red and Blue are available on bedrock-runtime\n- Inference data isn't used for training\n- You need Daybreak enrollment and an access request on AWS\n\nIf your security team wants AI for vulnerability research and incident response on AWS, this is for you!",
+  "emotion": "energetic",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/openai-gpt-daybreak-on-amazon-bedrock-runtime/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Bedrock adds bedrock-runtime endpoint support for Daybreak models",
+  "tags": [
+    "aws",
+    "ai",
+    "security"
+  ],
+  "published_at": "2026-11-10T10:14:00+00:00"
+}

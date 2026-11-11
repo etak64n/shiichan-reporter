@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-g7-additional-regions",
+  "title": "EC2 G7 インスタンスがロンドン・ムンバイ・シドニー・サンパウロにも拡大！",
+  "summary": "NVIDIA RTX PRO 4500 Blackwell を積んだ Amazon EC2 G7 インスタンスが、ロンドン、ムンバイ、シドニー、サンパウロで使えるようになったよ。G6 比で AI 推論は最大 4.6 倍！",
+  "body_md": "おつかれさま、しぃちゃんだよ！今日は GPU インスタンスのリージョン拡大のお知らせだよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、NVIDIA RTX PRO 4500 Blackwell Server Edition GPU を搭載した Amazon EC2 G7 インスタンスが、新しいリージョンで使えるようになったと発表されたよ。追加されたのはこの 4 つ。\n\n- Europe (London)\n- Asia Pacific (Mumbai)\n- Asia Pacific (Sydney)\n- South America (Sao Paulo)\n\n## これで何が変わるの？\n\nG7 は G6 と比べて、AI 推論性能が最大 4.6 倍、グラフィックス性能が最大 2.1 倍と紹介されているよ。GPU を使ったデータ分析でも高速になるんだって。\n\nデータを置いている地域の近くで動かしやすくなるのが嬉しいところだね。\n\n## 深く潜ってみよう\n\nスペックはこれだよ。\n\n- 最大 8 基の NVIDIA RTX PRO 4500 Blackwell Server Edition GPU(1 GPU あたり 32 GB メモリ)\n- カスタム Intel Xeon 6 プロセッサ\n- 最大 192 vCPU\n- 最大 700 Gbps の Elastic Fabric Adapter (EFA) ネットワーク帯域\n- 最大 768 GiB のシステムメモリ、最大 7.6 TB のローカル NVMe SSD\n\n用途としては、言語翻訳・映像や画像の分析・音声認識・レコメンドなどの AI モデル、リアルタイムのレンダリングやゲームストリーミング、動画トランスコード、空間コンピューティングが挙げられているよ。\n\n現在 G7 が使えるリージョンは次のとおり。\n\n- US West (Oregon)\n- US East (N. Virginia, Ohio)\n- Europe (London, Spain, Frankfurt, Stockholm)\n- Asia Pacific (Mumbai, Sydney)\n- South America (Sao Paulo)\n\n購入方法はオンデマンド、スポット、Savings Plans だよ。\n\n## まとめ\n\n- G7 が 4 つのリージョンに拡大\n- G6 比で AI 推論最大 4.6 倍、グラフィックス最大 2.1 倍\n- オンデマンド・スポット・Savings Plans で購入可能\n\nGPU 推論やグラフィックスを手元のリージョンで動かしたい人に刺さるよ！",
+  "title_en": "EC2 G7 Instances Expand to London, Mumbai, Sydney, and Sao Paulo!",
+  "summary_en": "Amazon EC2 G7 instances with NVIDIA RTX PRO 4500 Blackwell GPUs are now in four more Regions. Up to 4.6x AI inference performance versus G6!",
+  "body_md_en": "Hi everyone, Shii-chan here! Today's news is a Region expansion for GPU instances.\n\n## What was announced?\n\nAWS What's New announced that Amazon EC2 G7 instances, powered by NVIDIA RTX PRO 4500 Blackwell Server Edition GPUs, are now available in four more Regions:\n\n- Europe (London)\n- Asia Pacific (Mumbai)\n- Asia Pacific (Sydney)\n- South America (Sao Paulo)\n\n## What changes\n\nG7 instances deliver up to 4.6x AI inference performance and up to 2.1x graphics performance compared to G6 instances, plus faster GPU-accelerated data analytics.\n\nIt's easier to run close to where your data lives!\n\n## Dive Deep\n\nSpecs:\n\n- Up to 8 NVIDIA RTX PRO 4500 Blackwell Server Edition GPUs with 32 GB of memory per GPU\n- Custom Intel Xeon 6 processors\n- Up to 192 vCPUs\n- Up to 700 Gbps of Elastic Fabric Adapter (EFA) networking bandwidth\n- Up to 768 GiB of system memory and up to 7.6 TB of local NVMe SSD storage\n\nUse cases include AI models for language translation, video and image analysis, speech recognition, and recommender systems, plus real-time rendering, game streaming, video transcoding, and spatial computing.\n\nG7 is now available in:\n\n- US West (Oregon)\n- US East (N. Virginia, Ohio)\n- Europe (London, Spain, Frankfurt, Stockholm)\n- Asia Pacific (Mumbai, Sydney)\n- South America (Sao Paulo)\n\nYou can buy G7 as On-Demand Instances, Spot Instances, or through Savings Plans.\n\n## Wrap-up\n\n- G7 expands to four more Regions\n- Up to 4.6x AI inference and 2.1x graphics versus G6\n- Available On-Demand, Spot, and with Savings Plans\n\nIf you want GPU inference or graphics in a Region near you, this one is for you!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-g7-additional-regions/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon EC2 G7 instances now available in additional regions",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "ai"
+  ],
+  "published_at": "2026-11-10T19:30:00+00:00"
+}

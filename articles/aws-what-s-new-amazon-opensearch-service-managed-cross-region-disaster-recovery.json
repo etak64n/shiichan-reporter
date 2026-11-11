@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-opensearch-service-managed-cross-region-disaster-recovery",
+  "title": "OpenSearch Service がマネージドなクロスリージョン DR に対応！RPO 1 分未満・RTO 20 分未満",
+  "summary": "Amazon OpenSearch Service にマネージドなクロスリージョン災害対策が登場。2 つのリージョンのドメインを API 1 回でペアリングでき、RPO は 1 分未満、RTO は 20 分未満だよ！",
+  "body_md": "やっほー、しぃちゃんだよ！今日は検索基盤の災害対策がぐっと楽になる発表だよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon OpenSearch Service のマネージドなクロスリージョン災害対策 (DR) が発表されたよ！自分でレプリケーションを作って運用しなくても、ミッションクリティカルな検索・AI・分析ワークロードの可用性や事業継続の要件を満たせるの。\n\n## これで何が変わるの？\n\n2 つのリージョンにドメインを作ったあと、API 1 回、またはコンソールの数ステップでペアリングできるよ。目標値はこうだよ。\n\n- RPO (目標復旧時点): 1 分未満\n- RTO (目標復旧時間): 20 分未満\n\nセカンダリのドメインは常にプライマリと同期されるよ。\n\n## 深く潜ってみよう\n\n運用の流れはこんな感じ。\n\n- スイッチオーバー: メンテナンスやリージョンローテーションなど計画的なイベント向け。2 つのドメインの役割を入れ替え、データ損失はゼロ\n- フェイルオーバー: プライマリが使えなくなったときにセカンダリを昇格。データ損失はレプリケーションの遅延分に限られる\n- フェイルオーバー後: 新しいプライマリと別のセカンダリをペアにして保護を戻す\n- 監視: レプリケーションの状態と遅延は Amazon CloudWatch メトリクスで確認\n\n利用条件と制限はこれだよ。\n\n- OpenSearch 3.7 以降が必要\n- 同じ AWS アカウント内のドメインが対象。カスタマーマネージドな AWS KMS キーで暗号化されたドメインも可\n- UltraWarm ストレージや OpenSearch Optimized インスタンス (OR1 / OR2) を使うドメインは非対応\n\nそれ以前のバージョンなら、クローンベースのアップグレードで OpenSearch 3.7 をワークロードで試し、準備ができたら切り替え、必要なら戻すこともできるよ。\n\n## まとめ\n\n- API 1 回でクロスリージョンのドメインをペアリング\n- RPO 1 分未満、RTO 20 分未満\n- OpenSearch 3.7 以降が必要で、UltraWarm と OR1 / OR2 は非対応\n\n検索基盤の DR を自前で組んでいた SRE の人に刺さるよ！",
+  "title_en": "OpenSearch Service Gets Managed Cross-Region Disaster Recovery: RPO Under 1 Minute!",
+  "summary_en": "Amazon OpenSearch Service now offers managed cross-Region disaster recovery. Pair domains in two Regions with one API call, with an RPO under one minute and an RTO under 20 minutes!",
+  "body_md_en": "Hi everyone, Shii-chan here! Today's announcement makes disaster recovery for search much easier.\n\n## What was announced?\n\nAWS What's New announced managed cross-Region disaster recovery (DR) for Amazon OpenSearch Service. You can meet strict availability and business continuity needs for mission-critical search, AI, and analytics workloads without building or maintaining replication yourself.\n\n## What changes\n\nAfter you create domains in two Regions, pair them with a single API call or a few steps in the console. The targets are:\n\n- RPO (recovery point objective): under one minute\n- RTO (recovery time objective): under 20 minutes\n\nThe secondary domain stays continuously in sync with the primary.\n\n## Dive Deep\n\nHow operations work:\n\n- Switchover: for planned events like maintenance or Region rotation. It swaps the domains' roles with zero data loss\n- Failover: promotes the secondary when the primary is unavailable. Data loss is limited to the replication lag\n- After a failover: pair the new primary with a secondary to restore protection\n- Monitoring: track replication health and lag with Amazon CloudWatch metrics\n\nRequirements and limits:\n\n- OpenSearch 3.7 or later\n- Domains in the same AWS account, including domains encrypted with customer managed AWS KMS keys\n- Domains using UltraWarm storage or OpenSearch Optimized instances (OR1 or OR2) aren't supported\n\nIf you're on an earlier version, clone-based upgrades let you test OpenSearch 3.7 against your workload, cut over when you're ready, and roll back if needed.\n\n## Wrap-up\n\n- Pair cross-Region domains with one API call\n- RPO under one minute, RTO under 20 minutes\n- Requires OpenSearch 3.7+, and UltraWarm and OR1/OR2 are unsupported\n\nIf you built your own search DR, this one is for you!",
+  "emotion": "energetic",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-opensearch-service-managed-cross-region-disaster-recovery/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon OpenSearch Service announces managed cross-Region disaster recovery",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "devops"
+  ],
+  "published_at": "2026-11-10T19:00:00+00:00"
+}
