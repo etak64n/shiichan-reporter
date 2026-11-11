@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-11-11-hyperdrive-raised-limits",
+  "title": "Hyperdrive の上限が大幅アップ！設定は 25 から 100 個、接続は 100 から 1,500 本に",
+  "summary": "Workers Paid プランの Hyperdrive で、作成できる設定が 25 個から 100 個に、設定あたりのオリジン接続数が 100 本から 1,500 本に引き上げられたよ。",
+  "body_md": "やっほー、しぃちゃんだよ！今日は Hyperdrive の上限が一気に広がったお知らせだよ。\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Hyperdrive の制限緩和が発表されたよ。対象は Workers Paid プランのお客さんだよ。\n\n## 今までどうだったの？\n\n今まではこんな上限があったの。\n\n- 1 アカウントあたりの Hyperdrive 設定は 25 個まで\n- 1 設定あたりのオリジンへの接続は 100 本まで\n\nデータベースの数が多かったり、同時アクセスの多いワークロードだったりすると、窮屈に感じる場面があったかもしれないね。\n\n## これで何が変わるの？\n\n- **設定数の上限**: 25 個 から 100 個 へ。さまざまなデータベースにまたがって、より多くのワークロードで接続プールとクエリキャッシュを使えるようになるよ\n- **オリジン接続数の上限**: 設定あたり 100 本 から 1,500 本 へ。同時にデータベースへアクセスしたいワークロード向けに、接続プールを大きくできるよ\n\n## 深く潜ってみよう\n\nオリジン接続数の上限は、ダッシュボード、Wrangler、REST API のどれからでも設定できるよ。\n\nCloudflare からの推奨も書かれているよ。\n\n- オリジン接続数の上限は、**オリジンデータベース側の接続上限より低く**設定する\n\nHyperdrive の「Hyperdrive limits」と「Tune connection pooling」のドキュメントに、さらに詳しい情報があるよ。\n\n## まとめ\n\n- 設定数: 25 個 から 100 個(Workers Paid)\n- 設定あたりのオリジン接続数: 100 本 から 1,500 本(Workers Paid)\n- 接続数の設定はダッシュボード・Wrangler・REST API から可能\n- DB 側の接続上限より低く設定するのがおすすめ\n\n複数のデータベースを Workers から使っているみんなや、同時接続が多いアプリを作っているみんなに刺さるよ！",
+  "title_en": "Hyperdrive raises limits: 100 configurations and 1,500 origin connections",
+  "summary_en": "On the Workers Paid plan, Hyperdrive now allows up to 100 configurations (up from 25) and up to 1,500 origin database connections per configuration (up from 100).",
+  "body_md_en": "Hi everyone, it's Shii-chan! Hyperdrive's limits just got a lot roomier.\n\n## What was announced?\n\nThe Cloudflare Changelog announced raised Hyperdrive limits for Workers Paid customers.\n\n## The story so far\n\nThe previous limits were:\n\n- Up to 25 Hyperdrive configurations per account\n- Up to 100 origin connections per configuration\n\nWith many databases or highly concurrent workloads, that could feel tight.\n\n## What changes\n\n- **Configuration limit**: 25 to 100. More workloads can use connection pooling and query caching across different databases\n- **Origin connection limit**: 100 to 1,500 per configuration. You get a bigger pool for workloads that need more concurrent database access\n\n## Dive Deep\n\nYou can set the origin connection limit from the dashboard, Wrangler, or the REST API.\n\nCloudflare also recommends:\n\n- Set the origin connection limit **lower than your origin database's own connection limit**\n\nSee \"Hyperdrive limits\" and \"Tune connection pooling\" in the docs for more.\n\n## Wrap-up\n\n- Configurations: 25 to 100 (Workers Paid)\n- Origin connections per configuration: 100 to 1,500 (Workers Paid)\n- Configurable via dashboard, Wrangler, or REST API\n- Keep it below your database's connection limit\n\nGreat for anyone connecting Workers to many databases or running high-concurrency apps.",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-11-11-hyperdrive-raised-limits/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Hyperdrive - Hyperdrive raises limits for connections and configurations",
+  "tags": [
+    "cloudflare",
+    "serverless",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-11T21:57:05+00:00"
+}

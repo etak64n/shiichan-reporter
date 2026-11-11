@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-eks-auto-mode-security-groups-for-pods",
+  "title": "EKS Auto Mode で Pod ごとにセキュリティグループが使えるように！",
+  "summary": "Amazon EKS Auto Mode が Pod 単位のセキュリティグループに対応したよ。SecurityGroupPolicy で割り当てられて、追加料金なし、Kubernetes 1.36 以降が対象なの。",
+  "body_md": "こんにちは、しぃちゃんだよ！今日は EKS Auto Mode のネットワーク分離が一歩進んだお知らせだよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon EKS Auto Mode が**セキュリティグループ for Pods**に対応したことが発表されたよ。個々の Pod に、専用の Amazon EC2 セキュリティグループのルールを適用できる機能なの。\n\n## なぜ重要なの？\n\n同じノードの上で動く Pod でも、アクセスしてよい相手はワークロードごとに違うよね。その分離をネットワークレベルでやりたいとき、アプリごとにノードプールを分ける、という手間が必要になりがちなの。今回の機能は、そこを軽くしてくれるよ。\n\n## これで何が変わるの？\n\n- 同じノード上のワークロードが、それぞれ別のセキュリティグループを持てる\n- アプリごとに別のノードプールを作らなくても、ネットワークレベルで分離できる\n- セキュリティグループで接続を許可している Amazon RDS や Amazon ElastiCache などのデータベースに、VPC の他の部分と同じルールで Pod から到達できる\n\n## 深く潜ってみよう\n\n- **設定方法**: `SecurityGroupPolicy` リソースで、どの Pod にどのセキュリティグループを割り当てるかを定義する\n- **ポリシーに一致しない Pod**: これまで通り、ノードのセキュリティグループを使う\n- **料金**: EKS Auto Mode の一部として、追加料金なし\n- **要件**: Kubernetes 1.36 以降のクラスター\n- **リージョン**: EKS Auto Mode がサポートされている全ての AWS リージョン\n\n詳細は Amazon EKS User Guide の「Security groups for Pods」を見てね。\n\n## まとめ\n\n- EKS Auto Mode で Pod 単位のセキュリティグループが使える\n- `SecurityGroupPolicy` で割り当て、一致しない Pod はノードの設定のまま\n- 追加料金なし、Kubernetes 1.36 以降が対象\n\nEKS Auto Mode で RDS や ElastiCache とつなぐ構成を、きめ細かく守りたいみんなに刺さるよ！",
+  "title_en": "Amazon EKS Auto Mode now supports security groups for Pods",
+  "summary_en": "EKS Auto Mode can now apply dedicated EC2 security groups to individual Pods via SecurityGroupPolicy, at no additional charge, on Kubernetes 1.36 or later.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Network isolation in EKS Auto Mode just took a step forward.\n\n## What was announced?\n\nAWS What's New announced that Amazon EKS Auto Mode now supports **security groups for Pods**. You can apply dedicated Amazon EC2 security group rules to individual Pods.\n\n## Why it matters\n\nPods on the same node often need access to different things. Isolating them at the network level used to push you toward separate node pools per application. This feature lightens that load.\n\n## What changes\n\n- Workloads on the same node can carry different security groups\n- You get network-level segmentation without separate node pools for each application\n- Pods can reach resources like Amazon RDS and Amazon ElastiCache that authorize connections by security group, under the same rules as the rest of your VPC\n\n## Dive Deep\n\n- **Configuration**: define which Pods get which security groups with a `SecurityGroupPolicy` resource\n- **Unmatched Pods**: they keep using their node's security groups\n- **Pricing**: included with EKS Auto Mode at no additional charge\n- **Requirement**: clusters running Kubernetes 1.36 or later\n- **Regions**: all AWS Regions where EKS Auto Mode is supported\n\nSee \"Security groups for Pods\" in the Amazon EKS User Guide for details.\n\n## Wrap-up\n\n- Per-Pod security groups are available in EKS Auto Mode\n- Assign them with `SecurityGroupPolicy`; unmatched Pods keep the node's groups\n- No extra charge, Kubernetes 1.36 or later\n\nGreat for anyone who wants fine-grained protection for EKS Auto Mode workloads that talk to RDS or ElastiCache.",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-eks-auto-mode-security-groups-for-pods/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon EKS Auto Mode now supports security groups for Pods",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "security"
+  ],
+  "published_at": "2026-11-11T17:26:00+00:00"
+}

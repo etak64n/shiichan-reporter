@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-11-11-durable-objects-request-routing",
+  "title": "Durable Objects への接続、ムダな中継をカット！設定変更なしで p99 レイテンシ改善に期待",
+  "summary": "Durable Objects で、転送レコード経由でデータセンターを渡り歩くときの往復回数が減ったよ。コードも設定も変えずに、再配置まわりの p99 接続レイテンシが下がる可能性があるの。",
+  "body_md": "おつかれさま、しぃちゃんだよ！今日は Durable Objects の裏側がこっそり速くなったお話だよ。\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Durable Objects への接続に必要な往復回数を減らす改善が発表されたよ。対象は、場所の検索(ロケーションルックアップ)が別のデータセンターへの転送レコードをたどるケースなの。\n\n## 今までどうだったの？\n\nオブジェクトの居場所が Cloudflare のネットワークにキャッシュされていないとき、最初に問い合わせたデータセンターが、別のデータセンターを指す転送レコードを持っていることがあるよ。\n\n今までの流れはこうだったの。\n\n1. 最初のデータセンターが、転送先でオブジェクトへの接続を確立する\n2. その接続を使って呼び出し元へプロキシして返す\n3. そのあと、呼び出し元が自分でオブジェクトへの直接接続を確立する\n\nつまり、中継用の接続と直接接続で、接続が二重に作られていたの。\n\n## これで何が変わるの？\n\n今回の変更で、最初のデータセンターは**転送先を直接返すだけ**になったよ。オブジェクトへの接続は確立しないの。呼び出し元はそのまま直接接続を張れるので、中間の接続と二重の取得がなくなるよ。\n\nその結果、再配置に関連するリクエストの p99 接続レイテンシが下がる可能性があるよ。ただし実際の効果はワークロードやトラフィックのパターン次第、と原文でも断られているよ。\n\n## 深く潜ってみよう\n\n- コードや設定の変更は不要で、そのまま恩恵を受けられる\n- 効果が出るのは、転送レコード経由になるケースに限られる\n- 数値としての改善幅は原文には書かれていない\n\nWorkers が Durable Objects にどう接続するかの詳細は、ドキュメントの「Durable Object namespaces」にあるよ。\n\n## まとめ\n\n- 転送レコード経由の接続で、中継用の接続をやめて転送先を直接返すようになった\n- 再配置まわりの p99 接続レイテンシが下がる可能性がある(効果はワークロード次第)\n- 対応作業は不要\n\nDurable Objects を使っていて、レイテンシのばらつきが気になるみんなに嬉しい改善だよ！",
+  "title_en": "Durable Objects connections skip a needless hop, no changes required",
+  "summary_en": "Cloudflare reduced round trips when connecting to a Durable Object through a forwarding record. This can lower p99 connection latency for relocation-related requests with no code or config changes.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today a Durable Objects internals tweak quietly made things faster.\n\n## What was announced?\n\nThe Cloudflare Changelog announced an improvement that reduces the round trips needed to connect to a Durable Object. It applies when a location lookup follows a forwarding record to another data center.\n\n## The story so far\n\nWhen an object's destination isn't cached in Cloudflare's network, the first data center contacted may have a forwarding record pointing to another data center.\n\nPreviously:\n\n1. The first data center acquired a connection to the object at the destination\n2. It proxied that connection back to the caller\n3. The caller then established its own direct connection to the object\n\nSo two connections were being set up where one would do.\n\n## What changes\n\nNow the first data center **just returns the destination**, without acquiring a connection to the object. The caller connects directly, so the intermediate connection and the duplicate acquisition go away.\n\nThat can reduce p99 connection latency for relocation-related requests. As the source notes, actual results depend on your workload and traffic patterns.\n\n## Dive Deep\n\n- No code or configuration changes are needed\n- The benefit applies only when the forwarding-record path is involved\n- The source gives no specific numbers for the improvement\n\nFor how Workers connect to Durable Objects, see \"Durable Object namespaces\" in the docs.\n\n## Wrap-up\n\n- Forwarding-record lookups now return the destination directly instead of proxying through an extra connection\n- p99 connection latency for relocation-related requests may drop (workload dependent)\n- Nothing for you to do\n\nA nice win if you use Durable Objects and care about latency tails.",
+  "emotion": "smug",
+  "importance": 3,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-11-11-durable-objects-request-routing/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Durable Objects - Improved Request Routing to Durable Objects",
+  "tags": [
+    "cloudflare",
+    "serverless",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-11T21:57:04+00:00"
+}

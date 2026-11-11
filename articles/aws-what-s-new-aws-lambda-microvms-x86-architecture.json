@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-lambda-microvms-x86-architecture",
+  "title": "Lambda MicroVMs がついに x86 対応！再コンパイルなしでそのまま動かせるよ",
+  "summary": "AWS Lambda MicroVMs が x86 アーキテクチャに対応したよ。MicroVM イメージ作成時に x86 か Arm(Graviton)を選べて、既存の x86 資産をそのまま動かせるの。",
+  "body_md": "みんな、しぃちゃんだよ！今日は Lambda MicroVMs の対応アーキテクチャが増えたお知らせだよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Lambda MicroVMs が **x86 CPU アーキテクチャ**に対応したことが発表されたよ。\n\nLambda MicroVMs は、VM レベルの分離、ほぼ即時の起動と再開、状態の保持を備えたサーバーレスのコンピュート部品(プリミティブ)なの。ユーザーや AI が生成したコードを動かす用途向けで、例としてこんなものが挙げられているよ。\n\n- AI コーディングアシスタント\n- CI/CD ランナー\n- インタラクティブな開発環境\n- 脆弱性スキャナー\n\n## 今までどうだったの？\n\nこれまでは Arm(AWS Graviton)が選択肢だったので、x86 前提のアプリやツールは、再コンパイルや移植が必要になる場面があったよ。\n\n## これで何が変わるの？\n\n- 既存の x86 アプリ、ツール、ソフトウェア依存関係を、再コンパイルや移植なしでそのまま動かせる\n- MicroVM イメージを作るときに、x86 と Arm(Graviton)を選べる\n- Arm で動くワークロードは、これまで通り Graviton を使える(デフォルトの CPU アーキテクチャは Graviton のまま)\n\n## 深く潜ってみよう\n\n始め方はこの流れだよ。\n\n1. Dockerfile から MicroVM イメージを作るときに、x86 アーキテクチャを選ぶ\n2. そのイメージから MicroVM を起動する\n\n利用方法は次の 4 つが挙げられているよ。\n\n- AWS Lambda コンソール\n- AWS CloudFormation\n- AWS Cloud Development Kit(CDK)\n- Agent Toolkit for AWS を使ったエージェント型の開発ツール\n\n提供リージョンは、Lambda MicroVMs が使えるリージョンのうち、次の 4 つを除く全てだよ。\n\n- アジアパシフィック(香港)\n- アジアパシフィック(マレーシア)\n- アジアパシフィック(タイ)\n- 欧州(スペイン)\n\n料金は発表文には書かれていないので、Lambda の料金ページを確認してね。\n\n## まとめ\n\n- Lambda MicroVMs が x86 に対応し、既存の x86 資産をそのまま動かせる\n- イメージ作成時に x86 と Arm(Graviton)を選択、デフォルトは Graviton\n- コンソール、CloudFormation、CDK、Agent Toolkit for AWS から利用可能\n- 一部のアジアパシフィックと欧州(スペイン)を除く提供リージョンで利用できる\n\nAI 生成コードの実行環境や CI ランナーを x86 のまま移したいみんなに刺さるよ！",
+  "title_en": "AWS Lambda MicroVMs now supports x86",
+  "summary_en": "AWS Lambda MicroVMs now supports the x86 CPU architecture. You choose x86 or Arm (Graviton) when creating a MicroVM image and can run existing x86 workloads as-is.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Lambda MicroVMs just gained a new architecture option.\n\n## What was announced?\n\nAWS What's New announced that AWS Lambda MicroVMs now supports the **x86 CPU architecture**.\n\nLambda MicroVMs is a serverless compute primitive with VM-level isolation, near-instant launch and resume, and state preservation. It is built for running user-generated or AI-generated code, for example in:\n\n- AI coding assistants\n- CI/CD runners\n- Interactive development environments\n- Vulnerability scanners\n\n## The story so far\n\nUntil now the option was Arm (AWS Graviton), so x86-based apps and tools could need recompiling or porting.\n\n## What changes\n\n- Existing x86 applications, tools, and dependencies run without recompiling or porting\n- You choose x86 or Arm (Graviton) when you create a MicroVM image\n- Arm workloads keep using Graviton, which stays the default\n\n## Dive Deep\n\nTo get started:\n\n1. Choose the x86 architecture when creating a MicroVM image from your Dockerfile\n2. Launch MicroVMs from that image\n\nYou can use it through:\n\n- The AWS Lambda console\n- AWS CloudFormation\n- AWS Cloud Development Kit (CDK)\n- Agentic development tools via the Agent Toolkit for AWS\n\nx86 is available in every Region where Lambda MicroVMs is available, except:\n\n- Asia Pacific (Hong Kong)\n- Asia Pacific (Malaysia)\n- Asia Pacific (Thailand)\n- Europe (Spain)\n\nThe announcement does not state pricing, so check the Lambda pricing page.\n\n## Wrap-up\n\n- Lambda MicroVMs supports x86, so existing x86 assets run as-is\n- Pick x86 or Arm (Graviton) at image creation; Graviton is the default\n- Available via console, CloudFormation, CDK, and Agent Toolkit for AWS\n- Offered in most Regions where MicroVMs is available, with a few exceptions\n\nThis is for anyone moving AI-code sandboxes or CI runners over while staying on x86.",
+  "emotion": "energetic",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-lambda-microvms-x86-architecture/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Lambda MicroVMs now supports the x86 CPU architecture",
+  "tags": [
+    "aws",
+    "serverless",
+    "ai"
+  ],
+  "published_at": "2026-11-11T18:00:00+00:00"
+}

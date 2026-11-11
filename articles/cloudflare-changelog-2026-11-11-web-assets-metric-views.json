@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-11-11-web-assets-metric-views",
+  "title": "API Shield の Web Assets に指標別ビューが登場！大量のオペレーションも優先度づけしやすく",
+  "summary": "API Shield の Web Assets > Operations ページに、トラフィック・エラー・レイテンシ・レスポンスサイズ・セキュリティの指標別ビューが追加されたよ。サーバー側ソートにも対応したの。",
+  "body_md": "みんな、しぃちゃんだよ！今日は API Shield の画面がちょっと便利になったお知らせだよ。\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、API Shield の **Web Assets > Operations** ページに、指標に絞ったビューが追加されたことが発表されたよ。\n\n追加されたビューはこの 5 つだよ。\n\n- トラフィック\n- エラー\n- レイテンシ\n- レスポンスサイズ\n- セキュリティ\n\n## なぜ重要なの？\n\nAPI のオペレーションが何百、何千とある環境では、「どこから手を付けるか」を決めるのが大変だよね。指標ごとに見たいものだけを表示できれば、優先順位をつけやすくなるの。\n\n## これで何が変わるの？\n\n- それぞれのビューが、その観点に関係する指標を前面に出してくれる\n- サーバー側ソートに対応しているので、大きなインベントリでも並べ替えながら確認できる\n- たとえば「エラーが多いオペレーション」や「レイテンシが重いオペレーション」から順に見る、という使い方ができそう！\n\n## 深く潜ってみよう\n\n原文に書かれているのは、ビューの種類とサーバー側ソートに対応していることまでだよ。各ビューに表示される具体的な列は書かれていないので、気になるみんなは、Cloudflare のドキュメント「Endpoint Management」で確認してね。\n\n## まとめ\n\n- Web Assets > Operations に 5 つの指標別ビューが追加された\n- サーバー側ソートで大規模なインベントリでも優先度づけしやすい\n\nAPI Shield で大量のエンドポイントを管理しているみんなに刺さるアップデートだよ！",
+  "title_en": "API Shield Web Assets gets metric views for easier prioritization",
+  "summary_en": "The Web Assets > Operations page in API Shield now has metric-focused views for traffic, errors, latency, response size, and security, with server-side sorting.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today's news is a handy little upgrade to the API Shield dashboard.\n\n## What was announced?\n\nThe Cloudflare Changelog announced new metric-focused views on the **Web Assets > Operations** page in API Shield.\n\nThe new views are:\n\n- Traffic\n- Errors\n- Latency\n- Response size\n- Security\n\n## Why it matters\n\nWhen you have hundreds or thousands of API operations, deciding where to start is hard. Seeing just the metrics you care about makes it easier to set priorities.\n\n## What changes\n\n- Each view surfaces the metrics relevant to its angle\n- Server-side sorting works even on large inventories\n- For example, you could start from the operations with the most errors or the heaviest latency\n\n## Dive Deep\n\nThe source covers the types of views and server-side sorting, and not much more. It does not list the exact columns in each view, so check \"Endpoint Management\" in the Cloudflare docs for details.\n\n## Wrap-up\n\n- Five metric views were added to Web Assets > Operations\n- Server-side sorting helps you prioritize in large inventories\n\nThis one is for anyone managing lots of endpoints with API Shield.",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-11-11-web-assets-metric-views/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "API Shield - Prioritize Web Assets operations with metric views",
+  "tags": [
+    "cloudflare",
+    "security",
+    "web"
+  ],
+  "published_at": "2026-11-11T21:57:07+00:00"
+}

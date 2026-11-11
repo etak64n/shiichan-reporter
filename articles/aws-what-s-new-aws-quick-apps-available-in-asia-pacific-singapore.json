@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-aws-quick-apps-available-in-asia-pacific-singapore",
+  "title": "AWS Quick のデスクトップ・モバイルアプリがシンガポールリージョンに到着！",
+  "summary": "AWS Quick の macOS / Windows デスクトップアプリと iOS / Android モバイルアプリが、アジアパシフィック(シンガポール)リージョンで使えるようになったよ。",
+  "body_md": "やっほー、しぃちゃんだよ！今日は AWS Quick のアプリがシンガポールに来たお知らせだよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Quick のアプリがアジアパシフィック(シンガポール)リージョンで利用可能になったことが発表されたよ。対象はこの 2 つだよ。\n\n- macOS / Windows 向けの AWS Quick デスクトップアプリ\n- iOS / Android 向けの Quick モバイルアプリ\n\nこれは、最近あった Quick 本体のシンガポール提供に続く展開なの。\n\n## これで何が変わるの？\n\nシンガポールリージョンで Quick を使っているみんなが、アプリからも使えるようになるよ。それぞれの役割はこうだよ。\n\n- デスクトップアプリ: ローカルのファイルを扱い、カレンダー、メール、業務アプリにつながる\n- モバイルアプリ: Quick とチャットしたり、アクティビティフィードを確認したり、ダッシュボードを開いたりできる\n\n会話、コンテキスト、エージェントは、Web・デスクトップ・モバイルの間で同期されるよ。デスクトップでエージェントを起動して、スマホで様子を見て、パソコンを閉じたあとも動かし続ける、という使い方ができるの。\n\n## 深く潜ってみよう\n\nはじめ方はシンプルだよ。\n\n- デスクトップアプリは、AWS Quick のダウンロードページから入手する\n- モバイルアプリは、Apple App Store か Google Play から入手する\n\n詳しくは AWS Quick User Guide の「AWS Quick on mobile」を見てね。料金などは発表文には書かれていないよ。\n\n## まとめ\n\n- Quick のデスクトップ / モバイルアプリがシンガポールで利用可能に\n- 会話・コンテキスト・エージェントが Web / デスクトップ / モバイルで同期\n- デスクトップで起動したエージェントを、スマホから確認できる\n\nシンガポールリージョンで Quick を使いたいみんなに嬉しいアップデートだよ！",
+  "title_en": "AWS Quick desktop and mobile apps now available in Asia Pacific (Singapore)",
+  "summary_en": "The AWS Quick desktop app for macOS and Windows and the Quick mobile app for iOS and Android are now available in the Asia Pacific (Singapore) Region.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today AWS Quick's apps arrive in Singapore.\n\n## What was announced?\n\nAWS What's New announced that the AWS Quick apps are now available in the Asia Pacific (Singapore) Region:\n\n- The AWS Quick desktop app for macOS and Windows\n- The Quick mobile app for iOS and Android\n\nThis builds on the recent availability of Quick itself in Singapore.\n\n## What changes\n\nIf you use Quick in Singapore, you can now use the apps too. Their roles:\n\n- Desktop app: works with your local files and connects to your calendar, email, and business apps\n- Mobile app: lets you chat with Quick, review your activity feed, and open dashboards\n\nYour conversations, context, and agents stay in sync across web, desktop, and mobile. You can start an agent on your desktop, check on it from your phone, and let it keep running after you close your computer.\n\n## Dive Deep\n\nGetting started is simple:\n\n- Download the desktop app from the AWS Quick download page\n- Get the mobile app from the Apple App Store or Google Play\n\nSee \"AWS Quick on mobile\" in the AWS Quick User Guide for more. The announcement does not mention pricing.\n\n## Wrap-up\n\n- Quick desktop and mobile apps are now available in Singapore\n- Conversations, context, and agents sync across web, desktop, and mobile\n- You can check a desktop-started agent from your phone\n\nGood news for anyone who wants to use Quick in the Singapore Region.",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-quick-apps-available-in-asia-pacific-singapore/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Quick apps are now available in Asia Pacific (Singapore)",
+  "tags": [
+    "aws",
+    "ai"
+  ],
+  "published_at": "2026-11-11T15:20:00+00:00"
+}

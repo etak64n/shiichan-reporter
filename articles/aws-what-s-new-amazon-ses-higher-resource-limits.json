@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-ses-higher-resource-limits",
+  "title": "Amazon SES の上限が拡大！ID・テナント・設定セットを 1 アカウントで育てられるよ",
+  "summary": "Amazon SES で、メール ID・テナント・設定セットの上限が引き上げられたよ。Service Quotas コンソールで使用状況の確認と引き上げ申請ができて、名前やステータスでの検索にも対応したの。",
+  "body_md": "みんな、しぃちゃんだよ！今日は Amazon SES の上限まわりが楽になるお知らせだよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon SES が**メール ID、テナント、設定セットのより高い上限**に対応したことが発表されたよ。\n\n## 今までどうだったの？\n\nお客さん・ブランド・AI エージェントごとに、別々のメール ID、テナント、設定セットを作るマルチテナントな使い方だと、リソースがあっという間に増えちゃうよね。アカウントあたりの上限に収まるように、メール運用を複数のアカウントに分ける必要が出てくることがあったの。\n\n## これで何が変わるの？\n\n- 1 つのアカウントのまま、成長に合わせてリソースを増やせる\n- アカウントを分割して上限を回避する運用が不要になる\n- 顧客・ブランド・AI エージェントが増えても、同じアカウントで育てられる\n\n## 深く潜ってみよう\n\n- 現在の使用量を、上限ごとに Service Quotas コンソールで確認できる\n- 引き上げの申請も、同じく Service Quotas コンソールから行える\n- 大きなアカウントを管理しやすいように、これらのリソースを**名前やステータスで検索**できるようになった\n- Amazon SES が使える全ての AWS リージョンで利用可能\n\n具体的な上限の数値は発表文には書かれていないよ。値は「Service quotas in Amazon SES」のドキュメントで確認してね。\n\n## まとめ\n\n- メール ID・テナント・設定セットの上限が引き上げられた\n- 使用状況の確認と引き上げ申請は Service Quotas コンソールで\n- 名前・ステータスでの検索にも対応\n- SES が使える全リージョンで利用可能\n\nマルチテナントなメール基盤を SES で運用しているみんなに刺さるよ！",
+  "title_en": "Amazon SES raises limits for identities, tenants, and configuration sets",
+  "summary_en": "Amazon SES now supports higher limits for email identities, tenants, and configuration sets. You can view usage and request increases in Service Quotas, and search these resources by name or status.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Amazon SES just got roomier.\n\n## What was announced?\n\nAWS What's New announced that Amazon SES now supports **higher limits for email identities, tenants, and configuration sets**.\n\n## The story so far\n\nIn multi-tenant setups, you often create a separate email identity, tenant, or configuration set for each customer, brand, or AI agent. Those resources multiply fast, and teams sometimes had to split email workloads across several accounts to stay within per-account limits.\n\n## What changes\n\n- Workloads can keep growing in a single account\n- No more splitting accounts just to dodge limits\n- More customers, brands, and AI agents can live in the same account\n\n## Dive Deep\n\n- You can view current usage against each limit in the Service Quotas console\n- You can request increases in the same console\n- To help manage larger accounts, you can now **search these resources by name or status**\n- Available in all AWS Regions where Amazon SES is available\n\nThe announcement does not state the actual limit values. Check \"Service quotas in Amazon SES\" in the developer guide.\n\n## Wrap-up\n\n- Limits for identities, tenants, and configuration sets are higher\n- Check usage and request increases in Service Quotas\n- Search by name or status is now supported\n- Available in every Region where SES is offered\n\nThis is for anyone running multi-tenant email on SES.",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-ses-higher-resource-limits/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon SES now supports higher limits for email identities, tenants, and configuration sets",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-11T08:00:00+00:00"
+}
