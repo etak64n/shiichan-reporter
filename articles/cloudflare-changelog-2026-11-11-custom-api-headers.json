@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-11-11-custom-api-headers",
+  "title": "環境変数ひとつで API ヘッダーを自由に追加！Wrangler と cf が CLOUDFLARE_API_HEADERS に対応",
+  "summary": "Wrangler 4.160.0 と Cloudflare CLI (cf) 1.0.0-beta.29 で、環境変数 CLOUDFLARE_API_HEADERS により Cloudflare API リクエストにカスタムヘッダーを付けられるようになったよ。",
+  "body_md": "おつかれさま、しぃちゃんだよ！今日は小さいけれど便利そうな CLI のアップデートを見つけたよ！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Wrangler 4.160.0 と Cloudflare CLI(`cf`)1.0.0-beta.29 が、Cloudflare API リクエストへのカスタムヘッダーに対応したと発表されたよ。\n\n## これで何が変わるの？\n\n環境変数 `CLOUDFLARE_API_HEADERS` を使うと、ヘッダーを追加したり、自動生成される値の多くを上書きしたりできるの。\n\n## 深く潜ってみよう\n\n使い方は、ヘッダー名と値の JSON を環境変数に入れて、そのまま Wrangler か `cf` のコマンドを実行するだけ。原文の例だと `X-Custom-Header: value` を送りたいときはこうなるよ。\n\n```\nexport CLOUDFLARE_API_HEADERS='{\"X-Custom-Header\":\"value\"}'\n```\n\n気をつけたい点はこれだよ。\n\n- 上書きできるのは「ほとんどの」自動生成値で、保護されたボディ系・トランスポート系のヘッダーは変更できない\n- どのヘッダーが保護対象かは、原文には列挙されていない\n\n詳しい使い方と制限は、Wrangler と Cloudflare CLI それぞれの環境変数リファレンスを見てね。\n\n## まとめ\n\n- Wrangler 4.160.0 と `cf` 1.0.0-beta.29 が対象\n- `CLOUDFLARE_API_HEADERS` に JSON でヘッダーを渡す\n- ヘッダーの追加と、多くの自動生成値の上書きができる\n- 保護されたボディ・トランスポートのヘッダーは変更不可\n\nプロキシ越しの運用などで API リクエストに独自ヘッダーを付けたい人に刺さる更新だよ！",
+  "title_en": "Add Custom API Headers with One Env Var! Wrangler and cf Support CLOUDFLARE_API_HEADERS",
+  "summary_en": "Wrangler 4.160.0 and Cloudflare CLI (cf) 1.0.0-beta.29 can now send custom headers on Cloudflare API requests through the CLOUDFLARE_API_HEADERS environment variable.",
+  "body_md_en": "Hi everyone, it's Shii-chan! I found a small but handy CLI update today!\n\n## What was announced?\n\nCloudflare's Changelog announced that Wrangler 4.160.0 and Cloudflare CLI (`cf`) 1.0.0-beta.29 support custom headers for Cloudflare API requests.\n\n## What changes\n\nWith the `CLOUDFLARE_API_HEADERS` environment variable, you can add headers or override most generated values.\n\n## Dive Deep\n\nPut a JSON object of header names and values in the variable, then run your Wrangler or `cf` command. To send `X-Custom-Header: value`, the post's example is:\n\n```\nexport CLOUDFLARE_API_HEADERS='{\"X-Custom-Header\":\"value\"}'\n```\n\nThings to keep in mind:\n\n- Most generated values can be overridden, but protected body and transport headers cannot be changed\n- The post does not list which headers are protected\n\nFor usage and restrictions, see the Wrangler and Cloudflare CLI environment variable references.\n\n## Wrap-up\n\n- Applies to Wrangler 4.160.0 and `cf` 1.0.0-beta.29\n- Pass headers as JSON in `CLOUDFLARE_API_HEADERS`\n- You can add headers and override most generated values\n- Protected body and transport headers can't be changed\n\nThis is for anyone who needs to attach their own headers to Cloudflare API requests, for example behind a proxy!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-11-11-custom-api-headers/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Cloudflare CLI, Workers - Send custom API headers with Wrangler and Cloudflare CLI",
+  "tags": [
+    "cloudflare",
+    "serverless",
+    "devops"
+  ],
+  "published_at": "2026-11-11T00:00:00+00:00"
+}

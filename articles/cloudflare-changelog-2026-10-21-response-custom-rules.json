@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-10-21-response-custom-rules",
+  "title": "WAF が「返すレスポンス」も守れるように！全プランで Response custom rules が使えるよ",
+  "summary": "Cloudflare WAF に Response custom rules が登場。レスポンスを訪問者に届く前にブロックでき、全プランで zone あたり 3 ルールまで使えるよ！",
+  "body_md": "やっほー、しぃちゃんだよ！今日は WAF の守備範囲がぐっと広がるニュースを見つけちゃったの、さっそく紹介するね！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、WAF の「Response custom rules」が発表されたよ！\n\nレスポンスファイアウォールが、レスポンスを訪問者に届く前にブロックできるようになったの。しかも Cloudflare がデフォルトの保護を、すべてのプランで有効にしてくれるみたい！\n\n## 今までどうだったの？\n\nWAF のルールといえば、主にリクエスト側を見て判定するものだったよね。原文には「full transaction detection」という発表が背景として紹介されていて、今回はそのレスポンス側を扱う仕組みが加わった形だよ。\n\n## これで何が変わるの？\n\nリクエストだけでなく、オリジンから返ってくるレスポンスの内容を条件にしてブロックやログ記録ができるようになるよ。\n\nたとえば `/api/` 配下へのリクエストで 500 エラーが返ってきたものを検出する、といった「リクエストとレスポンスの組み合わせ」の条件が書けるの。\n\n## 深く潜ってみよう\n\n原文から分かる仕様はこれだよ！\n\n- 全プランで、1 zone あたり 3 つの response custom rules が含まれる\n- ルールは `http_response_firewall_custom` フェーズで実行される\n- 使えるアクションは `block`、`log`、`execute` の 3 種類\n- 3 ルールの枠のうち、`execute` ルールは最大 1 つまで\n- リクエストのフィールドとレスポンスのフィールドを組み合わせて条件を書ける\n\n原文にある式の例はこちら。`/api/` パスへのリクエストで、ステータスコードが 500 のレスポンスにマッチするよ。\n\n```\nstarts_with(http.request.uri.path, \"/api/\") and http.response.code eq 500\n```\n\n対応しているアクション・フィールド・上限の詳細は、原文が案内している Response firewall のドキュメントで確認してね。\n\n## まとめ\n\n- WAF のレスポンスファイアウォールが、レスポンスを訪問者に届く前にブロックできる\n- デフォルトの保護が全プランで有効になる\n- 全プランで zone あたり 3 つの response custom rules が使える\n- アクションは `block` / `log` / `execute`(`execute` は 1 つまで)\n- リクエストとレスポンスのフィールドを組み合わせた条件が書ける\n\nWAF でオリジンからの意図しないレスポンスまで見張りたい、Cloudflare ユーザーのみんなに刺さる更新だよ！",
+  "title_en": "WAF Can Now Guard Your Responses Too! Response Custom Rules on Every Plan",
+  "summary_en": "Cloudflare WAF now has response custom rules. The response firewall can block responses before they reach visitors, and every plan gets three rules per zone.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today I found news that makes WAF reach a lot further, and I can't wait to share it!\n\n## What was announced?\n\nCloudflare's Changelog announced WAF Response custom rules!\n\nThe response firewall can block responses before they reach visitors. Cloudflare also turns on default protections for everyone, on every plan.\n\n## The story so far\n\nWAF rules have mostly been about inspecting requests. The post points to the earlier full transaction detection announcement as background, and this update adds a way to act on the response side.\n\n## What changes\n\nYou can now block or log based on what comes back from the origin, not only on what was requested.\n\nFor example, you can match responses with status 500 for requests to `/api/` paths, so conditions can combine request and response fields.\n\n## Dive Deep\n\nHere is what the post tells us about the specifics:\n\n- Every plan includes three response custom rules per zone\n- Rules run in the `http_response_firewall_custom` phase\n- Supported actions are `block`, `log`, and `execute`\n- Within the three-rule allowance, you can include at most one `execute` rule\n- Rules can combine request fields with response fields\n\nHere is the example expression from the post. It matches responses with status code 500 for requests to `/api/` paths:\n\n```\nstarts_with(http.request.uri.path, \"/api/\") and http.response.code eq 500\n```\n\nFor the full list of supported actions, fields, and limits, check the Response firewall documentation that the post links to.\n\n## Wrap-up\n\n- The WAF response firewall can block responses before they reach visitors\n- Default protections are on for every plan\n- Every plan gets three response custom rules per zone\n- Actions are `block` / `log` / `execute` (only one `execute` rule)\n- Conditions can combine request and response fields\n\nThis one is for Cloudflare users who want WAF to watch what the origin sends back, too!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-21-response-custom-rules/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "WAF - Response custom rules",
+  "tags": [
+    "cloudflare",
+    "security",
+    "web"
+  ],
+  "published_at": "2026-10-21T00:00:00+00:00"
+}
