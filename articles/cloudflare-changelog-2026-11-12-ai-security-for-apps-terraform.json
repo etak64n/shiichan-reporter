@@ -1,0 +1,21 @@
+{
+  "slug": "cloudflare-changelog-2026-11-12-ai-security-for-apps-terraform",
+  "title": "AI Security for Apps が Terraform で管理できるように！",
+  "summary": "Terraform Cloudflare provider v5.29.0 で、AI Security for Apps のオン/オフとカスタムトピックをコードで管理できるようになったよ。カスタムルールと同じ構成にまとめられるんだって。",
+  "body_md": "やっほー、しぃちゃんだよ！AI アプリを守る設定を Terraform で書けるようになったから、さっそく紹介するね！\n\n## なにが発表されたの？\n\nCloudflare の Changelog（2026 年 11 月 12 日付、WAF カテゴリ）で、AI Security for Apps を Terraform で管理できるようになったと告知されたよ。更新告知系のお知らせだね。\n\n## これで何が変わるの？\n\nAI Security for Apps のフィールドを、`cloudflare_ruleset` リソースで管理しているカスタムルールで使えるよ。つまり、検知設定、トピック、緩和ルールを同じ Terraform 構成の中にまとめて置けるの！\n\n## 深く潜ってみよう\n\nTerraform Cloudflare provider のバージョン 5.29.0 で、2 つのリソースが追加されたよ。\n\n- `cloudflare_ai_security`: ゾーンごとに AI Security for Apps をオン/オフする\n- `cloudflare_ai_security_custom_topics`: 各プロンプトをスコアリングする対象になるカスタムトピックを定義する\n\n原文の例はこんな感じ！\n\n```\nresource \"cloudflare_ai_security\" \"zone_ai_security\" {\n  zone_id = var.cloudflare_zone_id\n  enabled = true\n}\n\nresource \"cloudflare_ai_security_custom_topics\" \"zone_custom_topics\" {\n  zone_id = var.cloudflare_zone_id\n  topics = [\n    {\n      label = \"competitors\"\n      topic = \"seeking info on competitors\"\n    }\n  ]\n}\n```\n\nほかの例は、Cloudflare ドキュメントの「Terraform configuration examples」に載っているよ。\n\n## まとめ\n\n- provider v5.29.0 で 2 つのリソースが追加\n- ゾーンごとのオン/オフと、カスタムトピックの定義をコード化できる\n- `cloudflare_ruleset` のカスタムルールと同じ構成で管理できる\n\nCloudflare を IaC で運用しながら、LLM を使ったアプリを守りたい人に刺さる更新だよ！",
+  "title_en": "Manage AI Security for Apps with Terraform!",
+  "summary_en": "Terraform Cloudflare provider v5.29.0 lets you manage AI Security for Apps on/off state and custom topics as code, alongside your custom rules.",
+  "body_md_en": "Hi, it's Shii-chan! You can now write your AI app protection settings in Terraform, so let me introduce it!\n\n## What was announced?\n\nA Cloudflare Changelog post (November 12, 2026, WAF category) announced that AI Security for Apps can now be managed with Terraform. It's an update notice.\n\n## What changes\n\nYou can use AI Security for Apps fields in custom rules managed with the `cloudflare_ruleset` resource. That means detection settings, topics, and mitigation rules can live in one Terraform configuration!\n\n## Dive Deep\n\nVersion 5.29.0 of the Terraform Cloudflare provider adds two resources:\n\n- `cloudflare_ai_security`: turns AI Security for Apps on or off for a zone\n- `cloudflare_ai_security_custom_topics`: defines the custom topics that each prompt is scored against\n\nThe example from the post:\n\n```\nresource \"cloudflare_ai_security\" \"zone_ai_security\" {\n  zone_id = var.cloudflare_zone_id\n  enabled = true\n}\n\nresource \"cloudflare_ai_security_custom_topics\" \"zone_custom_topics\" {\n  zone_id = var.cloudflare_zone_id\n  topics = [\n    {\n      label = \"competitors\"\n      topic = \"seeking info on competitors\"\n    }\n  ]\n}\n```\n\nMore examples are in \"Terraform configuration examples\" in the Cloudflare docs.\n\n## Wrap-up\n\n- Two new resources in provider v5.29.0\n- Per-zone on/off and custom topics can be defined as code\n- Manage them together with custom rules in `cloudflare_ruleset`\n\nThis is for anyone running Cloudflare with IaC and protecting LLM-powered apps!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-11-12-ai-security-for-apps-terraform/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "WAF - Manage AI Security for Apps with Terraform",
+  "tags": [
+    "cloudflare",
+    "devops",
+    "security",
+    "ai"
+  ],
+  "published_at": "2026-11-12T18:55:26+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-10-28-content-scan-multipart-content-type",
+  "title": "WAF の悪意あるアップロード検知、boundary 付きの非 multipart リクエストを「スキャン失敗」扱いに！",
+  "summary": "Cloudflare WAF の悪意あるアップロード検知が、Content-Type に boundary があるのに multipart ではないリクエストで cf.waf.content_scan.has_failed を true にするようになったよ。本文はスキャンされないんだって。",
+  "body_md": "こんにちは、しぃちゃんだよ！今日は Cloudflare WAF の小さいけど大事な挙動変更を紹介するね！\n\n## なにが発表されたの？\n\nCloudflare の Changelog に、WAF の「悪意あるアップロード検知（Malicious uploads detection）」の更新が載ったよ（2026 年 10 月 28 日付）。更新告知系の短いお知らせだね。\n\n## なぜ重要なの？\n\nこの検知はアップロードされた中身をスキャンするものだけど、Content-Type がちょっと変わった形のリクエストだと、本文がスキャンされないケースがあるの。そういうときに「スキャンできなかった」ことをルールで扱えるかどうかは、守りの穴をふさぐうえで大事なポイントだよ！\n\n## これで何が変わるの？\n\nContent-Type ヘッダーに `boundary` パラメーターがあるのに、タイプが `multipart/*` ではないリクエストで、`cf.waf.content_scan.has_failed` が `true` になるようになったよ。\n\n- 例: `application/json; boundary=example`\n- このようなリクエストの本文はスキャンされない\n\nカスタムルールでこのフィールドを使っている人は、こうしたリクエストが「スキャン失敗」として見えるようになるので、ブロックやログの対象にするかを決めやすくなるね。\n\n## 深く潜ってみよう\n\n原文に書かれているのはここまでで、詳しくは Cloudflare ドキュメントの「Multipart requests」を見てね、という案内になっているよ。しぃちゃんもこれ以上の仕様は断定しないでおくね！\n\n## まとめ\n\n- Content-Type に `boundary` があるのに `multipart/*` ではないリクエストが対象\n- `cf.waf.content_scan.has_failed` が `true` になる\n- 該当リクエストの本文はスキャンされない\n\nアップロード受付口を WAF で守っているセキュリティ担当のみんなに刺さる更新だよ！",
+  "title_en": "WAF Malicious Uploads Detection Now Flags Non-Multipart Requests That Have a Boundary",
+  "summary_en": "Cloudflare's malicious uploads detection now sets cf.waf.content_scan.has_failed to true when Content-Type has a boundary parameter but isn't multipart/*. The body is not scanned.",
+  "body_md_en": "Hello, it's Shii-chan! Today I'm covering a small but important behavior change in Cloudflare WAF!\n\n## What was announced?\n\nCloudflare's Changelog posted an update to the WAF malicious uploads detection (dated October 28, 2026). It's a short update notice.\n\n## Why it matters\n\nThis detection scans uploaded content, but bodies of requests with unusual Content-Type headers may not get scanned. Being able to react to \"the scan didn't happen\" in your rules matters for closing gaps.\n\n## What changes\n\n`cf.waf.content_scan.has_failed` is now set to `true` for requests whose Content-Type header has a `boundary` parameter but whose type is not `multipart/*`.\n\n- Example: `application/json; boundary=example`\n- The body of these requests is not scanned\n\nIf you use this field in custom rules, such requests now show up as scan failures, so it's easier to decide whether to block or log them.\n\n## Dive Deep\n\nThat's all the original post says. For more, see \"Multipart requests\" in the Cloudflare docs. I won't claim any details beyond that!\n\n## Wrap-up\n\n- Applies to requests with a `boundary` in Content-Type but a type other than `multipart/*`\n- `cf.waf.content_scan.has_failed` becomes `true`\n- The body of these requests is not scanned\n\nThis is for security folks protecting upload endpoints with WAF!",
+  "emotion": "confused",
+  "importance": 3,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-10-28-content-scan-multipart-content-type/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "WAF - Malicious uploads detection flags non-multipart Content-Type headers with a boundary",
+  "tags": [
+    "cloudflare",
+    "security",
+    "web"
+  ],
+  "published_at": "2026-10-28T00:00:00+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-11-12-hash-functions",
+  "title": "Cloudflare Rules に md5()・sha1()・sha512() が仲間入り！",
+  "summary": "Cloudflare Rules の式で使えるハッシュ関数に md5()、sha1()、sha512() が追加されたよ。sha256() と同じく文字列かバイト配列を受け取って生のバイト列を返すんだって。",
+  "body_md": "みんな、しぃちゃんだよ！Cloudflare Rules にハッシュ関数が増えたって聞いて、さっそく紹介するね！\n\n## なにが発表されたの？\n\nCloudflare の Changelog（2026 年 11 月 12 日付）で、Cloudflare Rules に 3 つのハッシュ関数が追加されたと告知されたよ。更新告知系のお知らせだね。\n\n## 今までどうだったの？\n\n原文では「既存の `sha256()` 関数」と書かれていて、これまで Rules のハッシュは `sha256()` が基本だったみたい。別のアルゴリズムを要求するシステムとつなぎたいときは、選べる関数が足りなかったんだね。\n\n## これで何が変わるの？\n\n特定のアルゴリズムを必要とする相手のシステム向けに、Rules の中でハッシュを計算できるようになったよ！\n\n## 深く潜ってみよう\n\n追加された関数はこの 3 つ！\n\n- `md5()`: MD5、出力は 16 バイト\n- `sha1()`: SHA-1、出力は 20 バイト\n- `sha512()`: SHA-512、出力は 64 バイト\n\nどれも `sha256()` と同じで、文字列かバイト配列を受け取って、生のバイト列を返すよ。Base64 にしたいときは `encode_base64()` と組み合わせられて、たとえばこう書くの。\n\n```\nencode_base64(sha512(\"hello world\"))\n```\n\n## まとめ\n\n- `md5()`、`sha1()`、`sha512()` の 3 関数が Cloudflare Rules に追加\n- 入力は文字列かバイト配列、出力は生のバイト列\n- `encode_base64()` と組み合わせて Base64 のハッシュも作れる\n\n古いアルゴリズムを要求する外部システムと Cloudflare Rules でつなぐ人に刺さる更新だよ！",
+  "title_en": "Cloudflare Rules Gets md5(), sha1(), and sha512()!",
+  "summary_en": "Cloudflare Rules now has three new hash functions: md5(), sha1(), and sha512(). Like sha256(), they take a string or byte array and return raw bytes.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Cloudflare Rules just got more hash functions, so let me tell you about them!\n\n## What was announced?\n\nA Cloudflare Changelog post (November 12, 2026) announced three new hash functions in Cloudflare Rules. It's an update notice.\n\n## The story so far\n\nThe post refers to an existing `sha256()` function. If a system you integrate with required another algorithm, you had fewer options to choose from.\n\n## What changes\n\nYou can now compute hashes in Rules for systems that require these algorithms.\n\n## Dive Deep\n\nThe new functions are:\n\n- `md5()`: MD5, 16 bytes of output\n- `sha1()`: SHA-1, 20 bytes of output\n- `sha512()`: SHA-512, 64 bytes of output\n\nLike `sha256()`, each accepts a string or byte array and returns raw bytes. You can combine them with `encode_base64()` for a Base64-encoded hash, for example:\n\n```\nencode_base64(sha512(\"hello world\"))\n```\n\n## Wrap-up\n\n- `md5()`, `sha1()`, and `sha512()` are added to Cloudflare Rules\n- Input is a string or byte array, and output is raw bytes\n- Combine with `encode_base64()` to get Base64-encoded hashes\n\nThis is for anyone connecting Cloudflare Rules to external systems that require these algorithms!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-11-12-hash-functions/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Rules - New hash functions — sha1(), md5(), and sha512()",
+  "tags": [
+    "cloudflare",
+    "security",
+    "web"
+  ],
+  "published_at": "2026-11-12T18:55:29+00:00"
+}
