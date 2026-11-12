@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-11-12-cloudflared-matrix-path-parameters",
+  "title": "Cloudflare Tunnel の URL 正規化がセミコロン付きパスにも拡大！2027-02-08 に既定で有効に",
+  "summary": "cloudflared 2026.11.0 から、URL 正規化がセミコロン区切りのパスパラメータも扱うようになったよ。新しいリリースで既定で有効になる日が 2027-02-08 に延期されたの！",
+  "body_md": "みんな、しぃちゃんだよ！今日は Cloudflare Tunnel を使っているみんなに、ちょっと大事なお知らせだよ。ルールを変える前に、テストしておくと安心なの！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、cloudflared バージョン 2026.11.0 から、2026.10.0 で導入された URL 正規化が拡張されたと発表されたよ。\n\nIngress ルールにマッチさせる前に、セミコロン区切りのパスパラメータも正規化するようになったの。Cloudflare Access の検証が必要なルールを持つトンネルのセキュリティが向上するよ。\n\n## 今までどうだったの？\n\nこの設定は現在、既定ではオフだよ。正規化は 2026.10.0 で導入されていて、今回はその対象を広げたかたちなの。オリジンに送られる URL パスは、正規化しても変わらないよ。\n\n## これで何が変わるの？\n\n- 新しい cloudflared リリースで URL 正規化が既定で有効になる日が、**2027-02-08** になった\n- 以前に予告されていた 2027-01-25 から延びたので、更新後の挙動をテストする時間が増えた\n- Access の検証が必要なルールがない構成には影響しない\n\n## 深く潜ってみよう\n\nやっておきたいことはこれだよ。\n\n- 2026.11.0 以降にアップグレードする\n- 2027-02-08 より前に、パスベースのルーティングをテストする\n- 特に、セミコロンを含むパスにマッチするルールを確認する\n\n今すぐ有効にするには、次のコマンドを実行するよ。\n\n```bash\ncloudflared tunnel --disable-path-normalization=false run {TUNNEL_NAME_OR_UUID}\n```\n\nあるいは、各 cloudflared レプリカに環境変数 `TUNNEL_DISABLE_PATH_NORMALIZATION=false` を設定して、再起動する方法もあるよ。\n\nくわしくは、Ingress のマッチングと、オリジンでの Access 検証のドキュメントを見てね。\n\n## まとめ\n\n- cloudflared 2026.11.0 で、URL 正規化がセミコロン区切りのパスパラメータにも対応した\n- 既定で有効になる日は 2027-02-08(旧: 2027-01-25)\n- 現在は既定オフで、フラグか環境変数で有効にできる\n- Access 検証が必要なルールがなければ影響なし\n\nパスベースのルールと Cloudflare Access を組み合わせて Tunnel を運用しているみんなは、期限前にテストしておいてね！",
+  "title_en": "Cloudflare Tunnel Extends URL Normalization to Semicolon Path Parameters: Default On from 2027-02-08",
+  "summary_en": "Starting with cloudflared 2026.11.0, URL normalization also handles semicolon-delimited path parameters. The date it turns on by default in new releases moves to 2027-02-08.",
+  "body_md_en": "Hi everyone, it's Shii-chan! This is a quick heads-up for anyone using Cloudflare Tunnel. It's worth testing your rules before the change lands!\n\n## What was announced?\n\nThe Cloudflare Changelog says that starting from cloudflared version 2026.11.0, the URL normalization introduced in 2026.10.0 is extended.\n\nNormalization now handles semicolon-delimited path parameters before matching ingress rules. This improves security for tunnels with rules that require Cloudflare Access validation.\n\n## The story so far\n\nThis setting is currently off by default. Normalization was introduced in 2026.10.0, and this update widens what it covers. The URL path sent to your origin stays the same.\n\n## What changes\n\n- New cloudflared releases will turn on URL normalization by default starting **2027-02-08**\n- That replaces the previously announced date of 2027-01-25, giving you more time to test\n- Configurations without rules requiring Access validation are unaffected\n\n## Dive Deep\n\nWhat to do:\n\n- Upgrade to version 2026.11.0 or later\n- Test your path-based routing before 2027-02-08\n- Pay special attention to rules that match paths containing semicolons\n\nTo turn it on now, run:\n\n```bash\ncloudflared tunnel --disable-path-normalization=false run {TUNNEL_NAME_OR_UUID}\n```\n\nOr set `TUNNEL_DISABLE_PATH_NORMALIZATION=false` on each cloudflared replica and restart it.\n\nSee the docs on ingress matching and Access validation at the origin for more.\n\n## Wrap-up\n\n- cloudflared 2026.11.0 normalizes semicolon-delimited path parameters too\n- It turns on by default on 2027-02-08 (previously 2027-01-25)\n- It is off by default today, and you can enable it with a flag or an environment variable\n- No impact if you have no rules requiring Access validation\n\nIf you run Tunnel with path-based rules and Cloudflare Access, test before the deadline!",
+  "emotion": "thinking",
+  "importance": 3,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-11-12-cloudflared-matrix-path-parameters/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Cloudflare Tunnel, Cloudflare Tunnel for SASE - Cloudflare Tunnel extends URL normalization",
+  "tags": [
+    "cloudflare",
+    "security",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-12T02:59:24+00:00"
+}

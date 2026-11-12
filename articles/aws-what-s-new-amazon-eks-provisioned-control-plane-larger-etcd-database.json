@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-eks-provisioned-control-plane-larger-etcd-database",
+  "title": "EKS Provisioned Control Plane の etcd が 16 GB から 24 GB に！4XL・8XL で 50% 増量",
+  "summary": "Amazon EKS の Provisioned Control Plane で、4XL と 8XL の etcd データベースが 16 GB から 24 GB に増えたよ。EKS 1.34 以降の既存クラスターは自動で恩恵を受けられるの！",
+  "body_md": "おつかれさま、しぃちゃんだよ！今日は Kubernetes の心臓部、etcd のお話だよ。大きなクラスターを動かしているみんなに嬉しいニュースなの！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon EKS の Provisioned Control Plane の 4XL・8XL ティアで、etcd データベースが 16 GB から **24 GB** に増えたと発表されたよ。\n\n## なぜ重要なの？\n\netcd は Kubernetes のコントロールプレーンでクラスターの状態を持つキーバリューストアだよ。だからそのサイズが、クラスターに保存できる Kubernetes オブジェクトの数の上限を決めるの。\n\netcd データベースがいっぱいになると、クラスターにオブジェクトを追加したり変更したりできなくなっちゃうよ。余裕があるほど、ワークロードが大きくなっても動かし続けやすいね。\n\n## これで何が変わるの？\n\n容量が 50% 増えて、Pod・Job・Event・カスタムリソースをより多く抱える大きなクラスターを動かせるよ。特に、オブジェクトをたくさん作って更新するワークロードに効きそう！\n\n- 大規模な AI/ML のトレーニングと推論\n- バッチ処理\n- CI/CD パイプライン\n\n## 深く潜ってみよう\n\n使い始める条件はこれだよ。\n\n- Provisioned Control Plane の 4XL または 8XL ティアを選ぶ\n- クラスターが EKS バージョン 1.34 以降で動いている\n\nすでに 4XL・8XL ティアで上記のバージョンを使っている既存クラスターは、何もしなくても自動で大きなデータベースになるよ。\n\n提供範囲は、Provisioned Control Plane が使えるすべての商用 AWS リージョンだよ。詳しくは Amazon EKS Provisioned Control Plane のユーザーガイドを見てね。\n\n## まとめ\n\n- 4XL・8XL ティアの etcd データベースが 16 GB から 24 GB に(50% 増)\n- EKS 1.34 以降が対象で、既存クラスターは自動で反映される\n- Provisioned Control Plane が使える全商用リージョンで利用可能\n\n大規模な AI/ML や CI/CD で、オブジェクト数の上限が気になっていたみんなに刺さる更新だよ！",
+  "title_en": "EKS Provisioned Control Plane Gets a 24 GB etcd Database on 4XL and 8XL",
+  "summary_en": "Amazon EKS Provisioned Control Plane now offers a 24 GB etcd database, up from 16 GB, on the 4XL and 8XL tiers. Existing clusters on EKS 1.34 or later get it automatically.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today we're talking about etcd, the heart of Kubernetes. It's good news for anyone running big clusters!\n\n## What was announced?\n\nAWS What's New says Amazon EKS now offers a larger **24 GB** etcd database, up from 16 GB, for 4XL and 8XL Provisioned Control Plane clusters.\n\n## Why it matters\n\netcd is the key-value store in the Kubernetes control plane that holds your cluster state, so its size limits how many Kubernetes objects your cluster can store.\n\nWhen the etcd database fills up, you can't add or change objects in your cluster. More headroom helps keep workloads running as they scale.\n\n## What changes\n\nWith 50% more capacity, you can run bigger clusters with more pods, jobs, events, and custom resources. It helps most with workloads that create and update many objects:\n\n- Large-scale AI/ML training and inference\n- Batch processing\n- CI/CD pipelines\n\n## Dive Deep\n\nTo get the larger database:\n\n- Choose the 4XL or 8XL tier of Provisioned Control Plane\n- Run a cluster on EKS version 1.34 or later\n\nExisting clusters on the 4XL and 8XL tiers running these versions get the larger database automatically, with no action required.\n\nIt is available in all commercial AWS Regions where Provisioned Control Plane is available. See the Amazon EKS Provisioned Control Plane user guide for details.\n\n## Wrap-up\n\n- etcd database grows from 16 GB to 24 GB (50% more) on 4XL and 8XL\n- Requires EKS 1.34 or later, and existing clusters get it automatically\n- Available in all commercial Regions with Provisioned Control Plane\n\nIf the object limit has been on your mind for big AI/ML or CI/CD clusters, this one is for you!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-eks-provisioned-control-plane-larger-etcd-database/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon EKS Provisioned Control Plane now offers a 24 GB etcd database on 4XL and 8XL tiers",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-11T19:45:00+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-cloud-wan-flow-logs",
+  "title": "AWS Cloud WAN が Flow Logs に対応！グローバルネットワークの通信をまとめて見える化",
+  "summary": "AWS Cloud WAN で VPC Flow Logs が使えるようになり、VPC・リージョン・オンプレミス間の通信を 1 か所で確認できるようになったよ。Cloud WAN 側の追加料金はなし！",
+  "body_md": "やっほー、しぃちゃんだよ！今日は AWS Cloud WAN に Flow Logs が来たよ！ネットワークの通信がどこをどう流れているか、ひとまとめに見られるようになるの。\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Cloud WAN が VPC Flow Logs に対応したと発表されたよ。Cloud WAN のアカウントの中から離れずに、グローバルネットワーク全体の IP トラフィックを中央で確認できるの。\n\n## 今までどうだったの？\n\nネットワーク管理者は、たくさんの VPC・アカウント・リージョンから VPC Flow Logs を寄せ集めないと、グローバルネットワーク全体の通信が見えなかったよ。しかも、ログへのアクセスで他のチームに頼ることも多かったみたい。\n\n## これで何が変わるの？\n\nコアネットワークの管理者が、次の間の通信を 1 つにまとまったビューで見られるようになったよ。\n\n- VPC 同士\n- リージョン同士\n- AWS Direct Connect、AWS Site-to-Site VPN、SD-WAN でつながったオンプレミスのネットワーク\n\nこのデータは次のような用途に使えるよ。\n\n- 接続やパフォーマンスの問題のトラブルシューティング\n- 過去の帯域の推移からのキャパシティ計画\n- 普段と違う通信パターンの発見\n- セキュリティやコンプライアンス向けの記録の保管\n\n## 深く潜ってみよう\n\nフローログのレコードに入る情報はこれだよ。\n\n- IP アドレス、ポート、プロトコル\n- トラフィック量とパケットロスのカウンター\n- Cloud WAN のメタデータ(セグメント、リージョン、サービス挿入のホップ、アタッチメントの詳細)\n\n有効化できる単位は 3 つあるよ。\n\n- コアネットワーク全体\n- 単一のコアネットワークエッジ\n- 個別のアタッチメント\n\n出力先は Amazon CloudWatch Logs、Amazon S3、Amazon Data Firehose から選べるよ。\n\n料金は、Cloud WAN 自体は Flow Logs に追加料金なし。ただし出力先ごとの通常料金はかかるから気をつけてね。AWS Cloud WAN が使えるすべてのリージョンで利用でき、始めるにはコンソール・CLI・API を使えるよ。\n\n## まとめ\n\n- Cloud WAN が VPC Flow Logs に対応し、通信を 1 か所で見られる\n- コアネットワーク、エッジ、アタッチメントの単位で有効化できる\n- 出力先は CloudWatch Logs・S3・Data Firehose\n- Cloud WAN の追加料金はなく、出力先の通常料金のみ\n\nマルチリージョンのネットワークを運用しているみんなに刺さる更新だよ！",
+  "title_en": "AWS Cloud WAN Now Supports Flow Logs: See Your Global Traffic in One Place",
+  "summary_en": "AWS Cloud WAN now supports VPC Flow Logs, giving you a consolidated view of traffic between VPCs, Regions, and on-premises networks. Cloud WAN adds no charge for Flow Logs.",
+  "body_md_en": "Hi everyone, it's Shii-chan! AWS Cloud WAN just got Flow Logs! Now you can see how traffic moves through your network, all in one place.\n\n## What was announced?\n\nAWS What's New says AWS Cloud WAN now supports VPC Flow Logs. You get central visibility into IP traffic across your global network without leaving your Cloud WAN account.\n\n## The story so far\n\nNetwork administrators had to stitch together VPC Flow Logs from many VPCs, accounts, and Regions to see traffic across their global network. They often depended on other teams for access to those logs.\n\n## What changes\n\nCore network owners get one consolidated view of traffic between:\n\n- VPCs\n- Regions\n- On-premises networks connected over AWS Direct Connect, AWS Site-to-Site VPN, or SD-WAN\n\nYou can use this data to:\n\n- Troubleshoot connectivity and performance problems\n- Plan capacity from historical bandwidth trends\n- Find unusual traffic patterns\n- Keep records for security and compliance\n\n## Dive Deep\n\nFlow log records include:\n\n- IP addresses, ports, and protocol\n- Traffic volume and packet-loss counters\n- Cloud WAN metadata such as segment, Region, service insertion hops, and attachment details\n\nYou can turn on Flow Logs for:\n\n- An entire core network\n- A single core network edge\n- Individual attachments\n\nYou can publish them to Amazon CloudWatch Logs, Amazon S3, or Amazon Data Firehose.\n\nCloud WAN adds no charge for Flow Logs, but standard charges apply for each destination. It is available in all AWS Regions where AWS Cloud WAN is available, and you can get started with the console, CLI, or API.\n\n## Wrap-up\n\n- Cloud WAN supports VPC Flow Logs, with traffic visible in one place\n- Enable them per core network, edge, or attachment\n- Publish to CloudWatch Logs, S3, or Data Firehose\n- No Cloud WAN charge, only the standard destination charges\n\nIf you run multi-Region networks, this update is for you!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-cloud-wan-flow-logs/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Cloud WAN now supports Flow Logs",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "security"
+  ],
+  "published_at": "2026-11-11T20:05:00+00:00"
+}
