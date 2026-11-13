@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-batch-eks-security-context",
+  "title": "AWS Batch on EKS が Pod Security Standards の restricted に近づいたよ！",
+  "summary": "AWS Batch の EKS ジョブ定義で、Linux capabilities・seccomp プロファイル・Pod レベルの securityContext が使えるようになったよ！必要最小限の権限でジョブを動かせるの。",
+  "body_md": "こんにちは、しぃちゃんだよ！Kubernetes のセキュリティ設定が好きな人に向けた、AWS Batch の更新を紹介するね！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Batch の Amazon EKS ジョブ定義が、追加の Kubernetes securityContext 設定に対応したと発表されたよ。追加されたのはこの 3 つ。\n\n- Linux capabilities\n- seccomp プロファイル\n- Pod レベルの設定\n\n## これで何が変わるの？\n\nKubernetes の Pod Security Standards の restricted プロファイルを強制している EKS クラスターでも、ジョブが必要とする権限とシステムコールだけを許可して AWS Batch のジョブを動かせるようになったよ。\n\n## 深く潜ってみよう\n\n- RegisterJobDefinition API で、コンテナの securityContext に capabilities と seccompProfile を設定できる\n- podProperties の securityContext に、fsGroup のような Pod 全体の設定を書ける\n- コンテナレベルの設定は、Pod レベルのデフォルトを上書きする\n- 設定は AWS マネジメントコンソール、AWS CLI、AWS SDK、AWS CloudFormation から行える\n- AWS Batch が使えるすべてのリージョンで利用可能\n- 詳細は AWS Batch User Guide の Amazon EKS properties を参照\n\n## まとめ\n\n- Linux capabilities、seccomp、Pod レベルの securityContext に対応\n- restricted プロファイルのクラスターで最小権限のジョブを動かせる\n- コンテナの設定が Pod のデフォルトより優先される\n\nEKS 上でバッチを回していて、セキュリティ基準が厳しい環境のみんなに刺さるよ！\n",
+  "title_en": "AWS Batch on Amazon EKS adds Linux capabilities, seccomp, and pod-level settings",
+  "summary_en": "AWS Batch now supports more Kubernetes security context settings in EKS job definitions, so jobs can run with only the privileges and system calls they need.",
+  "body_md_en": "Hi everyone, it's Shii-chan! This AWS Batch update is for anyone who cares about Kubernetes security settings!\n\n## What was announced?\n\nIn AWS What's New, AWS Batch now supports additional Kubernetes security context settings in Amazon EKS job definitions:\n\n- Linux capabilities\n- seccomp profiles\n- Pod-level settings\n\n## What changes\n\nOn EKS clusters that enforce the Kubernetes Pod Security Standards restricted profile, you can now run AWS Batch jobs with only the privileges and system calls they require.\n\n## Dive Deep\n\n- Use the RegisterJobDefinition API to set capabilities and seccompProfile in a container's securityContext\n- Set securityContext in podProperties to define pod-wide settings such as fsGroup\n- Container-level settings override pod-level defaults\n- Configure via the AWS Management Console, AWS CLI, AWS SDKs, or AWS CloudFormation\n- Available in all AWS Regions where AWS Batch is available\n- See the Amazon EKS properties section in the AWS Batch User Guide\n\n## Wrap-up\n\n- Linux capabilities, seccomp, and pod-level securityContext are supported\n- Least-privilege jobs can run on clusters using the restricted profile\n- Container settings take precedence over pod defaults\n\nThis is for teams running batch workloads on EKS with strict security requirements!\n",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-batch-eks-security-context/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Batch on Amazon EKS adds Linux capabilities, seccomp, and pod-level settings",
+  "tags": [
+    "aws",
+    "security",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-13T08:00:00+00:00"
+}

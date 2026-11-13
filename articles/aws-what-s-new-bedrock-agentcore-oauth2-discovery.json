@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-bedrock-agentcore-oauth2-discovery",
+  "title": "OIDC じゃなくても大丈夫！AgentCore Identity が OAuth 2.0 discovery URL に対応",
+  "summary": "Amazon Bedrock AgentCore Identity が OAuth 2.0 の認可サーバー discovery URL に対応したよ！OIDC を使わない認可サーバーとも連携できるようになったの。",
+  "body_md": "やっほー、しぃちゃんだよ！エージェントの認証まわりで、使える認可サーバーが広がる発表だよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Bedrock AgentCore Identity が **OAuth 2.0 認可サーバーの discovery URL** に対応したと発表されたよ。対象は次の 2 つ。\n\n- インバウンドの JWT 認可\n- アウトバウンドの OAuth 認証情報プロバイダー\n\n## 今までどうだったの？\n\nこれまで AgentCore Identity が受け付けたのは OIDC の discovery URL だけだったの。OIDC なしで OAuth 2.0 を実装している認可サーバーは、メタデータを別の well-known パスで公開しているから、AgentCore では使えなかったんだって。\n\n## これで何が変わるの？\n\nOIDC を使わない OAuth 2.0 の認可サーバーも、AgentCore に設定できるようになったよ。JWT オーソライザーやカスタム OAuth 認証情報プロバイダーを設定するときに、OIDC と OAuth 2.0 のどちらの discovery URL も使えるの。\n\n## 深く潜ってみよう\n\n- 利用できるのは、JWT オーソライザーの設定と、カスタムプロバイダーでの OAuth クライアント追加\n- Amazon Bedrock AgentCore が使える全 AWS リージョンで提供\n- 追加料金なし\n- 手順は AgentCore Developer Guide の Configure inbound JWT authorizer と Add OAuth client using custom provider を参照\n\n## まとめ\n\n- OAuth 2.0 認可サーバーの discovery URL に対応\n- インバウンド JWT 認可とアウトバウンド OAuth 認証情報プロバイダーの両方で使える\n- 追加料金なしで、AgentCore の提供リージョンすべてで利用可能\n\nOIDC 非対応の認可サーバーでエージェントを動かしたい開発者のみんなに刺さるよ！\n",
+  "title_en": "AgentCore Identity now works with OAuth 2.0 discovery URLs, no OIDC required!",
+  "summary_en": "Amazon Bedrock AgentCore Identity now supports OAuth 2.0 authorization server discovery URLs, so you can use authorization servers that do not implement OpenID Connect.",
+  "body_md_en": "Hi everyone, it's Shii-chan! This announcement widens the range of authorization servers you can use with agents!\n\n## What was announced?\n\nIn AWS What's New, Amazon Bedrock AgentCore Identity now supports **OAuth 2.0 authorization server discovery URLs** for:\n\n- Inbound JWT authorization\n- Outbound OAuth credential providers\n\n## The story so far\n\nPreviously, AgentCore Identity accepted only OIDC discovery URLs. Authorization servers that implement OAuth 2.0 without OIDC publish their metadata at a different well-known path, so they could not be used with AgentCore.\n\n## What changes\n\nAuthorization servers that do not use OIDC can now be configured with AgentCore. When you set up a JWT authorizer or a custom OAuth credential provider, you can use either an OIDC or an OAuth 2.0 discovery URL.\n\n## Dive Deep\n\n- It applies to configuring a JWT authorizer and adding an OAuth client with a custom provider\n- Available in all AWS Regions where Amazon Bedrock AgentCore is available\n- No additional cost\n- See \"Configure inbound JWT authorizer\" and \"Add OAuth client using custom provider\" in the AgentCore Developer Guide\n\n## Wrap-up\n\n- OAuth 2.0 authorization server discovery URLs are supported\n- Works for both inbound JWT authorization and outbound OAuth credential providers\n- No extra cost, in every Region where AgentCore is available\n\nThis is for developers who want to run agents with authorization servers that don't support OIDC!\n",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/bedrock-agentcore-oauth2-discovery/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Bedrock AgentCore Identity now supports OAuth 2.0 discovery URLs",
+  "tags": [
+    "aws",
+    "ai",
+    "security"
+  ],
+  "published_at": "2026-11-13T08:00:00+00:00"
+}

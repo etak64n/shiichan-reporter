@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-sagemaker-studio-layout-customization",
+  "title": "役割ごとに見える画面を変えられるよ！SageMaker Unified Studio のレイアウトカスタマイズ",
+  "summary": "Amazon SageMaker Unified Studio で、プロジェクトメンバーの designation ごとに表示するツールやナビゲーション項目を管理者が決められるようになったよ！",
+  "body_md": "おつかれさま、しぃちゃんだよ！データ基盤の管理者さんに嬉しいアップデートを紹介するね！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon SageMaker Unified Studio の **レイアウトカスタマイズ** が発表されたよ。ドメイン管理者が、プロジェクトメンバーの designation（役割）に応じて、見えるツールと左ナビゲーションの項目をコントロールできる機能なの。\n\ndesignation の定義の中にレイアウトを設定すると、それがドメイン内のすべてのプロジェクトに適用されて、プロジェクトごとの設定はいらないよ。\n\n## 今までどうだったの？\n\nこれまでは、役割に関係なく全メンバーに同じ画面が表示されていたの。原文では、それが混乱やガバナンス上の問題につながりうると説明されているよ。\n\n## これで何が変わるの？\n\nメンバーがプロジェクトを開くと、SageMaker Unified Studio がその人の designation を判別して、レイアウトに含まれるツールだけを表示するよ。例えば、こんな設定ができるの。\n\n- SQL アナリストの designation には Query Editor だけを表示\n- ML エンジニアの designation には、ノートブック、トレーニングジョブ、モデルエンドポイントを表示\n\n## 深く潜ってみよう\n\n- ナビゲーション項目は、Data Analytics、AI/ML、Generative AI、IDE などのカテゴリで設定できる\n- 非表示のページに直接移動すると、アクセス拒否のページが表示される\n- 複数の designation を持つメンバーには、すべてのレイアウトの和集合が表示される\n\n## まとめ\n\n- designation ごとに、ツールと左ナビゲーションの表示を管理者が設定できる\n- 設定はドメイン内の全プロジェクトに適用される\n- 非表示ページへの直接アクセスはアクセス拒否、複数の役割なら和集合\n\nデータエンジニア、アナリスト、ML チームが同じ基盤を使う組織の管理者に刺さるよ！\n",
+  "title_en": "Different roles, different views: layout customization in SageMaker Unified Studio",
+  "summary_en": "Amazon SageMaker Unified Studio now lets domain administrators control which tools and navigation items project members see based on their designation.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Here's an update that data platform admins will like!\n\n## What was announced?\n\nIn AWS What's New, Amazon SageMaker Unified Studio introduced **layout customization**. It gives domain administrators control over which tools and left navigation items project members see, based on their designation.\n\nYou configure a layout within each designation definition, and it applies across every project in the domain without per-project configuration.\n\n## The story so far\n\nPreviously, all project members saw the same interface regardless of their role. The announcement says this created confusion and potential governance issues.\n\n## What changes\n\nWhen a member opens a project, SageMaker Unified Studio resolves their designation and renders only the tools in that designation's layout. For example:\n\n- A SQL analyst designation can show only the Query Editor\n- An ML engineer designation can show notebooks, training jobs, and model endpoints\n\n## Dive Deep\n\n- Navigation items are configurable across categories including Data Analytics, AI/ML, Generative AI, and IDEs\n- If a member navigates directly to a hidden page, they see an access-denied page\n- For members with multiple designations, visible tools are the union of all their designations' layouts\n\n## Wrap-up\n\n- Admins set the tools and left navigation shown per designation\n- The layout applies to every project in the domain\n- Hidden pages show access denied, and multiple designations are combined as a union\n\nThis is for admins of organizations where data engineering, analytics, and ML teams share one platform!\n",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/sagemaker-studio-layout-customization/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon SageMaker Unified Studio now supports layout customization for designations",
+  "tags": [
+    "aws",
+    "ai",
+    "devops"
+  ],
+  "published_at": "2026-11-13T08:00:00+00:00"
+}

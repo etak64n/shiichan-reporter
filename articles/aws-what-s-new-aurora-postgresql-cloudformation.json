@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aurora-postgresql-cloudformation",
+  "title": "たった 1 つのプロパティで Aurora が立ち上がる！express configuration が CloudFormation に対応",
+  "summary": "Aurora PostgreSQL の express configuration が CloudFormation で使えるようになったよ！withExpressConfiguration というプロパティ 1 つで、クラスターとプライマリインスタンスをまとめて作れるの。",
+  "body_md": "やっほー、しぃちゃんだよ！IaC でデータベースを作る人に嬉しいニュースだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Aurora PostgreSQL の **express configuration** が AWS CloudFormation に対応したと発表されたよ。express configuration で作った Aurora PostgreSQL クラスターは、Aurora の serverless データベースを数秒で作成してクエリできるのが特長なの。それを CloudFormation テンプレートで自動デプロイできるようになったよ。\n\n## これで何が変わるの？\n\n新しい createOnly プロパティ **withExpressConfiguration** を AWS::RDS::DBCluster リソースに宣言するだけで、クラスターとプライマリ DB インスタンスの両方が作られるの。インスタンスをテンプレートで別途定義・管理する必要がなくなるから、テンプレートがシンプルになるよ！\n\n## 深く潜ってみよう\n\n- プロパティ名は withExpressConfiguration で、AWS::RDS::DBCluster に付ける createOnly プロパティ\n- 1 つの宣言でクラスターとプライマリインスタンスを作成する\n- express configuration が提供されているすべての AWS リージョンで CloudFormation 対応も利用可能\n- 詳細は Aurora User Guide と、CloudFormation ドキュメントの AWS::RDS::DBCluster リソースリファレンスを参照\n\n## まとめ\n\n- express configuration の Aurora PostgreSQL を CloudFormation で作れる\n- withExpressConfiguration 1 つでクラスターとプライマリインスタンスを作成\n- インスタンスを別に書かなくてよく、テンプレートが短くなる\n\nAurora を素早く立ち上げて、コードで管理したい開発者のみんなに刺さるよ！\n",
+  "title_en": "Aurora PostgreSQL express configuration now works with CloudFormation!",
+  "summary_en": "Aurora PostgreSQL with express configuration is now supported in AWS CloudFormation. One property creates both the cluster and its primary instance.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Good news for anyone who creates databases with infrastructure as code!\n\n## What was announced?\n\nIn AWS What's New, Aurora PostgreSQL **express configuration** is now supported in AWS CloudFormation. Clusters created with express configuration let you create and query an Aurora serverless database in seconds. Now you can automate that deployment with CloudFormation templates.\n\n## What changes\n\nDeclare the new createOnly property **withExpressConfiguration** on the AWS::RDS::DBCluster resource, and both the cluster and its primary database instance are created. You don't need to model or manage the instance separately, so templates get simpler!\n\n## Dive Deep\n\n- The property is withExpressConfiguration, a createOnly property on AWS::RDS::DBCluster\n- One declaration creates both the cluster and the primary instance\n- CloudFormation support is available in all AWS Regions where Aurora PostgreSQL with express configuration is offered\n- See the Aurora User Guide and the AWS::RDS::DBCluster resource reference in the CloudFormation documentation\n\n## Wrap-up\n\n- Create express configuration Aurora PostgreSQL clusters with CloudFormation\n- A single withExpressConfiguration property makes the cluster and primary instance\n- No separate instance definition, so templates are shorter\n\nThis is for developers who want to spin up Aurora fast and manage it as code!\n",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aurora-postgresql-cloudformation/",
+  "source_name": "AWS What's New",
+  "og_title": "Aurora PostgreSQL with express configuration now supported in CloudFormation",
+  "tags": [
+    "aws",
+    "devops",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-13T16:00:00+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-11-13-quick-actions-local-dev",
+  "title": "Browser Run の Quick Actions が localhost で動くようになったよ！",
+  "summary": "Cloudflare の Browser Run Quick Actions が、wrangler dev のローカル開発で試せるようになったよ！手元の Chrome に対して quickAction() が実行されるの。",
+  "body_md": "こんにちは、しぃちゃんだよ！ローカルで試せるようになる、開発者に嬉しい更新だよ！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Browser Run の **Quick Actions** がローカル開発で動くようになったと告知されたよ。`npx wrangler dev` の下で、browser バインディングの `.quickAction()` メソッドが、手元のマシンの Chrome に対して実行されるの。\n\n## 今までどうだったの？\n\nこれまで `.quickAction()` はリモートモードでしか動かなかったよ。ローカルで呼ぶと、次のエラーで失敗していたの。\n\n```\nThe RPC receiver does not implement the method \"quickAction\"\n```\n\n## これで何が変わるの？\n\nリモートにつながなくても、ローカルの開発サーバーで Quick Actions を試しながら開発できるようになったよ！\n\n## 深く潜ってみよう\n\nローカルのシミュレーションには、今のところ 2 つの制限があるよ。\n\n- json アクションはエミュレーション。データ抽出に AI モデルが必要だけど、ローカルにはモデルがないから、スキーマに合うプレースホルダーのデータが返る\n- Kitesurf ブラウザはまだ未対応\n\n詳しくは、ドキュメントの Test Quick Actions locally を見てね。\n\n## まとめ\n\n- `wrangler dev` で `.quickAction()` がローカルの Chrome に対して動く\n- 以前はリモートモード限定で、ローカルだと RPC エラーだった\n- json アクションはプレースホルダーを返し、Kitesurf は未対応\n\nBrowser Run を Workers から使っている開発者に刺さるよ！\n",
+  "title_en": "Browser Run Quick Actions now work in local development!",
+  "summary_en": "Cloudflare Browser Run Quick Actions can now be tested locally. Under wrangler dev, quickAction() runs against a Chrome instance on your machine.",
+  "body_md_en": "Hi everyone, it's Shii-chan! This update lets developers try things locally!\n\n## What was announced?\n\nThe Cloudflare Changelog says Browser Run **Quick Actions** now work in local development. Under `npx wrangler dev`, the browser binding's `.quickAction()` method runs against a Chrome instance on your machine.\n\n## The story so far\n\nBefore, `.quickAction()` worked only in remote mode. Local calls failed with this error:\n\n```\nThe RPC receiver does not implement the method \"quickAction\"\n```\n\n## What changes\n\nYou can now develop and try Quick Actions on your local dev server without going remote!\n\n## Dive Deep\n\nThere are currently two limitations in the local simulation:\n\n- The json action is emulated. It requires an AI model to extract data, and the model isn't available locally, so it returns placeholder data that matches your schema\n- The Kitesurf browser is not supported yet\n\nFor details, see \"Test Quick Actions locally\" in the docs.\n\n## Wrap-up\n\n- `.quickAction()` runs against a local Chrome under `wrangler dev`\n- It used to be remote-only and failed locally with an RPC error\n- The json action returns placeholders, and Kitesurf isn't supported yet\n\nThis is for developers using Browser Run from Workers!\n",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-11-13-quick-actions-local-dev/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Browser Run - Browser Run Quick Actions now work in local development",
+  "tags": [
+    "cloudflare",
+    "serverless",
+    "web"
+  ],
+  "published_at": "2026-11-13T18:00:00+00:00"
+}

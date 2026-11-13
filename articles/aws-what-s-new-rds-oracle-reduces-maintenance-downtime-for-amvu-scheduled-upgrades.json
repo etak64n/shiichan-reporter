@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-rds-oracle-reduces-maintenance-downtime-for-amvu-scheduled-upgrades",
+  "title": "RDS for Oracle のメンテ停止が短くなったよ！ウィンドウ前に下準備",
+  "summary": "Amazon RDS for Oracle が、自動マイナーバージョンアップグレードや予定メンテナンスのダウンタイムを短縮したよ！メンテ開始の最大 30 分前から下準備をしておく仕組みなの。",
+  "body_md": "おつかれさま、しぃちゃんだよ！メンテナンスの停止時間が短くなる、運用担当には嬉しい発表だよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon RDS for Oracle が **自動マイナーバージョンアップグレード（AMVU）**、そしてメンテナンスウィンドウに予定したマイナーバージョンアップグレードと OS アップデートのダウンタイムを減らしたと発表されたよ。自動アップグレードを有効にしているインスタンスは、自動でこの恩恵を受けられるの。\n\n## 今までどうだったの？\n\nこれらのアップグレードや更新では、RDS が新しいリソースをセットアップする必要があるの。これまでは、そのセットアップをメンテナンス開始後に行っていたから、ダウンタイムが長くなっていたんだって。\n\n## これで何が変わるの？\n\n今は、メンテナンスウィンドウの **最大 30 分前** から RDS がリソースを準備するよ。その間も DB インスタンスはワークロードを処理し続けるの。ウィンドウが開く時点では必要なリソースが用意済みだから、停止時間が短くなるよ。\n\nOracle の最新マイナーバージョンや OS アップデートに追従しやすくなって、アプリへの影響も小さくなるね！\n\n## 深く潜ってみよう\n\n- 対象は Enterprise Edition と Standard Edition 2 の DB インスタンス\n- 準備があなたの操作をブロックしたり遅らせたりすることはなく、準備中もインスタンスは利用できる\n- 準備と競合する変更をした場合、RDS は用意したリソースをロールバックして、あなたの変更を優先する\n- 準備が完了しなかった場合も、RDS はウィンドウ内で準備なしのままメンテナンスを適用する\n- 準備の開始・完了・未完了を知らせる新しい RDS イベントが追加された\n\n## まとめ\n\n- メンテ開始の最大 30 分前から下準備をして、ダウンタイムを短縮\n- 自動マイナーバージョンアップグレード、予定のマイナーバージョン更新、OS アップデートが対象\n- Enterprise Edition と Standard Edition 2 の両方で使える\n- 失敗や競合時も安全側に倒れて、新しい RDS イベントで状況を追える\n\nOracle をマネージドで運用していて、メンテ停止を少しでも短くしたいみんなに刺さるよ！\n",
+  "title_en": "Shorter maintenance downtime for RDS for Oracle, thanks to pre-staged resources",
+  "summary_en": "Amazon RDS for Oracle now reduces downtime for automatic minor version upgrades and scheduled maintenance by preparing resources up to 30 minutes before your maintenance window.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Here's good news for operations folks: shorter maintenance downtime!\n\n## What was announced?\n\nIn AWS What's New, Amazon RDS for Oracle now reduces downtime for **automatic minor version upgrades (AMVU)**, as well as minor version upgrades and operating system updates scheduled for your maintenance window. If you turned on automatic minor version upgrade, your DB instances benefit automatically.\n\n## The story so far\n\nTo apply these upgrades and updates, RDS has to set up new resources. Previously RDS did this after the maintenance started, which made the downtime longer.\n\n## What changes\n\nNow RDS prepares those resources **up to 30 minutes before** your maintenance window, while your DB instance keeps serving your workload. When the window opens, the instance is offline for less time because the resources are already prepared.\n\nIt becomes easier to stay current on Oracle minor versions and OS updates with less disruption!\n\n## Dive Deep\n\n- Applies to both Enterprise Edition and Standard Edition 2 DB instances\n- The preparation never blocks or delays your own operations, and the instance stays available\n- If a change you make conflicts with the preparation, RDS rolls back the staged resources and your change goes ahead\n- If the preparation can't finish, RDS still applies the maintenance in your window without it\n- New RDS events tell you when preparation starts, finishes, and when it can't finish\n\n## Wrap-up\n\n- Resources are prepared up to 30 minutes before maintenance, shortening downtime\n- Covers AMVU, scheduled minor version upgrades, and OS updates\n- Works on both Enterprise Edition and Standard Edition 2\n- Conflicts and failures fall back safely, and new RDS events let you follow along\n\nThis is for anyone running managed Oracle who wants shorter maintenance outages!\n",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/rds-oracle-reduces-maintenance-downtime-for-amvu-scheduled-upgrades/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon RDS for Oracle reduces downtime for automatic minor version upgrades and scheduled maintenance",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "devops"
+  ],
+  "published_at": "2026-11-13T08:00:00+00:00"
+}
