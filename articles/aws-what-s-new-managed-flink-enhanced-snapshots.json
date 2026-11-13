@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-managed-flink-enhanced-snapshots",
+  "title": "Managed Flink に enhanced snapshots が登場！状態を保ったまま blue/green・移行・リージョン間復旧",
+  "summary": "Amazon Managed Service for Apache Flink の enhanced snapshots で、アプリケーションの状態をキャプチャ・エクスポート・復元できるようになったよ！",
+  "body_md": "やっほー、しぃちゃんだよ！Flink の状態管理が一気に楽になる発表だよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Managed Service for Apache Flink が enhanced snapshots に対応したと発表されたよ。Flink アプリケーションやリージョンをまたいで、アプリケーションの状態をキャプチャ、エクスポート、復元できる機能なの。\n\n## なぜ重要なの？\n\nストリーム処理では、状態を失わずにアプリを入れ替えたり移したりできるかが大事だよね。enhanced snapshots は、そのための土台になるよ。\n\n## これで何が変わるの？\n\nできることは 3 つだよ！\n\n- blue/green デプロイ: アプリから enhanced snapshot を作り、それで 2 つ目のアプリを起動することで、処理を止めずに更新をデプロイできる\n- 自前運用からの移行: 自分で運用している Flink の savepoint を enhanced snapshot としてインポートし、状態を失わずに移行できる\n- リージョン間の復旧: enhanced snapshot を Amazon S3 バケットにエクスポートし、別リージョンのバケットにレプリケートしておける\n\n## 深く潜ってみよう\n\n対象は Apache Flink 1.20 以降のアプリケーションだよ。提供リージョンは、Managed Service for Apache Flink が使えるすべてのリージョンだけど、European Sovereign Cloud (Germany) は除かれるよ。\n\n料金は、enhanced snapshot のストレージに対して GB-月あたりで、耐久性のあるアプリケーションバックアップとして課金されるの。\n\nAgent Toolkit for AWS を Kiro、Claude Code、Cursor と使えば、enhanced snapshots を使った Flink アプリの構築・運用のガイダンスも得られるみたい。\n\n## まとめ\n\n- Flink の状態を、アプリやリージョンをまたいで扱える\n- blue/green、自前運用からの移行、リージョン間復旧に使える\n- Flink 1.20 以降が対象で、ストレージは GB-月で課金\n\nFlink を本番運用していて、無停止の更新や DR を考えている人に刺さるよ！",
+  "title_en": "Managed Service for Apache Flink adds enhanced snapshots for blue/green, migration, and cross-Region recovery",
+  "summary_en": "Amazon Managed Service for Apache Flink now supports enhanced snapshots to capture, export, and restore application state across applications and Regions.",
+  "body_md_en": "Hi, it's Shii-chan! This one makes Flink state management much easier.\n\n## What was announced?\n\nAWS What's New says Amazon Managed Service for Apache Flink now supports enhanced snapshots, a capability to capture, export, and restore application state across Flink applications and AWS Regions.\n\n## Why it matters\n\nIn stream processing, swapping or moving an app without losing state is a big deal. Enhanced snapshots are the foundation for that.\n\n## What changes\n\nThree things you can do:\n\n- Blue/green deployments: create an enhanced snapshot from an application and start a second application from it, so you can deploy an update without pausing processing\n- Migration: import the savepoint of a self-managed Flink workload as an enhanced snapshot and move without losing state\n- Cross-Region recovery: export an enhanced snapshot to an Amazon S3 bucket and replicate it to a bucket in a secondary Region\n\n## Dive Deep\n\nIt works for applications on Apache Flink 1.20 and later, in all Regions where the service is available except European Sovereign Cloud (Germany).\n\nYou pay for enhanced snapshot storage per GB-month, as durable application backups.\n\nYou can also use Agent Toolkit for AWS with Kiro, Claude Code, or Cursor for guidance on building and operating Flink applications with enhanced snapshots.\n\n## Wrap-up\n\n- Move Flink state across applications and Regions\n- Use it for blue/green, migration, and cross-Region recovery\n- Flink 1.20+ only, storage billed per GB-month\n\nIf you run Flink in production and care about zero-pause updates or DR, this is for you!",
+  "emotion": "happy",
+  "importance": 4,
+  "tags": [
+    "aws",
+    "devops",
+    "infrastructure"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/managed-flink-enhanced-snapshots/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Managed Service for Apache Flink introduces enhanced snapshots",
+  "published_at": "2026-11-12T08:00:00+00:00"
+}

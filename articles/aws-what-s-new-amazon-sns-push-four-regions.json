@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-sns-push-four-regions",
+  "title": "Amazon SNS のモバイルプッシュが 4 つの新リージョンに対応したよ！",
+  "summary": "Amazon SNS で、Hyderabad、Melbourne、Zurich、GovCloud (US-East) の 4 リージョンからプッシュ通知を送れるようになったよ。",
+  "body_md": "こんにちは、しぃちゃんだよ！SNS のリージョン拡大のお知らせだよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon SNS が次の 4 つのリージョンでプッシュ通知の送信に対応したと発表されたよ。\n\n- Asia Pacific (Hyderabad)\n- Asia Pacific (Melbourne)\n- Europe (Zurich)\n- AWS GovCloud (US-East)\n\n## これで何が変わるの？\n\nこの 4 リージョンのお客さんが、SNS から次のプッシュ通知サービスへ通知を送れるようになったよ。\n\n- Amazon Device Messaging (ADM)\n- Apple Push Notification Service (APNs)\n- Baidu Cloud Push (Baidu)\n- Firebase Cloud Messaging (FCM)\n- Windows Push Notification Services (WNS)\n\n## 深く潜ってみよう\n\nSNS は完全マネージドの pub/sub サービスで、配信先は AWS Lambda、Amazon SQS、Amazon Data Firehose、HTTP、SMS (AWS End User Messaging 経由)、プッシュ通知、メールなどだよ。\n\nプッシュ通知を送れる全リージョンの一覧は、SNS 開発者ガイドの「Supported Regions and Countries」で確認してね。\n\n## まとめ\n\n- Hyderabad、Melbourne、Zurich、GovCloud (US-East) でプッシュ通知が送れる\n- ADM、APNs、Baidu、FCM、WNS に対応\n\nこれらのリージョンでモバイルアプリを運営している人に刺さるよ！",
+  "title_en": "Amazon SNS push notifications now work in four more AWS Regions",
+  "summary_en": "Amazon SNS can now send push notifications in Asia Pacific (Hyderabad), Asia Pacific (Melbourne), Europe (Zurich), and AWS GovCloud (US-East).",
+  "body_md_en": "Hi, it's Shii-chan! A Region expansion for SNS.\n\n## What was announced?\n\nAWS What's New says Amazon SNS now supports sending push notifications in these four Regions:\n\n- Asia Pacific (Hyderabad)\n- Asia Pacific (Melbourne)\n- Europe (Zurich)\n- AWS GovCloud (US-East)\n\n## What changes\n\nCustomers in these Regions can use SNS to send push notifications to:\n\n- Amazon Device Messaging (ADM)\n- Apple Push Notification Service (APNs)\n- Baidu Cloud Push (Baidu)\n- Firebase Cloud Messaging (FCM)\n- Windows Push Notification Services (WNS)\n\n## Dive Deep\n\nSNS is a fully managed pub/sub service that delivers to AWS Lambda, Amazon SQS, Amazon Data Firehose, HTTP, SMS (via AWS End User Messaging), push notifications, email, and more.\n\nSee \"Supported Regions and Countries\" in the SNS Developer Guide for the full list of push Regions.\n\n## Wrap-up\n\n- Push notifications now work in Hyderabad, Melbourne, Zurich, and GovCloud (US-East)\n- ADM, APNs, Baidu, FCM, and WNS are supported\n\nIf you run a mobile app in these Regions, this is for you!",
+  "emotion": "happy",
+  "importance": 2,
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-sns-push-four-regions/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon SNS now supports push notifications in four additional AWS Regions",
+  "published_at": "2026-11-12T16:00:00+00:00"
+}

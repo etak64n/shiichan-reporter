@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-aurora-rds-postgresql-mysql-mariadb-r9g-instances",
+  "title": "Aurora と RDS に Graviton5 の R9g が登場！性能最大 30% アップ",
+  "summary": "Graviton5 搭載の R9g インスタンスが、Aurora (PostgreSQL・MySQL 互換) と RDS (PostgreSQL・MySQL・MariaDB) で GA になったよ！",
+  "body_md": "こんにちは、しぃちゃんだよ！データベースの新しいインスタンスが来たよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Graviton5 搭載の R9g データベースインスタンスが GA になったと発表されたよ。対象は次のとおりだよ。\n\n- Amazon Aurora PostgreSQL 互換\n- Amazon Aurora MySQL 互換\n- Amazon RDS for PostgreSQL\n- Amazon RDS for MySQL\n- Amazon RDS for MariaDB\n\n## これで何が変わるの？\n\nGraviton4 搭載の同サイズのインスタンスと比べて、Aurora では最大 30% の性能向上、オンデマンド料金での価格性能比は最大 22% の向上とされているよ。どれだけ向上するかは、データベースエンジン、バージョン、ワークロードによるの。\n\n## 深く潜ってみよう\n\n- AWS Nitro System 上に構築\n- large から 48xlarge までの 9 サイズ\n- 最大 192 vCPU、vCPU あたり 8 倍のメモリ比\n- 最大 100 Gbps のネットワーク帯域\n- Amazon EBS への最大 72 Gbps の帯域\n\n使い始めは、RDS マネジメントコンソールか AWS CLI からだよ。\n\n提供リージョンは US East (N. Virginia、Ohio)、US West (Oregon)、Europe (Frankfurt) だよ。対応するエンジンバージョンは、Aurora と RDS のドキュメントで確認してね。\n\n## まとめ\n\n- Graviton5 の R9g が Aurora と RDS で GA\n- Graviton4 比で最大 30% の性能向上、最大 22% の価格性能比向上\n- 9 サイズ、最大 192 vCPU、100 Gbps のネットワーク\n- 現時点では 4 リージョンで提供\n\nデータベースのコストと性能を見直したい人に刺さるよ！",
+  "title_en": "Graviton5-based R9g instances come to Aurora and RDS: up to 30% faster",
+  "summary_en": "Graviton5-based R9g database instances are now generally available for Aurora (PostgreSQL and MySQL compatible) and RDS for PostgreSQL, MySQL, and MariaDB.",
+  "body_md_en": "Hi, it's Shii-chan! New database instances are here.\n\n## What was announced?\n\nAWS What's New says AWS Graviton5-based R9g database instances are now generally available for:\n\n- Amazon Aurora with PostgreSQL compatibility\n- Amazon Aurora with MySQL compatibility\n- Amazon RDS for PostgreSQL\n- Amazon RDS for MySQL\n- Amazon RDS for MariaDB\n\n## What changes\n\nCompared with Graviton4-based instances of equivalent sizes, R9g offers up to 30% better performance and up to 22% better price-performance at on-demand pricing on Aurora. The gains depend on engine, version, and workload.\n\n## Dive Deep\n\n- Built on the AWS Nitro System\n- Nine sizes, from large to 48xlarge\n- Up to 192 vCPUs and an 8:1 memory-to-vCPU ratio\n- Up to 100 Gbps of networking bandwidth\n- Up to 72 Gbps of bandwidth to Amazon EBS\n\nGet started from the RDS Management Console or the AWS CLI.\n\nAvailable in US East (N. Virginia, Ohio), US West (Oregon), and Europe (Frankfurt). Check the Aurora and RDS documentation for supported engine versions.\n\n## Wrap-up\n\n- Graviton5 R9g is GA on Aurora and RDS\n- Up to 30% better performance and 22% better price-performance than Graviton4\n- Nine sizes, up to 192 vCPUs and 100 Gbps networking\n- Four Regions for now\n\nIf you want to revisit database cost and performance, this is for you!",
+  "emotion": "energetic",
+  "importance": 4,
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-aurora-rds-postgresql-mysql-mariadb-r9g-instances/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Aurora and RDS now support Graviton5-based R9g database instances",
+  "published_at": "2026-11-12T19:02:00+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-connect-cases-merge-link",
+  "title": "Amazon Connect Cases でケースの統合とリンクができるよ！エージェントワークスペースで対応",
+  "summary": "Amazon Connect Customer のエージェントワークスペースで、関連するケースを 1 つに統合したり、リンクしたりできるようになったよ。",
+  "body_md": "やっほー、しぃちゃんだよ！コンタクトセンターの現場に嬉しい機能だよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Connect Customer のエージェントが、エージェントワークスペースで関連するケースを統合・リンクできるようになったと発表されたよ。\n\n## 今までどうだったの？\n\nお客さんが同じ問題で何度も連絡したり、別のチャネルから連絡したりすると、履歴が複数のケースに分かれてしまうことがあったよ。\n\n## これで何が変わるの？\n\n- 統合: 複数のケースを、履歴を 1 つにまとめた単一のケースにできる。たとえば、配送遅延についてお客さんがチャットとメールで作った 2 つのケースを 1 つにできる\n- リンク: 関連するケースを結び付ける。同じ問題の影響を受けた別々のお客さんのケースをリンクして、全員に一貫した対応を調整できる\n\n解決が速くなり、対応のばらつきも減らせるよ。\n\n## 深く潜ってみよう\n\nCases が使えるリージョンはこちらだよ。\n\n- US East (N. Virginia)、US West (Oregon)\n- Canada (Central)\n- Europe (Frankfurt)、Europe (London)\n- Asia Pacific (Seoul)、Asia Pacific (Singapore)、Asia Pacific (Sydney)、Asia Pacific (Tokyo)\n- Africa (Cape Town)\n\n詳しくは Cases のウェブページとドキュメントを見てね。\n\n## まとめ\n\n- 関連ケースの統合で、履歴を 1 つにまとめられる\n- ケースのリンクで、同じ問題の影響を受けた複数のお客さんへの対応を揃えられる\n- エージェントワークスペースから操作できる\n\n問い合わせ対応の分断に悩んでいるコンタクトセンターの運用者さんに刺さるよ！",
+  "title_en": "Amazon Connect Cases lets agents merge and link related cases",
+  "summary_en": "Amazon Connect Customer agents can now merge and link related cases right in the agent workspace.",
+  "body_md_en": "Hi, it's Shii-chan! A handy feature for contact centers.\n\n## What was announced?\n\nAWS What's New says Amazon Connect Customer now lets agents merge and link related cases in the agent workspace.\n\n## The story so far\n\nWhen a customer contacts a business about the same issue more than once, or on different channels, the history can end up split across several cases.\n\n## What changes\n\n- Merge: combine cases into one with a single consolidated history, for example a chat case and an email case about a delayed shipment\n- Link: connect related cases, such as cases from different customers affected by the same issue, so you can coordinate one consistent response\n\nAgents resolve issues faster and respond more consistently.\n\n## Dive Deep\n\nCases is available in:\n\n- US East (N. Virginia), US West (Oregon)\n- Canada (Central)\n- Europe (Frankfurt), Europe (London)\n- Asia Pacific (Seoul), Asia Pacific (Singapore), Asia Pacific (Sydney), Asia Pacific (Tokyo)\n- Africa (Cape Town)\n\nSee the Cases webpage and documentation to get started.\n\n## Wrap-up\n\n- Merge related cases into one history\n- Link cases to coordinate a response across affected customers\n- Works from the agent workspace\n\nIf split case histories slow your contact center down, this is for you!",
+  "emotion": "happy",
+  "importance": 2,
+  "tags": [
+    "aws",
+    "business"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-connect-cases-merge-link/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Connect Customer supports merging and linking related cases in the agent workspace",
+  "published_at": "2026-11-12T17:00:00+00:00"
+}

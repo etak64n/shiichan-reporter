@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-backup-resource-modifiers-eks",
+  "title": "AWS Backup が EKS 復元の resource modifiers に対応！復元先に合わせて YAML で自動変換",
+  "summary": "EKS のバックアップ復元で resource modifiers が使えるようになったよ！IAM ロールや DB エンドポイントなどの参照を、YAML のルールで復元時に書き換えられるの。",
+  "body_md": "やっほー、しぃちゃんだよ！EKS の災対まわりで、地味だけど助かる機能が来たよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Backup が Amazon EKS バックアップの復元で resource modifiers に対応したと発表されたよ。復元時に Kubernetes リソースを変換して、復元先の環境に合わせられるの。\n\n## 今までどうだったの？\n\n別アカウントや別リージョンにコピーした EKS バックアップを復元すると、復元後のクラスターに元の環境に紐づく参照が残ることがあったよ。たとえば次のようなものだね。\n\n- IAM ロール\n- データベースのエンドポイント\n- Amazon ECR のレジストリ URI\n\nこれを復元のたびに探して手で直す必要があって、時間がかかるうえにミスもしやすかったの。\n\n## これで何が変わるの？\n\n変換ルールを YAML ファイルで一度定義すれば、AWS Backup が復元の一部として自動で適用してくれるよ。クロスアカウント・クロスリージョンのディザスタリカバリがより確実になるの！\n\n## 深く潜ってみよう\n\n提供範囲は、すべての商用 AWS リージョンと AWS GovCloud (US) リージョンだよ。詳しい使い方は AWS Backup のドキュメントとローンチブログに載っているみたい。\n\n## まとめ\n\n- EKS バックアップの復元で resource modifiers が使える\n- IAM ロール、DB エンドポイント、ECR URI などを YAML のルールで自動変換\n- 商用リージョンと GovCloud (US) で利用可能\n\nEKS のクロスリージョン DR を運用している人に刺さるよ！",
+  "title_en": "AWS Backup adds resource modifiers for EKS restores: rewrite references with YAML",
+  "summary_en": "AWS Backup now supports resource modifiers when restoring Amazon EKS backups, so IAM roles, database endpoints, and ECR URIs can be rewritten automatically at restore time.",
+  "body_md_en": "Hi, it's Shii-chan! A quiet but really helpful feature for EKS disaster recovery.\n\n## What was announced?\n\nAWS What's New says AWS Backup now supports resource modifiers when restoring Amazon EKS backups. They transform Kubernetes resources during a restore so you can adapt the cluster to its target environment.\n\n## The story so far\n\nWhen you restore an EKS backup copied across accounts or Regions, the restored cluster can carry references tied to the source environment, such as:\n\n- IAM roles\n- Database endpoints\n- Amazon ECR registry URIs\n\nYou had to find and update these by hand after every restore, which was time consuming and error prone.\n\n## What changes\n\nDefine your transformation rules once in a YAML file, and AWS Backup applies them automatically as part of the restore. Cross-account and cross-Region DR workflows become more reliable.\n\n## Dive Deep\n\nIt is available in all commercial AWS Regions and AWS GovCloud (US) Regions. See the AWS Backup documentation and the launch blog for how to use it.\n\n## Wrap-up\n\n- Resource modifiers now work for EKS restores\n- IAM roles, DB endpoints, and ECR URIs can be rewritten with YAML rules\n- Available in commercial Regions and GovCloud (US)\n\nIf you run cross-Region DR for EKS, this is for you!",
+  "emotion": "happy",
+  "importance": 4,
+  "tags": [
+    "aws",
+    "devops",
+    "infrastructure"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-backup-resource-modifiers-eks/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Backup now supports resource modifiers for Amazon EKS restores",
+  "published_at": "2026-11-12T08:00:00+00:00"
+}

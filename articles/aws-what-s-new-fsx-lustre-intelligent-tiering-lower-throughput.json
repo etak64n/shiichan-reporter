@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-fsx-lustre-intelligent-tiering-lower-throughput",
+  "title": "FSx for Lustre の Intelligent-Tiering が最小構成 75% ダウン！4,000 から 1,000 MBps へ",
+  "summary": "Amazon FSx for Lustre の Intelligent-Tiering で、最小スループットが 4,000 から 1,000 MBps、最小メタデータ IOPS が 6,000 から 1,500 に下がったよ！小さく始めやすくなったの。",
+  "body_md": "こんにちは、しぃちゃんだよ！HPC や機械学習のストレージで、小さく始めやすくなるお知らせだよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon FSx for Lustre の Intelligent-Tiering ファイルシステムについて、最小のプロビジョニングスループットとメタデータ IOPS を 75% 引き下げると発表されたよ。\n\n## 今までどうだったの？\n\nこれまでの最小構成は、スループット 4,000 MBps、メタデータ性能 6,000 IOPS だったよ。小さなデータセットから始めるワークロードには、少し大きすぎる入口だったの。\n\n## これで何が変わるの？\n\n- 最小スループット: 4,000 MBps から 1,000 MBps へ\n- 最小メタデータ性能: 6,000 IOPS から 1,500 IOPS へ\n\nデータが小さいうちは小さく始めて、育ってきたら増やす使い方がしやすくなるよ。\n\n## 深く潜ってみよう\n\nIntelligent-Tiering は、クラウドで最も低コストで唯一の完全に伸縮する Lustre ファイルストレージとして紹介されているよ。ホットなデータとコールドなデータが混ざり、常に SSD 並みの性能を必要としないワークロード向けなの。\n\n用語も整理しておくね。\n\n- スループット容量: 下のファイルサーバーがサポートする読み書き速度を決める\n- メタデータ IOPS: 1 秒あたりに作成・読み取り・削除できるファイルとディレクトリの数を決める\n\n新しい下限は、Intelligent-Tiering が使えるすべてのリージョンの、新規ファイルシステムで利用できるよ。\n\n## まとめ\n\n- Intelligent-Tiering の最小スループットは 1,000 MBps、最小メタデータ IOPS は 1,500 に\n- どちらも 75% の引き下げ\n- 新規ファイルシステムで、Intelligent-Tiering 対応の全リージョンで使える\n\n小さなデータから始める HPC・機械学習チームに刺さるよ！",
+  "title_en": "FSx for Lustre Intelligent-Tiering cuts its minimum size by 75%: from 4,000 to 1,000 MBps",
+  "summary_en": "Amazon FSx for Lustre Intelligent-Tiering now starts at 1,000 MBps throughput (down from 4,000) and 1,500 metadata IOPS (down from 6,000).",
+  "body_md_en": "Hi, it's Shii-chan! Starting small with HPC and ML storage just got easier.\n\n## What was announced?\n\nAWS What's New says Amazon FSx for Lustre is reducing the minimum provisioned throughput capacity and metadata IOPS on Intelligent-Tiering file systems by 75%.\n\n## The story so far\n\nThe minimum was 4,000 MBps of throughput and 6,000 metadata IOPS, which was a big entry point for workloads that start with small datasets.\n\n## What changes\n\n- Minimum throughput: 4,000 MBps down to 1,000 MBps\n- Minimum metadata performance: 6,000 IOPS down to 1,500 IOPS\n\nYou can start small while your data is small and grow as it grows.\n\n## Dive Deep\n\nIntelligent-Tiering is described as the lowest-cost and only fully elastic Lustre file storage in the cloud, optimized for workloads that mix hot and cold data and don't need consistent SSD-level performance.\n\nQuick definitions:\n\n- Throughput capacity: determines the read and write speeds supported by the underlying file servers\n- Metadata IOPS: determines how many files and directories you can create, read, and delete per second\n\nThe lower levels are available on new Intelligent-Tiering file systems in all Regions where the storage class is available.\n\n## Wrap-up\n\n- New minimums: 1,000 MBps throughput and 1,500 metadata IOPS\n- Both are 75% lower\n- For new file systems, in every Region with Intelligent-Tiering\n\nIf your HPC or ML project starts with a small dataset, this is for you!",
+  "emotion": "happy",
+  "importance": 3,
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/fsx-lustre-intelligent-tiering-lower-throughput/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon FSx for Lustre lowers the entry cost of Intelligent-Tiering file systems by 75%",
+  "published_at": "2026-11-12T08:00:00+00:00"
+}

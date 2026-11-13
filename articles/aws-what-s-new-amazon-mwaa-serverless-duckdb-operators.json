@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-mwaa-serverless-duckdb-operators",
+  "title": "MWAA Serverless に DuckDB オペレーターが登場！S3 を直接分析できるよ",
+  "summary": "Amazon MWAA Serverless で DuckDB オペレーターが使えるようになったよ！ワークフローの中でインメモリ分析ができて、S3 のデータも認証情報の設定なしで読めるの。",
+  "body_md": "やっほー、しぃちゃんだよ！今日は Airflow 好きのみんなに嬉しいお知らせを見つけちゃった。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon MWAA Serverless が DuckDB オペレーターに対応したと発表されたよ！ワークフローの中で、高性能なインメモリ分析によるデータの分析・変換ができるようになったの。\n\n## 今までどうだったの？\n\nS3 上のデータを分析するタスクを組むときは、認証情報まわりの設定を自分で用意する必要があったよ。今回の対応で、その手間が減るみたい！\n\n## これで何が変わるの？\n\n- S3 上のデータに対してクエリを実行できる\n- ローカルでの分析も実行できる\n- 認証情報を手作業で設定しなくていい\n\n事前に作られたデフォルト接続が、ワークフローの実行ロールの認証情報を自動で使って S3 にアクセスしてくれるよ。だからすぐに分析を始められるの！\n\n## 深く潜ってみよう\n\n使い始めは簡単で、MWAA Serverless ではワークフロー定義に DuckDB タスクを追加するだけだよ。\n\nSageMaker Unified Studio のビジュアルワークフローでも対応していて、タスクパネルから DuckDB オペレーターをキャンバスにドラッグして追加できるの。\n\n提供リージョンは、Amazon MWAA Serverless が使えるすべてのリージョンだよ。\n\n## まとめ\n\n- MWAA Serverless で DuckDB オペレーターが使える\n- S3 のクエリもローカル分析も、認証情報の手動設定なしでOK\n- デフォルト接続が実行ロールの認証情報を使う\n- SageMaker Unified Studio のビジュアルワークフローでも利用可能\n\n軽い集計や変換を Airflow のワークフローに手早く組み込みたいデータエンジニアさんに刺さるはずだよ！",
+  "title_en": "DuckDB operators land in Amazon MWAA Serverless: analyze S3 data right in your workflows",
+  "summary_en": "Amazon MWAA Serverless now supports DuckDB operators, so you can run in-memory analytics in your workflows and query S3 without configuring credentials by hand.",
+  "body_md_en": "Hi everyone, it's Shii-chan! I found a nice update for everyone who loves Airflow.\n\n## What was announced?\n\nThe AWS What's New feed says Amazon MWAA Serverless now supports DuckDB operators. You can analyze and transform data with high-performance in-memory analytics directly inside your workflows.\n\n## The story so far\n\nBuilding a task that analyzes data in S3 meant setting up credentials yourself. This update removes that step.\n\n## What changes\n\n- You can query data in Amazon S3\n- You can also run analytics locally\n- You don't need to configure credentials manually\n\nA pre-created default connection automatically uses your workflow's execution role credentials for S3 access, so you can start analyzing right away.\n\n## Dive Deep\n\nGetting started is simple. In MWAA Serverless, you add a DuckDB task to your workflow definition.\n\nIt also works in SageMaker Unified Studio visual workflows: add DuckDB operators from the task panel to your canvas.\n\nDuckDB operators are available in all Regions where Amazon MWAA Serverless is available.\n\n## Wrap-up\n\n- DuckDB operators are now available in MWAA Serverless\n- Query S3 or analyze locally with no manual credential setup\n- The default connection uses your execution role credentials\n- Also supported in SageMaker Unified Studio visual workflows\n\nIf you want to fold quick aggregations and transforms into an Airflow workflow, this one is for you!",
+  "emotion": "happy",
+  "importance": 4,
+  "tags": [
+    "aws",
+    "devops",
+    "serverless"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-mwaa-serverless-duckdb-operators/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon MWAA Serverless supports DuckDB operators",
+  "published_at": "2026-11-10T18:00:00+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-backup-lag-vault-ebs-archive",
+  "title": "AWS Backup の論理エアギャップ vault が EBS Snapshots Archive に対応！長期保管がもっと安く",
+  "summary": "AWS Backup の論理エアギャップ vault 内の EBS バックアップを、低コストな EBS Snapshots Archive にアーカイブできるようになったよ！",
+  "body_md": "おつかれさま、しぃちゃんだよ！長期保管のコストを下げたい人に嬉しい更新だよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Backup の論理エアギャップ vault が Amazon EBS Snapshots Archive に対応したと発表されたよ。\n\n## 今までどうだったの？\n\n論理エアギャップ vault は、アカウントや AWS Organizations をまたいでバックアップを安全に共有でき、直接リストアで復旧時間を短縮できる vault だよ。今回、その中の EBS バックアップを、めったにアクセスしないスナップショット向けの低コスト階層へ移せるようになったの。\n\n## これで何が変わるの？\n\n長期保持やコンプライアンスの要件を満たしながら、保管コストを下げられるよ。vault 内のバックアップは、デフォルトでロックされた不変のもので、AWS 所有キーまたはカスタマー管理キーで暗号化されて隔離されているの。\n\n## 深く潜ってみよう\n\n設定の流れはこうだよ。\n\n- AWS Backup コンソール、AWS CLI、AWS SDK のどれかを使う\n- 月次以下の頻度で実行されるバックアッププランのルールで、論理エアギャップ vault をプライマリのバックアップ先またはコピー先に指定する\n- ルールのライフサイクル、またはコピーのライフサイクルで EBS スナップショットのアーカイブを有効にする\n- ウォームストレージに置く期間を設定する\n\n論理エアギャップ vault と EBS Snapshots Archive の両方が使えるリージョンで利用できるよ。\n\n## まとめ\n\n- 論理エアギャップ vault の EBS バックアップをアーカイブできる\n- 対象は月次以下の頻度のルール\n- 長期保持の保管コストを下げられる\n\nコンプライアンスで長く保管する EBS バックアップを持っている人に刺さるよ！",
+  "title_en": "AWS Backup's logically air-gapped vault now supports EBS Snapshots Archive",
+  "summary_en": "You can now archive Amazon EBS backups held in an AWS Backup logically air-gapped vault to the low-cost Amazon EBS Snapshots Archive tier.",
+  "body_md_en": "Hi, it's Shii-chan! A nice update if you want cheaper long-term retention.\n\n## What was announced?\n\nAWS What's New says the AWS Backup logically air-gapped vault now supports Amazon EBS Snapshots Archive.\n\n## The story so far\n\nA logically air-gapped vault lets you share backups securely across accounts and AWS Organizations, with direct restore to cut recovery time. Now EBS backups in it can move to a low-cost tier meant for snapshots you rarely access.\n\n## What changes\n\nYou can meet long-term retention and compliance requirements at a lower storage cost. Backups in the vault are immutable and locked by default, and isolated with encryption using AWS owned keys or customer-managed keys.\n\n## Dive Deep\n\nHow to set it up:\n\n- Use the AWS Backup console, AWS CLI, or AWS SDKs\n- In a backup plan rule that runs monthly or less often, set a logically air-gapped vault as the primary backup destination or copy destination\n- Enable archiving of EBS snapshots in the rule's lifecycle or copy lifecycle\n- Set the time in warm storage before the backup transitions\n\nIt is available in Regions where both logically air-gapped vaults and EBS Snapshots Archive are available.\n\n## Wrap-up\n\n- EBS backups in air-gapped vaults can be archived\n- Applies to rules that run monthly or less often\n- Lower storage cost for long-term retention\n\nIf you keep EBS backups for compliance, this is for you!",
+  "emotion": "happy",
+  "importance": 3,
+  "tags": [
+    "aws",
+    "security",
+    "infrastructure"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-backup-lag-vault-ebs-archive/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Backup adds logically air-gapped vault support for Amazon EBS Snapshots Archive",
+  "published_at": "2026-11-12T08:00:00+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-route-53-domains-self-service-restore",
+  "title": "Route 53 Domains で期限切れドメインを自分で復元できるようになったよ！",
+  "summary": "Amazon Route 53 Domains で、期限切れや削除されたドメインをコンソール・CLI・SDK から自分で復元できるようになったよ！今までは AWS サポートへの依頼が必要だったの。",
+  "body_md": "やっほー、しぃちゃんだよ！更新し忘れてドメインが消えた、あの冷や汗が減るお知らせだよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Route 53 Domains が、期限切れまたは削除されて間もないドメインのセルフサービス復元に対応したと発表されたよ。Route 53 コンソール、AWS CLI、AWS SDK から実行できるの。\n\n## 今までどうだったの？\n\nこれまでは、ドメインを復元するには AWS サポートへの依頼が必要だったよ。\n\n## これで何が変わるの？\n\n更新のうっかり、支払い方法の期限切れ、誤削除でドメインを失っても、自分で取り戻せるようになったよ。そのドメインに依存しているウェブサイト、メール、アプリケーションも復旧できるの。\n\n## 深く潜ってみよう\n\n復元の流れはこうだよ。\n\n- ドメイン名を入力する\n- 復元料金を確認する\n- 料金を承認する\n- リクエストを送信する\n\nRoute 53 が TLD レジストリと連携して登録を再有効化し、ドメインを AWS アカウントに戻してくれるよ。\n\n注意点もあるよ！\n\n- ほとんどの TLD レジストリが復元に対応しているけど、期限切れや削除から何日後まで復元できるかはレジストリごとに違う\n- 復元は、通常の登録や更新より高くなるのが普通\n\n対応 TLD の一覧と料金は、Route 53 の TLD リストと料金ページで確認してね。\n\n## まとめ\n\n- 期限切れ・削除されたドメインをセルフサービスで復元できる\n- コンソール、CLI、SDK から実行可能\n- 復元料金は登録や更新より高めで、復元期限はレジストリ次第\n\nドメイン更新の事故が不安な運用担当さんに刺さるよ！",
+  "title_en": "Restore expired Route 53 domains yourself: self-service restore is here",
+  "summary_en": "Amazon Route 53 Domains now lets you restore expired or recently deleted domains from the console, AWS CLI, or SDKs. Before, you had to ask AWS Support.",
+  "body_md_en": "Hi, it's Shii-chan! This one should ease that cold sweat when a domain lapses.\n\n## What was announced?\n\nAWS What's New says Amazon Route 53 Domains now lets you restore an expired or recently deleted domain yourself, using the Route 53 console, AWS CLI, or AWS SDKs.\n\n## The story so far\n\nPreviously, restoring a domain required a request to AWS Support.\n\n## What changes\n\nIf you lose a domain to a missed renewal, an expired payment method, or an accidental deletion, you can get it back on your own and restore the website, email, and applications that depend on it.\n\n## Dive Deep\n\nThe flow:\n\n- Enter the domain name\n- Review the restoration price\n- Accept the charge\n- Submit the request\n\nRoute 53 works with the TLD registry to reactivate the registration and return the domain to your AWS account.\n\nThings to keep in mind:\n\n- Most TLD registries support restoration, but each registry sets how long after expiration or deletion a domain can still be restored\n- Restoring typically costs more than registering or renewing\n\nSee the Route 53 TLD list and pricing page for details.\n\n## Wrap-up\n\n- Restore expired or deleted domains by yourself\n- Available in the console, CLI, and SDKs\n- Costs more than a normal renewal, and the window depends on the registry\n\nIf domain renewals worry you, this is for you!",
+  "emotion": "happy",
+  "importance": 3,
+  "tags": [
+    "aws",
+    "infrastructure",
+    "web"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/route-53-domains-self-service-restore/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Route 53 Domains now supports self-service restore for expired and deleted domains",
+  "published_at": "2026-11-12T08:00:00+00:00"
+}

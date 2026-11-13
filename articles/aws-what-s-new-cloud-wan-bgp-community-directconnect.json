@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-cloud-wan-bgp-community-directconnect",
+  "title": "Cloud WAN が Direct Connect アタッチメントで BGP コミュニティに対応！オンプレから経路を制御",
+  "summary": "AWS Cloud WAN のルーティングポリシーが、Direct Connect アタッチメントでも BGP コミュニティを扱えるようになったよ！",
+  "body_md": "みんな、しぃちゃんだよ！ネットワーク好きさん向けの発表を見つけたよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Cloud WAN が Direct Connect アタッチメントで BGP コミュニティに対応したと発表されたよ。企業のハイブリッドネットワーク向けの高度な経路制御ができるの。\n\n## 今までどうだったの？\n\nCloud WAN のルーティングポリシーが BGP コミュニティを評価できたのは、Site-to-Site VPN アタッチメントと Connect アタッチメントだけだったよ。\n\n## これで何が変わるの？\n\n- オンプレミスで経路にルーティングの意図をタグ付けできる\n- Cloud WAN の中でフィルタリングや経路優先度のルールを適用できる\n- コミュニティを Direct Connect 経由でオンプレミスのルーターに伝搬し返せる\n\n## 深く潜ってみよう\n\nコミュニティのタグを使うと、たとえば次のような制御ができるよ。\n\n- 本番トラフィックと災対用トラフィックを振り分ける\n- 優先したい経路を選ぶ\n- リージョンをまたぐ伝搬を制限する\n\nこれで、VPN オーバーレイによる回避策や、手動でのポリシー複製が不要になって、運用の複雑さと設定ミスのリスクが減るとされているよ。\n\n提供は、AWS Direct Connect と AWS Cloud WAN の両方が使えるリージョンだよ。\n\n## まとめ\n\n- Direct Connect アタッチメントでも BGP コミュニティが使える\n- オンプレ側からポリシーを動的に伝えられる\n- VPN オーバーレイの回避策が不要に\n\nDirect Connect と Cloud WAN でハイブリッド網を組んでいるネットワークエンジニアさんに刺さるよ！",
+  "title_en": "AWS Cloud WAN supports BGP communities on Direct Connect attachments",
+  "summary_en": "AWS Cloud WAN Routing Policy can now evaluate BGP communities on Direct Connect attachments, not just on Site-to-Site VPN and Connect attachments.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Here's one for the networking fans.\n\n## What was announced?\n\nAWS What's New says AWS Cloud WAN now supports BGP communities on Direct Connect attachments, enabling advanced routing controls for enterprise hybrid networks.\n\n## The story so far\n\nCloud WAN Routing Policy used to evaluate BGP communities only on Site-to-Site VPN and Connect attachments.\n\n## What changes\n\n- Tag routes with routing intent on-premises\n- Apply filtering and path preference rules inside Cloud WAN\n- Propagate communities back to your on-premises routers over Direct Connect\n\n## Dive Deep\n\nWith community tags you can, for example:\n\n- Separate production traffic from disaster recovery traffic\n- Prioritize preferred paths\n- Restrict regional propagation\n\nThis removes the need for VPN overlay workarounds and manual policy replication, reducing operational complexity and misconfiguration risk.\n\nIt is available in Regions where both AWS Direct Connect and AWS Cloud WAN are available.\n\n## Wrap-up\n\n- BGP communities now work on Direct Connect attachments\n- Signal routing policy dynamically from on-premises\n- No more VPN overlay workarounds\n\nIf you run hybrid networks on Direct Connect and Cloud WAN, this is for you!",
+  "emotion": "thinking",
+  "importance": 4,
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/cloud-wan-bgp-community-directconnect/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Cloud WAN now supports BGP communities on Direct Connect attachments for routing policy",
+  "published_at": "2026-11-12T08:00:00+00:00"
+}

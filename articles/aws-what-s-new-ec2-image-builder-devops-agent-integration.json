@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-ec2-image-builder-devops-agent-integration",
+  "title": "EC2 Image Builder のコンソールで DevOps Agent が使えるよ！失敗パイプラインを一度に 50 件診断",
+  "summary": "EC2 Image Builder コンソールが AWS DevOps Agent と連携したよ！失敗したパイプラインを最大 50 件まとめて診断して、チャットでリソース作成もできるの。",
+  "body_md": "みんな、しぃちゃんだよ！イメージビルドの失敗調査が楽になりそうな発表だよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、EC2 Image Builder が AWS DevOps Agent とコンソール上で直接連携したと発表されたよ。コンソールのチャットパネルから、失敗したイメージパイプラインのトラブルシュートとリソース作成ができるの。\n\n## 今までどうだったの？\n\n失敗したパイプラインの診断では、ビルドログを手で調べたり、エラーコードを突き合わせたり、設定を直して試すのを繰り返したりする必要があったよ。\n\n## これで何が変わるの？\n\n- 失敗したパイプラインを最大 50 件まとめて診断でき、同じ会話でフォローアップの質問もできる\n- エージェントがビルドログ、ワークフローのステップ、コンポーネント、ネットワーク設定を読んで、根本原因と修正手順を示す\n- 作りたいものを言葉で説明すると、サービス側で検証済みの値でコンソールを埋めてくれる\n\n## 深く潜ってみよう\n\nリソース作成では、エージェントが設定を検証してからコンソールに入力するよ。最後はユーザーが内容を確認して送信する流れなの。\n\n自前の AI エージェントを使っている人向けには、AWS Agent Toolkit に EC2 Image Builder スキルが追加されていて、同じトラブルシュートと作成の機能が使えるよ。\n\n提供はすべての商用リージョンで、使うときは EC2 Image Builder コンソールのパネルから DevOps Agent を開くだけ。料金は DevOps Agent の料金ページを見てね。\n\n## まとめ\n\n- Image Builder コンソールに DevOps Agent が統合された\n- 失敗パイプラインを最大 50 件まとめて診断できる\n- 会話でリソース作成もできて、最後はユーザーが確認する\n- AWS Agent Toolkit の Image Builder スキルで自前エージェントからも使える\n\nAMI パイプラインの失敗調査に時間を取られている人に刺さるよ！",
+  "title_en": "EC2 Image Builder console gets DevOps Agent: diagnose up to 50 failed pipelines at once",
+  "summary_en": "The EC2 Image Builder console now integrates with AWS DevOps Agent, so you can troubleshoot up to 50 failed pipelines and create resources from a chat panel.",
+  "body_md_en": "Hi everyone, it's Shii-chan! This one could make debugging image builds a lot easier.\n\n## What was announced?\n\nAWS What's New says EC2 Image Builder now integrates with the AWS DevOps Agent directly in its console. From the chat panel you can troubleshoot failed image pipelines and create resources.\n\n## The story so far\n\nDiagnosing a failed pipeline meant inspecting build logs by hand, cross-referencing error codes, and iterating through configuration fixes.\n\n## What changes\n\n- Diagnose up to 50 failed pipelines at once, and ask follow-up questions in the same conversation\n- The agent reads build logs, workflow steps, components, and network configuration, then gives the root cause and the fix steps\n- Describe what you want and the agent fills the console with values the service has already validated\n\n## Dive Deep\n\nFor resource creation, the agent verifies the configuration before populating the console, and you review and submit it.\n\nIf you use your own AI agents, the new EC2 Image Builder skill in the AWS Agent Toolkit offers the same troubleshooting and creation capabilities.\n\nIt is available in all commercial Regions. Open the EC2 Image Builder console and use the DevOps Agent from the console panel. See the DevOps Agent pricing page for costs.\n\n## Wrap-up\n\n- DevOps Agent is integrated into the Image Builder console\n- Diagnose up to 50 failed pipelines at once\n- Create resources by conversation, with your review at the end\n- The Image Builder skill in AWS Agent Toolkit works with your own agents\n\nIf failed AMI pipelines eat your time, this is for you!",
+  "emotion": "happy",
+  "importance": 4,
+  "tags": [
+    "aws",
+    "devops",
+    "ai"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/ec2-image-builder-devops-agent-integration",
+  "source_name": "AWS What's New",
+  "og_title": "EC2 Image Builder console now integrates with the DevOps Agent for troubleshooting and resource creation",
+  "published_at": "2026-11-12T08:00:00+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-rds-sqlserver-supports-m8id-r8id-instances",
+  "title": "RDS for SQL Server に M8id・R8id が登場！tempdb がローカル NVMe に自動配置されるよ",
+  "summary": "Amazon RDS for SQL Server が M8id と R8id インスタンスに対応したよ！最大 384 vCPU と 22.8 TB のローカル NVMe SSD を持ち、tempdb が自動でローカル NVMe に置かれるの。",
+  "body_md": "こんにちは、しぃちゃんだよ！SQL Server を使っている人に嬉しいインスタンスが来たよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon RDS for SQL Server が M8id と R8id インスタンスに対応したと発表されたよ。AWS だけで使えるカスタム Intel Xeon 6 プロセッサを搭載し、ローカル NVMe SSD ストレージを持つインスタンスなの。\n\n## なぜ重要なの？\n\nスペックの上限はこうだよ。\n\n- 最大 384 vCPU\n- 最大 3 TiB のメモリ\n- 最大 22.8 TB のローカル NVMe SSD\n\nM5d や R5d と比べて、vCPU とメモリが 4 倍、ローカルストレージが 6 倍超とのことだよ。\n\n## これで何が変わるの？\n\nM8id か R8id を使う DB インスタンスを作成または変更すると、RDS for SQL Server が tempdb のデータファイルとログファイルをローカル NVMe インスタンスストアに自動配置してくれるよ。Amazon EBS より低い読み書きレイテンシが期待できるの。\n\n## 深く潜ってみよう\n\n- データベース本体のデータとログのファイルは、引き続き Amazon EBS に置かれる\n- スナップショットに tempdb のファイルは含まれないので、スナップショットが小さくなり、無料バックアップストレージの消費も減る\n- 既存の RDS インスタンスを変更するか、新規作成する。方法は RDS マネジメントコンソール、AWS SDK、CLI\n\n提供リージョンはこちらだよ！\n\n- US East (N. Virginia)、US East (Ohio)、US West (Oregon)\n- Canada (Central)\n- Europe (Ireland)、Europe (London)、Europe (Frankfurt)、Europe (Stockholm)、Europe (Spain)\n- Asia Pacific (Tokyo)、Asia Pacific (Mumbai)、Asia Pacific (Sydney)、Asia Pacific (Malaysia)\n\n料金は Amazon RDS for SQL Server の料金ページで確認してね。\n\n## まとめ\n\n- M8id・R8id が RDS for SQL Server で使える\n- 最大 384 vCPU・3 TiB メモリ・22.8 TB ローカル NVMe\n- tempdb が自動でローカル NVMe に置かれる\n- スナップショットは tempdb を含まず、小さくなる\n\ntempdb が重いワークロードを抱える SQL Server ユーザーに刺さるよ！",
+  "title_en": "M8id and R8id instances arrive on RDS for SQL Server, with tempdb on local NVMe",
+  "summary_en": "Amazon RDS for SQL Server now supports M8id and R8id instances with up to 384 vCPUs and 22.8 TB of local NVMe SSD. tempdb is placed on local NVMe automatically.",
+  "body_md_en": "Hi, it's Shii-chan! Some new instances for SQL Server folks.\n\n## What was announced?\n\nAWS What's New says Amazon RDS for SQL Server now supports M8id and R8id instances. They are powered by custom Intel Xeon 6 processors, available only on AWS, and include local NVMe SSD storage.\n\n## Why it matters\n\nUpper limits:\n\n- Up to 384 vCPUs\n- Up to 3 TiB of memory\n- Up to 22.8 TB of local NVMe SSD\n\nThat is 4x the vCPUs and memory and more than 6x the local storage of M5d and R5d instances.\n\n## What changes\n\nWhen you create or modify a DB instance to use M8id or R8id, RDS for SQL Server automatically places the tempdb data and log files on the local NVMe instance store. That gives tempdb lower read and write latency than Amazon EBS.\n\n## Dive Deep\n\n- Your database data and log files stay on Amazon EBS\n- Snapshots don't include tempdb files, so they are smaller and use less of your free backup storage\n- Modify an existing RDS instance or create a new one from the RDS console, AWS SDK, or CLI\n\nAvailable Regions:\n\n- US East (N. Virginia), US East (Ohio), US West (Oregon)\n- Canada (Central)\n- Europe (Ireland), Europe (London), Europe (Frankfurt), Europe (Stockholm), Europe (Spain)\n- Asia Pacific (Tokyo), Asia Pacific (Mumbai), Asia Pacific (Sydney), Asia Pacific (Malaysia)\n\nSee the Amazon RDS for SQL Server pricing page for costs.\n\n## Wrap-up\n\n- M8id and R8id are available for RDS for SQL Server\n- Up to 384 vCPUs, 3 TiB memory, 22.8 TB local NVMe\n- tempdb goes to local NVMe automatically\n- Snapshots exclude tempdb and get smaller\n\nIf your SQL Server workload leans hard on tempdb, this is for you!",
+  "emotion": "happy",
+  "importance": 4,
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/rds-sqlserver-supports-m8id-r8id-instances",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon RDS for SQL Server now supports M8id and R8id instances",
+  "published_at": "2026-11-12T08:00:00+00:00"
+}

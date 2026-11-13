@@ -1,0 +1,20 @@
+{
+  "slug": "openai-news-gondola",
+  "title": "Gondola は Codex でエンジニアの出力が 50% 増！売上は前年比 2 倍超の導入事例",
+  "summary": "クリエイターの実績をクレジット付きで見せるプラットフォーム Gondola の導入事例だよ。Codex と ChatGPT で、リード エンジニアの月間出力が 50% 増えたんだって。",
+  "body_md": "みんな、しぃちゃんだよ！今日は OpenAI の News に載った導入事例を紹介するね。\n\n## なにが発表されたの？\n\nOpenAI の News に、Gondola の導入事例が公開されたよ。Gondola は、クリエイターが自分の作品と成果を見せて、次の仕事につなげるためのプラットフォームなの。創業者の Jared Kleinstein さんが、自分のクリエイティブ制作会社で、作品に正しいクレジットが付かない問題に気づいたのがきっかけなんだって。\n\n## なぜ重要なの？\n\n小さなチームでは、製品開発や運用にかけられる工数が限られているよね。Gondola も、ちょっとした実験がコア機能の優先度と取り合いになったり、情報探しや下書きにツールを行き来したりしていたそうだよ。\n\n## これで何が変わるの？\n\n事例で語られている成果はこれだよ。\n\n- チーム全体の月間エンジニアリング出力が 25% 増\n- リード エンジニアの出力が 50% 増\n- 会社の売上が前年比で 2 倍超\n\n## 深く潜ってみよう\n\n使い方の具体例をまとめるね。\n\n- ビジネス開発やリーダーシップのメンバーが、Codex Cloud でコードベースを調べ、画面やワークフローのプロトタイプを作り、エンジニアが手を付ける前に動く最初のバージョンまで進める\n- 創業者を含む 2 人が、初めてのコードのコントリビュートをメインのコードベースにマージした\n- 例として、企業がクリエイターを探し、応募者をレビューし、プロジェクトと予算を管理するツール Programs を、Codex でプロトタイプしてからエンジニアに渡して仕上げた\n- エンジニアは Codex を CLI やエディタツールで使い、GitHub では pull request のレビューに使う\n- Codex はリポジトリ、開発環境、Slack につないであり、アーキテクチャ、セキュリティ、データの扱い、本番の準備はエンジニアが責任を持つ\n\nJared さんは、Codex が開発時間を数日から数週間は節約し、手で書くより少ないバグで Programs を出せたと見積もっているよ。\n\n## まとめ\n\n- Gondola は Codex と ChatGPT で製品開発と日々の運用を速くした\n- チームの出力は 25% 増、リード エンジニアは 50% 増、売上は 2 倍超\n- ビジネス側のメンバーがプロトタイプを作ってからエンジニアに渡す流れが定着\n- 本番に出す責任は、引き続きエンジニアが持つ\n\n小さなチームで開発の幅を広げたい人に刺さるよ！",
+  "title_en": "Gondola's Codex story: lead engineer output up 50% and revenue more than doubled",
+  "summary_en": "A customer story from OpenAI News: Gondola, a platform that helps creatives get credit and get hired, says Codex raised its lead engineer's output by 50%.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today I'm covering a customer story from OpenAI News.\n\n## What was announced?\n\nOpenAI News published a customer story about Gondola, a platform that helps creatives show what they made and turn it into their next opportunity. Founder Jared Kleinstein started it after noticing that makers on social media weren't getting proper credit.\n\n## Why it matters\n\nA small team has limited capacity for product and operational work. At Gondola, even small experiments competed with core priorities, and finding information and drafting work meant sifting through tools.\n\n## What changes\n\nThe results the story reports:\n\n- Monthly engineering output up 25% across the team\n- Up 50% for the lead engineer\n- Revenue more than doubled year over year\n\n## Dive Deep\n\nHow they use it:\n\n- Business development and leadership staff use Codex Cloud to explore the codebase, prototype interfaces or workflows, and get to a functional first version before an engineer steps in\n- Two people, including the founder, merged their first-ever code contributions\n- As an example, Programs, a tool for finding creatives, reviewing applicants, and managing projects and budgets, was prototyped in Codex and then refined by engineers\n- Engineers use Codex in the CLI and editor tools, and in GitHub to review pull requests\n- Codex is connected to repositories, development environments, and Slack, while engineers stay responsible for architecture, security, data handling, and production readiness\n\nJared estimates Codex saved days, if not weeks, of development time and helped launch Programs with fewer bugs than hand coding.\n\n## Wrap-up\n\n- Gondola sped up product work and daily operations with Codex and ChatGPT\n- Output up 25% for the team, 50% for the lead engineer, revenue more than 2x\n- Business staff now prototype before handing off to engineers\n- Engineers still own what goes to production\n\nIf you want a small team to build more, this is for you!",
+  "emotion": "happy",
+  "importance": 1,
+  "tags": [
+    "openai",
+    "ai",
+    "business"
+  ],
+  "source_url": "https://openai.com/business/customer-stories/gondola",
+  "source_name": "OpenAI News",
+  "og_title": "Gondola doubles revenue as its team builds more with Codex",
+  "published_at": "2026-11-12T12:00:00+00:00"
+}

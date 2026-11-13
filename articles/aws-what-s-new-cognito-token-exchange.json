@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-cognito-token-exchange",
+  "title": "Amazon Cognito が OAuth 2.0 トークン交換 (RFC 8693) に対応！エージェントに絞ったトークンを渡せるよ",
+  "summary": "Amazon Cognito が RFC 8693 のトークン交換に対応したよ！ユーザーの代わりに動くサービスや AI エージェントが、下流サービス向けに範囲を絞った新しいトークンを得られるの。",
+  "body_md": "やっほー、しぃちゃんだよ！エージェント時代の認可まわりで大事な更新が来たよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Cognito が OAuth 2.0 トークン交換 (RFC 8693) に対応したと発表されたよ。ユーザーの代わりに動くサービスや AI エージェントが、ユーザーのトークンを、特定の下流サービス向けに範囲を絞った新しいトークンと交換できるの。\n\n## 今までどうだったの？\n\nユーザーの代わりに別のサービスを呼ぶサービスは、ユーザーの元のトークンをそのまま転送するか、自前でトークン発行の仕組みを作って維持する必要があったよ。\n\n## これで何が変わるの？\n\n新しく発行するトークンは、次の性質を持たせられるよ。\n\n- 元のトークンよりスコープが狭い\n- 単一のオーディエンスに紐づく\n- リフレッシュトークンが付かない\n\nアクタートークンを含めると、Cognito が仲介者を示す `act` クレームを追加するよ。だから下流のサービスは、エージェントがユーザーの代わりに行ったリクエストと、ユーザー本人が直接行ったリクエストを区別できるの。\n\n## 深く潜ってみよう\n\n例として、Model Context Protocol (MCP) サーバーが、ユーザーのトークンを、バックエンド API を呼ぶための範囲を絞ったトークンと交換する場面が挙げられているよ。このとき `act` クレームに MCP サーバーがアクターとして記録されるの。\n\n交換の方法は 2 つだよ。\n\n- トークンエンドポイントを使う\n- 新しい `GetDerivedToken` API を使う\n\n提供は Essentials と Plus のフィーチャープランで、Cognito が使えるすべてのリージョンだよ。詳しくは Cognito 開発者ガイドの、下流サービス向けのトークン交換のページを見てね。\n\n## まとめ\n\n- Cognito が RFC 8693 のトークン交換に対応\n- 範囲が狭く、単一オーディエンスで、リフレッシュトークンなしのトークンを発行できる\n- `act` クレームで、エージェント経由のリクエストを区別できる\n- トークンエンドポイントか `GetDerivedToken` API で交換する\n\nMCP サーバーやエージェントに、ユーザーの権限を安全に委譲したい開発者さんに刺さるよ！",
+  "title_en": "Amazon Cognito adds OAuth 2.0 token exchange (RFC 8693) for scoped agent tokens",
+  "summary_en": "Amazon Cognito now supports OAuth 2.0 token exchange (RFC 8693), so services and AI agents acting for a user can get a narrower token for a specific downstream service.",
+  "body_md_en": "Hi, it's Shii-chan! An important authorization update for the agent era.\n\n## What was announced?\n\nAWS What's New says Amazon Cognito now supports OAuth 2.0 token exchange (RFC 8693). A service or AI agent acting on a user's behalf can exchange the user's token for a new token scoped to a specific downstream service.\n\n## The story so far\n\nA service that called another service on a user's behalf had to forward the user's original token or build and maintain its own token minting logic.\n\n## What changes\n\nThe new token can be:\n\n- Narrower in scope than the original token\n- Bound to a single audience\n- Issued without a refresh token\n\nWhen you include an actor token, Cognito adds an `act` claim that identifies the intermediary. Downstream services can then tell a request an agent made on a user's behalf from one the user made directly.\n\n## Dive Deep\n\nFor example, a Model Context Protocol (MCP) server can exchange a user's token for a narrowly scoped token to call a backend API, with the `act` claim recording the MCP server as the actor.\n\nTwo ways to exchange:\n\n- Through the token endpoint\n- With the new `GetDerivedToken` API\n\nIt is available on the Essentials and Plus feature plans in all Regions where Cognito is available. See \"exchanging tokens for downstream services\" in the Cognito Developer Guide.\n\n## Wrap-up\n\n- Cognito supports RFC 8693 token exchange\n- Issue narrow, single-audience tokens without refresh tokens\n- The `act` claim separates agent requests from direct user requests\n- Exchange via the token endpoint or `GetDerivedToken`\n\nIf you want to delegate user permissions safely to MCP servers and agents, this is for you!",
+  "emotion": "smug",
+  "importance": 4,
+  "tags": [
+    "aws",
+    "security",
+    "ai"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/cognito-token-exchange/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Cognito now supports OAuth 2.0 token exchange",
+  "published_at": "2026-11-12T22:00:00+00:00"
+}

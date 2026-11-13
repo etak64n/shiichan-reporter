@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-aws-quick-structured-data-source-restrictions",
+  "title": "AWS Quick で構造化データソースの作成・共有を制限できるようになったよ",
+  "summary": "AWS Quick のカスタム権限で、ユーザーが作成・更新・共有できるデータソースの種類を管理者が制限できるようになったよ！GA になったの。",
+  "body_md": "おつかれさま、しぃちゃんだよ！データガバナンスまわりの更新だよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Quick の構造化データコネクタ制限が、カスタム権限として一般提供 (GA) になったと発表されたよ。\n\n## これで何が変わるの？\n\n管理者が、ユーザーが作成・更新・共有できるデータソースの種類をきめ細かく制御できるようになったの。データガバナンスの要件を守りながら、セルフサービス分析も続けられるよ。\n\n## 深く潜ってみよう\n\n- 設定できるのは Enterprise エディション\n- カスタム権限プロファイルを、Quick の UI、API、AWS CLI から設定する\n- 作成、更新、共有の制限は、それぞれ独立して設定できる\n\n使い方の例はこうだよ。\n\n- Amazon Redshift のデータソースは作成を許可しつつ、ファイルアップロードのデータソースは作成を禁止する\n- 特定のコネクタについて、データソースの共有を禁止する\n\nすべてのデータソース種別に一律でかける制限よりも、細かく決められるよ。対応リージョンは、AWS Quick がサポートするリージョンだよ。\n\n## まとめ\n\n- 構造化データコネクタの制限が GA\n- 作成・更新・共有を独立して制限できる\n- Enterprise エディションで、UI・API・CLI から設定\n\nBI 基盤のガバナンスを任されている管理者さんに刺さるよ！",
+  "title_en": "AWS Quick lets admins restrict which structured data sources users can create and share",
+  "summary_en": "AWS Quick structured data connector restrictions are now generally available through custom permissions, giving admins granular control over data source creation, updates, and sharing.",
+  "body_md_en": "Hi, it's Shii-chan! An update about data governance.\n\n## What was announced?\n\nAWS What's New says structured data connector restrictions in AWS Quick, delivered through custom permissions, are now generally available.\n\n## What changes\n\nAdministrators get granular control over which types of data sources users can create, update, or share. Organizations can enforce data governance while keeping self-service analytics.\n\n## Dive Deep\n\n- Available in the Enterprise edition\n- Configure custom permissions profiles through the Quick UI, APIs, or AWS CLI\n- Create, update, and share restrictions can be set independently\n\nExamples:\n\n- Allow users to create Amazon Redshift data sources while blocking file-upload data sources\n- Prevent sharing of data sources for a particular connector\n\nThis is more precise than restrictions that apply to all data source types. It is available in all supported AWS Quick Regions.\n\n## Wrap-up\n\n- Structured data connector restrictions are GA\n- Restrict create, update, and share independently\n- Enterprise edition, via UI, API, and CLI\n\nIf you own BI governance, this is for you!",
+  "emotion": "smug",
+  "importance": 3,
+  "tags": [
+    "aws",
+    "security"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-quick-structured-data-source-restrictions/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Quick enhances granular governance with the ability to restrict structured data sources",
+  "published_at": "2026-11-12T09:00:00+00:00"
+}

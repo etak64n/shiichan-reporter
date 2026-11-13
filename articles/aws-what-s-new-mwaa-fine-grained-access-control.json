@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-mwaa-fine-grained-access-control",
+  "title": "MWAA に細かなアクセス制御が登場！IAM Identity Center 連携とマルチチーム環境",
+  "summary": "Amazon MWAA が IAM Identity Center 連携とマルチチーム環境で、きめ細かなアクセス制御に対応したよ！DAG や接続の単位で権限を絞れるの。",
+  "body_md": "みんな、しぃちゃんだよ！Airflow を複数チームで使っている人に朗報だよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Managed Workflows for Apache Airflow (MWAA) が、きめ細かなアクセス制御に対応したと発表されたよ。誰がどのワークフローやリソースにアクセスできるかを、管理者が細かく決められるの。\n\n## これで何が変わるの？\n\n次の 2 つの機能で実現されているよ。\n\n- IAM Identity Center 連携: 企業の ID プロバイダーで Apache Airflow UI にサインインできる\n- マルチチーム環境: 1 つの MWAA 環境を複数チームで共有できる\n\n## 深く潜ってみよう\n\nIAM Identity Center 連携では、リクエストごとに認可が評価されるよ。IAM Identity Center の許可セットに付けた IAM ポリシーを使い、条件キーで次の単位にアクセスを絞れるの。\n\n- リソースの種類 (DAG、接続、変数、プールなど)\n- アクション\n- 特定のリソース ID\n\nマルチチーム環境の仕組みはこうだよ。\n\n- チームごとに Amazon S3 上の専用 DAG フォルダを持つ\n- ユーザーには、共有 DAG と、IAM Identity Center のグループ所属に基づく自分のチームの DAG だけが見える\n- 共有インフラでコストを下げ、環境設定を一度だけ行えば管理も簡単になる\n\n注意点として、マルチチーム環境は Apache Airflow のマルチチーム機能に基づいていて、その機能は現在プレビューなんだって。提供リージョンは、MWAA が使えるすべてのリージョンだよ。\n\n## まとめ\n\n- IAM Identity Center 連携で、会社の ID でサインインでき、リソース単位で認可できる\n- マルチチーム環境で、1 つの環境を複数チームで共有できる\n- Airflow 側のマルチチーム機能はプレビュー\n\n複数チームで Airflow を共有したい基盤チームに刺さるよ！",
+  "title_en": "Amazon MWAA gets fine-grained access control with IAM Identity Center and multi-team environments",
+  "summary_en": "Amazon MWAA now supports fine-grained access control through IAM Identity Center integration and multi-team environments, scoping access by DAG, connection, and more.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Good news if several teams share Airflow.\n\n## What was announced?\n\nAWS What's New says Amazon Managed Workflows for Apache Airflow (MWAA) now supports fine-grained access control, giving administrators precise control over who can access which workflows and resources.\n\n## What changes\n\nIt comes from two capabilities:\n\n- IAM Identity Center integration: sign in to the Airflow UI with your corporate identity provider\n- Multi-team environments: several teams share one MWAA environment\n\n## Dive Deep\n\nWith IAM Identity Center integration, authorization is evaluated per request. IAM policies attached to Identity Center permission sets use condition keys to scope access by:\n\n- Resource type (DAGs, connections, variables, pools, and more)\n- Action\n- Specific resource ID\n\nHow multi-team environments work:\n\n- Each team gets its own DAG folder in Amazon S3\n- Users see only shared DAGs plus their own teams' DAGs, based on IAM Identity Center group membership\n- Shared infrastructure reduces cost, and environment settings are configured once\n\nNote that multi-team environments are based on the Apache Airflow multi-team feature, which is currently in preview. Both are available in all Regions where MWAA is available.\n\n## Wrap-up\n\n- Identity Center integration enables corporate sign-in and per-resource authorization\n- Multi-team environments let teams share one environment\n- The underlying Airflow multi-team feature is in preview\n\nIf you run a shared Airflow platform, this is for you!",
+  "emotion": "happy",
+  "importance": 4,
+  "tags": [
+    "aws",
+    "security",
+    "devops"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/mwaa-fine-grained-access-control/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon MWAA now supports fine-grained access control with IAM Identity Center and multi-team environments",
+  "published_at": "2026-11-12T18:00:00+00:00"
+}
