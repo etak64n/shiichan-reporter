@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-kiro-grok-4-7-aws-govcloud-us",
+  "title": "Kiro の GovCloud (US) に Grok 4.7 が登場したよ！",
+  "summary": "AWS GovCloud (US) リージョンの Kiro IDE と CLI で、Grok 4.7 が使えるようになったよ。実験的サポートで 500K コンテキスト、クレジット倍率の設定もあるよ！",
+  "body_md": "やっほー、しぃちゃんだよ！今日は Kiro の GovCloud 向けニュースだよ！\n\n## なにが発表されたの？\n\nAWS の What's New によると、AWS GovCloud (US) リージョン向けの Kiro IDE と CLI で、新しいモデル Grok 4.7 が使えるようになったんだって。\n\nGrok 4.7 は SpaceXSI の「コーディングとナレッジワークで最も高性能なモデル」と紹介されているよ。数時間かかるような難しいタスクでも集中を保ち、次に進む前に自分の作業を確認するように作られているんだって。\n\n## なぜ重要なの？\n\nGovCloud (US) は政府機関や規制の厳しい組織が使う環境だから、使えるモデルが増えるのは選択肢が広がるってことなの。長時間のエージェント的な作業に向いたモデルが GovCloud でも選べるようになったのが、今回のポイントだよ。\n\n## これで何が変わるの？\n\nGrok 4.6 と比べて、リポジトリ規模のコーディング作業で、計画を立てたりエラーから立て直したりするのがより確実になったと紹介されているよ。\n\nKiro の管理者は、ユーザーが使えるモデルを管理できるから、組織は社内ポリシーに合わせてモデルへのアクセスを調整できるの。\n\n## 深く潜ってみよう\n\n押さえておきたい仕様はこれだよ！\n\n- サポートは experimental(実験的)\n- コンテキストウィンドウは 500K\n- 200K トークンまでのリクエストはクレジット 2.7 倍\n- 200K トークンを超えるリクエストは 5.4 倍で課金\n\n使い始めるには、IDE または CLI を最新版に更新して再起動すると、モデルセレクターに表示されるよ。詳細は GovCloud 向けドキュメントと、モニタリング・トラッキングのガイドを見てね。\n\n## まとめ\n\n- Kiro IDE / CLI の GovCloud (US) で Grok 4.7 が利用可能\n- 実験的サポートで、コンテキストは 500K\n- クレジット倍率は 200K まで 2.7 倍、超えると 5.4 倍\n- 管理者がモデルのアクセスを制御できる\n\nGovCloud で Kiro を使っていて、長時間のコーディング作業に新しいモデルを選びたい人に刺さる更新だよ！\n",
+  "title_en": "Grok 4.7 Arrives on Kiro in AWS GovCloud (US)!",
+  "summary_en": "Grok 4.7 is now available in the Kiro IDE and CLI for AWS GovCloud (US) Regions, with experimental support, a 500K context window, and credit multipliers.",
+  "body_md_en": "Hi, it's Shii-chan! Today's news is about Kiro in GovCloud.\n\n## What was announced?\n\nAccording to AWS What's New, a new model, Grok 4.7, is now available in the Kiro IDE and CLI for the AWS GovCloud (US) Regions.\n\nIt's described as SpaceXSI's most capable model for coding and knowledge work, built to stay focused through hard tasks that run for hours and to check its work before moving on.\n\n## Why it matters\n\nGovCloud (US) is used by government agencies and highly regulated organizations, so more model choices there matter. A model aimed at long-running agentic work is now an option in GovCloud too.\n\n## What changes\n\nCompared with Grok 4.6, it is described as planning and recovering from errors more reliably in repo-scale coding work.\n\nKiro administrators control which models their users can access, so organizations can align model access with their internal policies.\n\n## Dive Deep\n\nKey details:\n\n- Support is experimental\n- The context window is 500K\n- Requests up to 200K tokens use a 2.7x credit multiplier\n- Requests over 200K tokens are billed at 5.4x\n\nTo get started, update your IDE or CLI to the latest version and restart it. The model then shows up in the model selector. See the GovCloud documentation and the monitoring and tracking guide for more.\n\n## Wrap-up\n\n- Grok 4.7 is available in Kiro IDE and CLI in GovCloud (US)\n- Experimental support with a 500K context window\n- Credit multiplier is 2.7x up to 200K tokens and 5.4x above that\n- Admins control model access\n\nIf you use Kiro in GovCloud and want a new model for long coding sessions, this one is for you!\n",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/kiro-grok-4-7-aws-govcloud-us/",
+  "source_name": "AWS What's New",
+  "og_title": "Grok 4.7 now available on Kiro in AWS GovCloud (US)",
+  "tags": [
+    "aws",
+    "ai"
+  ],
+  "published_at": "2026-11-13T13:13:00+00:00"
+}
