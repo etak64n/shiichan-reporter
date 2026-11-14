@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-aws-marketplace-vat-credit-notes",
+  "title": "AWS Marketplace の VAT クレジットノートがセルフサービスで出せるようになったよ！",
+  "summary": "AWS Marketplace の出品者が、返金された deemed supply 取引の VAT クレジットノートを、AWS Partner Central でセルフサービス提出できるようになったよ！",
+  "body_md": "おつかれさま、しぃちゃんだよ！今日は AWS Marketplace で販売しているみんな向けのお知らせだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Marketplace の出品者が、返金された deemed supply 取引の VAT クレジットノートを AWS Partner Central でセルフサービス提出できるようになったと発表されたよ！\n\n## 今までどうだったの？\n\n対象の取引では VAT が出品者に支払われていて、あとで購入者に返金されたときは、対応するクレジットノートを出すために AWS へ連絡する必要があったの。返金後の VAT 書類まわりが手間だったんだよね。\n\n## これで何が変わるの？\n\n返金後の VAT 書類の提出が、Partner Central の中で完結するよ。できることはこれだよ。\n\n- VAT on deemed supply セクションで、対象の返金明細を見る\n- クレジットノートでカバーする返金を選ぶ\n- PDF か、該当する電子インボイス形式をアップロードする\n- 提出のステータスを追跡する\n\n## 深く潜ってみよう\n\n- 該当する場合は、複数の返金を 1 枚のクレジットノートにまとめられる\n- 関連する財務上の調整は、Seller Insights のレポートで確認できる\n- 対象は、Channel Partner Private Offer (CPPO) 取引を含む対象の AWS Marketplace 取引\n- 対応地域は、サポートされている EU 加盟国、ノルウェー、英国\n- 国ごとの請求書・電子インボイスの要件は、引き続き適用される\n\n使い始めるときは、AWS Partner Central にサインインして、Settings → Tax information → VAT on deemed supply へ進んでね。\n\n## まとめ\n\n- VAT クレジットノートをセルフサービスで提出できる\n- 複数の返金を 1 枚にまとめられる場合がある\n- Seller Insights で調整内容を確認できる\n- EU の対象国、ノルウェー、英国が対象で、国ごとの要件は引き続き必要\n\n対象地域で Marketplace に出品していて、経理の手間を減らしたい出品者のみんなに刺さるよ！",
+  "title_en": "AWS Marketplace Sellers Can Now Self-Serve VAT Credit Notes!",
+  "summary_en": "AWS Marketplace sellers can now submit VAT credit notes for refunded deemed supply transactions through a self-service experience in AWS Partner Central.",
+  "body_md_en": "Hi, it's Shii-chan! Today's news is for everyone who sells on AWS Marketplace!\n\n## What was announced?\n\nAccording to AWS What's New, AWS Marketplace sellers can now submit VAT credit notes for refunded deemed supply transactions through a self-service experience in AWS Partner Central.\n\n## The story so far\n\nFor eligible transactions, VAT was disbursed to sellers. When a buyer was later refunded, sellers had to contact AWS to submit the corresponding credit note, which made post-refund VAT documentation a hassle.\n\n## What changes\n\nPost-refund VAT paperwork now stays inside Partner Central. Sellers can:\n\n- View eligible refund line items in the VAT on deemed supply section\n- Select the refunds covered by a credit note\n- Upload a PDF or the applicable electronic invoice format\n- Track the submission status\n\n## Dive Deep\n\n- Where applicable, multiple eligible refunds can be consolidated into a single credit note\n- The associated financial adjustment can be reviewed in Seller Insights reporting\n- It covers eligible AWS Marketplace transactions, including Channel Partner Private Offer (CPPO) transactions\n- Supported locations are supported EU member states, Norway, and the United Kingdom\n- Country-specific invoicing and electronic-invoicing requirements continue to apply\n\nTo get started, sign in to AWS Partner Central and go to Settings → Tax information → VAT on deemed supply.\n\n## Wrap-up\n\n- VAT credit notes can be submitted via self-service\n- Multiple refunds can be consolidated where applicable\n- Adjustments show up in Seller Insights\n- Covers supported EU states, Norway, and the UK; local requirements still apply\n\nThis is for Marketplace sellers in these regions who want less paperwork!",
+  "emotion": "happy",
+  "importance": 1,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-marketplace-vat-credit-notes/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Marketplace now supports VAT credit notes for deemed supply refunds",
+  "tags": [
+    "aws",
+    "business"
+  ],
+  "published_at": "2026-11-13T08:00:00+00:00"
+}

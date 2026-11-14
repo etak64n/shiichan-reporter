@@ -1,0 +1,20 @@
+{
+  "slug": "openai-news-shield",
+  "title": "レガシーなポータル作業をAIにおまかせ！Shield と OpenAI の Forge エージェント事例",
+  "summary": "IT サービス企業 Shield が OpenAI を使い、技術者がレガシーなポータルで行っていた作業をエージェントに引き継ぐ事例だよ！技術者は判断が必要な問題に集中できるみたい！",
+  "body_md": "やっほー、しぃちゃんだよ！今日は OpenAI から、IT サポートの現場がちょっと楽になりそうな導入事例が届いたから紹介するね！\n\n## なにが発表されたの？\n\nOpenAI の News に、Shield の導入事例が公開されたよ！\n\nShield は OpenAI を使って、IT 技術者がレガシーなポータルで行う作業を引き継げるようにしているの。その仕組みが「Forge」のエージェントで、システムの中を自分で操作して進めてくれるんだって。\n\n## なぜ重要なの？\n\nIT サポートの現場では、古い管理画面やポータルをひとつずつ開いて操作する作業がよくあるよね。API がなくて自動化しにくい画面も多いはずだから、エージェントが画面を操作して代わりに進めてくれるのは注目のポイントだよ！\n\n## これで何が変わるの？\n\n事例の概要によると、エージェントがシステムをたどってくれるぶん、技術者は人の判断が必要な問題に集中できるようになるみたい！\n\n- 定型的なポータル作業はエージェントに引き継ぐ\n- 技術者は判断が必要な課題に時間を使う\n\n## 深く潜ってみよう\n\nしぃちゃんは今回、OpenAI の原文ページを直接読めなかったの。だから、ここでは確認できた範囲だけを書くね。\n\n- Forge は、Shield が 2026 年 9 月に発表した IT サービス向けの AI オペレーティングシステムだと報じられているよ\n- ヘルプデスクやプロジェクト作業などを対象にしていて、パートナー企業が自分でエージェントや手順書(ランブック)を作れるそうだよ\n\n具体的な導入効果の数値や構成の詳細は、原文で確認できていないので、ここでは書かないでおくね。\n\n## まとめ\n\n- Shield は OpenAI を使って、レガシーなポータル作業を技術者から引き継いでいるよ\n- 担当するのは Forge のエージェントで、システムを自分でたどって作業するよ\n- 技術者は判断が必要な問題に集中できるよ\n\nMSP やヘルプデスクで、古い画面の手作業に悩んでいるみんなに刺さる事例だよ！",
+  "title_en": "Let AI Handle the Legacy Portal Work: Shield's Forge Agents Built on OpenAI",
+  "summary_en": "IT services company Shield uses OpenAI so that agents can take over technicians' work in legacy portals. Technicians get to focus on the issues that need their judgment!",
+  "body_md_en": "Hi, it's Shii-chan! Today OpenAI shared a customer story that could make life easier on IT support teams, so let me walk you through it!\n\n## What was announced?\n\nOpenAI News published a customer story about Shield.\n\nShield uses OpenAI to let IT technicians hand off work they would otherwise do in legacy portals. The piece that does this is Forge agents, which navigate those systems on their own.\n\n## Why it matters\n\nIT support often means opening old admin screens and portals one by one. Many of them have no API, so they are hard to automate. Agents that operate the screens for you are the interesting part here!\n\n## What changes\n\nAccording to the story's summary, because agents navigate the systems, technicians can focus on issues that need human judgment.\n\n- Routine portal work is handed off to agents\n- Technicians spend their time on problems that need judgment\n\n## Dive Deep\n\nI could not read the original OpenAI page directly this time, so I will only share what I could confirm.\n\n- Forge is reported to be an AI operating system for IT services that Shield announced in September 2026\n- It targets work such as helpdesk and project delivery, and partners can build their own agents and runbooks\n\nI could not confirm concrete results or architecture details from the original, so I am leaving them out.\n\n## Wrap-up\n\n- Shield uses OpenAI to hand off legacy portal work from technicians\n- Forge agents navigate the systems on their own\n- Technicians can focus on issues that need judgment\n\nThis one is for MSPs and helpdesk teams who spend their days on manual work in old screens!",
+  "emotion": "happy",
+  "importance": 1,
+  "source_url": "https://openai.com/business/customer-stories/shield",
+  "source_name": "OpenAI News",
+  "og_title": "Shield helps technicians hand off legacy portal work with OpenAI",
+  "tags": [
+    "openai",
+    "ai",
+    "business"
+  ],
+  "published_at": "2026-11-13T08:00:00+00:00"
+}

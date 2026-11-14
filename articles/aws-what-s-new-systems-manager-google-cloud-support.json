@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-systems-manager-google-cloud-support",
+  "title": "Systems Manager が Google Cloud の VM もまとめて管理！エージェント手動インストール不要だよ",
+  "summary": "AWS Systems Manager Cloud Connector が Google Cloud に対応して、既存の VM に SSM Agent を大規模に自動デプロイし、EC2 やオンプレ、Azure と同じ画面で管理できるようになったよ！",
+  "body_md": "やっほー、しぃちゃんだよ！マルチクラウドを運用しているみんな、これは気になるニュースだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Systems Manager Cloud Connector が Google Cloud に対応したと発表されたよ！既存の Google Cloud VM を、手動でエージェントを入れずに Systems Manager につなげられるの。\n\n## 今までどうだったの？\n\n複数のクラウドで VM を管理するときは、環境ごとに設定を調整して用意する必要があることが多かったんだよね。\n\n## これで何が変わるの？\n\nCloud Connector for Google Cloud を使うと、Google Cloud VM に SSM Agent を大規模に自動デプロイできるよ。つながった VM は、EC2 インスタンス、オンプレミスのサーバー、Azure などと同じ統合ビューに並ぶの。\n\nそこから、次の機能を AWS、オンプレミス、Azure、Google Cloud をまたいで 1 つのワークフローで使えるよ！\n\n- Session Manager\n- Automation のランブック\n- Run Command\n- State Manager\n- Patch Manager\n- Inventory\n\n## 深く潜ってみよう\n\n使えるリージョンはこれだよ。\n\n- アフリカ: ケープタウン\n- アジアパシフィック: 香港、ハイデラバード、ジャカルタ、マレーシア、メルボルン、ムンバイ、ニュージーランド、大阪、ソウル、シンガポール、シドニー、台北、タイ、東京\n- カナダ: 中部、カルガリー\n- ヨーロッパ: フランクフルト、アイルランド、ロンドン、ミラノ、パリ、スペイン、ストックホルム、チューリッヒ\n- イスラエル: テルアビブ\n- メキシコ: 中部\n- 南米: サンパウロ\n- 米国東部: バージニア北部、オハイオ\n- 米国西部: 北カリフォルニア、オレゴン\n\n## まとめ\n\n- Cloud Connector が Google Cloud に対応した\n- SSM Agent を大規模に自動デプロイできる\n- EC2、オンプレ、Azure と同じビューで管理できる\n- Session Manager や Patch Manager など主要機能を横断して使える\n\nマルチクラウドの運用を標準化したい運用チームのみんなに刺さるよ！",
+  "title_en": "Systems Manager Now Manages Google Cloud VMs Too, No Manual Agent Install!",
+  "summary_en": "AWS Systems Manager Cloud Connector now supports Google Cloud: deploy the SSM Agent to existing VMs at scale and manage them alongside EC2, on-premises, and Azure resources.",
+  "body_md_en": "Hi, it's Shii-chan! If you run multiple clouds, this one is worth a look!\n\n## What was announced?\n\nAccording to AWS What's New, AWS Systems Manager Cloud Connector now supports Google Cloud. You can connect existing Google Cloud VMs to Systems Manager without installing agents manually.\n\n## The story so far\n\nManaging VMs across multiple cloud providers often meant coordinating and setting up configurations separately in each environment.\n\n## What changes\n\nWith Cloud Connector for Google Cloud, you can automatically deploy the SSM Agent to Google Cloud VMs at scale. Connected VMs appear alongside EC2 instances, on-premises servers, and Azure resources in a unified view.\n\nFrom there you can use these across AWS, on-premises, Azure, and Google Cloud in a single workflow:\n\n- Session Manager\n- Automation runbooks\n- Run Command\n- State Manager\n- Patch Manager\n- Inventory\n\n## Dive Deep\n\nCloud Connector for Google Cloud is available in:\n\n- Africa: Cape Town\n- Asia Pacific: Hong Kong, Hyderabad, Jakarta, Malaysia, Melbourne, Mumbai, New Zealand, Osaka, Seoul, Singapore, Sydney, Taipei, Thailand, Tokyo\n- Canada: Central, Calgary\n- Europe: Frankfurt, Ireland, London, Milan, Paris, Spain, Stockholm, Zurich\n- Israel: Tel Aviv\n- Mexico: Central\n- South America: Sao Paulo\n- US East: N. Virginia, Ohio\n- US West: N. California, Oregon\n\n## Wrap-up\n\n- Cloud Connector now supports Google Cloud\n- The SSM Agent can be deployed at scale automatically\n- VMs show up in the same view as EC2, on-premises, and Azure\n- Key tools like Session Manager and Patch Manager work across clouds\n\nThis is for ops teams who want to standardize multicloud management!",
+  "emotion": "energetic",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/systems-manager-google-cloud-support/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Systems Manager simplifies onboarding of Google Cloud VMs for centralized management",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "devops"
+  ],
+  "published_at": "2026-11-13T08:00:00+00:00"
+}

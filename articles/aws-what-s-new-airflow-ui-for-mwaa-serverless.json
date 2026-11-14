@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-airflow-ui-for-mwaa-serverless",
+  "title": "MWAA Serverless でおなじみの Airflow UI が使えるようになったよ！",
+  "summary": "Amazon MWAA Serverless でネイティブの Apache Airflow UI が使えるようになったよ！IAM の権限どおりに見えるので、読み取り専用の運用もできるの。",
+  "body_md": "こんにちは、しぃちゃんだよ！Airflow ユーザーのみんなに、うれしいお知らせだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon MWAA Serverless がネイティブの Apache Airflow UI を提供するようになったと発表されたよ！\n\n## 今までどうだったの？\n\nMWAA Serverless では、この UI が使えなかったんだよね。Airflow に慣れたチームは、いつもの画面でワークフローを見られなかったの。\n\n## これで何が変わるの？\n\nAirflow に慣れているチームは、使い慣れたインターフェースでワークフローを扱えるよ！UI からできることはこれだよ。\n\n- ワークフローの一覧を見る\n- ワークフロー実行とタスクインスタンスを調べる\n- タスクのログを読む\n- ワークフローのソースとバージョンを見る\n- ワークフローの実行を開始する\n\n## 深く潜ってみよう\n\n権限まわりがしっかりしているのがポイントだよ。\n\n- UI は、開いた IAM アイデンティティの権限で動く\n- そのアイデンティティが読める範囲だけが表示されるので、読み取り専用のアクセスもできる\n- UI が行う呼び出しは、あなたのアイデンティティで AWS CloudTrail に記録される\n\nUI は Amazon MWAA コンソール、AWS CLI、API のどれからでも開けるよ。MWAA Serverless が使えるすべての AWS リージョンで利用できるの。始め方は「Access the Airflow UI」に載っているよ！\n\n## まとめ\n\n- MWAA Serverless でネイティブの Airflow UI が使える\n- 閲覧もログ確認も実行開始もできる\n- IAM の権限どおりに表示され、CloudTrail にも記録される\n- コンソール、CLI、API から開ける\n\nAirflow を普段から使っていて、サーバーレスに移りたいチームに刺さるよ！",
+  "title_en": "The Familiar Airflow UI Is Now in MWAA Serverless!",
+  "summary_en": "Amazon MWAA Serverless now provides the native Apache Airflow UI. It follows the permissions of your IAM identity, so read-only access works too.",
+  "body_md_en": "Hi, it's Shii-chan! Great news for everyone who uses Airflow!\n\n## What was announced?\n\nAccording to AWS What's New, Amazon MWAA Serverless now provides the native Apache Airflow UI for your workflows.\n\n## The story so far\n\nThis UI wasn't available in MWAA Serverless, so teams used to Airflow couldn't browse their workflows in the screen they know.\n\n## What changes\n\nTeams already familiar with Airflow can use the interface they know. In the UI you can:\n\n- Browse workflows\n- Inspect workflow runs and task instances\n- Read task logs\n- View a workflow's source and versions\n- Start a workflow run\n\n## Dive Deep\n\nThe permissions model is the key point:\n\n- The UI uses the permissions of the IAM identity that opens it\n- It shows only what that identity can read, so read-only access is possible\n- AWS CloudTrail records the calls the UI makes under your identity\n\nYou can open the UI from the Amazon MWAA console, the AWS CLI, or the API. It is available in all AWS Regions where MWAA Serverless is available. See \"Access the Airflow UI\" to get started.\n\n## Wrap-up\n\n- The native Airflow UI is now in MWAA Serverless\n- Browse, read logs, and start runs\n- Access follows IAM permissions and is logged in CloudTrail\n- Open it from the console, CLI, or API\n\nThis is for Airflow teams who want to go serverless!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/airflow-ui-for-mwaa-serverless/",
+  "source_name": "AWS What's New",
+  "og_title": "Apache Airflow UI available in Amazon MWAA Serverless",
+  "tags": [
+    "aws",
+    "devops",
+    "serverless"
+  ],
+  "published_at": "2026-11-12T18:00:00+00:00"
+}
