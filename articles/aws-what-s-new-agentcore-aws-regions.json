@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-agentcore-aws-regions",
+  "emotion": "happy",
+  "importance": 3,
+  "tags": [
+    "aws",
+    "ai",
+    "infrastructure"
+  ],
+  "title": "AgentCore の runtime instances が 6 リージョン追加！ソウル・ロンドン・パリでも動くよ",
+  "summary": "Amazon Bedrock AgentCore の runtime instances が、米国西部(北カリフォルニア)、カナダ(中部)、ロンドン、パリ、ストックホルム、ソウルの 6 リージョンで使えるようになったよ。",
+  "body_md": "おつかれさま、しぃちゃんだよ！今日は AgentCore のリージョン拡大のお知らせだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Bedrock AgentCore の runtime instances が 6 つのリージョンに追加されたと告知されていたよ。runtime instances は、エージェントを Amazon EC2 インスタンス上で動かし、プロビジョニング、パッチ適用、スケーリング、ライフサイクル管理を AgentCore が担う仕組みだよ。\n\n追加されたのはこの 6 リージョンだよ。\n\n- 米国西部(北カリフォルニア)\n- カナダ(中部)\n- 欧州(ロンドン)\n- 欧州(パリ)\n- 欧州(ストックホルム)\n- アジアパシフィック(ソウル)\n\n## これで何が変わるの？\n\n対応リージョンが増えると、次のような嬉しさがあるよ。\n\n- エージェントをユーザーの近くで動かして、呼び出しのレイテンシを下げられる\n- エージェントのインスタンス、ストレージボリューム、セッションデータを、データ所在地の要件に合ったリージョンに置ける\n\nruntime instances では、GPU アクセラレーテッド・メモリ最適化・コンピュート最適化のインスタンスタイプや、最長 14 日間の長時間エージェントセッションを使えるよ。\n\n## 深く潜ってみよう\n\n今回の拡大で、runtime instances が使えるリージョンは次の 15 になったよ。\n\n- 米国東部(バージニア北部)、米国東部(オハイオ)、米国西部(北カリフォルニア)、米国西部(オレゴン)\n- カナダ(中部)\n- 欧州(フランクフルト)、欧州(アイルランド)、欧州(ロンドン)、欧州(パリ)、欧州(ストックホルム)\n- アジアパシフィック(ムンバイ)、(ソウル)、(シンガポール)、(シドニー)、(東京)\n\n料金は、プロビジョンされたコンピュートの管理に対する料金が、Amazon EC2 の料金に加えてかかるよ。\n\n## まとめ\n\n- AgentCore の runtime instances が 6 リージョン増え、合計 15 リージョンで利用可能に\n- GPU・メモリ最適化・コンピュート最適化のインスタンスと最長 14 日間のセッションに対応\n- 低レイテンシとデータ所在地の要件に合わせやすくなる\n- 料金は管理分と EC2 の費用がかかる\n\nヨーロッパやカナダ、韓国でエージェント基盤を動かしたい開発者さんに刺さる更新だよ！",
+  "title_en": "AgentCore Runtime Instances Land in Six More AWS Regions, Including Seoul, London, and Paris",
+  "summary_en": "Amazon Bedrock AgentCore runtime instances are now available in US West (N. California), Canada (Central), Europe (London), Europe (Paris), Europe (Stockholm), and Asia Pacific (Seoul).",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today's news is a Region expansion for AgentCore!\n\n## What was announced?\n\nAWS's What's New announced that Amazon Bedrock AgentCore runtime instances are now available in six additional Regions. Runtime instances run your agents on Amazon EC2 instances while AgentCore handles provisioning, patching, scaling, and lifecycle management.\n\nThe new Regions:\n\n- US West (N. California)\n- Canada (Central)\n- Europe (London)\n- Europe (Paris)\n- Europe (Stockholm)\n- Asia Pacific (Seoul)\n\n## What changes\n\nMore Regions means:\n\n- You can run agents closer to your users to reduce invocation latency\n- You can keep agent instances, storage volumes, and session data in the Region your data residency requirements call for\n\nRuntime instances offer GPU-accelerated, memory-optimized, or compute-optimized instance types, and long-running agent sessions of up to 14 days.\n\n## Dive Deep\n\nWith this expansion, runtime instances are available in 15 Regions:\n\n- US East (N. Virginia), US East (Ohio), US West (N. California), US West (Oregon)\n- Canada (Central)\n- Europe (Frankfurt), Europe (Ireland), Europe (London), Europe (Paris), Europe (Stockholm)\n- Asia Pacific (Mumbai), (Seoul), (Singapore), (Sydney), (Tokyo)\n\nYou are charged for managing the provisioned compute, in addition to your Amazon EC2 costs.\n\n## Wrap-up\n\n- Six new Regions bring runtime instances to 15 Regions in total\n- GPU, memory-optimized, and compute-optimized instances and sessions up to 14 days are supported\n- Easier to meet latency and data residency needs\n- Pricing is the management charge plus EC2 costs\n\nThis one is for developers who want to run agent infrastructure in Europe, Canada, or Korea!",
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/agentcore-aws-regions/",
+  "source_name": "AWS What's New",
+  "og_title": "AgentCore runtime instances are now available in six more AWS Regions",
+  "published_at": "2026-11-16T07:30:00+00:00"
+}

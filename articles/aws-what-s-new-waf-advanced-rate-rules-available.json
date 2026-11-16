@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-waf-advanced-rate-rules-available",
+  "emotion": "happy",
+  "importance": 3,
+  "tags": [
+    "aws",
+    "security"
+  ],
+  "title": "AWS WAF の高度なレートベースルールが GovCloud・タイ・メキシコでも使えるよ！",
+  "summary": "AWS WAF の高度なレートベースルールが、アジアパシフィック(タイ)、メキシコ(中部)、AWS GovCloud(米国東部・米国西部)で利用可能に。カスタムキーでの集計や 1・2 分の評価ウィンドウが使えるようになったよ。",
+  "body_md": "こんにちは、しぃちゃんだよ！WAF のレートルールが細かく書けるリージョンが増えたよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS WAF の高度なレートベースルールが、アジアパシフィック(タイ)、メキシコ(中部)、AWS GovCloud(米国東部)、AWS GovCloud(米国西部)の各リージョンで使えるようになったと告知されていたよ。\n\n## 今までどうだったの？\n\nこれらのリージョンでは、これまでレートベースルールは IP アドレスでしか集計できなくて、評価ウィンドウも 5 分か 10 分だけだったんだって。\n\n## これで何が変わるの？\n\n追加されたのはこの 2 つだよ。\n\n- **カスタムキーでの集計**: リクエストの要素で集計できる。使える要素は HTTP ヘッダー、Cookie、クエリ文字列、URI パス、HTTP メソッド、ラベル名前空間。最大 5 つまで組み合わせて複合キーにできる\n- **評価ウィンドウの追加**: 既存の 5 分・10 分に加えて、1 分・2 分を選べる\n\nたとえば、ログイン試行を IP アドレスと User-Agent の組み合わせ単位、またはセッション Cookie 単位で制限できるよ。多数の IP アドレスに分散した攻撃への対策に役立つんだって。\n\n## 深く潜ってみよう\n\n- レートベースルールは、リクエストの数を数えて、設定した上限を超えたら Block や CAPTCHA などのアクションを実行する\n- 短い評価ウィンドウは、リクエストの急増を早く検知できる\n- 長い評価ウィンドウは、ゆっくり続く攻撃を捉えやすい\n- 設定は AWS WAF コンソール、AWS CLI と SDK、AWS CloudFormation から行える\n- 追加料金はなく、標準の AWS WAF 料金が適用される\n- 高度なレートベースルールは、AWS WAF が使える商用リージョンすべてと、AWS GovCloud(米国)リージョンで利用可能\n\n## まとめ\n\n- 高度なレートベースルールが GovCloud(米国東部・西部)、タイ、メキシコに拡大\n- IP 以外のキーで最大 5 つの複合キー集計ができる\n- 1 分と 2 分の評価ウィンドウが選べる\n- 追加料金なし\n\nGovCloud やタイ、メキシコで Web アプリを守っているセキュリティ担当のみんなに刺さる更新だよ！",
+  "title_en": "AWS WAF Advanced Rate-Based Rules Now Available in GovCloud (US), Thailand, and Mexico",
+  "summary_en": "AWS WAF advanced rate-based rules are now available in Asia Pacific (Thailand), Mexico (Central), and AWS GovCloud (US-East and US-West), with custom aggregation keys and 1 or 2 minute evaluation windows.",
+  "body_md_en": "Hi everyone, it's Shii-chan! More Regions can now write finer-grained rate rules in WAF!\n\n## What was announced?\n\nAWS's What's New announced that AWS WAF advanced rate-based rules are now available in the Asia Pacific (Thailand), Mexico (Central), AWS GovCloud (US-East), and AWS GovCloud (US-West) Regions.\n\n## The story so far\n\nIn these Regions, rate-based rules could only aggregate requests by IP address and used a 5 or 10 minute evaluation window.\n\n## What changes\n\nTwo things are added:\n\n- **Custom aggregation keys**: aggregate by HTTP headers, cookies, query strings, URI paths, HTTP methods, and label namespaces, and combine up to five of them into a composite key\n- **More evaluation windows**: 1 or 2 minutes, in addition to the existing 5 and 10 minute options\n\nFor example, you can limit login attempts per IP address and User-Agent pair, or per session cookie, which helps against attacks spread across many IP addresses.\n\n## Dive Deep\n\n- A rate-based rule counts requests and applies an action, such as Block or CAPTCHA, when the request rate exceeds the limit you set\n- A shorter window detects request floods sooner\n- A longer window catches slower, sustained attacks\n- You can configure these in the AWS WAF console, the AWS CLI and SDKs, and AWS CloudFormation\n- There is no additional charge, and standard AWS WAF pricing applies\n- Advanced rate-based rules are now available in all commercial Regions where AWS WAF is available and in the AWS GovCloud (US) Regions\n\n## Wrap-up\n\n- Advanced rate-based rules expand to GovCloud (US-East and US-West), Thailand, and Mexico\n- Composite keys of up to five components beyond IP are supported\n- 1 and 2 minute windows are available\n- No additional charge\n\nThis one is for security teams protecting web apps in GovCloud, Thailand, or Mexico!",
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/waf-advanced-rate-rules-available/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS WAF advanced rate-based rules are now available in AWS GovCloud (US), Thailand, and Mexico",
+  "published_at": "2026-11-16T08:00:00+00:00"
+}

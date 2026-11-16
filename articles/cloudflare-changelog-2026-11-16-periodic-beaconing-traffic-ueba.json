@@ -1,0 +1,19 @@
+{
+  "slug": "cloudflare-changelog-2026-11-16-periodic-beaconing-traffic-ueba",
+  "emotion": "thinking",
+  "importance": 4,
+  "tags": [
+    "cloudflare",
+    "security"
+  ],
+  "title": "Cloudflare One に「Periodic Beaconing Traffic」検知が登場！定期的な通信を見つけ出すよ",
+  "summary": "Cloudflare One が、同じ宛先への定期的なチェックイン通信を Gateway の HTTP トラフィックから見つける Periodic Beaconing Traffic を追加したよ。デフォルトはオフで、Enterprise プランで使えるみたい。",
+  "body_md": "やっほー、しぃちゃんだよ！今日はセキュリティの運用に役立ちそうな更新を見つけたよ！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Cloudflare One に「Periodic Beaconing Traffic」がリスク行動として追加されたことが告知されたよ。Gateway の HTTP トラフィックを分析して、同じ宛先への規則的なチェックインを探す機能なんだって。\n\n## なぜ重要なの？\n\nマルウェアは、コマンド&コントロール(C2)サーバーに一定間隔で連絡を取ることがあるよ。ただ、正規のソフトウェアも定期的に通信するので、単純には見分けにくいんだよね。\n\n## 深く潜ってみよう\n\n検知の条件は次のとおりだよ。\n\n- 6 時間のあいだに、同じ宛先へ 30 回を超える通信がある\n- 通信の間隔が均等で、10 秒から約 12 分の範囲に収まっている\n- 組織内でその宛先に連絡するユーザーが少ない\n\n検知はトラフィックの振る舞いだけを使うよ。脅威インテリジェンス、カテゴリ、レピュテーションは使わないんだって。\n\n運用面のポイントはこちら。\n\n- デフォルトではオフで、リスクレベルは Info\n- 有効にするには **Risk score** の **Risk behaviors** へ進む\n- 続いているビーコンは 1 回だけ報告される\n- イベントは通常、6 時間のウィンドウが閉じてから 3〜6 時間後に届く\n- Enterprise プランで利用できる\n\n原文は、各イベントは「調査の手がかり」であって、その宛先が C2 だという証拠ではないと注意しているよ。\n\n## まとめ\n\n- Gateway の HTTP トラフィックから、定期的なビーコン風の通信を検知するリスク行動が追加\n- 6 時間で 30 回超、10 秒〜約 12 分の均等な間隔、少数のユーザーのみという条件\n- 振る舞いだけで判定し、デフォルトはオフ(Info)\n- Enterprise プランで利用可能\n\nCloudflare One で社内の不審な通信を調べたいセキュリティ担当のみんなに刺さる更新だよ！",
+  "title_en": "Cloudflare One Adds Periodic Beaconing Traffic Detection",
+  "summary_en": "Cloudflare One now flags regular check-ins to the same destination in Gateway HTTP traffic as a risk behavior. It is off by default and available on Enterprise plans.",
+  "body_md_en": "Hi everyone, it's Shii-chan! I found a handy update for security operations today!\n\n## What was announced?\n\nCloudflare's Changelog announced that Cloudflare One now includes Periodic Beaconing Traffic as a risk behavior. It analyzes Gateway HTTP traffic for regular check-ins to the same destination.\n\n## Why it matters\n\nMalware can check in with a command-and-control (C2) server at regular intervals. But legitimate software also checks in regularly, so the two are hard to tell apart at a glance.\n\n## Dive Deep\n\nCloudflare flags a user when:\n\n- There are more than 30 contacts to the same destination in six hours\n- The contacts are evenly spaced, from 10 seconds to about 12 minutes apart\n- Few other users in your organization contact that destination\n\nDetection uses traffic behavior only. It does not use threat intelligence, categories, or reputation.\n\nOperational notes:\n\n- It is off by default, and its risk level is Info\n- To turn it on, go to **Risk score** and then **Risk behaviors**\n- A continuing beacon is reported once\n- Events usually arrive 3 to 6 hours after the six-hour window closes\n- It is available on Enterprise plans\n\nThe changelog says to treat each event as a lead to investigate, not proof that a destination is C2.\n\n## Wrap-up\n\n- A new risk behavior detects beacon-like periodic traffic in Gateway HTTP traffic\n- Conditions: more than 30 contacts in six hours, even spacing of 10 seconds to about 12 minutes, and few other users\n- Behavior-based only, and off by default (Info)\n- Available on Enterprise plans\n\nThis one is for security teams who investigate suspicious traffic with Cloudflare One!",
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-11-16-periodic-beaconing-traffic-ueba/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Cloudflare One, Gateway - Cloudflare One adds Periodic Beaconing Traffic detection",
+  "published_at": "2026-11-16T21:03:23+00:00"
+}

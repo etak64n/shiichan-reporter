@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-backup-air-gapped-vault-rds",
+  "emotion": "smug",
+  "importance": 4,
+  "tags": [
+    "aws",
+    "security",
+    "infrastructure"
+  ],
+  "title": "AWS Backup の論理エアギャップ vault が RDS に対応！改ざんできないバックアップを作れるよ",
+  "summary": "AWS Backup の logically air-gapped vault が Amazon RDS の DB インスタンスに対応したよ。イミュータブルで隔離されたバックアップを作り、アカウントや組織をまたいで共有して直接リストアできるんだって。",
+  "body_md": "みんな、しぃちゃんだよ！データを守る強力な更新が来たよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Backup の logically air-gapped vault(論理エアギャップ vault)が Amazon RDS の DB インスタンスに対応したと告知されていたよ。\n\nlogically air-gapped vault は、イミュータブルで隔離されたバックアップを保管する AWS Backup の vault の一種で、デフォルトで AWS Backup Vault Lock のコンプライアンスモードでロックされているよ。\n\n## これで何が変わるの？\n\nRDS の DB インスタンスのバックアップを、この vault で守れるようになったよ。原文では、次のような効果が挙げられているんだ。\n\n- ダウンタイムのリスクを減らす\n- 事業継続性を確保する\n- コンプライアンス要件を満たす\n\nアカウントや AWS Organizations をまたいで安全に共有でき、直接リストアできるので、データ消失イベントからの復旧時間を短くできるよ。\n\n## 深く潜ってみよう\n\n- vault 内のバックアップは暗号化され、AWS 所有キーまたはカスタマーマネージドキーが使える\n- 始め方は、AWS Backup コンソール、AWS CLI、AWS SDK のいずれか\n- RDS の DB インスタンスをバックアッププランに割り当て、コピー先として同じ AWS リージョン内の logically air-gapped vault を指定する\n- 復旧やリストアのテストのために、AWS Resource Access Manager(RAM)で他のアカウントと vault を共有できる\n- アカウントが侵害された場合に vault へのアクセスを守るには、マルチパーティ承認を使える\n- 共有後は、共有先のアカウントから直接リストアジョブを開始できる\n\n対応リージョンは、logically air-gapped vault と Amazon RDS の両方が使えるリージョンの大半だよ。詳細はドキュメントで確認してね。\n\n## まとめ\n\n- logically air-gapped vault が Amazon RDS の DB インスタンスに対応した\n- バックアップはイミュータブルで隔離され、デフォルトで Vault Lock のコンプライアンスモード\n- RAM で共有でき、マルチパーティ承認でアカウント侵害時にも備えられる\n- 共有先のアカウントから直接リストアできる\n\nランサムウェアやアカウント侵害に備えて RDS の復旧戦略を見直したいみんなに刺さる更新だよ！",
+  "title_en": "AWS Backup Logically Air-Gapped Vaults Now Support Amazon RDS",
+  "summary_en": "AWS Backup logically air-gapped vaults now support Amazon RDS DB instances, storing immutable, isolated backups that you can share across accounts and AWS Organizations for direct restore.",
+  "body_md_en": "Hi everyone, it's Shii-chan! A strong data protection update just landed!\n\n## What was announced?\n\nAWS's What's New announced that AWS Backup logically air-gapped vaults now support Amazon RDS DB instances.\n\nA logically air-gapped vault is a type of AWS Backup vault that stores immutable, isolated backups, locked by default with AWS Backup Vault Lock in compliance mode.\n\n## What changes\n\nYou can now protect your RDS DB instances in these vaults. The announcement says this helps:\n\n- Reduce the risk of downtime\n- Ensure business continuity\n- Meet compliance requirements\n\nSecure sharing across accounts and AWS Organizations enables direct restore, which reduces recovery time from a data loss event.\n\n## Dive Deep\n\n- Backups in the vault are encrypted with AWS owned keys or customer-managed keys\n- Get started with the AWS Backup console, the AWS CLI, or the AWS SDKs\n- Assign your RDS DB instances to a backup plan and specify a logically air-gapped vault in the same Region as the copy destination\n- Share the vault with other accounts through AWS Resource Access Manager (RAM) for recovery or restore testing\n- Use multi-party approval to safeguard vault access during an account compromise\n- Once shared, you can start direct restore jobs from that account\n\nSupport is available in most Regions where both logically air-gapped vaults and Amazon RDS are available. Check the documentation for details.\n\n## Wrap-up\n\n- Logically air-gapped vaults now support Amazon RDS DB instances\n- Backups are immutable and isolated, locked by default in Vault Lock compliance mode\n- Sharing through RAM and multi-party approval help you prepare for account compromise\n- You can restore directly from a shared account\n\nThis one is for anyone rethinking RDS recovery plans against ransomware and account compromise!",
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-backup-air-gapped-vault-rds/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Backup adds logically air-gapped vault support for Amazon RDS",
+  "published_at": "2026-11-16T08:00:00+00:00"
+}
