@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-11-12-custom-rules-payload-logging",
+  "title": "WAF カスタムルールにもペイロードログが来たよ！暗号化してマッチ内容を残せる",
+  "summary": "Cloudflare WAF のペイロードログが、マネージドルールに加えてカスタムルールにも対応したよ。Enterprise 向けで、公開鍵で暗号化してマッチしたペイロードを記録できるの。",
+  "body_md": "みんな、しぃちゃんだよ！今日は Cloudflare WAF の気になるアップデートを見つけたから、さっそく紹介するね。\n\n## なにが発表されたの？\n\nCloudflare の Changelog に、WAF のペイロードログがカスタムルールに対応したという更新が載ったよ。これまではサポート対象のマネージドルールで使えた機能が、自分で書いたカスタムルールにも広がった形なの。\n\n## 今までどうだったの？\n\nペイロードログは、ルールにマッチしたリクエストの中身を暗号化して残しておく仕組みだよ。ただ、今までの対象はサポートされているマネージドルールだけで、自作のカスタムルールが何にマッチしたのかを中身まで確認したいときは、別の方法を探す必要があったの。\n\n## これで何が変わるの？\n\nカスタムルールでも、マッチしたペイロードを暗号化して記録できるようになったよ。誤検知かどうかの調査や、攻撃パターンの分析をするとき、自分のルールに引っかかった実際の中身を見返せるのが嬉しいポイントだね。\n\n## 深く潜ってみよう\n\n設定まわりで原文から分かることはこれだけだよ。\n\n- 対象は Enterprise のお客さん\n- アカウントレベルの公開鍵、またはゾーンレベルの公開鍵を設定して、マッチしたペイロードを暗号化する\n- アカウントとゾーンの両方に鍵がある場合は、ゾーンレベルの鍵が優先される\n- 今回のリリースでは、レート制限ルールのペイロードログには対応していない\n\n具体的な設定手順は、原文が案内している「Configure payload logging via API」のドキュメントにまとまっているみたい。ペイロードのサイズ上限や保持期間など、原文に書かれていない点は分からないよ。\n\n## まとめ\n\n- WAF のペイロードログがカスタムルールにも対応した\n- Enterprise 向けで、公開鍵による暗号化が前提\n- ゾーンレベルの公開鍵がアカウントレベルより優先される\n- レート制限ルールは今回の対象外\n\n自作の WAF ルールを運用しているセキュリティ担当のみんなに刺さる更新だよ！",
+  "title_en": "Payload Logging Now Works with WAF Custom Rules",
+  "summary_en": "Cloudflare WAF payload logging now supports custom rules, not just supported managed rules. Enterprise customers can encrypt matched payloads with a public key.",
+  "body_md_en": "Hi everyone, it's Shii-chan! I found a WAF update from Cloudflare today that I really wanted to share with you.\n\n## What was announced?\n\nCloudflare's Changelog says that payload logging now supports WAF custom rules. It used to work for supported managed rules, and now it covers the rules you write yourself too.\n\n## The story so far\n\nPayload logging stores the content of requests that matched a rule, encrypted. Until now it only covered supported managed rules, so if you wanted to see what a custom rule actually matched, you had to look for another way.\n\n## What changes\n\nCustom rules can now log matched payloads in encrypted form. That helps when you investigate false positives or analyze attack patterns, because you can look back at what actually triggered your own rule.\n\n## Dive Deep\n\nHere is what the original post tells us about configuration:\n\n- It is for Enterprise customers\n- You set an account-level public key, or a zone-level public key, to encrypt matched payloads\n- If both exist, the zone-level key takes precedence\n- This release does not add payload logging for rate limiting rules\n\nFor the setup steps, the post points to the \"Configure payload logging via API\" documentation. Details such as payload size limits or retention are not mentioned in the post.\n\n## Wrap-up\n\n- WAF payload logging now supports custom rules\n- It is for Enterprise and relies on public-key encryption\n- The zone-level key wins over the account-level key\n- Rate limiting rules are not covered in this release\n\nThis one is for security folks who run their own WAF rules!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-11-12-custom-rules-payload-logging/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "WAF - Payload logging for WAF custom rules",
+  "tags": [
+    "cloudflare",
+    "security",
+    "web"
+  ],
+  "published_at": "2026-11-12T00:00:00+00:00"
+}

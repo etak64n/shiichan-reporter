@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-replication-deletes-amazon-ecr",
+  "title": "ECR のレプリケーションが削除も伝えるように！リージョン間の掃除が自動に",
+  "summary": "Amazon ECR が、イメージの削除とタグの削除をレプリケーション先にも反映するようになったよ。リージョンやアカウントをまたいだ運用で、掃除を別々にやらなくてよくなるの。",
+  "body_md": "やっほー、しぃちゃんだよ！コンテナイメージを複数リージョンに置いているみんなに嬉しいニュースだよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon ECR が、イメージの削除とタグの削除をレプリケーション先に複製できるようになったと発表されたよ。\n\n## 今までどうだったの？\n\nこれまでの ECR レプリケーションは、イメージを宛先のリージョンやアカウントにコピーするだけで、削除は複製されなかったの。だから削除は、それぞれの場所で別々に管理する必要があったんだよ。\n\n## これで何が変わるの？\n\n宛先のリポジトリが、ソースと自動的に揃うようになったよ。マルチリージョン・マルチアカウント構成のチームは、すべての宛先でイメージの掃除をスクリプト化したり、手で追いかけたりしなくてよくなるの。\n\n## 深く潜ってみよう\n\n- ソースのレジストリでイメージを削除する、またはタグを外すと、それが直接でもライフサイクルポリシー経由でも、レプリケーションルール内の各宛先に削除が伝わる\n- 複製された削除は EventBridge のイベントを出し、CloudTrail にも記録される。イメージの push と同じ可視性で削除も追える\n- ECR が使えるすべてのリージョンで、追加料金なしで利用できる\n- 始めるには、ECR コンソールまたは AWS CLI でレプリケーション設定を更新する\n\n具体的な設定項目名は原文には書かれていなかったから、詳細は Amazon ECR ユーザーガイドを見てね。\n\n## まとめ\n\n- イメージの削除とタグの削除が、レプリケーション先にも反映される\n- ライフサイクルポリシーによる削除も対象\n- EventBridge と CloudTrail で追跡できる\n- 追加料金なし\n\nマルチリージョンでコンテナを運用している DevOps のみんなに刺さるよ！",
+  "title_en": "Amazon ECR Now Replicates Image Deletions Across Regions and Accounts",
+  "summary_en": "Amazon ECR now replicates image deletions and tag removals to your replication destinations, so you no longer manage cleanup separately in each Region or account.",
+  "body_md_en": "Hi everyone, it's Shii-chan! This is good news if you keep container images in several Regions.\n\n## What was announced?\n\nAWS What's New says Amazon ECR now supports replicating image deletions and tag removals to your replication destinations.\n\n## The story so far\n\nECR replication used to copy images to destination Regions and accounts, but it did not replicate deletions. You had to manage deletions separately in each location.\n\n## What changes\n\nDestination repositories now stay consistent with the source automatically. Teams running multi-Region or multi-account architectures no longer need to script or manually track image cleanup across every destination.\n\n## Dive Deep\n\n- When you delete an image or remove a tag in your source registry, whether directly or through a lifecycle policy, ECR propagates that deletion to each destination in the replication rule\n- Replicated deletions emit EventBridge events and are recorded in CloudTrail, so you get the same visibility into deletions as for image pushes\n- It is available in all Regions where Amazon ECR is available, at no additional cost\n- To get started, update your replication configuration in the ECR console or AWS CLI\n\nThe announcement does not name specific setting fields, so see the Amazon ECR User Guide for details.\n\n## Wrap-up\n\n- Image and tag deletions are reflected at replication destinations\n- Deletions from lifecycle policies are included\n- Trackable through EventBridge and CloudTrail\n- No additional cost\n\nThis is for DevOps folks running containers across multiple Regions!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/replication-deletes-amazon-ecr",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon ECR now replicates image deletions across regions and accounts",
+  "tags": [
+    "aws",
+    "devops",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-16T22:07:00+00:00"
+}

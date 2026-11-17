@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-ebs-snapshots-associate-kms-keys",
+  "title": "再暗号化なしでスナップショット共有！EBS が追加の KMS キーの関連付けに対応",
+  "summary": "Amazon EBS スナップショットに、追加の KMS キーを関連付けられるようになったよ。暗号化済みスナップショットを再暗号化せずにアカウント間で共有・コピーできて、DR が楽になるの。",
+  "body_md": "おつかれさま、しぃちゃんだよ！バックアップや災害対策を担当しているみんなに関係するアップデートだよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon EBS が、スナップショットに追加の AWS KMS キーを関連付けることに対応したと発表されたよ。\n\n## 今までどうだったの？\n\nEBS スナップショットは、EBS ボリュームの耐久性のある特定時点のバックアップとして使われているよね。AWS マネージドキー（AMK）で暗号化されたスナップショットをアカウント間で共有するには、先にデータを再暗号化する必要があったの。\n\n## これで何が変わるの？\n\nAMK で暗号化されたスナップショットに、追加のカスタマーマネージドキー（CMK）を関連付ければ、データを再暗号化せずに、そのスナップショットをアカウント間で共有できるようになるよ。暗号化済みスナップショットの共有とコピーが簡単になって、災害復旧やバックアップのワークフローが速くなるの。エンタープライズのバックアップ管理者や DR チームの運用効率アップにつながるんだね。\n\n## 深く潜ってみよう\n\n- 利用できる場所: AWS の商用リージョン、中国、AWS GovCloud (US)、AWS European Sovereign Cloud (Germany) の各リージョンと、AWS Local Zones、AWS Outposts\n- 使い方: AWS コンソール、AWS CLI、AWS SDK から利用できる\n\n料金や具体的なコマンドは原文には書かれていなかったよ。詳細は Amazon EBS のドキュメントを見てね。\n\n## まとめ\n\n- スナップショットに追加の KMS キーを関連付けられる\n- AMK 暗号化のスナップショットも、再暗号化なしでアカウント間共有できる\n- コンソール、CLI、SDK から使える\n\nバックアップと DR の運用を担当するみんなに刺さるよ！",
+  "title_en": "Amazon EBS Now Supports Associating Additional KMS Keys with Snapshots",
+  "summary_en": "Amazon EBS snapshots can now have additional KMS keys associated with them, so you can share and copy encrypted snapshots across accounts without re-encrypting them.",
+  "body_md_en": "Hi everyone, it's Shii-chan! This update matters for people who handle backups and disaster recovery.\n\n## What was announced?\n\nAWS What's New says Amazon EBS now supports associating additional AWS KMS keys with EBS snapshots.\n\n## The story so far\n\nEBS snapshots serve as durable, point-in-time backups of EBS volumes. To share a snapshot encrypted with an AWS managed key (AMK) across accounts, you first had to re-encrypt its data.\n\n## What changes\n\nIf you associate an additional customer-managed key (CMK) with a snapshot encrypted with an AMK, you can share that snapshot across accounts without re-encrypting its data. Sharing and copying encrypted snapshots gets simpler, which speeds up disaster recovery workflows and helps enterprise backup administrators and DR teams work more efficiently.\n\n## Dive Deep\n\n- Where: all AWS commercial, China, AWS GovCloud (US), and AWS European Sovereign Cloud (Germany) Regions, plus AWS Local Zones and AWS Outposts\n- How: through the AWS Console, AWS Command Line Interface (CLI), and AWS SDKs\n\nPricing and specific commands are not mentioned in the announcement. See the Amazon EBS documentation for details.\n\n## Wrap-up\n\n- Associate additional KMS keys with snapshots\n- Share AMK-encrypted snapshots across accounts without re-encrypting\n- Available from the console, CLI, and SDKs\n\nThis is for the people who run backup and DR operations!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/ebs-snapshots-associate-kms-keys/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon EBS now supports associating additional KMS keys with snapshots",
+  "tags": [
+    "aws",
+    "security",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-16T22:00:00+00:00"
+}

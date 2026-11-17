@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-iam-identity-center-reauth",
+  "title": "毎回きちんと本人確認！IAM Identity Center が SAML の ForceAuthn に対応",
+  "summary": "IAM Identity Center で、セッション期限切れのたびに外部 IdP での再認証を必須にできるようになったよ。SAML リクエストに ForceAuthn 属性を付ける仕組み。",
+  "body_md": "おつかれさま、しぃちゃんだよ！コンプライアンスが厳しい組織のみんなに関係する、サインインまわりの更新だよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、IAM Identity Center が、ユーザーのインタラクティブセッションが切れるたびに外部 ID プロバイダー（IdP）での再認証を求めるオプションに対応したと発表されたよ。\n\n## 今までどうだったの？\n\nデフォルトでは、セッションが切れても IAM Identity Center は、ユーザーが IdP に持っている既存のセッションを使って更新するの。だからユーザーは、もう一度サインインを求められなかったんだよ。定期的に明示的な本人確認を求めるセキュリティ・コンプライアンス要件がある組織だと、この自動更新では要件を満たせないことがあったの。\n\n## これで何が変わるの？\n\nユーザー再認証を「必須」にすると、セッション切れのたびに外部 IdP でのサインインを求められるようになるよ。規制対象のワークロードに対して、より強いサインイン制御をかけられるの。\n\n## 深く潜ってみよう\n\n- 実装は、IdP に送る SAML リクエストに SAML 2.0 の ForceAuthn 属性を付ける形\n- ID ソースとして外部 IdP につながっている IAM Identity Center インスタンスなら、組織インスタンスでもアカウントインスタンスでも設定できる\n- 適用されるのは、AWS アクセスポータルの URL からサインインする、サービスプロバイダー起点のサインインだけ\n- 設定の変更は AWS CloudTrail に記録されるので、いつオン・オフにされたか監査できる\n- IAM Identity Center が使えるすべてのリージョンで、追加料金なしで利用できる\n\n## まとめ\n\n- セッション切れのたびに外部 IdP での再認証を必須にできる\n- SAML リクエストに ForceAuthn を付けて実現している\n- 対象はアクセスポータル起点のサインインのみ\n- 設定変更は CloudTrail で監査できる\n\n定期的な本人確認が求められる規制業界のセキュリティ担当のみんなに刺さるよ！",
+  "title_en": "IAM Identity Center Now Supports ForceAuthn in SAML Requests",
+  "summary_en": "IAM Identity Center can now require users to re-authenticate with your external IdP each time their session expires, by adding the SAML ForceAuthn attribute to requests.",
+  "body_md_en": "Hi everyone, it's Shii-chan! This is a sign-in update for organizations with strict compliance needs.\n\n## What was announced?\n\nAWS What's New says IAM Identity Center now lets you require workforce users to re-authenticate with your external identity provider (IdP) each time their user interactive session expires.\n\n## The story so far\n\nBy default, when a session expires, IAM Identity Center renews it through the user's existing IdP session, so the user is not asked to sign in again. For organizations that must verify users explicitly at regular intervals, this automatic renewal may not meet policy requirements.\n\n## What changes\n\nWhen you set user re-authentication to Required, users are prompted to sign in at your external IdP every time their session expires. That gives you stronger sign-in controls for regulated workloads.\n\n## Dive Deep\n\n- It works by adding the SAML 2.0 ForceAuthn attribute to the SAML request sent to your IdP\n- You can configure it for any IAM Identity Center instance (organization or account) connected to an external IdP as its identity source\n- It applies only to service provider initiated sign-ins, where users sign in through your AWS access portal URL\n- Changes to the setting are logged in AWS CloudTrail, so you can audit when it was turned on or off\n- It is available in all Regions where IAM Identity Center is available, at no additional cost\n\n## Wrap-up\n\n- Require re-authentication at your external IdP on every session expiry\n- Implemented with the SAML ForceAuthn attribute\n- Applies only to access-portal-initiated sign-ins\n- Setting changes are auditable in CloudTrail\n\nThis is for security teams in regulated industries that need periodic identity verification!",
+  "emotion": "smug",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/iam-identity-center-reauth/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS IAM Identity Center now supports ForceAuthn in SAML requests",
+  "tags": [
+    "aws",
+    "security"
+  ],
+  "published_at": "2026-11-16T08:00:00+00:00"
+}

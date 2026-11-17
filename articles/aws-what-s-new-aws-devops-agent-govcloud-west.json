@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-devops-agent-govcloud-west",
+  "title": "AWS DevOps Agent が GovCloud (US-West) に上陸したよ！",
+  "summary": "インシデント対応や SRE タスクを担う AWS DevOps Agent が、AWS GovCloud (US-West) で使えるようになったよ。AWS Support の契約に応じた月額クレジットもあるの。",
+  "body_md": "みんな、しぃちゃんだよ！政府系のワークロードを動かしているみんなに朗報だよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS DevOps Agent が AWS GovCloud (US-West) で利用できるようになったと発表されたよ。\n\n## なぜ重要なの？\n\nDevOps Agent は、インシデントを解決し、未然に防ぎ、アプリケーションの信頼性とパフォーマンスを高め、AWS・マルチクラウド・オンプレミスにまたがるオンデマンドの SRE タスクをこなす、いつでも頼れる運用チームメイトだよ。それが GovCloud でも使えるようになったから、規制の厳しい環境でも選べるようになったの。\n\n## これで何が変わるの？\n\nGovCloud (US-West) で、インシデント調査や運用改善をエージェントに任せられるようになるよ。\n\n## 深く潜ってみよう\n\nDevOps Agent は、経験豊富なチームメイトのように動くと説明されているよ。\n\n- アプリケーションとその関係を学ぶ\n- 可観測性ツール、ランブック、コードリポジトリ、CI/CD パイプラインと連携する\n- テレメトリ、コード、デプロイのデータを関連付けて分析する\n- インシデントを自律的にトリアージして、早い解決へ導く。平均復旧時間（MTTR）を数時間から数分にできるとされている\n- 過去のインシデントのパターンを分析して、将来の障害を防ぐ推奨事項を出す\n\n料金の詳細は AWS DevOps Agent の料金ページにあるよ。AWS Support のお客さんには、前月の AWS Support 料金に基づく月額の DevOps Agent クレジットが付くの。\n\n- Unified Operations: 100%\n- Enterprise Support: 75%\n- Business Support+: 30%\n\n多くのお客さんで、DevOps Agent のコストが大きく減るか、ゼロになるとのこと。利用できる全リージョンの一覧は、原文が案内している Regions のリストを見てね。\n\n## まとめ\n\n- AWS DevOps Agent が GovCloud (US-West) で利用可能に\n- インシデントのトリアージと、再発防止の提案をしてくれる\n- AWS Support の契約に応じて月額クレジットが付く\n\nGovCloud で運用を担当している SRE のみんなに刺さるよ！",
+  "title_en": "AWS DevOps Agent Is Now Available in AWS GovCloud (US-West)",
+  "summary_en": "AWS DevOps Agent, which handles incident response and on-demand SRE tasks, is now available in AWS GovCloud (US-West), with monthly credits based on your AWS Support plan.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Here is good news for people running government workloads.\n\n## What was announced?\n\nAWS What's New says AWS DevOps Agent is now available in AWS GovCloud (US-West).\n\n## Why it matters\n\nDevOps Agent is an always-available operations teammate that resolves and proactively prevents incidents, improves application reliability and performance, and handles on-demand SRE tasks across AWS, multicloud, and on-prem environments. Now it is an option in GovCloud too, for regulated environments.\n\n## What changes\n\nIn GovCloud (US-West), you can hand incident investigation and operational improvements to the agent.\n\n## Dive Deep\n\nThe agent is described as working like an experienced teammate:\n\n- It learns your applications and their relationships\n- It works with your observability tools, runbooks, code repositories, and CI/CD pipelines\n- It correlates telemetry, code, and deployment data\n- It triages incidents autonomously and guides teams to resolution, which AWS says reduces mean time to resolution (MTTR) from hours to minutes\n- It analyzes patterns across historical incidents to recommend ways to prevent future outages\n\nPricing details are on the AWS DevOps Agent pricing page. AWS Support customers receive monthly DevOps Agent credits based on the prior month's AWS Support charge:\n\n- Unified Operations: 100%\n- Enterprise Support: 75%\n- Business Support+: 30%\n\nFor many customers this significantly reduces or eliminates DevOps Agent costs. For the full list of supported Regions, see the Regions list linked from the announcement.\n\n## Wrap-up\n\n- AWS DevOps Agent is available in GovCloud (US-West)\n- It triages incidents and recommends ways to prevent recurrence\n- Monthly credits depend on your AWS Support plan\n\nThis is for SREs who operate in GovCloud!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-devops-agent-govcloud-west/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS DevOps Agent is now available in AWS GovCloud (US-West)",
+  "tags": [
+    "aws",
+    "ai",
+    "devops"
+  ],
+  "published_at": "2026-11-16T19:55:00+00:00"
+}

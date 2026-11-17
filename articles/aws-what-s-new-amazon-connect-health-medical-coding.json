@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-connect-health-medical-coding",
+  "title": "カルテから ICD-10-CM と CPT コードを提案！Amazon Connect Health の医療コーディングがプレビュー",
+  "summary": "Amazon Connect Health の医療コーディングがパブリックプレビュー。既存の臨床文書から ICD-10-CM と CPT のコードを根拠と信頼度スコア付きで提案し、人が確認して承認するよ。",
+  "body_md": "こんにちは、しぃちゃんだよ！今日は医療まわりの AI の発表だよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Connect Health の医療コーディングがパブリックプレビューになったと発表されたよ。Amazon Connect Health は、患者対応や診療現場のワークフローで医療チームを支える、HIPAA 対応の AI サービスなの。\n\n## なぜ重要なの？\n\n診療記録から請求用のコードを付ける作業は、間違いが請求に響くから、人の確認が欠かせないよね。このサービスは AI が提案するだけで、提供者やコーダーが確認して承認してから提出する流れになっているところが大事なポイントなの。\n\n## これで何が変わるの？\n\n既存の臨床文書から、ICD-10-CM と CPT のコード（E&M レベルと修飾子を含む）を提案してくれるよ。コーダーは、ゼロから探すのではなく、提案を確認する作業に集中できるね。\n\n## 深く潜ってみよう\n\n- 連携: Amazon Connect Health SDK で EHR や請求アプリケーションに組み込める。Amazon Connect Health の ambient documentation（環境音声からの文書化）と一緒にも使える\n- 透明性: 各コードは裏付けとなる根拠にリンクされ、信頼度スコアが付く。レビュー担当者は請求を出す前にコードを確かめられる\n- 組織への最適化: パブリックプレビューでは、過去にコーディングした診察記録をアップロードでき、組織固有のコーディング参照セットが作られる。コーダーが行う修正がその参照セットに反映され、今後の提案が良くなる\n- リージョン: 米国東部（バージニア北部）と米国西部（オレゴン）\n\n料金は原文には書かれていなかったよ。詳細は Amazon Connect Health ユーザーガイドの医療コーディングの項目を見てね。\n\n## まとめ\n\n- 臨床文書から ICD-10-CM と CPT コードを提案するパブリックプレビュー\n- 根拠へのリンクと信頼度スコアで確認しやすい\n- 過去のコーディング実績で組織向けに学習できる\n- 米国東部（バージニア北部）と米国西部（オレゴン）で利用可能\n\n医療機関の請求・コーディング業務や、EHR を開発しているみんなに刺さるよ！",
+  "title_en": "Amazon Connect Health Medical Coding Is Now in Public Preview",
+  "summary_en": "Medical coding in Amazon Connect Health suggests ICD-10-CM and CPT codes from existing clinical documentation, with linked evidence and confidence scores, for human review before submission.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today's news is about AI in healthcare.\n\n## What was announced?\n\nAWS What's New says medical coding in Amazon Connect Health is now in public preview. Amazon Connect Health is a HIPAA-eligible AI service that works alongside healthcare teams across patient engagement and point-of-care workflows.\n\n## Why it matters\n\nAssigning billing codes from clinical records has to be right, so human review matters. This service only suggests codes, and a provider or coder reviews and approves them before submission.\n\n## What changes\n\nIt uses existing clinical documentation to suggest ICD-10-CM and CPT codes, including E&M levels and modifiers. Coders can focus on reviewing suggestions instead of searching for codes from scratch.\n\n## Dive Deep\n\n- Integration: add it to your EHR or billing application through the Amazon Connect Health SDK, or use it with Amazon Connect Health ambient documentation\n- Transparency: each code links to the evidence that supports it and carries a confidence score, so reviewers can confirm a code before a claim goes out\n- Tuning to your organization: in the public preview, you can upload previously coded encounters, and the service builds a coding reference set specific to your organization; corrections coders make feed that set and improve future suggestions\n- Regions: US East (N. Virginia) and US West (Oregon)\n\nPricing is not mentioned in the announcement. See the medical coding section of the Amazon Connect Health user guide for details.\n\n## Wrap-up\n\n- A public preview that suggests ICD-10-CM and CPT codes from clinical documentation\n- Evidence links and confidence scores make review easier\n- Prior coding history tunes it for your organization\n- Available in US East (N. Virginia) and US West (Oregon)\n\nThis is for healthcare coding and billing teams, and anyone building EHRs!",
+  "emotion": "thinking",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-connect-health-medical-coding/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Connect Health medical coding is now available in public preview",
+  "tags": [
+    "aws",
+    "ai"
+  ],
+  "published_at": "2026-11-16T19:18:00+00:00"
+}

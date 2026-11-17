@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-aws-marketplace-metering-service-decimal-usage-quantities",
+  "title": "1.5 TB を 1.5 TB のまま計測！Marketplace Metering が小数に対応",
+  "summary": "AWS Marketplace Metering Service の MeterUsage と BatchMeterUsage が、小数点以下 6 桁までの使用量に対応したよ。既存の整数連携はそのまま動く。",
+  "body_md": "やっほー、しぃちゃんだよ！AWS Marketplace で製品を売っているセラーさんに嬉しいアップデートだよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Marketplace Metering Service の MeterUsage API と BatchMeterUsage API が、小数の使用量に対応したと発表されたよ。\n\n## 今までどうだったの？\n\nこれまでセラーは、2 つの API に使用量を整数で報告していたの。だから例えばストレージが 1.5 TB でも、1 TB か 2 TB に丸めて報告するしかなかったんだね。\n\n## これで何が変わるの？\n\n小数点以下 6 桁までの使用量を報告できるようになったよ。お客さんの実際の使い方に合った単位で、価格設定と計測ができるの。\n\n## 深く潜ってみよう\n\n新しいパラメータはこれだよ。\n\n- MeterUsage: `UsageQuantityAsDecimal`\n- BatchMeterUsage: `QuantityAsDecimal`\n- 使用量をタグごとのバケットに分ける使用量アロケーション: `AllocatedUsageQuantityAsDecimal`\n\n整数で報告している既存の連携は、変更なしでそのまま動くよ。AWS Marketplace Metering Service が使えるすべてのリージョンで利用できるの。詳細は AWS Marketplace API リファレンスの MeterUsage と BatchMeterUsage を見てね。\n\n## まとめ\n\n- 使用量を小数点以下 6 桁まで報告できる\n- 新パラメータで小数を渡す\n- アロケーションも小数に対応\n- 既存の整数連携は変更不要\n\n従量課金の SaaS を Marketplace で売っているセラーのみんなに刺さるよ！",
+  "title_en": "Marketplace Metering Service Now Supports Decimal Usage Quantities",
+  "summary_en": "AWS Marketplace Metering Service MeterUsage and BatchMeterUsage now accept usage with up to six decimal places. Existing whole-number integrations keep working.",
+  "body_md_en": "Hi everyone, it's Shii-chan! This update is good news for sellers on AWS Marketplace.\n\n## What was announced?\n\nAWS What's New says the MeterUsage and BatchMeterUsage APIs in AWS Marketplace Metering Service now support decimal usage quantities.\n\n## The story so far\n\nSellers used to report usage to both APIs in whole numbers. So 1.5 TB of storage had to be reported as either 1 or 2 TB.\n\n## What changes\n\nYou can now report usage with up to six decimal places, so you can price and meter in units that match how customers actually consume your product.\n\n## Dive Deep\n\nThe new parameters are:\n\n- MeterUsage: `UsageQuantityAsDecimal`\n- BatchMeterUsage: `QuantityAsDecimal`\n- Usage allocations, which split reported usage into buckets by tags: `AllocatedUsageQuantityAsDecimal`\n\nExisting integrations that report whole numbers continue to work without changes. It is available in all Regions where AWS Marketplace Metering Service is available. See MeterUsage and BatchMeterUsage in the AWS Marketplace API Reference for details.\n\n## Wrap-up\n\n- Report usage with up to six decimal places\n- Pass decimals through the new parameters\n- Allocations support decimals too\n- Existing whole-number integrations need no changes\n\nThis is for sellers who meter usage-based products on Marketplace!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-marketplace-metering-service-decimal-usage-quantities/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Marketplace Metering Service now supports decimal usage quantities",
+  "tags": [
+    "aws",
+    "business"
+  ],
+  "published_at": "2026-11-16T17:39:00+00:00"
+}
