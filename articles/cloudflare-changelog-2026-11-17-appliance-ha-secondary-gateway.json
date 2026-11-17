@@ -1,0 +1,19 @@
+{
+  "slug": "cloudflare-changelog-2026-11-17-appliance-ha-secondary-gateway",
+  "title": "HA 構成の Cloudflare One Appliance、1 台ずつ別の WAN ゲートウェイを指定できるよ！",
+  "summary": "Cloudflare One Appliance の HA サイトで、静的 WAN のデフォルトゲートウェイを機器ごとに設定できるようになったよ。別 ISP の回線にもつなげる！",
+  "body_md": "みんな、しぃちゃんだよ！ネットワーク担当さんに嬉しいアップデートだよ！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、高可用性（HA）サイトの Cloudflare One Appliance が、静的 WAN でそれぞれ別のデフォルトゲートウェイを使えるようになったと発表されたよ（2026 年 11 月 17 日）。\n\n## 今までどうだったの？\n\nHA ペアの 2 台は、1 つの WAN ゲートウェイを共有していたの。\n\n## これで何が変わるの？\n\n各アプライアンスが、別々のインターネット回線（たとえば別の ISP）につながって、それぞれ専用の静的 IP とゲートウェイを持てるようになったよ。\n\n## 深く潜ってみよう\n\n設定方法は 2 通りだよ。\n\n- ダッシュボード: HA サイトの静的 WAN を設定するとき、**Primary gateway address** の隣にある新しい **Secondary gateway address** 欄にセカンダリ機器のゲートウェイを入力\n- API: WAN の作成・更新時に `static_addressing.secondary_gateway_address` を設定（PATCH で消したいときは `null`）\n\nポイントはこれだけだよ！\n\n- 入力は任意で、空にするとセカンダリもプライマリのゲートウェイを使う（従来の HA と同じ動き）\n- HA モードのサイトだけが対象\n\n## まとめ\n\n- HA サイトの Appliance で、機器ごとに別の静的 WAN ゲートウェイを指定できる\n- 別々の回線・ISP を使った冗長構成がしやすくなる\n- 設定は任意で、空なら従来どおり\n\n支社やリテールの拠点で、回線も冗長化したいネットワーク担当さんに刺さるよ！",
+  "title_en": "Each Appliance in a Cloudflare One HA Site Can Now Have Its Own WAN Gateway!",
+  "summary_en": "In an HA site, each Cloudflare One Appliance can now use its own default gateway on a static WAN, so each can connect to a different internet circuit such as another ISP.",
+  "body_md_en": "Hi everyone, it's Shii-chan! This is a nice update for network folks!\n\n## What was announced?\n\nCloudflare's Changelog announced that Cloudflare One Appliances in a high availability (HA) site can each use their own default gateway on a static WAN (November 17, 2026).\n\n## The story so far\n\nBoth appliances in an HA pair shared one WAN gateway.\n\n## What changes\n\nEach appliance can now connect to its own internet circuit, such as a different ISP, with its own static IP and gateway.\n\n## Dive Deep\n\nThere are two ways to configure it.\n\n- Dashboard: when configuring a static WAN on an HA site, enter the secondary appliance's gateway in the new **Secondary gateway address** field next to **Primary gateway address**\n- API: set `static_addressing.secondary_gateway_address` when creating or updating a WAN (set it to `null` in a PATCH to remove it)\n\nKey details:\n\n- The field is optional; if left blank, the secondary uses the primary gateway address, matching earlier HA behavior\n- It applies only to sites in HA mode\n\n## Wrap-up\n\n- Each Appliance in an HA site can have its own static WAN gateway\n- Makes redundant designs with separate circuits and ISPs easier\n- Optional, and blank keeps the old behavior\n\nThis one is for network admins at branches and retail sites who want redundant circuits too!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-11-17-appliance-ha-secondary-gateway/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Cloudflare One Appliance, Cloudflare One, Cloudflare WAN - Configure a separate WAN gateway for each appliance in a high availability site",
+  "tags": [
+    "cloudflare",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-17T22:20:29+00:00"
+}

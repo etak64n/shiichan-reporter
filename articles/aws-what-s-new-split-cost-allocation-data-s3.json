@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-split-cost-allocation-data-s3",
+  "title": "S3 のコストをプレフィックス単位で配分できるようになったよ！",
+  "summary": "AWS Split Cost Allocation Data が S3 に対応して、共有バケットのストレージとリクエストのコストを、中のプレフィックスごとに Cost and Usage Report で配分できるようになったよ。",
+  "body_md": "やっほー、しぃちゃんだよ！S3 のコスト配分、ちょっとドヤれる小技が公式機能になったよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Split Cost Allocation Data が Amazon S3 に対応したと発表されたよ（2026 年 11 月 17 日）。共有している S3 汎用バケットのストレージとリクエストのコストを、バケット内のプレフィックス（たとえば `marketing/` や `finance/`）に配分して、Cost and Usage Report（CUR）で見られるの。\n\n## 今までどうだったの？\n\nプレフィックス単位でコストを割り当てるには、S3 Inventory や Storage Lens のレポートと自前の料金計算を使った、独自のパイプラインが必要だったよ。\n\n## これで何が変わるの？\n\nチャージバックやショーバック、どのプレフィックスが S3 のコストを押し上げているかの特定が、標準の仕組みでできるようになるよ。\n\n## 深く潜ってみよう\n\n仕組み:\n\n- S3 Storage Lens が、プレフィックス単位のストレージとリクエストのメトリクスを AWS Billing and Cost Management に公開する\n- ストレージと Tier 1・Tier 2 のリクエストコストは、選んだプレフィックス階層のうち、最も深く一致するプレフィックスに割り当てられる\n- 各プレフィックスの明細には、完全なプレフィックスのパスが AWS 生成のコスト配分タグとして付く。上位プレフィックスやチーム、アプリ単位で合計でき、バケットとも突き合わせられる\n\nセットアップ:\n\n- S3 Storage Lens の Advanced tier のダッシュボード設定で、AWS Billing and Cost Management への公開を有効にする\n- Billing and Cost Management コンソールで、S3 の分割コスト配分データを有効にする\n\nプレフィックスのコストデータは、次の Storage Lens の日次メトリクス公開のあとに CUR に現れるよ。S3 Storage Lens の Advanced メトリクスが使える商用リージョンで使えて（一覧は原文になし）、Advanced tier の料金以外に追加料金はなし。\n\n## まとめ\n\n- 共有 S3 バケットのコストを、プレフィックス単位で CUR に配分\n- Storage Lens の Advanced tier と Billing コンソールの 2 ステップで有効化\n- 配分は最も深く一致するプレフィックスに割り当て\n- 追加料金は Advanced tier の分のみ\n\nS3 を複数チームで共有していて、コストの内訳を出したい人に刺さるよ！",
+  "title_en": "Allocate S3 Costs by Prefix with Split Cost Allocation Data!",
+  "summary_en": "AWS Split Cost Allocation Data now supports Amazon S3, allocating a shared general purpose bucket's storage and request costs to its prefixes in the Cost and Usage Report.",
+  "body_md_en": "Hi, it's Shii-chan! A neat trick for S3 cost allocation has become an official feature!\n\n## What was announced?\n\nAWS What's New announced that AWS Split Cost Allocation Data now supports Amazon S3 (November 17, 2026). You can allocate the storage and request costs of a shared S3 general purpose bucket to the prefixes inside it (for example, `marketing/` and `finance/`) in the AWS Cost and Usage Report (CUR).\n\n## The story so far\n\nAttributing costs by prefix required custom pipelines using S3 Inventory or Storage Lens reports and your own pricing logic.\n\n## What changes\n\nChargeback, showback, and finding which prefixes drive S3 spend can now be done with a built-in mechanism.\n\n## Dive Deep\n\nHow it works:\n\n- S3 Storage Lens publishes prefix-level storage and request metrics to AWS Billing and Cost Management\n- Storage and Tier 1 and Tier 2 request costs are assigned to the deepest matching prefix within the prefix levels you select\n- Each prefix line item includes its full prefix path as AWS-generated cost allocation tags, so you can total by top-level prefix, team, or application and reconcile to the bucket\n\nSetup:\n\n- Enable AWS Billing and Cost Management publishing in an S3 Storage Lens advanced tier dashboard configuration\n- Enable split cost allocation data for Amazon S3 in the Billing and Cost Management console\n\nPrefix cost data appears in the CUR after the next daily Storage Lens metrics publish. It's available in commercial Regions where S3 Storage Lens advanced metrics are available (no list in the announcement), with no additional charge beyond S3 Storage Lens advanced tier pricing.\n\n## Wrap-up\n\n- Allocate shared S3 bucket costs by prefix in the CUR\n- Two steps to enable: Storage Lens advanced tier and the Billing console\n- Costs go to the deepest matching prefix\n- No extra charge beyond advanced tier pricing\n\nThis one is for teams sharing S3 buckets who need a cost breakdown!",
+  "emotion": "smug",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/split-cost-allocation-data-s3/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Split Cost Allocation Data now supports Amazon S3",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "business"
+  ],
+  "published_at": "2026-11-17T08:00:00+00:00"
+}

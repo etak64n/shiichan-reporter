@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-s3-storage-lens-s3-intelligent-tiering-access-tiers",
+  "title": "S3 Intelligent-Tiering のアクセス階層ごとの中身が Storage Lens で見える！",
+  "summary": "Amazon S3 Storage Lens が、S3 Intelligent-Tiering の各アクセス階層ごとのオブジェクト数とストレージ量を出せるようになったよ。",
+  "body_md": "やっほー、しぃちゃんだよ！S3 のコスト見える化がまた一歩進んだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon S3 Storage Lens が S3 Intelligent-Tiering のアクセス階層ごとのストレージメトリクスを提供するようになったと発表されたよ（2026 年 11 月 17 日）。\n\n## これで何が変わるの？\n\nバケット全体で、各階層にあるオブジェクト数とストレージバイト数が分かるようになるよ。データが階層間をどう動いているか、ストレージコストの見積もり、節約効果の測定に役立つの！\n\n## 深く潜ってみよう\n\n- アクセス階層メトリクスは、S3 Storage Lens のダッシュボードとメトリクスのエクスポートに、既存のメトリクスと並んで表示される\n- 有効化は、S3 Storage Lens の Advanced tier の設定で行う\n- AWS 中国リージョンと GovCloud (US) リージョンを除く、すべての AWS リージョンで使える\n- 具体的な料金は原文にはなく、S3 の料金ページを参照する形\n\nあわせて、Storage Lens がプレフィックスのメトリクスを AWS Billing and Cost Management に公開するようになり、S3 の分割コスト配分に使えるようになったよ。共有バケットのコストをチームやアプリに割り当てられるんだって。\n\n## まとめ\n\n- Intelligent-Tiering の階層ごとにオブジェクト数とストレージ量を確認できる\n- Advanced tier の設定で有効化\n- 中国と GovCloud (US) を除く全リージョンで利用可能\n\nS3 のコスト最適化や FinOps に取り組んでいる人に刺さるよ！",
+  "title_en": "See Inside Each S3 Intelligent-Tiering Access Tier with Storage Lens!",
+  "summary_en": "Amazon S3 Storage Lens now reports storage metrics for each S3 Intelligent-Tiering access tier, including object counts and bytes.",
+  "body_md_en": "Hi, it's Shii-chan! S3 cost visibility just got a step better!\n\n## What was announced?\n\nAWS What's New announced that Amazon S3 Storage Lens now provides storage metrics for each S3 Intelligent-Tiering access tier (November 17, 2026).\n\n## What changes\n\nAcross your buckets, you can see object counts and storage bytes in each tier. That helps you understand how data moves between tiers, estimate storage costs, and measure savings!\n\n## Dive Deep\n\n- Access tier metrics appear in S3 Storage Lens dashboards and metrics exports, alongside existing metrics\n- Enable them in your S3 Storage Lens advanced tier configuration\n- Available in all AWS Regions except the AWS China Regions and the AWS GovCloud (US) Regions\n- Specific prices aren't in the announcement; it refers to the S3 pricing page\n\nAlongside this, Storage Lens now publishes prefix metrics to AWS Billing and Cost Management, which supports split cost allocation for S3 so you can assign shared bucket costs to teams and applications.\n\n## Wrap-up\n\n- See object counts and storage per Intelligent-Tiering tier\n- Enable in the advanced tier configuration\n- Available in all Regions except China and GovCloud (US)\n\nThis one is for people working on S3 cost optimization and FinOps!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-s3-storage-lens-s3-intelligent-tiering-access-tiers/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon S3 Storage Lens now tracks S3 Intelligent-Tiering access tiers",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-17T07:00:00+00:00"
+}

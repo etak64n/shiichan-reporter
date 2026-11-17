@@ -1,0 +1,19 @@
+{
+  "slug": "cloudflare-changelog-2026-11-17-file-summaries",
+  "title": "AI Search がインデックス時にファイル要約を作ってくれるようになったよ！",
+  "summary": "Cloudflare の AI Search が、インデックス作成中に各ファイルの要約・トピック・キーワードを LLM で生成できるようになったよ。デフォルトはオフ！",
+  "body_md": "こんにちは、しぃちゃんだよ！今日は検索の精度に効きそうなアップデートだよ！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、AI Search がファイルをインデックスするときに、LLM で要約を作れるようになったと発表されたよ（2026 年 11 月 17 日）。各ファイルについて、要約・トピック・キーワードを生成するんだって。\n\n## これで何が変わるの？\n\n生成された情報は、検索の手がかりとして使われるよ。\n\n- 要約とキーワード: アイテムの `context` メタデータに入る（すでに `context` があればそのまま残る）\n- トピック: そのファイルのチャンクのコンテキストヘッダーに追加される\n\n## 深く潜ってみよう\n\n設定は、ダッシュボードで有効にするか、インスタンスの作成・更新時に `indexing_options.file_summary` を `true` にするよ。\n\n```json\n{\n  \"indexing_options\": {\n    \"file_summary\": true\n  }\n}\n```\n\n気をつけたいポイントはこれだよ！\n\n- 対象は、3 チャンク以上になるテキストドキュメントだけ\n- デフォルトはオフで、設定を変えると全体の再インデックスが走る\n- `indexing_options` は更新のたびにまるごと置き換わるので、現在の全オプションの値を含めて送らないと、省いたものはデフォルトに戻る\n- 要約には、あなたのインスタンスの AI Gateway（未設定なら `default` ゲートウェイ）経由で Workers AI のモデルが使われ、Workers AI の利用分として課金される\n- ファイル要約は AI Search の取り込み枠にはカウントされない\n- 新規・変更されたファイルごとに 1 回ずつ要約されるので、コストはインデックスする量に比例して増える\n\n## まとめ\n\n- インデックス時に、ファイルごとの要約・トピック・キーワードを生成できる\n- `indexing_options.file_summary` で有効化（デフォルトはオフ、変更で再インデックス）\n- 更新時は全オプションを含めること\n- 料金は Workers AI の利用分として別にかかる\n\n社内ドキュメント検索などで AI Search を使っている人に刺さるよ！",
+  "title_en": "AI Search Can Now Generate File Summaries While Indexing!",
+  "summary_en": "Cloudflare AI Search can now use an LLM to generate a summary, topics, and keywords for each file during indexing. It is off by default.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today's update looks like a boost for search quality!\n\n## What was announced?\n\nCloudflare's Changelog announced that AI Search can now summarize your files while it indexes them (November 17, 2026). For each file, it generates a summary, topics, and keywords.\n\n## What changes\n\nThe generated data is used to help retrieval.\n\n- Summary and keywords: stored in the item's `context` metadata (an existing `context` value is kept)\n- Topics: added to the context header of the file's chunks\n\n## Dive Deep\n\nTurn it on in the dashboard, or set `indexing_options.file_summary` to `true` when you create or update an instance.\n\n```json\n{\n  \"indexing_options\": {\n    \"file_summary\": true\n  }\n}\n```\n\nThings to watch out for:\n\n- Only text documents that produce at least three chunks are summarized\n- It's off by default, and changing the setting triggers a full reindex\n- `indexing_options` is replaced as a whole on every update, so include the current value of every option or omitted ones go back to defaults\n- It calls a Workers AI model through your instance's AI Gateway (or the `default` gateway), billed as Workers AI usage\n- File summaries don't count against the AI Search ingestion allotment\n- Each new or modified file is summarized once, so cost grows with the amount of content you index\n\n## Wrap-up\n\n- Generate per-file summaries, topics, and keywords at indexing time\n- Enable with `indexing_options.file_summary` (off by default, reindex on change)\n- Include all options on update\n- LLM usage is billed separately as Workers AI\n\nThis one is for anyone using AI Search for things like internal document search!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-11-17-file-summaries/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "AI Search - AI Search can generate file summaries during indexing",
+  "tags": [
+    "cloudflare",
+    "ai"
+  ],
+  "published_at": "2026-11-17T22:20:31+00:00"
+}

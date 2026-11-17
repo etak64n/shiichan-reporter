@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-security-hub-network-scanning-rds",
+  "title": "Security Hub の Network Scanning が RDS にも対応！ネットに見えてる DB を発見",
+  "summary": "AWS Security Hub Network Scanning が RDS DB インスタンスをスキャンし、インターネットから到達できるポートを検出結果として出してくれるようになったよ！",
+  "body_md": "やっほー、しぃちゃんだよ！データベースの公開状態チェックが強くなるニュースだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Security Hub Network Scanning が Amazon RDS の DB インスタンスをスキャンできるようになったと発表されたよ（2026 年 11 月 16 日）。「インターネットから到達可能」なインスタンスを見つけるための機能だよ。\n\n## 今までどうだったの？\n\nこれまでは RDS は対象に含まれていなかったよ。この発表で、スキャン対象に RDS が加わったの。\n\n## これで何が変わるの？\n\nNetwork Scanning は、セキュリティグループやルートテーブルの設定だけに頼らず、実際にインターネットから到達できるかを試すよ。見つかった到達可能なポートごとに、インスタンスの情報と開いているポートを含む検出結果が作られるの。\n\n## 深く潜ってみよう\n\n- スキャン対象は、既存・新規の RDS DB インスタンスのうち、パブリックアクセスが設定されているものだけ\n- Security Hub Exposures が、これらの検出結果を他の検出結果やリソース設定と関連づけて、より広いリスクを評価する\n- すでに Network Scanning を使っている人は、RDS スキャンが自動でオンになる\n- 既存のお客さんはアカウントとリージョンごと、または設定ポリシーで組織全体に Network Scanning を有効化できる\n- Security Hub の新規のお客さんは、デフォルトでオン\n- Security Hub Essentials に追加料金なしで含まれる\n- 商用リージョンと GovCloud (US) リージョンの、Security Hub 対応リージョンで利用可能（一覧は原文にはないよ）\n\n## まとめ\n\n- Network Scanning が RDS DB インスタンスに対応\n- パブリックアクセス設定のあるインスタンスの、到達可能ポートを検出\n- 既存利用者は自動で有効、追加料金なし\n\nDB の公開設定を棚卸ししたいセキュリティ担当さんに刺さるよ！",
+  "title_en": "Security Hub Network Scanning Now Covers RDS: Find Databases Exposed to the Internet!",
+  "summary_en": "AWS Security Hub Network Scanning now scans Amazon RDS DB instances and creates findings for ports reachable from the internet.",
+  "body_md_en": "Hi, it's Shii-chan! This news makes checking database exposure stronger!\n\n## What was announced?\n\nAWS What's New announced that AWS Security Hub Network Scanning can now scan Amazon RDS DB instances (November 16, 2026), to find instances that are reachable from the internet.\n\n## The story so far\n\nRDS wasn't part of the scan before. With this announcement, RDS joins the scan targets.\n\n## What changes\n\nNetwork Scanning probes resources from the internet to test reachability, rather than relying only on security group rules and route tables. For each reachable port, a finding is created with the instance details and the open port.\n\n## Dive Deep\n\n- It scans only existing and new RDS DB instances that have Public Access configured\n- Security Hub Exposures correlates these findings with other findings and resource configurations to assess broader risk\n- RDS scanning turns on automatically for customers already using Network Scanning\n- Existing customers can enable Network Scanning per account and Region, or across an organization with a configuration policy\n- New Security Hub customers get it on by default\n- Included with Security Hub Essentials at no additional cost\n- Available in commercial Regions and GovCloud (US) Regions where Security Hub is supported (the announcement doesn't list them)\n\n## Wrap-up\n\n- Network Scanning now supports RDS DB instances\n- Finds reachable ports on instances with Public Access configured\n- Automatic for existing users, no additional cost\n\nThis one is for security folks who want to audit database exposure!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/security-hub-network-scanning-rds/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Security Hub Network Scanning now supports scanning Amazon Relational Database Service (Amazon RDS) database instances",
+  "tags": [
+    "aws",
+    "security"
+  ],
+  "published_at": "2026-11-16T08:00:00+00:00"
+}

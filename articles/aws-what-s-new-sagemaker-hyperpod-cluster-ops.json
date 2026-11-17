@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-sagemaker-hyperpod-cluster-ops",
+  "title": "SageMaker HyperPod にクラスターオペレーション機能！スケーリングの行方を追跡",
+  "summary": "Amazon SageMaker HyperPod に、スケーリングやオンデマンドの Deep Health Check リクエストの進行を追えるクラスターオペレーションが追加されたよ。追加料金なし！",
+  "body_md": "こんにちは、しぃちゃんだよ！大規模な学習クラスターを運用している人向けの発表だよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon SageMaker HyperPod にクラスターオペレーションが加わったと発表されたよ（2026 年 11 月 17 日）。スケーリングや、オンデマンドの Deep Health Check のリクエストが今どうなっているかが見えるようになるの。\n\n## これで何が変わるの？\n\nスケーリングまたはオンデマンドの Deep Health Check のリクエストごとに、クラスターオペレーションが作られて、送信から完了まで追跡されるよ。まだ実行中か、インスタンスグループにどんな変更を加えたかも分かるの。\n\n## 深く潜ってみよう\n\n- イベントの紐づけ: リクエストの処理中に記録された HyperPod のイベントがオペレーションにリンクされ、そのリクエストのイベントだけを見られる\n- エラー通知: リクエストが失敗すると、SageMaker AI コンソールにエラーイベントへのリンク付きアラートが出る\n- 同時リクエスト: 完了したのか、新しいリクエストに置き換えられたのかが分かる。Karpenter のようなオートスケーラーなど、複数のリクエストが同じインスタンスグループを対象にするときに便利\n- 場所: コンソールのクラスターの Events タブ\n- 新しい API: `ListClusterOperations` と `DescribeClusterOperation`。`ListClusterEvents` はオペレーションで絞り込める\n- 対象: continuous provisioning を使うクラスターで、HyperPod が使える全リージョン（個別一覧は原文になし）\n- 追加料金なし。オペレーションは全リクエストで自動作成されるので、ワークフローの変更は不要\n\n## まとめ\n\n- スケーリングと Deep Health Check のリクエストを、オペレーションとして追跡\n- イベントやエラーがオペレーションに紐づく\n- `ListClusterOperations` と `DescribeClusterOperation` を追加\n- 追加料金なし\n\nHyperPod で大規模な学習クラスターを運用している ML インフラ担当さんに刺さるよ！",
+  "title_en": "SageMaker HyperPod Adds Cluster Operations to Track Scaling Requests!",
+  "summary_en": "Amazon SageMaker HyperPod introduces cluster operations, giving visibility into scaling and on-demand Deep Health Check requests at no additional cost.",
+  "body_md_en": "Hi, it's Shii-chan! This announcement is for people running large training clusters!\n\n## What was announced?\n\nAWS What's New announced that Amazon SageMaker HyperPod introduces cluster operations (November 17, 2026), giving you visibility into scaling and on-demand Deep Health Check requests.\n\n## What changes\n\nEach scaling or on-demand deep health check request creates a cluster operation that tracks it from submission to completion, including whether it is still running and what it changed in each instance group.\n\n## Dive Deep\n\n- Event linking: HyperPod events recorded while handling a request are linked to its operation, so you can view only that request's events\n- Error alerts: when a request fails, the SageMaker AI console shows an alert linking to its error events\n- Concurrent requests: operations show whether a request completed or was replaced by a newer one, which helps when multiple requests (for example from autoscalers like Karpenter) target the same instance group\n- Where: the cluster's Events tab in the console\n- New APIs: `ListClusterOperations` and `DescribeClusterOperation`; `ListClusterEvents` can be filtered by operation\n- Availability: clusters using continuous provisioning, in all Regions where HyperPod is available (no individual list in the announcement)\n- No additional cost; operations are created automatically for every request, with no workflow changes\n\n## Wrap-up\n\n- Track scaling and Deep Health Check requests as operations\n- Events and errors are linked to operations\n- New `ListClusterOperations` and `DescribeClusterOperation` APIs\n- No additional cost\n\nThis one is for ML infrastructure folks running large training clusters on HyperPod!",
+  "emotion": "thinking",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/sagemaker-hyperpod-cluster-ops/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon SageMaker HyperPod now supports cluster operations for tracking scaling and on-demand Deep Health Check requests",
+  "tags": [
+    "aws",
+    "ai",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-17T08:00:00+00:00"
+}

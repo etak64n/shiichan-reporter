@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-security-hub-gcp",
+  "title": "Security Hub が Google Cloud まで見守る！AWS と GCP をひとつの画面で",
+  "summary": "AWS Security Hub が Google Cloud Platform のリソースも監視できるようになったよ。VM・コンテナイメージ・Cloud Run functions・ID が対象で、30 日間の無料トライアル付き！",
+  "body_md": "みんな、しぃちゃんだよ！マルチクラウドのセキュリティ担当さんに大きなニュースだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Security Hub が Google Cloud Platform（GCP）のリソースを監視できるようになったと発表されたよ（2026 年 11 月 17 日）。すでに対応していた Microsoft Azure に加わる形で、リスク分析、クラウドセキュリティ態勢管理、脆弱性管理、セキュリティ対応管理を AWS と GCP にまたがって行えるよ。\n\n## これで何が変わるの？\n\nAWS と GCP の検出結果が、同じ検出結果の形式・自動化ワークフローで、ひとつの優先順位つきビューに並ぶよ。\n\n## 深く潜ってみよう\n\n見つけてくれる GCP リソースはこれだよ！\n\n- 仮想マシン\n- Google Artifact Registry のコンテナイメージ\n- Cloud Run functions\n- GCP の ID\n\nミス設定、インターネット公開、ソフトウェアの脆弱性がチェックされて、態勢チェックは CIS Benchmarks for Google Cloud Platform Foundations に対して行われるの。ほかにも統一されたリソースインベントリ、リスクと露出の分析、EventBridge 連携による自動対応が使えるよ。\n\n料金とリージョンはこうだよ。\n\n- GCP 連携を作ったときから 30 日間の無料トライアル。その後は、同等の AWS リソースと同じ料金体系（金額は原文にはなし）\n- Security Hub が使えるリージョンで連携を作成できる。ただし中東（UAE）、中東（バーレーン）、アジアパシフィック（台北）、アジアパシフィック（ニュージーランド）は除く\n- Security Hub CSPM（態勢チェック）と Amazon Inspector（脆弱性管理）の GCP 連携は、Security Hub とは別に単独でも設定できる\n\n## まとめ\n\n- Security Hub が GCP のリソースを監視（Azure に続く対応）\n- AWS と GCP の検出結果を統一ビューで確認、EventBridge で自動対応\n- 30 日間の無料トライアルあり、一部リージョンは対象外\n\nAWS と GCP の両方を運用しているセキュリティチームに刺さるよ！",
+  "title_en": "Security Hub Now Watches Google Cloud Too: AWS and GCP in One View!",
+  "summary_en": "AWS Security Hub now monitors Google Cloud Platform resources: VMs, container images, Cloud Run functions, and identities, with a 30-day free trial.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Big news for multicloud security folks!\n\n## What was announced?\n\nAWS What's New announced that AWS Security Hub now monitors Google Cloud Platform (GCP) resources (November 17, 2026). Alongside its existing support for Microsoft Azure, it covers risk analytics, cloud security posture management, vulnerability management, and security response management across AWS and GCP.\n\n## What changes\n\nAWS and GCP findings appear in one prioritized view, using the same finding formats and automation workflows.\n\n## Dive Deep\n\nGCP resources it discovers:\n\n- Virtual machines\n- Google Artifact Registry container images\n- Cloud Run functions\n- GCP identities\n\nResources are checked for misconfigurations, internet exposure, and software vulnerabilities, and posture checks run against the CIS Benchmarks for Google Cloud Platform Foundations. You also get a unified resource inventory, risk and exposure analysis, and automated response through EventBridge integrations.\n\nPricing and Regions:\n\n- A 30-day free trial starts when you create the GCP integration; afterward, GCP resources are priced like equivalent AWS resources (no dollar amounts in the announcement)\n- You can create the integration in Regions where Security Hub is available, except Middle East (UAE), Middle East (Bahrain), Asia Pacific (Taipei), and Asia Pacific (New Zealand)\n- The GCP integrations for Security Hub CSPM (posture checks) and Amazon Inspector (vulnerability management) can also be set up separately from Security Hub\n\n## Wrap-up\n\n- Security Hub monitors GCP resources (following Azure)\n- One unified view of AWS and GCP findings, with EventBridge automation\n- 30-day free trial; a few Regions are excluded\n\nThis one is for security teams running both AWS and GCP!",
+  "emotion": "energetic",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/security-hub-gcp/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Security Hub extends unified security management to Google Cloud Platform",
+  "tags": [
+    "aws",
+    "security"
+  ],
+  "published_at": "2026-11-17T08:00:00+00:00"
+}

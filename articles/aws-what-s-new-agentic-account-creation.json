@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-agentic-account-creation",
+  "title": "コーディングエージェントから AWS アカウント作成へ！アイデアからデプロイまで直行",
+  "summary": "Claude Code・Codex・Cursor のようなエージェント型コーディングハーネスから、新しい AWS サインアップ体験を開けるようになったよ。短期認証情報はハーネスに返ってくる！",
+  "body_md": "やっほー、しぃちゃんだよ！AWS を始めるハードルがぐっと下がる発表だよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、エージェント型のコーディングハーネスが、AWS アカウントをまだ持っていない開発者向けに新しいサインアップ体験を開けるようになったと発表されたよ（2026 年 11 月 17 日）。\n\n## 今までどうだったの？\n\nClaude Code、Codex、Cursor のようなツールを使っている開発者は、いったんコーディング環境を離れて aws.amazon.com でサインアップし、認証情報を設定してからでないとデプロイできなかったの。\n\n## これで何が変わるの？\n\n流れはこう変わるよ。\n\n- ブラウザが自動で開く\n- 開発者がサインアップを完了する\n- 短期認証情報がハーネスに返される\n\n環境を切り替えずに、アイデアからデプロイまで進めるのがねらいだよ！\n\n## 深く潜ってみよう\n\n- 新しいアカウントの最初のプロジェクトには、ホームリージョン、IAM ロールマネージャー、自動で更新される短期認証情報が付く\n- 試すには、エージェントハーネスに AWS プラグインを入れるか、AWS Agent Toolkit を設定する\n- 詳細は AWS Agent Toolkit のユーザーガイドと AWS Account のドキュメントを見てね\n\n## まとめ\n\n- エージェント型ハーネスから、新しい AWS サインアップを開ける\n- 短期認証情報がハーネスに返り、自動で更新される\n- AWS プラグインか AWS Agent Toolkit で利用\n\nAI コーディングツールで、AWS デプロイまで一気に進めたい開発者さんに刺さるよ！",
+  "title_en": "Agentic Account Creation: Go from Idea to Deployed App Without Leaving Your Coding Agent!",
+  "summary_en": "AWS now lets agentic coding harnesses such as Claude Code, Codex, and Cursor open the new AWS sign-up experience, returning short-lived credentials to the harness.",
+  "body_md_en": "Hi, it's Shii-chan! This announcement lowers the barrier to getting started with AWS!\n\n## What was announced?\n\nAWS What's New announced that agentic coding harnesses can now open the new AWS sign-up experience for developers who don't yet have an AWS account (November 17, 2026).\n\n## The story so far\n\nDevelopers using tools like Claude Code, Codex, and Cursor had to leave their coding environment, sign up at aws.amazon.com, and configure credentials before they could deploy.\n\n## What changes\n\nThe flow now goes like this:\n\n- The browser opens automatically\n- The developer completes sign-up\n- Short-lived credentials are returned to the harness\n\nThe goal is to go from idea to deployed application without switching context!\n\n## Dive Deep\n\n- A new account's first project comes with a home Region, an IAM role manager, and short-term credentials that refresh automatically\n- To try it, install the AWS plugin or configure the AWS Agent Toolkit in your harness\n- See the AWS Agent Toolkit user guide and the AWS Account documentation for details\n\n## Wrap-up\n\n- Agentic harnesses can open the new AWS sign-up experience\n- Short-lived credentials return to the harness and refresh automatically\n- Use the AWS plugin or AWS Agent Toolkit\n\nThis one is for developers who want to go all the way to an AWS deployment from their AI coding tool!",
+  "emotion": "energetic",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/agentic-account-creation/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS announces agentic account creation for agentic coding harnesses",
+  "tags": [
+    "aws",
+    "ai",
+    "devops"
+  ],
+  "published_at": "2026-11-17T08:00:00+00:00"
+}

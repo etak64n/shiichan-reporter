@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-iam-access-troubleshooter",
+  "title": "アクセス拒否の原因がすぐ分かる！IAM Access Troubleshooter が登場",
+  "summary": "AWS IAM に Access Troubleshooter が登場。アクセス拒否メッセージの一意な ID から、評価されたポリシーや認可コンテキストを取得して原因を調べられるよ。",
+  "body_md": "やっほー、しぃちゃんだよ！「Access Denied」にうなされた経験があるみんな、朗報だよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS IAM に Access Troubleshooter が加わったと発表されたよ（2026 年 11 月 17 日）。アクセス拒否エラーのデバッグを助けてくれる機能だよ。\n\n## 今までどうだったの？\n\n開発者が分かるのは、拒否したポリシーの ARN だけで、広い認可コンテキストや、同じリクエストで評価された他のポリシーは見えなかったの。\n\n## これで何が変わるの？\n\n対応しているサービスと API では、アクセス拒否メッセージに一意な ID が含まれるようになるよ。その ID を使うと、サービスの認可レコードを取得できるの。\n\n## 深く潜ってみよう\n\n認可レコードで分かること:\n\n- 評価されたポリシー\n- リクエストの認可コンテキスト\n- 評価の結果\n\nこれで根本原因の分析が早くなって、権限まわりのデバッグ時間が減るのがねらいだよ。\n\n原文には、リージョンや料金の記載はなくて、対応サービスの全一覧も載っていないの。詳しくは IAM ユーザーガイドを見てね。\n\n## まとめ\n\n- アクセス拒否メッセージに一意な ID が入る\n- ID から、評価されたポリシー・認可コンテキスト・評価結果が取れる\n- 対応サービスや API の範囲は IAM ユーザーガイドで確認\n\n権限エラーと日々戦っている開発者さんやインフラ担当さんに刺さるよ！",
+  "title_en": "IAM Access Troubleshooter Helps You Debug Access Denied Errors!",
+  "summary_en": "AWS IAM introduces Access Troubleshooter: access denied messages carry a unique ID that lets you retrieve evaluated policies and the authorization context.",
+  "body_md_en": "Hi, it's Shii-chan! Good news for everyone who has been haunted by \"Access Denied\"!\n\n## What was announced?\n\nAWS What's New announced that AWS IAM introduces Access Troubleshooter (November 17, 2026), which helps you debug access denied errors.\n\n## The story so far\n\nDevelopers only had the ARN of the denying policy, and couldn't see the wider authorization context or other policies evaluated in the same request.\n\n## What changes\n\nFor supported services and APIs, access denied messages now include a unique ID. With that ID, you can retrieve the service's authorization record.\n\n## Dive Deep\n\nThe authorization record shows:\n\n- Which policies were evaluated\n- The request's authorization context\n- The evaluation results\n\nThe goal is faster root-cause analysis and less time spent on permission debugging.\n\nThe announcement doesn't mention Regions or pricing, and it doesn't list all supported services. See the IAM User Guide for details.\n\n## Wrap-up\n\n- Access denied messages include a unique ID\n- The ID gets you evaluated policies, authorization context, and results\n- Check the IAM User Guide for supported services and APIs\n\nThis one is for developers and infrastructure folks who battle permission errors every day!",
+  "emotion": "energetic",
+  "importance": 5,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/iam-access-troubleshooter/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS IAM announces Access Troubleshooter to debug access denied errors",
+  "tags": [
+    "aws",
+    "security",
+    "devops"
+  ],
+  "published_at": "2026-11-17T08:00:00+00:00"
+}

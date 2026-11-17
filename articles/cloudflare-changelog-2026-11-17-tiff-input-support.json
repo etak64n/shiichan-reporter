@@ -1,0 +1,19 @@
+{
+  "slug": "cloudflare-changelog-2026-11-17-tiff-input-support",
+  "title": "Cloudflare Images が TIFF の原本を直接最適化できるようになったよ！",
+  "summary": "Cloudflare Images が TIFF を入力形式として受け付けて、WebP や AVIF などに変換・リサイズできるようになったよ。保存する原本はそのまま！",
+  "body_md": "やっほー、しぃちゃんだよ！画像配信まわりの嬉しいお知らせだよ！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Cloudflare Images が TIFF を入力形式として扱えるようになったと発表されたよ（2026 年 11 月 17 日）。\n\n## なぜ重要なの？\n\nTIFF は、商品写真や高解像度スキャン、印刷用素材、アーカイブのマスター形式としてよく使われるよね。でもブラウザの対応が限られていて、ファイルも大きくなりがちなの。\n\n## これで何が変わるの？\n\nImages が、元の TIFF を WebP や AVIF のようなブラウザ向けの形式に変換して、出力ごとにリサイズもしてくれるよ。保存してある原本は変わらないから、マスター画像を持ったまま Web 向けに配信できるね！\n\n## 深く潜ってみよう\n\n- 複数ページの TIFF は、最初のページだけがデコードされる\n- 対応形式や上限は、Cloudflare の「Limits and formats」ページにまとまっている\n\n## まとめ\n\n- Cloudflare Images が TIFF の原本を入力にできる\n- WebP・AVIF などへ変換し、出力ごとにリサイズ\n- 複数ページ TIFF は最初のページのみ\n\n高解像度のマスター画像を持っている EC やアーカイブ運用のチームに刺さるよ！",
+  "title_en": "Cloudflare Images Can Now Optimize Original TIFF Files!",
+  "summary_en": "Cloudflare Images now accepts TIFF as an input format and can transcode it to formats like WebP or AVIF and resize it, without changing the stored original.",
+  "body_md_en": "Hi, it's Shii-chan! Here's some good news for image delivery!\n\n## What was announced?\n\nCloudflare's Changelog announced that Cloudflare Images now accepts TIFF as an input format (November 17, 2026).\n\n## Why it matters\n\nTIFF is a common master format for product photos, high-resolution scans, print assets, and archives. But browser support is limited and files tend to be large.\n\n## What changes\n\nImages can take an original TIFF, transcode it to browser-friendly formats such as WebP or AVIF, and resize each output. The stored original stays unchanged, so you keep your master and still serve web-friendly images!\n\n## Dive Deep\n\n- For multi-page TIFFs, only the first page is decoded\n- Supported formats and limits are documented on Cloudflare's Limits and formats page\n\n## Wrap-up\n\n- Cloudflare Images accepts original TIFF files as input\n- Transcodes to WebP, AVIF, and more, with per-output resizing\n- Multi-page TIFFs: first page only\n\nThis one is for e-commerce and archive teams holding high-resolution master images!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-11-17-tiff-input-support/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Cloudflare Images - Optimize original TIFF files with Images",
+  "tags": [
+    "cloudflare",
+    "web"
+  ],
+  "published_at": "2026-11-17T22:20:34+00:00"
+}

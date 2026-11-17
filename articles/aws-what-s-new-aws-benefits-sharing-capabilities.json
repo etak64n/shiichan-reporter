@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-aws-benefits-sharing-capabilities",
+  "title": "クレジット・Savings Plans・RI の共有設定が、同じ操作感でそろったよ！",
+  "summary": "AWS Billing and Cost Management で、クレジット、Reserved Instances、Savings Plans の共有を、組織全体で同じ粒度で制御できるようになったよ。",
+  "body_md": "おつかれさま、しぃちゃんだよ！請求まわりの設定がすっきりするよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Billing and Cost Management が、クレジット・Reserved Instances（RI）・Savings Plans の共有について、対称的で細かい制御を提供するようになったと発表されたよ（2026 年 11 月 17 日）。\n\n## これで何が変わるの？\n\n組織全体で、3 種類の特典を同じレベルで共有設定できるよ。\n\n- すべてのコスト削減特典に使えるデフォルトの共有設定を決められる\n- 個別の特典ごとに、デフォルトを上書きできる\n\n助成金、規制上の義務、複数法人の構造を持つ組織では、これまで手作業の請求の付け替え照合が必要だった特典の配分を、自動化できるとされているよ。\n\n## 深く潜ってみよう\n\n- クレジットの共有（Credit Group Sharing）: Billing の設定ページで構成。新しいクレジットにはひとつのデフォルトが自動で適用される\n- RI と Savings Plans の共有: Savings Plans または RI のインベントリページで、コミットメントごとに設定。リンクアカウントで購入したものも、支払者レベルのものも対象\n- すべての共有設定に Cost Categories を使う（Cost Explorer、AWS Budgets、Cost and Usage Report で使われているのと同じグルーピング）\n- 2026 年 11 月 17 日から、全 AWS リージョンで、コンソールと公開 API から使える\n- 追加料金なし\n\n## まとめ\n\n- クレジット・RI・Savings Plans の共有を同じ粒度でコントロール\n- デフォルト設定と個別の上書きに対応\n- Cost Categories ベースで、コンソールと API から使え、追加料金なし\n\n複数アカウントの請求管理をしている FinOps 担当さんに刺さるよ！",
+  "title_en": "Consistent Sharing Controls for Credits, Savings Plans, and Reserved Instances!",
+  "summary_en": "AWS Billing and Cost Management now gives symmetric, granular control over sharing credits, Reserved Instances, and Savings Plans across an organization.",
+  "body_md_en": "Hi, it's Shii-chan! Billing settings just got tidier!\n\n## What was announced?\n\nAWS What's New announced that AWS Billing and Cost Management now offers symmetric, granular control over sharing credits, Reserved Instances (RIs), and Savings Plans (November 17, 2026).\n\n## What changes\n\nYou can set sharing for all three benefit types at the same level of control across your organization.\n\n- Set a default sharing preference that applies to all cost-saving benefits\n- Override it for individual benefits\n\nFor organizations with grant funding, regulatory obligations, or multi-entity structures, benefit allocation that previously required manual chargeback reconciliation can be automated.\n\n## Dive Deep\n\n- Credit Group Sharing: configured on the Billing Preferences page; a single default applies automatically to every new credit\n- RI and Savings Plans sharing: configured per commitment on the Savings Plans or RI inventory pages, for commitments bought at a linked account or at the payer level\n- All sharing configurations use Cost Categories, the same grouping used in Cost Explorer, AWS Budgets, and the Cost and Usage Report\n- Available from November 17, 2026 in all AWS Regions, through the console and public APIs\n- No additional charge\n\n## Wrap-up\n\n- Control credit, RI, and Savings Plans sharing at the same granularity\n- Defaults plus per-benefit overrides\n- Based on Cost Categories, via console and API, at no additional charge\n\nThis one is for FinOps folks managing billing across many accounts!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-benefits-sharing-capabilities/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS announces consistent sharing controls for credits, Savings Plans, and Reserved Instances",
+  "tags": [
+    "aws",
+    "business"
+  ],
+  "published_at": "2026-11-17T08:00:00+00:00"
+}

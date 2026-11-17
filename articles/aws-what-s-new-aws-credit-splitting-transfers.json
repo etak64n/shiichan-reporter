@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-aws-credit-splitting-transfers",
+  "title": "AWS クレジットを分割して他アカウントに移せるように！",
+  "summary": "AWS がクレジットの分割と移管に対応したよ。1 つのクレジットを小さく分けて、同じ支払者配下のリンクアカウントに渡せる。追加料金なし！",
+  "body_md": "みんな、しぃちゃんだよ！FinOps 担当さんが待っていそうな機能が来たよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、クレジットの分割と移管がサポートされたと発表されたよ（2026 年 11 月 17 日）。1 つのクレジットをより小さなクレジットに分けて、同じ支払者アカウント配下の別のリンクアカウントへ移せるんだって。\n\n## 今までどうだったの？\n\nこれまでは、クレジットはまず所有アカウントに適用されて、余った分が利用量に応じて共有される形だったよ。\n\n## これで何が変わるの？\n\nチームや事業部ごとに、予測しやすいクレジット予算を持てるようになるよ。毎月の手作業の請求付け替え作業も減らせるとされているよ！\n\n## 深く潜ってみよう\n\n分割と移管:\n\n- 金額、パーセンテージ、その他の分け方で分割でき、分けた分をそれぞれ別のチームや事業部に渡せる\n- 一部消費したクレジットも分割でき、対象は残りの残高だけ\n- どの種類のクレジットも、AWS Billing コンソール、CLI、API から分割できる\n- 1 つのクレジットファミリーあたり最大 100 分割、1 分割あたり最低 100 ドル\n- 分割は永続的で、元に戻せない\n\nクレジットの性質:\n\n- 分割後も、元の有効期限とサービスの対象範囲を引き継ぐ\n- デフォルトで共有設定も引き継ぐので、使われなかった残高が他の対象アカウントに流れる\n- 移管されたクレジットは、受け取ったアカウントで最優先で消費される\n- クレジット単位の共有や一時停止と併用できる（1 つを複数アカウントで共有、別のものは 1 アカウント限定、将来のプロジェクトまで一時停止、など）\n\n全商用リージョンで追加料金なしだよ。\n\n## まとめ\n\n- クレジットを分割し、リンクアカウントへ移管できる\n- 最大 100 分割、最低 100 ドル、元に戻せない\n- 有効期限と対象サービスは引き継がれる\n- 追加料金なし\n\n複数チームの AWS クレジットを管理している人に刺さるよ！",
+  "title_en": "AWS Launches Credit Splitting and Transfers!",
+  "summary_en": "AWS now supports splitting a credit into smaller credits and transferring them to other linked accounts in the same payer account, at no additional cost.",
+  "body_md_en": "Hi everyone, it's Shii-chan! A feature FinOps folks have probably been waiting for is here!\n\n## What was announced?\n\nAWS What's New announced support for credit splitting and transfers (November 17, 2026). You can divide a credit into smaller credits and move them to other linked accounts in your payer account.\n\n## The story so far\n\nCredits applied first to the owning account, and any excess was shared based on usage.\n\n## What changes\n\nEach team or business unit can have a predictable credit budget, and you can cut down on manual monthly chargeback work!\n\n## Dive Deep\n\nSplitting and transfers:\n\n- Split by dollar amount, percentage, or other splits, and send each portion to a different team or business unit\n- Partially consumed credits can be split; only the remaining balance is split\n- Any credit type can be split through the AWS Billing Console, CLI, or API\n- Up to 100 splits per credit family, with a $100 minimum per split credit\n- Splits are permanent, with no undo\n\nCredit properties:\n\n- Split credits keep the original expiration date and service eligibility\n- Sharing settings are retained by default, so unused balances can flow to other eligible accounts\n- Transferred credits get first-priority consumption in the receiving account\n- Works with credit-level sharing and pausing (for example, share one split credit across accounts, restrict another to one account, or pause one for a future project)\n\nAvailable in all commercial Regions at no additional cost.\n\n## Wrap-up\n\n- Split credits and transfer them to linked accounts\n- Up to 100 splits, $100 minimum, no undo\n- Expiration and service eligibility carry over\n- No additional cost\n\nThis one is for anyone managing AWS credits across multiple teams!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-credit-splitting-transfers/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS launches credit splitting and transfers",
+  "tags": [
+    "aws",
+    "business"
+  ],
+  "published_at": "2026-11-17T08:00:00+00:00"
+}

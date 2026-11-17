@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-security-hub-detects-vulnerable-software",
+  "title": "脆弱なソフトが「動いている」EC2 を Security Hub が見分けてくれる！",
+  "summary": "AWS Security Hub が、既知の脆弱性を持つソフトウェアが EC2 上で実際に動いていることを検出し、より高い重大度で知らせてくれるようになったよ！",
+  "body_md": "おつかれさま、しぃちゃんだよ！パッチ当ての優先順位づけが楽になる発表を見つけたよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Security Hub が EC2 インスタンス上で既知の脆弱性を持つソフトウェアが実際に動作していることを検出できるようになったと発表されたよ。\n\n## 今までどうだったの？\n\n脆弱性のあるソフトが「入っている」ことは分かっても、それが「動いている」かどうかを確かめるには、セキュリティチームが手作業で確認する必要があったの。\n\n## これで何が変わるの？\n\nエクスポージャー検出結果に、新しいトレイト「The EC2 instance is running software with a known vulnerability.」が付くよ。\n\n動いているソフトの検出結果は、同じ脆弱性でも動いていないソフトより高い重大度になるから、本当に危ないところから優先して直せるよ！\n\n## 深く潜ってみよう\n\n- データの出どころは Amazon GuardDuty Runtime Monitoring と Amazon Inspector VM Scanner\n- Security Hub がそれらのシグナルを他のデータと組み合わせて、リスクのある EC2 リソースを示す\n- AWS Security Hub Essentials プランに追加料金なしで含まれる\n- Security Hub が提供されている全リージョンで使える（具体的なリージョン一覧は原文には載っていないので、AWS のリージョン別サービス一覧で確認してね）\n\n## まとめ\n\n- 脆弱なソフトが「実行中」の EC2 を検出して重大度を引き上げる\n- GuardDuty Runtime Monitoring と Inspector VM Scanner のデータを活用\n- Essentials プランで追加料金なし\n\n脆弱性対応の優先順位に悩んでいる運用チームに刺さるよ！",
+  "title_en": "Security Hub Now Spots Vulnerable Software That Is Actually Running on EC2!",
+  "summary_en": "AWS Security Hub now detects when software with a known vulnerability is actively running on Amazon EC2 instances and rates those findings with higher severity.",
+  "body_md_en": "Hi, it's Shii-chan! I found an announcement that makes patch prioritization easier!\n\n## What was announced?\n\nAWS What's New announced that AWS Security Hub can now detect when software with a known vulnerability is actively running on Amazon EC2 instances.\n\n## The story so far\n\nYou could learn that vulnerable software was installed, but confirming whether it was actually running took manual work from security teams.\n\n## What changes\n\nExposure findings now include a new trait: \"The EC2 instance is running software with a known vulnerability.\"\n\nFindings for running software get a higher severity than findings for the same vulnerability in software that isn't running, so you can fix the riskiest things first!\n\n## Dive Deep\n\n- Data comes from Amazon GuardDuty Runtime Monitoring and Amazon Inspector VM Scanner\n- Security Hub combines those signals with other data to flag EC2 resources at risk\n- Included at no additional cost with the AWS Security Hub Essentials plan\n- Available in all Regions where Security Hub is offered (the announcement doesn't list them, so check the AWS Regional Services List)\n\n## Wrap-up\n\n- Detects vulnerable software that is running on EC2 and raises severity\n- Uses GuardDuty Runtime Monitoring and Inspector VM Scanner data\n- No additional cost with the Essentials plan\n\nThis one is for operations teams struggling to prioritize vulnerability fixes!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/security-hub-detects-vulnerable-software/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Security Hub now detects when vulnerable software is running on Amazon EC2 instances",
+  "tags": [
+    "aws",
+    "security"
+  ],
+  "published_at": "2026-11-16T08:00:00+00:00"
+}

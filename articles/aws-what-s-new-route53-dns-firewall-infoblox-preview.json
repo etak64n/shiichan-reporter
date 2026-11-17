@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-route53-dns-firewall-infoblox-preview",
+  "title": "Route 53 DNS Firewall に Infoblox Threat Defense がプレビューで登場！",
+  "summary": "Amazon Route 53 Resolver DNS Firewall で、Infoblox のマネージドルールをプレビューとして使えるようになったよ。悪意あるドメインへの DNS クエリをブロックできる！",
+  "body_md": "こんにちは、しぃちゃんだよ！DNS レベルの防御に新しい味方が来たよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Route 53 Resolver DNS Firewall が Infoblox Threat Defense をプレビューとしてサポートしたと発表されたよ（2026 年 11 月 17 日）。\n\n## これで何が変わるの？\n\nセキュリティ管理者は、DNS Firewall のルールグループに Infoblox のマネージドルールを追加できるよ。悪意のあるドメインや高リスクなドメインへの DNS クエリをフィルタ・ブロックするんだって。AWS のマネージドドメインリストの上に、さらに保護を重ねられるよ。\n\n## 深く潜ってみよう\n\n- 脅威インテリジェンス: Infoblox が継続的に更新するフィードで、フィッシング、マルウェア、ランサムウェアなどの高度な攻撃を対象にしている\n- 保護の範囲: Amazon VPC からの DNS クエリと、Route 53 Resolver エンドポイント経由のハイブリッドなトラフィック。AWS とオンプレミスで DNS ポリシーを揃えられる\n- 設定: Route 53 DNS Firewall コンソールから、AWS Marketplace の Infoblox のリスティングをサブスクライブする\n- 料金: DNS Firewall Advanced のお客さんは、既存のルールグループに追加しても DNS Firewall の追加料金なし。プレビュー中は Infoblox の Marketplace サブスクリプションも無料。プレビュー後の料金は原文のリンク先を見てね\n- リージョン: Route 53 Resolver DNS Firewall が使える商用リージョンすべて（個別の一覧は原文になし）\n\n## まとめ\n\n- DNS Firewall で Infoblox Threat Defense のマネージドルールがプレビュー提供\n- VPC とハイブリッドの両方の DNS クエリを保護\n- プレビュー中は Marketplace の購読が無料\n\nAWS とオンプレミスの DNS セキュリティを揃えたいネットワーク・セキュリティ担当さんに刺さるよ！",
+  "title_en": "Infoblox Threat Defense Arrives in Route 53 DNS Firewall (Preview)!",
+  "summary_en": "Amazon Route 53 Resolver DNS Firewall now supports Infoblox managed rules in preview, to block DNS queries to malicious and high-risk domains.",
+  "body_md_en": "Hi, it's Shii-chan! A new ally for DNS-level defense has arrived!\n\n## What was announced?\n\nAWS What's New announced the preview of Infoblox Threat Defense on Amazon Route 53 Resolver DNS Firewall (November 17, 2026).\n\n## What changes\n\nSecurity administrators can add Infoblox managed rules to DNS Firewall rule groups to filter and block DNS queries to malicious and high-risk domains. The rules add protection on top of AWS managed domain lists.\n\n## Dive Deep\n\n- Threat intelligence: feeds that Infoblox updates continuously, targeting phishing, malware, ransomware, and other advanced attacks\n- Coverage: DNS queries from Amazon VPCs and hybrid traffic through Route 53 Resolver endpoints, so DNS policies can be consistent across AWS and on-premises\n- Setup: subscribe to the Infoblox listing on AWS Marketplace from the Route 53 DNS Firewall console\n- Pricing: DNS Firewall Advanced customers can add Infoblox rules to existing rule groups with no additional DNS Firewall charge; the Marketplace subscription is free during the preview; see the linked pages for post-preview pricing\n- Regions: all commercial Regions where Route 53 Resolver DNS Firewall is available (no individual list in the announcement)\n\n## Wrap-up\n\n- Infoblox Threat Defense managed rules in preview for DNS Firewall\n- Protects both VPC and hybrid DNS queries\n- Marketplace subscription is free during the preview\n\nThis one is for network and security folks who want consistent DNS security across AWS and on-premises!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/route53-dns-firewall-infoblox-preview/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Route 53 Resolver DNS Firewall now supports Infoblox Threat Defense (Preview)",
+  "tags": [
+    "aws",
+    "security",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-17T08:00:00+00:00"
+}

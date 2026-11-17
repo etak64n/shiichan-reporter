@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-network-firewall-context-aware-rules",
+  "title": "Network Firewall が IP ではなく VPC 単位でルール化できるように！",
+  "summary": "Transit Gateway に接続した AWS Network Firewall で、VPC・サブネット・セキュリティグループなどを使うコンテキスト対応ルールが使えるようになったよ！追加料金なし！",
+  "body_md": "こんにちは、しぃちゃんだよ！今日はネットワークのルール管理がぐっと楽になるニュースだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Transit Gateway にアタッチした AWS Network Firewall が、ファイアウォールポリシーでコンテキスト対応ルールをサポートしたと発表されたよ（2026 年 11 月 16 日）。\n\nNetwork Firewall は、VPC をまたぐ通信を検査・フィルタリングするマネージドなファイアウォール兼侵入防止サービスだよ。\n\n## 今までどうだったの？\n\n今までは、ルールの送信元や宛先を IP アドレスで書くのが基本だったよね。組織が大きくなってワークロードが増えるたびに、IP の管理とルールの更新が必要になりがちだったの。\n\n## これで何が変わるの？\n\nルールが IP アドレスではなく VPC のリソースを参照できるようになるよ。\n\n- 組織が大きくなっても、同じセキュリティ制御を保ちやすい\n- 既存のルールが新しいワークロードにも自動で適用され、手動更新が要らない\n\n## 深く潜ってみよう\n\nルールは「コンテキスト識別子」で通信をマッチさせるよ。使える識別子はこの 4 つ！\n\n- VPC\n- サブネット\n- セキュリティグループ\n- Transit Gateway のアタッチメント ID\n\n使える場所には条件があるよ。\n\n- ルールの送信元: どのプロトコルでも使える\n- ルールの宛先: HTTP・TLS・SSH など TCP ベースのプロトコルで使える\n\nフローログとアラートログにもコンテキスト識別子が入るから、コンテキスト単位で調査できるよ。\n\n料金は追加なし。商用 AWS リージョンと AWS GovCloud (US) リージョンで使えるよ。\n\n## まとめ\n\n- Transit Gateway 接続の Network Firewall でコンテキスト対応ルールが利用可能に\n- VPC・サブネット・セキュリティグループ・アタッチメント ID でルールを書ける\n- ログにもコンテキスト識別子が入る\n- 追加料金なし\n\nマルチ VPC 構成のセキュリティ担当さんに特に刺さるよ！",
+  "title_en": "Network Firewall Rules Can Now Target VPCs, Not Just IP Addresses!",
+  "summary_en": "AWS Network Firewall attached to Transit Gateway now supports context-aware rules that reference VPCs, subnets, security groups, and more, at no additional charge.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today's news makes network rule management a lot easier!\n\n## What was announced?\n\nAWS What's New announced that AWS Network Firewall attached to AWS Transit Gateway now supports context-aware rules in firewall policies (November 16, 2026).\n\nNetwork Firewall is a managed firewall and intrusion prevention service that inspects and filters traffic across VPCs.\n\n## The story so far\n\nRules typically used IP addresses for sources and destinations. As an organization grew and added workloads, that meant managing IPs and updating rules over and over.\n\n## What changes\n\nRules can now reference VPC resources instead of IP addresses.\n\n- Consistent security controls are easier to keep as you grow\n- Existing rules apply to new workloads automatically, with no manual updates\n\n## Dive Deep\n\nRules match traffic using context identifiers. You can use these four:\n\n- VPCs\n- Subnets\n- Security groups\n- Transit Gateway attachment IDs\n\nThere are some conditions on where they work:\n\n- In a rule's source: any protocol\n- In a rule's destination: TCP-based protocols such as HTTP, TLS, and SSH\n\nFlow and alert logs include context identifiers too, so you can investigate by context.\n\nThere is no additional charge. It's available in all commercial AWS Regions and AWS GovCloud (US) Regions.\n\n## Wrap-up\n\n- Context-aware rules for Network Firewall on Transit Gateway\n- Write rules with VPCs, subnets, security groups, and attachment IDs\n- Context identifiers show up in logs\n- No additional charge\n\nThis one is for security folks running multi-VPC setups!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/network-firewall-context-aware-rules/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Network Firewall now supports context-aware rules with AWS Transit Gateway-attached firewalls",
+  "tags": [
+    "aws",
+    "security",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-16T08:00:00+00:00"
+}
