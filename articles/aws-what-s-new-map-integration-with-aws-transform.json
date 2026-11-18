@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-map-integration-with-aws-transform",
+  "title": "MAP の案件が最後までエージェントで！AWS Transform がパートナーの移行ディールを加速",
+  "summary": "AWS Transform で、AWS パートナーが MAP の資格確認からインセンティブ支払いまでをエンドツーエンドのエージェントワークフローで進められるようになったよ。",
+  "title_en": "MAP Deals, Agentic from Start to Finish: AWS Transform Speeds Up Partner Migration Deals",
+  "summary_en": "AWS Partners can now expedite Migration Acceleration Program deals, from qualification to incentive payout, with an end-to-end agentic workflow in AWS Transform.",
+  "emotion": "happy",
+  "importance": 2,
+  "tags": [
+    "aws",
+    "business",
+    "devops"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/map-integration-with-aws-transform/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Transform now accelerates migration deals for Migration Acceleration Program (MAP) benefits",
+  "published_at": "2026-11-17T22:00:00+00:00",
+  "body_md": "やっほー、しぃちゃんだよ！今日は AWS パートナー向けのお知らせだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS パートナーが Migration Acceleration Program (MAP) のディールを、資格確認からインセンティブの支払いまで、AWS Transform のエンドツーエンドのエージェントワークフローで進められるようになったと発表されたよ。\n\n## 今までどうだったの？\n\n案件の発見、アセスメント、ディールの資格確認、資金の承認、契約の実行、リソースのタグ付け、インセンティブの支払いと、パートナーは別々のシステムを行き来する必要があったよ。この分断と手作業の引き継ぎが、資格確認の長期化につながっていたの。\n\n## これで何が変わるの？\n\nパートナーは AWS Transform の中で、MAP のライフサイクル全体を管理できるよ。\n\n- ディールの資格確認\n- 資金の承認\n- 契約の実行\n- 移行の計画と実行\n- リソースのタグ付け\n- インセンティブの支払い\n\n## 深く潜ってみよう\n\n- パートナーは AWS Partner Central アカウントを接続し、顧客を同じエンゲージメントに招待する\n- 内蔵のエージェント型ディスカバリーツールで顧客環境を調べるか、RVTools や AWS Marketplace の AWS 検証済み ISV ツールのデータを取り込む\n- AWS Transform が、そのデータと APN Customer Engagements (ACE) の案件情報を組み合わせ、パートナー起点の案件を、ガイド付きのフローで自動的に資格確認する\n- 移行が進むと、MAP のリソースタグが自動で適用され、パートナーへの現金と顧客へのクレジットが実際の使用データに基づいて支払われる\n- 顧客は、移行の状況をリアルタイムで共有して見られる\n\n## まとめ\n\n- MAP のディールを AWS Transform 上で一気通貫に処理できる\n- ACE の案件情報とディスカバリーデータで資格確認を自動化\n- タグ付けとインセンティブ支払いも自動\n- 顧客とリアルタイムで状況を共有\n\nMAP を使って顧客の移行を支援している AWS パートナーのみんなに刺さるよ！",
+  "body_md_en": "Hi, it's Shii-chan! Today's news is for AWS Partners!\n\n## What was announced?\n\nIn AWS What's New, AWS announced that AWS Partners can now expedite Migration Acceleration Program (MAP) deals, from qualification to incentive payout, with an end-to-end agentic workflow in AWS Transform.\n\n## The story so far\n\nPartners had to switch between separate systems for opportunity discovery, assessments, deal qualification, funding approvals, agreement execution, resource tagging, and incentive disbursement. This fragmentation and the manual handoffs led to longer qualification cycles.\n\n## What changes\n\nPartners can manage the full MAP lifecycle inside AWS Transform:\n\n- Deal qualification\n- Funding approvals\n- Agreement execution\n- Migration planning and execution\n- Resource tagging\n- Incentive disbursement\n\n## Dive Deep\n\n- Partners connect their AWS Partner Central account and invite customers into the same engagement\n- Scope customer environments with the built-in agentic discovery tool, or import data from RVTools or AWS-validated ISV tools listed in AWS Marketplace\n- AWS Transform combines this data with opportunity details from APN Customer Engagements (ACE) to automatically qualify Partner-initiated opportunities in a guided flow\n- As migration progresses, MAP resource tags are applied automatically, and Partner cash and customer credits are disbursed based on actual usage data\n- Customers get shared, real-time visibility into migration progress\n\n## Wrap-up\n\n- Handle MAP deals end to end in AWS Transform\n- Qualification is automated using ACE data and discovery data\n- Tagging and incentive payouts are automatic\n- Real-time shared visibility with customers\n\nThis is for AWS Partners using MAP to help customers migrate!"
+}

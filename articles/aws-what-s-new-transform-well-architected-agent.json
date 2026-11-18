@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-transform-well-architected-agent",
+  "title": "移行しながら設計レビュー！AWS Transform に Well-Architected Agent が登場",
+  "summary": "AWS Transform for migrations が、移行先ネットワークの Well-Architected レビューをパブリックプレビューで提供したよ！デプロイ後の手直しを減らせるみたい。",
+  "title_en": "Design Review While You Migrate: AWS Transform Gets the Well-Architected Agent!",
+  "summary_en": "AWS Transform for migrations now includes Well-Architected reviews of target networks, powered by the AWS Well-Architected Agent in public preview, so fewer fixes are needed after deployment.",
+  "emotion": "smug",
+  "importance": 4,
+  "tags": [
+    "aws",
+    "infrastructure",
+    "devops"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/transform-well-architected-agent/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Transform now provides Well-Architected Agent reviews",
+  "published_at": "2026-11-17T08:00:00+00:00",
+  "body_md": "こんにちは、しぃちゃんだよ！今日は移行の設計ミスを早めに見つけてくれる機能のお知らせだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Transform for migrations が移行先ネットワークの Well-Architected レビューを含むようになったと発表されたよ。レビューを行うのはパブリックプレビューの AWS Well-Architected Agent で、セキュリティ、信頼性、コスト最適化の各柱の最新のベストプラクティスに基づく推奨事項が、移行先ネットワークに直接適用されるんだって。\n\n## 今までどうだったの？\n\nネットワーク移行では、設計の抜けや漏れがデプロイ後に見つかることが多くて、修正にコストがかかったり、別のレビューと更新のサイクルが必要になったりしていたよ。\n\n## これで何が変わるの？\n\n大規模なオンプレミスネットワークを移行するチームは、改善ポイントを計画段階の早いうちに見つけられるよ。デプロイ後に作り直す手間が減るの！\n\n## 深く潜ってみよう\n\n- 推奨の例は、スポーク VPC を RFC1918 ではないアドレスで再アドレスすることや、CIDR 割り当てを統制すること\n- 推奨は AWS Transform がネットワーク設計に反映する\n- デプロイ後に対応する推奨事項は、AWS Transform のチャットからダウンロードできる成果物として残る\n- 提供範囲は商用 AWS リージョン\n- Well-Architected Agent は AWS Support が提供していて、有料の Support プランに含まれる\n\n## まとめ\n\n- 移行先ネットワークの Well-Architected レビューが移行中に行われる\n- セキュリティ・信頼性・コスト最適化の観点で推奨が出る\n- 設計に直接反映され、残りは成果物として受け取れる\n- パブリックプレビューで、有料 Support プランに含まれる\n\n大規模ネットワークの移行計画を担当しているみんなに刺さるよ！",
+  "body_md_en": "Hi, Shii-chan here! Today's news helps you catch design gaps early in a migration!\n\n## What was announced?\n\nIn AWS What's New, AWS announced that AWS Transform for migrations now includes Well-Architected reviews of target networks. The recommendations come from the AWS Well-Architected Agent, in public preview, and are based on the latest best practices across the security, reliability, and cost optimization pillars. They are applied directly to your target network.\n\n## The story so far\n\nWhen migrating networks, design gaps typically surfaced after deployment, making fixes costly and requiring separate review and update cycles.\n\n## What changes\n\nTeams migrating large on-premises networks can catch improvement opportunities early, at the planning stage, so there is less to redo after deployment!\n\n## Dive Deep\n\n- Example recommendations: re-addressing spoke VPCs using non-RFC1918 addresses, and governing CIDR allocation\n- AWS Transform applies recommendations to the network design\n- Post-deployment recommendations are documented as a downloadable artifact from AWS Transform chat\n- Available in commercial AWS Regions\n- The Well-Architected Agent is delivered by AWS Support and included with paid Support plans\n\n## Wrap-up\n\n- Well-Architected reviews of target networks happen during migration\n- Recommendations cover security, reliability, and cost optimization\n- They are applied to the design, and the rest comes as an artifact\n- Public preview, included with paid Support plans\n\nThis is for anyone planning large network migrations!"
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-apache-spark-optimization-agent",
+  "title": "Spark ジョブのチューニングを数秒で！EMR Serverless に Apache Spark 最適化エージェント",
+  "summary": "Amazon EMR Serverless に、完了した Spark ジョブを分析してコストと性能の改善案を出す Apache Spark 最適化エージェントが登場したよ。追加料金なしだよ！",
+  "title_en": "Tune Spark Jobs in Seconds: Apache Spark Optimization Agent for EMR Serverless!",
+  "summary_en": "Amazon EMR Serverless now offers the Apache Spark optimization agent, which analyzes completed Spark job runs and returns cost and performance recommendations, at no additional charge.",
+  "emotion": "smug",
+  "importance": 5,
+  "tags": [
+    "aws",
+    "ai",
+    "devops"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/apache-spark-optimization-agent/",
+  "source_name": "AWS What's New",
+  "og_title": "Introducing the Apache Spark Optimization Agent for Amazon EMR Serverless",
+  "published_at": "2026-11-17T22:25:00+00:00",
+  "body_md": "やっほー、しぃちゃんだよ！今日は Spark のチューニングが楽になる新機能だよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon EMR Serverless に Apache Spark 最適化エージェントが登場したよ。完了した Spark ジョブの実行を分析して、コストと性能の最適化の推奨を数秒で返してくれるんだって。\n\n## これで何が変わるの？\n\nコストか性能のどちらかを目標に選ぶと、具体的な設定変更と、その根拠になるテレメトリ、平易な言葉での理由が返ってくるよ。1 回の実行を分析することも、正常だった基準の実行と比べて何が変わったかを突き止めることもできるの！開発中に使って、本番に上げる前に設定を調整するのにも向いているよ。\n\n## 深く潜ってみよう\n\n- 入力は、ジョブの設定、ログ、Spark のテレメトリ、選んだ目標\n- 推奨は、決定論的な推奨エンジンが計算する。並列度の不足、偏った結合キー、メモリ圧迫によるスピル、アイドルなエグゼキューター、使用量を超えたキャパシティなど、実行時間とコストの要因を調べる\n- コストと性能がトレードオフのときは、選んだ指標を改善しつつ、もう一方の悪化は定められた範囲に収める\n- Spark の新バージョンへの更新や Graviton プロセッサーの利用など、プラットフォームレベルのベストプラクティスのチェックリストも評価する\n- 各推奨は、変更する対象(インフラ、Spark 設定、コード、データレイアウト)でラベル付けされる\n- 使い方は、EMR Serverless コンソールか、SageMaker Unified Studio MCP Server から\n- 認証は AWS IAM、操作は AWS CloudTrail に記録される\n- 追加料金なし\n- GovCloud (US) と中国リージョンを除く EMR Serverless が使えるリージョンで利用でき、EMR リリース 7.6 以降が必要\n\n## まとめ\n\n- 完了した Spark ジョブを分析し、数秒で改善案を返す\n- コストか性能を目標に選べて、根拠つきの設定変更が出る\n- 基準の実行との比較もできる\n- 追加料金なしで、EMR 7.6 以降が必要\n\nSpark のチューニングに時間を取られているデータエンジニアのみんなに刺さるよ！",
+  "body_md_en": "Hi, it's Shii-chan! A new feature that makes Spark tuning easier!\n\n## What was announced?\n\nIn AWS What's New, AWS introduced the Apache Spark optimization agent for Amazon EMR Serverless. It analyzes completed Spark job runs and delivers cost and performance recommendations in seconds.\n\n## What changes\n\nPick a cost or performance goal, and you get specific configuration changes with the telemetry evidence and plain-language reasoning behind each one. You can analyze a single run or compare it against a known-good baseline to pinpoint what changed! It also fits development use, tuning configurations before promoting jobs to production.\n\n## Dive Deep\n\n- Inputs: the job's configuration, logs, Spark telemetry, and your chosen intent\n- A deterministic recommendation engine computes the recommendations, looking at too little parallelism, a skewed join key, memory pressure forcing spill, idle executors, and capacity beyond what the job uses\n- When cost and performance trade off, it improves the metric you asked for while keeping degradation of the other within defined limits\n- It also evaluates a best practices checklist for platform-level improvements such as upgrading Spark or using Graviton\n- Each recommendation is labeled by the surface it modifies: infrastructure, Spark configuration, code, or data layout\n- Access it from the EMR Serverless console or through the SageMaker Unified Studio MCP Server\n- Authenticated with AWS IAM and logged in AWS CloudTrail\n- No additional charge\n- Available in all Regions where EMR Serverless is available, except GovCloud (US) and China, and requires EMR release 7.6 or later\n\n## Wrap-up\n\n- Analyzes completed Spark jobs and returns advice in seconds\n- Choose a cost or performance goal and get evidence-backed config changes\n- Can compare against a baseline run\n- No extra charge, EMR 7.6 or later\n\nThis is for data engineers spending too much time tuning Spark!"
+}

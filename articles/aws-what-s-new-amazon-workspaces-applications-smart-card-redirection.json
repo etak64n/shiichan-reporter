@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-workspaces-applications-smart-card-redirection",
+  "title": "WorkSpaces Applications がスマートカードのリダイレクトに対応！マルチセッションでも CAC・PIV が使える",
+  "summary": "Amazon WorkSpaces Applications が、シングル・マルチセッションフリートでスマートカードのリダイレクトに対応し、スマートカードサインインもマルチセッションに拡張されたよ。",
+  "title_en": "WorkSpaces Applications Adds Smart Card Redirection: CAC and PIV on Multi-Session Fleets Too!",
+  "summary_en": "Amazon WorkSpaces Applications now supports smart card redirection on single-session and multi-session fleets, and extends smart card sign-in to multi-session fleets.",
+  "emotion": "happy",
+  "importance": 3,
+  "tags": [
+    "aws",
+    "security",
+    "infrastructure"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-workspaces-applications-smart-card-redirection/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon WorkSpaces Applications adds support for smart card redirection",
+  "published_at": "2026-11-17T23:46:00+00:00",
+  "body_md": "こんにちは、しぃちゃんだよ！今日は WorkSpaces Applications のセキュリティまわりのお知らせだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon WorkSpaces Applications が、シングルセッションとマルチセッションのフリートでスマートカードのリダイレクトをサポートしたと発表されたよ。ユーザーは、手元のデバイスにつないだスマートカードを、ストリーミングセッション内のアプリから使えるの。\n\n## 今までどうだったの？\n\nスマートカードサインインは、シングルセッションのフリートに限られていたよ。\n\n## これで何が変わるの？\n\nスマートカードサインインがマルチセッションのフリートにも拡張されたよ。Common Access Card (CAC) や Personal Identity Verification (PIV) カードを使う、公共機関、医療、その他の規制の厳しい組織が、そのワークフローをマルチセッションで動かせるの！例えば政府機関は、CAC ユーザーをシングルからマルチセッションのフリートに移しつつ、CAC サインインを維持できるよ。\n\n## 深く潜ってみよう\n\n- Active Directory 向けのスマートカードサインインとスマートカードのリダイレクトは、スタックごとに独立してオン・オフできる\n- スマートカードサインインは、パスワードの代わりにスマートカードでドメイン参加済みのストリーミングインスタンスにサインインする機能\n- リダイレクトされたスマートカードは、セッション内の認証、デジタル署名、メールの暗号化に使える\n- 利用できるのは、WorkSpaces Applications があるすべての AWS 商用リージョンと AWS GovCloud (US) リージョン\n- 使うには、スタックの User settings でどちらかの設定をオンにし、最新の WorkSpaces Applications エージェントを入れた Windows イメージと、Windows 用の WorkSpaces Applications クライアントで接続する\n- 新しいスタックは両方の設定がオフで始まり、すでにリダイレクトを使っている既存スタックはオンのまま\n\n## まとめ\n\n- シングル・マルチ両方のフリートでスマートカードのリダイレクトに対応\n- スマートカードサインインがマルチセッションにも拡張\n- 設定はスタックごとに独立して切り替え可能\n- 新規スタックはデフォルトでオフ\n\nCAC や PIV を使う公共・医療機関の環境を担当しているみんなに刺さるよ！",
+  "body_md_en": "Hi, Shii-chan here! A security-related update for WorkSpaces Applications today!\n\n## What was announced?\n\nIn AWS What's New, AWS announced that Amazon WorkSpaces Applications now supports smart card redirection on single-session and multi-session fleets. Users can access the smart card connected to their local device from applications inside their streaming session.\n\n## The story so far\n\nSmart card sign-in was limited to single-session fleets.\n\n## What changes\n\nSmart card sign-in now extends to multi-session fleets. Public sector, healthcare, and other regulated organizations that use Common Access Card (CAC) or Personal Identity Verification (PIV) cards can run those workflows on multi-session fleets! For example, a government agency can move CAC users from single-session to multi-session fleets and keep CAC sign-in.\n\n## Dive Deep\n\n- Administrators can turn smart card sign-in for Active Directory and smart card redirection on or off independently for each stack\n- Smart card sign-in lets users sign in to domain-joined streaming instances with a smart card instead of a password\n- Redirected smart cards support in-session authentication, digital signing, and email encryption\n- Available in all AWS commercial and AWS GovCloud (US) Regions that offer WorkSpaces Applications\n- To use it, turn on either setting under User settings for your stack, use a Windows image with the latest WorkSpaces Applications agent, and connect with the WorkSpaces Applications client for Windows\n- New stacks have both settings off by default, and existing stacks that use smart card redirection keep it on\n\n## Wrap-up\n\n- Smart card redirection on single- and multi-session fleets\n- Smart card sign-in extended to multi-session\n- Settings toggle independently per stack\n- Off by default on new stacks\n\nThis is for anyone managing CAC or PIV environments in public sector and healthcare!"
+}

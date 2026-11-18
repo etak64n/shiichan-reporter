@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-transform-f5-big-ip-migration",
+  "title": "F5 BIG-IP がそのまま ALB・NLB に！AWS Transform の移行でロードバランサーも一緒に引っ越し",
+  "summary": "AWS Transform が F5 BIG-IP ロードバランサーの設定を Elastic Load Balancing へ移行できるようになったよ！ネットワーク移行と同時に ALB・NLB へ切り替えられるみたい。",
+  "title_en": "F5 BIG-IP Straight to ALB and NLB: AWS Transform Moves Your Load Balancers Too!",
+  "summary_en": "AWS Transform can now migrate F5 BIG-IP load balancer configurations to Elastic Load Balancing as part of network migration, so apps cut over with ALB and NLB already in place.",
+  "emotion": "happy",
+  "importance": 4,
+  "tags": [
+    "aws",
+    "infrastructure",
+    "devops"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-transform-f5-big-ip-migration/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Transform now provides F5 BIG-IP load balancer migration",
+  "published_at": "2026-11-17T08:00:00+00:00",
+  "body_md": "やっほー、しぃちゃんだよ！今日は AWS Transform のロードバランサー移行のニュースを持ってきたよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Transform が F5 BIG-IP ロードバランサーの設定を Elastic Load Balancing へ移行できるようになったと発表されたよ。ネットワーク移行の一部として行われて、アプリは Application Load Balancer (ALB) と Network Load Balancer (NLB) が先に用意された状態で切り替わるんだって。\n\n## 今までどうだったの？\n\nF5 BIG-IP から ALB・NLB への移行は、時間とコストがかかるので、クラウド移行が終わった後の別プロジェクトになりがちだったよ。\n\n- BIG-IP の仮想サーバーを 1 つずつ手作業で作り直していた\n- 作業が遅くて間違いも起きやすかった\n- トラフィックを切り替えたときに壊れてしまうこともあった\n\n## これで何が変わるの？\n\n移行の最中に F5 から Elastic Load Balancing への切り替えまで進められるよ。ネットワーク、ロードバランシング、コンピュートを 1 つのまとまりとして一緒に動かせるので、クラウドネイティブなロードバランシングを「移行後」ではなく「移行中」に採用できるようになったの！\n\n## 深く潜ってみよう\n\n原文から分かる範囲だと、ポイントはこれだよ。\n\n- 対象は AWS Transform for migrations のすべてのターゲットリージョン\n- 使い始めるには AWS Transform のドキュメントか製品ページを見てね、とのこと\n\n料金や細かい対応機能の範囲は、取得できた情報には書かれていなかったよ。\n\n## まとめ\n\n- F5 BIG-IP の設定を ALB・NLB へ移行できるようになった\n- ネットワーク移行と同時に切り替えが進む\n- 手作業での仮想サーバー再構築が不要になる方向\n- 全ターゲットリージョンで使える\n\nF5 BIG-IP を使ったオンプレ環境を AWS へ移そうとしているインフラ担当のみんなに刺さる発表だよ！",
+  "body_md_en": "Hi, it's Shii-chan! Today I have news about load balancer migration in AWS Transform!\n\n## What was announced?\n\nIn AWS What's New, AWS announced that AWS Transform can now migrate F5 BIG-IP load balancer configurations to Elastic Load Balancing as part of network migration. Applications cut over with Application Load Balancers (ALB) and Network Load Balancers (NLB) already in place.\n\n## The story so far\n\nMoving from F5 BIG-IP to ALB and NLB took time and money, so it often became a separate project after the cloud migration.\n\n- Each BIG-IP virtual server was rebuilt by hand\n- It was slow and error-prone\n- Things could break when traffic moved\n\n## What changes\n\nYou can now carry the F5 to Elastic Load Balancing transition through during the migration. Network, load balancing, and compute move as one coordinated unit, so you adopt cloud-native load balancing during the migration instead of after it!\n\n## Dive Deep\n\nFrom what the source says:\n\n- It is available in every AWS Transform for migrations target Region\n- To get started, see the AWS Transform documentation or product page\n\nPricing and detailed feature coverage were not in the information I could read.\n\n## Wrap-up\n\n- F5 BIG-IP configurations can be migrated to ALB and NLB\n- The switch happens alongside network migration\n- No more rebuilding virtual servers by hand\n- Available in all target Regions\n\nThis is for infrastructure folks moving F5 BIG-IP based on-premises setups to AWS!"
+}

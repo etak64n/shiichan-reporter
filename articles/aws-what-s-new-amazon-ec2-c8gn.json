@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-ec2-c8gn",
+  "title": "C8gn がイスラエル(テルアビブ)に登場！最大 600 Gbps の Graviton4 ネットワーク特化インスタンス",
+  "summary": "Graviton4 搭載の Amazon EC2 C8gn インスタンスが、AWS イスラエル(テルアビブ)リージョンで使えるようになったよ！",
+  "title_en": "C8gn Lands in Israel (Tel Aviv): Graviton4 Network-Optimized Instances with up to 600 Gbps!",
+  "summary_en": "Amazon EC2 C8gn instances, powered by AWS Graviton4, are now available in the AWS Israel (Tel Aviv) Region.",
+  "emotion": "happy",
+  "importance": 2,
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-ec2-c8gn/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon EC2 C8gn instances are now available in AWS Israel (Tel Aviv) region",
+  "published_at": "2026-11-17T22:00:00+00:00",
+  "body_md": "みんな、しぃちゃんだよ！今日は EC2 のリージョン拡大のお知らせだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、最新世代の AWS Graviton4 プロセッサーを搭載した Amazon EC2 C8gn インスタンスが、AWS イスラエル(テルアビブ)リージョンで利用できるようになったと発表されたよ。\n\n## なぜ重要なの？\n\nC8gn はネットワーク最適化インスタンスで、ネットワーク仮想アプライアンスやデータ分析、CPU ベースの AI/ML 推論のような、ネットワーク負荷の高いワークロードに向いているよ。テルアビブで使えるようになったので、そのリージョンで動かしたいチームの選択肢が増えるね。\n\n## これで何が変わるの？\n\nテルアビブリージョンでも、ネットワーク重視のワークロードを C8gn で動かせるようになるよ！\n\n## 深く潜ってみよう\n\n- Graviton3 ベースの C7gn より、コンピュート性能が最大 30% 向上\n- 第 6 世代の AWS Nitro Card を搭載し、最大 600 Gbps のネットワーク帯域。ネットワーク最適化 EC2 インスタンスの中で最高とのこと\n- サイズは最大 48xlarge、メモリは最大 384 GiB、Amazon EBS への帯域は最大 120 Gbps\n- Elastic Fabric Adapter (EFA) は、16xlarge、24xlarge、48xlarge、metal-24xl、metal-48xl で使える。密結合クラスターで低レイテンシーと性能向上が見込める\n- 利用可能なリージョンは、米国東部・西部、ヨーロッパ、アジアパシフィック、中東(UAE)、イスラエル(テルアビブ)、アフリカ(ケープタウン)、カナダ、サンパウロ、GovCloud (US) など\n\n## まとめ\n\n- C8gn がテルアビブリージョンで利用可能に\n- C7gn より最大 30% 高いコンピュート性能\n- 最大 600 Gbps のネットワーク帯域\n- EFA は大きめのサイズで対応\n\nイスラエルリージョンでネットワーク集約型のワークロードを動かすみんなに刺さるよ！",
+  "body_md_en": "Hi everyone, it's Shii-chan! An EC2 Region expansion today!\n\n## What was announced?\n\nIn AWS What's New, AWS announced that Amazon EC2 C8gn instances, powered by the latest-generation AWS Graviton4 processors, are now available in the AWS Israel (Tel Aviv) Region.\n\n## Why it matters\n\nC8gn is network optimized, suited to network-intensive workloads such as network virtual appliances, data analytics, and CPU-based AI/ML inference. Teams that want to run in Tel Aviv now have this option.\n\n## What changes\n\nYou can run network-heavy workloads on C8gn in the Tel Aviv Region too!\n\n## Dive Deep\n\n- Up to 30% better compute performance than Graviton3-based C7gn instances\n- 6th generation AWS Nitro Cards and up to 600 Gbps network bandwidth, the highest among network optimized EC2 instances\n- Sizes up to 48xlarge, up to 384 GiB of memory, and up to 120 Gbps of bandwidth to Amazon EBS\n- Elastic Fabric Adapter (EFA) is supported on 16xlarge, 24xlarge, 48xlarge, metal-24xl, and metal-48xl, for lower latency and better cluster performance\n- Available across US East and West, Europe, Asia Pacific, Middle East (UAE), Israel (Tel Aviv), Africa (Cape Town), Canada, Sao Paulo, GovCloud (US), and more\n\n## Wrap-up\n\n- C8gn is available in Tel Aviv\n- Up to 30% better compute than C7gn\n- Up to 600 Gbps network bandwidth\n- EFA on the larger sizes\n\nThis is for anyone running network-heavy workloads in the Israel Region!"
+}

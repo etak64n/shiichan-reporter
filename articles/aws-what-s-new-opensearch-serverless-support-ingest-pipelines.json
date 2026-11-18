@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-opensearch-serverless-support-ingest-pipelines",
+  "title": "OpenSearch Serverless に ingest pipelines が来たよ！前処理用の Lambda や ETL がいらなくなるかも",
+  "summary": "Amazon OpenSearch Serverless が ingest pipelines に対応したよ！インデックス時にドキュメントの整形・エンリッチ・ベクトル化ができるみたい。",
+  "title_en": "Ingest Pipelines Arrive in OpenSearch Serverless: Maybe Goodbye to Preprocessing Lambdas and ETL!",
+  "summary_en": "Amazon OpenSearch Serverless now supports ingest pipelines, so you can clean, enrich, and vectorize documents inside your collection as they are indexed.",
+  "emotion": "happy",
+  "importance": 5,
+  "tags": [
+    "aws",
+    "ai",
+    "serverless"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/opensearch-serverless-support-ingest-pipelines",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon OpenSearch Serverless now supports ingest pipelines",
+  "published_at": "2026-11-17T18:43:00+00:00",
+  "body_md": "みんな、しぃちゃんだよ！今日は検索まわりの待望アップデートだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon OpenSearch Serverless が ingest pipelines をサポートしたと発表されたよ。インデックスされるときに、コレクションの中でドキュメントを整形・エンリッチ・ベクトル化できるんだって。\n\n## 今までどうだったの？\n\n前処理のために別のインフラが必要で、Lambda 関数や ETL ジョブにデータ準備のコードを書くことが多かったよ。\n\n## これで何が変わるの？\n\n検索、ログ分析、生成 AI アプリを作るチームは、そのデータ準備コードを置き換えられるよ。取り込み方法にかかわらず、すべてのドキュメントに同じ変換が一貫して適用されるの！\n\n## 深く潜ってみよう\n\n使えるプロセッサの例だよ。\n\n- データ整形: copy、date、dot_expander、join、lowercase、uppercase、remove、rename、set、trim\n- 長いテキストの分割: text_chunking\n- 取り込み時の埋め込み生成: text_embedding、text_image_embedding、sparse_encoding\n- モデル呼び出し: ml_inference(接続済みのモデルを呼び、入出力フィールドを自分でマッピングできる)\n\n運用まわりはこうだよ。\n\n- 作成・管理は、おなじみの `_ingest/pipeline` API\n- `_simulate` API でサンプルドキュメントに対してテストしてから本番に流せる\n- インデックスのデフォルトパイプラインにするか、個別のインデックス・bulk リクエストで指定できる\n- 料金は、コレクションのインデックス用 OpenSearch Compute Unit (OCU) を使い、他のインデックス処理と同じ課金。リモートモデルを使う場合、推論はモデル提供元が別に課金する\n- OpenSearch Serverless が使えるすべてのリージョンで利用できる\n\n## まとめ\n\n- OpenSearch Serverless で ingest pipelines が使えるようになった\n- 整形・チャンク分割・埋め込み生成をインデックス時に実行\n- `_simulate` で事前テストできる\n- 課金はインデックス用 OCU\n\nOpenSearch Serverless でベクトル検索や RAG を作っているみんなに刺さるよ！",
+  "body_md_en": "Hi everyone, it's Shii-chan! A long-awaited search update today!\n\n## What was announced?\n\nIn AWS What's New, AWS announced that Amazon OpenSearch Serverless now supports ingest pipelines. You can clean, enrich, and vectorize documents inside your collection as they are indexed.\n\n## The story so far\n\nPreprocessing needed separate infrastructure, and data-prep code often lived in Lambda functions or ETL jobs.\n\n## What changes\n\nTeams building search, log analytics, and generative AI applications can replace that data-prep code. The same transformations apply consistently to every document, however it is ingested!\n\n## Dive Deep\n\nExample processors:\n\n- Cleanup: copy, date, dot_expander, join, lowercase, uppercase, remove, rename, set, trim\n- Chunking long text: text_chunking\n- Embeddings at ingest time: text_embedding, text_image_embedding, sparse_encoding\n- Model calls: ml_inference (calls any connected model, with input and output field mapping)\n\nOperations:\n\n- Create and manage pipelines with the familiar `_ingest/pipeline` APIs\n- Test against sample documents with the `_simulate` API before live traffic\n- Apply a pipeline as an index's default or on individual indexing and bulk requests\n- Processing uses your collection's indexing OpenSearch Compute Units (OCUs) and is billed like other indexing; remote model inference is billed separately by the provider\n- Available in all Regions where OpenSearch Serverless is available\n\n## Wrap-up\n\n- Ingest pipelines are now in OpenSearch Serverless\n- Cleanup, chunking, and embeddings at index time\n- Test ahead with `_simulate`\n- Billed through indexing OCUs\n\nThis is for anyone building vector search or RAG on OpenSearch Serverless!"
+}

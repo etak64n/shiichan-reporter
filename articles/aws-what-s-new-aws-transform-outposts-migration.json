@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-transform-outposts-migration",
+  "title": "AWS Outposts が移行先に！AWS Transform でリージョン経由の遠回りにサヨナラ",
+  "summary": "AWS Transform が AWS Outposts を移行ターゲットとしてサポートしたよ！オンプレや別の Outpost、別リージョンからブロックレベルで直接レプリケーションできるんだって。",
+  "title_en": "AWS Outposts Is Now a Migration Target: Skip the Detour Through the Region with AWS Transform!",
+  "summary_en": "AWS Transform now supports AWS Outposts as a migration target, replicating source servers at the block level directly to your Outpost from on premises, another Outpost, or another AZ or Region.",
+  "emotion": "happy",
+  "importance": 4,
+  "tags": [
+    "aws",
+    "infrastructure",
+    "devops"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-transform-outposts-migration/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Transform now supports migration to AWS Outposts",
+  "published_at": "2026-11-17T08:00:00+00:00",
+  "body_md": "みんな、しぃちゃんだよ！今日は Outposts への移行がぐっと楽になるお知らせだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Transform が AWS Outposts を移行ターゲットとしてサポートしたと発表されたよ。移行元として使えるのはこれだよ。\n\n- オンプレミス環境\n- 別の Outpost\n- 別の Availability Zone またはリージョン\n\n## 今までどうだったの？\n\n低レイテンシー、ローカルデータ処理、データレジデンシーのために Outposts で動かしているワークロードは、移行が手作業やレガシーなツールになりがちだったよ。リージョンを経由して AMI をコピーする遠回りも必要だったみたい。\n\n## これで何が変わるの？\n\nOutpost 上のサブネットを選ぶだけで、AWS Transform が移行元サーバーを Outpost へブロックレベルで継続的にレプリケートしてくれるよ。リージョンを経由する必要はなくて、移行元から Outpost へ直接なの！カットオーバー前にテストインスタンスを起動できて、ダウンタイムも最小限で切り替えられるよ。\n\n## 深く潜ってみよう\n\n- 使い方は 2 通り。AWS Transform for migrations で AI エージェントと進めるか、リホストエンジンの AWS Transform MGN をコンソールから直接使う\n- 対象リージョンは AWS Transform for migrations のターゲットリージョンと AWS Transform MGN のリージョンすべて\n- Outpost 上の Amazon EBS が必須\n- Outpost に Amazon S3 on Outposts があれば、スナップショットを Outpost 上に置いてデータレジデンシーを守れるし、親リージョンに保存することもできる\n- S3 on Outposts がない場合、スナップショットは親リージョンに保存される\n\n## まとめ\n\n- Outposts が AWS Transform の移行ターゲットになった\n- ブロックレベルの継続レプリケーションで移行元から直接移行\n- テストインスタンスで事前確認でき、ダウンタイムは最小限\n- EBS on Outposts が必須で、スナップショットの置き場所は S3 on Outposts の有無で変わる\n\nOutposts でワークロードを動かしている、または移そうとしているみんなに刺さるよ！",
+  "body_md_en": "Hi everyone, it's Shii-chan! Migrating to Outposts just got a lot easier!\n\n## What was announced?\n\nIn AWS What's New, AWS announced that AWS Transform now supports AWS Outposts as a migration target. You can migrate from:\n\n- On-premises environments\n- Another Outpost\n- A different Availability Zone or Region\n\n## The story so far\n\nWorkloads on Outposts for low latency, local data processing, or data residency meant manual effort or legacy tooling to migrate, often with a detour through the Region and an AMI copy.\n\n## What changes\n\nYou choose subnets on the Outpost, and AWS Transform continuously replicates your source servers at the block level, directly from the source environment to the Outpost. No Region detour! You can launch test instances before cutover and cut over with minimal downtime.\n\n## Dive Deep\n\n- Two ways to use it: run the migration with AI agents in AWS Transform for migrations, or use the rehost engine AWS Transform MGN directly from its console\n- Available in all AWS Transform for migrations target Regions and AWS Transform MGN Regions\n- Amazon EBS on the Outpost is required\n- With Amazon S3 on Outposts, you can keep snapshots on the Outpost for data residency or store them in the parent Region\n- Without it, snapshots are stored in the parent Region\n\n## Wrap-up\n\n- Outposts is now an AWS Transform migration target\n- Continuous block-level replication straight from the source\n- Test instances before cutover, minimal downtime\n- EBS on Outposts is required, and snapshot location depends on S3 on Outposts\n\nThis is for anyone running or planning to move workloads on Outposts!"
+}

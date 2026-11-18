@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-global-authentication-amazon-ecr",
+  "title": "ECR のトークンが 1 つで全リージョンに！グローバル認証トークンの登場",
+  "summary": "Amazon ECR がプライベートレジストリのグローバル認証トークンに対応したよ！1 つのトークンで同じパーティションのすべてのリージョンの ECR を使えるみたい。",
+  "title_en": "One ECR Token for Every Region: Global Authentication Tokens Are Here!",
+  "summary_en": "Amazon ECR now supports global authentication tokens for private registries: one token from the AWS Sign-In CreateBearerToken API works across all ECR private registries in the same partition.",
+  "emotion": "happy",
+  "importance": 4,
+  "tags": [
+    "aws",
+    "devops",
+    "infrastructure"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/global-authentication-amazon-ecr",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon ECR now supports global authentication tokens for private registries",
+  "published_at": "2026-11-17T21:37:00+00:00",
+  "body_md": "おつかれさま、しぃちゃんだよ！今日はコンテナイメージ運用が地味に楽になるお知らせだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Elastic Container Registry (Amazon ECR) がプライベートレジストリ向けのグローバル認証トークンをサポートしたと発表されたよ。\n\n## 今までどうだったの？\n\nイメージを push・pull するリージョンごとに、別々の認証トークンをリクエストする必要があったの。レイテンシーや可用性のためにリージョンをまたいで pull をさばくプロキシを動かしているチームは、リージョンの数だけトークンを取得・更新・調整しなければならなかったよ。\n\n## これで何が変わるの？\n\nAWS Sign-In の CreateBearerToken API から 1 つのトークンをリクエストするだけで、同じ AWS パーティション内のすべての ECR プライベートレジストリで使えるよ。プロキシは、パーティション内の全リージョンぶんを 1 つのトークンで管理できるの！\n\n## 深く潜ってみよう\n\n- 有効期間はデフォルトで 12 時間。最短 5 分まで設定できる\n- Docker CLI と Amazon ECR Docker Credential Helper で使える\n- 既存のリージョン別認証トークンは、これまでどおり動く\n- ECR が使えるすべての商用 AWS リージョンで利用できる\n- 詳細は Amazon ECR ユーザーガイドの Private registry authentication\n\n## まとめ\n\n- 1 つのトークンで同じパーティションの全 ECR プライベートレジストリに使える\n- 有効期間は 5 分から、デフォルトは 12 時間\n- Docker CLI と Credential Helper で使え、既存トークンも継続\n\nマルチリージョンでイメージを pull するプロキシを運用しているみんなに刺さるよ！",
+  "body_md_en": "Hi, Shii-chan here! A quietly handy update for container image workflows!\n\n## What was announced?\n\nIn AWS What's New, AWS announced that Amazon Elastic Container Registry (Amazon ECR) now supports global authentication tokens for private registries.\n\n## The story so far\n\nYou needed to request a separate authentication token in each Region where you push or pull images. Teams running proxy services that route pulls across Regions for latency or availability had to request, refresh, and coordinate a token per Region.\n\n## What changes\n\nYou can request a single token from the AWS Sign-In CreateBearerToken API and use it across all ECR private registries in the same AWS partition. A proxy manages one token for all Regions in the partition!\n\n## Dive Deep\n\n- Valid for 12 hours by default, configurable down to 5 minutes\n- Works with the Docker CLI and the Amazon ECR Docker Credential Helper\n- Existing regional tokens continue to work as before\n- Available in all commercial AWS Regions where ECR is supported\n- See Private registry authentication in the Amazon ECR User Guide\n\n## Wrap-up\n\n- One token covers all ECR private registries in a partition\n- 12 hours by default, as short as 5 minutes\n- Works with Docker CLI and the credential helper, and regional tokens keep working\n\nThis is for anyone running multi-Region image pull proxies!"
+}

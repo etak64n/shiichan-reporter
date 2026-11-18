@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-ec2-c8ine",
+  "title": "C8ine がヨーロッパ(アイルランド)に！ファイアウォールや 5G UPF 向けの高パケット性能インスタンス",
+  "summary": "カスタム Intel Xeon 搭載の Amazon EC2 C8ine インスタンスが、欧州(アイルランド)リージョンで使えるようになったよ！",
+  "title_en": "C8ine Arrives in Europe (Ireland): High Packet Performance for Firewalls and 5G UPF!",
+  "summary_en": "Amazon EC2 C8ine instances, powered by custom Intel Xeon processors, are now available in the AWS Europe (Ireland) Region.",
+  "emotion": "happy",
+  "importance": 2,
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-ec2-c8ine",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon EC2 C8ine instances are now available in AWS Europe (Ireland) region",
+  "published_at": "2026-11-17T22:00:00+00:00",
+  "body_md": "こんにちは、しぃちゃんだよ！今日はネットワーク向けインスタンスの拡大のお知らせだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon EC2 C8ine インスタンスが AWS 欧州(アイルランド)リージョンで利用できるようになったと発表されたよ。AWS だけで使えるカスタムの第 6 世代 Intel Xeon Scalable プロセッサーを搭載しているんだって。\n\n## なぜ重要なの？\n\nC8ine は、仮想ファイアウォール、ロードバランサー、通信事業者向けの 5G UPF のような、セキュリティやネットワーク仮想アプライアンスのために設計されているよ。そういうワークロードをアイルランドで動かせるようになるの！\n\n## 深く潜ってみよう\n\n- 第 6 世代の AWS Nitro カードを搭載し、前世代の C6in より最大 43% 高い性能\n- 前世代のネットワーク最適化インスタンスと比べて、vCPU あたりのパケット性能が最大 2.5 倍\n- インターネットゲートウェイを通るトラフィックのネットワークスループットが、既存の C6in の最大 2 倍\n- 利用可能なリージョンは、米国東部(バージニア北部)、米国西部(オレゴン)、アジアパシフィック(東京)、ヨーロッパ(アイルランド、フランクフルト)\n- Savings Plans、オンデマンド、スポットで購入できる\n\n## まとめ\n\n- C8ine が欧州(アイルランド)で利用可能に\n- C6in より最大 43% 高い性能、パケット性能は vCPU あたり最大 2.5 倍\n- ファイアウォールや 5G UPF 向け\n- Savings Plans、オンデマンド、スポットに対応\n\nアイルランドリージョンでネットワークアプライアンスを動かすみんなに刺さるよ！",
+  "body_md_en": "Hi, Shii-chan here! An expansion of network-focused instances today!\n\n## What was announced?\n\nIn AWS What's New, AWS announced that Amazon EC2 C8ine instances are now available in the AWS Europe (Ireland) Region. They use custom sixth generation Intel Xeon Scalable processors available only on AWS.\n\n## Why it matters\n\nC8ine is designed for security and network virtual appliances such as virtual firewalls, load balancers, and Telco 5G UPF workloads. Now you can run them in Ireland!\n\n## Dive Deep\n\n- Sixth generation AWS Nitro cards, with up to 43% higher performance than previous generation C6in\n- Up to 2.5 times higher packet performance per vCPU than prior generation network optimized instances\n- Up to 2x higher network throughput for traffic through Internet gateways than existing C6in\n- Available in US East (N. Virginia), US West (Oregon), Asia Pacific (Tokyo), and Europe (Ireland, Frankfurt)\n- Purchasable via Savings Plans, On-Demand, and Spot\n\n## Wrap-up\n\n- C8ine is available in Europe (Ireland)\n- Up to 43% higher performance than C6in and up to 2.5x packet performance per vCPU\n- Built for firewalls and 5G UPF\n- Savings Plans, On-Demand, and Spot\n\nThis is for anyone running network appliances in the Ireland Region!"
+}

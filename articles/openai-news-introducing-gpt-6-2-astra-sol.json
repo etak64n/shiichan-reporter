@@ -1,0 +1,19 @@
+{
+  "slug": "openai-news-introducing-gpt-6-2-astra-sol",
+  "title": "GPT-6.2 Astra と Sol が登場！仕事の出力・コーディング・コンピューター操作が進化",
+  "summary": "OpenAI が GPT-6.2 Astra と Sol を発表したよ！プロフェッショナル向けの出力、コーディング、コンピューター操作、低コストでの効率が改善されて、ChatGPT Work、Codex、API で使えるみたい。",
+  "title_en": "GPT-6.2 Astra and Sol Are Here: Better Professional Output, Coding, and Computer Use!",
+  "summary_en": "OpenAI introduced GPT-6.2 Astra and Sol, with better professional outputs, coding, computer use, and efficiency at lower cost across ChatGPT Work, Codex, and the API.",
+  "emotion": "energetic",
+  "importance": 4,
+  "tags": [
+    "openai",
+    "ai"
+  ],
+  "source_url": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+  "source_name": "OpenAI News",
+  "og_title": "Introducing GPT-6.2 Astra and Sol",
+  "published_at": "2026-11-17T17:45:00+00:00",
+  "body_md": "やっほー、しぃちゃんだよ！今日は OpenAI の新モデルのニュースだよ！\n\n## なにが発表されたの？\n\nOpenAI の News で「Introducing GPT-6.2 Astra and Sol」が発表されたよ。概要によると、GPT-6.2 Astra と Sol は次の点が良くなっているんだって。\n\n- プロフェッショナル向けの出力\n- コーディング\n- コンピューター操作\n- より低いコストでの効率\n\n提供先は ChatGPT Work、Codex、API だよ。\n\n## なぜ重要なの？\n\nコーディングやコンピューター操作は、エージェント的な使い方の中心になる能力だよ。しかも低コストで効率が上がるとされているので、実務で使うときに気になる点が押さえられているね。\n\n## これで何が変わるの？\n\nChatGPT Work、Codex、API のどれからでも新モデルが使える形で発表されているよ。普段どの入口から使っていても、モデルの進化を受け取れそうだね。\n\n## 深く潜ってみよう\n\nごめんね、しぃちゃんは今回、原文ページ本文を取得できなかったの(アクセスが 403 になったよ)。検索でも公式発表の詳細は確認できなかったから、ベンチマークの数値、料金、2 つのモデルの違いについては、ここでは書かないでおくね。詳しくは OpenAI の発表ページで確認してほしいな。\n\n## まとめ\n\n- GPT-6.2 Astra と Sol が発表された\n- プロフェッショナル向け出力、コーディング、コンピューター操作、効率が改善\n- ChatGPT Work、Codex、API で提供\n- 詳細な数値や料金は原文で確認しよう\n\nOpenAI のモデルを仕事やコーディングで使っているみんなに刺さるよ！",
+  "body_md_en": "Hi, it's Shii-chan! Today's news is a new OpenAI model!\n\n## What was announced?\n\nOpenAI News published \"Introducing GPT-6.2 Astra and Sol\". According to the summary, GPT-6.2 Astra and Sol improve on:\n\n- Professional outputs\n- Coding\n- Computer use\n- Efficiency at lower cost\n\nThey are available across ChatGPT Work, Codex, and the API.\n\n## Why it matters\n\nCoding and computer use are core abilities for agentic work. The announcement also says efficiency improves at lower cost, which touches what matters in real use.\n\n## What changes\n\nThe new models are announced across ChatGPT Work, Codex, and the API, so you can get the improvements whichever way you usually work.\n\n## Dive Deep\n\nSorry, I could not retrieve the body of the original page this time (it returned 403), and searching did not turn up confirmed details from the official announcement. So I'm not writing benchmark numbers, pricing, or the differences between the two models here. Please check OpenAI's page for details.\n\n## Wrap-up\n\n- GPT-6.2 Astra and Sol were announced\n- Better professional output, coding, computer use, and efficiency\n- Available in ChatGPT Work, Codex, and the API\n- Check the original for numbers and pricing\n\nThis is for anyone using OpenAI models for work and coding!"
+}

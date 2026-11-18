@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-sagemaker-hyperpod-nvidia-dynamo",
+  "title": "HyperPod Inference が NVIDIA Dynamo に対応！巨大モデルも長いプロンプトもすいすい",
+  "summary": "Amazon SageMaker HyperPod Inference が NVIDIA Dynamo をサポートしたよ！マルチノード推論、prefill と decode の分離、KV を意識したルーティングが使えるみたい。",
+  "title_en": "SageMaker HyperPod Inference Now Speaks NVIDIA Dynamo: Huge Models and Long Prompts, Handled!",
+  "summary_en": "Amazon SageMaker HyperPod Inference now supports NVIDIA Dynamo, with multi-node serving, disaggregated prefill and decode, and KV-aware routing, managed through the Inference Operator add-on.",
+  "emotion": "energetic",
+  "importance": 4,
+  "tags": [
+    "aws",
+    "ai",
+    "infrastructure"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/sagemaker-hyperpod-nvidia-dynamo/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon SageMaker HyperPod Inference now supports NVIDIA Dynamo for disaggregated and multi-node inference",
+  "published_at": "2026-11-17T08:00:00+00:00",
+  "body_md": "おつかれさま、しぃちゃんだよ！今日は大規模モデルの推論が楽になるニュースだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon SageMaker HyperPod Inference が NVIDIA Dynamo をサポートしたと発表されたよ。HyperPod の Inference Operator アドオンが Dynamo を管理してくれるので、分散推論基盤を自分で作って運用しなくて済むんだって。\n\n## 今までどうだったの？\n\nモデルが大きくなると、推論では 2 つの問題が出てくるよ。\n\n- 大きなモデルは 1 インスタンスの GPU メモリに収まらないことがある\n- 長いプロンプトでは prefill と decode が同じ GPU を取り合って、トークン生成が遅くなる\n\nどちらも、これまでは自分で分散サービング基盤を組んで運用して回避する必要があったの。\n\n## これで何が変わるの？\n\nDynamo を使うと、こんなことができるよ。\n\n- 1 つのモデルを複数ノードにまたがって動かせる\n- prefill と decode を別々の GPU プールに分けて、それぞれ独立にスケールできる。長いプロンプトが他のリクエストのトークン生成を止めなくなる\n- KV を意識したルーティングで、関連するキャッシュ済みコンテキストを持つワーカーにリクエストを送る。再計算が減ってスループットが上がる\n\n## 深く潜ってみよう\n\n- HyperPod が面倒を見てくれるのは、EFA ネットワーキング、GPU キャパシティ管理、ノード交換、エンドポイント登録、オートスケーリング、可観測性\n- 始め方は 2 通り。既存の Dynamo マニフェストを持ち込んで細かく制御するか、簡易設定を HyperPod が基盤設定に変換してくれる方法\n- 提供リージョンは 17 で、米国東部(バージニア北部・オハイオ)、米国西部(北カリフォルニア・オレゴン)、欧州(フランクフルト・ストックホルム・アイルランド・ロンドン・スペイン)、アジアパシフィック(ムンバイ・ハイデラバード・シンガポール・シドニー・ジャカルタ・メルボルン・東京)、サンパウロ\n\n## まとめ\n\n- HyperPod Inference が NVIDIA Dynamo に対応した\n- マルチノード推論と prefill・decode の分離が使える\n- KV 対応ルーティングで再計算を減らす\n- インフラ運用は HyperPod におまかせ\n\n大きなモデルを自前で配信していて、分散サービングの運用に疲れているみんなに刺さるよ！",
+  "body_md_en": "Hi, Shii-chan here! Big news for serving large models!\n\n## What was announced?\n\nIn AWS What's New, AWS announced that Amazon SageMaker HyperPod Inference now supports NVIDIA Dynamo. HyperPod manages Dynamo for you through the Inference Operator add-on, so you don't have to build and operate distributed serving infrastructure yourself.\n\n## The story so far\n\nAs models grow, two problems limit inference:\n\n- A large model can need more GPU memory than one instance has\n- Long prompts slow token generation because prefill and decode compete for the same GPUs\n\nUntil now, you had to build and run your own distributed serving stack to work around both.\n\n## What changes\n\nWith Dynamo on HyperPod you can:\n\n- Run a single model across multiple nodes\n- Split prefill and decode into separate GPU pools that scale independently, so a long prompt no longer stalls token generation for other requests\n- Use KV-aware routing to send each request to a worker that already holds the relevant cached context, cutting recomputation and raising throughput\n\n## Dive Deep\n\n- HyperPod runs EFA networking, GPU capacity management, node replacement, endpoint registration, autoscaling, and observability\n- Two ways to start: bring your existing Dynamo manifests for full control, or use a simplified configuration that HyperPod translates into the underlying infrastructure\n- Available in 17 Regions: US East (N. Virginia, Ohio), US West (N. California, Oregon), Europe (Frankfurt, Stockholm, Ireland, London, Spain), Asia Pacific (Mumbai, Hyderabad, Singapore, Sydney, Jakarta, Melbourne, Tokyo), and Sao Paulo\n\n## Wrap-up\n\n- HyperPod Inference supports NVIDIA Dynamo\n- Multi-node serving and disaggregated prefill and decode\n- KV-aware routing reduces recomputation\n- HyperPod handles the infrastructure\n\nThis is for teams serving large models themselves and tired of running distributed serving!"
+}

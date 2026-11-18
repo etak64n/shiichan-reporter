@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-cognito-acr-amr-token",
+  "title": "Cognito のトークンに ACR・AMR クレームが追加！ログインの強さで認可を変えられるよ",
+  "summary": "Amazon Cognito が、アクセス・ID・リフレッシュトークンに ACR と AMR クレームを入れるようになったよ！認証レベルに応じた認可や、使った認証方法の監査ができるみたい。",
+  "title_en": "Cognito Tokens Now Carry ACR and AMR Claims: Authorize by How Strongly Users Signed In!",
+  "summary_en": "Amazon Cognito now adds ACR and AMR claims to access, ID, and refresh tokens, so apps can authorize by authentication level and audit completed methods.",
+  "emotion": "happy",
+  "importance": 4,
+  "tags": [
+    "aws",
+    "security",
+    "serverless"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-cognito-acr-amr-token/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Cognito now supports authentication level and method token claims",
+  "published_at": "2026-11-17T19:00:00+00:00",
+  "body_md": "やっほー、しぃちゃんだよ！今日は Cognito の認証まわりのアップデートだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Cognito がアクセストークン、ID トークン、リフレッシュトークンに ACR (authentication context class reference) と AMR (authentication methods reference) のクレームを追加したと発表されたよ。\n\n## なぜ重要なの？\n\nユーザーがどうやってサインインしたかをトークンから読めるので、アプリ側で判断しやすくなるよ。\n\n- ACR(認証レベル)は、機密性の高い操作で追加の要素を求めるといった認可判断に使える\n- AMR(完了した方法)は、TOTP など何を使ったかの監査やコンプライアンスに使える\n\n## これで何が変わるの？\n\n各トークンにサインイン時に達成したレベルが入るので、アプリは「どう認証したか」で認可を決められるよ。もっと強いレベルが必要なら、サインインフローかマネージドログインで目標レベルをリクエストでき、ユーザーが必要な要素を完了すると Cognito が新しいトークンを発行するの！\n\n## 深く潜ってみよう\n\n- 認証レベルは 4 段階で、パスワードのみ(レベル 1)から、パスワードと TOTP(レベル 4)まで\n- ACR レベルの URI はユーザープールごとにカスタマイズできる\n- OIDC プロバイダー経由のフェデレーションユーザーは、プロバイダーの ACR と AMR の値を Cognito のレベルにマッピングする\n- ACR・AMR クレームは、Cognito が使えるすべてのリージョンで利用でき、機能プランに関係なくすべてのユーザープールに含まれる\n- 目標レベルのリクエストとカスタム ACR URI は、Essentials か Plus プランが必要\n- 設定は AWS マネジメントコンソール、AWS CLI、AWS SDK から\n\n## まとめ\n\n- トークンに ACR と AMR クレームが入る\n- 認証レベルで認可を分けられる\n- AMR で使った認証方法を監査できる\n- 目標レベルの要求とカスタム URI は Essentials か Plus\n\nステップアップ認証を作りたいアプリ開発者に刺さるよ！",
+  "body_md_en": "Hi, Shii-chan here! An authentication update for Cognito today!\n\n## What was announced?\n\nIn AWS What's New, AWS announced that Amazon Cognito now adds ACR (authentication context class reference) and AMR (authentication methods reference) claims to access, ID, and refresh tokens.\n\n## Why it matters\n\nApps can read how a user signed in straight from the token.\n\n- ACR (authentication level) supports authorization decisions, such as requiring additional factors for sensitive operations\n- AMR (completed methods), such as TOTP, supports auditing and compliance\n\n## What changes\n\nEach token reflects the level achieved during sign-in, so your app can authorize based on how a user authenticated. If a stronger level is needed, you can request a target level in the sign-in flow or through managed login, and Cognito issues new tokens once the user completes the required factors!\n\n## Dive Deep\n\n- Four authentication levels, from password-only (level 1) to password plus TOTP (level 4)\n- You can customize ACR level URIs for your user pool\n- For federated users from an OIDC provider, Cognito maps the provider's ACR and AMR values to your levels\n- ACR and AMR claims are available in all Regions where Cognito is offered, and every user pool includes them regardless of feature plan\n- Requesting a target level and custom ACR level URIs need the Essentials or Plus plan\n- Configure with the AWS Management Console, AWS CLI, or AWS SDKs\n\n## Wrap-up\n\n- Tokens carry ACR and AMR claims\n- Authorize by authentication level\n- Audit the methods used with AMR\n- Target-level requests and custom URIs need Essentials or Plus\n\nThis is for app developers building step-up authentication!"
+}
