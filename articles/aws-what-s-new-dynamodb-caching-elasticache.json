@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-dynamodb-caching-elasticache",
+  "title": "DynamoDB の読み取りがサブミリ秒に！ElastiCache Serverless for Valkey でサーバーレスキャッシュ",
+  "summary": "DynamoDB キャッシュが Amazon ElastiCache Serverless for Valkey で GA になったよ！DAX のサーバーレスな代替として、アプリのロジックを変えずにサブミリ秒の読み取りができるの。",
+  "body_md": "みんな、しぃちゃんだよ！DynamoDB を使っているなら気になるニュースだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、**Amazon ElastiCache Serverless for Valkey を使った DynamoDB キャッシュ** が一般提供(GA)になったと発表されたよ。Amazon DynamoDB Accelerator(DAX)のサーバーレスな代替で、よくアクセスされる DynamoDB のデータに **サブミリ秒の読み取りレイテンシ** を出せるの。\n\n## 今までどうだったの？\n\nDynamoDB のひと桁ミリ秒より速い読み取りが必要なときは、DAX のノードをプロビジョニングしてスケールするか、自分でキャッシュを運用して DynamoDB と同期させる必要があったよ。\n\n## これで何が変わるの？\n\nデータが変わるたびに更新される **ライトスルーキャッシュ** 経由で DynamoDB のテーブルデータにアクセスできて、ワークロードの変化に合わせて自動でスケールするよ。クラスターやノードの管理は不要なの！\n\n## 深く潜ってみよう\n\n- アプリケーションのロジック変更は不要で、設定も最小限\n- キャッシュするテーブルと API、データの保持時間を自分で選ぶ\n- DynamoDB へのアクセスにはアプリケーションの IAM 認証情報が使われるので、既存のアクセス制御ポリシーがそのまま適用される\n- すべての商用リージョンと AWS GovCloud(US)リージョンで利用可能\n- 追加料金なし。使った ElastiCache Serverless と DynamoDB のリソース分だけ支払う\n- 始め方は ElastiCache Developer Guide を参照\n\n## まとめ\n\n- DynamoDB キャッシュが ElastiCache Serverless for Valkey で GA\n- DAX のサーバーレスな代替で、サブミリ秒の読み取り\n- ライトスルーで、ノードやクラスターの管理が不要\n- アプリのロジック変更なし、追加料金なし\n\nDynamoDB の読み取りレイテンシを縮めたいみんなが、すぐ試せる機能だよ！",
+  "title_en": "DynamoDB Caching Is Now Available with ElastiCache Serverless for Valkey",
+  "summary_en": "DynamoDB caching with Amazon ElastiCache Serverless for Valkey is generally available, a serverless alternative to DAX with sub-millisecond reads and no application logic changes.",
+  "body_md_en": "Hi everyone, it's Shii-chan! This one matters if you use DynamoDB.\n\n## What was announced?\n\nAWS What's New announced the general availability of **DynamoDB caching with Amazon ElastiCache Serverless for Valkey**, a serverless alternative to Amazon DynamoDB Accelerator (DAX) that delivers **sub-millisecond read latency** for frequently accessed DynamoDB data.\n\n## The story so far\n\nIf you needed faster reads than the single-digit millisecond latency of DynamoDB, you had to provision and scale DAX nodes, or run your own cache and keep it in sync with DynamoDB.\n\n## What changes\n\nYou access DynamoDB table data through a **write-through cache** that updates as data changes and scales automatically with your workload, with no clusters or nodes to manage.\n\n## Dive Deep\n\n- No application logic changes and minimal configuration\n- You choose which DynamoDB tables and APIs to cache and how long to retain cached data\n- Your application's IAM credentials are used to access DynamoDB, so existing access control policies apply\n- Available in all commercial and AWS GovCloud (US) Regions\n- No additional cost; you pay for the ElastiCache Serverless and DynamoDB resources you use\n- See the ElastiCache Developer Guide to get started\n\n## Wrap-up\n\n- DynamoDB caching with ElastiCache Serverless for Valkey is GA\n- A serverless DAX alternative with sub-millisecond reads\n- Write-through, with no nodes or clusters to manage\n- No application logic changes and no additional cost\n\nThis is for anyone who wants lower DynamoDB read latency, and you can try it right away!",
+  "emotion": "energetic",
+  "importance": 5,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/dynamodb-caching-elasticache/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon DynamoDB caching is now available with Amazon ElastiCache Serverless for Valkey",
+  "tags": [
+    "aws",
+    "serverless",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-17T18:54:00+00:00"
+}

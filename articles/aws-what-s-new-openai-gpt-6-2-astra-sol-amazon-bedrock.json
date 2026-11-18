@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-openai-gpt-6-2-astra-sol-amazon-bedrock",
+  "title": "GPT-6.2 Astra と Sol が Amazon Bedrock で GA！Astra には Ultrafast モードも",
+  "summary": "OpenAI の GPT-6.2 Astra と GPT-6.2 Sol が Amazon Bedrock で一般提供になったよ！高度な推論と低レイテンシの Ultrafast モードを持つ Astra と、繰り返しの業務向けの Sol を使い分けられるの。",
+  "body_md": "やっほー、しぃちゃんだよ！Bedrock で選べるモデルに、OpenAI の新しい 2 つが加わったよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、**OpenAI GPT-6.2 Astra と GPT-6.2 Sol が Amazon Bedrock で一般提供(GA)** になったと発表されたよ！\n\n## それぞれの得意なこと\n\n- **GPT-6.2 Astra**: フロンティア級の推論と判断力で、複雑なビジネス課題、本格的なリサーチ、高度なコーディングやエージェントのワークフローに向く。レイテンシが大事な用途向けに **Ultrafast モード** も用意されているよ\n- **GPT-6.2 Sol**: 明確な成果が決まっている、繰り返しのコーディング・エージェント・プロ向け業務に向く。速度とタスクあたりのコストを重視した位置づけだよ\n\n## これで何が変わるの？\n\n原文が挙げている使い分けの例はこんな感じだよ。\n\n- Astra: 食い違う入力のすり合わせ、複雑なコードベースの調査、テキストと画像をまたいだ推論、プロ品質の成果物づくり\n- Astra の Ultrafast モード: 対話型のコーディングアシスタント、リアルタイムエージェント、顧客向けアプリケーション\n- Sol: ソフトウェアの実装とデバッグ、ドキュメントやデータの分析、複数ステップのワークフロー自動化\n\n## 深く潜ってみよう\n\n- 利用は Amazon Bedrock コンソール、または対応する Bedrock API から\n- 既存の AWS のコントロールで、ワークロードの保護、アクセス管理、モデル呼び出しの監査ができる\n- 対応リージョン、エンドポイント、機能、推論プロファイル、料金は Bedrock のドキュメントで確認してね\n\n具体的な数値やベンチマークは、このお知らせには載っていなかったよ。\n\n## まとめ\n\n- GPT-6.2 Astra と Sol が Bedrock で GA\n- Astra は難しい仕事向けで、低レイテンシの Ultrafast モードもある\n- Sol は量が多く成果が検証しやすい業務向け\n- AWS のセキュリティ・監査の仕組みと一緒に使える\n\nAWS 上で OpenAI のモデルを使ったエージェントやアシスタントを作りたいみんなに刺さるよ！",
+  "title_en": "OpenAI GPT-6.2 Astra and Sol Are Now Generally Available on Amazon Bedrock",
+  "summary_en": "OpenAI GPT-6.2 Astra and GPT-6.2 Sol are generally available on Amazon Bedrock. Astra targets demanding work and has an Ultrafast mode, while Sol targets recurring, high-volume workflows.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Two new OpenAI models just joined the lineup on Bedrock.\n\n## What was announced?\n\nAWS What's New announced the **general availability of OpenAI GPT-6.2 Astra and GPT-6.2 Sol on Amazon Bedrock**.\n\n## What each model is for\n\n- **GPT-6.2 Astra**: frontier-level reasoning and judgment for complex business problems, demanding research, and advanced coding and agentic workflows. It also includes an **Ultrafast mode** for latency-sensitive applications\n- **GPT-6.2 Sol**: designed for recurring coding, agentic, and professional workflows with clear outcomes, where speed and cost per task matter\n\n## What changes\n\nThe original post suggests these uses:\n\n- Astra: reconciling competing inputs, investigating complex codebases, reasoning across text and images, creating professional artifacts\n- Astra Ultrafast mode: interactive coding assistants, real-time agents, customer-facing applications\n- Sol: implementing and debugging software, analyzing documents and data, automating multistep workflows\n\n## Dive Deep\n\n- Get started in the Amazon Bedrock console or through supported Bedrock APIs\n- Established AWS controls help you secure workloads, govern access, and audit model invocation activity\n- For Regions, endpoints, APIs, features, inference profiles, and pricing, see the Bedrock documentation\n\nThe announcement does not include specific numbers or benchmarks.\n\n## Wrap-up\n\n- GPT-6.2 Astra and Sol are GA on Bedrock\n- Astra is for hard problems and has a low-latency Ultrafast mode\n- Sol is for high-volume work with verifiable outcomes\n- They work with AWS security and audit controls\n\nThis is for anyone building agents and assistants on AWS with OpenAI models!",
+  "emotion": "energetic",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/openai-gpt-6-2-astra-sol-amazon-bedrock/",
+  "source_name": "AWS What's New",
+  "og_title": "OpenAI GPT-6.2 Astra, and GPT-6.2 Sol are now generally available on Amazon Bedrock",
+  "tags": [
+    "aws",
+    "openai",
+    "ai"
+  ],
+  "published_at": "2026-11-17T17:17:00+00:00"
+}

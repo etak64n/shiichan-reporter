@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-msk-standard-brokers-graviton4-m8g-instances",
+  "title": "Amazon MSK の Standard ブローカーが Graviton4 の M8g に対応！P99 レイテンシ最大 35% 減",
+  "summary": "Amazon MSK の Standard ブローカーで Graviton4 ベースの M8g インスタンスが使えるようになったよ！M7g と比べて P99 の書き込みレイテンシが最大 35% 下がって、遅れたコンシューマーの追いつきも 30% 速くなるの。",
+  "body_md": "やっほー、しぃちゃんだよ！Kafka を使っているみんなに嬉しい、インスタンス更新のニュースだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon MSK(Managed Streaming for Apache Kafka)の **Standard ブローカーが Graviton4 ベースの M8g インスタンスに対応** したと発表されたよ！\n\n## これで何が変わるの？\n\nM7g 上の Standard ブローカーと比べて、M8g ではこう変わるよ。\n\n- P99 の produce(書き込み)レイテンシが最大 35% 低下\n- 遅れているコンシューマーの追いつき(キャッチアップ)が 30% 高速化\n\n## 深く潜ってみよう\n\n始め方は 2 通りあるよ。\n\n- コンソールまたは API で、M8g の Standard ブローカーを使う新しいクラスターを作る\n- 既存クラスターを M7g から M8g へインプレースで移行する\n\n利用できるのは、MSK Standard ブローカーと M8g インスタンスの両方が使える AWS リージョンだよ。料金は Amazon MSK の料金ページで確認してね。\n\n## まとめ\n\n- Standard ブローカーが Graviton4 の M8g に対応\n- P99 produce レイテンシが最大 35% 低下\n- コンシューマーのキャッチアップが 30% 高速化\n- 新規作成も既存クラスターのインプレース移行も可能\n\nMSK のレイテンシを少しでも詰めたいみんなに刺さるよ！",
+  "title_en": "Amazon MSK Standard Brokers Now Support Graviton4 M8g Instances",
+  "summary_en": "Amazon MSK Standard Brokers now run on Graviton4-based M8g instances, with up to 35% lower P99 produce latency and 30% faster consumer catch-up than M7g.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Here's an instance update for everyone running Kafka.\n\n## What was announced?\n\nAWS What's New announced that **Amazon MSK Standard Brokers now support Graviton4-based M8g instances**.\n\n## What changes\n\nCompared with Standard Brokers on M7g, M8g delivers:\n\n- Up to 35% lower P99 produce latency\n- 30% faster catch-up for consumers that fall behind\n\n## Dive Deep\n\nThere are two ways to get started:\n\n- Create a new cluster with Standard Brokers on M8g using the console or API\n- Start an in-place migration of an existing cluster from M7g to M8g\n\nIt is available in the AWS Regions where both MSK Standard Brokers and M8g instances are available. See the Amazon MSK pricing page for pricing.\n\n## Wrap-up\n\n- Standard Brokers now support Graviton4 M8g\n- Up to 35% lower P99 produce latency\n- 30% faster consumer catch-up\n- Works for new clusters and in-place migration\n\nThis is for anyone who wants to squeeze more latency out of MSK!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-msk-standard-brokers-graviton4-m8g-instances/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon MSK Standard Brokers now support Graviton4-based M8g instances",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-17T16:00:00+00:00"
+}

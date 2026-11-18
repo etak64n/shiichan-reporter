@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-announces-aws-interconnect-multicloud-azure-ga",
+  "title": "AWS と Azure が専用線でつながる！AWS Interconnect - multicloud の Azure 対応が GA に",
+  "summary": "AWS Interconnect - multicloud の Microsoft Azure 接続が一般提供になったよ！Google Cloud、OCI と同じ体験で、他クラウドへのプライベート接続をすばやく用意できるの。",
+  "body_md": "みんな、しぃちゃんだよ！クラウドをまたぐネットワークがぐっとラクになるニュースが来たよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、**AWS Interconnect - multicloud と Microsoft Azure の接続が一般提供(GA)** になったと発表されたよ！\n\nAWS Interconnect - multicloud は、他のクラウドプロバイダーへの、回復力とスケーラビリティのあるプライベート接続をすばやく用意するためのサービスだよ。Azure は 8 月にこのサービスのパブリックプレビューに対応して、サービスを支えるオープン仕様を採用した最新のクラウドになったの。\n\n## 今までどうだったの？\n\nマルチクラウドで複数のクラウドをつなぐには、自分たちでグローバルな多層ネットワークを作って運用する「DIY」の方法しかなかったよ。規模が大きくなるほど、作るのも管理するのも複雑になるのが課題だったの。\n\n## これで何が変わるの？\n\n今回の GA で、AWS のお客さんは次の 3 つの接続先に対して **同じ一貫したシンプルな体験** を使えるようになったよ！\n\n- Microsoft Azure\n- Google Cloud\n- Oracle Cloud Infrastructure(OCI)\n\n原文では、このサービスを「この種のものとして初の目的特化型プロダクト」と紹介しているよ。\n\n## 深く潜ってみよう\n\nAzure との接続で使えるリージョンは次の 3 つだよ。\n\n- us-east-1(バージニア北部)\n- ap-southeast-2(シドニー)\n- eu-central-1(フランクフルト)\n\nInterconnect の作成は AWS マネジメントコンソール、AWS CLI、API から行えるよ。手順は AWS Interconnect - multicloud のドキュメントにまとまっているみたい！\n\n## まとめ\n\n- Azure との AWS Interconnect - multicloud が GA\n- Google Cloud、OCI と同じ体験で他クラウドとつなげる\n- DIY のマルチクラウドネットワークが不要に\n- Azure 接続は 3 リージョンで利用可能\n- コンソール、CLI、API から作成できる\n\nAWS と Azure をまたいで動かしているネットワーク担当のみんなに刺さるよ！",
+  "title_en": "AWS Interconnect - multicloud with Azure Is Now Generally Available",
+  "summary_en": "AWS Interconnect - multicloud connectivity with Microsoft Azure is now generally available. You get the same experience as with Google Cloud and OCI for provisioning private connections to other clouds.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Connecting clouds just got easier, so let's take a look!\n\n## What was announced?\n\nAWS What's New announced the **general availability of AWS Interconnect - multicloud with Microsoft Azure**.\n\nAWS Interconnect - multicloud lets you quickly provision resilient, scalable private connections to other cloud providers. Azure launched support in public preview in August and became the latest provider to adopt the open specification behind the service.\n\n## The story so far\n\nConnecting workloads across clouds meant a do-it-yourself approach: building and managing global, multi-layered networks yourself. That gets complicated as you scale.\n\n## What changes\n\nWith this GA, AWS customers get the same consistent, simple experience to connect to:\n\n- Microsoft Azure\n- Google Cloud\n- Oracle Cloud Infrastructure (OCI)\n\n## Dive Deep\n\nAzure connectivity is available in these AWS Regions:\n\n- us-east-1 (N. Virginia)\n- ap-southeast-2 (Sydney)\n- eu-central-1 (Frankfurt)\n\nYou can create an Interconnect using the AWS Management Console, the AWS CLI, or the API. Step-by-step guidance is in the AWS Interconnect - multicloud documentation.\n\n## Wrap-up\n\n- AWS Interconnect - multicloud with Azure is GA\n- Same experience as Google Cloud and OCI\n- No more DIY multicloud networks\n- Azure connectivity is available in 3 Regions\n- Create it from the console, CLI, or API\n\nThis is for network engineers running workloads across AWS and Azure!",
+  "emotion": "energetic",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-announces-AWS-interconnect-multicloud-azure-ga/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS announces general availability of AWS Interconnect - multicloud connectivity with Microsoft Azure",
+  "tags": [
+    "aws",
+    "microsoft",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-17T16:00:00+00:00"
+}

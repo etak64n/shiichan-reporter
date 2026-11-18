@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-workspaces-new-windows-client",
+  "title": "WorkSpaces の Windows クライアントが一新！困ったときに助けてくれる WorkSpaces Advisor も登場",
+  "summary": "Amazon WorkSpaces Personal の新しい Windows クライアントが登場したよ！画面や接続フローが整理されて、トラブルを見つけて提案してくれる WorkSpaces Advisor(パブリックプレビュー)も付いてくるの。追加料金なしだよ。",
+  "body_md": "こんにちは、しぃちゃんだよ！毎日使う人が多い WorkSpaces のクライアントが新しくなったよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon WorkSpaces Personal 向けの **新しい Windows クライアント体験** が発表されたよ！\n\n- 更新されたインターフェース\n- シンプルになった接続フロー\n- 見つけやすくなった設定\n- 改善されたフルスクリーン体験\n- 使い方を案内するウェルカムツアー\n- 管理者が有効にした WorkSpaces では、ネストされた仮想化(nested virtualization)をセルフサービスで有効にできる\n\n## これで何が変わるの？\n\n目玉は **WorkSpaces Advisor** という、プロアクティブなトラブルシューティング機能(パブリックプレビュー)だよ。デバイス、ネットワーク、WorkSpace 自体の主要なメトリクスを監視して、登録・サインイン・接続まわりで問題があれば、取れる対処を提案してくれるの。\n\n「つながらない」ときに自分で原因を探し回る手間が減りそうだね！\n\n## 深く潜ってみよう\n\n- 対象は Amazon WorkSpaces Personal の Windows クライアント\n- 追加料金なしで使える\n- Amazon WorkSpaces Personal が使えるすべての AWS リージョンで利用できる\n- WorkSpaces Advisor はまだパブリックプレビューだよ\n\n## まとめ\n\n- 新しい Windows クライアントで UI と接続フローが刷新\n- WorkSpaces Advisor が問題を検知して対処を提案(プレビュー)\n- フルスクリーンやウェルカムツアーも改善\n- 追加料金なし\n\nWorkSpaces で毎日働いているみんなと、ヘルプデスクを担当している管理者さんに嬉しいアップデートだよ！",
+  "title_en": "New Amazon WorkSpaces Windows Client Brings WorkSpaces Advisor Troubleshooting",
+  "summary_en": "Amazon WorkSpaces Personal gets a new Windows client with a refreshed interface, a simpler connection flow, and WorkSpaces Advisor proactive troubleshooting in public preview, at no additional cost.",
+  "body_md_en": "Hi everyone, it's Shii-chan! The WorkSpaces client that so many people use every day has a fresh look.\n\n## What was announced?\n\nAWS What's New announced a **new Windows client experience** for Amazon WorkSpaces Personal.\n\n- An updated interface\n- A simplified connection flow\n- Easier-to-find settings\n- An improved full screen experience\n- A welcome tour\n- For admin-enabled WorkSpaces, a self-service option to enable nested virtualization\n\n## What changes\n\nThe highlight is **WorkSpaces Advisor**, proactive troubleshooting in public preview. It monitors key metrics from your device, network, and the WorkSpace itself, and gives actionable recommendations if there are issues with registration, sign-in, or the connection in general.\n\n## Dive Deep\n\n- Applies to the Amazon WorkSpaces Personal Windows client\n- No additional cost\n- Available in all AWS Regions where Amazon WorkSpaces Personal is available\n- WorkSpaces Advisor is still in public preview\n\n## Wrap-up\n\n- A new Windows client refreshes the UI and connection flow\n- WorkSpaces Advisor detects issues and suggests actions (preview)\n- Full screen and a welcome tour are improved\n- No additional cost\n\nThis is for everyone who works in WorkSpaces all day, and for the admins who support them!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/workspaces-new-windows-client",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon WorkSpaces provides a new Windows client experience",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-17T16:00:00+00:00"
+}

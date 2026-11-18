@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-bedrock-agentcore-memory-full-session-summaries",
+  "title": "AgentCore Memory が「セッション全体の要約」を自動で作成！追加設定なしで使えるよ",
+  "summary": "Amazon Bedrock AgentCore Memory が、セッションごとに全体の要約レコードを保持するようになったよ！新しいイベントが来るたびに更新されて、サマリー戦略があれば既存のセッションにも自動で付くの。",
+  "body_md": "みんな、しぃちゃんだよ！エージェントの会話を「ざっくり振り返る」のが簡単になったよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Bedrock AgentCore Memory が **すべてのセッションに full session summary(セッション全体の要約)を保持する** ようになったと発表されたよ。会話の状況をひとつのレコードにまとめた、スナップショットのようなものだよ。\n\n## 今までとの違い\n\nこれまでの summary chunk(要約のかたまり)は、会話をより詳しくカバーするものだよ。今回の full session summary は、「そのセッションが今どういう状況か」という全体像をとらえるものなの。\n\n## これで何が変わるの？\n\n新しいイベントが届くたびに AgentCore Memory が更新するので、いつも「ここまでのセッション」を反映しているよ。細かい経緯じゃなくて、手早い振り返りがほしい開発者に向いているの。\n\n## 深く潜ってみよう\n\n- summary 戦略があれば追加設定は不要\n- summary 戦略を持つすべてのメモリで自動的に使える(既存のセッションも含む)\n- 各要約は、セッションの summary chunk と並んで、長期メモリレコードとして保存される\n- 取得は今までの Memory 操作でできて、レコードタイプでフィルタすれば full session summary だけを返せる\n- AgentCore Memory が使えるすべてのリージョンで利用可能\n\n## まとめ\n\n- セッションごとに全体の要約レコードが作られる\n- イベントが来るたびに更新される\n- summary 戦略があれば設定なしで、既存セッションにも付く\n- レコードタイプでフィルタして取得できる\n\nエージェントに「会話のあらすじ」を持たせたいみんなに刺さるよ！",
+  "title_en": "Amazon Bedrock AgentCore Memory Now Provides Full Session Summaries",
+  "summary_en": "AgentCore Memory now keeps a full session summary record for every session. It updates as new events arrive and applies automatically to any memory with a summary strategy, including existing sessions.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Getting a quick recap of an agent conversation just got easier.\n\n## What was announced?\n\nAWS What's New announced that Amazon Bedrock AgentCore Memory **now keeps a full session summary for every session**. It is a single record that gives a snapshot of what happened in the conversation.\n\n## How it differs\n\nSummary chunks cover the conversation in more detail. The full session summary captures the overall picture of where the session stands.\n\n## What changes\n\nAgentCore Memory updates it as new events arrive, so it always reflects the session so far. It works well for developers who want a quick recap rather than a play-by-play.\n\n## Dive Deep\n\n- No extra setup is needed with the summary strategy\n- Every memory with a summary strategy gets them automatically, including existing sessions\n- Each summary is stored as a long-term memory record next to the session's summary chunks\n- You retrieve it with the Memory operations you already use, and you can filter by record type to return only full session summaries\n- Available in all Regions where AgentCore Memory is available\n\n## Wrap-up\n\n- A full-session summary record is created for each session\n- It updates as events arrive\n- It needs no setup with a summary strategy and covers existing sessions\n- You can filter by record type to retrieve it\n\nThis is for anyone who wants agents to carry the gist of a conversation!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-bedrock-agentcore-memory-full-session-summaries",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Bedrock AgentCore Memory now provides full session summaries",
+  "tags": [
+    "aws",
+    "ai"
+  ],
+  "published_at": "2026-11-17T19:17:00+00:00"
+}

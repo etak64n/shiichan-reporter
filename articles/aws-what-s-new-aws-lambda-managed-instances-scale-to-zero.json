@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-lambda-managed-instances-scale-to-zero",
+  "title": "Lambda Managed Instances がゼロまでスケール！アイドル中のコストを気にしなくてよくなるよ",
+  "summary": "AWS Lambda Managed Instances の Event Functions が、リクエストがないときはゼロまでスケールして、来たら自動で戻るようになったよ！MinExecutionEnvironments をゼロにするだけで使えるの。",
+  "body_md": "こんにちは、しぃちゃんだよ！Lambda Managed Instances のちょっと困りどころが解消されたよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、**Lambda Managed Instances(LMI)上の Event Functions がゼロまでのスケールと、ゼロからのスケールに対応** したと発表されたよ。アイドル中は実行環境がゼロまで縮み、リクエストが来ると自動で立ち上がるの。\n\n## 今までどうだったの？\n\nLambda Managed Instances は、自分の Amazon EC2 インスタンス上で Lambda 関数を動かせるサービスで、Lambda の運用のしやすさを保ちながら、特殊なコンピュート構成や EC2 の価格面のメリットを使えるよ。\n\nただ、これまでは **トラフィックがないときでも、最小数の実行環境を動かしておく必要** があったの。\n\n## これで何が変わるの？\n\n今回から、一定時間アクティビティがないと実行環境がゼロまでスケールダウンして、リクエストが来たら再び用意されるよ。最小キャパシティのプロビジョニングが不要になって、次のような、使われない時間がある処理がコスト効率よくなるの！\n\n- 非同期処理\n- 開発環境\n- テスト環境\n\n## 深く潜ってみよう\n\n- 設定は、関数の `MinExecutionEnvironments` を 0 にするだけ\n\n```\nMinExecutionEnvironments = 0\n```\n\n- 設定できるのは Lambda コンソール、AWS CLI、AWS SDK、AWS CloudFormation、AWS SAM、AWS CDK\n- 対象は Event Functions\n- Lambda Managed Instances が使える、すべての AWS 商用リージョンで提供\n- 詳細は AWS Lambda Developer Guide と Lambda の料金ページを見てね\n\n## まとめ\n\n- LMI の Event Functions がゼロまでスケール、ゼロからスケールアップに対応\n- 設定は MinExecutionEnvironments を 0 にするだけ\n- 非同期処理や開発・テスト環境のコストが下がる\n- コンソール、CLI、SDK、IaC ツールから設定できる\n\n使わない時間が長い LMI の関数を持っているみんなが、すぐ試せるよ！",
+  "title_en": "AWS Lambda Now Scales to and from Zero for Lambda Managed Instances",
+  "summary_en": "Event Functions on Lambda Managed Instances now scale to zero during idle periods and back up when requests arrive. Set MinExecutionEnvironments to zero to enable it.",
+  "body_md_en": "Hi everyone, it's Shii-chan! A pain point of Lambda Managed Instances has been fixed.\n\n## What was announced?\n\nAWS What's New announced that **Event Functions on Lambda Managed Instances (LMI) now support scale to and from zero**. Lambda scales execution environments to zero during idle periods and scales them back up when requests arrive.\n\n## The story so far\n\nLambda Managed Instances lets you run Lambda functions on your Amazon EC2 instances while keeping the operational simplicity of Lambda, with access to specialized compute configurations and EC2 pricing advantages.\n\nPreviously, though, **you needed to keep a minimum number of execution environments running even when there was no traffic**.\n\n## What changes\n\nNow Lambda scales environments to zero after a period with no activity and provisions them again when requests arrive, with no minimum capacity required. That makes LMI more cost-effective for workloads with idle time:\n\n- Asynchronous processing\n- Development environments\n- Test environments\n\n## Dive Deep\n\n- To enable it, set `MinExecutionEnvironments` to zero for your function\n\n```\nMinExecutionEnvironments = 0\n```\n\n- You can set it with the Lambda console, AWS CLI, AWS SDKs, AWS CloudFormation, AWS SAM, or AWS CDK\n- It applies to Event Functions\n- Available in all AWS commercial Regions where Lambda Managed Instances is available\n- See the AWS Lambda Developer Guide and Lambda pricing for details\n\n## Wrap-up\n\n- Event Functions on LMI scale to and from zero\n- Just set MinExecutionEnvironments to 0\n- Lower cost for async processing and dev/test environments\n- Configurable from the console, CLI, SDKs, and IaC tools\n\nThis is for anyone with LMI functions that sit idle a lot, and you can try it right away!",
+  "emotion": "happy",
+  "importance": 5,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-lambda-managed-instances-scale-to-zero/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Lambda now supports scale to and from zero for Lambda Managed Instances",
+  "tags": [
+    "aws",
+    "serverless",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-17T19:00:00+00:00"
+}

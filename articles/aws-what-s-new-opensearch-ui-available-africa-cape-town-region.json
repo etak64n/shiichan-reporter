@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-opensearch-ui-available-africa-cape-town-region",
+  "title": "Amazon OpenSearch UI がアフリカ(ケープタウン)に到着！これで 25 リージョンに",
+  "summary": "Amazon OpenSearch UI が Africa (Cape Town) リージョンでも使えるようになって、提供先は 25 リージョンになったよ！複数のドメインやコレクションをひとつの UI から横断して分析できるの。",
+  "body_md": "こんにちは、しぃちゃんだよ！今日はリージョン拡大のニュースだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon OpenSearch UI が **AWS Africa(ケープタウン)リージョン** に拡大し、提供先が **25 リージョン** になったと発表されたよ！\n\n## OpenSearch UI ってなに？\n\nOpenSearch UI は、データの検索・可視化・分析をひとつのエンドポイントから行えるサービスだよ。\n\n- OpenSearch バージョン 1.3 以降で動く Amazon OpenSearch Service ドメインと、OpenSearch Serverless のコレクション(Classic と NextGen を含む)を横断できる\n- ひとつの OpenSearch UI アプリケーションを、複数のドメインやコレクションにつなげられる\n- ワークスペースでダッシュボードや保存済みクエリなどを整理できて、オブザーバビリティ、セキュリティ分析、検索向けの体験が用意されている\n- Discover 画面は複数のデータソースとクエリ言語(PPL と SQL など)に対応し、データセレクター、クエリの自動補完、新しいデザインを備える\n\n## 深く潜ってみよう\n\n- OpenSearch UI はドメインやコレクションとは別に動くので、クラスターをアップグレードしなくても最新の UI 機能が使える\n- 始めるには、OpenSearch Service コンソール、AWS CLI、AWS SDK で OpenSearch UI アプリケーションを作成する\n- 追加料金はなく、つなぐドメインとコレクションの分だけ支払う\n\n## まとめ\n\n- OpenSearch UI がケープタウンリージョンに対応し、計 25 リージョンに\n- 複数のドメイン・コレクションを 1 つの UI で扱える\n- クラスターのアップグレード不要で最新 UI が使える\n- 追加料金なし\n\nアフリカ地域でデータを置きたいみんなに刺さる更新だよ！",
+  "title_en": "Amazon OpenSearch UI Is Now Available in the Africa (Cape Town) Region",
+  "summary_en": "Amazon OpenSearch UI has expanded to the Africa (Cape Town) Region, bringing availability to 25 AWS Regions. One application can query and visualize data across multiple domains and collections.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today's news is a Region expansion.\n\n## What was announced?\n\nAWS What's New announced that Amazon OpenSearch UI has expanded to the **AWS Africa (Cape Town) Region**, bringing availability to **25 AWS Regions**.\n\n## What is OpenSearch UI?\n\nOpenSearch UI provides a single endpoint to query, visualize, and analyze data.\n\n- It works across Amazon OpenSearch Service domains running OpenSearch 1.3 or later and OpenSearch Serverless collections, including Classic and NextGen\n- One application can connect to multiple domains and collections\n- Workspaces organize dashboards and saved queries, with purpose-built experiences for observability, security analytics, and search\n- Discover supports multiple data sources and query languages, including PPL and SQL, with a data selector, query autocomplete, and an updated design\n\n## Dive Deep\n\n- OpenSearch UI runs separately from your domains and collections, so you get the latest UI capabilities without cluster upgrades\n- To get started, create an OpenSearch UI application with the OpenSearch Service console, AWS CLI, or AWS SDKs\n- No additional charge; you pay only for the domains and collections it connects to\n\n## Wrap-up\n\n- OpenSearch UI reaches Cape Town, for 25 Regions in total\n- One UI covers multiple domains and collections\n- Latest UI features without cluster upgrades\n- No additional charge\n\nThis is for anyone who wants to keep data in the Africa Region!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/opensearch-ui-available-africa-cape-town-region",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon OpenSearch UI is now available in the Africa (Cape Town) Region",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-17T18:34:00+00:00"
+}

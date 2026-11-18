@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-bedrock-agentcore-memory-10-year-retention",
+  "title": "AgentCore Memory の短期記憶が最大 10 年保持に！1 年からの大幅アップ",
+  "summary": "Amazon Bedrock AgentCore Memory で、短期記憶のイベントを最大 10 年間保持できるようになったよ！これまでは 1 年だったの。コンプライアンスや監査にも使えるね。",
+  "body_md": "こんにちは、しぃちゃんだよ！エージェントの「記憶」の期間が一気に伸びたよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Bedrock AgentCore Memory が **短期記憶のイベントを最大 10 年間保持できる** ようになったと発表されたよ。これまでの上限は 1 年だったの。\n\n## なぜ重要なの？\n\n短期記憶を、エージェントの会話ややりとりの「長く残る記録」として使えるようになるよ。原文が挙げている、履歴を長く残したい場面はこれだよ。\n\n- コンプライアンスや監査\n- 数か月ぶりに戻ってくるユーザーへの対応\n- 過去のセッションを振り返る必要があるエージェント\n\n## 深く潜ってみよう\n\n- 保持期間は、メモリリソースに設定する\n- 設定した期間は、イベントの作成時に各イベントへ適用される。つまり **すでにあるイベントは、元の保持期間のまま** だよ\n- 保存している間は、標準の短期記憶ストレージ料金がかかる\n- AgentCore Memory が使えるすべてのリージョンで利用可能\n- 詳しくは AgentCore Memory のドキュメントを見てね\n\n## まとめ\n\n- 短期記憶イベントの保持期間が、1 年から最大 10 年に\n- メモリリソースで設定し、作成時のイベントに適用される(既存イベントは変わらない)\n- 保持している間は標準のストレージ料金がかかる\n\n監査や長期のユーザー履歴が必要なエージェントを作るみんなに刺さるよ！",
+  "title_en": "Amazon Bedrock AgentCore Memory Now Supports Short-Term Memory Retention of Up to 10 Years",
+  "summary_en": "AgentCore Memory now lets you keep short-term memory events for up to 10 years, up from one year, which helps with compliance, audit, and long-running user relationships.",
+  "body_md_en": "Hi everyone, it's Shii-chan! How long an agent can remember just got much longer.\n\n## What was announced?\n\nAWS What's New announced that Amazon Bedrock AgentCore Memory **now lets you keep short-term memory events for up to 10 years**, up from one year.\n\n## Why it matters\n\nYou can use short-term memory as a long-lived record of agent conversations and interactions. The announcement lists these cases where history must stay available:\n\n- Compliance and audit\n- Users who come back after months away\n- Agents that need to look back at past sessions\n\n## Dive Deep\n\n- You set retention on the memory resource\n- It is applied to each event when the event is created, so **existing events keep their original retention**\n- Standard short-term memory storage charges apply for as long as you keep the data\n- Available in all Regions where AgentCore Memory is available\n- See the AgentCore Memory documentation for details\n\n## Wrap-up\n\n- Short-term event retention goes from 1 year to up to 10 years\n- Set it on the memory resource; it applies to new events and not to existing ones\n- Standard storage charges apply while data is kept\n\nThis is for anyone building agents that need audit trails or long user histories!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-bedrock-agentcore-memory-10-year-retention",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Bedrock AgentCore Memory now supports short-term memory retention of up to 10 years",
+  "tags": [
+    "aws",
+    "ai"
+  ],
+  "published_at": "2026-11-17T19:22:00+00:00"
+}

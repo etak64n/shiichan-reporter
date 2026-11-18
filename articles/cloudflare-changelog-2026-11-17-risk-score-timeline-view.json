@@ -1,0 +1,19 @@
+{
+  "slug": "cloudflare-changelog-2026-11-17-risk-score-timeline-view",
+  "title": "Cloudflare のリスクスコアがタイムライン表示に！ユーザーの怪しい動きを時系列で追えるよ",
+  "summary": "Cloudflare の User Risk Scoring に、リスク行動をグループ化して時系列で見せるタイムラインビューが登場したよ！調査したいイベントの期間も絞れるの。Enterprise プランで使えるよ。",
+  "body_md": "やっほー、しぃちゃんだよ！今日は Cloudflare のセキュリティ機能がちょっと見やすくなったニュースを持ってきたよ！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、User Risk Scoring(ユーザーリスクスコア)に **タイムラインビュー** が追加されたことが発表されたよ！\n\n- リスク行動のインスタンスがグループにまとめられて、タイムラインに並ぶ\n- グループごとに「きっかけ(トリガー)」が目立つように表示され、そのあとに見つかった検知が時間順に並ぶ\n- 日付の範囲を変えて、調べたいイベントだけに絞れる\n- タイムライン上のマーカーを選ぶと、そのイベントが見られる\n- いつでも「Table」に切り替えて、これまでの表形式に戻せる\n\n## 今までどうだったの？\n\nこれまでは、リスクイベントを表形式で見る画面が中心だったみたい。表だと一件ずつは読めるけど、「どのイベントがどのイベントのあとに起きたのか」という流れはつかみにくかったんだと思うよ(ここはしぃちゃんの推測だよ)。\n\n## これで何が変わるの？\n\n調査するセキュリティチームにとって、リスクイベントの前後関係を追いやすくなるよ！原文でも、この並びがイベント同士の関係をたどる助けになると説明されているよ。\n\nしかも表ビューは残るから、好みや目的に合わせて見方を選べるのも嬉しいところだね。\n\n## 深く潜ってみよう\n\n- 対象は User Risk Scoring で、利用できるのは **Enterprise プラン** だよ\n- 詳しい使い方は Cloudflare ドキュメントの「User risk score」のページにまとまっているよ\n\n原文はとても短い更新告知なので、細かい仕様まではわからなかったよ。\n\n## まとめ\n\n- User Risk Scoring にタイムラインビューが追加された\n- トリガーと、その後の検知が時間順に見える\n- 期間の絞り込みとマーカー選択でイベントを確認できる\n- 表ビューにもいつでも戻せる\n- Enterprise プランで利用できる\n\nユーザーのリスクイベントを調査するセキュリティ担当のみんなに刺さる更新だよ！",
+  "title_en": "Cloudflare Risk Score Gets a Timeline View for Investigating User Risk Events",
+  "summary_en": "Cloudflare's User Risk Scoring now groups risk behavior in a timeline view, and you can narrow the date range to the events you care about. It is available on Enterprise plans.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today I have a small but handy update from Cloudflare's security side.\n\n## What was announced?\n\nThe Cloudflare Changelog announced a **timeline view** for User Risk Scoring.\n\n- Risk behavior instances are grouped in a timeline\n- Each group highlights its trigger and shows later detections in time order\n- You can customize the date range to focus on the events you want to investigate\n- Selecting a timeline marker shows its events\n- You can switch back to the Table view whenever you like\n\n## The story so far\n\nUntil now the main way to look at risk events was a table. A table is good for reading single rows, but it is harder to see the flow of what happened after what (that part is my own guess).\n\n## What changes\n\nFor security teams doing investigations, it becomes easier to follow how risk events relate to each other. The original post says exactly that: the sequence helps teams follow how events relate. The table view stays, so you can pick whichever view suits the task.\n\n## Dive Deep\n\n- This applies to User Risk Scoring\n- It is available on **Enterprise plans**\n- More details are in the \"User risk score\" page in the Cloudflare docs\n\nThe original post is a short changelog entry, so there are no deeper specifications to share.\n\n## Wrap-up\n\n- User Risk Scoring gets a timeline view\n- You see the trigger and the later detections in time order\n- Date range filtering and marker selection help you inspect events\n- You can return to the Table view anytime\n- Available on Enterprise plans\n\nThis one is for security folks who investigate user risk events!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-11-17-risk-score-timeline-view/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Risk Score - Investigate user risk events in a timeline",
+  "tags": [
+    "cloudflare",
+    "security"
+  ],
+  "published_at": "2026-11-17T00:00:00+00:00"
+}

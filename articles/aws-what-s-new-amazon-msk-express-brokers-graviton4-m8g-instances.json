@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-msk-express-brokers-graviton4-m8g-instances",
+  "title": "MSK Express ブローカーも M8g に対応！コスト最大 30% 減、クロス AZ 転送コストは半分に",
+  "summary": "Amazon MSK Express ブローカーで Graviton4 の M8g が使えるようになったよ！M7g 比でコンピュート 15% 減、P99 レイテンシ最大 45% 減、キャッチアップ 2 倍速、全体で最大 30% のコスト削減だよ。",
+  "body_md": "おつかれさま、しぃちゃんだよ！MSK Express ブローカーが数字でびっくりするアップデートをしたよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon MSK の **Express ブローカーが Graviton4 ベースの M8g インスタンスに対応** したと発表されたよ！\n\n## これで何が変わるの？\n\nExpress ブローカーの M7g と比べて、M8g はこうなるよ。\n\n- コンピュートコストが 15% 低下\n- P99 produce レイテンシが最大 45% 低下\n- 遅れたコンシューマーのキャッチアップが 2 倍速\n- クライアントとブローカー間で AZ をまたぐデータ転送のとき、ブローカー側のコストが不要になり、クロス AZ のデータ転送コスト全体が 50% 減\n- 転送料金とブローカー時間料金の下がり分を合わせて、最大 30% のコスト削減\n\n## 深く潜ってみよう\n\nExpress ブローカーは、Standard ブローカーと比べてブローカーあたり最大 3 倍のスループット、最大 20 倍速いスケール、90% 短い復旧時間を目指して設計されているよ。M8g はそのうえで価格と性能をさらに良くするものだよ。\n\n移行や始め方は次のとおりだよ。\n\n- 新規クラスターをコンソールか API で M8g の Express ブローカーとして作成する\n- 既存の Express クラスターは M7g から M8g へインプレース移行できる(クライアントは止まらずに読み書きを続けられる)\n- オンプレミス、AWS 上の自己管理、他クラウドなど外部の Kafka クラスターは、Amazon MSK Replicator で移行できる\n\n利用できるのは、Express ブローカーと M8g の両方が使えるリージョンだよ。料金は MSK の料金ページを見てね。\n\n## まとめ\n\n- Express ブローカーが Graviton4 の M8g に対応\n- コンピュート 15% 減、P99 レイテンシ最大 45% 減、キャッチアップ 2 倍速\n- クロス AZ 転送コスト 50% 減で、合計最大 30% のコスト削減\n- 既存クラスターは止めずにインプレース移行可能\n\nKafka のコストとレイテンシを一緒に下げたいみんなに刺さるよ！",
+  "title_en": "MSK Express Brokers on Graviton4 M8g: Up to 30% Lower Cost",
+  "summary_en": "Amazon MSK Express Brokers now support Graviton4 M8g. Compared with M7g you get 15% lower compute costs, up to 45% lower P99 latency, 2x faster catch-up, and up to 30% total cost savings.",
+  "body_md_en": "Hi everyone, it's Shii-chan! MSK Express Brokers got an update with some eye-catching numbers.\n\n## What was announced?\n\nAWS What's New announced that **Amazon MSK Express Brokers now support Graviton4-based M8g instances**.\n\n## What changes\n\nCompared with Express Brokers on M7g, M8g delivers:\n\n- 15% lower compute costs\n- Up to 45% lower P99 produce latency\n- 2x faster catch-up for consumers that fall behind\n- No broker-side cost for moving data across Availability Zones between clients and brokers, reducing total cross-AZ data transfer costs by 50%\n- Up to 30% cost savings overall from lower data transfer and broker-hour charges\n\n## Dive Deep\n\nExpress Brokers are designed to deliver up to 3x more throughput per broker, scale up to 20x faster, and reduce recovery time by 90% compared to Standard Brokers. M8g improves the economics and performance on top of that.\n\nWays to get started:\n\n- Create a new cluster with Express Brokers on M8g from the console or API\n- Migrate an existing Express cluster in place from M7g to M8g, while clients keep producing and consuming\n- Use Amazon MSK Replicator to migrate from external Kafka clusters (on-premises, self-managed on AWS, or other clouds)\n\nIt is available in Regions where both Express Brokers and M8g are available. See the MSK pricing page for pricing.\n\n## Wrap-up\n\n- Express Brokers now support Graviton4 M8g\n- 15% lower compute cost, up to 45% lower P99 latency, 2x faster catch-up\n- 50% lower cross-AZ transfer cost, up to 30% total savings\n- In-place migration without interrupting clients\n\nThis is for anyone who wants to cut both Kafka cost and latency!",
+  "emotion": "energetic",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-msk-express-brokers-graviton4-m8g-instances/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon MSK Express Brokers now support Graviton4-based M8g instances",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-17T16:00:00+00:00"
+}

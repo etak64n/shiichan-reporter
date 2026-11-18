@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-bedrock-agentcore-free-web-search-queries",
+  "title": "AgentCore の Web 検索が毎月 5,000 回まで無料に！エージェント開発がお財布に優しくなったよ",
+  "summary": "Amazon Bedrock AgentCore の Web Search Tool と Web Search API で、毎月 5,000 件の検索クエリが無料になったよ！設定は不要で、組織内の全アカウントで共有されて毎月リセットされるの。",
+  "body_md": "やっほー、しぃちゃんだよ！エージェントに Web 検索をさせたいみんなに嬉しい、料金のニュースだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Bedrock AgentCore が **毎月 5,000 件の無料 Web 検索クエリ** を提供すると発表されたよ。対象は AgentCore Gateway の Web Search Tool と、Web Search API だよ。\n\n## これで何が変わるの？\n\nWeb 検索つきのエージェントを、最初の毎月 5,000 クエリまでは無料で作って試せるよ！\n\n- 無料枠は自動で適用されて、設定は不要\n- 対応リージョンをまたいで共有される\n- 組織内のすべてのアカウントで共有される\n- 毎月リセットされる\n- 超えた分は標準料金で課金されるけど、エージェントは止まらない\n\n## 深く潜ってみよう\n\n無料枠が使えるのは、Web Search Tool と Web Search API に対応している次のリージョンだよ。\n\n- US East(バージニア北部)\n- US East(オハイオ)\n- US West(オレゴン)\n- Europe(アイルランド)\n- Asia Pacific(シドニー)\n- Asia Pacific(東京)\n\n料金の詳細は AgentCore の料金ページ、使い方は AgentCore Developer Guide の Web Search Tool の項目を見てね。\n\n## まとめ\n\n- Web 検索クエリが毎月 5,000 件まで無料\n- 設定不要で、リージョンと組織内の全アカウントで共有\n- 超過分は標準料金で、エージェントは中断されない\n- 6 つのリージョンが対象\n\nAgentCore で検索つきエージェントのプロトタイプを作りたいみんなに刺さるよ！",
+  "title_en": "Amazon Bedrock AgentCore Now Offers Free Monthly Web Search Queries",
+  "summary_en": "Amazon Bedrock AgentCore now gives you 5,000 free web search queries per month through the Web Search Tool and Web Search API. It applies automatically, is shared across your organization, and resets monthly.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Here is a pricing update for anyone who wants their agents to search the web.\n\n## What was announced?\n\nAWS What's New announced that Amazon Bedrock AgentCore now offers **5,000 free web search queries per month** through the Web Search Tool in AgentCore Gateway and the Web Search API.\n\n## What changes\n\nYou can build and test agents with web search for free for your first 5,000 queries each month.\n\n- The free allowance applies automatically with no setup\n- It is shared across supported AWS Regions\n- It is shared by all accounts in an organization\n- It resets each month\n- Additional queries are billed at standard rates without interrupting your agents\n\n## Dive Deep\n\nThe free queries are available in all Regions that support the Web Search Tool and Web Search API:\n\n- US East (N. Virginia)\n- US East (Ohio)\n- US West (Oregon)\n- Europe (Ireland)\n- Asia Pacific (Sydney)\n- Asia Pacific (Tokyo)\n\nSee the AgentCore pricing page for pricing and the AgentCore Developer Guide for the Web Search Tool.\n\n## Wrap-up\n\n- 5,000 free web search queries per month\n- No setup, shared across Regions and organization accounts\n- Overage is billed at standard rates without interrupting agents\n- Six Regions are covered\n\nThis is for anyone prototyping search-enabled agents on AgentCore!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/bedrock-agentcore-free-web-search-queries/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Bedrock AgentCore now offers free monthly web search queries",
+  "tags": [
+    "aws",
+    "ai"
+  ],
+  "published_at": "2026-11-17T18:00:00+00:00"
+}

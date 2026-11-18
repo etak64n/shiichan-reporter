@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aurora-dsql-statement-statistics",
+  "title": "Aurora DSQL の遅いクエリが丸見えに！SQL 文ごとの統計が Database Insights で見られるよ",
+  "summary": "Amazon Aurora DSQL が SQL 文ごとの統計を記録して、CloudWatch の OTel メトリクスとして公開するようになったよ！実行回数、時間、スキャン行数、DPU 使用量がサンプリングなしで見られて、PromQL でも検索できるの。",
+  "body_md": "おつかれさま、しぃちゃんだよ！データベースのチューニングがはかどる機能が Aurora DSQL に来たよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Aurora DSQL の **SQL 文ごとの統計(statement statistics)** が発表されたよ。クラスターが実行する各 SQL 文の統計を記録して、Amazon CloudWatch の OpenTelemetry(OTel)メトリクスとして公開し、CloudWatch Database Insights で見られるようになるの。\n\n## これで何が変わるの？\n\n文ごとに次の情報が見えるよ。\n\n- どれくらいの頻度で実行されるか\n- 何ミリ秒かかるか\n- スキャン・返却・変更した行数\n- 使った DPU\n\nしかもサンプリングではなく、**成功したすべての文を計測** しているよ。だから、時間がかかる文、よく実行される文、コストの高い文を見つけやすくなるの！\n\n## 深く潜ってみよう\n\n- Database Insights の「Top SQL」で文を選ぶと、正規化された SQL テキストと呼び出しごとのグラフが見られる\n- CloudWatch で **PromQL** を使ってメトリクスを検索することもできる\n- 有効化はクラスターごとに、クラスターの作成・更新時に Aurora DSQL コンソールか API から行う\n- Aurora DSQL が使えるすべての AWS リージョンで利用可能\n- Aurora DSQL の追加料金はなく、標準の CloudWatch のメトリクスとログの料金がかかる\n\n## まとめ\n\n- SQL 文ごとの統計が CloudWatch の OTel メトリクスとして出る\n- 実行回数、時間、行数、DPU がサンプリングなしで分かる\n- Database Insights の Top SQL と PromQL で分析できる\n- クラスターごとに有効化し、DSQL 自体の追加料金はなし\n\nAurora DSQL のクエリを改善したいみんなが、週明けすぐ試せる機能だよ！",
+  "title_en": "Aurora DSQL Statement Statistics Now Available in Database Insights",
+  "summary_en": "Amazon Aurora DSQL now records statistics for every SQL statement and publishes them as CloudWatch OTel metrics: frequency, duration, rows, and DPUs, without sampling. You can also query them with PromQL.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Aurora DSQL got a feature that makes database tuning much easier.\n\n## What was announced?\n\nAWS What's New announced **SQL statement statistics** for Amazon Aurora DSQL. The cluster records statistics for each SQL statement it runs and publishes them as Amazon CloudWatch OpenTelemetry (OTel) metrics, which you can view in CloudWatch Database Insights.\n\n## What changes\n\nFor each statement you can see:\n\n- How often it runs\n- How long it takes\n- The rows it scans, returns, or changes\n- The DPUs it uses\n\nThese statistics measure **every successful statement** rather than sampling, so it is easier to find the statements that take the most time, run most often, or cost the most.\n\n## Dive Deep\n\n- In Database Insights, choose a statement under Top SQL to see its normalized SQL text and per-call charts\n- You can also query the metrics with **PromQL** in CloudWatch\n- Turn it on per cluster in the Aurora DSQL console or the API when you create or update the cluster\n- Available in all AWS Regions where Aurora DSQL is available\n- No additional Aurora DSQL charge; standard CloudWatch metrics and Logs charges apply\n\n## Wrap-up\n\n- Per-statement statistics are published as CloudWatch OTel metrics\n- Frequency, duration, rows, and DPUs are measured without sampling\n- Analyze them with Database Insights Top SQL and PromQL\n- Enable per cluster, with no extra DSQL charge\n\nThis is for anyone who wants to improve Aurora DSQL queries, and you can try it first thing next week!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aurora-dsql-statement-statistics/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Aurora DSQL now offers SQL statement statistics in Database Insights",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "devops"
+  ],
+  "published_at": "2026-11-17T17:37:00+00:00"
+}

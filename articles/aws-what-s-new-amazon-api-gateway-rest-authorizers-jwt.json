@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-api-gateway-rest-authorizers-jwt",
+  "title": "API Gateway の REST API が JWT オーソライザーに対応！Lambda オーソライザーを書かなくてよくなるよ",
+  "summary": "Amazon API Gateway の REST API に、JWT をゲートウェイ内で直接検証するネイティブな JWT オーソライザーが登場したよ！Cognito 以外の OIDC / OAuth 2.0 プロバイダーのトークンも、設定だけで検証できるの。",
+  "body_md": "やっほー、しぃちゃんだよ！API Gateway を使うみんなに嬉しい認可の話だよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon API Gateway の REST API に **ネイティブな JWT オーソライザー** が登場したと発表されたよ。JSON Web Token(JWT)をゲートウェイの中で直接検証する、新しいオーソライザータイプだよ。\n\n## 今までどうだったの？\n\nAmazon Cognito 以外の OpenID Connect や OAuth 2.0 のアイデンティティプロバイダーが出したトークンを検証するには、**Lambda オーソライザー** が必要だったよ。つまり検証のコードを自分で書いて運用する必要があったの。\n\n## これで何が変わるの？\n\nコードの代わりに、トークン検証の **設定** を書くだけになるよ！設定できるのは次の項目だよ。\n\n- 1 つ以上の発行者(issuer)\n- 発行者ごとに受け入れる audience\n- 許可する署名アルゴリズム\n- トークンが持ちうる追加のクレーム\n\nAPI Gateway は、リクエストのたびにトークンの署名、発行者、audience、有効期限、クレームを検証するよ。\n\n## 深く潜ってみよう\n\n- 1 つのオーソライザーを、多数のメソッドに付けられる\n- メソッドごとに、異なるスコープを要求できる\n- 向いている用途は、マシン間(M2M)の API、モバイル・Web のバックエンド、複数のアイデンティティプロバイダーのトークンを受け付けるマルチテナント API\n- Regional、エッジ最適化、プライベートの REST API で使える\n- すべての AWS 商用リージョンと AWS GovCloud(US)リージョンで利用可能\n- 詳細は API Gateway のドキュメントと AWS ブログ記事を見てね\n\n## まとめ\n\n- REST API にネイティブな JWT オーソライザーが登場\n- Cognito 以外のプロバイダーでも、Lambda オーソライザーなしで検証できる\n- issuer、audience、署名アルゴリズム、クレームを設定で指定\n- メソッドごとにスコープを変えられる\n- Regional / エッジ最適化 / プライベートの全タイプで利用可能\n\n認可用の Lambda を運用していたみんなが、週明けすぐ置き換えを試せるよ！",
+  "title_en": "Amazon API Gateway REST APIs Now Support JWT Authorizers",
+  "summary_en": "Amazon API Gateway REST APIs now have a native JWT authorizer that validates tokens directly in the gateway, so tokens from OIDC and OAuth 2.0 providers other than Cognito no longer need a Lambda authorizer.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Here is an authorization update for API Gateway users.\n\n## What was announced?\n\nAWS What's New announced a **native JWT authorizer for REST APIs** in Amazon API Gateway. It is a new authorizer type that validates JSON Web Tokens directly in the gateway.\n\n## The story so far\n\nValidating tokens from an OpenID Connect or OAuth 2.0 identity provider other than Amazon Cognito required a **Lambda authorizer**, which meant writing and operating the validation code yourself.\n\n## What changes\n\nInstead of code, you write token validation **configuration**:\n\n- One or more issuers\n- The audiences accepted for each\n- The signing algorithms you permit\n- Any additional claims a token may present\n\nAPI Gateway verifies each token's signature, issuer, audience, expiry, and claims on every request.\n\n## Dive Deep\n\n- You can attach one authorizer to many methods\n- You can require different scopes on each method\n- It fits machine-to-machine APIs, mobile and web backends, and multi-tenant APIs that accept tokens from several identity providers\n- Works on Regional, edge-optimized, and private REST APIs\n- Available in all commercial AWS Regions and the AWS GovCloud (US) Regions\n- See the API Gateway documentation and the AWS blog post for details\n\n## Wrap-up\n\n- REST APIs get a native JWT authorizer\n- Tokens from providers other than Cognito can be validated without a Lambda authorizer\n- Issuers, audiences, signing algorithms, and claims are set by configuration\n- Scopes can differ per method\n- Works on Regional, edge-optimized, and private APIs\n\nThis is for anyone running authorizer Lambdas, and you can try replacing them first thing next week!",
+  "emotion": "energetic",
+  "importance": 5,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-api-gateway-rest-authorizers-jwt/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon API Gateway REST APIs now support JWT authorizers",
+  "tags": [
+    "aws",
+    "serverless",
+    "security"
+  ],
+  "published_at": "2026-11-17T19:22:00+00:00"
+}

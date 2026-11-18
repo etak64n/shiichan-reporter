@@ -1,0 +1,19 @@
+{
+  "slug": "aws-blog-four-continents-four-new-aws-heroes-closing-out-2026",
+  "title": "2026 年を締めくくる新 AWS Heroes は 4 人！4 大陸から仲間が増えたよ",
+  "summary": "AWS Blog が re:Invent 直前に、アメリカ、ニュージーランド、ブラジル、日本の 4 人の新しい AWS Heroes を紹介したよ！サーバーレス、DevOps、データ、CDK と、得意分野もさまざまなの。",
+  "body_md": "みんな、しぃちゃんだよ！今日はサービスの新機能じゃなくて、コミュニティで活躍する人たちのニュースだよ！\n\n## なにが発表されたの？\n\nAWS Blog が、re:Invent が近づくなかで **新しい AWS Heroes 4 人** を紹介したよ。AWS Heroes は、知識を共有したり、人を集めたり、ツールを作ったりして、ビルダーを支えているコミュニティの人たちだよ。\n\n## 今回の 4 人\n\n- **Andres Moreno**(アメリカ・エルパソ): Serverless Hero。Cloud del Norte AWS User Group を運営していて、ブログ「And More Dev」で発信しているよ。サーバーレス、クラウドネイティブ、生成 AI、エージェント系について話し、ラテンアメリカのビルダー支援にも力を入れているの\n- **Geethika Guruge**(ニュージーランド・オークランド): Community Hero。Mantel Group のプリンシパルコンサルタントで、サーバーレス、DevOps、クラウド基盤、エージェント型 AI が専門。re:Invent や AWS Summit でも登壇していて、地元のミートアップも主催しているよ\n- **Jéssica Cristina Coelho**(ブラジル・ベロオリゾンテ): Data Hero。15 年以上の経験を持つデータベース信頼性エンジニアで、ミナスジェライス州の AWS User Group を運営し、DataTalks Brasil のホストも務めているよ\n- **Kazuho Cryer Shinozuka**(日本・東京): DevTools Hero。AWS CDK の Top Contributor で、マージされたプルリクエストは 200 件、1,700 人以上のコントリビューター中 18 位。10 個のコンストラクトライブラリと cfn idle cost ツールも公開しているよ\n\n## まとめ\n\n- 2026 年の締めくくりに、4 大陸から 4 人の新 AWS Heroes が誕生\n- 分野はサーバーレス、DevOps、データ、CDK/OSS ツールとさまざま\n- 日本からは CDK で大活躍の方が選ばれたよ\n\nコミュニティ活動や OSS への貢献に興味があるみんなの、いい刺激になりそうだよ！",
+  "title_en": "Four Continents, Four New AWS Heroes: Closing Out 2026",
+  "summary_en": "Ahead of re:Invent, the AWS Blog introduced four new AWS Heroes from the United States, New Zealand, Brazil, and Japan, with focus areas ranging from serverless to data to CDK.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today it's not a new service feature but news about people in the community.\n\n## What was announced?\n\nWith re:Invent around the corner, the AWS Blog introduced **four new AWS Heroes**. Heroes give back to builders by sharing what they know, bringing people together, or building tools.\n\n## The four Heroes\n\n- **Andres Moreno** (El Paso, United States): Serverless Hero. Leads the Cloud del Norte AWS User Group and writes the blog And More Dev. Speaks about serverless, cloud-native architectures, generative AI, and agentic systems, and supports builders across Latin America\n- **Geethika Guruge** (Auckland, New Zealand): Community Hero. Principal Consultant at Mantel Group, focused on serverless, DevOps, cloud infrastructure, and agentic AI. Has spoken at re:Invent and AWS Summits, and organizes local meetups\n- **Jéssica Cristina Coelho** (Belo Horizonte, Brazil): Data Hero. A Database Reliability Engineer with 15+ years of experience who leads the AWS User Group in Minas Gerais and hosts DataTalks Brasil\n- **Kazuho Cryer Shinozuka** (Tokyo, Japan): DevTools Hero. An AWS CDK Top Contributor with 200 merged pull requests, ranked 18th among 1,700+ contributors, and the author of 10 construct libraries and the cfn idle cost tool\n\n## Wrap-up\n\n- Four new AWS Heroes from four continents close out 2026\n- Their areas range from serverless and DevOps to data and CDK/open source tooling\n- Japan's Hero is a major AWS CDK contributor\n\nThis is for anyone curious about community work and open source contributions!",
+  "emotion": "happy",
+  "importance": 1,
+  "source_url": "https://aws.amazon.com/blogs/aws/four-continents-four-new-aws-heroes-closing-out-2026/",
+  "source_name": "AWS Blog",
+  "og_title": "Four Continents, Four New AWS Heroes: Closing Out 2026",
+  "tags": [
+    "aws",
+    "business"
+  ],
+  "published_at": "2026-11-17T17:06:43+00:00"
+}
