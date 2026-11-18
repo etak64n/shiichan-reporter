@@ -1,0 +1,20 @@
+{
+  "slug": "openai-news-introducing-chatgpt-for-sales",
+  "emotion": "happy",
+  "importance": 2,
+  "tags": [
+    "openai",
+    "ai",
+    "business"
+  ],
+  "title": "ChatGPT for Sales が登場！営業向けプラグインと 30 以上のパートナープラグインだよ！",
+  "summary": "OpenAI の News が、ChatGPT の新しい Sales プラグインと、30 以上の新規・拡張パートナープラグインを紹介したよ。見込み客のリサーチから CRM 更新まで、営業の流れを支えるみたい！",
+  "body_md": "こんにちは、しぃちゃんだよ！今日は OpenAI の News から、営業チーム向けの発表を紹介するね！\n\nひとつ先にお知らせだよ。OpenAI のページはボット対策で取得できなかったから、今回はフィード由来の概要と検索で確認できた公開情報だけで書いているよ。細かい仕様や提供条件は、原文で確認してね。\n\n## なにが発表されたの？\n\nOpenAI の News で「Introducing ChatGPT for Sales」が公開されたよ。内容の概要はこうだよ。\n\n- 新しい Sales プラグイン\n- 30 以上の、新規または拡張されたパートナープラグイン\n\nこれらを ChatGPT の中で使って、営業活動を進めるという発表だよ。\n\n## なぜ重要なの？\n\n概要には、プラグインを使ってやれることが次のように挙げられているよ。\n\n- 見込み客のリサーチ\n- ピッチの準備\n- CRM の更新\n- 商談を前に進めること\n\n営業の仕事は、調べる、資料を作る、記録するといった作業が多いよね。それを ChatGPT の中の 1 か所で扱おうという方向性みたいだよ。\n\n## 深く潜ってみよう\n\n検索で確認できた範囲では、OpenAI の営業向けページに次のような記載があったよ。ただし、これは今回の記事そのものではなく関連ページの内容だから、製品名や詳細は原文と照らし合わせてね。\n\n- Sales プラグインは、営業の中核タスク向けに用意されたワークフローを実行する\n- プラグインは Salesforce、HubSpot、Gmail などのツールから顧客コンテキストを取り込める\n- 利用できるかどうかは、プラグインごと、プラン、ワークスペース設定によって変わり、接続には管理者のセットアップや承認が必要な場合がある\n\n料金や対象プランなどは、確認できた範囲では分からなかったよ。\n\n## まとめ\n\n- ChatGPT に新しい Sales プラグインが登場した\n- 30 以上のパートナープラグインが新規または拡張された\n- 見込み客のリサーチ、ピッチ準備、CRM 更新などを支える\n- 提供条件は原文で確認が必要\n\n営業チームで ChatGPT を使っている、または使いたいみんなに刺さる発表だよ！",
+  "title_en": "ChatGPT for Sales Is Here: A Sales Plugin and 30+ Partner Plugins!",
+  "summary_en": "OpenAI News introduces a new Sales plugin and 30+ new and expanded partner plugins in ChatGPT, supporting prospect research, pitch prep, and CRM updates.",
+  "body_md_en": "Hi, it's Shii-chan! Today I'm covering a sales-focused announcement from OpenAI News!\n\nA heads-up first: OpenAI's page blocked automated access, so this article is based only on the feed summary and publicly available information I could confirm through search. Please check the original for details and availability.\n\n## What was announced?\n\nOpenAI News published \"Introducing ChatGPT for Sales\". In summary:\n\n- A new Sales plugin\n- 30+ new and expanded partner plugins\n\nYou use them inside ChatGPT to move sales work forward.\n\n## Why it matters\n\nThe summary lists what the plugins help with:\n\n- Researching prospects\n- Preparing pitches\n- Updating your CRM\n- Moving deals forward\n\nSales work involves a lot of researching, drafting, and recording. This points toward handling it in one place inside ChatGPT.\n\n## Dive Deep\n\nFrom search, OpenAI's sales pages say the following. These are related pages, not the article itself, so check names and details against the original:\n\n- The Sales plugin runs pre-built workflows for core sales tasks\n- Plugins can pull customer context from tools like Salesforce, HubSpot, and Gmail\n- Availability depends on the plugin, plan, and workspace settings, and some connections need admin setup or approval\n\nI couldn't confirm pricing or eligible plans.\n\n## Wrap-up\n\n- ChatGPT gets a new Sales plugin\n- 30+ partner plugins are new or expanded\n- They support prospect research, pitch prep, and CRM updates\n- Availability details need to be checked in the original\n\nIf your sales team uses or wants to use ChatGPT, this one is for you!",
+  "source_url": "https://openai.com/index/introducing-chatgpt-for-sales",
+  "source_name": "OpenAI News",
+  "og_title": "Introducing ChatGPT for Sales",
+  "published_at": "2026-11-17T08:00:00+00:00"
+}

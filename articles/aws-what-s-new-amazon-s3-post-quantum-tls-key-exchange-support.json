@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-s3-post-quantum-tls-key-exchange-support",
+  "emotion": "smug",
+  "importance": 3,
+  "tags": [
+    "aws",
+    "security"
+  ],
+  "title": "S3 Vectors と PrivateLink でもポスト量子 TLS が使えるよ！設定変更は不要！",
+  "summary": "Amazon S3 が、S3 Vectors と AWS PrivateLink for S3 のインターフェースエンドポイントでも、ML-KEM によるポスト量子 TLS 鍵交換に対応したよ。",
+  "body_md": "おつかれさま、しぃちゃんだよ！S3 のポスト量子 TLS の対応範囲が広がったよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon S3 が S3 Vectors と、AWS PrivateLink for Amazon S3 のインターフェースエンドポイントに、ポスト量子 TLS (PQ-TLS) の鍵交換サポートを追加したと発表されたよ。\n\n## なぜ重要なの？\n\nこれまでも、リージョナルな S3、S3 Tables、S3 Express One Zone のエンドポイントは、ポスト量子暗号に対応していたよ。今回の追加で、その対応範囲が S3 Vectors と PrivateLink 経由にも広がったんだ。\n\n## これで何が変わるの？\n\nML-KEM の鍵交換を使うよう設定されたクライアントなら、全部が PQ-TLS の鍵交換を使えるようになるよ。アプリケーションやエンドポイントの設定を変える必要はないんだ。\n\n## 深く潜ってみよう\n\n- 対応するアルゴリズムは ML-KEM (Module-Lattice-Based Key-Encapsulation Mechanism)。米国 NIST が標準化したポスト量子暗号アルゴリズムのひとつ\n- S3 Vectors エンドポイントと PrivateLink エンドポイントは、クライアントソフトウェアが対応する中で最も強い鍵交換を自動でネゴシエートする\n- 全 AWS リージョンで追加料金なし\n\n前の発表と合わせて、CloudTrail の keyExchange で、実際にどのクライアントが ML-KEM を使っているか確認すると移行の確認に役立ちそうだよ。\n\n## まとめ\n\n- S3 Vectors と PrivateLink for S3 のインターフェースエンドポイントが PQ-TLS 鍵交換に対応\n- ML-KEM に対応したクライアントは自動で恩恵を受ける\n- アプリやエンドポイントの変更は不要\n- 全リージョン、追加料金なし\n\nPrivateLink 経由で S3 を使っている、ポスト量子対応を進めたいみんなに刺さるよ！",
+  "title_en": "Post-Quantum TLS Now Covers S3 Vectors and PrivateLink Endpoints, No Changes Needed!",
+  "summary_en": "Amazon S3 adds post-quantum TLS key exchange with ML-KEM to S3 Vectors and AWS PrivateLink for S3 interface endpoints.",
+  "body_md_en": "Hi, it's Shii-chan! S3's post-quantum TLS coverage just grew!\n\n## What was announced?\n\nIn AWS What's New, Amazon S3 added post-quantum TLS (PQ-TLS) key exchange support to S3 Vectors and AWS PrivateLink for Amazon S3 interface endpoints.\n\n## Why it matters\n\nRegional S3, S3 Tables, and S3 Express One Zone endpoints already supported post-quantum cryptography. This extends it to S3 Vectors and PrivateLink.\n\n## What changes\n\nPQ-TLS key exchange is available to all clients configured to use ML-KEM. You don't need to change your applications or endpoint configuration.\n\n## Dive Deep\n\n- The algorithm is ML-KEM (Module-Lattice-Based Key-Encapsulation Mechanism), one of the NIST standardized post-quantum algorithms\n- S3 Vectors and PrivateLink endpoints automatically negotiate the strongest key exchange your client software supports\n- No additional cost in all AWS Regions\n\nTogether with the companion announcement, you can check the keyExchange value in CloudTrail to see which clients actually use ML-KEM.\n\n## Wrap-up\n\n- S3 Vectors and PrivateLink for S3 interface endpoints support PQ-TLS key exchange\n- ML-KEM-capable clients benefit automatically\n- No application or endpoint changes\n- All Regions, no extra cost\n\nIf you use S3 over PrivateLink and want to move toward post-quantum, this one is for you!",
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-s3-post-quantum-tls-key-exchange-support/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon S3 adds post-quantum TLS key exchange support to additional S3 endpoints",
+  "published_at": "2026-11-17T14:00:00+00:00"
+}

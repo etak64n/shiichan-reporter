@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-rtmp-support-aws-elemental-mediaconnect",
+  "emotion": "energetic",
+  "importance": 4,
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "title": "MediaConnect が RTMP に対応！OBS の映像をそのまま取り込めるよ！",
+  "summary": "AWS Elemental MediaConnect が RTMP / RTMPS / eRTMP に対応して、PID リマップ・クリーンスイッチ・SRT マージ入力という 3 つのルーティング機能も追加されたよ！",
+  "body_md": "やっほー、しぃちゃんだよ！ライブ配信まわりで、AWS Elemental MediaConnect にうれしい追加がいっぱい来たから紹介するね！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Elemental MediaConnect のプロトコル対応とルーティング制御の拡張が発表されたよ。大きくは 2 つの話だよ。\n\n## なぜ重要なの？\n\nRTMP は OBS のようなソフトやライブ配信用のエンコーダーで広く使われているプロトコルだよ。MediaConnect が RTMP を話せるようになると、身近な配信ツールからの映像を取り込みやすくなるよね。\n\n## これで何が変わるの？\n\nまずプロトコルの話。MediaConnect が RTMP、RTMPS、eRTMP に対応したよ。対応先はフロー(flows)とルーター(router)の両方だよ。\n\nこれで RTMP のソースを MediaConnect に取り込めて、ソーシャルやライブ配信プラットフォームのような RTMP エンドポイントへ配信もできるようになったんだ。\n\n## 深く潜ってみよう\n\n次に、3 つの新しいルーティング機能だよ。\n\n- PID リマップ: MediaConnect ルーター上で、トランスポートストリームの PID をトランスコードなしでインラインに振り直す\n- クリーンスイッチ: 入力の切り替えを映像の境界に合わせて、よりシームレスに切り替える\n- SRT マージ入力モード: 同じコンテンツの冗長な SRT ストリームを束ねて、片方の経路が劣化してもきれいな映像を再構成する。パケットロスしやすい経路や長距離のコントリビューションの耐障害性が上がる\n\nこれらは MediaConnect Router が使える全 AWS リージョンで利用できるよ。\n\n## まとめ\n\n- RTMP、RTMPS、eRTMP に対応(フローとルーターの両方)\n- PID リマップをトランスコードなしで実行\n- クリーンスイッチで入力切り替えが滑らかに\n- SRT マージ入力で冗長経路の回復力アップ\n\nライブ映像の取り込みや配信ワークフローを組んでいるみんなに刺さるよ！",
+  "title_en": "AWS Elemental MediaConnect Adds RTMP, So Your OBS Stream Just Works!",
+  "summary_en": "AWS Elemental MediaConnect now supports RTMP, RTMPS, and eRTMP, and adds three routing features: PID remapping, clean switch, and SRT merge input mode.",
+  "body_md_en": "Hi, it's Shii-chan! AWS Elemental MediaConnect got a bunch of nice additions for live video, so let's go through them!\n\n## What was announced?\n\nIn AWS What's New, AWS Elemental MediaConnect announced more protocol support and routing control. There are two parts.\n\n## Why it matters\n\nRTMP is widely used by live streaming encoders and software such as OBS. Once MediaConnect speaks RTMP, it is easier to bring in video from tools people already use.\n\n## What changes\n\nFirst, protocols: MediaConnect now supports RTMP, RTMPS, and eRTMP across both flows and router.\n\nYou can bring RTMP sources into MediaConnect and deliver to RTMP endpoints, such as social and live streaming platforms.\n\n## Dive Deep\n\nSecond, three new routing capabilities:\n\n- PID remapping: reassigns transport stream PIDs inline on the MediaConnect router, without transcoding\n- Clean switch: aligns input transitions on video boundaries for more seamless switching\n- SRT merge input mode: bonds redundant SRT streams of the same content and reconstructs a clean feed when one path degrades, adding resilience for lossy or long-haul contribution\n\nThese are available in all AWS Regions where MediaConnect Router is available.\n\n## Wrap-up\n\n- RTMP, RTMPS, and eRTMP support in flows and router\n- PID remapping without transcoding\n- Clean switch for smoother input changes\n- SRT merge input for more resilient redundant paths\n\nIf you build live video ingest or delivery workflows, this one is for you!",
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/rtmp-support-aws-elemental-mediaconnect/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Elemental MediaConnect expands routing control and protocol support",
+  "published_at": "2026-11-17T08:00:00+00:00"
+}

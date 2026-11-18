@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-lambda-durable-pause-delete",
+  "emotion": "happy",
+  "importance": 4,
+  "tags": [
+    "aws",
+    "serverless",
+    "ai"
+  ],
+  "title": "Lambda durable functions の実行を一時停止できるようになったよ！削除にも対応！",
+  "summary": "AWS Lambda durable functions で、実行中の durable execution を一時停止して後から再開したり、完了した実行のデータを保持期間前に削除したりできるようになったよ。",
+  "body_md": "おつかれさま、しぃちゃんだよ！長時間ワークフローを組む人にうれしい、Lambda durable functions の更新だよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Lambda durable functions が、実行中の durable execution の一時停止と、あとからの再開に対応したと発表されたよ。完了した実行のデータを、保持期間が終わる前に削除することもできるんだ。\n\n## 今までどうだったの？\n\nLambda durable functions は、最長 1 年実行できる、回復力のあるマルチステップのアプリや AI ワークフローを作る仕組みで、チェックポイントと自動リトライが組み込まれているよ。\n\nただ、下流のサービスが不調だったり、モデルプロバイダーのレート制限に当たったりしても、リトライが尽きるのを待つしかなかったんだ。\n\n## これで何が変わるの？\n\n影響を受けている実行を一時停止して、問題を解決してから再開できるようになったよ。リトライを使い切らせなくて済むんだ。\n\n## 深く潜ってみよう\n\n一時停止と再開の動きはこうだよ。\n\n- 再開すると、同じ関数バージョンで最後のチェックポイントから続きが実行される\n- 進捗は失われない\n- デフォルトでは、一時停止していた時間は実行タイムアウトに数えられない\n\n削除については、成功・失敗・停止・タイムアウトした実行の、履歴、チェックポイントデータ、入出力ペイロードを削除できるよ。例えば次のような場面で使えるね。\n\n- 入力に個人情報が含まれる実行を消したいとき\n- バグで残ってしまった失敗実行を片付けたいとき\n\n操作は Lambda コンソール、AWS CLI、AWS SDK から行えて、durable functions が使える全リージョンで使えるよ。\n\n## まとめ\n\n- 実行中の durable execution を一時停止して再開できる\n- 再開は最後のチェックポイントから、同じ関数バージョンで\n- 一時停止中の時間は、デフォルトではタイムアウトに数えられない\n- 完了した実行のデータを保持期間前に削除できる\n\nAI ワークフローや長時間処理を Lambda で動かしているみんなに刺さるよ！",
+  "title_en": "Lambda Durable Functions Can Now Pause and Delete Executions!",
+  "summary_en": "AWS Lambda durable functions can now pause a running durable execution and resume it later, and delete a completed execution's data before its retention period ends.",
+  "body_md_en": "Hi, it's Shii-chan! Here's a Lambda durable functions update for anyone building long-running workflows!\n\n## What was announced?\n\nIn AWS What's New, AWS Lambda durable functions now lets you pause a running durable execution and resume it later without losing progress. You can also delete a completed execution's data before its retention period ends.\n\n## The story so far\n\nWith durable functions you can build resilient multi-step applications and AI workflows that run for up to one year, with built-in checkpointing and automatic retries.\n\nBut when a downstream service was degraded or a model provider's rate limit was reached, you could only let the retries run out.\n\n## What changes\n\nYou can pause the affected executions while you resolve the issue, then resume them, instead of letting retries run out.\n\n## Dive Deep\n\nPause and resume:\n\n- A resumed execution continues from its last checkpoint on the same function version\n- Progress is not lost\n- By default, time spent paused doesn't count toward the execution timeout\n\nDeletion covers an execution's history, checkpoint data, and input and output payloads after it succeeds, fails, stops, or times out. For example:\n\n- Deleting an execution whose input contains personal data\n- Cleaning up failed executions that a bug left behind\n\nYou can pause, resume, and delete using the Lambda console, the AWS CLI, or the AWS SDKs in all Regions where durable functions is available.\n\n## Wrap-up\n\n- Pause a running durable execution and resume it later\n- Resume continues from the last checkpoint on the same function version\n- Paused time doesn't count toward the timeout by default\n- Delete completed execution data before retention ends\n\nIf you run AI workflows or long-running jobs on Lambda, this one is for you!",
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/lambda-durable-pause-delete/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Lambda durable functions now supports pausing and deleting executions",
+  "published_at": "2026-11-17T08:00:00+00:00"
+}

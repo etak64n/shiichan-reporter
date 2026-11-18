@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-transit-gateway-gwlb-integration",
+  "emotion": "happy",
+  "importance": 4,
+  "tags": [
+    "aws",
+    "infrastructure",
+    "security"
+  ],
+  "title": "Transit Gateway が Gateway Load Balancer とネイティブ連携！エンドポイント用サブネットが不要に！",
+  "summary": "AWS Transit Gateway が、Gateway Load Balancer タイプのネットワークファンクションアタッチメントに対応したよ。専用のエンドポイントサブネットやルートテーブルなしで、ファイアウォールをつなげるの！",
+  "body_md": "こんにちは、しぃちゃんだよ！ネットワークセキュリティの構成がシンプルになる発表だよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Transit Gateway が、タイプが Gateway Load Balancer のネットワークファンクションアタッチメントに対応したと発表されたよ。AWS ネットワーク全体のセキュリティのデプロイと管理がシンプルになるんだ。\n\n## 今までどうだったの？\n\n原文は従来の構成の詳細までは書いていないけれど、「複雑な VPC 構成なしで」つなげられるようになった、という書き方から、これまでは VPC まわりの構成が必要だったことが読み取れるよ。\n\n## これで何が変わるの？\n\nネットワークファンクションアタッチメントを使うと、Transit Gateway を、ファイアウォールなどのセキュリティアプライアンスの前段にある Gateway Load Balancer の VPC エンドポイントサービスにつなげられるよ。\n\n## 深く潜ってみよう\n\n- Transit Gateway が、選んだアベイラビリティゾーンに Gateway Load Balancer エンドポイントを作成して管理する。専用のエンドポイントサブネットやルートテーブルは不要\n- エンドポイントサービスは別の AWS アカウントにあってもよい\n- ネットワークファンクションアタッチメントは、セキュリティサービスとのコンテキスト共有にも対応する。Transit Gateway が、トラフィックに Transit Gateway アタッチメント、VPC、サブネット、セキュリティグループといったリソースコンテキストを付けてファイアウォールへ送り、ファイアウォールは IP アドレスと併せて分離ポリシーに使える\n- 中東 (バーレーン) と中東 (UAE) を除く、Transit Gateway と Gateway Load Balancer の両方が使える全商用リージョンと、GovCloud (US-East・US-West) で利用可能\n\n## まとめ\n\n- Gateway Load Balancer タイプのネットワークファンクションアタッチメントに対応\n- エンドポイントは Transit Gateway が作成・管理し、専用サブネットとルートテーブルは不要\n- 別アカウントのエンドポイントサービスにもつなげられる\n- リソースコンテキスト共有にも対応\n\n検査用ファイアウォールを Transit Gateway にすっきりつなぎたいネットワーク担当のみんなに刺さるよ！",
+  "title_en": "Transit Gateway Integrates Natively With Gateway Load Balancer, No Endpoint Subnets Needed!",
+  "summary_en": "AWS Transit Gateway now supports network function attachments of type Gateway Load Balancer, connecting firewalls without dedicated endpoint subnets and route tables.",
+  "body_md_en": "Hi, it's Shii-chan! This announcement simplifies network security setups!\n\n## What was announced?\n\nIn AWS What's New, AWS Transit Gateway now supports network function attachments of type Gateway Load Balancer, simplifying the deployment and management of network security across your AWS network.\n\n## The story so far\n\nThe announcement doesn't detail the old setup. But it says you can now connect \"without complex VPC configurations\", which suggests extra VPC configuration was needed before.\n\n## What changes\n\nWith a network function attachment, you can connect your transit gateway to a Gateway Load Balancer VPC endpoint service that fronts firewalls and other security appliances.\n\n## Dive Deep\n\n- Transit Gateway creates and manages the Gateway Load Balancer endpoints in the Availability Zones you choose, so you don't need dedicated endpoint subnets and route tables\n- The endpoint service can be in another AWS account\n- Network function attachments also support context sharing with security services: Transit Gateway adds resource context to traffic sent to your firewall, including the attachment, VPC, subnet, and security groups, which the firewall can use alongside IP addresses for segmentation policies\n- Available in all commercial Regions where both Transit Gateway and Gateway Load Balancer are available, except Middle East (Bahrain) and Middle East (UAE), and in AWS GovCloud (US-East) and (US-West)\n\n## Wrap-up\n\n- Network function attachments of type Gateway Load Balancer\n- Transit Gateway manages the endpoints, with no dedicated subnets or route tables\n- The endpoint service can live in another account\n- Resource context sharing is supported\n\nIf you want to attach inspection firewalls to Transit Gateway cleanly, this one is for you!",
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/transit-gateway-gwlb-integration/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Transit Gateway supports native integration with Gateway Load Balancer",
+  "published_at": "2026-11-17T08:00:00+00:00"
+}

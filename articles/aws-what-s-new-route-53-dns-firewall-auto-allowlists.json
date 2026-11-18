@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-route-53-dns-firewall-auto-allowlists",
+  "emotion": "smug",
+  "importance": 4,
+  "tags": [
+    "aws",
+    "security",
+    "infrastructure"
+  ],
+  "title": "DNS Firewall が許可リストを自動で作ってくれるようになったよ！",
+  "summary": "Amazon Route 53 Resolver DNS Firewall が、VPC で実際に観測した DNS クエリから許可リストを自動生成できるようになったよ。最小権限の DNS 運用がぐっと楽になるみたい！",
+  "body_md": "やっほー、しぃちゃんだよ！今日は Route 53 Resolver DNS Firewall のうれしいアップデートを見つけたから、さっそく紹介するね！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Route 53 Resolver DNS Firewall が「許可リストの自動生成」に対応したことが発表されたよ。VPC で実際に観測された DNS クエリのトラフィックから、ドメインの許可リストを自動で作ってくれるの。\n\nDNS を使ったデータ持ち出し(エクスフィルトレーション)のリスクを減らしつつ、最小権限の DNS アクセスを実現するのが狙いだよ！\n\n## 今までどうだったの？\n\n最小権限のモデルを作るには、セキュリティチームが DNS クエリログを手作業で分析して、VPC が依存しているドメインを洗い出す必要があったの。\n\nその作業が運用の負担になって、「基本は全部拒否、必要なものだけ許可」というデフォルト拒否(ウォールドガーデン)の運用に移るまでに時間がかかっていたんだよ。\n\n## これで何が変わるの？\n\nログを読み込む下準備が不要になって、デフォルト拒否の運用に入りやすくなるよ！セキュリティ担当の人は、自動で作られたリストをレビューするところから始められるね。\n\n## 深く潜ってみよう\n\n仕組みはこんな感じだよ。\n\n- 1 時間から 7 日の範囲で設定できる「ルックバック期間」の DNS クエリトラフィックを分析して、観測されたドメインの許可リストを作る\n- その後も DNS クエリを継続的に監視して、新しく観測されたドメインにフラグを立てる。許可リストに追加する前にレビューできる\n- ルールは AWS Firewall Manager か Route 53 Profiles を使って、複数の VPC やアカウントにまとめて展開できる\n\n提供条件はこうだよ。\n\n- DNS Firewall Advanced の利用者は追加料金なしで使える\n- DNS Firewall が使える AWS リージョンで利用可能。ただし AWS GovCloud (US) と中国リージョンは対象外\n- 始めるには Route 53 DNS Firewall のコンソール、AWS CLI、API を使う\n\n## まとめ\n\n- VPC の DNS クエリから許可リストを自動生成できるようになった\n- ルックバック期間は 1 時間から 7 日で設定できる\n- 新しいドメインは検知されてレビューできる\n- Firewall Manager や Route 53 Profiles で複数アカウントに展開できる\n- DNS Firewall Advanced なら追加料金なし\n\nDNS 経由の情報漏えい対策を、ログ分析に追われずに進めたいセキュリティ担当のみんなに刺さる発表だよ！",
+  "title_en": "Route 53 DNS Firewall Now Builds Your Allow-Lists Automatically!",
+  "summary_en": "Amazon Route 53 Resolver DNS Firewall can now generate domain allow-lists from the DNS queries your VPCs actually make, making least-privilege DNS much easier to adopt.",
+  "body_md_en": "Hi, it's Shii-chan! I found a great update for Route 53 Resolver DNS Firewall today, so let me walk you through it!\n\n## What was announced?\n\nIn AWS What's New, Amazon Route 53 Resolver DNS Firewall announced automated allow-list generation. It builds a domain allow-list from the DNS query traffic observed in your VPCs.\n\nThe goal is to enforce least-privilege DNS access and reduce the risk of DNS-based data exfiltration.\n\n## The story so far\n\nTo build a least-privilege model, security teams had to analyze DNS query logs by hand to find the domains their VPCs depend on.\n\nThat overhead delayed the move to a deny-by-default (walled-garden) posture.\n\n## What changes\n\nYou no longer need that log-analysis groundwork. Security teams can start by reviewing an automatically generated list.\n\n## Dive Deep\n\nHere is how it works.\n\n- DNS Firewall analyzes DNS query traffic over a configurable lookback window, from 1 hour to 7 days, and creates an allow-list of observed domains\n- It then keeps monitoring DNS queries and flags newly observed domains, so you can review them before adding them to the allow-list\n- You can deploy the rule across multiple VPCs and accounts with AWS Firewall Manager or Route 53 Profiles\n\nAvailability:\n\n- No additional cost for DNS Firewall Advanced customers\n- Available in AWS Regions where DNS Firewall is supported, except AWS GovCloud (US) and the China Regions\n- Get started with the Route 53 DNS Firewall console, the AWS CLI, or the API\n\n## Wrap-up\n\n- Allow-lists can be generated automatically from VPC DNS queries\n- The lookback window is configurable from 1 hour to 7 days\n- New domains are flagged for review\n- Rules roll out across accounts with Firewall Manager or Route 53 Profiles\n- No extra cost for DNS Firewall Advanced\n\nIf you want to lock down DNS-based exfiltration without drowning in log analysis, this one is for you!",
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/route-53-dns-firewall-auto-allowlists/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Route 53 Resolver DNS Firewall now supports automated allow-list generation",
+  "published_at": "2026-11-17T08:00:00+00:00"
+}

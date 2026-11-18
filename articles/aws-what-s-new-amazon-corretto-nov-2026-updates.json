@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-corretto-nov-2026-updates",
+  "emotion": "happy",
+  "importance": 3,
+  "tags": [
+    "aws",
+    "security"
+  ],
+  "title": "Amazon Corretto 2026 年 11 月の重要セキュリティパッチが公開されたよ！",
+  "summary": "Amazon が Corretto の LTS と Feature Release 向けに、2026 年 11 月 17 日付の重要セキュリティパッチ更新 (CSPU) を公開したよ。27、25、21、17、11、8 が対象！",
+  "body_md": "こんにちは、しぃちゃんだよ！Java を使っているみんな、Corretto のパッチが出たよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon が 2026 年 11 月 17 日付で、Amazon Corretto の Long-Term Support (LTS) と Feature Release (FR) 向けの、重要なセキュリティパッチ更新 (CSPU) を発表したよ。Corretto は、OpenJDK のノーコスト、マルチプラットフォーム、本番利用可能なディストリビューションなんだ。\n\n## 深く潜ってみよう\n\nダウンロードできるようになったバージョンはこれだよ。\n\n- Corretto 27: 27.0.1.1.4\n- Corretto 25: 25.0.5.1.2\n- Corretto 21: 21.0.13.1.2\n- Corretto 17: 17.0.21.1.2\n- Corretto 11: 11.0.33.1.1\n- Corretto 8: 8u514\n\n入手方法は 2 つだよ。\n\n- Corretto のホームページからダウンロードする\n- Linux では、Corretto の Apt、Yum、Apk リポジトリを設定して更新を受け取る\n\n原文には、個別の脆弱性の内容は書かれていないよ。\n\n## まとめ\n\n- 2026 年 11 月 17 日付の CSPU が LTS と FR 向けに公開された\n- Corretto 27、25、21、17、11、8 が対象\n- ホームページ、または Apt、Yum、Apk リポジトリで入手できる\n\nCorretto で Java アプリを動かしているみんなは、バージョンを確認して更新を計画してね！",
+  "title_en": "Amazon Corretto November 2026 Critical Security Patch Updates Are Out!",
+  "summary_en": "Amazon released the November 17, 2026 critical security patch update (CSPU) for Corretto LTS and Feature Release versions, covering Corretto 27, 25, 21, 17, 11, and 8.",
+  "body_md_en": "Hi, it's Shii-chan! If you run Java, new Corretto patches are out!\n\n## What was announced?\n\nIn AWS What's New, Amazon announced the November 17, 2026 critical security patch update (CSPU) for Amazon Corretto Long-Term Support (LTS) and Feature Release (FR) versions of OpenJDK. Corretto is a no-cost, multi-platform, production-ready distribution of OpenJDK.\n\n## Dive Deep\n\nVersions now available for download:\n\n- Corretto 27: 27.0.1.1.4\n- Corretto 25: 25.0.5.1.2\n- Corretto 21: 21.0.13.1.2\n- Corretto 17: 17.0.21.1.2\n- Corretto 11: 11.0.33.1.1\n- Corretto 8: 8u514\n\nTwo ways to get them:\n\n- Download from the Corretto home page\n- On Linux, configure a Corretto Apt, Yum, or Apk repo to receive the updates\n\nThe announcement doesn't describe individual vulnerabilities.\n\n## Wrap-up\n\n- The November 17, 2026 CSPU is out for LTS and FR versions\n- Covers Corretto 27, 25, 21, 17, 11, and 8\n- Available from the home page or Apt, Yum, and Apk repos\n\nIf you run Java apps on Corretto, check your version and plan your update!",
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-corretto-nov-2026-updates/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Corretto November 2026 Critical Security Patch Updates",
+  "published_at": "2026-11-17T15:00:00+00:00"
+}

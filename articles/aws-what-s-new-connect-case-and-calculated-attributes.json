@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-connect-case-and-calculated-attributes",
+  "emotion": "happy",
+  "importance": 3,
+  "tags": [
+    "aws",
+    "business"
+  ],
+  "title": "Amazon Connect のメッセージテンプレートで、ケース情報も差し込めるようになったよ！",
+  "summary": "Amazon Connect Customer のメッセージテンプレートが、Cases のケースフィールドと Customer Profiles の計算済み属性に対応したよ。受信者ごとの最新の値が自動で入るの！",
+  "body_md": "おつかれさま、しぃちゃんだよ！今日は Amazon Connect Customer のメッセージテンプレートが賢くなった話だよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Connect Customer のメッセージテンプレートが、Cases のケースフィールドと、Customer Profiles の計算済み属性(Calculated attributes)に対応したと発表されたよ。計算済み属性の例は「顧客がいちばんよく使う問い合わせチャネル」などだよ。\n\n## 今までどうだったの？\n\nメッセージテンプレートは、受信者の情報で各メッセージをパーソナライズする機能だったよ。でも、請求や注文、申請の進捗を知らせたいときに必要な「そのお客さんのケースの内容」までは差し込めなかったんだ。\n\n## これで何が変わるの？\n\nテンプレート作成者は、管理者が定義したカスタムフィールドも含めてケースフィールドを挿入できるよ。送信のたびに、受信者ごとの現在の値が入るんだ。\n\n原文にはこんな例があったよ。\n\n- 保険会社の担当者が、ケースの参照番号とステータスを引くメールテンプレートを 1 つ作れば、契約者それぞれが自分の請求の状況を受け取れる\n- 小売店が、過去 1 年の注文数のようなカスタム計算済み属性をロイヤルティメールに入れれば、お客さんごとに自分の数字が見える\n\n## 深く潜ってみよう\n\n開発者は RenderMessageTemplate API でテンプレートをレンダリングするときに、これらの値を渡せるよ。\n\n対応リージョンはこれだよ。\n\n- 米国東部 (バージニア北部)、米国西部 (オレゴン)\n- アフリカ (ケープタウン)\n- アジアパシフィック (ソウル、シンガポール、シドニー、東京)\n- カナダ (中部)\n- 欧州 (フランクフルト、ロンドン)\n\n## まとめ\n\n- メッセージテンプレートでケースフィールドを使える\n- Customer Profiles の計算済み属性も使える\n- 送信のたびに受信者ごとの最新値が入る\n- RenderMessageTemplate API で値を渡せる\n\n問い合わせ対応のメッセージを 1 テンプレートで個別化したいコンタクトセンターの担当者に刺さるよ！",
+  "title_en": "Amazon Connect Message Templates Can Now Pull In Case Details!",
+  "summary_en": "Amazon Connect Customer message templates now support case fields from Cases and calculated attributes from Customer Profiles, filled in with each recipient's current values on every send.",
+  "body_md_en": "Hi, it's Shii-chan! Today the message templates in Amazon Connect Customer got a lot smarter!\n\n## What was announced?\n\nIn AWS What's New, Amazon Connect Customer message templates now support case fields from Cases and calculated attributes from Customer Profiles, such as a customer's most frequent contact channel.\n\n## The story so far\n\nMessage templates personalize each message with details about its recipient. But when you needed to send updates about a claim, an order, or an application, there was no way to pull in that customer's own case record.\n\n## What changes\n\nTemplate authors can insert case fields, including custom fields that administrators define. Connect Customer fills in the current value for each recipient every time it sends a message.\n\nExamples from the announcement:\n\n- A claims manager at an insurance company can build one email template that pulls each claim's reference number and status, so every policyholder gets an update on their own claim\n- A retailer can add a custom calculated attribute, such as total orders in the past year, to a loyalty email so each customer sees their own count\n\n## Dive Deep\n\nDevelopers can pass these values when rendering a template with the RenderMessageTemplate API.\n\nSupported Regions:\n\n- US East (N. Virginia), US West (Oregon)\n- Africa (Cape Town)\n- Asia Pacific (Seoul, Singapore, Sydney, Tokyo)\n- Canada (Central)\n- Europe (Frankfurt, London)\n\n## Wrap-up\n\n- Message templates can use case fields\n- Calculated attributes from Customer Profiles work too\n- Each send fills in the recipient's current values\n- RenderMessageTemplate lets developers pass values\n\nIf you run a contact center and want one template to feel personal for everyone, this is for you!",
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/connect-case-and-calculated-attributes/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Connect Customer now supports case and calculated template variables",
+  "published_at": "2026-11-17T08:00:00+00:00"
+}

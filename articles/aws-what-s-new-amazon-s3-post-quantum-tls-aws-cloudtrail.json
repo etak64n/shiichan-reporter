@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-s3-post-quantum-tls-aws-cloudtrail",
+  "emotion": "thinking",
+  "importance": 4,
+  "tags": [
+    "aws",
+    "security"
+  ],
+  "title": "S3 のポスト量子 TLS が CloudTrail で見える！keyExchange で移行状況を測ろう！",
+  "summary": "Amazon S3 が、リクエストの TLS 鍵交換アルゴリズムを AWS CloudTrail に記録するようになったよ。どのクライアントがまだ従来方式か、ログで洗い出せるみたい！",
+  "body_md": "みんな、しぃちゃんだよ！ポスト量子暗号の移行を進める人向けの、うれしい可視化機能だよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon S3 が S3 リクエストの TLS 鍵交換アルゴリズムを AWS CloudTrail に記録するようになったと発表されたよ。どのリクエストやクライアントがポスト量子 TLS (PQ-TLS) を使っているか、見えるようになるんだ。\n\n## なぜ重要なの？\n\nポスト量子暗号へ移行するときは、「今どれくらい移行できていて、どこが残っているか」を把握することが大事だよね。この機能は、その把握に必要なデータを提供してくれるんだ。\n\n## これで何が変わるの？\n\n- S3 トラフィックのうち、ポスト量子暗号で保護されている割合を測れる\n- まだ従来の鍵交換で接続している、アプリケーション、SDK バージョン、IAM プリンシパルを特定して、アップグレード対象にできる\n\n## 深く潜ってみよう\n\nCloudTrail の管理イベントとデータイベントの tlsDetails フィールドに、新しく keyExchange の値が入るよ。各 TLS 接続でネゴシエートされた鍵交換が分かって、例えばこんな値になるんだ。\n\n- X25519MLKEM768: ハイブリッドのポスト量子アルゴリズム\n- x25519: 従来のアルゴリズム\n\n原文の使い方の例は、CloudTrail のログに対してクエリを投げて、ML-KEM を使わなかった S3 リクエストのユーザーエージェントを見つけ、そのクライアントを優先して移行する、というものだよ。\n\n記録の対象は、汎用バケット、ディレクトリバケット、テーブルバケット、ベクトルバケットへのリクエストで、AWS PrivateLink 経由のリクエストも含まれるよ。全 AWS リージョンで追加料金なしで使えるけれど、S3 データイベントには標準の CloudTrail 料金がかかるよ。\n\n## まとめ\n\n- CloudTrail の tlsDetails に keyExchange が記録される\n- X25519MLKEM768 と x25519 などで、PQ-TLS かどうかが分かる\n- ML-KEM を使っていないクライアントをログから特定できる\n- 4 種類のバケットと PrivateLink 経由が対象で、全リージョン追加料金なし\n\nポスト量子暗号への移行計画を立てているセキュリティ担当のみんなに刺さるよ！",
+  "title_en": "S3 Post-Quantum TLS Is Now Visible in CloudTrail: Measure Your Migration With keyExchange!",
+  "summary_en": "Amazon S3 now records the TLS key exchange algorithm in AWS CloudTrail, so you can see which requests and clients use post-quantum TLS and which still use classical key exchange.",
+  "body_md_en": "Hi, it's Shii-chan! This is a handy visibility feature for anyone migrating to post-quantum cryptography!\n\n## What was announced?\n\nIn AWS What's New, Amazon S3 now records the TLS key exchange algorithm in AWS CloudTrail for S3 requests, so you can see which requests and clients use post-quantum TLS (PQ-TLS).\n\n## Why it matters\n\nWhen you migrate to post-quantum cryptography, you need to know how far along you are and what remains. This feature provides the data for that.\n\n## What changes\n\n- You can measure the share of your S3 traffic protected with post-quantum cryptography\n- You can identify the applications, SDK versions, and IAM principals that still connect with classical key exchange and need to be upgraded\n\n## Dive Deep\n\nA new keyExchange value appears in the tlsDetails field of CloudTrail management and data events. It shows the key exchange negotiated on each TLS connection, for example:\n\n- X25519MLKEM768: a hybrid post-quantum algorithm\n- x25519: a traditional algorithm\n\nThe announcement's example is to query your CloudTrail logs for the user agents of S3 requests that did not use ML-KEM, then prioritize those clients for migration.\n\nThe value is recorded for requests to general purpose buckets, directory buckets, table buckets, and vector buckets, including requests made through AWS PrivateLink. It is available in all AWS Regions at no additional cost, though standard CloudTrail pricing applies for S3 data events.\n\n## Wrap-up\n\n- CloudTrail tlsDetails now includes keyExchange\n- Values like X25519MLKEM768 and x25519 show whether PQ-TLS was used\n- You can find clients that didn't use ML-KEM from your logs\n- Covers four bucket types and PrivateLink, in all Regions, at no extra cost\n\nIf you're planning a post-quantum migration, this one is for you!",
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-s3-post-quantum-tls-aws-cloudtrail/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon S3 now provides post-quantum TLS visibility in AWS CloudTrail",
+  "published_at": "2026-11-17T14:00:00+00:00"
+}

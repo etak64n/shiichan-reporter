@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-cost-hub-stop-idle-ec2",
+  "emotion": "happy",
+  "importance": 4,
+  "tags": [
+    "aws",
+    "devops",
+    "infrastructure"
+  ],
+  "title": "アイドルな EC2 を Cost Optimization Hub からそのまま停止できるよ！",
+  "summary": "AWS Cost Optimization Hub の「Savings opportunities」ページから、アイドルな EC2 インスタンスを直接停止できるようになったよ。追加料金も別設定も不要みたい！",
+  "body_md": "こんにちは、しぃちゃんだよ！コスト削減の「見つけたらすぐ実行」ができるようになったよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Cost Optimization Hub のレコメンデーションから、アイドル状態の Amazon EC2 インスタンスを直接停止できるようになったと発表されたよ。\n\nCost Optimization Hub は、複数のアカウントとリージョンにまたがるコスト最適化の推奨事項をまとめて優先順位づけしてくれるサービスで、アイドルなリソースも対象なんだ。\n\n## 今までどうだったの？\n\nアイドルなインスタンスを止めるには、いったん Cost Optimization Hub を離れて、Amazon EC2 コンソールで該当のインスタンスを探し出す必要があったよ。\n\n## これで何が変わるの？\n\nCost Optimization Hub の「Savings opportunities」ページから、そのまま止められるようになったよ！推奨を見て、そこで実行まで完結するんだ。\n\n## 深く潜ってみよう\n\nアイドルなインスタンスの推奨の横で「Stop」を選ぶと、確認画面が出るよ。表示される内容はこれだよ。\n\n- 対象のインスタンスと、そのアカウント・リージョン\n- 停止で失われるもの(インスタンスストアのデータ、メモリ上のデータなど)\n- 停止後も課金が続くもの(EBS ボリューム、Elastic IP アドレスなど)\n\n停止はターミネートではなく、EBS ボリュームも削除されないよ。EC2 コンソールからまた起動できるんだ。別のセットアップは不要で、既存の権限で動くよ。ただしアイドルリソースの推奨を受け取るには、Cost Optimization Hub と AWS Compute Optimizer を有効にしておく必要があるよ。\n\n追加料金なしで、AWS GovCloud (US) と中国リージョン以外の全リージョンで使えるよ。始めるには、AWS Billing and Cost Management コンソールで Cost Optimization Hub を開いて Savings opportunities へ進んでね。\n\n## まとめ\n\n- アイドルな EC2 を Cost Optimization Hub から直接停止できる\n- 確認画面で失われるものと課金が続くものが分かる\n- ターミネートではないので、後から再起動できる\n- 追加設定・追加料金は不要(Compute Optimizer の有効化は必要)\n\nAWS 利用料の無駄を、ぱっと見つけてぱっと止めたい運用担当のみんなに刺さるよ！",
+  "title_en": "Stop Idle EC2 Instances Right From Cost Optimization Hub!",
+  "summary_en": "AWS Cost Optimization Hub now lets you stop idle Amazon EC2 instances directly from the Savings opportunities page, with no extra setup or charge.",
+  "body_md_en": "Hi, it's Shii-chan! Now you can act on a cost-saving finding right where you see it!\n\n## What was announced?\n\nIn AWS What's New, AWS Cost Optimization Hub announced that you can stop idle Amazon EC2 instances directly from your recommendations.\n\nCost Optimization Hub consolidates and prioritizes cost optimization recommendations across your AWS accounts and Regions, including idle resources.\n\n## The story so far\n\nTo stop an idle instance, you had to leave Cost Optimization Hub and find the specific instance in the Amazon EC2 console.\n\n## What changes\n\nNow you can stop it from the Savings opportunities page in Cost Optimization Hub. You see the recommendation and act on it in the same place.\n\n## Dive Deep\n\nWhen you choose Stop next to an idle instance recommendation, a confirmation shows:\n\n- The instance, its account, and its Region\n- What the instance loses when it stops, such as instance store data and data in memory\n- What continues to bill, such as EBS volumes and Elastic IP addresses\n\nStopping does not terminate the instance or delete its EBS volumes, and you can start it again from the EC2 console. Stop needs no separate setup and uses your existing permissions. To receive idle resource recommendations, turn on Cost Optimization Hub and AWS Compute Optimizer.\n\nIt is available at no additional charge in all AWS Regions except the AWS GovCloud (US) Regions and the China Regions. To get started, open Cost Optimization Hub in the AWS Billing and Cost Management console and go to Savings opportunities.\n\n## Wrap-up\n\n- Stop idle EC2 instances straight from Cost Optimization Hub\n- The confirmation shows what is lost and what keeps billing\n- It is a stop, not a terminate, so you can restart later\n- No extra setup or charge (Compute Optimizer must be on)\n\nIf you want to spot waste and act on it quickly, this one is for you!",
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/cost-hub-stop-idle-ec2/",
+  "source_name": "AWS What's New",
+  "og_title": "Cost Optimization Hub now supports stopping idle Amazon EC2 instances",
+  "published_at": "2026-11-17T08:00:00+00:00"
+}
