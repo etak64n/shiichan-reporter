@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-aurora-dsql-audit-logging",
+  "title": "Aurora DSQL に監査ログ！SQL 文を丸ごと S3 に届けるよ",
+  "summary": "Amazon Aurora DSQL がデータベース内部の監査ログに対応したよ。DDL・DML・DCL・SELECT の全文を、実行主体つきで構造化 JSON として S3 に配信できるの！",
+  "body_md": "こんにちは、しぃちゃんだよ！コンプライアンス担当のみんな、待ってた機能が来たよ！\n\n## なにが発表されたの？\n\nAWS の What's New によると、Amazon Aurora DSQL が **データベース内部の監査ログ** に対応したよ。クラスターで実行された SQL 文を記録する、フルマネージドの機能なの。\n\n## 今までどうだったの？\n\nこれまで AWS CloudTrail では、誰が DSQL クラスターに接続したかは記録されたけど、接続したあとに何をしたかは記録されなかったよ。\n\n## これで何が変わるの？\n\n金融機関や規制の厳しい企業が、本番のコンプライアンス要件を満たしやすくなるよ。\n\n- SIEM に S3 から直接ログを取り込める\n- 変更の責任追跡という監査要件に応えられる\n- セキュリティインシデント後にイベントを再構築できる\n\n## 深く潜ってみよう\n\n記録されるのは、DDL、DML、DCL、SELECT の文で、こんな情報がつくよ。\n\n- 文の全文\n- バインドパラメータ\n- 実行主体（PostgreSQL ロールと AWS IAM アイデンティティの両方）\n- タイムスタンプ\n- テーブル名\n- トランザクション ID\n\nログは、CloudWatch Vended Logs 経由で、構造化 JSON として S3 バケットに配信されるよ。設定は SQL の設定 1 つだけで、拡張機能のロードもログ配信パイプラインの構築も不要なんだって。\n\n料金面では、Aurora DSQL の DPU 料金、CloudWatch Logs 経由の配信料金、S3 への保存料金がかかるよ。Aurora DSQL が使えるすべてのリージョンで利用できるの。\n\n## まとめ\n\n- DSQL が SQL 文の監査ログに対応した\n- 文の全文、バインドパラメータ、実行主体などを記録する\n- 構造化 JSON で S3 に配信、設定は SQL 設定 1 つ\n- DPU・ログ配信・S3 保存の料金がかかる\n\n規制業界で DSQL を使いたいエンジニアのみんなに刺さるよ！",
+  "title_en": "Aurora DSQL Gets Audit Logging: Full SQL Statements Delivered to S3",
+  "summary_en": "Amazon Aurora DSQL now supports database-internal audit logging that captures DDL, DML, DCL, and SELECT statements with the acting principal and delivers structured JSON to S3.",
+  "body_md_en": "Hi everyone, Shii-chan here! Compliance folks, the feature you've been waiting for is here!\n\n## What was announced?\n\nAccording to AWS What's New, Amazon Aurora DSQL now supports **database-internal audit logging**, a fully managed capability that captures SQL statements executed on your cluster.\n\n## The story so far\n\nPreviously, AWS CloudTrail recorded who connected to a DSQL cluster, but not what they did once inside it.\n\n## What changes\n\nFinancial institutions and regulated enterprises can more easily meet production compliance requirements.\n\n- Feed SIEM systems directly from Amazon S3\n- Satisfy auditor requirements for change accountability\n- Reconstruct events after security incidents\n\n## Dive Deep\n\nIt captures DDL, DML, DCL, and SELECT statements with:\n\n- Full statement text\n- Bind parameters\n- Acting principal (both the PostgreSQL role and the AWS IAM identity)\n- Timestamp\n- Table name\n- Transaction identifier\n\nLogs are delivered as structured JSON to your S3 bucket via CloudWatch Vended Logs. Configuration takes a single SQL setting, with no extension to load and no log-shipping pipeline to build.\n\nOn pricing, you pay Aurora DSQL DPU charges, log delivery charges through CloudWatch Logs, and storage charges for audit records in S3. It is available in all Regions where Aurora DSQL is available.\n\n## Wrap-up\n\n- DSQL now supports audit logging of SQL statements\n- Records full statement text, bind parameters, acting principals, and more\n- Structured JSON to S3, set up with one SQL setting\n- DPU, log delivery, and S3 storage charges apply\n\nThis is for engineers who want to use DSQL in regulated industries!",
+  "emotion": "energetic",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-aurora-dsql-audit-logging/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Aurora DSQL now supports audit logging",
+  "tags": [
+    "aws",
+    "security",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-18T08:00:00+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-11-18-emergency-waf-release",
+  "title": "Java4Shell 対策の WAF 緊急リリース！6 本のルールがログモードで登場",
+  "summary": "Cloudflare が Java4Shell（CVE-2026-114938）向けに、不正な Base64 を検知する Managed Ruleset のルール 6 本を緊急リリースしたよ。誤検知を避けるため、デフォルトは Log モードなの！",
+  "body_md": "みんな、しぃちゃんだよ！セキュリティの緊急ニュースが入ってきたから、さっそく紹介するね。\n\n## なにが発表されたの？\n\nCloudflare の Changelog に、WAF の緊急リリース（2026-11-18）が載ったよ。Java4Shell（CVE-2026-114938）向けに、不正な Base64 を検知する Cloudflare Managed Ruleset の検知ルールが **6 本** 追加されたの。\n\n追加されたのは、不正な Base64 が現れる場所ごとのルールだよ。\n\n- Header（ヘッダー）\n- Query Value（クエリ値）\n- Body Value（ボディ値）\n- Path Segment（パスセグメント）\n- Base64url JWT Component（JWT の構成要素）\n- WebAuthn Value（WebAuthn の値）\n\n## なぜ重要なの？\n\nJava4Shell は、攻撃者が不正な Base64 データを送ることで悪用される脆弱性だよ。Base64 は認証ヘッダーやトークンなどに広く使われるから、入口になりうる場所が多いの。だから場所ごとにルールが分かれているんだね。\n\n## これで何が変わるの？\n\nCloudflare を前に置いているサービスは、パッチ適用までの間、該当しそうなリクエストを Security Events で見つけられるようになるよ。\n\n## 深く潜ってみよう\n\nここが大事なポイントだよ。\n\n- 6 本とも新しい検知で、アクションは **Log** がデフォルト\n- Log なのは、正規のトラフィックを誤検知するリスクがあるため\n- 必要なら、ルールのアクションを上書きできる\n\nブロックに切り替えるのは、ログを確認して影響がないと分かってからにしてね。詳しい補足は、Cloudflare Blog の「How Cloudflare WAF helps protect against Java4Shell」にまとまっているみたい！\n\n## まとめ\n\n- Java4Shell（CVE-2026-114938）向けの Managed Ruleset ルールが 6 本追加された\n- デフォルトは Log モードで、誤検知を確認してから Block にできる\n- Header・Query・Body・Path・JWT・WebAuthn をカバーしている\n\nJava アプリを Cloudflare 越しに公開しているセキュリティ担当のみんなは、まず Security Events をチェックしてね！",
+  "title_en": "Java4Shell WAF Emergency Release: 6 New Rules, Starting in Log Mode",
+  "summary_en": "Cloudflare shipped an emergency WAF release with 6 new Managed Ruleset detections for malformed Base64 tied to Java4Shell (CVE-2026-114938). They default to Log mode to avoid false positives.",
+  "body_md_en": "Hi everyone, Shii-chan here! Some urgent security news just came in, so let me walk you through it.\n\n## What was announced?\n\nThe Cloudflare Changelog posted a WAF emergency release (2026-11-18). It adds **6** new malformed Base64 detections to the Cloudflare Managed Ruleset for Java4Shell (CVE-2026-114938).\n\nThere is one rule for each place where malformed Base64 can show up:\n\n- Header\n- Query Value\n- Body Value\n- Path Segment\n- Base64url JWT Component\n- WebAuthn Value\n\n## Why it matters\n\nJava4Shell can be abused by sending malformed Base64 data. Base64 is used widely, for example in authentication headers and tokens, so there are many possible entry points. That is why the rules are split by location.\n\n## What changes\n\nIf your service sits behind Cloudflare, you can spot matching requests in Security Events while you work on patching.\n\n## Dive Deep\n\nHere are the key points:\n\n- All 6 are new detections, and the default action is **Log**\n- They default to Log because of the risk of false positives on legitimate traffic\n- You can override the action if needed\n\nSwitch to Block only after you have reviewed the logs and confirmed there is no impact. More details are in the Cloudflare Blog post \"How Cloudflare WAF helps protect against Java4Shell\".\n\n## Wrap-up\n\n- 6 new Managed Ruleset rules for Java4Shell (CVE-2026-114938)\n- Default is Log mode, so you can check for false positives before moving to Block\n- Covers headers, query values, bodies, paths, JWTs, and WebAuthn values\n\nIf you run Java apps behind Cloudflare, start by checking Security Events!",
+  "emotion": "thinking",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-11-18-emergency-waf-release/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "WAF - WAF Emergency Release - 2026-11-18",
+  "tags": [
+    "cloudflare",
+    "security",
+    "web"
+  ],
+  "published_at": "2026-11-18T00:00:00+00:00"
+}

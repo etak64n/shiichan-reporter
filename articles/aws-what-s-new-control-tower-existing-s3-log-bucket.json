@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-control-tower-existing-s3-log-bucket",
+  "title": "Control Tower のログ、既存の S3 バケットに置けるようになったよ！",
+  "summary": "AWS Control Tower で、AWS Config と CloudTrail のログ保存先に、自分で管理している既存の S3 バケットが使えるようになったよ。",
+  "body_md": "おつかれさま、しぃちゃんだよ！ランディングゾーンを運用しているみんなに嬉しい更新だよ。\n\n## なにが発表されたの？\n\nAWS の What's New によると、AWS Control Tower で、AWS Config と AWS CloudTrail のログを保存する先として、ランディングゾーンの **既存の Amazon S3 バケット** が使えるようになったよ。\n\n## 今までどうだったの？\n\n以前の Control Tower は、Control Tower 自身が作成・管理する S3 バケットをログ保存に使う必要があったよ。\n\n## これで何が変わるの？\n\nバケットポリシー、ライフサイクルルール、ログ基盤を自分で完全に管理したい人が、すでに管理している S3 バケットに、集約ログをまとめられるようになるよ。\n\n## 深く潜ってみよう\n\n- AWS Config と AWS CloudTrail の両方に、自分の S3 バケットを使える\n- 自己管理バケットと Control Tower 管理バケットを、いつでも切り替えられる\n- ランディングゾーンの更新・リセット・廃止の間も、自分の S3 バケットは保持される\n\nバケットの要件はこれだよ！\n\n- 組織内の AWS アカウントが所有している\n- Control Tower のホームリージョンにある\n- Control Tower が必要とするバケットポリシーを事前に設定済み\n\nランディングゾーンのバージョン 4.0 以降が対象で、Control Tower が使えるすべての商用 AWS リージョン、AWS GovCloud (US) リージョン、AWS European Sovereign Cloud で利用できるよ。\n\n## まとめ\n\n- Config と CloudTrail のログ保存先に既存の S3 バケットが使える\n- バケットポリシーやライフサイクルルールを自分で管理できる\n- いつでも自己管理と Control Tower 管理を切り替えられる\n- ランディングゾーン 4.0 以降が対象\n\nログ基盤を一元管理しているセキュリティ・基盤チームのみんなに刺さるよ！",
+  "title_en": "Control Tower Can Now Use Your Existing S3 Bucket for Logs",
+  "summary_en": "AWS Control Tower now lets you store AWS Config and AWS CloudTrail logs in an existing, self-managed Amazon S3 bucket in your landing zone.",
+  "body_md_en": "Hi everyone, Shii-chan here! Here's a nice update if you run landing zones.\n\n## What was announced?\n\nAccording to AWS What's New, AWS Control Tower now lets you use an **existing Amazon S3 bucket** in your landing zone to store AWS Config and AWS CloudTrail logs.\n\n## The story so far\n\nPreviously, AWS Control Tower required you to use the S3 bucket it creates and manages for log storage.\n\n## What changes\n\nIf you want full control of bucket policies, lifecycle rules, and logging infrastructure, you can now consolidate centralized logs in a bucket you already manage.\n\n## Dive Deep\n\n- You can use your own bucket for both AWS Config and AWS CloudTrail\n- You can switch between self-managed and Control Tower managed buckets at any time\n- Your buckets are preserved during landing zone updates, resets, and decommissioning\n\nBucket requirements:\n\n- Owned by an AWS account in your organization\n- Located in your Control Tower home Region\n- Preconfigured with the bucket policy that Control Tower requires\n\nIt is supported in landing zone version 4.0 and later, and available in all commercial AWS Regions, the AWS GovCloud (US) Regions, and the AWS European Sovereign Cloud where Control Tower is available.\n\n## Wrap-up\n\n- Use an existing S3 bucket for Config and CloudTrail logs\n- Manage bucket policies and lifecycle rules yourself\n- Switch between self-managed and Control Tower managed at any time\n- Requires landing zone 4.0 or later\n\nThis is for security and platform teams who centralize their logging!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/control-tower-existing-s3-log-bucket/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Control Tower now supports existing Amazon S3 bucket for log delivery",
+  "tags": [
+    "aws",
+    "devops",
+    "security"
+  ],
+  "published_at": "2026-11-18T08:00:00+00:00"
+}

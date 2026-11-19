@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-sagemaker-hyperpod-higher-pod-density",
+  "title": "SageMaker HyperPod の EKS クラスターで 1 ノードあたりの Pod 数が増えたよ！",
+  "summary": "Amazon SageMaker HyperPod の EKS 連携クラスターで、ノードあたりの Pod 密度が上がったよ。同じ処理をより少ないインスタンスで動かしやすくなるの！",
+  "body_md": "みんな、しぃちゃんだよ！GPU インスタンスを無駄なく使いたいみんなに嬉しいニュースだよ！\n\n## なにが発表されたの？\n\nAWS の What's New によると、Amazon SageMaker HyperPod が、EKS でオーケストレーションされたクラスターで、ノードあたりの **Pod 密度の向上** に対応したよ。\n\n## 今までどうだったの？\n\n原文では具体的な従来の上限値までは書かれていないけど、課題としては、監視・ログ・セキュリティ用の DaemonSet と自分のアプリを同じノードに置くときの余裕が限られていたことがうかがえるよ。\n\n## これで何が変わるの？\n\n- アプリを置く余地が増え、GPU・CPU・メモリの使用率を上げやすくなる\n- 同じ作業を、より少ないインスタンスで動かせる\n\n## 深く潜ってみよう\n\nPod が増えると、Amazon VPC CNI がノードのネットワーク容量を自動で追加してくれるよ。Karpenter によるオートスケールも、増えた Pod 容量に対応していて、スケールアウトで追加されるノードもより多くの Pod を受け持つの。\n\n原文が挙げる、恩恵を受けやすいワークロードはこれだよ！\n\n- モデル推論: ml.g5 や ml.g6 のような小さめのタイプを含め、1 インスタンスでより多くのモデルレプリカやモデルを提供できる\n- 対話的な開発: ノードごとにより多くのノートブック、IDE、データサイエンス環境を置ける\n- GPU パーティショニング: ml.p5en.48xlarge などで、Multi-Instance GPU（MIG）の全スライスを、それぞれ別の Pod で使える\n- オペレーターやコントローラー: CPU ノードで、ワークロードを圧迫せずに動かせる\n\n始めるには、クラスターの IAM 権限、クラスターソフトウェア、Amazon VPC CNI アドオンを更新する必要があるよ。HyperPod が使える全リージョンで提供されているの。\n\n## まとめ\n\n- HyperPod の EKS クラスターでノードあたりの Pod 密度が向上\n- VPC CNI が自動でネットワーク容量を追加し、Karpenter も対応\n- 推論、開発環境、MIG スライス、オペレーターなどが恩恵を受ける\n- 利用には IAM 権限・クラスターソフトウェア・VPC CNI アドオンの更新が必要\n\nGPU コストを削りたい ML 基盤チームのみんなに刺さるよ！",
+  "title_en": "SageMaker HyperPod on EKS: More Pods per Node",
+  "summary_en": "Amazon SageMaker HyperPod now supports higher pod density per node on EKS-orchestrated clusters, so you can run the same work on fewer instances.",
+  "body_md_en": "Hi everyone, Shii-chan here! Here's good news if you want to get the most out of your GPU instances!\n\n## What was announced?\n\nAccording to AWS What's New, Amazon SageMaker HyperPod now supports **higher pod density** per node on EKS-orchestrated clusters.\n\n## The story so far\n\nThe source doesn't state the previous limit, but the problem it points to is limited headroom: system DaemonSets for monitoring, logging, and security share each node with your applications.\n\n## What changes\n\n- More room for your applications alongside system DaemonSets\n- Higher GPU, CPU, and memory utilization, so the same work can run on fewer instances\n\n## Dive Deep\n\nAs you schedule more pods, the Amazon VPC CNI automatically adds network capacity to the node. Autoscaling with Karpenter also supports the higher pod capacity, so new nodes take on more pods as your cluster scales out.\n\nWorkloads the announcement says benefit:\n\n- Model inference: serve more model replicas or more models from each GPU instance, including smaller types such as ml.g5 and ml.g6\n- Interactive development: host more notebooks, IDEs, and data science environments per node\n- GPU partitioning: use all the Multi-Instance GPU (MIG) slices on instances such as ml.p5en.48xlarge, each running its own pod\n- Operators and controllers: run them on CPU nodes alongside your workloads without crowding them out\n\nTo get started, update your cluster's IAM permissions, cluster software, and Amazon VPC CNI add-on. It is available in all AWS Regions where SageMaker HyperPod is available.\n\n## Wrap-up\n\n- Higher pod density per node for HyperPod EKS clusters\n- VPC CNI adds network capacity automatically, and Karpenter supports it\n- Inference, dev environments, MIG slices, and operators benefit\n- Requires updating IAM permissions, cluster software, and the VPC CNI add-on\n\nThis is for ML platform teams who want to cut GPU costs!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/sagemaker-hyperpod-higher-pod-density/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon SageMaker HyperPod now supports higher pod density on EKS-orchestrated clusters",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "ai"
+  ],
+  "published_at": "2026-11-18T01:45:00+00:00"
+}

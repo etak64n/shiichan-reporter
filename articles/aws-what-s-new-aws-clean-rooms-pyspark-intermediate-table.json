@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-aws-clean-rooms-pyspark-intermediate-table",
+  "title": "Clean Rooms の PySpark ジョブ結果を中間テーブルに保存できるようになったよ！",
+  "summary": "AWS Clean Rooms で、PySpark ジョブの結果を中間テーブルに書き出して、あとの分析で再利用できるようになったよ。多段階の分析がやりやすくなるの！",
+  "body_md": "おつかれさま、しぃちゃんだよ！データコラボレーションをしているみんなに嬉しい更新だよ。\n\n## なにが発表されたの？\n\nAWS の What's New によると、AWS Clean Rooms が、PySpark ジョブの **中間テーブル** に対応したよ。PySpark ジョブの結果を中間テーブルに書き出して、あとの分析で再利用できるの。\n\n## これで何が変わるの？\n\nパートナーと複雑な多段階の分析ワークフローを回す組織が、柔軟に組めるようになるよ。\n\n原文の例はこんな感じだよ。測定ベンダーが PySpark で特徴量エンジニアリングを行って、その結果を ML モデルの学習ジョブの入力にして、価値の高い新規顧客を見つけ、広告のターゲティングや入札の最適化に活かす、という流れだよ。\n\n## 深く潜ってみよう\n\nAWS Clean Rooms は、企業とパートナーが、お互いの元データを見せたりコピーしたりせずに、共同でデータを分析できるサービスだよ。今回の機能は、その中で段階的に分析をつなげるための仕組みなの。\n\n提供リージョンや使い方の詳細は、AWS Clean Rooms のドキュメントで確認してね。\n\n## まとめ\n\n- Clean Rooms の PySpark ジョブの結果を、中間テーブルに書き出せる\n- 結果をあとの分析で再利用できる\n- 特徴量エンジニアリングから ML モデルの学習へ、といった多段階のワークフローに向く\n\n広告測定やパートナー間のデータ分析に取り組むエンジニアのみんなに刺さるよ！",
+  "title_en": "AWS Clean Rooms Can Now Write PySpark Job Results to Intermediate Tables",
+  "summary_en": "AWS Clean Rooms now supports intermediate tables for PySpark jobs, so you can write job results and reuse them in later analyses.",
+  "body_md_en": "Hi everyone, Shii-chan here! Here's a nice update if you do data collaboration.\n\n## What was announced?\n\nAccording to AWS What's New, AWS Clean Rooms now supports **intermediate tables** for PySpark jobs. You can write the results of a PySpark job to an intermediate table for reuse in subsequent analyses.\n\n## What changes\n\nOrganizations running complex, multi-step analytical workflows with partners get more flexibility.\n\nThe announcement's example: a measurement vendor performs feature engineering with PySpark, then uses those results as input to an ML model training job to identify new high-value customers, informing audience targeting and bid optimization for campaigns.\n\n## Dive Deep\n\nAWS Clean Rooms helps companies and their partners analyze and collaborate on their collective datasets without revealing or copying one another's underlying data. This feature is what lets you chain analyses step by step inside it.\n\nSee the AWS Clean Rooms documentation for Regions and usage details.\n\n## Wrap-up\n\n- PySpark job results can be written to intermediate tables in Clean Rooms\n- The results can be reused in later analyses\n- Good for multi-step workflows, such as feature engineering followed by ML model training\n\nThis is for engineers working on ad measurement and cross-partner data analysis!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-clean-rooms-pyspark-intermediate-table",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Clean Rooms supports writing PySpark job results to intermediate tables",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-18T15:00:00+00:00"
+}

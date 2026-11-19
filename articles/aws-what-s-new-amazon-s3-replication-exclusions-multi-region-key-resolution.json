@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-s3-replication-exclusions-multi-region-key-resolution",
+  "title": "S3 レプリケーションに「除外」が登場！1 ルールでマルチテナントのバケットを複製",
+  "summary": "Amazon S3 Replication に、プレフィックスやタグで除外する exclusions と、KMS マルチリージョンキーを自動で合わせる Multi-Region key resolution が追加されたよ。",
+  "body_md": "みんな、しぃちゃんだよ！S3 のレプリケーションルール、増えすぎて困ってたみんな、朗報だよ！\n\n## なにが発表されたの？\n\nAWS の What's New によると、Amazon S3 Replication に 2 つの新機能が追加されたよ。\n\n- **exclusions（除外）**: バケット全体を複製しつつ、特定のプレフィックスやタグ付きオブジェクトをスキップできる\n- **Multi-Region key resolution**: 複製先リージョンで、対応する AWS KMS マルチリージョンキーを使って各レプリカを暗号化する\n\n## 今までどうだったの？\n\n多くのテナントやアプリが共有するバケットでは、特定のデータをスキップしたり、各リージョンの暗号化キーに合わせたりするために、たくさんのレプリケーションルールが必要だったよ。\n\n## これで何が変わるの？\n\nマルチテナントや共有バケットを管理している人は、たくさんのルールを **1 つのルール** にまとめられるよ。\n\n## 深く潜ってみよう\n\n- exclusions の例: ログや実験データなどを除いて、バケット全体を複製する\n- Multi-Region key resolution の例: テナントごとに専用のマルチリージョンキーを持つ数百テナントのバケットでも、1 ルールで複製できる。あとから追加するテナントも対象になる\n- レプリカは、ソースオブジェクトと同じ暗号化要件を満たす\n\nどちらも任意の機能で、追加料金なしで全 AWS リージョンで使えるよ。利用は AWS SDK、AWS CLI、S3 API、S3 コンソールから。\n\n## まとめ\n\n- exclusions で、プレフィックスやタグを除外してバケット全体を複製できる\n- Multi-Region key resolution で、複製先リージョンのマルチリージョンキーが自動で使われる\n- 多数のルールを 1 つにまとめられる\n- 追加料金なし、全リージョンで利用可能\n\nS3 のマルチテナント構成や DR 構成を運用しているエンジニアのみんなに刺さるよ！",
+  "title_en": "S3 Replication Adds Exclusions and Multi-Region Key Resolution",
+  "summary_en": "Amazon S3 Replication now supports exclusions by prefix or tag and Multi-Region key resolution for AWS KMS keys, so many replication rules can collapse into one.",
+  "body_md_en": "Hi everyone, Shii-chan here! If you've been juggling too many S3 replication rules, this is for you!\n\n## What was announced?\n\nAccording to AWS What's New, Amazon S3 Replication gained two capabilities:\n\n- **Exclusions**: replicate an entire bucket while skipping specific prefixes or tagged objects\n- **Multi-Region key resolution**: encrypt each replica with the matching AWS KMS Multi-Region key in the destination Region\n\n## The story so far\n\nBuckets shared by many tenants or applications often needed many replication rules to skip certain data or to match encryption keys in each Region.\n\n## What changes\n\nIf you manage multi-tenant or shared buckets, you can replace many rules with **a single rule**.\n\n## Dive Deep\n\n- Exclusions example: replicate the whole bucket except things like logs or experimental data\n- Multi-Region key resolution example: a bucket holding data for hundreds of tenants, each with its own Multi-Region key, can replicate with one rule, including tenants you add later\n- Replicas meet the same encryption requirements as their source objects\n\nBoth are optional and available at no additional charge in all AWS Regions. Use the AWS SDKs, AWS CLI, S3 API, or S3 console.\n\n## Wrap-up\n\n- Exclusions let you replicate a whole bucket minus certain prefixes or tags\n- Multi-Region key resolution uses the matching Multi-Region key in the destination automatically\n- Many rules can become one\n- No additional charge, all Regions\n\nThis is for engineers running multi-tenant or DR setups on S3!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-s3-replication-exclusions-multi-region-key-resolution/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon S3 Replication adds exclusions and Multi-Region key resolution",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "devops"
+  ],
+  "published_at": "2026-11-18T07:00:00+00:00"
+}
