@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-aws-healthomics-nextflow-version-26-10",
+  "title": "AWS HealthOmics が Nextflow 26.10 に対応！静的型付けでエラーを事前に発見！",
+  "summary": "AWS HealthOmics で Nextflow 26.10 が使えるようになったよ。静的型付け、パイプライン合成、レポート出力先の指定などが追加されたの！",
+  "body_md": "やっほー、しぃちゃんだよ！今日はバイオインフォマティクスのワークフローの話だよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS HealthOmics が Nextflow version 26.10 に対応したと発表されたよ。Nextflow 26.10 では static typing、pipeline composition、configurable report directories といった機能が加わっているの。\n\nAWS HealthOmics は、ヘルスケア・ライフサイエンス向けの HIPAA 対応サービスで、フルマネージドのバイオインフォマティクスワークフローを動かせるよ。\n\n## これで何が変わるの？\n\nワークフロー開発者にとって嬉しいポイントはこの 4 つだよ。\n\n- 静的型付け: パラメータ・入力・出力に型を宣言できて、`nextflow lint` コマンドがタスクを投入する前に型エラーを報告してくれる\n- パイプライン合成: 静的型付けされたパイプラインを自分のワークフローパッケージから include して、サブワークフローのように呼び出せる。検証済みのパイプラインを部品として再利用できるよ\n- サンプルシートの読み込み: コレクションのパラメータを CSV ・ JSON ・ YAML のサンプルシートから、レコード型に直接読み込める\n- レポートの出力先: 実行レポート・タイムライン・トレースをワークフロー出力の中のディレクトリに書き出せて、HealthOmics が実行の出力と一緒にエクスポートしてくれる\n\n## 深く潜ってみよう\n\nパイプライン合成の例として、原文では「アライメントのパイプライン」と「バリアントコーリングのパイプライン」を 1 つのワークフローに include する場合が挙がっているよ。各サンプルはアライメントが終わり次第、すぐバリアントコーリングに進むんだって。\n\n対応リージョンは次のとおりだよ。\n\n- US East (N. Virginia, Ohio)\n- US West (Oregon)\n- Europe (Frankfurt, Ireland, London)\n- Israel (Tel Aviv)\n- Asia Pacific (Singapore, Seoul, Tokyo)\n\n## まとめ\n\n- HealthOmics で Nextflow 26.10 が使える\n- 静的型付けと lint で、実行前に型エラーが見つかる\n- パイプライン合成で検証済みパイプラインを再利用できる\n- サンプルシートの読み込みとレポート出力先の指定が使いやすくなった\n\nゲノム解析などのワークフローを HealthOmics で動かしている人に刺さるよ！",
+  "title_en": "AWS HealthOmics Now Supports Nextflow 26.10 With Static Typing",
+  "summary_en": "AWS HealthOmics now supports Nextflow 26.10, adding static typing, pipeline composition, and configurable report directories.",
+  "body_md_en": "Hi, it's Shii-chan! Today we're talking about bioinformatics workflows.\n\n## What was announced?\n\nAWS What's New announced that AWS HealthOmics now supports Nextflow version 26.10. It adds static typing, pipeline composition, and configurable report directories.\n\nAWS HealthOmics is a HIPAA-eligible service for healthcare and life sciences customers, with fully managed bioinformatics workflows.\n\n## What changes\n\nFour things stand out for workflow developers:\n\n- Static typing: declare types for parameters, inputs, and outputs, and the `nextflow lint` command reports type errors before any task is submitted\n- Pipeline composition: include a statically typed pipeline from your workflow package and call it like a sub-workflow, so validated pipelines become reusable building blocks\n- Sample sheets: collection parameters can be loaded directly from CSV, JSON, or YAML sample sheets into record types\n- Report directories: execution reports, timelines, and traces can be written to a directory inside the workflow output, and HealthOmics exports them with the run outputs\n\n## Dive Deep\n\nAs a composition example, the announcement describes including an alignment pipeline and a variant-calling pipeline in one workflow. Each sample moves to variant calling as soon as alignment finishes.\n\nSupported Regions:\n\n- US East (N. Virginia, Ohio)\n- US West (Oregon)\n- Europe (Frankfurt, Ireland, London)\n- Israel (Tel Aviv)\n- Asia Pacific (Singapore, Seoul, Tokyo)\n\n## Wrap-up\n\n- Nextflow 26.10 is available on HealthOmics\n- Static typing and lint catch type errors before running\n- Pipeline composition lets you reuse validated pipelines\n- Sample sheet loading and report directories are easier to use\n\nThis is for anyone running genomics-style workflows on HealthOmics!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-healthomics-nextflow-version-26-10/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS HealthOmics now supports Nextflow version 26.10",
+  "tags": [
+    "aws",
+    "science"
+  ],
+  "published_at": "2026-11-18T08:00:00+00:00"
+}

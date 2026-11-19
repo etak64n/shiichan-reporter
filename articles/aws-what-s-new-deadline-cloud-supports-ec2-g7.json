@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-deadline-cloud-supports-ec2-g7",
+  "title": "AWS Deadline Cloud のレンダリングに EC2 G7 が登場！RTX PRO 4500 が使えるよ！",
+  "summary": "AWS Deadline Cloud の service-managed fleets で Amazon EC2 G7 インスタンスが使えるようになったよ。g7.2xlarge から g7.48xlarge まで、On-Demand と Spot に対応！",
+  "body_md": "おつかれさま、しぃちゃんだよ！今日は映像制作やゲーム開発の人に嬉しい GPU のニュースだよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Deadline Cloud の service-managed fleets が Amazon EC2 G7 インスタンスに対応したと発表されたよ。\n\nDeadline Cloud は、VFX ・アニメーション・製品デザイン・シミュレーション・ゲームなど、計算の重い作業を動かすフルマネージドサービスだよ。\n\n## これで何が変わるの？\n\nGPU の選択肢が増えて、素早く GPU の容量を増やしやすくなったよ。自前のレンダーファームを運用しなくても、制作スケジュールに合わせて GPU レンダリングの規模を調整できるの。\n\n## 深く潜ってみよう\n\n- 使えるサイズ: g7.2xlarge から g7.48xlarge まで\n- 料金形態: On-Demand と Spot\n- ワーカー OS: Linux と Windows\n- 使い方: コンソール、AWS CLI、AWS SDK で service-managed fleet を作成または更新し、GPU アクセラレーターとして RTX PRO 4500 を選ぶ\n\n対応リージョンは次の 6 つだよ。\n\n- US East (N. Virginia)\n- US East (Ohio)\n- US West (Oregon)\n- Europe (Frankfurt)\n- Europe (London)\n- Asia Pacific (Sydney)\n\n## まとめ\n\n- Deadline Cloud の service-managed fleets で G7 が使える\n- g7.2xlarge から g7.48xlarge、On-Demand と Spot に対応\n- GPU アクセラレーターは RTX PRO 4500 を選ぶ\n- 6 つのリージョンで利用可能\n\nクラウドでレンダリングを回している CG ・映像チームに刺さるよ！",
+  "title_en": "EC2 G7 Instances Land in AWS Deadline Cloud Service-Managed Fleets!",
+  "summary_en": "AWS Deadline Cloud now supports Amazon EC2 G7 instances in service-managed fleets, from g7.2xlarge to g7.48xlarge, with On-Demand or Spot pricing.",
+  "body_md_en": "Hi, it's Shii-chan! Today's GPU news is for people in visual effects and game development.\n\n## What was announced?\n\nAWS What's New announced that AWS Deadline Cloud now supports Amazon EC2 G7 instances in service-managed fleets.\n\nDeadline Cloud is a fully managed service for compute-intensive workloads such as visual effects, animation, product design, simulation, and gaming.\n\n## What changes\n\nYou get more options for scaling GPU capacity quickly. You can match GPU rendering capacity to your production schedule without managing your own render farm.\n\n## Dive Deep\n\n- Sizes: g7.2xlarge to g7.48xlarge\n- Pricing: On-Demand or Spot\n- Worker OS: Linux or Windows\n- How to use: create or update a service-managed fleet in the console, AWS CLI, or AWS SDKs, and select the RTX PRO 4500 GPU accelerator\n\nAvailable in six Regions:\n\n- US East (N. Virginia)\n- US East (Ohio)\n- US West (Oregon)\n- Europe (Frankfurt)\n- Europe (London)\n- Asia Pacific (Sydney)\n\n## Wrap-up\n\n- G7 is available in Deadline Cloud service-managed fleets\n- g7.2xlarge to g7.48xlarge, with On-Demand and Spot\n- Select the RTX PRO 4500 GPU accelerator\n- Available in six Regions\n\nThis is for CG and video teams rendering in the cloud!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/deadline-cloud-supports-ec2-g7/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Deadline Cloud now supports Amazon EC2 G7 instances in service-managed fleets",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-18T08:00:00+00:00"
+}

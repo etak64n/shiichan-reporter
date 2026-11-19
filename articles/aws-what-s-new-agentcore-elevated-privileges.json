@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-agentcore-elevated-privileges",
+  "title": "AgentCore の runtime instances に privileged mode が登場！コンテナも動かせるよ！",
+  "summary": "Amazon Bedrock AgentCore の runtime instances で privileged mode が使えるようになったよ。エージェントがシステムレベルのソフトをインストールしたり、入れ子のコンテナを動かしたりできるの！",
+  "body_md": "やっほー、しぃちゃんだよ！今日は AI エージェントの実行環境に、ちょっと強い権限が使えるようになったニュースだよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Bedrock AgentCore の runtime instances が privileged mode に対応したと発表されたよ。エージェントがシステムレベルのソフトウェアをインストールしたり、入れ子のコンテナ（nested containers）を実行したりできるモードなの。\n\nruntime instances は、Amazon EC2 インスタンス上でエージェントを動かし、プロビジョニング・パッチ適用・スケーリング・ライフサイクルは AgentCore が面倒を見てくれる仕組みだよ。\n\n## これで何が変わるの？\n\n原文では、次のような使い方が例に挙がっているよ。\n\n- コーディングエージェントが Postgres や Redis などの依存サービスをコンテナで起動して、結合テストを走らせる\n- コード近代化エージェントが、移行に必要なコンパイラやライブラリをインストールする\n\nエージェントが自分で動く環境を整えられるので、テスト環境づくりが楽になりそうだね。\n\n## 深く潜ってみよう\n\n- 有効化は、runtime instances で動くエージェントランタイムを作成・更新するときに行うよ\n- privileged なエージェントが動くセッションは、そのエージェントだけを動かす。昇格した権限は 1 つのエージェントと、そのインスタンスの中に閉じるよ\n- privileged mode を使わないエージェントは、これまでどおりの standard mode のまま。既存のエージェントは変わらないよ\n- 原文では「standard mode が多くのエージェントに向いていて、システムソフトのインストールやコンテナ実行が必要なときだけ privileged mode を使う」と案内されているよ\n- 提供範囲は、AgentCore runtime instances が使えるすべての AWS リージョンだよ\n\n## まとめ\n\n- AgentCore runtime instances で privileged mode が使える\n- システムレベルのソフトのインストールと、入れ子のコンテナ実行ができる\n- 1 セッション 1 エージェントで、権限の影響範囲は限定される\n- 既存エージェントは標準モードのまま変わらない\n\nテストや移行作業でコンテナが必要なエージェントを作っている人に刺さるよ！",
+  "title_en": "AgentCore runtime instances Gets Privileged Mode: Run Containers Inside Your Agent!",
+  "summary_en": "Amazon Bedrock AgentCore runtime instances now support privileged mode. Agents can install system-level software and run nested containers!",
+  "body_md_en": "Hi, it's Shii-chan! Today's news is about giving AI agents a bit more power in their runtime.\n\n## What was announced?\n\nAWS What's New announced that Amazon Bedrock AgentCore runtime instances now support privileged mode. It lets your agents install system-level software and run nested containers.\n\nRuntime instances run your agents on Amazon EC2 instances, while AgentCore handles provisioning, patching, scaling, and lifecycle management.\n\n## What changes\n\nThe announcement gives two examples:\n\n- A coding agent starts its service dependencies, such as Postgres and Redis, as containers and runs integration tests against them\n- A code-modernization agent installs the compilers and libraries that a migration needs\n\nAgents can prepare their own working environment, which should make test setups easier.\n\n## Dive Deep\n\n- You turn it on when you create or update an agent runtime that runs on runtime instances\n- A session that runs a privileged agent runs only that agent, so elevated privileges stay with one agent on its instance\n- Agents that don't use privileged mode keep the default standard mode, so existing agents don't change\n- The announcement says standard mode suits most agents, and you should use privileged mode only if your agent needs to install system-level software or run containers\n- It's available in all AWS Regions where AgentCore runtime instances are available\n\n## Wrap-up\n\n- Privileged mode is now available on AgentCore runtime instances\n- Agents can install system-level software and run nested containers\n- One agent per session keeps the scope of elevated privileges limited\n- Existing agents stay in standard mode\n\nThis is for anyone building agents that need containers for testing or migration work!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/agentcore-elevated-privileges/",
+  "source_name": "AWS What's New",
+  "og_title": "AgentCore runtime instances now support privileged mode",
+  "tags": [
+    "aws",
+    "ai",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-18T07:00:00+00:00"
+}

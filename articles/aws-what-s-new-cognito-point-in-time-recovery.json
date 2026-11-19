@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-cognito-point-in-time-recovery",
+  "title": "Cognito の user pool を「あの時点」に巻き戻せる！point-in-time recovery が登場！",
+  "summary": "Amazon Cognito が point-in-time recovery（PITR）に対応したよ。ユーザー ID ・パスワード・ MFA ・パスキーをそのままに、user pool のユーザーデータを以前の時点へ復元できるの！",
+  "body_md": "おつかれさま、しぃちゃんだよ！スクリプトの実行ミスでユーザーを消しちゃった、なんて考えるだけで冷や汗が出るよね。今日はそんなときの味方のニュースだよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Cognito が point-in-time recovery（PITR）に対応したと発表されたよ。user pool のユーザーデータを、以前の時点に復元できる機能なの。\n\n## 今までどうだったの？\n\nこれまでは、エクスポートと復元の仕組みを自分で作って運用する必要があったんだ。しかも復元したユーザーには新しい ID が割り当てられて、パスワードもリセットしてもらう必要があったよ。\n\n## これで何が変わるの？\n\nPITR では、復旧ポイントを選んで、作成・更新・削除されるユーザー、グループ、MFA 設定、パスキーの数をプレビューしてから、復旧を開始またはキャンセルできるよ。\n\n復旧したユーザーは、ID ・パスワード・ MFA 設定・パスキーがそのまま。パスワードをリセットしなくてもサインインできるんだって。たとえば、スクリプトが誤ってユーザーを削除・変更したときに、実行直前の状態へ戻せるよ。\n\n## 深く潜ってみよう\n\n- 有効化: Essentials と Plus のフィーチャープランの user pool では、自動で有効。追加料金なし\n- 復旧できる期間: Essentials は最大 1 日、Plus は最大 14 日\n- 操作方法: AWS マネジメントコンソール、Amazon Cognito API、AWS CLI、AWS SDK\n- 提供範囲: Amazon Cognito が使えるすべての AWS リージョン\n\n## まとめ\n\n- user pool のユーザーデータを以前の時点に復元できる\n- 復元前にユーザー・グループ・ MFA ・パスキーの変更数をプレビューできる\n- ID ・パスワード・ MFA ・パスキーが保たれる\n- 復旧期間は Essentials で最大 1 日、Plus で最大 14 日\n\nCognito でユーザー管理をしている人は、運用ミスへの備えとして知っておくと安心だよ！",
+  "title_en": "Amazon Cognito Adds Point-in-Time Recovery: Roll Back Your User Pool!",
+  "summary_en": "Amazon Cognito now supports point-in-time recovery (PITR) so you can restore a user pool's user data to an earlier time, keeping user IDs, passwords, MFA settings, and passkeys.",
+  "body_md_en": "Hi, it's Shii-chan! The thought of a script accidentally deleting your users is chilling. Today's news is a lifesaver for that moment.\n\n## What was announced?\n\nAWS What's New announced that Amazon Cognito now supports point-in-time recovery (PITR), so you can restore the user data in a user pool to an earlier time.\n\n## The story so far\n\nPreviously, you had to build and maintain your own export and restore process. Restored users also received new identifiers and had to reset their passwords.\n\n## What changes\n\nWith PITR, you choose a recovery point, preview how many users, groups, multi-factor authentication (MFA) settings, and passkeys the recovery will create, update, or delete, and then start or cancel the recovery.\n\nRecovered users keep their identifiers, passwords, MFA settings, and passkeys, so they can sign in without resetting their credentials. For example, if a script deletes or modifies users by mistake, you can restore the data to the moment before it ran.\n\n## Dive Deep\n\n- Enablement: automatic for user pools on the Essentials and Plus feature plans, at no additional charge\n- Recovery window: up to 1 day on Essentials, up to 14 days on Plus\n- How to use it: AWS Management Console, the Amazon Cognito API, AWS CLI, or AWS SDKs\n- Availability: all AWS Regions where Amazon Cognito is available\n\n## Wrap-up\n\n- Restore a user pool's user data to an earlier time\n- Preview the changes to users, groups, MFA, and passkeys before recovering\n- IDs, passwords, MFA settings, and passkeys are preserved\n- Up to 1 day on Essentials, up to 14 days on Plus\n\nIf you manage users with Cognito, it's reassuring to know about this for operational mistakes!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/cognito-point-in-time-recovery/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Cognito now supports point-in-time recovery",
+  "tags": [
+    "aws",
+    "security"
+  ],
+  "published_at": "2026-11-18T17:00:00+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-custom-cross-account-td",
+  "title": "AWS Transform custom の変換定義を組織全体で共有！RAM でクロスアカウント対応！",
+  "summary": "AWS Transform custom の変換定義（TD）と関連する lessons を、AWS RAM 経由でアカウント・ OU ・組織全体に共有できるようになったよ。共有はコピーではなく、最新版を使えるライブリソースなの！",
+  "body_md": "こんにちは、しぃちゃんだよ！アップグレードや移行の自動化を、チーム全体で使い回せるようになったよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Transform custom が、変換定義（transformation definitions、TD）と関連する lessons を、AWS Resource Access Manager（AWS RAM）を通じて、AWS アカウント、組織単位（OU）、AWS Organizations の組織全体で共有できるようになったと発表されたよ。\n\nAWS Transform custom は AWS Transform の機能で、API やフレームワークのアップグレード、移行、言語の変換など、技術スタック全体の変換を行うものだよ。\n\n## これで何が変わるの？\n\nTD を静的なコピーではなく、ライブなリソースとして共有できるよ。利用側は、デフォルトで所有者が公開した最新バージョンを実行するの。所有者は管理権限を保ったままだよ。\n\n中央のチームが TD を一度作って組織全体に共有できるので、複数アカウントで標準化された変換を展開したいプラットフォームエンジニアリングチームや AWS パートナーに便利そうだね。\n\n## 深く潜ってみよう\n\n- 所有者は 4 つのマネージド権限から選ぶ。実行のみ（デフォルト）から、lessons の利用・ lessons の所有者への提供・ TD のダウンロードを許可するものまである\n- lessons が所有者に戻るのは、権限が許可していて、かつ利用側がオプトインしたときだけ\n- 使い方: AWS Transform CLI と AWS RAM\n- 提供リージョンは次の 8 つ\n  - US East (N. Virginia)\n  - Europe (Frankfurt)\n  - Europe (London)\n  - Asia Pacific (Mumbai)\n  - Asia Pacific (Seoul)\n  - Asia Pacific (Sydney)\n  - Asia Pacific (Tokyo)\n  - Canada (Central)\n\n## まとめ\n\n- TD と lessons を AWS RAM でクロスアカウント共有できる\n- 共有はライブリソースで、利用側は最新の公開版を実行する\n- 4 つの権限で、実行のみから lessons の提供・ダウンロードまで調整できる\n- 8 つのリージョンで利用可能\n\n全社的なコード変換の標準化を進めるプラットフォームチームに刺さるよ！",
+  "title_en": "AWS Transform Custom Now Shares Transformation Definitions Across Accounts",
+  "summary_en": "AWS Transform custom can now share transformation definitions (TDs) and their lessons across accounts, OUs, or an entire organization through AWS RAM, as live resources rather than static copies.",
+  "body_md_en": "Hi, it's Shii-chan! Now you can reuse upgrade and migration automation across your whole organization.\n\n## What was announced?\n\nAWS What's New announced that AWS Transform custom now lets you share transformation definitions (TDs) and their associated lessons across AWS accounts, organizational units (OUs), or your entire organization in AWS Organizations through AWS Resource Access Manager (AWS RAM).\n\nAWS Transform custom is a capability of AWS Transform that performs transformations across your technology stack, including API and framework upgrades, migrations, and language translations.\n\n## What changes\n\nYou can share TDs as live resources rather than static copies, so consumers run the owner's latest published version by default while the owner keeps full control.\n\nA central team can create a TD once and share it organization-wide, which is useful for platform engineering teams and AWS Partners who deploy standardized transformations across accounts.\n\n## Dive Deep\n\n- The owner chooses from four managed permissions, ranging from execute-only (the default) to permissions that let consumers use your lessons, contribute lessons back, or download the TD\n- Lessons flow back to the owner only when the permission allows it and the consumer opts in\n- Available via the AWS Transform CLI and AWS RAM\n- Available in eight Regions:\n  - US East (N. Virginia)\n  - Europe (Frankfurt)\n  - Europe (London)\n  - Asia Pacific (Mumbai)\n  - Asia Pacific (Seoul)\n  - Asia Pacific (Sydney)\n  - Asia Pacific (Tokyo)\n  - Canada (Central)\n\n## Wrap-up\n\n- Share TDs and lessons across accounts with AWS RAM\n- Shared as live resources, so consumers run the latest published version\n- Four permissions, from execute-only to contributing lessons or downloading\n- Available in eight Regions\n\nThis is for platform teams standardizing code transformations company-wide!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-custom-cross-account-td/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Transform custom now supports cross-account sharing of transformation definitions",
+  "tags": [
+    "aws",
+    "devops",
+    "ai"
+  ],
+  "published_at": "2026-11-18T19:30:00+00:00"
+}

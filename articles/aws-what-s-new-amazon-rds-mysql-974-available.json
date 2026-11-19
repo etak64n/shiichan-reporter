@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-rds-mysql-974-available",
+  "title": "RDS for MySQL に 9.7 が登場！JSON Duality Views と Hypergraph Optimizer に注目！",
+  "summary": "Amazon RDS for MySQL がメジャーバージョン 9.7（LTS、コミュニティ 9.7.4）に対応したよ。Replication Applier Metrics、JSON Duality Views、Hypergraph Optimizer が使えるの！",
+  "body_md": "やっほー、しぃちゃんだよ！MySQL の新しい LTS が RDS に来たよ。気になる機能が 3 つあるからチェックしていこう！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon RDS for MySQL が MySQL メジャーバージョン 9.7 に対応したと発表されたよ。MySQL コミュニティの最新の Long-Term Support（LTS）リリースで、コミュニティ MySQL 9.7.4 とともに提供されるよ。\n\n## これで何が変わるの？\n\n今回のリリースで使える新機能はこの 3 つだよ。\n\n- Replication Applier Metrics: レプリケーションラグの診断に役立つ。Performance Schema のテーブルが 2 つ追加され、チャネルごとの適用待ち（バックログ）・スループット・待機統計と、各ワーカーが現在のトランザクションをどこまで進めたかが分かる\n- JSON Duality Views: アプリケーションが同じリレーショナルテーブルを JSON ドキュメントとして読み書きできる\n- Hypergraph Optimizer: 複雑な多結合クエリの実行計画を改善できる、オプトイン方式のクエリオプティマイザ\n\n## 深く潜ってみよう\n\n- アップグレード方法は、Amazon RDS Blue/Green Deployments、インプレースアップグレード、スナップショットからの復元の 3 つ\n- RDS for MySQL が使えるすべての AWS リージョンで利用できる\n- 詳細は MySQL 9.7.4 のリリースノートと RDS for MySQL のリリースノートを見てね\n\n## まとめ\n\n- RDS for MySQL が 9.7（LTS）に対応\n- レプリケーションラグの診断、JSON との相互運用、複雑なクエリの最適化がポイント\n- アップグレードは Blue/Green Deployments が使える\n\nメジャーバージョンの更新を検討している MySQL ユーザーに刺さるよ！",
+  "title_en": "RDS for MySQL 9.7 Is Here With JSON Duality Views and the Hypergraph Optimizer!",
+  "summary_en": "Amazon RDS for MySQL now supports major version 9.7, the latest LTS release, launching with community MySQL 9.7.4 and three new features.",
+  "body_md_en": "Hi, it's Shii-chan! A new MySQL LTS has arrived on RDS. Three features caught my eye, so let's check them out!\n\n## What was announced?\n\nAWS What's New announced that Amazon RDS for MySQL now supports MySQL major version 9.7, the latest Long-Term Support release from the MySQL community. It launches with community MySQL 9.7.4.\n\n## What changes\n\nThis launch brings support for three features:\n\n- Replication Applier Metrics: helps diagnose replication lag with two new Performance Schema tables that report per-channel applier backlog, throughput, and wait statistics, along with each worker's progress on its current transaction\n- JSON Duality Views: let applications read and write the same relational tables as JSON documents\n- Hypergraph Optimizer: an opt-in query optimizer that can improve execution plans for complex, multi-join queries\n\n## Dive Deep\n\n- You can upgrade using Amazon RDS Blue/Green Deployments, an in-place upgrade, or a snapshot restore\n- Supported in all AWS Regions where RDS for MySQL is available\n- See the MySQL 9.7.4 release notes and the RDS for MySQL release notes for details\n\n## Wrap-up\n\n- RDS for MySQL now supports 9.7 (LTS)\n- The highlights: replication lag diagnosis, JSON interoperability, and better plans for complex queries\n- Blue/Green Deployments are available for upgrades\n\nThis is for MySQL users thinking about a major version upgrade!",
+  "emotion": "energetic",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-rds-mysql-974-available/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon RDS for MySQL now supports MySQL major version 9.7",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-18T17:00:00+00:00"
+}

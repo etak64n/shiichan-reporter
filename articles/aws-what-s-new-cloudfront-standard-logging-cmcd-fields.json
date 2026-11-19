@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-cloudfront-standard-logging-cmcd-fields",
+  "title": "CloudFront 標準ログに CMCD 対応！動画の再生トラブルを配信ログと突き合わせよう！",
+  "summary": "Amazon CloudFront の標準ログで、これまでリアルタイムログ限定だった項目と CMCD（Common Media Client Data）の項目が使えるようになったよ。ストリーミングの原因調査がしやすくなるの！",
+  "body_md": "やっほー、しぃちゃんだよ！動画配信をしている人に嬉しいログのアップデートだよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon CloudFront の standard logging が、これまでリアルタイムログでしか使えなかった追加のアクセスログ項目に対応したと発表されたよ。これらの項目を標準ログに含めて、Amazon S3、Amazon CloudWatch Logs、Amazon Data Firehose へ配信できるようになったの。\n\n## これで何が変わるの？\n\nリアルタイムログ用のデータストリームを別に用意しなくても、これらの項目が標準ログで取れるよ。\n\n追加される項目は次のとおりだよ。\n\n- リクエストを処理した CloudFront サーバーの IP アドレス\n- プライマリのディストリビューションとステージングのディストリビューションのトラフィックを区別する識別子\n- メディア品質の信頼度スコア\n- Common Media Client Data（CMCD）の項目: 動画プレーヤーがリクエストごとに送る、ビットレート、バッファ長、再生セッション ID などの情報\n\n## 深く潜ってみよう\n\nストリーミングのチームは、これらの項目で、視聴者が体験した再生の問題と CloudFront の配信データを突き合わせられるので、トラブルシューティングが速くなるよ。\n\n- 利用できる場所: すべての CloudFront エッジロケーション\n- 料金: 標準ログの料金が適用される\n\n## まとめ\n\n- 標準ログでリアルタイムログ限定だった項目が使える\n- CMCD の項目で、ビットレート・バッファ長・再生セッション ID が分かる\n- S3、CloudWatch Logs、Firehose に配信できる\n\n動画配信の品質調査をしているエンジニアに刺さるよ！",
+  "title_en": "CloudFront Standard Logging Now Includes CMCD Fields for Easier Streaming Debugging",
+  "summary_en": "Amazon CloudFront standard logging now supports fields that were previously real-time-log only, plus Common Media Client Data (CMCD) fields, to speed up streaming troubleshooting.",
+  "body_md_en": "Hi, it's Shii-chan! This is a logging update that video streaming teams will like.\n\n## What was announced?\n\nAWS What's New announced that Amazon CloudFront standard logging now supports additional access log fields that were previously available only in CloudFront real-time logs. You can include them in your standard logs and deliver them to Amazon S3, Amazon CloudWatch Logs, or Amazon Data Firehose.\n\n## What changes\n\nYou can get these fields without setting up an additional data stream for real-time logs.\n\nThe new fields include:\n\n- The IP address of the CloudFront server that handled the request\n- Identifiers that separate traffic on a primary distribution from traffic on a staging distribution\n- A media quality confidence score\n- Common Media Client Data (CMCD) fields, which video players send with each request to report details like bitrate, buffer length, and playback session ID\n\n## Dive Deep\n\nStreaming teams can use these fields to match playback problems viewers see with CloudFront delivery data, which makes troubleshooting faster.\n\n- Availability: all CloudFront edge locations\n- Pricing: standard logging pricing applies\n\n## Wrap-up\n\n- Fields that were real-time-log only are now available in standard logs\n- CMCD fields show bitrate, buffer length, and playback session ID\n- Deliver to S3, CloudWatch Logs, or Firehose\n\nThis is for engineers investigating video delivery quality!",
+  "emotion": "smug",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/cloudfront-standard-logging-cmcd-fields",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon CloudFront standard logging now supports CMCD and additional log fields",
+  "tags": [
+    "aws",
+    "web"
+  ],
+  "published_at": "2026-11-18T19:28:00+00:00"
+}

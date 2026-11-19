@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-braket-new-device-state",
+  "title": "Amazon Braket に PAUSED ステータスが追加！量子タスクがいつ動くか分かるよ！",
+  "summary": "Amazon Braket のデバイスステータスに PAUSED が追加されたよ。受付はしているけれど今は処理していない状態で、理由の目安も API から分かるの！",
+  "body_md": "こんにちは、しぃちゃんだよ！量子コンピューティングのサービス Amazon Braket から、ちょっと地味だけど実用的なアップデートが来たよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Braket にデバイスステータス PAUSED が追加されたと発表されたよ。量子タスクやハイブリッドジョブをいつ投入できて、いつ実行されるのかが分かりやすくなるの。\n\n## これで何が変わるの？\n\n今回の追加で、デバイスの状態はこの 4 つで表されるよ。\n\n- ONLINE: タスクとジョブを受け付けていて、稼働時間帯の間は実際に処理している\n- PAUSED（新規）: 受け付けてはいるけれど、今は処理していない。稼働時間帯の外・短時間のメンテナンス中・予約（reservation）中のとき。投入したタスクとジョブは QUEUED のままで、ONLINE になったら実行される\n- OFFLINE: 利用できず、新しいタスクやジョブも受け付けない。計画メンテナンス、アップグレード、運用上の問題など\n- RETIRED: 恒久的に廃止されていて、Braket では使えない\n\n「止まっているのか、待てば動くのか」が区別できるのが嬉しいところだよ。\n\n## 深く潜ってみよう\n\n- PAUSED のときは Status Reason で、停止の理由・開始時刻・終了見込み（分かる場合）が分かるよ\n- GetDevice API が返す PAUSED の理由は、OUTSIDE_AVAILABILITY_WINDOW、MAINTENANCE、RESERVATION のどれかだよ\n- ステータスは Braket コンソールの Devices ページ、GetDevice と SearchDevices の API、Amazon Braket SDK で確認できるよ\n- 提供リージョンは、US East (N. Virginia)、US West (N. California)、US West (Oregon)、Europe (London)、Europe (Stockholm) だよ\n\n## まとめ\n\n- 新しいステータス PAUSED が追加された\n- PAUSED 中でも投入はできて、ONLINE になると実行される\n- 理由は 3 種類で、API から取得できる\n- コンソール・ API ・ SDK から確認できる\n\nBraket にジョブを投げる量子ソフトウェア開発者さんに、地味に刺さる更新だよ！",
+  "title_en": "Amazon Braket Adds PAUSED Device Status: Know When Your Quantum Tasks Will Run",
+  "summary_en": "Amazon Braket adds a new device status, PAUSED, so you can tell when quantum tasks and hybrid jobs are accepted but not yet being processed.",
+  "body_md_en": "Hi, it's Shii-chan! Amazon Braket, AWS's quantum computing service, got a small but practical update.\n\n## What was announced?\n\nAWS What's New announced a new Amazon Braket device status, PAUSED. It gives clear information on when you can submit quantum tasks and hybrid jobs and when they will run.\n\n## What changes\n\nDevice status now tells you one of four things:\n\n- ONLINE: the device accepts tasks and jobs and is actively processing them during its availability window\n- PAUSED (new): the device accepts tasks and jobs but isn't processing them right now, because it is outside its availability window, in short-term maintenance, or in a reservation. Submitted tasks and jobs stay QUEUED and run once the device is ONLINE\n- OFFLINE: the device is unavailable and isn't accepting new tasks or jobs, for example due to scheduled maintenance, upgrades, or operational issues\n- RETIRED: the device has been permanently decommissioned\n\nNow you can tell \"stopped\" apart from \"will run if I wait\".\n\n## Dive Deep\n\n- When a device is PAUSED, a Status Reason tells you why, when the status began, and an estimated end time if one is available\n- The GetDevice API returns one of these reasons for PAUSED: OUTSIDE_AVAILABILITY_WINDOW, MAINTENANCE, or RESERVATION\n- You can see device status on the Devices page in the Braket console, with the GetDevice and SearchDevices APIs, or with the Amazon Braket SDK\n- Available in US East (N. Virginia), US West (N. California), US West (Oregon), Europe (London), and Europe (Stockholm)\n\n## Wrap-up\n\n- A new PAUSED status is available\n- You can still submit while PAUSED, and tasks run once the device is ONLINE\n- There are three reasons, available via API\n- Check it in the console, APIs, or SDK\n\nA small but useful update for quantum developers who submit jobs to Braket!",
+  "emotion": "smug",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/braket-new-device-state/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Braket adds PAUSED device status",
+  "tags": [
+    "aws",
+    "science"
+  ],
+  "published_at": "2026-11-18T08:00:00+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-rds-mysql-8413-available",
+  "title": "RDS for MySQL が 8.4.13 に対応！CVE 修正入りのマイナーバージョンが来たよ！",
+  "summary": "Amazon RDS for MySQL が、コミュニティ MySQL の最新マイナーである 8.4.13 に対応したよ。CVE の修正などが入っているので、アップグレードが推奨されているの！",
+  "body_md": "こんにちは、しぃちゃんだよ！今日は定番のバージョンアップのお知らせだよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon RDS for MySQL が MySQL マイナーバージョン 8.4.13 に対応したと発表されたよ。コミュニティ MySQL が出した最新のマイナーバージョンだよ。\n\n## これで何が変わるの？\n\n原文では、以前のバージョンの CVE（共通脆弱性識別子）の修正や、バグ修正、パフォーマンス改善、コミュニティによる新機能を取り込むために、新しいマイナーバージョンへのアップグレードが推奨されているよ。\n\n## 深く潜ってみよう\n\n- 自動マイナーバージョンアップグレードを有効にすると、メンテナンスウィンドウ中にアップグレードされる\n- 多数のインスタンスを運用しているなら、AWS Organizations の Upgrade Rollout Policy を使うと、優先度の低い環境で検証してから重要な環境へ、と段階的に進められるよ\n- マイナーバージョンのアップグレードは、インプレースでもスナップショットからの復元でも実行できる\n- RDS for MySQL が使えるすべての AWS リージョンで利用できるよ\n\n## まとめ\n\n- RDS for MySQL が 8.4.13 に対応\n- CVE 修正・バグ修正・性能改善が目的\n- 自動マイナーバージョンアップグレードと Upgrade Rollout Policy で段階的に更新できる\n\nRDS for MySQL 8.4 を運用している人は、検証環境から順に確認してね！",
+  "title_en": "RDS for MySQL Supports 8.4.13: Time to Pick Up the Latest Minor Version",
+  "summary_en": "Amazon RDS for MySQL now supports MySQL minor version 8.4.13, the latest community minor release. Upgrading is recommended for CVE fixes and bug fixes.",
+  "body_md_en": "Hi, it's Shii-chan! Today's news is a classic version update.\n\n## What was announced?\n\nAWS What's New announced that Amazon RDS for MySQL now supports MySQL minor version 8.4.13, the latest minor released by community MySQL.\n\n## What changes\n\nThe announcement recommends upgrading to newer minor versions to accept fixes for Common Vulnerabilities and Exposures (CVEs) in prior versions, and to benefit from bug fixes, performance improvements, and new functionality from the MySQL community.\n\n## Dive Deep\n\n- With automatic minor version upgrades enabled, databases upgrade during scheduled maintenance windows\n- At scale, the AWS Organizations Upgrade Rollout Policy lets you upgrade in phases, validating on lower-priority environments before your most critical ones\n- Minor version upgrades can be done in-place or via snapshot restore\n- Supported in all AWS Regions where RDS for MySQL is available\n\n## Wrap-up\n\n- RDS for MySQL now supports 8.4.13\n- Upgrade for CVE fixes, bug fixes, and performance improvements\n- Automatic minor version upgrades and the Upgrade Rollout Policy help you roll out in phases\n\nIf you run RDS for MySQL 8.4, start checking in your test environments first!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-rds-mysql-8413-available/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon RDS for MySQL supports MySQL minor version 8.4.13",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "security"
+  ],
+  "published_at": "2026-11-18T17:00:00+00:00"
+}

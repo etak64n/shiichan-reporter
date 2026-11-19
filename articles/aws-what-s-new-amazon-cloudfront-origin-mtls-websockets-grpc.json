@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-cloudfront-origin-mtls-websockets-grpc",
+  "title": "CloudFront の origin mTLS が WebSocket と gRPC に対応！共有シークレットにサヨナラ！",
+  "summary": "Amazon CloudFront の origin mutual TLS が WebSocket と gRPC のトラフィックに対応したよ。HTTP ・ WebSocket ・ gRPC を同じ TLS ベースの認証でオリジンに届けられるの！",
+  "body_md": "やっほー、しぃちゃんだよ！チャットやライブダッシュボードみたいな常時接続のアプリを CloudFront の裏に置いている人に、うれしいセキュリティの更新だよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon CloudFront が AWS リージョン内のアプリケーションオリジンへの WebSocket と gRPC のトラフィックで、CloudFront とオリジンの間の相互 TLS 認証（origin mTLS）に対応したと発表されたよ。\n\n## 今までどうだったの？\n\nWebSocket や gRPC を CloudFront 経由で配信するとき、CloudFront から来たリクエストかどうかを見分けるには、共有シークレットや IP の許可リストを使うしかなかったんだ。運用が複雑で、強い認証にはならなかったよ。\n\n## これで何が変わるの？\n\nTLS 証明書で CloudFront からのリクエストを認証できるようになるよ。永続的な双方向通信やストリーミング通信が必要な、インターネットに公開されたアプリ（チャット、共同編集ツール、ライブダッシュボードなど）を、認証されていないリクエストから守れるの。\n\nHTTP、WebSocket、gRPC のトラフィックを、1 つの TLS ベースの認証でオリジンにそろえられるのが嬉しいところだね。\n\n## 深く潜ってみよう\n\n- 対象オリジン: ALB や API Gateway などの AWS 内のオリジン、オンプレミスのオリジン、AWS 外でホストされているオリジン\n- 料金: origin mTLS に追加料金はなし。従量課金と、Business と Premium のフラットレートプランで利用できる\n- 詳しくは CloudFront の origin mutual TLS のドキュメントを見てね\n\n## まとめ\n\n- origin mTLS が WebSocket と gRPC に対応\n- 共有シークレットや IP 許可リストの代わりに、TLS 証明書で認証できる\n- AWS 内・オンプレミス・ AWS 外のオリジンで使える\n- 追加料金なし\n\nWebSocket や gRPC のオリジンを CloudFront で守りたいエンジニアに刺さるよ！",
+  "title_en": "CloudFront Origin mTLS Now Supports WebSocket and gRPC!",
+  "summary_en": "Amazon CloudFront origin mutual TLS now works with WebSocket and gRPC traffic, so one TLS-based authentication covers HTTP, WebSocket, and gRPC requests to your origin.",
+  "body_md_en": "Hi, it's Shii-chan! This is a nice security update for anyone running persistent-connection apps, like chat or live dashboards, behind CloudFront.\n\n## What was announced?\n\nAWS What's New announced that Amazon CloudFront now supports WebSocket and gRPC traffic to application origins in AWS Regions, with mutual TLS authentication between CloudFront and the origin (origin mTLS).\n\n## The story so far\n\nPreviously, customers serving WebSocket or gRPC traffic through CloudFront had to use shared secrets or IP allow-lists to identify requests coming from CloudFront. This was operationally complex and didn't provide strong authentication.\n\n## What changes\n\nYou can use TLS certificates to authenticate requests from CloudFront. Origin mTLS protects internet-facing applications that need persistent, bidirectional or streaming connections, such as chat platforms, collaborative editing tools, or live dashboards, from unauthenticated requests.\n\nYou can use one TLS-based authentication for HTTP, WebSocket, and gRPC traffic to an origin.\n\n## Dive Deep\n\n- Supported origins: origins within AWS such as Application Load Balancer and API Gateway, on-premises origins, and origins hosted outside AWS\n- Pricing: no additional charge for origin mTLS. It's available with pay-as-you-go pricing and in the Business and Premium flat-rate pricing plans\n- See the CloudFront origin mutual TLS documentation for details\n\n## Wrap-up\n\n- Origin mTLS now supports WebSocket and gRPC\n- Authenticate with TLS certificates instead of shared secrets or IP allow-lists\n- Works with origins in AWS, on-premises, and outside AWS\n- No additional charge\n\nThis is for engineers who want to protect WebSocket and gRPC origins behind CloudFront!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-cloudfront-origin-mtls-websockets-grpc/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon CloudFront Announces WebSocket and gRPC Support for Origin Mutual TLS",
+  "tags": [
+    "aws",
+    "security",
+    "web"
+  ],
+  "published_at": "2026-11-18T18:00:00+00:00"
+}

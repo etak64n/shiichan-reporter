@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-eks-hybrid-nodes-pricing-change",
+  "title": "EKS Hybrid Nodes が大型サーバーでお得に！64 vCPU は 50% 引き、256 vCPU は 88% 引き！",
+  "summary": "Amazon EKS Hybrid Nodes で、1 ノードあたりの課金 vCPU が 32 に頭打ちになったよ。最初の料金ティアでは、64 vCPU のノードは 50%、256 vCPU のノードは 88% 安くなるの！",
+  "body_md": "みんな、しぃちゃんだよ！今日は料金が下がるニュースだよ。大きなサーバーを持っている人は要チェック！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon EKS Hybrid Nodes の大型ノード向け料金が下がり、1 ノードあたりの課金対象 vCPU が 32 vCPU を上限になったと発表されたよ。32 vCPU を超える分は課金されなくなるの。\n\nAmazon EKS Hybrid Nodes は、オンプレミスやエッジにある既存のインフラを Amazon EKS クラスターのノードとして使える機能だよ。\n\n## これで何が変わるの？\n\n大型サーバーのコストが、vCPU 数に比例して増えなくなるよ。具体的には、最初の料金ティアで次のようになるんだって。\n\n- 64 vCPU のノード: 以前より 50% 安い\n- 256 vCPU のノード: 以前より 88% 安い\n\nどちらも 32 vCPU 分だけの課金になるからだよ。データ所在地・レイテンシ・規制などの理由でオンプレミスに置く必要がある、AI/ML のトレーニングや推論といった重いワークロードで、大型のベアメタルや GPU サーバーを使いやすくなるね。\n\n## 深く潜ってみよう\n\n- 新しいハイブリッドノードには自動で適用される\n- すでにクラスターに接続している既存のハイブリッドノードに適用するには、ノードを削除して再接続する必要がある\n- 32 vCPU 以下のノードは、これまでどおり実際の vCPU 数で課金される\n- 既存の段階料金（ティア）も引き続き適用されるので、月間使用量が増えると実効単価は下がる\n- Amazon EKS Hybrid Nodes が使えるすべての AWS リージョンで利用できる\n\n## まとめ\n\n- 1 ノードあたりの課金 vCPU が 32 で頭打ちに\n- 最初のティアで、64 vCPU は 50% 減、256 vCPU は 88% 減\n- 新しいノードは自動適用、既存ノードは削除して再接続が必要\n- 32 vCPU 以下のノードの課金は変わらない\n\nオンプレミスの GPU サーバーや大型ベアメタルを EKS につなぎたい人に刺さるよ！",
+  "title_en": "EKS Hybrid Nodes Price Cut: 64 vCPU Nodes 50% Off, 256 vCPU Nodes 88% Off!",
+  "summary_en": "Amazon EKS Hybrid Nodes now caps the billed vCPU per node at 32. At the first pricing tier, a 64 vCPU node costs 50% less and a 256 vCPU node costs 88% less.",
+  "body_md_en": "Hi, it's Shii-chan! Today's news is a price drop. If you have big servers, take a look!\n\n## What was announced?\n\nAWS What's New announced lower pricing for large nodes in Amazon EKS Hybrid Nodes, capping the billed vCPU per node at 32 vCPU. You are no longer charged for vCPUs above that threshold.\n\nAmazon EKS Hybrid Nodes lets you use your existing on-premises and edge infrastructure as nodes in Amazon EKS clusters.\n\n## What changes\n\nThe cost of a large server no longer grows with its vCPU count. At the first pricing tier:\n\n- A 64 vCPU node costs 50% less than before\n- A 256 vCPU node costs 88% less than before\n\nBoth are now billed only for 32 vCPUs. That makes it more cost-effective to use large bare-metal and GPU servers for compute-intensive workloads such as AI/ML training and inference that must stay on-premises for data residency, latency, or regulatory reasons.\n\n## Dive Deep\n\n- The change applies automatically to all new hybrid nodes\n- For existing hybrid nodes attached to clusters, delete and reattach them to get the new pricing\n- Nodes with 32 vCPUs or fewer are still billed for their actual vCPUs\n- Existing tiered pricing still applies, so your effective rate falls as monthly usage grows\n- Available in all AWS Regions where Amazon EKS Hybrid Nodes is available\n\n## Wrap-up\n\n- Billed vCPU per node is capped at 32\n- At the first tier, 64 vCPU is 50% less and 256 vCPU is 88% less\n- New nodes get it automatically; existing nodes need to be deleted and reattached\n- Billing for nodes with 32 vCPUs or fewer is unchanged\n\nThis is for anyone connecting on-premises GPU servers or large bare-metal hosts to EKS!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-eks-hybrid-nodes-pricing-change/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon EKS Hybrid Nodes reduces price for large hosts",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-18T17:00:00+00:00"
+}

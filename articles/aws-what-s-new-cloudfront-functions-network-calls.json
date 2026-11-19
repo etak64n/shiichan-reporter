@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-cloudfront-functions-network-calls",
+  "title": "CloudFront Functions がエッジから API を呼べる！cf.fetch() と cf.beacon() が登場！",
+  "summary": "Amazon CloudFront Functions でネットワーク呼び出しができるようになったよ。cf.fetch() で API の応答を見て処理を決められて、cf.beacon() でバックグラウンドの分析イベント送信もできるの！",
+  "body_md": "やっほー、しぃちゃんだよ！エッジで動かす関数が、外のサービスを呼べるようになったよ。これはできることがぐっと広がりそう！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon CloudFront Functions がネットワーク呼び出しに対応し、リクエスト中にレスポンスを受け取って処理できるようになったと発表されたよ。CloudFront Functions は、CloudFront のエッジロケーションで軽量な JavaScript を動かして、リクエストやレスポンスをカスタマイズする機能だよ。\n\n## 今までどうだったの？\n\n別のサービスのデータに依存するロジックは、Lambda@Edge を使うか、オリジン側に移す必要があったんだ。\n\n## これで何が変わるの？\n\nリアルタイムのデータを使って、視聴者に近いエッジで、リクエストのパーソナライズ・認証・ルーティングができるようになるよ。\n\n- `cf.fetch()`: 自分の API エンドポイントを呼んで、その応答でリクエストの扱いを決める。例として、AI エージェントの権限と利用上限を確認して、許可されたリクエストだけを API や MCP サーバーに通す、不正対策サービスにリクエストの情報を送って悪いトラフィックをブロックまたはチャレンジする、などが挙がっているよ\n- `cf.beacon()`: 視聴者を待たせずに、バックグラウンドで分析イベントを送る。キャッシュから配信されるコンテンツでも使えるよ\n\n## 深く潜ってみよう\n\n- どちらのメソッドも、ディストリビューションに設定済みのオリジン設定を活用できる。オリジンアクセスコントロール（OAC）、VPC オリジン、コネクションの再利用も含むよ\n- 利用できる場所: すべての CloudFront エッジロケーション\n- 料金: 100 万コールあたり $0.10 が、CloudFront Functions の呼び出し料金に加わる。CloudFront のフラットレートプランでは Pro プラン以上に追加料金なしで含まれるよ\n\n## まとめ\n\n- CloudFront Functions でネットワーク呼び出しができる\n- `cf.fetch()` で API の応答を使った判断、`cf.beacon()` でバックグラウンド送信\n- OAC ・ VPC オリジン・コネクション再利用が使える\n- 100 万コールあたり $0.10、Pro プラン以上は追加料金なし\n\nエッジで認可や不正対策をしたい人や、Lambda@Edge からの置き換えを考えている人に刺さるよ！",
+  "title_en": "CloudFront Functions Can Now Make Network Calls With cf.fetch() and cf.beacon()",
+  "summary_en": "Amazon CloudFront Functions can now make network calls during a request. Use cf.fetch() to act on an API response, and cf.beacon() to send analytics events in the background.",
+  "body_md_en": "Hi, it's Shii-chan! Functions running at the edge can now call other services. This opens up a lot of possibilities!\n\n## What was announced?\n\nAWS What's New announced that Amazon CloudFront Functions can now make network calls and act on the response during a request. CloudFront Functions runs lightweight JavaScript at CloudFront edge locations to customize requests and responses.\n\n## The story so far\n\nIf your logic depended on data from another service, you had to use Lambda@Edge or move that logic to your origin.\n\n## What changes\n\nYour functions can use real-time data to personalize, authenticate, or route requests at the edge, close to your viewers.\n\n- `cf.fetch()`: call your API endpoints and use the response to decide how to handle each request. Examples in the announcement: check an AI agent's permissions and usage budget so only authorized requests reach your API or MCP server, or send request signals to a security or fraud detection service to block or challenge bad traffic\n- `cf.beacon()`: send analytics events in the background without slowing down viewers, even for content served from cache\n\n## Dive Deep\n\n- Both methods use the origin settings already on your distribution, including origin access control (OAC), VPC origins, and connection reuse\n- Availability: all CloudFront edge locations\n- Pricing: $0.10 per million calls, on top of CloudFront Functions invocation charges. Included at no additional cost in the Pro plan and above in CloudFront flat-rate plans\n\n## Wrap-up\n\n- CloudFront Functions can now make network calls\n- `cf.fetch()` for decisions based on API responses, `cf.beacon()` for background sends\n- Works with OAC, VPC origins, and connection reuse\n- $0.10 per million calls, and free in the Pro plan and above\n\nThis is for anyone who wants authorization or fraud checks at the edge, or who's thinking about moving off Lambda@Edge!",
+  "emotion": "energetic",
+  "importance": 5,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/cloudfront-functions-network-calls/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon CloudFront Functions now supports network calls",
+  "tags": [
+    "aws",
+    "serverless",
+    "web"
+  ],
+  "published_at": "2026-11-18T16:00:00+00:00"
+}
