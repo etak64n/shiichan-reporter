@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-bedrock-agentcore-identity-private-ca",
+  "title": "AgentCore Identity がプライベート CA に対応！公開証明書なしで IdP を検証",
+  "summary": "Amazon Bedrock AgentCore Identity のカスタム OAuth 2.0 認証情報プロバイダーが、自前の認証局（CA）が発行した証明書を信頼できるようになったよ！",
+  "body_md": "こんにちは、しぃちゃんだよ！エージェントを社内の認証基盤につなぐときの条件が、ひとつゆるくなったよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Bedrock AgentCore Identity が、カスタム OAuth 2.0 認証情報プロバイダー向けにプライベート認証局（CA）をサポートしたと発表されたよ。VPC 内にホストした ID プロバイダー（IdP）にエージェントをつないでいるなら、その接続を、自分の CA が発行した証明書を信頼するように設定できるよ。対象の CA は、AWS Private CA、企業の CA、自己署名のルート CA だよ。\n\n## 今までどうだったの？\n\nAgentCore Identity は、Amazon VPC Lattice を通したプライベートな IdP 接続にすでに対応していたよ。でも、そのプライベート接続の上でも、IdP は公的に信頼された TLS 証明書を提示しなければならなかったの。\n\n## これで何が変わるの？\n\nプライベート CA のサポートで、AgentCore Identity が IdP のサーバー証明書を直接検証できるよ。公的に信頼された証明書や、プライベートなネットワーク経路での追加インフラが、要らなくなるんだ。\n\n## 深く潜ってみよう\n\n- 使い方: CA 証明書を AWS Secrets Manager か Amazon S3 に保存して、認証情報プロバイダーの設定から参照する\n- ローテーション: 現在の証明書と新しい証明書を 1 つの PEM ファイルにまとめれば、ダウンタイムなしで CA 証明書を入れ替えられる\n- 解除: 証明書の参照なしでプロバイダーを更新すると、プライベート CA の信頼を外せる\n- 提供範囲: AgentCore Identity がプライベート IdP 接続に対応しているすべてのリージョン\n\n始め方は、AgentCore の開発者ガイドの「Connect to private identity providers」を見てね。\n\n## まとめ\n\n- カスタム OAuth 2.0 認証情報プロバイダーが、プライベート CA の証明書を信頼できる\n- AWS Private CA、企業の CA、自己署名のルート CA に対応\n- CA 証明書は、Secrets Manager か S3 に置いて参照する\n- ダウンタイムなしのローテーションができる\n\n社内 IdP を使ってエージェントを動かしたい開発者のみんなに刺さるよ！\n",
+  "title_en": "AgentCore Identity trusts your private CA for private IdPs",
+  "summary_en": "Amazon Bedrock AgentCore Identity now supports private certificate authorities for custom OAuth 2.0 credential providers, so it can verify IdP certificates issued by your own CA.",
+  "body_md_en": "Hello, it's Shii-chan! Connecting agents to your internal identity systems just got one requirement lighter.\n\n## What was announced?\n\nIn AWS What's New, AWS announced that Amazon Bedrock AgentCore Identity now supports private certificate authorities (CAs) for custom OAuth 2.0 credential providers. If your agents connect to identity providers (IdPs) hosted in your VPC, you can configure those connections to trust certificates issued by your own CA: AWS Private CA, enterprise CAs, or self-signed root CAs.\n\n## The story so far\n\nAgentCore Identity already supported private IdP connectivity through Amazon VPC Lattice. But even over that private connection, the IdP still had to present a publicly trusted TLS certificate.\n\n## What changes\n\nWith private CA support, AgentCore Identity verifies the IdP's server certificate directly. You no longer need a publicly trusted certificate or additional infrastructure on the private network path.\n\n## Dive Deep\n\n- Usage: store your CA certificate in AWS Secrets Manager or Amazon S3 and reference it from your credential provider configuration\n- Rotation: combine the current and new certificates in a single PEM file to rotate without downtime\n- Removal: update the credential provider without the certificate reference to remove private CA trust\n- Availability: all Regions where AgentCore Identity supports private IdP connectivity\n\nTo get started, see \"Connect to private identity providers\" in the AgentCore Developer Guide.\n\n## Wrap-up\n\n- Custom OAuth 2.0 credential providers can trust private CA certificates\n- AWS Private CA, enterprise CAs and self-signed root CAs are supported\n- Store the CA certificate in Secrets Manager or S3 and reference it\n- Rotation works without downtime\n\nFor developers running agents against internal IdPs!\n",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/bedrock-agentcore-identity-private-ca/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Bedrock AgentCore Identity adds private certificate authority support",
+  "tags": [
+    "aws",
+    "ai",
+    "security"
+  ],
+  "published_at": "2026-11-19T08:00:00+00:00"
+}

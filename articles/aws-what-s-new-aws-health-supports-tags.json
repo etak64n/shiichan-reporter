@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-aws-health-supports-tags",
+  "title": "AWS Health のイベントにタグが付くよ！リソースタグとアカウントタグに対応",
+  "summary": "AWS Health のイベントにリソースタグとアカウントタグを付けて、影響を受けるリソースの把握やイベントのルーティングがしやすくなったよ！",
+  "body_md": "こんにちは、しぃちゃんだよ！障害や変更の通知をもっと扱いやすくする、タグの発表だよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Health が Health イベントでのリソースタグとアカウントタグをサポートしたと発表されたよ。イベントにタグを足して、追加のコンテキストを持たせられる機能だよ。\n\n## これで何が変わるの？\n\n- 対応する AWS サービスについて、Health イベントの中でリソースタグを直接見られる。どのリソースが影響を受けるのか、そのビジネス上の位置づけを、個別のサービスコンソールに行かずに把握できる\n- アカウントレベルのタグで、組織全体のイベントを分類・フィルタできる。通知のルーティングや対応の自動化が、組織の構造に合わせてやりやすくなる\n\n大規模な AWS 環境を運用している組織で特に効果が大きいと、原文では説明されているよ。\n\n## 深く潜ってみよう\n\nAmazon EventBridge と連携できるのもポイントだよ。タグの値に応じたイベントのルーティングや処理を、イベント駆動の自動化として作れるの。\n\n- IT サービス管理システムに自動でチケットを作る\n- 特定のチームに絞った通知を送る\n\nAWS Health Dashboard と AWS Health API のレスポンスでも、より細かいイベントのフィルタリングができるようになるよ。\n\nタグの付与（enrichment）を有効にするには、AWS Health Dashboard を開くか、AWS Health User Guide を見てね。対応サービスの範囲やリージョンは、原文には書かれていないよ。\n\n## まとめ\n\n- Health イベントにリソースタグとアカウントタグが付く\n- どのリソースが影響を受けたかを、コンソールを行き来せず把握できる\n- EventBridge と組み合わせて、タグに基づくチケット作成や通知の自動化ができる\n\n障害対応のフローを整えたい運用チームのみんなに刺さるよ！\n",
+  "title_en": "AWS Health events now carry resource and account tags",
+  "summary_en": "AWS Health can now enrich Health events with resource tags and account tags, making it easier to see affected resources and route events.",
+  "body_md_en": "Hello, it's Shii-chan! Here's a tagging update that makes health notifications easier to handle.\n\n## What was announced?\n\nIn AWS What's New, AWS announced that AWS Health now supports resource and account tags in Health events, adding extra context to each event.\n\n## What changes\n\n- For supported AWS services, you can view resource tags directly in Health events, so you see which resources are affected and their business context without opening individual service consoles\n- Account-level tags help you categorize and filter events across your organization, which makes routing notifications and automating responses easier\n\nThe announcement says this is especially valuable for organizations running large-scale AWS deployments.\n\n## Dive Deep\n\nIt integrates with Amazon EventBridge, so you can build event-driven automation that responds to tagged resources and accounts. Examples:\n\n- Automatically create tickets in your IT service management system\n- Send targeted notifications to specific teams\n\nYou also get more granular event filtering in the AWS Health Dashboard and AWS Health API responses.\n\nTo enable tag enrichment, visit the AWS Health Dashboard or the AWS Health User Guide. The announcement does not list supported services or Regions.\n\n## Wrap-up\n\n- Health events can include resource tags and account tags\n- You see affected resources without hopping between consoles\n- With EventBridge, you can automate ticketing and notifications based on tags\n\nOne for operations teams polishing their incident response flows!\n",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-health-supports-tags/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Health now supports resource and account tags",
+  "tags": [
+    "aws",
+    "devops"
+  ],
+  "published_at": "2026-11-19T08:00:00+00:00"
+}

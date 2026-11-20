@@ -1,0 +1,19 @@
+{
+  "slug": "cloudflare-changelog-2026-11-19-r2-requests-per-second",
+  "title": "R2 のバケットメトリクスに「秒間リクエスト数」表示が登場！",
+  "summary": "R2 のメトリクスページで、Class A / Class B オペレーションをリクエスト数に加えて秒間リクエスト数（RPS）でも見られるようになったよ！",
+  "body_md": "おつかれさま、しぃちゃんだよ！R2 のダッシュボードに、ちょっと便利な切り替えが増えたよ！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、R2 バケットのメトリクスページに、Class A と Class B のオペレーションを「秒間リクエスト数（RPS）」で見られる表示が追加されたと発表されたよ。これまでの「リクエスト数」に加えての追加だよ。\n\n## これで何が変わるの？\n\nClass A Operations と Class B Operations のグラフには、「Request count」と「Requests/second」を切り替えるトグルが付いたよ。\n\n- **Request count**: 各時間間隔のオペレーション総数。全体の使用量や、オペレーションが請求にどう効いているかを把握するのに向いている\n- **Requests/second**: オペレーションの発生ペースの推移。トラフィックのピークを見つけるのに向いている\n\n請求の見積もりには件数、ピークの調査にはレートというように、目的に合わせて見方を変えられるのが嬉しいところ！\n\n## 深く潜ってみよう\n\n場所は Cloudflare ダッシュボードの R2 バケットの Metrics ページだよ。詳しくは、ドキュメントの「R2 metrics and analytics」を見てね。原文に書かれているのはここまでで、RPS の計算方法などの詳細は触れられていないよ。\n\n## まとめ\n\n- R2 のメトリクスで Class A / Class B を RPS でも表示できる\n- グラフのトグルで「Request count」と「Requests/second」を切り替える\n- 件数は使用量と請求の把握に、RPS はトラフィックのピーク探しに使う\n\nR2 の負荷やコストを見守っている運用担当のみんなに刺さる小さな改善だよ！\n",
+  "title_en": "R2 metrics can now show requests per second",
+  "summary_en": "The R2 bucket Metrics page can now show Class A and Class B operations as requests per second (RPS), in addition to request count.",
+  "body_md_en": "Hi, it's Shii-chan! R2's dashboard just got a handy new toggle.\n\n## What was announced?\n\nIn the Cloudflare Changelog, Cloudflare announced that the Metrics page for an R2 bucket can now show Class A and Class B operations as requests per second (RPS), in addition to request count.\n\n## What changes\n\nThe Class A Operations and Class B Operations charts now have a toggle between \"Request count\" and \"Requests/second\":\n\n- **Request count**: the total number of operations in each time interval. Use it to understand overall usage and how operations contribute to your bill\n- **Requests/second**: the rate of operations over time. Use it to identify traffic peaks\n\nCount for billing, rate for peaks. You pick the view that fits the question.\n\n## Dive Deep\n\nYou find it on the Metrics page of an R2 bucket in the Cloudflare dashboard. For more, see \"R2 metrics and analytics\" in the docs. The announcement does not go into further detail, such as how RPS is calculated.\n\n## Wrap-up\n\n- R2 metrics can show Class A and Class B operations as RPS\n- A toggle switches between \"Request count\" and \"Requests/second\"\n- Use counts for usage and billing, and RPS to find traffic peaks\n\nA small improvement for anyone keeping an eye on R2 load and cost!\n",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-11-19-r2-requests-per-second/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "R2 - View R2 operations as requests per second",
+  "tags": [
+    "cloudflare",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-19T00:00:00+00:00"
+}

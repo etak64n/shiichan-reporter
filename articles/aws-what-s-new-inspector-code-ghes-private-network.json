@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-inspector-code-ghes-private-network",
+  "title": "Inspector Code Security が GHES とプライベート接続に対応！自動修正 PR もプレビュー",
+  "summary": "Amazon Inspector Code Security が GitHub Enterprise Server と、GHES・GitLab Self-Managed へのプライベート接続に対応して、自動修正プルリクエストもパブリックプレビューになったよ！",
+  "body_md": "やっほー、しぃちゃんだよ！社内ネットワークの中のコードもスキャンできるようになる、セキュリティのアップデートだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Inspector Code Security が GitHub Enterprise Server（GHES）との連携と、GHES と GitLab Self-Managed へのプライベートネットワーク接続をサポートしたと発表されたよ。あわせて、自動修正プルリクエスト（automatic fix pull requests）が、パブリックプレビューで始まったよ。\n\n## これで何が変わるの？\n\nプライベートネットワークで GHES や GitLab Self-Managed をホストしている組織は、Amazon VPC の設定か AWS CodeConnections で接続して、リポジトリをスキャンできるようになったよ。ファイアウォールを AWS の IP アドレス範囲全体に対して開けなくていいのが嬉しいね！\n\n自動修正プルリクエストでは、Amazon Inspector が提案する修正をプルリクエストにしてくれるよ。開発者はそれをレビューして、マージするかを決めるだけで、手で修正を当てなくていいの。\n\n## 深く潜ってみよう\n\n**Code Security がスキャンするもの**\n\n- 自社で書いたアプリケーションのソースコード\n- サードパーティの依存関係\n- Infrastructure as Code\n\n対象のリポジトリは、GitHub、GHES、GitLab Self-Managed にあるものだよ。\n\n**自動修正 PR の条件**\n\n- 対象は、静的アプリケーションセキュリティテスト（SAST）の検出結果\n- 信頼度の高い修正に対してだけ、プルリクエストを作る\n- 自分で設定した重大度以上の検出結果が対象\n\n**提供リージョン**\n\n提供は、Code Security が使える 10 のリージョンすべてだよ。\n\n- US East (N. Virginia、Ohio)、US West (Oregon)\n- Europe (Frankfurt、Ireland、London、Stockholm)\n- Asia Pacific (Tokyo、Sydney、Singapore)\n\n## まとめ\n\n- GHES との連携に対応\n- GHES と GitLab Self-Managed へ、VPC 設定か CodeConnections でプライベート接続できる\n- 自動修正プルリクエストがパブリックプレビュー。高信頼度の SAST の修正が対象\n- 10 のリージョンで利用可能\n\n自社ホストの Git 環境でコードセキュリティを回しているみんなに刺さるよ！\n",
+  "title_en": "Inspector Code Security reaches GHES over private networks, with auto-fix PRs in preview",
+  "summary_en": "Amazon Inspector Code Security adds GitHub Enterprise Server support and private connectivity for GHES and GitLab Self-Managed, plus automatic fix pull requests in public preview.",
+  "body_md_en": "Hi everyone, it's Shii-chan! This security update lets you scan code that lives inside your private network.\n\n## What was announced?\n\nIn AWS What's New, AWS announced that Amazon Inspector Code Security now supports GitHub Enterprise Server (GHES) integration and private network connectivity for GHES and GitLab Self-Managed. Automatic fix pull requests are also launching in public preview.\n\n## What changes\n\nOrganizations that host GHES or GitLab Self-Managed in private networks can connect through Amazon VPC configurations or AWS CodeConnections and scan repositories. They don't need to open their firewalls to the entire AWS IP address range.\n\nWith automatic fix pull requests, Amazon Inspector turns its suggested fix into a pull request that developers review and choose whether to merge, instead of applying the fix by hand.\n\n## Dive Deep\n\n**What Code Security scans**\n\n- First-party application source code\n- Third-party dependencies\n- Infrastructure as Code\n\nfor repositories on GitHub, GHES, and GitLab Self-Managed.\n\n**Automatic fix PR conditions**\n\n- Applies to static application security testing (SAST) findings\n- Pull requests are opened only for high-confidence fixes\n- Findings must be at or above a severity you set\n\n**Regions**\n\nAll 10 Regions where Code Security is available:\n\n- US East (N. Virginia, Ohio), US West (Oregon)\n- Europe (Frankfurt, Ireland, London, Stockholm)\n- Asia Pacific (Tokyo, Sydney, Singapore)\n\n## Wrap-up\n\n- GHES integration is supported\n- GHES and GitLab Self-Managed connect privately via VPC configurations or CodeConnections\n- Automatic fix PRs are in public preview for high-confidence SAST fixes\n- Available in 10 Regions\n\nFor teams running code security on self-hosted Git!\n",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/inspector-code-ghes-private-network/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Inspector Code Security adds GitHub Enterprise Server and private connectivity",
+  "tags": [
+    "aws",
+    "security",
+    "devops"
+  ],
+  "published_at": "2026-11-19T08:00:00+00:00"
+}

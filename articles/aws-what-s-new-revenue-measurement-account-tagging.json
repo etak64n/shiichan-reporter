@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-revenue-measurement-account-tagging",
+  "title": "SaaS パートナー向け！AWS Revenue Measurement がアカウントタグ付けに対応",
+  "summary": "AWS Revenue Measurement で、SaaS 製品をホストする AWS アカウントにタグを付けるだけで、その製品が生む AWS 消費を計測できるようになったよ！",
+  "body_md": "おつかれさま、しぃちゃんだよ！今日は AWS パートナー向けの、ちょっと専門的な更新を紹介するね！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Revenue Measurement（以前の名前は Partner Revenue Measurement）が、SaaS 製品向けの Account Tagging に対応したと発表されたよ。AWS Revenue Measurement は、パートナーのソリューションが生む AWS 消費を計測する仕組みだよ。\n\n## 今までどうだったの？\n\nSaaS のリスティングを持つパートナーは、次のいずれかで AWS 収益への影響を計測していたよ。\n\n- Resource Tagging（個々のリソースにタグ付け）\n- User Agent 文字列\n- AWS Marketplace Metering\n\n## これで何が変わるの？\n\n個々のリソースではなく、SaaS をホストする AWS アカウントにタグを付けるだけで計測できるようになったよ。パートナーは AWS Organizations を使って、1 つの SaaS 製品専用のパートナー所有メンバーアカウントにタグを付けるの。そのアカウントの対象となる AWS 消費がすべて、その製品に紐づけられるよ。\n\n## 深く潜ってみよう\n\nタグの形式は決まっているよ。\n\n- タグキー: `aws-apn-id-{partner-central-aws-account-id}`\n- タグ値: `pc:{AWS Marketplace の product-code}`\n\n({} の部分は自分の値に置き換えるよ。)\n\n条件と制限はこれだよ。\n\n- AWS Marketplace に SaaS リスティングがある製品が対象\n- タグ付けするアカウントは 1 製品専用であること\n- 1 つのアカウントを複数の製品で共有しているなら、Resource Tagging、User Agent 文字列、Identity Tagging を引き続き使う\n- AWS Revenue Measurement は、すべての商用リージョンで一般提供中\n\n導入方法は、onboarding guide にまとまっているよ。\n\n## まとめ\n\n- SaaS 製品のホストアカウントへのタグ付けで、AWS 消費を製品に紐づけられる\n- タグキーとタグ値の形式が決まっていて、AWS Organizations で付与する\n- 1 アカウント 1 製品が条件。共有している場合は従来の方法を使う\n\nAWS Marketplace で SaaS を売っているパートナーのみんなに刺さるよ！\n",
+  "title_en": "AWS Revenue Measurement adds Account Tagging for SaaS products",
+  "summary_en": "AWS Revenue Measurement now lets partners tag the AWS accounts that host a SaaS product to measure the AWS consumption it drives.",
+  "body_md_en": "Hi, it's Shii-chan! Today it's a slightly specialized update for AWS Partners.\n\n## What was announced?\n\nIn AWS What's New, AWS announced Account Tagging for SaaS Products in AWS Revenue Measurement (previously Partner Revenue Measurement). AWS Revenue Measurement measures AWS consumption driven by Partner solutions.\n\n## The story so far\n\nPartners with SaaS listings measured their AWS revenue impact through:\n\n- Resource Tagging\n- User Agent strings\n- AWS Marketplace Metering\n\n## What changes\n\nPartners can now tag the AWS accounts that host their SaaS solutions instead of tagging individual resources. Using AWS Organizations, a partner tags partner-owned member accounts dedicated to a single SaaS product, and AWS Revenue Measurement attributes all eligible AWS consumption in each tagged account to that product.\n\n## Dive Deep\n\nThe tag format is fixed:\n\n- Tag key: `aws-apn-id-{partner-central-aws-account-id}`\n- Tag value: `pc:{AWS Marketplace product-code}`\n\n(Replace the braces with your own values.)\n\nConditions and limits:\n\n- Available for products with a SaaS listing on AWS Marketplace\n- Each tagged account must be dedicated to one product\n- If products share an account, keep using Resource Tagging, User Agent string, or Identity Tagging\n- AWS Revenue Measurement is generally available in all commercial regions\n\nSee the onboarding guide for implementation details.\n\n## Wrap-up\n\n- Tagging the accounts that host a SaaS product attributes AWS consumption to it\n- The tag key and value follow a fixed format and are applied with AWS Organizations\n- One account per product is required; shared accounts use the older methods\n\nFor partners selling SaaS on AWS Marketplace!\n",
+  "emotion": "thinking",
+  "importance": 1,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/revenue-measurement-account-tagging/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Revenue Measurement now supports Account Tagging for SaaS Products",
+  "tags": [
+    "aws",
+    "business"
+  ],
+  "published_at": "2026-11-19T08:00:00+00:00"
+}

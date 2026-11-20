@@ -1,0 +1,21 @@
+{
+  "slug": "aws-what-s-new-aws-transform-automates-source-actions",
+  "title": "AWS Transform が移行の切り替え準備を自動化！ソースアクション登場",
+  "summary": "AWS Transform に、移行元サーバーでの準備作業を一括実行する source actions と、起動後の設定・検証を自動化する post-launch actions が加わったよ！",
+  "body_md": "みんな、しぃちゃんだよ！大規模なサーバー移行の「切り替え前後のしんどい作業」を自動化する発表だよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Transform が移行中のサーバーの準備と検証のタスクを自動化すると発表されたよ。AWS Transform は、クラウド移行、アプリケーションのモダナイズ、技術的負債の継続的な削減を加速するエージェント型 AI サービスだよ。\n\n追加されたのは 2 つ。\n\n- **source actions**: 移行の早い段階からカットオーバーまで、適切なタイミングで移行元サーバー上にアクションを作って安全に実行できる\n- **post-launch actions**: サーバーが AWS 上で起動した直後に、ワークロードを自動で設定して検証する\n\n## 今までどうだったの？\n\n大規模な移行では、カットオーバーの準備と検証は手作業で時間がかかるものだったよ。\n\n- 移行チームが各移行元サーバーにログインして、サービスを止め、シャットダウン前にデータベースへの書き込みを凍結する\n- 起動後も、各サーバーで接続性、アプリケーションの状態、モニタリングを確認する\n\n## これで何が変わるの？\n\n- アクションを 1 回定義すれば、選んだサーバーやウェーブに一括で実行できる\n- アクションは AWS Transform が一元管理するので、アカウントや移行をまたいで再利用できる\n- 各アクションの状況を監視して、次へ進む前に go / no-go の判断ができる\n- 移行元の準備と起動後のアクションが移行計画そのものに入るので、手作業で調整しなくてよくなる\n\n## 深く潜ってみよう\n\n提供リージョンは、AWS Transform for migrations が使えるすべてのリージョンだよ。詳しい設定は、AWS Transform のドキュメントと製品ページで確認してね。\n\n## まとめ\n\n- source actions で、移行元サーバーの準備作業を一括・安全に実行\n- post-launch actions で、起動直後の設定と検証を自動化\n- アクションは一度作れば再利用できて、go / no-go の判断も状況を見ながらできる\n\n数百台規模の移行を回している移行チームのみんなに刺さるアップデートだよ！\n",
+  "title_en": "AWS Transform automates cutover prep with source actions",
+  "summary_en": "AWS Transform adds source actions to run preparation tasks on source servers in bulk, plus post-launch actions that configure and validate workloads automatically.",
+  "body_md_en": "Hi everyone, it's Shii-chan! This one automates the tedious work around cutover in large server migrations.\n\n## What was announced?\n\nIn AWS What's New, AWS announced that AWS Transform now automates tasks that prepare and validate servers during a migration. AWS Transform is the agentic AI service that speeds up cloud migration, application modernization, and continuous tech debt reduction.\n\nTwo capabilities were added:\n\n- **Source actions**: create actions and run them securely on your source servers at the right point in the migration, from the early stages through cutover\n- **Post-launch actions**: automatically configure and validate each workload as soon as it launches on AWS\n\n## The story so far\n\nIn large migrations, cutover preparation and validation were manual and time-consuming:\n\n- Teams logged in to each source server to stop services and freeze database writes before shutdown\n- After launch, they checked connectivity, application health, and monitoring on every server\n\n## What changes\n\n- Define an action once and run it in bulk on the servers and waves you choose\n- AWS Transform manages actions centrally, so you reuse them across accounts and migrations\n- Monitor each action's status and confirm your go/no-go decision before the next step\n- Source preparation and post-launch actions become part of the migration plan itself\n\n## Dive Deep\n\nIt is available in all AWS Regions where AWS Transform for migrations is available. For setup details, see the AWS Transform documentation and product page.\n\n## Wrap-up\n\n- Source actions run preparation tasks on source servers in bulk, securely\n- Post-launch actions automate configuration and validation right after launch\n- Actions are reusable, and go/no-go decisions can be made with live status\n\nA good fit for migration teams moving hundreds of servers!\n",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-transform-automates-source-actions/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Transform automates source and migration target actions to accelerate cutover",
+  "tags": [
+    "aws",
+    "devops",
+    "infrastructure",
+    "ai"
+  ],
+  "published_at": "2026-11-19T08:00:00+00:00"
+}

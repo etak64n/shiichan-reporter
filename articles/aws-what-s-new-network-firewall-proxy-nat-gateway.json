@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-network-firewall-proxy-nat-gateway",
+  "title": "Network Firewall が明示的プロキシ対応！NAT Gateway と直接つながるよ",
+  "summary": "AWS Network Firewall を NAT Gateway と関連付けて、明示的プロキシと透過的ファイアウォールの両方として、ひとつのポリシーで使えるようになったよ！",
+  "body_md": "こんにちは、しぃちゃんだよ！VPC の外向き通信を守る Network Firewall に、大きめの機能追加が来たよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Network Firewall を NAT Gateway と関連付けて、明示的プロキシ（explicit proxy）と、ネイティブなネットワークアドレス変換付きの透過的ファイアウォールの両方として使えるようになったと発表されたよ。アプリケーションとの間のトラフィックをフィルタして、データの持ち出しやマルウェアの侵入を防ぐのに使えるよ。\n\nAWS Network Firewall は、VPC 向けのステートフルなマネージドのネットワークファイアウォールで、侵入検知・防止のサービスでもあるよ。\n\n## これで何が変わるの？\n\n- 明示的プロキシ機能とルーティングされたフィルタリング機能の、両方を使える\n- 2 つの機能は、中央で管理する単一のセキュリティポリシーで制御される\n- トラフィックは VPC エンドポイント経由でファイアウォールに届き、フィルタされたトラフィックは NAT Gateway から、その IP アドレスのまま直接出ていく\n- IP の CIDR が重複する VPC も含めて、環境内のどの VPC からでも VPC エンドポイントでアクセスできる\n\n## 深く潜ってみよう\n\n既存の Network Firewall の機能と組み合わせて使えるよ。\n\n- Amazon や Marketplace のマネージドルールグループ\n- active threat defense\n- Geo-IP フィルタリング\n- URL とドメインカテゴリのフィルタリング\n- Amazon EKS と Amazon ECS 向けの、コンテナ属性に基づくルール\n\n提供リージョンは 16 か所だよ。\n\n- 米国: US East (N. Virginia、Ohio)、US West (Oregon、N. California)\n- ヨーロッパ: Ireland、London、Frankfurt、Stockholm、Spain\n- アジアパシフィック: Hong Kong、Tokyo、Thailand、Singapore、Sydney、Mumbai、Malaysia\n\n詳しくは、Network Firewall のドキュメントと料金ページを見てね。\n\n## まとめ\n\n- Network Firewall を NAT Gateway と関連付けられる\n- 明示的プロキシと透過的ファイアウォールを、単一のポリシーで管理できる\n- 既存のルールグループやフィルタリング機能と併用できる\n- CIDR が重複する VPC からも、VPC エンドポイント経由でアクセスできる\n\nデータ持ち出し対策をまとめて整えたいネットワーク・セキュリティ担当のみんなに刺さるよ！\n",
+  "title_en": "Network Firewall adds explicit proxy and NAT Gateway association",
+  "summary_en": "AWS Network Firewall can now be associated with a NAT Gateway and used as both an explicit proxy and a transparent firewall under a single security policy.",
+  "body_md_en": "Hello, it's Shii-chan! Network Firewall, which guards outbound VPC traffic, just got a sizeable feature.\n\n## What was announced?\n\nIn AWS What's New, AWS announced that you can now associate AWS Network Firewall with a NAT Gateway and use it both as an explicit proxy and as a transparent firewall with native network address translation. You can filter traffic to and from your applications and prevent data exfiltration and malware injection.\n\nAWS Network Firewall is a stateful, managed network firewall and intrusion detection and prevention service for your VPC.\n\n## What changes\n\n- You can use both explicit proxy and routed filtering functionality\n- Both are governed by a single, centrally maintained security policy\n- Traffic reaches the firewall via the VPC endpoint, and filtered traffic exits directly from the NAT Gateway using its IP address\n- Any VPC in your environment can access it through VPC endpoints, even VPCs with overlapping IP CIDR space\n\n## Dive Deep\n\nIt works with existing Network Firewall features:\n\n- Managed rule groups from Amazon or Marketplace\n- Active threat defense\n- Geo-IP filtering\n- URL and domain category filtering\n- Container attribute-based rules for Amazon EKS and Amazon ECS\n\nIt is available in 16 Regions:\n\n- US: US East (N. Virginia, Ohio), US West (Oregon, N. California)\n- Europe: Ireland, London, Frankfurt, Stockholm, Spain\n- Asia Pacific: Hong Kong, Tokyo, Thailand, Singapore, Sydney, Mumbai, Malaysia\n\nSee the Network Firewall documentation and pricing page for more.\n\n## Wrap-up\n\n- Network Firewall can be associated with a NAT Gateway\n- Explicit proxy and transparent firewall share one policy\n- Existing rule groups and filtering features still apply\n- VPCs with overlapping CIDRs can reach it through VPC endpoints\n\nFor network and security teams who want one place to handle data exfiltration controls!\n",
+  "emotion": "energetic",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/network-firewall-proxy-nat-gateway/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Network Firewall launches explicit proxy functionality and NAT Gateway association",
+  "tags": [
+    "aws",
+    "security",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-19T08:00:00+00:00"
+}

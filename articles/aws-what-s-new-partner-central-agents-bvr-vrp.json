@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-partner-central-agents-bvr-vrp",
+  "title": "AWS Partner Central Agents が Value Realization Plan の下書きを作るよ！",
+  "summary": "AWS Partner Central Agents が、Business Value Realization の VRP（Value Realization Plan）を生成できるようになって、パートナーは完成した下書きから始められるよ！",
+  "body_md": "みんな、しぃちゃんだよ！AWS パートナー向けに、計画書づくりをエージェントが手伝ってくれる発表だよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Partner Central Agents が、AWS Partner Central の Business Value Realization（BVR）モーションの Value Realization Plan（VRP）を生成できるようになったと発表されたよ。VRP は、BVR の案件の計画書（plan of record）だよ。\n\nエージェントが作る VRP には、次の内容が入るよ。\n\n- お客さまのビジネス目標\n- 導入、チェンジマネジメント、ガバナンスの計画\n- ベースラインの KPI\n\nパートナーはこれをレビューして、確定させるの。\n\n## なぜ重要なの？\n\nAWS Partner Central は、2026 年 6 月 16 日に BVR モーションを開始したよ。AWS サービスの導入を段階に分けて構造化して、実証された価値に資金を結びつけることで、パートナーがお客さまのビジネス成果を出すのを支援する仕組みだよ。\n\n## これで何が変わるの？\n\nBVR のパートナーは、VRP を白紙から始めなくてよくなるよ。エージェントが、ノミネーションのデータ、案件のコンテキスト、サービスのベンチマークをもとに、KPI、ランプ目標、ベースラインの計測を提案するの。顧客のスポンサーシップがない、といった抜けを提出前に指摘して、次のステップも示してくれるよ。パートナーは完成した下書きから、お客さまと一緒に仕上げられるね！\n\n## 深く潜ってみよう\n\n- 対象: コンサルティング、システムインテグレーター、マネージドサービスのパートナーで、Advanced か Premier のティアのステータスと、条件を満たすドメインコンピテンシーを持つもの\n- リージョン: US East (N. Virginia)\n- 使い方: AWS Partner Central にサインインして、Funding benefits、Business Value Realization を選ぶ。AWS がノミネーションを承認したら、AWS Partner Central Agents に「Help me draft a Value Realization Plan for my BVR engagement.」と頼む\n\n## まとめ\n\n- Partner Central Agents が、BVR の VRP の下書きを生成する\n- 目標、導入・ガバナンスの計画、ベースライン KPI が入っている\n- KPI やランプ目標を提案して、提出前に抜けも指摘してくれる\n- 対象は、Advanced か Premier のパートナー\n\nBVR を使って案件を進めている AWS パートナーのみんなに刺さるよ！\n",
+  "title_en": "AWS Partner Central Agents now draft Value Realization Plans",
+  "summary_en": "AWS Partner Central Agents can now generate Value Realization Plans (VRPs) for the Business Value Realization (BVR) motion, so partners start from a complete draft.",
+  "body_md_en": "Hi everyone, it's Shii-chan! An agent now helps AWS Partners write their plans.\n\n## What was announced?\n\nIn AWS What's New, AWS announced that AWS Partner Central Agents can now generate Value Realization Plans (VRPs) for the Business Value Realization (BVR) motion in AWS Partner Central. The VRP is the plan of record for a BVR engagement.\n\nThe generated VRP includes:\n\n- The customer's business goals\n- A plan for adoption, change management, and governance\n- Baseline key performance indicators (KPIs)\n\nPartners review and finalize it.\n\n## Why it matters\n\nAWS Partner Central launched the BVR motion on June 16, 2026. It helps Partners drive business outcomes for their customers by structuring AWS service adoption into defined stages, with funding tied to demonstrated value.\n\n## What changes\n\nPartners in the BVR motion no longer start a VRP from a blank page. The agents recommend KPIs, ramp targets, and baseline measurements based on nomination data, opportunity context, and service benchmarks. They also flag gaps before submission, such as a lack of customer sponsorship, and identify next steps. Partners refine a complete draft with their customer.\n\n## Dive Deep\n\n- Eligibility: consulting, system integrator, and managed services partners with Advanced or Premier tier status and a qualifying domain competency\n- Region: US East (N. Virginia)\n- How to start: sign in to AWS Partner Central and choose Funding benefits, Business Value Realization. After AWS approves a nomination, ask AWS Partner Central Agents, \"Help me draft a Value Realization Plan for my BVR engagement.\"\n\n## Wrap-up\n\n- Partner Central Agents generate a VRP draft for BVR\n- It covers goals, adoption and governance plans, and baseline KPIs\n- The agents suggest KPIs and ramp targets and flag gaps before submission\n- It is for Advanced or Premier tier partners\n\nFor AWS Partners running BVR engagements!\n",
+  "emotion": "happy",
+  "importance": 1,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/partner-central-agents-bvr-vrp",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Partner Central Agents now generate Value Realization Plans",
+  "tags": [
+    "aws",
+    "ai",
+    "business"
+  ],
+  "published_at": "2026-11-19T08:00:00+00:00"
+}

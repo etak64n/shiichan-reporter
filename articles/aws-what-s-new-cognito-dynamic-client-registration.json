@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-cognito-dynamic-client-registration",
+  "title": "Cognito が DCR に対応！MCP クライアントや AI エージェントが自分で登録できるよ",
+  "summary": "Amazon Cognito が OAuth の動的クライアント登録（DCR、RFC 7591）に対応して、MCP クライアントや AI エージェントが実行時に自分でクライアント登録できるようになったよ！",
+  "body_md": "やっほー、しぃちゃんだよ！AI エージェントや MCP まわりの認証が、ぐっとスムーズになる Cognito のアップデートだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Cognito が OAuth の動的クライアント登録（DCR、RFC 7591）をサポートしたと発表されたよ。Cognito は、ユーザー、AI エージェント、マイクロサービス向けの安全なサインインとアクセス制御を実装するためのサービスだよ。\n\nDCR のおかげで、Model Context Protocol（MCP）のクライアントや AI エージェントが、実行時に自分で登録できるようになったの。\n\n## 今までどうだったの？\n\n認可に Cognito を使う MCP サーバーにつなぐには、AI クライアントごとに、事前にアプリケーションクライアントを作っておく必要があったよ。\n\n## これで何が変わるの？\n\n事前にクライアントを 1 つずつ作らなくても、DCR に対応した MCP クライアントが自分で登録して、ユーザーをサインインさせられるよ。接続してくる AI クライアントが増えても、登録の手間が増えないのが嬉しいね！\n\n## 深く潜ってみよう\n\n**登録の流れ**\n\n- Cognito は、OAuth の認可サーバーメタデータの中で、登録エンドポイントを公開する\n- DCR に対応した MCP クライアントが、そのエンドポイントを見つける\n- クライアントが登録して client ID を受け取り、そのあとユーザーをサインインさせる\n\n**誰が登録できるかの制御**\n\n- 登録リクエストに、登録スコープ付きのアクセストークンを要求する\n- または、オープン登録を有効にして、どのクライアントでも登録できるようにする\n\n**管理**\n\n動的に登録されたクライアントは、ほかのアプリクライアントと一緒に、client ID のプレフィックスと、フィルターできるクライアントタイプつきで表示されるよ。同じコンソールと API で管理できるの。\n\n**提供範囲**\n\nDCR は、Essentials と Plus のフィーチャープランで、Amazon Cognito が使えるすべての AWS リージョンで利用できるよ。詳しくは、Cognito の開発者ガイドの「Dynamic client registration」を見てね。\n\n## まとめ\n\n- Cognito が OAuth の DCR（RFC 7591）に対応\n- MCP クライアントや AI エージェントが、実行時に自分で登録できる\n- 登録を、アクセストークン必須にするか、オープンにするかを選べる\n- Essentials と Plus のプランで、すべてのリージョンで利用可能\n\nCognito を認可に使って、MCP サーバーを公開したいみんなに刺さるよ！\n",
+  "title_en": "Cognito adds DCR: MCP clients and AI agents can register themselves",
+  "summary_en": "Amazon Cognito now supports OAuth dynamic client registration (DCR, RFC 7591), so MCP clients and AI agents can register themselves at runtime.",
+  "body_md_en": "Hi everyone, it's Shii-chan! This Cognito update smooths out authentication for AI agents and MCP.\n\n## What was announced?\n\nIn AWS What's New, AWS announced that Amazon Cognito now supports OAuth dynamic client registration (DCR, RFC 7591). Cognito helps you implement secure sign-in and access control for users, AI agents, and microservices.\n\nWith DCR, Model Context Protocol (MCP) clients and AI agents can register themselves at runtime.\n\n## The story so far\n\nTo connect to an MCP server that uses Cognito for authorization, you had to create an application client in advance for each AI client.\n\n## What changes\n\nMCP clients that support DCR can register on their own and sign users in, with no need to pre-create clients one by one. More AI clients no longer means more manual registration work.\n\n## Dive Deep\n\n**Registration flow**\n\n- Cognito advertises a registration endpoint in its OAuth authorization server metadata\n- MCP clients that support DCR discover the endpoint\n- The client registers to receive a client ID, then signs users in\n\n**Controlling who can register**\n\n- Require registration requests to present an access token with a registration scope\n- Or turn on open registration so any client can register\n\n**Management**\n\nDynamically registered clients appear with your other app clients, with a client ID prefix and a client type you can filter on. You manage them with the same console and APIs.\n\n**Availability**\n\nDCR is available on the Essentials and Plus feature plans in all AWS Regions where Amazon Cognito is available. See \"Dynamic client registration\" in the Amazon Cognito Developer Guide.\n\n## Wrap-up\n\n- Cognito supports OAuth DCR (RFC 7591)\n- MCP clients and AI agents can register themselves at runtime\n- Choose between token-gated and open registration\n- Available on Essentials and Plus plans in all Regions\n\nFor anyone exposing MCP servers with Cognito as the authorizer!\n",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/cognito-dynamic-client-registration/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Cognito now supports dynamic client registration",
+  "tags": [
+    "aws",
+    "ai",
+    "security"
+  ],
+  "published_at": "2026-11-19T08:00:00+00:00"
+}

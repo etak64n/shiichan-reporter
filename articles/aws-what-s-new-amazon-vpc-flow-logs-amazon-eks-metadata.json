@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-vpc-flow-logs-amazon-eks-metadata",
+  "title": "VPC Flow Logs にポッド情報が載るよ！Amazon EKS メタデータに対応",
+  "summary": "VPC Flow Logs のレコードに、通信したポッド、クラスター、名前空間、ラベルなどの EKS メタデータが入るようになったよ！",
+  "body_md": "みんな、しぃちゃんだよ！EKS のネットワーク調査がぐっと楽になるアップデートだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon VPC Flow Logs が Amazon EKS のメタデータをフローログのレコードに追加するようになったと発表されたよ。各レコードに、トラフィックを送受信したポッドと、そのクラスター、名前空間、ラベルが入るの。\n\n## 今までどうだったの？\n\nEKS では、ポッドは EC2 インスタンス（ノード）の上で動いて、1 つのノードのネットワークインターフェースを多数のポッドが共有するよ。これまでのフローログには、フローごとのネットワークインターフェースと IP アドレスしか出ていなくて、その向こうのポッドは分からなかったの。\n\nポッドは短命なので、調べるころには同じ IP アドレスが別のポッドのものになっていることもあるよ。そのため、トラフィックを正しいポッドに結びつけるには、自作ツールや、全ノードで動かす監視ソフトが必要だったんだ。\n\n## これで何が変わるの？\n\n1 つのログで、VPC と Kubernetes の両方の文脈が分かるようになったよ。たとえば、ポッドが VPC 内のデータベースに予期しないトラフィックを送っても、そのポッドと名前空間がレコードに残るの。ポッドが入れ替わった後でもね！\n\nセキュリティイベントの調査、トラフィックの傾向の把握、ネットワークのトラブルシュートが速くなるよ。ノードで監視ソフトを動かす必要もないよ。\n\n## 深く潜ってみよう\n\n- 始め方: クラスターの VPC またはサブネットのフローログを作り、ログフォーマットに EKS フィールドを追加する。クラスターやアプリの変更は不要\n- 対象: Amazon VPC CNI plugin for Kubernetes を使う、EC2 上のポッド。EKS Auto Mode、マネージドノードグループ、セルフマネージドノードを含む\n- 出力先: 従来と同じなので、既存の分析ツールがそのまま使える\n- 料金: EKS メタデータは追加料金なし。通常のフローログの配信・保存料金はかかる\n- リージョン: Amazon EKS が使えるすべてのリージョン\n\n## まとめ\n\n- フローログのレコードに、ポッド、クラスター、名前空間、ラベルが入る\n- ポッドが入れ替わった後でも、トラフィックの発信元を追跡できる\n- ログフォーマットに EKS フィールドを足すだけで、クラスターの変更は不要\n- 追加料金なしで、EKS が使えるすべてのリージョンで利用可能\n\nEKS のセキュリティ調査やネットワーク調査をしているみんなに刺さるよ！\n",
+  "title_en": "VPC Flow Logs now names the pod: Amazon EKS metadata is here",
+  "summary_en": "VPC Flow Logs records now include Amazon EKS metadata: the pod that sent or received the traffic, plus its cluster, namespace and labels.",
+  "body_md_en": "Hi everyone, it's Shii-chan! This update makes network investigations on EKS much easier.\n\n## What was announced?\n\nIn AWS What's New, AWS announced that Amazon VPC Flow Logs now adds Amazon EKS metadata to flow log records. Each record identifies the pod that sent or received the traffic, along with its cluster, namespace and labels.\n\n## The story so far\n\nOn EKS, pods run on EC2 instances (nodes), and many pods share a node's network interfaces. Flow log records showed the network interface and IP address for each flow, not the pod behind it.\n\nPods are short-lived, so by the time you investigated, that IP address could belong to a different pod. Tracing traffic back to the right pod meant custom tools or monitoring software on every node.\n\n## What changes\n\nOne log now gives you both VPC and Kubernetes context. If a pod sends unexpected traffic to a database in your VPC, the record shows the pod and its namespace, even after that pod is replaced.\n\nThat speeds up security investigations, traffic analysis and network troubleshooting, without running monitoring software on your nodes.\n\n## Dive Deep\n\n- Getting started: create a flow log for your cluster's VPC or subnets and add the EKS fields to the log format. No cluster or application changes\n- Scope: pods on Amazon EC2 instances that use the Amazon VPC CNI plugin for Kubernetes, including EKS Auto Mode, managed node groups and self-managed nodes\n- Destinations: the same as before, so existing analytics tools keep working\n- Pricing: EKS metadata is free; standard flow log delivery and storage charges still apply\n- Regions: all AWS Regions where Amazon EKS is available\n\n## Wrap-up\n\n- Flow log records include pod, cluster, namespace and labels\n- You can trace traffic to its source pod even after the pod is replaced\n- Just add EKS fields to the log format; no cluster changes needed\n- No extra charge, and available wherever EKS is\n\nFor anyone investigating security or network issues on EKS!\n",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-vpc-flow-logs-amazon-eks-metadata/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon VPC Flow Logs now supports Amazon EKS metadata",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "security"
+  ],
+  "published_at": "2026-11-19T08:00:00+00:00"
+}

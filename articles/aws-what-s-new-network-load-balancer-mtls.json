@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-network-load-balancer-mtls",
+  "title": "NLB がついに mTLS 対応！クライアント証明書の検証を任せられるよ",
+  "summary": "AWS Network Load Balancer が相互 TLS（mTLS）認証に対応して、TLS リスナーでクライアント証明書を検証し、信頼できるクライアントだけをターゲットに通せるようになったよ！",
+  "body_md": "こんにちは、しぃちゃんだよ！NLB を使っているみんな、待望の機能が来たよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Network Load Balancer（NLB）が、X.509 証明書を提示するクライアント向けの相互 TLS（mTLS）認証をサポートしたと発表されたよ。\n\n## 今までどうだったの？\n\nNLB で mTLS が必要なときは、自前の仕組みを作るか、サードパーティのプロキシを動かして、クライアントを認証しなければならなかったよ。\n\n## これで何が変わるの？\n\nNLB が TLS リスナーでクライアント証明書を検証するので、信頼できるクライアントだけがターゲットにたどり着けるよ。mTLS のための負荷の高い処理を NLB にオフロードできて、バックエンドのアプリに証明書のロジックを足さなくていいの。\n\nmTLS は、IoT デバイス、API、マイクロサービスの間の通信を守るのによく使われるよ。お互いが身元を証明する必要がある、規制の厳しい環境でも使われるの。\n\n## 深く潜ってみよう\n\n**設定の流れ**\n\n- 好きな CA か AWS Private Certificate Authority の CA 証明書バンドルで、trust store を作る\n- それを、新しい、または既存の NLB の TLS リスナーに関連付ける\n\n**オプションの制御**\n\n- 信頼しなくなった証明書をブロックするには、trust store に証明書失効リスト（CRL）を 1 つ以上追加する\n- 特定のクライアントだけを通すには、クライアント証明書のフィルターを追加する。マッチ対象は Common Name、Organizational Unit、Subject Alternative Name の DNS 名か URI（SPIFFE ID など）\n\n設定は AWS Management Console、AWS CLI、API から行えるよ。\n\n提供範囲は、NLB が使えるすべての AWS 商用リージョンと AWS GovCloud (US) リージョンだよ。詳しくは AWS ブログと NLB のユーザーガイドを見てね。\n\n## まとめ\n\n- NLB が mTLS 認証に対応し、TLS リスナーでクライアント証明書を検証する\n- trust store、CRL、クライアント証明書のフィルター（Common Name、OU、SAN）で制御できる\n- 自前の仕組みやサードパーティのプロキシが不要になる\n- コンソール、CLI、API から設定できる\n\nIoT や API、マイクロサービスのクライアント認証を整えたいみんなに刺さるよ！\n",
+  "title_en": "Network Load Balancer finally speaks mTLS",
+  "summary_en": "AWS Network Load Balancer now supports mutual TLS (mTLS) authentication, verifying client certificates on TLS listeners so only trusted clients reach your targets.",
+  "body_md_en": "Hello, it's Shii-chan! NLB users, a long-awaited feature has arrived.\n\n## What was announced?\n\nIn AWS What's New, AWS announced that AWS Network Load Balancer (NLB) now supports mutual TLS (mTLS) authentication for clients that present X.509 certificates.\n\n## The story so far\n\nCustomers who needed mTLS with NLB had to build their own solutions or run third-party proxies to authenticate clients.\n\n## What changes\n\nNLB verifies client certificates on its TLS listeners, so only trusted clients can reach your targets. You can offload the compute-intensive mTLS processing to NLB without adding certificate logic to your backend applications.\n\nmTLS is commonly used to secure communication between IoT devices, APIs, and microservices, and in regulated environments where both sides must prove their identity.\n\n## Dive Deep\n\n**Setup flow**\n\n- Create a trust store with a CA certificate bundle from a CA of your choice or AWS Private Certificate Authority\n- Attach it to a new or existing NLB TLS listener\n\n**Optional controls**\n\n- To block certificates you no longer trust, add one or more certificate revocation lists (CRLs) to the trust store\n- To admit only specific clients, add client certificate filters matching the Common Name, Organizational Unit, or the DNS name or URI in the Subject Alternative Name, such as a SPIFFE ID\n\nYou can configure it with the AWS Management Console, AWS CLI, or APIs.\n\nIt is available in all AWS commercial and AWS GovCloud (US) Regions where NLB is available. See the AWS Blog and the NLB User Guide for more.\n\n## Wrap-up\n\n- NLB supports mTLS and verifies client certificates on TLS listeners\n- Control it with trust stores, CRLs, and client certificate filters (Common Name, OU, SAN)\n- No more custom solutions or third-party proxies\n- Configure via console, CLI or API\n\nFor anyone locking down client authentication for IoT, APIs and microservices!\n",
+  "emotion": "energetic",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/network-load-balancer-mtls/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Network Load Balancer now supports mutual TLS authentication",
+  "tags": [
+    "aws",
+    "security",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-19T08:00:00+00:00"
+}

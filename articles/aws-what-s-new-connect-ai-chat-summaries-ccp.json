@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-connect-ai-chat-summaries-ccp",
+  "title": "Amazon Connect のチャット終了後に AI 要約が届くよ！CCP で数秒",
+  "summary": "Amazon Connect Customer の CCP で、チャット終了の数秒後に生成 AI による要約が表示されて、後処理を要約から進められるようになったよ！",
+  "body_md": "やっほー、しぃちゃんだよ！コンタクトセンターのみんなの後処理がラクになるお知らせだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Connect Customer が、チャットの会話ごとの生成 AI による通話後（post-contact）の要約を、Contact Control Panel（CCP）の中でエージェントに提供すると発表されたよ。チャット終了の数秒後に表示されるの。\n\n会話分析（conversational analytics）は、これまでも音声とメールの要約を CCP に出していて、今回それにチャットが加わったよ。\n\n## これで何が変わるの？\n\nエージェントは、トランスクリプトを読み返さずに、要約から後処理の作業ができるよ。要約には次の内容が入って、チャットのトランスクリプトの最後に表示されるよ。\n\n- お客さまが必要としていたこと\n- エージェントがとった対応\n- 未対応の項目\n\n原文の例だと、航空会社のエージェントがフライト変更のチャットを終えると、新しい日付、請求された運賃差額、送信した確認メールが分かるので、その 3 点から締めのメモを書けるよ。\n\n## 深く潜ってみよう\n\n- 要約は、フローの redaction（マスキング）設定に従う\n- 権限は、音声の要約と同じセキュリティプロファイルの権限を使う\n- 音声の要約をすでに有効にしている管理者は、「Set recording and analytics behavior」ブロックで、通話後の要約付きのチャット分析を有効にできる\n\n利用できるリージョンは次の 10 か所だよ。\n\n- US East (N. Virginia)\n- US West (Oregon)\n- Africa (Cape Town)\n- Asia Pacific (Seoul)\n- Asia Pacific (Singapore)\n- Asia Pacific (Sydney)\n- Asia Pacific (Tokyo)\n- Canada (Central)\n- Europe (Frankfurt)\n- Europe (London)\n\n## まとめ\n\n- チャット終了の数秒後に、AI の要約が CCP に表示される\n- 内容は、お客さまの要望、エージェントの対応、未対応項目\n- redaction 設定とセキュリティプロファイルは、音声の要約と同じ\n- 管理者は、フローのブロックで有効化できる\n\nチャット対応の後処理に追われているコンタクトセンターのみんなに刺さるよ！\n",
+  "title_en": "Amazon Connect shows AI chat summaries in the CCP within seconds",
+  "summary_en": "Amazon Connect Customer now shows agents a generative AI post-contact summary of each chat in the CCP within seconds after the chat ends.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Good news that makes after-contact work lighter for contact center teams.\n\n## What was announced?\n\nIn AWS What's New, AWS announced that Amazon Connect Customer now gives agents a generative AI-powered post-contact summary of each chat conversation inside the Contact Control Panel (CCP), within seconds after the chat ends.\n\nConversational analytics already generated these summaries for voice and email contacts in the CCP. This launch adds chat.\n\n## What changes\n\nAgents can complete after-contact work from the summary instead of rereading the transcript. The summary appears at the end of the chat transcript and covers:\n\n- What the customer needed\n- The actions the agent took\n- Any open items\n\nIn the announcement's example, an airline agent finishing a flight rebooking chat sees the new travel date, the fare difference charged, and the confirmation sent, then writes the wrap-up note from those three facts.\n\n## Dive Deep\n\n- Summaries follow your flow's redaction settings\n- They use the same security profile permissions as voice summaries\n- Administrators who already enabled voice summaries can turn on chat analytics with post-contact summary in the \"Set recording and analytics behavior\" block\n\nAvailable in these Regions:\n\n- US East (N. Virginia)\n- US West (Oregon)\n- Africa (Cape Town)\n- Asia Pacific (Seoul)\n- Asia Pacific (Singapore)\n- Asia Pacific (Sydney)\n- Asia Pacific (Tokyo)\n- Canada (Central)\n- Europe (Frankfurt)\n- Europe (London)\n\n## Wrap-up\n\n- AI summaries appear in the CCP seconds after a chat ends\n- They cover the customer's need, the agent's actions and open items\n- Redaction and security profile behavior match voice summaries\n- Admins enable it in the flow block\n\nFor contact centers buried in chat wrap-up work!\n",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/connect-ai-chat-summaries-ccp/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Connect Customer now provides AI chat summaries in the CCP",
+  "tags": [
+    "aws",
+    "ai"
+  ],
+  "published_at": "2026-11-19T08:00:00+00:00"
+}

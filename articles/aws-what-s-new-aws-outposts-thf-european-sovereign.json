@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-aws-outposts-thf-european-sovereign",
+  "title": "Outposts 第 2 世代ラックが AWS European Sovereign Cloud（ドイツ）につながるよ！",
+  "summary": "第 2 世代の AWS Outposts ラックが、AWS European Sovereign Cloud（ドイツ）リージョンで利用できるようになったよ！",
+  "body_md": "やっほー、しぃちゃんだよ！オンプレミスに AWS を置ける Outposts に、ヨーロッパ向けの嬉しい拡大があったよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、第 2 世代の AWS Outposts ラックが AWS European Sovereign Cloud（ドイツ）リージョンでサポートされたと発表されたよ。\n\nOutposts ラックは、AWS のインフラ、サービス、API、ツールを、ほぼどんなオンプレミスのデータセンターやコロケーション施設にも広げて、一貫したハイブリッド体験を作るためのものだよ。\n\n## これで何が変わるの？\n\nこのリージョンにつながる Outposts ラックを、スタートアップから大企業、公共機関まで、あらゆる規模の組織が注文できるようになったよ。目的は、レイテンシーとデータレジデンシー（データの所在）の要件に合わせて最適化すること！\n\nOutposts がつなげる AWS リージョンの選択肢が増えたので、データの置き場所や遅延にこだわる組織にとって柔軟性が上がるね。\n\n## 深く潜ってみよう\n\n原文に書かれている情報は多くないよ。\n\n- 対応する国と地域、リージョンの最新一覧は、AWS Outposts の FAQ ページで確認できる\n- European Sovereign Cloud（ドイツ）の料金は、専用の料金ページで確認できる\n- 第 2 世代ラックの詳細は、AWS Outposts のブログ記事とユーザーガイドにある\n\n## まとめ\n\n- 第 2 世代の Outposts ラックが AWS European Sovereign Cloud（ドイツ）で利用可能に\n- あらゆる規模の組織が、このリージョンにつながるラックを注文できる\n- 狙いはレイテンシーとデータレジデンシー要件への対応\n\nヨーロッパでデータの所在にこだわるハイブリッド構成の担当者のみんなに刺さるお知らせだよ！\n",
+  "title_en": "Second-gen Outposts racks now connect to the AWS European Sovereign Cloud (Germany)",
+  "summary_en": "Second-generation AWS Outposts racks are now supported in the AWS European Sovereign Cloud (Germany) Region.",
+  "body_md_en": "Hi everyone, it's Shii-chan! There's a nice Europe-focused expansion for Outposts, which brings AWS to your own data center.\n\n## What was announced?\n\nIn AWS What's New, AWS announced that second-generation AWS Outposts racks are now supported in the AWS European Sovereign Cloud (Germany) Region.\n\nOutposts racks extend AWS infrastructure, services, APIs, and tools to virtually any on-premises data center or colocation space for a consistent hybrid experience.\n\n## What changes\n\nOrganizations of every size, from startups to enterprises to public sector agencies, can now order Outposts racks connected to this Region to optimize for latency and data residency needs.\n\nIt also widens the choice of AWS Regions that Outposts can connect to.\n\n## Dive Deep\n\nThe announcement is short on details:\n\n- The latest list of supported countries, territories and Regions is on the AWS Outposts FAQs page\n- Pricing for the AWS European Sovereign Cloud (Germany) Region is on a dedicated pricing page\n- For second-generation racks, see the AWS Outposts blog post and user guide\n\n## Wrap-up\n\n- Second-generation Outposts racks are available with the AWS European Sovereign Cloud (Germany)\n- Organizations of any size can order racks connected to this Region\n- The goal is to meet latency and data residency requirements\n\nThis one is for hybrid architects in Europe who care where data lives!\n",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-outposts-thf-european-sovereign/",
+  "source_name": "AWS What's New",
+  "og_title": "Second-generation AWS Outposts racks now supported in the AWS European Sovereign Cloud (Germany) Region",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-19T08:00:00+00:00"
+}
