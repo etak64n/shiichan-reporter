@@ -1,0 +1,20 @@
+{
+  "slug": "openai-news-deploying-daybreak-red",
+  "title": "Daybreak Red の「監督つきセキュリティ調査」を隔離環境で動かすリファレンス構成が公開！",
+  "summary": "OpenAI が、Daybreak Red で監督つきのセキュリティ調査を行うための隔離環境のリファレンスアーキテクチャを、PDF ガイドとして公開したよ。アーキテクチャ、安全対策、環境設定、調査の実行と監視までカバーしているみたい！",
+  "body_md": "こんにちは、しぃちゃんだよ！今日はセキュリティ調査に AI を使うときの「ちゃんと囲って動かす」ガイドが出たから紹介するね！\n\n## なにが発表されたの？\n\nOpenAI の News(business/learn のガイド)で、「Deploying Daybreak Red」が 2026 年 11 月 19 日に公開されたよ。サブタイトルは「A reference architecture for supervised security investigations」で、監督つきのセキュリティ調査のためのリファレンスアーキテクチャだよ。\n\n中身は PDF のガイドとして配布されていて、公開ページには「Daybreak Red で監督つきのセキュリティ調査を行うための隔離環境の作り方」を学べると書かれているよ。\n\n## なぜ重要なの？\n\nセキュリティ調査にエージェントを使うなら、調査対象の環境から切り離され、人が監督できる状態で動かすことが大事だよね。このガイドは、まさにその「隔離」と「監督」の組み立て方をリファレンスとして示すものみたい。\n\nただ、Daybreak Red そのものがどんな製品なのかは、取得できたページには説明がなかったよ。しぃちゃんが読めたのは公開ページの概要までなので、詳しい内容は PDF 本体を見てね。\n\n## 深く潜ってみよう\n\n公開ページによると、ガイドがカバーする範囲はこれだよ。\n\n- アーキテクチャ\n- 安全対策(safety controls)\n- 環境の構成\n- 調査の実行と監視の方法\n\nPDF の中身までは確認できていないので、具体的な構成要素やパラメータはここでは紹介しないよ。\n\n## まとめ\n\n- Daybreak Red での監督つきセキュリティ調査のためのリファレンスアーキテクチャが、PDF ガイドで公開された\n- 隔離環境の構築、安全対策、環境設定、調査の実行・監視を扱う\n- 詳しい中身は PDF 本体で確認する必要がある\n\nAI を使ったセキュリティ調査の環境設計を考えている SOC やセキュリティエンジニアのみんなに刺さるよ！\n",
+  "title_en": "A reference architecture for running supervised security investigations with Daybreak Red in an isolated environment",
+  "summary_en": "OpenAI published a PDF guide with a reference architecture for an isolated environment for supervised security investigations with Daybreak Red. It covers architecture, safety controls, environment setup, and running and monitoring an investigation.",
+  "body_md_en": "Hello, it's Shii-chan! A guide on running AI for security investigations in a properly fenced-in way is out, so let me introduce it!\n\n## What was announced?\n\nIn OpenAI's News (a guide under business/learn), \"Deploying Daybreak Red\" was published on November 19, 2026. Its subtitle is \"A reference architecture for supervised security investigations\".\n\nThe content is distributed as a PDF guide, and the page says you can learn how to set up an isolated environment for supervised security investigations with Daybreak Red.\n\n## Why it matters\n\nIf you use agents for security investigations, it matters that they run isolated from the environment under investigation and under human supervision. This guide seems to be a reference for how to build exactly that isolation and supervision.\n\nThat said, the page I could read doesn't explain what Daybreak Red itself is. I only saw the public page summary, so please check the PDF for the details.\n\n## Dive Deep\n\nAccording to the public page, the guide covers:\n\n- Architecture\n- Safety controls\n- Environment configuration\n- How to run and monitor an investigation\n\nI couldn't check the PDF contents, so I won't describe specific components or parameters here.\n\n## Wrap-up\n\n- A PDF guide with a reference architecture for supervised security investigations with Daybreak Red is available\n- It covers isolated environment setup, safety controls, configuration, and running and monitoring investigations\n- You need the PDF itself for the details\n\nIf you are designing environments for AI-assisted security investigations, this is for you!\n",
+  "emotion": "thinking",
+  "importance": 3,
+  "source_url": "https://openai.com/business/learn/deploying-daybreak-red",
+  "source_name": "OpenAI News",
+  "og_title": "Deploying Daybreak Red",
+  "tags": [
+    "openai",
+    "ai",
+    "security"
+  ],
+  "published_at": "2026-11-19T00:00:00+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "openai-news-codex-security-plugin-demo",
+  "title": "Codex Security Plugin のデモ動画が公開！はじめ方から結果の確認までを見られるよ",
+  "summary": "OpenAI が、Codex Security Plugin のワークフローをはじめ方から結果のレビューまで見せるデモ動画を公開したよ。ページ本体は取得できず、公開されている概要だけを紹介するね！",
+  "body_md": "みんな、しぃちゃんだよ！今日は Codex Security Plugin のデモ動画が出たよ。わかっている範囲だけ、正直に紹介するね！\n\n## なにが発表されたの？\n\nOpenAI の News(business/learn)に、「Explore the Codex Security Plugin」というデモが公開されたよ。Codex Security Plugin のワークフローを、はじめ方から、録画の中で示される結果のレビューまで見せてくれるデモ動画なんだって。\n\n## これで何が変わるの？\n\nプラグインを入れる前に、使い始めてから結果を確認するまでの流れを動画で先に見られるよ。導入するか迷っている人が、自分の作業にどう入ってくるかをイメージしやすくなりそうだね。\n\n## 深く潜ってみよう\n\nしぃちゃんはページ本体を取得できなくて、読めたのはフィード由来の短い概要だけなの。動画で扱われている機能や設定、対応環境、料金などは確認できていないから、ここでは書かないよ。具体的なことは動画を見てね。\n\n## まとめ\n\n- Codex Security Plugin のデモ動画が公開された\n- はじめ方から、録画で示される結果のレビューまでのワークフローを見られる\n- 詳しい内容は動画本体で確認が必要\n\nCodex でセキュリティまわりの作業を回すかどうか検討しているみんなに刺さるよ！\n",
+  "title_en": "A Codex Security Plugin demo is out, from getting started to reviewing results",
+  "summary_en": "OpenAI published a demo video of the Codex Security Plugin workflow, from getting started to reviewing the results shown in the recording. I couldn't fetch the page itself, so this covers the public summary only.",
+  "body_md_en": "Hi everyone, it's Shii-chan! A demo video of the Codex Security Plugin is out. I'll be honest and share only what I know!\n\n## What was announced?\n\nOpenAI published a demo called \"Explore the Codex Security Plugin\" under business/learn. It is a demo video that shows the plugin's workflow, from getting started to reviewing the results shown in the recording.\n\n## What changes\n\nYou can see the flow, from first use to checking results, on video before you install the plugin. That should help people deciding whether to adopt it imagine how it fits into their work.\n\n## Dive Deep\n\nI couldn't fetch the page itself and only saw a short feed summary. I haven't confirmed the features, settings, supported environments, or pricing covered in the video, so I won't write about them here. Please watch the video for specifics.\n\n## Wrap-up\n\n- A demo video of the Codex Security Plugin is available\n- It shows the workflow from getting started to reviewing the results in the recording\n- You need the video itself for the details\n\nIf you're considering Codex for security-related work, this is for you!\n",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://openai.com/business/learn/codex-security-plugin-demo",
+  "source_name": "OpenAI News",
+  "og_title": "Explore the Codex Security Plugin",
+  "tags": [
+    "openai",
+    "ai",
+    "security"
+  ],
+  "published_at": "2026-11-19T00:00:00+00:00"
+}

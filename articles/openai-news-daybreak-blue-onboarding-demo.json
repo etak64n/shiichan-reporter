@@ -1,0 +1,19 @@
+{
+  "slug": "openai-news-daybreak-blue-onboarding-demo",
+  "title": "Daybreak Blue のはじめ方をデモで確認！セットアップ体験を見られるよ",
+  "summary": "OpenAI が、Daybreak Blue のオンボーディングを見せるウォークスルー動画を公開したよ。セットアップの様子と始め方を詳しく見られるみたい。ページには動画の概要しか載っていないよ！",
+  "body_md": "やっほー、しぃちゃんだよ！今日は Daybreak Blue のオンボーディングのデモが公開されたから、紹介するね！\n\n## なにが発表されたの？\n\nOpenAI の News(business/learn)に、「Get started with Daybreak Blue」というプロダクトデモが公開されたよ。Daybreak Blue のオンボーディングを見せるウォークスルーで、セットアップの体験と、始め方を少し詳しく見られる内容なんだって。\n\n## これで何が変わるの？\n\n導入の最初のつまずきどころになりやすいセットアップを、画面つきで先に確認できるよ。使い始める前に流れをつかみたい人には助かりそうだね。\n\n## 深く潜ってみよう\n\n公開されているページには、動画の概要だけが載っていて、手順や必要な権限、設定項目などの具体的な情報は読めなかったよ。だから、ここでは動画の中身を推測して書かないでおくね。Daybreak Blue がどんなプロダクトかの説明も、このページにはなかったよ。\n\n## まとめ\n\n- Daybreak Blue のオンボーディングを見せるウォークスルー動画が公開された\n- セットアップの体験と、始め方を見られる\n- 具体的な手順や設定は動画本体で確認が必要\n\nDaybreak Blue の導入を検討しているみんなは、動画でセットアップの雰囲気をつかんでおくとよさそうだよ！\n",
+  "title_en": "Get started with Daybreak Blue: a demo of the onboarding and setup",
+  "summary_en": "OpenAI published a walkthrough video of onboarding to Daybreak Blue, with a closer look at the setup experience and how to get started. The page only includes a short description of the video.",
+  "body_md_en": "Hi everyone, it's Shii-chan! A demo of Daybreak Blue onboarding is out, so let me introduce it!\n\n## What was announced?\n\nOpenAI published a product demo called \"Get started with Daybreak Blue\" under business/learn. It is a walkthrough of onboarding to Daybreak Blue, with a closer look at the setup experience and how to get started.\n\n## What changes\n\nSetup is often where adoption first gets stuck, and now you can check it on screen beforehand. That should help anyone who wants to understand the flow before starting.\n\n## Dive Deep\n\nThe public page only contains a short description of the video, so I couldn't read specific steps, required permissions, or settings. I won't guess at the video's contents. The page also doesn't explain what Daybreak Blue is.\n\n## Wrap-up\n\n- A walkthrough video of Daybreak Blue onboarding is available\n- It shows the setup experience and how to get started\n- You need the video itself for specific steps and settings\n\nIf you're considering Daybreak Blue, watching the video first should give you a feel for the setup!\n",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://openai.com/business/learn/daybreak-blue-onboarding-demo",
+  "source_name": "OpenAI News",
+  "og_title": "Get started with Daybreak Blue",
+  "tags": [
+    "openai",
+    "ai"
+  ],
+  "published_at": "2026-11-19T00:00:00+00:00"
+}

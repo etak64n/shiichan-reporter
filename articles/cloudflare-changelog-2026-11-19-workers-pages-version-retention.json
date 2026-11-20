@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-11-19-workers-pages-version-retention",
+  "title": "Workers と Pages のバージョン保持が 30 日に！古い Version URL は消えるから要注意",
+  "summary": "Cloudflare が、Workers のバージョンと Pages のデプロイを 30 日間保持する運用を始めたよ。30 日を過ぎたものは削除されるけど、直近 100 件と現在デプロイ中のものは残るみたい！",
+  "body_md": "こんにちは、しぃちゃんだよ！今日はバージョンの保持期間のお知らせだよ。URL を共有している人は、ちょっと確認してね！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Workers のバージョンと Pages プロジェクトのデプロイを 30 日間保持すると告知されたよ。30 日を過ぎたものは削除されるけど、直近 100 件と現在デプロイされているものは例外なんだって。\n\n## 影響を受けないこと\n\n- **動いているアプリケーション**: デプロイ中の Worker バージョンと、Pages の現在の本番デプロイは常に保持される\n- **ロールバック**: 直近 100 件の Worker バージョンと、削除されていない Pages の本番デプロイには、今までどおりロールバックできる\n- **Worker Previews**: Preview の URL は、その Preview の最新のデプロイを常に返す\n\n## これで何が変わるの？\n\n気づくことになるのは、次の 2 点だよ。\n\n- 削除されたバージョンやデプロイは、ダッシュボードにも API にも出なくなる\n- 削除された Worker バージョンの URL(Version URL。`--preview-alias` を含む)と、削除された Pages デプロイのプレビュー URL は、動かなくなる\n\n## 深く潜ってみよう\n\nブランチやプルリクエストの確認用には、Version URL ではなく Worker Previews を使うことが勧められているよ。Version URL は本番のバインディングで動く、というのも理由として挙げられているね。\n\n詳細は「Workers version retention」「Pages deployment limits」「Compare workflows」のドキュメントにあるよ。\n\n## まとめ\n\n- Workers のバージョンと Pages のデプロイは 30 日保持。それ以降は削除(直近 100 件と現在デプロイ中のものを除く)\n- 動いているアプリとロールバック(直近 100 件)には影響なし\n- 削除されたものの Version URL・プレビュー URL は動かなくなる\n- ブランチや PR の確認には Worker Previews を使うのがおすすめ\n\n古い Version URL やプレビュー URL をレビューや共有に使っているみんなは、早めに見直してね！\n",
+  "title_en": "Workers and Pages now keep versions for 30 days, so old Version URLs will stop working",
+  "summary_en": "Cloudflare now keeps Workers versions and Pages deployments for 30 days. Older ones are deleted, except your 100 most recent and what is currently deployed.",
+  "body_md_en": "Hello, it's Shii-chan! Today is a notice about how long versions are kept. If you share these URLs, take a quick look!\n\n## What was announced?\n\nIn the Cloudflare Changelog, Cloudflare announced that it now keeps versions of your Workers and deployments of your Pages projects for 30 days. After 30 days they are deleted, except your 100 most recent and what is currently deployed.\n\n## What is not affected\n\n- **Running applications**: deployed Worker versions and your current Pages production deployment are always kept\n- **Rollbacks**: you can still roll back to any of your 100 most recent Worker versions, and to any Pages production deployment that has not been deleted\n- **Worker Previews**: Preview URLs always serve the latest deployment of that Preview\n\n## What changes\n\nYou will notice two things:\n\n- Deleted versions and deployments no longer appear in the dashboard or API\n- The URL of each deleted Worker version (its Version URL, including any `--preview-alias`) and the preview URL of each deleted Pages deployment stop working\n\n## Dive Deep\n\nFor branches and pull requests, Cloudflare recommends Worker Previews instead of Version URLs, noting that Version URLs run with your production bindings.\n\nFor details, see \"Workers version retention\", \"Pages deployment limits\", and \"Compare workflows\" in the docs.\n\n## Wrap-up\n\n- Workers versions and Pages deployments are kept for 30 days, then deleted (except the 100 most recent and what is deployed)\n- Running apps and rollbacks (100 most recent) are unaffected\n- Version URLs and preview URLs of deleted items stop working\n- Use Worker Previews for branches and pull requests\n\nIf you use old Version URLs or preview URLs for reviews and sharing, check them soon!\n",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-11-19-workers-pages-version-retention/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Workers, Pages - Workers and Pages now keep versions for 30 days",
+  "tags": [
+    "cloudflare",
+    "serverless",
+    "devops"
+  ],
+  "published_at": "2026-11-19T00:00:00+00:00"
+}

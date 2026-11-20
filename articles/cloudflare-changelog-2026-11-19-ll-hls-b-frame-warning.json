@@ -1,0 +1,19 @@
+{
+  "slug": "cloudflare-changelog-2026-11-19-ll-hls-b-frame-warning",
+  "title": "Stream の LL-HLS ライブで B フレームを検知！カクつきの原因を警告してくれるよ",
+  "summary": "Cloudflare Stream が、Low Latency HLS のライブ配信で B フレームを検出すると警告 ERR_LIVE_INPUT_LLHLS_INCOMPATIBLE を出すようになったよ。映像のフリーズやカクつきの最大の原因を教えてくれるみたい！",
+  "body_md": "おつかれさま、しぃちゃんだよ！ライブ配信がカクつくときの原因を、Stream が教えてくれるようになったよ！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Cloudflare Stream が Low Latency HLS(LL-HLS)のライブ配信で B フレームを検出したときに警告を出すようになったと告知されたよ。\n\n## なぜ重要なの？\n\nLL-HLS のライブ配信でフリーズやカクつきが起きる、いちばんよくある原因が、エンコーダーが B フレームを含めてしまうことなんだって。B フレームは、まだ送られていない内容を参照することがあって、配信の準備が止まってしまうの。そのため、ライブ入力で LL-HLS を有効にしているときは B フレームがサポートされないよ。\n\n## これで何が変わるの？\n\n該当する場合、Stream はライブセッションごとに 1 回、`ERR_LIVE_INPUT_LLHLS_INCOMPATIBLE` という警告を出すよ。ほかのエラーやステータスイベントと同じ場所で確認できるよ。\n\n- ライブ入力の「Logs」タブ\n- ライブ Webhook\n- GraphQL の入力イベント\n\n## 深く潜ってみよう\n\n警告が出たときの直し方は 2 つあるよ。\n\n- 配信ソフトの設定で B フレームをオフにする\n- ライブ入力の設定で Low-Latency HLS をオフにする(ただし再生のレイテンシは高くなる)\n\nエラーコードの詳細は「Stream live troubleshooting」のドキュメントにあるよ。\n\n## まとめ\n\n- LL-HLS のライブ配信で B フレームを検出すると `ERR_LIVE_INPUT_LLHLS_INCOMPATIBLE` の警告が出る\n- 警告はライブセッションごとに 1 回で、Logs タブ・Webhook・GraphQL で確認できる\n- 対処は、エンコーダーの B フレームをオフにするか、LL-HLS をオフにする(遅延は増える)\n\nStream でライブ配信をしていて、原因不明のカクつきに悩んでいるみんなに刺さるよ！\n",
+  "title_en": "Stream now warns about B-frames in Low-Latency HLS live streams",
+  "summary_en": "Cloudflare Stream now emits the warning ERR_LIVE_INPUT_LLHLS_INCOMPATIBLE when it detects B-frames in Low Latency HLS live broadcasts, pointing at the most common cause of freezing and stuttering.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Stream now tells you why your live stream might stutter!\n\n## What was announced?\n\nIn the Cloudflare Changelog, Cloudflare Stream now emits a warning when B-frames are detected in Low Latency HLS (LL-HLS) live broadcasts.\n\n## Why it matters\n\nThe most common cause of freezing and stuttering in LL-HLS live streams is encoders including B-frames. These frames can reference content that has not yet been transmitted, which stalls preparation for delivery. So B-frames are not supported when LL-HLS is enabled for a live input.\n\n## What changes\n\nWhen it applies, Stream sends the warning `ERR_LIVE_INPUT_LLHLS_INCOMPATIBLE` once per live session. It shows up alongside other error and status events:\n\n- The Logs tab of your live input\n- Live webhooks\n- GraphQL input events\n\n## Dive Deep\n\nThere are two ways to resolve the warning:\n\n- Turn off B-frames in your broadcast application settings\n- Turn off Low-Latency HLS in your live input settings (but playback latency will be higher)\n\nError code details are in the \"Stream live troubleshooting\" documentation.\n\n## Wrap-up\n\n- Detecting B-frames in an LL-HLS live stream triggers the `ERR_LIVE_INPUT_LLHLS_INCOMPATIBLE` warning\n- It is sent once per live session and appears in the Logs tab, webhooks, and GraphQL\n- Fix it by turning off B-frames in the encoder, or by turning off LL-HLS (with higher latency)\n\nIf you stream live on Stream and have unexplained stuttering, this is for you!\n",
+  "emotion": "smug",
+  "importance": 3,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-11-19-ll-hls-b-frame-warning/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Stream - B-frame detection for Low-Latency HLS live streams",
+  "tags": [
+    "cloudflare",
+    "web"
+  ],
+  "published_at": "2026-11-19T00:00:00+00:00"
+}
