@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-s3-tables-replication-writable-tables",
+  "title": "S3 Tables のレプリカが 1 回の API で書き込み可能に！リージョン移行がラクになるよ",
+  "summary": "Amazon S3 Tables で、読み取り専用のレプリカを 1 回の API 呼び出しで書き込み可能なテーブルに昇格できるようになったよ！名前空間とテーブル名はそのまま引き継がれるの。",
+  "title_en": "S3 Tables Replicas Become Writable with One API Call",
+  "summary_en": "Amazon S3 Tables can now promote a read-only replica to a standalone writable table with a single API call, keeping its namespace and table name.",
+  "emotion": "happy",
+  "importance": 4,
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-s3-tables-replication-writable-tables/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon S3 Tables now support promoting replicas to writable tables",
+  "published_at": "2026-11-19T06:00:00+00:00",
+  "body_md": "おつかれさま、しぃちゃんだよ！Iceberg テーブルを使っている人に、ちょっと頼もしい発表があったよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon S3 Tables が「レプリカを書き込み可能なテーブルに昇格」できるようになったと発表されたよ！読み取り専用の Apache Iceberg テーブルのレプリカを、1 回の API 呼び出しで独立した書き込み可能テーブルにできるの。\n\n## 今までどうだったの？\n\nS3 Tables のレプリケーションは、ソーステーブルと同期した読み取り専用のレプリカを、テーブルバケット・リージョン・アカウントをまたいで保てる仕組みだよ。レプリカは読み取り専用だったから、書き込みを別のリージョンに移したいときは、新しいテーブルへコピーするような手間が考えられたよね。\n\n## これで何が変わるの？\n\n- レプリカをコピーせず、その場で昇格できて、書き込み先を別のリージョンへ移せる\n- 昇格後のテーブルは名前空間とテーブル名をそのまま持つので、アプリケーションの向き先を変えれば既存のクエリやパイプラインのコードが使える可能性がある\n- 昇格したテーブルは通常の S3 テーブルと同じように使えて、新しいレプリカのソースにもできる\n\n## 深く潜ってみよう\n\n- 利用できるのは、S3 Tables レプリケーションが使えるすべてのリージョン\n- 使い方は AWS マネジメントコンソール、AWS CLI、AWS SDK、S3 Tables API\n- 料金の詳細は原文に書かれておらず、Amazon S3 の料金ページを参照する形だよ\n\n## まとめ\n\n- 読み取り専用レプリカを 1 回の API で書き込み可能なテーブルに昇格できる\n- 名前空間とテーブル名が引き継がれる\n- 昇格後は新しいレプリカのソースにもなれる\n\nリージョンをまたいだ Iceberg 運用や、書き込み先の切り替えを考えているみんなに刺さるよ！\n",
+  "body_md_en": "Hi everyone, it's Shii-chan! Here's a handy announcement for people using Iceberg tables.\n\n## What was announced?\n\nAWS announced in What's New that Amazon S3 Tables now supports promoting replicas to writable tables. You can turn a read-only replica of an Apache Iceberg table into a standalone, writable table with a single API call.\n\n## The story so far\n\nS3 Tables replication keeps read-only replicas in sync with source tables across table buckets, AWS Regions and accounts. Since replicas were read-only, moving writes to another Region would have meant copying into a new table.\n\n## What changes\n\n- You can promote a replica in place, with no copy, to move writes to another Region\n- The promoted table keeps its namespace and table name, so existing queries and pipeline code may work once you point applications at it\n- It works like any S3 table you created, and can be the source for new replicas\n\n## Dive Deep\n\n- Available in all Regions where S3 Tables replication is supported\n- Use the AWS Management Console, AWS CLI, AWS SDKs or the S3 Tables API\n- The announcement doesn't give pricing specifics and refers to the Amazon S3 pricing page\n\n## Wrap-up\n\n- Promote a read-only replica to a writable table with one API call\n- Namespace and table name carry over\n- A promoted table can also be the source of new replicas\n\nIf you run Iceberg across Regions or plan to switch where writes happen, this one is for you!\n"
+}

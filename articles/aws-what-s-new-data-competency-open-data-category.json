@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-data-competency-open-data-category",
+  "title": "AWS Data Competency に Open Data and Interoperability カテゴリが誕生！",
+  "summary": "AWS Data Competency に、データを開かれた形式で顧客の管理下に置くソフトウェアパートナーを認定する Open Data and Interoperability カテゴリが追加されたよ！",
+  "title_en": "AWS Data Competency Adds an Open Data and Interoperability Category",
+  "summary_en": "AWS Data Competency adds an Open Data and Interoperability category recognizing Software Partners that keep customer data open and under customer control.",
+  "emotion": "happy",
+  "importance": 1,
+  "tags": [
+    "aws",
+    "business",
+    "infrastructure"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/data-competency-open-data-category/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Data Competency adds Open Data and Interoperability category for Software Partners",
+  "published_at": "2026-11-19T08:00:00+00:00",
+  "body_md": "こんにちは、しぃちゃんだよ！今日はデータ基盤まわりのパートナープログラムのお知らせだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Data Competency に新しい Open Data and Interoperability カテゴリが追加されたと発表されたよ！顧客のデータを開かれた形式で、顧客の管理下に置くソリューションを持つ AWS ソフトウェアパートナーを認定するカテゴリなの。複数の分析エンジンや AI エージェントが、データを移動したり複製したりせずに、ひとつの共有コピーで作業できるのがポイントだよ。\n\n## なぜ重要なの？\n\nAWS は Gartner を挙げて、多くの組織が AI に使えるデータへの投資を優先していて、データ・分析の責任者の多くがデータアーキテクチャの近代化が必要と考えている、と説明しているよ。\n\n## これで何が変わるの？\n\n顧客は、オープン性と相互運用性を重視して作られたソフトウェアパートナーを見つけやすくなるよ。パートナーにとっては、ほかと差別化する手段になるの。\n\n## 深く潜ってみよう\n\nこのカテゴリのパートナーは、次の 4 つの能力で検証されるよ。\n\n- **Open formats**: データを Apache Iceberg で保存し、互換のあるどのツールでも読める\n- **Interoperable storage**: AWS 上のデータのコピーは 1 つだけ\n- **Bidirectional catalogs**: Iceberg REST Catalog でメタデータを同期する\n- **Interchangeable engines**: ジョブごとに最適なエンジンを選べる\n\nこの Competency を取得したパートナーには、2027 年の追加のマーケティング・案件支援や、AWS Data and AI Workshop へのアクセスなど、成果に応じた特典があるよ。リージョンの記載は原文にはないよ。\n\n## まとめ\n\n- Data Competency に Open Data and Interoperability カテゴリが追加\n- Iceberg、単一コピー、REST Catalog 同期、エンジンの交換可能性の 4 点で検証\n- 取得したパートナーは 2027 年のマーケティング・案件支援などの特典を受けられる\n\nIceberg ベースで開かれたデータ基盤を作っているパートナーのみんなに刺さるよ！\n",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today we have partner program news around data platforms.\n\n## What was announced?\n\nAWS announced in What's New a new Open Data and Interoperability category in the AWS Data Competency. It recognizes AWS Software Partners whose solutions keep customer data open and under customer control. The key point is that multiple analytics engines and AI agents can work on one shared copy of data without moving or duplicating it.\n\n## Why it matters\n\nAWS cites Gartner, which reports that most organizations are prioritizing AI-ready data investments, and that many Chief Data and Analytics Officers say their data architecture needs modernization.\n\n## What changes\n\nCustomers get a clearer way to find Software Partners built for openness and interoperability. Partners get a way to differentiate themselves.\n\n## Dive Deep\n\nPartners in this category are validated for four capabilities:\n\n- **Open formats**: data is stored in Apache Iceberg, so any compatible tool can read it\n- **Interoperable storage**: only one copy of the data is kept on AWS\n- **Bidirectional catalogs**: metadata is synced through the Iceberg REST Catalog\n- **Interchangeable engines**: customers choose the best engine for each job\n\nPartners that earn the competency receive performance-based benefits, including additional marketing and deal funding in 2027 and access to the AWS Data and AI Workshop. The announcement doesn't mention Regions.\n\n## Wrap-up\n\n- A new Open Data and Interoperability category in the Data Competency\n- Validated on Iceberg, a single copy, REST Catalog sync and interchangeable engines\n- Partners that earn it get benefits such as 2027 marketing and deal funding\n\nIf you build open, Iceberg-based data platforms as a partner, this one is for you!\n"
+}

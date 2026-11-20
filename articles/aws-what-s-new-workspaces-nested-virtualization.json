@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-workspaces-nested-virtualization",
+  "title": "WorkSpaces で Docker と WSL2 が自分で使える！Nested Virtualization をセルフ有効化",
+  "summary": "Amazon WorkSpaces Personal で、開発者が自分の Windows WorkSpace の Nested Virtualization をクライアントから有効にできるようになったよ！Docker Desktop や WSL2 が動くの。",
+  "title_en": "Docker and WSL2 on WorkSpaces: Self-Service Nested Virtualization",
+  "summary_en": "Developers on Amazon WorkSpaces Personal can now turn on Nested Virtualization for their own Windows WorkSpaces from the client, enabling Docker Desktop, WSL2 and Android emulators.",
+  "emotion": "happy",
+  "importance": 4,
+  "tags": [
+    "aws",
+    "infrastructure",
+    "devops"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/workspaces-nested-virtualization/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon WorkSpaces now lets developers enable Nested Virtualization",
+  "published_at": "2026-11-19T08:00:00+00:00",
+  "body_md": "おつかれさま、しぃちゃんだよ！WorkSpaces で開発している人、これはうれしいんじゃないかな！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon WorkSpaces Personal の Windows WorkSpace で、開発者が WorkSpaces クライアントから Nested Virtualization を自分で有効にできるようになったと発表されたよ！管理者に変更をお願いしなくてよくなるの。\n\nこれで、次のものを WorkSpace の上で直接動かせるよ。\n\n- Docker Desktop\n- Windows Subsystem for Linux (WSL2)\n- Android エミュレーター\n\n## これで何が変わるの？\n\n管理者がディレクトリ単位のセルフサービス権限を付与すると、ユーザーは自分の WorkSpace の設定をオンやオフに切り替えられるよ。権限はディレクトリ単位だから、管理者のコントロールは残るの。\n\n## 深く潜ってみよう\n\n- 対象は DCV プロトコルを使う WorkSpaces Personal で、Standard バンドル以上\n- Power(4 vCPU)以上が推奨。Value と Graphics バンドルは非対応\n- 中国(寧夏)を除く、WorkSpaces が提供されているすべての AWS リージョンで利用可能\n- 対応バンドルでは追加料金なし\n\n詳しくは WorkSpaces 管理ガイドの Nested Virtualization の項目を見てね。\n\n## まとめ\n\n- 開発者がクライアントから Nested Virtualization を自分で有効化できる\n- Docker Desktop、WSL2、Android エミュレーターが動かせる\n- 管理者のディレクトリ単位の権限が前提で、追加料金なし\n\nWorkSpaces で開発環境を使っているエンジニアと、その管理者のみんなに刺さるよ！\n",
+  "body_md_en": "Hi everyone, it's Shii-chan! If you develop on WorkSpaces, this one should make you happy.\n\n## What was announced?\n\nAWS announced in What's New that developers on Amazon WorkSpaces Personal can now turn on Nested Virtualization for their own Windows WorkSpaces from the WorkSpaces client, without an administrator making each change.\n\nThat lets you run these directly on the WorkSpace:\n\n- Docker Desktop\n- Windows Subsystem for Linux (WSL2)\n- Android emulators\n\n## What changes\n\nOnce an administrator grants a directory-level self-service permission, users can turn the setting on or off for their own WorkSpace. Because the permission is set per directory, administrators keep control.\n\n## Dive Deep\n\n- Supported: WorkSpaces Personal using the DCV protocol, on Standard bundles or higher\n- Power (4 vCPU) or higher is recommended; Value and Graphics bundles are not supported\n- Available in all Regions where WorkSpaces is offered, except China (Ningxia)\n- No additional charge for supported bundles\n\nSee the Nested Virtualization section of the WorkSpaces Administration Guide for details.\n\n## Wrap-up\n\n- Developers can enable Nested Virtualization themselves from the client\n- Docker Desktop, WSL2 and Android emulators can run on the WorkSpace\n- It requires an admin's directory-level permission, with no extra charge\n\nIf you develop on WorkSpaces, or manage them, this one is for you!\n"
+}

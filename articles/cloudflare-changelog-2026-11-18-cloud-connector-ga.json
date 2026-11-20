@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-11-18-cloud-connector-ga",
+  "title": "Cloud Connector がついに GA！R2 も S3 も Azure も、ルールひとつで振り分け",
+  "summary": "Cloudflare の Rules 機能 Cloud Connector が全ユーザー向けに GA になったよ！条件に合うリクエストを R2・S3・GCS・Azure Blob・OCI のオブジェクトストレージへ振り分けられるの。",
+  "title_en": "Cloud Connector Is Now GA: Route to R2, S3, Azure and More with Simple Rules",
+  "summary_en": "Cloudflare's Cloud Connector in Rules is now generally available to all customers. It routes matching requests to public object storage on R2, S3, GCS, Azure Blob and OCI.",
+  "emotion": "happy",
+  "importance": 4,
+  "tags": [
+    "cloudflare",
+    "web",
+    "infrastructure"
+  ],
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-11-18-cloud-connector-ga/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Rules - Cloud Connector is now generally available",
+  "published_at": "2026-11-18T00:00:00+00:00",
+  "body_md": "やっほー、しぃちゃんだよ！今日は Cloudflare から、オブジェクトストレージ好きにはうれしいお知らせが届いたよ！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Rules の機能「Cloud Connector」が全ユーザー向けに一般提供(GA)になったと発表されたよ！\n\nCloud Connector は、条件に合ったリクエストを公開オブジェクトストレージへルーティングできる機能なの。振り分け先として挙げられているのはこの 5 つだよ！\n\n- Cloudflare R2\n- Amazon S3\n- Google Cloud Storage\n- Microsoft Azure Blob Storage\n- Oracle Cloud Infrastructure Object Storage\n\nルーティングのルールは Cloudflare ダッシュボードで作って管理できて、どのリクエストをどのプロバイダに送るかは Rules の式(expression)で制御するみたい！\n\n## なぜ重要なの？\n\n静的アセットや画像、ダウンロードファイルを複数のクラウドに置いている人は多いよね。Cloud Connector なら、Cloudflare のルールの仕組みの上で「このパスは S3、こっちは R2」といった振り分けを一か所にまとめて書けるのが魅力なの！\n\n## これで何が変わるの？\n\n- 複数のクラウドのストレージを、ひとつの Cloudflare 経由の入口にまとめやすくなる\n- ルールはダッシュボードで管理できて、Rules の式で細かく条件を指定できる\n- GA になったので、全ユーザーが使える\n\n## 深く潜ってみよう\n\n原文は短い告知で、制限事項や具体的な設定手順は載っていないよ。使い方は Cloudflare の Cloud Connector ドキュメントで確認してね！\n\n## まとめ\n\n- Cloud Connector が全ユーザー向けに GA になった\n- R2・S3・GCS・Azure Blob・OCI の公開オブジェクトストレージに振り分けできる\n- ルールはダッシュボードで作成し、Rules の式で条件を決める\n\nマルチクラウドでストレージを使っていて、配信の入口をすっきりさせたいみんなに刺さるよ！\n",
+  "body_md_en": "Hi everyone, it's Shii-chan! Cloudflare has some great news for anyone who works with object storage.\n\n## What was announced?\n\nIn the Cloudflare Changelog, Cloud Connector (part of Rules) was announced as generally available to all customers.\n\nCloud Connector routes matching requests to public object storage. The supported destinations are:\n\n- Cloudflare R2\n- Amazon S3\n- Google Cloud Storage\n- Microsoft Azure Blob Storage\n- Oracle Cloud Infrastructure Object Storage\n\nYou create and manage routing rules in the Cloudflare dashboard, and Rules expressions control which requests go to which provider.\n\n## Why it matters\n\nMany teams keep static assets, images or downloads across more than one cloud. With Cloud Connector, you can describe routing like \"this path goes to S3, that one goes to R2\" in one place, inside Cloudflare's Rules.\n\n## What changes\n\n- It gets easier to put storage from several clouds behind a single Cloudflare entry point\n- Rules are managed in the dashboard, with fine-grained conditions via Rules expressions\n- Being GA, it is open to all customers\n\n## Dive Deep\n\nThe original post is a short announcement. It doesn't list limits or setup steps, so check the Cloud Connector documentation to get started.\n\n## Wrap-up\n\n- Cloud Connector is now GA for all customers\n- It routes to public object storage on R2, S3, GCS, Azure Blob and OCI\n- Rules are created in the dashboard and conditions are set with Rules expressions\n\nIf you use storage across several clouds and want a tidier front door, this one is for you!\n"
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-ec2-performance-status-checks",
+  "title": "EC2 の GPU 異常を教えてくれる！performance status checks と 10 秒 CPU メトリクス",
+  "summary": "EC2 に performance status checks が登場し、Detailed Monitoring には OpenTelemetry 対応、1 分間隔の GPU メトリクス、10 秒間隔の CPU 使用率が追加されたよ！",
+  "title_en": "EC2 Now Flags GPU Issues: Performance Status Checks and 10-Second CPU Metrics",
+  "summary_en": "Amazon EC2 adds performance status checks, and Detailed Monitoring gains OpenTelemetry support, one-minute GPU metrics and a 10-second CPU utilization metric.",
+  "emotion": "energetic",
+  "importance": 5,
+  "tags": [
+    "aws",
+    "infrastructure",
+    "devops"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/ec2-performance-status-checks/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon EC2 launches performance status checks and new utilization metrics for EC2 Detailed Monitoring",
+  "published_at": "2026-11-19T08:00:00+00:00",
+  "body_md": "やっほー、しぃちゃんだよ！GPU インスタンスを使っている人、これは見逃せないよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon EC2 に performance status checks が登場して、Detailed Monitoring に新しい使用率メトリクスが加わったと発表されたよ！インスタンスの中に何も仕込まなくても、ワークロードの性能を監視できるようになるの。既存のインスタンス内ツールを補う形で、CPU や GPU の監視、キャパシティの調整、アプリの問題調査に使えるよ。\n\n## これで何が変わるの？\n\n### performance status checks\n\n- アクセラレーテッドコンピューティングのインスタンスで、性能に影響する「終端でない」ハードウェアの状態を検出する\n- 取るべき対応も教えてくれる。たとえば、再起動で GPU メモリの row remapping を完了できるなら、インスタンスを入れ替えなくて済む\n\n### Detailed Monitoring の追加\n\n- OpenTelemetry メトリクスへの対応\n- アクセラレーテッドワークロードの調整に使える、1 分間隔の GPU メトリクス\n- EC2 Auto Scaling でのサイジングやスケーリングに使える、10 秒間隔の新しい CPU 使用率メトリクス\n\n## 深く潜ってみよう\n\n- メトリクスはカテゴリ単位で有効にでき、そのカテゴリをフリート全体に適用できる\n- performance status checks は無料。Detailed Monitoring のメトリクスはオプトインで、標準の CloudWatch 料金がかかる\n- すべての商用 AWS リージョンと AWS GovCloud (US) リージョンで利用可能\n\nドキュメントは EC2 Detailed Monitoring と EC2 performance status checks のユーザーガイドにあるよ。\n\n## まとめ\n\n- アクセラレーテッドインスタンスの性能に関わるハードウェア状態を検出し、対応も提案\n- 1 分間隔の GPU メトリクスと 10 秒間隔の CPU 使用率メトリクスを追加\n- status checks は無料、Detailed Monitoring は CloudWatch 料金\n\nGPU インスタンスを運用しているみんなや、Auto Scaling を細かく調整したいみんなに刺さるよ！\n",
+  "body_md_en": "Hi everyone, it's Shii-chan! If you run GPU instances, don't miss this one.\n\n## What was announced?\n\nAWS announced in What's New that Amazon EC2 now has performance status checks, and Detailed Monitoring gains new utilization metrics. You can monitor workload performance without setting anything up inside the instance. They complement existing in-guest tools and help with monitoring CPU and GPU resources, tuning capacity and troubleshooting application issues.\n\n## What changes\n\n### Performance status checks\n\n- Detect nonterminal hardware conditions that affect performance on accelerated computing instances\n- Recommend an action. For example, a reboot can finish GPU memory row remapping, so the instance doesn't need to be replaced\n\n### New in Detailed Monitoring\n\n- OpenTelemetry metrics support\n- One-minute GPU metrics for tuning accelerated workloads\n- A new 10-second CPU utilization metric for sizing and scaling compute capacity with EC2 Auto Scaling\n\n## Dive Deep\n\n- You can opt into metrics by category and apply those categories across your fleet\n- Performance status checks are free; Detailed Monitoring metrics are opt-in and incur standard CloudWatch charges\n- Available in all commercial AWS Regions and the AWS GovCloud (US) Regions\n\nSee the EC2 Detailed Monitoring and EC2 performance status checks documentation.\n\n## Wrap-up\n\n- Detect performance-affecting hardware conditions on accelerated instances, with recommended actions\n- New one-minute GPU metrics and 10-second CPU utilization metric\n- Status checks are free; Detailed Monitoring uses CloudWatch pricing\n\nIf you run GPU instances or want finer Auto Scaling tuning, this one is for you!\n"
+}

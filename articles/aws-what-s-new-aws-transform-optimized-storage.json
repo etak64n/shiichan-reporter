@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-transform-optimized-storage",
+  "title": "サーバー移行のストレージ選びをおまかせ！AWS Transform が最適構成を提案",
+  "summary": "AWS Transform の移行機能が、サーバーごとに最適なストレージ種別と構成を推奨し、起動時に自動適用するようになったよ！対象は EBS と FSx for NetApp ONTAP なの。",
+  "title_en": "Let AWS Transform Pick Storage for Your Server Migrations",
+  "summary_en": "AWS Transform for migrations now recommends an optimized storage type and configuration for every server and applies the approved settings at launch, for Amazon EBS and FSx for NetApp ONTAP.",
+  "emotion": "happy",
+  "importance": 3,
+  "tags": [
+    "aws",
+    "infrastructure",
+    "devops"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-transform-optimized-storage/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Transform supports optimized storage for server migration",
+  "published_at": "2026-11-19T08:00:00+00:00",
+  "body_md": "みんな、しぃちゃんだよ！サーバー移行のとき、ストレージの設定って悩むよね。そこに新しい助っ人が来たよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Transform の移行機能が「最適化されたストレージ」に対応したと発表されたよ！移行するすべてのサーバーに、最適なストレージの種類と構成を推奨してくれるの。\n\n## 今までどうだったの？\n\nサーバーごとにストレージを手作業で決めていく必要があったよね。今回の推奨は、最近追加されたストレージ評価の機能の上に作られていて、サーバーごとの設定作業を減らしてくれるよ。\n\n## これで何が変わるの？\n\n- 各サーバーで観測された性能と容量のデータをもとに、過剰プロビジョニングのコストを減らし、切り替え後の性能問題を避けやすくなる\n- 移行前に、見込みコストが分かる\n- 承認した設定は、起動時に AWS Transform が自動で適用する\n\n## 深く潜ってみよう\n\n- 対応するサービスは Amazon EBS と Amazon FSx for NetApp ONTAP\n- FSx for NetApp ONTAP では、ファイルシステムのレイアウトとサイズも推奨される\n- コスト優先か性能優先かを選べる\n- 推奨は、評価から起動まで一貫して同じ内容になる\n- 利用できるのは AWS Transform の移行機能が使えるリージョン(一覧は AWS Transform のドキュメントを見てね)\n\n## まとめ\n\n- 移行するサーバーごとに最適なストレージ構成を推奨\n- 対象は EBS と FSx for NetApp ONTAP、コストか性能かを選べる\n- 承認すれば起動時に自動適用される\n\nVMware などからの移行を進めているインフラ担当のみんなに刺さるよ！\n",
+  "body_md_en": "Hi everyone, it's Shii-chan! Choosing storage during server migration is tricky, and a new helper just arrived.\n\n## What was announced?\n\nAWS announced in What's New that AWS Transform for migrations now supports optimized storage. It recommends an optimized storage type and configuration for every server you migrate.\n\n## The story so far\n\nYou had to decide storage server by server. The new recommendations build on recent storage assessment capabilities and cut down that per-server work.\n\n## What changes\n\n- Using each server's observed performance and capacity data, it helps reduce overprovisioning costs and avoid performance issues after cutover\n- You see the expected cost before you migrate\n- AWS Transform applies the approved settings automatically at launch\n\n## Dive Deep\n\n- Supported services: Amazon EBS and Amazon FSx for NetApp ONTAP\n- For FSx for NetApp ONTAP, recommendations include the file system layout and sizing\n- You choose whether to optimize for cost or performance\n- Recommendations stay the same from assessment through launch\n- Available in all Regions where AWS Transform for migrations is available (see the AWS Transform documentation for the list)\n\n## Wrap-up\n\n- Optimized storage recommendations for every migrated server\n- Covers EBS and FSx for NetApp ONTAP, optimized for cost or performance\n- Approved settings are applied automatically at launch\n\nIf you're migrating servers, for example from VMware, this one is for you!\n"
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-partner-central-agents-guide-high-quality-opp",
+  "title": "Partner Central Agents が共同販売の質を上げるよ！案件作成を AI がガイド",
+  "summary": "AWS Partner Central Agents が、案件作成時に必要情報を聞き、co-sell motion の理由と次の一手も説明してくれるようになったよ！",
+  "title_en": "Partner Central Agents Now Guide Better Co-Sell Submissions",
+  "summary_en": "AWS Partner Central Agents now ask for the details that matter when you create an opportunity, explain each co-sell motion, and recommend next steps.",
+  "emotion": "happy",
+  "importance": 2,
+  "tags": [
+    "aws",
+    "ai",
+    "business"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/partner-central-agents-guide-high-quality-opp",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Partner Central Agents now guide higher-quality co-sell submissions and explain co-sell motions",
+  "published_at": "2026-11-19T08:00:00+00:00",
+  "body_md": "やっほー、しぃちゃんだよ！AWS パートナーさん向けのエージェントが、また賢くなったよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Partner Central Agents が質の高い co-sell(共同販売)案件の提出をガイドし、co-sell motion を説明してくれるようになったと発表されたよ！\n\n## 今までどうだったの？\n\n2026 年 6 月 16 日に始まった Agentic co-selling 以降、エージェントは各案件に「Opportunity Quality Score」を付けて、co-sell motion を割り当ててきたよ。motion は AWS Field-engaged、Agent-engaged、Partner-led の 3 種類なの。\n\n## これで何が変わるの？\n\n- **案件作成のガイド**: スコアが測る項目を聞いてくれる。顧客のビジネス課題、日付入りの次のステップ、AWS に求めるパートナーの主なニーズ、顧客が採用予定の AWS サービスなど\n- **motion の説明**: 提出後に、なぜその motion が割り当てられたのかを説明してくれる\n- **次の一手の提案**: Agent-engaged ならスコアを上げる方法、AWS の co-sell 支援を求めていない Partner-led なら、エージェントで案件を進める方法を説明する\n\n## 深く潜ってみよう\n\nパートナーが提案に沿って動くと、スコアと motion がその場で再計算されて、Agent-engaged の案件は AWS Field-engaged に近づくよ。\n\n利用できるのは今のところ米国東部(バージニア北部)リージョン。AWS Quick と Kiro のエージェント体験か、自社 CRM から MCP 経由で使えるよ。始めるには AWS Partner Central にサインインして、案件管理を開いてね。\n\n## まとめ\n\n- 案件作成時に、スコアに必要な情報をエージェントが聞いてくれる\n- motion が割り当てられた理由と、改善の次の一手を説明してくれる\n- 行動に応じてスコアと motion がリアルタイムで更新される\n\nAWS との共同販売を進めたいパートナーのみんなに刺さるよ！\n",
+  "body_md_en": "Hi everyone, it's Shii-chan! The agents for AWS partners just got smarter.\n\n## What was announced?\n\nAWS announced in What's New that AWS Partner Central Agents now guide higher-quality co-sell submissions and explain co-sell motions.\n\n## The story so far\n\nSince Agentic co-selling launched on June 16, 2026, the agents have scored each opportunity with an Opportunity Quality Score and assigned a co-sell motion: AWS Field-engaged, Agent-engaged or Partner-led.\n\n## What changes\n\n- **Guided opportunity creation**: the agents ask for the details the score measures, including the customer's business problem, dated next steps, the Partner Primary Need from AWS, and the AWS services the customer plans to adopt\n- **Motion explanations**: after submission, they explain why each opportunity received its motion\n- **Next-step recommendations**: for Agent-engaged opportunities, how to raise the score; for Partner-led ones without a co-sell request to AWS, how to progress the deal using agents\n\n## Dive Deep\n\nAs partners act on recommendations, the score and motion update, and Agent-engaged opportunities move closer to AWS Field-engaged.\n\nIt is available today in the US East (N. Virginia) Region. Use the agentic experience in AWS Quick and Kiro, or through MCP in your own CRM. To get started, sign in to AWS Partner Central and open opportunity management.\n\n## Wrap-up\n\n- Agents ask for the information the score needs when you create an opportunity\n- They explain why a motion was assigned and what to do next\n- The score and motion update as you act\n\nIf you co-sell with AWS, this one is for you!\n"
+}

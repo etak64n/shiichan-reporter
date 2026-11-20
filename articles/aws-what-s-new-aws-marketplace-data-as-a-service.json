@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-marketplace-data-as-a-service",
+  "title": "データも AWS Marketplace で買える！新しい商品タイプ Data as a Service が誕生",
+  "summary": "AWS Marketplace に、サードパーティのデータセットやライセンスコンテンツを買える新商品タイプ Data as a Service(DaaS)が GA。請求は AWS の請求書にまとまるよ！",
+  "title_en": "Buy Data on AWS Marketplace: Data as a Service Is a New Product Type",
+  "summary_en": "AWS Marketplace now offers Data as a Service (DaaS), a product type for third-party datasets and licensed content, billed on your existing AWS invoice.",
+  "emotion": "happy",
+  "importance": 2,
+  "tags": [
+    "aws",
+    "ai",
+    "business"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-marketplace-data-as-a-service/",
+  "source_name": "AWS What's New",
+  "og_title": "Announcing Data as a Service for AWS Marketplace",
+  "published_at": "2026-11-19T08:00:00+00:00",
+  "body_md": "みんな、しぃちゃんだよ！AI や分析のためにデータを買いたい人に、新しい選択肢が来たよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Marketplace の新しい商品タイプ Data as a Service(DaaS)が一般提供になったと発表されたよ！サードパーティのデータセットやライセンスコンテンツを買うための仕組みなの。\n\n## 今までどうだったの？\n\nサードパーティのデータを買うには、データ提供元ごとに新しい取引先として追加して、個別に契約を交渉して、調達の期間を待つ必要があったよ。\n\n## これで何が変わるの？\n\n買い手は、Marketplace の販売者の DaaS 商品を探して購読できて、AI アプリや分析などのワークロードのデータ強化に使えるよ。公開オファーとプライベートオファーのどちらでも購入できて、請求は既存の AWS 請求書に載るから、別の請求関係は要らないの！\n\n## 深く潜ってみよう\n\n- 価格とライセンス条件は販売者が決められる。商品ごとに契約、従量課金、契約と消費のハイブリッドを選べる\n- どの価格モデルにも無料トライアルを付けられて、無料商品の提供もできる\n- 提供方法も販売者が決める。API、Web ポータル、リアルタイムフィード、Amazon S3 バケットなどがある\n\n例として、未上場企業を調べる投資チームが、AI エージェントを API で非公開市場データに、Model Context Protocol (MCP) サーバーで信用分析につなぐ、という使い方が紹介されているよ。リージョンの記載は原文にはなかったよ。\n\n## まとめ\n\n- サードパーティのデータを買う新商品タイプ DaaS が GA\n- 公開・プライベートオファーに対応し、請求は AWS の請求書に統合\n- 販売者が価格モデルと提供方法を柔軟に決められる\n\nAI エージェントや分析に外部データをつなぎたいみんなに刺さるよ！\n",
+  "body_md_en": "Hi everyone, it's Shii-chan! If you want to buy data for AI or analytics, there's a new option.\n\n## What was announced?\n\nAWS announced in What's New that Data as a Service (DaaS), a new product type in AWS Marketplace, is generally available. It is for buying third-party datasets and licensed content.\n\n## The story so far\n\nBuying third-party data meant adding each provider as a new supplier, negotiating separate contracts, and waiting through procurement cycles.\n\n## What changes\n\nBuyers can find and subscribe to DaaS products from Marketplace sellers, and use the data to enrich AI applications, analytics and other workloads. You can buy with public or private offers, and charges appear on your existing AWS invoice, so there's no separate billing relationship.\n\n## Dive Deep\n\n- Sellers set their own prices and license terms; each product can use a contract, pay-as-you-go, or contract-with-consumption model\n- Sellers can add a free trial to any pricing model or offer a product for free\n- Sellers define delivery, such as an API, a web portal, a real-time feed or an Amazon S3 bucket\n\nAs an example, an investment team evaluating private companies could connect its AI agents to private-market data through an API and to credit analysis through a Model Context Protocol (MCP) server. The announcement doesn't mention Regions.\n\n## Wrap-up\n\n- DaaS is a new, generally available product type for third-party data\n- Public and private offers, billed on your AWS invoice\n- Sellers have flexible pricing and delivery options\n\nIf you want to connect external data to AI agents or analytics, this one is for you!\n"
+}

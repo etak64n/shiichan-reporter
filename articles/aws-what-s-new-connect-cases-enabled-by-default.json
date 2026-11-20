@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-connect-cases-enabled-by-default",
+  "title": "Amazon Connect の Cases が最初から使える！新規インスタンスは設定いらず",
+  "summary": "Amazon Connect Customer の新規インスタンスで Cases がデフォルトで有効になり、SLA ルール・Customer Profiles・EventBridge 連携も最初から入っているよ！",
+  "title_en": "Amazon Connect Cases Is On by Default for New Instances",
+  "summary_en": "Amazon Connect Customer now enables Cases by default on new instances, with SLA rules, Customer Profiles and Amazon EventBridge integrations ready from the start.",
+  "emotion": "happy",
+  "importance": 3,
+  "tags": [
+    "aws",
+    "business"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/connect-cases-enabled-by-default/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Connect Customer enables Cases by default for new instances",
+  "published_at": "2026-11-19T08:00:00+00:00",
+  "body_md": "こんにちは、しぃちゃんだよ！コンタクトセンターを作る人に、スタートが楽になるお知らせだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Connect Customer の新しいインスタンスでは Cases(ケース管理)がデフォルトで有効になると発表されたよ！運用チームは、セットアップなしですぐに顧客の問題を追跡して解決できるの。\n\n## 今までどうだったの？\n\nこれまでは、Cases の連携を使うには自分で有効化して設定する必要があったみたい。新規インスタンスではそれが最初から済んでいる形になるよ。\n\n## これで何が変わるの？\n\n新しいインスタンスには、3 つの連携が最初から入っているよ。\n\n- **SLA ルール**: ケースにサービスレベルの目標を設定する\n- **Customer Profiles**: 顧客体験をパーソナライズする\n- **Amazon EventBridge**: ケースが更新されたときに、他の業務アプリのアクションを起動する\n\n既存のインスタンスでも、管理者が AWS マネジメントコンソールからワンクリックでこれらの連携を有効にできるよ。\n\n## 深く潜ってみよう\n\n新しいケースフィールドは自動で同期されるから、フィールドを追加するたびに連携を更新する必要はないの。\n\n利用できるリージョンはこれだよ。\n\n- 米国東部(バージニア北部)\n- 米国西部(オレゴン)\n- カナダ(中部)\n- 欧州(フランクフルト)\n- 欧州(ロンドン)\n- アジアパシフィック(ソウル、シンガポール、シドニー、東京)\n- アフリカ(ケープタウン)\n\n## まとめ\n\n- 新規インスタンスで Cases がデフォルト有効\n- SLA ルール・Customer Profiles・EventBridge 連携が最初から入っている\n- 既存インスタンスはコンソールでワンクリック有効化、フィールドも自動同期\n\nAmazon Connect を新しく立ち上げる管理者のみんなに刺さるよ！\n",
+  "body_md_en": "Hi everyone, it's Shii-chan! Here's news that makes starting a contact center easier.\n\n## What was announced?\n\nAWS announced in What's New that Cases is now enabled by default on new Amazon Connect Customer instances. Operations teams can track and resolve customer issues right away, with no setup.\n\n## The story so far\n\nUntil now, you apparently had to turn on and configure the Cases integrations yourself. New instances now come with that already done.\n\n## What changes\n\nNew instances come with three connected services:\n\n- **SLA rules**: set service-level targets on cases\n- **Customer Profiles**: personalize customer experiences\n- **Amazon EventBridge**: trigger actions in other business applications when a case is updated\n\nOn existing instances, administrators can turn on these integrations with one click in the AWS Management Console.\n\n## Dive Deep\n\nNew case fields sync automatically, so you don't need to update integrations each time you add a field.\n\nAvailable Regions:\n\n- US East (N. Virginia)\n- US West (Oregon)\n- Canada (Central)\n- Europe (Frankfurt)\n- Europe (London)\n- Asia Pacific (Seoul, Singapore, Sydney, Tokyo)\n- Africa (Cape Town)\n\n## Wrap-up\n\n- Cases is on by default for new instances\n- SLA rules, Customer Profiles and EventBridge integrations are included\n- Existing instances can enable them in one click, and fields sync automatically\n\nIf you're setting up a new Amazon Connect instance, this one is for you!\n"
+}

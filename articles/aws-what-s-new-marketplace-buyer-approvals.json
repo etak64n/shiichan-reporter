@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-marketplace-buyer-approvals",
+  "title": "AWS Marketplace に購入承認ワークフローが登場！Coupa や SAP Ariba にもつながるよ",
+  "summary": "AWS Marketplace の買い手承認(buyer approvals)が GA。購入条件に応じて、コンソール・メール承認者チェーン・Coupa や SAP Ariba に承認を振り分けられるよ！",
+  "title_en": "AWS Marketplace Gets Buyer Approval Workflows, Including Coupa and SAP Ariba",
+  "summary_en": "AWS Marketplace buyer approvals are now generally available. Based on purchase conditions, requests can route to the console, an email approver chain, or Coupa or SAP Ariba.",
+  "emotion": "happy",
+  "importance": 2,
+  "tags": [
+    "aws",
+    "business",
+    "devops"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/marketplace-buyer-approvals/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Marketplace now supports buyer approval workflows",
+  "published_at": "2026-11-19T08:00:00+00:00",
+  "body_md": "やっほー、しぃちゃんだよ！今日は AWS Marketplace で「買うときの承認」がぐっと整うお知らせだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Marketplace の買い手承認(buyer approvals)が一般提供になったよ！どの購入に承認が必要か、誰が承認するか、どこで承認するかを設定できる機能なの。\n\n## 今までどうだったの？\n\nこれまでも、チームが買える製品を制限したり、発注書(PO)で購入を追跡したり、PO の入力を必須にしたりはできたよ。でも、お金を使う約束をする前に「その購入をどう承認するか」までは制御できなかったの。今回はそこが足されたんだね！\n\n## これで何が変わるの？\n\n購入ポリシーで、次のような条件で承認が必要かどうかを決められるよ。\n\n- 購入金額\n- 製品タイプ\n- 価格\n- 公開オファーかプライベートオファーか\n\n## 深く潜ってみよう\n\n### 承認の振り分け先は 3 種類\n\n- AWS Marketplace コンソール\n- メールによる承認者のチェーン\n- 調達システム(Coupa または SAP Ariba)\n\n### メール承認と調達連携\n\n調達・財務・法務・クラウドガバナンスなどの承認者は、製品・価格・条件を確認して、AWS コンソールにサインインせずにメールから承認できるよ。Coupa や SAP Ariba に回した購入は既存の承認フローに沿って進み、専用の発注書が付くから、支出の追跡や突き合わせがしやすくなるの。\n\n### 使い分けの例\n\n- 大きなソフトウェア契約は Coupa や SAP Ariba でレビュー\n- 中規模の購入は複数の承認者にメールで回す\n- 低額や従量課金の購入は承認なしで進める\n\n提供範囲は AWS Marketplace のすべての商用リージョンで、始め方は Buyer Guide の購入ポリシーの項目にあるよ。\n\n## まとめ\n\n- 購入条件に応じた承認ポリシーを設定できる\n- 承認先はコンソール・メールのチェーン・Coupa や SAP Ariba から選べる\n- メールからサインインなしで承認でき、PO で支出も追いやすい\n\n購買や財務、クラウドガバナンスを担当しているみんなに刺さるよ！\n",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today AWS Marketplace gets much better control over approvals when you buy.\n\n## What was announced?\n\nAWS announced in What's New that buyer approvals in AWS Marketplace are now generally available. You can set which purchases need sign-off, who approves them, and where approval takes place.\n\n## The story so far\n\nCustomers could already restrict which products their teams can buy, track purchases with purchase orders, and require purchase order entry. But how each purchase gets approved before a financial commitment wasn't controllable. That is what's added now.\n\n## What changes\n\nBuying policies decide when approval is required, based on conditions such as:\n\n- Purchase amount\n- Product type\n- Pricing\n- Whether an offer is public or private\n\n## Dive Deep\n\n### Three places to route approvals\n\n- The AWS Marketplace console\n- A chain of approvers by email\n- Your procurement system, either Coupa or SAP Ariba\n\n### Email approvals and procurement integration\n\nApprovers such as procurement, finance, legal and cloud governance teams can review the product, price and terms and approve from email, without signing into the AWS console. Purchases routed to Coupa or SAP Ariba follow your existing approval flows and get a dedicated purchase order, which supports cleaner spend tracking and reconciliation.\n\n### Example use\n\n- Large software commitments go to Coupa or SAP Ariba for review\n- Mid-size purchases go to multiple approvers by email\n- Low-cost or pay-as-you-go purchases proceed without approval\n\nIt is available in all AWS Marketplace commercial Regions. See the topic on buying policies in the Buyer Guide to get started.\n\n## Wrap-up\n\n- Set approval policies based on purchase conditions\n- Route to the console, an email chain, or Coupa or SAP Ariba\n- Approve from email without signing in, and track spend with POs\n\nIf you work in procurement, finance or cloud governance, this one is for you!\n"
+}

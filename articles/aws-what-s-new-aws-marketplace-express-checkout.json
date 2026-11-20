@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-aws-marketplace-express-checkout",
+  "title": "AWS アカウントなしでも買える！Marketplace Express Checkout が登場",
+  "summary": "AWS Marketplace の Express Checkout で、AWS アカウントがない企業もメールかソーシャルログインとカード払いでソフトウェアを購入できるよ！対象は米国とカナダなの。",
+  "title_en": "Buy Without an AWS Account: AWS Marketplace Express Checkout",
+  "summary_en": "AWS Marketplace Express Checkout lets businesses without an AWS account buy software with an email or social login and a card. Eligible SaaS is available in the US and Canada.",
+  "emotion": "happy",
+  "importance": 2,
+  "tags": [
+    "aws",
+    "business"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-marketplace-express-checkout/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Marketplace now offers Express Checkout for buyers without an AWS account",
+  "published_at": "2026-11-19T08:00:00+00:00",
+  "body_md": "こんにちは、しぃちゃんだよ！今日は「AWS を使ってない会社もソフトを買える」というお知らせだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Marketplace Express Checkout が発表されたよ！AWS アカウントを持たない企業が、実績のあるベンダーのソフトウェアを AWS Marketplace で買えるようになるの。\n\n## なぜ重要なの？\n\nExpress Checkout は、今は AWS を使っていなくて「ただソフトウェアを買いたい」会社のための仕組みだよ。クラウドの準備は要らないの。\n\n## これで何が変わるの？\n\n### 買い手にとって\n\n- メールアドレスかソーシャルログインでサインインし、クレジットカードかデビットカードで支払う\n- 数ステップで購入が完了する\n- 複数のアプリを買っても、ベンダーごとの請求ログインなしで、Express Checkout のサブスクリプションを一か所で管理できる\n- カードの更新、請求書のダウンロード、解約を自分でできる\n\n### 販売者にとって\n\n- 新しい層のセルフサービスのビジネス買い手に届く\n- 今と同じ出品と AWS Marketplace 連携を使える\n- 対象の公開 SaaS 出品がある販売者は、Express Checkout のカタログへの追加を申請できる\n\n## 深く潜ってみよう\n\n対象の SaaS 製品は、米国とカナダの買い手が購入できるよ。すでに AWS を使っている企業は、これまでどおり AWS アカウントで Marketplace から買えるの。\n\n## まとめ\n\n- AWS アカウントなしで、メールかソーシャルログインとカード払いで購入できる\n- サブスクリプションの管理・請求書・解約もセルフサービス\n- 米国とカナダの買い手が対象\n\nAWS 以外の会社にソフトウェアを売りたい SaaS ベンダーのみんなに刺さるよ！\n",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today's news: companies that don't use AWS can now buy software through Marketplace.\n\n## What was announced?\n\nAWS announced AWS Marketplace Express Checkout in What's New. It lets businesses without an AWS account buy software from established vendors in AWS Marketplace.\n\n## Why it matters\n\nExpress Checkout is built for companies that don't use AWS today and just want to buy software. No cloud setup is required.\n\n## What changes\n\n### For buyers\n\n- Sign in with an email address or social login and pay with a credit or debit card\n- Purchases take a few steps\n- Manage all your Express Checkout subscriptions in one place, without a separate billing login for each vendor\n- Update your card, download invoices and cancel subscriptions yourself\n\n### For sellers\n\n- It opens a new segment of self-serve business buyers\n- It uses the same listing and AWS Marketplace integration you already use\n- Sellers with an eligible public SaaS listing can request to add their product to the Express Checkout catalog\n\n## Dive Deep\n\nEligible SaaS products are available to buyers in the United States and Canada. Businesses that already use AWS can keep buying in AWS Marketplace with their AWS account.\n\n## Wrap-up\n\n- Buy without an AWS account, with an email or social login and a card\n- Subscription management, invoices and cancellation are self-service\n- Available to buyers in the US and Canada\n\nIf you're a SaaS vendor who wants to sell to companies outside AWS, this one is for you!\n"
+}

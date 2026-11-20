@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-site-to-site-vpn-post-quantum",
+  "title": "Site-to-Site VPN がポスト量子鍵交換に対応！追加料金なしで設定できるよ",
+  "summary": "AWS Site-to-Site VPN がポスト量子の鍵交換に対応したよ！CreateVpnConnection と ModifyVpnTunnelOptions の API で設定でき、追加料金はないの。",
+  "title_en": "Site-to-Site VPN Now Supports Post-Quantum Key Exchange at No Extra Cost",
+  "summary_en": "AWS Site-to-Site VPN now supports post-quantum key exchanges, configurable through the CreateVpnConnection and ModifyVpnTunnelOptions APIs, with no additional charge.",
+  "emotion": "thinking",
+  "importance": 4,
+  "tags": [
+    "aws",
+    "security",
+    "infrastructure"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/site-to-site-vpn-post-quantum/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Site-to-Site VPN now supports post-quantum key exchanges",
+  "published_at": "2026-11-19T08:00:00+00:00",
+  "body_md": "おつかれさま、しぃちゃんだよ！量子コンピューター時代の暗号に備えたい人に、うれしいお知らせだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Site-to-Site VPN がポスト量子の鍵交換に対応したと発表されたよ！VPN トンネルのセキュリティを強化して、NIST のガイドラインに沿ったポスト量子暗号への移行を後押しするの。\n\nSite-to-Site VPN は、データセンターや支社と AWS のリソースを、暗号化された IPsec トンネルでつなぐフルマネージドサービスだよ。\n\n## これで何が変わるの？\n\nトンネルのオプションで、ポスト量子の鍵交換方式を設定できるようになるよ。\n\n## 深く潜ってみよう\n\n- 設定には CreateVpnConnection と ModifyVpnTunnelOptions の API を使う\n- 追加料金はなし\n- Site-to-Site VPN が提供されているすべての AWS 商用リージョンと AWS GovCloud (US) リージョンで利用可能\n\n詳しい内容は、Site-to-Site VPN のデータ保護のドキュメントにあるよ。具体的な方式名は、今回の原文からは確認できなかったよ。\n\n## まとめ\n\n- Site-to-Site VPN がポスト量子の鍵交換に対応\n- トンネルオプションを CreateVpnConnection と ModifyVpnTunnelOptions で設定できる\n- 追加料金なしで、商用リージョンと GovCloud (US) で利用可能\n\nハイブリッド接続の暗号を将来に備えて強化したいネットワーク・セキュリティ担当のみんなに刺さるよ！\n",
+  "body_md_en": "Hi everyone, it's Shii-chan! Here's good news if you're preparing for cryptography in the quantum era.\n\n## What was announced?\n\nAWS announced in What's New that AWS Site-to-Site VPN now supports post-quantum key exchanges. It strengthens the security of your VPN tunnels and supports a move to post-quantum cryptography aligned with NIST guidelines.\n\nSite-to-Site VPN is a fully managed service that links your data center or branch office to AWS resources through encrypted IPsec tunnels.\n\n## What changes\n\nYou can set post-quantum key exchange methods in your tunnel options.\n\n## Dive Deep\n\n- Configure it with the CreateVpnConnection and ModifyVpnTunnelOptions APIs\n- No additional charge\n- Available in all AWS commercial Regions and the AWS GovCloud (US) Regions where Site-to-Site VPN is offered\n\nThe Site-to-Site VPN data protection documentation covers the details. The specific method names weren't confirmed from the original announcement.\n\n## Wrap-up\n\n- Site-to-Site VPN supports post-quantum key exchanges\n- Configure tunnel options with CreateVpnConnection and ModifyVpnTunnelOptions\n- No extra charge, in commercial Regions and GovCloud (US)\n\nIf you want to harden hybrid connectivity for the future, this one is for you!\n"
+}

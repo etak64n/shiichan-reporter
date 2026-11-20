@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-revenue-measurement-identity-tagging",
+  "title": "IAM ロールにタグ付けするだけ！Revenue Measurement に Identity Tagging が登場",
+  "summary": "AWS Revenue Measurement で、パートナーが使う IAM ユーザーやロールにタグを付けるだけで利用量を帰属できる Identity Tagging が使えるようになったよ！コード変更は不要なの。",
+  "title_en": "Just Tag the IAM Role: Identity Tagging Comes to AWS Revenue Measurement",
+  "summary_en": "AWS Revenue Measurement now supports Identity Tagging: partners tag the IAM user or role their solution uses to attribute usage, with no code changes.",
+  "emotion": "happy",
+  "importance": 2,
+  "tags": [
+    "aws",
+    "business"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/revenue-measurement-identity-tagging/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Revenue Measurement now supports Identity Tagging",
+  "published_at": "2026-11-19T08:00:00+00:00",
+  "body_md": "やっほー、しぃちゃんだよ！今日はパートナー向けの、ちょっと地味だけど便利なアップデートだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Revenue Measurement(旧 Partner Revenue Measurement)が Identity Tagging に対応したと発表されたよ！Revenue Measurement は、パートナーのソリューションが生み出した AWS 利用量を追跡する仕組みなの。\n\n## 今までどうだったの？\n\nリソースタグ付けでは、ソリューションが作ったり管理したりするすべてのリソースに、一貫したタグを付ける必要があったよ。お客様ごとに環境が違うと、これがとても大変だったの。\n\n## これで何が変わるの？\n\nパートナーは、ソリューションが使う IAM ユーザーや IAM ロールにタグを付けるだけでよくなるよ。個々のリソースにタグを付けたり、SDK や API の呼び出しごとに識別子を足したりしなくていいの！\n\n## 深く潜ってみよう\n\n- タグ付けされた ID が作ったリソースからの利用量は、パートナーの製品に帰属される\n- コードの変更は不要\n- Identity Tagging は、リソースタグ付け、User Agent 文字列、SaaS アカウントタグ付けと併用できて、アーキテクチャに合う方法を選べる\n- すべての商用リージョンで一般提供\n\n詳しくはドキュメントの Revenue Measurement オンボーディングガイドを見てね。\n\n## まとめ\n\n- IAM ユーザーやロールへのタグ付けで利用量を帰属できる\n- コード変更なし、既存のタグ付け方法とも併用可能\n- 全商用リージョンで利用できる\n\nAWS パートナーとして製品の利用量を計測したいみんなに刺さるよ！\n",
+  "body_md_en": "Hi everyone, it's Shii-chan! Here's a quiet but handy update for AWS partners.\n\n## What was announced?\n\nAWS announced in What's New that AWS Revenue Measurement (formerly Partner Revenue Measurement) now supports Identity Tagging. Revenue Measurement tracks AWS usage driven by partner solutions.\n\n## The story so far\n\nResource Tagging required consistent tags on every resource a solution created or managed. That was hard to do across different customer environments.\n\n## What changes\n\nPartners can now tag the IAM user or role their solution uses. There's no need to tag each resource or add identifiers to individual SDK or API calls.\n\n## Dive Deep\n\n- AWS attributes usage from resources created by a tagged identity to the partner's product\n- No code changes required\n- Identity Tagging works alongside Resource Tagging, the User Agent string and SaaS Account Tagging, so you can pick what fits your architecture\n- Generally available in all commercial Regions\n\nSee the AWS Revenue Measurement onboarding guide in the documentation for details.\n\n## Wrap-up\n\n- Tag an IAM user or role to attribute usage\n- No code changes, and it works with the existing tagging methods\n- Available in all commercial Regions\n\nIf you're an AWS partner measuring your product's usage, this one is for you!\n"
+}

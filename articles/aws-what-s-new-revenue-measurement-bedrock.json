@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-revenue-measurement-bedrock",
+  "title": "Bedrock のクローズドモデルも Revenue Measurement の対象に！",
+  "summary": "AWS Revenue Measurement が Amazon Bedrock のクローズドソースモデルにも対応し、Bedrock の料金全体がパートナーの帰属収益に含まれるようになったよ！",
+  "title_en": "Closed-Source Bedrock Models Now Count in AWS Revenue Measurement",
+  "summary_en": "AWS Revenue Measurement now covers closed-source models in Amazon Bedrock, so attributed revenue includes the full Bedrock charges for partner solutions.",
+  "emotion": "happy",
+  "importance": 2,
+  "tags": [
+    "aws",
+    "ai",
+    "business"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/revenue-measurement-bedrock/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Revenue Measurement now supports closed-source models in Amazon Bedrock",
+  "published_at": "2026-11-19T08:00:00+00:00",
+  "body_md": "こんにちは、しぃちゃんだよ！Bedrock を使うパートナーさんに、うれしい拡張が来たよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Revenue Measurement(旧 Partner Revenue Measurement)が Amazon Bedrock のクローズドソースモデルに対応したと発表されたよ！クローズドモデルを使うソリューションの帰属収益も見えるようになって、ソリューションが生み出す収益の全体像がつかめるの。\n\n## 今までどうだったの？\n\nこれまで Bedrock で対象だったのは、Amazon Nova などの Amazon のモデルと、オープンウェイトモデルだけだったよ。\n\n## これで何が変わるの？\n\nBedrock の帰属収益に、クローズドソースモデルの利用も含めた Bedrock の料金全体が入るようになったの！\n\n## 深く潜ってみよう\n\n- すでに Bedrock でリソースタグ付け、User Agent 文字列、Identity Tagging、SaaS アカウントタグ付けのどれかを使っているパートナーは、追加の実装なしで拡張された対象範囲が自動で適用される\n- すべての商用 AWS リージョンで一般提供(具体的なリージョンの記載はなし)\n- 詳しくは Revenue Measurement オンボーディングガイドの Amazon Bedrock ベストプラクティスの項目へ\n\n## まとめ\n\n- クローズドソースモデルの Bedrock 利用も帰属収益の対象になった\n- 既存のタグ付けを使っていれば追加作業は不要\n- 全商用リージョンで利用可能\n\nBedrock 上でソリューションを提供する AWS パートナーのみんなに刺さるよ！\n",
+  "body_md_en": "Hi everyone, it's Shii-chan! Here's a nice expansion for partners building on Bedrock.\n\n## What was announced?\n\nAWS announced in What's New that AWS Revenue Measurement (formerly Partner Revenue Measurement) now supports closed-source models in Amazon Bedrock. Partners can see attributed revenue for solutions using these models, giving a fuller picture of the revenue their solutions generate.\n\n## The story so far\n\nPreviously, only Amazon models such as Amazon Nova and open-weight models in Bedrock were included.\n\n## What changes\n\nAttributed revenue for Bedrock now includes the full Bedrock charges, covering closed-source model usage too.\n\n## Dive Deep\n\n- Partners already using Resource Tagging, the User Agent string, Identity Tagging or SaaS Account Tagging for Bedrock get the expanded coverage automatically, with no extra implementation\n- Generally available in all commercial AWS Regions (specific Regions aren't listed)\n- See the Amazon Bedrock best practices section of the Revenue Measurement onboarding guide\n\n## Wrap-up\n\n- Closed-source model usage in Bedrock now counts toward attributed revenue\n- No extra work if you already use the existing tagging methods\n- Available in all commercial Regions\n\nIf you're an AWS partner shipping solutions on Bedrock, this one is for you!\n"
+}

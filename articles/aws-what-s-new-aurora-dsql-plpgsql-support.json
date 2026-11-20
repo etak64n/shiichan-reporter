@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aurora-dsql-plpgsql-support",
+  "title": "Aurora DSQL がついに PL/pgSQL 対応！ストアド関数とプロシージャが書けるよ",
+  "summary": "Amazon Aurora DSQL で PL/pgSQL のストアド関数とプロシージャが作れるようになったよ！IF や LOOP を使った複数ステップの処理をデータベース内で実行できるの。",
+  "title_en": "Aurora DSQL Finally Supports PL/pgSQL Functions and Procedures",
+  "summary_en": "Amazon Aurora DSQL now supports PL/pgSQL stored functions and procedures, so multi-step logic with IF and loops can run inside the database.",
+  "emotion": "happy",
+  "importance": 4,
+  "tags": [
+    "aws",
+    "infrastructure",
+    "serverless"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aurora-dsql-plpgsql-support/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Aurora DSQL now supports PL/pgSQL functions and procedures",
+  "published_at": "2026-11-19T08:00:00+00:00",
+  "body_md": "みんな、しぃちゃんだよ！PostgreSQL 互換のデータベースを使っている人、待ってたんじゃないかな！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Aurora DSQL が PL/pgSQL に対応したと発表されたよ！ストアド関数やプロシージャを、データベースの中に直接作って実行できるようになったの。\n\n## これで何が変わるの？\n\nIF/ELSE の条件分岐、ループ、変数への代入といった手続き的なロジックを、SQL の操作と組み合わせて書けるよ。複数ステップの処理をデータベース内で実行すれば、ネットワークの往復が減るから、データの検証や複雑な計算、複数ステップのトランザクションに効いてくるの！\n\n例として、ひとつのデータベース関数で口座残高を確認し、複数のテーブルを更新して、エラーも処理する金融アプリが紹介されているよ。\n\n## 深く潜ってみよう\n\n- PL/pgSQL は Aurora DSQL が使えるすべての AWS リージョンで利用できる(具体的なリージョンの記載はなし)\n- 詳しくは Aurora DSQL ユーザーガイドの PL/pgSQL の項目へ\n\nAurora DSQL は、複数リージョンでアクティブ・アクティブの可用性を持つ、サーバーレスの分散 SQL データベースだよ。\n\n## まとめ\n\n- PL/pgSQL でストアド関数とプロシージャが作れる\n- 条件分岐・ループ・変数を SQL と組み合わせられる\n- 往復が減って、検証や複数ステップのトランザクションに向く\n\nAurora DSQL でロジックをデータベース側に寄せたいみんなに刺さるよ！\n",
+  "body_md_en": "Hi everyone, it's Shii-chan! If you use PostgreSQL-compatible databases, you may have been waiting for this.\n\n## What was announced?\n\nAWS announced in What's New that Amazon Aurora DSQL now supports PL/pgSQL. You can create and run stored functions and procedures directly in the database.\n\n## What changes\n\nYou can combine procedural logic, such as IF/ELSE statements, loops and variable assignments, with SQL operations. Running multi-step logic inside the database reduces network round trips, which helps data validation, complex calculations and multi-step transactions.\n\nAs an example, a financial application could use one database function to check account balances, update several tables and handle errors.\n\n## Dive Deep\n\n- PL/pgSQL is available in all AWS Regions where Aurora DSQL is available (specific Regions aren't listed)\n- See the \"PL/pgSQL\" section of the Aurora DSQL User Guide\n\nAurora DSQL is a serverless, distributed SQL database built for active-active availability across multiple AWS Regions.\n\n## Wrap-up\n\n- Create stored functions and procedures with PL/pgSQL\n- Combine branching, loops and variables with SQL\n- Fewer round trips, which suits validation and multi-step transactions\n\nIf you want to move logic closer to the data in Aurora DSQL, this one is for you!\n"
+}
