@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-aws-marketplace-agent-mode-expansion",
+  "title": "AWS Marketplace の agent mode が拡大！調べて、買って、デプロイまで 1 つの会話で",
+  "summary": "AWS Marketplace の agent mode で、ソリューションの評価から購入、デプロイまでを 1 回の会話で進められるようになったよ！",
+  "body_md": "おつかれさま、しぃちゃんだよ！今日は Marketplace の会話型 AI がパワーアップした話だよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Marketplace の agent mode が拡大されたよ。agent mode は、クラウドソリューション調達のための会話型 AI 体験で、評価・購入・デプロイを 1 つの会話で進められるようになったの。要件は 1 回伝えれば、各ステップで使い回してくれるよ。\n\n## これで何が変わるの？\n\n発表のページには従来の流れの説明がなくて、比較はできないんだけど、いくつもの工程が 1 つの会話にまとまったのがポイントだよ。\n\n## 深く潜ってみよう\n\nできることはこの 4 つ。\n\n- 探索: ユースケースを自然な言葉で伝えると、ソフトウェア、サービス、AI エージェント、ツール、複数製品のソリューションを提案してくれる\n- 販売者のセキュリティ評価: SOC 2 レポートなどの文書を依頼し、標準的なクラウドセキュリティ質問票 CAIQ の基準ごとに評価してくれる\n- 購入: AWS アカウントでサインインすると、価格や条件の説明、組織の購入要件の表示をしてくれて、条件を確認して承認すれば購入まで実行する\n- デプロイ(対応製品のみ): AWS 環境を確認し、月額の概算コストつきのデプロイ計画を提案する。承認後にデプロイし、使い始め方の案内や失敗したステップのトラブルシュートもしてくれる\n\n対応製品がどれかは、ページには書かれていないよ。AWS Marketplace が使えるすべてのリージョンで利用でき、入口は aws.amazon.com/marketplace/agentmode。詳細は Buyer Guide の「Agent mode for AWS Marketplace」を見てね。\n\n## まとめ\n\n- 探索、セキュリティ評価、購入、デプロイが 1 つの会話に\n- 購入もデプロイも、ユーザーの承認が前提\n- デプロイは対応製品のみ\n\nソリューション選定から導入までの手間を減らしたい調達担当やエンジニアさんに刺さるよ！\n",
+  "title_en": "AWS Marketplace Agent Mode Expands: Assess, Buy, and Deploy in One Chat",
+  "summary_en": "AWS Marketplace agent mode now takes you from evaluating a solution to buying and deploying it in a single conversation!",
+  "body_md_en": "Hi, it's Shii-chan! Today the conversational AI in AWS Marketplace got more powerful.\n\n## What was announced?\n\nAWS expanded agent mode for AWS Marketplace, the conversational AI experience for procuring cloud solutions. It now covers evaluation, purchase, and deployment in one conversation. You state your requirements once, and agent mode uses them through each step.\n\n## What changes\n\nThe announcement doesn't describe how these tasks worked before, so there's no direct comparison. The point is that several steps now live in one conversation.\n\n## Dive Deep\n\nHere's what it can do:\n\n- Discovery: describe your use case in plain language and get recommended software, services, AI agents, tools, and multi-product solutions\n- Seller security assessment: request documents such as SOC 2 reports and get a criterion-by-criterion assessment against CAIQ, a standard cloud security questionnaire\n- Purchase: sign in with your AWS account. It explains pricing and terms, shows your organization's purchase requirements, and completes the purchase after you review the terms and confirm\n- Deployment (supported products only): it reviews your AWS environment and proposes a deployment plan with an estimated monthly cost. It deploys only after you approve, then shows how to get started and helps troubleshoot failed steps\n\nThe announcement doesn't say which products are supported. It's available in all Regions where AWS Marketplace is available, at aws.amazon.com/marketplace/agentmode. See \"Agent mode for AWS Marketplace\" in the Buyer Guide for details.\n\n## Wrap-up\n\n- Discovery, security assessment, purchase, and deployment in one conversation\n- Both purchase and deployment require your approval\n- Deployment is for supported products only\n\nThis is for buyers and engineers who want less friction from picking a solution to running it!\n",
+  "emotion": "energetic",
+  "importance": 4,
+  "tags": [
+    "aws",
+    "ai"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-marketplace/aws-marketplace-agent-mode-expansion",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Marketplace agent mode now helps you assess, buy, and deploy solutions",
+  "published_at": "2026-11-19T20:00:00+00:00"
+}

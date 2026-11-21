@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-aurora-dsql-higher-write-throughput",
+  "title": "Aurora DSQL の書き込みスループットが最大 50% アップ！時刻順キーなら挿入が最大 200% 増",
+  "summary": "Amazon Aurora DSQL がストレージ層の改良で、書き込みスループットが最大 50% 向上したよ。既存クラスターも追加料金なしで恩恵を受けられるの！",
+  "body_md": "やっほー、しぃちゃんだよ！データベース好きさんに嬉しい数字つきの発表だよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Aurora DSQL が多くのトランザクションワークロードで「最大 50% 高い書き込みスループット」を実現したと発表されたよ！ ストレージ層のアップグレードによるもので、データのロードも早く終わるはずだよ。\n\n## これで何が変わるの？\n\n特に恩恵が大きいのは、主キーが増え続けるテーブルだよ。\n\n- タイムスタンプ\n- 識別列(identity column)\n- ULID や UUIDv7 のような時刻順の ID\n\n監査ログ、台帳、イベントフィードのように時刻順に読むデータは、時刻をキーにすると読み出しが速いよね。発表では、この設計を書き込みが多いテーブルでも使えるようになった、と説明されているよ。\n\n## 深く潜ってみよう\n\n- 性能: Amazon のテストでは、イベント時刻をキーにした監査ログテーブルで、1 秒あたりの挿入が「最大 200% 増」。ほかのワークロードの結果は変わる可能性があり、50% は「多くのトランザクションワークロード」での数字\n- 対象: 新規クラスターも既存クラスターも対象なので、移行は不要\n- 料金: 追加料金なし\n- リージョン: Aurora DSQL が使えるすべてのリージョン\n\n設定項目や新しい手順は発表にはなくて、実際にできる工夫は、書き込みの多いテーブルを時刻順の主キー(タイムスタンプ、identity、ULID、UUIDv7)で設計することだよ。詳細は Aurora DSQL User Guide を案内していたよ。以前のスループットの具体的な数値は書かれていないよ。\n\n## まとめ\n\n- 多くのトランザクションワークロードで書き込みスループットが最大 50% 向上\n- 時刻順キーの監査ログテーブルでは、挿入が最大 200% 増(Amazon のテスト結果)\n- 既存クラスターもそのまま恩恵あり、追加料金なし\n\nAurora DSQL でログやイベントのような書き込みの多いデータを扱っている人に刺さるよ！\n",
+  "title_en": "Aurora DSQL Writes Get Up to 50% Faster, and Time-Ordered Keys Hit +200% Inserts",
+  "summary_en": "Amazon Aurora DSQL now delivers up to 50% higher write throughput thanks to storage layer upgrades. Existing clusters benefit at no extra cost!",
+  "body_md_en": "Hi, it's Shii-chan! Database fans, here's an announcement with real numbers.\n\n## What was announced?\n\nOn What's New, AWS announced that Amazon Aurora DSQL now delivers up to 50% higher write throughput for many transactional workloads. The gain comes from upgrades to its storage layer, and data loads should finish sooner.\n\n## What changes\n\nTables with ever-increasing primary keys benefit the most:\n\n- Timestamps\n- Identity columns\n- Time-ordered IDs such as ULID or UUIDv7\n\nTime-ordered reads of data like audit logs, ledgers, and event feeds are fast when the table is keyed by time. The announcement says this design can now be used for write-heavy tables as well.\n\n## Dive Deep\n\n- Performance: in Amazon's tests, an audit log table keyed by event time accepted up to 200% more inserts per second. Results for other workloads will vary, and the 50% figure applies to many transactional workloads\n- Scope: new and existing clusters, so no migration is needed\n- Cost: no additional cost\n- Regions: every Region where Aurora DSQL is available\n\nThere are no new settings or steps. The practical action is to design write-heavy tables with time-ordered primary keys (timestamp, identity, ULID, or UUIDv7). See the Aurora DSQL User Guide for details. The announcement doesn't give baseline throughput numbers.\n\n## Wrap-up\n\n- Up to 50% higher write throughput for many transactional workloads\n- Up to 200% more inserts per second on a time-keyed audit log table (Amazon's test)\n- Existing clusters benefit as they are, at no additional cost\n\nThis is for anyone handling write-heavy data like logs and events on Aurora DSQL!\n",
+  "emotion": "happy",
+  "importance": 3,
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aurora-dsql-higher-write-throughput/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Aurora DSQL now delivers up to 50% higher write throughput",
+  "published_at": "2026-11-19T20:53:00+00:00"
+}

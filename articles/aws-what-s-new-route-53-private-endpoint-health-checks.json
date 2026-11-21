@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-route-53-private-endpoint-health-checks",
+  "title": "Route 53 がプライベートエンドポイントのヘルスチェックに対応！自作フェイルオーバーにサヨナラ",
+  "summary": "Amazon Route 53 に Private Endpoint Health Checks が登場！公開されていない内部リソースも監視して、数秒で DNS フェイルオーバーできるようになったよ。",
+  "body_md": "みんな、しぃちゃんだよ！今日は Route 53 の待望アップデートを紹介するね。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Route 53 の Private Endpoint Health Checks が発表されたよ！ インターネットから届かないリソースの死活監視を Route 53 に任せられるようになったの。\n\n- 対象: 内部 API、データベース、内部ロードバランサーの背後やプライベートサブネットにあるノードなど。IP アドレス、ドメイン、ポートで指定する\n- プロトコル: HTTP、HTTPS、TCP\n- DNS 連携: プライベートホストゾーンのルーティングポリシーを横断して、DNS レコードにヘルスチェックを関連付けられる。正常なエンドポイントにだけトラフィックを流し、フェイルオーバーも自動\n\n## 今までどうだったの？\n\nプライベートなリソースの DNS フェイルオーバーをしたいときは、CloudWatch アラーム、AWS Lambda、Route 53 API を組み合わせた制御ループを自作する必要があったの。発表によると、フェイルオーバーまでに数分かかり、運用の手間も続いていたみたい。\n\n## これで何が変わるの？\n\n- 検知から DNS フェイルオーバーまでが数秒で終わる設計になった\n- フルマネージドなので自作の自動化を保守しなくてよい\n- エンドポイントは非公開のまま、インターネットに晒さなくてよい\n\n## 深く潜ってみよう\n\nAWS Direct Connect や AWS Site-to-Site VPN で VPC から到達できるオンプレミスやハイブリッドのエンドポイントにも使えるよ。発表で挙げられている構成はこの 2 つ。\n\n- アクティブ・パッシブ構成のディザスタリカバリ\n- AWS Transit Gateway や AWS Cloud WAN を使ったクロスリージョンのディザスタリカバリ\n\nすべての AWS 商用リージョンで利用できるよ。料金や上限値は発表には書かれていなくて、Route 53 の料金ページと Developer Guide を見てね、という案内になっていたよ。\n\n## まとめ\n\n- 非公開エンドポイントを HTTP / HTTPS / TCP で監視できる\n- プライベートホストゾーンの DNS レコードと連携して自動フェイルオーバー\n- Lambda や CloudWatch アラームで組んでいた自作ループが不要に\n\n社内システムやハイブリッド構成の可用性を担当しているエンジニアさんに刺さるよ！\n",
+  "title_en": "Route 53 Private Endpoint Health Checks Say Goodbye to DIY Failover",
+  "summary_en": "Amazon Route 53 now offers Private Endpoint Health Checks. You can monitor resources that aren't publicly reachable and fail over DNS in seconds.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today I'm covering a long-awaited Route 53 update.\n\n## What was announced?\n\nAWS announced Private Endpoint Health Checks for Amazon Route 53 on What's New. Route 53 can now monitor the health of resources that aren't reachable from the public internet.\n\n- Targets: internal APIs, databases, nodes behind internal load balancers or in private subnets, identified by IP address, domain, or port\n- Protocols: HTTP, HTTPS, and TCP\n- DNS integration: you can associate health checks with DNS records across routing policies in private hosted zones. Route 53 sends traffic only to healthy endpoints and handles failover automatically\n\n## The story so far\n\nTo get DNS failover for private resources, teams had to build their own control loop from CloudWatch alarms, AWS Lambda functions, and the Route 53 API. According to the announcement, failover took several minutes and the approach created ongoing operational work.\n\n## What changes\n\n- Detection and DNS failover are designed to finish in seconds\n- It's fully managed, so you no longer maintain custom failover automation\n- Endpoints stay private and nothing is exposed to the public internet\n\n## Dive Deep\n\nIt also works with on-premises and hybrid endpoints that are reachable from a VPC over AWS Direct Connect or AWS Site-to-Site VPN. The announcement cites two patterns:\n\n- Active-passive disaster recovery\n- Cross-Region disaster recovery over AWS Transit Gateway or AWS Cloud WAN\n\nIt's available in all AWS commercial Regions. The announcement doesn't list prices or quotas, and points to the Route 53 pricing page and Developer Guide.\n\n## Wrap-up\n\n- Monitor private endpoints over HTTP, HTTPS, or TCP\n- Automatic failover tied to DNS records in private hosted zones\n- No more homegrown loops built from Lambda and CloudWatch alarms\n\nThis is great for engineers who own availability of internal or hybrid systems!\n",
+  "emotion": "happy",
+  "importance": 4,
+  "tags": [
+    "aws",
+    "infrastructure",
+    "devops"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/route-53-private-endpoint-health-checks/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Route 53 now supports health checks for private endpoints",
+  "published_at": "2026-11-19T19:50:00+00:00"
+}

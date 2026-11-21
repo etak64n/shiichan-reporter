@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-cloudfront-domain-moves-distribution-tenants",
+  "title": "CloudFront のドメイン移行がワンリクエストで！ダウンタイムなしで SaaS の顧客ドメインを移せるよ",
+  "summary": "CloudFront のマルチテナントディストリビューションで、使用中のドメインを 1 リクエスト・ダウンタイムなしで移せるようになったよ。証明書が未発行でも先に通信を流せるの！",
+  "body_md": "みんな、しぃちゃんだよ！今日は SaaS を作っている人に嬉しい CloudFront のアップデートだよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon CloudFront が SaaS Manager 向けにドメイン移行とオンボーディングを簡単にしたと発表されたよ。Web 開発プラットフォームや SaaS 事業者が、顧客のドメインを自分のプラットフォームに 1 リクエストで、ダウンタイムなしで移せるの。\n\n## 今までどうだったの？\n\nすでに使われているドメインを移すには、次のどれかが必要だったよ。\n\n- 元のディストリビューションを無効化する\n- ワイルドカードを使った回避策を使う\n- AWS Support に連絡する\n\n## これで何が変わるの？\n\n- 作成・更新の最中にテナントへ顧客ドメインを取り込める\n- 1 リクエストで 1 つ以上のドメインを移せる。同じ AWS アカウント内でも、アカウントをまたいでも可能\n- 既存の AWS のお客様も、トラフィックを止めずにマルチテナントディストリビューションへ移行できる\n\n## 深く潜ってみよう\n\n新しい `OnDomainTakeover` オプションを使うと、CloudFront が DNS レコードでドメインの所有権を確認してくれて、確認後にドメインを移すよ。\n\n証明書の扱いも変わったよ。証明書が発行される前にドメインを追加した場合、CloudFront は HTTP で配信する。その後、AWS Certificate Manager(ACM)やほかの認証局でドメインを検証し、発行された証明書を付ければいいの。\n\nすべてのエッジロケーションで追加料金なしで使えるよ。1 リクエストあたりのドメイン数などの上限は、発表には書かれていないよ。\n\n## まとめ\n\n- 使用中のドメインを、ダウンタイムなし・1 リクエストで移せる\n- `OnDomainTakeover` で DNS による所有権確認\n- 証明書の発行前でも、先に HTTP で配信できる\n- 追加料金なし\n\n顧客ごとのカスタムドメインを CloudFront で捌いている SaaS 事業者さんに刺さるよ！\n",
+  "title_en": "CloudFront Domain Moves in One Request: Zero Downtime for SaaS Customer Domains",
+  "summary_en": "CloudFront multi-tenant distributions can now move an in-use domain in one request with no downtime, even before its certificate is ready!",
+  "body_md_en": "Hi everyone, it's Shii-chan! Here's a CloudFront update that SaaS builders will like.\n\n## What was announced?\n\nAWS announced on What's New that Amazon CloudFront simplifies domain moves and onboarding for SaaS Manager. Web development platforms and SaaS providers can move a customer's domain to their platform in one request, with no downtime.\n\n## The story so far\n\nMoving a domain that was already in use required one of these:\n\n- Disabling the original distribution\n- Using a wildcard workaround\n- Contacting AWS Support\n\n## What changes\n\n- You can bring customer domains onto a tenant while creating or updating it\n- One request can move one or more domains, within a single AWS account or across accounts\n- Existing AWS customers can move to multi-tenant distributions without disrupting traffic\n\n## Dive Deep\n\nWith the new `OnDomainTakeover` option, CloudFront verifies domain ownership through DNS records, then moves the domains.\n\nCertificates work differently now too. If you add a domain before its certificate is issued, CloudFront serves it over HTTP. You can then validate the domain with AWS Certificate Manager (ACM) or another certificate authority and attach the certificate once it's issued.\n\nIt's available at all edge locations at no additional cost. The announcement doesn't state limits such as domains per request.\n\n## Wrap-up\n\n- Move in-use domains in one request with no downtime\n- DNS-based ownership verification with `OnDomainTakeover`\n- Serve over HTTP while the certificate is still being issued\n- No additional cost\n\nThis is for SaaS providers running per-customer custom domains on CloudFront!\n",
+  "emotion": "happy",
+  "importance": 4,
+  "tags": [
+    "aws",
+    "web",
+    "infrastructure"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/cloudfront-domain-moves-distribution-tenants",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon CloudFront simplifies domain moves and onboarding for SaaS Manager",
+  "published_at": "2026-11-19T20:22:00+00:00"
+}

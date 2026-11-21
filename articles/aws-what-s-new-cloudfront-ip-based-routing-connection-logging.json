@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-cloudfront-ip-based-routing-connection-logging",
+  "title": "CloudFront SaaS Manager が IP ベースのルーティングに対応！1 つのワイルドカードで有料と無料を出し分け",
+  "summary": "CloudFront がクライアントの接続先 IP アドレスでテナントの設定を選べるようになったよ。接続ログも追加されて、SNI なしのクライアントにも対応するの！",
+  "body_md": "こんにちは、しぃちゃんだよ！今日も CloudFront の SaaS Manager の話題だよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon CloudFront の SaaS Manager に IP ベースのルーティングと接続ログが追加されたよ！ Web 開発や SaaS のプラットフォームが、1 つのワイルドカードドメイン(例: `*.example.com`)の下で、顧客ごとに違う設定を出し分けられるようになったの。\n\n## 今までどうだったの？\n\nCloudFront はドメイン名だけで設定を選んでいたから、同じドメインは必ず同じ設定に対応していたよ。1 つのワイルドカードドメインの下で、プランごとに別の設定を使うことは、この方法ではできなかったの。\n\n## これで何が変わるの？\n\n- アドレスベースの選択: クライアントが接続した IP アドレスで、テナントの設定を選べる。プレミアムやプロの顧客には専用の Anycast 静的 IP リスト(それぞれ別設定)を、無料プランの顧客には共有の CloudFront IP アドレスを割り当てられる\n- トラフィックの付け替え: どのクライアントがどの IP リストに解決されるかを制御できるので、顧客側の操作なしでサービス階層を移動できる\n\n## 深く潜ってみよう\n\n- ビューアーのフォールバック: TLS ハンドシェイクでドメイン名(SNI)を送らず、IP で接続してくるクライアント(IoT デバイス、組み込み SDK、古い TLS クライアントなど)にも対応する。こうした接続を受けるディストリビューションを選ぶと、CloudFront が各リクエストの Host ヘッダーで正しいコンテンツを返す\n- 接続ログ: これらのテナントへの HTTPS 接続が記録され、クライアントの接続まわりのトラブルシュートに役立つ\n\nすべての CloudFront エッジロケーションで使えるよ。料金や上限、設定手順は発表には書かれていなくて、Developer Guide の「Address-based selection」と「Connection Logs」を見てね。\n\n## まとめ\n\n- 接続先 IP アドレスでテナント設定を選べる\n- 有料プランと無料プランを 1 つのワイルドカードドメインで出し分け\n- SNI なしのクライアントにも Host ヘッダーで対応\n- HTTPS 接続ログを追加\n\nプラン別に配信設定を分けたい SaaS の運営者さんに刺さるよ！\n",
+  "title_en": "CloudFront SaaS Manager Adds IP-Based Routing: Paid and Free Tiers Under One Wildcard",
+  "summary_en": "CloudFront can now pick a tenant's configuration by the IP address a client connects to. Connection logs are new too, and clients without SNI are supported!",
+  "body_md_en": "Hello, it's Shii-chan! More CloudFront SaaS Manager news today.\n\n## What was announced?\n\nOn What's New, AWS announced IP-based routing and connection logs for Amazon CloudFront SaaS Manager. Web development and SaaS platforms can serve different configurations under one wildcard domain such as `*.example.com`.\n\n## The story so far\n\nCloudFront selected a configuration from the domain name alone, so a given domain always mapped to the same configuration. Serving multiple tiers under one wildcard domain with different configurations wasn't possible this way.\n\n## What changes\n\n- Address-based selection: CloudFront can choose a tenant's configuration based on the IP address a client connects to. Premium and pro customers can use dedicated Anycast static IP lists, each with its own configuration, while free-tier customers use shared CloudFront IP addresses\n- Traffic shifting: you control which clients resolve to which IP list, so you can move customers between tiers without them changing anything\n\n## Dive Deep\n\n- Viewer fallback: clients that connect by IP without sending a domain name in the TLS handshake (SNI), such as IoT devices, embedded SDKs, and older TLS clients, are supported. You pick a distribution to accept these connections, and CloudFront uses the Host header in each request to serve the correct content\n- Connection logs: HTTPS connections to these tenants are now recorded, which helps troubleshoot how clients connect\n\nIt's available at all CloudFront edge locations. The announcement doesn't mention pricing, limits, or setup steps. See \"Address-based selection\" and \"Connection Logs\" in the Developer Guide.\n\n## Wrap-up\n\n- Pick tenant configuration by the IP address clients connect to\n- Serve paid and free tiers under one wildcard domain\n- Clients without SNI work through the Host header\n- New HTTPS connection logs\n\nThis is for SaaS operators who want to split delivery settings by plan!\n",
+  "emotion": "happy",
+  "importance": 4,
+  "tags": [
+    "aws",
+    "web",
+    "infrastructure"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/cloudfront-ip-based-routing-connection-logging",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon CloudFront adds IP based routing and connection logs to SaaS Manager",
+  "published_at": "2026-11-19T20:26:00+00:00"
+}

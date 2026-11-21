@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-partner-central-guides-mcp",
+  "title": "AWS Partner Central のガイドがコンソールと MCP サーバーから使えるように！",
+  "summary": "AWS Partner Central guides が、コンソールと Partner Central Agents の MCP サーバーから使えるようになったよ。パートナー限定の情報を検索したり、AI に質問したりできるの！",
+  "body_md": "こんにちは、しぃちゃんだよ！今日は AWS パートナー向けのお知らせだよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Partner Central guides が、AWS Partner Central のコンソールと Partner Central Agents の Model Context Protocol(MCP)サーバーから使えるようになったと発表されたよ！ プログラム、特典、技術、マーケティング、資金支援などについての、AWS が整えたコンテンツを 1 か所で探して、読んで、共有できるの。\n\n内容はパートナー向けで、サインインと適切な権限が必要だよ。発表によると、プログラムや特典、要件についてより正確な答えが得られるみたい。\n\n## なぜ重要なの？\n\n発表には以前の状況の説明はないんだけど、AWS ドキュメントにある公開情報に加えて、認証が必要なパートナー固有の情報を足す位置づけだと読めるよ。\n\n## 深く潜ってみよう\n\nできることはこの通り。\n\n- トピック別に閲覧\n- すべてのガイドを横断して検索\n- 最近の利用状況や AWS のプログラム更新に合わせたパーソナライズ表示\n- Partner Central Agents への自然言語の質問(例: AWS Foundational Technical Review の要件を説明するガイドはどれ？ Migration Acceleration Program のクイックリファレンスを全部出して、など)\n- Kiro、AWS Quick、CRM システム、そのほかの AI クライアントへの組み込み\n\n対象はすべての AWS パートナーで、米国東部(バージニア北部)リージョン、英語のみだよ。料金や上限は発表には書かれていないよ。設定は、ドキュメントの「Guides in the AWS Partner Central console」と「Getting started with the Partner Central Agents MCP server」を見てね。\n\n## まとめ\n\n- Partner Central guides をコンソールと MCP サーバーの両方で使える\n- 閲覧、検索、パーソナライズ表示、自然言語での質問に対応\n- 英語のみ、米国東部(バージニア北部)リージョン\n\nAWS パートナーの営業・技術担当さんで、AI クライアントから制度情報を引きたい人に刺さるよ！\n",
+  "title_en": "AWS Partner Central Guides Arrive in the Console and via an MCP Server",
+  "summary_en": "AWS Partner Central guides are now available in the console and through the Partner Central Agents MCP server. Search partner-only content or ask an AI!",
+  "body_md_en": "Hello, it's Shii-chan! Today's news is for AWS Partners.\n\n## What was announced?\n\nOn What's New, AWS announced that AWS Partner Central guides are available in the AWS Partner Central console and through the Partner Central Agents Model Context Protocol (MCP) server. Partners get one place to find, read, and share AWS-curated content on programs, benefits, technical topics, marketing, funding, and more.\n\nThe content is partner-specific and requires sign-in and appropriate permissions. According to the announcement, it should yield more accurate answers about programs, benefits, and requirements.\n\n## Why it matters\n\nThe announcement doesn't describe what partners had before. It does say the guides complement the public information in AWS documentation, which suggests they add partner-specific, authenticated content on top of it.\n\n## Dive Deep\n\nHere's what you can do:\n\n- Browse guides by topic\n- Search across all guides at once\n- Get a personalized view based on recent activity and AWS program updates\n- Ask natural-language questions to the Partner Central Agents, for example which guides explain the requirements for the AWS Foundational Technical Review, or everything in a Migration Acceleration Program quick reference\n- Bring guides into tools such as Kiro, AWS Quick, CRM systems, and other AI clients\n\nIt's for all AWS Partners, in the US East (N. Virginia) Region, English only. The announcement doesn't mention pricing or limits. See \"Guides in the AWS Partner Central console\" and \"Getting started with the Partner Central Agents MCP server\" in the docs.\n\n## Wrap-up\n\n- Guides are available in both the console and an MCP server\n- Browse, search, personalized view, and natural-language questions\n- English only, in US East (N. Virginia)\n\nThis is for AWS Partner sales and technical staff who want program info from their AI clients!\n",
+  "emotion": "happy",
+  "importance": 2,
+  "tags": [
+    "aws",
+    "ai",
+    "business"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/partner-central-guides-mcp/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Partner Central guides now available in the console and through AWS Partner Central Agents",
+  "published_at": "2026-11-19T21:51:00+00:00"
+}

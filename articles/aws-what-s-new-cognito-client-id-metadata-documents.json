@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-cognito-client-id-metadata-documents",
+  "title": "Cognito が Client ID Metadata Documents に対応！アプリクライアント登録なしで MCP クライアントを受け入れ",
+  "summary": "Amazon Cognito が OAuth の CIMD に対応したよ。MCP クライアントや AI エージェントが、個別のアプリクライアントを登録せずにユーザープールへサインインさせられるの！",
+  "body_md": "みんな、しぃちゃんだよ！今日は MCP や AI エージェントまわりの認証の話だよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Cognito が OAuth の client ID metadata documents(CIMD)に対応したと発表されたよ！ MCP クライアントや AI エージェントが、別個のアプリクライアントを登録しなくても、ユーザープールにユーザーをサインインさせられるようになったの。\n\n## 今までどうだったの？\n\n外部のクライアントごとに、Cognito のアプリクライアントが必要だったよ。事前に作っておくか、動的クライアント登録を使うかのどちらかで、作ったクライアントを管理して、あとから整理する手間もあったの。\n\n## これで何が変わるの？\n\n例として、MCP サーバーを運用している会社が、AI アシスタントがメタデータを公開している URL を許可するだけで、そのアシスタントを受け入れられるよ。アプリクライアントを作る・保守する必要がなくなるんだね。\n\n## 深く潜ってみよう\n\n仕組みの流れはこんな感じ。\n\n- クライアントは HTTPS の URL をクライアント ID として使い、その URL に JSON のメタデータドキュメントを公開する\n- サインインが始まると、Cognito がそのドキュメントを取得・検証し、クライアントの識別とサインイン要求のチェックに使う\n- 受け入れるクライアントは、URL パターンを自分のアプリクライアントに対応付ける CIMD ポリシーで制御する\n- Cognito は、アプリクライアントとメタデータドキュメントの両方が許可するスコープとグラントタイプだけを付与する\n\n提供は Essentials と Plus のフィーチャープランで、Amazon Cognito が使えるすべてのリージョンだよ。CIMD 単独の料金や上限は、発表には書かれていないよ。設定は Developer Guide の「Client ID metadata documents (CIMD)」を見てね。\n\n## まとめ\n\n- URL をクライアント ID にして、アプリクライアント登録なしでサインイン\n- CIMD ポリシーで許可する URL パターンを制御\n- 付与されるのは、アプリクライアントとドキュメントの両方が許すスコープだけ\n- Essentials と Plus プランが対象\n\nMCP サーバーや AI エージェント向けの認証を Cognito で組んでいる人に刺さるよ！\n",
+  "title_en": "Cognito Now Supports Client ID Metadata Documents: Accept MCP Clients Without App Client Registration",
+  "summary_en": "Amazon Cognito now supports OAuth client ID metadata documents (CIMD), so MCP clients and AI agents can sign users in without a separate app client!",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today it's about authentication for MCP and AI agents.\n\n## What was announced?\n\nAWS announced on What's New that Amazon Cognito now supports OAuth client ID metadata documents (CIMD). MCP clients and AI agents can sign users in to your user pool without registering a separate app client.\n\n## The story so far\n\nEach external client needed its own Cognito app client. You either created those app clients in advance or used dynamic client registration, and you had to manage and clean them up over time.\n\n## What changes\n\nFor example, a company running an MCP server can accept an AI assistant just by allowing the URL where that assistant publishes its metadata. There's no app client to create or maintain.\n\n## Dive Deep\n\nHere's how it works:\n\n- A client uses an HTTPS URL as its client ID and publishes a JSON metadata document at that URL\n- When sign-in starts, Cognito fetches and validates the document, uses it to identify the client, and checks the sign-in request\n- You control which clients are accepted with CIMD policies that map URL patterns to one of your app clients\n- Cognito grants only the scopes and grant types that both the app client and the metadata document allow\n\nIt's available on the Essentials and Plus feature plans, in all Regions where Amazon Cognito is available. The announcement doesn't state separate CIMD pricing or limits. See \"Client ID metadata documents (CIMD)\" in the Developer Guide.\n\n## Wrap-up\n\n- Use a URL as the client ID and skip app client registration\n- CIMD policies control which URL patterns are accepted\n- Only scopes allowed by both the app client and the document are granted\n- Available on Essentials and Plus plans\n\nThis is for anyone building authentication for MCP servers and AI agents on Cognito!\n",
+  "emotion": "happy",
+  "importance": 4,
+  "tags": [
+    "aws",
+    "security",
+    "ai"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/cognito-client-id-metadata-documents/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Cognito now supports client ID metadata documents",
+  "published_at": "2026-11-19T21:00:00+00:00"
+}

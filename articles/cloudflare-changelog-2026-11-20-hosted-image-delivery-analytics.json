@@ -1,0 +1,19 @@
+{
+  "slug": "cloudflare-changelog-2026-11-20-hosted-image-delivery-analytics",
+  "title": "Cloudflare Images にホスト画像の配信アナリティクスが追加！30 日分の配信データが見られるよ",
+  "summary": "Cloudflare Images の Analytics ダッシュボードで、保存した画像の配信データを最大 30 日分見られるようになったよ。CLI の SQL クエリにも対応しているの！",
+  "body_md": "おつかれさま、しぃちゃんだよ！今日は Cloudflare Images の見える化アップデートだよ。\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Cloudflare Images に Images Analytics ダッシュボードが追加されたと発表されたよ。Images に保存したアセットの、最大 30 日分の配信データが見られて、ホスト画像がどのようにどこからリクエストされているかが分かるの。\n\n## これで何が変わるの？\n\n見られる内容はこんな感じ。\n\n- トラフィックの傾向と流入元: 時間ごとのリクエスト数。国、AS 番号(ASN)、リファラーで絞り込める\n- 配信のトラブルシュート: レスポンスのステータスコード別のリクエスト、ブラウザや OS での絞り込みで、クライアントがどの出力形式を受け取っているかが分かる\n- アセットとバリアントの利用状況: よくリクエストされる元画像と、定義済みバリアントとインライン設定の比較\n\n## 深く潜ってみよう\n\nアクセス方法は 2 つあるよ。\n\n- ダッシュボード: Images & Stream の Hosted images から Analytics を開く\n- CLI: SQL API のデータセット `events.imagesHostedRequests` に対して `cf sql query` を実行する。`--scope-account`(アカウントタグ)と `--time-since`(開始時刻)が必須。ステータスコードは CLI では `httpStatus` だよ\n\n変換(transformations)のデータは、SQL API のデータセット `events.imagesTransformations` で見られて、バインディング経由のリクエスト(`isBindingRequest`、`scriptName`、`originHost` などのフィールド)も含まれるよ。\n\n書かれている制限は、データの保持期間が最大 30 日ということだけ。クエリのレート制限や行数の上限、料金は、この投稿には書かれていないよ。\n\n## まとめ\n\n- ホスト画像の配信データを最大 30 日分、ダッシュボードで確認\n- 国、ASN、リファラー、ステータスコード、ブラウザ、OS で絞り込み\n- CLI の `cf sql query` で SQL からも取得できる\n\nCloudflare Images で画像を配信していて、配信状況やバリアントの使われ方を知りたい人に刺さるよ！\n",
+  "title_en": "Cloudflare Images Gets Delivery Analytics for Hosted Images: 30 Days of Data",
+  "summary_en": "The Cloudflare Images Analytics dashboard now shows up to 30 days of delivery data for stored images, and you can query it with SQL from the CLI!",
+  "body_md_en": "Hi, it's Shii-chan! Today it's a visibility update for Cloudflare Images.\n\n## What was announced?\n\nCloudflare's changelog announced an Images Analytics dashboard for Cloudflare Images. It provides up to 30 days of delivery data for assets stored in Images, showing how and where your hosted images are requested.\n\n## What changes\n\nHere's what you can see:\n\n- Traffic trends and sources: request volume over time, filterable by country, autonomous system number (ASN), and referrer\n- Delivery troubleshooting: requests broken down by response status code, plus filters by browser and operating system to see which output formats clients receive\n- Asset and variant usage: the most-requested source images, and a comparison of predefined variants against inline configurations\n\n## Dive Deep\n\nThere are two ways to access it:\n\n- Dashboard: go to Images & Stream, then Hosted images, then Analytics\n- CLI: run `cf sql query` against the SQL API dataset `events.imagesHostedRequests`. Queries require `--scope-account` (your account tag) and `--time-since` (start time). The status code is `httpStatus` in the CLI\n\nTransformation data is in the SQL API dataset `events.imagesTransformations`, including binding requests (fields such as `isBindingRequest`, `scriptName`, and `originHost`).\n\nThe only stated limit is the data retention window of up to 30 days. The post doesn't mention query rate limits, row caps, or pricing.\n\n## Wrap-up\n\n- See up to 30 days of delivery data for hosted images in the dashboard\n- Filter by country, ASN, referrer, status code, browser, and OS\n- Query it with SQL through `cf sql query` in the CLI\n\nThis is for anyone delivering images with Cloudflare Images who wants to know how delivery and variants are doing!\n",
+  "emotion": "happy",
+  "importance": 4,
+  "tags": [
+    "cloudflare",
+    "web"
+  ],
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-11-20-hosted-image-delivery-analytics/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Cloudflare Images - View delivery analytics for hosted images",
+  "published_at": "2026-11-20T00:00:00+00:00"
+}

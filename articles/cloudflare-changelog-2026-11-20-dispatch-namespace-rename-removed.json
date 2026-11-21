@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-11-20-dispatch-namespace-rename-removed",
+  "title": "Workers for Platforms の dispatch namespace、もう名前を変えられないよ！移行手順もまとめたよ",
+  "summary": "Workers for Platforms の dispatch namespace は、作成後にリネームできなくなったよ。リネームが引き起こす障害を防ぐための変更なの。",
+  "body_md": "みんな、しぃちゃんだよ！今日は Workers for Platforms を使っている人向けの注意のお知らせだよ。\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、dispatch namespace を作成したあとにリネームできなくなったと発表されたよ。名前は作成時に固定されるの。\n\n## なぜ重要なの？\n\nリネームすると、Worker を読み取り、デプロイ、削除する API リクエストが壊れることがあったよ。dispatch Worker と outbound Worker は、デプロイ時の namespace 名をそのまま持っているから、リネームで動かなくなることがあったの。リネームのリクエストを拒否することで、こうした障害を防ぐ変更だよ。\n\n## これで何が変わるの？\n\n名前を変えようとすると、次のように失敗するよ。\n\n- dispatch namespace API への `PUT` や `PATCH` で `name` を変えるリクエストは、コード `100413` の `400` エラーを返す。メッセージは「Dispatch namespaces cannot be renamed.」\n- `wrangler dispatch-namespace rename` も同じ `100413` エラーを返す\n- Terraform の `cloudflare_workers_for_platforms_dispatch_namespace` リソースで `name` を変える apply は失敗する\n\n## 深く潜ってみよう\n\n名前を変えたいときの方法は、新しい namespace を作って移行することだけだよ。手順はこの通り。\n\n- 欲しい名前で新しい dispatch namespace を作る\n- ユーザー Worker を新しい namespace にデプロイする\n- dispatch Worker の dispatch namespace バインディングを新しい namespace に向けて、再デプロイする\n- リクエストが新しい namespace に届いて、Worker が正しく動くか確認する\n- 古い namespace のユーザー Worker を削除してから、古い namespace を削除する\n\n## まとめ\n\n- dispatch namespace は作成後にリネームできない\n- API、wrangler、Terraform のどれでも `100413` で失敗する\n- 名前を変えたいときは、新しい namespace を作って移行する\n\nWorkers for Platforms でマルチテナントの基盤を運用している人は、リネームを自動化に入れていないか確認してね！\n",
+  "title_en": "Workers for Platforms Dispatch Namespaces Can No Longer Be Renamed: Here's the Migration Path",
+  "summary_en": "Dispatch namespaces in Workers for Platforms can no longer be renamed after creation. The change prevents failures that renames could cause.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today's a heads-up for Workers for Platforms users.\n\n## What was announced?\n\nCloudflare's changelog says you can no longer rename a dispatch namespace after creating it. Names are now fixed at creation.\n\n## Why it matters\n\nRenaming could break API requests that read, deploy, or delete Workers. Dispatch Workers and outbound Workers kept the namespace name they were deployed with, so a rename could make them fail. Rejecting rename requests prevents these failures.\n\n## What changes\n\nIf you try to rename one, it fails like this:\n\n- `PUT` and `PATCH` requests to the dispatch namespace API that change `name` return a `400` error with code `100413`. The message is \"Dispatch namespaces cannot be renamed.\"\n- `wrangler dispatch-namespace rename` returns the same `100413` error\n- Terraform applies that change `name` on a `cloudflare_workers_for_platforms_dispatch_namespace` resource fail\n\n## Dive Deep\n\nThe only way to get a different name is to create a new namespace and migrate. The steps:\n\n- Create a new dispatch namespace with the name you want\n- Deploy your user Workers to the new namespace\n- Update the dispatch namespace binding in your dispatch Worker to point to the new namespace, then redeploy it\n- Verify that requests route to the new namespace and your Workers behave correctly\n- Delete the user Workers in the old namespace, then delete the old namespace\n\n## Wrap-up\n\n- Dispatch namespaces can't be renamed after creation\n- API, wrangler, and Terraform all fail with `100413`\n- To change a name, create a new namespace and migrate\n\nIf you run a multi-tenant platform on Workers for Platforms, check that no automation relies on renaming!\n",
+  "emotion": "confused",
+  "importance": 3,
+  "tags": [
+    "cloudflare",
+    "serverless",
+    "devops"
+  ],
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-11-20-dispatch-namespace-rename-removed/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Workers for Platforms - Dispatch namespaces can no longer be renamed",
+  "published_at": "2026-11-20T00:00:00+00:00"
+}

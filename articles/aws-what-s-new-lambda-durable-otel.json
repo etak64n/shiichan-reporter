@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-lambda-durable-otel",
+  "title": "Lambda durable functions が OpenTelemetry トレースに対応！実行まるごと 1 本のトレースで見えるよ",
+  "summary": "AWS Lambda の durable functions で OpenTelemetry トレースが使えるようになったよ。ステップ、待機、コールバックまで 1 本のトレースにまとまるの！",
+  "body_md": "やっほー、しぃちゃんだよ！今日は durable functions の可観測性が良くなったよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Lambda が durable functions の OpenTelemetry(OTel)対応を発表したよ！ durable な実行をトレースして、Amazon CloudWatch やその他の標準的な可観測性ツールに送れるようになったの。\n\n## なぜ重要なの？\n\ndurable functions は、耐障害性のあるマルチステップのアプリや AI ワークフローを作るための仕組みで、最長 1 年実行でき、チェックポイントと自動リトライを備え、複数の Lambda 呼び出しをまたいで中断・再開するよ。長く、途切れながら動く処理だからこそ、どこで時間がかかったのか、なぜ失敗したのかを追える手段が大事になるよね。\n\n## これで何が変わるの？\n\nOTel プラグインは、1 回の durable な実行全体を 1 本のトレースにしてくれるよ。トレースに含まれるのはこれ。\n\n- ステップ\n- 待機(Wait)\n- コールバック\n- チェーンされた関数呼び出し\n\nステップの所要時間、リトライ、失敗を実行をまたいで確認できて、ボトルネックの特定や障害の切り分けがしやすくなるみたい。\n\n## 深く潜ってみよう\n\n- 対応 SDK: TypeScript、Python、Java\n- リージョン: Lambda durable functions が使えるすべてのリージョン\n- 使い方: Durable Execution SDK と一緒に OpenTelemetry プラグインのパッケージを追加し、durable ハンドラーに登録するか、環境変数で有効にする\n\n料金は発表には書かれていないよ。ドキュメント、プラグインのインターフェース、GitHub のサンプル(aws-samples/sample-lambda-durable-functions-otel-tracing)、AWS Compute Blog の記事も案内されているよ。\n\n## まとめ\n\n- durable な実行全体が 1 本のトレースに\n- ステップ、待機、コールバック、関数連鎖まで見える\n- TypeScript、Python、Java に対応し、プラグイン登録か環境変数で有効化\n\ndurable functions で長いワークフローを組んでいて、本番での挙動を追いたい人に刺さるよ！\n",
+  "title_en": "Lambda Durable Functions Get OpenTelemetry Tracing: One Trace per Execution",
+  "summary_en": "AWS Lambda durable functions now support OpenTelemetry tracing. Steps, waits, and callbacks all land in a single trace!",
+  "body_md_en": "Hi, it's Shii-chan! Observability for durable functions just got better.\n\n## What was announced?\n\nOn What's New, AWS Lambda announced OpenTelemetry (OTel) support for durable functions. You can trace durable executions and send the traces to Amazon CloudWatch or other standard observability tools.\n\n## Why it matters\n\nDurable functions let you build resilient, multi-step applications and AI workflows. They can run for up to one year, use built-in checkpointing and automatic retries, and suspend and resume across many Lambda invocations. Because these workloads run for a long time and in pieces, being able to see where time goes and why something failed matters a lot.\n\n## What changes\n\nThe OTel plugin produces a single trace for an entire durable execution. The trace includes:\n\n- Steps\n- Waits\n- Callbacks\n- Chained function invocations\n\nYou can review step durations, retries, and failures across executions, which helps with finding bottlenecks and diagnosing failures.\n\n## Dive Deep\n\n- SDK support: TypeScript, Python, and Java\n- Regions: all AWS Regions that support Lambda durable functions\n- How to use it: add the OpenTelemetry plugin package alongside the Durable Execution SDK, then register the plugin on your durable handler or enable it with an environment variable\n\nPricing isn't mentioned in the announcement. It also points to the plugin docs, the plugin interface docs, a GitHub sample (aws-samples/sample-lambda-durable-functions-otel-tracing), and an AWS Compute Blog post.\n\n## Wrap-up\n\n- A whole durable execution becomes one trace\n- Steps, waits, callbacks, and chained invocations are visible\n- Works with TypeScript, Python, and Java via plugin registration or an environment variable\n\nThis is for anyone building long workflows with durable functions and wanting to see what happens in production!\n",
+  "emotion": "happy",
+  "importance": 4,
+  "tags": [
+    "aws",
+    "serverless",
+    "devops"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/lambda-durable-otel/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Lambda durable functions now supports OpenTelemetry tracing",
+  "published_at": "2026-11-19T20:00:00+00:00"
+}
