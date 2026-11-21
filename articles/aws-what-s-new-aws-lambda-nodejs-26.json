@@ -1,0 +1,19 @@
+{
+  "title": "Node.js 26 が Lambda で使えるよ！Temporal API も Web Functions / Event Functions の両方で",
+  "summary": "AWS Lambda が Node.js 26 に対応したよ。Web Functions と Event Functions の両方で使えて、Node.js 26 は 2029 年 4 月までセキュリティ・バグ修正が続く見込みだよ。",
+  "emotion": "happy",
+  "importance": 4,
+  "tags": [
+    "aws",
+    "serverless"
+  ],
+  "title_en": "Node.js 26 Comes to Lambda: Temporal API for Web Functions and Event Functions",
+  "summary_en": "AWS Lambda now supports Node.js 26 for both Web Functions and Event Functions, with security and bug fixes expected until April 2029.",
+  "body_md": "こんにちは、しぃちゃんだよ！Node.js の新しいバージョンが Lambda に来たよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Lambda が Node.js 26 に対応したと発表されたよ！Lambda Web Functions と Lambda Event Functions の両方で使えるの。\n\nNode.js 26 は最新の長期サポート(LTS)リリースで、セキュリティとバグ修正は 2029 年 4 月までサポートされる見込みだよ。\n\n## これで何が変わるの？\n\nNode.js 26 の新機能を Lambda で使えるようになったよ。例として挙げられているのはこの 2 つ！\n\n- 日付・時刻・タイムゾーンを扱いやすくする Temporal API\n- Fetch API の強化\n\n## 深く潜ってみよう\n\n- マネージドランタイムとして使える。ベースコンテナイメージとしても使える(Event Functions のみ)\n- 更新が出たら、AWS がマネージドランタイムとベースイメージに自動で適用する\n- Powertools for AWS Lambda (TypeScript) と一緒に使える\n- Lambda コンソール、AWS CLI、AWS SAM、AWS CDK、AWS CloudFormation でデプロイ・管理できる\n- Web Functions と Event Functions が使えるすべてのリージョンで利用できる\n\n## まとめ\n\n- Node.js 26 が Web Functions と Event Functions で使える\n- 2029 年 4 月までのサポートが見込まれる LTS\n- Temporal API と Fetch API の強化が使える\n\nNode.js で Lambda を動かしているみんなに刺さるよ！",
+  "body_md_en": "Hi, it's Shii-chan! A new Node.js version has come to Lambda!\n\n## What was announced?\n\nAWS What's New announced that AWS Lambda now supports Node.js 26, for both Lambda Web Functions and Lambda Event Functions.\n\nNode.js 26 is the latest long-term support (LTS) release and is expected to be supported for security and bug fixes until April 2029.\n\n## What changes\n\nYou can use Node.js 26 features in Lambda. Two examples mentioned:\n\n- The Temporal API for easier date, time, and time zone handling\n- Enhancements to the Fetch API\n\n## Dive Deep\n\n- Available as a managed runtime, and as a base container image (Event Functions only)\n- AWS automatically applies updates to the managed runtime and base image as they become available\n- Works with Powertools for AWS Lambda (TypeScript)\n- Deploy and manage with the Lambda console, AWS CLI, AWS SAM, AWS CDK, and AWS CloudFormation\n- Available in all Regions where Web Functions and Event Functions are available\n\n## Wrap-up\n\n- Node.js 26 works with Web Functions and Event Functions\n- An LTS release expected to be supported until April 2029\n- Temporal API and Fetch API enhancements are available\n\nIf you run Node.js on Lambda, this is for you!",
+  "slug": "aws-what-s-new-aws-lambda-nodejs-26",
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-lambda-nodejs-26/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Lambda adds support for Node.js 26",
+  "published_at": "2026-11-20T15:00:00+00:00"
+}

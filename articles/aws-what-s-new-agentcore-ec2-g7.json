@@ -1,0 +1,20 @@
+{
+  "title": "AgentCore のランタイムインスタンスが EC2 G7 に対応！エージェントが GPU を使えるよ",
+  "summary": "Amazon Bedrock AgentCore のランタイムインスタンスが、NVIDIA RTX PRO 4500 Blackwell Server Edition を搭載した Amazon EC2 G7 に対応したよ。",
+  "emotion": "energetic",
+  "importance": 4,
+  "tags": [
+    "aws",
+    "ai",
+    "infrastructure"
+  ],
+  "title_en": "AgentCore Runtime Instances Support EC2 G7: GPUs for Your Agents",
+  "summary_en": "Amazon Bedrock AgentCore runtime instances now support Amazon EC2 G7 instances powered by NVIDIA RTX PRO 4500 Blackwell Server Edition GPUs.",
+  "body_md": "みんな、しぃちゃんだよ！エージェントに GPU をあげられるお知らせで、わくわくしちゃった！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Bedrock AgentCore のランタイムインスタンスが Amazon EC2 G7 インスタンスに対応したと発表されたよ！G7 は NVIDIA RTX PRO 4500 Blackwell Server Edition GPU を搭載しているの。\n\nランタイムインスタンスは、エージェントを Amazon EC2 インスタンス上で動かして、プロビジョニング、パッチ適用、スケーリング、ライフサイクル管理を AgentCore が担当する仕組みだよ。\n\n## これで何が変わるの？\n\n3D レンダリングやモデル推論をするエージェントに、G6e や G7e などと並ぶ新しい GPU の選択肢が増えたよ。たとえば、エージェントが自分の GPU で 3D シーンをレンダリングしたり、ビジョンモデルを動かしたりできるの。セッションは最長 14 日間まで続けられるよ！\n\n## 深く潜ってみよう\n\n- 使い方: capacity provider の許可インスタンスタイプに、g7.2xlarge から g7.48xlarge までの G7 タイプを追加する\n- ドライバー: AgentCore が NVIDIA ドライバーをインストールするので、標準のコンテナイメージにドライバーを入れなくても GPU ワークロードが動く\n- 対応リージョン(一部のリージョン):\n  - US East (N. Virginia)\n  - US East (Ohio)\n  - US West (Oregon)\n  - Europe (Frankfurt)\n  - Europe (London)\n  - Europe (Stockholm)\n  - Asia Pacific (Mumbai)\n  - Asia Pacific (Sydney)\n- 料金: プロビジョニングされたコンピュートの管理料金と、Amazon EC2 の料金がかかる\n\n## まとめ\n\n- AgentCore ランタイムインスタンスで EC2 G7 が使える\n- ドライバー同梱は不要、セッションは最長 14 日\n- 8 リージョンで利用可能、管理料金と EC2 料金がかかる\n\nGPU を使うエージェントを AgentCore で動かしたいみんなに刺さるよ！",
+  "body_md_en": "Hi everyone, it's Shii-chan! I got excited about giving agents GPUs!\n\n## What was announced?\n\nAWS What's New announced that Amazon Bedrock AgentCore runtime instances now support Amazon EC2 G7 instances, powered by NVIDIA RTX PRO 4500 Blackwell Server Edition GPUs.\n\nRuntime instances run your agents on Amazon EC2 instances while AgentCore handles provisioning, patching, scaling, and lifecycle management.\n\n## What changes\n\nG7 gives agents that do 3D rendering or model inference another GPU option, alongside families such as G6e and G7e. For example, an agent can render 3D scenes or run a vision model on its own GPU, in sessions of up to 14 days.\n\n## Dive Deep\n\n- How to use: add G7 instance types, from g7.2xlarge to g7.48xlarge, to the allowed instance types of your capacity provider\n- Drivers: AgentCore installs the NVIDIA drivers, so standard container images run GPU workloads without bundling drivers\n- Available in select Regions:\n  - US East (N. Virginia)\n  - US East (Ohio)\n  - US West (Oregon)\n  - Europe (Frankfurt)\n  - Europe (London)\n  - Europe (Stockholm)\n  - Asia Pacific (Mumbai)\n  - Asia Pacific (Sydney)\n- Pricing: you are charged for managing the provisioned compute, in addition to your Amazon EC2 costs\n\n## Wrap-up\n\n- EC2 G7 is available on AgentCore runtime instances\n- No need to bundle drivers, and sessions can last up to 14 days\n- Available in 8 Regions, with a management charge plus EC2 costs\n\nIf you want to run GPU-powered agents on AgentCore, this is for you!",
+  "slug": "aws-what-s-new-agentcore-ec2-g7",
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/agentcore-ec2-g7/",
+  "source_name": "AWS What's New",
+  "og_title": "AgentCore runtime instances now support Amazon EC2 G7 instances",
+  "published_at": "2026-11-20T10:00:00+00:00"
+}

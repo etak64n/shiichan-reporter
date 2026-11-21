@@ -1,0 +1,19 @@
+{
+  "title": "CUR 2.0 と Cost Explorer に標準化コスト・レート列が登場！節約額を自前計算しなくても OK",
+  "summary": "AWS Data Exports の CUR 2.0 に、購入オプションをまたいで一貫してコストを表す 14 個の標準化コスト・レート列が追加され、Cost Explorer でも同じコストタイプを選べるようになったよ。",
+  "emotion": "happy",
+  "importance": 4,
+  "tags": [
+    "aws",
+    "devops"
+  ],
+  "title_en": "Standardized Cost and Rate Columns Arrive in CUR 2.0 and Cost Explorer",
+  "summary_en": "CUR 2.0 gains 14 standardized cost and rate columns that represent cost consistently across purchase options, with matching cost types in Cost Explorer.",
+  "body_md": "やっほー、しぃちゃんだよ！AWS の請求データを分析しているみんなに、うれしいお知らせだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Data Exports の Cost and Usage Report(CUR)2.0 に、標準化されたコスト・レート列が追加されたと発表されたよ！オンデマンド、Savings Plans、Reserved Instances、EC2 Spot、EC2 Capacity Blocks for ML といった購入オプションをまたいで、コストを一貫して表せる列なの。\n\n## 今までどうだったの？\n\n節約額を計算するには、CUR と Savings Plans のレート、公開価格表を組み合わせる必要があったんだって。償却コストも、価格モデルごとに別の列を使っていたの。\n\n## これで何が変わるの？\n\n各ラインアイテムが、次のコストとそれぞれのレートを持つようになったよ。\n\n- 請求額(billed)\n- 実効(effective)\n- リスト(list)\n- 契約(contracted)\n- 公開オンデマンドのコスト\n- 割引前の請求額と実効コストに相当する公開価格\n\nこれで、コミットメントや割引、段階料金による節約額と、償却コストを、自前の計算なしで測れるの！\n\n## 深く潜ってみよう\n\n- 追加される列は 14 個で、プレフィックスは `cost_analytics_`\n- 新しい CUR 2.0 エクスポートの設定時、または既存の CUR 2.0 の編集時に「Include standardized cost and rate columns」を選ぶ\n- Cost Explorer では、Advanced options の下の新しいコストタイプを選ぶと同じコストが見られる\n- 追加料金なし。AWS GovCloud (US) リージョンなどを除く各リージョンで利用できる\n\n## まとめ\n\n- 購入オプションをまたいで一貫した 14 個のコスト・レート列が CUR 2.0 に追加\n- 節約額と償却コストを、自前計算なしで分析できる\n- Cost Explorer でも同じコストが見られる\n\nFinOps や請求分析の担当のみんなに刺さるよ！",
+  "body_md_en": "Hi, it's Shii-chan! Here's good news for everyone analyzing AWS billing data!\n\n## What was announced?\n\nAWS What's New announced that Cost and Usage Report (CUR) 2.0 in AWS Data Exports now includes standardized cost and rate columns that represent cost consistently across purchase options: On Demand, Savings Plans, Reserved Instances, EC2 Spot, and EC2 Capacity Blocks for ML.\n\n## The story so far\n\nCalculating savings required combining CUR with Savings Plans rates and public price lists, and amortized cost used different columns for each pricing model.\n\n## What changes\n\nEach line item now carries these costs and a rate for each:\n\n- Billed\n- Effective\n- List\n- Contracted\n- Public on-demand cost\n- The public equivalent of billed and effective cost before discounts\n\nYou can measure savings from commitments, discounts, and tiered pricing, and amortized cost, without building your own calculations.\n\n## Dive Deep\n\n- 14 columns are added, with the prefix `cost_analytics_`\n- Select \"Include standardized cost and rate columns\" when you create a new CUR 2.0 export or edit an existing one\n- In Cost Explorer, choose the new cost types under Advanced options to see the same costs\n- No additional charge, available in all AWS Regions except the AWS GovCloud (US) Regions and some others\n\n## Wrap-up\n\n- 14 consistent cost and rate columns are added to CUR 2.0 across purchase options\n- Analyze savings and amortized cost without your own calculations\n- Cost Explorer shows the same costs\n\nIf you do FinOps or billing analysis, this is for you!",
+  "slug": "aws-what-s-new-aws-cur-cost-explorer",
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-cur-cost-explorer/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS launches standardized cost and rate columns in CUR 2.0 and Cost Explorer",
+  "published_at": "2026-11-20T14:00:00+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "title": "AWS Transform が .NET 11 に対応！VB.NET・デスクトップ・モバイルも GA になったよ",
+  "summary": "AWS Transform for .NET が .NET 11 の一般提供を開始し、プレビューだった VB.NET、デスクトップ、モバイルのプロジェクトも GA になったよ。Linux で動かせば運用コストを最大 40% 削減できるみたい。",
+  "emotion": "happy",
+  "importance": 4,
+  "tags": [
+    "aws",
+    "devops",
+    "microsoft"
+  ],
+  "title_en": "AWS Transform Supports .NET 11, and VB.NET, Desktop, and Mobile Projects Reach GA",
+  "summary_en": "AWS Transform for .NET is now generally available for .NET 11, and VB.NET, desktop, and mobile project support has reached GA.",
+  "body_md": "おつかれさま、しぃちゃんだよ！.NET のモダナイズが広がるお知らせだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Transform for .NET の .NET 11 サポートが一般提供(GA)になったと発表されたよ！プレビューだった VB.NET、デスクトップ、モバイルのプロジェクトのサポートも GA だよ。\n\nWindows の .NET ワークロードを最新の .NET にモダナイズして、Linux で動かすことでコストを下げられるの。.NET 11 のパフォーマンス改善、新しい C# の言語機能、診断の改善も受けられるよ。\n\n## これで何が変わるの？\n\n変換できる元のバージョンは次のとおりだよ。\n\n- レガシーな .NET Framework アプリケーション(バージョン 3.5 以降)\n- モダンな .NET アプリケーション(バージョン 5 から 10)\n\nどちらも .NET 11 に変換できて、C# と VB.NET で書かれたコードが対象なの。\n\n## 深く潜ってみよう\n\n対応するプロジェクトタイプはこれだよ！\n\n- クラスライブラリ\n- コンソールアプリケーション\n- ASP.NET Web プロジェクト(MVC、Web API、Web Forms)\n- Web サービス(ASMX、WCF)\n- デスクトップアプリケーション(WinForms、WPF)\n- モバイルアプリケーション(Xamarin)\n- ユニットテストプロジェクト(MSTest、NUnit、xUnit)\n- Windows サービス\n\nデスクトップとモバイルを除く、変換したアプリケーションは Linux で動かせて、運用コストを最大 40% 削減できる可能性があるよ。\n\n追加料金なしで、AWS Transform が使える 8 つのリージョンで利用できるの。\n\n- US East (N. Virginia)\n- Canada (Central)\n- Asia Pacific (Mumbai)\n- Asia Pacific (Seoul)\n- Asia Pacific (Sydney)\n- Asia Pacific (Tokyo)\n- Europe (Frankfurt)\n- Europe (London)\n\n## まとめ\n\n- .NET 11 サポートと、VB.NET・デスクトップ・モバイルのサポートが GA に\n- .NET Framework 3.5 以降と .NET 5 から 10 を変換できる\n- 変換後は Linux で動かして最大 40% のコスト削減(デスクトップとモバイルを除く)\n- 追加料金なし、8 リージョン\n\n古い .NET アプリの塩漬けに悩んでいるみんなに刺さるよ！",
+  "body_md_en": "Hi, it's Shii-chan! News that widens the reach of .NET modernization!\n\n## What was announced?\n\nAWS What's New announced the general availability (GA) of .NET 11 support in AWS Transform for .NET. Support for VB.NET, desktop projects, and mobile projects, previously in preview, is also now GA.\n\nYou can modernize a broad range of Windows .NET workloads to the latest .NET and lower costs by running them on Linux. You also get the performance improvements, new C# language features, and improved diagnostics in .NET 11.\n\n## What changes\n\nIt can transform these sources to .NET 11:\n\n- Legacy .NET Framework applications (version 3.5 and later)\n- Modern .NET applications (versions 5 through 10)\n\nIt transforms code written in C# and VB.NET.\n\n## Dive Deep\n\nSupported project types:\n\n- Class libraries\n- Console applications\n- ASP.NET web projects (MVC, Web API, and Web Forms)\n- Web services (ASMX and WCF)\n- Desktop applications (WinForms and WPF)\n- Mobile applications (Xamarin)\n- Unit test projects (MSTest, NUnit, and xUnit)\n- Windows services\n\nAll transformed applications except desktop and mobile projects can run on Linux, which can reduce operating costs by up to 40%.\n\nIt is available at no additional cost in eight Regions:\n\n- US East (N. Virginia)\n- Canada (Central)\n- Asia Pacific (Mumbai)\n- Asia Pacific (Seoul)\n- Asia Pacific (Sydney)\n- Asia Pacific (Tokyo)\n- Europe (Frankfurt)\n- Europe (London)\n\n## Wrap-up\n\n- .NET 11 support and VB.NET, desktop, and mobile support are GA\n- Transforms .NET Framework 3.5+ and .NET 5 through 10\n- Up to 40% lower costs on Linux (except desktop and mobile)\n- No extra cost, eight Regions\n\nIf you have aging .NET apps stuck in place, this is for you!",
+  "slug": "aws-what-s-new-aws-transform-windows-dotnet-11",
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-transform-windows-dotnet-11/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Transform announces support for .NET 11 and expanded project types",
+  "published_at": "2026-11-20T16:00:00+00:00"
+}

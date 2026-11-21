@@ -1,0 +1,19 @@
+{
+  "title": "Lambda が Python 3.15 に対応！Web Functions で初めての Python ランタイムだよ",
+  "summary": "AWS Lambda が Python 3.15 に対応したよ。Event Functions では一般提供、Web Functions ではパブリックプレビューで、Web Functions 初の Python ランタイムになるよ。",
+  "emotion": "energetic",
+  "importance": 4,
+  "tags": [
+    "aws",
+    "serverless"
+  ],
+  "title_en": "Lambda Adds Python 3.15, the First Python Runtime for Web Functions",
+  "summary_en": "AWS Lambda now supports Python 3.15: generally available for Event Functions and in public preview for Web Functions, the first Python runtime there.",
+  "body_md": "みんな、しぃちゃんだよ！Python ユーザーに待望のニュースが来たよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Lambda が Python 3.15 に対応したと発表されたよ！\n\n- Lambda Event Functions: 一般提供(GA)\n- Lambda Web Functions: パブリックプレビュー\n\n## これで何が変わるの？\n\nWeb Functions はこれまで Node.js のみの対応だったけど、Python 3.15 がその初めての Python ランタイムになったよ。これで、Python で Web アプリケーションと API を Web Functions 上に作れるの！\n\n## 深く潜ってみよう\n\n- マネージドランタイムとして使える。ベースコンテナイメージとしても使える(Event Functions のみ)\n- 更新が出たら、AWS がマネージドランタイムとベースイメージに自動で適用する\n- Python 3.15 の新機能として挙げられているのは、起動時間を減らせる明示的な lazy import、新しい組み込み型の frozendict と sentinel、改善された JIT コンパイラ\n- Powertools for AWS Lambda (Python) と一緒に使える\n- Lambda コンソール、AWS CLI、AWS SAM、AWS CDK、AWS CloudFormation でデプロイ・管理できる\n- Event Functions と Web Functions が使えるすべてのリージョンで利用できる\n\n## まとめ\n\n- Python 3.15 が Event Functions で GA、Web Functions でプレビュー\n- Web Functions 初の Python ランタイム\n- lazy import や frozendict、sentinel、改善された JIT が使える\n\nPython で Web アプリや API をサーバーレスに作りたいみんなに刺さるよ！",
+  "body_md_en": "Hi everyone, it's Shii-chan! Long-awaited news for Python users!\n\n## What was announced?\n\nAWS What's New announced that AWS Lambda now supports Python 3.15:\n\n- Lambda Event Functions: generally available (GA)\n- Lambda Web Functions: public preview\n\n## What changes\n\nWeb Functions previously supported only Node.js. Python 3.15 is the first Python runtime for them, so you can now build web applications and APIs on Web Functions in Python.\n\n## Dive Deep\n\n- Available as a managed runtime, and as a base container image (Event Functions only)\n- AWS automatically applies updates to the managed runtime and base image as they become available\n- Python 3.15 features mentioned include explicit lazy imports that can reduce startup time, the new frozendict and sentinel built-in types, and an improved JIT compiler\n- Works with Powertools for AWS Lambda (Python)\n- Deploy and manage with the Lambda console, AWS CLI, AWS SAM, AWS CDK, and AWS CloudFormation\n- Available in all Regions where Event Functions and Web Functions are available\n\n## Wrap-up\n\n- Python 3.15 is GA for Event Functions and in preview for Web Functions\n- The first Python runtime for Web Functions\n- Lazy imports, frozendict, sentinel, and an improved JIT\n\nIf you want to build serverless web apps and APIs in Python, this is for you!",
+  "slug": "aws-what-s-new-aws-lambda-python-315",
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-lambda-python-315/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Lambda adds support for Python 3.15",
+  "published_at": "2026-11-20T14:59:00+00:00"
+}

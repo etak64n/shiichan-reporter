@@ -1,0 +1,19 @@
+{
+  "title": "Route 53 の AZ アフィニティルーティングで、同じ AZ に答えを返せるようになったよ！",
+  "summary": "Amazon Route 53 が、VPC からの DNS クエリをクライアントと同じ Availability Zone のリソースへ誘導する AZ アフィニティルーティングに対応したよ。",
+  "emotion": "smug",
+  "importance": 4,
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "title_en": "Route 53 AZ Affinity Routing: Answer DNS Queries With Same-AZ Resources",
+  "summary_en": "Amazon Route 53 now supports Availability Zone affinity routing, which answers DNS queries from your VPCs with resources in the same AZ as the client.",
+  "body_md": "やっほー、しぃちゃんだよ！DNS で AZ をまたぐ通信を減らせるお知らせだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Route 53 が Availability Zone(AZ)アフィニティルーティングに対応したと発表されたよ！VPC からの DNS クエリを、クエリを送ったクライアントと同じ AZ のリソースに誘導する機能なの。トラフィックを AZ 内にとどめて、レイテンシを下げ、アプリの性能を上げるのが狙いだよ。\n\n## 今までどうだったの？\n\n低レイテンシにしたいときは、これまでレイテンシーベースやジオプロキシミティなど別のルーティングポリシーを使っていたんだって。\n\n## これで何が変わるの？\n\nクライアントからの DNS クエリに、同じ AZ のリソースで答えられるようになったよ。トラフィックが AZ の中にとどまって、クライアントはより速い応答を得られるの。\n\n## 深く潜ってみよう\n\n使い始めるには、AZ アフィニティレコードを作って、レコードごとにロケーションタイプを選ぶよ。\n\n- Availability Zone(AZ ID を指定。例: use1-az1)\n- Zone Group\n- Region\n- Global\n\nクライアントの AZ 用のレコードがないときは、より広い場所のレコードにフォールバックするよ。順番は Zone Group、AWS リージョン、Global だよ。\n\n- ヘルスチェックは、AZ・Zone Group・Region のどのレコードにも関連付けられる。エンドポイントが異常なら、Route 53 は次のロケーションのレコードで答える\n- パブリックとプライベートの両方のホストゾーンのレコードで使える\n- Global レコードは、インターネットからなど VPC 以外から来たクエリに答える\n- Route 53 コンソール、API、AWS CLI、AWS SDK、AWS CloudFormation で作成できる\n\n## まとめ\n\n- VPC 内のクエリを、クライアントと同じ AZ のリソースに誘導できる\n- AZ → Zone Group → Region → Global の順でフォールバックする\n- ヘルスチェックと連携できる\n\nAZ 間通信のレイテンシを詰めたいみんなに刺さるよ！",
+  "body_md_en": "Hi, it's Shii-chan! Here's news about cutting cross-AZ traffic with DNS!\n\n## What was announced?\n\nAWS What's New announced that Amazon Route 53 now supports Availability Zone (AZ) affinity routing, which routes DNS queries from your VPCs to resources in the same AZ as the client that sends the query. It keeps traffic within the AZ, reducing latency and improving application performance.\n\n## The story so far\n\nUntil now, customers who wanted lower latency used other routing policies, such as latency-based or geoproximity routing.\n\n## What changes\n\nDNS queries from your clients are answered with resources in the same AZ. Traffic stays within the AZ and clients get faster responses.\n\n## Dive Deep\n\nTo get started, create AZ-affinity records and choose a location type for each:\n\n- Availability Zone (specify the AZ ID, such as use1-az1)\n- Zone Group\n- Region\n- Global\n\nIf there is no record for the client's AZ, Route 53 falls back to a less specific location: the Zone Group, then the AWS Region, and then Global.\n\n- You can associate a health check with any AZ-affinity record, for an AZ, a Zone Group, or a Region. If the endpoint is unhealthy, Route 53 answers with the record for the next location\n- Works for records in both public and private hosted zones\n- The Global record answers queries that don't come from your VPCs, such as queries from the internet\n- Create records with the Route 53 console, API, AWS CLI, AWS SDKs, and AWS CloudFormation\n\n## Wrap-up\n\n- Direct queries inside your VPC to same-AZ resources\n- Falls back from AZ to Zone Group to Region to Global\n- Works with health checks\n\nIf you are squeezing latency out of cross-AZ traffic, this is for you!",
+  "slug": "aws-what-s-new-route-53-affinity-routing",
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/route-53-affinity-routing/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Route 53 now supports Availability Zone (AZ) affinity routing",
+  "published_at": "2026-11-20T08:21:00+00:00"
+}

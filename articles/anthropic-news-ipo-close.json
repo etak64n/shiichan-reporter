@@ -1,0 +1,19 @@
+{
+  "title": "Anthropic の IPO がクローズ！約 935 億ドルを調達してナスダックに上場したよ",
+  "summary": "Anthropic が新規株式公開のクローズを発表したよ。Class A 普通株 11 億 2,700 万株を 1 株 83 ドルで売り出し、総調達額は約 935 億ドル、ティッカーは ANT だよ。",
+  "emotion": "energetic",
+  "importance": 1,
+  "tags": [
+    "anthropic",
+    "business"
+  ],
+  "title_en": "Anthropic Closes Its IPO: About $93.5 Billion Raised, Listed on Nasdaq",
+  "summary_en": "Anthropic announced the closing of its IPO of 1,127,000,000 Class A shares at $83.00 per share, raising about $93.5 billion in gross proceeds, trading as ANT.",
+  "body_md": "みんな、しぃちゃんだよ！今日はいつもの技術ネタじゃなくて、Anthropic の大きな発表だよ！\n\n## なにが発表されたの？\n\nAnthropic の News(Announcements)で、新規株式公開(IPO)のクローズが発表されたよ！\n\n- 売り出し: Class A 普通株 11 億 2,700 万株を 1 株 83.00 ドルで\n- 内訳: 引受人のオプション分 1 億 4,700 万株を含み、引受人はこれを全額行使した\n- 売り手: Anthropic が 1,103,351,354 株、売出株主が 23,648,646 株\n- 総調達額: 引受手数料などの前で約 935 億ドル(Anthropic の受取額は約 916 億ドルで、売出株主の株式分の受取はなし)\n- 取引: Class A 株は 2026 年 11 月 19 日からナスダック・グローバル・セレクト・マーケットで「ANT」として取引開始\n\n## 深く潜ってみよう\n\nIPO と同時に、私募(プライベートプレースメント)も実施されたよ。\n\n- Class N 普通株 313,253,007 株を 1 株 83.00 ドルで売却し、約 260 億ドル\n- 購入者は AMD、Broadcom、Google、Micron、Microsoft、NVIDIA、TSMC Partners\n- これらの株式は 1933 年証券法に基づく登録をされていない\n\nIPO(売出株主の株式を含む)と私募を合わせた総調達額は、手数料などの前で約 1,195 億ドルだよ。\n\n主幹事は Goldman Sachs & Co. LLC と Morgan Stanley で、ほかにも多くの銀行が参加しているの。SEC が登録届出書を有効と宣言したのは 2026 年 11 月 18 日だよ。なお、発表自体は有価証券の売付けの申込みや勧誘ではなく、募集は目論見書によってのみ行われたと明記されているよ。\n\n## まとめ\n\n- 1 株 83 ドルで Class A 株 11 億 2,700 万株を売り出し、総調達額は約 935 億ドル\n- 2026 年 11 月 19 日にナスダックで「ANT」として取引開始\n- 同時の私募で約 260 億ドル、合計で約 1,195 億ドル\n- 私募の購入者には主要な半導体・クラウド企業が名を連ねる\n\nAI 業界の資金の動きを追っているみんなには、気になるニュースだよ！",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today it's not our usual tech topic, but a big announcement from Anthropic!\n\n## What was announced?\n\nAnthropic's News (Announcements) announced the closing of its initial public offering (IPO):\n\n- Offering: 1,127,000,000 Class A common shares at $83.00 per share\n- Includes: 147,000,000 additional shares from the underwriters' option, which they exercised in full\n- Sellers: 1,103,351,354 shares sold by Anthropic and 23,648,646 by selling stockholders\n- Gross proceeds: about $93.5 billion before fees and expenses (Anthropic received about $91.6 billion and nothing from the selling stockholders' shares)\n- Trading: Class A shares began trading on the Nasdaq Global Select Market on November 19, 2026, under the ticker \"ANT\"\n\n## Dive Deep\n\nA concurrent private placement was also completed:\n\n- 313,253,007 Class N common shares sold at $83.00 per share, for about $26.0 billion\n- Buyers were AMD, Broadcom, Google, Micron, Microsoft, NVIDIA, and TSMC Partners\n- These shares were not registered under the Securities Act of 1933\n\nCombined gross proceeds from the IPO (including the selling stockholders' shares) and the private placement were about $119.5 billion before fees and expenses.\n\nGoldman Sachs & Co. LLC and Morgan Stanley were lead book-running managers, joined by many other banks. The SEC declared the registration statement effective on November 18, 2026. The announcement states that it is not an offer to sell or a solicitation to buy securities, and that the offering was made only by prospectus.\n\n## Wrap-up\n\n- 1,127,000,000 Class A shares at $83 per share, about $93.5 billion in gross proceeds\n- Trading as \"ANT\" on Nasdaq from November 19, 2026\n- About $26.0 billion from the concurrent private placement, about $119.5 billion combined\n- Private placement buyers include major chip and cloud companies\n\nIf you follow the money flows of the AI industry, this one is worth a look!",
+  "slug": "anthropic-news-ipo-close",
+  "source_url": "https://www.anthropic.com/news/ipo-close",
+  "source_name": "Anthropic News",
+  "og_title": "Anthropic announces closing of initial public offering",
+  "published_at": "2026-11-20T12:41:01+00:00"
+}

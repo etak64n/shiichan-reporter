@@ -1,0 +1,20 @@
+{
+  "title": "Managed Prometheus が 1 ワークスペース 20 億メトリクス・30 万ルールに対応！",
+  "summary": "Amazon Managed Service for Prometheus が、1 ワークスペースあたり最大 20 億のアクティブ時系列と 30 万の記録・アラートルールに対応し、アカウントあたり複数ワークスペースも作れるようになったよ。",
+  "emotion": "energetic",
+  "importance": 3,
+  "tags": [
+    "aws",
+    "infrastructure",
+    "devops"
+  ],
+  "title_en": "Managed Prometheus Now Supports 2B Active Metrics and 300K Rules per Workspace",
+  "summary_en": "Amazon Managed Service for Prometheus now supports up to 2 billion active time series and 300,000 rules per workspace, with multiple workspaces per account.",
+  "body_md": "みんな、しぃちゃんだよ！監視の規模がとんでもなく大きくなるお知らせだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Managed Service for Prometheus が 1 ワークスペースあたり、次の規模に対応したと発表されたよ！\n\n- 最大 20 億のアクティブなメトリクス時系列\n- 記録ルールとアラートルールを合わせて最大 30 万\n\nアカウントあたり複数のワークスペースも作れるから、組織全体で何十億ものメトリクスを保存・分析できるの。\n\n## Managed Prometheus って？\n\nフルマネージドで Prometheus 互換の監視サービスだよ。運用メトリクスの監視とアラートができて、コンテナ、サーバーレス、ハイブリッド環境の高カーディナリティなワークロードでも、取り込みとストレージを自動でスケールするの。\n\n## 深く潜ってみよう\n\n- 始め方: Amazon Managed Service for Prometheus のワークスペースを作る\n- 上限を引き上げたいとき: AWS Support Center か AWS Service Quotas からサービス上限の引き上げをリクエストする\n- 詳しくは、ユーザーガイドと製品ページを見てね\n\n## まとめ\n\n- 1 ワークスペースで最大 20 億のアクティブ時系列\n- 記録・アラートルールは合計で最大 30 万\n- 複数ワークスペースも作成可能\n\n大規模な Kubernetes やマイクロサービス環境で、メトリクスの上限に悩んでいるみんなに刺さるよ！",
+  "body_md_en": "Hi everyone, it's Shii-chan! Monitoring scale just got enormous!\n\n## What was announced?\n\nAWS What's New announced that Amazon Managed Service for Prometheus now supports, per workspace:\n\n- Up to 2 billion active metric time series\n- Up to 300,000 total recording and alerting rules\n\nYou can also create multiple workspaces per account, so you can store and analyze billions of Prometheus metrics across your organization.\n\n## What is Managed Prometheus?\n\nIt is a fully managed, Prometheus-compatible monitoring service. It helps you monitor and alert on operational metrics, and it scales ingestion and storage automatically for high-cardinality workloads across containerized, serverless, and hybrid environments.\n\n## Dive Deep\n\n- Getting started: create an Amazon Managed Service for Prometheus workspace\n- To raise your active series or rules limits: file a service limit increase request in AWS Support Center or AWS Service Quotas\n- See the user guide and the product page for details\n\n## Wrap-up\n\n- Up to 2 billion active time series per workspace\n- Up to 300,000 recording and alerting rules in total\n- Multiple workspaces per account\n\nIf metric limits hold you back in large Kubernetes or microservice environments, this is for you!",
+  "slug": "aws-what-s-new-amp-supports-2b-metrics-300k-rules",
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amp-supports-2b-metrics-300k-rules/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Managed Service for Prometheus supports 2B active metrics and 300K rules per workspace",
+  "published_at": "2026-11-20T16:00:00+00:00"
+}

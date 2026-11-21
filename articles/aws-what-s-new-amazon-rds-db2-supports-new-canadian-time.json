@@ -1,0 +1,19 @@
+{
+  "title": "カナダ 4 地域の恒久サマータイムに対応！RDS for Db2 に新しいタイムゾーンが追加されたよ",
+  "summary": "Amazon RDS for Db2 に America/Vancouver、Edmonton、Inuvik、Winnipeg の 4 つのタイムゾーンが追加されたよ。2026 年 11 月 1 日からの恒久サマータイムに合わせた更新だね。",
+  "emotion": "thinking",
+  "importance": 3,
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "title_en": "RDS for Db2 Adds Four New Canadian Time Zones for Permanent Daylight Saving Time",
+  "summary_en": "Amazon RDS for Db2 adds America/Vancouver, Edmonton, Inuvik, and Winnipeg time zones reflecting Canada's updated local time rules.",
+  "body_md": "おつかれさま、しぃちゃんだよ！今日は時刻まわりの、見落とすと困るお知らせだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon RDS for Db2 に 4 つの新しいタイムゾーンが追加されたと発表されたよ！\n\n- America/Vancouver\n- America/Edmonton\n- America/Inuvik\n- America/Winnipeg\n\nカナダのブリティッシュコロンビア州、アルバータ州、ノースウエスト準州、マニトバ州の、新しい現地時間ルールを反映したものだよ。\n\n## なぜ重要なの？\n\n2026 年 11 月 1 日から、これらの州と準州は恒久的にサマータイムを採用して、時計を 1 時間戻さなくなったんだって。\n\nUTC で保存したデータは影響を受けないけど、インスタンスのローカル時間に基づく値は影響を受けることがあるよ。\n\n- CURRENT TIMESTAMP\n- CURRENT DATE\n- デフォルトのタイムスタンプ列\n- スケジュールジョブ\n- 営業日ベースのバッチ処理ロジック\n\n## 深く潜ってみよう\n\n- 新しいタイムゾーンは、新しい RDS for Db2 インスタンスを作るときに選べる\n- 既存インスタンスのタイムゾーン変更は、AWS CLI・API・SDK ではできないので、AWS サポートに連絡する必要がある\n- RDS for Db2 が使えるすべての AWS リージョンで利用できる\n\nAWS は、これらの地域のワークロードを扱うインスタンスは見直して、タイムゾーン設定を更新するよう勧めているよ。\n\n## まとめ\n\n- カナダ 4 地域の恒久サマータイムに合わせた新タイムゾーンが追加された\n- 影響を受けるのは、ローカル時間ベースの値やジョブ\n- 既存インスタンスの変更は AWS サポート経由\n\nカナダ向けのワークロードを Db2 で動かしているみんなは、設定を確認してみてね！",
+  "body_md_en": "Hi, it's Shii-chan! Here's a time-related notice that's easy to miss and painful when you do!\n\n## What was announced?\n\nAWS What's New announced that Amazon RDS for Db2 now supports four new time zones:\n\n- America/Vancouver\n- America/Edmonton\n- America/Inuvik\n- America/Winnipeg\n\nThey reflect the updated local time rules for British Columbia, Alberta, the Northwest Territories, and Manitoba in Canada.\n\n## Why it matters\n\nAs of November 1, 2026, these provinces and territories observe permanent daylight saving time and no longer set their clocks back by an hour.\n\nData stored in UTC is unaffected, but values based on the instance's local time can be affected:\n\n- CURRENT TIMESTAMP\n- CURRENT DATE\n- Default timestamp columns\n- Scheduled jobs\n- Business-day batch logic\n\n## Dive Deep\n\n- You can select the new time zones when you create a new RDS for Db2 instance\n- To change the time zone of an existing instance, contact AWS Support, since it is not supported through the AWS CLI, API, or SDK\n- Available in all AWS Regions where RDS for Db2 is offered\n\nAWS recommends reviewing instances that serve workloads in these regions and updating their time zone configuration.\n\n## Wrap-up\n\n- New time zones match permanent daylight saving time in four Canadian regions\n- Local-time-based values and jobs can be affected\n- Existing instances are changed through AWS Support\n\nIf you run Canadian workloads on Db2, take a look at your settings!",
+  "slug": "aws-what-s-new-amazon-rds-db2-supports-new-canadian-time",
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-rds-db2-supports-new-canadian-time",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon RDS for Db2 now supports new Canadian time zones",
+  "published_at": "2026-11-20T08:49:00+00:00"
+}

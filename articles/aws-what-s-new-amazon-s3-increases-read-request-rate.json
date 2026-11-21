@@ -1,0 +1,19 @@
+{
+  "title": "S3 の読み取りが最大 2 倍に！GET/HEAD が 1 秒あたり 11,000 リクエスト以上だよ",
+  "summary": "Amazon S3 の汎用バケットで、GET/HEAD リクエストの処理能力が 1 秒あたり 5,500 から 11,000 以上に引き上げられたよ。アプリの変更も追加料金も不要だよ。",
+  "emotion": "energetic",
+  "importance": 4,
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "title_en": "S3 Read Request Rate Up to 2x: 11,000+ GET/HEAD Requests per Second",
+  "summary_en": "Amazon S3 general purpose buckets now support at least 11,000 GET/HEAD requests per second, up from 5,500, automatically and at no extra charge.",
+  "body_md": "やっほー、しぃちゃんだよ！何もしなくても速くなる、いちばんうれしいタイプのニュースだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon S3 が汎用バケットで 1 秒あたり少なくとも 11,000 件の GET/HEAD リクエストに対応したと発表されたよ！以前は 5,500 件だったから、最大 2 倍だね。\n\n## これで何が変わるの？\n\n読み取りが多いワークロードで、データをより速く取得できるよ。例として、機械学習のトレーニング、データ分析、データ転送が挙げられているの。\n\n## 深く潜ってみよう\n\n- 適用: 既存の読み取りリクエストに自動で適用される。アプリケーションの変更は不要\n- 範囲: すべての AWS リージョン\n- 料金: 通常の S3 リクエスト料金のほかに追加料金なし\n- コツ: スループットを最大にするには、S3 がプレフィックスごとに独立してスケールできるよう、リクエストを複数のプレフィックスに分散させる\n\n## まとめ\n\n- GET/HEAD が 1 秒あたり 5,500 から 11,000 以上に\n- 変更不要で自動適用、追加料金なし\n- プレフィックスを分散させるのがポイント\n\n機械学習の学習データや分析用のデータを S3 から大量に読むみんなに刺さるよ！",
+  "body_md_en": "Hi, it's Shii-chan! This is my favorite kind of news: faster without doing anything!\n\n## What was announced?\n\nAWS What's New announced that Amazon S3 now supports at least 11,000 GET/HEAD requests per second for general purpose buckets, up from 5,500. That's up to 2x.\n\n## What changes\n\nYou can retrieve data faster for read-intensive workloads. Machine learning training, data analytics, and data transfers are given as examples.\n\n## Dive Deep\n\n- Applies automatically to your existing read requests, with no application changes\n- Available in all AWS Regions\n- No additional charge beyond standard S3 request pricing\n- Tip: to maximize throughput, distribute requests across multiple prefixes so S3 can scale each one independently\n\n## Wrap-up\n\n- GET/HEAD goes from 5,500 to 11,000+ requests per second\n- Automatic, no changes needed, no extra charge\n- Spreading requests across prefixes is the key\n\nIf you read lots of training or analytics data from S3, this is for you!",
+  "slug": "aws-what-s-new-amazon-s3-increases-read-request-rate",
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-s3-increases-read-request-rate/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon S3 increases the read request rate for general purpose buckets by up to 2x",
+  "published_at": "2026-11-20T15:00:00+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "title": "RDS for Db2 でデータベース名をその場で変更できるようになったよ！",
+  "summary": "Amazon RDS for Db2 で、新しい rdsadmin.rename_database ストアドプロシージャを使って、バックアップと復元なしにデータベースをリネームできるようになったよ。",
+  "emotion": "happy",
+  "importance": 3,
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "title_en": "RDS for Db2 Can Now Rename Databases in Place",
+  "summary_en": "Amazon RDS for Db2 now supports renaming a database in place with the new rdsadmin.rename_database stored procedure, with no backup and restore needed.",
+  "body_md": "やっほー、しぃちゃんだよ！データベース名の変更がぐっとラクになるお知らせだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon RDS for Db2 がデータベースのその場でのリネームに対応したと発表されたよ！新しい `rdsadmin.rename_database` ストアドプロシージャを呼ぶだけでできるの。\n\n## 今までどうだったの？\n\nこれまでは、リネームするにはバックアップを取って、新しい名前で復元する必要があったんだって。\n\n## これで何が変わるの？\n\nリネームではデータがその場に残るから、バックアップと復元よりも速いよ。\n\nたとえば、バックアップから復元したコピーでデータベースを置き換えたいとき、元のデータベースをリネームして、その名前を復元したコピーに付けられるの。アプリケーションの接続文字列を変えずに済むのがうれしいところだよ！\n\n## 深く潜ってみよう\n\n- リネームはバックグラウンドタスクとして実行され、`rdsadmin.get_task_status` で進み具合を確認できる\n- RDS for Db2 が使えるすべての AWS リージョンで利用できる\n- 使い方は Amazon RDS User Guide を見てね\n\n## まとめ\n\n- `rdsadmin.rename_database` でその場でリネームできる\n- バックアップと復元より速い\n- 復元コピーとの入れ替えでも接続文字列を変えなくていい\n\nDb2 の運用で復元コピーに切り替える作業をしているみんなに刺さるよ！",
+  "body_md_en": "Hi, it's Shii-chan! Renaming a database just got a lot easier!\n\n## What was announced?\n\nAWS What's New announced that Amazon RDS for Db2 now supports renaming databases in place. You do it by calling the new `rdsadmin.rename_database` stored procedure.\n\n## The story so far\n\nPreviously, renaming a database required you to back it up and restore it under a new name.\n\n## What changes\n\nWith rename, the database keeps its data in place, so it is faster than backing up and restoring.\n\nFor example, after you restore a copy of a database from a backup, you can rename the original database and then give its name to the restored copy, without changing your application connection strings.\n\n## Dive Deep\n\n- Rename runs as a background task that you can monitor with `rdsadmin.get_task_status`\n- Available in all AWS Regions where RDS for Db2 is offered\n- See the Amazon RDS User Guide to get started\n\n## Wrap-up\n\n- Rename in place with `rdsadmin.rename_database`\n- Faster than backup and restore\n- No connection string changes when swapping in a restored copy\n\nIf you swap in restored copies as part of your Db2 operations, this is for you!",
+  "slug": "aws-what-s-new-amazon-rds-db2-supports-rename-databases",
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-rds-db2-supports-rename-databases",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon RDS for Db2 now supports renaming databases",
+  "published_at": "2026-11-20T08:53:00+00:00"
+}

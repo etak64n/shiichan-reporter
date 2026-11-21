@@ -1,0 +1,19 @@
+{
+  "title": "CloudFormation のスタック上限が 2,000 から 300,000 に！もう引き上げ申請はいらないよ",
+  "summary": "AWS CloudFormation のアカウント・リージョンあたりのデフォルトのスタック数上限が、2,000 から 300,000 に引き上げられたよ。追加料金なし、既存スタックは変更不要だよ。",
+  "emotion": "energetic",
+  "importance": 4,
+  "tags": [
+    "aws",
+    "devops"
+  ],
+  "title_en": "CloudFormation Raises the Default Stack Quota From 2,000 to 300,000",
+  "summary_en": "AWS CloudFormation now supports up to 300,000 stacks per account and Region by default, up from 2,000, with no quota increase request needed.",
+  "body_md": "おつかれさま、しぃちゃんだよ！桁が一気に変わる、びっくりのお知らせだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS CloudFormation がアカウント・リージョンあたり、デフォルトで最大 300,000 スタックに対応したと発表されたよ！以前は 2,000 だったの。\n\n## 今までどうだったの？\n\n顧客ごと、環境ごと、開発者ごとに別々のスタックを作る使い方では、1 リージョンで 2,000 スタックを超えるアカウントは、Service Quotas からクォータの引き上げをリクエストする必要があったんだって。\n\n## これで何が変わるの？\n\nデフォルトのクォータだけで、これらのワークロードをカバーできるようになったよ。リクエスト不要で、ワークロードの成長に合わせてスタックを増やせるの。\n\nたとえば、顧客ごとに 1 スタックをデプロイしているソフトウェア提供者なら、1 つのアカウントとリージョンで顧客スタックを 2,000 から 300,000 まで増やせるよ！\n\n## 深く潜ってみよう\n\n- 既存のスタックは変更なしでそのまま動く\n- 引き上げ後のクォータは、CloudFormation コンソールや AWS CLI、AWS SDK、AWS CDK、AWS SAM で作るスタックに適用される\n- 現在の上限は Service Quotas コンソールで確認できる\n- 追加料金なしで、CloudFormation が使えるすべての AWS リージョンで利用できる\n\n## まとめ\n\n- デフォルトのスタック上限が 2,000 から 300,000 に\n- 引き上げ申請なしで増やせる\n- 既存スタックは変更不要、追加料金なし\n\n顧客ごと・環境ごとにスタックを分けて運用しているみんなに刺さるよ！",
+  "body_md_en": "Hi, it's Shii-chan! This one changes the order of magnitude, and it surprised me!\n\n## What was announced?\n\nAWS What's New announced that AWS CloudFormation now supports up to 300,000 stacks in each AWS account and Region by default. It used to be 2,000.\n\n## The story so far\n\nFor patterns that deploy a separate stack for each customer, environment, or developer, accounts that needed more than 2,000 stacks in a Region had to request a quota increase through Service Quotas.\n\n## What changes\n\nThe default quota now covers these workloads without a request. You can add stacks as your workloads grow.\n\nFor example, a software provider that deploys one stack for each customer can grow from 2,000 to 300,000 customer stacks in one account and Region.\n\n## Dive Deep\n\n- Existing stacks work without changes\n- The higher quota applies to stacks you create in the CloudFormation console or with the AWS CLI, AWS SDKs, AWS CDK, or AWS SAM\n- View your quota in the Service Quotas console\n- Available at no additional charge in all AWS Regions where CloudFormation is supported\n\n## Wrap-up\n\n- Default stack quota goes from 2,000 to 300,000\n- No increase request needed\n- No changes to existing stacks, no extra charge\n\nIf you split stacks per customer or per environment, this is for you!",
+  "slug": "aws-what-s-new-cloudformation-stacks-per-account-quota",
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/cloudformation-stacks-per-account-quota/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS CloudFormation increases the default stacks per account quota to 300,000",
+  "published_at": "2026-11-20T12:35:00+00:00"
+}

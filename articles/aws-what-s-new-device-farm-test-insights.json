@@ -1,0 +1,20 @@
+{
+  "title": "AWS Device Farm の Test Insights が登場！テスト失敗の原因を一気に見つけちゃおう",
+  "summary": "AWS Device Farm が Appium・Espresso・XCUITest の実行向けに Test Insights を提供開始！失敗の根本原因やテストごとの動画などを API で取得できて、追加料金はなしだよ。",
+  "emotion": "happy",
+  "importance": 4,
+  "tags": [
+    "aws",
+    "devops",
+    "ai"
+  ],
+  "title_en": "AWS Device Farm Test Insights: Find the Root Cause of Test Failures Faster",
+  "summary_en": "AWS Device Farm now provides Test Insights for Appium, Espresso, and XCUITest runs, exposing failure root causes, per-test videos, and timing data at no additional cost.",
+  "body_md": "こんにちは、しぃちゃんだよ！モバイルテストの失敗調査がラクになりそうなお知らせが来たよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、モバイル・Web アプリのテストサービス AWS Device Farm の「Test Insights」が発表されたよ！対象は、複数デバイスで実行する Appium、Espresso、XCUITest の実行だよ。\n\nデバイスごと・テストごとにテストスイートの中身を細かく分解して見せてくれるから、テストの健康状態が分かって、失敗の解決が早くなるの！\n\n## なにが嬉しいの？\n\n既存の Device Farm の API から、次のようなデータが返ってくるようになったよ。\n\n- 強化されたテストメタデータ\n- スタックトレース付きの失敗の根本原因\n- テストごとの動画\n- 開始・終了時刻\n- デバイスごと・テストごとの所要時間の中央値と平均\n- 結果別のテスト数\n\nAWS は、このデータが 1 か所にそろうので、AI エージェントが根本原因を探すのに使う時間とトークンが減ると説明しているよ。AWS Device Farm のトラブルシューティング用スキルも、このデータを使って失敗した実行の診断と修正案の提案をするんだって！\n\n## 深く潜ってみよう\n\n- 料金: デフォルトやカスタムのテストレポートと一緒に、追加料金なしで使える\n- リージョン: Device Farm が使えるすべての AWS リージョンで利用できる\n- 詳しい使い方は AWS Device Farm Developer Guide の Test Insights のページにあるよ\n\n## まとめ\n\n- Appium / Espresso / XCUITest の複数デバイス実行向けの機能\n- 失敗の根本原因(スタックトレース付き)、テストごとの動画、所要時間などが API で取れる\n- AI エージェントでの失敗調査も効率化できる\n- 追加料金なし\n\nモバイル E2E テストの不安定さや失敗調査に時間を取られているみんなに刺さるよ！",
+  "body_md_en": "Hi, it's Shii-chan! Here's news that should make investigating mobile test failures easier!\n\n## What was announced?\n\nAWS What's New announced Test Insights for AWS Device Farm, a service for testing mobile and web apps. It covers Appium, Espresso, and XCUITest runs across multiple devices.\n\nIt breaks down your test suite by device and by test, so you can understand the health of your tests and resolve failures faster.\n\n## What changes\n\nDevice Farm's existing APIs now return the following:\n\n- Enhanced test metadata\n- Failure root cause with stack trace\n- A video for each test\n- Start and stop times\n- Median and average times spent on each device and test\n- Test counts by result\n\nWith the data in one place, AWS says your agents spend less time and fewer tokens looking for the root cause of failures. The AWS Device Farm troubleshooting skill also uses it to diagnose failed runs and suggest fixes.\n\n## Dive Deep\n\n- Pricing: available alongside any default and custom test reports at no additional cost\n- Regions: included in all AWS Regions where Device Farm is available\n- For details, see Test Insights in the AWS Device Farm Developer Guide\n\n## Wrap-up\n\n- Built for multi-device Appium, Espresso, and XCUITest runs\n- Failure root causes with stack traces, per-test videos, and timings are available through the API\n- Helps AI agents investigate failures more efficiently\n- No additional cost\n\nIf flaky mobile end-to-end tests and failure triage eat your time, this one is for you!",
+  "slug": "aws-what-s-new-device-farm-test-insights",
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/device-farm-test-insights/",
+  "source_name": "AWS What's New",
+  "og_title": "Announcing Test Insights for AWS Device Farm",
+  "published_at": "2026-11-20T08:00:00+00:00"
+}

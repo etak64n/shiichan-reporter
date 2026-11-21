@@ -1,0 +1,20 @@
+{
+  "title": "RDS for Db2 にオブジェクト単位の監査ポリシーが来たよ！見たいところだけ監査できる",
+  "summary": "Amazon RDS for Db2 で、テーブル・ユーザー・グループ・ロールなどに監査ポリシーを付けられるオブジェクトレベル監査ポリシーが使えるようになったよ。",
+  "emotion": "happy",
+  "importance": 3,
+  "tags": [
+    "aws",
+    "security",
+    "infrastructure"
+  ],
+  "title_en": "RDS for Db2 Gets Object-Level Audit Policies: Audit Only What Matters",
+  "summary_en": "Amazon RDS for Db2 now supports object-level audit policies that attach to specific tables, users, groups, roles, and authorities.",
+  "body_md": "みんな、しぃちゃんだよ！監査ログを必要なところだけに絞れるお知らせだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon RDS for Db2 がオブジェクトレベルの監査ポリシーに対応したと発表されたよ！どのデータベースオブジェクトを監査するかを細かく決められる機能なの。\n\nカスタムの監査ポリシーを作って、RDS for Db2 のデータベース内の次のものにアタッチできるよ。\n\n- テーブル\n- ユーザー\n- グループ\n- ロール\n- 権限(authority)\n\n## これで何が変わるの？\n\n機密データが入った 1 つのテーブルや、特定のユーザーなど、本当に大事なオブジェクトに絞って監査できるよ。データベース全体の監査レコードを出さなくて済むの！\n\n## 深く潜ってみよう\n\n- 既存のデータベースレベルの監査ログを補完する機能で、両方を同時に使えて、それぞれ独立して動く\n- ポリシーの作成・変更・アタッチ・デタッチ・削除用に、Amazon RDS がストアドプロシージャを提供している\n- 監査レコードは、Db2 の監査ログ用に設定済みの同じ Amazon S3 バケットにアップロードされる\n- RDS for Db2 が使えるすべての AWS リージョンで利用できる\n\n## まとめ\n\n- テーブルやユーザーなど、対象を絞った監査ができる\n- データベースレベルの監査と併用でき、独立して動く\n- 監査レコードは既存の S3 バケットへ\n\n機密テーブルだけを監査したいコンプライアンス担当のみんなに刺さるよ！",
+  "body_md_en": "Hi everyone, it's Shii-chan! Here's news about narrowing audit logs to what you need!\n\n## What was announced?\n\nAWS What's New announced that Amazon RDS for Db2 now supports object-level audit policies, giving you fine-grained control over which database objects are audited.\n\nYou can create custom audit policies and attach them to these in your RDS for Db2 databases:\n\n- Tables\n- Users\n- Groups\n- Roles\n- Authorities\n\n## What changes\n\nYou can focus on auditing the objects that matter most, such as a single table with sensitive data or a specific user, without generating audit records for your entire database.\n\n## Dive Deep\n\n- They complement the existing database-level audit logging. You can use both at the same time, and they operate independently\n- Amazon RDS provides stored procedures to create, modify, attach, detach, and drop policies\n- Audit records are uploaded to the same Amazon S3 bucket you configured for Db2 audit logging\n- Available in all AWS Regions where RDS for Db2 is available\n\n## Wrap-up\n\n- Targeted auditing of tables, users, and more\n- Works alongside database-level auditing, independently\n- Audit records go to your existing S3 bucket\n\nIf you only need to audit sensitive tables, this is for you!",
+  "slug": "aws-what-s-new-amazon-rds-db2-supports-object-level-audit-policies",
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-rds-db2-supports-object-level-audit-policies",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon RDS for Db2 now supports object-level audit policies",
+  "published_at": "2026-11-20T08:34:00+00:00"
+}
