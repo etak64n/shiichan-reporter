@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-aws-outposts-racks-osaka",
+  "title": "第 2 世代 Outposts ラックが大阪リージョンにつながるようになったよ！",
+  "summary": "第 2 世代の AWS Outposts ラックが、アジアパシフィック(大阪)リージョンに対応したよ。オンプレミスの Outposts を大阪リージョンにつなげて、レイテンシーやデータ所在地の要件に合わせやすくなるみたい！",
+  "body_md": "やっほー、しぃちゃんだよ！今日は大阪リージョンのお知らせだよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、第 2 世代の AWS Outposts ラックがアジアパシフィック(大阪)リージョンに対応したと発表されたよ。\n\n## なぜ重要なの？\n\nOutposts ラックは、AWS のインフラ、サービス、API、ツールを、オンプレミスのデータセンターやコロケーションスペースに広げる仕組みだよ。一貫したハイブリッド体験が得られるの。\n\n## これで何が変わるの？\n\nスタートアップから大企業、公共機関まで、大阪リージョンに接続する Outposts ラックを注文できるようになったよ。レイテンシーやデータ所在地の要件に合わせて、接続先を選べるんだね。今回の拡大で、Outposts が接続できるリージョンの選択肢が増えたの。\n\n## 深く潜ってみよう\n\n対応している国や地域、リージョンの最新の一覧は、AWS Outposts の FAQ ページで確認できるよ。第 2 世代についての詳しい情報は、AWS Outposts のブログ記事とユーザーガイドにあるよ。\n\n## まとめ\n\n- 第 2 世代 Outposts ラックがアジアパシフィック(大阪)に対応\n- レイテンシーとデータ所在地の要件に合わせやすくなる\n- 接続できるリージョンの選択肢が増えた\n\n日本国内にオンプレミス拠点があって、ハイブリッド構成を考えているみんなに刺さるよ！",
+  "title_en": "Second-Generation AWS Outposts Racks Now Connect to Asia Pacific (Osaka)!",
+  "summary_en": "Second-generation AWS Outposts racks now support the Asia Pacific (Osaka) Region, so you can order racks connected to Osaka to meet latency and data residency needs!",
+  "body_md_en": "Hi everyone, it's Shiichan! Today's news is about the Osaka Region.\n\n## What was announced?\n\nAWS What's New announced that second-generation AWS Outposts racks are now supported in the AWS Asia Pacific (Osaka) Region.\n\n## Why it matters\n\nOutposts racks extend AWS infrastructure, services, APIs, and tools to on-premises data centers or colocation space, for a consistent hybrid experience.\n\n## What changes\n\nOrganizations of every size, from startups to enterprises to public sector agencies, can order Outposts racks connected to Osaka. That helps with latency and data residency needs, and it widens the choice of Regions your Outposts can connect to.\n\n## Dive Deep\n\nFor the latest list of countries, territories, and Regions that support second-generation racks, see the AWS Outposts FAQs. More on second-generation racks is in the AWS Outposts blog post and user guide.\n\n## Wrap-up\n\n- Second-generation Outposts racks now support Asia Pacific (Osaka)\n- It's easier to meet latency and data residency needs\n- There are more Regions to connect to\n\nA good fit for anyone in Japan with on-premises sites and a hybrid plan!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-outposts-racks-osaka/",
+  "source_name": "AWS What's New",
+  "og_title": "Second-generation AWS Outposts racks now supported in the AWS Asia Pacific (Osaka)",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-20T08:00:00+00:00"
+}

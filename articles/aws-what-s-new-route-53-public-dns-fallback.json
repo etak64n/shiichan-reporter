@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-route-53-public-dns-fallback",
+  "title": "Route 53 プライベートホストゾーンに「パブリック DNS フォールバック」が来たよ！",
+  "summary": "Route 53 のプライベートホストゾーンで、ゾーンにないレコードの問い合わせを NXDOMAIN ではなくパブリック DNS の回答で返せるようになったよ。プライベートに解決したい名前だけを登録すればいいみたい！",
+  "body_md": "みんな、しぃちゃんだよ！DNS の運用が楽になる機能だよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Route 53 のプライベートホストゾーンがパブリック DNS フォールバックに対応したと発表されたよ。プライベートホストゾーンのドメインの名前で、ゾーンにレコードが一致しない問い合わせがあると、「名前が見つからない」(NXDOMAIN)ではなく、パブリック DNS の回答を返すの。これは Advanced Hosted Zones の機能のひとつだよ。\n\n## 今までどうだったの？\n\n関連付けたプライベートホストゾーンは、そのドメインについて完全な権威として扱われていたよ。だからゾーンにない名前は NXDOMAIN になっていたの。\n\n一部の名前だけプライベートに解決したいときも、パブリックゾーンの他のレコードをすべてプライベートホストゾーンにコピーして、同期を保つ必要があったんだね。\n\n## これで何が変わるの？\n\nプライベートに必要な名前だけを足せば、それ以外の名前は既存のパブリック DNS から解決されるよ。\n\nたとえば、example.com 用のプライベートホストゾーンで example.com をプライベートエンドポイントに向けていて、partner.example.com はパブリック DNS にしかないとするね。以前は partner.example.com の問い合わせが NXDOMAIN になったけれど、これからはパブリック DNS から解決されるよ。\n\n## 深く潜ってみよう\n\n始め方はこうだよ。\n\n- プライベートの Advanced Hosted Zone を作るか、既存のプライベートホストゾーンをアップグレードする\n- パブリック DNS フォールバックをオンにする\n\nRoute 53 コンソール、API、AWS CLI、AWS SDK、AWS CloudFormation から使えるよ。Route 53 のプライベートホストゾーンが使えるすべての AWS 商用リージョンで利用できるの。詳しくは Route 53 Developer Guide の「Enabling public DNS fallback for a private hosted zone」と料金ページを見てね。\n\n## まとめ\n\n- ゾーンにない名前はパブリック DNS から解決される\n- パブリックゾーンのレコードをコピーして同期する運用が不要になる\n- Advanced Hosted Zones の機能で、コンソール・CLI・CloudFormation などから設定できる\n\nスプリットホライズン DNS を運用しているみんなに刺さるよ！",
+  "title_en": "Public DNS Fallback Comes to Route 53 Private Hosted Zones!",
+  "summary_en": "Route 53 private hosted zones can now return the public DNS answer instead of NXDOMAIN for names not in the zone. You only add the names you need privately!",
+  "body_md_en": "Hi everyone, it's Shiichan! This one makes DNS operations easier.\n\n## What was announced?\n\nAWS What's New announced that Amazon Route 53 private hosted zones now support public DNS fallback. When a query for a name in your private hosted zone's domain doesn't match a record in the zone, Route 53 returns the answer from public DNS instead of a \"name not found\" (NXDOMAIN) error. It is part of the Advanced Hosted Zones offering.\n\n## The story so far\n\nRoute 53 treated an associated private hosted zone as fully authoritative for its domain, so queries for names that weren't in the zone returned NXDOMAIN.\n\nTo resolve just a few names privately, customers also had to copy every other record from the public zone into the private hosted zone and keep the two in sync.\n\n## What changes\n\nYou add only the names you need privately, and every other name resolves from your existing public DNS.\n\nFor example, your private hosted zone for example.com points example.com to a private endpoint, while partner.example.com exists only in public DNS. Before, a lookup for partner.example.com returned NXDOMAIN. Now it resolves from public DNS.\n\n## Dive Deep\n\nTo get started:\n\n- Create a private Advanced Hosted Zone, or upgrade an existing private hosted zone\n- Turn on public DNS fallback\n\nYou can use the Route 53 console, API, AWS CLI, AWS SDKs, or AWS CloudFormation. It's available in all AWS commercial Regions where Route 53 private hosted zones are available. See \"Enabling public DNS fallback for a private hosted zone\" in the Route 53 Developer Guide and the pricing page.\n\n## Wrap-up\n\n- Names missing from the zone resolve from public DNS\n- No more copying and syncing public zone records\n- It's an Advanced Hosted Zones feature, configurable from the console, CLI, CloudFormation, and more\n\nA good fit for anyone running split-horizon DNS!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/route-53-public-dns-fallback/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Route 53 private hosted zones now support public DNS fallback",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "devops"
+  ],
+  "published_at": "2026-11-20T08:00:00+00:00"
+}

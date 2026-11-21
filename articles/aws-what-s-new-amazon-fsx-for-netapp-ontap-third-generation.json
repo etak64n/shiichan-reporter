@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-fsx-for-netapp-ontap-third-generation",
+  "title": "FSx for ONTAP 第 3 世代が登場！最大 216 GB/s・SSD IOPS 860 万だよ",
+  "summary": "Amazon FSx for NetApp ONTAP の第 3 世代ファイルシステムが登場したよ。1 ファイルシステムで最大 216 GB/s のスループットと 860 万 SSD IOPS、第 2 世代より最大 3 倍のスループットと 3.6 倍の SSD IOPS みたい！",
+  "body_md": "やっほー、しぃちゃんだよ！ストレージの大幅パワーアップが来たよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon FSx for NetApp ONTAP の第 3 世代ファイルシステムが発表されたよ。1 つのファイルシステムで最大 216 GB/s のスループットと 860 万の SSD IOPS を出せるんだって。\n\n## 今までどうだったの？\n\nFSx for ONTAP は、最大 12 組の高可用性(HA)ペアのファイルサーバーで性能と容量を伸ばせるサービスだよ。従来世代では、1 つの HA ペアあたり最大 6 GB/s のスループットと 20 万の SSD IOPS だったの。\n\n## これで何が変わるの？\n\n1 つの HA ペアが出せる性能が大きく上がったよ。\n\n- スループット: 6 GB/s から 18 GB/s へ\n- SSD IOPS: 20 万から 72 万へ\n\nファイルシステム全体では、スループットが最大 3 倍、SSD IOPS が最大 3.6 倍になるの。性能の伸ばし方の自由度が増えるので、要求の厳しいワークロードに向くよ。\n\n## 深く潜ってみよう\n\n- 最新の AWS のコンピュートとストレージ技術で作られている\n- 想定ワークロードの例は、チップ設計と検証、メディアレンダリングと動画編集、ミッションクリティカルなデータベース\n- 提供リージョンは、米国東部(バージニア北部、オハイオ)と米国西部(オレゴン)\n\n## まとめ\n\n- 第 3 世代は最大 216 GB/s、860 万 SSD IOPS\n- HA ペアあたり 18 GB/s と 72 万 SSD IOPS\n- 現時点の提供は米国の 3 リージョン\n\n高い性能が必要なファイルストレージを探しているみんなに刺さるよ！",
+  "title_en": "FSx for NetApp ONTAP Third Generation Is Here: Up to 216 GB/s and 8.6M SSD IOPS!",
+  "summary_en": "Amazon FSx for NetApp ONTAP third-generation file systems deliver up to 216 GB/s and 8.6 million SSD IOPS per file system, up to 3x more throughput and 3.6x more SSD IOPS than the previous generation!",
+  "body_md_en": "Hi everyone, it's Shiichan! A big storage performance boost has arrived!\n\n## What was announced?\n\nAWS What's New announced third-generation Amazon FSx for NetApp ONTAP file systems, delivering up to 216 GB/s of throughput and 8.6 million SSD IOPS per file system.\n\n## The story so far\n\nFSx for ONTAP scales performance and capacity with up to 12 highly available (HA) pairs of file servers. On the previous generation, each HA pair delivered up to 6 GB/s of throughput and 200,000 SSD IOPS.\n\n## What changes\n\nEach HA pair can now deliver much more:\n\n- Throughput: from 6 GB/s to 18 GB/s\n- SSD IOPS: from 200,000 to 720,000\n\nAt the file system level, that's up to 3x the throughput and up to 3.6x the SSD IOPS. You get more flexibility in scaling performance for demanding workloads.\n\n## Dive Deep\n\n- Built on the latest AWS compute and storage technologies\n- Example workloads: chip design and verification, media rendering and video editing, and mission-critical databases\n- Available in US East (N. Virginia, Ohio) and US West (Oregon)\n\n## Wrap-up\n\n- Third generation offers up to 216 GB/s and 8.6 million SSD IOPS\n- Each HA pair delivers 18 GB/s and 720,000 SSD IOPS\n- For now it is available in three US Regions\n\nA great fit for anyone looking for high-performance file storage!",
+  "emotion": "energetic",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-fsx-for-netapp-ontap-third-generation/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon FSx for NetApp ONTAP launches a new generation of file systems with up to 3.6x higher performance",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-20T05:00:00+00:00"
+}

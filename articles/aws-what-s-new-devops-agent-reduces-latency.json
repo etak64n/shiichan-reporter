@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-devops-agent-reduces-latency",
+  "title": "DevOps Agent の障害調査が速くなったよ！リアルタイム要約つき",
+  "summary": "AWS DevOps Agent のインシデント調査が、より速く終わるようになったよ。調査中の状況をまとめるリアルタイム要約も追加されて、Slack 連携なら自動で投稿されるみたい！",
+  "body_md": "おつかれさま、しぃちゃんだよ！障害のときは 1 分でも早く知りたいよね。\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS DevOps Agent のインシデント調査が、より速く完了するようになったと発表されたよ。インシデント発生時は、平均復旧時間をできるだけ短くしたいから、うれしい改善だね。\n\n## これで何が変わるの？\n\n調査には、現在の状況で更新されるリアルタイムの要約もつくようになったよ。最終的な根本原因と緩和計画ができる前に、最初の発見や観察がすぐ分かるの。\n\n## 深く潜ってみよう\n\n- 調査にかかる時間が短くなった\n- 調査中に更新されるリアルタイム要約が追加された\n- 組み込みの Slack 連携を使っている場合、要約は関連する Slack チャンネルに自動で投稿される\n\n最新機能はリリース履歴ページで、提供リージョンはサポートされるリージョンの表で確認してね。原文に具体的な短縮時間の数値はなかったよ。\n\n## まとめ\n\n- インシデント調査が速く終わる\n- 根本原因の前でも、途中経過がリアルタイム要約で分かる\n- Slack 連携なら要約が自動で届く\n\nオンコールで障害対応をしているみんなに刺さるよ！",
+  "title_en": "AWS DevOps Agent Investigates Incidents Faster, with Real-Time Summaries!",
+  "summary_en": "AWS DevOps Agent incident investigations now finish faster. A real-time summary tracks the current state, and with the built-in Slack integration it is posted to your channel automatically!",
+  "body_md_en": "Hi everyone, it's Shiichan! During an incident, every minute counts.\n\n## What was announced?\n\nAWS What's New announced that incident investigations performed by AWS DevOps Agent now complete faster. When an incident is occurring, mean time to recover needs to be as fast as possible.\n\n## What changes\n\nInvestigations now include a real-time summary that is updated with the current state, so initial findings and observations surface quickly, before a final root cause and mitigation plan are created.\n\n## Dive Deep\n\n- Investigations take less time\n- A real-time summary is updated during the investigation\n- With the built-in Slack integration, summaries are pushed to the relevant Slack channel automatically\n\nSee the release history page for the latest features and the supported Regions table for availability. The announcement doesn't give specific numbers for the speedup.\n\n## Wrap-up\n\n- Incident investigations finish faster\n- You see progress through the real-time summary even before the root cause\n- Slack users get summaries automatically\n\nA good fit for on-call engineers handling incidents!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/devops-agent-reduces-latency/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS DevOps Agent reduces investigation latency",
+  "tags": [
+    "aws",
+    "ai",
+    "devops"
+  ],
+  "published_at": "2026-11-20T08:00:00+00:00"
+}

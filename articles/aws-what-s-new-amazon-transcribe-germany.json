@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-transcribe-germany",
+  "title": "Amazon Transcribe が AWS European Sovereign Cloud に登場！",
+  "summary": "Amazon Transcribe が AWS European Sovereign Cloud(ドイツ)リージョンで使えるようになったよ。EU 内にデータと運用をとどめたい要件があっても、バッチとストリーミングの音声認識が使えるみたい！",
+  "body_md": "おつかれさま、しぃちゃんだよ！データ主権が気になるみんなに朗報だよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Transcribe が AWS European Sovereign Cloud(ドイツ)リージョンで使えるようになったと発表されたよ。\n\n## なぜ重要なの？\n\n規制対応やデータ主権の要件で、データと運用を EU 内にとどめたいお客さんがいるよね。そういうみんなも、このリージョンで音声をテキストにする自動音声認識(ASR)を使えるようになったの。\n\n## これで何が変わるの？\n\nこのリージョンで使える文字起こしの方法は 2 つだよ。\n\n- バッチ文字起こし: Amazon S3 に置いたメディアファイルを処理する\n- ストリーミング文字起こし: HTTP/2 や WebSocket で、ライブ音声からリアルタイムにテキストを返す\n\n## 深く潜ってみよう\n\nどちらの方法もカスタム語彙に対応していて、製品名、業界用語、固有名詞などの認識を良くできるよ。対応言語や言語ごとの機能、料金は、ドキュメントの「Supported languages and language-specific features」と AWS European Sovereign Cloud の料金ページで確認してね。\n\n## まとめ\n\n- Transcribe が AWS European Sovereign Cloud(ドイツ)で利用可能に\n- バッチとストリーミングの両方に対応\n- カスタム語彙で専門用語の認識を改善できる\n\nEU のデータ主権要件のもとで音声認識を使いたいみんなに刺さるよ！",
+  "title_en": "Amazon Transcribe Arrives in the AWS European Sovereign Cloud!",
+  "summary_en": "Amazon Transcribe is now available in the AWS European Sovereign Cloud (Germany) Region, so teams that must keep data and operations in the EU can use batch and streaming speech recognition!",
+  "body_md_en": "Hi everyone, it's Shiichan! Good news for anyone who cares about data sovereignty.\n\n## What was announced?\n\nAWS What's New announced that Amazon Transcribe is now available in the AWS European Sovereign Cloud (Germany) Region.\n\n## Why it matters\n\nSome customers need to keep data and operations within the EU for regulatory compliance and data sovereignty. Now they can use automatic speech recognition (ASR), which turns speech into text, in this Region.\n\n## What changes\n\nThere are two ways to transcribe audio in this Region:\n\n- Batch transcription: processes media files stored in Amazon S3\n- Streaming transcription: returns text in real time from live audio over HTTP/2 or WebSocket\n\n## Dive Deep\n\nBoth support custom vocabularies, which improve recognition of terms such as product names, industry jargon, and proper nouns. For supported languages, language-specific features, and pricing, see \"Supported languages and language-specific features\" in the docs and the AWS European Sovereign Cloud pricing page.\n\n## Wrap-up\n\n- Transcribe is available in the AWS European Sovereign Cloud (Germany)\n- Both batch and streaming are supported\n- Custom vocabularies help with domain-specific terms\n\nA good fit for anyone who needs speech recognition under EU data sovereignty requirements!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-transcribe-germany/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Transcribe now available in AWS European Sovereign Cloud",
+  "tags": [
+    "aws",
+    "ai",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-20T08:00:00+00:00"
+}

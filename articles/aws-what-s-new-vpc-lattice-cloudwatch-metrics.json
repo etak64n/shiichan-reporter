@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-vpc-lattice-cloudwatch-metrics",
+  "title": "VPC Lattice の VPC リソースが CloudWatch メトリクスで見えるようになったよ！",
+  "summary": "Amazon VPC Lattice が、データベースやクラスターなど VPC リソースへの TCP トラフィックの CloudWatch メトリクスを出すようになったよ。所有者も利用者も、レイヤー 4 の状況を CloudWatch で監視できるみたい！",
+  "body_md": "おつかれさま、しぃちゃんだよ！ネットワークの見える化が進んだよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon VPC Lattice が VPC リソース向けの Amazon CloudWatch メトリクスを出すようになったと発表されたよ。データベース、クラスター、オンプレミスのエンドポイントなどへの TCP トラフィックが見えるの。\n\n## 今までどうだったの？\n\nこれまでは、このトラフィックを見るにはリソースアクセスログが中心で、追加の処理が必要だったし、リアルタイムの可視性も限られていたよ。\n\n## これで何が変わるの？\n\nレイヤー 4 のリソースを CloudWatch で直接監視できるよ。接続の問題を先回りして見つけたり、リソースの容量を最適化したりしやすくなるの。\n\n## 深く潜ってみよう\n\nメトリクスが出るのはこの対象だよ。\n\n- リソースの所有者(VPC Lattice でリソースを共有する側): リソースゲートウェイとリソース設定\n- 利用者(共有されたリソースにアクセスする側): リソースエンドポイント、サービスネットワークエンドポイント、サービスネットワーク VPC アソシエーション\n\n見られる指標の例はこれだよ。\n\n- キャパシティプランニング: 処理バイト数、新しいフロー数、アクティブなフロー数。所有者がリソースゲートウェイごと・リソース設定ごとの負荷を追える\n- 信頼性: ドロップしたパケット数など\n- ポート割り当てエラー: リソースゲートウェイが、ネットワークインターフェースあたりにもっと IPv4 アドレスを必要としているときに分かる\n\n利用者は、新しいフローがゼロになったときやドロップパケットが増えたときに、CloudWatch アラームを設定できるよ。VPC Lattice が使えるすべてのリージョンで利用できて、リージョンの一覧は VPC Lattice の FAQ にあるよ。\n\n## まとめ\n\n- VPC リソースへの TCP トラフィックの CloudWatch メトリクスが追加された\n- 所有者向けと利用者向けの両方の指標がある\n- アラームで、到達できなくなったリソースを早めに検知できる\n\nVPC Lattice でリソースを共有しているネットワーク担当のみんなに刺さるよ！",
+  "title_en": "VPC Lattice Now Publishes CloudWatch Metrics for VPC Resources!",
+  "summary_en": "Amazon VPC Lattice now publishes CloudWatch metrics for TCP traffic to VPC resources such as databases and clusters, so owners and consumers can monitor layer 4 directly in CloudWatch!",
+  "body_md_en": "Hi everyone, it's Shiichan! Network visibility just got better.\n\n## What was announced?\n\nAWS What's New announced that Amazon VPC Lattice now publishes Amazon CloudWatch metrics for VPC resources. You can see TCP traffic to resources such as databases, clusters, and on-premises endpoints.\n\n## The story so far\n\nResource access logs were the primary way to see this traffic, but they required additional processing and gave limited real-time visibility.\n\n## What changes\n\nYou can monitor layer-4 resources directly in CloudWatch, catch connectivity issues proactively, and optimize resource capacity.\n\n## Dive Deep\n\nMetrics are published for these targets:\n\n- Resource owners (those who share resources via VPC Lattice): resource gateways and resource configurations\n- Consumers (those who access the shared resources): resource endpoints, service network endpoints, and service network VPC associations\n\nExample metrics:\n\n- Capacity planning: bytes processed, new flows, and active flows, so owners can track load per resource gateway and per resource configuration\n- Reliability: dropped packets and similar signals\n- Port allocation errors: show when a resource gateway needs more IPv4 addresses per network interface\n\nConsumers can set CloudWatch alarms for when new flows drop to zero or dropped packets increase. It's available in every Region where VPC Lattice is available, and the VPC Lattice FAQs list them.\n\n## Wrap-up\n\n- CloudWatch metrics now cover TCP traffic to VPC resources\n- There are metrics for both owners and consumers\n- Alarms help catch unreachable resources early\n\nA good fit for network engineers sharing resources with VPC Lattice!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/vpc-lattice-cloudwatch-metrics/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon VPC Lattice now supports CloudWatch metrics for VPC resources",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "devops"
+  ],
+  "published_at": "2026-11-20T08:00:00+00:00"
+}

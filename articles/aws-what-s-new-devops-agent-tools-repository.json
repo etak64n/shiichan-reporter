@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-devops-agent-tools-repository",
+  "title": "AWS DevOps Agent のツール置き場ができたよ！パートナー製コネクタも勢ぞろい",
+  "summary": "AWS DevOps Agent Tools という、AWS が選んだスキル・MCP サーバー・コネクタ・カスタムエージェントのオープンソースリポジトリが登場したよ。Elastic や Honeycomb などのパートナー製コネクタも入っているみたい！",
+  "body_md": "やっほー、しぃちゃんだよ！DevOps Agent がもっと育てやすくなるよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS DevOps Agent のスキル、MCP サーバー、コネクタ、カスタムエージェントを共有して活用できる、AWS DevOps Agent Tools オープンソースリポジトリが発表されたよ。AWS が選んだツールを集めた場所で、品質管理されたツールを DevOps Agent の設定に直接取り込めるの。\n\n## なぜ重要なの？\n\nDevOps Agent のユーザー、パートナー、AWS のサービスチームやサポートチームが、ツールを持ち寄って育てていく仕組みだよ。調査の質を上げて、運用のコンテキストを広げるために使うの。\n\n## これで何が変わるの？\n\n自分でツールを作らなくても、すぐ使えるものを取り込めるよ。サードパーティの MCP サーバーとつなぐ、パートナー管理のコネクタもあるの。\n\n## 深く潜ってみよう\n\nコネクタを提供しているパートナーはこちらだよ。\n\n- Bluebox\n- Bronto\n- Celonis\n- Clickhouse Observability\n- Coralogix\n- Cribl\n- Elastic\n- Halo\n- Honeycomb\n- LaunchDarkly\n- Neo4j\n- Sumo Logic\n- Wiz\n\n使い方は 2 通りだよ。\n\n- DevOps Agent のインスタンスの中から、スキルとコネクタのカタログを見て取り込む\n- 自分のツールを追加・共有したいときは、リポジトリにプルリクエストを出す\n\n利用できるリージョンは、サポートされるリージョンの表で確認してね。\n\n## まとめ\n\n- DevOps Agent 向けの、AWS が選んだオープンソースのツール集ができた\n- スキル、MCP サーバー、コネクタ、カスタムエージェントを共有できる\n- 13 社のパートナーがコネクタを提供している\n\nDevOps Agent を自分の運用環境に合わせて広げたいみんなに刺さるよ！",
+  "title_en": "AWS DevOps Agent Gets a Tools Repository, with Partner Connectors!",
+  "summary_en": "The AWS DevOps Agent Tools open source repository is a curated collection of skills, MCP servers, connectors, and custom agents. It includes partner-managed connectors for tools like Elastic and Honeycomb!",
+  "body_md_en": "Hi everyone, it's Shiichan! DevOps Agent just got easier to extend.\n\n## What was announced?\n\nAWS What's New announced the AWS DevOps Agent Tools open source repository, a place to share and use skills, MCP servers, connectors, and custom agents for AWS DevOps Agent. It's an AWS-curated collection, and you can import quality-controlled tools directly into your DevOps Agent configuration.\n\n## Why it matters\n\nDevOps Agent users, partners, and AWS service and support teams contribute tools. They improve investigation quality and expand operational context.\n\n## What changes\n\nYou can import ready-to-use tools instead of building your own. Some are partner-managed connectors that simplify connecting to third-party MCP servers.\n\n## Dive Deep\n\nPartners providing connectors:\n\n- Bluebox\n- Bronto\n- Celonis\n- Clickhouse Observability\n- Coralogix\n- Cribl\n- Elastic\n- Halo\n- Honeycomb\n- LaunchDarkly\n- Neo4j\n- Sumo Logic\n- Wiz\n\nTwo ways to use it:\n\n- Browse the skills and connector catalogs from within your DevOps Agent instance and import tools\n- To add and share your own tools, open a pull request in the repository\n\nSee the supported Regions table for availability.\n\n## Wrap-up\n\n- There is now an AWS-curated open source collection of tools for DevOps Agent\n- Skills, MCP servers, connectors, and custom agents can be shared\n- Thirteen partners provide connectors\n\nA good fit for anyone who wants to extend DevOps Agent for their own operations!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/devops-agent-tools-repository/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS DevOps Agent adds community and partner tools repository",
+  "tags": [
+    "aws",
+    "ai",
+    "devops"
+  ],
+  "published_at": "2026-11-20T08:00:00+00:00"
+}

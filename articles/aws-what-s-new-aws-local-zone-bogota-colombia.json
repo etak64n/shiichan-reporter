@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-aws-local-zone-bogota-colombia",
+  "title": "コロンビアのボゴタに AWS Local Zone が新登場！",
+  "summary": "コロンビアのボゴタに新しい AWS Local Zone が一般提供になったよ。ゲームや動画配信など、ミリ秒一桁のレイテンシーが欲しいアプリ向けで、EC2 や EKS など主要サービスが使えるみたい！",
+  "body_md": "みんな、しぃちゃんだよ！南米にまた拠点が増えたよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、コロンビアのボゴタに新しい AWS Local Zone が一般提供になったよ。エンドユーザーの近くに AWS のインフラを置いて、ミリ秒一桁のレイテンシーが必要なアプリに使えるの。\n\n## なぜ重要なの？\n\nLocal Zone は、コンピュート、ストレージ、ネットワークなどの一部のサービスを大都市の近くに置く仕組みで、リージョンと同じ API とツールで使えるよ。世界で 30 か所以上にあって、ボゴタが加わったんだね。\n\n## これで何が変わるの？\n\n想定されている用途は次のとおりだよ。\n\n- リアルタイムゲーム\n- ライブ動画配信\n- 医療画像\n- 金融取引処理\n\n料金は使った分だけで、最低利用期間の縛りはなし。オンデマンド、Savings Plans、スポットインスタンスが選べるよ。\n\n## 深く潜ってみよう\n\nボゴタの Local Zone で使えるサービスはこれだよ。\n\n- Amazon EC2: C7i、M7i、R7i インスタンス\n- Amazon S3: One Zone-Infrequent Access ストレージクラス\n- Amazon EBS: ローカルスナップショットとボリュームタイプ gp3、gp2、io1\n- Amazon ECS\n- Amazon EKS\n- Amazon VPC\n- AWS Direct Connect\n- Application Load Balancer\n\n使い始めるには、AWS Global View の Regions and Zones タブから、または `ModifyAvailabilityZoneGroup` API で、ボゴタの Local Zone(us-east-1-bog-1a)を有効にするよ。\n\n## まとめ\n\n- ボゴタの AWS Local Zone が一般提供になった\n- ミリ秒一桁のレイテンシーが必要なアプリ向け\n- EC2(C7i / M7i / R7i)、EKS、ECS などが使える\n- 有効化は Global View か API から\n\nコロンビア周辺のユーザーに低遅延でサービスを届けたいみんなに刺さるよ！",
+  "title_en": "A New AWS Local Zone Opens in Bogotá, Colombia!",
+  "summary_en": "A new AWS Local Zone in Bogotá, Colombia is generally available for applications that need single-digit millisecond latency. It supports key services such as EC2 and EKS!",
+  "body_md_en": "Hi everyone, it's Shiichan! There's a new AWS location in South America!\n\n## What was announced?\n\nAWS What's New announced the general availability of a new AWS Local Zone in Bogotá, Colombia. It puts AWS infrastructure closer to end users for applications that need single-digit millisecond latency.\n\n## Why it matters\n\nLocal Zones place compute, storage, networking, and other select services closer to metropolitan areas, with the same APIs and tools as AWS Regions. There are now more than 30 locations worldwide, and Bogotá joins them.\n\n## What changes\n\nThe announcement suggests these workloads:\n\n- Real-time gaming\n- Live video streaming\n- Medical imaging\n- Financial transaction processing\n\nYou pay only for what you use, with no minimum commitment. Pricing options are On-Demand, Savings Plans, and Spot Instances.\n\n## Dive Deep\n\nServices in the Bogotá Local Zone:\n\n- Amazon EC2: C7i, M7i, and R7i instances\n- Amazon S3: the One Zone-Infrequent Access storage class\n- Amazon EBS: local snapshots and the gp3, gp2, and io1 volume types\n- Amazon ECS\n- Amazon EKS\n- Amazon VPC\n- AWS Direct Connect\n- Application Load Balancer\n\nTo get started, enable the Bogotá Local Zone (us-east-1-bog-1a) from the Regions and Zones tab in AWS Global View or with the `ModifyAvailabilityZoneGroup` API.\n\n## Wrap-up\n\n- The Bogotá AWS Local Zone is generally available\n- It targets apps that need single-digit millisecond latency\n- EC2 (C7i / M7i / R7i), EKS, ECS, and more are supported\n- Enable it from Global View or the API\n\nA good fit for anyone serving users around Colombia with low latency!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-local-zone-bogota-colombia/",
+  "source_name": "AWS What's New",
+  "og_title": "Announcing the general availability of a new AWS Local Zone in Bogotá, Colombia",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-20T08:00:00+00:00"
+}

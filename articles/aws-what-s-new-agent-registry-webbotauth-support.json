@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-agent-registry-webbotauth-support",
+  "title": "AWS Agent Registry が WebBotAuth に対応！ボットの身元を確かめよう",
+  "summary": "AWS Agent Registry で WebBotAuth(WBA)ボットを新しいレコードタイプとして登録できるようになったよ。AWS WAF Bot Control と組み合わせて、検証済みボットだけを許可するルールも書けるみたい！",
+  "body_md": "みんな、しぃちゃんだよ！ボット対策のうれしい新機能だよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Agent Registry が WebBotAuth(WBA)ボットを新しいレコードタイプとして登録できるようになったと発表されたよ。標準化されたプロトコルで、正規のボットのトラフィックを確認しやすくなるの。\n\n## 今までどうだったの？\n\nこれまでは、検証済みのボットと悪意のあるトラフィックを区別する標準的な方法がなかったよ。\n\n## これで何が変わるの？\n\nボットは WebBotAuth でドメインの所有を証明できるようになって、その検証を AWS WAF Bot Control と組み合わせられるよ。検証状態とボットの身元を組み合わせたルールを書けるので、コンテンツ提供者やアプリ開発者は、どのボットにリソースへのアクセスを許すかを細かく決められるの。\n\n## 深く潜ってみよう\n\nたとえば次のような使い方ができるよ。\n\n- WBA で検証された検索エンジンのクローラーは許可し、未検証のトラフィックはブロックする\n- ボットの身元と検証状態の両方に基づく、独自のアクセスポリシーを作る\n\nAWS Agent Registry が使えるすべてのリージョンで利用できるよ。詳しくは AWS Agent Registry と AWS WAF Bot Control のドキュメントを見てね。\n\n## まとめ\n\n- WBA ボットを Agent Registry のレコードタイプとして登録できる\n- ドメイン所有を証明して、WAF Bot Control のルールと連携できる\n- 検証済みクローラーだけ許可するなど、細かい制御ができる\n\nボットのトラフィック管理に悩んでいるサイト運営者のみんなに刺さるよ！",
+  "title_en": "AWS Agent Registry Now Supports WebBotAuth: Verify Who Your Bots Are!",
+  "summary_en": "AWS Agent Registry can now register WebBotAuth (WBA) bots as a new record type. Combine it with AWS WAF Bot Control to write rules that allow only verified bots!",
+  "body_md_en": "Hi everyone, it's Shiichan! Here's a handy new feature for bot management.\n\n## What was announced?\n\nAWS What's New announced that AWS Agent Registry now supports registering WebBotAuth (WBA) bots as a new record type, making it easier to verify legitimate bot traffic through a standardized protocol.\n\n## The story so far\n\nUntil now, organizations lacked a standardized way to tell verified bots apart from malicious traffic.\n\n## What changes\n\nBots can prove domain ownership through WebBotAuth, and you can integrate that verification with AWS WAF Bot Control. You can write rules that combine verification status and bot identity, so content providers and application developers get fine-grained control over which bots can access their resources.\n\n## Dive Deep\n\nFor example, you can:\n\n- Allow WBA-verified search engine crawlers while blocking unverified traffic\n- Create custom access policies based on both bot identity and verification status\n\nIt's available in all AWS Regions where AWS Agent Registry is available. See the AWS Agent Registry and AWS WAF Bot Control documentation for details.\n\n## Wrap-up\n\n- WBA bots can be registered as a record type in Agent Registry\n- Bots prove domain ownership and the result works with WAF Bot Control rules\n- You get fine-grained control, such as allowing only verified crawlers\n\nA good fit for site owners struggling with bot traffic!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/agent-registry-webbotauth-support/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Agent Registry now supports WebBotAuth bot registration",
+  "tags": [
+    "aws",
+    "security",
+    "web"
+  ],
+  "published_at": "2026-11-20T08:00:00+00:00"
+}

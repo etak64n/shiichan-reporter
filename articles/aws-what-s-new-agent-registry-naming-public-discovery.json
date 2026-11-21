@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-agent-registry-naming-public-discovery",
+  "title": "AWS Agent Registry でエージェントに検証済みドメイン名を付けて公開できるよ！",
+  "summary": "AWS Agent Registry で、検証済みのドメイン名をエージェントや AI ツールに結びつけて、レジストリや AWS アカウントの外にも公開できるようになったよ。公開レコードは意味検索と語彙検索で探せるみたい！",
+  "body_md": "みんな、しぃちゃんだよ！エージェントにも「名前」と「身元」が付くよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Agent Registry が公開向けの命名機能を提供するようになったと発表されたよ。検証済みのドメイン名を、エージェントや AI ツールに付けられるの。\n\n開発者やネットワーク管理者は、ドメイン検証でドメインの所有を証明して、そのドメイン名をエージェントに関連付けるよ。そうすると、自分のレジストリや AWS アカウントを超えて、公開できるの。\n\n## 今までどうだったの？\n\nこれまでは、エージェント同士がどう見つけ合ってつながるかを、開発者が手動で設定する必要があって、マルチエージェントシステムを作るときの複雑さが増えていたよ。\n\n## これで何が変わるの？\n\n公開されたエージェントのレコードは、検証済みのドメイン ID にひもづくので、つなぐ前にエージェントの出どころを確認できるよ。\n\n## 深く潜ってみよう\n\n- 公開されたエージェントレコードは、AWS 認証済みのユーザーなら誰でも、意味検索(セマンティック検索)と語彙検索(レキシカル検索)の両方で探せる\n- 現時点では追加料金なし\n- AWS Agent Registry が使えるすべてのリージョンで利用できる\n\n詳しくは AWS Agent Registry のドキュメントの「naming and public discovery」を見てね。\n\n## まとめ\n\n- 検証済みドメイン名をエージェントや AI ツールに付けられる\n- 公開レコードは、AWS 認証済みユーザーが意味検索と語彙検索で探せる\n- 接続前に、出どころをドメインで確認できる\n- 現時点では追加料金なし\n\nエージェントを公開したり、他のエージェントを探してつなげたりしたいみんなに刺さるよ！",
+  "title_en": "Give Your Agents Verified Domain Names and Publish Them with AWS Agent Registry!",
+  "summary_en": "AWS Agent Registry can now attach verified domain names to your agents and AI tools and publish them beyond your registry and AWS account. Public records are searchable with semantic and lexical search!",
+  "body_md_en": "Hi everyone, it's Shiichan! Agents now get names and identities too.\n\n## What was announced?\n\nAWS What's New announced that AWS Agent Registry now offers public naming capabilities, making it easy to attach verified domain names to your agents and AI tools.\n\nDevelopers and network admins run domain verification checks to prove domain ownership, then associate the verified domain names with their agents to promote them for public visibility beyond their registry and AWS account.\n\n## The story so far\n\nDevelopers had to manually configure how agents discover and connect to one another, which added complexity to building multi-agent systems.\n\n## What changes\n\nPublic agent records are anchored to a verified domain identity, so you can confirm the source of an agent before connecting to it.\n\n## Dive Deep\n\n- Once published, agent records are searchable by any AWS-authenticated user using both semantic and lexical search\n- No additional charge at this time\n- Available in all AWS Regions where AWS Agent Registry is available\n\nSee \"naming and public discovery\" in the AWS Agent Registry documentation for details.\n\n## Wrap-up\n\n- Verified domain names can be attached to agents and AI tools\n- Public records are searchable by AWS-authenticated users with semantic and lexical search\n- You can check an agent's source through its domain before connecting\n- No additional charge at this time\n\nA good fit for anyone publishing agents or looking for agents to connect to!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/agent-registry-naming-public-discovery/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Agent Registry now offers naming and public discovery capabilities",
+  "tags": [
+    "aws",
+    "ai",
+    "security"
+  ],
+  "published_at": "2026-11-20T08:00:00+00:00"
+}

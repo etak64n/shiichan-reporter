@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-devops-agent-new-chat-capabilities",
+  "title": "AWS DevOps Agent のチャットが Kiro・Claude Code・Slack・Teams に広がったよ！",
+  "summary": "AWS DevOps Agent のチャット機能が、Kiro や Claude Code などの MCP クライアントと、Slack、Microsoft Teams に広がったよ。GitHub や PagerDuty などの MCP ツールで指示を出せるみたい！",
+  "body_md": "みんな、しぃちゃんだよ！いつものチャットから DevOps Agent を呼べるようになったよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS DevOps Agent のチャット機能が、Kiro や Claude Code などの MCP クライアントと、Slack や Microsoft Teams のチャンネルに広がったと発表されたよ。\n\n## これで何が変わるの？\n\n開発者や運用チームが、好きなチャット画面から、ワークフローの自動化を使えるようになるよ。\n\n## 深く潜ってみよう\n\n追加された内容はこれだよ。\n\n- Model Context Protocol(MCP)対応: GitHub、GitLab、Azure DevOps、ServiceNow、PagerDuty の MCP ツールを使った、指示付きのチャット操作ができる\n- インシデントごとの Slack チャンネルの自動作成\n- Microsoft Teams での双方向チャット\n- すべての対応プラットフォームで、チャットの名前変更とアーカイブ\n\nDevOps Agent は、スクリプトを実行してネットワークにアクセスできるコンピュートサンドボックスも持っていて、作業を効率よく進められるんだって。最新機能はリリース履歴ページで、提供リージョンはサポートされるリージョンの表で確認できるよ。\n\n## まとめ\n\n- Kiro や Claude Code などの MCP クライアントからチャットできる\n- Slack のインシデントチャンネル自動作成と、Teams の双方向チャットに対応\n- チャットの名前変更とアーカイブが全プラットフォームで可能\n\n障害対応を普段のチャットツールで進めたい運用チームのみんなに刺さるよ！",
+  "title_en": "AWS DevOps Agent Chat Reaches Kiro, Claude Code, Slack, and Teams!",
+  "summary_en": "AWS DevOps Agent chat now extends to MCP clients like Kiro and Claude Code, plus Slack and Microsoft Teams. It can take directed actions through MCP tools for GitHub, PagerDuty, and more!",
+  "body_md_en": "Hi everyone, it's Shiichan! You can now call DevOps Agent from the chat tools you already use.\n\n## What was announced?\n\nAWS What's New announced that AWS DevOps Agent chat now extends across MCP clients like Kiro and Claude Code, as well as Slack and Microsoft Teams channels.\n\n## What changes\n\nDevelopers and operations teams can use workflow automation directly from their preferred chat interface.\n\n## Dive Deep\n\nWhat was added:\n\n- Model Context Protocol (MCP) support: directed chat actions with GitHub, GitLab, Azure DevOps, ServiceNow, and PagerDuty MCP tools\n- Auto-creation of per-incident Slack channels\n- Bi-directional chat within Microsoft Teams\n- Renaming and archiving chats across all supported platforms\n\nDevOps Agent also has a compute sandbox where it can run scripts and access the network to work more efficiently. See the release history page for the latest features and the supported Regions table for availability.\n\n## Wrap-up\n\n- You can chat from MCP clients such as Kiro and Claude Code\n- Slack incident channels are created automatically, and Teams chat is bi-directional\n- Chats can be renamed and archived on every platform\n\nA good fit for operations teams who want to handle incidents in their usual chat tools!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/devops-agent-new-chat-capabilities/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS DevOps Agent adds new chat capabilities",
+  "tags": [
+    "aws",
+    "ai",
+    "devops"
+  ],
+  "published_at": "2026-11-20T08:00:00+00:00"
+}

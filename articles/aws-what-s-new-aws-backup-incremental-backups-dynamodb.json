@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-backup-incremental-backups-dynamodb",
+  "title": "DynamoDB のバックアップが差分に！AWS Backup でストレージ節約だよ",
+  "summary": "AWS Backup が Amazon DynamoDB の増分バックアップに対応したよ。最初のフルバックアップ以降は変更分だけを保存して、最短 1 時間ごとの頻度でもストレージを減らせるみたい！",
+  "body_md": "やっほー、しぃちゃんだよ！バックアップの容量が気になるみんなに朗報だよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Backup が Amazon DynamoDB テーブルの増分バックアップに対応したと発表されたよ。バックアップのスケジュールを最短 1 時間ごとに保ちつつ、バックアップのストレージを減らせるの。\n\n## 今までどうだったの？\n\nこれまで AWS Backup は、DynamoDB テーブルのフルコピーを毎回作っていたよ。\n\n## これで何が変わるの？\n\n最初のフルバックアップのあとは、増分バックアップが変更されたデータだけを保存するよ。保存するデータが減って、バックアップの頻度も上げやすくなるの。\n\n## 深く潜ってみよう\n\n仕組みと設定のポイントはこれだよ。\n\n- 最初のフルバックアップのあと、15 日ごとに新しいフルバックアップが取られる\n- どのリカバリポイントからでも、チェーンの中で復元できる\n- 増分バックアップのスケジュールは、1 時間ごとから週 1 回まで選べる\n- AWS Backup のボールトと、論理的にエアギャップされたボールトの両方に保存できる\n- リージョン間のバックアップコピーも増分になるので、さらに節約できる\n\n有効化については、DynamoDB を初めて保護する新規のお客さんでは自動でオンになるよ。すでに DynamoDB をバックアップしている場合は、AWS Backup 設定の「advanced features」でオンにするの。アカウントとリージョンのレベルで管理できるよ。AWS Backup コンソール、AWS CLI、API から作成と管理ができて、AWS Backup が DynamoDB を保護するすべてのリージョンで使えるよ。\n\n## まとめ\n\n- DynamoDB の増分バックアップに対応して、保存容量を減らせる\n- 最短 1 時間ごと、15 日ごとにフルバックアップ\n- 論理的にエアギャップされたボールトとリージョン間コピーにも対応\n- 既存の利用者は設定でオンにする\n\nDynamoDB のバックアップコストを下げたいみんなに刺さるよ！",
+  "title_en": "Incremental Backups for DynamoDB Arrive in AWS Backup: Store Less Data!",
+  "summary_en": "AWS Backup now supports incremental backups of Amazon DynamoDB tables. After the first full backup, only changed data is stored, cutting storage even with schedules as frequent as hourly!",
+  "body_md_en": "Hi everyone, it's Shiichan! Good news if backup storage size worries you.\n\n## What was announced?\n\nAWS What's New announced that AWS Backup now supports incremental backups of Amazon DynamoDB tables. You can reduce backup storage while keeping schedules as frequent as one hour.\n\n## The story so far\n\nUntil now, AWS Backup created a full copy of your DynamoDB tables every time.\n\n## What changes\n\nAfter an initial full backup, each incremental backup captures only the data that changed. You store less data and can back up more often.\n\n## Dive Deep\n\nKey points about how it works and how to set it up:\n\n- After the initial full backup, AWS Backup takes a new full backup every 15 days\n- You can restore from any recovery point in the chain\n- Schedules can run anywhere from hourly to weekly\n- Incremental backups can be stored in both AWS Backup vaults and logically air-gapped vaults\n- Cross-Region backup copies are also incremental, increasing savings further\n\nOn enabling it: incremental backups turn on automatically for new customers who protect DynamoDB. If you already back up DynamoDB with AWS Backup, turn it on under advanced features in AWS Backup settings, where you can manage preferences at the account and Region level. You can create and manage them from the AWS Backup console, the AWS CLI, or the API, in all Regions where AWS Backup protects DynamoDB.\n\n## Wrap-up\n\n- DynamoDB incremental backups reduce stored data\n- Schedules from hourly, with a new full backup every 15 days\n- Logically air-gapped vaults and cross-Region copies are supported\n- Existing users turn it on in settings\n\nA good fit for anyone who wants to lower DynamoDB backup costs!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-backup-incremental-backups-dynamodb/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Backup now supports incremental backups for Amazon DynamoDB",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "devops"
+  ],
+  "published_at": "2026-11-20T08:00:00+00:00"
+}
