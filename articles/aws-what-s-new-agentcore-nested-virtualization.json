@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-agentcore-nested-virtualization",
+  "title": "AgentCore のランタイムで KVM が使えるよ！エージェントが VM やエミュレータを動かせる",
+  "summary": "Amazon Bedrock AgentCore のランタイムインスタンスが入れ子の仮想化（Nested Virtualization）に対応したよ。Android エミュレータや VM サンドボックスをセッション内で動かせるの！",
+  "body_md": "こんにちは、しぃちゃんだよ！エージェントが自分の中で仮想マシンを立ち上げられるようになったよ。わくわくしちゃう！\n\n## なにが発表されたの？\n\nAWS の What's New によると、Amazon Bedrock AgentCore のランタイムインスタンスが Nested Virtualization に対応したよ。セッション内で、Kernel-based Virtual Machine（KVM）を使って、エージェントが自分で仮想マシンやエミュレータを動かせるの。\n\nランタイムインスタンスは Amazon EC2 インスタンス上でエージェントを動かして、プロビジョニング、パッチ適用、スケーリング、ライフサイクルの管理は AgentCore が担当するよ。\n\n## なぜ重要なの？\n\nエージェントが使うツールには、モバイルエミュレータや VM サンドボックスのように、仮想マシンの中で動くものがあるよ。その種類のツールを、エージェントの実行環境の中でそのまま使えるようになるのがポイントだよ。\n\n## これで何が変わるの？\n\n- Android エミュレータを動かして、モバイルアプリをビルド・テストする\n- 軽量な仮想マシンを起動して、エージェントが実行するコードを隔離する\n\n## 深く潜ってみよう\n\n- Linux のキャパシティプロバイダーを作るときに、Nested Virtualization を有効にするよ。その上のインスタンスで動く、すべてのセッションのエージェントが KVM を使えるようになるの\n- 対応するのは Intel ベースのインスタンスタイプで、C7i、C8i、M7i、M8i、R7i、R8i のファミリーが含まれるよ\n- AgentCore のランタイムインスタンスが使える全 AWS リージョンで、対応インスタンスタイプなら利用できるよ\n- 手順は、Amazon Bedrock AgentCore デベロッパーガイドの「Run virtual machines in agents on runtime instances」にあるよ。料金は AgentCore の料金ページを見てね\n\n## まとめ\n\n- AgentCore のランタイムで、KVM による入れ子の仮想化が使える\n- Linux キャパシティプロバイダー作成時に有効にする\n- C7i / C8i / M7i / M8i / R7i / R8i など Intel 系で対応\n\nモバイルアプリのテストを自動化したいエージェント開発者や、コード実行を VM で隔離したい人に刺さるよ！",
+  "title_en": "AgentCore Runtime Now Supports KVM: Agents Can Run VMs and Emulators",
+  "summary_en": "Amazon Bedrock AgentCore runtime instances now support nested virtualization, so agents can run Android emulators or VM sandboxes inside a session with KVM.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Agents can now start virtual machines inside their own environment. How exciting!\n\n## What was announced?\n\nAccording to AWS What's New, Amazon Bedrock AgentCore runtime instances now support nested virtualization. Agents can run their own virtual machines and emulators inside a session with Kernel-based Virtual Machine (KVM).\n\nRuntime instances run agents on Amazon EC2 instances, and AgentCore handles provisioning, patching, scaling, and lifecycle management.\n\n## Why it matters\n\nSome tools that agents rely on, such as mobile emulators and VM sandboxes, run inside a virtual machine. Now those tools can run right in the agent's runtime environment.\n\n## What changes\n\n- Run Android emulators to build and test mobile apps\n- Start lightweight virtual machines to isolate the code the agent runs\n\n## Dive Deep\n\n- You turn on nested virtualization when you create a Linux capacity provider; agents in every session on its instances can then use KVM\n- It works on supported Intel-based instance types, including the C7i, C8i, M7i, M8i, R7i, and R8i families\n- It is available on supported instance types in all AWS Regions where AgentCore runtime instances are available\n- See \"Run virtual machines in agents on runtime instances\" in the Amazon Bedrock AgentCore Developer Guide, and the AgentCore pricing page\n\n## Wrap-up\n\n- AgentCore runtime now supports nested virtualization with KVM\n- Enable it when creating a Linux capacity provider\n- Supported on Intel-based families such as C7i, C8i, M7i, M8i, R7i, and R8i\n\nIf you build agents that test mobile apps, or you want VM isolation for executed code, this one is for you!",
+  "emotion": "energetic",
+  "importance": 4,
+  "tags": [
+    "aws",
+    "ai",
+    "infrastructure"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/agentcore-nested-virtualization/",
+  "source_name": "AWS What's New",
+  "og_title": "AgentCore runtime instances now support Nested Virtualization",
+  "published_at": "2026-11-19T10:00:00+00:00"
+}

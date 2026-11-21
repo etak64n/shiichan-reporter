@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-parameter-store-raises-api-throughput-limits",
+  "title": "Parameter Store の API 上限が大幅アップ！GetParametersByPath は 500 TPS に",
+  "summary": "AWS Systems Manager Parameter Store が、高スループット設定のアカウント向けに 5 つの API のデフォルト上限を引き上げたよ。追加料金なしで、全リージョンで使えるの！",
+  "body_md": "やっほー、しぃちゃんだよ！設定管理でおなじみの Parameter Store に、うれしいアップデートが来たよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Systems Manager Parameter Store が 5 つの API 操作のデフォルトのスループット上限を引き上げたと発表されたよ。対象は、高スループット設定を有効にしているアカウントだよ。\n\n## 今までどうだったの？\n\nバーストで API を呼ぶ処理では、上限に当たってスロットリングを気にする場面があったよ。たとえば、たくさんの Lambda 関数が同時に起動してパス指定で設定を読み込む処理や、大量のパラメータを作る・更新する IaC のデプロイ、古いパラメータをまとめて消すクリーンアップだね。\n\n## これで何が変わるの？\n\n新しい上限は、1 秒あたりのトランザクション数（TPS）でこうなったよ！\n\n- `GetParametersByPath`: 100 から 500 TPS\n- `PutParameter`: 10 から 50 TPS\n- `DeleteParameter`: 5 から 50 TPS\n- `DescribeParameters`: 10 から 100 TPS\n- `GetParameterHistory`: 10 から 100 TPS\n\n## 深く潜ってみよう\n\n- 新しい上限は、高スループット層に自動で適用されて、追加料金はかからないよ\n- カスタムの API 上限を設定しているお客様は、そのカスタム上限がそのまま維持されるよ\n- Parameter Store が使える全 AWS リージョンで利用できるよ\n- 詳しくは、AWS Systems Manager ユーザーガイドの「Managing Parameter Store throughput」に書かれているよ\n\n## まとめ\n\n- 5 つの API の上限が、高スループット設定のアカウントで 5 倍〜10 倍に\n- 自動適用で追加コストなし、カスタム上限は据え置き\n- 全リージョンで利用可能\n\nLambda の起動時に設定を一気に読む人や、大規模な IaC デプロイを回している人に刺さるよ！",
+  "title_en": "Parameter Store API Limits Go Up: GetParametersByPath Now at 500 TPS",
+  "summary_en": "AWS Systems Manager Parameter Store raised default throughput limits for five APIs for accounts with the higher throughput setting. It is automatic, at no extra cost, in all Regions.",
+  "body_md_en": "Hi everyone, it's Shii-chan! There's a nice update for Parameter Store, the go-to place for configuration data!\n\n## What was announced?\n\nAWS What's New announced that AWS Systems Manager Parameter Store raised the default throughput limits for five API operations. It applies to accounts that have turned on the higher throughput setting.\n\n## The story so far\n\nWorkloads that call these APIs in bursts could run into throttling. Examples include many Lambda functions starting at once and loading configuration by path, infrastructure as code deployments that create or update many parameters, and cleanup jobs that bulk-delete stale parameters.\n\n## What changes\n\nThe new quotas, in transactions per second (TPS):\n\n- `GetParametersByPath`: 100 to 500 TPS\n- `PutParameter`: 10 to 50 TPS\n- `DeleteParameter`: 5 to 50 TPS\n- `DescribeParameters`: 10 to 100 TPS\n- `GetParameterHistory`: 10 to 100 TPS\n\n## Dive Deep\n\n- The new limits apply to the higher throughput tier automatically at no additional cost\n- Customers with custom API limits keep their custom limits\n- Available in all AWS Regions where Parameter Store is available\n- For details, see \"Managing Parameter Store throughput\" in the AWS Systems Manager User Guide\n\n## Wrap-up\n\n- Five API limits rise by 5x to 10x for accounts with the higher throughput setting\n- Automatic, no extra cost, and custom limits are kept\n- Available in all Regions\n\nIf you load lots of configuration at Lambda startup or run large IaC deployments, this one is for you!",
+  "emotion": "happy",
+  "importance": 4,
+  "tags": [
+    "aws",
+    "infrastructure",
+    "serverless"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/parameter-store-raises-api-throughput-limits/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Systems Manager Parameter Store raises API throughput limits",
+  "published_at": "2026-11-19T09:00:00+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aurora-postgresql-express-vpc",
+  "title": "Aurora PostgreSQL の express 構成が VPC に対応！API 1 回でプロトタイプを本番へ",
+  "summary": "express 構成の Aurora PostgreSQL を、ModifyDBCluster の 1 回の呼び出しで VPC に移せるようになったよ。データ移行なしで、エンドポイントも変わらないの！",
+  "body_md": "やっほー、しぃちゃんだよ！プロトタイプから本番へ、すっと進める機能が来たよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、express 構成で作った Aurora PostgreSQL が、Amazon VPC に対応したと発表されたよ。1 回の API 呼び出しか、Amazon RDS コンソールの変更操作で、データベースを VPC の中へ移せるの。VPC の中に新しいクラスターを作ることもできるよ。\n\n## なぜ重要なの？\n\nexpress 構成では、Aurora PostgreSQL のサーバーレスデータベースを数秒で作ってクエリできるよ。接続はインターネットアクセスゲートウェイ経由で、素早いプロトタイプや、AI エージェント主導の開発に向いているの。そこから、AI で作ったプロトタイプなどを、データを移行せずに本番へ持っていくのが、今回の狙いだよ。セキュリティやコンプライアンスの要件も満たせるの。\n\n## これで何が変わるの？\n\nアプリが本番に近づいたら、`ModifyDBCluster` API を 1 回呼ぶだけで、クラスターを VPC に移して、インターネットアクセスゲートウェイをオフにできるよ。\n\n移行後に使えるようになるものは、これだよ。\n\n- セキュリティグループ\n- プライベートサブネット\n- Aurora Global Database\n- Amazon RDS Blue/Green Deployments\n- Amazon RDS Proxy\n\n## 深く潜ってみよう\n\n- データ移行は不要で、クラスターのエンドポイントも同じまま\n- 接続が途切れるのは、ごく短い間だけ\n- 同じ API 呼び出しで、元に戻すこともできる\n- express 構成の Aurora PostgreSQL が使えるすべての AWS リージョンで利用できる\n- 使い方は、Amazon RDS コンソール、AWS CLI、AWS SDK から。詳しくは Aurora ユーザーガイドを見てね\n\n## まとめ\n\n- express 構成の Aurora PostgreSQL を、API 1 回で VPC に移せる\n- エンドポイント据え置き、データ移行なし、中断はごく短時間\n- 戻すことも可能\n\nAI エージェントでプロトタイプを作ってから、本番に持っていきたい人に刺さるよ！",
+  "title_en": "Aurora PostgreSQL Express Configuration Now Supports VPC: Prototype to Production in One API Call",
+  "summary_en": "Aurora PostgreSQL databases created with express configuration can now move into an Amazon VPC with a single ModifyDBCluster call, with no data migration and the same endpoint.",
+  "body_md_en": "Hi everyone, it's Shii-chan! A feature that smooths the path from prototype to production has arrived!\n\n## What was announced?\n\nAWS What's New announced that Aurora PostgreSQL databases created with express configuration now support Amazon VPC. A single API call or a modify action in the Amazon RDS console moves the database into a VPC, and you can also create a new cluster inside a VPC.\n\n## Why it matters\n\nWith express configuration you can create and query a serverless Aurora PostgreSQL database in seconds. Connectivity runs through an internet access gateway, which suits rapid prototyping and AI agent-driven development. The goal here is to take AI-built prototypes and other applications to production without migrating data, while meeting security and compliance requirements.\n\n## What changes\n\nWhen your application is ready for production, a single `ModifyDBCluster` API call moves the cluster into a VPC and turns off the internet access gateway.\n\nAfter the move, you get:\n\n- Security groups\n- Private subnets\n- Aurora Global Database\n- Amazon RDS Blue/Green Deployments\n- Amazon RDS Proxy\n\n## Dive Deep\n\n- No data migration, and the cluster endpoint stays the same\n- Connectivity is interrupted only briefly\n- You can reverse the move with the same API call\n- Available in all AWS Regions where Aurora PostgreSQL with express configuration is available\n- Use the Amazon RDS console, AWS CLI, or AWS SDKs; see the Aurora User Guide\n\n## Wrap-up\n\n- Move express configuration Aurora PostgreSQL into a VPC with one API call\n- Same endpoint, no data migration, only a brief interruption\n- The move is reversible\n\nIf you prototype with AI agents and want a clean path to production, this one is for you!",
+  "emotion": "happy",
+  "importance": 4,
+  "tags": [
+    "aws",
+    "infrastructure",
+    "ai"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aurora-postgresql-express-vpc/",
+  "source_name": "AWS What's New",
+  "og_title": "Aurora PostgreSQL with express configuration now supports Amazon VPC",
+  "published_at": "2026-11-19T17:00:00+00:00"
+}

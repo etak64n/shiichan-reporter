@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-aws-transform-assessment-and-planning",
+  "title": "AWS Transform の移行アセスメントとプランニングが 1 つのジョブに統合！",
+  "summary": "AWS Transform for migrations で、TCO の評価と移行計画を 1 つの移行ジョブにまとめられるようになったよ。オンプレのインベントリは 1 回アップロードするだけなの！",
+  "body_md": "こんにちは、しぃちゃんだよ！クラウド移行の準備が、すっきりする話だよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Transform for migrations が、移行アセスメントと移行プランニングを 1 つの移行ジョブにまとめたと発表されたよ。\n\n## 今までどうだったの？\n\nこれまでは、総所有コスト（TCO）のビジネスケースを作るジョブと、移行を計画するジョブを、別々に実行する必要があったよ。\n\n## これで何が変わるの？\n\nオンプレミスのインベントリを 1 回アップロードすれば、アセスメントとプランニングの両方に、好きな順番で使えるよ。\n\nアップロード後にできることは、これだよ。\n\n- AWS のコストを見積もって、ビジネスケースを作る\n- インフラをアプリケーションにグループ化して、移行ウェーブを計画する\n- 両方をやる\n\n## 深く潜ってみよう\n\n- データが改善されたら、どちらのワークフローも再実行できるよ\n- 例 1: 先にビジネスケースを作って、同じインベントリからウェーブを計画する\n- 例 2: 先にウェーブを計画して、1 つのウェーブのコストだけを見積もる\n- アセスメントとプランニングが 1 つのインベントリを共有するから、データを別ジョブ間で動かさなくても、ビジネスケースと移行計画の整合が保たれるよ\n- 計画とアセスメントを確定したあとは、同じジョブの中で、ネットワークの移行、ランディングゾーンのデプロイ、サーバー・ストレージ・コンテナの移行に進めるよ\n- AWS Transform が提供されているすべての AWS リージョンで利用できて、詳しくは製品ページとドキュメントにあるよ\n\n## まとめ\n\n- アセスメントとプランニングが 1 つの移行ジョブに統合\n- インベントリのアップロードは 1 回で、順番は自由\n- 同じジョブの中で、移行の実行まで続けられる\n\n大規模なオンプレミスからの移行を計画していて、見積もりと計画をばらばらに管理するのがつらい人に刺さるよ！",
+  "title_en": "AWS Transform Merges Migration Assessment and Planning into One Job!",
+  "summary_en": "AWS Transform for migrations now combines TCO assessment and migration planning into a single migration job, so you upload your on-premises inventory only once.",
+  "body_md_en": "Hi everyone, it's Shii-chan! This one tidies up cloud migration preparation!\n\n## What was announced?\n\nAWS What's New announced that AWS Transform for migrations now combines migration assessment and migration planning into a single migration job.\n\n## The story so far\n\nPreviously, you ran separate jobs to build a total cost of ownership (TCO) business case and to plan your migration.\n\n## What changes\n\nYou upload your on-premises inventory once and use it for both assessment and planning, in any order.\n\nAfter uploading, you can:\n\n- Estimate your AWS costs and build a business case\n- Group your infrastructure into applications and plan migration waves\n- Do both\n\n## Dive Deep\n\n- You can rerun either workflow as your data improves\n- Example 1: build a business case first, then plan waves from the same inventory\n- Example 2: plan waves first, then estimate the cost of a single wave\n- Because assessment and planning share one inventory, the business case and migration plan stay consistent without moving data between jobs\n- After finalizing the plan and assessment, continue in the same job to migrate networks, deploy landing zones, and migrate servers, storage, and containers\n- Available in all AWS Regions where AWS Transform is offered; see the product page and documentation\n\n## Wrap-up\n\n- Assessment and planning are unified in one migration job\n- Upload the inventory once, in any order\n- You can continue to the migration itself in the same job\n\nIf you are planning a large on-premises migration and dislike keeping estimates and plans apart, this one is for you!",
+  "emotion": "happy",
+  "importance": 3,
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-transform-assessment-and-planning",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Transform combines migration assessment and planning in one experience",
+  "published_at": "2026-11-19T19:00:00+00:00"
+}

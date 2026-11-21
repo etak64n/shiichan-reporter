@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-msk-connect-restart-existing-connectors",
+  "title": "MSK Connect でコネクターをその場で再起動できるように！削除して作り直す必要なし",
+  "summary": "Amazon MSK Connect が、既存・新規のコネクターとタスクのその場での再起動に対応したよ。失敗したタスクだけを選んで再起動することもできるの！",
+  "body_md": "おつかれさま、しぃちゃんだよ！Kafka のデータパイプラインを運用している人に、ありがたいアップデートが来たよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon MSK Connect が、既存のコネクターと新しく作ったコネクター、そのタスクを、その場で再起動できるようになったと発表されたよ。ストリーミングデータのパイプラインを、素早く復旧するための機能だよ。\n\n## 今までどうだったの？\n\nAmazon MSK Connect は、Apache Kafka Connect のコネクターを Amazon MSK と組み合わせてデプロイ・監視・スケールできる、フルマネージドのサービスだよ。以前は、障害から復旧するにはコネクターを削除して作り直す必要があって、ダウンタイムと運用の手間が発生していたの。\n\n## これで何が変わるの？\n\n- コネクターとそのすべてのタスクを、その場で再起動できる\n- 失敗したタスクだけを選んで再起動できる\n- 失敗したタスクがないコネクターでも再起動できて、一時的な問題からの復旧や、外部システムや依存関係の変更の取り込みに使える\n\n## 深く潜ってみよう\n\n- 追加料金なしで使えるよ\n- Amazon MSK コンソール、AWS CLI、AWS SDK、AWS CDK から利用できるの\n- Amazon MSK Connect が使えるすべての AWS リージョンで利用できるよ\n- 詳しくは Amazon MSK Connect のドキュメントを見てね\n\n## まとめ\n\n- 既存のコネクターを、削除せずその場で再起動できる\n- 全タスクの再起動も、失敗タスクだけの再起動も選べる\n- 追加料金なし、コンソール・CLI・SDK・CDK 対応\n\nMSK Connect でパイプラインを回していて、障害対応の手間を減らしたい人に刺さるよ！",
+  "title_en": "MSK Connect Can Now Restart Connectors in Place: No More Delete and Recreate",
+  "summary_en": "Amazon MSK Connect now supports restarting existing and new connectors and their tasks in place, including restarting only the failed tasks.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Here's a welcome update for anyone running Kafka data pipelines!\n\n## What was announced?\n\nAWS What's New announced that Amazon MSK Connect now supports restarting both existing and newly created connectors and their tasks in place, for fast recovery of streaming data pipelines.\n\n## The story so far\n\nAmazon MSK Connect is a fully managed service for deploying, monitoring, and scaling Apache Kafka Connect connectors with Amazon MSK. Previously, recovering from failures required deleting and recreating the connector, which meant downtime and operational overhead.\n\n## What changes\n\n- Restart a connector and all its tasks in place\n- Selectively restart only the failed tasks\n- Restart connectors that have no failed tasks, to recover from transient issues or pick up changes in external systems or dependencies\n\n## Dive Deep\n\n- Available at no additional cost\n- Use it through the Amazon MSK Console, AWS CLI, AWS SDK, and AWS CDK\n- Available in all AWS Regions where Amazon MSK Connect is available\n- See the Amazon MSK Connect documentation for details\n\n## Wrap-up\n\n- Restart existing connectors in place without deleting them\n- Choose between restarting all tasks or only the failed ones\n- No extra cost; supported in the console, CLI, SDK, and CDK\n\nIf you run pipelines on MSK Connect and want less recovery toil, this one is for you!",
+  "emotion": "happy",
+  "importance": 4,
+  "tags": [
+    "aws",
+    "infrastructure",
+    "devops"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-msk-connect-restart-existing-connectors",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon MSK Connect now supports restarting existing connectors",
+  "published_at": "2026-11-19T16:00:00+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-aurora-move-clusters-to-different-vpc",
+  "title": "Aurora クラスターを別の VPC へお引っ越し！API 1 回でデータ移行いらず",
+  "summary": "Aurora PostgreSQL と Aurora MySQL のクラスターを、別の VPC へ ModifyDBCluster の 1 回の呼び出しで移せるようになったよ。エンドポイントはそのままなの！",
+  "body_md": "おつかれさま、しぃちゃんだよ！ネットワーク設計を後から見直したい人に、うれしいお知らせだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Aurora PostgreSQL と Aurora MySQL のクラスターを、ある Amazon VPC から別の VPC へ、データ移行なしで移せるようになったと発表されたよ。1 回の API 呼び出しか、Amazon RDS コンソールの変更操作でできるの。\n\n## 今までどうだったの？\n\nこれまでは、移行先の VPC に新しいクラスターを作って、データを移行して、アプリケーションの接続文字列を更新する必要があったよ。\n\n## これで何が変わるの？\n\n`ModifyDBCluster` API を 1 回呼ぶだけで、既存のクラスターを新しい VPC に移せるよ。データはその場に残って、クラスターのエンドポイントは同じで、接続が途切れるのはごく短い間だけだよ。\n\n使いどころは、記事ではこの 3 つだよ。\n\n- IP アドレス空間が広い VPC や、CIDR が重ならない VPC への移動\n- ネットワーク構成の集約\n- セキュリティやコンプライアンス要件の変化への対応\n\n## 深く潜ってみよう\n\n- 移動の前に、クラスターの現在の VPC に紐づく機能をオフにする必要があるよ。具体的には、Aurora Global Database、Amazon RDS Proxy、Amazon RDS Blue/Green Deployments だね。移動後に、新しい VPC で設定し直せるの\n- Aurora PostgreSQL と Aurora MySQL が対象で、Aurora PostgreSQL の express 構成が使えるすべての AWS リージョンで利用できるよ\n- Amazon RDS コンソール、AWS CLI、AWS SDK から使えるよ。詳しくは Aurora ユーザーガイドを見てね\n\n## まとめ\n\n- Aurora のクラスターを、別の VPC へ API 1 回で移せる\n- データ移行なし、エンドポイント据え置き、中断はごく短時間\n- 移動前に Global Database、RDS Proxy、Blue/Green Deployments をオフにして、移動後に再設定\n\nVPC の IP 空間が足りなくなった人や、ネットワークの再編をしたい人に刺さるよ！",
+  "title_en": "Move Aurora Clusters to a Different VPC with One API Call, No Data Migration",
+  "summary_en": "Aurora PostgreSQL and Aurora MySQL clusters can now move to a different VPC with a single ModifyDBCluster call, keeping the same cluster endpoint.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Good news for anyone who wants to revisit their network design later!\n\n## What was announced?\n\nAWS What's New announced that Aurora PostgreSQL and Aurora MySQL clusters can now move from one Amazon VPC to another without data migration. You can do it with a single API call or a modify action in the Amazon RDS console.\n\n## The story so far\n\nPreviously, moving an Aurora cluster to a different VPC meant creating a new cluster in the target VPC, migrating your data, and updating your applications with new connection strings.\n\n## What changes\n\nA single `ModifyDBCluster` API call moves your existing cluster to the new VPC. Your data stays in place, your cluster endpoint stays the same, and connectivity is interrupted only briefly.\n\nThe post lists these use cases:\n\n- Moving to a VPC with more IP address space or a non-overlapping CIDR range\n- Consolidating your network architecture\n- Meeting changing security and compliance requirements\n\n## Dive Deep\n\n- Before you start, turn off features tied to the cluster's current VPC: Aurora Global Database, Amazon RDS Proxy, and Amazon RDS Blue/Green Deployments. You can set them up again in the new VPC after the move\n- It covers Aurora PostgreSQL and Aurora MySQL, in all AWS Regions where Aurora PostgreSQL with express configuration is available\n- Use the Amazon RDS console, AWS CLI, or AWS SDKs; see the Aurora User Guide\n\n## Wrap-up\n\n- Move an Aurora cluster to another VPC with one API call\n- No data migration, same endpoint, only a brief interruption\n- Turn off Global Database, RDS Proxy, and Blue/Green Deployments before the move, then set them up again\n\nIf you are running out of VPC IP space or reorganizing your network, this one is for you!",
+  "emotion": "happy",
+  "importance": 4,
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aurora-move-clusters-to-different-vpc/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Aurora now supports moving clusters to a different VPC",
+  "published_at": "2026-11-19T17:00:00+00:00"
+}

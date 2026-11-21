@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-ivs-real-time-streaming-linux-broadcast-sdk",
+  "title": "Amazon IVS Real-Time Streaming に Linux 用ブロードキャスト SDK が登場！",
+  "summary": "Amazon IVS Real-Time Streaming に Linux broadcast SDK が追加されたよ。C API と Go バインディングで、ステージの音声を受け取って送り返せるの！",
+  "body_md": "おつかれさま、しぃちゃんだよ！ライブ配信に AI をつなぎたい人に向けた、新しい SDK のお知らせだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Interactive Video Service（Amazon IVS）の Real-Time Streaming 向けに、Linux broadcast SDK が提供されたと発表されたよ。Linux で動くアプリケーションが、IVS のステージに参加して、参加者の音声を受け取って、音声をリアルタイムでステージに送り返せるの。\n\n## これで何が変わるの？\n\n記事では、次のような AI アプリケーションに向いているとされているよ。\n\n- ライブ配信の音声を処理して価値を足す: 文字起こし、翻訳、コンテンツモデレーション\n- 参加者と会話する音声エージェント\n\n## 深く潜ってみよう\n\n- SDK は C API と Go 言語バインディングを提供するよ\n- Amazon IVS は、低レイテンシやリアルタイムの動画を、世界中の視聴者に届けるためのマネージドなライブストリーミングサービスだよ\n- 対応リージョンは、Amazon IVS のコンソールと API が使える AWS リージョンの一覧を見てね\n- 詳しくは「IVS Broadcast SDK: Linux Guide」だよ\n\n## まとめ\n\n- IVS Real-Time Streaming に Linux broadcast SDK が追加\n- ステージの音声を受け取り、音声を送り返せる\n- C API と Go バインディング\n- 文字起こし・翻訳・モデレーション・音声エージェントに向く\n\nライブ配信に AI の音声処理や音声エージェントを組み込みたい人に刺さるよ！",
+  "title_en": "Amazon IVS Real-Time Streaming Gets a Linux Broadcast SDK!",
+  "summary_en": "Amazon IVS Real-Time Streaming now has a Linux broadcast SDK with a C API and Go bindings, so Linux apps can receive and send audio on a stage.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Here's a new SDK for anyone who wants to connect AI to live streams!\n\n## What was announced?\n\nAWS What's New announced that the Amazon Interactive Video Service (Amazon IVS) Linux broadcast SDK is now available for IVS Real-Time Streaming. Applications running on Linux can join an IVS stage, receive audio from participants, and send audio back to the stage in real time.\n\n## What changes\n\nThe post says it is ideal for AI applications such as:\n\n- Enriching live streams by processing audio: transcription, translation, and content moderation\n- Voice agents that converse with participants\n\n## Dive Deep\n\n- The SDK provides a C API and Go language bindings\n- Amazon IVS is a managed live streaming solution designed to make low-latency or real-time video available to viewers around the world\n- For Regions, see the AWS Region table for where the Amazon IVS console and APIs are available\n- See \"IVS Broadcast SDK: Linux Guide\" to learn more\n\n## Wrap-up\n\n- IVS Real-Time Streaming gains a Linux broadcast SDK\n- Receive stage audio and send audio back\n- C API and Go bindings\n- Fits transcription, translation, moderation, and voice agents\n\nIf you want to add AI audio processing or voice agents to live streams, this one is for you!",
+  "emotion": "happy",
+  "importance": 4,
+  "tags": [
+    "aws",
+    "ai"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-ivs-real-time-streaming-linux-broadcast-sdk",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon IVS Real-Time Streaming now provides a Linux broadcast SDK",
+  "published_at": "2026-11-19T18:49:00+00:00"
+}

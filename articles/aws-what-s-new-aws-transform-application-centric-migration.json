@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-aws-transform-application-centric-migration",
+  "title": "AWS Transform が移行の全工程をアプリケーション中心に！ダッシュボードも登場",
+  "summary": "AWS Transform が、探索・計画・移行・検証・追跡の全段階で、サーバーではなくアプリケーションを軸にした見方に対応したよ。新しい移行ダッシュボードも追加されたの！",
+  "body_md": "みんな、しぃちゃんだよ！移行の話題がもう 1 つ！今度は「アプリケーション中心」がキーワードだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Transform が移行の全段階で、アプリケーションを中心に据えるようになったと発表されたよ。サーバーだけでなく、ビジネスが動かしているアプリケーションを、探索、計画、移行、検証、追跡できるの。\n\n## なぜ重要なの？\n\nエンタープライズの移行では、数千台のサーバーが関わるけど、意思決定を左右する問いは、アプリケーションに関するものだよね。アプリケーション単位のグループ化は、AWS のリホストのワークフローには以前からあったけど、AWS Transform がその見方を移行全体に広げたんだね。\n\n## これで何が変わるの？\n\n- 探索データから、アプリケーションの境界と依存関係を特定して、論理的なグループを示す\n- 各グループに、それぞれの総所有コスト（TCO）と移行の追跡がつく\n- 組み込みのアンケートで、アプリケーションの所有者が、所有権、システム境界、ビジネス上の重要度を確認できる\n\n## 深く潜ってみよう\n\n新しい移行ダッシュボードが、移行の進行中にチームやパートナー、経営層を揃えてくれるよ。\n\n- アプリケーション、インベントリ、アセスメント、ウェーブ計画、移行ステータスを、1 つの最新ビューで見られる\n- ワークスペース内のすべてのジョブからデータを取り込んで、作業の進行に合わせて更新される。別のステータスレポートを作って維持する必要がないの\n- ダッシュボードはカスタマイズできて、チャットで移行の進捗について質問もできる\n- AWS Transform が提供されているすべての AWS リージョンで利用できるよ。詳しくは製品ページを見てね\n\n## まとめ\n\n- 探索から追跡まで、アプリケーション単位で見られる\n- アプリごとの TCO と移行追跡、所有者向けの組み込みアンケート\n- 全ジョブを集約する移行ダッシュボードと、チャットでの質問\n\n数千台規模の移行で、関係者への進捗共有に手間がかかっている人に刺さるよ！",
+  "title_en": "AWS Transform Goes Application-Centric Across the Whole Migration, with a New Dashboard",
+  "summary_en": "AWS Transform now centers applications at every stage of migration, from discovery to tracking, and adds a new migration dashboard.",
+  "body_md_en": "Hi everyone, it's Shii-chan! One more migration story, and this time the keyword is \"application-centric\"!\n\n## What was announced?\n\nAWS What's New announced that AWS Transform now puts applications at the center of every stage of the migration journey. You can discover, plan, migrate, validate, and track the applications your business runs on, not just the servers underneath them.\n\n## Why it matters\n\nEnterprise migrations typically involve thousands of servers, but the questions that drive decisions are about applications. Application-level grouping has been part of AWS rehost workflows for years, and AWS Transform now carries that view through the entire migration.\n\n## What changes\n\n- Using discovery data, it identifies application boundaries and dependencies and surfaces logical groupings\n- Each group gets its own total cost of ownership (TCO) and migration tracking\n- Built-in surveys let application owners validate ownership, system boundaries, and business criticality\n\n## Dive Deep\n\nA new migration dashboard keeps your team, partners, and leadership aligned as the migration proceeds.\n\n- One current view of applications, inventory, assessments, wave plans, and migration status\n- It pulls data from every job in a workspace and updates as work progresses, so no one has to build and maintain separate status reports\n- You can customize the dashboard and ask questions about migration progress in chat\n- Available in all AWS Regions where AWS Transform is offered; see the product page\n\n## Wrap-up\n\n- See migrations by application from discovery through tracking\n- Per-application TCO and tracking, plus built-in surveys for owners\n- A migration dashboard that aggregates all jobs, with chat questions\n\nIf you run migrations with thousands of servers and spend effort sharing progress, this one is for you!",
+  "emotion": "happy",
+  "importance": 3,
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-transform-application-centric-migration",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Transform extends application-centric migration across the lifecycle",
+  "published_at": "2026-11-19T19:00:00+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-aurora-dsql-intercontinental-multi-region-clusters",
+  "title": "Aurora DSQL がついに大陸をまたぐマルチリージョンに対応！",
+  "summary": "Amazon Aurora DSQL で、N. Virginia と Ireland のように、別の大陸のリージョン同士でマルチリージョンクラスターを作れるようになったよ！",
+  "body_md": "やっほー、しぃちゃんだよ！Aurora DSQL が、海をわたるクラスターを作れるようになったよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Aurora DSQL のマルチリージョンクラスターが、異なる大陸のリージョンの組み合わせに対応したと発表されたよ。たとえば US East (N. Virginia) と Europe (Ireland) だね。\n\n## 今までどうだったの？\n\nこれまでは、マルチリージョンクラスターのリージョンは、同じ地理的なリージョンセットの中にある必要があったよ。\n\n## これで何が変わるの？\n\n2 つの大陸にあるアプリケーションが、強い一貫性を持つ 1 つのデータベースを読み書きできるよ。\n\nリージョンが使えなくなっても、コミット済みの書き込みは保持されて、アプリケーションはもう一方のリージョンで読み書きを続けられるの。\n\n## 深く潜ってみよう\n\n- 2 つのピアリージョンと、ウィットネスリージョンを自分で選ぶよ\n- 各大陸のユーザーの近くにデータベースを置くことも、障害ドメインをできるだけ離すことも、必要な耐障害性に合わせて選べる\n- Aurora DSQL がマルチリージョンクラスターに対応している全 AWS リージョンで使える\n- 詳しくは Aurora DSQL ユーザーガイドの「Multi-Region cluster availability」を見てね\n\n## まとめ\n\n- 別の大陸のリージョン同士で、マルチリージョンクラスターが作れる\n- 強い一貫性のまま、2 大陸から読み書きできる\n- リージョン障害時も、コミット済みの書き込みは保持される\n\nグローバルに展開するサービスで、データの近さと耐障害性を両立したい人に刺さるよ！",
+  "title_en": "Aurora DSQL Multi-Region Clusters Now Cross Continents!",
+  "summary_en": "Amazon Aurora DSQL now lets you create multi-Region clusters whose Regions are on different continents, such as US East (N. Virginia) and Europe (Ireland).",
+  "body_md_en": "Hi everyone, it's Shii-chan! Aurora DSQL clusters can now cross the ocean!\n\n## What was announced?\n\nAWS What's New announced that Amazon Aurora DSQL multi-Region clusters now support Regions on different continents, such as US East (N. Virginia) and Europe (Ireland).\n\n## The story so far\n\nUntil now, the Regions in a multi-Region cluster had to be in the same geographic Region set.\n\n## What changes\n\nApplications on two continents can read and write to one strongly consistent database.\n\nIf a Region becomes unavailable, committed writes are preserved and applications keep reading and writing in the other Region.\n\n## Dive Deep\n\n- You choose the two peer Regions and the witness Region\n- Place your database close to users on each continent, or separate failure domains as widely as your resilience needs require\n- Available in all AWS Regions where Aurora DSQL supports multi-Region clusters\n- See \"Multi-Region cluster availability\" in the Aurora DSQL User Guide\n\n## Wrap-up\n\n- Multi-Region clusters can span Regions on different continents\n- Applications on two continents read and write with strong consistency\n- Committed writes are preserved if a Region becomes unavailable\n\nIf you run a global service and want both proximity and resilience, this one is for you!",
+  "emotion": "energetic",
+  "importance": 4,
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aurora-dsql-intercontinental-multi-region-clusters/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Aurora DSQL now supports multi-Region peering across continents",
+  "published_at": "2026-11-19T15:56:00+00:00"
+}

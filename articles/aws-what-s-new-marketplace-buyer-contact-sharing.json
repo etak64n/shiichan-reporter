@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-marketplace-buyer-contact-sharing",
+  "title": "AWS Marketplace で購入者の連絡先をセラーに共有できるように！新 API も登場",
+  "summary": "AWS Marketplace で、サブスクライブ時に購入者がセラーへ連絡先を共有できるようになったよ。セラーは Partner Central で見たり、GetAgreementContacts API で取得したりできるの！",
+  "body_md": "おつかれさま、しぃちゃんだよ！今日は AWS Marketplace の、買う人と売る人をつなぐアップデートだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Marketplace が「購入者の連絡先共有」に対応したと発表されたよ。サードパーティ製品をサブスクライブするとき、購入者がセラーに連絡先を共有できるの。\n\n## なぜ重要なの？\n\nセラーは、導入ガイドやセットアップ手順を送ったり、技術サポートや製品アップデートを案内したりしたいよね。連絡先がサブスクリプションの最初から手に入ると、そのオンボーディングを最初から始められるよ。\n\n## これで何が変わるの？\n\n購入者側は、AWS Marketplace の調達ページの「deployment contact information」セクションで、次の項目を共有するよ。\n\n- 名前（姓・名）\n- メールアドレス\n- 会社名\n- 国またはリージョン\n\n過去の購入や AWS Profile、AWS アカウントの情報から事前入力されるから、サブスクリプションのたびに入れ直さなくていいよ。各項目は購読前に編集できて、共有した内容は AWS Marketplace コンソールの契約詳細ページで確認できるの。\n\n## 深く潜ってみよう\n\n- セラーは、AWS Partner Central の契約詳細ページで購入者の連絡先を見られるよ\n- 新しい `GetAgreementContacts` API で取得して、自分たちのオンボーディングやサポートのワークフローに取り込める\n- SaaS 製品のセラーは、この API で登録ページを事前入力して、購入者に確認だけしてもらう使い方ができるよ\n- AWS Marketplace が使える全商用 AWS リージョンで利用できるよ\n- 詳しくは、Buyer Guide の「Sharing your contact information at subscription」と Seller Guide の「Receiving buyer contact information」だよ\n\n## まとめ\n\n- 購読時に購入者が連絡先をセラーに共有できる\n- 購入者の入力は事前入力され、編集もできる\n- セラーは Partner Central または `GetAgreementContacts` API で受け取れる\n\nMarketplace で SaaS や製品を売っているセラーに刺さるアップデートだよ！",
+  "title_en": "AWS Marketplace Buyers Can Now Share Contact Info with Sellers, and There's a New API",
+  "summary_en": "AWS Marketplace now lets buyers share their contact information with sellers when they subscribe. Sellers can view it in Partner Central or retrieve it with the GetAgreementContacts API.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today's update helps connect buyers and sellers on AWS Marketplace!\n\n## What was announced?\n\nAWS What's New announced that AWS Marketplace now supports buyer contact sharing. When customers subscribe to a third-party product, they can share their contact information with the seller.\n\n## Why it matters\n\nSellers want to send deployment guides and setup instructions, provide technical support, and share product updates. With contact details from the start of the subscription, onboarding can begin right away.\n\n## What changes\n\nBuyers share the following in the deployment contact information section of the procurement page:\n\n- First and last name\n- Email address\n- Company name\n- Country or region\n\nThe section is pre-filled from previous purchases, the AWS Profile, or AWS account details, so buyers don't re-enter it for each subscription. Fields can be edited before subscribing, and what was shared is visible on the agreement details page in the AWS Marketplace console.\n\n## Dive Deep\n\n- Sellers can view the contact information on the agreement details page in AWS Partner Central\n- They can also retrieve it with the new `GetAgreementContacts` API and bring it into onboarding and support workflows\n- SaaS sellers can use the API to pre-fill their registration page so buyers only confirm their details\n- Available in all commercial AWS Regions where AWS Marketplace is available\n- See \"Sharing your contact information at subscription\" in the Buyer Guide and \"Receiving buyer contact information\" in the Seller Guide\n\n## Wrap-up\n\n- Buyers can share contact details with sellers at subscription\n- The form is pre-filled and editable\n- Sellers receive it in Partner Central or through the `GetAgreementContacts` API\n\nIf you sell SaaS or other products on AWS Marketplace, this update is for you!",
+  "emotion": "happy",
+  "importance": 3,
+  "tags": [
+    "aws",
+    "business"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/marketplace-buyer-contact-sharing/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Marketplace now supports buyer contact sharing at subscription",
+  "published_at": "2026-11-19T13:00:00+00:00"
+}

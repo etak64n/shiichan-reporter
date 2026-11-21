@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-aws-elemental-mediatailor-dynamic-avail-sizing-live-hls",
+  "title": "MediaTailor の Dynamic Avail Sizing で、ライブ HLS のスレート表示が減るよ！",
+  "summary": "AWS Elemental MediaTailor が、ライブ HLS で広告枠が埋まらないときの空き時間を省いて、番組を早く再開する Dynamic Avail Sizing に対応したよ！",
+  "body_md": "こんにちは、しぃちゃんだよ！配信を見ていて、広告のあとに「しばらくお待ちください」の画面が出る経験、ないかな？今日はその対策のお話だよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Elemental MediaTailor が Dynamic Avail Sizing に対応したと発表されたよ。ライブ HLS ストリームで、広告枠（avail）が埋まらなかったときに視聴者が見るスレートを減らす機能なの。MediaTailor は、ライブとオンデマンドの動画ストリームに広告をパーソナライズして入れる、サーバーサイド広告挿入とチャンネルアセンブリのサービスだよ。\n\n## これで何が変わるの？\n\n広告決定サーバーが、枠より少ない広告しか返さなかったとき、埋まらなかった時間を省いて、スレートの代わりに番組を早く再開するよ。無料の広告付きストリーミング TV（FAST）のチャンネル運営者が、視聴者にフィラーではなく番組を見続けてもらうために使えるの。\n\n## 深く潜ってみよう\n\n仕組みはこうだよ。\n\n- 再生を途切れさせないように、ライブエッジの後ろに、設定できる量のコンテンツを予備として保持する\n- 広告枠が早く終わったら、その予備を使って番組を再開する\n- 予備が減ってきたら、あとの広告枠で追加の広告時間をリクエストして、予備を補充する\n\n有効にするのは、再生セッションごとだよ。セッション初期化 URL にクエリパラメータを足すだけで、再生設定は変更しなくていいの。全 AWS リージョンの MediaTailor で使えるよ。詳しくは、MediaTailor ユーザーガイドの「Dynamic avail sizing」を見てね。\n\n## まとめ\n\n- ライブ HLS で埋まらなかった広告枠を省いて、番組を早く再開する\n- 予備のコンテンツを使い、足りなくなったら後の枠で補充する\n- セッション初期化 URL のクエリパラメータで有効化、再生設定の変更は不要\n\nFAST チャンネルの運営者や、ライブ配信の広告挿入を担当する人に刺さるよ！",
+  "title_en": "MediaTailor Dynamic Avail Sizing Cuts Slate in Live HLS Streams",
+  "summary_en": "AWS Elemental MediaTailor now supports Dynamic Avail Sizing for live HLS, omitting unfilled ad-break time and resuming programming early instead of showing slate.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Have you ever seen a \"please stand by\" screen after an ad break? Today's update is about reducing that!\n\n## What was announced?\n\nAWS What's New announced that AWS Elemental MediaTailor now supports Dynamic Avail Sizing. It reduces the slate viewers see when ad breaks (avails) in live HLS streams go unfilled. MediaTailor is a server-side ad insertion and channel assembly service that personalizes ads in live and on-demand video streams.\n\n## What changes\n\nWhen the ad decision server returns fewer ads than a break allows, dynamic avail sizing omits the unfilled time and resumes programming early instead of showing slate. Free ad-supported streaming TV (FAST) channel operators can use it to keep viewers watching programming instead of filler.\n\n## Dive Deep\n\nHow it works:\n\n- To keep playback continuous, MediaTailor holds back a configurable reserve of content behind the live edge\n- When a break ends early, it draws on that reserve\n- When the reserve runs low, it requests extra ad time in later breaks to refill it\n\nYou turn it on per playback session by adding query parameters to the session initialization URL, with no change to your playback configuration. It is available in all AWS Regions where MediaTailor is available. See \"Dynamic avail sizing\" in the MediaTailor User Guide.\n\n## Wrap-up\n\n- Unfilled ad time in live HLS is omitted and programming resumes early\n- A content reserve is used and refilled with extra ad time in later breaks\n- Enable it with query parameters on the session initialization URL, no playback configuration change\n\nIf you run FAST channels or handle ad insertion for live streams, this one is for you!",
+  "emotion": "happy",
+  "importance": 3,
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-elemental-mediatailor-dynamic-avail-sizing-live-hls",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Elemental MediaTailor adds Dynamic Avail Sizing for live HLS",
+  "published_at": "2026-11-19T18:00:00+00:00"
+}
