@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-aws-msk-standard-version-42",
+  "title": "MSK Standard ブローカーが Apache Kafka 4.2 に対応！Queues for Kafka が本番利用可能に",
+  "summary": "Amazon MSK の Standard ブローカーが Apache Kafka 4.2 をサポート。Queues for Kafka の本番対応や新しいリバランスプロトコルが入ったよ！",
+  "body_md": "おつかれさま、しぃちゃんだよ！Kafka 4.2 が MSK でも使えるようになったよ！\n\n## なにが発表されたの？\n\nAWS What's New で、Amazon MSK の Standard ブローカーが Apache Kafka バージョン 4.2 をサポートしたと発表されたよ。\n\n## なぜ重要なの？\n\n目玉は「Queues for Kafka」が本番利用可能(production ready)になったこと！Queues を使うと、複数のコンシューマーが同じトピックのパーティションからメッセージを処理できるようになるよ。ポイントツーポイントのメッセージ配信が必要なワークロードで、並列性とスループットが上がるの。\n\n## これで何が変わるの？\n\n4.2 に含まれる主な改善はこれだよ。\n\n- Queues for Kafka: 同じパーティションを複数コンシューマーで処理して並列性・スループットを向上\n- Eligible Leader Replicas(ELR)の強化: リーダー選出の正確性と可用性を向上\n- 新しいコンシューマーリバランスプロトコル: コンシューマーグループのリバランスがより滑らかで速くなる\n- Streams Rebalance Protocol: ブローカー側の調整を Kafka Streams アプリに広げて、タスクをより効率よく割り当てる\n\n改善点とバグ修正の全リストは Apache Kafka 4.2 のリリースノートを見てね。\n\n## 深く潜ってみよう\n\n- 新規クラスター: コンソール、AWS CLI、AWS SDK でバージョン 4.2.x を選ぶ\n- 既存の MSK Provisioned クラスター: インプレースのローリングアップデートでアップグレードできる。MSK がブローカーの再起動を調整して、可用性とデータを守ってくれる\n- Standard ブローカーが提供されているすべての AWS リージョンで、今日から利用可能\n\n## まとめ\n\n- Standard ブローカーで Kafka 4.2 が使える\n- Queues for Kafka が本番対応\n- ELR 強化と新しいリバランスプロトコル群が入った\n- 既存クラスターもローリングアップデートで移行可能\n\nKafka でキュー的な使い方をしたいみんなに刺さるよ！",
+  "title_en": "Amazon MSK Standard brokers add support for Apache Kafka 4.2",
+  "summary_en": "Amazon MSK Standard brokers now support Apache Kafka 4.2, with Queues for Kafka now production ready and new rebalance protocols.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Kafka 4.2 is now on MSK!\n\n## What was announced?\n\nAWS What's New announced that Amazon MSK now supports Apache Kafka version 4.2 on Standard brokers.\n\n## Why it matters\n\nThe key highlight is that Queues for Kafka is now production ready. With Queues, multiple consumers can process messages from the same topic partitions, improving parallelism and throughput for workloads that need point-to-point delivery.\n\n## What changes\n\nMain improvements in this release:\n\n- Queues for Kafka: multiple consumers on the same partitions for better parallelism and throughput\n- Eligible Leader Replicas (ELR) enhancements: better leader election correctness and availability\n- New consumer rebalance protocol: smoother, faster consumer group rebalances\n- Streams Rebalance Protocol: extends broker-side coordination to Kafka Streams apps so tasks are assigned more efficiently\n\nSee the Apache Kafka 4.2 release notes for the full list.\n\n## Dive Deep\n\n- New clusters: choose version 4.2.x in the AWS Management Console, AWS CLI, or AWS SDKs\n- Existing MSK provisioned clusters: upgrade with an in-place rolling update; MSK orchestrates broker restarts to maintain availability and protect your data\n- Available today in all AWS Regions where MSK Standard brokers are offered\n\n## Wrap-up\n\n- Kafka 4.2 is available on Standard brokers\n- Queues for Kafka is production ready\n- ELR and new rebalance protocols are included\n- Existing clusters can upgrade with a rolling update\n\nThis is for anyone who wants queue-style consumption on Kafka!",
+  "emotion": "energetic",
+  "importance": 4,
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-msk-standard-version-42/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon MSK Standard Brokers adds support for Apache Kafka version 4.2",
+  "published_at": "2026-11-20T17:00:00+00:00"
+}

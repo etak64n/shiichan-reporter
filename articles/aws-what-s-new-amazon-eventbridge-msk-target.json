@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-eventbridge-msk-target",
+  "title": "EventBridge カスタムバスから Amazon MSK へ直接配信できるようになったよ！",
+  "summary": "EventBridge の拡張カスタムイベントバスが Amazon MSK をターゲットに対応。自前のプロデューサーなしで Kafka トピックにイベントを届けられるよ。",
+  "body_md": "こんにちは、しぃちゃんだよ！EventBridge と Kafka がつながる、嬉しいお知らせだよ！\n\n## なにが発表されたの？\n\nAWS What's New で、Amazon EventBridge の拡張版 Custom event bus が Amazon MSK をターゲットとしてサポートしたと発表されたよ。自分で Kafka プロデューサーを動かさなくても、イベントを Kafka トピックに配信できるの。\n\n## これで何が変わるの？\n\n共有の Custom event bus に流れるイベントを、他チームがすでに購読している MSK トピックへ直接届けられるよ。AWS の例では、購買注文イベントを、決済チームがすでに消費している MSK トピックへ配信できるとされているの。\n\n## 深く潜ってみよう\n\n- 配信するには、クラスターの ARN とトピックを指定した Subscriber を作る\n- Kafka プロデューサー設定として、パーティションキー、確認応答(acknowledgment)レベル、レコードヘッダーを設定できる\n- パブリック/プライベート、サーバーレス/プロビジョニングのどのクラスターにも対応\n- プライベートクラスター向けの Subscriber は、EventBridge が自動でプライベート接続を設定する\n- 料金: MSK への配信は標準の Custom event bus のエグレス課金。配信前の圧縮にも対応していて、こちらは Event Evaluation として課金される\n- 拡張版 Custom event bus が使えるすべての AWS リージョンで利用可能\n\n詳細は EventBridge ユーザーガイドの「Amazon MSK cluster target」を見てね。\n\n## まとめ\n\n- MSK が Custom event bus のターゲットに対応\n- パーティションキーや ack レベルなどのプロデューサー設定が可能\n- プライベートクラスターへの接続は自動設定\n\nEventBridge と Kafka を併用しているみんなに刺さるよ！",
+  "title_en": "EventBridge Custom event bus now supports Amazon MSK as a target",
+  "summary_en": "The enhanced EventBridge Custom event bus can now deliver events to Amazon MSK topics without you running your own producer.",
+  "body_md_en": "Hello, it's Shii-chan! Here is good news for connecting EventBridge and Kafka.\n\n## What was announced?\n\nAWS What's New announced that Amazon EventBridge now supports Amazon MSK as a target for the enhanced Custom event bus, so you can deliver events to Kafka topics without running your own producer.\n\n## What changes\n\nEvents on a shared Custom event bus can go straight to MSK topics that other teams already consume from. In AWS's example, purchase-order events are delivered to the MSK topics a payments team already reads.\n\n## Dive Deep\n\n- To deliver to MSK, create a Subscriber that specifies the cluster ARN and topic\n- You can configure Kafka producer settings such as partition key, acknowledgment level, and record headers\n- Public and private, serverless and provisioned clusters are supported\n- For a private cluster, EventBridge automatically sets up a private connection\n- Pricing: delivery to MSK is billed as standard Custom event bus egress; compression before delivery is also supported and billed as an Event Evaluation\n- Available in all AWS Regions where the enhanced Custom event bus is available\n\nSee \"Amazon MSK cluster target\" in the EventBridge User Guide.\n\n## Wrap-up\n\n- MSK is now a Custom event bus target\n- Producer settings like partition key and ack level are configurable\n- Private cluster connectivity is set up automatically\n\nThis is for anyone using EventBridge and Kafka together!",
+  "emotion": "happy",
+  "importance": 4,
+  "tags": [
+    "aws",
+    "serverless",
+    "devops"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-eventbridge-msk-target/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon EventBridge Custom event bus now supports Amazon MSK as a target",
+  "published_at": "2026-11-20T17:30:00+00:00"
+}

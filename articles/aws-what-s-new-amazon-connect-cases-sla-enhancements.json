@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-connect-cases-sla-enhancements",
+  "title": "Amazon Connect の Cases SLA が強化！ステータス以外にも目標を設定できるよ",
+  "summary": "Amazon Connect Customer の Cases で、ケースのフィールドへの SLA 設定、違反時のメール通知、API による期限調整ができるようになったよ。",
+  "body_md": "こんにちは、しぃちゃんだよ！今日はコンタクトセンター向けの Amazon Connect のアップデートだよ！\n\n## なにが発表されたの？\n\nAWS What's New で、Amazon Connect Customer の Cases における SLA(サービスレベル契約)が強化されたと発表されたよ。サービス目標を設定できる範囲が広がって、ケースが遅れたときにすばやく対応できるようになるの。\n\n## これで何が変わるの？\n\n追加された機能は 3 つだよ！\n\n- ステータス以外のフィールドにも SLA を設定できる。例えば「ケースの重大度を 24 時間以内に high から medium に下げる」といった要件を設定できる\n- SLA 違反ルールにメールアクションを追加できる。SLA を逃したケースの担当エージェントがすぐに気づける\n- API で、ケースの SLA 期限を調整できる。パートナーなど外部からの情報待ちのときに使える\n\n## 深く潜ってみよう\n\n- 管理者向け: フィールドへの SLA 設定と、違反ルールへのメールアクション追加\n- 開発者向け: SLA 期限を調整する API\n- Cases は、米国東部(バージニア北部)、米国西部(オレゴン)、カナダ(中部)、欧州(フランクフルト・ロンドン)、アジアパシフィック(ソウル・シンガポール・シドニー・東京)、アフリカ(ケープタウン)の 10 リージョンで利用可能\n\n詳細は Cases の Web ページとドキュメントを見てね。\n\n## まとめ\n\n- ステータス以外のフィールドにも SLA を設定可能\n- SLA 違反時に担当エージェントへメールで通知\n- 外部待ちのケースは API で期限を調整できる\n\nAmazon Connect でケース管理をしているみんなに刺さるよ！",
+  "title_en": "Amazon Connect Customer expands SLA tracking and actions for cases",
+  "summary_en": "Amazon Connect Customer Cases now supports SLAs on more case fields, email actions on SLA breach, and APIs to adjust SLA deadlines.",
+  "body_md_en": "Hello, it's Shii-chan! Today's news is an Amazon Connect update for contact centers.\n\n## What was announced?\n\nAWS What's New announced enhanced service level agreements (SLAs) for cases in Amazon Connect Customer, so teams can set service goals for more of their work and respond faster when a case falls behind.\n\n## What changes\n\nThree things were added:\n\n- Admins can set SLAs on case fields beyond status, such as requiring a case's severity to drop from high to medium within 24 hours\n- Admins can add an email action to SLA breach rules, so the assigned agent learns right away when a case misses its SLA\n- Developers can use APIs to adjust a case's SLA deadline when the team is waiting on information from an outside party, such as a partner\n\n## Dive Deep\n\n- For admins: SLAs on fields and email actions in breach rules\n- For developers: APIs to adjust SLA deadlines\n- Cases is available in 10 Regions: US East (N. Virginia), US West (Oregon), Canada (Central), Europe (Frankfurt, London), Asia Pacific (Seoul, Singapore, Sydney, Tokyo), and Africa (Cape Town)\n\nSee the Cases webpage and documentation for more.\n\n## Wrap-up\n\n- SLAs can target fields beyond status\n- Assigned agents get an email when an SLA is breached\n- Deadlines can be adjusted through APIs for cases waiting on outside parties\n\nThis is for anyone managing cases in Amazon Connect!",
+  "emotion": "happy",
+  "importance": 3,
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-connect-cases-sla-enhancements/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Connect Customer expands how teams track and act on service level agreements for cases",
+  "published_at": "2026-11-20T17:00:00+00:00"
+}

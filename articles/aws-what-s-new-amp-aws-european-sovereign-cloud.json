@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amp-aws-european-sovereign-cloud",
+  "title": "Managed Prometheus が AWS European Sovereign Cloud(ドイツ)に登場！",
+  "summary": "Amazon Managed Service for Prometheus とそのコレクターが、AWS European Sovereign Cloud(ドイツ)リージョンで使えるようになったよ！",
+  "body_md": "こんにちは、しぃちゃんだよ！今日はリージョン拡大のお知らせだよ！\n\n## なにが発表されたの？\n\nAWS What's New で、Amazon Managed Service for Prometheus が AWS European Sovereign Cloud(ドイツ)リージョンで利用可能になったと発表されたよ。Amazon Managed Service for Prometheus collector も一緒に使えるようになったの。\n\n## なぜ重要なの？\n\nAWS European Sovereign Cloud のお客さんは、Prometheus 互換のモニタリングをリージョン内で動かせるようになるよ。AWS によると、ローカルのワークロードのレイテンシーが下がり、メトリクスデータもリージョン内に留められるそうなの。\n\n## これで何が変わるの？\n\nメトリクスの収集から保存・クエリまでを、リージョン外に出さずに完結できるよ。ソブリン要件のある環境で運用監視をしている人にとって、選択肢が増えるね！\n\n## 深く潜ってみよう\n\n- Amazon Managed Service for Prometheus は、運用メトリクスの監視とアラートをスケールさせて行える、フルマネージドで Prometheus 互換のサービス\n- collector はフルマネージドでエージェントレス。コンテナワークロードから Prometheus メトリクスを検出・収集するので、収集エージェントを自分で動かさなくてよい\n- 集めたメトリクスは、ワークスペース(メトリクスを保存・クエリする論理的な空間)に送られて分析できる\n- 提供リージョンの一覧や料金は、AWS のリージョン別サービス一覧と料金ページで確認してね\n\n## まとめ\n\n- Managed Service for Prometheus と collector が European Sovereign Cloud(ドイツ)で利用可能に\n- メトリクスデータをリージョン内に保てる\n- エージェント不要の collector でコンテナのメトリクスを収集できる\n\nソブリンクラウドで監視基盤を整えたいみんなに刺さるよ！",
+  "title_en": "Managed Service for Prometheus now available in the AWS European Sovereign Cloud (Germany)",
+  "summary_en": "Amazon Managed Service for Prometheus and its collector are now available in the AWS European Sovereign Cloud (Germany) region.",
+  "body_md_en": "Hello, it's Shii-chan! Today's news is a region expansion.\n\n## What was announced?\n\nAWS What's New announced that Amazon Managed Service for Prometheus is now available in the AWS European Sovereign Cloud (Germany) region, along with the Amazon Managed Service for Prometheus collector.\n\n## Why it matters\n\nCustomers in the AWS European Sovereign Cloud can now run Prometheus-compatible monitoring in-region. According to AWS, this lowers latency for local workloads and keeps metric data within the region.\n\n## What changes\n\nYou can collect, store, and query metrics without data leaving the region. That gives teams with sovereignty requirements one more option for operational monitoring.\n\n## Dive Deep\n\n- Amazon Managed Service for Prometheus is a fully managed, Prometheus-compatible service for monitoring and alerting on operational metrics at scale\n- The collector is fully managed and agentless; it discovers and collects Prometheus metrics from container workloads, so you don't run collection agents yourself\n- Metrics go to a workspace, a logical space for storing and querying them\n- For the full region list and pricing, see the AWS Regional Services List and the pricing page\n\n## Wrap-up\n\n- Managed Service for Prometheus and the collector are available in European Sovereign Cloud (Germany)\n- Metric data can stay within the region\n- The agentless collector gathers container metrics for you\n\nThis is for anyone building a monitoring stack on the sovereign cloud!",
+  "emotion": "happy",
+  "importance": 3,
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amp-aws-european-sovereign-cloud/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Managed Service for Prometheus now available in the AWS European Sovereign Cloud (Germany) region",
+  "published_at": "2026-11-20T16:00:00+00:00"
+}

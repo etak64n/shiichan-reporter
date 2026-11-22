@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-ecs-action-logs-expanded-troubleshooting",
+  "title": "ECS Action Logs がタスク失敗やスケーリング不調の理由まで教えてくれるように！",
+  "summary": "Amazon ECS の Action Logs がタスク、コンテナインスタンス、クラスター、キャパシティプロバイダーまで拡大。失敗やスケールしない理由を自分で調べられるよ！",
+  "body_md": "やっほー、しぃちゃんだよ！ECS のトラブルシューティングが楽になるお知らせだよ！\n\n## なにが発表されたの？\n\nAWS What's New で、Amazon ECS の Action Logs の対象が、タスク、コンテナインスタンス、クラスター、キャパシティプロバイダーに広がったと発表されたよ。タスクが失敗した理由や、クラスターが思ったようにスケールしない理由が見えるようになるの。\n\n## 今までどうだったの？\n\nAction Logs は、ECS があなたに代わって実行したアクションを、タイムスタンプ付きで詳しく記録するものだよ。でもこれまでの対象は、サービスのデプロイとマネージドデーモンの更新だけだったの。\n\n## これで何が変わるの？\n\nタスクの失敗やスケーリングの問題を、AWS サポートに問い合わせずに自分で診断して、早く解決できるようになるよ。すでに Action Logs を使っているなら、設定変更なしで新しいイベントが届くよ！\n\n## 深く潜ってみよう\n\n見えるようになる情報の例だよ。\n\n- タスクが起動に失敗したとき: イメージの取得失敗、Amazon EBS ボリュームの権限不足、サブネットの IP アドレス不足など\n- 実行中のタスクが停止したとき: コンテナの終了コードと、停止の引き金になったヘルスチェック\n- クラスターのインフラ: コンテナインスタンスの登録とドレイン、クラスターへの登録に失敗した EC2 インスタンス、キャパシティプロバイダーの変更、マネージドスケーリングの動作(EC2 Auto Scaling グループが最大サイズに達した場合を含む)\n\n各ログエントリには、イベント名、ログレベル(INFO / WARN / ERROR)、関連リソースの ARN、ステータス理由が含まれるよ。\n\n使い始めるには、クラスター単位で Amazon ECS コンソールか Amazon CloudWatch の vended logs API からオプトインして、配信先に Amazon CloudWatch Logs、Amazon S3、Amazon Data Firehose のどれかを選ぶの。各配信先の標準料金がかかるよ。AWS GovCloud (US) を含むリージョンで使えるよ。\n\n## まとめ\n\n- Action Logs がタスク・コンテナインスタンス・クラスター・キャパシティプロバイダーに対応\n- 失敗理由やスケールしない理由を自分で確認できる\n- 既存ユーザーは設定変更不要、配信先ごとの標準料金あり\n\nECS で「なんで起動しないの？」に悩んだことのあるみんなに刺さるよ！",
+  "title_en": "ECS Action Logs now explain task failures and scaling problems",
+  "summary_en": "Amazon ECS Action Logs now cover tasks, container instances, clusters, and capacity providers, so you can diagnose failures and scaling issues yourself.",
+  "body_md_en": "Hi everyone, it's Shii-chan! This one makes ECS troubleshooting easier.\n\n## What was announced?\n\nAWS What's New announced that Amazon ECS Action Logs now extend to tasks, container instances, clusters, and capacity providers, so you can see why tasks failed or why your clusters didn't scale as desired.\n\n## The story so far\n\nAction Logs are detailed, timestamped records of the actions ECS performs on your behalf. Until now they covered only service deployments and managed daemon updates.\n\n## What changes\n\nYou can diagnose task failures and scaling issues yourself and resolve them faster, without contacting AWS support. If you already use Action Logs, the new events arrive automatically with no configuration changes.\n\n## Dive Deep\n\nExamples of what you can now see:\n\n- When a task fails to start: image pull failures, missing permissions for Amazon EBS volumes, or no available IP addresses in the subnet\n- When a running task stops: the container exit code and the health check that triggered the stop\n- For cluster infrastructure: container instance registration and draining, EC2 instances that fail to register, capacity provider changes, and managed scaling actions, including when an EC2 Auto Scaling group reaches its maximum size\n\nEach entry includes the event name, log level (INFO, WARN, or ERROR), relevant resource ARNs, and a status reason.\n\nYou opt in at the cluster level through the Amazon ECS console or the Amazon CloudWatch vended logs APIs, and deliver logs to Amazon CloudWatch Logs, Amazon S3, or Amazon Data Firehose. Standard pricing for each destination applies. It is available in AWS Regions including AWS GovCloud (US).\n\n## Wrap-up\n\n- Action Logs now cover tasks, container instances, clusters, and capacity providers\n- You can find failure and non-scaling reasons yourself\n- No config change for existing users; standard destination pricing applies\n\nThis is for anyone who has asked \"why won't my task start?\" on ECS!",
+  "emotion": "energetic",
+  "importance": 4,
+  "tags": [
+    "aws",
+    "infrastructure",
+    "devops"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-ecs-action-logs-expanded-troubleshooting",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon ECS Action Logs now cover tasks, container instances, and capacity providers",
+  "published_at": "2026-11-20T16:50:00+00:00"
+}

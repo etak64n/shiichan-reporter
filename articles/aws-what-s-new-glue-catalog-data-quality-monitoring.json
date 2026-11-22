@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-glue-catalog-data-quality-monitoring",
+  "title": "Glue Data Catalog がカタログ・データベース単位でデータ品質を監視できるように！",
+  "summary": "AWS Glue Data Catalog に、カタログやデータベース全体を 1 つの設定で品質評価するデータ品質モニタリングが登場。後から追加したテーブルも自動で対象になるよ。",
+  "body_md": "おつかれさま、しぃちゃんだよ！データ品質のチェックがぐっとラクになる発表だよ！\n\n## なにが発表されたの？\n\nAWS What's New で、AWS Glue Data Catalog に、カタログやデータベースを対象にしたデータ品質モニタリングが導入されたと発表されたよ。AWS Glue Data Quality を使って、カタログ規模のテーブルのプロファイリングと評価を、1 つの設定から実行できるの。\n\n## これで何が変わるの？\n\nデータ品質チェックを、カタログ、データベース、または単一テーブルに対して一度定義すれば、後から追加されたテーブルも含めて、範囲内のすべてのテーブルを、選んだ頻度で評価してくれるよ。テーブルごとの設定や手動実行なしで、データが変わるたびに品質の問題が見えてくるから、ダウンストリームに悪いデータが流れるのを防ぎやすくなるの。\n\n## 深く潜ってみよう\n\n- 共通のベースライン統計を取る組み込みのプロファイリングオプションが使える\n- Data Quality Definition Language(DQDL)のルールセット(アナライザー、ルール、またはその両方)を自分で用意して、データベース内の全テーブルに同じ品質基準を適用できる\n- 評価は、設定作成時の 1 回だけ実行するか、スケジュール、またはテーブルのメタデータが変わったとき(Apache Iceberg のコミットごとを含む)に実行するトリガーを設定できる\n- 1 つのテーブルで 3 回実行されたあと、期待範囲から外れた異常な統計を検出して知らせてくれる。どのルールにも引っかからない変化も拾えるよ\n- 結果は既存の AWS Glue Data Quality API で参照できるほか、オプトインで Glue Data Catalog の Apache Iceberg テーブルや Amazon S3 に書き出せる\n- 使い始めるには、AWS CLI、API、SDK でデータ品質設定を作る。Amazon SageMaker Unified Studio では、カタログページからカタログやデータベースのプロファイリングを有効にできる\n- すべての商用リージョン、AWS GovCloud (US)、中国リージョンで利用可能\n\n## まとめ\n\n- カタログ・データベース・テーブル単位で品質チェックを一度定義すれば全体に適用\n- 組み込みプロファイリングと DQDL ルールセットを選べる\n- 3 回の実行後に異常な統計も検出\n\n大規模なデータレイクの品質管理を担当しているみんなに刺さるよ！",
+  "title_en": "Glue Data Catalog introduces data quality monitoring for catalogs and databases",
+  "summary_en": "AWS Glue Data Catalog can now monitor data quality across a whole catalog or database from a single configuration, including tables added later.",
+  "body_md_en": "Hi everyone, it's Shii-chan! This announcement makes data quality checks much easier.\n\n## What was announced?\n\nAWS What's New announced data quality monitoring for catalogs and databases in AWS Glue Data Catalog, powered by AWS Glue Data Quality, which profiles and evaluates your tables at catalog scale from a single configuration.\n\n## What changes\n\nYou define data quality checks once for a catalog, a database, or a single table, and Glue Data Quality evaluates every table in scope, including tables added later, on the cadence you choose. Quality issues surface as data changes, without per-table setup or manual runs, which helps keep bad data from reaching downstream consumers.\n\n## Dive Deep\n\n- You can use built-in profiling options for common baseline statistics\n- You can provide your own Data Quality Definition Language (DQDL) ruleset with analyzers, rules, or both to hold every table in a database to the same standards\n- Evaluations can run once at creation or on triggers, either on a schedule or whenever table metadata changes, including every Apache Iceberg commit\n- After three runs on a table, Glue Data Quality flags anomalous statistics that drift outside expected bounds, surfacing changes no rule covers\n- Results are available through the existing Glue Data Quality APIs, or you can opt in to write them to Apache Iceberg tables in the Data Catalog or to Amazon S3\n- To get started, create a data quality configuration with the AWS CLI, API, or SDKs. In Amazon SageMaker Unified Studio, you can turn on profiling for a catalog or database from the catalog page\n- Available in all commercial, AWS GovCloud (US), and China Regions\n\n## Wrap-up\n\n- Define checks once at catalog, database, or table level and apply them broadly\n- Choose built-in profiling or DQDL rulesets\n- Anomalous statistics are flagged after three runs\n\nThis is for anyone responsible for data quality in a large data lake!",
+  "emotion": "thinking",
+  "importance": 4,
+  "tags": [
+    "aws",
+    "infrastructure",
+    "devops"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/glue-catalog-data-quality-monitoring/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Glue Data Catalog introduces data quality monitoring for catalogs and databases",
+  "published_at": "2026-11-20T19:00:00+00:00"
+}

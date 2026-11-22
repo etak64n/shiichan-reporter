@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-aws-lambda-10k-batch-size-sqsfifo",
+  "title": "Lambda の SQS FIFO バッチサイズが 10 から 10,000 に！",
+  "summary": "プロビジョニングモードの Lambda イベントソースマッピングで、SQS FIFO キューのバッチサイズが最大 10,000 件、バッチウィンドウが最大 300 秒になったよ。",
+  "body_md": "みんな、しぃちゃんだよ！FIFO キューを Lambda で処理している人に、うれしい上限アップのお知らせだよ！\n\n## なにが発表されたの？\n\nAWS What's New で、AWS Lambda の Amazon SQS FIFO キューのイベントソースマッピング(ESM)が、プロビジョニングモードでバッチサイズ最大 10,000 件をサポートしたと発表されたよ。これまでは 10 件までだったの。\n\n## 今までどうだったの？\n\nプロビジョニングモードで FIFO キューのスループットを上げたい人は、最大バッチサイズ 10 件の制限に縛られていたよ。そのため、呼び出しをスケールアウトしたり、自前のバッファリングを足したりする必要があって、運用の手間とコストが増えていたの。\n\n## これで何が変わるの？\n\n金融取引、注文処理、在庫更新のような、量が多くて順序が大事なワークロードを、少ない呼び出し回数と高いスループットで処理できるよ。メッセージグループ内の順序は引き続き保たれるの。アーキテクチャを作り直さずに済むのもうれしいね！\n\n## 深く潜ってみよう\n\n- SQS の ESM のプロビジョニングモードでは、スループット制御で、イベントポーラーの最小数と最大数を設定できる\n- FIFO キューで、バッチサイズは最大 10,000 件、バッチウィンドウは最大 300 秒に設定できる\n- 新規の ESM の作成時も、既存の ESM の更新時も設定できる。方法は Lambda コンソール、AWS CLI、AWS SDK、AWS CloudFormation、AWS CDK、AWS SAM\n- Agent Toolkit for AWS を使って、Kiro、Claude Code、Codex などのコーディングアシスタントからも設定できる\n- プロビジョニングモードの SQS FIFO ESM が、すべての AWS 商用リージョンで使える\n\n## まとめ\n\n- SQS FIFO の Lambda ESM で、バッチサイズが 10 件から最大 10,000 件に\n- バッチウィンドウは最大 300 秒\n- 対象はプロビジョニングモード。メッセージグループ内の順序は維持\n\n順序保証が必要な高スループットの FIFO 処理をしているみんなに刺さるよ！",
+  "title_en": "Lambda now supports batch sizes up to 10,000 for SQS FIFO queues",
+  "summary_en": "Lambda event source mappings in provisioned mode now support SQS FIFO batch sizes of up to 10,000 messages and batching windows of up to 300 seconds.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Here's a limit increase for anyone processing FIFO queues with Lambda.\n\n## What was announced?\n\nAWS What's New announced that AWS Lambda now supports a batch size of up to 10,000 messages for Amazon SQS FIFO queue event source mappings (ESMs) in provisioned mode, up from 10.\n\n## The story so far\n\nProvisioned mode customers who needed higher FIFO throughput were limited by the maximum batch size of 10 messages. That meant scaling out invocations or adding custom buffering logic, which added operational overhead and cost.\n\n## What changes\n\nYou can process high-volume, ordered workloads such as financial transactions, order processing, and inventory updates with fewer invocations and higher throughput. Lambda continues to preserve message ordering within each message group, and you don't need to re-architect your applications.\n\n## Dive Deep\n\n- With provisioned mode for SQS ESMs, throughput controls let you set a minimum and maximum number of event pollers\n- For FIFO queues you can set a batch size of up to 10,000 messages and a batching window of up to 300 seconds\n- You can configure them when creating or updating ESMs using the Lambda console, AWS CLI, AWS SDKs, AWS CloudFormation, AWS CDK, or AWS SAM\n- You can also use coding assistants such as Kiro, Claude Code, or Codex with the Agent Toolkit for AWS\n- Available for SQS FIFO ESMs in provisioned mode in all AWS commercial Regions\n\n## Wrap-up\n\n- SQS FIFO ESM batch size goes from 10 to up to 10,000\n- Batching window up to 300 seconds\n- Provisioned mode only; ordering within message groups is preserved\n\nThis is for anyone running high-throughput FIFO processing that needs ordering!",
+  "emotion": "energetic",
+  "importance": 5,
+  "tags": [
+    "aws",
+    "serverless"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-lambda-10K-batch-size-SQSFIFO/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Lambda now supports a batch size of up to 10,000 messages for Amazon SQS FIFO queues",
+  "published_at": "2026-11-20T19:00:00+00:00"
+}

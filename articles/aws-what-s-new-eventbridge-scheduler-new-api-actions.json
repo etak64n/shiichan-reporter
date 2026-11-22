@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-eventbridge-scheduler-new-api-actions",
+  "title": "EventBridge Scheduler に 589 個の新 API アクション！カスタムバスへの定期配信も",
+  "summary": "EventBridge Scheduler が 81 サービスの 589 個の新しい API アクションに対応し、カスタムイベントバス向けのテンプレートターゲットも追加されたよ！",
+  "body_md": "やっほー、しぃちゃんだよ！EventBridge Scheduler のできることが一気に増えたよ！\n\n## なにが発表されたの？\n\nAWS What's New で、Amazon EventBridge Scheduler の AWS SDK 連携が、81 の AWS サービスにわたる 589 個の新しい API アクションに拡大したと発表されたよ。さらに、拡張版 EventBridge Custom event bus 向けのテンプレートターゲットも追加されたの。\n\n## これで何が変わるの？\n\n連携用のコードを書かなくても、より多くの AWS サービスを直接スケジュール呼び出しできるようになるよ。\n\n新しいテンプレートターゲットを使うと、Custom event bus の PutEvents または PutRawEvents API に直接イベント配信をスケジュールできるの。イベントにメタデータフィールドを付けるのも簡単になるよ。AWS の例では、毎晩 0 時にバスへイベントを送って突合ワークフローを開始する、という使い方で、間に関数を挟まずに API を呼べるの。\n\n## 深く潜ってみよう\n\n- EventBridge Scheduler は、270 を超える AWS サービスにわたって、数十億件のスケジュールイベントやタスクを作成・実行・管理できるサーバーレスのスケジューラー\n- 新しい API アクションは、EventBridge Scheduler が使える商用リージョンで利用可能(各ターゲットサービスのリージョン提供状況に依存)\n- Custom event bus 向けのテンプレートターゲットは、拡張版 Custom event bus が使えるすべてのリージョンで利用可能\n- 詳細は Scheduler ユーザーガイドの「Using templated targets」と「Using universal targets」を見てね\n\n## まとめ\n\n- 81 サービス・589 個の新 API アクションを直接スケジュール可能\n- Custom event bus への PutEvents / PutRawEvents 用テンプレートターゲットを追加\n- 定期実行のためだけの中継関数が不要に\n\ncron 的な処理を AWS で組んでいるみんなに刺さるよ！",
+  "title_en": "EventBridge Scheduler adds 589 new API actions and event bus targets",
+  "summary_en": "EventBridge Scheduler now supports 589 new API actions across 81 AWS services and adds templated targets for the enhanced Custom event bus.",
+  "body_md_en": "Hi everyone, it's Shii-chan! EventBridge Scheduler can do a lot more now.\n\n## What was announced?\n\nAWS What's New announced that Amazon EventBridge Scheduler expands its AWS SDK integrations with 589 new API actions across 81 AWS services, and adds templated targets for the enhanced Custom event bus.\n\n## What changes\n\nYou can schedule direct invocations of a broader set of AWS services without writing custom integration code.\n\nWith the new templated target, you can schedule event delivery straight to the Custom event bus using its PutEvents or PutRawEvents API, and adding metadata fields to each event gets easier. In AWS's example, you send an event to your bus every night at midnight to start a reconciliation workflow, with no function in between to call the API.\n\n## Dive Deep\n\n- EventBridge Scheduler is a serverless scheduler for creating, running, and managing billions of scheduled events and tasks across more than 270 AWS services\n- The new API actions are available in all commercial Regions where Scheduler is available, subject to each target service's availability\n- Templated targets for the Custom event bus are available in all Regions where the enhanced Custom event bus is available\n- See \"Using templated targets\" and \"Using universal targets\" in the Scheduler User Guide\n\n## Wrap-up\n\n- 589 new API actions across 81 services can be scheduled directly\n- New templated target for PutEvents / PutRawEvents on the Custom event bus\n- No relay function needed just to run on a schedule\n\nThis is for anyone building cron-style jobs on AWS!",
+  "emotion": "energetic",
+  "importance": 4,
+  "tags": [
+    "aws",
+    "serverless",
+    "devops"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/eventbridge-scheduler-new-api-actions/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon EventBridge Scheduler adds 589 new API actions and event bus targets",
+  "published_at": "2026-11-20T18:00:00+00:00"
+}

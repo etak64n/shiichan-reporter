@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-eventbridge-webhook-events",
+  "title": "EventBridge カスタムバスが Webhook を直接受信できるように！",
+  "summary": "EventBridge の拡張カスタムイベントバスが Webhook Events に対応。マネージドな HTTPS URL でイベントを受け取れるから、受信用のエンドポイントを自前で運用しなくて済むよ！",
+  "body_md": "やっほー、しぃちゃんだよ！Webhook の受け口を自分で作らなくてよくなる、EventBridge のお知らせだよ！\n\n## なにが発表されたの？\n\nAWS What's New で、Amazon EventBridge の拡張版 Custom event bus が Webhook Events に対応したと発表されたよ。SaaS アプリ、AI エージェント、カスタム連携が、HTTPS でバスにイベントを送れるようになるの。\n\n## 今までどうだったの？\n\nWebhook を受けてバスに発行するには、自分で API エンドポイントとコンピュートを用意して運用する必要があったよ。それが不要になるの！\n\n## これで何が変わるの？\n\nバスに Webhook イベントソースを作ると、EventBridge がマネージドな HTTPS URL を発行してくれるよ。たとえば物流パートナーの配送ステータス更新が、送られた瞬間に注文追跡や顧客通知のサブスクライバーに届く、といった使い方ができるの。\n\n## 深く潜ってみよう\n\n- リクエストの検証方法は 3 種類: HMAC 署名、静的トークン、ベーシック認証\n- 受け付けたイベントはバスに発行され、サブスクライバーが他のイベントと同じようにフィルタして配信する\n- 料金: Webhook で受信したイベントは標準の Custom event bus のインバウンド課金で、Webhook 自体の追加料金はなし\n- 拡張版 Custom event bus が使えるすべての AWS リージョンで利用可能\n\n詳細は EventBridge ユーザーガイドの「Webhook Events」を見てね。\n\n## まとめ\n\n- カスタムイベントバスが Webhook を直接受信できる\n- マネージド HTTPS URL と 3 種類の認証方式\n- Webhook 自体の追加料金なし\n\nSaaS の Webhook を AWS のイベント駆動に繋げたいみんなに刺さるよ！",
+  "title_en": "EventBridge Custom event bus now accepts webhooks directly",
+  "summary_en": "The enhanced EventBridge Custom event bus now supports Webhook Events, giving you a managed HTTPS URL so you no longer need to run your own endpoint.",
+  "body_md_en": "Hi everyone, it's Shii-chan! This EventBridge update means you don't have to build your own webhook receiver.\n\n## What was announced?\n\nAWS What's New announced that Amazon EventBridge now supports Webhook Events for the enhanced Custom event bus, so SaaS applications, AI agents, and custom integrations can send events to a bus over HTTPS.\n\n## The story so far\n\nTo receive webhooks and publish them to a bus, you had to deploy and operate your own API endpoint and compute. That is no longer needed.\n\n## What changes\n\nWhen you create a webhook event source on your bus, EventBridge provides a managed HTTPS URL. For example, shipment status updates from a logistics partner can reach your order tracking and customer notification Subscribers as soon as the partner sends them.\n\n## Dive Deep\n\n- Requests are verified with one of three methods: an HMAC signature, a static token, or basic authentication\n- Accepted events are published to the bus, where Subscribers filter and deliver them like any other event\n- Pricing: events received through a webhook are billed as standard Custom event bus ingress, with no additional charge for the webhook\n- Available in all AWS Regions where the enhanced Custom event bus is available\n\nSee \"Webhook Events\" in the EventBridge User Guide for details.\n\n## Wrap-up\n\n- The Custom event bus can receive webhooks directly\n- Managed HTTPS URL with three authentication options\n- No extra charge for the webhook itself\n\nThis is for anyone wiring SaaS webhooks into event-driven AWS apps!",
+  "emotion": "happy",
+  "importance": 4,
+  "tags": [
+    "aws",
+    "serverless",
+    "devops"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-eventbridge-webhook-events",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon EventBridge Custom event bus now supports Webhook Events",
+  "published_at": "2026-11-20T17:30:00+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-aurora-mysql-8412-available",
+  "title": "Aurora MySQL 8.4 が MySQL 8.4.12 に対応したよ！",
+  "summary": "Amazon Aurora MySQL 互換エディション 8.4 が MySQL 8.4.12 をサポート。セキュリティ強化とバグ修正を含むマイナーバージョンだよ。",
+  "body_md": "みんな、しぃちゃんだよ！今日は Aurora MySQL のマイナーバージョン更新のお知らせだよ！\n\n## なにが発表されたの？\n\nAWS What's New で、Amazon Aurora MySQL 互換エディション 8.4 が MySQL 8.4.12 をサポートしたと発表されたよ。このリリースにはセキュリティ強化とバグ修正が含まれているの。\n\n## なぜ重要なの？\n\nAWS は、以前の MySQL バージョンの CVE(共通脆弱性識別子)の修正や、バグ修正、パフォーマンス改善、コミュニティ MySQL で追加された新機能を取り込むために、新しいマイナーバージョンへのアップグレードを推奨しているよ。\n\n## これで何が変わるの？\n\nAurora MySQL 8.4 を使っているなら、8.4.12 に上げることで MySQL 側の修正を取り込めるよ。\n\n## 深く潜ってみよう\n\nアップグレードの方法についての情報だよ。\n\n- スケジュールされたメンテナンスウィンドウ中に、自動マイナーバージョンアップグレードで更新できる\n- 大規模運用では、自動マイナーバージョンアップグレードを有効にして、AWS Organizations の Upgrade Rollout Policy を使うと、クラスターを段階的に更新できる。重要度の低い環境で先に検証してから、重要な環境へ進められるよ\n- マイナーバージョンアップグレードは、インプレースでもスナップショットからの復元でも実施できる\n- Aurora MySQL が使えるすべての AWS リージョンでサポート\n\n詳細は Aurora MySQL 8.4 と MySQL 8.4.12 のリリースノートを見てね。\n\n## まとめ\n\n- Aurora MySQL 8.4 が MySQL 8.4.12 に対応\n- セキュリティ強化とバグ修正を含み、CVE 対応のためアップグレードが推奨されている\n- Upgrade Rollout Policy で段階的な更新ができる\n\nAurora MySQL 8.4 を運用しているみんなは、更新計画を確認してみてね！",
+  "title_en": "Amazon Aurora MySQL 8.4.12 is now generally available",
+  "summary_en": "Aurora MySQL-Compatible Edition 8.4 now supports MySQL 8.4.12, with security enhancements and bug fixes.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today's news is a minor version update for Aurora MySQL.\n\n## What was announced?\n\nAWS What's New announced that Amazon Aurora MySQL-Compatible Edition 8.4 now supports MySQL 8.4.12. The release includes security enhancements and bug fixes.\n\n## Why it matters\n\nAWS recommends upgrading to newer minor versions to pick up fixes for CVEs in prior MySQL versions, plus bug fixes, performance improvements, and new functionality added by community MySQL.\n\n## What changes\n\nIf you run Aurora MySQL 8.4, moving to 8.4.12 brings in those upstream fixes.\n\n## Dive Deep\n\nHow upgrades work:\n\n- You can upgrade during scheduled maintenance windows using automatic minor version upgrades\n- At scale, enable automatic minor version upgrades and use the AWS Organizations Upgrade Rollout Policy to roll out in phases, validating on lower-priority environments before your most critical ones\n- Minor version upgrades can be done in-place or via snapshot restore\n- Supported in all AWS Regions where Aurora MySQL is available\n\nSee the Aurora MySQL 8.4 and MySQL 8.4.12 release notes for details.\n\n## Wrap-up\n\n- Aurora MySQL 8.4 now supports MySQL 8.4.12\n- Includes security enhancements and bug fixes; upgrading is recommended for CVE fixes\n- Upgrade Rollout Policy enables phased rollouts\n\nIf you run Aurora MySQL 8.4, check your upgrade plan!",
+  "emotion": "happy",
+  "importance": 3,
+  "tags": [
+    "aws",
+    "infrastructure",
+    "security"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-aurora-mysql-8412-available/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Aurora MySQL 8.4.12 is now generally available",
+  "published_at": "2026-11-20T17:00:00+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-lambda-cost-optimization-recommendations",
+  "title": "Lambda のコスト削減ヒントを Trusted Advisor が教えてくれるよ！Managed Instances への移行を提案",
+  "summary": "Trusted Advisor が Lambda の Event Functions について、Lambda Managed Instances に移すとコストが下がる関数を推奨してくれるようになったよ。",
+  "body_md": "やっほー、しぃちゃんだよ！Lambda のコストを見直すきっかけになる、Trusted Advisor のお知らせだよ！\n\n## なにが発表されたの？\n\nAWS What's New で、AWS Lambda が AWS Trusted Advisor 上で Event Functions のコスト最適化の推奨事項を提供するようになったと発表されたよ。Lambda Managed Instances(LMI)に移すとコストが下がると見積もられるオンデマンド関数を教えてくれて、LMI で動かすための設定ガイダンスも出してくれるの。\n\n## 今までどうだったの？\n\n関数が LMI に向いているかを判断するには、呼び出しパターンの分析、LMI のコスト見積もり、インスタンスタイプとメモリ対 vCPU 比の選択を、すべて自分でやる必要があったよ。この手作業が負担になって、コスト削減も遅れていたの。\n\n## これで何が変わるの？\n\nLambda が、大量に呼び出される Event Functions の呼び出しパターン、実行時間、リソース使用率を自動で分析して、LMI でコストが下がると見積もられる関数を推奨してくれるよ。推奨の設定をそのまま使えば、サイジングを自分でしなくても LMI で動かせるの。\n\n## 深く潜ってみよう\n\n- LMI は、Lambda の運用のシンプルさを保ちつつ、Amazon EC2 インスタンス上で Lambda 関数を動かせる仕組み。Savings Plans やリザーブドインスタンスといった EC2 の料金オプションが使える\n- 見積もりは、各関数の呼び出しパターンのシミュレーションに基づいていて、公開されている Lambda 料金と Amazon EC2 オンデマンド料金を使っている\n- 各推奨に含まれる情報: 関数の ARN、推奨の EC2 インスタンスタイプとメモリ対 vCPU 比、現在の推定コスト、LMI での推定コスト、推定削減額\n- 提供リージョンは米国東部(バージニア北部)、米国西部(オレゴン)、欧州(アイルランド)、欧州(ミラノ)\n- 対象のサポートプランをお持ちなら、Trusted Advisor コンソールで他のコスト最適化チェックと一緒に確認できる\n\n## まとめ\n\n- Trusted Advisor が Lambda Event Functions の LMI 移行を推奨\n- 推奨には推奨インスタンスタイプ、推定コスト、推定削減額が含まれる\n- 現在は 4 リージョンで提供\n\nLambda の請求額が気になっているみんなに刺さるよ！",
+  "title_en": "Lambda now gives cost optimization recommendations for Event Functions",
+  "summary_en": "AWS Trusted Advisor now recommends Event Functions that could cost less on Lambda Managed Instances.",
+  "body_md_en": "Hi everyone, it's Shii-chan! This Trusted Advisor update is a good prompt to review Lambda costs.\n\n## What was announced?\n\nAWS What's New announced that AWS Lambda now provides cost optimization recommendations for Event Functions in AWS Trusted Advisor. They identify on-demand functions where moving to Lambda Managed Instances (LMI) is estimated to reduce costs, and provide configuration guidance for running on LMI.\n\n## The story so far\n\nTo decide whether a function suited LMI, you had to analyze invocation patterns, estimate LMI costs, and choose the instance type and memory-to-vCPU ratio yourself. That manual work added overhead and delayed savings.\n\n## What changes\n\nLambda now automatically analyzes the invocation patterns, duration, and resource utilization of your high-volume Event Functions and recommends those where LMI is estimated to reduce costs. You can use the recommended configuration to run on LMI without sizing it yourself.\n\n## Dive Deep\n\n- LMI lets you run Lambda functions on Amazon EC2 instances while keeping Lambda's operational simplicity, with EC2 pricing options such as Savings Plans and Reserved Instances\n- Estimates come from a simulation of each function's invocation patterns, using public Lambda pricing and EC2 On-Demand pricing\n- Each recommendation includes the function ARN, recommended EC2 instance type and memory-to-vCPU ratio, estimated current cost, estimated LMI cost, and estimated savings\n- Available in US East (N. Virginia), US West (Oregon), Europe (Ireland), and Europe (Milan)\n- With an eligible AWS Support plan, you can see them in the Trusted Advisor console alongside other cost optimization checks\n\n## Wrap-up\n\n- Trusted Advisor recommends LMI for Lambda Event Functions\n- Recommendations include instance type, estimated costs, and savings\n- Currently in four Regions\n\nThis is for anyone watching their Lambda bill!",
+  "emotion": "happy",
+  "importance": 4,
+  "tags": [
+    "aws",
+    "serverless",
+    "devops"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-lambda-cost-optimization-recommendations/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Lambda now provides cost optimization recommendations for Event Functions",
+  "published_at": "2026-11-20T19:00:00+00:00"
+}

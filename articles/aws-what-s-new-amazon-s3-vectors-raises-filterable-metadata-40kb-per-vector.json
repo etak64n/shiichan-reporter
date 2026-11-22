@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-s3-vectors-raises-filterable-metadata-40kb-per-vector",
+  "title": "S3 Vectors のフィルタ可能メタデータが 2 KB から 40 KB に大幅アップ！",
+  "summary": "Amazon S3 Vectors が、ベクトルあたり最大 40 KB のフィルタ可能メタデータに対応。従来の 2 KB から大きく増えて、RAG などで絞り込める項目が増えるよ。",
+  "body_md": "みんな、しぃちゃんだよ！S3 Vectors の上限がドーンと上がったよ！\n\n## なにが発表されたの？\n\nAWS What's New で、Amazon S3 Vectors がベクトルあたり最大 40 KB のフィルタ可能メタデータをサポートしたと発表されたよ。これまでは 2 KB だったの。\n\n## 今までどうだったの？\n\nフィルタに使えるメタデータが 2 KB だったから、ベクトルに付けて絞り込みに使える属性の量が限られていたよ。\n\n## これで何が変わるの？\n\nカテゴリ、権限、タイムスタンプ、説明タグなど、より多くの属性をベクトルに付けてフィルタできるようになるよ。RAG(検索拡張生成)、エージェント、セマンティック検索のアプリで、より多くのフィールドで結果を絞り込めるの。\n\n## 深く潜ってみよう\n\n- S3 Vectors は、Amazon S3 上でベクトルを保存・クエリするネイティブ機能で、10 億ベクトル規模に対応したコスト最適化ベクトルストレージ\n- 新しいベクトルバケットのインデックスは、高い上限がデフォルトで使える。PutVectors での書き込みや QueryVectors でのフィルタクエリの方法は変わらない\n- 既存のインデックスで高い上限を使うには、UpdateIndexMode API でインデックスを拡張インデックスモード(enhanced index mode)にインプレースで更新する\n- 追加料金なし。S3 Vectors が使えるすべてのリージョンで利用可能\n- AWS CLI、AWS SDK、Amazon S3 コンソールから使える\n\n## まとめ\n\n- フィルタ可能メタデータが 2 KB から 40 KB へ\n- 新規インデックスはデフォルトで対応、既存は UpdateIndexMode で更新\n- 追加料金なし\n\nRAG のメタデータフィルタが足りなくて困っていたみんなに刺さるよ！",
+  "title_en": "Amazon S3 Vectors raises the filterable metadata limit to 40 KB per vector",
+  "summary_en": "Amazon S3 Vectors now supports up to 40 KB of filterable metadata per vector, up from 2 KB.",
+  "body_md_en": "Hi everyone, it's Shii-chan! The S3 Vectors limit just went way up!\n\n## What was announced?\n\nAWS What's New announced that Amazon S3 Vectors now supports up to 40 KB of filterable metadata per vector, up from 2 KB.\n\n## The story so far\n\nWith only 2 KB of filterable metadata, the amount of attributes you could attach to a vector and filter on was limited.\n\n## What changes\n\nYou can attach and filter on more attributes per vector, such as category, permissions, timestamps, and descriptive tags, so your retrieval-augmented generation (RAG), agentic, and semantic-search applications can narrow results by more of the fields that matter.\n\n## Dive Deep\n\n- S3 Vectors provides native support to store and query vectors in Amazon S3, with cost-optimized vector storage at billion-vector scale\n- Indexes in new vector buckets support the higher limit by default, with no change to how you write vectors with PutVectors or run filtered queries with QueryVectors\n- To use the higher limit on an existing index, update it in place to enhanced index mode with the UpdateIndexMode API\n- No additional cost; available in all Regions where S3 Vectors is available\n- You can get started with the AWS CLI, AWS SDKs, or the Amazon S3 console\n\n## Wrap-up\n\n- Filterable metadata goes from 2 KB to 40 KB\n- New indexes get it by default; existing ones use UpdateIndexMode\n- No additional cost\n\nThis is for anyone who ran out of metadata room for RAG filters!",
+  "emotion": "energetic",
+  "importance": 5,
+  "tags": [
+    "aws",
+    "ai"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-s3-vectors-raises-filterable-metadata-40kb-per-vector/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon S3 Vectors raises the filterable metadata limit to 40 KB per vector",
+  "published_at": "2026-11-20T19:00:00+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-transform-ui-windows",
+  "title": "AWS Transform が ASP.NET のサードパーティ UI 部品の移植に対応したよ！",
+  "summary": "AWS Transform の ASP.NET サイト移行で、サードパーティ UI コンポーネントへの依存を検出し、OSS 部品への置き換えかベンダーライブラリ継続かを選べるようになったよ。",
+  "body_md": "おつかれさま、しぃちゃんだよ！レガシー .NET の移行をラクにしてくれる、AWS Transform のアップデートだよ！\n\n## なにが発表されたの？\n\nAWS What's New で、AWS Transform による ASP.NET Web サイトのモダナイズで、サードパーティ UI コンポーネントの移植(ポーティング)が GA になったと発表されたよ。\n\n## 今までどうだったの？\n\nAWS Transform は、レガシーな ASP.NET の Web サイトを ASP.NET Core の UI フレームワーク向けに書き換えてくれるよ。でも古いサイトは有名なサードパーティ製 UI ライブラリに依存していることが多くて、そこの扱いが移行の悩みどころだったと思うの(ここは推測だよ)。\n\n## これで何が変わるの？\n\nモダナイズ中に AWS Transform for .NET のエージェントが、人気のサードパーティ UI ライブラリへの依存を見つけて、次の 2 つの選択肢を出してくれるようになったよ。\n\n- OSS だけを使いたい人向け: 独自のコントロールを、移行先 UI フレームワーク上の Microsoft ネイティブまたはオープンソースのコントロールに置き換え、元の依存を取り除く\n- ベンダーのライブラリを使い続けたい人向け: コードコメントと次のステップの手順を追加して、移行先 UI フレームワーク上の同等のベンダーライブラリへの移行を案内する\n\n後者の場合は、ベンダーとのライセンス契約をした上で、AI コーディングコンパニオンを使って移植を仕上げる流れだよ。ライセンス費用のかからない構成に寄せたいのか、ベンダーと付き合い続けたいのかを選べるのがポイントだね！\n\n## 深く潜ってみよう\n\n- 追加料金なしで使える\n- AWS Transform が提供されている 8 リージョンすべてで利用可能: 米国東部(バージニア北部)、カナダ(中部)、アジアパシフィック(ムンバイ・ソウル・シドニー・東京)、欧州(フランクフルト・ロンドン)\n- 詳細は AWS Transform ユーザーガイドの「Porting UI layer code」を見てね\n\n## まとめ\n\n- ASP.NET 移行時にサードパーティ UI 部品への依存を自動で検出\n- OSS・Microsoft ネイティブ部品への置き換え、またはベンダーライブラリ継続のどちらかを選べる\n- 追加コストなし、8 リージョンで利用可能\n\n古い ASP.NET サイトのモダナイズを抱えているみんなに刺さるよ！",
+  "title_en": "AWS Transform now ports third-party UI components when modernizing ASP.NET sites",
+  "summary_en": "AWS Transform now detects third-party UI library dependencies in legacy ASP.NET sites and lets you either swap to open-source components or keep your vendor libraries.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Here's an update to AWS Transform that makes legacy .NET migration easier.\n\n## What was announced?\n\nAWS What's New announced the general availability of third-party UI component porting for ASP.NET web site modernization in AWS Transform.\n\n## The story so far\n\nAWS Transform rewrites legacy ASP.NET web sites for ASP.NET Core UI frameworks. Old sites often depend on popular third-party UI libraries, which I'd guess is a tricky part of migrating (that's my own inference, not from the announcement).\n\n## What changes\n\nWhen the AWS Transform for .NET modernization agent finds a dependency on a popular third-party UI library, it now offers two options:\n\n- For customers who require open-source software only: the agent replaces each proprietary control with a Microsoft-native or open-source control on the target UI framework and removes the original dependency\n- For customers who want to keep vendor libraries: the agent adds code comments and next-step instructions for moving to an equivalent vendor library on the target UI framework\n\nWith the second option, you arrange licensing with the vendor and finish the port using an AI coding companion.\n\n## Dive Deep\n\n- Available at no additional cost\n- Available in all eight AWS Regions where AWS Transform is offered: US East (N. Virginia), Canada (Central), Asia Pacific (Mumbai, Seoul, Sydney, Tokyo), and Europe (Frankfurt, London)\n- See \"Porting UI layer code\" in the AWS Transform User Guide for details\n\n## Wrap-up\n\n- Third-party UI dependencies are detected automatically during ASP.NET migration\n- Choose between open-source and Microsoft-native replacements or keeping vendor libraries\n- No extra cost, available in eight Regions\n\nThis is for anyone with a legacy ASP.NET site to modernize!",
+  "emotion": "happy",
+  "importance": 4,
+  "tags": [
+    "aws",
+    "devops",
+    "ai"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-transform-ui-windows/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Transform announces UI component modernization for Windows web applications",
+  "published_at": "2026-11-20T16:30:00+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-billing-cost-management-apis-payment-status",
+  "title": "AWS の支払い状況を API で確認できるように！未払い請求書の監視も自動化",
+  "summary": "AWS Billing and Cost Management に、残高・請求書・支払い方法の状態を SDK や CLI で取得できる新 API が登場。経理チェックを自動化できるよ！",
+  "body_md": "おつかれさま、しぃちゃんだよ！今日は請求まわりの API のお知らせだよ！\n\n## なにが発表されたの？\n\nAWS What's New で、AWS Billing and Cost Management に、支払い情報を AWS SDK と AWS CLI で確認できる新しい API が追加されたと発表されたよ。自分のツールからでも、AI エージェント経由でも呼び出せるの。\n\n## 今までどうだったの？\n\n経理チームは、期限超過の請求書を探したり、支払いと請求書を突き合わせたり、支払い方法が有効か確認したりするために、コンソールにサインインする必要があったよ。\n\n## これで何が変わるの？\n\n次のようなことが API で確認できるよ！\n\n- アカウントの残高\n- 支払い期限が来た(または過ぎた)請求書\n- 各請求書に適用された支払いとクレジットメモ\n- アカウント上の支払い方法が有効かどうか\n\n買掛金システムと連携して、期限超過残高の監視や AWS 請求書の突合を自分のタイミングで自動化できるよ。\n\n## 深く潜ってみよう\n\n紹介されている API はこれだよ。\n\n- GetFinancialRecord\n- BatchGetFinancialRecord\n- ListFinancialRecords\n- GetAccountBalance\n- GetPaymentInstrument\n- ListPaymentInstruments\n\nAPI は米国東部(バージニア北部)リージョンで提供されていて、すべての商用 AWS リージョンのお客さんが使えるよ。詳細は AWS Payments API Reference を見てね。\n\n## まとめ\n\n- 残高・請求書・支払い・支払い方法を API で取得できる\n- 期限超過の監視や突合を自動化できる\n- AI エージェントからの利用も想定されている\n\nAWS の支払い管理を手作業で追っているみんなに刺さるよ！",
+  "title_en": "AWS Billing and Cost Management now has APIs to track payment status",
+  "summary_en": "New AWS Billing and Cost Management APIs let you check balances, invoices, payments, and payment methods through the AWS SDKs and CLI.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today's news is about billing APIs.\n\n## What was announced?\n\nAWS What's New announced new AWS Billing and Cost Management APIs that let you view your payment information through the AWS SDKs and the AWS CLI. You can call them from your own tools or through an AI agent.\n\n## The story so far\n\nFinance teams had to sign in to the console to find past-due invoices, match payments to invoices, or check whether a payment method was still active.\n\n## What changes\n\nYou can check these through APIs:\n\n- Your account balance\n- Invoices that are due or past due\n- Which payments and credit memos were applied to each invoice\n- Whether the payment methods on your account are active\n\nYou can integrate with your accounts payable systems to monitor past-due balances and reconcile AWS invoices on your own schedule.\n\n## Dive Deep\n\nThe APIs mentioned:\n\n- GetFinancialRecord\n- BatchGetFinancialRecord\n- ListFinancialRecords\n- GetAccountBalance\n- GetPaymentInstrument\n- ListPaymentInstruments\n\nThe APIs are available in the US East (N. Virginia) Region and to customers in all commercial AWS Regions. See the AWS Payments API Reference.\n\n## Wrap-up\n\n- Balances, invoices, payments, and payment methods are available via API\n- Past-due monitoring and reconciliation can be automated\n- Use from AI agents is also called out\n\nThis is for anyone tracking AWS payments by hand!",
+  "emotion": "happy",
+  "importance": 4,
+  "tags": [
+    "aws",
+    "devops",
+    "business"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-billing-cost-management-apis-payment-status/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Billing and Cost Management now offers APIs to track payment status",
+  "published_at": "2026-11-20T18:30:00+00:00"
+}

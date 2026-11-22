@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-pricing-calculator-api",
+  "title": "Pricing Calculator の新 API で、ワークロードのコストを 1 回の呼び出しで見積もれるよ！",
+  "summary": "AWS Pricing Calculator に GetUsageLinesEstimatedCost API が登場。最大 500 行の使用量から見積もりを保存せずにすぐ取得できるよ。",
+  "body_md": "こんにちは、しぃちゃんだよ！設計しながらコストが分かる、便利な API のお知らせだよ！\n\n## なにが発表されたの？\n\nAWS What's New で、AWS Pricing Calculator に新 API「GetUsageLinesEstimatedCost」が追加されたと発表されたよ。計画中のワークロードの見積もりコストを、1 回の API 呼び出しで返してくれるの。\n\n## 今までどうだったの？\n\nPricing Calculator のワークロード見積もりでは、見積もりを作ってアカウントに保存する必要があったよ。GetUsageLinesEstimatedCost は、保存せずにその場でコストを返して、自分のツールやワークフローの中で直接使えるの。\n\n## これで何が変わるの？\n\n設計をデプロイする前にいくらかかるかを確認したり、AI コーディングエージェントが設計を手伝いながら API でワークロードの価格を見積もったりできるよ。\n\n## 深く潜ってみよう\n\n- 1 回のリクエストで最大 500 の使用量行(usage lines)を送れる\n- 料金タイプは 3 つから選べる: パブリックなオンデマンド料金、割引適用後の自分の料金、割引に加えて Savings Plans とリザーブドインスタンスを適用した自分の料金\n- 各行のコストと合計が返ってくる\n- 追加料金なしで GA。AWS GovCloud (US) と中国リージョンを除くすべてのリージョンで利用可能\n- 詳細は AWS Billing and Cost Management API Reference の GetUsageLinesEstimatedCost を見てね\n\n## まとめ\n\n- 見積もりを保存せず、1 回の API 呼び出しでコストを取得\n- 最大 500 行、3 種類の料金タイプ\n- 無料で、GovCloud と中国リージョン以外で利用可能\n\nIaC やエージェントで設計とコスト試算をつなげたいみんなに刺さるよ！",
+  "title_en": "AWS Pricing Calculator now estimates workload costs through a new API",
+  "summary_en": "AWS Pricing Calculator adds GetUsageLinesEstimatedCost, which returns an estimated cost for up to 500 usage lines in one call without saving an estimate.",
+  "body_md_en": "Hello, it's Shii-chan! Here is a handy API that brings cost estimates into your design flow.\n\n## What was announced?\n\nAWS What's New announced GetUsageLinesEstimatedCost, a new AWS Pricing Calculator API that returns the estimated cost of a planned workload in a single API call.\n\n## The story so far\n\nWorkload estimates in Pricing Calculator required you to create and save an estimate in your account. GetUsageLinesEstimatedCost returns a cost on demand, directly in your own tools and workflows, without saving anything.\n\n## What changes\n\nYou can check what a design will cost before you deploy it, or let an AI coding agent call the API to price a workload while it helps you design.\n\n## Dive Deep\n\n- Send up to 500 usage lines in one request\n- Choose from three rate types: public On-Demand rates, your rates after discounts, or your rates after discounts plus Savings Plans and Reserved Instances\n- The API returns the cost of each line and the total\n- Generally available at no additional charge in all AWS Regions except AWS GovCloud (US) and China\n- See GetUsageLinesEstimatedCost in the AWS Billing and Cost Management API Reference\n\n## Wrap-up\n\n- Get costs in one API call without saving an estimate\n- Up to 500 lines and three rate types\n- Free, in all Regions except GovCloud and China\n\nThis is for anyone connecting design and cost estimation through IaC or agents!",
+  "emotion": "smug",
+  "importance": 4,
+  "tags": [
+    "aws",
+    "devops",
+    "business"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-pricing-calculator-api/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Pricing Calculator now estimates workload costs through a new API",
+  "published_at": "2026-11-20T18:35:00+00:00"
+}

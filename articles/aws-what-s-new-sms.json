@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-sms",
+  "title": "AWS の利用上限アラートが SMS でも届くようになったよ！",
+  "summary": "新しい AWS エクスペリエンスの Paid プランで、支出上限(スペンドリミット)のアラートを SMS でも受け取れるようになったよ。",
+  "body_md": "こんにちは、しぃちゃんだよ！うっかり課金が怖いみんなに、嬉しいお知らせだよ！\n\n## なにが発表されたの？\n\nAWS What's New で、新しい AWS エクスペリエンスの Paid プランを使っているビルダーが、スペンドリミット(支出上限)のアラートをテキストメッセージ(SMS)で受け取れるようになったと発表されたよ。これまでのメール通知に加えてだよ。\n\n## 今までどうだったの？\n\nスペンドリミットは、プロジェクトの月額コストの上限を設定するもので、上限に近づくと通知が送られて、上限に達するとプロジェクトは自動的に一時停止されるよ。でも、メールは受信箱から離れていると気づかれにくくて、プロジェクトが停止されるまでに対応する時間が少なくなることがあったの。\n\n## これで何が変わるの？\n\nプロジェクトの実際のコストが上限の 90% に達したときに、SMS が届くよ。時間の余裕があるうちに、上限を引き上げたり、不要なリソースを止めたりできるの。\n\n## 深く潜ってみよう\n\n- 有効にするには、AWS Settings で携帯電話番号を認証して、スペンドリミットのテキストアラートをオンにする\n- テキストアラートは認証済みの番号にのみ送られる。いつでもオプトアウト可能\n- 追加料金なし。対象は、プエルトリコ、グアム、米領バージン諸島、米領サモアを含む米国の電話番号\n\n## まとめ\n\n- スペンドリミットのアラートが SMS でも届く(Paid プラン)\n- コストが上限の 90% に達したときに通知\n- 現状は米国の電話番号が対象\n\nAWS のコストを気にしている個人開発のみんなは、設定を確認してみてね！",
+  "title_en": "Spend limit alerts in the new AWS experience now support SMS",
+  "summary_en": "Builders on the Paid plan in the new AWS experience can now receive spend limit alerts by SMS in addition to email.",
+  "body_md_en": "Hello, it's Shii-chan! Here is good news for anyone worried about surprise bills.\n\n## What was announced?\n\nAWS What's New announced that builders using the new AWS experience on the Paid plan can now receive spend limit alerts by text message (SMS), alongside existing email notifications.\n\n## The story so far\n\nA spend limit sets the maximum monthly cost for a project. Notifications go out as a project approaches its limit, and AWS automatically pauses the project when it reaches the limit. Email alerts can go unnoticed when you're away from your inbox, leaving little time to respond before a project is paused.\n\n## What changes\n\nYou get a text message when a project's actual costs reach 90% of its spend limit, so you have time to act, such as raising the limit or stopping resources you don't need.\n\n## Dive Deep\n\n- To turn it on, verify your mobile phone number in AWS Settings and turn on text alerts for spend limits\n- Text alerts are only sent to verified numbers, and you can opt out at any time\n- No additional charge; it applies to US phone numbers, including Puerto Rico, Guam, the US Virgin Islands, and American Samoa\n\n## Wrap-up\n\n- Spend limit alerts now arrive by SMS too (Paid plan)\n- You are notified when costs reach 90% of the limit\n- Currently for US phone numbers\n\nIf you build on AWS on your own, check your settings!",
+  "emotion": "happy",
+  "importance": 3,
+  "tags": [
+    "aws",
+    "business"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/sms/",
+  "source_name": "AWS What's New",
+  "og_title": "Spend limits in the new AWS experience now support SMS alerts",
+  "published_at": "2026-11-20T19:03:00+00:00"
+}

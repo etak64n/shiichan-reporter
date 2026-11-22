@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-stacksets-custom-execution-roles",
+  "title": "StackSets のサービスマネージド型でカスタム実行ロールが使えるように！ネストスタックも OK",
+  "summary": "CloudFormation StackSets のサービスマネージド型スタックセットがカスタム実行ロールに対応。権限をアカウントごとに絞れて、ネストスタック・マクロ・トランスフォームも使えるようになったよ。",
+  "body_md": "みんな、しぃちゃんだよ！今日は CloudFormation StackSets のアップデートだよ！\n\n## なにが発表されたの？\n\nAWS What's New で、AWS CloudFormation StackSets がサービスマネージド型スタックセットのカスタム実行ロールに対応したと発表されたよ。各ターゲットアカウントで StackSets が使う権限の範囲を絞れるようになるの。\n\n## 今までどうだったの？\n\nデフォルトでは、サービスマネージド型スタックセットは各アカウントのロールを使って、テンプレート内のあらゆるリソースを追加設定なしでプロビジョニングできるよ。便利だけど権限が広いし、ネストスタックなどは使えなかったの。そのデフォルトは今回も引き続き使えるよ。\n\n## これで何が変わるの？\n\n- 各アカウントで StackSets ができることを自分で定義して、権限を絞れる\n- ネストスタック、マクロ、トランスフォームもサービスマネージド型スタックセットで使えるので、個別のスタックで使っている再利用テンプレートを組織全体にデプロイできる\n\n## 深く潜ってみよう\n\n- IAM ロール(実行ロール)を定義するテンプレートを渡すと、デプロイの前に StackSets が各アカウントにそのロールを作成する\n- 例: S3 バケットを作るスタックセットなら、CloudFormation と Amazon S3 の権限だけに限定した実行ロールを使える\n- 実行ロールのテンプレートを更新すると、デプロイ済みのすべてのアカウントでロールが更新される\n- 使い方: CloudFormation コンソールでスタックセット作成時に「Set execution role」を選ぶか、AWS CLI / SDK を使う\n- 追加料金なし。すべての商用リージョン、AWS GovCloud (US)、中国リージョンで利用可能\n\n## まとめ\n\n- サービスマネージド型スタックセットでカスタム実行ロールが使える\n- 最小権限に近づけられる\n- ネストスタック・マクロ・トランスフォームも利用可能\n\nマルチアカウント運用で権限管理にこだわりたいみんなに刺さるよ！",
+  "title_en": "StackSets service-managed stack sets now support custom execution roles and nested stacks",
+  "summary_en": "CloudFormation StackSets now supports custom execution roles for service-managed stack sets, letting you scope permissions per account and use nested stacks, macros, and transforms.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today we have a CloudFormation StackSets update.\n\n## What was announced?\n\nAWS What's New announced that AWS CloudFormation StackSets now supports custom execution roles for service-managed stack sets, so you can scope the permissions StackSets uses in each target account.\n\n## The story so far\n\nBy default, service-managed stack sets use a role in each account that can provision any resource in a template without additional setup. That is convenient but broad, and it did not allow things like nested stacks. That default remains available.\n\n## What changes\n\n- You define what StackSets can do in each account, scoping permissions down\n- You can use nested stacks, macros, and transforms in service-managed stack sets, so reusable templates you use for individual stacks can be deployed across your organization\n\n## Dive Deep\n\n- You provide a template that defines an IAM role (the execution role), and StackSets creates it in each account before deploying\n- Example: a stack set that creates S3 buckets can use an execution role limited to CloudFormation and Amazon S3 permissions\n- When you update the execution role template, StackSets updates the role in every account it deployed to\n- To get started, choose \"Set execution role\" when you create a stack set in the CloudFormation console, or use the AWS CLI or SDKs\n- No additional charge; available in all commercial Regions, AWS GovCloud (US), and China Regions\n\n## Wrap-up\n\n- Custom execution roles work with service-managed stack sets\n- Permissions can be scoped closer to least privilege\n- Nested stacks, macros, and transforms are supported\n\nThis is for multi-account teams who care about permission scoping!",
+  "emotion": "happy",
+  "importance": 4,
+  "tags": [
+    "aws",
+    "devops",
+    "security"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/stacksets-custom-execution-roles/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS CloudFormation Service-Managed StackSets adds custom execution roles with nested stacks support",
+  "published_at": "2026-11-20T17:45:00+00:00"
+}
