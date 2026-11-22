@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-data-hub-billing-cost-management-preview",
+  "title": "AWS の請求データを SQL で！Billing and Cost Management に「Data Hub」がプレビュー登場",
+  "summary": "AWS What's New によると、AWS Billing and Cost Management に Data Hub がプレビューで登場したよ。FinOps Agent が、13 か月分の時間単位・リソース単位のコストデータを SQL で調べられるんだって！",
+  "body_md": "やっほー、しぃちゃんだよ！今日はクラウド料金の「なんでこの金額？」を調べやすくしてくれるニュースだよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Billing and Cost Management の「Data Hub」のプレビューが発表されたよ。AWS FinOps Agent が、コストと使用量のデータを SQL でクエリするためのマネージドなデータレイヤーなの。\n\n## これで何が変わるの？\n\nプレビュー中の Data Hub は AWS FinOps Agent 向けで、エージェントは次のようなことをできるよ。\n\n- コストの変化の裏にある個々のリソースを特定する\n- チームやコスト配分タグ別に支出を分解する\n- リソースのコストと使用量が 1 時間ごとにどう変わるかを示す\n\nしかも、データエクスポートの設定や、コストデータのパイプラインの構築・保守をしなくても、これらの答えが得られるんだって。\n\n## 深く潜ってみよう\n\n- 13 か月分の、時間単位・リソース単位のコストと使用量データを、公開されている CUR 2.0 スキーマで提供。リソース識別子とコスト配分タグを含む\n- AWS がデータを用意して、毎日更新し、新しいサービス・コミットメント・料金タイプが増えてもスキーマを維持してくれる\n- 管理アカウントからセットアップすると、組織内のアカウントのコストと使用量データをカバー\n- プレビューは米国東部(バージニア北部)リージョンで、全リージョンのコストと使用量データを対象にする\n- プレビュー中は Data Hub の料金はかからない\n\n始めるには、Billing and Cost Management コンソールの Data Hub ページか、AWS FinOps Agent コンソールを開いてね。\n\n## まとめ\n\n- Billing and Cost Management に Data Hub がプレビューで登場\n- AWS FinOps Agent が SQL でコスト・使用量データを調べられる\n- 13 か月分の時間単位・リソース単位データ(CUR 2.0 スキーマ)\n- プレビュー中は無料\n\nFinOps やコスト最適化に取り組む人に刺さるよ！\n",
+  "title_en": "Query AWS Cost Data with SQL: Data Hub Arrives in Billing and Cost Management Preview!",
+  "summary_en": "According to AWS What's New, Data Hub is now in preview in AWS Billing and Cost Management. AWS FinOps Agent can query 13 months of hourly, resource-level cost data with SQL!",
+  "body_md_en": "Hi, it's Shiichan! Today's news makes it easier to answer \"why is my cloud bill this high?\"\n\n## What was announced?\n\nAWS What's New announced the preview of Data Hub in AWS Billing and Cost Management, a managed data layer that enables AWS FinOps Agent to query cost and usage data with SQL.\n\n## What changes\n\nIn preview, Data Hub is available to AWS FinOps Agent, so the agent can:\n\n- Identify the individual resources behind a cost change\n- Break down spend by team or cost allocation tag\n- Show how a resource's cost and usage change hour by hour\n\nYou get these answers without setting up a data export or building and maintaining a cost data pipeline.\n\n## Dive Deep\n\n- 13 months of hourly, resource-level cost and usage data in the published CUR 2.0 schema, including resource identifiers and cost allocation tags\n- AWS provisions the data, refreshes it daily and maintains the schema as new services, commitments and charge types are added\n- When set up from the management account, it covers cost and usage data across the accounts in your organization\n- The preview is in US East (N. Virginia) and covers cost and usage data across Regions\n- There is no charge for Data Hub during preview\n\nTo get started, use the Data Hub page in the Billing and Cost Management console or the AWS FinOps Agent console.\n\n## Wrap-up\n\n- Data Hub is in preview in Billing and Cost Management\n- AWS FinOps Agent can query cost and usage data with SQL\n- 13 months of hourly, resource-level data (CUR 2.0 schema)\n- Free during preview\n\nA good fit for anyone working on FinOps and cost optimization!\n",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/data-hub-billing-cost-management-preview/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS announces Data Hub in AWS Billing and Cost Management (preview)",
+  "tags": [
+    "aws",
+    "ai",
+    "devops"
+  ],
+  "published_at": "2026-11-20T20:30:00+00:00"
+}

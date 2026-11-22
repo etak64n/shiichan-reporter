@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-cognito-mrr-opt-in-regions",
+  "title": "Cognito のマルチリージョンレプリケーションが 16 リージョン追加！ケープタウンやミラノにもレプリケートできるよ",
+  "summary": "AWS What's New によると、Amazon Cognito のマルチリージョンレプリケーション(MRR)が、アジアパシフィックやヨーロッパ、中東、アフリカなどの追加リージョンに対応したよ。待機リージョンにユーザーデータを同期できるんだって！",
+  "body_md": "みんな、しぃちゃんだよ！今日は認証基盤の可用性に関するニュースだよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Cognito のマルチリージョンレプリケーション(MRR)が追加のリージョンに対応したと発表されたよ。MRR は、認証情報、ユーザープール設定、フェデレーション設定などのユーザーデータとマシンのアイデンティティデータを、指定した待機リージョンのセカンダリのユーザープールに、ほぼリアルタイムで同期する機能なの。\n\n## 今までどうだったの？\n\nこれまで MRR が使えたのは、16 の商用リージョンと AWS GovCloud (US) リージョンだったよ。\n\n## これで何が変わるの？\n\n待機リージョンにユーザーデータがあれば、プライマリのリージョンで障害が起きたときに、トラフィックをリダイレクトして認証を使い続けられるよ。今回のリージョン追加で、レジリエンス、データレジデンシー、コンプライアンスの要件に合うリージョンを選びやすくなるの。\n\n## 深く潜ってみよう\n\n新しく MRR でレプリケートできるようになったリージョンはこれだよ。\n\n- アジアパシフィック: ハイデラバード、香港、ジャカルタ、マレーシア、メルボルン、ニュージーランド、大阪、台北、タイ\n- カナダ西部(カルガリー)\n- ヨーロッパ: ミラノ、スペイン、チューリッヒ\n- イスラエル(テルアビブ)\n- メキシコ(中部)\n- アフリカ(ケープタウン)\n\n条件はこうだよ。\n\n- MRR は、Essentials または Plus 機能プランのユーザープール向けのアドオン\n- マルチリージョンの AWS KMS カスタマーマネージドキー(CMK)が必要\n\n提供リージョンの全リストは AWS Capabilities by Region で確認できて、手順と料金はデベロッパーガイドと料金ページに載っているよ。\n\n## まとめ\n\n- Cognito の MRR が、これまで 16 の商用リージョンと GovCloud だったところから、追加のリージョンに拡大\n- 待機リージョンにユーザーデータを同期して、障害時に認証を継続できる\n- Essentials または Plus プランのアドオンで、マルチリージョン KMS CMK が必須\n\n大阪などのリージョンを使って、認証の耐障害性を高めたい人に刺さるよ！\n",
+  "title_en": "Cognito Multi-Region Replication Reaches Osaka, Milan, Cape Town and More!",
+  "summary_en": "According to AWS What's New, Amazon Cognito multi-Region replication (MRR) now supports additional Regions across Asia Pacific, Europe, the Middle East, Africa and more. You can sync user data to a standby Region!",
+  "body_md_en": "Hi everyone, it's Shiichan! Today's news is about the availability of your authentication layer.\n\n## What was announced?\n\nAWS What's New announced that Amazon Cognito multi-Region replication (MRR) now supports additional AWS Regions. MRR synchronizes user and machine identity data, including credentials, user pool configurations and federation setups, to a secondary user pool in a standby Region you designate in near real-time.\n\n## The story so far\n\nPreviously, MRR was available in 16 commercial Regions and the AWS GovCloud (US) Regions.\n\n## What changes\n\nWith user data in the standby Region, you can redirect traffic and keep authentication available if there is a disruption in your primary Region. The new Regions help you meet resilience, data residency and compliance requirements in the Regions that best align with your needs.\n\n## Dive Deep\n\nNewly supported replication Regions:\n\n- Asia Pacific: Hyderabad, Hong Kong, Jakarta, Malaysia, Melbourne, New Zealand, Osaka, Taipei and Thailand\n- Canada West (Calgary)\n- Europe: Milan, Spain and Zurich\n- Israel (Tel Aviv)\n- Mexico (Central)\n- Africa (Cape Town)\n\nRequirements:\n\n- MRR is an add-on for user pools on the Essentials or Plus feature plans\n- It requires a multi-Region AWS KMS customer managed key (CMK)\n\nSee AWS Capabilities by Region for the full list of Regions, and the developer guide and pricing page for setup and pricing.\n\n## Wrap-up\n\n- Cognito MRR expands beyond the previous 16 commercial Regions and GovCloud\n- Sync user data to a standby Region to keep authentication available during disruptions\n- An add-on for Essentials or Plus plans, requiring a multi-Region KMS CMK\n\nA good fit for anyone who wants more resilient authentication using Regions such as Osaka!\n",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/cognito-mrr-opt-in-regions/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Cognito extends multi-Region replication to additional AWS Regions",
+  "tags": [
+    "aws",
+    "security",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-20T22:00:00+00:00"
+}

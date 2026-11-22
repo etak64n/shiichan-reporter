@@ -1,0 +1,21 @@
+{
+  "slug": "aws-what-s-new-aws-quick-enterprise-guardrails-preview",
+  "title": "AWS Quick に「エンタープライズガードレール」がプレビュー登場！プロンプトの安全管理を管理者が設定できるよ",
+  "summary": "AWS What's New によると、AWS Quick に管理者向けのエンタープライズガードレールがプレビューで追加されたよ。コンテンツフィルターや禁止トピック、PII 制御で、ユーザーのプロンプトを制御できるんだって！",
+  "body_md": "みんな、しぃちゃんだよ！今日は AI ワークスペースを会社で使うときに気になる「安全管理」のニュースだよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Quick にエンタープライズガードレールが入ったと発表されたよ。管理者が、ユーザーのプロンプトに対するコンテンツの安全性と機密情報の制御を設定できる機能で、プレビューでの提供なの。\n\n## これで何が変わるの？\n\n管理者は、ガードレールポリシーを個々のユーザー、企業の IdP グループ、またはアカウントのデフォルトに適用できるよ。たとえば、機密のプロジェクト名を含むプロンプトをブロックするポリシーを作って、IdP グループに割り当てる、といったことができるの。\n\n## 深く潜ってみよう\n\nポリシーは Quick の管理コンソールで作成するよ。使える制御はこれだよ。\n\n- コンテンツフィルター\n- 禁止トピック\n- ブロックする単語やフレーズ\n- プロンプト攻撃の検出\n- 特定の種類の個人を特定できる情報(PII)の制御\n\n適用の優先順位はこうなっているよ。\n\n- ユーザー単位のポリシーが、グループのポリシーとアカウントのデフォルトより優先\n- 複数のグループのポリシーが当てはまるときは、制限が重なる部分で厳しい設定を使って内容を組み合わせる\n\n検出のみ(detect-only)モードも用意されているよ。このモードでは、Quick がプロンプトを評価してポリシーに一致したものをログに残すだけで、リクエストはブロックしないの。本番のトラフィックでルールを試して、業務への影響を確かめながら調整できるよ。強制を有効にすると、一致したプロンプトをブロックして、ユーザーにメッセージを表示するんだって。検出された・ブロックされたイベントは Amazon CloudWatch Logs で確認できるよ。\n\nプレビューは、Professional と Enterprise プランの一部の Quick 顧客向けだよ。リージョンごとの提供状況は AWS Quick Regions を見てね。\n\n## まとめ\n\n- AWS Quick にプロンプト向けのエンタープライズガードレールがプレビューで追加\n- ユーザー、IdP グループ、アカウントのデフォルトにポリシーを適用できる\n- 検出のみモードで、ブロックせずに影響を確認してから強制できる\n- 検出とブロックのイベントは CloudWatch Logs で確認\n\nAWS Quick の導入を進める情報システム部門やセキュリティ担当に刺さるよ！\n",
+  "title_en": "Prompt Guardrails Arrive in AWS Quick Preview: Admins Can Control What Users Ask!",
+  "summary_en": "According to AWS What's New, AWS Quick now has enterprise guardrails in preview. Admins can control user prompts with content filters, denied topics and PII controls!",
+  "body_md_en": "Hi everyone, it's Shiichan! Today's news is about safety controls for using an AI workspace at work.\n\n## What was announced?\n\nAWS What's New announced enterprise guardrails in AWS Quick. Administrators get configurable content safety and sensitive-information controls for user prompts. It is available in preview.\n\n## What changes\n\nAdministrators can apply guardrail policies to individual users, to enterprise identity provider (IdP) groups, or set a policy as the account default. For example, an administrator can create a policy that blocks prompts containing confidential project names and assign it to an IdP group.\n\n## Dive Deep\n\nPolicies are created in the Quick administration console. Available controls:\n\n- Content filters\n- Denied topics\n- Blocked words and phrases\n- Prompt-attack detection\n- Controls for selected types of personally identifiable information (PII)\n\nPrecedence works like this:\n\n- User-level policies take precedence over group policies and account defaults\n- When multiple group policies apply, Quick combines their content restrictions, using the stricter setting where controls overlap\n\nThere is also a detect-only mode. In it, Quick evaluates user prompts and logs policy matches without blocking requests, so administrators can test rules against real production traffic, assess the impact on business workflows and refine policies. When enforcement is enabled, Quick blocks matching prompts and displays a message to the user. Detected and blocked events can be reviewed in Amazon CloudWatch Logs.\n\nThe preview is for select Quick customers on Professional and Enterprise plans. See AWS Quick Regions for availability by Region.\n\n## Wrap-up\n\n- AWS Quick gets enterprise guardrails for prompts, in preview\n- Apply policies to users, IdP groups or the account default\n- Detect-only mode lets you check the impact before enforcing\n- Events are reviewable in CloudWatch Logs\n\nA good fit for IT and security teams rolling out AWS Quick!\n",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-quick-enterprise-guardrails-preview/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Quick introduces enterprise guardrails (preview)",
+  "tags": [
+    "aws",
+    "ai",
+    "ai-safety",
+    "security"
+  ],
+  "published_at": "2026-11-20T20:30:00+00:00"
+}

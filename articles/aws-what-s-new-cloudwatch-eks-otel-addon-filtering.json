@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-cloudwatch-eks-otel-addon-filtering",
+  "title": "CloudWatch の EKS アドオンでテレメトリを絞れるように！使わないデータの取り込み料金にサヨナラ",
+  "summary": "AWS What's New によると、CloudWatch Observability EKS アドオンにテレメトリのフィルタリングが追加されたよ。名前空間・メトリクス名・ラベルを include / exclude リストで絞って、GB 単位の取り込み料金を減らせるみたい！",
+  "body_md": "こんにちは、しぃちゃんだよ！今日はお財布にやさしい Kubernetes 監視のニュースだよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon CloudWatch Observability EKS アドオンに「テレメトリのフィルタリング」が追加されたと発表されたよ。使っていないテレメトリの取り込みに料金を払わなくて済むようにする機能なの。\n\n## 今までどうだったの？\n\nアドオン経由のテレメトリは取り込み量(GB)で課金されるよ。原文の言い方だと、使っていないデータも含めて送ってしまうと、その分の料金がかかってしまう状態だったんだよね。\n\n## これで何が変わるの？\n\nクラスター全体に対して、include と exclude のリストを設定できるようになったよ。\n\n- 監視していない非本番の名前空間を除外できる\n- カーディナリティの高いメトリクスを名前で落とせる\n- すべてのリソースの全ラベルではなく、グルーピングに使うラベルだけを残せる\n\n取り込みが GB 課金だから、集める量が減ればそのまま支払いも減るよ。クラスターの状況が変わったら、アドオンの設定更新 1 回でフィルターを調整できるんだって。\n\n## 深く潜ってみよう\n\n- フィルタリングの対象は、名前空間、メトリクス名、Pod と Node のラベル\n- バージョン 8.0.0 以降の EKS アドオンと Helm チャートで利用可能\n- CloudWatch が OpenTelemetry メトリクスをサポートするすべての AWS リージョンで使える\n- アドオン経由のテレメトリは、Amazon EKS OpenTelemetry の取り込みレートで 1 GB あたり $0.08 の課金\n\n設定方法は、CloudWatch ユーザーガイドの「Amazon CloudWatch Observability EKS add-on」に載っているよ。\n\n## まとめ\n\n- EKS アドオンでテレメトリの include / exclude フィルターが使えるようになった\n- 名前空間・メトリクス名・ラベル単位で絞れる\n- 取り込みは $0.08 / GB なので、減らした分だけコスト削減\n- バージョン 8.0.0 以降が対象\n\nEKS の監視コストが気になる運用担当の人に刺さるアップデートだよ！\n",
+  "title_en": "Say Goodbye to Paying for Unused Telemetry: CloudWatch EKS Add-on Gets Filtering!",
+  "summary_en": "According to AWS What's New, the CloudWatch Observability EKS add-on now supports telemetry filtering. Include and exclude lists for namespaces, metric names and labels let you cut per-GB ingestion costs.",
+  "body_md_en": "Hello, it's Shiichan! Today's news is a wallet-friendly one for Kubernetes monitoring.\n\n## What was announced?\n\nAWS What's New announced telemetry filtering for the Amazon CloudWatch Observability EKS add-on, so you can stop paying to ingest telemetry you don't use.\n\n## The story so far\n\nTelemetry sent through the add-on is billed per GB ingested. Sending data you never look at meant paying for it anyway.\n\n## What changes\n\nYou can now set cluster-wide include and exclude lists.\n\n- Exclude non-production namespaces you don't monitor\n- Drop high-cardinality metrics by name\n- Keep only the labels you group by, rather than every label on every resource\n\nBecause ingestion is billed per GB, collecting less lowers your bill. As your clusters change, you can adjust filters with a single add-on configuration update.\n\n## Dive Deep\n\n- Filters apply to namespaces, metric names, and pod and node labels\n- Available in version 8.0.0 and later of the EKS add-on and Helm chart\n- Available in all AWS Regions where CloudWatch supports OpenTelemetry metrics\n- Telemetry sent through the add-on is charged at the Amazon EKS OpenTelemetry ingestion rate of $0.08 per GB\n\nSee \"Amazon CloudWatch Observability EKS add-on\" in the CloudWatch User Guide for setup.\n\n## Wrap-up\n\n- The EKS add-on now supports include and exclude telemetry filters\n- Filter by namespace, metric name and label\n- Ingestion costs $0.08 per GB, so collecting less saves money\n- Requires version 8.0.0 or later\n\nA good one for operators who worry about EKS monitoring costs!\n",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/cloudwatch-eks-otel-addon-filtering/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon CloudWatch Observability EKS add-on now supports telemetry filtering",
+  "tags": [
+    "aws",
+    "devops",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-20T19:52:00+00:00"
+}

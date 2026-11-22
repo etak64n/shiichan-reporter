@@ -1,0 +1,21 @@
+{
+  "slug": "aws-what-s-new-cloudwatch-eks-kubernetes-tools",
+  "title": "Karpenter も vLLM も KServe も！CloudWatch の EKS Container Insights に OSS ツールの組み込み監視が来たよ",
+  "summary": "AWS What's New によると、CloudWatch EKS Container Insights が Karpenter、KEDA、vLLM、KServe、SGLang、Ray、Knative Serving の組み込み監視に対応したよ。Prometheus や Grafana を自前で動かさなくてもダッシュボードが見られるんだって！",
+  "body_md": "こんにちは、しぃちゃんだよ！今日は EKS で AI 推論を動かしている人にうれしいニュースだよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon CloudWatch が EKS クラスター上のオープンソースツールの組み込み監視を発表したよ。使っているツールのダッシュボードが、Prometheus や Grafana を自分で動かさなくても手に入るの。\n\n対応しているツールはこれだよ。\n\n- Karpenter\n- KEDA\n- vLLM\n- KServe\n- SGLang\n- Ray\n- Knative Serving\n\n## これで何が変わるの？\n\nOTel Container Insights を有効にすると、監視が自動で始まるよ。\n\n- AI 推論ワークロードでは、モデルサーバーごとのキュー待ちリクエスト、time to first token、KV キャッシュ使用量が見える\n- オートスケーリングでは、失敗しているスケーラーと、スケールループにかかる時間が見える\n- すべてのメトリクスに Pod、ワークロード、Node のタグが付くから、遅いモデルサーバーが動いている Node までたどれる\n\n## 深く潜ってみよう\n\n- バージョン 8.0.0 以降の EKS アドオンと Helm チャートで利用可能\n- CloudWatch が OpenTelemetry メトリクスをサポートするすべてのリージョンで使える\n- メトリクスは Amazon EKS OpenTelemetry の取り込みレートで 1 GB あたり $0.08 の課金\n\n始め方は、CloudWatch ユーザーガイドの「Solutions」に載っているよ。\n\n## まとめ\n\n- Karpenter、KEDA、vLLM、KServe、SGLang、Ray、Knative Serving の組み込み監視が追加\n- OTel Container Insights を有効にすれば自動で開始\n- 推論の遅延やスケーラーの失敗を、Node までたどって調べられる\n- バージョン 8.0.0 以降、$0.08 / GB\n\nEKS で vLLM や Karpenter を動かしている人に刺さるよ！\n",
+  "title_en": "Karpenter, vLLM, KServe and More: CloudWatch EKS Container Insights Adds Built-in OSS Monitoring!",
+  "summary_en": "According to AWS What's New, CloudWatch EKS Container Insights now has built-in monitoring for Karpenter, KEDA, vLLM, KServe, SGLang, Ray and Knative Serving. You get dashboards without running Prometheus or Grafana yourself!",
+  "body_md_en": "Hello, it's Shiichan! Today's news is good for anyone running AI inference on EKS.\n\n## What was announced?\n\nAWS What's New announced built-in monitoring in Amazon CloudWatch for open source tools running on your EKS clusters. You get dashboards for the tools you already use without running Prometheus or Grafana yourself.\n\nSupported tools:\n\n- Karpenter\n- KEDA\n- vLLM\n- KServe\n- SGLang\n- Ray\n- Knative Serving\n\n## What changes\n\nMonitoring starts automatically when you enable OTel Container Insights.\n\n- For AI inference workloads, you can see queued requests, time to first token and KV cache usage for each model server\n- For autoscaling, you can see which scalers are failing and how long your scale loop takes\n- CloudWatch tags every metric with its pod, workload and node, so you can trace a slow model server to the node it runs on\n\n## Dive Deep\n\n- Available in version 8.0.0 and later of the add-on and Helm chart\n- Available in all Regions where CloudWatch supports OpenTelemetry metrics\n- Metrics are charged at the Amazon EKS OpenTelemetry ingestion rate of $0.08 per GB\n\nTo get started, see \"Solutions\" in the CloudWatch User Guide.\n\n## Wrap-up\n\n- Built-in monitoring added for Karpenter, KEDA, vLLM, KServe, SGLang, Ray and Knative Serving\n- Starts automatically once OTel Container Insights is enabled\n- Trace slow inference or failing scalers down to the node\n- Version 8.0.0 or later, $0.08 per GB\n\nA good fit if you run vLLM or Karpenter on EKS!\n",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/cloudwatch-eks-kubernetes-tools/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon CloudWatch EKS Container Insights now offers built-in monitoring for open source Kubernetes tools",
+  "tags": [
+    "aws",
+    "ai",
+    "infrastructure",
+    "devops"
+  ],
+  "published_at": "2026-11-20T20:47:00+00:00"
+}

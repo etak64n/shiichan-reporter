@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-demand-center-partner-central",
+  "title": "Marketing Central の後継「Demand Center」が AWS Partner Central に！キャンペーンを AI で企画から効果測定まで",
+  "summary": "AWS What's New によると、AWS Partner Central に Demand Center が登場したよ。Marketing Central と MDF の機能を統合して、キャンペーンの計画・実行・資金調達・効果測定を AI 支援の 1 つの体験にまとめたんだって！",
+  "body_md": "こんにちは、しぃちゃんだよ！今日も AWS パートナー向けのニュースを紹介するね。\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Partner Central の「Demand Center」が発表されたよ。デマンドジェネレーションのキャンペーンを、計画、実行、資金調達、効果測定まで、AI 支援の 1 つの体験で進められるの。\n\n## 今までどうだったの？\n\nDemand Center は Marketing Central の後継で、Marketing Central と MDF の機能を 1 つにまとめたものだよ。Partner Central、CRM、AI エージェントのどこからでも使えるんだって。\n\n## これで何が変わるの？\n\n- AI によるキャンペーン作成で、メインとなるアセットと配信用アセットを複数言語で数分で作れる。参考資料、URL、説明文からコンテンツを生成し、メール、ソーシャル、バナー広告で配信できる\n- リードをアップロードすると、傾向シグナルと推奨される次のアクションで拡充される\n- すぐ使える Partner Ready Campaign のキットを選べるし、Agency Connect で AWS が審査した代理店とつながれる\n- ACE の成約済み案件から、AI でケーススタディを生成できる。キャンペーンに含むリードに合わせてコンテンツも調整できる\n\n## 深く潜ってみよう\n\n- CRM やマーケティング自動化ツールとは、エージェント同士(agent-to-agent)で連携できる\n- Partner Central MCP サーバー経由で、AWS Quick などのエージェントの中から Demand Center を使える\n- キャンペーンから売上までの成果は、Partner Analytics で追える\n\n使い始めるには、AWS Partner Central にサインインして Demand Center を選んでね。\n\n## まとめ\n\n- Demand Center は Marketing Central の後継で、MDF の機能も統合\n- AI で多言語のキャンペーンアセットとケーススタディを生成\n- Agency Connect や Partner Ready Campaign キットも使える\n- MCP サーバー経由で AI エージェントからも利用できる\n\nAWS パートナーのマーケティング担当に刺さるよ！\n",
+  "title_en": "Marketing Central Gets a Successor: Demand Center Comes to AWS Partner Central!",
+  "summary_en": "According to AWS What's New, Demand Center is now in AWS Partner Central. It brings Marketing Central and MDF capabilities together so partners can plan, launch, fund and measure campaigns in one AI-powered experience!",
+  "body_md_en": "Hello, it's Shiichan! Here's more news for AWS Partners.\n\n## What was announced?\n\nAWS What's New announced Demand Center in AWS Partner Central. Partners can plan, launch, fund and measure demand generation campaigns in one AI-powered experience.\n\n## The story so far\n\nDemand Center succeeds Marketing Central and brings together Marketing Central and MDF capabilities. You can work in Partner Central, in your CRM, or in your AI agents.\n\n## What changes\n\n- AI campaign creation produces hero and distribution assets in multiple languages in minutes. Generate content from reference materials, a URL or a description, and launch it across email, social and banner ads\n- Upload leads to get them enriched with propensity signals and recommended next actions\n- Choose ready-to-run Partner Ready Campaign kits or connect with AWS-vetted agencies through Agency Connect\n- Generate case studies with AI from ACE closed-won opportunities, and tailor campaign content to the leads in each campaign\n\n## Dive Deep\n\n- Connect your CRM or marketing automation tool agent-to-agent\n- Use Demand Center inside agents such as AWS Quick through the Partner Central MCP server\n- Track campaign-to-revenue performance in Partner Analytics\n\nTo get started, sign in to AWS Partner Central and select Demand Center.\n\n## Wrap-up\n\n- Demand Center succeeds Marketing Central and includes MDF capabilities\n- AI generates multilingual campaign assets and case studies\n- Agency Connect and Partner Ready Campaign kits are available\n- Usable from AI agents through the MCP server\n\nA good fit for partner marketing teams!\n",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/demand-center-partner-central/",
+  "source_name": "AWS What's New",
+  "og_title": "Demand Center now available in AWS Partner Central",
+  "tags": [
+    "aws",
+    "business",
+    "ai"
+  ],
+  "published_at": "2026-11-20T21:00:00+00:00"
+}

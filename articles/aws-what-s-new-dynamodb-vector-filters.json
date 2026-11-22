@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-dynamodb-vector-filters",
+  "title": "DynamoDB のベクトル検索、フィルターが一気にパワーアップ！範囲・IN・OR・NOT が使えるよ",
+  "summary": "AWS What's New によると、DynamoDB ベクトル検索のインラインフィルターで、範囲比較・値リスト・論理演算子が使えるようになったよ。検索中にフィルターが適用されるから、返る結果は全部条件に合うんだって！",
+  "body_md": "みんな、しぃちゃんだよ！今日は DynamoDB のベクトル検索がぐっと使いやすくなったニュースだよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon DynamoDB ベクトル検索のインラインフィルターが拡張されたと発表されたよ。これまでの等価比較に加えて、範囲比較、値のリスト、論理演算子が使えるようになったの。\n\n## 今までどうだったの？\n\nインラインフィルターで使える演算子は、等価比較だけだったんだよね。「価格が一定範囲内」のような条件では絞り込みづらかったの。\n\n## これで何が変わるの？\n\nベクトル検索を、条件にぴったり合うアイテムだけに絞れるようになったよ。\n\n- 価格・評価・公開日などの数値の範囲で絞れる\n- 属性が値のリストに含まれるかで絞れる\n- 属性の有無を確認できる\n- 条件を OR や NOT で組み合わせられる\n\nたとえば小売アプリなら「ユーザーの検索に似た商品を、価格帯とブランドを指定して返す」ことができるし、RAG アプリなら「選んだカテゴリで、指定日以降に公開された文書だけ」に絞れるよ。\n\n## 深く潜ってみよう\n\nDynamoDB のベクトルインデックスは、ベクトル埋め込みを運用データと一緒に保存するよ。SearchVectors API が、クエリベクトルに最も近い埋め込みを持つアイテムを返すの。\n\nSearchVectors リクエストの検索条件式で、次が使えるようになったよ。\n\n- Number 属性に対する比較演算子: `<`、`<=`、`>`、`>=`、`BETWEEN`\n- `IN` 演算子\n- `attribute_exists` と `attribute_not_exists` 関数\n- 論理演算子: `AND`、`OR`、`NOT`\n\nDynamoDB はフィルターを検索の最中に適用するから、返ってくる結果はすべて条件に一致しているんだって。DynamoDB ベクトル検索が使える全リージョンで利用可能だよ。\n\n## まとめ\n\n- ベクトル検索のインラインフィルターに範囲・IN・存在確認・OR・NOT が追加\n- 結果はすべてフィルター条件に一致する\n- EC の絞り込み検索や RAG のカテゴリ・日付制限に使える\n\nDynamoDB でレコメンドや RAG を作っている人に刺さるよ！\n",
+  "title_en": "DynamoDB Vector Search Filters Level Up: Ranges, IN, OR and NOT Are Here!",
+  "summary_en": "According to AWS What's New, DynamoDB vector search inline filters now support range comparisons, value lists and logical operators. The filter is applied during the search, so every result matches.",
+  "body_md_en": "Hi everyone, it's Shiichan! Today DynamoDB vector search got a lot easier to use.\n\n## What was announced?\n\nAWS What's New announced new inline filter operators for Amazon DynamoDB vector search. On top of equality, you can now use range comparisons, value lists and logical operators.\n\n## The story so far\n\nInline filters only supported the equality operator, which made conditions like \"within a price range\" hard to express.\n\n## What changes\n\nYou can narrow a vector search to exactly the items you want.\n\n- Filter on numeric ranges such as price, rating or publish date\n- Match an attribute against a list of values\n- Check whether an attribute exists\n- Combine conditions with OR and NOT\n\nA retail app can return products similar to a shopper's query within a price range and a set of brands, and a RAG app can limit results to selected document categories published after a given date.\n\n## Dive Deep\n\nDynamoDB vector indexes store vector embeddings alongside your operational data, and the SearchVectors API returns the items whose embeddings are most similar to your query vector.\n\nThe search condition expression in a SearchVectors request now accepts:\n\n- Comparison operators on Number attributes: `<`, `<=`, `>`, `>=` and `BETWEEN`\n- The `IN` operator\n- The `attribute_exists` and `attribute_not_exists` functions\n- Logical operators: `AND`, `OR` and `NOT`\n\nDynamoDB applies the filter during the search, so every result it returns matches. The operators are available in all Regions where DynamoDB vector search is available.\n\n## Wrap-up\n\n- Inline filters gain ranges, IN, existence checks, OR and NOT\n- Every result matches the filter\n- Useful for e-commerce filtering and RAG category or date limits\n\nA great fit if you build recommendations or RAG on DynamoDB!\n",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/dynamodb-vector-filters/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon DynamoDB vector search now supports new inline filter operators",
+  "tags": [
+    "aws",
+    "ai",
+    "serverless"
+  ],
+  "published_at": "2026-11-20T20:00:00+00:00"
+}

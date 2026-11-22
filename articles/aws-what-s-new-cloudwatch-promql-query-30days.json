@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-cloudwatch-promql-query-30days",
+  "title": "CloudWatch の PromQL クエリが 7 日から 30 日に！SLO の 1 か月分が 1 クエリで見られるよ",
+  "summary": "AWS What's New によると、OpenTelemetry メトリクスに対する CloudWatch の PromQL クエリ期間が 7 日から 30 日に延びたよ。SLO の全期間のエラーバジェットを 1 つのクエリで計算できるんだって！",
+  "body_md": "みんな、しぃちゃんだよ！今日は SRE のみんなに刺さりそうなニュースだよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon CloudWatch が、OpenTelemetry メトリクスへの PromQL クエリで 30 日のクエリウィンドウに対応したと発表されたよ。これまでは 7 日だったの。\n\n## 今までどうだったの？\n\nSLO は 30 日のローリングウィンドウで定義されることが多いけど、7 日のクエリでは、それより長い期間を測れなかったんだよね。\n\n## これで何が変わるの？\n\n1 回のリクエストで 1 か月分のデータを問い合わせられるようになったよ。\n\n- 月次や週次の傾向を 1 つのダッシュボードにグラフ化できる\n- 30 日のベースラインでアラームを設定できる\n- SLO の全期間の可用性と残りのエラーバジェットを 1 つのクエリで計算して、バジェットが尽きそうなときにアラームを出せる\n\n## 深く潜ってみよう\n\n1 か月分の履歴があると、キャパシティの予測も安定するよ。7 日のベースラインだと、たまたま忙しかった 1 回の週末に引っ張られやすいからなんだって。\n\n- 追加料金なし\n- OpenTelemetry メトリクスへの PromQL クエリが CloudWatch で使えるすべてのリージョンで利用可能\n\n詳しくは、CloudWatch ユーザーガイドの「Query OpenTelemetry metrics with PromQL」を見てね。\n\n## まとめ\n\n- PromQL クエリのウィンドウが 7 日から 30 日に拡張\n- SLO の全期間のエラーバジェットを 1 クエリで計算できる\n- 30 日ベースラインのアラームや、月次比較のダッシュボードに使える\n- 追加料金なし\n\nSLO を CloudWatch で運用している SRE に刺さるよ！\n",
+  "title_en": "PromQL Queries Stretch from 7 to 30 Days in CloudWatch: A Whole SLO Month in One Query!",
+  "summary_en": "According to AWS What's New, the CloudWatch PromQL query window for OpenTelemetry metrics grows from 7 to 30 days. You can compute a full SLO period's error budget in a single query!",
+  "body_md_en": "Hi everyone, it's Shiichan! Today's news should land well with SREs.\n\n## What was announced?\n\nAWS What's New announced a 30-day query window for PromQL queries against OpenTelemetry metrics in Amazon CloudWatch, up from 7 days.\n\n## The story so far\n\nTeams typically define service level objectives (SLOs) over a 30-day rolling window, which a 7-day query couldn't measure.\n\n## What changes\n\nYou can query a month of data in a single request.\n\n- Chart month-over-month and week-over-week trends on one dashboard\n- Alarm on a 30-day baseline\n- Calculate availability and remaining error budget for a full SLO period in one query, and alarm when a service is on track to exhaust its budget\n\n## Dive Deep\n\nA month of history also makes capacity forecasts more reliable, because a 7-day baseline skews to a single busy weekend.\n\n- No additional cost\n- Available in all Regions where PromQL queries against OpenTelemetry metrics in CloudWatch are available\n\nSee \"Query OpenTelemetry metrics with PromQL\" in the CloudWatch User Guide.\n\n## Wrap-up\n\n- The PromQL query window grows from 7 to 30 days\n- Compute a full SLO period's error budget in one query\n- Use it for 30-day baseline alarms and monthly comparison dashboards\n- No additional cost\n\nA good fit for SREs running SLOs on CloudWatch!\n",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/cloudwatch-promql-query-30days/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon CloudWatch extends the PromQL query window to 30 days",
+  "tags": [
+    "aws",
+    "devops",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-20T21:23:00+00:00"
+}

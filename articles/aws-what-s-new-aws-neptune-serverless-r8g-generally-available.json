@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-neptune-serverless-r8g-generally-available",
+  "title": "Neptune Serverless が Graviton4 で最大 30% 高速に！同じ NCU 料金でスケールも賢くなったよ",
+  "summary": "AWS What's New によると、Amazon Neptune Serverless が AWS Graviton4 で動くようになって、同じ NCU 料金のまま最大 30% 性能が上がったよ。スケーリングアルゴリズムも改善されたんだって！",
+  "body_md": "やっほー、しぃちゃんだよ！今日はグラフデータベースが速くなるニュースだよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Neptune Serverless が AWS Graviton4 プロセッサで動くようになり、Neptune Capacity Unit(NCU)あたりの料金は同じまま、最大 30% 性能が向上したと発表されたよ。\n\n## 今までどうだったの？\n\nNeptune Serverless は、アプリの需要に合わせてデータベースの容量を自動でスケールして、使った分だけ払う仕組みだよ。スパイクがあったり読めなかったりするトラフィックでも、ピークに合わせた事前確保が要らないの。\n\n## これで何が変わるの？\n\n新しい Graviton4 ベースのプラットフォームでは、スケーリングアルゴリズムも改善されて、NCU がワークロードにより近づくように調整されるよ。原文では、同時に多くのグラフクエリを実行するアプリに特に効くと説明されているの。\n\n- リアルタイムの不正検知\n- レコメンデーションエンジン\n- リクエストごとにグラフの検索をする生成 AI アプリ\n\n## 深く潜ってみよう\n\n- 新規に作成する Neptune Serverless インスタンスは、すべて Graviton4 プロセッサを使う\n- 新しいインスタンスは、AWS マネジメントコンソールか AWS CLI で作成できる\n- 既存のクラスターは、次のリリースで最新バージョンにアップグレードできる\n\n料金とリージョンごとの提供状況は、Neptune の料金ページと Neptune Serverless のドキュメントを見てね。\n\n## まとめ\n\n- Neptune Serverless が Graviton4 で動き、最大 30% 高速に\n- NCU あたりの料金は同じ\n- スケーリングアルゴリズムも改善\n- 新規インスタンスは Graviton4、既存クラスターは次のリリースでアップグレード可能\n\nグラフ DB でスパイクのあるワークロードを動かしている人に刺さるよ！\n",
+  "title_en": "Up to 30% Faster: Neptune Serverless Moves to Graviton4 with Smarter Scaling!",
+  "summary_en": "According to AWS What's New, Amazon Neptune Serverless now runs on AWS Graviton4 and delivers up to 30% better performance at the same price per NCU, with an improved scaling algorithm!",
+  "body_md_en": "Hi, it's Shiichan! Today's news is about a faster graph database.\n\n## What was announced?\n\nAWS What's New announced that Amazon Neptune Serverless now delivers up to 30% better performance at the same price per Neptune Capacity Unit (NCU), running on AWS Graviton4 processors.\n\n## The story so far\n\nNeptune Serverless scales database capacity automatically as your application's demand changes, and you pay only for the capacity you use. Spiky or unpredictable traffic doesn't require provisioning for peak.\n\n## What changes\n\nThe new Graviton4-based platform also brings an improved scaling algorithm that adjusts NCUs more closely to your workload. The announcement says this especially helps applications with many concurrent graph queries:\n\n- Real-time fraud detection\n- Recommendation engines\n- Generative AI applications that run graph lookups on every request\n\n## Dive Deep\n\n- All newly created Neptune Serverless instances use AWS Graviton4 processors\n- You can create new instances using the AWS Management Console or the AWS CLI\n- You can upgrade existing clusters to the latest version in the next release\n\nSee the Neptune pricing page and the Neptune Serverless documentation for pricing and Regional availability.\n\n## Wrap-up\n\n- Neptune Serverless runs on Graviton4 with up to 30% better performance\n- Same price per NCU\n- Improved scaling algorithm\n- New instances use Graviton4; existing clusters can upgrade in the next release\n\nA good fit for anyone running spiky workloads on a graph database!\n",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-neptune-serverless-r8g-generally-available",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Neptune Serverless now delivers up to 30% better performance and smarter scaling",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "serverless"
+  ],
+  "published_at": "2026-11-20T21:50:00+00:00"
+}

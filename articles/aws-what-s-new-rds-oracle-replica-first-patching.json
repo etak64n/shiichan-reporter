@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-rds-oracle-replica-first-patching",
+  "title": "RDS for Oracle のマイナーバージョンアップが低ダウンタイムに！「Replica First Patching」",
+  "summary": "AWS What's New によると、Amazon RDS for Oracle の Enterprise Edition で Replica First Patching が使えるようになったよ。レプリカを先にアップグレードして、好きなタイミングで切り替えられるんだって！",
+  "body_md": "おつかれさま、しぃちゃんだよ！今日は Oracle を RDS で動かしている人にうれしいニュースだよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon RDS for Oracle が Replica First Patching に対応したと発表されたよ。マイナーバージョンアップ中のダウンタイムを減らす機能で、Enterprise Edition の DB インスタンスで使えるの。\n\n## これで何が変わるの？\n\n同じリージョンのレプリカに先にマイナーバージョンアップを適用して、その間もプライマリ DB インスタンスはトラフィックを処理し続けるよ。準備ができたら、レプリカに切り替えてアップグレードを完了するの。\n\n- レプリカが読み取り専用モードなら、新しいマイナーエンジンバージョンを、実際の読み取りトラフィックで検証できる\n- 切り替えは、切り替えウィンドウの中で好きなタイミング(トラフィックが少ない時間帯など)に選べる\n\n## 深く潜ってみよう\n\n流れはこうだよ。\n\n- ウィンドウ内に切り替えなかったときは、RDS がレプリカを元のマイナーエンジンバージョンにロールバックする\n- 切り替えたあとは、RDS が新しいプライマリ DB インスタンスのアップグレードを完了する\n- そのあと、元のプライマリを含む他のレプリカを、同じマイナーバージョンにアップグレードする\n\nアプリケーションは、プライマリエンドポイント(現在のプライマリ DB インスタンスに解決される DNS 名)経由で接続することが推奨されているよ。切り替え後も、接続文字列を変えずに新しいプライマリに届くからなの。\n\n追加料金はなくて、RDS for Oracle が使えるすべての商用 AWS リージョンで利用できるよ。ただし、レプリカ DB インスタンスには通常の料金がかかるよ。詳しくは、RDS ユーザーガイドの「Upgrading with Replica First Patching」を見てね。\n\n## まとめ\n\n- RDS for Oracle(Enterprise Edition)で Replica First Patching が使える\n- レプリカを先にアップグレードして、好きなタイミングで切り替え\n- ウィンドウ内に切り替えないとロールバック\n- 追加料金なし(レプリカには通常料金)\n\n止められない Oracle 本番 DB を運用している人に刺さるよ！\n",
+  "title_en": "Oracle Minor Upgrades with Less Downtime: RDS for Oracle Gets Replica First Patching!",
+  "summary_en": "According to AWS What's New, Amazon RDS for Oracle Enterprise Edition now supports Replica First Patching. Upgrade a replica first, then switch over when you're ready!",
+  "body_md_en": "Hi, it's Shiichan! Today's news is good for anyone running Oracle on RDS.\n\n## What was announced?\n\nAWS What's New announced that Amazon RDS for Oracle now supports Replica First Patching, which reduces downtime during minor version upgrades. It is available for Enterprise Edition DB instances.\n\n## What changes\n\nYou apply the minor version upgrade to a replica in the same AWS Region first, while your primary DB instance continues to serve traffic, then switch over to the replica to complete the upgrade.\n\n- If the replica is in read-only mode, you can validate the new minor engine version with your read traffic\n- You choose when to switch over within the switchover window, for example during a low-traffic period\n\n## Dive Deep\n\nThe flow:\n\n- If you don't switch over within the window, RDS rolls back the replica to its original minor engine version\n- After the switchover, RDS completes the upgrade on the new primary DB instance\n- RDS then upgrades your other replicas, including your former primary, to the same minor engine version\n\nAWS recommends connecting your applications through the Primary Endpoint, a DNS name that resolves to the current primary DB instance, so they reach the new primary after the switchover without connection string changes.\n\nThere is no additional charge, and it is available in all commercial AWS Regions where RDS for Oracle is available. Standard pricing applies to the replica DB instance. See \"Upgrading with Replica First Patching\" in the RDS User Guide.\n\n## Wrap-up\n\n- Replica First Patching for RDS for Oracle (Enterprise Edition)\n- Upgrade the replica first, then switch over when you choose\n- No switchover within the window means a rollback\n- No additional charge (standard pricing for the replica)\n\nA good fit for anyone running Oracle production databases that can't afford much downtime!\n",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/rds-oracle-replica-first-patching/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon RDS for Oracle now supports Replica First Patching for reduced downtime",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "devops"
+  ],
+  "published_at": "2026-11-20T22:00:00+00:00"
+}

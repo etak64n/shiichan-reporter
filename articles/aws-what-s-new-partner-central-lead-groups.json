@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-partner-central-lead-groups",
+  "title": "リードが自動で仕分けされるよ！Partner Central に「リードグループ」とチャネル推奨が登場",
+  "summary": "AWS What's New によると、AWS Partner Central に、拡充済みリードを自動でグループ分けするリードグループと、電話かメールかを提案するチャネル推奨が追加されたよ。AI 生成のコールスクリプトとメールスクリプトも付くんだって！",
+  "body_md": "やっほー、しぃちゃんだよ！今日も Partner Central の新機能を紹介するよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Partner Central にリードグループとチャネル推奨が追加されたよ。パートナーが拡充済みリードを整理して、アウトリーチの計画を立てやすくする機能なの。\n\n## 今までどうだったの？\n\n原文では、手作業でリードを分ける必要がなくなると説明されているよ。\n\n## これで何が変わるの？\n\n拡充済みリードは、ソリューション領域ごとに自動でグループ分けされて、次の 3 つに分かれるよ。\n\n- 営業準備完了(sales-ready)\n- マーケティング準備完了(marketing-ready)\n- 見込みが限定的(limited-potential)\n\n見込みが限定的なリードは、転換しそうにないリードに時間と予算を使わずに済むから、新規顧客の獲得コストを下げることにつながるの。\n\n## 深く潜ってみよう\n\n- 拡充済みのリードごとに、電話とメールのどちらが効果的かのガイダンスと、AI 生成のコールスクリプト・メールスクリプトが付く\n- マーケティング準備完了のグループは、Demand Center に送ってアセットを作り、ターゲットを絞ったキャンペーンを実行できる\n- 営業準備完了のリードは、パートナーの CRM にエクスポートして直接アプローチできる\n- ACE 適格なパートナーが、Partner Central の Leads ページと AWS Partner Central Selling API で使える\n\n使い始めるには、Partner Central にサインインして Leads ページを開いてね。\n\n## まとめ\n\n- 拡充済みリードがソリューション領域別・3 段階で自動グループ化\n- 電話かメールかの推奨と、AI 生成のスクリプトが付く\n- Demand Center や CRM につなげられる\n- ACE 適格パートナーが、Leads ページと Selling API で利用可能\n\nリード対応の時間を減らしたい AWS パートナーに刺さるよ！\n",
+  "title_en": "Leads Sorted Automatically! Partner Central Adds Lead Groups and Channel Recommendations",
+  "summary_en": "According to AWS What's New, AWS Partner Central now groups enriched leads automatically and recommends phone or email outreach, with AI-generated call and email scripts!",
+  "body_md_en": "Hi, it's Shiichan! Here's another new Partner Central feature.\n\n## What was announced?\n\nAWS What's New announced lead groups and channel recommendations in AWS Partner Central. They help partners organize enriched leads and plan outreach.\n\n## The story so far\n\nThe announcement says you no longer have to segment leads by hand.\n\n## What changes\n\nEnriched leads are automatically grouped by solution area and segmented into three groups:\n\n- Sales-ready\n- Marketing-ready\n- Limited-potential\n\nLimited-potential leads help you avoid spending time and budget on leads unlikely to convert, lowering your cost of acquiring new customers.\n\n## Dive Deep\n\n- For each enriched lead, you get guidance on whether phone or email may be more effective, along with AI-generated call and email scripts\n- Marketing-ready lead groups can be sent to Demand Center to create assets and launch targeted campaigns\n- Sales-ready leads can be exported to the Partner's CRM for direct outreach\n- Available to ACE-eligible Partners on the Leads page in Partner Central and through the AWS Partner Central Selling API\n\nTo get started, sign in to AWS Partner Central and go to the Leads page.\n\n## Wrap-up\n\n- Enriched leads are auto-grouped by solution area into three segments\n- Phone or email recommendations come with AI-generated scripts\n- Connects to Demand Center and your CRM\n- Available to ACE-eligible Partners on the Leads page and Selling API\n\nA good fit for AWS Partners who want to spend less time triaging leads!\n",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/partner-central-lead-groups/",
+  "source_name": "AWS What's New",
+  "og_title": "Lead groups and channel recommendations now available in AWS Partner Central",
+  "tags": [
+    "aws",
+    "business",
+    "ai"
+  ],
+  "published_at": "2026-11-20T21:00:00+00:00"
+}

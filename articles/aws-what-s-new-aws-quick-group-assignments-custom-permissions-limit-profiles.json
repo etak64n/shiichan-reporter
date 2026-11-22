@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-quick-group-assignments-custom-permissions-limit-profiles",
+  "title": "AWS Quick の権限と上限を IdP グループ単位で割り当てられるように！",
+  "summary": "AWS What's New によると、AWS Quick のカスタム権限プロファイルと上限プロファイルを、企業 IdP のグループに割り当てられるようになったよ。ユーザー個別の管理が要らなくなるんだって！",
+  "body_md": "おつかれさま、しぃちゃんだよ！今日は AWS Quick の管理がぐっと楽になるアップデートだよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Quick が、カスタム権限(custom permissions)と上限(limit profiles)のプロファイルを、企業の IdP のグループに割り当てられるようになったと発表されたよ。\n\n## 今までどうだったの？\n\nこれまでは、機能の制限やユーザーあたりのリソース上限は、ユーザー、ロール、アカウントの単位で割り当てられたよ。グループの単位では割り当てられなかったの。\n\n## これで何が変わるの？\n\n組織の IdP のグループ構造に合わせて、ガバナンスをそろえられるよ。ユーザーごとの割り当てを管理し続けなくていいの。管理者は、Quick の管理コンソールか、新しいポリシー割り当て API で、ユーザー・アカウント・グループの割り当てを管理できるよ。\n\n## 深く潜ってみよう\n\nたとえばこんな使い方が原文で紹介されているよ。\n\n- 経理グループに、エージェントの作成をブロックするカスタム権限プロファイルを割り当てる\n- Deny by Default を適用して、選んだ機能カテゴリの中では、管理者が明示的に許可した機能だけをグループが使えるようにする\n- グループに上限プロファイルを割り当てて、メンバーごとのインデックス容量とエージェント時間を設定する(Quick が、ユーザーのリソース消費に合わせて自動で強制)\n\nユーザーが複数のグループに属しているときの解決ルールはこうだよ。\n\n- カスタム権限: いずれかのグループで拒否された機能は、拒否のまま\n- 上限プロファイル: 上限の種類ごとに、それらのグループの中で最も高い値になる\n\nグループへの割り当ては、Quick の Professional と Enterprise プランで使えるよ。リージョンごとの提供状況は AWS Quick Regions を見てね。\n\n## まとめ\n\n- カスタム権限と上限プロファイルを、IdP グループに割り当てられるようになった\n- 管理コンソールか、新しいポリシー割り当て API で管理\n- 複数グループでは「拒否が優先」「上限は最大値」で解決\n- Professional と Enterprise プランで利用可能\n\nAWS Quick の権限管理を IdP に合わせたい管理者に刺さるよ！\n",
+  "title_en": "AWS Quick Permissions and Limits Can Now Be Assigned to IdP Groups!",
+  "summary_en": "According to AWS What's New, AWS Quick custom permissions and limit profiles can now be assigned to groups from your enterprise IdP, so you no longer manage each user individually!",
+  "body_md_en": "Hi, it's Shiichan! Today's update makes AWS Quick administration a lot easier.\n\n## What was announced?\n\nAWS What's New announced that AWS Quick now supports assignments of custom permissions and limit profiles to groups from your enterprise identity provider (IdP).\n\n## The story so far\n\nFeature restrictions and per-user resource limits could be assigned to users, roles and accounts, but not to groups.\n\n## What changes\n\nOrganizations can align governance with their enterprise identity structure without maintaining assignments for individual users. Administrators manage user, account or group assignments in the Quick administration console or through new policy assignment APIs.\n\n## Dive Deep\n\nThe announcement gives these examples:\n\n- Assign a finance group a custom permissions profile that blocks members from creating agents\n- Apply Deny by Default so that, within selected feature categories, the group can use only capabilities an administrator explicitly allows\n- Assign a limit profile to a group to set each member's index capacity and agent hours (Quick enforces the limits automatically as users consume resources)\n\nWhen a user belongs to multiple groups:\n\n- Custom permissions: a capability denied by any group stays denied\n- Limit profiles: the user receives the highest value for each limit type across those groups\n\nGroup assignments are available in Quick for Professional and Enterprise plans. See AWS Quick Regions for availability by Region.\n\n## Wrap-up\n\n- Custom permissions and limit profiles can be assigned to IdP groups\n- Manage them in the console or with the new policy assignment APIs\n- Across multiple groups, denial wins and limits take the highest value\n- Available on Professional and Enterprise plans\n\nA good fit for admins who want AWS Quick permissions to follow their IdP!\n",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-quick-group-assignments-custom-permissions-limit-profiles/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Quick now supports group assignments for custom permissions and limit profiles",
+  "tags": [
+    "aws",
+    "ai",
+    "security"
+  ],
+  "published_at": "2026-11-20T20:42:00+00:00"
+}
