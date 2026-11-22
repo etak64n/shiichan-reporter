@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-cloudwatch-omni-microsoft-azure",
+  "title": "AWSとAzureの監視がひとつに！CloudWatch OmniがAzureのログ・メトリクス・トレースに対応！",
+  "summary": "Amazon CloudWatch Omni が、Azure のリソースログ、Azure Monitor のメトリクス、VNet フローログ、Application Insights のトレースを収集できるようになったよ。AWS と Azure のテレメトリを一か所で見られるの！",
+  "body_md": "やっほー、しぃちゃんだよ！今日はマルチクラウド運用のみんなに朗報だよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon CloudWatch Omni が Microsoft Azure のプラットフォームのログ・メトリクス・トレースに対応したと発表されたよ。\n\n収集できるのはこの 4 種類だよ。\n\n- Azure リソースログ\n- Azure Monitor のプラットフォームメトリクス\n- 仮想ネットワーク(VNet)フローログ\n- Application Insights のトレース\n\n## なぜ重要なの？\n\nAWS と Azure の両方でワークロードを動かしているチームは、別々の監視ツールやカスタムのパイプラインが必要になりがちだよね。今回の対応で、それが不要になるって原文に書かれているよ。\n\n中央の運用チーム、DevOps、SRE のみんなが、Azure のテレメトリを AWS のテレメトリと並べて一か所で見られるようになるの！\n\n## これで何が変わるの？\n\nAzure のテレメトリは Amazon CloudWatch に入って、Omni のスペースでクラウドをまたいだアプリとインフラを監視できるよ。原文の例では、インシデント中に Azure 上のサービスの遅いリクエストを、コンソールを切り替えずに AWS 側の依存先までたどれるんだって！\n\n## 深く潜ってみよう\n\n- はじめ方: Microsoft Entra ID のテナントを、AWS アカウントとリージョンに接続する\n- 収集対象は、テレメトリの種類、サブスクリプション、Azure リージョン、リソースタイプ、タグで選べる\n- コネクタの設定は、CloudWatch Omni コンソールか AWS CLI から行える\n- Azure テレメトリの収集は、すべての Azure パブリックリージョンが対象\n- 取り込み先は、CloudWatch Omni が使えるすべてのリージョン\n- 料金は CloudWatch Omni の料金ページで確認できる\n\n## まとめ\n\n- Azure のログ・メトリクス・VNet フローログ・トレースを CloudWatch Omni で収集できる\n- Microsoft Entra ID テナントを接続し、収集範囲を細かく選べる\n- AWS と Azure のテレメトリを一か所で見られ、インシデント調査が楽になる\n- コンソールと AWS CLI の両方で設定できる\n\nAWS と Azure をまたぐシステムを見ている SRE や運用チームのみんなに刺さるよ！",
+  "title_en": "AWS and Azure monitoring in one place! CloudWatch Omni now supports Azure logs, metrics, and traces",
+  "summary_en": "Amazon CloudWatch Omni can now collect Azure resource logs, Azure Monitor platform metrics, VNet flow logs, and Application Insights traces, so you can see AWS and Azure telemetry together.",
+  "body_md_en": "Hi, it's Shii-chan! Good news for everyone running multi-cloud!\n\n## What was announced?\n\nOn AWS What's New, AWS announced that Amazon CloudWatch Omni now supports Microsoft Azure platform logs, metrics, and traces.\n\nIt can collect these four kinds of telemetry:\n\n- Azure resource logs\n- Azure Monitor platform metrics\n- Virtual network (VNet) flow logs\n- Traces from Application Insights\n\n## Why it matters\n\nTeams that run workloads on both AWS and Azure often need separate monitoring tools or custom pipelines. According to the announcement, they no longer do.\n\nCentral operations, DevOps, and SRE teams can view Azure telemetry alongside AWS telemetry in one place!\n\n## What changes\n\nAzure telemetry lands in Amazon CloudWatch, and Omni spaces can monitor applications and infrastructure across cloud providers. In the announcement's example, during an incident you can trace a slow request from an Azure-hosted service to its AWS dependencies without switching consoles.\n\n## Dive Deep\n\n- Getting started: connect a Microsoft Entra ID tenant to your AWS account and Region\n- You can choose telemetry types, subscriptions, Azure regions, resource types, and tags to collect\n- Connectors can be set up in the CloudWatch Omni console or with the AWS CLI\n- Azure telemetry collection is available in all Azure Public Regions\n- Data can be ingested into all Regions where CloudWatch Omni is available\n- Pricing is on the CloudWatch Omni pricing page\n\n## Wrap-up\n\n- Collect Azure logs, metrics, VNet flow logs, and traces in CloudWatch Omni\n- Connect a Microsoft Entra ID tenant and choose exactly what to collect\n- See AWS and Azure telemetry in one place for easier incident investigation\n- Set up from the console or the AWS CLI\n\nThis is for SRE and operations teams who watch systems that span AWS and Azure!",
+  "emotion": "happy",
+  "importance": 4,
+  "tags": [
+    "aws",
+    "infrastructure",
+    "devops"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-cloudwatch-omni-microsoft-azure",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon CloudWatch Omni now supports Microsoft Azure platform logs, metrics and traces",
+  "published_at": "2026-11-21T01:10:00+00:00"
+}

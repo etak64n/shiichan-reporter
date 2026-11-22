@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-aws-quick-plugins-bundle-agents-skills-connectors-flows",
+  "title": "必要なものを1回でインストール！AWS Quickにエージェント・スキル・コネクタ・フローをまとめるプラグインが登場！",
+  "summary": "AWS Quick がプラグインに対応したよ。特定のタスクや役割向けに、コネクタ・スキル・エージェント・フローを一つにまとめて入れられて、チャットで説明するだけで自作もできるみたい！",
+  "body_md": "こんにちは、しぃちゃんだよ！今日は AWS Quick に「プラグイン」が来たって聞いて、ぜひ紹介したくなっちゃった！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Quick がプラグインに対応したと発表されたよ。プラグインは、特定のタスク・役割・ユースケース向けに作られた、エージェント・スキル・コネクタ・フローのまとまりなの。\n\n## なぜ重要なの？\n\n仕事は、いくつもの要素を同時に使うことが多いよね。原文では、こんな役割分担が挙げられているよ。\n\n- コネクタ: 自分たちのシステムにつなぐ\n- スキル: チームの仕事のやり方を伝える\n- エージェント: タスクを推論して進める\n- フロー: 各プロセスを組み立てる\n\nプラグインはこれらをパッケージにして、仕事に必要なものを一度にインストールできるようにするよ。\n\n## これで何が変わるの？\n\n公式のプラグインを閲覧してインストールできるよ。例はこの 2 つだよ。\n\n- Calendar and Meetings Assistant: 休暇の計画や、会議メモからアクションアイテムを作るのを助ける\n- Sales Development: 見込み客のリサーチからアウトリーチ、提案までを進める\n\n100 個以上のスキルとプラグインがあって、日常の生産性、財務・マーケティング・法務などの役割、業界、よく使われるビジネスアプリをカバーしているんだって！\n\n## 深く潜ってみよう\n\n- ビルダーは、チーム、部門、組織向けのカスタムプラグインを作れる\n- 作り方は、チャットで仕事を説明するだけ。Quick がプラグインを組み立ててくれる\n- できあがったプラグインは共有して、チームメイトが見つけられる\n- AWS Quick が使えるすべてのリージョンで利用できる\n\n## まとめ\n\n- プラグインで、エージェント・スキル・コネクタ・フローを一括導入できる\n- 公式プラグインが用意されていて、100 個以上のスキルとプラグインがある\n- 自作プラグインはチャットで説明するだけで作れて、共有もできる\n- AWS Quick が使えるすべてのリージョンで利用可能\n\n役割ごとの業務セットを手早く配りたいチームのみんなに刺さるよ！",
+  "title_en": "One install, everything a job needs! AWS Quick plugins bundle agents, skills, connectors, and flows",
+  "summary_en": "AWS Quick now supports plugins that bundle agents, skills, connectors, and flows for a specific task or role. You can install official ones or have Quick assemble a custom plugin from a chat description.",
+  "body_md_en": "Hi, it's Shii-chan! I heard AWS Quick got plugins, and I had to share it!\n\n## What was announced?\n\nOn AWS What's New, AWS announced that AWS Quick now supports plugins: agents, skills, connectors, and flows built for a specific task, role, or use case.\n\n## Why it matters\n\nMost work draws on several things at once. The announcement lists them:\n\n- Connectors to reach your systems\n- Skills for how your team works\n- Agents to reason through tasks\n- Flows to orchestrate each process\n\nPlugins package these together so users can install everything a job needs in one step.\n\n## What changes\n\nYou can browse and install official plugins from AWS. Two examples:\n\n- Calendar and Meetings Assistant: helps plan time away and turn meeting notes into action items\n- Sales Development: takes a prospect from lead research to outreach and a proposal\n\nMore than 100 skills and plugins cover everyday productivity, roles such as finance, marketing and legal, industries, and popular business applications!\n\n## Dive Deep\n\n- Builders can create custom plugins for their team, department, or organization\n- To build one, describe the job in chat and Quick assembles the plugin\n- You can then share it so teammates can discover it\n- It is available in all Regions where AWS Quick is available\n\n## Wrap-up\n\n- Plugins install agents, skills, connectors, and flows in one step\n- Official plugins are available, with more than 100 skills and plugins\n- Custom plugins are created from a chat description and can be shared\n- Available in all Regions where AWS Quick is available\n\nThis is for teams that want to hand out role-specific work setups quickly!",
+  "emotion": "energetic",
+  "importance": 4,
+  "tags": [
+    "aws",
+    "ai"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-quick-plugins-bundle-agents-skills-connectors-flows/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Quick now supports plugins to bundle agents, skills, connectors and flows",
+  "published_at": "2026-11-21T02:58:00+00:00"
+}

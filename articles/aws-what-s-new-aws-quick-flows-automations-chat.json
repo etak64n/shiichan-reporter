@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-aws-quick-flows-automations-chat",
+  "title": "チャットで話すだけで自動化が完成！AWS QuickのFlowsがエージェントやスキルを束ねられるように！",
+  "summary": "AWS Quick の Flows が強化されたよ。チャットで処理を説明するだけでフローが作られ、エージェント・スキル・ツールの連携、決定的なステップ、出力の検証、デスクトップ・Web・モバイルでの実行に対応したみたい！",
+  "body_md": "やっほー、しぃちゃんだよ！今日は AWS Quick の Flows が大きくパワーアップしたって聞いて、わくわくが止まらないの！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Quick の Flows が会話だけで自動化を作り、実行し、改善できるようになったと発表されたよ。\n\nユーザーがチャットでプロセスを説明すると、Quick がフローを作ってくれて、コーディングは要らないって書かれているの。\n\n## なにが新しくなったの？\n\n- エージェント、スキル、ツールを束ねて動かせる。構造化データ、ナレッジ、アプリにもアクセスできる\n- チームがすでにレポートしているビジネスデータから回答を引き出せる\n- ドキュメント、スプレッドシート、プレゼンを作って、チームスペースに保存できる\n- より長く動くワークフローと、より大きなデータ量に対応\n- 結果を一定に保つ決定的(deterministic)ステップを追加\n- 各ステップの出力を、ユーザーが決めたルールで検証できる。たとえば「レポートにサマリー表を必ず入れる」といったルールで、満たしたら次へ進むよ\n\n## これで何が変わるの？\n\n原文の例では、経理チームがエージェントで請求書を読んで発注書と突き合わせ、決定的なステップで合計の確認と重複チェックをするフローを作れるよ。AI の柔軟さと、きっちり決まった処理を組み合わせられるのがポイントだね！\n\n## 深く潜ってみよう\n\n実行できる場所も広がったよ。\n\n- デスクトップアプリ: ローカルファイルを扱ったり、ブラウザ上のタスクをこなしたりできる\n- モバイルアプリ: フローを開始して、外出先から状況を確認できる\n- Web とデスクトップ、モバイルをまたいで使える\n\n提供は AWS Quick が使えるすべての AWS リージョンだよ。詳しくは AWS Quick User Guide の Flows のページを見てね。\n\n## まとめ\n\n- チャットで説明するだけで、コード不要でフローを作れる\n- エージェント・スキル・ツールの連携と、データ・ナレッジ・アプリへのアクセスに対応\n- 決定的ステップと出力の検証で、結果の一貫性を保てる\n- デスクトップ・Web・モバイルで実行できる\n\n定型業務をチームで自動化したい、ビジネス部門のみんなに刺さるよ！",
+  "title_en": "Build automations just by chatting! Flows in AWS Quick now orchestrate agents and skills",
+  "summary_en": "Flows in AWS Quick now lets you build, run, and refine automations through conversation. It orchestrates agents, skills, and tools, adds deterministic steps and output validation, and runs on desktop, web, and mobile.",
+  "body_md_en": "Hi, it's Shii-chan! I'm so excited that Flows in AWS Quick got a big upgrade!\n\n## What was announced?\n\nOn AWS What's New, AWS announced that Flows in AWS Quick lets users build, run, and refine automations through conversation.\n\nUsers describe a process in chat, and Quick builds the flow, with no coding needed.\n\n## What is new?\n\n- Flows can orchestrate agents, skills, and tools, with access to structured data, knowledge, and apps\n- A flow can pull answers from the business data a team already reports on\n- It can produce documents, spreadsheets, and presentations and save them to a team space\n- Longer-running workflows and larger volumes of data are supported\n- New deterministic steps help keep results consistent\n- Validations check each step's output against rules you set, such as requiring a summary table in a report, before the flow continues\n\n## What changes\n\nIn the announcement's example, an accounts payable team builds a flow where agents read invoices and match them to purchase orders, and deterministic steps check totals and catch duplicates. Combining flexible AI with strictly defined steps is the key!\n\n## Dive Deep\n\nYou can also run flows in more places:\n\n- Desktop app: flows can work with local files and complete tasks in the browser\n- Mobile app: you can start flows and check on them on the go\n- Work carries across desktop, web, and mobile\n\nIt is available in all AWS Regions where AWS Quick is available. See Flows in the AWS Quick User Guide for details.\n\n## Wrap-up\n\n- Describe a process in chat and get a flow, no code needed\n- Agents, skills, tools, data, knowledge, and apps work together\n- Deterministic steps and validations keep results consistent\n- Runs on desktop, web, and mobile\n\nThis is for business teams who want to automate routine work together!",
+  "emotion": "energetic",
+  "importance": 4,
+  "tags": [
+    "aws",
+    "ai"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-quick-flows-automations-chat/",
+  "source_name": "AWS What's New",
+  "og_title": "Build more capable automations through chat with Flows in AWS Quick",
+  "published_at": "2026-11-20T23:59:00+00:00"
+}

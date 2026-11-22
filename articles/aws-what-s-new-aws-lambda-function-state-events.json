@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-lambda-function-state-events",
+  "title": "もうポーリングしなくていい！Lambda関数の状態変化がEventBridgeイベントで届くようになったよ！",
+  "summary": "AWS Lambda が、Event Function のバージョン状態が変わるたびに Amazon EventBridge へイベントを発行するようになったよ。GetFunction API のポーリングなしで、デプロイ後の自動化を組めるみたい！",
+  "body_md": "みんな、しぃちゃんだよ！今日はデプロイパイプラインを作っているみんなに嬉しいお知らせだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Lambda が Event Function の状態変更イベントを Amazon EventBridge に発行するようになったと発表されたよ。\n\nLambda は、顧客のアクションで Event Function のバージョンの状態が変わるたびにイベントを出すの。対象のアクションは、関数の作成・更新・公開・削除だよ。\n\n## 今までどうだったの？\n\n関数が「呼び出せる状態」になったかを知るには、GetFunction API を繰り返し呼んで状態を確認(ポーリング)するしかなかったの。\n\n- API のクォータを消費する\n- パイプラインが遅くなる\n- 独自のリトライ処理を書く必要がある\n\n関数が何千個にもなると、この運用負荷はけっこう大きいよね。\n\n## これで何が変わるの？\n\n状態が変わった瞬間に EventBridge からイベントが届くから、次の工程をすぐ始められるよ。たとえば、新しいバージョンが active になったら統合テストを走らせて、通ったらエイリアスのトラフィックを切り替える、といった流れが組めるって原文にも書いてあるの！\n\nイベントが使える場面はこんな感じだよ。\n\n- 関数が呼び出し可能になった直後の自動化\n- 更新が完了したタイミングでの後続処理\n- 操作が失敗したときの通知や対応\n\n## 深く潜ってみよう\n\n- EventBridge ルールで、関数の ARN、detail type、状態などのフィールドを条件にマッチさせられる\n- マッチしたイベントのルーティング先として、AWS Step Functions、AWS Lambda、Amazon SNS、Amazon SQS などが挙げられている\n- 提供リージョンはすべての商用 AWS リージョン\n- 対象は Event Function のバージョンの状態変化\n\n## まとめ\n\n- Lambda が Event Function の状態変化を EventBridge に通知するように\n- 作成・更新・公開・削除に伴う状態変化が対象\n- GetFunction のポーリングとリトライ処理が不要に\n- すべての商用 AWS リージョンで利用可能\n\n多数の関数を扱うプラットフォームチームや、CI/CD を組んでいる DevOps のみんなに刺さるよ！",
+  "title_en": "Stop polling! Lambda function state changes now arrive as EventBridge events",
+  "summary_en": "AWS Lambda now publishes Event Function state change events to Amazon EventBridge, so you can build post-deployment automation without polling the GetFunction API.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today's news is for everyone building deployment pipelines!\n\n## What was announced?\n\nOn AWS What's New, AWS announced that AWS Lambda now publishes Event Function state change events to Amazon EventBridge.\n\nLambda emits an event each time an Event Function version changes state because of a customer action: creating, updating, publishing, or deleting a function.\n\n## The story so far\n\nTo know whether a function was ready to invoke, tools had to poll the GetFunction API.\n\n- It consumed API quota\n- It slowed down pipelines\n- It required custom retry logic\n\nWith thousands of functions, that overhead adds up.\n\n## What changes\n\nNow EventBridge tells you the moment the state changes, so the next step can start right away. For example, a pipeline can run integration tests once a new version becomes active, then shift alias traffic.\n\nTypical uses:\n\n- Automation right after a function becomes ready to invoke\n- Follow-up work when an update finishes\n- Alerts or handling when an operation fails\n\n## Dive Deep\n\n- EventBridge rules can match on fields such as the function ARN, detail type, or state\n- Matched events can be routed to targets such as AWS Step Functions, AWS Lambda, Amazon SNS, or Amazon SQS\n- It is available in all commercial AWS Regions\n- The events cover state changes of Event Function versions\n\n## Wrap-up\n\n- Lambda now reports Event Function state changes to EventBridge\n- Creating, updating, publishing, and deleting are covered\n- No more GetFunction polling or custom retry logic\n- Available in all commercial AWS Regions\n\nThis is for platform teams with many functions and DevOps folks running CI/CD!",
+  "emotion": "happy",
+  "importance": 4,
+  "tags": [
+    "aws",
+    "serverless",
+    "devops"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-lambda-function-state-events/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Lambda now publishes Event Function state change events to Amazon EventBridge",
+  "published_at": "2026-11-20T22:40:00+00:00"
+}

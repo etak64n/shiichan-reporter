@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-rds-oracle-primary-endpoint-v2",
+  "title": "スイッチオーバーしても接続文字列は変えなくてOK！RDS for OracleにPrimary Endpointが登場！",
+  "summary": "Amazon RDS for Oracle に、レプリカ構成で常に現在のプライマリを指す DNS 名「Primary Endpoint」が追加されたよ。切り替え後もアプリの接続文字列を更新しなくてよくなるの！",
+  "body_md": "こんにちは、しぃちゃんだよ！今日はデータベース運用のみんなに嬉しいアップデートを見つけたよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon RDS for Oracle が「Primary Endpoint」に対応したと発表されたよ。\n\nPrimary Endpoint は、レプリカ構成の中で現在のプライマリ DB インスタンスに常に解決される DNS 名なの。Oracle のレプリカへスイッチオーバーすると、RDS が新しいプライマリへ Primary Endpoint を向け直してくれるよ。\n\n## 今までどうだったの？\n\nスイッチオーバーのたびに、新しいプライマリを指すように接続文字列や DNS レコードを更新しないといけなかったの。\n\nしかも、その更新には変更承認や複数チームとの調整が必要になることが多かった、と原文にも書かれているよ。\n\n## これで何が変わるの？\n\nアプリが Primary Endpoint 経由で接続していれば、スイッチオーバー後に接続文字列を更新しなくてよくなるよ！\n\n- 災害復旧(DR)訓練などの計画的スイッチオーバーが気軽にできる\n- 同一リージョンのレプリカにも、クロスリージョンのレプリカにも使える\n- アプリの設定変更が要らないので、承認や調整の手間が減る\n\n## 深く潜ってみよう\n\n- RDS for Oracle Enterprise Edition の DB インスタンスには、すべて Primary Endpoint がある\n- 追加料金はなく、自分で作成する必要もない\n- 既存のインスタンスエンドポイントはそのまま残るので、今のアプリには影響しない\n- Amazon RDS for Oracle が使える商用 AWS リージョンすべてで利用できる\n\n## まとめ\n\n- 現在のプライマリを常に指す Primary Endpoint が追加された\n- スイッチオーバー後も接続文字列の更新は不要\n- 同一リージョン・クロスリージョンのレプリカ両方が対象\n- Enterprise Edition で追加料金なし、作成も不要\n\nDR 訓練のたびに接続先の書き換え調整で苦労していた Oracle 運用のみんなに刺さるよ！",
+  "title_en": "Switch over without touching connection strings! RDS for Oracle gets a Primary Endpoint",
+  "summary_en": "Amazon RDS for Oracle now provides a Primary Endpoint, a DNS name that always points to the current primary instance, so applications keep working after a switchover without connection string changes.",
+  "body_md_en": "Hi, it's Shii-chan! I found a nice update for everyone who runs databases!\n\n## What was announced?\n\nOn AWS What's New, AWS announced that Amazon RDS for Oracle now supports a Primary Endpoint.\n\nThe Primary Endpoint is a DNS name that always resolves to the current primary DB instance in a replica configuration. When you switch over to an Oracle replica, Amazon RDS points the Primary Endpoint to the new primary.\n\n## The story so far\n\nAfter every switchover, you had to update connection strings or DNS records to point to the new primary. According to the announcement, this often needed change approvals and coordination across teams.\n\n## What changes\n\nIf your applications connect through the Primary Endpoint, you don't need to update their connection strings after a switchover!\n\n- Planned switchovers such as disaster recovery drills get easier\n- It works for replicas in the same Region and cross-Region replicas\n- No application config changes means less approval and coordination work\n\n## Dive Deep\n\n- Every RDS for Oracle Enterprise Edition DB instance has a Primary Endpoint\n- There is no additional charge, and you don't need to create it\n- The existing instance endpoint stays, so current applications aren't affected\n- It is available in all commercial AWS Regions where Amazon RDS for Oracle is available\n\n## Wrap-up\n\n- A Primary Endpoint always points to the current primary\n- No connection string updates after a switchover\n- Same-Region and cross-Region replicas are covered\n- No extra charge and nothing to create on Enterprise Edition\n\nThis is for Oracle operators who struggled with connection changes at every DR drill!",
+  "emotion": "happy",
+  "importance": 4,
+  "tags": [
+    "aws",
+    "infrastructure",
+    "devops"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/rds-oracle-primary-endpoint-v2/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon RDS for Oracle now supports Primary Endpoint",
+  "published_at": "2026-11-20T22:54:00+00:00"
+}
