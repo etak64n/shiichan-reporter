@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-ec2-x8i-new-zealand",
+  "title": "EC2 X8i インスタンスがニュージーランドリージョンで使えるよ！",
+  "summary": "メモリ最適化インスタンス Amazon EC2 X8i が、アジアパシフィック(ニュージーランド)リージョンで利用可能になったよ。X2i と比べて最大 43% 高性能で、メモリは最大 6TB だよ！",
+  "body_md": "やっほー、しぃちゃんだよ！今日はリージョン拡大のお知らせだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon EC2 X8i インスタンスが、アジアパシフィック(ニュージーランド)リージョンで使えるようになったと発表されたよ。\n\n## 今までどうだったの？\n\nこれまでニュージーランドリージョンでは X8i を使えなかったよ。今回、そのリージョンに X8i が加わったよ！\n\n## 深く潜ってみよう\n\nX8i は、AWS だけで使えるカスタム Intel Xeon 6 プロセッサーを搭載していて、SAP 認定済みだよ。比較できる Intel プロセッサーの中で、クラウド上で最高の性能と最速のメモリ帯域幅だと紹介されているの。\n\n前世代の X2i と比べると、こんな感じだよ。\n\n- 性能が最大 43% 向上\n- メモリ容量が 1.5 倍(最大 6TB)\n- メモリ帯域幅が 3.3 倍\n- SAPS 性能が最大 50% 向上\n- PostgreSQL が最大 47% 高速\n- Memcached が 88% 高速\n- AI 推論が 46% 高速\n\n想定ワークロードは、SAP HANA、大規模データベース、データ分析、Electronic Design Automation(EDA)などのメモリ集約型だよ。\n\nサイズは large から 96xlarge まで 14 種類で、ベアメタルが 2 つ含まれるよ。購入方法は、Savings Plans、オンデマンド、Spot の 3 つだよ。\n\n## まとめ\n\n- X8i がアジアパシフィック(ニュージーランド)リージョンで使えるようになったよ\n- X2i 比で最大 43% の性能向上、最大 6TB のメモリだよ\n- 14 サイズで、Savings Plans・オンデマンド・Spot が使えるよ\n\nニュージーランドで SAP HANA などのメモリ集約型ワークロードを動かしたいみんなに刺さるよ！",
+  "title_en": "Amazon EC2 X8i Instances Arrive in the Asia Pacific (New Zealand) Region",
+  "summary_en": "Amazon EC2 X8i memory-optimized instances are now available in Asia Pacific (New Zealand), with up to 43% higher performance and up to 6TB of memory compared with X2i.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today we have a Region expansion announcement!\n\n## What was announced?\n\nIn AWS What's New, Amazon EC2 X8i instances became available in the Asia Pacific (New Zealand) Region.\n\n## The story so far\n\nX8i was not available in the New Zealand Region before. Now it has been added there!\n\n## Dive Deep\n\nX8i instances are powered by custom Intel Xeon 6 processors available only on AWS, and they are SAP-certified. They are described as delivering the highest performance and fastest memory bandwidth among comparable Intel processors in the cloud.\n\nCompared with the previous generation X2i:\n\n- Up to 43% higher performance\n- 1.5x more memory capacity (up to 6TB)\n- 3.3x more memory bandwidth\n- Up to 50% higher SAPS performance\n- Up to 47% faster PostgreSQL performance\n- 88% faster Memcached performance\n- 46% faster AI inference performance\n\nThey are designed for memory-intensive workloads such as SAP HANA, large databases, data analytics, and Electronic Design Automation (EDA).\n\nX8i comes in 14 sizes, from large to 96xlarge, including two bare metal options. You can purchase them through Savings Plans, On-Demand, and Spot.\n\n## Wrap-up\n\n- X8i is now in Asia Pacific (New Zealand)\n- Up to 43% higher performance and up to 6TB of memory versus X2i\n- 14 sizes with Savings Plans, On-Demand, and Spot\n\nThis is for anyone in New Zealand running memory-intensive workloads like SAP HANA!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-ec2-x8i-new-zealand/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon EC2 X8i instances are now available in the Asia Pacific (New Zealand) Region",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-23T23:21:00+00:00"
+}

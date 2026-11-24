@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-pcs-supports-split-cost-data",
+  "title": "AWS PCS の Slurm ジョブ単位のコストが CUR で見えるようになったよ！",
+  "summary": "AWS Parallel Computing Service が Split Cost Allocation Data に対応して、Slurm ジョブごとのコストを CUR で分析・チャージバックできるようになったよ。Slurm 25.11 以降が必要だよ！",
+  "body_md": "やっほー、しぃちゃんだよ！今日は HPC をやっているみんなに嬉しい、コスト可視化のニュースだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Parallel Computing Service(AWS PCS)が Split Cost Allocation Data に対応したと発表されたよ！AWS Cost and Usage Reports(CUR)で、Slurm ジョブのコストを細かく見られるようになったの。\n\nAWS PCS は、Slurm を使った HPC ワークロードの実行とスケールをやりやすくするマネージドサービスだよ。\n\n## これで何が変わるの？\n\n共有している EC2 の CPU・GPU・メモリを、ジョブがどれだけ要求して使ったかに基づいて、チームやプロジェクトごとにコストを割り当てられるよ。チャージバックがやりやすくなるね！\n\n## 深く潜ってみよう\n\nコストはジョブ単位で紐づけられて、次の単位で集計できるよ。\n\n- ジョブ\n- ユーザー\n- Slurm アカウント\n- キュー\n- コンピュートノードグループ\n- ノード\n- クラスター\n\nどのジョブにも割り当てられなかった容量も分かるよ。たとえば、使われていないコアや、仕事待ちのノードだね。クラスターのサイズを見直すきっかけになるよ。\n\n利用条件は次のとおりだよ。\n\n- AWS PCS が使える全 AWS 商用リージョンで利用可能\n- Slurm バージョン 25.11 以降が必要\n\n## まとめ\n\n- AWS PCS の Slurm ジョブ単位のコストが CUR に出るよ\n- ジョブ・ユーザー・キューなど、いろいろな単位で集計できるよ\n- アイドル容量も見えるので right-size の材料になるよ\n- Slurm 25.11 以降が必要だよ\n\n共有クラスターのコストを、チームごとに説明したい HPC の管理者さんに刺さるよ！",
+  "title_en": "AWS PCS Now Shows Slurm Job-Level Costs in CUR",
+  "summary_en": "AWS Parallel Computing Service now supports Split Cost Allocation Data, giving job-level cost visibility for Slurm jobs in CUR. It requires Slurm 25.11 or later.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Here's some cost visibility news for everyone running HPC!\n\n## What was announced?\n\nIn AWS What's New, AWS Parallel Computing Service (AWS PCS) announced support for Split Cost Allocation Data. You can now see granular costs for your Slurm jobs in AWS Cost and Usage Reports (CUR).\n\nAWS PCS is a managed service that makes it easier to run and scale HPC workloads using Slurm.\n\n## What changes\n\nCosts can be allocated to individual teams and projects based on how jobs request and consume shared EC2 CPU, GPU, and memory. Chargeback gets much easier!\n\n## Dive Deep\n\nCosts are attributed to each job, and you can aggregate by:\n\n- Job\n- User\n- Slurm account\n- Queue\n- Compute node group\n- Node\n- Cluster\n\nYou can also see capacity that was not allocated to any job, such as idle cores or nodes waiting for work. That helps you right-size your clusters.\n\nRequirements:\n\n- Available in all AWS commercial Regions where AWS PCS is available\n- Requires Slurm version 25.11 or later\n\n## Wrap-up\n\n- Slurm job-level costs for AWS PCS now appear in CUR\n- Aggregate by job, user, queue, and more\n- Idle capacity is visible, which helps with right-sizing\n- Slurm 25.11 or later is required\n\nThis is for HPC admins who need to explain shared-cluster costs per team!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/pcs-supports-split-cost-data/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Parallel Computing Service now supports Split Cost Allocation Data",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "devops"
+  ],
+  "published_at": "2026-11-23T08:00:00+00:00"
+}

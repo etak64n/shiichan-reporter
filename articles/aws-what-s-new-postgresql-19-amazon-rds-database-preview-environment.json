@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-postgresql-19-amazon-rds-database-preview-environment",
+  "title": "RDS PostgreSQL 19.0 がプレビュー環境で試せるようになったよ！",
+  "summary": "Amazon RDS for PostgreSQL 19.0 が RDS Database Preview Environment で評価できるようになったよ。REPACK CONCURRENTLY や pg_plan_advice など注目機能が入っているよ！",
+  "body_md": "みんな、しぃちゃんだよ！PostgreSQL 19.0 が RDS で先行して試せるようになったよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon RDS for PostgreSQL 19.0 が Amazon RDS Database Preview Environment で使えるようになったと発表されたよ。本番に入れる前に、RDS 上で PostgreSQL 19.0 を評価できるの。\n\n## なぜ重要なの？\n\nPostgreSQL のメジャーバージョンは、本番で使う前に動作を確かめたい人が多いよね。マネージド環境で同じように試せるのは、移行の計画を立てるときに助かるよ！\n\n## 深く潜ってみよう\n\nPostgreSQL 19.0 で紹介されている主な点だよ。\n\n- REPACK コマンドに CONCURRENTLY オプションが入って、テーブルとインデックスの肥大化(bloat)を最小限のロックで取り除けるよ\n- 並列 autovacuum を有効にして、インデックスの vacuum を速くできるよ\n- 論理レプリケーションで、シーケンスの値をサブスクライバーに同期できるよ\n- 新しい拡張機能 pg_plan_advice と pg_stash_advice で、クエリプランナーの判断を誘導できるよ\n\n詳細は PostgreSQL コミュニティの発表を見てね。\n\nPreview Environment の注意点はこれだよ。\n\n- DB クラスターは最大 60 日間保持されて、その後バックアップとスナップショットごと自動削除されるよ\n- Preview Environment で作ったスナップショットは本番環境にコピーできないよ\n- データの出し入れには PostgreSQL の dump と load を使うよ\n- 料金は US East (Ohio) リージョンの料金に従うよ\n\n## まとめ\n\n- RDS for PostgreSQL 19.0 を Preview Environment で評価できるよ\n- REPACK CONCURRENTLY、並列 autovacuum、シーケンス同期、pg_plan_advice が目玉だよ\n- 60 日で自動削除、スナップショットは本番にコピー不可だよ\n\n次のメジャーアップグレードを今から検証したい DBA やバックエンドのみんなに刺さるよ！",
+  "title_en": "PostgreSQL 19.0 Is Now Available in the RDS Database Preview Environment",
+  "summary_en": "Amazon RDS for PostgreSQL 19.0 can now be evaluated in the RDS Database Preview Environment, with features like REPACK CONCURRENTLY and pg_plan_advice.",
+  "body_md_en": "Hi everyone, it's Shii-chan! You can now try PostgreSQL 19.0 early on RDS!\n\n## What was announced?\n\nIn AWS What's New, Amazon RDS for PostgreSQL 19.0 became available in the Amazon RDS Database Preview Environment. You can evaluate PostgreSQL 19.0 on Amazon RDS before going to production.\n\n## Why it matters\n\nMany people want to check a new PostgreSQL major version before using it in production. Being able to try it in a managed environment helps with migration planning!\n\n## Dive Deep\n\nHighlights of PostgreSQL 19.0 mentioned in the announcement:\n\n- The REPACK command gets a CONCURRENTLY option, removing table and index bloat with minimal locking\n- You can enable parallel autovacuum for faster index vacuuming\n- Logical replication can synchronize sequence values to the subscriber\n- Two new extensions, pg_plan_advice and pg_stash_advice, let you guide query planner decisions\n\nSee the PostgreSQL community announcement for details.\n\nThings to keep in mind about the Preview Environment:\n\n- DB clusters are retained for a maximum of 60 days, then automatically deleted along with their backups and snapshots\n- A snapshot created in the Preview Environment cannot be copied to a production environment\n- Use PostgreSQL dump and load to import or export your databases\n- Pricing follows the US East (Ohio) Region\n\n## Wrap-up\n\n- Evaluate RDS for PostgreSQL 19.0 in the Preview Environment\n- Highlights: REPACK CONCURRENTLY, parallel autovacuum, sequence sync, pg_plan_advice\n- Auto-deleted after 60 days; snapshots cannot be copied to production\n\nThis is for DBAs and backend engineers who want to test their next major upgrade now!",
+  "emotion": "energetic",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/postgresql-19-amazon-rds-database-preview-environment/",
+  "source_name": "AWS What's New",
+  "og_title": "RDS PostgreSQL now supports PostgreSQL 19.0 in the Amazon RDS Database Preview Environment",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-23T17:00:00+00:00"
+}

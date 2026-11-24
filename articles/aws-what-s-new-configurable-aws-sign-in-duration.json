@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-configurable-aws-sign-in-duration",
+  "title": "AWS Sign-In のサインイン期間を最大 90 日まで設定できるようになったよ！",
+  "summary": "AWS Sign-In で、IAM ユーザーとロールごとにサインイン期間を最大 90 日まで設定できるようになったよ。aws login や AWS MCP Server などの OAuth 対応アプリが対象だよ！",
+  "body_md": "おつかれさま、しぃちゃんだよ！今日は「また認証が切れた」にサヨナラできるかもしれないニュースだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Sign-In がサインイン期間(Sign-in duration)の設定に対応したと発表されたよ。開発者や AI エージェントが、頻繁なサインインや同意の確認なしで、最大 90 日間認証された状態を保てるようになるの。\n\n## これで何が変わるの？\n\n長時間動くワークフローで、認証の中断が減るよ。それに、固定のアクセスキーより安全な選択肢にもなるの。短期間で更新できる認証情報を使うからだよ。\n\n## 深く潜ってみよう\n\n- Sign-in duration は、OAuth のサインインセッションがどれだけ有効かを決める設定だよ\n- 管理者が、IAM ユーザーとロールごとに設定できるよ\n- 既存のセッション期間の上限は、管理者が明示的に長く設定しない限り変わらないよ\n- 対象は AWS CLI(aws login)、AWS MCP Server、その他の OAuth 対応アプリケーションだよ\n- AWS マネジメントコンソールのセッションには影響しないよ\n- 設定は IAM コンソール、AWS CLI、IAM API からできて、すべての AWS 商用リージョンで使えるよ\n\n詳しくは、AWS Sign-In セッション管理のユーザーガイド、ロールでの設定ガイド、条件キーのガイドを見てね。\n\n## まとめ\n\n- OAuth のサインイン期間を、最大 90 日まで設定できるよ\n- IAM ユーザーとロールごとに管理者が設定するよ\n- 既定の挙動は変わらず、コンソールのセッションは対象外だよ\n\naws login や AWS MCP Server を長時間使う開発者と、その権限を管理する管理者さんに刺さるよ！",
+  "title_en": "AWS Sign-In Now Supports a Configurable Sign-in Duration of Up to 90 Days",
+  "summary_en": "AWS Sign-In lets administrators configure a Sign-in duration of up to 90 days for IAM users and roles, covering aws login, AWS MCP Server, and other OAuth-enabled apps.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today's news might let you say goodbye to \"my authentication expired again\"!\n\n## What was announced?\n\nIn AWS What's New, AWS Sign-In announced a configurable Sign-in duration. Developers and AI agents can stay authenticated for up to 90 days without frequent sign-ins or consent prompts.\n\n## What changes\n\nLong-running workflows get fewer authentication interruptions. It is also a more secure alternative to static access keys, because it uses short-lived, renewable credentials.\n\n## Dive Deep\n\n- Sign-in duration controls how long an OAuth Sign-in session remains active\n- Administrators can configure it for individual IAM users and roles\n- Existing session duration limits remain unchanged unless administrators explicitly configure longer durations\n- It supports the AWS CLI (aws login), AWS MCP Server, and other OAuth-enabled applications\n- It does not affect AWS Management Console sessions\n- You can configure it using the IAM console, AWS CLI, or IAM API in all AWS commercial Regions\n\nSee the AWS Sign-In session management User Guide, the guide for configuring Sign-in duration on a role, and the Condition Key User Guide for details.\n\n## Wrap-up\n\n- OAuth sign-in duration can be set up to 90 days\n- Administrators configure it per IAM user and role\n- Defaults are unchanged, and console sessions are not affected\n\nThis is for developers using aws login or AWS MCP Server for long stretches, and for the admins managing their access!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/configurable-aws-sign-in-duration/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Sign-In introduces configurable Sign-in duration of up to 90 days",
+  "tags": [
+    "aws",
+    "security",
+    "ai"
+  ],
+  "published_at": "2026-11-23T23:14:00+00:00"
+}

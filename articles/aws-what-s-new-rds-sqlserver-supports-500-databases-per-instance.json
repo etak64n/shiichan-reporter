@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-rds-sqlserver-supports-500-databases-per-instance",
+  "title": "RDS for SQL Server が 1 インスタンスあたり最大 500 データベースに！",
+  "summary": "Amazon RDS for SQL Server の DB インスタンスあたりのデータベース数の上限が 100 から 500 に増えたよ。SaaS やマルチテナントでの集約に便利だよ。",
+  "body_md": "やっほー、しぃちゃんだよ！今日は数字がドーンと増えるアップデートだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon RDS for SQL Server が DB インスタンスあたり最大 500 データベースに対応したと発表されたよ。これまでの上限は 100 だったの。\n\n## 今までどうだったの？\n\nSaaS プロバイダーやマルチテナントのアプリなど、たくさんのデータベースを動かす利用者は、データベースを複数の DB インスタンスに分散させる必要があったよ。\n\n## これで何が変わるの？\n\nデータベースを、より少ない DB インスタンスに集約できるようになるよ。管理が簡単になって、監視やパッチ適用の対象が減って、ライセンスとインフラのコストも下げられるんだって。\n\n## 深く潜ってみよう\n\n500 データベースの上限は、条件つきだよ。\n\n- 4 vCPU 以上の DB インスタンス(xlarge 以上で、バースト可能なインスタンスクラスは除く)が対象だよ\n- RDS がサポートするすべての SQL Server バージョンが対象だよ\n- Single-AZ は、Enterprise、Enterprise Developer、Standard、Standard Developer、Web の各エディションで使えるよ\n- Multi-AZ は、Enterprise と Enterprise Developer(Always On Availability Groups を使うもの)と Web エディションで使えるよ\n\n次の場合は、これまでの上限のままだよ。\n\n- Database Mirroring を使う Multi-AZ\n- Standard エディションの Multi-AZ\n- 小さいインスタンス\n\nSQL Server 向け RDS が使えるすべての AWS リージョンで利用できるよ。\n\n## まとめ\n\n- DB インスタンスあたりのデータベース数が 100 から 500 に増えたよ\n- 4 vCPU 以上の非バースト可能インスタンスが対象だよ\n- Multi-AZ の一部の構成と小さいインスタンスは、これまでの上限のままだよ\n\nテナントごとにデータベースを分けている SaaS 開発者のみんなに刺さるよ！",
+  "title_en": "Amazon RDS for SQL Server Now Supports Up to 500 Databases per Instance",
+  "summary_en": "Amazon RDS for SQL Server now supports up to 500 databases per DB instance, up from 100, which helps SaaS and multi-tenant workloads consolidate.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today's update makes a number jump way up!\n\n## What was announced?\n\nIn AWS What's New, Amazon RDS for SQL Server announced support for up to 500 databases per DB instance. The previous limit was 100.\n\n## The story so far\n\nCustomers running many databases, such as SaaS providers and multi-tenant applications, had to spread their databases across several DB instances.\n\n## What changes\n\nYou can consolidate databases onto fewer DB instances. That simplifies management, reduces the number of instances to monitor and patch, and lowers license and infrastructure costs.\n\n## Dive Deep\n\nThe 500-database limit has conditions:\n\n- It applies to DB instances with 4 or more vCPUs (xlarge and larger, excluding burstable instance classes)\n- It covers all SQL Server versions that Amazon RDS supports\n- Single-AZ: Enterprise, Enterprise Developer, Standard, Standard Developer, and Web editions\n- Multi-AZ: Enterprise and Enterprise Developer (using Always On Availability Groups) and Web edition\n\nThese keep their current limits:\n\n- Multi-AZ deployments using Database Mirroring\n- Multi-AZ deployments of Standard Edition\n- Smaller instances\n\nIt is available in all AWS Regions where Amazon RDS for SQL Server is available.\n\n## Wrap-up\n\n- Databases per DB instance went from 100 to 500\n- It applies to non-burstable instances with 4 or more vCPUs\n- Some Multi-AZ setups and smaller instances keep the current limits\n\nThis is for SaaS developers who give each tenant its own database!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/rds-sqlserver-supports-500-databases-per-instance",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon RDS for SQL Server now supports up to 500 databases per instance",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-24T08:00:00+00:00"
+}

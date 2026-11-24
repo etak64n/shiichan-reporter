@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-sagemaker-hyperpod-extensions",
+  "title": "HyperPod の Slurm クラスターに、管理型の拡張機能が登場したよ！",
+  "summary": "Amazon SageMaker HyperPod の Slurm クラスターで、マネージドなクラスター拡張機能が使えるようになったよ。最初の 2 つは可観測性とユーザー管理で、追加料金なしだよ！",
+  "body_md": "こんにちは、しぃちゃんだよ！今日は HyperPod の Slurm クラスターが運用しやすくなるニュースだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon SageMaker HyperPod が Slurm クラスター向けのマネージドなクラスター拡張機能に対応したと発表されたよ。SageMaker AI のコンソールや API から、機能のインストール、設定、更新、削除ができるの。最初の拡張機能は、可観測性とユーザー管理の 2 つだよ。\n\n## 今までどうだったの？\n\nこれまでは、可観測性やユーザー管理を変えるたびに、ライフサイクルスクリプトを編集して、ノードを置き換えたりスクリプトを再実行したりする必要があったんだって。\n\n## これで何が変わるの？\n\nこれからは、これらの機能を HyperPod が管理してくれるよ。ライフサイクルスクリプトとカスタム AMI は、組織独自のソフトウェアのために取っておけるの！\n\n## 深く潜ってみよう\n\n拡張機能ごとに設定を宣言すると、HyperPod が検証して、あとから追加したノードも含めて全ノードに適用するよ。そのあと、拡張機能のステータスと各ノードの状態を報告してくれるの。\n\n### 可観測性の拡張機能\n\n- ノード、GPU、Elastic Fabric Adapter(EFA)、Slurm ジョブ、Slurm クラスターのメトリクスを収集するよ\n- 送り先は Amazon CloudWatch または Amazon Managed Service for Prometheus だよ\n- Amazon Managed Grafana のダッシュボードも追加できるよ\n\n### ユーザー管理の拡張機能\n\n- 全ノードで同じ ID のユーザーとグループを作るよ\n- ノードの種類ごとに、SSH でサインインできる人と sudo を使える人を制御するよ\n- ローカルユーザー、Active Directory、またはその両方に対応しているよ\n\n料金は、クラスター拡張機能自体は追加料金なしで、使った AWS リソース分だけ払うよ。提供リージョンは Amazon SageMaker HyperPod が使える全リージョンだよ。\n\n## まとめ\n\n- Slurm クラスターのマネージド拡張機能が登場したよ\n- 最初は可観測性とユーザー管理の 2 つだよ\n- ノード追加時も自動で適用されて、状態も報告されるよ\n- 追加料金なしだよ\n\n大規模な学習クラスターを運用している ML インフラ担当のみんなに刺さるよ！",
+  "title_en": "SageMaker HyperPod Adds Managed Extensions for Slurm Clusters",
+  "summary_en": "Amazon SageMaker HyperPod now supports managed cluster extensions for Slurm clusters. The first two cover observability and user management, at no additional charge.",
+  "body_md_en": "Hello everyone, it's Shii-chan! Today's news makes HyperPod Slurm clusters easier to operate!\n\n## What was announced?\n\nIn AWS What's New, Amazon SageMaker HyperPod announced managed cluster extensions for Slurm clusters. You can install, configure, update, and remove managed features through the SageMaker AI console or API. The first two extensions cover observability and user management.\n\n## The story so far\n\nPreviously, every observability or user management change for HyperPod Slurm clusters meant editing lifecycle scripts and then replacing or rerunning nodes.\n\n## What changes\n\nNow HyperPod manages these features for you, and you keep lifecycle scripts and custom AMIs for your organization's own software!\n\n## Dive Deep\n\nFor each extension, you declare a configuration. HyperPod validates it and applies it to every node, including nodes you add later. It then reports the extension's status and the health of each node.\n\n### Observability extension\n\n- Collects node, GPU, Elastic Fabric Adapter (EFA), Slurm job, and Slurm cluster metrics\n- Sends them to Amazon CloudWatch or Amazon Managed Service for Prometheus\n- You can add Amazon Managed Grafana dashboards\n\n### User management extension\n\n- Creates users and groups with the same IDs on every node\n- Controls who can sign in with SSH and use sudo on each node type\n- Works with local users, Active Directory, or both\n\nCluster extensions are available at no additional charge, and you pay only for the AWS resources you use. They are available in all AWS Regions where Amazon SageMaker HyperPod is available.\n\n## Wrap-up\n\n- Managed extensions for Slurm clusters have arrived\n- The first two are observability and user management\n- They apply automatically to new nodes and report status\n- No additional charge\n\nThis is for ML infrastructure folks running large training clusters!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/sagemaker-hyperpod-extensions/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon SageMaker HyperPod now supports managed observability and user management extensions for Slurm clusters",
+  "tags": [
+    "aws",
+    "ai",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-23T20:00:00+00:00"
+}

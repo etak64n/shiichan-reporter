@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-11-20-emergency-waf-release",
+  "title": "Cloudflare WAF に Ruby と WordPress の緊急ルールが追加されたよ！",
+  "summary": "Cloudflare の WAF Emergency Release(2026-11-20)で、Ruby と WordPress のセキュリティアドバイザリに対応した新しい検出ルールが追加されたよ！すべて新規検出で、アクションは Block だよ！",
+  "body_md": "やっほー、しぃちゃんだよ！今日は Cloudflare から WAF の緊急リリースが届いたから、さっそく紹介するね！\n\n## なにが発表されたの？\n\nCloudflare の Changelog に「WAF Emergency Release - 2026-11-20」が出たよ！Ruby と WordPress のセキュリティアドバイザリに対応づけられた、新しいルールが追加されたの。\n\n詳しい背景は、Cloudflare の Zero Wire で解説されているよ。\n\n- ruby2shell: Ruby の文字列の大文字小文字変換でヒープオーバーフローが起きる問題\n- WordPress 7.1.5: Template Part の欠陥で、管理者のクリックがコード実行につながりうる問題\n\n## なぜ重要なの？\n\nアドバイザリが出てからパッチを当てるまでには時間がかかることがあるよね。その間、WAF のルールで攻撃のリクエストを止められると、運用側はかなり助かるんだよ。今回は「緊急リリース」という名前のとおり、対応を急いだ追加だよ！\n\n## これで何が変わるの？\n\nRuby や WordPress で動かしているサイトを Cloudflare 経由で公開しているなら、該当する攻撃パターンが新しいルールでブロックされるようになるよ。どのルールも、これまで無かった新規の検出だよ。\n\n## 深く潜ってみよう\n\n追加されたルールは次のとおりだよ。アクションは全部 Block だよ！\n\n- Free Ruleset と Managed Ruleset の両方: Ruby - Regexp Character Class Intersection(GHSA-7x2q-68qv-6p8x)\n- Free Ruleset と Managed Ruleset の両方: Ruby - Regexp Compiled Program Size(GHSA-3p8q-wmhx-vm2w)\n- Managed Ruleset のみ: WordPress - DoS(GHSA-56j2-5mp6-wr3x)\n- Managed Ruleset のみ: WordPress - Broken Access Control(GHSA-pmp8-6cv8-q323)\n- Managed Ruleset のみ: WordPress - Stored XSS(GHSA-cr2m-2j4r-3v3x)\n\nRuby 向けの 2 つは Free Ruleset にも入っているのがポイントだよ。\n\n## まとめ\n\n- Cloudflare の WAF に Ruby と WordPress のアドバイザリ対応ルールが追加されたよ\n- 全部が新規検出で、アクションは Block だよ\n- Ruby 向けは Free と Managed の両方、WordPress 向けは Managed Ruleset に入っているよ\n\nRuby や WordPress のサイトを Cloudflare で守っているみんなに、ぜひ知っておいてほしい更新だよ！",
+  "title_en": "Cloudflare WAF Adds Emergency Rules for Ruby and WordPress Advisories",
+  "summary_en": "Cloudflare's WAF Emergency Release (2026-11-20) adds new detection rules mapped to Ruby and WordPress security advisories. All are new detections with the Block action.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Cloudflare just shipped an emergency WAF release, so let's take a look!\n\n## What was announced?\n\nCloudflare's Changelog published \"WAF Emergency Release - 2026-11-20\". It adds new rules mapped to security advisories for Ruby and WordPress.\n\nBackground is available in Cloudflare's Zero Wire posts:\n\n- ruby2shell: a heap overflow in Ruby string case conversion\n- WordPress 7.1.5: a Template Part flaw that can turn an administrator's click into code execution\n\n## Why it matters\n\nPatching after an advisory can take time. In the meantime, a WAF rule that blocks the attack requests really helps operators. As the name says, this is an emergency addition.\n\n## What changes\n\nIf you serve a Ruby or WordPress site through Cloudflare, requests matching these attack patterns are now blocked. All of the rules are new detections.\n\n## Dive Deep\n\nHere are the added rules. The action for every one of them is Block!\n\n- Free Ruleset and Managed Ruleset: Ruby - Regexp Character Class Intersection (GHSA-7x2q-68qv-6p8x)\n- Free Ruleset and Managed Ruleset: Ruby - Regexp Compiled Program Size (GHSA-3p8q-wmhx-vm2w)\n- Managed Ruleset only: WordPress - DoS (GHSA-56j2-5mp6-wr3x)\n- Managed Ruleset only: WordPress - Broken Access Control (GHSA-pmp8-6cv8-q323)\n- Managed Ruleset only: WordPress - Stored XSS (GHSA-cr2m-2j4r-3v3x)\n\nThe two Ruby rules are also in the Free Ruleset, which is worth noting.\n\n## Wrap-up\n\n- Cloudflare's WAF gained rules for Ruby and WordPress advisories\n- All are new detections with the Block action\n- Ruby rules are in both Free and Managed rulesets; WordPress rules are in the Managed Ruleset\n\nThis one is for anyone protecting Ruby or WordPress sites with Cloudflare!",
+  "emotion": "thinking",
+  "importance": 3,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-11-20-emergency-waf-release/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "WAF - WAF Emergency Release - 2026-11-20",
+  "tags": [
+    "cloudflare",
+    "security",
+    "web"
+  ],
+  "published_at": "2026-11-20T00:00:00+00:00"
+}

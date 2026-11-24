@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-cloudformation-coverage-expansion",
+  "title": "CloudFormation に 206 の新リソースタイプが追加されたよ！",
+  "summary": "AWS CloudFormation が 88 サービスの 206 個の新しいリソースタイプに対応して、提供済みで未対応だったリソースタイプのバックログを解消したよ。Cloud Control API も 224 個の読み取り専用タイプに対応したよ！",
+  "body_md": "やっほー、しぃちゃんだよ！今日は IaC を使うみんなに嬉しい、大型のカバレッジ拡大だよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS CloudFormation が 88 サービスにまたがる 206 個の追加リソースタイプに対応したと発表されたよ！CloudFormation 未対応だった、プロビジョニング可能な AWS リソースタイプのバックログ全体に対応したという内容なの。\n\n## これで何が変わるの？\n\nAWS 環境全体で、インフラ管理の安全でスケーラブルなワークフローを CloudFormation に統一しやすくなるよ。CloudFormation で書けなくて、別の方法で作っていたリソースが減るのが嬉しいところだね。\n\n## 深く潜ってみよう\n\n- 追加されたのは 88 サービスの 206 リソースタイプで、たとえば Amazon SageMaker Hub や Amazon Bedrock AgentCore の PolicyEngine などが含まれるよ\n- AWS Cloud Control API は、CloudFormation が対応する新しいリソースタイプすべてに対応するよ\n- さらに Cloud Control API は、99 サービスの 224 個の読み取り専用リソースタイプにも対応して、既存の AWS リソースを見つけて調べやすくなったよ\n- 提供範囲は、基になるサービスが使えるすべての AWS リージョンだよ\n\n詳しくは、AWS のリソースとプロパティタイプのリファレンス、Cloud Control API のリソース一覧、CloudFormation ユーザーガイドを見てね。\n\n## まとめ\n\n- CloudFormation が 88 サービスの 206 リソースタイプに新しく対応したよ\n- Cloud Control API は、その新タイプすべてと、224 個の読み取り専用タイプに対応したよ\n- 基になるサービスのあるリージョンで使えるよ\n\nCloudFormation でインフラを一元管理したい、DevOps や platform のみんなに刺さるよ！",
+  "title_en": "AWS CloudFormation Adds 206 New Resource Types",
+  "summary_en": "AWS CloudFormation now supports 206 additional resource types across 88 services, clearing the backlog of provisionable types, and Cloud Control API adds 224 read-only types.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Here's a big coverage expansion for everyone using IaC!\n\n## What was announced?\n\nIn AWS What's New, AWS CloudFormation announced support for 206 additional resource types across 88 services. This addresses the complete backlog of provisionable AWS resource types without CloudFormation support.\n\n## What changes\n\nIt becomes easier to standardize on safe and scalable infrastructure workflows with CloudFormation across your whole AWS environment. Fewer resources have to be created some other way because CloudFormation couldn't express them!\n\n## Dive Deep\n\n- 206 resource types across 88 services were added, including Amazon SageMaker Hub and Amazon Bedrock AgentCore PolicyEngine\n- AWS Cloud Control API supports all of the new resource types that CloudFormation supports\n- Cloud Control API also now supports 224 read-only resource types across 99 services, making it easier to find and inspect existing AWS resources\n- Coverage is available across all AWS Regions where the underlying service is available\n\nSee the AWS resource and property types reference, the Cloud Control API resource list, and the AWS CloudFormation User Guide for details.\n\n## Wrap-up\n\n- CloudFormation added 206 resource types across 88 services\n- Cloud Control API supports all of them plus 224 read-only types\n- Available in Regions where the underlying service is available\n\nThis is for DevOps and platform folks who want to manage infrastructure in one place with CloudFormation!",
+  "emotion": "energetic",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/cloudformation-coverage-expansion/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS CloudFormation makes resource coverage comprehensive with 206 new types",
+  "tags": [
+    "aws",
+    "devops",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-24T20:00:00+00:00"
+}

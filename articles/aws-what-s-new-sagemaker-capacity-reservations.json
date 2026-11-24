@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-sagemaker-capacity-reservations",
+  "title": "SageMaker AI で Capacity Reservations が見られるようになったよ！",
+  "summary": "Amazon SageMaker AI で、SageMaker Capacity Reservations をコンソール・AWS CLI・SDK から確認できるようになったよ。これまで必要だった AWS Support への問い合わせが要らなくなるよ！",
+  "body_md": "こんにちは、しぃちゃんだよ！今日は SageMaker AI の「予約した容量が見える」アップデートを紹介するね！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon SageMaker AI が SageMaker Capacity Reservations の表示に対応したと発表されたよ！SageMaker コンソール、AWS CLI、AWS SDK から見られるの。\n\n## 今までどうだったの？\n\nこれまでは、自分が確保している予約容量を確認するセルフサービスの方法がなかったんだって。予約の期間やインスタンスの空き状況を知るために、AWS Support に頼る必要があったよ。\n\n## これで何が変わるの？\n\n管理者が、予約している容量を SageMaker AI の画面から確認できるようになったよ！ワークロードの計画を立てるとき、サポートに問い合わせなくて済むのが嬉しいところだよね。\n\n## 深く潜ってみよう\n\n一覧では、次の項目が見られるよ。\n\n- ステータス\n- インスタンスタイプ\n- アベイラビリティーゾーン\n- インスタンス数\n- 開始時刻と終了時刻\n\nコンソールでは Reserved Capacity セクションから確認できて、予約を開くと詳細が出るよ。詳細には、SageMaker Inference Endpoint の設定に使う ML reservation ARN が載っているの。\n\nさらに、その予約を使える SageMaker AI のリソース(SageMaker HyperPod クラスターや SageMaker Inference エンドポイントなど)と、それぞれの関連付けのステータスも一覧できるよ。\n\n提供リージョンは、Amazon SageMaker HyperPod が使える全リージョンだよ。\n\n## まとめ\n\n- Capacity Reservations をコンソール・CLI・SDK で確認できるよ\n- 一覧でステータス・インスタンスタイプ・AZ・台数・開始終了時刻が分かるよ\n- 詳細で ML reservation ARN と関連リソースの状態も見られるよ\n\nGPU などの予約容量を管理している ML 基盤の管理者さんに刺さる更新だよ！",
+  "title_en": "Amazon SageMaker AI Now Lets You View Capacity Reservations",
+  "summary_en": "Amazon SageMaker AI now shows SageMaker Capacity Reservations in the console, AWS CLI, and SDKs, so you no longer need AWS Support to see your reserved capacity.",
+  "body_md_en": "Hello everyone, it's Shii-chan! Today I'm covering a SageMaker AI update that lets you see the capacity you reserved!\n\n## What was announced?\n\nIn AWS What's New, Amazon SageMaker AI announced support for viewing SageMaker Capacity Reservations. You can see them in the SageMaker console, the AWS CLI, and the AWS SDKs.\n\n## The story so far\n\nUntil now, there was no self-service way to see your reserved capacity. To learn about reservation timelines and instance availability, customers had to rely on AWS Support.\n\n## What changes\n\nAdministrators can now review the capacity they hold without leaving SageMaker AI. Planning workloads no longer needs a support request, which is a nice relief!\n\n## Dive Deep\n\nThe list view shows:\n\n- Status\n- Instance type\n- Availability zone\n- Instance count\n- Start time and end time\n\nIn the console, open the Reserved Capacity section and select a reservation to see its details. The details include the ML reservation ARN to use in a SageMaker Inference Endpoint configuration.\n\nThe details page also lists the SageMaker AI resources that can use the reservation, such as SageMaker HyperPod clusters and SageMaker Inference endpoints, along with the status of each association.\n\nIt is available in all AWS Regions where Amazon SageMaker HyperPod is available.\n\n## Wrap-up\n\n- View Capacity Reservations in the console, CLI, and SDKs\n- The list shows status, instance type, AZ, count, and start/end times\n- Details include the ML reservation ARN and associated resource status\n\nThis is for ML platform admins who manage reserved GPU capacity!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/sagemaker-capacity-reservations/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon SageMaker AI now supports viewing capacity reservations",
+  "tags": [
+    "aws",
+    "ai",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-23T08:00:00+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-11-24-ai-security-prompt-logging",
+  "title": "AI Security for Apps のプロンプトログ設定が新しい手順になったよ！",
+  "summary": "Cloudflare の AI Security for Apps で、プロンプトを記録する手順が更新されたよ。payload logging と cf.llm.prompt 系フィールドを使う WAF カスタムルールが新しいやり方で、従来の Log Mode Ruleset の手順は置き換えられたよ！",
+  "body_md": "みんな、しぃちゃんだよ！今日は Cloudflare の AI Security for Apps の小さめだけど大事な更新だよ！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、AI Security for Apps のプロンプトログの手順が更新されたよ。\n\n## 今までどうだったの？\n\nこれまでは、AI Security Log Mode Ruleset を使う手順だったよ。今回の新しい手順が、それを置き換えるの。\n\n## 深く潜ってみよう\n\nプロンプトの内容を記録するには、次のようにするよ。\n\n- payload logging を設定するよ\n- cf.llm.prompt というプレフィックスのフィールドを参照する WAF カスタムルールを使うよ\n\nカスタムルールがマッチすると、payload logging が、抽出されたプロンプトを保存するよ。プロンプトが抽出されず、分析がリクエストボディ全体にフォールバックした場合は、リクエストボディ全体が保存されるよ。\n\n詳しくは、ドキュメントの「Log prompts for matching rules」を見てね。\n\n## まとめ\n\n- プロンプトのログは、payload logging と cf.llm.prompt 系フィールドを使う WAF カスタムルールで設定するよ\n- 従来の AI Security Log Mode Ruleset の手順は置き換えられたよ\n- プロンプトが抽出できないときは、リクエストボディ全体が記録されるよ\n\nAI Security for Apps で LLM アプリを守っているみんなは、ログ設定を見直してみてね！",
+  "title_en": "AI Security for Apps Gets an Updated Prompt Logging Workflow",
+  "summary_en": "Cloudflare updated prompt logging for AI Security for Apps: use payload logging with a WAF custom rule that references a cf.llm.prompt field, replacing the previous Log Mode Ruleset procedure.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today's update to Cloudflare's AI Security for Apps is small but important!\n\n## What was announced?\n\nIn the Cloudflare Changelog, the prompt logging procedure for AI Security for Apps was updated.\n\n## The story so far\n\nPreviously, you used the AI Security Log Mode Ruleset. The new workflow replaces that procedure.\n\n## Dive Deep\n\nTo log prompt content:\n\n- Configure payload logging\n- Use a WAF custom rule that references a field with the cf.llm.prompt prefix\n\nWhen a custom rule matches, payload logging stores the extracted prompt. If no prompt is extracted and analysis falls back to the full request body, payload logging stores the full request body.\n\nSee \"Log prompts for matching rules\" in the documentation for details.\n\n## Wrap-up\n\n- Configure prompt logging with payload logging and a WAF custom rule using a cf.llm.prompt field\n- This replaces the previous AI Security Log Mode Ruleset procedure\n- When no prompt can be extracted, the full request body is stored\n\nIf you protect LLM apps with AI Security for Apps, take a moment to review your logging setup!",
+  "emotion": "thinking",
+  "importance": 3,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-11-24-ai-security-prompt-logging/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "WAF - Updated prompt logging for AI Security for Apps",
+  "tags": [
+    "cloudflare",
+    "security",
+    "ai"
+  ],
+  "published_at": "2026-11-24T21:12:30+00:00"
+}
