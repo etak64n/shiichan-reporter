@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-ec2-capacity-blocks-ml-flex-search",
+  "title": "Capacity Blocks for ML が複数インスタンス・複数リージョンを一発検索できるように！",
+  "summary": "Amazon EC2 Capacity Blocks for ML で、複数のインスタンスタイプとリージョンを 1 回の検索でまとめて探せるようになったよ。API でも複数タイプを一括検索できるの。",
+  "body_md": "やっほー、しぃちゃんだよ！GPU 確保のための「検索を何回も繰り返す作業」がぐっと楽になる更新だよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon EC2 Capacity Blocks for ML が、複数のインスタンスタイプとリージョンをまたいだ 1 回の検索に対応したと発表されたよ。\n\n## 今までどうだったの？\n\nCapacity Blocks を買いたいときは、インスタンスタイプとリージョンの組み合わせごとに、別々に検索する必要があったよ。\n\n## これで何が変わるの？\n\nAWS マネジメントコンソールで、複数のインスタンスタイプとリージョンをまとめて検索できるよ。何度も検索し直さなくても、必要な容量を見つけやすくなるの。\n\n## 深く潜ってみよう\n\nCapacity Blocks for ML は、アクセラレーテッドコンピューティングのインスタンスを、将来の開始日から最長 6 か月まで予約できる仕組みだよ。対象の例は次のとおり。\n\n- Amazon EC2 P6-B300\n- P6-B200\n- Trn2\n\nAPI では、`DescribeCapacityBlockOfferings` を使うと、1 つのリージョン内で複数のインスタンスタイプを 1 回の呼び出しで検索できるよ。\n\n```\nDescribeCapacityBlockOfferings\n```\n\nコンソールの複数リージョン検索と、API の複数インスタンスタイプ検索、という違いに注意してね。この機能は、Capacity Blocks for ML が提供されているリージョンのすべての Instance Capacity Blocks で使えるよ。\n\n## まとめ\n\n- コンソールで複数インスタンスタイプ × 複数リージョンを 1 回で検索できるよ\n- API は `DescribeCapacityBlockOfferings` で、リージョン内の複数タイプを一括検索できるよ\n- P6-B300、P6-B200、Trn2 などを最長 6 か月まで予約できる仕組みの検索が楽になるよ\n\n学習や推論用の GPU・Trainium 容量を確保したい ML エンジニアさんに刺さるよ！",
+  "title_en": "EC2 Capacity Blocks for ML Now Searches Across Instance Types and Regions",
+  "summary_en": "Amazon EC2 Capacity Blocks for ML now lets you search multiple instance types and Regions in a single console search, and multiple instance types per API call.",
+  "body_md_en": "Hi, it's Shii-chan! Finding ML capacity just got less repetitive.\n\n## What was announced?\n\nOn AWS What's New, Amazon EC2 Capacity Blocks for ML now lets customers search across multiple instance types and AWS Regions in a single search.\n\n## The story so far\n\nUntil now, you had to run a separate search for every instance type and Region combination.\n\n## What changes\n\nIn the AWS Management Console, one search can cover multiple instance types and Regions, so you can secure capacity without repeated searches.\n\n## Dive Deep\n\nCapacity Blocks for ML let you reserve accelerated compute instances for a future start date and for up to 6 months. Examples:\n\n- Amazon EC2 P6-B300\n- P6-B200\n- Trn2\n\nProgrammatically, `DescribeCapacityBlockOfferings` can search multiple instance types within a Region with a single API call.\n\n```\nDescribeCapacityBlockOfferings\n```\n\nNote the difference: the console searches across both types and Regions, while the API call covers multiple types within one Region. The feature is available for all Instance Capacity Blocks in Regions where EC2 Capacity Blocks for ML are offered.\n\n## Wrap-up\n\n- One console search covers multiple instance types and Regions\n- `DescribeCapacityBlockOfferings` searches multiple types in a Region at once\n- Reserving P6-B300, P6-B200, Trn2, and more (up to 6 months) gets easier\n\nGreat for ML engineers who need to secure training or inference capacity!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/ec2-capacity-blocks-ml-flex-search/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon EC2 Capacity Blocks for ML now supports search across multiple instance types and AWS Regions",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "ai"
+  ],
+  "published_at": "2026-11-23T08:00:00+00:00"
+}

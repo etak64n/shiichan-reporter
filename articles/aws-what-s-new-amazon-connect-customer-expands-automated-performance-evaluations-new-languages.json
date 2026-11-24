@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-connect-customer-expands-automated-performance-evaluations-new-languages",
+  "title": "Amazon Connect Customer の AI 自動評価が新たに 45 言語に対応したよ！",
+  "summary": "Amazon Connect Customer の生成 AI による自動パフォーマンス評価が、アラビア語、オランダ語、インドネシア語、ポーランド語など 45 言語に追加対応したよ。英語で評価する言語横断評価もできるの。",
+  "body_md": "みんな、しぃちゃんだよ！多言語のコンタクトセンターに朗報だよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Connect Customer が、人間と AI エージェントのパフォーマンス評価を生成 AI で自動化する機能を、新たに 45 言語で使えるようにしたと発表されたよ。例として、アラビア語、オランダ語、インドネシア語、ポーランド語などが挙がっているよ。\n\n## これで何が変わるの？\n\nマネージャーが自然言語で独自の評価基準を定義すると、好みの言語で、理由づけ付きの AI 評価が得られるよ。\n\n## 深く潜ってみよう\n\n- **言語横断評価**: 会話が別の言語でも、評価を英語で完了できるよ\n- 多言語のコンタクトセンターで、言語をまたいで共通の評価フレームワークを使えるよ\n\n提供は、Amazon Connect Customer が提供されているすべての AWS 商用リージョンだよ。料金は Amazon Connect の料金ページで確認してね。\n\n## まとめ\n\n- 生成 AI の自動評価が 45 言語に拡大したよ\n- 評価基準は自然言語で定義して、好きな言語で理由付きの結果を受け取れるよ\n- 英語で評価する言語横断評価もできるよ\n- 商用リージョンのすべてで利用できるよ\n\n多言語対応のコンタクトセンターで、評価の基準をそろえたいマネージャーさんに刺さるよ！",
+  "title_en": "Amazon Connect Customer AI Evaluations Expand to 45 More Languages",
+  "summary_en": "Amazon Connect Customer's generative AI performance evaluations now support 45 additional languages, including Arabic, Dutch, Indonesian, and Polish, plus cross-language evaluation in English.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Good news for multilingual contact centers.\n\n## What was announced?\n\nOn AWS What's New, Amazon Connect Customer now uses generative AI to automate evaluations of human and AI agent performance in 45 additional languages, such as Arabic, Dutch, Indonesian, and Polish.\n\n## What changes\n\nManagers define custom evaluation criteria in natural language and receive AI-generated evaluations with justifications in their preferred language.\n\n## Dive Deep\n\n- **Cross-language evaluation**: assessments can be completed in English even when the conversation is in another language\n- Multilingual contact centers can use a standardized evaluation framework across languages\n\nIt's supported in all AWS commercial Regions where Amazon Connect Customer is offered. See the Amazon Connect pricing page for pricing.\n\n## Wrap-up\n\n- Generative AI evaluations expand to 45 more languages\n- Define criteria in natural language and get justified results in your language\n- Cross-language evaluation in English is supported\n- Available in all commercial Regions\n\nGreat for managers who want consistent evaluation standards in a multilingual contact center!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-connect-customer-expands-automated-performance-evaluations-new-languages/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Connect Customer expands automated performance evaluations to 45 new languages",
+  "tags": [
+    "aws",
+    "ai"
+  ],
+  "published_at": "2026-11-23T18:00:00+00:00"
+}

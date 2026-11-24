@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-global-accelerator-client-ip-nlb-tls",
+  "title": "Global Accelerator が TLS リスナー付き NLB でもクライアント IP を保持できるように！",
+  "summary": "AWS Global Accelerator が、TLS リスナーを持つ NLB でもクライアント IP を保持できるようになったよ。NLB で TLS を終端しても、アプリで本当のクライアント IP が見られるの。追加設定も不要だよ。",
+  "body_md": "みんな、しぃちゃんだよ！「TLS 終端」と「本当のクライアント IP」を二者択一にしなくてよくなったよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Global Accelerator が、TLS リスナーを持つ Network Load Balancer(NLB)エンドポイントに送るトラフィックで、クライアント IP アドレスを保持するようになったと発表されたよ。\n\n## 今までどうだったの？\n\nこれまでは、クライアント IP 保持を有効にしたアクセラレーターに、TLS リスナー付きの NLB を追加できなかったよ。NLB で TLS を終端するか、本当のクライアント IP を見るかのどちらかを選ぶ必要があったの。\n\n## これで何が変わるの？\n\n両方できるようになったよ。実際のクライアント IP に基づいて、次のような制御ができるの。\n\n- セキュリティグループ\n- ジオブロッキング\n- レート制限\n- 不正検知\n- 監査ログ\n- 許可リスト\n- コンプライアンス制御\n\n## 深く潜ってみよう\n\nレイヤー 4 で TLS 終端をしたいワークロードに向くよ。\n\n- HTTP ではない TCP プロトコル\n- 静的 IP や Elastic IP が必要なアプリケーション\n- レイヤー 7 のロードバランサーが合わない、高スループットのトラフィック\n\n有効にする手順は、クライアント IP 保持をオンにしたアクセラレーターに、TLS リスナー付きの NLB を、通常の NLB と同じやり方でエンドポイントとして追加するだけ。追加設定は不要だよ。\n\n追加料金はなくて、標準の Global Accelerator 料金が適用されるよ。提供は AWS の商用リージョン全般で、GovCloud (US) と China リージョンは除くよ。\n\n## まとめ\n\n- TLS リスナー付き NLB が、クライアント IP 保持ありのアクセラレーターで使えるようになったよ\n- NLB で TLS を終端しても、アプリで元のクライアント IP を使えるよ\n- 追加設定・追加料金は不要だよ(標準料金は適用)\n- 商用リージョンで利用可能、GovCloud (US) と China は対象外だよ\n\nTCP 系のサービスで TLS 終端とクライアント IP ベースの制御を両立したいネットワーク担当者さんに刺さるよ！",
+  "title_en": "Global Accelerator Now Preserves Client IPs for NLBs with TLS Listeners",
+  "summary_en": "AWS Global Accelerator now preserves the client IP for NLB endpoints with TLS listeners, so you can terminate TLS at the NLB and still see the real client IP, with no extra configuration.",
+  "body_md_en": "Hi everyone, it's Shii-chan! You no longer have to choose between TLS termination and seeing the real client IP.\n\n## What was announced?\n\nOn AWS What's New, AWS Global Accelerator now preserves the client IP address for traffic sent to Network Load Balancer (NLB) endpoints with TLS listeners.\n\n## The story so far\n\nPreviously, you couldn't add an NLB with a TLS listener to an accelerator that had client IP address preservation enabled. You had to choose between terminating TLS at the NLB and seeing the real client IP.\n\n## What changes\n\nYou get both. You can apply controls based on the real client IP:\n\n- Security groups\n- Geo-blocking\n- Rate limiting\n- Fraud detection\n- Audit logging\n- Allowlists\n- Compliance controls\n\n## Dive Deep\n\nThis helps workloads that need TLS termination at Layer 4:\n\n- Non-HTTP TCP protocols\n- Applications that require static or Elastic IP addresses\n- High-throughput traffic where a Layer 7 load balancer isn't a fit\n\nTo enable it, add an NLB with a TLS listener as an endpoint to an accelerator with client IP address preservation turned on, the same way you add any NLB. No additional configuration is required.\n\nThere is no additional charge, and standard Global Accelerator pricing applies. It's available in all AWS commercial Regions, excluding the AWS GovCloud (US) and China Regions.\n\n## Wrap-up\n\n- NLBs with TLS listeners now work with client IP preservation on an accelerator\n- Terminate TLS at the NLB and still see the original client IP\n- No extra configuration or charge (standard pricing applies)\n- Available in commercial Regions, not GovCloud (US) or China\n\nGreat for network engineers who want TLS termination and client-IP-based controls on TCP services!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/global-accelerator-client-ip-nlb-tls/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Global Accelerator now preserves client IPs for NLBs with TLS listeners",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "security"
+  ],
+  "published_at": "2026-11-23T16:00:00+00:00"
+}

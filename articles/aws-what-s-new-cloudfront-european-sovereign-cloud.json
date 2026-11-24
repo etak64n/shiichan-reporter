@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-cloudfront-european-sovereign-cloud",
+  "title": "CloudFront が AWS European Sovereign Cloud で使えるようになったよ！",
+  "summary": "Amazon CloudFront が AWS European Sovereign Cloud で利用可能になったよ。コンテンツ配信、TLS 終端、ログ、設定がすべて EU 内の境界に留まるの。",
+  "body_md": "おつかれさま、しぃちゃんだよ！EU のデータ主権が厳しい組織に向けた発表だよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon CloudFront が **AWS European Sovereign Cloud** で利用できるようになったと発表されたよ。EU の主権要件が厳しい組織が、Web サイト、アプリケーション、API を、CloudFront の性能・セキュリティ・スケールで EU 内だけで配信できるの。\n\n## 今までどうだったの？\n\nこれまでは、トラフィックとデータを EU 内に留めるために、自前で配信と TLS 終端のインフラを構築して運用する必要があったよ。\n\n## これで何が変わるの？\n\nその自前インフラが要らなくなるよ。同じ CloudFront の API とコンソールが使えるから、既存のデプロイや自動化を移しやすいそうだよ。\n\n## 深く潜ってみよう\n\n- コンテンツ配信、TLS 終端、ログ、お客さんの設定が、European Sovereign Cloud の境界内に留まるよ\n- AWS European Sovereign Cloud は、他の AWS リージョンから物理的にも論理的にも分離されていて、運用するのは EU 在住の人員だけだよ\n- 政府、医療、金融などの規制業種が、データ所在地と運用上の主権要件を満たしやすくなるよ\n- メディアストリーミングなどの大量処理を考えているなら、AWS のアカウントチームに相談してね。AWS の商用リージョンの選択肢も含めて案内してもらえるよ\n\n始めるには、AWS European Sovereign Cloud のアカウントにサインインして、CloudFront コンソールでディストリビューションを作成するよ。機能と料金は、CloudFront Developer Guide と ESC 向けの料金ページにあるよ。\n\n## まとめ\n\n- CloudFront が AWS European Sovereign Cloud で使えるよ\n- 配信、TLS 終端、ログ、設定がすべて境界内に留まるよ\n- 既存と同じ API・コンソールで使えるよ\n- 大量のメディアストリーミングは、アカウントチームに相談してね\n\nEU の規制業種で、自前の配信基盤から卒業したい人に刺さるよ！",
+  "title_en": "Amazon CloudFront Is Now Available in the AWS European Sovereign Cloud",
+  "summary_en": "Amazon CloudFront is now available in the AWS European Sovereign Cloud, keeping content delivery, TLS termination, logs, and configuration within the EU boundary.",
+  "body_md_en": "Hi, it's Shii-chan! This one is for organizations with strict EU sovereignty requirements.\n\n## What was announced?\n\nOn AWS What's New, Amazon CloudFront is now available in the **AWS European Sovereign Cloud**. Organizations with strict EU sovereignty requirements can deliver websites, applications, and APIs with the performance, security, and scale of CloudFront, all within the EU.\n\n## The story so far\n\nUntil now, customers had to build and run their own delivery and TLS termination infrastructure to keep traffic and data inside the EU.\n\n## What changes\n\nYou no longer need that homegrown infrastructure. The same CloudFront APIs and console experience are available, which makes it easy to transfer existing deployments and automations.\n\n## Dive Deep\n\n- Content delivery, TLS termination, logs, and customer configuration stay within the European Sovereign Cloud boundary\n- The AWS European Sovereign Cloud is physically and logically separate from other AWS Regions, and only EU-resident personnel operate it\n- Governments, healthcare, financial services, and other regulated industries can meet data residency and operational sovereignty requirements\n- If you plan to run media streaming or other high-volume workloads, contact your AWS account team for options, including in AWS commercial Regions\n\nTo get started, sign in to your AWS European Sovereign Cloud account and create a distribution in the CloudFront console. Features and pricing are in the CloudFront Developer Guide and the CloudFront pricing page for ESC.\n\n## Wrap-up\n\n- CloudFront is available in the AWS European Sovereign Cloud\n- Delivery, TLS termination, logs, and configuration stay inside the boundary\n- Same APIs and console as you already know\n- For high-volume media streaming, talk to your account team\n\nGreat for regulated EU organizations ready to retire their own delivery stacks!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/cloudfront-european-sovereign-cloud",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon CloudFront is now available in the AWS European Sovereign Cloud",
+  "tags": [
+    "aws",
+    "web",
+    "security"
+  ],
+  "published_at": "2026-11-23T18:00:00+00:00"
+}

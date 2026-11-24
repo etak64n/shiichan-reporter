@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aurora-serverless-mysql-supports-384-acu",
+  "title": "Aurora serverless for MySQL が 384 ACU まで対応！メモリは最大 768 GiB だよ",
+  "summary": "Amazon Aurora serverless の MySQL 互換エディションが、最大 384 ACU(従来比 50% 増)に対応したよ。1 つのデータベースで最大 768 GiB のメモリまでスケールするの。",
+  "body_md": "おつかれさま、しぃちゃんだよ！サーバーレスの Aurora がまた一段大きくなったよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Aurora serverless の Aurora MySQL 互換エディションが、最大 **384 ACU**(Aurora Capacity Unit)に対応したと発表されたよ。従来の最大 256 ACU から 50% の増加だよ。\n\n## 今までどうだったの？\n\n最大は 256 ACU までだったよ。\n\n## これで何が変わるの？\n\n1 ACU あたり約 2 GiB のメモリと、それに見合う CPU とネットワークが割り当てられるよ。だから 1 つの Aurora serverless データベースが、最大 768 GiB のメモリまでスケールできるの。もっと負荷の高いワークロードにも使えて、使っていないときはゼロまで縮むから、使った分だけの支払いだよ。\n\n原文では、バーストが多くて待機時間が長く、トラフィックが読めないエージェント型 AI アプリケーションに向いている、とも紹介されているよ。\n\n## 深く潜ってみよう\n\n設定の流れはこうだよ。\n\n- **新規クラスター**: 対応している Aurora MySQL エンジンバージョンを選んで、最大容量を 384 ACU までに設定\n- **Platform Version 4 の既存クラスター**: クラスターを変更して最大容量の設定を更新(必要ならエンジンバージョンも)。データベースがすでに Platform Version 4 なら、ダウンタイムはなし\n- **古いプラットフォームバージョンの既存クラスター**: 保留中のメンテナンスアクションで Platform Version 4 にアップグレード\n\n384 ACU に対応するのは、Platform Version 4 で動く Aurora MySQL の 3.14 と 8.4.10 だよ。料金とリージョンの詳細は、Amazon Aurora の料金ページで確認してね。\n\n## まとめ\n\n- 最大容量が 256 から 384 ACU(50% 増)になったよ\n- 最大 768 GiB のメモリまでスケールできるよ\n- 対応は Platform Version 4 上の Aurora MySQL 3.14 と 8.4.10 だよ\n- Platform Version 4 のクラスターなら、変更時のダウンタイムはないよ\n\n大きめのワークロードでも「使った分だけ」を保ちたい、MySQL ユーザーさんに刺さるよ！",
+  "title_en": "Aurora Serverless for MySQL Now Scales Up to 384 ACUs",
+  "summary_en": "Amazon Aurora serverless for MySQL-Compatible Edition now supports up to 384 ACUs, a 50% increase, meaning up to 768 GiB of memory for a single database.",
+  "body_md_en": "Hi, it's Shii-chan! Serverless Aurora just got bigger.\n\n## What was announced?\n\nOn AWS What's New, Amazon Aurora serverless now supports database capacity of up to **384 Aurora Capacity Units (ACUs)** for Aurora MySQL-Compatible Edition, a 50% increase from the previous maximum of 256 ACUs.\n\n## The story so far\n\nThe maximum was 256 ACUs.\n\n## What changes\n\nEach ACU provides approximately 2 GiB of memory with corresponding CPU and networking, so a single Aurora serverless database can now scale up to 768 GiB of memory. It still scales down to zero when the workload completes, so you pay only for what you use.\n\nThe announcement also positions it for agentic AI applications, which typically have bursts of activity, long idle windows, and unpredictable traffic.\n\n## Dive Deep\n\nHow to adopt it:\n\n- **New clusters**: select a supported Aurora MySQL engine version and set the maximum capacity up to 384 ACUs\n- **Existing clusters on Platform Version 4**: modify the cluster to update the maximum capacity (and the engine version if needed). No downtime if the database is already on Platform Version 4\n- **Existing clusters on older platform versions**: upgrade to Platform Version 4 through a pending maintenance action\n\n384 ACU support is available for Aurora MySQL versions 3.14 and 8.4.10, running on Platform Version 4. See the Amazon Aurora pricing page for pricing and Region availability.\n\n## Wrap-up\n\n- Maximum capacity goes from 256 to 384 ACUs (+50%)\n- Up to 768 GiB of memory per database\n- Requires Aurora MySQL 3.14 or 8.4.10 on Platform Version 4\n- No downtime when changing on Platform Version 4\n\nGreat for MySQL users who want bigger workloads while still paying only for what they use!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aurora-serverless-mysql-supports-384-acu/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Aurora serverless for MySQL now supports up to 384 ACUs",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "serverless"
+  ],
+  "published_at": "2026-11-23T16:00:00+00:00"
+}

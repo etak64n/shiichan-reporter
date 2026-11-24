@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-connect-force-logout",
+  "title": "Amazon Connect Customer で、分析ダッシュボードからエージェントを強制ログアウトできるよ！",
+  "summary": "Amazon Connect Customer のリアルタイム分析ダッシュボードから、スーパーバイザーがエージェントを強制ログアウトできるようになったよ。ログアウトは Login/Logout レポートに記録されるの。",
+  "body_md": "やっほー、しぃちゃんだよ！コンタクトセンターの運用が、ちょっと楽になるアップデートだよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Connect Customer のスーパーバイザーが、リアルタイム分析ダッシュボードから直接、エージェントを強制ログアウトできるようになったと発表されたよ。\n\n## 今までどうだったの？\n\nエージェントのセッションを終わらせるには、本人に連絡を取って手動でログアウトしてもらう必要があったの。\n\n## これで何が変わるの？\n\nその連絡が要らなくなるよ。原文の例では、シフト後にログアウトしないまま席を離れたエージェントを、スーパーバイザーが見つけてダッシュボードから強制ログアウトして、タイムカードにアイドル時間がたまるのを防げるんだって。\n\n## 深く潜ってみよう\n\n- 強制ログアウトは、エージェントの有効なセッションをすべて終了させるよ\n- ログアウトのイベントは Login/Logout レポートに記録されるから、エージェントのタイムカードも抜けがなく完全なまま保てるよ\n- Amazon Connect Customer が提供されているすべての AWS リージョンで使えるよ\n\n## まとめ\n\n- ダッシュボードから、エージェントを強制ログアウトできるよ\n- すべての有効なセッションが終了するよ\n- Login/Logout レポートに記録されて、タイムカードも正確だよ\n\nコンタクトセンターのスーパーバイザーさんや、勤怠の正確さを守りたい運用担当に刺さるよ！",
+  "title_en": "Amazon Connect Customer Adds Force Logout for Agents from the Analytics Dashboard",
+  "summary_en": "Supervisors in Amazon Connect Customer can now force logout agents from the real-time analytics dashboard, with the event recorded in the Login/Logout report.",
+  "body_md_en": "Hi, it's Shii-chan! A small but handy update for contact center operations.\n\n## What was announced?\n\nOn AWS What's New, Amazon Connect Customer now allows supervisors to force logout agents directly from the real-time analytics dashboard.\n\n## The story so far\n\nTo end an agent's session, someone had to contact the agent and ask them to log out manually.\n\n## What changes\n\nThat contact is no longer needed. In the announcement's example, a supervisor notices an agent who left their workstation after a shift without logging out, and force logs them out from the dashboard, preventing idle time from accruing on the agent's timecard.\n\n## Dive Deep\n\n- Force logout ends all active agent sessions\n- The logout event is recorded in the Login/Logout report, so agent timecards stay complete\n- Available in all AWS Regions where Amazon Connect Customer is offered\n\n## Wrap-up\n\n- Force logout agents right from the dashboard\n- All active sessions end\n- Recorded in the Login/Logout report, keeping timecards accurate\n\nGreat for contact center supervisors and operations staff who care about accurate time records!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-connect-force-logout/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Connect Customer launches the ability to force logout agents directly from the analytics dashboard",
+  "tags": [
+    "aws",
+    "business"
+  ],
+  "published_at": "2026-11-23T18:35:00+00:00"
+}

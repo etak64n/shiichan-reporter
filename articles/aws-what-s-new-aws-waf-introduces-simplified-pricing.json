@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-waf-introduces-simplified-pricing",
+  "title": "AWS WAF の料金がシンプルに！「守るもの」基準で、WCU は 2,500 まで追加料金なし",
+  "summary": "AWS WAF の新料金は、保護するリソース、検査するトラフィック、保護レベルの 3 軸になったよ。Web ACL あたり 2,500 WCU まで追加料金なしで、ルールを足しても料金が変わらないの。",
+  "body_md": "みんな、しぃちゃんだよ！WAF の請求が「設定」じゃなくて「守るもの」基準になったよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS WAF の**新しい料金体系**が発表されたよ。守るものに応じて課金される形になったの。\n\n## 今までどうだったの？\n\nこれまでは、Web ACL、ルール、ルールグループのサブスクリプション、キャパシティ階層ごとに別々の料金がかかっていて、セキュリティの判断がそのまま料金計算になっていたよ。\n\n## これで何が変わるの？\n\n請求は次の 3 つの軸になったよ。\n\n- 保護するリソース\n- AWS WAF が検査するトラフィック\n- 適用する保護のレベル\n\nルールを追加・変更しても料金が変わらないから、費用対効果が分かりやすくなって、デプロイ前にコストを予測しやすくなるの。\n\n## 深く潜ってみよう\n\n- 各 Web ACL に、追加料金なしで最大 2,500 WCU が含まれるよ(従来は 1,500)\n- Bot Control の共通保護や Anti-DDoS ルールグループのようなルールを、追加料金なしで足せるよ\n- 課金は、次の 3 種類だよ\n  - **リソース料金**: 保護するリソースごと\n  - **ベースリクエスト料金**: AWS WAF が検査するすべてのリクエストに\n  - **プレミアムリクエスト料金**: 高度な保護で評価されたトラフィックにだけ。対象は Bot Control のターゲット保護、Fraud Control、API Security、AI Security など\n\n具体的な金額は原文には載っていないから、料金ページで確認してね。新しい料金は、すべての AWS 商用リージョンに加えて、AWS GovCloud、China リージョン、AWS Isolated Regions でも今日から使えるよ。\n\n## まとめ\n\n- 料金は「リソース」「検査トラフィック」「保護レベル」の 3 軸になったよ\n- Web ACL あたり 2,500 WCU まで追加料金なしだよ(従来は 1,500)\n- ルールの追加・変更で料金が変わらないよ\n- 高度な保護だけに、プレミアムリクエスト料金がかかるよ\n\nWAF のコストを事前に見積もりたい人や、ルールを気軽に増やしたいセキュリティ担当に刺さるよ！",
+  "title_en": "AWS WAF Introduces Simplified Pricing: Pay for What You Protect",
+  "summary_en": "AWS WAF pricing now follows three dimensions: resources protected, traffic inspected, and protection level. Each web ACL includes up to 2,500 WCU at no extra charge.",
+  "body_md_en": "Hi everyone, it's Shii-chan! WAF billing now follows what you protect, not how you configure it.\n\n## What was announced?\n\nOn AWS What's New, AWS WAF announced **simplified pricing** that follows what you protect instead of how you configure it.\n\n## The story so far\n\nPreviously, you paid separate charges for each web ACL, rule, rule group subscription, and capacity tier, making every security decision a billing calculation.\n\n## What changes\n\nYour bill now follows three dimensions:\n\n- The resources you protect\n- The traffic AWS WAF inspects\n- The level of protection you apply\n\nAdding or changing rules no longer changes your rate, so the cost-benefit trade-off is easier to understand and costs are predictable before you deploy.\n\n## Dive Deep\n\n- Each web ACL now includes up to 2,500 WCU at no extra charge, up from 1,500\n- You can add rules such as Bot Control common protections or the Anti-DDoS rule group without additional fees\n- Three kinds of charges:\n  - **Resource fee**: for each protected resource\n  - **Base request fee**: for every request AWS WAF inspects\n  - **Premium request fee**: only for traffic evaluated by advanced protections such as Bot Control targeted protections, Fraud Control, API Security, and AI Security\n\nThe announcement doesn't list specific prices, so see the AWS WAF pricing page. The new pricing is available today in all AWS commercial Regions, as well as AWS GovCloud, China Regions, and AWS Isolated Regions.\n\n## Wrap-up\n\n- Pricing follows resources, inspected traffic, and protection level\n- Up to 2,500 WCU per web ACL at no extra charge (up from 1,500)\n- Adding or changing rules doesn't change your rate\n- Premium request fees apply only to advanced protections\n\nGreat for anyone who wants to estimate WAF costs up front and add rules without worrying about the bill!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-waf-introduces-simplified-pricing/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS WAF introduces simplified pricing",
+  "tags": [
+    "aws",
+    "security",
+    "business"
+  ],
+  "published_at": "2026-11-23T18:51:00+00:00"
+}

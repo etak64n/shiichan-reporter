@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-cloudfront-http2-origins",
+  "title": "CloudFront がオリジンへの HTTP/2 接続に対応したよ！AI エージェントの大量呼び出しにも効くよ！",
+  "summary": "Amazon CloudFront が、カスタムオリジンと VPC オリジンへの HTTP/2 接続に対応したよ。接続数と TLS ハンドシェイクが減って、追加料金もなし。非対応のオリジンは自動で HTTP/1.1 にフォールバックするの。",
+  "body_md": "こんにちは、しぃちゃんだよ！CloudFront の「オリジン側」の通信が新しくなったよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon CloudFront がカスタムオリジンと VPC オリジンへの **HTTP/2 接続**に対応したと発表されたよ。\n\n## 今までどうだったの？\n\nこれまで CloudFront はオリジンへ HTTP/1.1 でしか接続できなかったよ。HTTP/1.1 は 1 接続で同時に 1 リクエストしか処理しないから、たとえば AI エージェントが一度に多くのツール呼び出しをするようなトラフィックの急増では、CloudFront がオリジンへの接続を多く開く必要があったの。新しい接続のたびに、遅延とオリジンの負荷が増えていたんだ。\n\n## これで何が変わるの？\n\nHTTP/2 なら、多数のリクエストが少ない接続を共有するよ。オリジンが処理する接続と TLS ハンドシェイクが減るから、オリジンの仕事が減って、応答も速くなるの。原文では、次のような用途で性能が上がるとされているよ。\n\n- AI エージェントが MCP サーバーを呼ぶ場合\n- モバイル・Web アプリがバックエンド API を呼ぶ場合\n\n## 深く潜ってみよう\n\n- 拡張 CONNECT をサポートする WebSocket 接続でも、HTTP/2 が使えるよ\n- オリジンが HTTP/2 に対応していなくても、CloudFront が自動で HTTP/1.1 にフォールバックするから、オリジン側を変更する必要はないよ\n- すべての CloudFront エッジロケーションで利用できて、追加料金はなし\n- 設定は、ディストリビューションのオリジン設定にある「Origin HTTP version」だよ\n\n## まとめ\n\n- カスタムオリジンと VPC オリジンへの HTTP/2 接続に対応したよ\n- 少ない接続で多くのリクエストをさばけて、TLS ハンドシェイクも減るよ\n- 非対応オリジンは自動で HTTP/1.1 にフォールバックするよ\n- 全エッジロケーションで使えて、追加料金はなしだよ\n\nAPI や MCP サーバーなど、バックエンドの接続負荷を減らしたい人に刺さるよ！",
+  "title_en": "CloudFront Now Speaks HTTP/2 to Your Origins",
+  "summary_en": "Amazon CloudFront now supports HTTP/2 connections to custom origins and VPC origins, reducing connections and TLS handshakes, with automatic fallback to HTTP/1.1 and no extra cost.",
+  "body_md_en": "Hello, it's Shii-chan! CloudFront's origin-facing side just got an upgrade.\n\n## What was announced?\n\nOn AWS What's New, Amazon CloudFront now supports **HTTP/2 connections** to custom origins and VPC origins.\n\n## The story so far\n\nUntil now, CloudFront connected to origins only over HTTP/1.1, which handles one request at a time per connection. When traffic spiked, for example when an AI agent made many tool calls at once, CloudFront had to open more origin connections. Each new connection added latency and load.\n\n## What changes\n\nWith HTTP/2, many requests share fewer connections. Your origin handles fewer connections and TLS handshakes, so it does less work and responds faster. The announcement says this helps:\n\n- AI agents calling MCP servers\n- Mobile and web apps calling backend APIs\n\n## Dive Deep\n\n- HTTP/2 is also supported for WebSocket connections that support extended CONNECT\n- If your origin doesn't support HTTP/2, CloudFront automatically falls back to HTTP/1.1, so you don't need to change anything on your origin\n- Available from all CloudFront edge locations at no additional cost\n- The setting is \"Origin HTTP version\" in the distribution's origin settings\n\n## Wrap-up\n\n- HTTP/2 to custom origins and VPC origins\n- Fewer connections and TLS handshakes for more requests\n- Automatic fallback to HTTP/1.1 for unsupported origins\n- All edge locations, no additional cost\n\nGreat for anyone who wants to reduce connection load on APIs and MCP servers!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/01/amazon-cloudfront-http2-origins/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon CloudFront Announces HTTP/2 Support for Connections to Origins",
+  "tags": [
+    "aws",
+    "web",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-23T17:00:00+00:00"
+}

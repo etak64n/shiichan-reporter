@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-sagemaker-hyperpod-console-eks",
+  "title": "SageMaker HyperPod の EKS クラスター作成コンソールが一新されたよ！",
+  "summary": "Amazon SageMaker HyperPod の EKS 向けクラスター作成コンソールが刷新されたよ。必須項目と任意項目が分かれて、スマートデフォルトやワークロードプロファイルで素早く始められるの。",
+  "body_md": "こんにちは、しぃちゃんだよ！今日は ML 基盤を作る人にうれしい、コンソールの使いやすさアップデートを紹介するね！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon SageMaker HyperPod の「Amazon EKS で管理するクラスター」を作るための AWS マネジメントコンソールが、新しい体験に作り直されたと発表されたよ。\n\n## 今までどうだったの？\n\nEKS 連携のクラスター作成では、ネットワーク、インスタンスグループ、ストレージ、権限などたくさんの設定が必要で、繰り返しの入力も多かったの。新しいガイド付きのフローは、そのあたりの手間を減らすためのものだよ。\n\n## これで何が変わるの？\n\nML インフラ管理者やプラットフォームチームが、必要最小限の入力でクラスターを作れるようになるよ。他の機能は、必要になったときに後から足せばいいの。\n\n## 深く潜ってみよう\n\nガイド付きワークフローで設定できる項目はこれだよ。\n\n- ネットワーク\n- インスタンスグループ\n- ストレージ\n- 権限\n- レジリエンシー\n- オブザーバビリティ\n- ライフサイクルスクリプト\n- タグ\n\nポイントは次の 3 つ！\n\n- 必須設定と任意設定が分けて表示されるよ\n- スマートデフォルトで始めるか、使い方に合わせて設定一式をまとめて適用する「ワークロードプロファイル」を選べるよ\n- そのあとで個別設定や詳細設定も調整できるから、細かい制御は失われないよ\n\n新しいコンソールは、SageMaker HyperPod が使えるすべての AWS リージョンで利用できるよ。\n\n## まとめ\n\n- EKS 連携クラスターの作成コンソールがガイド付きに刷新されたよ\n- 必須と任意の設定が分かれて、最小限の入力で作れるよ\n- スマートデフォルトとワークロードプロファイルで繰り返しの設定を減らせるよ\n- HyperPod の全提供リージョンで使えるよ\n\nHyperPod で ML クラスターの立ち上げを担当しているインフラ管理者さんに刺さる更新だよ！",
+  "title_en": "SageMaker HyperPod Gets a Redesigned Console for EKS Clusters",
+  "summary_en": "Amazon SageMaker HyperPod has a redesigned console experience for creating Amazon EKS-orchestrated clusters, with a guided workflow, smart defaults, and workload profiles.",
+  "body_md_en": "Hello, it's Shii-chan! Today I have a usability update for people who build ML infrastructure.\n\n## What was announced?\n\nOn AWS What's New, Amazon SageMaker HyperPod now offers a redesigned AWS Management Console experience for creating clusters orchestrated by Amazon EKS.\n\n## The story so far\n\nCreating an EKS-orchestrated cluster involved many settings, such as networking, instance groups, storage, and permissions, with a lot of repetitive setup. The new guided flow is meant to reduce that effort.\n\n## What changes\n\nML infrastructure administrators and platform teams can create a cluster by entering only what is needed. Other capabilities can be added later, when you need them.\n\n## Dive Deep\n\nThe guided workflow covers:\n\n- Networking\n- Instance groups\n- Storage\n- Permissions\n- Resiliency\n- Observability\n- Lifecycle scripts\n- Tags\n\nKey points:\n\n- Required settings are kept apart from optional ones\n- You can start with smart defaults, or choose a workload profile that applies a coordinated set of settings based on how you plan to use the cluster\n- You can still adjust individual and advanced settings afterwards, so you keep control\n\nThe redesigned experience is available in all AWS Regions where Amazon SageMaker HyperPod is available.\n\n## Wrap-up\n\n- The EKS cluster creation console is now a guided workflow\n- Required and optional settings are separated, so you can start small\n- Smart defaults and workload profiles cut repetitive setup\n- Available in every Region where HyperPod is offered\n\nA nice update for infrastructure admins who spin up ML clusters on HyperPod!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/sagemaker-hyperpod-console-eks/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon SageMaker HyperPod launches a redesigned console experience for creating Amazon EKS-orchestrated clusters",
+  "tags": [
+    "aws",
+    "ai",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-23T08:00:00+00:00"
+}

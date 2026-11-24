@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-agentcore-runtime-instances-govcloud",
+  "title": "AgentCore ランタイムインスタンスが GovCloud (US-West) に登場！最大 14 日のエージェントセッション",
+  "summary": "Amazon Bedrock AgentCore のランタイムインスタンスが AWS GovCloud (US-West) で使えるようになったよ。GPU・メモリ最適化・コンピューティング最適化から選べて、セッションは最大 14 日だよ。",
+  "body_md": "みんな、しぃちゃんだよ！公共機関向けの AWS リージョンで、AI エージェントの実行環境が選べるようになったよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Bedrock AgentCore の**ランタイムインスタンス**が、AWS GovCloud (US-West) リージョンで一般提供になったと発表されたよ。ランタイムインスタンスは、お客さんのアカウント内の Amazon EC2 インスタンスでエージェントを動かして、プロビジョニング、パッチ適用、スケーリング、ライフサイクル管理は AgentCore が担当する仕組みだよ。\n\n## これで何が変わるの？\n\nAWS GovCloud (US) のチームが、エージェントに合わせたインスタンスタイプを選べるようになるよ。\n\n- GPU アクセラレーテッド\n- メモリ最適化\n- コンピューティング最適化\n\n## 深く潜ってみよう\n\n- エージェントのセッションは最大 14 日まで実行できるよ\n- エージェントインスタンス、ストレージボリューム、セッションデータは AWS GovCloud (US-West) リージョン内に留まるから、公共部門や関係パートナーのデータ所在地・コンプライアンス要件を満たしやすいよ\n- 既定の、サーバーレスで microVM ベースの AgentCore ランタイムと併用できるよ。デプロイや呼び出し方法を変えずに、エージェントごとに合う計算資源を選べるの\n- 料金は、プロビジョニングされたコンピューティングの管理費用が、Amazon EC2 の料金に加わるよ\n\n詳しい始め方は、AWS News Blog と AgentCore のドキュメントにあるよ。\n\n## まとめ\n\n- AgentCore のランタイムインスタンスが GovCloud (US-West) で使えるよ\n- GPU・メモリ最適化・コンピューティング最適化から選べて、セッションは最大 14 日だよ\n- データはリージョン内に留まるよ\n- EC2 料金に加えて管理費用がかかるよ\n\n政府・公共部門のエージェント開発者さんや、長時間動くエージェントを GovCloud で動かしたい人に刺さるよ！",
+  "title_en": "AgentCore Runtime Instances Arrive in AWS GovCloud (US-West)",
+  "summary_en": "Amazon Bedrock AgentCore runtime instances are now available in AWS GovCloud (US-West), with GPU, memory, or compute-optimized instance types and agent sessions of up to 14 days.",
+  "body_md_en": "Hi everyone, it's Shii-chan! AI agent runtime options just expanded in an AWS Region for the public sector.\n\n## What was announced?\n\nOn AWS What's New, Amazon Bedrock AgentCore **runtime instances** are now available in the AWS GovCloud (US-West) Region. Runtime instances run your agents on Amazon EC2 instances in your own account, while AgentCore handles provisioning, patching, scaling, and lifecycle management.\n\n## What changes\n\nTeams in AWS GovCloud (US) can choose instance types that fit their agents:\n\n- GPU-accelerated\n- Memory-optimized\n- Compute-optimized\n\n## Dive Deep\n\n- Agent sessions can run for up to 14 days\n- Agent instances, storage volumes, and session data stay in the AWS GovCloud (US-West) Region, which helps public sector organizations and their partners meet data residency and compliance requirements\n- Runtime instances work alongside the default serverless, microVM-based AgentCore runtime, so you can pick the right compute for each agent without changing how you deploy or invoke it\n- You are charged for the management of the compute provisioned, in addition to your Amazon EC2 costs\n\nFor getting started, see the AWS News Blog and the AgentCore documentation.\n\n## Wrap-up\n\n- AgentCore runtime instances are available in GovCloud (US-West)\n- GPU, memory, or compute-optimized types, sessions up to 14 days\n- Data stays in the Region\n- Management charges apply on top of EC2 costs\n\nGreat for public sector agent developers and anyone running long-lived agents in GovCloud!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/agentcore-runtime-instances-govcloud",
+  "source_name": "AWS What's New",
+  "og_title": "AgentCore runtime instances are now generally available in the AWS GovCloud (US-West) Region",
+  "tags": [
+    "aws",
+    "ai",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-23T17:21:00+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-g7-metal-size",
+  "title": "EC2 G7 に metal サイズが登場！RTX PRO 4500 Blackwell を 8 枚積んだベアメタルだよ",
+  "summary": "Amazon EC2 G7 インスタンスの metal サイズが一般提供になったよ。NVIDIA RTX PRO 4500 Blackwell GPU を 8 基、192 vCPU、768 GiB メモリ、EFA 700 Gbps という構成だよ。",
+  "body_md": "やっほー、しぃちゃんだよ！GPU をベアメタルで使いたい人に朗報だよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、NVIDIA RTX PRO 4500 Blackwell Server Edition GPU を搭載する Amazon EC2 G7 インスタンスの **metal サイズ**が、一般提供になったと発表されたよ。G7 は、G6 と比べて AI 推論性能が最大 4.6 倍、グラフィックス性能が最大 2.1 倍とされているよ。\n\n## これで何が変わるの？\n\nベアメタルへの直接アクセスが必要な用途で、G7 を使えるようになるよ。\n\n- 物理 AI シミュレーション\n- AI エージェントのサンドボックス\n- グラフィックスワークロードの高速化\n- 独自の仮想化スタック、ハイパーバイザーレベルの GPU ドライバー、ライセンス制約のあるアプリケーションが必要な特殊なワークロード\n\n## 深く潜ってみよう\n\nmetal サイズのスペックはこうだよ。\n\n- GPU: NVIDIA RTX PRO 4500 Blackwell Server Edition を 8 基(1 基あたり 32 GB メモリ)\n- プロセッサー: カスタム Intel Xeon 6\n- 192 vCPU\n- システムメモリ 768 GiB\n- Elastic Fabric Adapter(EFA)ネットワーク帯域 700 Gbps\n\n購入方法は、オンデマンド、スポットインスタンス、Savings Plans が使えるよ。提供リージョンは米国東部(バージニア北部)だよ。始めるには、AWS マネジメントコンソール、AWS CLI、AWS SDK を使えるよ。\n\n## まとめ\n\n- G7 の metal サイズが一般提供になったよ\n- RTX PRO 4500 Blackwell を 8 基、192 vCPU、768 GiB、EFA 700 Gbps だよ\n- オンデマンド・スポット・Savings Plans で購入できるよ\n- 今のところ米国東部(バージニア北部)で提供だよ\n\n独自ハイパーバイザーや GPU ドライバーを使いたい人や、物理 AI のシミュレーションをする人に刺さるよ！",
+  "title_en": "EC2 G7 Gets a Metal Size: Bare Metal with 8 RTX PRO 4500 Blackwell GPUs",
+  "summary_en": "The metal size of Amazon EC2 G7 instances is generally available, with 8 NVIDIA RTX PRO 4500 Blackwell GPUs, 192 vCPUs, 768 GiB of memory, and 700 Gbps EFA networking.",
+  "body_md_en": "Hi, it's Shii-chan! Good news for anyone who wants GPUs on bare metal.\n\n## What was announced?\n\nOn AWS What's New, AWS announced general availability of the **metal size** for Amazon EC2 G7 instances, accelerated by NVIDIA RTX PRO 4500 Blackwell Server Edition GPUs. G7 instances deliver up to 4.6x AI inference performance and up to 2.1x graphics performance compared to G6.\n\n## What changes\n\nYou can use G7 for workloads that need direct access to bare metal infrastructure:\n\n- Physical AI simulations\n- AI agent sandboxes\n- Accelerated graphics workloads\n- Specialized workloads that require a custom virtualization stack, hypervisor-level GPU drivers, or licensing-restricted applications\n\n## Dive Deep\n\nSpecs of the metal size:\n\n- GPUs: 8 NVIDIA RTX PRO 4500 Blackwell Server Edition GPUs with 32 GB of memory per GPU\n- Processors: custom Intel Xeon 6\n- 192 vCPUs\n- 768 GiB of system memory\n- 700 Gbps of Elastic Fabric Adapter (EFA) networking bandwidth\n\nYou can buy it as On-Demand Instances, Spot Instances, or through Savings Plans. It's available in the US East (N. Virginia) Region. To get started, use the AWS Management Console, AWS CLI, or AWS SDKs.\n\n## Wrap-up\n\n- The G7 metal size is generally available\n- 8x RTX PRO 4500 Blackwell, 192 vCPUs, 768 GiB, 700 Gbps EFA\n- On-Demand, Spot, and Savings Plans\n- Currently in US East (N. Virginia)\n\nGreat for people who need their own hypervisor or GPU drivers, or who run physical AI simulations!",
+  "emotion": "energetic",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-g7-metal-size/",
+  "source_name": "AWS What's New",
+  "og_title": "Announcing metal size for Amazon EC2 G7 instances",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "ai"
+  ],
+  "published_at": "2026-11-23T16:00:00+00:00"
+}

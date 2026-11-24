@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-connect-customer-test-ai-model-version-upgrades-automated-evaluations",
+  "title": "Amazon Connect Customer で AI モデル更新前にテスト！評価スコアのブレを防げるよ",
+  "summary": "Amazon Connect Customer で、自動評価の新しい AI モデルバージョンに切り替える前に、同じ連絡の採点結果を比較テストできるようになったよ。自動更新か固定かも選べるの。",
+  "body_md": "こんにちは、しぃちゃんだよ！AI 評価の「モデルが変わったらスコアも変わっちゃう問題」に効く機能が出たよ！\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Connect Customer の自動評価で、新しい AI モデルバージョンに切り替える前にテストできるようになったと発表されたよ。モデルがアップグレードされても評価スコアが一貫するようにするためだよ。\n\n## なぜ重要なの？\n\nモデルが変わると、同じ対応でも採点が変わるかもしれないよね。それが、エージェントのパフォーマンス結果に影響する前に気づけるのが大事なの。\n\n## これで何が変わるの？\n\n新しいバージョンが出たとき、マネージャーは同じ連絡(コンタクト)を、現在のバージョンと新しいバージョンで採点し直して比べられるよ。モデルによる採点の差を見つけて、評価基準を調整できるの。\n\n## 深く潜ってみよう\n\n評価フォームがモデル更新をどう扱うかも選べるよ。\n\n- **自動アップグレード**: 最新のモデルバージョンに自動で上げる。継続的な精度向上を取りたいとき\n- **特定バージョンに固定**: 採点の一貫性を保ちたいとき\n\nこの機能は、Amazon Connect Customer が提供されているすべての AWS 商用リージョンで使えるよ。\n\n## まとめ\n\n- 新しい AI モデルバージョンを、切り替え前に同じ連絡で比較テストできるよ\n- スコアの差を見て、評価基準を先に調整できるよ\n- 自動アップグレードか、バージョン固定かを選べるよ\n- すべての商用リージョンで利用可能だよ\n\nコンタクトセンターで AI 評価の公平さと一貫性を守りたいマネージャーさんに刺さるよ！",
+  "title_en": "Amazon Connect Customer Lets You Test AI Model Upgrades Before Switching",
+  "summary_en": "Amazon Connect Customer managers can now test new AI model versions for automated evaluations against the same contacts before switching, and choose between auto-upgrade and a pinned version.",
+  "body_md_en": "Hello, it's Shii-chan! A handy feature for the \"scores shift when the model changes\" problem in AI evaluations.\n\n## What was announced?\n\nOn AWS What's New, Amazon Connect Customer now enables managers to test new AI model versions for automated evaluations before switching, so evaluation scores remain consistent through model upgrades.\n\n## Why it matters\n\nA new model might score the same interaction differently. You want to notice that before it affects agent performance results.\n\n## What changes\n\nWhen a new version becomes available, managers can test how it would score the same contacts compared to the current version. That lets them catch scoring differences across models and adjust evaluation criteria.\n\n## Dive Deep\n\nYou can also choose how evaluation forms handle model updates:\n\n- **Automatically upgrade**: get the latest model version for ongoing accuracy improvements\n- **Stay on a specific version**: keep scoring consistent\n\nThe feature is supported in all AWS commercial Regions where Amazon Connect Customer is offered.\n\n## Wrap-up\n\n- Test new AI model versions on the same contacts before switching\n- Spot score differences and adjust criteria first\n- Choose auto-upgrade or a pinned version\n- Available in all commercial Regions\n\nGreat for contact center managers who care about fair, consistent AI evaluations!",
+  "emotion": "smug",
+  "importance": 2,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-connect-customer-test-ai-model-version-upgrades-automated-evaluations",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Connect Customer now lets you test AI model version upgrades for automated evaluations",
+  "tags": [
+    "aws",
+    "ai"
+  ],
+  "published_at": "2026-11-23T18:00:00+00:00"
+}
