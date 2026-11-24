@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-11-23-agent-feedback",
+  "title": "Cloudflare CLI から直接フィードバックを送れるように！MCP 経由でエージェントも報告できるよ",
+  "summary": "Cloudflare CLI の cf feedback コマンドと、API MCP サーバーの submit_feedback ツールで、バグ報告や要望を Cloudflare に直接送れるようになったよ！送信すると共有できる ID も返ってくるの。",
+  "body_md": "みんな、しぃちゃんだよ！今日は Cloudflare CLI と MCP に入った、「困ったところをその場で伝えられる」新機能を紹介するね。\n\n## なにが発表されたの？\n\nCloudflare の Changelog によると、Cloudflare CLI と Cloudflare API の Model Context Protocol(MCP)サーバーから、バグ報告・機能要望・「どこで詰まったか」といったフィードバックを Cloudflare に直接送れるようになったよ！\n\nCLI からの使い方はこんな感じだよ。`cf auth login` でサインインするか `CLOUDFLARE_API_TOKEN` を設定してから、短いメモを添えて実行するの。\n\n```\ncf feedback \"The deploy output did not identify the selected environment\"\n```\n\n## なぜ重要なの？\n\nツールを使っていて引っかかった瞬間に、ターミナルを離れずに報告できるのが大きいよね。しかも MCP 経由なら、Cloudflare API MCP サーバーにつないだコーディングエージェント自身が、作業中に詰まった点を報告できるの。\n\n## これで何が変わるの？\n\n- 人間は CLI から、エージェントは MCP から、同じ窓口へフィードバックを送れる\n- どちらの方法でも、送信後に共有できる submission ID が返ってくる\n- 「どこで困ったか」を作業の流れの中で残せる\n\n## 深く潜ってみよう\n\nMCP の `submit_feedback` ツールの入力は次のとおりだよ。\n\n- 必須: `message`、`type`、`impact`\n- 任意: 取り組んでいたタスク、期待した結果、実際の結果など\n\nCLI から送るレポートに含まれる診断情報や具体例は、原文からリンクされている Agent feedback のドキュメントにまとまっているよ。送る前に何が含まれるか気になる人は、そこを見てみてね。\n\n## まとめ\n\n- `cf feedback \"メモ\"` で CLI から直接フィードバックを送れる\n- API MCP サーバーには `submit_feedback` ツールが追加された\n- どちらも submission ID が返ってくるので共有しやすい\n\nCloudflare CLI をよく使う人や、エージェントに Cloudflare を触らせている人に刺さる更新だよ！\n",
+  "title_en": "Send feedback straight from the Cloudflare CLI and MCP",
+  "summary_en": "You can now send bug reports, feature requests, and \"where I got stuck\" notes to Cloudflare with `cf feedback` or the `submit_feedback` MCP tool. Both return a submission ID you can share.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today I'm covering a new way to tell Cloudflare where you got stuck, right from the CLI and MCP.\n\n## What was announced?\n\nAccording to the Cloudflare Changelog, the Cloudflare CLI and the Cloudflare API Model Context Protocol (MCP) server now let you send bug reports, feature requests, and notes about where you got stuck directly to Cloudflare.\n\nFrom the CLI, sign in with `cf auth login` or set `CLOUDFLARE_API_TOKEN`, then run:\n\n```\ncf feedback \"The deploy output did not identify the selected environment\"\n```\n\n## Why it matters\n\nYou can report a snag the moment you hit it without leaving the terminal. With MCP, a coding agent connected to the Cloudflare API MCP server can report where it got stuck while it works.\n\n## What changes\n\n- Humans use the CLI and agents use MCP, both reaching the same feedback channel\n- Either way, you get a submission ID back that you can share\n- Friction gets captured in the flow of work\n\n## Dive Deep\n\nThe MCP `submit_feedback` tool takes:\n\n- Required: `message`, `type`, and `impact`\n- Optional: the task, the expected result, and the actual result\n\nThe diagnostic details included in CLI reports, along with examples, are documented on the Agent feedback page linked from the original post. Check it if you want to know what gets sent.\n\n## Wrap-up\n\n- `cf feedback \"note\"` sends feedback from the CLI\n- The API MCP server gains a `submit_feedback` tool\n- Both return a submission ID for easy sharing\n\nGreat for anyone who lives in the Cloudflare CLI or lets agents work with Cloudflare!\n",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-11-23-agent-feedback/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Cloudflare CLI - Send feedback from the Cloudflare CLI and MCP",
+  "tags": [
+    "cloudflare",
+    "ai",
+    "devops"
+  ],
+  "published_at": "2026-11-23T00:00:00+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-compute-optimizer",
+  "title": "Compute Optimizer の自動化ルールが OU 単位に！50 アカウント制限とサヨナラ",
+  "summary": "AWS Compute Optimizer の自動化ルールが AWS Organizations の OU を対象にできるようになったよ！以前は 1 ルールにつきメンバーアカウント最大 50 だったのが、OU 内の全アカウントを 1 ルールでカバーできるの。",
+  "body_md": "やっほー、しぃちゃんだよ！今日は大きな組織でコスト最適化をしている人にうれしい、AWS Compute Optimizer の更新だよ。\n\n## なにが発表されたの？\n\nAWS の What's New によると、AWS Compute Optimizer の自動化ルールが、AWS Organizations で管理している組織単位(OU)を対象にできるようになったよ！\n\n## 今までどうだったの？\n\nこれまで、管理アカウントが 1 つのルールで対象にできるメンバーアカウントは最大 50 だったの。アカウント数が多い組織だと、ルールを分けて管理する必要があったんだね。\n\n## これで何が変わるの？\n\n1 つのルールで OU 内のすべてのアカウントをカバーできて、あとから OU に追加されたアカウントも対象に含まれるよ。特定の子 OU やメンバーアカウントを除外することもできるの。\n\n## 深く潜ってみよう\n\n自動化ルールは、条件に合致した推奨アクションを日次・週次・月次のスケジュールで適用して、コスト削減と性能改善につなげる機能だよ。アクションの例はこれ！\n\n- アタッチされていない Amazon EBS ボリュームの削除\n- ボリュームの最新世代タイプへのアップグレード\n\n原文の使い方の例では、管理アカウントから、組織全体のアタッチされていないボリュームを整理するルールを作りつつ、リソース所有者が残したいボリュームにタグを付けて除外できるようにしているよ。\n\n始め方は、対象の OU で Automation を有効にして、それを対象にするルールを作るだけ。Automation ルールが使えるすべてのリージョンで利用できるよ。\n\n## まとめ\n\n- 自動化ルールの対象に OU を指定できるようになった\n- 以前は 1 ルールあたりメンバーアカウント最大 50 だった\n- OU 内の全アカウント(あとから追加されたものも)を 1 ルールでカバーでき、子 OU・アカウントの除外もできる\n\n多アカウント運用で EBS などの掃除を自動化したい、クラウド管理者のみんなに刺さるよ！\n",
+  "title_en": "AWS Compute Optimizer automation rules now support organizational units",
+  "summary_en": "AWS Compute Optimizer automation rules can now target AWS Organizations OUs. Previously a rule could cover up to 50 member accounts; now one rule can cover every account in an OU, including ones added later.",
+  "body_md_en": "Hi, it's Shii-chan! Today: an AWS Compute Optimizer update that large organizations will like.\n\n## What was announced?\n\nAccording to AWS What's New, AWS Compute Optimizer automation rules can now target the organizational units (OUs) you manage with AWS Organizations.\n\n## The story so far\n\nPreviously, management accounts could target up to 50 member accounts per rule, which meant splitting rules up in organizations with many accounts.\n\n## What changes\n\nA single rule can now cover every account in an OU, including accounts added later. You can also exclude specific child OUs or member accounts.\n\n## Dive Deep\n\nAutomation rules apply recommended actions on a daily, weekly, or monthly schedule when they match your criteria, to save cost and improve performance. Actions include:\n\n- Cleaning up unattached Amazon EBS volumes\n- Upgrading volumes to the latest-generation volume types\n\nIn the post's example, you create a rule in the management account to clean up unattached volumes across the whole organization, while letting resource owners tag and exclude volumes they want to keep.\n\nTo get started, turn on Automation for your selected OUs, then create rules that target them. Support is available in all AWS Regions where Compute Optimizer automation rules are available.\n\n## Wrap-up\n\n- Automation rules can target OUs\n- The old limit was 50 member accounts per rule\n- One rule covers all accounts in an OU, including future ones, with exclusions for child OUs and accounts\n\nGreat for cloud admins who want to automate EBS cleanup across many accounts!\n",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-compute-optimizer/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Compute Optimizer automation rules now support organizational units",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "devops"
+  ],
+  "published_at": "2026-11-20T22:05:00+00:00"
+}

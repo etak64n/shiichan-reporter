@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-s3-access-points-server-side-copy-fsx",
+  "title": "S3 と FSx の間をサーバー側コピーで移動！ダウンロード&アップロードにサヨナラ",
+  "summary": "S3 Access Points for FSx で、同一リージョン内の S3 汎用バケットと FSx ファイルシステム間、または FSx 間のデータを、CopyObject と UploadPartCopy でサーバー側コピーできるようになったよ！",
+  "body_md": "やっほー、しぃちゃんだよ！今日はストレージ間のデータ移動がラクになる、S3 Access Points の更新を紹介するね。\n\n## なにが発表されたの？\n\nAWS の What's New によると、Amazon S3 Access Points を使って、同じ AWS リージョン内の S3 汎用バケットと Amazon FSx ファイルシステムの間で、データをサーバー側でコピー・移動できるようになったよ！FSx 同士の間でも使えるの。\n\n## 今までどうだったの？\n\nS3 Access Point for FSx は、Amazon FSx for NetApp ONTAP と Amazon FSx for OpenZFS のデータを S3 API で、あるいは S3 ベースのサービスやアプリから扱えるようにする S3 エンドポイントだよ。マウントせずにファイルシステムとデータをやり取りできるけど、これまでサーバー側コピーには非対応だったの。だから転送は、自分で動かしているサーバーで各オブジェクトをダウンロードして、またアップロードする必要があったんだ。\n\n## これで何が変わるの？\n\nS3 標準の CopyObject と UploadPartCopy で、サーバー側転送ができるようになったよ。S3 と FSx の間、または FSx 間のデータ移動の、時間・コスト・手間が減るの。原文の使い道の例はこうだよ。\n\n- パートナーが持つ S3 バケットから、自分のファイルシステムへデータをコピーする\n- ジョブの結果を、別チームのバケットへエクスポートする\n\n## 深く潜ってみよう\n\n- コピーの方法: AWS CLI、AWS SDK、S3 互換ツール\n- 対象: 同じリージョン内の S3 汎用バケットと FSx(ONTAP / OpenZFS)ファイルシステム\n- 提供リージョン: S3 Access Points for FSx が使えるすべてのリージョン\n- 詳細は FSx for ONTAP と FSx for OpenZFS のユーザーガイド、S3 Access Points のページを参照\n\n## まとめ\n\n- S3 と FSx、FSx 同士の間でサーバー側コピーができる\n- CopyObject と UploadPartCopy という標準の S3 操作で OK\n- 以前は自前のサーバーでダウンロード→アップロードが必要だった\n\nS3 と FSx を行き来するデータパイプラインを運用している人に刺さるよ！\n",
+  "title_en": "Copy data server-side between S3 buckets and FSx with S3 Access Points",
+  "summary_en": "S3 Access Points for FSx now support server-side copy between S3 general purpose buckets and FSx file systems, or between FSx file systems, in the same Region using CopyObject and UploadPartCopy.",
+  "body_md_en": "Hi, it's Shii-chan! Today: an S3 Access Points update that makes moving data between storage easier.\n\n## What was announced?\n\nAccording to AWS What's New, you can now use Amazon S3 Access Points to copy or move data server-side between Amazon S3 general purpose buckets and Amazon FSx file systems within the same AWS Region. It also works between FSx file systems.\n\n## The story so far\n\nAn S3 Access Point for FSx is an S3 endpoint that lets you access data on Amazon FSx for NetApp ONTAP and Amazon FSx for OpenZFS through the S3 API and S3-based services and applications, without mounting the file system. But server-side copies were not supported, so transferring data meant downloading and then uploading each object from a server you run.\n\n## What changes\n\nYou can now transfer data server-side using S3's standard CopyObject and UploadPartCopy operations, cutting the time, cost, and effort of moving data between S3 and FSx or between FSx file systems. Use cases from the post:\n\n- Copy data into your file system from an S3 bucket owned by a partner\n- Export job results into another team's bucket\n\n## Dive Deep\n\n- How: AWS CLI, AWS SDKs, or S3-compatible tools\n- Scope: S3 general purpose buckets and FSx (ONTAP / OpenZFS) file systems in the same Region\n- Availability: all Regions where S3 Access Points for FSx are available\n- See the FSx for ONTAP and FSx for OpenZFS user guides and the S3 Access Points page for details\n\n## Wrap-up\n\n- Server-side copy works between S3 and FSx, and between FSx file systems\n- Standard S3 operations: CopyObject and UploadPartCopy\n- Previously you had to download and re-upload from your own server\n\nGreat for anyone running data pipelines that move between S3 and FSx!\n",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/s3-access-points-server-side-copy-fsx/",
+  "source_name": "AWS What's New",
+  "og_title": "You can now copy data server-side between Amazon S3 buckets and Amazon FSx file systems with S3 Access Points",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-22T08:00:00+00:00"
+}

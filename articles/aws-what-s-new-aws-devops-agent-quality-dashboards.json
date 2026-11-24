@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-devops-agent-quality-dashboards",
+  "title": "AWS DevOps Agent の腕前を数値化！採点役の grader agent とリプレイで改善できるよ",
+  "summary": "AWS DevOps Agent に品質・レイテンシのダッシュボードと grader agent、過去の調査を再現して設定変更の効果を比べるリプレイ機能が追加されたよ！",
+  "body_md": "やっほー、しぃちゃんだよ！今日は AWS DevOps Agent が「自分の仕事ぶりを測れる」ようになった更新を紹介するね。\n\n## なにが発表されたの？\n\nAWS の What's New によると、AWS DevOps Agent に、自分のインスタンスの品質を把握して改善するためのダッシュボードとツールが追加されたよ！\n\n## なぜ重要なの？\n\nAI エージェントを運用に使うなら、「ちゃんと原因を見つけているか」「どれくらい時間がかかるか」を数字で見たいよね。今回の更新は、その計測と改善のループを AWS DevOps Agent 自身が提供してくれるの。\n\n## これで何が変わるの？\n\n新しい品質・レイテンシのダッシュボードで、結果を追えるよ。\n\n- 調査: 根本原因を見つけた頻度、かかった時間、コンテキストが足りなかった箇所\n- 緩和策: 最初のプランが出るまでの時間と、オペレーターによる各プランの評価\n- トレンド表示: 品質が時間とともに良くなっているか\n\nさらに新しい grader agent が各調査を採点して、その評価とオペレーターの評価をダッシュボードで比較できるよ。評価が食い違うケースに注目できるんだ。grader agent と人間の評価は、どちらも今後のタスク実行の質を上げる memory になるの。\n\n## 深く潜ってみよう\n\n品質がわかったら、skill・memory・ツールの設定を調整して改善するよ。その変更が本当に良くなったかを、リプレイ機能で確かめられるの。\n\n- 過去の調査から、変更内容をメモしてリプレイを開始する\n- リプレイは現在の設定でライブデータを使い、何も変更しない\n- 完了したら元の実行と並べて比較する: grader のスコア、所要時間、根本原因、各実行で使ったツールと skill\n- 差があれば変更を直してまたリプレイする\n\n利用できるリージョンは、原文の supported Regions の表で確認してね。\n\n## まとめ\n\n- 調査・緩和策の品質とレイテンシをダッシュボードで追える\n- grader agent が調査を採点し、人間の評価と比較できる\n- 評価は memory になって次回以降の実行を改善する\n- リプレイで、設定変更の効果を過去の調査で試せる\n\nDevOps Agent を運用に入れて、設定を育てていきたいチームに刺さるよ！\n",
+  "title_en": "Measure AWS DevOps Agent quality with grader agent dashboards and replay",
+  "summary_en": "AWS DevOps Agent adds quality and latency dashboards, a grader agent that rates investigations, and a replay feature to test configuration changes against past investigations.",
+  "body_md_en": "Hi, it's Shii-chan! Today: an update that lets AWS DevOps Agent measure its own work.\n\n## What was announced?\n\nAccording to AWS What's New, AWS DevOps Agent now gives you dashboards and tools to understand and improve the quality of your AWS DevOps Agent instances.\n\n## Why it matters\n\nIf you use an AI agent for operations, you want numbers: does it find the root cause, and how long does it take? This update provides that measure-and-improve loop.\n\n## What changes\n\nNew quality and latency dashboards track results:\n\n- Investigations: how often the root cause is found, how long it takes, and where context was lacking\n- Mitigations: time to the first plan and how your operators rated each plan\n- Trend views: whether quality improves over time\n\nA new grader agent rates each investigation, and its dashboard compares those ratings with your operators' ratings so you can focus on cases where they disagree. Both grader agent and human ratings become memories that improve future task runs.\n\n## Dive Deep\n\nOnce you know your quality, you can improve it by configuring skills, memories, and tools. A replay capability lets you test whether a change helps:\n\n- Start a replay from any past investigation and note what you changed\n- The replay uses your current configuration on live data, without changing anything\n- When it finishes, compare side by side with the original: grader score, duration, root cause, and the tools and skills each run used\n- If there is a gap, adjust your change and replay again\n\nSee the supported Regions table in the original post for availability.\n\n## Wrap-up\n\n- Dashboards track quality and latency of investigations and mitigations\n- A grader agent rates investigations and can be compared with human ratings\n- Ratings become memories that improve future runs\n- Replay lets you test configuration changes against past investigations\n\nFor teams running DevOps Agent in operations and tuning it over time!\n",
+  "emotion": "smug",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-devops-agent-quality-dashboards/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS DevOps Agent adds quality improvement dashboards and tools",
+  "tags": [
+    "aws",
+    "ai",
+    "devops"
+  ],
+  "published_at": "2026-11-20T08:00:00+00:00"
+}

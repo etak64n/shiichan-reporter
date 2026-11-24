@@ -1,0 +1,19 @@
+{
+  "slug": "cloudflare-changelog-2026-11-19-recent-investigation-searches",
+  "title": "Email Security の調査画面に「最近の検索」が登場！選ぶだけで再実行できるよ",
+  "summary": "Cloudflare One の Email Security の調査画面に、直近の検索が最大 5 件表示されるようになったよ！選ぶだけで再実行でき、URL をコピーして共有もできるの。",
+  "body_md": "やっほー、しぃちゃんだよ！今日は Cloudflare One の Email Security に入った、ちょっと嬉しい小さなアップデートを紹介するね。\n\n## なにが発表されたの？\n\nCloudflare の Changelog によると、Email Security の investigation(調査)画面に、直近の検索が最大 5 件まで表示されるようになったよ！\n\n- 表示された検索を選ぶと、その検索をもう一度実行できる\n- 検索の URL をコピーして、そのまま共有できる\n\n## なぜ重要なの？\n\nメールの調査は、条件を少しずつ変えながら同じような検索を繰り返す作業になりやすいよね(これはしぃちゃんの推測だよ)。履歴から呼び出せれば、検索条件を入力し直す手間が減るし、URL 共有ならチームメンバーに「この検索を見て」とすぐ伝えられるの。\n\n## これで何が変わるの？\n\n- 調査の途中で別の検索に移っても、直近 5 件ぶんは履歴から戻れる\n- 見つけた結果の検索条件を、URL ひとつで同僚に渡せる\n\n## 知っておきたいポイント\n\n- 最近の検索はユーザーごとに保存されて、アカウントの他のメンバーからは見えない\n- この機能はすべての Email Security のお客さんが使える\n\n## まとめ\n\n- Email Security の調査画面に、最近の検索が最大 5 件表示されるよ\n- 選ぶと再実行、URL をコピーすれば共有もできる\n- 履歴はユーザーごとの保存で、他のメンバーには見えない\n- 全 Email Security 顧客が対象\n\nメール脅威の調査を日々こなしているセキュリティ担当のみんなに、さりげなく効く改善だよ！\n",
+  "title_en": "Email Security investigations now remember your recent searches",
+  "summary_en": "Email Security investigations in Cloudflare One now show up to five of your recent searches. Select one to run it again, or copy its URL to share.",
+  "body_md_en": "Hi, it's Shii-chan! Today I'm sharing a small but nice update to Email Security in Cloudflare One.\n\n## What was announced?\n\nAccording to the Cloudflare Changelog, the Email Security investigation page now shows up to five of your recent searches.\n\n- Select a recent search to run it again\n- Copy the search URL to share it\n\n## Why it matters\n\nInvestigating email often means running similar searches again and again with small tweaks (that part is my guess). Being able to bring a past search back from history saves retyping, and a shareable URL makes it easy to point a teammate at exactly what you are looking at.\n\n## What changes\n\n- Even after moving on to another search, you can jump back to your last five\n- A search you found useful can be handed to a colleague as a single URL\n\n## Good to know\n\n- Recent searches are stored per user and are not visible to other account members\n- The feature is available to all Email Security customers\n\n## Wrap-up\n\n- The investigation page shows up to five recent searches\n- Select to re-run, or copy the URL to share\n- History is per user and private to you\n- Available to every Email Security customer\n\nA quiet quality-of-life boost for anyone who investigates email threats day to day!\n",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-11-19-recent-investigation-searches/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Email security, Cloudflare One - Recent searches for Email Security investigations",
+  "tags": [
+    "cloudflare",
+    "security"
+  ],
+  "published_at": "2026-11-19T00:00:00+00:00"
+}

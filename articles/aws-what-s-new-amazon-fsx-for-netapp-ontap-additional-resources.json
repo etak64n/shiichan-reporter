@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-fsx-for-netapp-ontap-additional-resources",
+  "title": "FSx for ONTAP のスナップショット・クローン・レプリケーションがコンソールと CloudFormation に対応！",
+  "summary": "Amazon FSx for NetApp ONTAP で、スナップショット・ボリュームクローン・SnapMirror レプリケーションを、FSx コンソール・API・AWS CloudFormation から管理できるようになったよ！",
+  "body_md": "こんにちは、しぃちゃんだよ！今日は Amazon FSx for NetApp ONTAP の、運用まわりの更新を紹介するね。\n\n## なにが発表されたの？\n\nAWS の What's New によると、FSx for NetApp ONTAP のデータのスナップショット・クローン・レプリケーションを、Amazon FSx コンソールと AWS CloudFormation から扱えるようになったよ！\n\n## 今までどうだったの？\n\nこれまで、スナップショット、ボリュームクローン、SnapMirror レプリケーションの設定と管理は、ONTAP CLI か REST API だけだったの。\n\n## これで何が変わるの？\n\n今日から、ONTAP CLI と REST API に加えて、次の方法でもこれらのリソースを管理できるよ。\n\n- Amazon FSx コンソール\n- Amazon FSx API\n- AWS CloudFormation\n\nONTAP のデータを保護・コピーする作業を、AWS 環境のほかの部分と同じツールで、コンソールの数クリックやインフラのコード化(IaC)のワークフローの中でできるようになるの。\n\n## 深く潜ってみよう\n\n- 対象リソース: スナップショット、ボリュームクローン、データレプリケーション\n- 提供リージョン: FSx for ONTAP が使えるすべての AWS リージョンで、コンソールと CloudFormation の両方に対応\n- 詳細は FSx for NetApp ONTAP のユーザーガイドと製品ページを参照\n\n## まとめ\n\n- スナップショット・クローン・レプリケーションを FSx コンソール・API・CloudFormation で管理可能\n- 従来は ONTAP CLI と REST API だけだった\n- FSx for ONTAP の全リージョンで利用可\n\nONTAP のデータ保護を IaC に載せたい、ストレージ・インフラ担当のみんなに刺さるよ！\n",
+  "title_en": "FSx for NetApp ONTAP adds Console and CloudFormation support for snapshots, clones, and replication",
+  "summary_en": "Amazon FSx for NetApp ONTAP now lets you manage snapshots, volume clones, and SnapMirror replication through the FSx Console, FSx API, and AWS CloudFormation.",
+  "body_md_en": "Hi, it's Shii-chan! Today: an operations update for Amazon FSx for NetApp ONTAP.\n\n## What was announced?\n\nAccording to AWS What's New, you can now snapshot, clone, and replicate your FSx for NetApp ONTAP data directly from the Amazon FSx Console and AWS CloudFormation.\n\n## The story so far\n\nPreviously, snapshots, volume clones, and SnapMirror replication could only be set up and managed via the ONTAP CLI or REST API.\n\n## What changes\n\nStarting today, in addition to the ONTAP CLI and REST API, you can manage these resources with:\n\n- The Amazon FSx Console\n- The Amazon FSx API\n- AWS CloudFormation\n\nYou can protect and copy ONTAP data with the same AWS tools you use elsewhere, with a few clicks in the console or inside infrastructure-as-code workflows.\n\n## Dive Deep\n\n- Resources: snapshots, volume clones, and data replication\n- Availability: Console and CloudFormation support in all AWS Regions where FSx for ONTAP is available\n- See the FSx for NetApp ONTAP user guide and product page\n\n## Wrap-up\n\n- Manage snapshots, clones, and replication via FSx Console, API, and CloudFormation\n- Previously ONTAP CLI and REST API only\n- Available in all FSx for ONTAP Regions\n\nGood for storage and infrastructure teams who want ONTAP data protection in IaC!\n",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-fsx-for-netapp-ontap-additional-resources/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon FSx for NetApp ONTAP adds AWS CloudFormation and Console support for snapshots, clones, and data replication",
+  "tags": [
+    "aws",
+    "devops",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-23T05:00:00+00:00"
+}

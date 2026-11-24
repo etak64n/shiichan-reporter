@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-aws-codedeploy-suspend-asg-processes",
+  "title": "CodeDeploy が Auto Scaling の一時停止まで面倒を見てくれるよ！インプレースデプロイが安全に",
+  "summary": "AWS CodeDeploy が、EC2 インプレースデプロイ中に Auto Scaling のプロセスを一時停止し、終了後に再開できるようになったよ！スケーリングで更新中のインスタンスが入れ替わって失敗するのを防げるの。",
+  "body_md": "やっほー、しぃちゃんだよ！今日はデプロイの失敗を未然に防ぐ、AWS CodeDeploy の気の利いた更新を紹介するね。\n\n## なにが発表されたの？\n\nAWS の What's New によると、AWS CodeDeploy が、Auto Scaling グループへの EC2 インプレースデプロイ中に、Amazon EC2 Auto Scaling のプロセスを一時停止できるようになったよ！\n\n## なぜ重要なの？\n\nCodeDeploy が更新している最中のインスタンスを、スケーリング活動が終了したり置き換えたりしてしまうと、デプロイが失敗することがあるの。今回の機能は、それを防ぐためのものだよ。\n\n## これで何が変わるの？\n\n一時停止するプロセスは、次の中から好きな組み合わせで選べるよ。\n\n- Terminate\n- AZRebalance\n- InstanceRefresh\n- ScheduledActions\n\nCodeDeploy が、デプロイの前に選んだプロセスを停止して、デプロイが成功・失敗・停止したときに再開してくれるの。だから、デプロイ中にプロセスを止めて再開するカスタムスクリプトは要らなくなるよ。\n\n## 深く潜ってみよう\n\n- 設定の単位: デプロイグループ、または 1 回のデプロイ\n- デプロイグループに設定すると、そのグループのすべてのデプロイに適用される。既存のパイプラインが開始するデプロイも含む\n- 設定方法: CodeDeploy コンソール、AWS CLI、AWS SDK\n- 提供リージョン: AWS GovCloud (US) と中国リージョンを含む、すべての AWS リージョン\n- 詳細は AWS CodeDeploy ユーザーガイドの「Suspending Amazon EC2 Auto Scaling processes during deployments」\n\n## まとめ\n\n- EC2 インプレースデプロイ中の Auto Scaling プロセスを一時停止できる\n- Terminate・AZRebalance・InstanceRefresh・ScheduledActions から選べる\n- 終了時に自動で再開するので、自作スクリプトは不要\n- デプロイグループ設定なら既存パイプラインにも効く\n\nAuto Scaling グループへ CodeDeploy でインプレースデプロイしている人に、すぐ効く更新だよ！\n",
+  "title_en": "AWS CodeDeploy can now suspend EC2 Auto Scaling processes during deployments",
+  "summary_en": "CodeDeploy can suspend chosen EC2 Auto Scaling processes during in-place deployments to Auto Scaling groups and resume them afterward, preventing scaling activity from breaking a deployment.",
+  "body_md_en": "Hi, it's Shii-chan! Today: a thoughtful AWS CodeDeploy update that prevents deployment failures.\n\n## What was announced?\n\nAccording to AWS What's New, AWS CodeDeploy can now suspend Amazon EC2 Auto Scaling processes during EC2 in-place deployments to Auto Scaling groups.\n\n## Why it matters\n\nIf scaling activities terminate or replace instances while CodeDeploy is updating them, the deployment can fail. This feature helps prevent that.\n\n## What changes\n\nYou can suspend any combination of these processes:\n\n- Terminate\n- AZRebalance\n- InstanceRefresh\n- ScheduledActions\n\nCodeDeploy suspends the chosen processes before it deploys and resumes them when the deployment succeeds, fails, or is stopped. No custom scripts are needed to suspend and resume processes.\n\n## Dive Deep\n\n- Scope: a deployment group, or a single deployment\n- A deployment-group setting applies to every deployment in that group, including deployments that existing pipelines start\n- Configure with the CodeDeploy console, AWS CLI, or AWS SDKs\n- Availability: all AWS Regions, including AWS GovCloud (US) and China Regions\n- See Suspending Amazon EC2 Auto Scaling processes during deployments in the AWS CodeDeploy User Guide\n\n## Wrap-up\n\n- Auto Scaling processes can be suspended during EC2 in-place deployments\n- Choose from Terminate, AZRebalance, InstanceRefresh, and ScheduledActions\n- Resumed automatically afterward, so no custom scripts\n- A deployment-group setting covers existing pipelines\n\nAn immediate win if you use CodeDeploy in-place deployments on Auto Scaling groups!\n",
+  "emotion": "smug",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-codedeploy-suspend-asg-processes/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS CodeDeploy now supports suspending Amazon EC2 Auto Scaling processes",
+  "tags": [
+    "aws",
+    "devops"
+  ],
+  "published_at": "2026-11-23T08:00:00+00:00"
+}

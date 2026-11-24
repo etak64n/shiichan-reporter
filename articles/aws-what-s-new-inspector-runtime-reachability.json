@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-inspector-runtime-reachability",
+  "title": "Amazon Inspector が「本当に到達しうる」脆弱性を絞り込み！ECR と EC2 でランタイム到達性分析",
+  "summary": "Amazon Inspector が ECR と EC2 の検出結果にランタイム到達性分析を追加したよ！使われていないパッケージの脆弱性と、到達しうるものを見分けて、優先度づけの手間とノイズを減らせるの。追加料金なし！",
+  "body_md": "みんな、しぃちゃんだよ！今日は脆弱性対応の「ノイズ」を減らしてくれる、Amazon Inspector の更新を紹介するね。\n\n## なにが発表されたの？\n\nAWS の What's New によると、Amazon Inspector が、Amazon ECR と Amazon EC2 インスタンス由来の検出結果に対して、ランタイム到達性分析に対応したよ！\n\n## 今までどうだったの？\n\nこれまでの Inspector は、リソースで見つかったすべての脆弱性を報告していたの。アプリケーションが一度も使っていないパッケージも含まれていて、セキュリティチームが実際にリスクになるものを手作業で見極める必要があったんだ。\n\n## これで何が変わるの？\n\n今は、コンテナイメージ内のパッケージの配置や、EC2 上のプロセスの動きを分析して、どの脆弱性が到達しうるか(potentially reachable)を自動的に特定してくれるよ。大規模なコンテナ群や複雑なアプリを抱える組織で、使われていない依存関係の脆弱性と区別して優先度をつけられて、ノイズが減るの。\n\n## 深く潜ってみよう\n\n判定のしかたは対象ごとに違うよ。\n\n- コンテナイメージ: 脆弱なパッケージが、アプリケーションの dockerfile パス(WORKDIR、ENTRYPOINT、CMD の指定)の中にあるかを判定する\n- EC2 インスタンス: 脆弱なパッケージが、直近のスキャンでプロセスとして動いているのが観測されたかを判定する。この機能には、エージェントベースの Inspector VM Scanner の利用が必要\n\n提供状況は次のとおり。\n\n- 新しく生成される検出結果には最初から含まれ、既存の検出結果のバックフィルは時間をかけて完了する\n- 追加料金なし\n- Inspector が使えるすべてのリージョン\n\n## まとめ\n\n- ECR と EC2 の検出結果にランタイム到達性分析が追加された\n- コンテナは dockerfile パス内か、EC2 は実行中のプロセスとして観測されたかで判定\n- EC2 では Inspector VM Scanner が必要\n- 追加料金なし、既存の検出結果は順次バックフィル\n\n脆弱性の山に埋もれがちな、コンテナや EC2 のセキュリティチームに刺さるよ！\n",
+  "title_en": "Amazon Inspector adds runtime reachability analysis for ECR and EC2 findings",
+  "summary_en": "Amazon Inspector now flags which ECR and EC2 vulnerabilities are potentially reachable by analyzing package placement in images and process activity on instances, at no additional charge.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today: an Amazon Inspector update that cuts the noise in vulnerability management.\n\n## What was announced?\n\nAccording to AWS What's New, Amazon Inspector has expanded its vulnerability management with runtime reachability analysis for findings originating from Amazon ECR and Amazon EC2 instances.\n\n## The story so far\n\nPreviously, Inspector reported every vulnerability found in a resource, including packages that were never used by applications. Security teams had to manually assess which vulnerabilities actually posed risk in their deployed environments.\n\n## What changes\n\nInspector now automatically identifies which vulnerabilities are potentially reachable by analyzing package placement in container images and process activity on EC2 instances. For organizations managing large container fleets or complex applications, this helps prioritize by distinguishing potentially reachable vulnerabilities from those in unused dependencies, reducing noise.\n\n## Dive Deep\n\nHow it decides depends on the target:\n\n- Container images: whether a vulnerable package is within your application's dockerfile paths defined by WORKDIR, ENTRYPOINT, or CMD instructions\n- EC2 instances: whether a vulnerable package was observed running as a process during the most recent scan. For EC2 you must use the agent-based Inspector VM Scanner\n\nAvailability:\n\n- Newly generated findings include the analysis; backfill of existing findings will complete over time\n- No additional charge\n- All Regions where Inspector is available\n\n## Wrap-up\n\n- Runtime reachability analysis for ECR and EC2 findings\n- Containers: inside dockerfile paths; EC2: observed as a running process\n- EC2 requires Inspector VM Scanner\n- No extra charge; existing findings are backfilled over time\n\nGreat for container and EC2 security teams buried in vulnerability lists!\n",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/inspector-runtime-reachability/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Inspector expands runtime reachability analysis for ECR and EC2 findings",
+  "tags": [
+    "aws",
+    "security"
+  ],
+  "published_at": "2026-11-23T08:00:00+00:00"
+}

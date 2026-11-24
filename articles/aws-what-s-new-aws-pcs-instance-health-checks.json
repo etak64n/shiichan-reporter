@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-aws-pcs-instance-health-checks",
+  "title": "AWS PCS にインスタンスヘルスチェック！壊れた GPU に次のジョブを奪わせないよ",
+  "summary": "AWS Parallel Computing Service がアクセラレーテッドインスタンスのヘルスチェックに対応したよ！GPU や EFA の異常を検知して、ノードをスケジューリングから外したりインスタンスを入れ替えたりできるの。",
+  "body_md": "こんにちは、しぃちゃんだよ！今日は HPC の運用がぐっと楽になりそうな、AWS Parallel Computing Service(AWS PCS)の更新を紹介するね。\n\n## なにが発表されたの？\n\nAWS の What's New によると、AWS PCS がインスタンスヘルスチェックに対応したよ！Amazon EC2 が現状で検知できる範囲を超えて、アクセラレーテッドインスタンスのハードウェア障害やソフトウェアの問題を見つけられるの。\n\n## なぜ重要なの？\n\n原文の例だと、訂正不能な GPU メモリエラーのような障害は、そのコンピュートノード上のすべてのジョブを止めたり遅くしたりしてしまうよ。ヘルスチェックがあれば、同じ壊れた GPU に次のジョブを奪われる前に、AWS PCS がそのノードをスケジューリングから外して、インスタンスを新しいものに入れ替えられるんだ。\n\n## これで何が変わるの？\n\nコンピュートノードグループ単位で、AWS PCS コンソール・AWS CLI・AWS SDK から有効にできるよ。検知したあとの動きは自分で選べるの。\n\n- インスタンスを置き換える\n- 調査のためにコンピュートノードを隔離する\n- 障害を報告するだけにする\n\n各結果と修復アクションは、コンピュートノードの他のステータス情報と並んで Slurm 上で確認できるよ。\n\n## 深く潜ってみよう\n\n- 監視対象: NVIDIA GPU、AWS Neuron デバイス、Elastic Fabric Adapter(EFA)デバイス。ジョブの実行中も継続的に監視する\n- オプションの深いヘルスチェック: インスタンス起動のたびに NVIDIA Data Center GPU Manager(DCGM)診断を実行し、GPU ソフトウェアスタックからハードウェアのストレステストまで確認する。ジョブが載る前に不良 GPU を捕まえられる\n- 要件: Slurm 26.05 以降、AWS PCS agent 1.6.0-1 以降の AMI\n- 提供リージョン: AWS PCS が使えるすべてのリージョン\n\n## まとめ\n\n- アクセラレーテッドインスタンスの GPU・Neuron・EFA の異常を継続監視\n- 深いヘルスチェックで起動時に DCGM 診断を実行できる\n- 対応は「置き換え」「隔離」「報告のみ」から選べる\n- Slurm 26.05 以降と PCS agent 1.6.0-1 以降が必要\n\nGPU クラスターで長時間ジョブを回している HPC・機械学習チームに刺さるよ！\n",
+  "title_en": "AWS PCS adds instance health checks so a bad GPU does not eat your next job",
+  "summary_en": "AWS Parallel Computing Service now runs instance health checks on accelerated instances, watching GPUs and EFA devices and replacing or isolating faulty compute nodes.",
+  "body_md_en": "Hi, it's Shii-chan! Today: an AWS Parallel Computing Service (AWS PCS) update that should make HPC operations easier.\n\n## What was announced?\n\nAccording to AWS What's New, AWS PCS now supports instance health checks, which can find hardware faults and software problems on accelerated instances beyond what Amazon EC2 detects today.\n\n## Why it matters\n\nIn the post's example, a fault such as an uncorrectable GPU memory error can stop or slow every job on a compute node. With health checks, instead of losing the next job to the same bad GPU, AWS PCS can take the compute node out of scheduling and replace its instance.\n\n## What changes\n\nYou can turn on instance health checks per compute node group in the AWS PCS console, AWS CLI, or AWS SDKs. You choose what happens next:\n\n- Replace the instance\n- Isolate the compute node for investigation\n- Only report the fault\n\nEach result and repair action is visible in Slurm alongside the compute node's other status information.\n\n## Dive Deep\n\n- Monitored: NVIDIA GPUs, AWS Neuron devices, and Elastic Fabric Adapter (EFA) devices, continuously, including while jobs run\n- Optional deep health checks: NVIDIA Data Center GPU Manager (DCGM) diagnostics run each time an instance starts, from the GPU software stack to hardware stress tests, so a faulty GPU can be caught before a job lands on it\n- Requirements: Slurm 26.05 or later, and an AMI with AWS PCS agent 1.6.0-1 or later\n- Availability: all AWS Regions where AWS PCS is available\n\n## Wrap-up\n\n- Continuous monitoring of GPU, Neuron, and EFA devices on accelerated instances\n- Deep checks can run DCGM diagnostics at instance start\n- Choose replace, isolate, or report only\n- Needs Slurm 26.05+ and PCS agent 1.6.0-1+\n\nGreat for HPC and ML teams running long jobs on GPU clusters!\n",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-pcs-instance-health-checks/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Parallel Computing Service now supports managed instance health checks",
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-20T08:00:00+00:00"
+}

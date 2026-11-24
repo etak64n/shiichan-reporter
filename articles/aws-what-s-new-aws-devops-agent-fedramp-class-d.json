@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-devops-agent-fedramp-class-d",
+  "title": "AWS DevOps Agent が GovCloud (US-West) で FedRAMP Class D 認証を取得したよ！",
+  "summary": "AWS DevOps Agent が AWS GovCloud (US-West) で FedRAMP Class D レベルの認証を取得したよ！政府系ワークロードでも使える選択肢になったの。",
+  "body_md": "こんにちは、しぃちゃんだよ！今日は AWS DevOps Agent のコンプライアンスまわりのニュースだよ。\n\n## なにが発表されたの？\n\nAWS の What's New によると、AWS DevOps Agent が、AWS GovCloud (US)で FedRAMP(Federal Risk and Authorization Management)の Class D レベルの認証を取得したよ！\n\nAWS DevOps Agent は、インシデントの解決や予防、アプリの信頼性・性能の最適化、オンデマンドの SRE タスクを、AWS・マルチクラウド・オンプレミスにまたがって引き受ける「いつでも頼れる運用チームメイト」と紹介されているの。\n\n## なぜ重要なの？\n\nFedRAMP は米国政府機関がクラウドサービスを使うときの基準になる認証制度だよ。政府系の環境で運用に AI エージェントを使いたいとき、認証済みかどうかは大きな判断材料になるよね。\n\n## 深く潜ってみよう\n\n原文によると、クラウドサービスプロバイダーが FedRAMP 認証を取得・維持するには、次のことが求められるよ。\n\n- NIST 800-53 Rev 5 のコントロールを満たす\n- FedRAMP 認定の独立評価機関による年次評価を受ける\n- 継続的な監視と脆弱性管理を行う\n- 四半期ごとに Ongoing Certification Reports を公開する\n- 利用機関が使う AWS クラウドサービスに重要な変更があれば Significant Change Notifications を発行する\n\nAWS DevOps Agent の詳細は、原文からリンクされている launch blog と getting started を、FedRAMP の更新情報は FedRAMP Compliance FAQ を見てね。\n\n## まとめ\n\n- AWS DevOps Agent が GovCloud (US-West) で FedRAMP Class D を取得\n- 認証は NIST 800-53 Rev 5 準拠、年次評価、継続監視などで維持される\n\n政府系・規制業界のワークロードで DevOps Agent を検討している人に刺さるニュースだよ！\n",
+  "title_en": "AWS DevOps Agent achieves FedRAMP Class D in AWS GovCloud (US-West)",
+  "summary_en": "AWS DevOps Agent is now certified at the FedRAMP Class D level in AWS GovCloud (US-West).",
+  "body_md_en": "Hi, it's Shii-chan! Today's news is about compliance for AWS DevOps Agent.\n\n## What was announced?\n\nAccording to AWS What's New, AWS DevOps Agent is now certified at the Federal Risk and Authorization Management (FedRAMP) Class D level in AWS GovCloud (US).\n\nAWS DevOps Agent is described as an always-available operations teammate that resolves and proactively prevents incidents, optimizes application reliability and performance, and handles on-demand SRE tasks across AWS, multicloud, and on-prem environments.\n\n## Why it matters\n\nFedRAMP is the authorization program US government agencies rely on for cloud services. For anyone who wants an AI agent in operations for government workloads, certification status is a major factor.\n\n## Dive Deep\n\nAccording to the post, Cloud Service Providers achieve and maintain FedRAMP certification by:\n\n- Meeting NIST 800-53 Rev 5 controls\n- Undergoing annual independent assessment by a FedRAMP Recognized Independent Assessment Service\n- Performing continuous monitoring and vulnerability management\n- Publishing quarterly Ongoing Certification Reports\n- Issuing Significant Change Notifications to agencies for material changes to the AWS cloud services they use\n\nFor details on AWS DevOps Agent, see the launch blog and getting started guide linked from the original; for FedRAMP updates, see the FedRAMP Compliance FAQ.\n\n## Wrap-up\n\n- AWS DevOps Agent is certified at FedRAMP Class D in GovCloud (US-West)\n- Certification is maintained through NIST 800-53 Rev 5 controls, annual assessment, and continuous monitoring\n\nGood news for teams considering DevOps Agent for government or regulated workloads!\n",
+  "emotion": "thinking",
+  "importance": 2,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-devops-agent-fedramp-class-d/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS DevOps Agent achieves FedRAMP Class D Certification in AWS GovCloud (US-West)",
+  "tags": [
+    "aws",
+    "ai",
+    "security"
+  ],
+  "published_at": "2026-11-20T21:11:00+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-cdk-blocks-ga",
+  "title": "AWS CDK Blocks がついに GA！リトライや DLQ まで入った部品でアプリが組めるよ",
+  "summary": "プレビューでは AWS Blocks と呼ばれていた AWS CDK Blocks が一般提供になったよ！CDK コンストラクトに接続コードとベストプラクティスを同梱した部品で、追加料金なし・Apache License 2.0 で公開されているの。",
+  "body_md": "みんな、しぃちゃんだよ！今日は CDK まわりの大きなニュース、AWS CDK Blocks の GA を紹介するね。\n\n## なにが発表されたの？\n\nAWS の What's New によると、プレビュー時は AWS Blocks と呼ばれていた AWS CDK Blocks が一般提供(GA)になったよ！本番品質のアプリを AWS で作りやすくするための CDK の拡張で、データの保存・処理、バックグラウンドジョブ、AI エージェントの構築といった、よくあるアプリ機能の部品を提供するの。\n\n## なぜ重要なの？\n\nCDK のコンストラクトは、データベースやバケットのようなインフラを定義する再利用可能なコードだよね。でもアプリがそのインフラを使うための接続コードや、リトライまわりの作り込みは、これまで自分で書く必要があったの。Blocks はそこを埋める部品なんだよ。\n\n## これで何が変わるの？\n\nCDK Blocks は、CDK コンストラクトに、アプリがそのインフラを使うために必要な接続コードを一緒にパッケージしたものだよ。AWS サービスごとのベストプラクティスも織り込まれているの。\n\n- 安全なリトライ\n- デッドレターキューへのルーティング\n- バッチの部分失敗の扱い\n- ローカルでのテスト環境\n\nこれで書いて保守するコードや設定が減るよ。さらに、組織の要件を組み込んだ独自のコンポーネントを作って共有もできるから、チーム全体で本番品質のアプリを速く作れるの。\n\n## 深く潜ってみよう\n\n- 提供リージョン: すべてのリージョン\n- 料金: CDK Blocks 自体の追加サービス料金はなし。AWS にデプロイしたリソースの料金だけ\n- ライセンス: ソースコードは Apache License 2.0 で公開\n- 始め方: CDK Blocks のドキュメントと GitHub リポジトリを参照\n\n## まとめ\n\n- AWS Blocks(プレビュー)が AWS CDK Blocks として GA\n- CDK コンストラクト + 接続コード + ベストプラクティス + ローカルテスト環境を同梱\n- 独自コンポーネントの作成と共有もできる\n- 追加料金なし、全リージョン、Apache License 2.0\n\nCDK でバックグラウンドジョブや AI エージェントを含むアプリを作っている人に、週明けすぐ試してほしいやつだよ！\n",
+  "title_en": "AWS CDK Blocks is generally available",
+  "summary_en": "AWS CDK Blocks, known as AWS Blocks in preview, is now generally available. It packages CDK constructs with connecting code and service best practices, at no extra fee and under Apache License 2.0.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Big CDK news today: AWS CDK Blocks is generally available.\n\n## What was announced?\n\nAccording to AWS What's New, AWS Cloud Development Kit (AWS CDK) Blocks, known as AWS Blocks in preview, is now generally available. It is an expansion of the CDK that simplifies building production-grade applications on AWS, with production-ready building blocks for common app features such as data storage and processing, background jobs, and building AI agents.\n\n## Why it matters\n\nCDK constructs are reusable pieces of code that define infrastructure such as a database or a bucket. The connecting code an application needs to use that infrastructure, and the careful handling around retries, still had to be written by hand. Blocks fills that gap.\n\n## What changes\n\nCDK Blocks packages a CDK construct together with the connecting code applications need, and builds in AWS service-specific best practices:\n\n- Safe retries\n- Dead-letter routing\n- Partial-batch failure handling\n- A local testing setup\n\nThat means less code and configuration to write and maintain. You can also compose and share your own custom components that bake in your organization's requirements, so teams can build production-ready applications faster.\n\n## Dive Deep\n\n- Regions: available in all regions\n- Pricing: no additional service fee; you pay only for AWS resources you deploy\n- License: source code is published under Apache License 2.0\n- To start: see the CDK Blocks documentation and GitHub repository\n\n## Wrap-up\n\n- AWS Blocks (preview) is now AWS CDK Blocks, GA\n- CDK construct plus connecting code, best practices, and local testing in one package\n- Custom components can be created and shared\n- No extra fee, all regions, Apache License 2.0\n\nIf you build apps with background jobs or AI agents on CDK, this is one to try first thing next week!\n",
+  "emotion": "energetic",
+  "importance": 5,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-cdk-blocks-ga/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS CDK Blocks reaches general availability",
+  "tags": [
+    "aws",
+    "devops",
+    "serverless"
+  ],
+  "published_at": "2026-11-20T08:00:00+00:00"
+}

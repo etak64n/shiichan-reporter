@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-acm-amazon-n2-certificates",
+  "title": "mTLS のクライアント証明書は Amazon N2 へ！ACM が発行するようになったよ",
+  "summary": "AWS Certificate Manager が、mTLS などブラウザ外の認証向けに Amazon N2 証明書を発行するようになったよ！ACM の公開証明書からクライアント認証が外れたことへの受け皿になるの。",
+  "body_md": "みんな、しぃちゃんだよ！今日は mTLS の証明書まわりで気になる、AWS Certificate Manager(ACM)の更新を紹介するね。\n\n## なにが発表されたの？\n\nAWS の What's New によると、ACM が、相互 TLS(mTLS)やブラウザ外の認証向けに Amazon N2 証明書を発行するようになったよ！\n\n## 今までどうだったの？\n\nWebPKI の要件に合わせて、ACM の公開証明書にはクライアント認証が含まれなくなったの。そのためクライアント証明書が必要なチームは、自分たちで信頼のガバナンスモデルを決めて、プライベート PKI に適用する必要があったんだね。\n\n## これで何が変わるの？\n\nAmazon N2 証明書を使えば、パートナーなど他組織への認証が、相手に信頼してもらうための CA を自前で作ってガバナンスする必要なしにできるよ。原文の例は、パートナーのクライアントがあなたの API を呼ぶ場面だよ。\n\n## 深く潜ってみよう\n\n- 発行元: Amazon N2 認証局(CA)。ACM の公開 WebPKI 証明書を発行しているのと同じ Amazon Trust Services が運用・管理している\n- 検証: 相手側が Amazon N2 ルートを自分のトラストストアに追加して、あなたの証明書を検証する\n- 有効期間: 最長 395 日。ACM が自動更新し、AWS 統合サービスは更新後の証明書を使う。自分のクライアントやサーバーにエクスポートもできる\n- 料金: ACM が発行する Amazon N2 証明書に含まれるドメイン名ごとに課金。AWS 統合サービスで使う場合も同様。詳細は ACM の料金ページを参照\n- 提供リージョン: ACM が使えるすべての商用 AWS リージョン\n\n## まとめ\n\n- ACM が mTLS 向けに Amazon N2 証明書を発行する\n- Amazon Trust Services が運用する CA が発行元。相手は N2 ルートを信頼すればよい\n- 最長 395 日で自動更新、エクスポート可能\n- ドメイン名ごとの課金、すべての商用リージョンで利用可\n\nパートナーとの mTLS 連携を、自前の CA なしで始めたい API 提供者に刺さるよ！\n",
+  "title_en": "AWS Certificate Manager now issues Amazon N2 certificates for mTLS",
+  "summary_en": "ACM now issues Amazon N2 certificates for mutual TLS and other non-browser authentication, filling the gap left by ACM public certificates no longer including client authentication.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today: an AWS Certificate Manager (ACM) update for anyone working with mTLS.\n\n## What was announced?\n\nAccording to AWS What's New, ACM now issues Amazon N2 certificates for mutual TLS (mTLS) and other authentication outside web browsers.\n\n## The story so far\n\nIn line with WebPKI requirements, ACM public certificates no longer include client authentication. Teams that needed client certificates had to define their own trust governance models and apply them to their private PKI.\n\n## What changes\n\nWith Amazon N2 certificates, you can authenticate to partners and other organizations, such as a partner's client calling your API, without building and governing your own CA for them to rely on.\n\n## Dive Deep\n\n- Issuer: Amazon N2 certificate authorities (CAs), operated and governed by Amazon Trust Services, the same organization that operates the CAs issuing ACM public WebPKI certificates\n- Verification: your peers add the Amazon N2 roots to their trust stores\n- Validity: up to 395 days; ACM renews automatically, AWS integrated services use each renewed certificate, and you can export them to your own clients and servers\n- Pricing: you pay for each domain name in an ACM-issued Amazon N2 certificate, including when used with AWS integrated services; see ACM pricing\n- Availability: all commercial AWS Regions where ACM is available\n\n## Wrap-up\n\n- ACM issues Amazon N2 certificates for mTLS\n- Issued by Amazon Trust Services-operated CAs; peers trust the N2 roots\n- Up to 395 days, auto-renewed, exportable\n- Per-domain-name pricing, all commercial Regions\n\nGood for API providers who want mTLS with partners without running their own CA!\n",
+  "emotion": "thinking",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/acm-amazon-n2-certificates/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Certificate Manager now supports Amazon N2 certificates for mTLS",
+  "tags": [
+    "aws",
+    "security"
+  ],
+  "published_at": "2026-11-21T04:00:00+00:00"
+}
