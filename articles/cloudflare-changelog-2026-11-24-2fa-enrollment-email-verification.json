@@ -1,0 +1,19 @@
+{
+  "slug": "cloudflare-changelog-2026-11-24-2fa-enrollment-email-verification",
+  "title": "パスワードなしで 2FA を設定できるように！ソーシャルログインの人にうれしい Cloudflare の更新",
+  "summary": "Apple・GitHub・Google でログインしている Cloudflare ユーザーが、パスワードの代わりにメールで届くコードで本人確認をして 2FA を設定できるようになったよ！",
+  "body_md": "こんにちは、しぃちゃんだよ！今日は Cloudflare アカウントの守りがちょっと使いやすくなった話だよ！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Apple・GitHub・Google でサインインしている人が、2 要素認証 (2FA) の設定時に **メールで届くコード**で本人確認できるようになったと発表されたよ！\n\n## 今までどうだったの？\n\nCloudflare は、2FA のようなセキュリティ設定を変える前に本人確認を求めるの。共有PCや公共のPCでログインしたまま離席しても、アカウントを守れるようにするためなんだって。\n\nでも今までは、その確認で Cloudflare のパスワードを求められていたの。ソーシャルログインの人はたいていパスワードを作っていないから、2FA を有効にしたいだけなのに、作ったことのないパスワードをリセットする必要があったんだよ。\n\n## これで何が変わるの？\n\nパスワードを持っていない場合は、本人確認の方法としてメール認証が出るようになったよ！パスワードのリセットを挟まずに、そのまま 2FA を有効にできるの。\n\n## 深く潜ってみよう\n\n設定の手順はこれだけだよ！\n\n- ダッシュボードで **Profile** > **Authentication** を開く\n- **Two-Factor Authentication** の **Set up** を選ぶ\n- パスワードの代わりに、メールに届いたコードで本人確認する\n\n## まとめ\n\n- 対象は Apple / GitHub / Google でサインインしているユーザー\n- 2FA の設定時の本人確認に、メールのコードが使える\n- 作っていないパスワードをリセットする手間がなくなる\n\nソーシャルログインで Cloudflare を使っていて、まだ 2FA を入れていないみんなに刺さる更新だよ！",
+  "title_en": "Set up two-factor authentication on Cloudflare without a password",
+  "summary_en": "If you sign in to Cloudflare with Apple, GitHub, or Google, you can now confirm your identity with an emailed code when setting up 2FA.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today we have a small change that makes Cloudflare account security easier to turn on.\n\n## What was announced?\n\nThe Cloudflare Changelog says that if you sign in with Apple, GitHub, or Google, you can now confirm your identity with a **code sent to your email** when you set up two-factor authentication (2FA).\n\n## The story so far\n\nCloudflare asks you to confirm your identity before changing security settings like 2FA. This protects your account if you leave it signed in on a shared or public computer.\n\nUntil now, that check asked for your Cloudflare password, which most social login users never created. So you had to reset a password you never set just to turn on 2FA.\n\n## What changes\n\nWhen you do not have a password, the check now offers email verification. You can turn on 2FA without a password reset.\n\n## Dive Deep\n\nThe steps are short.\n\n- Open **Profile** > **Authentication** in the dashboard\n- Select **Set up** under **Two-Factor Authentication**\n- Confirm your identity with the code sent to your email instead of a password\n\n## Wrap-up\n\n- Applies to users who sign in with Apple, GitHub, or Google\n- Email codes can be used for identity checks when setting up 2FA\n- No more resetting a password you never created\n\nThis is for anyone using Cloudflare through social login who hasn't turned on 2FA yet!",
+  "emotion": "happy",
+  "importance": 4,
+  "tags": [
+    "cloudflare",
+    "security"
+  ],
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-11-24-2fa-enrollment-email-verification/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Cloudflare Fundamentals - Set up two-factor authentication without a password",
+  "published_at": "2026-11-24T00:00:00+00:00"
+}

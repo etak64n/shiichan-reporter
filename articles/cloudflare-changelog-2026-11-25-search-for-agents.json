@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-11-25-search-for-agents",
+  "title": "サイトが AI エージェントに検索される時代！トグル 1 つで Search for Agents 登場",
+  "summary": "Cloudflare の Search for Agents は、ダッシュボードのトグルでサイトを AI エージェントから検索可能にする機能だよ！AI Search のインスタンス作成と検索エンドポイントの公開まで自動でやってくれるみたい。",
+  "body_md": "やっほー、しぃちゃんだよ！今日はサイトを AI エージェントに検索してもらうための、新しい機能の話だよ！\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、**Search for Agents** が発表されたよ！手動で検索連携を作らなくても、自分のサイトを AI エージェントから検索できるようになる機能なの。ベータ版として公開されているよ。\n\n## なぜ重要なの？\n\nエージェントが情報を探すとき、ページを 1 枚ずつクロールするのは大変だよね。サイト側が検索エンドポイントを用意して、しかもエージェントが見つけやすくしておけば、エージェントは必要な情報にすぐたどり着けるの。これまでは、それを自分で組み立てる必要があったんだよ。\n\n## これで何が変わるの？\n\nダッシュボードで有効にするだけで、Cloudflare が次のことを全部やってくれるよ！\n\n- AI Search のインスタンスを作る\n- コンテンツのインデックス作成を始める\n- 自分のドメイン上に検索エンドポイントを公開する\n\n## 深く潜ってみよう\n\n- 有効化: ドメインの **Overview** ページの **Quick Actions** からオンにする\n- 発見のしくみ: HTML ページにディスカバリー用のメタデータを追加する。Markdown for Agents がオンなら、Markdown のレスポンスにも追加される\n- 検索の仕方: キーワードでも自然文でも検索できる\n\n```\ncurl --get \"https://example.com/.well-known/search\" \\\n  --data-urlencode \"q=How do I verify webhook signatures?\"\n```\n\n- 対応メソッド: `GET` と HTTP `QUERY` の両方\n- 返ってくるもの: AI が生成した答えではなく、関連するコンテンツの Markdown。エージェントが自分のモデルで使えるようにするためだよ\n- 提供範囲と料金: 全プランで利用できて、利用量は AI Search の料金とプラン上限に従う\n- 設定: ドメイン用に作られた AI Search インスタンスで、設定を変更できる\n\n## まとめ\n\n- トグル 1 つでサイトがエージェント検索に対応する\n- 検索エンドポイントは `/.well-known/search` で、`GET` と `QUERY` に対応\n- 結果は Markdown で返り、AI 生成の回答ではない\n- 全プランで使えて、料金は AI Search に準拠\n\n自分のサイトやドキュメントをエージェントに読んでもらいたいみんなに刺さる機能だよ！",
+  "title_en": "Search for Agents makes your site searchable by AI agents with one toggle",
+  "summary_en": "Cloudflare's Search for Agents makes your site searchable by AI agents from a dashboard toggle, creating an AI Search instance and exposing a search endpoint for you.",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today I'm looking at a new feature that lets AI agents search your site.\n\n## What was announced?\n\nThe Cloudflare Changelog announced **Search for Agents**. It makes your website searchable by AI agents without manually configuring a search integration. It is shown with a Beta badge in the dashboard.\n\n## Why it matters\n\nCrawling pages one by one is slow for an agent. If a site offers a search endpoint and makes it easy to discover, agents can reach the right content quickly. Until now, you had to build that yourself.\n\n## What changes\n\nTurn it on in the dashboard and Cloudflare does all of this for you.\n\n- Creates an AI Search instance\n- Starts indexing your content\n- Exposes a search endpoint on your own domain\n\n## Dive Deep\n\n- Enabling: use **Quick Actions** on your domain's **Overview** page\n- Discovery: metadata is added to your HTML pages, and to Markdown responses when Markdown for Agents is on\n- Searching: keywords or natural-language queries both work\n\n```\ncurl --get \"https://example.com/.well-known/search\" \\\n  --data-urlencode \"q=How do I verify webhook signatures?\"\n```\n\n- Methods: both `GET` and HTTP `QUERY`\n- Results: relevant content in Markdown, not an AI-generated answer, so agents can use it with their own models\n- Availability and pricing: all plans, with usage subject to AI Search pricing and plan limits\n- Settings: you can customize the AI Search instance created for your domain\n\n## Wrap-up\n\n- One toggle makes your site searchable by agents\n- The endpoint lives at `/.well-known/search` and supports `GET` and `QUERY`\n- Results come back as Markdown, not generated answers\n- Available on all plans, billed under AI Search\n\nThis is for anyone who wants agents to find their site or docs!",
+  "emotion": "energetic",
+  "importance": 5,
+  "tags": [
+    "cloudflare",
+    "ai",
+    "web"
+  ],
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-11-25-search-for-agents/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "AI Search - Introducing Search for Agents",
+  "published_at": "2026-11-25T15:33:43+00:00"
+}
