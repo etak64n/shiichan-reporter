@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-opensearch-serverless-available-cape-town-region",
+  "title": "OpenSearch Serverless がアフリカ（ケープタウン）リージョンに登場したよ！",
+  "summary": "次世代の Amazon OpenSearch Serverless が AWS Africa (Cape Town) リージョンで使えるようになったよ。スケールゼロと従量課金で、ピーク向けにクラスターを用意する場合と比べて最大 60% 節約できるとされているの。",
+  "body_md": "こんにちは、しぃちゃんだよ！今日はリージョン拡大のお知らせだよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、次世代の Amazon OpenSearch Serverless が、AWS Africa (Cape Town) リージョンで利用可能になったと発表されたよ！\n\n## これで何が変わるの？\n\nケープタウンリージョンのお客さんが、フルマネージドの検索、ベクトル、分析エンジンを使えるようになるよ。このエンジンは、数秒でリソースをプロビジョニングして、需要の変化に合わせて即座にオートスケールして、アイドル時にはゼロまでスケールダウンするの。だから、使ったコンピュートの分だけ支払えばいいんだね。\n\nエージェント型 AI、検索、オブザーバビリティのワークロードを、クラスターのプロビジョニングや管理なしで動かせるよ。\n\n## 深く潜ってみよう\n\n- コンピュートとストレージが完全に分離されていて、コンピュートだけを独立してスケールできる。トラフィックの少ない時間のコストを下げつつ、急なスパイクにも備えられる\n- スケールゼロと従量課金により、ピークに合わせて OpenSearch クラスターをプロビジョニングする場合と比べて、最大 60% 節約できるとされている\n\n詳しい料金はドキュメントと料金ページ、リージョンの一覧は Regional Services List で確認してね。\n\n## まとめ\n\n- 次世代の OpenSearch Serverless が Africa (Cape Town) で利用可能に\n- 検索、ベクトル、分析をクラスター管理なしで使える\n- コンピュートとストレージが分離され、スケールゼロと従量課金\n- ピーク向けのクラスターと比べて最大 60% の節約とされている\n\nアフリカ（ケープタウン）で検索やベクトル検索、ログ分析を動かしたいみんなに刺さるよ！",
+  "title_en": "Amazon OpenSearch Serverless Is Now Available in the Africa (Cape Town) Region",
+  "summary_en": "The next generation of Amazon OpenSearch Serverless is now available in AWS Africa (Cape Town), with scale-to-zero and pay-per-usage pricing that AWS says can save up to 60% compared to clusters provisioned for peak loads.",
+  "body_md_en": "Hi everyone, Shii-chan here! Today we have a Region expansion.\n\n## What was announced?\n\nAWS What's New announced that the next generation of Amazon OpenSearch Serverless is available in the AWS Africa (Cape Town) Region.\n\n## What changes\n\nCustomers in the Cape Town Region can now use a fully managed search, vector, and analytics engine. It provisions resources in seconds, auto scales instantly to meet changing demand, and scales to zero when idle, so you only pay for the compute you use.\n\nYou can run agentic AI, search, and observability workloads without provisioning or managing clusters.\n\n## Dive Deep\n\n- Compute is fully separated from storage, so you can scale compute independently. That reduces costs during low-traffic periods while staying ready for spikes\n- With scale-to-zero and pay-per-usage pricing, AWS says customers can save up to 60% compared to provisioning OpenSearch clusters for peak loads\n\nSee the documentation and pricing page for pricing details, and the Regional Services List for the full list of Regions.\n\n## Wrap-up\n\n- Next-generation OpenSearch Serverless is available in Africa (Cape Town)\n- Search, vector, and analytics without managing clusters\n- Compute and storage are separated, with scale-to-zero and pay-per-usage pricing\n- AWS says savings can reach up to 60% compared to peak-sized clusters\n\nThis is for anyone who wants to run search, vector search, or log analytics in Africa (Cape Town)!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-opensearch-serverless-available-cape-town-region/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon OpenSearch Serverless is now available in the Africa (Cape Town) Region",
+  "tags": [
+    "aws",
+    "infrastructure",
+    "serverless"
+  ],
+  "published_at": "2026-11-24T20:22:00+00:00"
+}

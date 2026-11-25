@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-quick-snowflake-databricks-3lo-end-user-permissions",
+  "title": "AWS Quick が Snowflake と Databricks で「本人の権限」のままクエリできるように！",
+  "summary": "AWS Quick が Snowflake と Databricks 向けに 3LO（three-legged OAuth）のエンドユーザー権限に対応。Chat やダッシュボードのクエリが、各ユーザー自身の ID で実行されるよ。",
+  "body_md": "やっほー、しぃちゃんだよ！今日はデータガバナンスのうれしいお知らせだよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS Quick が Snowflake と Databricks に対して、three-legged OAuth（3LO）とエンドユーザー権限に対応したと発表されたよ！\n\n## これで何が変わるの？\n\nQuick の Chat、インタラクティブなダッシュボード、Apps を使うとき、クエリは各ユーザー自身の Snowflake または Databricks の ID で実行されるようになるよ。\n\nSnowflake や Databricks Unity Catalog に設定したガバナンスポリシーは、ソース側のプラットフォームが適用してくれるの。行レベルや列レベルの制御、テーブルやビューへのアクセスも含まれていて、Quick 側で同じポリシーを作り直さなくていいのがうれしいね。\n\n## 深く潜ってみよう\n\n始め方はこうだよ。\n\n- 管理者が、Quick のアカウント設定で OAuth クライアントアプリケーションを追加する\n- データキュレーターが、Snowflake または Databricks のデータソースを作成して 3LO を選び、trusted identity propagation をオンにする。これで各ユーザーの ID がソースに渡される\n\n制限として、3LO によるエンドユーザー権限は DirectQuery データセットのみが対象だよ。利用できるリージョンは、Quick の対応リージョンの一覧で確認してね。詳しくは「Using Snowflake with AWS Quick」と「Setting up identity enforcement with Databricks 3LO」のドキュメントに書かれているよ。\n\n## まとめ\n\n- Snowflake と Databricks で、Quick のクエリが各ユーザー自身の ID で実行される\n- ソース側の行、列、テーブル、ビューの制御がそのまま効く\n- 設定は OAuth クライアント追加、3LO の選択、trusted identity propagation のオン\n- 対象は DirectQuery データセットのみ\n\nSnowflake や Databricks のアクセス制御を保ったまま Quick を導入したい、データ基盤チームのみんなに刺さるよ！",
+  "title_en": "AWS Quick Runs Snowflake and Databricks Queries as the End User via 3LO",
+  "summary_en": "AWS Quick now supports three-legged OAuth (3LO) with end-user permissions for Snowflake and Databricks, so Chat and dashboard queries run with each user's own identity.",
+  "body_md_en": "Hi everyone, Shii-chan here! Today we have good news for data governance.\n\n## What was announced?\n\nAWS What's New announced that AWS Quick now supports three-legged OAuth (3LO) with end-user permissions for Snowflake and Databricks.\n\n## What changes\n\nWhen end users consume Chat, interactive dashboards, or Apps in Quick, queries run using their own Snowflake or Databricks identity.\n\nGovernance policies configured in Snowflake or Databricks Unity Catalog are enforced by the source platform. That includes applicable row- and column-level controls and access to tables and views, so you do not have to recreate those policies in Quick.\n\n## Dive Deep\n\nHere is how to get started:\n\n- An administrator adds an OAuth client application in Quick account settings\n- Data curators create a Snowflake or Databricks data source, choose 3LO, and turn on trusted identity propagation so each user's identity is passed to the source\n\nOne limitation: end-user permissions through 3LO are supported only for DirectQuery datasets. Check the list of Quick Regions for availability. For details, see the documentation \"Using Snowflake with AWS Quick\" and \"Setting up identity enforcement with Databricks 3LO\".\n\n## Wrap-up\n\n- Quick queries on Snowflake and Databricks run with each user's own identity\n- Row, column, table, and view controls at the source keep applying\n- Setup: add an OAuth client, choose 3LO, and turn on trusted identity propagation\n- Only DirectQuery datasets are supported\n\nThis is for data platform teams who want to adopt Quick while keeping their Snowflake or Databricks access controls intact!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-quick-snowflake-databricks-3lo-end-user-permissions/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS Quick adds identity-aware access via 3LO for Snowflake and Databricks structured data sources",
+  "tags": [
+    "aws",
+    "security",
+    "ai"
+  ],
+  "published_at": "2026-11-23T17:00:00+00:00"
+}

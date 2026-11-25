@@ -1,0 +1,21 @@
+{
+  "slug": "aws-what-s-new-gpt-daybreak-red-runtime-govcloud",
+  "title": "GovCloud (US) の Bedrock で、サイバー特化モデル Daybreak Red が使えるように！",
+  "summary": "Amazon Bedrock の AWS GovCloud (US) で、OpenAI のサイバーセキュリティ特化モデル Daybreak Red: GPT-5.6 Cyber が bedrock-runtime エンドポイント経由で使えるようになったよ。利用には OpenAI の Daybreak アクセスへの登録が必要だよ。",
+  "body_md": "みんな、しぃちゃんだよ！今日はセキュリティ向けのモデルが GovCloud に来たお知らせだよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、対象のお客さんが、OpenAI のサイバーセキュリティ特化モデル「Daybreak Red: GPT-5.6 Cyber」を、AWS GovCloud (US) の Amazon Bedrock で、bedrock-runtime エンドポイント経由で使えるようになったと発表されたよ。\n\n## なぜ重要なの？\n\nDaybreak Red は、承認を受けた高度なタスク向けに設計されているよ。たとえば次のようなものだね。\n\n- 脆弱性の調査\n- エクスプロイトの再現\n- 緩和策の開発\n\nこうしたタスクでは、拒否のしきい値を下げる（断られにくくする）ことで調査の速さと深さが上がる、と原文は説明しているの。その代わりに、本人確認、監視、アクセス制御を強めて釣り合いを取っているよ。\n\n## 深く潜ってみよう\n\n- 利用経路：bedrock-runtime エンドポイントで、US Gov Geo のクロスリージョン推論（CRIS）プロファイル経由\n- データの扱い：推論データはモデルの学習に使われず、OpenAI とのデータ共有へのオプトインも不要\n- 利用条件：OpenAI の Daybreak アクセスへの登録が必要。登録は OpenAI か AWS のアカウントチームに問い合わせる。承認されたら、アカウントチームと一緒に AWS でのアクセスをリクエストする\n\nbedrock-mantle エンドポイントでのリージョンの提供状況などは、ドキュメントを見てね。\n\n## まとめ\n\n- Daybreak Red: GPT-5.6 Cyber が、GovCloud (US) の Bedrock の bedrock-runtime で使える\n- 脆弱性調査、エクスプロイトの再現、緩和策の開発などの承認されたタスク向け\n- 推論データは学習に使われない\n- 利用には Daybreak アクセスへの登録とアカウントチームでの手続きが必要\n\n政府や公共の分野で、承認された環境でセキュリティ研究をするみんなに刺さるよ！",
+  "title_en": "Amazon Bedrock Adds bedrock-runtime Support for OpenAI Daybreak Red in AWS GovCloud (US)",
+  "summary_en": "Eligible customers can now use OpenAI's cybersecurity model Daybreak Red: GPT-5.6 Cyber through the bedrock-runtime endpoint on Amazon Bedrock in AWS GovCloud (US). Access requires enrollment in Daybreak access from OpenAI.",
+  "body_md_en": "Hi everyone, Shii-chan here! Today a security-focused model comes to GovCloud.\n\n## What was announced?\n\nAWS What's New announced that eligible customers can now access OpenAI's specialized cybersecurity models Daybreak Red: GPT-5.6 Cyber through the bedrock-runtime endpoint on Amazon Bedrock in AWS GovCloud (US).\n\n## Why it matters\n\nDaybreak Red is designed for advanced, authorized tasks such as:\n\n- Vulnerability research\n- Exploit reproduction\n- Mitigation development\n\nFor these tasks, the announcement explains that a lower refusal threshold improves the speed and depth of an investigation. It is matched by stronger identity verification, monitoring, and access controls.\n\n## Dive Deep\n\n- Access path: the bedrock-runtime endpoint, through the US Gov Geo cross-Region inference (CRIS) profile\n- Data handling: your inference data is not used for model training, and you are not required to opt in to sharing your data with OpenAI\n- Requirements: you must enroll in Daybreak access from OpenAI. To enroll, contact OpenAI or reach out to your AWS account team. Once approved, work with your account team to request access on AWS\n\nFor regional availability through the bedrock-mantle endpoint and more information, see the documentation.\n\n## Wrap-up\n\n- Daybreak Red: GPT-5.6 Cyber is available via bedrock-runtime on Bedrock in GovCloud (US)\n- It is meant for authorized tasks such as vulnerability research, exploit reproduction, and mitigation development\n- Inference data is not used for training\n- You need Daybreak access enrollment and an account team process\n\nThis is for anyone doing authorized security research in government and public sector environments!",
+  "emotion": "thinking",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/gpt-daybreak-red-runtime-govcloud/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Bedrock adds bedrock-runtime endpoint support for OpenAI Daybreak Red in AWS GovCloud (US)",
+  "tags": [
+    "aws",
+    "openai",
+    "security",
+    "ai"
+  ],
+  "published_at": "2026-11-24T21:27:00+00:00"
+}

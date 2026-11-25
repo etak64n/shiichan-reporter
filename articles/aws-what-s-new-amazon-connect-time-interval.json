@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-connect-time-interval",
+  "title": "Amazon Connect のダッシュボードで、履歴メトリクスを 15 分刻みでも週単位でも見られるよ！",
+  "summary": "Amazon Connect Customer の分析ダッシュボードの trailing ウィジェットで、履歴メトリクスを時間間隔でグループ化できるようになったよ。15 分、30 分、1 時間、日次、週次から選べるの。",
+  "body_md": "やっほー、しぃちゃんだよ！今日はコンタクトセンターの分析まわりのアップデートだよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon Connect Customer の分析ダッシュボードが、trailing ウィジェットで履歴メトリクスを時間間隔でグループ化できるようになったと発表されたよ！\n\n## これで何が変わるの？\n\ntrailing ウィジェットで、データを次の間隔でグループ化して表示できるよ。\n\n- 15 分\n- 30 分\n- 1 時間\n- 日次\n- 週次\n\nコンタクトセンターのマネージャーが、パフォーマンスデータを時間軸でどう見せるかを細かく決められるようになるの。\n\n## 深く潜ってみよう\n\n原文の例では、ワークフォースマネージャーが平均処理時間（average handle time）の急上昇を調べるとき、日次の表示から 15 分間隔に切り替えて、急上昇が起きた正確な時間帯を特定できるよ。そのあと週次に引いて、それがより大きな傾向なのかを確かめられるんだね。\n\nAmazon Connect Customer が提供されているすべての AWS リージョンで利用できるよ。詳しくは Amazon Connect Customer の管理者ガイドを見てね。\n\n## まとめ\n\n- trailing ウィジェットで、履歴メトリクスを時間間隔でグループ化できる\n- 選べる間隔は 15 分、30 分、1 時間、日次、週次\n- 異常の絞り込み（細かい間隔）と、傾向の確認（週次）を行き来できる\n- Amazon Connect Customer が使えるすべてのリージョンで利用可能\n\nコンタクトセンターの指標を見て、異常の原因を探すみんなに刺さるよ！",
+  "title_en": "Amazon Connect Customer Dashboards Can Now Group Historical Metrics by Time Interval",
+  "summary_en": "Amazon Connect Customer analytics dashboards now let trailing widgets group historical metrics by 15-minute, 30-minute, one-hour, daily, and weekly intervals.",
+  "body_md_en": "Hi everyone, Shii-chan here! Today we have a contact center analytics update.\n\n## What was announced?\n\nAWS What's New announced that Amazon Connect Customer analytics dashboards now support grouping historical metrics by time interval on trailing widgets.\n\n## What changes\n\nTrailing widgets can now display data grouped by these intervals:\n\n- 15 minutes\n- 30 minutes\n- One hour\n- Daily\n- Weekly\n\nContact center managers get more granular control over how performance data is visualized over time.\n\n## Dive Deep\n\nIn the announcement's example, a workforce manager investigating a spike in average handle time can switch from a daily view to 15-minute intervals to pinpoint the exact period the spike occurred. They can then zoom out to a weekly view to confirm whether it reflects a broader trend.\n\nIt is available in all AWS regions where Amazon Connect Customer is offered. See the Amazon Connect Customer Administrator Guide for details.\n\n## Wrap-up\n\n- Trailing widgets can group historical metrics by time interval\n- Choices are 15 minutes, 30 minutes, one hour, daily, and weekly\n- You can move between narrowing down anomalies (fine intervals) and checking trends (weekly)\n- Available in all regions where Amazon Connect Customer is offered\n\nThis is for anyone digging through contact center metrics to find the cause of anomalies!",
+  "emotion": "happy",
+  "importance": 3,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-connect-time-interval/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon Connect Customer dashboards now support grouping historical metrics by time interval",
+  "tags": [
+    "aws",
+    "business"
+  ],
+  "published_at": "2026-11-24T17:00:00+00:00"
+}

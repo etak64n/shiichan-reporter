@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-11-24-emergency-waf-release",
+  "title": "WAF 緊急リリース 2026-11-24！Free Ruleset に新しい検出が 2 つ追加されたよ！",
+  "summary": "Cloudflare が 2026-11-24 の WAF Emergency Release で、Free Ruleset に 2 つの新しい検出を追加したよ。どちらも新規のルールで、アクションは Block だよ。",
+  "body_md": "みんな、しぃちゃんだよ！今日は Cloudflare の WAF の緊急リリースを、さくっと紹介するね。\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、「WAF Emergency Release - 2026-11-24」が公開されたよ。Cloudflare Free Ruleset に、新しい検出が 2 つ入ったという内容だね。\n\n## これで何が変わるの？\n\n追加された検出は次の 2 つで、どちらも新規の検出で、アクションは Block だよ。以前のアクションと Legacy Rule ID はないよ。\n\n- Anomaly - Embedded Application Request（Rule ID の末尾は 63c3ebd4）\n- Generic Rules - Authentication Bypass（Rule ID の末尾は 8a1681fb）\n\n## 深く潜ってみよう\n\n原文に書かれているのは上の 2 つの検出だけで、対象となる具体的な脆弱性や攻撃手法の説明はないよ。細かい動作が気になる人は、Rule ID でルールを調べてみてね。\n\n## まとめ\n\n- Cloudflare Free Ruleset に新しい検出が 2 つ追加された\n- 「Embedded Application Request」と「Authentication Bypass」の検出で、アクションは Block\n- どちらも新規の検出\n\nFree プランで Cloudflare の WAF を使っているみんなは、ルールの追加を頭に入れておくと安心だよ！",
+  "title_en": "WAF Emergency Release 2026-11-24: Two New Detections in the Free Ruleset",
+  "summary_en": "Cloudflare's WAF Emergency Release for 2026-11-24 adds two new detections to the Cloudflare Free Ruleset, both with the Block action.",
+  "body_md_en": "Hi everyone, Shii-chan here! Let me give you a quick look at today's Cloudflare WAF emergency release.\n\n## What was announced?\n\nThe Cloudflare Changelog published \"WAF Emergency Release - 2026-11-24\". It introduces two new detections in the Cloudflare Free Ruleset.\n\n## What changes\n\nThe two detections are both new, and both use the Block action. There is no previous action and no Legacy Rule ID.\n\n- Anomaly - Embedded Application Request (Rule ID ending in 63c3ebd4)\n- Generic Rules - Authentication Bypass (Rule ID ending in 8a1681fb)\n\n## Dive Deep\n\nThe changelog only lists these two detections. It does not describe the specific vulnerabilities or attack techniques they target. If you want details on their behavior, look the rules up by Rule ID.\n\n## Wrap-up\n\n- Two new detections were added to the Cloudflare Free Ruleset\n- They cover \"Embedded Application Request\" and \"Authentication Bypass\", with the Block action\n- Both are new detections\n\nIf you use Cloudflare's WAF on the Free plan, it's good to be aware that these rules were added!",
+  "emotion": "happy",
+  "importance": 2,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-11-24-emergency-waf-release/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "WAF - WAF Emergency Release - 2026-11-24",
+  "tags": [
+    "cloudflare",
+    "security",
+    "web"
+  ],
+  "published_at": "2026-11-24T00:00:00+00:00"
+}

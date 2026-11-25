@@ -1,0 +1,21 @@
+{
+  "slug": "aws-what-s-new-devops-agent-access-profiles-orgs",
+  "title": "AWS DevOps Agent に Access Profiles と Organizations 対応が来たよ！",
+  "summary": "AWS DevOps Agent に、IAM Identity Center のユーザーを権限セットにひも付ける Access Profiles と、AWS Organizations 対応が追加されたよ。",
+  "body_md": "やっほー、しぃちゃんだよ！今日は AWS DevOps Agent の権限まわりのアップデートだよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、AWS DevOps Agent の管理と制御の手段が増えたと発表されたよ！追加されたのは次の 2 つ。\n\n- Access Profiles：Agent Space 内の IAM Identity Center（IAM IDC）のユーザーを、特定の権限セットにひも付ける機能\n- AWS Organizations サポート：組織内のアカウントを Agent Space に自動で合わせることで、Agent Space の AWS アカウントへのアクセス権限を設定しやすくする機能\n\n## これで何が変わるの？\n\n原文の例では、Access Profiles を使って、skill や memory の作成と更新を一部のユーザーだけに限定できるよ。誰でも Agent の知識や振る舞いを変えられる状態から、役割に応じて絞れる状態になるんだね。\n\nOrganizations 対応では、アカウントが多い環境でも、組織の構成に合わせて Agent Space のアクセス権限をそろえやすくなるみたい。\n\n## 深く潜ってみよう\n\n原文に書かれているのはここまでだよ。利用できるリージョンは、AWS DevOps Agent の supported Regions の表で確認してね。最新の機能は、リリース履歴のページにまとまっているみたい。\n\n## まとめ\n\n- Access Profiles で IAM IDC ユーザーを権限セットにひも付けられる\n- skill や memory の作成と更新を、選んだユーザーだけに限定できる\n- AWS Organizations 対応で、Agent Space のアカウントアクセス設定が楽になる\n\nDevOps Agent をチームや組織で運用して、ガバナンスを効かせたいみんなに刺さるよ！",
+  "title_en": "AWS DevOps Agent Gets Access Profiles and AWS Organizations Support",
+  "summary_en": "AWS DevOps Agent adds Access Profiles, which link IAM Identity Center users to permission sets, and support for AWS Organizations.",
+  "body_md_en": "Hi everyone, Shii-chan here! Today we have a permissions update for AWS DevOps Agent.\n\n## What was announced?\n\nAWS What's New announced more ways to govern and control your AWS DevOps Agent instances. Two things were added:\n\n- Access Profiles: link IAM Identity Center (IAM IDC) users in your Agent Spaces to specific permission sets\n- AWS Organizations support: automatically align accounts in your organization with your Agent Spaces, which makes it easier to configure the Agent Space's AWS account access permissions\n\n## What changes\n\nIn the announcement's example, you can use Access Profiles to limit who can create or update skills and memories to a select set of users. Instead of everyone being able to change what the agent knows and does, you can restrict it by role.\n\nWith Organizations support, even environments with many accounts can keep Agent Space access permissions aligned with the organization's structure.\n\n## Dive Deep\n\nThat is all the announcement says. Check the supported Regions table for where AWS DevOps Agent is available. The latest features are collected on the release history page.\n\n## Wrap-up\n\n- Access Profiles link IAM IDC users to permission sets\n- You can limit skill and memory creation and updates to selected users\n- AWS Organizations support makes account access setup for Agent Spaces easier\n\nThis is for anyone running DevOps Agent across a team or organization who wants stronger governance!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/devops-agent-access-profiles-orgs/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS DevOps Agent adds Access Profiles and AWS Organizations",
+  "tags": [
+    "aws",
+    "ai",
+    "devops",
+    "security"
+  ],
+  "published_at": "2026-11-23T08:00:00+00:00"
+}

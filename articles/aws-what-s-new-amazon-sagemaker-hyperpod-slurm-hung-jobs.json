@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-amazon-sagemaker-hyperpod-slurm-hung-jobs",
+  "title": "固まった学習ジョブを自動検出して再キュー！HyperPod の Slurm が賢くなったよ！",
+  "summary": "Amazon SageMaker HyperPod の Slurm クラスターで、進捗が止まった学習ジョブを数分で検出し、CloudWatch にイベントを書いたり、キャンセルして再キューしたりできるようになったよ。",
+  "body_md": "こんにちは、しぃちゃんだよ！GPU が止まったまま居座るジョブ、見つけたときの悲しさは分かるよね。そんなときの味方が来たよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon SageMaker HyperPod が Slurm クラスター向けに hung job detection（固まったジョブの検出）に対応したと発表されたよ。進捗が止まった学習ジョブを見つけて、ジョブキューに戻してくれる機能だよ。\n\n## 今までどうだったの？\n\nNCCL のタイムアウト、止まったデータパイプライン、デッドロックなどでジョブが固まっても、GPU は掴まれたままで、Slurm は「実行中」と報告し続けていたの。人が「進んでないな」と気づくまで、そのままだったんだね。\n\n## これで何が変わるの？\n\n学習が固まると、HyperPod が数分以内に検出して、Amazon CloudWatch にイベントを書くよ。固まったジョブをキャンセルして Slurm に再キューさせることもできるから、最後のチェックポイントから再開できて、GPU を遊ばせたままにせずに済むの。\n\n## 深く潜ってみよう\n\n- 検出の材料：ジョブの出力と GPU 活動、またはユーザーが定義するログパターン（学習ステップのメッセージや NCCL エラーなど）\n- 有効化：ジョブごとに、ルールファイルを指す環境変数で有効にする\n- 対応フレームワーク：PyTorch、TensorFlow、JAX など、どのフレームワークでも動く。コードやコンテナの変更は要らない\n- 対象：Slurm でオーケストレーションされた HyperPod クラスター。SageMaker HyperPod が使えるすべての AWS リージョンで利用できる\n\n詳しくはユーザーガイドの hung job detection とブログ記事を見てね。\n\n## まとめ\n\n- 進捗が止まった学習ジョブを数分で検出し、CloudWatch にイベントを出す\n- ジョブをキャンセルして Slurm に再キューさせれば、チェックポイントから再開できる\n- ジョブごとに環境変数とルールファイルで有効化、コード変更は不要\n\nSlurm で長時間の学習を回していて、夜中に固まって悲しい思いをしたことがあるみんなに刺さるよ！",
+  "title_en": "HyperPod Now Detects and Recovers Hung Training Jobs on Slurm Clusters",
+  "summary_en": "Amazon SageMaker HyperPod on Slurm can now detect training jobs that stopped making progress within minutes, log events to CloudWatch, and optionally cancel and requeue them.",
+  "body_md_en": "Hi everyone, Shii-chan here! You know how sad it is to find a job sitting on idle GPUs. Here is something to help.\n\n## What was announced?\n\nAWS What's New announced that Amazon SageMaker HyperPod now supports hung job detection for Slurm-orchestrated clusters. It finds training jobs that have stopped making progress and returns them to the job queue.\n\n## The story so far\n\nA job could hang on an NCCL timeout, a stalled data pipeline, or a deadlock, yet keep its GPUs while Slurm reported it as running. It stayed that way until someone noticed the job was not making progress.\n\n## What changes\n\nIf a training run hangs, HyperPod detects it within minutes and writes an event to Amazon CloudWatch. You can also have HyperPod cancel the hung job and let Slurm requeue it, so it restarts from its last checkpoint instead of holding GPUs idle.\n\n## Dive Deep\n\n- What it looks at: the job's output and GPU activity, or log patterns you define, such as your training step message or an NCCL error\n- Enabling it: per job, with an environment variable that points to a rules file\n- Frameworks: it works with any framework, including PyTorch, TensorFlow, and JAX, with no changes to your code or containers\n- Scope: HyperPod clusters orchestrated by Slurm, in all AWS Regions where SageMaker HyperPod is available\n\nSee hung job detection in the user guide and the blog post for details.\n\n## Wrap-up\n\n- Detects stalled training jobs within minutes and emits CloudWatch events\n- Cancel and requeue through Slurm so jobs restart from a checkpoint\n- Enable per job with an environment variable and a rules file, with no code changes\n\nThis is for anyone running long training jobs on Slurm who has been bitten by a silent hang!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-sagemaker-hyperpod-slurm-hung-jobs/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon SageMaker HyperPod now detects and recovers hung training jobs on Slurm clusters",
+  "tags": [
+    "aws",
+    "ai",
+    "infrastructure"
+  ],
+  "published_at": "2026-11-23T17:00:00+00:00"
+}

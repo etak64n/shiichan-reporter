@@ -1,0 +1,21 @@
+{
+  "slug": "aws-what-s-new-amazon-sagemaker-hyperpod-k8s-monitoring-agent",
+  "title": "HyperPod が Kubernetes の不調を学習ジョブにひも付けて教えてくれるよ！",
+  "summary": "Amazon SageMaker HyperPod の EKS クラスター向けに、Kubernetes Resource Monitoring Agent が登場。device plugin のクラッシュや DaemonSet の欠落を、影響する学習ジョブと関連付けて報告するよ。",
+  "body_md": "やっほー、しぃちゃんだよ！今日は「学習が落ちた原因、どのノード？」を探す手間が減る話だよ。\n\n## なにが発表されたの？\n\nAWS の What's New で、Amazon SageMaker HyperPod が、Amazon EKS でオーケストレーションされたクラスター上の、学習を妨げる Kubernetes の問題を検出するようになったと発表されたよ。たとえば、クラッシュを繰り返す device plugin や、足りない DaemonSet だね。\n\n## 今までどうだったの？\n\ndevice plugin がクラッシュループしたり、taint でジョブの Pod が退避させられたりしても、ジョブのエラーには Pod やノードの名前がほとんど出なかったの。だからエンジニアは、kubectl の出力とランクごとのログから、原因を組み立てていたんだね。\n\n## これで何が変わるの？\n\n新しい HyperPod Kubernetes Resource Monitoring Agent が、HyperPod と Kubeflow の学習ジョブに影響するものを見張ってくれるよ。\n\n- ノード\n- NVIDIA device plugin などの重要な Pod\n- 必要な DaemonSet\n\nエージェントは、Kubernetes の問題をそれが影響する学習ジョブに関連付けて、Kubernetes イベントと Amazon CloudWatch ログとして報告するの。\n\n## 深く潜ってみよう\n\n原文の例では、学習の途中で device plugin が 1 つのノードでクラッシュし続けると、GPU を失ったそのノードにフラグを立てるよ。ジョブが失敗したときには、関係した Pod とノードを含めて失敗の理由をログに出すから、そのノードを直して早く再開できるんだね。\n\nオプトインしたジョブでは、NCCL の通信が止まったときに、どのランクが遅れているかを、ジョブが動いている間に確認できるよ。\n\n導入は helm chart でインストールする形で、EKS でオーケストレーションされた HyperPod クラスターに、SageMaker HyperPod が使えるすべての AWS リージョンで使えるよ。ユーザーガイドの Kubernetes Resource Monitoring Agent とブログ記事も見てね。\n\n## まとめ\n\n- 新しい Kubernetes Resource Monitoring Agent が、ノード、重要な Pod、必須 DaemonSet を監視する\n- 問題を影響する学習ジョブに関連付けて、Kubernetes イベントと CloudWatch ログに出す\n- オプトインしたジョブでは、NCCL が止まったときに遅れたランクが分かる\n- helm chart でインストールできる\n\nEKS 上の HyperPod で学習していて、障害の切り分けに時間を取られているみんなに刺さるよ！",
+  "title_en": "HyperPod Now Detects Kubernetes Issues That Affect Training",
+  "summary_en": "A new Kubernetes Resource Monitoring Agent for SageMaker HyperPod on EKS correlates problems such as crash-looping device plugins and missing DaemonSets with the training jobs they affect.",
+  "body_md_en": "Hi everyone, Shii-chan here! Today's news cuts down the hunt for \"which node made my training fail?\".\n\n## What was announced?\n\nAWS What's New announced that Amazon SageMaker HyperPod now detects Kubernetes issues that disrupt training on clusters orchestrated by Amazon EKS, such as crash-looping device plugins or missing DaemonSets.\n\n## The story so far\n\nWhen a device plugin crash-looped or a taint evicted a job's pods, the job's error rarely named the pod or node. Engineers pieced the cause together from kubectl output and per-rank logs.\n\n## What changes\n\nThe new HyperPod Kubernetes Resource Monitoring Agent watches the things that affect HyperPod and Kubeflow training jobs:\n\n- Nodes\n- Critical pods such as NVIDIA device plugins\n- Required DaemonSets\n\nThe agent correlates Kubernetes issues with the training jobs they affect and reports them as Kubernetes events and Amazon CloudWatch logs.\n\n## Dive Deep\n\nIn the announcement's example, if a device plugin keeps crashing on one node mid training run, the agent flags the node as it loses GPUs. When the job fails, it logs the failure reason with the pods and nodes involved, so you can fix that node and restart sooner.\n\nFor jobs that opt in, it also shows which rank fell behind when NCCL communication stalls, while the job is still running.\n\nYou install it with a helm chart. It is available for HyperPod clusters orchestrated by Amazon EKS in all AWS Regions where SageMaker HyperPod is available. See Kubernetes Resource Monitoring Agent in the user guide and the blog post.\n\n## Wrap-up\n\n- The new agent watches nodes, critical pods, and required DaemonSets\n- It ties problems to the affected training jobs, via Kubernetes events and CloudWatch logs\n- For opted-in jobs, it shows which rank fell behind when NCCL stalls\n- You install it with a helm chart\n\nThis is for anyone training on HyperPod with EKS who spends too long isolating failures!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-sagemaker-hyperpod-k8s-monitoring-agent/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon SageMaker HyperPod now detects Kubernetes issues affecting training",
+  "tags": [
+    "aws",
+    "ai",
+    "infrastructure",
+    "devops"
+  ],
+  "published_at": "2026-11-23T17:00:00+00:00"
+}
