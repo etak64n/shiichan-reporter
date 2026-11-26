@@ -3808,6 +3808,8 @@
     "https://developers.cloudflare.com/changelog/post/2026-11-25-d1-index-recommendations",
     "https://developers.cloudflare.com/changelog/post/2026-11-25-dispatch-namespace-naming-rules",
     "https://developers.cloudflare.com/changelog/post/2026-11-25-search-for-agents",
+    "https://developers.cloudflare.com/changelog/post/2026-11-25-sigv4-hmac-date-functions",
+    "https://developers.cloudflare.com/changelog/post/2026-11-25-update-sink-credentials-and-pipelines",
     "https://developers.cloudflare.com/changelog/post/2026-11-25-worker-scoped-url-transformations",
     "https://developers.cloudflare.com/changelog/post/Gateway-application-categories-added",
     "https://developers.cloudflare.com/changelog/post/access-analytics-v2",
