@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-iot-core-quota-usage-monitoring",
+  "title": "IoT Core のクォータと使用量が Service Quotas コンソールで見えるように！",
+  "summary": "AWS IoT Core の主要なクォータと現在の使用量が、Service Quotas コンソールで確認できるようになったよ！CloudWatch の使用量メトリクスでアラームも作れるの。",
+  "body_md": "こんにちは、しぃちゃんだよ！スロットリングで困った経験があるみんなに、うれしい更新だよ！\n\n## なにが発表されたの？\n\nAWS の What's New によると、AWS IoT Core がよく使われるサービスクォータと、それに対する現在の使用量を Service Quotas コンソールに表示するようになったよ！API の上限を監視しやすくするための更新なの。\n\n## 今までどうだったの？\n\nこれまでは、スロットリングが起きる前に使用状況を知りたいとき、AWS サポートに問い合わせる必要があったの。コンソールでは見えなかったんだよ。\n\n## これで何が変わるの？\n\n次の 2 種類の API について、クォータと使用量が見られるよ！\n\n- デバイスメッセージング(データプレーン)API\n- リソース管理(コントロールプレーン)API\n\n見えるようになったことで、こんなことができるよ。\n\n- クォータの使用状況を監視する\n- スロットリングされる前にアラームを設定する\n- 成長が見込まれるときに、先回りしてクォータ引き上げを申請する\n\n## 深く潜ってみよう\n\n使い方は、Service Quotas コンソールを開いて AWS IoT Core を選ぶだけだよ。アラームは Amazon CloudWatch の使用量メトリクスを使って、クォータに近づいたら通知する形で作れるの。追加料金はなし！対応リージョンは原文には書かれていなかったよ。\n\n## まとめ\n\n- IoT Core の主要クォータと使用量が Service Quotas コンソールで見える\n- データプレーンとコントロールプレーンの両方の API が対象\n- CloudWatch の使用量メトリクスでアラームを作れる\n- 追加料金なし\n\nIoT Core を大規模に動かしているみんなに刺さる更新だよ！\n",
+  "title_en": "IoT Core Quotas and Usage Now Visible in the Service Quotas Console",
+  "summary_en": "AWS IoT Core now shows its most used quotas and your current usage in the Service Quotas console. You can also create CloudWatch alarms from usage metrics!",
+  "body_md_en": "Hello, it's Shii-chan! This one is good news if you've ever been surprised by throttling!\n\n## What was announced?\n\nAccording to AWS What's New, AWS IoT Core now publishes its most used service quotas, and your current usage against them, in the AWS Service Quotas console. It's meant to improve observability of API limits and quotas!\n\n## The story so far\n\nBefore this, quotas and usage weren't visible in the console. To learn your utilization before throttling happened, you had to contact AWS Support.\n\n## What changes\n\nYou can now view quotas and usage for both:\n\n- Device messaging (data plane) APIs\n- Resource management (control plane) APIs\n\nWith that visibility, you can:\n\n- Monitor service quota usage\n- Set alarms before you're throttled\n- Request quota increases ahead of planned growth\n\n## Dive Deep\n\nTo get started, open the Service Quotas console and choose AWS IoT Core. Alarms can be built from Amazon CloudWatch usage metrics so you're notified as usage approaches a quota. There's no additional cost. The announcement doesn't say which Regions are supported.\n\n## Wrap-up\n\n- IoT Core's main quotas and usage show up in Service Quotas\n- Both data plane and control plane APIs are covered\n- CloudWatch usage metrics can drive alarms\n- No additional cost\n\nIf you run IoT Core at scale, this one is for you!\n",
+  "emotion": "happy",
+  "importance": 3,
+  "tags": [
+    "aws",
+    "infrastructure",
+    "devops"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-iot-core-quota-usage-monitoring/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS IoT Core quotas and usage are now visible in AWS Service Quotas console",
+  "published_at": "2026-11-25T08:00:00+00:00"
+}

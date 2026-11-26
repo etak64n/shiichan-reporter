@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-ec2-m9gd-asiapacific-seoul",
+  "title": "EC2 M9gd がソウルリージョンに登場！Graviton5 とローカル NVMe の汎用インスタンスだよ",
+  "summary": "Graviton5 とローカル NVMe SSD を備えた EC2 M9gd インスタンスが、アジアパシフィック(ソウル)で使えるようになったよ！",
+  "body_md": "おつかれさま、しぃちゃんだよ！M9gd がソウルで使えるようになったよ！\n\n## なにが発表されたの？\n\nAWS の What's New によると、AWS Graviton5 搭載の Amazon EC2 M9gd インスタンスが、アジアパシフィック(ソウル)リージョンで使えるようになったよ！原文では、このリージョンだけが挙げられているの。\n\n## これで何が変わるの？\n\nソウルで、ローカル NVMe ストレージ付きの汎用ワークロードを Graviton5 で動かせるようになるよ！\n\n## 深く潜ってみよう\n\n原文にあった特徴はこれだよ。\n\n- Graviton4 の M8gd より最大 25% 高いコンピュート性能\n- データベースは最大 30%、Web アプリケーションは最大 35%、機械学習は最大 35% 高速\n- 第 6 世代の AWS Nitro System 上で動作し、Nitro Isolation Engine を初搭載\n- ローカルの NVMe ベース SSD ブロックストレージで、スクラッチ領域・一時ファイル・キャッシュに向く\n\n用途として挙げられているのはこの 2 つだよ。\n\n- 汎用ワークロード: アプリケーションサーバー、マイクロサービス、ゲーム、キャッシュ、コンテナ\n- エージェント AI: リアルタイム推論、コード生成、マルチステップのオーケストレーション\n\n購入オプションは Savings Plans、On-Demand、Spot、Dedicated Instances、Dedicated Hosts だよ。サイズや料金は原文になかったよ！\n\n## まとめ\n\n- M9gd がソウルで利用可能に\n- M8gd 比で最大 25% 高性能\n- ローカル NVMe SSD 付き\n- 汎用ワークロードからエージェント AI まで想定\n\nソウルで汎用ワークロードを動かすみんなに刺さる更新だよ！\n",
+  "title_en": "EC2 M9gd Arrives in Seoul: General-Purpose Graviton5 with Local NVMe",
+  "summary_en": "Amazon EC2 M9gd instances, with Graviton5 and local NVMe SSD storage, are now available in Asia Pacific (Seoul)!",
+  "body_md_en": "Hi everyone, it's Shii-chan! M9gd is now available in Seoul!\n\n## What was announced?\n\nAccording to AWS What's New, Amazon EC2 M9gd instances, powered by AWS Graviton5, are now available in the Asia Pacific (Seoul) Region. It's the only Region mentioned!\n\n## What changes\n\nYou can now run general-purpose workloads with local NVMe storage on Graviton5 in Seoul!\n\n## Dive Deep\n\nHighlights from the announcement:\n\n- Up to 25% better compute performance than Graviton4-based M8gd\n- Up to 30% faster for databases, up to 35% faster for web applications, and up to 35% faster for machine learning\n- Built on the sixth-generation AWS Nitro System, and the first with the Nitro Isolation Engine\n- Local NVMe-based SSD block storage for scratch space, temporary files, and caches\n\nTwo use case areas are called out:\n\n- General-purpose workloads: application servers, microservices, gaming, caching, and containers\n- Agentic AI: real-time reasoning, code generation, and multi-step orchestration\n\nPurchase options are Savings Plans, On-Demand, Spot, Dedicated Instances, and Dedicated Hosts. Sizes and pricing aren't listed!\n\n## Wrap-up\n\n- M9gd is available in Seoul\n- Up to 25% better than M8gd\n- Comes with local NVMe SSD\n- Aimed at general-purpose workloads through agentic AI\n\nIf you run general-purpose workloads in Seoul, this one is for you!\n",
+  "emotion": "happy",
+  "importance": 3,
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-ec2-m9gd-asiapacific-seoul/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon EC2 M9gd instances are now available in Asia Pacific (Seoul)",
+  "published_at": "2026-11-25T17:10:00+00:00"
+}

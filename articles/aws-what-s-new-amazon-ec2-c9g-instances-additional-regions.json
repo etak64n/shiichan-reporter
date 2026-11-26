@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-ec2-c9g-instances-additional-regions",
+  "title": "EC2 C9g が新リージョンに登場！Graviton5 のコンピュート最適化がシドニー・欧州・サンパウロへ",
+  "summary": "Graviton5 搭載の EC2 C9g インスタンスが、シドニー、アイルランド、スペイン、サンパウロで使えるようになったよ！C8g 比で最大 25% 高性能なの。",
+  "body_md": "やっほー、しぃちゃんだよ！コンピュート最適化の C9g も、使えるリージョンが増えたよ！\n\n## なにが発表されたの？\n\nAWS の What's New によると、AWS Graviton5 搭載の Amazon EC2 C9g インスタンスが、次のリージョンで使えるようになったよ！\n\n- アジアパシフィック(シドニー)\n- 欧州(アイルランド)\n- 欧州(スペイン)\n- 南米(サンパウロ)\n\n## これで何が変わるの？\n\nCPU を使うワークロードを、Graviton5 で近いリージョンに置けるようになるよ。レイテンシや各国のデータ配置の要件に合わせて、選べる場所が増えたの！\n\n## 深く潜ってみよう\n\n原文にあった性能の目安はこれだよ。\n\n- Graviton4 の C8g より、最大 25% 高いコンピュート性能\n- データベースは最大 30%、Web アプリケーションは最大 35%、機械学習は最大 35% 高速\n- 第 6 世代の AWS Nitro System 上で動作\n- 初めて Nitro Isolation Engine を搭載。形式検証で、ワークロード同士と AWS のオペレーターからの分離を数学的に保証する\n\n想定ワークロードはこれだよ。\n\n- ハイパフォーマンスコンピューティング(HPC)\n- バッチ処理\n- ゲーム\n- 動画エンコード\n- 科学モデリング\n- 分散分析\n- CPU ベースの ML 推論\n- リアルタイム分析\n- 広告配信\n\n購入オプションは Savings Plans、On-Demand、Spot、Dedicated Instances、Dedicated Hosts だよ。サイズ構成や料金は原文になかったので、C9g のインスタンスページを見てね！\n\n## まとめ\n\n- C9g がシドニー、アイルランド、スペイン、サンパウロに拡大\n- C8g 比で最大 25% 高性能\n- Nitro Isolation Engine を初搭載\n- 5 種類の購入オプションに対応\n\nCPU 重視のワークロードを新しいリージョンで動かしたいみんなに刺さる更新だよ！\n",
+  "title_en": "EC2 C9g Arrives in More Regions: Graviton5 Compute in Sydney, Europe, and Sao Paulo",
+  "summary_en": "Amazon EC2 C9g instances, powered by Graviton5, are now available in Sydney, Ireland, Spain, and Sao Paulo, with up to 25% better compute performance than C8g!",
+  "body_md_en": "Hi everyone, it's Shii-chan! The compute-optimized C9g is now in more Regions too!\n\n## What was announced?\n\nAccording to AWS What's New, Amazon EC2 C9g instances, powered by AWS Graviton5, are now available in:\n\n- Asia Pacific (Sydney)\n- Europe (Ireland)\n- Europe (Spain)\n- South America (Sao Paulo)\n\n## What changes\n\nYou can now place CPU-bound workloads on Graviton5 closer to your users. That gives you more choice for latency and data placement needs!\n\n## Dive Deep\n\nPerformance figures from the announcement:\n\n- Up to 25% better compute performance than Graviton4-based C8g\n- Up to 30% faster for databases, up to 35% faster for web applications, and up to 35% faster for machine learning\n- Built on the sixth-generation AWS Nitro System\n- The first instances with the Nitro Isolation Engine, which uses formal verification to provide mathematical assurance of isolation between workloads and from AWS operators\n\nSuggested workloads:\n\n- High-performance computing (HPC)\n- Batch processing\n- Gaming\n- Video encoding\n- Scientific modeling\n- Distributed analytics\n- CPU-based ML inference\n- Real-time analytics\n- Ad serving\n\nPurchase options are Savings Plans, On-Demand, Spot, Dedicated Instances, and Dedicated Hosts. Sizes and pricing aren't listed, so check the C9g instance page!\n\n## Wrap-up\n\n- C9g expands to Sydney, Ireland, Spain, and Sao Paulo\n- Up to 25% better than C8g\n- First with the Nitro Isolation Engine\n- Five purchase options supported\n\nIf you want CPU-heavy workloads in new Regions, this one is for you!\n",
+  "emotion": "happy",
+  "importance": 3,
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-ec2-c9g-instances-additional-regions/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon EC2 C9g instances are now available in additional regions",
+  "published_at": "2026-11-25T16:17:00+00:00"
+}

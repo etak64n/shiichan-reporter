@@ -1,0 +1,20 @@
+{
+  "slug": "aws-what-s-new-aws-iot-core-dedicated-ipv6-ranges",
+  "title": "IoT Core の HTTP ルールアクションが専用 IPv6 レンジから送信に！エンドポイントを絞れるよ",
+  "summary": "AWS IoT Core の HTTP ルールアクションが、公開された専用の IPv6 アドレス範囲から通信するようになったよ！API Gateway やファイアウォールで、IoT Core だけを許可できるの。",
+  "body_md": "おつかれさま、しぃちゃんだよ！今日は IoT Core のネットワーク周りのニュースだよ！\n\n## なにが発表されたの？\n\nAWS の What's New によると、AWS IoT Core が HTTPS エンドポイントへ、専用の公開 IPv6 アドレス範囲から通信できるようになったよ！\n\nHTTP ルールアクションは、IoT デバイスのデータをアプリケーションサーバー、オンプレミスのシステム、パートナーのサービスなど、任意の HTTPS エンドポイントに送る機能なの。\n\n## これで何が変わるの？\n\n固定の IPv6 範囲が分かるので、次のような場所に許可ルールとして追加できるよ！\n\n- Amazon API Gateway のリソースポリシー\n- セキュリティグループ\n- ファイアウォールのルール\n\nこうしてエンドポイントを AWS IoT Core からのリクエストだけに絞れば、パブリックインターネットへの露出を減らせるの。\n\n## 深く潜ってみよう\n\n始め方は 3 ステップだよ。\n\n- エンドポイントに AAAA レコードを公開し、A レコードを外して、ルールアクションが IPv6 アドレスだけを使うようにする\n- リージョンごとに公開されている AWS IoT Core の IPv6 範囲を許可する\n- HTTP ルールアクションを、宛先のエンドポイントで作成・更新する\n\n追加料金はなく、AWS GovCloud (US) を含む、AWS IoT Core が使えるすべてのグローバルリージョンで使えるよ。具体的な CIDR は原文になかったので、Developer Guide の「Restricting HTTP action traffic to the rules engine IPv6 ranges」を見てね！\n\n## まとめ\n\n- HTTP ルールアクションが専用の公開 IPv6 範囲から送信される\n- API Gateway やセキュリティグループで IoT Core だけを許可できる\n- AAAA レコードの公開と A レコードの削除が必要\n- 追加料金なし\n\nIoT のデータを受ける側のネットワークを固めたいみんなに刺さる更新だよ！\n",
+  "title_en": "IoT Core HTTP Rule Action Now Sends Traffic from Dedicated IPv6 Ranges",
+  "summary_en": "AWS IoT Core's HTTP rule action now sends traffic from a dedicated, published IPv6 address range, so you can allow only IoT Core in API Gateway policies and firewalls!",
+  "body_md_en": "Hi everyone, it's Shii-chan! Today's news is about IoT Core networking!\n\n## What was announced?\n\nAccording to AWS What's New, AWS IoT Core can now send traffic to HTTPS endpoints from a dedicated, published IPv6 address range!\n\nThe HTTP rule action sends IoT device data to any HTTPS endpoint, such as application servers, on-premises systems, or partner services.\n\n## What changes\n\nSince the IPv6 range is fixed and published, you can add it as an allow rule in:\n\n- An Amazon API Gateway resource policy\n- A security group\n- Your firewall rules\n\nThat lets you restrict the endpoint to requests from AWS IoT Core only, reducing its exposure to the public internet.\n\n## Dive Deep\n\nGetting started takes three steps:\n\n- Publish AAAA DNS records for the endpoint and remove the A records, so the rule action uses only IPv6 addresses\n- Allow AWS IoT Core's published IPv6 range for your Region\n- Create or update the HTTP rule action with the endpoint destination\n\nThere's no additional charge, and it's available in all AWS Global Regions where AWS IoT Core is offered, including AWS GovCloud (US). The announcement doesn't list the CIDR blocks, so check \"Restricting HTTP action traffic to the rules engine IPv6 ranges\" in the Developer Guide!\n\n## Wrap-up\n\n- The HTTP rule action sends from a dedicated, published IPv6 range\n- API Gateway and security groups can allow only IoT Core\n- You need AAAA records and no A records\n- No additional charge\n\nIf you want to lock down the receiving side of your IoT data, this one is for you!\n",
+  "emotion": "happy",
+  "importance": 3,
+  "tags": [
+    "aws",
+    "security",
+    "infrastructure"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-iot-core-dedicated-ipv6-ranges/",
+  "source_name": "AWS What's New",
+  "og_title": "AWS IoT Core now uses dedicated IPv6 address ranges for the HTTP rule action",
+  "published_at": "2026-11-25T08:00:00+00:00"
+}

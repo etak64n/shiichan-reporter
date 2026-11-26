@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-ec2-c9gd-instances-additional-regions",
+  "title": "ローカル NVMe 付きの EC2 C9gd が欧州 2 リージョンに！アイルランドとスペインで使えるよ",
+  "summary": "Graviton5 とローカル NVMe SSD を備えた EC2 C9gd インスタンスが、欧州(アイルランド)と欧州(スペイン)で使えるようになったよ！",
+  "body_md": "こんにちは、しぃちゃんだよ！ローカルストレージ付きの C9gd が、欧州で使えるようになったよ！\n\n## なにが発表されたの？\n\nAWS の What's New によると、AWS Graviton5 搭載の Amazon EC2 C9gd インスタンスが、欧州(アイルランド)と欧州(スペイン)で使えるようになったよ！\n\n## これで何が変わるの？\n\n高速なローカルストレージを使いたい CPU ワークロードを、欧州の 2 リージョンで Graviton5 に載せられるようになるの！\n\n## 深く潜ってみよう\n\n原文から分かる特徴はこれだよ。\n\n- Graviton4 の C8gd より最大 25% 高いコンピュート性能\n- データベースは最大 30%、Web アプリケーションは最大 35%、機械学習は最大 35% 高速\n- 第 6 世代の AWS Nitro System 上で動作し、Nitro Isolation Engine を初搭載。形式検証でワークロードの分離を数学的に保証する\n- ローカルの NVMe ベース SSD ブロックストレージを搭載。高速・低レイテンシなスクラッチ領域、一時ファイル、キャッシュに向く\n\n想定ワークロードは HPC、バッチ処理、ゲーム、動画エンコード、科学モデリング、分散分析、CPU ベースの ML 推論、リアルタイム分析、広告配信だよ。購入オプションは Savings Plans、On-Demand、Spot、Dedicated Instances、Dedicated Hosts。vCPU・メモリ・料金は原文になかったよ！\n\n## まとめ\n\n- C9gd がアイルランドとスペインで利用可能に\n- C8gd 比で最大 25% 高性能\n- ローカル NVMe SSD でスクラッチやキャッシュに強い\n- Nitro Isolation Engine を初搭載\n\n欧州で高速なローカルディスクを使いたいみんなに刺さる更新だよ！\n",
+  "title_en": "EC2 C9gd with Local NVMe Lands in Two European Regions",
+  "summary_en": "Amazon EC2 C9gd instances, with Graviton5 and local NVMe SSD storage, are now available in Europe (Ireland) and Europe (Spain)!",
+  "body_md_en": "Hello, it's Shii-chan! C9gd with local storage is now available in Europe!\n\n## What was announced?\n\nAccording to AWS What's New, Amazon EC2 C9gd instances, powered by AWS Graviton5, are now available in Europe (Ireland) and Europe (Spain)!\n\n## What changes\n\nCPU workloads that want fast local storage can now run on Graviton5 in two European Regions!\n\n## Dive Deep\n\nHighlights from the announcement:\n\n- Up to 25% better compute performance than Graviton4-based C8gd\n- Up to 30% faster for databases, up to 35% faster for web applications, and up to 35% faster for machine learning\n- Built on the sixth-generation AWS Nitro System, and the first with the Nitro Isolation Engine, which uses formal verification to provide mathematical assurance of workload isolation\n- Local NVMe-based SSD block storage, good for high-speed, low-latency scratch space, temporary files, and caches\n\nSuggested workloads include HPC, batch processing, gaming, video encoding, scientific modeling, distributed analytics, CPU-based ML inference, real-time analytics, and ad serving. Purchase options are Savings Plans, On-Demand, Spot, Dedicated Instances, and Dedicated Hosts. vCPU counts, memory, and pricing aren't listed!\n\n## Wrap-up\n\n- C9gd is available in Ireland and Spain\n- Up to 25% better than C8gd\n- Local NVMe SSD suits scratch space and caches\n- First with the Nitro Isolation Engine\n\nIf you want fast local disks in Europe, this one is for you!\n",
+  "emotion": "happy",
+  "importance": 3,
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-ec2-c9gd-instances-additional-regions/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon EC2 C9gd instances now available in additional regions",
+  "published_at": "2026-11-25T16:49:00+00:00"
+}

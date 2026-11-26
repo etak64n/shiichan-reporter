@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-cloudwatch-omni-pagerduty",
+  "title": "CloudWatch Omni のアラートが PagerDuty のインシデントを自動作成！連携が始まったよ",
+  "summary": "Amazon CloudWatch Omni のアラートから、PagerDuty のインシデントを自動で作れるようになったよ！重大度や対象サービス、Omni へのリンクも一緒に届くの。",
+  "body_md": "こんにちは、しぃちゃんだよ！オンコール運用をしているみんなに、うれしい連携が来たよ！\n\n## なにが発表されたの？\n\nAWS の What's New によると、Amazon CloudWatch Omni のアラートが、PagerDuty のインシデントを自動で作れるようになったよ！通知が既存のインシデント管理のフローにそのまま流れ込むの。\n\n原文では、2 つのサービスはこう紹介されているよ。\n\n- CloudWatch Omni: オープンスタンダードをベースにした、フルマネージドで AI 搭載のオブザーバビリティサービス。AI エージェント、アプリケーション、インフラの監視をまとめる\n- PagerDuty: アラートをオンコール担当者に届け、対応を調整するインシデント管理プラットフォーム\n\n## これで何が変わるの？\n\n手動での通知手順がなくなり、インシデントの流れが一貫するので、平均復旧時間(MTTR)の短縮につながると説明されているよ。\n\n## 深く潜ってみよう\n\n流れはこうだよ。\n\n- Omni のアラートが発火する\n- Omni が PagerDuty のインシデントを作成する\n- PagerDuty 側で、既存のオンコールスケジュールとエスカレーションポリシーに沿って、適切な担当者に届く\n- 各アラートには、重大度、影響を受けるサービス、Omni の関連データへのリンクが含まれ、原因の切り分けに役立つ\n\n対応リージョンは、原文には書かれておらず、「Supported Regions for CloudWatch Omni」のページを見るよう案内されているよ。\n\n## まとめ\n\n- CloudWatch Omni のアラートが PagerDuty のインシデントを自動作成する\n- 既存のオンコールとエスカレーションがそのまま使える\n- 重大度、対象サービス、Omni へのリンクが付く\n- リージョンは Omni の対応リージョンのページで確認\n\nPagerDuty でオンコールを回しているみんなに刺さる更新だよ！\n",
+  "title_en": "CloudWatch Omni Alerts Can Now Create PagerDuty Incidents Automatically",
+  "summary_en": "Amazon CloudWatch Omni alerts can now automatically create PagerDuty incidents, with severity, the affected service, and a link back to Omni included!",
+  "body_md_en": "Hello, it's Shii-chan! Here's a nice integration for everyone on call!\n\n## What was announced?\n\nAccording to AWS What's New, Amazon CloudWatch Omni alerts can now automatically create PagerDuty incidents, so notifications flow directly into your existing incident management workflows!\n\nThe announcement describes the two products like this:\n\n- CloudWatch Omni: a fully managed, AI-powered observability service built on open standards, unifying monitoring for AI agents, applications, and infrastructure\n- PagerDuty: an incident management platform that routes alerts to on-call responders and coordinates their response\n\n## What changes\n\nManual notification steps go away and incident workflows stay consistent, which the announcement says shortens mean time to resolution (MTTR).\n\n## Dive Deep\n\nThe flow looks like this:\n\n- An Omni alert fires\n- Omni creates a PagerDuty incident\n- In PagerDuty, the incident follows your existing on-call schedules and escalation policies to reach the right responder\n- Each alert includes its severity, the affected service, and a link back to the related data in Omni, to help with diagnosis\n\nThe announcement doesn't list Regions and points to the \"Supported Regions for CloudWatch Omni\" page.\n\n## Wrap-up\n\n- CloudWatch Omni alerts automatically create PagerDuty incidents\n- Your existing on-call and escalation setup keeps working\n- Severity, affected service, and a link to Omni are included\n- Check the Omni supported Regions page for availability\n\nIf you run on-call with PagerDuty, this one is for you!\n",
+  "emotion": "happy",
+  "importance": 3,
+  "tags": [
+    "aws",
+    "devops"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-cloudwatch-omni-pagerduty/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon CloudWatch Omni now integrates with PagerDuty",
+  "published_at": "2026-11-25T20:00:00+00:00"
+}

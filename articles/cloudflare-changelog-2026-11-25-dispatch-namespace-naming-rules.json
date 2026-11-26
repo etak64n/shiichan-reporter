@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-11-25-dispatch-namespace-naming-rules",
+  "title": "Workers for Platforms の dispatch namespace 名に Worker と同じ命名ルールが適用されるよ！",
+  "summary": "新しく作る dispatch namespace の名前は、Worker と同じ命名ルールに従う必要があるよ。小文字・数字・アンダースコア・ダッシュのみ、256 文字以下なの。既存の namespace には影響なし！",
+  "body_md": "こんにちは、しぃちゃんだよ！今日は Workers for Platforms の命名ルールの変更を紹介するね！\n\n## なにが発表されたの？\n\nCloudflare の Changelog によると、新しく作る dispatch namespace の名前が、Worker の命名ルールと同じになったよ！\n\nルールはこの 3 つだよ。\n\n- 使える文字は小文字の英字、数字、アンダースコア(`_`)、ダッシュ(`-`)だけ\n- 先頭は英字、数字、アンダースコアのどれか\n- 256 文字以下\n\n## 今までどうだったの？\n\nこれまでは、`/` や `%`、スペース、大文字などを名前に含められたの。でもその一部が原因で、namespace 内の Worker を読み取る・デプロイする・削除する API リクエストが失敗することがあったみたい！\n\n## これで何が変わるの？\n\n不正な名前で namespace を作ろうとすると、エラーになるよ。\n\n- API: create namespace エンドポイントへの `POST` が、`name` が不正なら `400` とエラーコード `100120` を返す\n- Wrangler: `wrangler dispatch-namespace create` も同じ `100120` エラーを返す\n- Terraform: `cloudflare_workers_for_platforms_dispatch_namespace` を不正な `name` で作る apply は失敗する\n\n既存の namespace は影響を受けないよ！\n\n## 深く潜ってみよう\n\nエラーメッセージには、名前が不正であること、すでに存在してはいけないこと、使える文字は小文字・数字・アンダースコア・ダッシュだけで、先頭をダッシュにはできないことが書かれているみたい。自動化で namespace 名を組み立てているなら、生成ルールを見直しておくと安心だよ！\n\n## まとめ\n\n- 新規 dispatch namespace 名は Worker と同じ命名ルールになった\n- 使える文字は小文字、数字、`_`、`-` で、256 文字以下\n- API・Wrangler・Terraform で不正な名前は `100120` エラーになる\n- 既存の namespace は影響なし\n\nWorkers for Platforms で namespace を自動作成しているみんなに刺さる変更だよ！\n",
+  "title_en": "Dispatch Namespace Names Now Follow Worker Naming Rules in Workers for Platforms",
+  "summary_en": "New dispatch namespace names must follow the same naming rules as Workers: lowercase letters, numbers, underscores, and dashes, up to 256 characters. Existing namespaces are not affected!",
+  "body_md_en": "Hello, it's Shii-chan! Today I'm covering a naming rule change in Workers for Platforms!\n\n## What was announced?\n\nAccording to the Cloudflare Changelog, new dispatch namespace names now follow the same naming rules as Workers!\n\nThe rules are:\n\n- Use only lowercase letters, numbers, underscores (`_`), and dashes (`-`)\n- Start with a letter, number, or underscore\n- Be 256 characters or fewer\n\n## The story so far\n\nNames used to be allowed to include characters such as `/`, `%`, spaces, and uppercase letters. Some of these could cause API requests to read, deploy, or delete Workers in the namespace to fail.\n\n## What changes\n\nCreating a namespace with an invalid name now fails:\n\n- API: `POST` to the create namespace endpoint returns a `400` with error code `100120` if `name` is invalid\n- Wrangler: `wrangler dispatch-namespace create` returns the same `100120` error\n- Terraform: applies that create a `cloudflare_workers_for_platforms_dispatch_namespace` with an invalid `name` fail\n\nExisting namespaces are not affected!\n\n## Dive Deep\n\nThe error message says the name is invalid, must not already exist, and may only use lowercase letters, numbers, underscores, and dashes, and must not start with a dash. If your automation builds namespace names, it's worth checking your generation rules.\n\n## Wrap-up\n\n- New dispatch namespace names follow Worker naming rules\n- Lowercase letters, numbers, `_`, and `-`, up to 256 characters\n- Invalid names return error `100120` in the API, Wrangler, and Terraform\n- Existing namespaces are unaffected\n\nIf you create namespaces automatically in Workers for Platforms, this one is for you!\n",
+  "emotion": "thinking",
+  "importance": 2,
+  "tags": [
+    "cloudflare",
+    "serverless",
+    "devops"
+  ],
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-11-25-dispatch-namespace-naming-rules/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "Workers for Platforms - Dispatch namespace names now follow Worker naming rules",
+  "published_at": "2026-11-25T00:00:00+00:00"
+}

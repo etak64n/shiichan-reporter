@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-11-25-d1-index-recommendations",
+  "title": "D1 Insights がインデックスを提案してくれるように！遅いクエリに効く CREATE INDEX 付き",
+  "summary": "Cloudflare D1 の Insights が、データベースごとにインデックスを推薦してくれるようになったよ！各提案には CREATE INDEX 文と、速くなる見込みのクエリ、利用メトリクスが付いてくるの。",
+  "body_md": "やっほー、しぃちゃんだよ！今日は D1 のうれしいニュースを見つけちゃったから、さっそく紹介するね！\n\n## なにが発表されたの？\n\nCloudflare の Changelog によると、D1 Insights が D1 データベースに対してインデックスを推薦してくれるようになったよ！\n\n各推薦には、次の 3 つが入っているみたい！\n\n- そのまま使える `CREATE INDEX` 文\n- そのインデックスで速くなる見込みのクエリ\n- 該当クエリの利用メトリクス\n\n## なぜ重要なの？\n\nクエリが遅いとき、どの列にインデックスを張ればいいかを自分で見極めるのは意外と大変だよね。Insights が「このクエリにはこのインデックス」と具体的な文まで示してくれるから、チューニングの出発点がぐっと分かりやすくなるの！\n\n## これで何が変わるの？\n\n- 遅いクエリの改善候補を、自分で探さなくても一覧で確認できる\n- 提案された `CREATE INDEX` 文を見ながら、効果が見込めるクエリとセットで判断できる\n- 推薦機能のオン・オフは、ダッシュボード、Cloudflare CLI、API から切り替えられる\n\n## 深く潜ってみよう\n\n推薦の確認方法は 2 通りあるよ！\n\n- ダッシュボードで、データベースの Metrics タブを開く\n- CLI で次のコマンドを実行する\n\n```\nnpx cf@latest d1 insights recommendations\n```\n\n原文には、数値の上限や料金についての記載はなかったよ。詳しい仕様は D1 のドキュメントにある index recommendations のページを見てね！\n\n## まとめ\n\n- D1 Insights がデータベースごとにインデックスを推薦するようになった\n- 各推薦に `CREATE INDEX` 文、対象クエリ、利用メトリクスが付く\n- ダッシュボードの Metrics タブか `cf d1 insights recommendations` で確認できる\n- 機能はダッシュボード・CLI・API でオン・オフできる\n\nD1 でクエリの遅さに悩んでいるみんなに刺さる更新だよ！\n",
+  "title_en": "D1 Insights Now Recommends Indexes, CREATE INDEX Statement Included",
+  "summary_en": "D1 Insights now recommends indexes for your D1 databases! Each recommendation comes with a CREATE INDEX statement, the queries it should speed up, and usage metrics.",
+  "body_md_en": "Hi everyone, it's Shii-chan! I found a nice D1 update today, so let me walk you through it!\n\n## What was announced?\n\nAccording to the Cloudflare Changelog, D1 Insights now recommends indexes for your D1 databases!\n\nEach recommendation includes three things:\n\n- A ready-to-use `CREATE INDEX` statement\n- The queries it is expected to speed up\n- Usage metrics for those queries\n\n## Why it matters\n\nWhen a query is slow, figuring out which columns deserve an index can be tricky. Insights now hands you a concrete statement, so tuning has a much clearer starting point!\n\n## What changes\n\n- You can see candidate fixes for slow queries in one place instead of hunting for them\n- You can judge each `CREATE INDEX` statement together with the queries it should help\n- Recommendations can be turned on or off from the dashboard, the Cloudflare CLI, or the API\n\n## Dive Deep\n\nThere are two ways to review recommendations:\n\n- In the dashboard, open the Metrics tab of a database\n- From the CLI, run the command below\n\n```\nnpx cf@latest d1 insights recommendations\n```\n\nThe announcement doesn't list numeric limits or pricing. For details, see the index recommendations page in the D1 docs!\n\n## Wrap-up\n\n- D1 Insights now recommends indexes per database\n- Each recommendation has a `CREATE INDEX` statement, target queries, and usage metrics\n- Review them in the Metrics tab or with `cf d1 insights recommendations`\n- The feature can be toggled via dashboard, CLI, or API\n\nIf slow D1 queries are bothering you, this one is for you!\n",
+  "emotion": "happy",
+  "importance": 3,
+  "tags": [
+    "cloudflare",
+    "serverless",
+    "devops"
+  ],
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-11-25-d1-index-recommendations/",
+  "source_name": "Cloudflare Changelog",
+  "og_title": "D1 - D1 Insights index recommendations",
+  "published_at": "2026-11-25T00:00:00+00:00"
+}

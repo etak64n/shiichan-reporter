@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-ec2-m9g-instances-additional-regions",
+  "title": "Graviton5 の EC2 M9g が 4 リージョンに拡大！カリフォルニア・カナダ・サンパウロ・ソウルで使えるよ",
+  "summary": "Graviton5 搭載の Amazon EC2 M9g インスタンスが、米国西部(北カリフォルニア)、カナダ(中部)、南米(サンパウロ)、アジアパシフィック(ソウル)で使えるようになったよ！M8g より最大 25% 高性能なの。",
+  "body_md": "みんな、しぃちゃんだよ！Graviton5 の M9g が使えるリージョンが増えたよ！\n\n## なにが発表されたの？\n\nAWS の What's New によると、AWS Graviton5 搭載の Amazon EC2 M9g インスタンスが、新しく 4 つのリージョンで使えるようになったよ！\n\n- 米国西部(北カリフォルニア)\n- カナダ(中部)\n- 南米(サンパウロ)\n- アジアパシフィック(ソウル)\n\n## これで何が変わるの？\n\n今までより多くのリージョンで、メモリ負荷の高いワークロードを Graviton5 で動かせるようになるの！近いリージョンで使えると、レイテンシやデータ配置の面でも選びやすくなるね。\n\n## 深く潜ってみよう\n\n原文から分かるポイントはこれだよ。\n\n- Graviton4 の M8g より最大 25% 高い性能、データベースでは最大 30% 高速\n- 第 6 世代の AWS Nitro System 上で動作\n- Nitro Isolation Engine を初めて搭載。形式検証によって、ワークロード同士、そして AWS のオペレーターからの分離を数学的に保証する\n\n想定ワークロードはこの 4 つだよ。\n\n- オープンソースのデータベース\n- インメモリキャッシュ\n- ビッグデータ分析\n- メモリ集約型アプリケーション\n\n購入オプションは Savings Plans、On-Demand、Spot、Dedicated Instances、Dedicated Hosts だよ。vCPU 数、メモリ量、料金は原文にはなかったので、M9g のインスタンスページで確認してね！\n\n## まとめ\n\n- M9g が米国西部(北カリフォルニア)、カナダ(中部)、サンパウロ、ソウルに拡大\n- M8g 比で最大 25% 高性能、データベースは最大 30% 高速\n- Nitro Isolation Engine を初搭載\n- 5 種類の購入オプションに対応\n\nメモリ重視のワークロードを近いリージョンで動かしたいみんなに刺さる更新だよ！\n",
+  "title_en": "EC2 M9g with Graviton5 Expands to Four More Regions",
+  "summary_en": "Amazon EC2 M9g instances, powered by Graviton5, are now available in US West (N. California), Canada (Central), South America (Sao Paulo), and Asia Pacific (Seoul), with up to 25% better performance than M8g!",
+  "body_md_en": "Hi everyone, it's Shii-chan! M9g with Graviton5 is now in more Regions!\n\n## What was announced?\n\nAccording to AWS What's New, Amazon EC2 M9g instances, powered by AWS Graviton5, are now available in four more Regions:\n\n- US West (N. California)\n- Canada (Central)\n- South America (Sao Paulo)\n- Asia Pacific (Seoul)\n\n## What changes\n\nYou can now run memory-intensive workloads on Graviton5 in more places. Having it closer to your users and data makes Region choice easier!\n\n## Dive Deep\n\nHere's what the announcement says:\n\n- Up to 25% better performance than Graviton4-based M8g, and up to 30% faster for databases\n- Built on the sixth-generation AWS Nitro System\n- The first instances with the Nitro Isolation Engine, which uses formal verification to provide mathematical assurance that workloads are isolated from each other and from AWS operators\n\nTarget workloads:\n\n- Open-source databases\n- In-memory caches\n- Big data analytics\n- Memory-intensive applications\n\nPurchase options are Savings Plans, On-Demand, Spot, Dedicated Instances, and Dedicated Hosts. The page doesn't list vCPU counts, memory sizes, or pricing, so check the M9g instance page!\n\n## Wrap-up\n\n- M9g expands to US West (N. California), Canada (Central), Sao Paulo, and Seoul\n- Up to 25% better than M8g, up to 30% faster for databases\n- First with the Nitro Isolation Engine\n- Five purchase options supported\n\nIf you want memory-heavy workloads closer to home, this one is for you!\n",
+  "emotion": "happy",
+  "importance": 3,
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-ec2-m9g-instances-additional-regions/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon EC2 M9g instances now available in additional regions",
+  "published_at": "2026-11-25T16:06:00+00:00"
+}

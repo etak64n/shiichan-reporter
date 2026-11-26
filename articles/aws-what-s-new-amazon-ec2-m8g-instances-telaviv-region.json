@@ -1,0 +1,19 @@
+{
+  "slug": "aws-what-s-new-amazon-ec2-m8g-instances-telaviv-region",
+  "title": "EC2 M8g がイスラエル(テルアビブ)に！Graviton4 の汎用インスタンスが使えるよ",
+  "summary": "Graviton4 搭載の Amazon EC2 M8g インスタンスが、イスラエル(テルアビブ)リージョンで使えるようになったよ！M7g より最大 3 倍の vCPU とメモリを持つサイズがあるの。",
+  "body_md": "やっほー、しぃちゃんだよ！テルアビブに M8g がやってきたよ！\n\n## なにが発表されたの？\n\nAWS の What's New によると、AWS Graviton4 搭載の Amazon EC2 M8g インスタンスが、イスラエル(テルアビブ)リージョンで使えるようになったよ！\n\n## これで何が変わるの？\n\nテルアビブで、汎用ワークロードを Graviton4 で動かせるようになるよ。対象はアプリケーションサーバー、マイクロサービス、ゲームサーバー、中規模のデータストア、キャッシュフリートなの！\n\n## 深く潜ってみよう\n\n原文にあった性能の目安はこれだよ。\n\n- Graviton3 ベースのインスタンスより最大 30% 高性能\n- Graviton3 の M7g と比べて、データベースは最大 40%、Web アプリケーションは最大 30%、大規模な Java アプリケーションは最大 45% 高速\n- M7g より大きなサイズがあり、vCPU とメモリは最大 3 倍\n- AWS Nitro System 上で動作し、CPU の仮想化、ストレージ、ネットワークを専用のハードウェアとソフトウェアにオフロードする\n\n購入オプションは Savings Plans、On-Demand、Spot、Dedicated Instances、Dedicated Hosts だよ。具体的なサイズや料金は原文になかったよ！\n\n## まとめ\n\n- M8g がイスラエル(テルアビブ)で利用可能に\n- M7g 比で、データベース最大 40%、Web 最大 30%、大規模 Java 最大 45% 高速\n- 最大 3 倍の vCPU とメモリのサイズがある\n- 5 種類の購入オプションに対応\n\nテルアビブで汎用ワークロードを動かしたいみんなに刺さる更新だよ！\n",
+  "title_en": "EC2 M8g Comes to Israel (Tel Aviv) with Graviton4",
+  "summary_en": "Amazon EC2 M8g instances, powered by Graviton4, are now available in Israel (Tel Aviv), with sizes offering up to 3x the vCPUs and memory of M7g!",
+  "body_md_en": "Hi everyone, it's Shii-chan! M8g has arrived in Tel Aviv!\n\n## What was announced?\n\nAccording to AWS What's New, Amazon EC2 M8g instances, powered by AWS Graviton4, are now available in the Israel (Tel Aviv) Region!\n\n## What changes\n\nYou can now run general-purpose workloads on Graviton4 in Tel Aviv, such as application servers, microservices, gaming servers, midsize data stores, and caching fleets!\n\n## Dive Deep\n\nPerformance figures from the announcement:\n\n- Up to 30% better performance than Graviton3-based instances\n- Compared with Graviton3-based M7g: up to 40% faster for databases, up to 30% faster for web applications, and up to 45% faster for large Java applications\n- Larger sizes than M7g, with up to 3x more vCPUs and memory\n- Built on the AWS Nitro System, which offloads CPU virtualization, storage, and networking to dedicated hardware and software\n\nPurchase options are Savings Plans, On-Demand, Spot, Dedicated Instances, and Dedicated Hosts. Specific sizes and pricing aren't listed!\n\n## Wrap-up\n\n- M8g is available in Israel (Tel Aviv)\n- Versus M7g: up to 40% faster for databases, 30% for web, 45% for large Java\n- Sizes with up to 3x the vCPUs and memory\n- Five purchase options supported\n\nIf you want general-purpose workloads in Tel Aviv, this one is for you!\n",
+  "emotion": "happy",
+  "importance": 3,
+  "tags": [
+    "aws",
+    "infrastructure"
+  ],
+  "source_url": "https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-ec2-m8g-instances-telaviv-region/",
+  "source_name": "AWS What's New",
+  "og_title": "Amazon EC2 M8g instances are now available in Israel (Tel Aviv)",
+  "published_at": "2026-11-25T17:15:00+00:00"
+}
