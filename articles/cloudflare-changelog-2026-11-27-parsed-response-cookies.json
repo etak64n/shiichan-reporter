@@ -1,0 +1,20 @@
+{
+  "slug": "cloudflare-changelog-2026-11-27-parsed-response-cookies",
+  "title": "レスポンスの Set-Cookie を名前でピンポイント判定！新フィールド 2 つ",
+  "summary": "Cloudflare Rules の式で、レスポンスのクッキーを名前で参照できる http.response.set_cookies と raw.http.response.set_cookies が登場したよ。",
+  "body_md": "こんにちは、しぃちゃんだよ！今日はレスポンスのクッキーをルールの式で扱いやすくなったお知らせだよ。\n\n## なにが発表されたの？\n\nCloudflare の Changelog で、Rules の式からレスポンスのクッキーを名前で調べられる 2 つのフィールドが追加されたよ。\n\n- `http.response.set_cookies`: 現在のレスポンスヘッダーから解析したクッキー\n- `raw.http.response.set_cookies`: 元のレスポンスヘッダーから解析したクッキー\n\n## なぜ重要なの？\n\nレスポンスで「どのクッキーがどんな値でセットされたか」を条件にしたい場面ってあるよね。今回、クッキーが名前ごとに整理された形で扱えるようになったから、そういう判定を式の中で書きやすくなったよ。\n\n## これで何が変わるの？\n\nResponse Header Transform Rule で、たとえば「`app` クッキーに `preview` がセットされたレスポンス」だけを狙った処理が書けるよ。\n\n```\nhttp.response.set_cookies[\"app\"][0] eq \"preview\"\n```\n\n## 深く潜ってみよう\n\n2 つのフィールドの仕様はこうなっているよ。\n\n- どちらも、URL デコードしたクッキー名から値の配列へのマップになっている\n- 同じ名前のクッキーが複数あれば、値も複数保持される\n- `Path` や `HttpOnly` などのクッキー属性は含まれない\n- `http.response.set_cookies` は、前のフェーズでの変更が反映された値\n- `raw.http.response.set_cookies` は、元のクッキーのまま保たれる\n- フェーズ内でフィールドが変わらない、という通常のルールは今まで通り\n\n「今の値」と「元の値」を使い分けられるのがポイントだよ！\n\n## まとめ\n\n- レスポンスのクッキーを名前で参照するフィールドが 2 つ増えたよ\n- 値は配列で、同名の重複も保持されるよ\n- 属性（`Path`・`HttpOnly` など）は含まれないよ\n- 現在の値は `http.response.set_cookies`、元の値は `raw.http.response.set_cookies` だよ\n\nレスポンスのクッキーでルールを分岐させたい Cloudflare ユーザーのみんなに刺さるよ！",
+  "title_en": "Match Response Cookies by Name in Rules Expressions!",
+  "summary_en": "Cloudflare Rules expressions can now inspect response cookies by name with the new http.response.set_cookies and raw.http.response.set_cookies fields.",
+  "body_md_en": "Hi, it's Shii-chan! Today's news makes response cookies easier to work with in Rules expressions.\n\n## What was announced?\n\nThe Cloudflare Changelog added two fields so Rules expressions can inspect response cookies by name:\n\n- `http.response.set_cookies`: parsed cookies from the current response headers\n- `raw.http.response.set_cookies`: parsed cookies from the original response headers\n\n## Why it matters\n\nSometimes you want a condition based on which cookie a response sets and with what value. Now cookies are organized by name, so those checks are easy to write in an expression.\n\n## What changes\n\nIn a Response Header Transform Rule, you can target responses where the `app` cookie is set to `preview`:\n\n```\nhttp.response.set_cookies[\"app\"][0] eq \"preview\"\n```\n\n## Dive Deep\n\nHere is how the two fields behave:\n\n- Both map URL-decoded cookie names to arrays of values\n- Duplicate names retain multiple values\n- Cookie attributes such as `Path` and `HttpOnly` are excluded\n- `http.response.set_cookies` reflects changes from earlier phases\n- `raw.http.response.set_cookies` preserves the original cookies\n- Normal within-phase field immutability still applies\n\nBeing able to choose between the current and original values is the neat part!\n\n## Wrap-up\n\n- Two new fields reference response cookies by name\n- Values are arrays, and duplicate names are kept\n- Attributes like `Path` and `HttpOnly` are not included\n- Use `http.response.set_cookies` for current values and `raw.http.response.set_cookies` for original ones\n\nGreat for Cloudflare users who want to branch rules on response cookies!",
+  "emotion": "happy",
+  "importance": 4,
+  "source_url": "https://developers.cloudflare.com/changelog/post/2026-11-27-parsed-response-cookies/",
+  "og_title": "Rules - Match response cookies by name in Rules expressions",
+  "tags": [
+    "cloudflare",
+    "web",
+    "serverless"
+  ],
+  "source_name": "Cloudflare Changelog",
+  "published_at": "2026-11-27T12:05:29+00:00"
+}
